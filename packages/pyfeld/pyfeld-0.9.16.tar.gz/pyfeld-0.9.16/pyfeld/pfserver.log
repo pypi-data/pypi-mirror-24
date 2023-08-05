@@ -1,0 +1,81 @@
+DEBUG:root:This message should go to the log file
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:47365 "GET /getZones HTTP/1.1" 307 0
+DEBUG:urllib3.util.retry:Incremented Retry for (url='http://172.31.0.24:47365/getZones'): Retry(total=2, connect=None, read=None, redirect=None)
+INFO:urllib3.poolmanager:Redirecting http://172.31.0.24:47365/getZones -> http://172.31.0.24:47365/e8cc7e92-e615-42a5-8e9c-37720b04b4c6/getZones
+DEBUG:urllib3.connectionpool:http://172.31.0.24:47365 "GET /e8cc7e92-e615-42a5-8e9c-37720b04b4c6/getZones HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:47365 "GET /listDevices HTTP/1.1" 307 0
+DEBUG:urllib3.util.retry:Incremented Retry for (url='http://172.31.0.24:47365/listDevices'): Retry(total=2, connect=None, read=None, redirect=None)
+INFO:urllib3.poolmanager:Redirecting http://172.31.0.24:47365/listDevices -> http://172.31.0.24:47365/36e10def-e2dd-4702-8f05-65464553b558/listDevices
+DEBUG:urllib3.connectionpool:http://172.31.0.24:47365 "GET /36e10def-e2dd-4702-8f05-65464553b558/listDevices HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:51519 "GET /09681092-c6e7-49ed-ab22-bac5a8c09526.xml HTTP/1.1" 200 1290
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:58576 "GET /188db351-4b3f-43e4-b6ea-88a934bd91e8.xml HTTP/1.1" 200 2207
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.120
+DEBUG:urllib3.connectionpool:http://172.31.0.120:53164 "GET /1e9eb4d3-0f23-4b8c-a2df-88e377c2886a.xml HTTP/1.1" 200 2214
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.120
+DEBUG:urllib3.connectionpool:http://172.31.0.120:53669 "GET /3edc18ce-cfc9-4d38-b9e5-43706327f024.xml HTTP/1.1" 200 1290
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:53621 "GET /421d2eec-f273-4b1d-b8b9-e95c029a9672.xml HTTP/1.1" 200 1043
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.11
+DEBUG:urllib3.connectionpool:http://172.31.0.11:56685 "GET /439ad282-a4a4-46f6-b4de-4bbbc3facdb3.xml HTTP/1.1" 200 2204
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.21
+DEBUG:urllib3.connectionpool:http://172.31.0.21:49681 "GET /56689bbc-6d74-4e97-a121-c6642e59fd74.xml HTTP/1.1" 200 1293
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.21
+DEBUG:urllib3.connectionpool:http://172.31.0.21:54484 "GET /997cb043-8659-449e-a206-dcd5d3bcc0a1.xml HTTP/1.1" 200 2216
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:60512 "GET /af0f2fa1-5df1-4ce5-b430-12e5e343d5a1.xml HTTP/1.1" 200 1974
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.11
+DEBUG:urllib3.connectionpool:http://172.31.0.11:59156 "GET /f7a16cf6-f98d-4da5-bb21-cec6e794ab21.xml HTTP/1.1" 200 1290
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:53488 "GET /f838a811-eb57-443e-907f-4ec3c8d86379.xml HTTP/1.1" 200 1536
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:58576 "GET /188db351-4b3f-43e4-b6ea-88a934bd91e8.xml HTTP/1.1" 200 2207
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:60512 "GET /af0f2fa1-5df1-4ce5-b430-12e5e343d5a1.xml HTTP/1.1" 200 1974
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.21
+DEBUG:urllib3.connectionpool:http://172.31.0.21:54484 "GET /997cb043-8659-449e-a206-dcd5d3bcc0a1.xml HTTP/1.1" 200 2216
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.120
+DEBUG:urllib3.connectionpool:http://172.31.0.120:53164 "GET /1e9eb4d3-0f23-4b8c-a2df-88e377c2886a.xml HTTP/1.1" 200 2214
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:47365 "GET /getZones HTTP/1.1" 307 0
+DEBUG:urllib3.util.retry:Incremented Retry for (url='http://172.31.0.24:47365/getZones'): Retry(total=2, connect=None, read=None, redirect=None)
+INFO:urllib3.poolmanager:Redirecting http://172.31.0.24:47365/getZones -> http://172.31.0.24:47365/53779884-6731-4aa4-ae3a-77665187bf36/getZones
+DEBUG:urllib3.connectionpool:http://172.31.0.24:47365 "GET /53779884-6731-4aa4-ae3a-77665187bf36/getZones HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:47365 "GET /listDevices HTTP/1.1" 307 0
+DEBUG:urllib3.util.retry:Incremented Retry for (url='http://172.31.0.24:47365/listDevices'): Retry(total=2, connect=None, read=None, redirect=None)
+INFO:urllib3.poolmanager:Redirecting http://172.31.0.24:47365/listDevices -> http://172.31.0.24:47365/9d3740ec-b2aa-478d-ab6d-858f1c76b119/listDevices
+DEBUG:urllib3.connectionpool:http://172.31.0.24:47365 "GET /9d3740ec-b2aa-478d-ab6d-858f1c76b119/listDevices HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:51519 "GET /09681092-c6e7-49ed-ab22-bac5a8c09526.xml HTTP/1.1" 200 1290
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:58576 "GET /188db351-4b3f-43e4-b6ea-88a934bd91e8.xml HTTP/1.1" 200 2207
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.120
+DEBUG:urllib3.connectionpool:http://172.31.0.120:53164 "GET /1e9eb4d3-0f23-4b8c-a2df-88e377c2886a.xml HTTP/1.1" 200 2214
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.120
+DEBUG:urllib3.connectionpool:http://172.31.0.120:53669 "GET /3edc18ce-cfc9-4d38-b9e5-43706327f024.xml HTTP/1.1" 200 1290
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:53621 "GET /421d2eec-f273-4b1d-b8b9-e95c029a9672.xml HTTP/1.1" 200 1043
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.11
+DEBUG:urllib3.connectionpool:http://172.31.0.11:56685 "GET /439ad282-a4a4-46f6-b4de-4bbbc3facdb3.xml HTTP/1.1" 200 2204
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.21
+DEBUG:urllib3.connectionpool:http://172.31.0.21:49681 "GET /56689bbc-6d74-4e97-a121-c6642e59fd74.xml HTTP/1.1" 200 1293
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.21
+DEBUG:urllib3.connectionpool:http://172.31.0.21:54484 "GET /997cb043-8659-449e-a206-dcd5d3bcc0a1.xml HTTP/1.1" 200 2216
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:60512 "GET /af0f2fa1-5df1-4ce5-b430-12e5e343d5a1.xml HTTP/1.1" 200 1974
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.11
+DEBUG:urllib3.connectionpool:http://172.31.0.11:59156 "GET /f7a16cf6-f98d-4da5-bb21-cec6e794ab21.xml HTTP/1.1" 200 1290
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:53488 "GET /f838a811-eb57-443e-907f-4ec3c8d86379.xml HTTP/1.1" 200 1536
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:58576 "GET /188db351-4b3f-43e4-b6ea-88a934bd91e8.xml HTTP/1.1" 200 2207
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.24
+DEBUG:urllib3.connectionpool:http://172.31.0.24:60512 "GET /af0f2fa1-5df1-4ce5-b430-12e5e343d5a1.xml HTTP/1.1" 200 1974
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.21
+DEBUG:urllib3.connectionpool:http://172.31.0.21:54484 "GET /997cb043-8659-449e-a206-dcd5d3bcc0a1.xml HTTP/1.1" 200 2216
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 172.31.0.120
+DEBUG:urllib3.connectionpool:http://172.31.0.120:53164 "GET /1e9eb4d3-0f23-4b8c-a2df-88e377c2886a.xml HTTP/1.1" 200 2214
