@@ -1,0 +1,80 @@
+Metadata-Version: 2.0
+Name: forgive
+Version: 1.0.0
+Summary: Coding should be simple and fun. Certainly I will choose ForgiveDB.
+Home-page: https://github.com/hui-z/ForgiveDB
+Author: Lirian Su
+Author-email: liriansu@gmail.com
+License: WTFPL
+Platform: UNKNOWN
+
+.. figure:: https://rawgit.com/hui-z/ForgiveDB/master/pics/logo.svg
+   :alt: logo
+
+   logo
+
+|Package| |Updates| |CI| |Coverage| |CodeHealth| |License| |README|
+
+-  What if no one accept your PR ?
+-  What if lib upgrade their dependency ?
+-  What if you got a brand new requirement ?
+
+.. figure:: https://rawgit.com/hui-z/ForgiveDB/master/pics/forgive.jpg
+   :alt: forgive
+
+   forgive
+
+`lowdb <https://github.com/typicode/lowdb>`__ is JavaScript,
+`tinydb <http://tinydb.readthedocs.io/en/latest/intro.html>`__ is not
+that tiny. `ForgiveDB <https://github.com/hui-z/ForgiveDB>`__ is your
+destiny.
+
+ForgiveDB is a small, independent database, supports in-memory or
+json-file storage.
+
+Installation
+------------
+
+Use pip. Oh you should learn it.
+
+.. code:: python
+
+    pip install forgive
+
+Usage
+-----
+
+Code is the best document. (Because we are not good at writing
+documents.)
+
+.. code:: python
+
+    from forgive import ForgiveDB
+
+    file_db = ForgiveDB('/some/path')
+    # file_db = ForgiveDB(r'C:\\some\\path')  # windows
+    file_db.set('key', 'value')
+    value = file_db.get('key')
+    default_value = file_db.get('no-such-key', 'default-value')
+
+    # Or in memory
+    memory_db = ForgiveDB()
+    memory_db.set(ForgiveDB, 'simple and interesting')
+    memory_db.get(ForgiveDB)  # simple and interesting
+
+.. |Package| image:: https://img.shields.io/pypi/v/forgive.svg
+   :target: https://pypi.python.org/pypi/forgive
+.. |Updates| image:: https://pyup.io/repos/github/hui-z/ForgiveDB/shield.svg
+   :target: https://pyup.io/repos/github/hui-z/ForgiveDB/
+.. |CI| image:: https://travis-ci.org/hui-z/ForgiveDB.svg?branch=master
+   :target: https://travis-ci.org/hui-z/ForgiveDB
+.. |Coverage| image:: http://codecov.io/github/hui-z/ForgiveDB/coverage.svg?branch=master
+   :target: http://codecov.io/github/hui-z/ForgiveDB?branch=master
+.. |CodeHealth| image:: https://landscape.io/github/hui-z/ForgiveDB/master/landscape.svg?style=flat
+   :target: https://landscape.io/github/hui-z/ForgiveDB/master
+.. |License| image:: https://img.shields.io/github/license/hui-z/ForgiveDB.svg
+   :target: https://github.com/hui-z/ForgiveDB/blob/master/LICENSE
+.. |README| image:: https://img.shields.io/badge/简介-中文-brightgreen.svg
+   :target: README.cn.md
+
+
