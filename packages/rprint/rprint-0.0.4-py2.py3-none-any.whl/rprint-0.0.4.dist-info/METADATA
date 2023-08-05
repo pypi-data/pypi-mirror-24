@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: rprint
+Version: 0.0.4
+Summary: Class to remote debug with UDP connection
+Home-page: https://github.com/cletrix/rprint.git
+Author: Cleyton Pedroza
+Author-email: cleytonpedroza@gmail.com
+License: MIT License
+Keywords: UDP debug remote connection
+Platform: UNKNOWN
+
+UNKNOWN
+
+
