@@ -1,0 +1,22 @@
+Metadata-Version: 1.0
+Name: xml-overrider
+Version: 0.1.1
+Summary: Simple way to override XML values based on based on xpaths
+Home-page: https://github.com/victorpantoja/xml_overrider
+Author: Victor Pantoja
+Author-email: victor.pantoja@gmail.com
+License: Proprietary License
+Description: # xml_overrider
+        Simple way to override XML values based on based on xpaths.
+        
+        
+        Changelog
+        =========
+        
+        0.1.0 - 2017-08-07
+        ------------------
+        
+        * Initial release (testing)
+        
+Keywords: accounts
+Platform: Linux

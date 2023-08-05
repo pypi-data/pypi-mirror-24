@@ -1,0 +1,10 @@
+setup.py
+xml_overrider/__init__.py
+xml_overrider/overrider.py
+xml_overrider.egg-info/PKG-INFO
+xml_overrider.egg-info/SOURCES.txt
+xml_overrider.egg-info/dependency_links.txt
+xml_overrider.egg-info/entry_points.txt
+xml_overrider.egg-info/not-zip-safe
+xml_overrider.egg-info/requires.txt
+xml_overrider.egg-info/top_level.txt

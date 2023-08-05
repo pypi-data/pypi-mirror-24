@@ -1,0 +1,3 @@
+[console_scripts]
+xml-overrider = xml_overrider.overrider:overrider
+
