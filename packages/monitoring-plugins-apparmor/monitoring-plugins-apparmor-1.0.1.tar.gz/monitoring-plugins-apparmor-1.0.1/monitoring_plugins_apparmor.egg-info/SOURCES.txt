@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+bin/check_aa_profile
+bin/check_aa_status
+monitoring_plugins_apparmor/__init__.py
+monitoring_plugins_apparmor/apparmor_check.py
+monitoring_plugins_apparmor.egg-info/PKG-INFO
+monitoring_plugins_apparmor.egg-info/SOURCES.txt
+monitoring_plugins_apparmor.egg-info/dependency_links.txt
+monitoring_plugins_apparmor.egg-info/requires.txt
+monitoring_plugins_apparmor.egg-info/top_level.txt
