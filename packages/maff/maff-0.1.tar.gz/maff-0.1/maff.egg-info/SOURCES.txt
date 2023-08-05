@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+maff.py
+setup.cfg
+setup.py
+maff.egg-info/PKG-INFO
+maff.egg-info/SOURCES.txt
+maff.egg-info/dependency_links.txt
+maff.egg-info/top_level.txt
