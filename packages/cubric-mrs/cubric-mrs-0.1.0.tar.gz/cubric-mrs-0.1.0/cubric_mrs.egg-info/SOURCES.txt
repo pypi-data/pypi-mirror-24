@@ -1,0 +1,9 @@
+README.rst
+setup.py
+cubric_mrs/__init__.py
+cubric_mrs/_version.py
+cubric_mrs.egg-info/PKG-INFO
+cubric_mrs.egg-info/SOURCES.txt
+cubric_mrs.egg-info/dependency_links.txt
+cubric_mrs.egg-info/requires.txt
+cubric_mrs.egg-info/top_level.txt
