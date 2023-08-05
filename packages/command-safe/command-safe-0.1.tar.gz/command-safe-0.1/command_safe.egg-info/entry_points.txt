@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        csa = command_safe.main:csa
+        command-safe = command_safe.main:csa
+    

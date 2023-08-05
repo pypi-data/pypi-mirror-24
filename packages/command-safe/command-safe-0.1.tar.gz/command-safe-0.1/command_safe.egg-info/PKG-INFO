@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: command-safe
+Version: 0.1
+Summary: A simple way to save and recall commands with short aliases.
+Home-page: https://github.com/omar-ozgur/Command-Safe
+Author: Omar Ozgur
+Author-email: oozgur217@gmail.com
+License: MIT
+Description: Command Safe is a great tool when you find yourself commonly typing the same long commands. Why not save those commands to a short and convenient alias that you can recall at any time!
+Keywords: command,line,command-line,safe,save,alias
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Requires-Python:  >= 2.6

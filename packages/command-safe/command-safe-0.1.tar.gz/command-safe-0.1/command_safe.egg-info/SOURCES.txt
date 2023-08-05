@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+command_safe/__init__.py
+command_safe/config.py
+command_safe/main.py
+command_safe/safe.py
+command_safe.egg-info/PKG-INFO
+command_safe.egg-info/SOURCES.txt
+command_safe.egg-info/dependency_links.txt
+command_safe.egg-info/entry_points.txt
+command_safe.egg-info/requires.txt
+command_safe.egg-info/top_level.txt
