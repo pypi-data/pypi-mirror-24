@@ -1,0 +1,9 @@
+pandas
+numpy
+Pillow
+dpath
+nltk
+networkx
+pymongo
+py2neo
+pika
