@@ -1,0 +1,15 @@
+nova6/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nova6/helpers.py,sha256=oJzgn178T8XxNhZNXToa8aOR6Qgr2_StsuEScITntsw,3847
+nova6/importer.py,sha256=YkEY9O-l915evgoyVD4Ny-0Kya_aVjn6un6ahJCj4fc,1290
+nova6/nova6.py,sha256=_t1rT75dctRMAvcXy5DnYIQXk_dwjnyxMqvhtNIrqTM,9044
+nova6/nova6dl.py,sha256=L-iRCuwfUvYcGwhnR502elTym3PNDWccmg7jTYNenoM,2992
+nova6/novaprinter.py,sha256=bWxKamNhQUkq4Ds6ce6QBqPtrdM3RHDn9PTXtNyVsQ4,2841
+nova6/sgmllib3.py,sha256=ZzNtqe6EIYjCJCMRSx0IyJLKtOG_osU0A6qZL60sdtM,17844
+nova6/socks.py,sha256=Jjdx4Uohi3MHzcsj6qMYL1g9q71cDbD-HlfefQI7o5s,15863
+nova6-2.0.1.dist-info/DESCRIPTION.rst,sha256=K6RasI46MT_NK9WG32-D9xBP4zjqxTk2CbKhRfR6M50,3339
+nova6-2.0.1.dist-info/METADATA,sha256=fbK3s_pfSG4wQgJ-K9E4bskOFDEL1shJbg_918_bpkQ,4338
+nova6-2.0.1.dist-info/RECORD,,
+nova6-2.0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+nova6-2.0.1.dist-info/entry_points.txt,sha256=hYT2Cs4weJ7sOkjMImOAwoq17Ru3vppI-rD9IVwlr_U,73
+nova6-2.0.1.dist-info/metadata.json,sha256=xug-0BB55w018_7EFmTWNeASfZ-5xMLcDMxIFgYwRTE,1326
+nova6-2.0.1.dist-info/top_level.txt,sha256=gPbA8-lJvVpAizXvuaTO3b2IBpxepUkXjI76Qq87ijM,6

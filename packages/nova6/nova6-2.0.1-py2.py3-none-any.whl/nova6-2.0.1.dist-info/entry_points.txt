@@ -1,0 +1,4 @@
+[console_scripts]
+nova6 = nova6.nova6:main
+nova6dl = nova6.nova6dl:main
+
