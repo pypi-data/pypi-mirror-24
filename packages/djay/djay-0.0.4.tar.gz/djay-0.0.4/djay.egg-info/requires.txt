@@ -1,0 +1,5 @@
+pyyaml
+inflection
+jinja2
+click
+redbaron
