@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: django-pre-post
+Version: 1.0.0
+Summary: This package provides a framework for surveys and questionnaires
+Home-page: UNKNOWN
+Author: Silly Inventor
+Author-email: SillyInventor@gmail.com
+License: UNKNOWN
+Description: [![Build Status](https://travis-ci.org/CSnap/Django-pre-post.svg?branch=master)](https://travis-ci.org/CSnap/Django-pre-post)
+        
+        # Django-pre-post
+        This Django app provides the ability to create pre-post questions and answers.
+        
+Keywords: test,pre-post,questionnaire,survey
+Platform: UNKNOWN
