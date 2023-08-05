@@ -1,0 +1,11 @@
+requests
+docopt
+colorama
+termcolor
+requests
+packaging
+semver
+regex
+
+[:python_version < "3.6"]
+typing

@@ -1,0 +1,9 @@
+[console_scripts]
+workaround = workaround.cli:run
+
+[workaround_handlers]
+django = workaround.handlers.django:DjangoHandler
+github = workaround.handlers.github:GithubHandler
+npm = workaround.handlers.npm:NPMHandler
+pypi = workaround.handlers.pypi:PyPiHandler
+

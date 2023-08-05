@@ -1,0 +1,24 @@
+language: python
+
+python:
+   - 3.4
+   - 3.5
+   - 3.6
+   - nightly
+
+matrix:
+  allow_failures:
+    - python: nightly
+
+cache: pip
+
+git:
+  depth: 1
+
+install:
+   - pip install . --upgrade
+   - pip install pytest pytest-xdist flake8-isort responses pytest-flake8 setuptools_scm --upgrade
+
+script:
+   - python setup.py test
+   - workaround tests/test_files/
