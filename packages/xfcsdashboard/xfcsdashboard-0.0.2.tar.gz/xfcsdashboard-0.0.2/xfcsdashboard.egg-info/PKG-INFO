@@ -1,0 +1,80 @@
+Metadata-Version: 1.2
+Name: xfcsdashboard
+Version: 0.0.2
+Summary: Creates interactive plots for FCS file metadata (3.0, 3.1).
+Home-page: https://github.com/j4c0bs/xfcsdashboard
+Author: Jeremy Jacobs
+Author-email: pub@j4c0bs.net
+License: BSD
+Description: xfcs dashboard
+        ==============
+        
+        Create interactive plots for FCS file metadata (3.0, 3.1).
+        
+        Metadata plots are generated as a self contained html file.
+        Multiple display options are provided to hide or show parameters, calculated mean values, and customized time range.
+        By default, all numeric parameters located will be displayed. Parameters displayed can be located on the right side of the plot.
+        To hide (or display) a parameter, click on its name.
+        To hide all except one parameter, double click on its name.
+        
+        
+        Installation
+        ------------
+        
+        Using pip:
+        
+        ::
+        
+            pip install xfcsdashboard
+        
+        Without pip:
+        
+        ::
+        
+            python setup.py install
+        
+        
+        Command Line Usage
+        ------------------
+        
+        For stand alone usage:
+        ::
+        
+            xfcsdashboard -i <metadata.csv>
+        
+        
+        Used in combination with metadata extraction in xfcs (requires xfcs installed):
+        ::
+        
+            xfcsmeta [--options] --dashboard
+        
+        
+        Requirements
+        ------------
+        
+        - Python 3.5 or greater
+        - pandas
+        - plotly
+        
+        
+        License
+        -------
+        
+        xfcsdashboard is released under the BSD 2-clause license. See
+        `LICENSE <https://raw.githubusercontent.com/j4c0bs/xfcsdashboard/master/LICENSE.txt>`_
+        for details.
+        
+Keywords: FCS FCS3.0 FCS3.1 flow cytometry dashboard
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Requires-Python: >3.5

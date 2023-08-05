@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+xfcsdashboard/__init__.py
+xfcsdashboard/command.py
+xfcsdashboard/csv_data.py
+xfcsdashboard/dashboard.py
+xfcsdashboard/version.py
+xfcsdashboard.egg-info/PKG-INFO
+xfcsdashboard.egg-info/SOURCES.txt
+xfcsdashboard.egg-info/dependency_links.txt
+xfcsdashboard.egg-info/entry_points.txt
+xfcsdashboard.egg-info/requires.txt
+xfcsdashboard.egg-info/top_level.txt
