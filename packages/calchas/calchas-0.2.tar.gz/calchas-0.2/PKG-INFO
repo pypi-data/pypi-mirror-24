@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: calchas
+Version: 0.2
+Summary: A collection of package about computer algebra system
+Home-page: https://github.com/s-i-newton/calchas
+Author: Marc Chevalier
+Author-email: calchas@marc.chevalier
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries
