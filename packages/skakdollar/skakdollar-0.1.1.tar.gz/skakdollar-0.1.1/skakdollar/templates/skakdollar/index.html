@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>S как доллар</title>
+</head>
+
+<body>
+  <script>
+    function translate() {
+      var msg = window.message.value,
+          xhr = new XMLHttpRequest();
+      xhr.onload = function() {
+        response = JSON.parse(this.response)['response'];
+        window.result.innerHTML = response.join(', ');
+      }
+      xhr.open("POST", '{% url 'skakdollar:translate' %}');
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.send(JSON.stringify({'msg': msg}));
+    }
+  </script>
+  <form action='javascript:translate();'>
+    <input id="message" name="message" />
+    <input type="submit" value="Перевести"/>
+  </form>
+  <div id="result" name="result">
+  </div>
+</body>
+</html>
