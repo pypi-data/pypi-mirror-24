@@ -1,0 +1,3 @@
+include README.rst axe_selenium_python/src/axe.min.js
+recursive-include *.rst *.txt
+recursive-include axe_selenium_python/axe_tests/*.py
