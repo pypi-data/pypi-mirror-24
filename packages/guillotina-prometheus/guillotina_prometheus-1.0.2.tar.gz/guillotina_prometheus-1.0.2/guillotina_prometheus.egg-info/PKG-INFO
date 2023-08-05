@@ -1,0 +1,65 @@
+Metadata-Version: 1.0
+Name: guillotina-prometheus
+Version: 1.0.2
+Summary: prometheus integration into guillotina
+Home-page: https://github.com/onna/guillotina_prometheus
+Author: Nathan Van Gheem
+Author-email: vangheem@gmail.com
+License: UNKNOWN
+Description: Guillotina Prometheus Docs
+        ==========================
+        
+        This package aims to provide basic prometheus integration for guillotina.
+        
+        Configuration
+        -------------
+        
+        Just add a few lines to your config.yml::
+        
+          {"applications": ["guillotina_prometheus"],
+           "middlewares": ["guillotina_prometheus.middleware.middleware_factory"]}
+        
+           
+        
+        Dependencies
+        ------------
+        
+        Python >= 3.6
+        
+        
+        Installation
+        ------------
+        
+        This example will use virtualenv::
+        
+          virtualenv .
+          ./bin/python setup.py develop
+        
+        
+        Running
+        -------
+        
+        Most simple way to get running::
+        
+          ./bin/guillotina
+        
+        
+        1.0.2 (2017-08-08)
+        ------------------
+        
+        - Nothing changed yet.
+        
+        
+        1.0.1 (2017-08-08)
+        ------------------
+        
+        - Nothing changed yet.
+        
+        
+        1.0.0 (2017-08-08)
+        ------------------
+        
+        - Initial release
+          [vangheem]
+        
+Platform: UNKNOWN

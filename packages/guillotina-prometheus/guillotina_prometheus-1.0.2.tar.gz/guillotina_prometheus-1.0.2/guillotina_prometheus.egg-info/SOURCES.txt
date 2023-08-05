@@ -1,0 +1,16 @@
+CHANGELOG.rst
+MANIFEST.in
+Makefile
+README.rst
+config.json
+setup.cfg
+setup.py
+guillotina_prometheus/__init__.py
+guillotina_prometheus/api.py
+guillotina_prometheus/metrics.py
+guillotina_prometheus/middleware.py
+guillotina_prometheus.egg-info/PKG-INFO
+guillotina_prometheus.egg-info/SOURCES.txt
+guillotina_prometheus.egg-info/dependency_links.txt
+guillotina_prometheus.egg-info/requires.txt
+guillotina_prometheus.egg-info/top_level.txt
