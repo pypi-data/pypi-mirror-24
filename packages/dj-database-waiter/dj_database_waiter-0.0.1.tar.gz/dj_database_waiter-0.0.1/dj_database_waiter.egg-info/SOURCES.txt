@@ -1,0 +1,7 @@
+cmd.py
+setup.py
+dj_database_waiter.egg-info/PKG-INFO
+dj_database_waiter.egg-info/SOURCES.txt
+dj_database_waiter.egg-info/dependency_links.txt
+dj_database_waiter.egg-info/entry_points.txt
+dj_database_waiter.egg-info/top_level.txt
