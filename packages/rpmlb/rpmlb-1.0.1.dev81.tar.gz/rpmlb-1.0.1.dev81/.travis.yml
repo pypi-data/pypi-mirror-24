@@ -1,0 +1,42 @@
+language: python
+
+python:
+- '3.6'
+- '3.5'
+- '3.4'
+
+matrix:
+  include:
+    - python: '3.4'
+      env:
+      - CONTAINER_IMAGE=jsmigel/centos-epel DNF=yum
+    - python: '3.6'
+      env:
+      - TOXENV=style EXTRA_PKGS="ShellCheck which"
+
+sudo: required
+dist: trusty
+
+services:
+  - docker
+
+before_install:
+  - |
+    if [ "x${CONTAINER_IMAGE}" != 'x' ]; then
+        sed -i "/^FROM / s@fedora@${CONTAINER_IMAGE}@" Dockerfile
+    fi
+
+install:
+  - |
+    docker build \
+        --build-arg PYTHON=python${TRAVIS_PYTHON_VERSION} \
+        --build-arg EXTRA_PKGS="${EXTRA_PKGS}" \
+        --build-arg DNF=${DNF:=dnf} \
+        -t rpmlb \
+        .
+
+script:
+  - |
+    docker run \
+        -e TOXENV=${TOXENV:=py${TRAVIS_PYTHON_VERSION/./}} \
+        -t rpmlb
