@@ -1,0 +1,5 @@
+pytest
+coverage
+pylint
+flake8
+flake8_docstrings

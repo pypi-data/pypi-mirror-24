@@ -1,0 +1,3 @@
+[console_scripts]
+vinisto_engine = vinisto.deduction:run
+
