@@ -1,0 +1,7 @@
+setup.py
+submitTaRGET.egg-info/PKG-INFO
+submitTaRGET.egg-info/SOURCES.txt
+submitTaRGET.egg-info/dependency_links.txt
+submitTaRGET.egg-info/entry_points.txt
+submitTaRGET.egg-info/requires.txt
+submitTaRGET.egg-info/top_level.txt
