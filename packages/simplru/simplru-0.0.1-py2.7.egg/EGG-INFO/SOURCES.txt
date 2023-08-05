@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+simplru/__init__.py
+simplru/simplru.py
+simplru.egg-info/PKG-INFO
+simplru.egg-info/SOURCES.txt
+simplru.egg-info/dependency_links.txt
+simplru.egg-info/not-zip-safe
+simplru.egg-info/top_level.txt

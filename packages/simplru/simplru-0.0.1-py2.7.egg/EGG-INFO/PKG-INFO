@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: simplru
+Version: 0.0.1
+Summary: A backport of Python 3 LRU Cache functionality for Python 2
+Home-page: https://github.com/mostafa/simplru
+Author: Mostafa Moradian
+Author-email: mostafamoradian0@gmail.com
+License: GPLv3
+Description: 
+        Simplru
+        =====
+        
+        A backport of Python 3 LRU Cache functionality for Python 2
+        
+        For more information, visit github page of `the project <https://github.com/mostafa/simplru>`_.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
