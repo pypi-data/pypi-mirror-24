@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: indras_net
+Version: 1.21
+Summary: A framework for agent-based modeling in Python.
+Home-page: http://github.com/gcallah/indra
+Author: Gene Callahan and Nathan Conroy
+Author-email: gcallah@mac.com
+License: GNU
+Description: UNKNOWN
+Platform: UNKNOWN
