@@ -1,0 +1,11 @@
+QiPy-1.0.5.dist-info/DESCRIPTION.rst,sha256=kQZ0du_7j3TjKEBIjL5i6zbww9BBYASyTTs6OsWXobU,2359
+QiPy-1.0.5.dist-info/METADATA,sha256=Y7QWr5mazdAd0rjrygkoBHqz51s6lXEgvlqjtjrjruk,3010
+QiPy-1.0.5.dist-info/RECORD,,
+QiPy-1.0.5.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+QiPy-1.0.5.dist-info/metadata.json,sha256=Gq22FyocsXyDY5weNgaaJygXX4P1zxACEVXVk8DiKFA,823
+QiPy-1.0.5.dist-info/top_level.txt,sha256=t_jO5vBZoh96Y1K7d4h0685XvQXAIvIgviukfIRu30k,5
+qipy/__init__.py,sha256=xRo5rBAgBZLvneyVBjp7UfPnpIf56IaueUbYnomHd2E,196
+qipy/class_group.py,sha256=v7fpvtbcMxD0Z_ZN57xLHQ1UF-o-VdmvGDMMkftoDJI,14804
+qipy/ideal.py,sha256=7lt_tHeHAMtK8jtIErYIsloy1RA3r956Wa_Cd-2kWVc,11588
+qipy/quadratic_integer.py,sha256=a5tX-H2aX5M2A0hySb3aJVZozGJKEk5GLkUzRKFVSh8,18802
+qipy/utilities.py,sha256=aPpy4VZhkyRtk5wQiuBlIh1pMJ6pZc6VYpC88hmsydo,3367
