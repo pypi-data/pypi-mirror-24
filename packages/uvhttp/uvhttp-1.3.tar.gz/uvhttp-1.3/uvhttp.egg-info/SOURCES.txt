@@ -1,0 +1,10 @@
+setup.py
+uvhttp/__init__.py
+uvhttp/http.py
+uvhttp/pool.py
+uvhttp/utils.py
+uvhttp.egg-info/PKG-INFO
+uvhttp.egg-info/SOURCES.txt
+uvhttp.egg-info/dependency_links.txt
+uvhttp.egg-info/requires.txt
+uvhttp.egg-info/top_level.txt
