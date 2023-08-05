@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: addresslib3
+Version: 0.4.27
+Summary: Email Validation forked from Flanker, compatible with python3
+Home-page: https://github.com/EncircleInc/addresslib
+Author: Mailgun Inc., Encircle Inc.
+Author-email: dev@encircleapp.com
+License: Apache 2
+Description: *******
+        addresslib3
+        *******
+        
+        This is a port of just address spec parsing/validating,
+        for those of us who have made the jump to python3.
+        
+        In a form suitable for inclusion as a submodule.
+        
+Platform: UNKNOWN
