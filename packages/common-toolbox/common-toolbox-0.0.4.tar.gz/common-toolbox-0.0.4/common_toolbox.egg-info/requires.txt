@@ -1,0 +1,5 @@
+scipy
+pymysql
+pymongo
+pillow
+nose
