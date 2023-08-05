@@ -1,0 +1,14 @@
+Landsat578-0.3.77.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+Landsat578-0.3.77.dist-info/METADATA,sha256=3c3Rd-Z974aQMRWWAgriVz_DxHkGFKHntHbSZLXlUNs,913
+Landsat578-0.3.77.dist-info/RECORD,,
+Landsat578-0.3.77.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+Landsat578-0.3.77.dist-info/entry_points.txt,sha256=-JF6p49EPtjrxEd_JKVa1PjmC3sBo1X-PI9PdBB3yzk,54
+Landsat578-0.3.77.dist-info/metadata.json,sha256=E4PFN9AwpKQGHKR6yde4Z6sMMHYUbKzVtgKe_NHlOvY,1230
+Landsat578-0.3.77.dist-info/top_level.txt,sha256=mZjyu7fGv-aCjivIIwDAzLnQJbee3Quzdh-pQdfMjkY,8
+landsat/__init__.py,sha256=h8jBwhpK3Y57hBDclDX3nUSlq27dkmIinko-MVrz0V4,879
+landsat/download_composer.py,sha256=_YtHtEBMGwZbWxnjqvO80tVpLpreoatXA1y4ymjg_XI,2442
+landsat/landsat.py,sha256=bfyzdG31vKa_wSrJP6cJ7jAS7HSotzWwEVOFy7hf324,3147
+landsat/pull_usgs.py,sha256=gNigvcF6AbJ42rpmNH729J14xXBUkNFN1RFWjrILyvw,2041
+landsat/sample_script.py,sha256=U7JRZ62PNoapFkcm2pGws53XrIqMUR8dVqm8ajT4liI,760
+landsat/usgs_download.py,sha256=5JA7dQNDlCv76tNhwWXV6sSKrCgeuvDKXrw1aXGO620,7308
+landsat/web_tools.py,sha256=X7584apBVVbdnJI15Q2Lafx75hCoZroF97pyQI4Z47k,7043
