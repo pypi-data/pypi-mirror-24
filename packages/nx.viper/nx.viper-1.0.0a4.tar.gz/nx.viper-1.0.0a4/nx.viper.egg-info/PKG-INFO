@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: nx.viper
+Version: 1.0.0a4
+Summary: Application development framework for twisted.
+Home-page: https://github.com/Nixiware/viper
+Author: Nixiware
+Author-email: contact@nixiware.com
+License: MIT
+Description: Viper
+        =======================
+        
+        Introduction
+        ------------
+        Viper is an application development framework for twisted heavely inspired by PHP's Zend framework.
+        
+        Notice
+        ------------
+        Viper is currently in Alpha stage.
+Keywords: nixiware viper twisted
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
