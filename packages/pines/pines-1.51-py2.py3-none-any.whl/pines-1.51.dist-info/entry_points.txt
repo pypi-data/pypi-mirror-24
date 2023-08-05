@@ -1,0 +1,3 @@
+[console_scripts]
+pines_config = pines.configure:print_config
+
