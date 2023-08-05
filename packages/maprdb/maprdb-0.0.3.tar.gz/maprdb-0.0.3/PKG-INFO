@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: maprdb
+Version: 0.0.3
+Summary: API to work with MapR DB. Wrapper of Java API.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: mapr db json
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: License :: OSI Approved :: Apache Software License
