@@ -1,0 +1,16 @@
+appdirs
+ecdsa
+pylibscrypt
+scrypt
+pycrypto
+urllib3>=1.21.1
+certifi
+ujson
+w3lib
+maya
+toolz
+funcy
+langdetect
+diff-match-patch
+prettytable
+voluptuous
