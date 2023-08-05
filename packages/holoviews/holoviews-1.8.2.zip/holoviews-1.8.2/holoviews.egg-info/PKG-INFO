@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: holoviews
+Version: 1.8.2
+Summary: Stop plotting your data - annotate your data and let it visualize itself.
+Home-page: http://www.holoviews.org
+Author: IOAM
+Author-email: holoviews@gmail.com
+License: BSD
+Description: Consult README.rst
+Platform: Windows
+Platform: Mac OS X
+Platform: Linux
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
