@@ -1,0 +1,9 @@
+#!python
+
+import example_maths
+from example_maths.utils import json_logger
+
+LOGGER = json_logger.get_json_logger()
+
+if __name__ == "__main__":
+    LOGGER.info(example_maths.add(7, 5))

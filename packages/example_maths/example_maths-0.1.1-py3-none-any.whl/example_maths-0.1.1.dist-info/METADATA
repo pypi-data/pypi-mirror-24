@@ -1,0 +1,58 @@
+Metadata-Version: 2.0
+Name: example-maths
+Version: 0.1.1
+Summary: example python package performing addition
+Home-page: https://github.com/mwtmurphy/python-plugins
+Author: mwtmurphy
+Author-email: mwtmurphy@gmail.com
+License: GPLv3+
+Keywords: example plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: markdown
+Requires-Dist: python-json-logger
+
+# Overview
+
+This repo is for creating best practice python packages. Marco Bonzanini's [definition](https://marcobonzanini.com/2015/07/01/how-to-develop-and-distribute-python-packages/) of a package is as follows:
+
+> In Python, a simple source file containing the definitions of functions, classes and variables, is a module... On the other side, a package is a folder containing an \_\_init\_\_.py file, as well as other different Python source files. Typically a package contains several modules and sub-packages.
+
+This repo assumes you have understanding how to set up a Python Module and have done so before going any further.
+
+
+# Unit Testing
+
+For unit testing, Dive Into Python 3's example of [unit testing](http://www.diveintopython3.net/unit-testing.html) is a great resource. It's a simple Roman Numeral conversion example that walks you through the bulk of what you'll need to know.
+
+
+# Logging
+
+Should an error occur when the package is live, logs are a great method to provide information to stdout. Jorgen Schaefer's [guide to logging](https://www.loggly.com/ultimate-guide/python-logging-basics/) establishes logging convention, and the developer's role.
+
+As logging doens't function part of the example 'maths' module, I'm currently of the opinion that it can be kept in a seperate utils module
+
+
+# Error Handling
+
+Naturally this moves us on to custom error handling where Aaron Maxwell's [exceptional logging of exceptions](https://www.loggly.com/blog/exceptional-logging-of-exceptions-in-python/) article takes centre stage. It's a moderate advancement on the error handling you were used to in the unit testing example, but does allow us to capture and relay traceback information in defined patterns.
+
+It additionally defines anti-patterns for which neither the Unit Testing or Loggging links provide, i.e. what is considered unacceptable logging.
+
+### Notes 
+
+* This tutorial assumes you know about Python classes. If not, look no further than Python's [classes tutorial](https://docs.python.org/3/tutorial/classes.html)
+
+* 'exc_info' returns 'NoneType: None' should 'if else raise' statements be performed. 
+
+
+# Creating a Package
+
+* Python's own [packaging tutorial](https://packaging.python.org/tutorials/distributing-packages/) covers the basic scaffolding.
+* Peter Downs' article on [getting setup with PyPI](http://peterdowns.com/posts/first-time-with-pypi.html). It solves some of the problems around uploading packages to PyPI not covered in the packaging tutorial, and shows you how to avoid repetitive authentication with (admittedly) a plain text file.
+
+
