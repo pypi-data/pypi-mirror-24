@@ -1,0 +1,10 @@
+[console_scripts]
+mimir = mimir_cli.main:main
+
+[mimir_cli.cli]
+complete = mimir_cli.main:Complete
+login = mimir_cli.main:Login
+logout = mimir_cli.main:Logout
+submit = mimir_cli.main:Submit
+version = mimir_cli.main:Version
+
