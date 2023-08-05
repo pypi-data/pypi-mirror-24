@@ -1,0 +1,14 @@
+{
+	"imageId": "",
+	"name": "",
+	"kubeConfig": "",
+	"acrImagePullSecret": "",
+	"dataCollection": {
+		"appInsightsEnabled": false,
+		"appInsightsKey": "",
+		"storageEnabled": false,
+		"storageKey": "",
+		"eventHubEnabled": false,
+		"eventHubKey": ""
+	}
+}
