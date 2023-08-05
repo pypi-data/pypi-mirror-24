@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+config.py
+run.py
+setup.py
+Recopytex/__init__.py
+Recopytex/models.py
+Recopytex/views.py
+Recopytex/apis/__init__.py
+Recopytex/apis/evals.py
+Recopytex/apis/students.py
+Recopytex/apis/tribes.py
+recopytex.egg-info/PKG-INFO
+recopytex.egg-info/SOURCES.txt
+recopytex.egg-info/dependency_links.txt
+recopytex.egg-info/requires.txt
+recopytex.egg-info/top_level.txt
