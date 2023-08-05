@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: opn-oss-py-common
+Version: 17.8.4
+Summary: UNKNOWN
+Home-page: https://github.com/opn-oss/opn-oss-py-common
+Author: Adam Jorgensen
+Author-email: adam.jorgensen.za@gmail.com
+License: MIT
+Description: OpenDNA OSS Python Common
+        =========================
+        
+        A library of common Python code used in other OpenDNA OSS Python projects.
+        
+        
+        Contents
+        --------
+        
+        1. Installation
+        
+        
+        Installation
+        ------------
+        ``pip install opn-oss-py-common``
+        
+Keywords: utilities decorators
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: Jython
+Classifier: Topic :: Utilities
