@@ -1,0 +1,6 @@
+numpy
+matplotlib
+
+[testing]
+pytest>=3.1
+pytest-mpl>=0.8
