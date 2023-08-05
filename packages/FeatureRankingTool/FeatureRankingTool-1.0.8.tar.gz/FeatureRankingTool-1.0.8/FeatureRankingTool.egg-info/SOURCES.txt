@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+FeatureRankingTool/RankingTool.py
+FeatureRankingTool/__init__.py
+FeatureRankingTool/test.py
+FeatureRankingTool.egg-info/PKG-INFO
+FeatureRankingTool.egg-info/SOURCES.txt
+FeatureRankingTool.egg-info/dependency_links.txt
+FeatureRankingTool.egg-info/top_level.txt
+FeatureRankingTool.egg-info/zip-safe
