@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: CaseRecommender
+Version: 0.0.20
+Summary: A recommender systems framework for Python
+Home-page: https://github.com/ArthurFortes/CaseRecommender
+Author: Arthur Fortes
+Author-email: fortes.arthur@gmail.com
+License: GPL3 License
+Download-URL: https://github.com/ArthurFortes/CaseRecommender/tarball/0.0.20
+Description: UNKNOWN
+Keywords: recommender systems,framework,collaborative filtering,content-based filtering
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
