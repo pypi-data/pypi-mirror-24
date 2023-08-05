@@ -1,0 +1,11 @@
+{
+	"driverProgram": "driver",
+	"description": "",
+	"modelType": "Registered",
+	"modelIds": [],
+	"assets": [],
+	"targetRuntime": {
+		"runtimeType": "",
+		"properties": {}
+	}
+}
