@@ -1,0 +1,9 @@
+git_lazy-0.2.1.dist-info/DESCRIPTION.rst,sha256=vbeXlqQzdwjEnNlk1OG4LGAPnWxbk2uLJ_ucVvDsRRg,2769
+git_lazy-0.2.1.dist-info/METADATA,sha256=r9vYBlx5aQ9pfr0-wycVvXKBJsndG4I5j0Sj0gGRWRg,3610
+git_lazy-0.2.1.dist-info/RECORD,,
+git_lazy-0.2.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+git_lazy-0.2.1.dist-info/entry_points.txt,sha256=UGhGI88lToR3Uh2ptrg2j715wkpszvIEIOSwtpbT8qQ,50
+git_lazy-0.2.1.dist-info/metadata.json,sha256=Z5gw-NyxkKjAkTxAqa_B_EX0IbIM23HJ9RnP_mMirFA,1135
+git_lazy-0.2.1.dist-info/top_level.txt,sha256=nt27F17NbQ4DggcPM_pSynhVOcVNNJnlDAgViKDRirQ,8
+gitlazy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitlazy/gitlazy.py,sha256=6UHZeQt2CxoLJwTkMpQnpxrmytICBSopavg5SbVoMoc,8321
