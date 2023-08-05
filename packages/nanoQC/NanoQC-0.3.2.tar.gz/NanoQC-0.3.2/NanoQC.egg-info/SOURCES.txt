@@ -1,0 +1,11 @@
+README.rst
+setup.py
+NanoQC.egg-info/PKG-INFO
+NanoQC.egg-info/SOURCES.txt
+NanoQC.egg-info/dependency_links.txt
+NanoQC.egg-info/entry_points.txt
+NanoQC.egg-info/requires.txt
+NanoQC.egg-info/top_level.txt
+nanoQC/__init__.py
+nanoQC/nanoQC.py
+nanoQC/version.py
