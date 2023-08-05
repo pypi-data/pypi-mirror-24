@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: ady
+Version: 0.61
+Summary: ADY - Schedule between Baku Sumgait Baku
+Home-page: https://github.com/Chingiz/ADY-Hereket-Cedveli
+Author: Chingiz Huseynzade
+Author-email: chingiz.h@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/Chingiz/ADY-Hereket-Cedveli/archive/0.61.tar.gz
+Description: UNKNOWN
+Keywords: ady,schedule,baku,sumgait
+Platform: UNKNOWN
+Requires: humanfriendly
+Requires: fabulous
+Requires: bs4
+Requires: BeautifulSoup
+Requires: requests
