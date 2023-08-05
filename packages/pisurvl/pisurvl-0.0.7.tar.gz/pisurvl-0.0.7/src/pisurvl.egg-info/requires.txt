@@ -1,0 +1,9 @@
+google-api-python-client
+imutils
+mockito
+numpy
+oauth2client
+parameterized
+Pillow
+pytest
+PyYAML
