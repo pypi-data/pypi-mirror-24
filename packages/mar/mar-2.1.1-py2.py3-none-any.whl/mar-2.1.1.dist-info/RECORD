@@ -1,0 +1,15 @@
+mar-2.1.1.dist-info/DESCRIPTION.rst,sha256=T5E---p3LNc-DE0flco6n82PDvktJ8w8PcuzYC2XuNY,1327
+mar-2.1.1.dist-info/METADATA,sha256=LC-bY2xlT4CouKQlpkahVXw47Js1rh8mw6rM6jaq4n8,2435
+mar-2.1.1.dist-info/RECORD,,
+mar-2.1.1.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+mar-2.1.1.dist-info/entry_points.txt,sha256=9tBDB5VNB-q-ClJ2C_vLULb65CLI8Nkp7IfaPa3lx40,41
+mar-2.1.1.dist-info/metadata.json,sha256=pqtn1I2BO0PPAVDAcD8XICPojg4TL5iko1nMPPtXo9A,1336
+mar-2.1.1.dist-info/top_level.txt,sha256=7LJsnJ_WKajnbmqyz0mX19-_sXFDcOTqObxT6CJi0R4,7
+mardor/__init__.py,sha256=SoPMZriauWl5iOAHAMSCnsmBjXQgonqDJTp2Q80OxS8,492
+mardor/cli.py,sha256=9CxMy8ZTX_oweFR4AvhaEhxXA7gcg7LkwTd0sAoFcOo,8488
+mardor/format.py,sha256=wYdPQilwAArfTcsx1eVmCjjHBphpPGIyjcCkZ1GOvbg,3600
+mardor/mozilla.py,sha256=TnpkD7czfzPkdW712Nr9saCuawbVPZESlKDEGmVGheM,3541
+mardor/reader.py,sha256=7gGlqEhIkmgJ9H3tWWRucnAgM-rcCT94_xM8tY-rtyQ,6343
+mardor/signing.py,sha256=orOtCsd6r_FJC2jzf_VQzCGwV0gMe85vXvzcULMKgco,5180
+mardor/utils.py,sha256=MesXjNcnMHL4kvPxSDHG6Dg4nBcdAqXAL5_y78kKk84,6358
+mardor/writer.py,sha256=1Fmg0PNjkaB1s6T33_-7A4NDD9aLCQBYowH-csnlsw0,11082
