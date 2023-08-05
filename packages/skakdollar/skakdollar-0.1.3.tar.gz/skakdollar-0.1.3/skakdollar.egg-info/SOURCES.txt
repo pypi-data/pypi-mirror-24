@@ -1,0 +1,12 @@
+setup.py
+skakdollar/__init__.py
+skakdollar/apps.py
+skakdollar/translate.py
+skakdollar/urls.py
+skakdollar/views.py
+skakdollar.egg-info/PKG-INFO
+skakdollar.egg-info/SOURCES.txt
+skakdollar.egg-info/dependency_links.txt
+skakdollar.egg-info/top_level.txt
+skakdollar/static/skakdollar/css/main.css
+skakdollar/templates/skakdollar/index.html
