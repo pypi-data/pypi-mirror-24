@@ -1,0 +1,7 @@
+markovtextgen.py
+setup.py
+markovtextgen.egg-info/PKG-INFO
+markovtextgen.egg-info/SOURCES.txt
+markovtextgen.egg-info/dependency_links.txt
+markovtextgen.egg-info/requires.txt
+markovtextgen.egg-info/top_level.txt
