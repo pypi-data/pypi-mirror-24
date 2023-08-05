@@ -1,0 +1,9 @@
+setup.py
+mastercard_bintable.egg-info/PKG-INFO
+mastercard_bintable.egg-info/SOURCES.txt
+mastercard_bintable.egg-info/dependency_links.txt
+mastercard_bintable.egg-info/requires.txt
+mastercard_bintable.egg-info/top_level.txt
+mastercardbintable/__init__.py
+mastercardbintable/bintablelistingservice.py
+mastercardbintable/resourceconfig.py
