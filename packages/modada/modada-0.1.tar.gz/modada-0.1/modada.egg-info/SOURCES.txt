@@ -1,0 +1,7 @@
+setup.py
+MODADA/__init__.py
+modada.egg-info/PKG-INFO
+modada.egg-info/SOURCES.txt
+modada.egg-info/dependency_links.txt
+modada.egg-info/requires.txt
+modada.egg-info/top_level.txt
