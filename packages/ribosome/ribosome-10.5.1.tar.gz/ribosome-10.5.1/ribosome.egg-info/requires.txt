@@ -1,0 +1,3 @@
+amino>=10.4.0
+neovim
+pyrsistent
