@@ -1,0 +1,6 @@
+httplib2
+ujson
+jsonschema
+jmespath
+pandas==0.20.1
+ase==3.11
