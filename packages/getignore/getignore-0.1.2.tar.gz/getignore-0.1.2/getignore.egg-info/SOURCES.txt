@@ -1,0 +1,9 @@
+README.rst
+getignore.py
+setup.py
+getignore.egg-info/PKG-INFO
+getignore.egg-info/SOURCES.txt
+getignore.egg-info/dependency_links.txt
+getignore.egg-info/entry_points.txt
+getignore.egg-info/requires.txt
+getignore.egg-info/top_level.txt
