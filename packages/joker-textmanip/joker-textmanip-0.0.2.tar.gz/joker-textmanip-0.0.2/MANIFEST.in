@@ -1,0 +1,2 @@
+include joker/textmanip/VERSION
+include requirements.txt
