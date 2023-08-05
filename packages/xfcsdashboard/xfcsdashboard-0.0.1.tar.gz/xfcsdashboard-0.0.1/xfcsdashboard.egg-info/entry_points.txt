@@ -1,0 +1,3 @@
+[console_scripts]
+xfcsdashboard = xfcsdashboard.command:main
+
