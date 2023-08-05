@@ -1,0 +1,11 @@
+setup.py
+fnplus/__init__.py
+fnplus/curried.py
+fnplus/either.py
+fnplus/iterable.py
+fnplus/monad.py
+fnplus.egg-info/PKG-INFO
+fnplus.egg-info/SOURCES.txt
+fnplus.egg-info/dependency_links.txt
+fnplus.egg-info/not-zip-safe
+fnplus.egg-info/top_level.txt
