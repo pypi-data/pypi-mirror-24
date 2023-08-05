@@ -1,0 +1,13 @@
+Audit_Alembic-0.2.0.dist-info/DESCRIPTION.rst,sha256=FnH2JmkkZukXpNSvCRoDSk3d15am1_bHMZc9Nv3opoo,3716
+Audit_Alembic-0.2.0.dist-info/METADATA,sha256=GCEuDnAaZUeDte82E_FrgFis2H6VO-7Df3gnIcQs38o,4915
+Audit_Alembic-0.2.0.dist-info/RECORD,,
+Audit_Alembic-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Audit_Alembic-0.2.0.dist-info/metadata.json,sha256=j2OGHRhR39KoPzh_ZAZCI7iO7bcm4BL_SOqszYmxFCw,1312
+Audit_Alembic-0.2.0.dist-info/top_level.txt,sha256=wyUzSiTcxGBzaKR0HmGtbMO9rT45-eNox9JnDuJvX84,14
+audit_alembic/__init__.py,sha256=in6W5C3TpSuXUcnN_8o3bocGd4SbfcK-JdTah5yDVXU,204
+audit_alembic/__main__.py,sha256=FkztoX_mWbwxf53yq62LKWNHHMI_z91gGWbhgkeZc8g,373
+audit_alembic/audit.py,sha256=1H_hkfosAeqwwYhmjra44wknd-ptu0dLZkYwUEUs2-k,11894
+audit_alembic/base.py,sha256=PNkyQpWn_I5KakbTixa2X6m_xWzTXygJh0KyGwaKhTk,13421
+audit_alembic/cli.py,sha256=i5ET6BEbHv28Np2SQCGGBcDoHfGLa8D3wbjz9MhEbfk,690
+audit_alembic/exc.py,sha256=61wRS3azXKgstInZr0jpIBZZqdO5-lJnMC3dtwn52r0,344
+audit_alembic/util.py,sha256=lpmenCM8BGI5I-FINhYz8FYBfWOuNbi89UwV_4-3M_s,266
