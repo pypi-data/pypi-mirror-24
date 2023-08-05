@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+sovrin/__init__.py
+sovrin/__metadata__.py
+sovrin/manifest.txt
+sovrin/pool_transactions_live
+sovrin/pool_transactions_local
+sovrin/pool_transactions_sandbox
+sovrin/transactions_live
+sovrin/transactions_local
+sovrin/transactions_sandbox
+sovrin_dev.egg-info/PKG-INFO
+sovrin_dev.egg-info/SOURCES.txt
+sovrin_dev.egg-info/dependency_links.txt
+sovrin_dev.egg-info/requires.txt
+sovrin_dev.egg-info/top_level.txt
