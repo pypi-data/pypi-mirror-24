@@ -1,0 +1,10 @@
+i2crelay-0.1.0.dist-info/top_level.txt,sha256=Bb5fzGxre2_y9kAoA2Gl2yPQRmN-ddoMlhCBhRWQLzY,9
+i2crelay-0.1.0.dist-info/DESCRIPTION.rst,sha256=Y3MXNdLtvXBGBfstXxlJSSNj7pSm4yQfpp0FUCaNyaU,3613
+i2crelay-0.1.0.dist-info/entry_points.txt,sha256=bG6t-lffNxsDkoSaS9fpjaEk-3fv_n4rc3yvQejSUeM,56
+i2crelay-0.1.0.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
+i2crelay-0.1.0.dist-info/METADATA,sha256=EUva1yKv4z8o0XF1wF1gBWJb4ZBm5TNBBRDDQkYBmdY,4634
+i2crelay-0.1.0.dist-info/RECORD,,
+i2crelay-0.1.0.dist-info/metadata.json,sha256=p6FTk9zBoNGWZeXcKfTDPL6Rwt7Kqu9Fb_5U57_daCM,1319
+i2crelay/__init__.py,sha256=BnRKWJgwRg7byIk6vpm9Hjv3Re3ofgOfE8ra9ZhkFus,472
+i2crelay/i2crelay.py,sha256=vWynb-_i8KfRlsWlnZ2L0Wg8bcsndcfmYcxXyrL3q9Q,2121
+i2crelay/cmdlinetool/__init__.py,sha256=Rye5tAYKs_fKiXtxl2z6RvICiHVew9Esgrcd5lmmugs,1810
