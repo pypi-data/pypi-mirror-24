@@ -1,0 +1,35 @@
+Metadata-Version: 1.2
+Name: textbot
+Version: 0.1.0
+Summary: Read a column of strings from csv, parse wordnet pos_tags to lemmas, enumerate most_common lemmas, weight strings via top scoring lemmas
+Home-page: http://github.com/3pin/textbot
+Author: 3pin
+Author-email: 3pin.audiovisual@gmail.com
+License: LICENSE.txt
+Description: This python package prevalent trends from a large list of short statements.
+        Operation:
+            Read a column as an array of strings from csv file,
+            Give them their pos-tag via the PENN treebank
+            Convert to wordnet post-tags and keep only: ADJ / VERB / NOUN / ADV
+                Option for user to save this lemmas-array back to csv file
+            Enumerate most_common lemmas
+            Weight each string in the array according to the most-common lemmas it contains
+                Option for user to save this weight-array back to the csv file
+        
+Keywords: NLP,IE,wordnet,nltk
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: General
+Requires-Python: >=3

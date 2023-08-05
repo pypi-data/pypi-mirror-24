@@ -1,0 +1,11 @@
+tkinter.filedialog
+tkinter.simpledialog
+pandas
+nltk
+re
+json
+operator
+collections
+string
+UnicodeDammit
+bs4

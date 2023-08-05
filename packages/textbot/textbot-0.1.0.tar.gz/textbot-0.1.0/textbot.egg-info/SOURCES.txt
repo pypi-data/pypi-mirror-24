@@ -1,0 +1,13 @@
+README.txt
+setup.py
+textbot/__init__.py
+textbot/__main__.py
+textbot/csv_ops.py
+textbot/pos_count.py
+textbot/pos_tag.py
+textbot/select_filename.py
+textbot.egg-info/PKG-INFO
+textbot.egg-info/SOURCES.txt
+textbot.egg-info/dependency_links.txt
+textbot.egg-info/requires.txt
+textbot.egg-info/top_level.txt
