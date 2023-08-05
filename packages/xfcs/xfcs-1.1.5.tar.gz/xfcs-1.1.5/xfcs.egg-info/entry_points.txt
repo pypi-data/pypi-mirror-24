@@ -1,0 +1,4 @@
+[console_scripts]
+xfcsdata = xfcs.get_data:main
+xfcsmeta = xfcs.get_metadata:main
+
