@@ -1,0 +1,3 @@
+[console_scripts]
+comtool = COMTool.Main:main
+
