@@ -1,0 +1,60 @@
+Metadata-Version: 2.0
+Name: secret-handshake
+Version: 0.1.0.dev1
+Summary: A module that implements Secret Handshake as specified in "Designing a Secret Handshake: Authenticated
+Requires-Dist: pynacl (==1.1.2)
+Provides-Extra: all
+Requires-Dist: Sphinx (>=1.6.2); extra == 'all'
+Requires-Dist: check-manifest (>=0.25); extra == 'all'
+Requires-Dist: coverage (>=4.0); extra == 'all'
+Requires-Dist: isort (>=4.2.2); extra == 'all'
+Requires-Dist: pep257 (>=0.7.0); extra == 'all'
+Requires-Dist: pytest-cov (>=1.8.0); extra == 'all'
+Requires-Dist: pytest (>=3.1.1); extra == 'all'
+Requires-Dist: pytest-asyncio (==0.6.0); extra == 'all'
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=1.6.2); extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: check-manifest (>=0.25); extra == 'tests'
+Requires-Dist: coverage (>=4.0); extra == 'tests'
+Requires-Dist: isort (>=4.2.2); extra == 'tests'
+Requires-Dist: pep257 (>=0.7.0); extra == 'tests'
+Requires-Dist: pytest-cov (>=1.8.0); extra == 'tests'
+Requires-Dist: pytest (>=3.1.1); extra == 'tests'
+Requires-Dist: pytest-asyncio (==0.6.0); extra == 'tests'
+
+Key Exchange as a Capability System" (Dominic Tarr, 2015).
+Home-page: https://github.com/pferreir/PySecretHandshake
+Author: PySecretHandshake Contributors
+Author-email: pedro@dete.st
+License: MIT
+Description: **WORK IN PROGRESS**
+        
+        PySecretHandshake - Secret Handshake in Python
+        ==============================================
+        
+        
+        |build-status| |code-coverage|
+        
+        This module implements Secret Handshake as specified in Dominc Tarr's paper `"Designing a Secret Handshake: Authenticated
+        Key Exchange as a Capability System" <http://dominictarr.github.io/secret-handshake-paper/shs.pdf>`_ (Dominic Tarr, 2015).
+        
+        **Please, don't use this package in production. The implementation hasn't yet been carefully checked.**
+        
+        .. |build-status| image:: https://travis-ci.org/pferreir/PySecretHandshake.svg?branch=master
+                           :alt: Travis Build Status
+                           :target: https://travis-ci.org/pferreir/PySecretHandshake
+        .. |code-coverage| image:: https://coveralls.io/repos/github/pferreir/PySecretHandshake/badge.svg?branch=master
+                           :alt: Code Coverage
+                           :target: https://coveralls.io/github/pferreir/PySecretHandshake?branch=master
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

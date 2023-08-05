@@ -1,0 +1,13 @@
+secret_handshake/__init__.py,sha256=g6bCqxIjZxebJ7WWh4J08BgjexTpetoXO11K0E2L0ak,1222
+secret_handshake/boxstream.py,sha256=XpJynpehQdXOLDqzm9tSLAkdjhxRBEHYDxhF6_1jQrU,2462
+secret_handshake/crypto.py,sha256=fZcCqaNBYK2Tis540LCJ-BB7C19FT_JwSHxjNqxJGCc,8133
+secret_handshake/network.py,sha256=IyE7mp8f6NJBrVmurSTZmRXrSVuS4RiJG856fQfk0Ck,4456
+secret_handshake/test_boxstream.py,sha256=NqFJ5QVkQr0j81iaqsb2F2LkoGSZB7YtGS8-Wze9wiA,3721
+secret_handshake/test_crypto.py,sha256=iNJbJH-rhS1yXTWFjq3eovnQtE2tikqZ6saRLFDDLtg,5761
+secret_handshake/util.py,sha256=IJmkof_559zc1PeIB8hv9icjfQrkfaTtCVXEIF0G70w,1960
+secret_handshake-0.1.0.dev1.dist-info/DESCRIPTION.rst,sha256=JTuoHRlczuvgj0pvNOA_dYTzEvXEJt7sikA2Y_cWG30,1720
+secret_handshake-0.1.0.dev1.dist-info/METADATA,sha256=u4wGLJFbHfiIG2qtYZXKDRjIxAs4-XZ4UQKXKjSktgU,2812
+secret_handshake-0.1.0.dev1.dist-info/RECORD,,
+secret_handshake-0.1.0.dev1.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+secret_handshake-0.1.0.dev1.dist-info/metadata.json,sha256=KYwFgeXHsAfkQJpbPl9nWJxzxP3ITGCmC_i4M0IKPzk,1066
+secret_handshake-0.1.0.dev1.dist-info/top_level.txt,sha256=e8udWl15Eg_Op5uyw8XzU1bm5QVInCSE_90tYWYbl8s,17
