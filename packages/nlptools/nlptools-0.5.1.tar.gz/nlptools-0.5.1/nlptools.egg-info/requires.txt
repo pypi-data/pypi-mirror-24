@@ -1,0 +1,4 @@
+chardet
+TwitterSearch
+beautifulsoup4
+nltk

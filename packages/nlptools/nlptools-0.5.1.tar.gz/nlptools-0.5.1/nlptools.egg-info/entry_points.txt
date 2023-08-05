@@ -1,0 +1,9 @@
+[console_scripts]
+feat-tfidf = nlptools.commands.feature_tfidf_py3:main
+fetch-tweets = nlptools.commands.get_raw_tweets:main
+fetch-url = nlptools.commands.get_url:main
+proc-clean = nlptools.commands.cleaner:main
+proc-lmtz = nlptools.commands.lemmatizer_nltk_py3:main
+proc-stem = nlptools.commands.stemmer_nltk_py3:main
+proc-tkn = nlptools.commands.tokenizer_nltk_py3:main
+
