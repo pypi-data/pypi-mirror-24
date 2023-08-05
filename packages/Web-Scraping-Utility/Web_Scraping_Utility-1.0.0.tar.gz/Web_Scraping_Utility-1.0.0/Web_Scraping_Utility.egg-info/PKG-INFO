@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: Web-Scraping-Utility
+Version: 1.0.0
+Summary: Web Scraping Utility
+Home-page: https://github.com/pypa/web_scraping_utility
+Author: Nitin Vijay
+Author-email: nitinvijay23@gmail.com
+License: MIT
+Description: A Web scraping utlity module build on the top of BeautifulSoup, requests, and selenium modules
+Keywords: webscraping scraping beatufiulsoup requests selenium
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

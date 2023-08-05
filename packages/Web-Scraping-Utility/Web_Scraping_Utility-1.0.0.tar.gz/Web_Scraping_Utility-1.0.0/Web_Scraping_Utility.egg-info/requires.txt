@@ -1,0 +1,9 @@
+bs4
+requests
+selenium
+
+[dev]
+check-manifest
+
+[test]
+coverage

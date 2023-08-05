@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+Web_Scraping_Utility.egg-info/PKG-INFO
+Web_Scraping_Utility.egg-info/SOURCES.txt
+Web_Scraping_Utility.egg-info/dependency_links.txt
+Web_Scraping_Utility.egg-info/requires.txt
+Web_Scraping_Utility.egg-info/top_level.txt
+web_scraping/__init__.py
+web_scraping/web_scraping.py
