@@ -1,0 +1,14 @@
+django_mpdcontroller-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+django_mpdcontroller-0.1.dist-info/METADATA,sha256=nPLrQTmwigMyIj_3kTBfoU8Is_IihFK5I9QMuq5rj3Q,720
+django_mpdcontroller-0.1.dist-info/RECORD,,
+django_mpdcontroller-0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_mpdcontroller-0.1.dist-info/metadata.json,sha256=lKSmUTMk2g0fPMTZInDrq_nbzIzpaCzdKsrA4Kj--c0,848
+django_mpdcontroller-0.1.dist-info/top_level.txt,sha256=iHgWK5q6pdj8ZVYC_ry5QBVNKzA99nuswuPfdvbjGqM,14
+mpdcontroller/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mpdcontroller/admin.py,sha256=2h43pTXd3NKV8-_fkUEkzkS4zqih0qBLE8q6Yj7fpEg,33
+mpdcontroller/apps.py,sha256=YRw9spzWPH6ZILMfHvQ67I9YXlTZnsFwErfh4QTnc5A,101
+mpdcontroller/models.py,sha256=8K446g1ppVIRYVwMNIaUJ2lOmsokarJk3gt8-qxNj5c,1094
+mpdcontroller/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+mpdcontroller/urls.py,sha256=AK5h92eKpEzybn0zFDFQpLd1jhNzr2oe9_CghGm6K_o,187
+mpdcontroller/views.py,sha256=FinmBlAKcEhd9BKA7v2vTrq-IpPpmH9-KnizgLmIdSQ,644
+mpdcontroller/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
