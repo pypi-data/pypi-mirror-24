@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: pygments-style-apprentice
+Version: 0.1.0
+Summary: Apprentice style for Pygments
+Home-page: UNKNOWN
+Author: Martin Domke
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+
+False
+
+
