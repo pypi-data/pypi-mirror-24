@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: S3ConfigLoader
+Version: 0.1.5
+Summary: This package implements a simple config property loader 
+    that can read property files from local or from amazon AWS S2
+Home-page: UNKNOWN
+Author: Rahul Subramaniam
+Author-email: rahulsub@gmail.com    
+License: PSF
+Description: UNKNOWN
+Keywords: property configuration loader
+Platform: UNKNOWN

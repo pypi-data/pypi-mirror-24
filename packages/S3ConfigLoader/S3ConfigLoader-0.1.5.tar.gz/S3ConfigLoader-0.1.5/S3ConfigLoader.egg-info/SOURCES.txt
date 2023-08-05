@@ -1,0 +1,9 @@
+setup.py
+S3ConfigLoader.egg-info/PKG-INFO
+S3ConfigLoader.egg-info/SOURCES.txt
+S3ConfigLoader.egg-info/dependency_links.txt
+S3ConfigLoader.egg-info/requires.txt
+S3ConfigLoader.egg-info/top_level.txt
+s3config/__init__.py
+s3config/config.py
+s3config/uri_manager.py
