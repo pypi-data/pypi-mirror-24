@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pymount
+Version: 0.0.8
+Summary: module to help you mount and unmount file systems
+Home-page: https://veltzer.github.io/pymount
+Author: Mark Veltzer
+Author-email: mark.veltzer@gmail.com
+License: MIT
+Description: programmatic API to /proc/partitions and /proc/mounts
+Keywords: pymount mount umount partition
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
