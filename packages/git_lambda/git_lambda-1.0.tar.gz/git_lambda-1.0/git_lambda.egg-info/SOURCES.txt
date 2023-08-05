@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+git_lambda/__init__.py
+git_lambda/git-2.4.3.tar
+git_lambda.egg-info/PKG-INFO
+git_lambda.egg-info/SOURCES.txt
+git_lambda.egg-info/dependency_links.txt
+git_lambda.egg-info/top_level.txt
