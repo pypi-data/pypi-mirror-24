@@ -1,0 +1,47 @@
+Changelog
+=========
+
+1.1.3 (2017-07-30)
+------------------
+
+- Repository ownership transfered to `Plone Collective <https://collective.github.io/>`_
+
+
+1.1.2 (2017-07-02)
+------------------
+
+Bugfixes:
+
+- [#8] `Install using pip in virtualenv got error <https://github.com/collective/plone.recipe.sublimetext/issues/8>`_
+
+
+1.1.1 (2017-06-20)
+------------------
+
+Bugfixes:
+
+- [#7]`python_interpreter` value as list but expected as string.
+  [nazrulworld]
+
+
+1.1.0 (2017-06-07)
+------------------
+
+New features:
+
+- [#4] `Anaconda support <https://github.com/collective/plone.recipe.sublimetext/issues/4>`_ [nazrulworld]
+
+
+1.0.1 (2017-05-16)
+------------------
+
+Bugfixes:
+
+- [#1] `Required options for sublime text project file is missing <https://github.com/collective/plone.recipe.sublimetext/issues/1>`_
+
+
+1.0.0 (2017-05-15)
+------------------
+
+- Initial release.
+  [nazrulworld]
