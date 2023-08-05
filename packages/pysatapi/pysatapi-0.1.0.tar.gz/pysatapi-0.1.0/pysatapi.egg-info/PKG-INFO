@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pysatapi
+Version: 0.1.0
+Summary: Satellite data imagery acquisition from several popular online APIs.
+Home-page: https://github.com/adrianalbert/satapi
+Author: Adrian Albert
+Author-email: adrian.t.albert@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
