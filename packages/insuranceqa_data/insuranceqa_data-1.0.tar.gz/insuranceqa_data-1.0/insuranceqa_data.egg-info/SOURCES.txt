@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+insuranceqa_data/LICENSE
+insuranceqa_data/__init__.py
+insuranceqa_data/answers.json.gz
+insuranceqa_data/test.json.gz
+insuranceqa_data/train.json.gz
+insuranceqa_data/valid.json.gz
+insuranceqa_data.egg-info/PKG-INFO
+insuranceqa_data.egg-info/SOURCES.txt
+insuranceqa_data.egg-info/dependency_links.txt
+insuranceqa_data.egg-info/top_level.txt
