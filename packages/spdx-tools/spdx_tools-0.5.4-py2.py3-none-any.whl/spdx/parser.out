@@ -1,0 +1,166 @@
+Created by PLY version 3.10 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> disjunction
+Rule 1     disjunction -> disjunction OR conjunction
+Rule 2     disjunction -> conjunction
+Rule 3     conjunction -> conjunction AND license_atom
+Rule 4     conjunction -> license_atom
+Rule 5     license_atom -> LICENSE
+Rule 6     license_atom -> LP disjunction RP
+
+Terminals, with rules where they appear
+
+AND                  : 3
+LICENSE              : 5
+LP                   : 6
+OR                   : 1
+RP                   : 6
+error                : 
+
+Nonterminals, with rules where they appear
+
+conjunction          : 1 2 3
+disjunction          : 1 6 0
+license_atom         : 3 4
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . disjunction
+    (1) disjunction -> . disjunction OR conjunction
+    (2) disjunction -> . conjunction
+    (3) conjunction -> . conjunction AND license_atom
+    (4) conjunction -> . license_atom
+    (5) license_atom -> . LICENSE
+    (6) license_atom -> . LP disjunction RP
+
+    LICENSE         shift and go to state 2
+    LP              shift and go to state 4
+
+    conjunction                    shift and go to state 5
+    disjunction                    shift and go to state 1
+    license_atom                   shift and go to state 3
+
+state 1
+
+    (0) S' -> disjunction .
+    (1) disjunction -> disjunction . OR conjunction
+
+    OR              shift and go to state 6
+
+
+state 2
+
+    (5) license_atom -> LICENSE .
+
+    AND             reduce using rule 5 (license_atom -> LICENSE .)
+    OR              reduce using rule 5 (license_atom -> LICENSE .)
+    $end            reduce using rule 5 (license_atom -> LICENSE .)
+    RP              reduce using rule 5 (license_atom -> LICENSE .)
+
+
+state 3
+
+    (4) conjunction -> license_atom .
+
+    AND             reduce using rule 4 (conjunction -> license_atom .)
+    OR              reduce using rule 4 (conjunction -> license_atom .)
+    $end            reduce using rule 4 (conjunction -> license_atom .)
+    RP              reduce using rule 4 (conjunction -> license_atom .)
+
+
+state 4
+
+    (6) license_atom -> LP . disjunction RP
+    (1) disjunction -> . disjunction OR conjunction
+    (2) disjunction -> . conjunction
+    (3) conjunction -> . conjunction AND license_atom
+    (4) conjunction -> . license_atom
+    (5) license_atom -> . LICENSE
+    (6) license_atom -> . LP disjunction RP
+
+    LICENSE         shift and go to state 2
+    LP              shift and go to state 4
+
+    conjunction                    shift and go to state 5
+    disjunction                    shift and go to state 7
+    license_atom                   shift and go to state 3
+
+state 5
+
+    (2) disjunction -> conjunction .
+    (3) conjunction -> conjunction . AND license_atom
+
+    OR              reduce using rule 2 (disjunction -> conjunction .)
+    $end            reduce using rule 2 (disjunction -> conjunction .)
+    RP              reduce using rule 2 (disjunction -> conjunction .)
+    AND             shift and go to state 8
+
+
+state 6
+
+    (1) disjunction -> disjunction OR . conjunction
+    (3) conjunction -> . conjunction AND license_atom
+    (4) conjunction -> . license_atom
+    (5) license_atom -> . LICENSE
+    (6) license_atom -> . LP disjunction RP
+
+    LICENSE         shift and go to state 2
+    LP              shift and go to state 4
+
+    conjunction                    shift and go to state 9
+    license_atom                   shift and go to state 3
+
+state 7
+
+    (6) license_atom -> LP disjunction . RP
+    (1) disjunction -> disjunction . OR conjunction
+
+    RP              shift and go to state 10
+    OR              shift and go to state 6
+
+
+state 8
+
+    (3) conjunction -> conjunction AND . license_atom
+    (5) license_atom -> . LICENSE
+    (6) license_atom -> . LP disjunction RP
+
+    LICENSE         shift and go to state 2
+    LP              shift and go to state 4
+
+    license_atom                   shift and go to state 11
+
+state 9
+
+    (1) disjunction -> disjunction OR conjunction .
+    (3) conjunction -> conjunction . AND license_atom
+
+    OR              reduce using rule 1 (disjunction -> disjunction OR conjunction .)
+    $end            reduce using rule 1 (disjunction -> disjunction OR conjunction .)
+    RP              reduce using rule 1 (disjunction -> disjunction OR conjunction .)
+    AND             shift and go to state 8
+
+
+state 10
+
+    (6) license_atom -> LP disjunction RP .
+
+    AND             reduce using rule 6 (license_atom -> LP disjunction RP .)
+    OR              reduce using rule 6 (license_atom -> LP disjunction RP .)
+    $end            reduce using rule 6 (license_atom -> LP disjunction RP .)
+    RP              reduce using rule 6 (license_atom -> LP disjunction RP .)
+
+
+state 11
+
+    (3) conjunction -> conjunction AND license_atom .
+
+    AND             reduce using rule 3 (conjunction -> conjunction AND license_atom .)
+    OR              reduce using rule 3 (conjunction -> conjunction AND license_atom .)
+    $end            reduce using rule 3 (conjunction -> conjunction AND license_atom .)
+    RP              reduce using rule 3 (conjunction -> conjunction AND license_atom .)
+
