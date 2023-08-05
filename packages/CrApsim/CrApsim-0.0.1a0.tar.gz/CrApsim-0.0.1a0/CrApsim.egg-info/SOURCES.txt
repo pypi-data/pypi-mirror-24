@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+CrApsim/__init__.py
+CrApsim.egg-info/PKG-INFO
+CrApsim.egg-info/SOURCES.txt
+CrApsim.egg-info/dependency_links.txt
+CrApsim.egg-info/entry_points.txt
+CrApsim.egg-info/requires.txt
+CrApsim.egg-info/top_level.txt
