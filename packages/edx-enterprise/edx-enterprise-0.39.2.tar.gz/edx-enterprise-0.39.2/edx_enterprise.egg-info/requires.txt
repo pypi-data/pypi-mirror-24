@@ -1,0 +1,2 @@
+django-object-actions==0.10.0
+django-waffle==0.12.0
