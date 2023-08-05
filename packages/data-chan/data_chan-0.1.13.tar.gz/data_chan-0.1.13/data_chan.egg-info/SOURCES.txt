@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+data_chan/__init__.py
+data_chan.egg-info/PKG-INFO
+data_chan.egg-info/SOURCES.txt
+data_chan.egg-info/dependency_links.txt
+data_chan.egg-info/not-zip-safe
+data_chan.egg-info/top_level.txt
+lib/libDataChan.dll
+lib/libDataChan.dylib
+lib/libDataChan.so
