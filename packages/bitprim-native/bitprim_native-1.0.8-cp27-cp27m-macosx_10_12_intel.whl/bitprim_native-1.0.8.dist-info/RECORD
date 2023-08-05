@@ -1,0 +1,8 @@
+bitprim_native.so,sha256=vx0_CMR3rGTW6irsb-z-pDhu5FFJ0ZgyB5tTRNyFEvQ,173472
+bitprim_native-1.0.8.dist-info/DESCRIPTION.rst,sha256=qTXIXa_LBOMXcjRbhkaZMeuCF_77lXyhZwQ86T8HHSw,19
+bitprim_native-1.0.8.dist-info/METADATA,sha256=srPrmPtKs5qqpuEWTQE6vZvS7IRpwwUhCkhhtyaip4I,940
+bitprim_native-1.0.8.dist-info/RECORD,,
+bitprim_native-1.0.8.dist-info/WHEEL,sha256=UXoPBllP0F2o_dRgJdm69wuDew2n49gqiBVQa-SKixk,110
+bitprim_native-1.0.8.dist-info/metadata.json,sha256=Hn0s3APVjwUPJt6TJZ-j2Q4e6GAsOHzpMBvDvSru_os,1056
+bitprim_native-1.0.8.dist-info/top_level.txt,sha256=xOZvx2jrqfVjDLrPTz3_rT4c2w7xI_nEN8rylJDC9pU,15
+usr/local/lib/libbitprim-node-cint.dylib,sha256=V-AVuGtC7ohEhm4ZhjvoWjJt_Pdu2jc8mMgDl-Z_ASg,7753048
