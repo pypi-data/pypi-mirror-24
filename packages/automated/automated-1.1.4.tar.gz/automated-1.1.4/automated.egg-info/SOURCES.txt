@@ -1,0 +1,11 @@
+README.md
+setup.py
+automated/__init__.py
+automated/__main__.py
+automated/autoit.py
+automated/retrievedata.py
+automated.egg-info/PKG-INFO
+automated.egg-info/SOURCES.txt
+automated.egg-info/dependency_links.txt
+automated.egg-info/requires.txt
+automated.egg-info/top_level.txt
