@@ -1,0 +1,4 @@
+
+[dev]
+pylint==1.6.5
+pytest==3.0.6
