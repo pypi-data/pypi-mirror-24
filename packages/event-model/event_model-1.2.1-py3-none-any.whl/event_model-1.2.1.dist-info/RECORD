@@ -1,0 +1,13 @@
+event_model/__init__.py,sha256=PuSi6_Nu5oXSflYPn681iKgG__j6uVJix3gmAAZSu0A,875
+event_model/_version.py,sha256=dVxCkFM6gdHQEXu7f9F2RAlEAG_S4nNl-OGXB9t7k8A,15766
+event_model/schemas/bulk_events.json,sha256=A1StS3IyCx89XHkJdmW0uu7n0pxyztIy44BKDztuUKM,1802
+event_model/schemas/event.json,sha256=spvtRN-LEgvHpWx_ih3-v2VxEnmTKTrQXm81dHUQA3g,1379
+event_model/schemas/event_descriptor.json,sha256=nHvQjSpfRKzvHOUEesIAol6oFk_B-8-63MbOxtMt3sE,3069
+event_model/schemas/run_start.json,sha256=Dy1uRJHqvjPp0AczYXClK0WQMImLVE67VPpmxYe1b4k,1496
+event_model/schemas/run_stop.json,sha256=JCka_bcq40JTBG45Sb9HiLp69PzKhpTEhimzFfDGTtQ,1329
+event_model-1.2.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+event_model-1.2.1.dist-info/METADATA,sha256=Kh_lq46Yi8xD4PZzSgqhPwiv4S4RwdIUHHuE4NtBey8,198
+event_model-1.2.1.dist-info/RECORD,,
+event_model-1.2.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+event_model-1.2.1.dist-info/metadata.json,sha256=fpovlXGEYrLclrL0SHRndGjqh12nFjVyNC-oFvLqLo0,295
+event_model-1.2.1.dist-info/top_level.txt,sha256=_1QwZwGPifBXzitBV0qnXoJC_tDxkVU6BDEe8NF0H9E,12
