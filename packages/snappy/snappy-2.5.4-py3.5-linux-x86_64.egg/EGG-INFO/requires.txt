@@ -1,0 +1,9 @@
+plink>=2.1rc1
+spherogram>=1.7rc1
+FXrays>=1.3
+pypng
+decorator
+future
+snappy_manifolds>=0.9
+cypari>=2.2
+ipython>=0.13
