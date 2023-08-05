@@ -1,0 +1,14 @@
+objects/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+objects/courseobjects.py,sha256=khrMoBT5enY-m28LkJr2hpHm2Mx0_chX83j4rCEl4EE,2358
+uiucapi/__init__.py,sha256=Y56_w1AC2rMk77umr5yr23ODW5o8aXUvpJa2YjvYhGk,36
+uiucapi/aioquery.py,sha256=IOU0xD-eweOM_IeSNsKwlNlmfrfHj2SX6m1mFiWlR_4,3785
+uiucapi/query.py,sha256=VLaVwgte0Ep-5_5uvVfCJu6w_aCklv6rGoxMZ-C3y2E,1305
+uiucapi-1.0.1.dist-info/DESCRIPTION.rst,sha256=0PeMFdMxoGxMo6rcfZtueSZbqTAA9mXwkz-ZktqkIqM,743
+uiucapi-1.0.1.dist-info/METADATA,sha256=pcl61tzBSPD92ulTiy29bKnO2NhxN28P-ndDOjsZJMg,1346
+uiucapi-1.0.1.dist-info/RECORD,,
+uiucapi-1.0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+uiucapi-1.0.1.dist-info/metadata.json,sha256=g-h28xRlJ0X4P7JDUs8hrmjU13PlXE8iQ5yhhg43yz8,795
+uiucapi-1.0.1.dist-info/top_level.txt,sha256=ywO0CndQJpbXwTKH4FnSH4MT3UyAb0eBeR2UiKaQDk4,16
+utility/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utility/courseobjects.py,sha256=khrMoBT5enY-m28LkJr2hpHm2Mx0_chX83j4rCEl4EE,2358
+utility/parse.py,sha256=txcKeMCZCPwopsKMKJUJiK4Df536rmpjMTQs1nknw8c,2420
