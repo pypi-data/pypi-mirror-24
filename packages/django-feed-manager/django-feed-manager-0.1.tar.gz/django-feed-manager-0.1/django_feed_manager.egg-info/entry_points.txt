@@ -1,0 +1,3 @@
+[console_scripts]
+reporter = cli.reporter:main
+

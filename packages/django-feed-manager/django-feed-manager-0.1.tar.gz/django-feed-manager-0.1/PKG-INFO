@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: django-feed-manager
+Version: 0.1
+Summary: A feed manager for Django, aiming to report automated tasks results in a standard format.
+Home-page: https://github.com/Sebatyne/django-feed-manager
+Author: Nicolas Wavrant
+Author-email: nicolas.wavrant@gmail.com
+License: BSD
+Description: django-feed-manager is an application for Django which manages different RSS feeds and their lifetime.
+        
+        This application has been developed to gather results of recurrent and automatized actions by multiple servers and allow different users to be updated using a standard format (which then allow automatic treatment of the notifications).
+        
+        Feeds and feed's items can be created using HTTP Post requests. A cli python script is given in this repository to do that for you.
+        
+        
+Keywords: django feed rss
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
