@@ -1,0 +1,3 @@
+include *.md
+recursive-include Recopytex *.png *.jpg *.gif
+recursive-include Recopytex *.css *.js

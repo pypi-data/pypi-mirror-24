@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+Recopytex/__init__.py
+Recopytex/models.py
+Recopytex/views.py
+Recopytex/static/css/app.11a94efb905cbfdc2b442353e0e60600.css
+Recopytex/static/js/app.9f2ade7ae9223f37de3c.js
+Recopytex/static/js/manifest.b3f3fe9bc2d5d2b0a303.js
+Recopytex/static/js/vendor.09273c61036a6de2ec10.js
+recopytex.egg-info/PKG-INFO
+recopytex.egg-info/SOURCES.txt
+recopytex.egg-info/dependency_links.txt
+recopytex.egg-info/requires.txt
+recopytex.egg-info/top_level.txt
