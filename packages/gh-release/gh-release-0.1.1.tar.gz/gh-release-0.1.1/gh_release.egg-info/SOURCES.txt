@@ -1,0 +1,11 @@
+setup.py
+bin/ghrelease
+gh_release.egg-info/PKG-INFO
+gh_release.egg-info/SOURCES.txt
+gh_release.egg-info/dependency_links.txt
+gh_release.egg-info/not-zip-safe
+gh_release.egg-info/requires.txt
+gh_release.egg-info/top_level.txt
+ghrelease/__init__.py
+ghrelease/cli.py
+ghrelease/upload_gh.py

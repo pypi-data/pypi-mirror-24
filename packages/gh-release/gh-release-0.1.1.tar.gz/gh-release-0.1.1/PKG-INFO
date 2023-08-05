@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: gh-release
+Version: 0.1.1
+Summary: Small cli to upload GH releases
+Home-page: https://github.com/ant31/gh-release
+Author: Antoine Legrand
+Author-email: 2t.antoine@gmail.com
+License: MIT
+Description: # gh-release
+        Small cli to upload a GH release asset
+        
+Keywords: github
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
