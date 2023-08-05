@@ -1,0 +1,6 @@
+
+      # -*- Entry points: -*-
+      [console_scripts]
+      main = OpenATS.scripts.command:main
+
+    
