@@ -1,0 +1,44 @@
+Metadata-Version: 1.1
+Name: pybase64
+Version: 0.1.0
+Summary: Fast Base64 encoding/decoding
+Home-page: https://github.com/mayeut/pybase64
+Author: Matthieu Darbois
+Author-email: UNKNOWN
+License: BSD-2-Clause
+Description: Fast Base64 implementation
+        ==========================
+        
+        This project is a wrapper on `libbase64 <https://github.com/aklomp/base64>`_.
+        
+        It aims to provide a fast base64 implementation for standard base64 encoding/decoding.
+        
+        Current status
+        ==============
+        |travis-status| |appveyor-status| |codecov-status|
+        
+        
+        .. Let's setup images here
+        .. |travis-status| image:: https://travis-ci.org/mayeut/pybase64.svg?branch=master
+                 :target: https://travis-ci.org/mayeut/pybase64
+        .. |appveyor-status| image:: https://ci.appveyor.com/api/projects/status/kj3l1f3ys2teg9ha?svg=true
+                 :target: https://ci.appveyor.com/project/mayeut/pybase64
+        .. |codecov-status| image:: https://codecov.io/gh/mayeut/pybase64/branch/master/graph/badge.svg
+          :target: https://codecov.io/gh/mayeut/pybase64
+          
+        
+Keywords: base64
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
