@@ -1,0 +1,8 @@
+youtube-dl
+urwid
+requests
+pyyaml
+pafy
+clipboard
+fuzzywuzzy
+python-Levenshtein
