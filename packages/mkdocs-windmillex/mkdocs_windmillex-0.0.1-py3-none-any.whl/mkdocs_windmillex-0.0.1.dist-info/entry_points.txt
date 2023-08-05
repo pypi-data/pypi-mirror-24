@@ -1,0 +1,3 @@
+[mkdocs.themes]
+windmillex = mkdocs_windmillex
+
