@@ -1,0 +1,9 @@
+agentzero==0.3.3
+speakers==0.0.3
+plant==0.1.2
+flask==0.12.2
+redis==2.10.5
+dj-redis-url==0.1.4
+gevent==1.1.2
+coloredlogs==7.1
+GreenletProfiler==0.1
