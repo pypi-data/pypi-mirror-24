@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+impstall/__init__.py
+impstall/__main__.py
+impstall/core.py
+impstall/version.py
+impstall.egg-info/PKG-INFO
+impstall.egg-info/SOURCES.txt
+impstall.egg-info/dependency_links.txt
+impstall.egg-info/entry_points.txt
+impstall.egg-info/top_level.txt
