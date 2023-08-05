@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: dhcp-relay
+Version: 0.0.1
+Summary: Python library to act as a DHCP relay
+Home-page: https://github.com/mirceaulinic/py-dhcp-relay
+Author: Mircea Ulinic
+Author-email: mircea.ulinic@cloudflare.com
+License: GPL 3.0
+Download-URL: https://github.com/mirceaulinic/py-dhcp-relay/tarball/0.0.1
+Description: UNKNOWN
+Keywords: network,DHCP,relay
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
