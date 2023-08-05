@@ -1,0 +1,16 @@
+appenginetaskutils-0.3.7.dist-info/DESCRIPTION.rst,sha256=HaPgpf8qufAwAKEXQPHMGrn0V99G8cUgQLt267kMXTo,4314
+appenginetaskutils-0.3.7.dist-info/METADATA,sha256=iElOjflGn-TYKUCu3oYxaefAZlDsF9B_ULCklxe84n4,5220
+appenginetaskutils-0.3.7.dist-info/RECORD,,
+appenginetaskutils-0.3.7.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+appenginetaskutils-0.3.7.dist-info/metadata.json,sha256=jgLnZt9TM7aGJFgSocYR7o1Gu-ajnCBzX7uksid4BFY,1043
+appenginetaskutils-0.3.7.dist-info/top_level.txt,sha256=7Rl6pkZtfQddpWKg6wnylOkhjF0uzmWzpuTqtbsIZ1o,10
+taskutils/__init__.py,sha256=vXKKP7xHV0ihOKeNpPL0mQ0E5nI4E-u9IVxB0AE7kWw,694
+taskutils/debouncedtask.py,sha256=UWaKJKz-bomvrt7-M9SlSZBwsPodtBs-kjIPPsMbIwc,3334
+taskutils/future.py,sha256=-Uno3TwzL_xkmNT0Q1NoWOkSAry1v25K3IWEHwHV6Us,28981
+taskutils/future_deprecated.py,sha256=ClqdGF_9zU0IJ-seDgfOgtZv69H9aA4uNoHUcGPJ8m4,18274
+taskutils/gcsfilesharded.py,sha256=JmsNcJ2ajv0LGRJPZRPhscdIMbtSz9sp_MlBWxNN5HE,6871
+taskutils/gcsfilesharded_deprecated.py,sha256=_9Y6t0HpHjIKjmtw5Uh6kRVGCEr-mI3huK5gKUXaick,8422
+taskutils/ndbsharded.py,sha256=YcaaU4LQ9fCFBNxiqyg-sgx6u9bmwy-4R5OrDlbQY38,9969
+taskutils/ndbsharded_deprecated.py,sha256=5s3ByKc8kRKv-Lyf1D14jTGU4WkGb6FGDwMb5-4BICM,11046
+taskutils/splitutils.py,sha256=qJRJW1t2QDGfS5e2iDyM76sdofajaRNPQyOhRAeHQiE,3036
+taskutils/task.py,sha256=06U-p_xe0a6eFZXeLZdsHse-FPx-4GWZE5Us-Pv0XTU,6561
