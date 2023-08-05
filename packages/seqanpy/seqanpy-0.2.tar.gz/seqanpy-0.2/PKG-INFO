@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: seqanpy
+Version: 0.2
+Summary: Fast pairwise sequence alignment using SeqAn
+Home-page: https://github.com/iosonofabio/seqanpy
+Author: Fabio Zanini
+Author-email: fabio.zanini@fastmail.fm
+License: BSD/2-clause
+Description: Fast pairwise sequence alignment using SeqAn.
+        
+              Instructions and development: https://github.com/iosonofabio/seqanpy
+              
+Keywords: alignment sequence pairwise C++
+Platform: UNKNOWN
