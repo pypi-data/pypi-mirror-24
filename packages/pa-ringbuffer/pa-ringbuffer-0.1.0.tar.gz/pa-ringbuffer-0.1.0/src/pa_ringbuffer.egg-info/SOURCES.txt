@@ -1,0 +1,11 @@
+CONTRIBUTING.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/pa_ringbuffer.py
+src/pa_ringbuffer.egg-info/PKG-INFO
+src/pa_ringbuffer.egg-info/SOURCES.txt
+src/pa_ringbuffer.egg-info/dependency_links.txt
+src/pa_ringbuffer.egg-info/top_level.txt
