@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"contacts": [{"name": "Noah Spies", "role": "author"}], "document_names": {"description": "DESCRIPTION.rst"}}}, "extras": [], "generator": "bdist_wheel (0.29.0)", "metadata_version": "2.0", "name": "seqlib", "run_requires": [{"requires": ["pybind11 (>=1.7)", "pysam"]}], "summary": "provide an in-memory interface to bwa mem", "version": "0.0.5"}
