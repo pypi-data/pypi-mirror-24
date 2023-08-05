@@ -1,0 +1,48 @@
+Metadata-Version: 1.0
+Name: studentit-bookit-client
+Version: 0.2.0
+Summary: API client and command line application for connecting to BookIT
+Home-page: https://github.com/cmbrad/studentit-bookit-client
+Author: Christopher Bradley
+Author-email: chris.bradley@unimelb.edu.au
+License: UNKNOWN
+Description: BookIT Client
+        =============
+        
+        .. image:: https://travis-ci.org/cmbrad/studentit-bookit-client.svg?branch=master
+            :target: https://travis-ci.org/cmbrad/studentit-bookit-client
+        
+        Python client to interface with the BookIT service.
+        
+        Installation
+        ------------
+        
+        .. code-block:: bash
+        
+          pip install studentit-bookit-client
+        
+        
+        or
+        
+        .. code-block:: bash
+        
+          python setup.py install
+        
+        
+        Usage
+        -----
+        Set the following environment variables to valid student or staff credentials:
+        
+        .. code-block:: bash
+        
+          export BOOKIT_USERNAME=yourusername
+          export BOOKIT_PASSWORD=yourpassword
+        
+        
+        Run the command line interface using the following command.
+        
+        .. code-block:: bash
+        
+          python -m bookit.cli [command] [arguments] [options]
+        
+Platform: UNKNOWN
