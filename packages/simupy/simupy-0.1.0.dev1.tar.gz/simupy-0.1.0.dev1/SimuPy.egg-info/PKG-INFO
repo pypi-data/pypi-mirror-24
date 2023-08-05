@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: simupy
+Version: 0.1.0.dev1
+Summary: A framework for modeling and simulating dynamical systems.
+Home-page: https://github.com/sixpearls/simupy
+Author: Benjamin Margolis
+Author-email: ben@sixpearls.com
+License: BSD 2-clause "Simplified" License
+Description: UNKNOWN
+Platform: UNKNOWN
