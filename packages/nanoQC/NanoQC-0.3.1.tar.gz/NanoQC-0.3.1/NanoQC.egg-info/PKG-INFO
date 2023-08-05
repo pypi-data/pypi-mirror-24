@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: NanoQC
+Version: 0.3.1
+Summary: Create fastQC-like plots for Oxford Nanopore sequencing data
+Home-page: https://github.com/wdecoster/nanoQC
+Author: Wouter De Coster
+Author-email: decosterwouter@gmail.com
+License: MIT
+Description: nanoQC
+        ======
+        
+        Quality control tools for Oxford Nanopore sequencing data
+        
+Keywords: nanopore sequencing statistics
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
