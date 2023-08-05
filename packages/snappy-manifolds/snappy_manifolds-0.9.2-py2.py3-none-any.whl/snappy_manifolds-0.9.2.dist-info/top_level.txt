@@ -1,0 +1,2 @@
+snappy_manifolds
+snappy_manifolds/database_files
