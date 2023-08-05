@@ -1,0 +1,10 @@
+tableschema_spss/VERSION,sha256=6d2FB_S_DG9CRY5BrqgzrQvT9hJycjNe7pv01YVB7Wc,6
+tableschema_spss/__init__.py,sha256=fwgBS9q9uhIwAX_pljweapuTJvjWMmZkT0eZsCxSLFc,203
+tableschema_spss/mappers.py,sha256=Lf5qZpP4Cy89qwljWHr_rC-JD_03YIngZoU5fiEXrl0,3907
+tableschema_spss/storage.py,sha256=McXRYngj8EQpTkn2nI-xkJYcnZia-jZnf8_TQHrY_LA,7946
+tableschema_spss-0.1.0.dist-info/DESCRIPTION.rst,sha256=owUyQGAhYqsqtrSJbtRvvt6kfGg-7bO1rEgBIOa3s_o,3406
+tableschema_spss-0.1.0.dist-info/METADATA,sha256=UX5zpniZ6F2oBRpjjSnr-VtlBhamOGrpdGTJSgypdi8,4571
+tableschema_spss-0.1.0.dist-info/RECORD,,
+tableschema_spss-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+tableschema_spss-0.1.0.dist-info/metadata.json,sha256=RZLJ980WprlnxQAe6F1BSPBlgF-FhQjSOhOj6F0AwmU,1291
+tableschema_spss-0.1.0.dist-info/top_level.txt,sha256=uW-XBacFIHAANLtiB6g7FvC-qj0rL-HleLZusDmb7xI,17
