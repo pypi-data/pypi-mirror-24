@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sphinx_execute_code
+Version: 0.2a1
+Summary: Sphinx support for execution of python code in sphinx documentation from code blocks or files
+Home-page: https://github.com/jpsenior/sphinx-execute-code
+Author: JP Senior
+Author-email: jp.senior@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: sphinx extension directive execute code
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Sphinx :: Extension
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7

@@ -1,0 +1,16 @@
+AUTHORS
+LICENSE.txt
+MANIFEST.in
+Readme.rst
+setup.py
+sphinx_execute_code/__init__.py
+sphinx_execute_code.egg-info/PKG-INFO
+sphinx_execute_code.egg-info/SOURCES.txt
+sphinx_execute_code.egg-info/dependency_links.txt
+sphinx_execute_code.egg-info/requires.txt
+sphinx_execute_code.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/example_class.py
+tests/test_execute_code.py
+tests/roots/test-ext-execute-code/conf.py
