@@ -1,0 +1,16 @@
+django_aws_xray/__init__.py,sha256=Iq0svMsIrdK-ghQ5cgSXZ-Y74MHvZCO9o2ZgALK91YM,61
+django_aws_xray/apps.py,sha256=nGmDnBK_m6pt2FHolcVmscQaKlP59xZhiBWc1Ja3VSU,198
+django_aws_xray/middleware.py,sha256=7t7Qr3U6Ybi8WzGngaq725ptlK8T0MIsEdKpB_FLBlw,1949
+django_aws_xray/records.py,sha256=8R5wp_GzYYyE-ni9XmuYr-FKHvW6uR_y3cfZU_jOnNA,3241
+django_aws_xray/traces.py,sha256=gfPWkPyk-MJ8g4RdGVns1WxQfO7w2xdMWU_CIBwTies,754
+django_aws_xray/xray.py,sha256=B2lBl2SIpqFeuiOCiK926LwyFAGHKDoBwWCwNCwcByQ,955
+django_aws_xray/patches/__init__.py,sha256=0O0FCVrYFYSea9BtiR8Fi6XNqOueeG-V3Ze21No5mkc,280
+django_aws_xray/patches/cache.py,sha256=YLGMP8BvnuuhEsRckryDyvP3qyM8PQRZBi_9uovcLQg,567
+django_aws_xray/patches/db.py,sha256=bkZ2EVlDBHMSgkTkLotXHOkUOAznMGZjoH8qIG1Wb7g,1576
+django_aws_xray/patches/utils.py,sha256=BUSK3xNreAP-P6P-97cypQ97xe9qRjhUm5GbWqo6jJo,636
+django_aws_xray-0.1.0.dist-info/DESCRIPTION.rst,sha256=7Nr6S7Cn0XOYlX1IIIldBAOvT8j79QLamMYO27cZE8E,965
+django_aws_xray-0.1.0.dist-info/METADATA,sha256=DQnHQJbllr1xkBL6ykFrfJCren8Y_yM3dtNVuHyPDeU,2262
+django_aws_xray-0.1.0.dist-info/RECORD,,
+django_aws_xray-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_aws_xray-0.1.0.dist-info/metadata.json,sha256=mDnDo4WpO3KJ-2gvD1gkJ7JPBRLj0JpiAYCyK88i_lc,1407
+django_aws_xray-0.1.0.dist-info/top_level.txt,sha256=l95ho3RZNBxiWXBs5g0jGnpGp65M5Hzc0q4JkZxlWiE,16
