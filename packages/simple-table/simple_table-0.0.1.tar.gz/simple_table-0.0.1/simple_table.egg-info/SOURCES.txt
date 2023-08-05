@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+simple_table/__init__.py
+simple_table/simple_table.py
+simple_table.egg-info/PKG-INFO
+simple_table.egg-info/SOURCES.txt
+simple_table.egg-info/dependency_links.txt
+simple_table.egg-info/top_level.txt
