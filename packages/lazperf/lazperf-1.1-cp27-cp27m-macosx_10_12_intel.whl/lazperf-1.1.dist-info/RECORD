@@ -1,0 +1,13 @@
+lazperf/PyLazperf.cpp,sha256=3C9LNmGsZUIvzLlDGCKCETp02ufaTLMwVncj4vwfCRM,2746
+lazperf/PyLazperf.hpp,sha256=reUeWZbS6NNER_fJqiAzFTwboMCIUMCpjBk6Eyku92o,3637
+lazperf/PyLazperfTypes.hpp,sha256=xdqoX4u6KighWkxAAVdq6X3wuhIlfrqfaD1ZvvhVTiM,2764
+lazperf/__init__.py,sha256=I-kSpVJhVEbtFrecfbiX2rnM-eYKrrI7xgKA_ikDReA,294
+lazperf/pylazperfapi.cpp,sha256=MEN9QPxeJcXVX-OxjMOB4xM4B8f2fVQVgErH81cQrWA,546339
+lazperf/pylazperfapi.pyx,sha256=s4HqU11P6yxj16dOLeMJwKQ5TavbepJ9tF2AWF80b_U,7641
+lazperf/pylazperfapi.so,sha256=lDmXQd3HG-RKWWaxyqJ0BopfGMUTOBXySA2OQ2-5KV4,1505020
+lazperf-1.1.dist-info/DESCRIPTION.rst,sha256=-7vOiCG2E-DYtV_9OJ_PDGn60l_L9_XhrB8lXvtzjE8,207
+lazperf-1.1.dist-info/METADATA,sha256=-xVvaviVR38ChC-_Cv72uifP5O81CVr7KbbILJlWafs,904
+lazperf-1.1.dist-info/RECORD,,
+lazperf-1.1.dist-info/WHEEL,sha256=UXoPBllP0F2o_dRgJdm69wuDew2n49gqiBVQa-SKixk,110
+lazperf-1.1.dist-info/metadata.json,sha256=PNABBoVXzGZ62kesuj9Li5iDDJK3Qm8gRI2DNKVFcRw,877
+lazperf-1.1.dist-info/top_level.txt,sha256=0xINHMkCKStlFopGjNovc2SUm9-7aAurhIhZF1weuk8,8
