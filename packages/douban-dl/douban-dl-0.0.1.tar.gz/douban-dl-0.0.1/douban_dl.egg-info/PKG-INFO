@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: douban-dl
+Version: 0.0.1
+Summary: douban downloader, include album, celebrity
+Home-page: https://github.com/einverne/douban-dl
+Author: einverne
+Author-email: einverne@gmail.com
+License: MIT
+Description: douban album downloader
+Keywords: douban downloader
+Platform: UNKNOWN
