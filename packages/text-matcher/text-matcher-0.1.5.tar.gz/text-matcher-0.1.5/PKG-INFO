@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: text-matcher
+Version: 0.1.5
+Summary: A simple text reuse detection CLI tool.
+Home-page: https://github.com/JonathanReeve/text-matcher
+Author: Jonathan Reeve
+Author-email: jon.reeve@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/JonathanReeve/text-matcher/tarball/0.1.5
+Description: UNKNOWN
+Keywords: NLP,text,text reuse
+Platform: UNKNOWN
