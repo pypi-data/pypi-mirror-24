@@ -1,0 +1,107 @@
+Metadata-Version: 2.0
+Name: conx
+Version: 3.0.3
+Summary: Deep Learning for Simple Folk. Built on Keras
+Home-page: https://github.com/Calysto/conx
+Author: Douglas S. Blank
+Author-email: doug.blank@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: IPython
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: IPython
+Requires-Dist: Pillow
+Requires-Dist: ipywidgets
+Requires-Dist: keras
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+conx
+====
+
+Deep Learning for Simple Folk
+-----------------------------
+
+Built in Python on Keras.
+
+|CircleCI| |codecov| |Documentation Status| |PyPI version|
+
+Read the documentation at
+`conx.readthedocs.io <http://conx.readthedocs.io/>`__
+
+Implements Deep Learning neural network algorithms using a simple
+interface. Built on top of Keras, which can use either TensorFlow or
+Theano.
+
+The network is specified to the constructor by providing sizes. For
+example, Network("XOR", 2, 5, 1) specifies a network named "XOR" with a
+2-node input layer, 5-unit hidden layer, and a 1-unit output layer.
+
+Example
+-------
+
+Computing XOR via a target function:
+
+.. code:: python
+
+    from conx import Network, SGD
+
+    dataset = [[[0, 0], [0]],
+              [[0, 1], [1]],
+              [[1, 0], [1]],
+              [[1, 1], [0]]]
+
+    net = Network("XOR", 2, 5, 1, activation="sigmoid")
+    net.set_dataset(dataset)
+    net.compile(loss='mean_squared_error',
+                optimizer=SGD(lr=0.3, momentum=0.9))
+    net.train(2000, report_rate=10, accuracy=1)
+    net.test()
+
+Install
+-------
+
+.. code:: shell
+
+    pip install conx -U
+
+You will need to decide whether to use Theano or Tensorflow. Pick one:
+
+.. code:: shell
+
+    pip install theano
+
+or
+
+.. code:: shell
+
+    pip install tensorflow
+
+To use Theano as the Keras backend rather than TensorFlow, edit (or
+create) ``~/.keras/kerson.json`` to:
+
+.. code:: json
+
+    {
+        "backend": "theano",
+        "image_data_format": "channels_last",
+        "epsilon": 1e-07,
+        "floatx": "float32"
+    }
+
+Examples
+--------
+
+See the examples and notebooks folders for additional examples.
+
+.. |CircleCI| image:: https://circleci.com/gh/Calysto/conx/tree/master.svg?style=svg
+   :target: https://circleci.com/gh/Calysto/conx/tree/master
+.. |codecov| image:: https://codecov.io/gh/Calysto/conx/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/Calysto/conx
+.. |Documentation Status| image:: https://readthedocs.org/projects/conx/badge/?version=latest
+   :target: http://conx.readthedocs.io/en/latest/?badge=latest
+.. |PyPI version| image:: https://badge.fury.io/py/conx.svg
+   :target: https://badge.fury.io/py/conx
+
+
