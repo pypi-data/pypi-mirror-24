@@ -1,0 +1,58 @@
+Metadata-Version: 1.1
+Name: emacs-keys-everywhere
+Version: 0.2
+Summary: Enable Emacs style key bindings on the desktop.
+Home-page: https://github.com/rahiel/emacs-keys-everywhere
+Author: Rahiel Kasim
+Author-email: rahielkasim@gmail.com
+License: GPLv3+
+Description: emacs-keys-everywhere
+        =====================
+        
+        |Version| |pyversions| |Downloads| |License|
+        
+        Enable GNU Emacs style key bindings for GTK+ desktop programs.
+        
+        Usage
+        =====
+        
+        .. code:: shell
+        
+            emacs-keys-everywhere
+        
+        Install
+        =======
+        
+        .. code:: shell
+        
+            sudo pip3 install emacs-keys-everywhere
+        
+        (Follow `this
+        guide <https://www.cpu.re/installing-programs-from-non-system-package-managers-without-sudo/>`__
+        if you want to install without ``sudo``.)
+        
+        References
+        ==========
+        
+        -  https://wiki.archlinux.org/index.php/GTK+#Emacs_keybindings
+        -  https://askubuntu.com/questions/124815/how-do-i-enable-emacs-keybindings-in-apps-such-as-google-chrome
+        -  https://askubuntu.com/questions/172260/how-to-get-emacs-keybindings-in-firefox-using-mate
+        
+        .. |Version| image:: https://img.shields.io/pypi/v/emacs-keys-everywhere.svg
+           :target: https://pypi.python.org/pypi/emacs-keys-everywhere
+        .. |pyversions| image:: https://img.shields.io/pypi/pyversions/emacs-keys-everywhere.svg
+           :target: https://pypi.python.org/pypi/emacs-keys-everywhere
+        .. |Downloads| image:: https://www.cpu.re/static/emacs-keys-everywhere/downloads.svg
+           :target: https://www.cpu.re/static/emacs-keys-everywhere/downloads-by-python-version.txt
+        .. |License| image:: https://img.shields.io/badge/License-GPLv3+-blue.svg
+           :target: https://github.com/rahiel/emacs-keys-everywhere/blob/master/LICENSE.txt
+        
+Keywords: emacs key bindings keybindings
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities

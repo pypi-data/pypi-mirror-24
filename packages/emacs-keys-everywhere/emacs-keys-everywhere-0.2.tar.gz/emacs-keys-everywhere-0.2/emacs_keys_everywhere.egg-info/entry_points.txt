@@ -1,0 +1,3 @@
+[console_scripts]
+emacs-keys-everywhere = emacs_bindings:main
+
