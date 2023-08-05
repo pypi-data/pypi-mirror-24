@@ -1,0 +1,32 @@
+Metadata-Version: 1.2
+Name: flyweight2
+Version: 0.0.2
+Summary: A variant of the Flyweight pattern that allows the object to be modified without affecting other objects, and automatically shares the memory if the modified object is the same as other objects
+Home-page: https://github.com/jefffffrey/flyweight2
+Author: Jeffrey
+Author-email: Jeffrey.S.Teo@gmail.com
+License: MIT
+Description: flyweight2
+        ==========
+        
+        |Python Version| |Build Status| |Coverage Status|
+        
+        Look at the `tests.py <./tests.py>`__ to know how to use and it works.
+        
+        .. |Python Version| image:: https://img.shields.io/badge/python-2.7-blue.svg
+        .. |Build Status| image:: https://travis-ci.org/jefffffrey/flyweight2.svg?branch=master
+           :target: https://travis-ci.org/jefffffrey/flyweight2
+        .. |Coverage Status| image:: https://coveralls.io/repos/github/jefffffrey/flyweight2/badge.svg?branch=master
+           :target: https://coveralls.io/github/jefffffrey/flyweight2?branch=master
+        
+Keywords: flyweight,flyweight-pattern,objectpool,shared-memory
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Python: ==2.7.*
