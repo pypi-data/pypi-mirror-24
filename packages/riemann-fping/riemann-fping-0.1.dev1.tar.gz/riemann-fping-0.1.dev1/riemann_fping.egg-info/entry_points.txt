@@ -1,0 +1,3 @@
+[console_scripts]
+riemann-fping = riemann_fping.riemann_fping:main
+
