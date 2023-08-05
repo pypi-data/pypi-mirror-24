@@ -1,0 +1,17 @@
+setup.py
+lcba/AndResGuard-cli-1.2.0.jar
+lcba/AndResGuard_config.xml
+lcba/__init__.py
+lcba/andres_guard.py
+lcba/compress.py
+lcba/globalVar.py
+lcba/hashmap.py
+lcba/lint_cleanup.py
+lcba/pngquant
+lcba/util.py
+lcba/zipalign
+lcba.egg-info/PKG-INFO
+lcba.egg-info/SOURCES.txt
+lcba.egg-info/dependency_links.txt
+lcba.egg-info/requires.txt
+lcba.egg-info/top_level.txt

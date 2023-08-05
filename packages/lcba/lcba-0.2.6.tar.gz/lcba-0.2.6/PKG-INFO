@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: lcba
+Version: 0.2.6
+Summary: lint clean android and compress android resources
+Home-page: https://github.com/JumeiRdGroup/FineResources
+Author: tory you
+Author-email: feiy1@jumei.com
+License: MIT
+Description: 
+            LCBA is a fineresource project use lint delete unUsed file and value. And this we will compress the picture for
+            save the disk.
+            
+Keywords: lint resource
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
