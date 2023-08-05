@@ -1,0 +1,85 @@
+Metadata-Version: 2.0
+Name: rinzler
+Version: 1.15.1
+Summary: Django-based REST API Framework
+Home-page: https://github.com/feliphebueno/Rinzler
+Author: Rinzler
+Author-email: feliphezion@gmail.com
+License: MIT
+Keywords: rest,api,framework,django
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: Django
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+
+# Rinzler REST Framework
+
+Django-based REST Framework
+
+# Requires
+
+```PHP
+pip install rinzler
+```
+
+# Usage
+```Python
+
+# urls.py
+from your_controller import Controller
+from rinzler.core.url_assembler import UrlAssembler
+
+assembler = UrlAssembler()
+
+urlpatterns = [
+    assembler.mount('', Controller)
+]
+
+
+# your_controller.py
+
+from django.http.request import HttpRequest
+from django.views.generic import TemplateView
+
+from rinzler.core.response import Response
+
+class Controller(TemplateView):
+
+    def connect(self, app):
+
+        router = app['router']
+
+        router.get('/', self.hello_world)
+        return app
+
+    # end-point callbacks here:
+    @staticmethod
+    def hello_world(request: HttpRequest, app: dict(), **params: dict):
+        """
+        Default route callback
+        :param request HttpRequest
+        :param app Rinzler's object
+        :param params dict url params, if present
+        :rtype: Response
+        """
+        response = {
+            "status": True,
+            "data": "Hello World!"
+        }
+
+        return Response(response, content_type="application/json")
+```
+
+
