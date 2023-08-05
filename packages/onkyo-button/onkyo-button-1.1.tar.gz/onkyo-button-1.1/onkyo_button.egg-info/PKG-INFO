@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: onkyo-button
+Version: 1.1
+Summary: control Onkyo recievers from a GPIO button on a Raspberry Pi
+Home-page: https://github.com/szaske/onkyo-button.git
+Author: Steve Zaske
+Author-email: steve@zaske.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

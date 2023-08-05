@@ -1,0 +1,3 @@
+onkyo-eiscp
+psutil
+RPi.GPIO
