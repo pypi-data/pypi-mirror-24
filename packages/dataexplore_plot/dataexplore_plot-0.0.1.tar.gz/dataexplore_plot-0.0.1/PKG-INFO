@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: dataexplore_plot
+Version: 0.0.1
+Summary: Plotting module for use in data exploration for ML and Kaggle
+Home-page: https://github.com/spidezad/dataexplore_plot
+Author: Tan Kok Hua
+Author-email: kokhuatan.fl@gmail.com
+License: BSD
+Download-URL: https://github.com/spidezad/dataexplore_plot/tarball/0.0.1
+Description: dataexplore_plot
+        ===============================
+        
+        version number: 0.0.1
+        author: Tan Kok Hua
+        
+        Overview
+        --------
+        
+        Plotting module for use in data exploration for ML and Kaggle
+        
+        Installation / Usage
+        --------------------
+        
+        To install use pip:
+        
+            $ pip install dataexplore_plot
+        
+        
+        Or clone the repo:
+        
+            $ git clone https://github.com/spidezad/dataexplore_plot.git
+            $ python setup.py install
+            
+        Contributing
+        ------------
+        
+        TBD
+        
+        Example
+        -------
+        
+        TBD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3

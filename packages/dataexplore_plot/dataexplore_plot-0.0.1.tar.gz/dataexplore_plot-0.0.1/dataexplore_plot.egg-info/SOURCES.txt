@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+dataexplore_plot/__init__.py
+dataexplore_plot/dataexplore_plot.py
+dataexplore_plot.egg-info/PKG-INFO
+dataexplore_plot.egg-info/SOURCES.txt
+dataexplore_plot.egg-info/dependency_links.txt
+dataexplore_plot.egg-info/requires.txt
+dataexplore_plot.egg-info/top_level.txt
