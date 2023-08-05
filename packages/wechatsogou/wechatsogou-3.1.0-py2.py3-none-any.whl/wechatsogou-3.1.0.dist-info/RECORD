@@ -1,0 +1,16 @@
+wechatsogou/__init__.py,sha256=5GnNBWK__tGb9YuJCOonrX6N6iiS6XRL4X3Sn4Sv18c,1222
+wechatsogou/api.py,sha256=KA06sPQ4RIUNEkxI88WZHqT3SdpP-w5b8JDcHvsbXWw,17815
+wechatsogou/const.py,sha256=CP1jpPjLUDtxVPfIhnxGnWurLYWfGtCyw6ivhRDVMaU,1415
+wechatsogou/exceptions.py,sha256=ZqEsR4B3bMfuzbJE2a5Id0jI4HzCW-ZzuR_zGqTNS50,766
+wechatsogou/filecache.py,sha256=uFyGb7M88OjW2d0AeN7n2bTzRBoAvBFbVB-7O0774Y8,371
+wechatsogou/identify_image.py,sha256=vtjHZY6y2NM2I3kDXlrmiZkjlmK0r4icaCjMCsLGjm8,3406
+wechatsogou/pkgs.py,sha256=eEcrG1uARah1IJit7rqI_OcSU6aKwPJFXT7mf7Ez3Ss,907
+wechatsogou/request.py,sha256=tSgCoCwv344_sD_8E14u6pBV58FWK3w8jgBqcDBwyT0,6416
+wechatsogou/structuring.py,sha256=k1Jh8UVh3QVEL9qren2qL2GQBi1h6w3xsC3_jt4Q2O8,14443
+wechatsogou/tools.py,sha256=rPIOY3NIDwNSUFzFeZ6OgGBPDeAsLF-4ai0l4BxmM8Q,2419
+wechatsogou-3.1.0.dist-info/DESCRIPTION.rst,sha256=l-m8Yy6gEVurfzc47HlwVzHx28IjIh3RNOLD_PjVV-o,28797
+wechatsogou-3.1.0.dist-info/METADATA,sha256=Z4L72c_SEt3FxeFsCBcPEypMeKhwtpCJqVbVA7WSMD0,29826
+wechatsogou-3.1.0.dist-info/RECORD,,
+wechatsogou-3.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+wechatsogou-3.1.0.dist-info/metadata.json,sha256=XaKM1cL3Ppao0qyPGjeE5dUTkKJb-GHskXT6LRkczNQ,1088
+wechatsogou-3.1.0.dist-info/top_level.txt,sha256=qYFpgAj5Dk3zytDkzH_kuObrjyoawuxblMbHDS9YA-U,12
