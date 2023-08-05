@@ -1,0 +1,17 @@
+README.txt
+setup.py
+stereo7/__init__.py
+stereo7/arguments.py
+stereo7/build.py
+stereo7/core.py
+stereo7/fileutils.py
+stereo7/google_sheets.py
+stereo7/inapps.py
+stereo7/project.py
+stereo7/version.py
+stereo7.egg-info/PKG-INFO
+stereo7.egg-info/SOURCES.txt
+stereo7.egg-info/dependency_links.txt
+stereo7.egg-info/entry_points.txt
+stereo7.egg-info/requires.txt
+stereo7.egg-info/top_level.txt
