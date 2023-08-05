@@ -1,0 +1,13 @@
+HISTORY.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+message_match/__init__.py
+message_match/message_match.py
+message_match.egg-info/PKG-INFO
+message_match.egg-info/SOURCES.txt
+message_match.egg-info/dependency_links.txt
+message_match.egg-info/requires.txt
+message_match.egg-info/top_level.txt
