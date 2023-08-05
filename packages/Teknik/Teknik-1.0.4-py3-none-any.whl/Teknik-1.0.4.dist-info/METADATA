@@ -1,0 +1,13 @@
+Metadata-Version: 2.0
+Name: Teknik
+Version: 1.0.4
+Summary: A library for using the Teknik Services
+Home-page: https://git.teknik.io/Teknikode/Tools/src/master/Python
+Author: Uncled1023
+Author-email: admin@teknik.io
+License: BSD 3-Clause
+Requires-Dist: requests
+
+Teknik Services
+
+

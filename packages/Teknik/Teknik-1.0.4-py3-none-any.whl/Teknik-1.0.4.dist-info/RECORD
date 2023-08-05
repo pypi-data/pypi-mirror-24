@@ -1,0 +1,10 @@
+Teknik-1.0.4.dist-info/DESCRIPTION.rst,sha256=55ivFaaMs_sM2OU8-3JXMsczCLbEvMTwQtbWwJQx2G4,18
+Teknik-1.0.4.dist-info/METADATA,sha256=3cvgDtP1iEE7XqZKoXEMmh1aQiBbKqtU1MGpu_0d_XA,280
+Teknik-1.0.4.dist-info/RECORD,,
+Teknik-1.0.4.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+Teknik-1.0.4.dist-info/metadata.json,sha256=L3FSOGqmmYdrhUGBimiZBWnaFroykaeFNSgJxnD__x8,502
+Teknik-1.0.4.dist-info/top_level.txt,sha256=cfaTBeU0yjBC6a7gnt8llLjxm3orGAhiX219OIMLpa0,7
+teknik/__init__.py,sha256=t3sw2eoi2SLjJVFKYqnWn5xtaKt1KQQjX1Z9jSoLvag,29
+teknik/teknik.py,sha256=WXhCcvY8qg3K6bm0nFpTyIdHefF7Lo2T5wBf1USkQjo,1566
+teknik/uploads.py,sha256=WthwrDZLlstwS3CFqgS0z_0GZu6F5CYUSjsUTfRf3GI,977
+teknik/util.py,sha256=kBplQAuqKzSFvIadIaM3HTVMKRTdO00cwE4uL9uUrGc,409
