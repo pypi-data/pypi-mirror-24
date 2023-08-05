@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: afew
+Version: 1.2.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Communications :: Email :: Filters
+Classifier: Topic :: Utilities
+Classifier: Topic :: Database
+Provides: afew
