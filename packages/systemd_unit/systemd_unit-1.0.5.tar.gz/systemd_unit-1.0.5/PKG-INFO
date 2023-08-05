@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: systemd_unit
+Version: 1.0.5
+Summary: This library lets you create and manage systemd unit files
+Home-page: https://github.com/justin8/python-systemd-unit
+Author: Justin Dray
+Author-email: justin@dray.be
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
