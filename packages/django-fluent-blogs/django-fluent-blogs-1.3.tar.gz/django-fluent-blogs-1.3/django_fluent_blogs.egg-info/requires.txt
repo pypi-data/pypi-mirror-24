@@ -1,0 +1,17 @@
+django-fluent-contents>=1.0
+django-fluent-utils>=1.3.3
+django-categories-i18n>=1.0
+django-parler>=1.6
+django-slug-preview>=1.0.1
+django-tag-parser>=3.0
+
+[blogpage]
+django-fluent-pages>=1.0.1
+
+[taggit]
+taggit
+taggit-autosuggest
+
+[tests]
+django-fluent-pages>=1.0.1
+django-wysiwyg>=0.7.1
