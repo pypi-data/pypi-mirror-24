@@ -1,0 +1,15 @@
+include *.txt
+include *.rst
+include bootstrap.py
+include buildout.cfg
+include tox.ini
+include .travis.yml
+include .coveragerc
+
+recursive-include src *.py
+recursive-include src *.txt
+recursive-include src *.zcml
+
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs Makefile
