@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: yunbi
+Version: 0.1.0
+Summary: A Python wrapper for the yunbi.com api
+Home-page: https://github.com/imlonghao/yunbi
+Author: imlonghao
+Author-email: shield@fastmail.com
+License: MIT License
+Description: # yunbi
+        A Python wrapper for the yunbi.com api
+        
+Keywords: Yunbi
+Platform: any
