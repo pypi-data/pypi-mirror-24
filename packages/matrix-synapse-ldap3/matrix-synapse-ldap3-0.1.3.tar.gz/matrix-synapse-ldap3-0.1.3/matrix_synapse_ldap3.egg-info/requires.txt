@@ -1,0 +1,3 @@
+Twisted>=15.1.0
+ldap3>=0.9.5
+service_identity
