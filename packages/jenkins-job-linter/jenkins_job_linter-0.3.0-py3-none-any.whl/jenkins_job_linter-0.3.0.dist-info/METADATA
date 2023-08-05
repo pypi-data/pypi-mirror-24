@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: jenkins-job-linter
+Version: 0.3.0
+Summary: Perform linting checks against a directory of Jenkins job XML
+Home-page: https://github.com/OddBloke/jenkins-job-linter
+Author: Daniel Watkins
+Author-email: daniel@daniel-watkins.co.uk
+License: Apache-2
+Keywords: jenkins
+Requires-Dist: click (<7)
+Requires-Dist: stevedore
+
+# jenkins-job-linter
+
+[![Build Status](https://travis-ci.org/OddBloke/jenkins-job-linter.svg?branch=master)](https://travis-ci.org/OddBloke/jenkins-job-linter)
+[![codecov](https://codecov.io/gh/OddBloke/jenkins-job-linter/branch/master/graph/badge.svg)](https://codecov.io/gh/OddBloke/jenkins-job-linter)
+[![Snap Status](https://build.snapcraft.io/badge/OddBloke/jenkins-job-linter.svg)](https://build.snapcraft.io/user/OddBloke/jenkins-job-linter)
+[![Requirements Status](https://requires.io/github/OddBloke/jenkins-job-linter/requirements.svg?branch=master)](https://requires.io/github/OddBloke/jenkins-job-linter/requirements/?branch=master)
+
+Perform linting checks against a directory of Jenkins job XML
+
+
+
