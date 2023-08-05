@@ -1,0 +1,4 @@
+Django>=1.8
+django-choices
+django-ckeditor
+premailer
