@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: index-bam-by-read-id
+Version: 0.0.3
+Summary: Sort, index and search BAM files by read ID
+Home-page: https://github.com/gantzgraf/index_bam_by_read_id
+Author: David A. Parry
+Author-email: david.parry@ed.ac.uk
+License: MIT
+Download-URL: https://github.com/gantzgraf/index_bam_by_read_id/archive/0.0.3.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: pysam
+
+UNKNOWN
+
+
