@@ -1,0 +1,61 @@
+Metadata-Version: 1.1
+Name: sphinx-fossasia-theme
+Version: 0.0.4
+Summary: A Sphinx theme specific to FOSSASIA's Projects
+Home-page: https://github.com/fossasia/sphinx_fossasia_theme
+Author: Ujjwal Bhardwaj
+Author-email: ujjwalb1996@gmail.com
+License: GNU
+Description: sphinx_fossasia_theme
+        =====================
+        
+        .. image:: https://travis-ci.org/fossasia/sphinx_fossasia_theme.svg?branch=master
+            :target: https://travis-ci.org/fossasia/sphinx_fossasia_theme
+        
+        Official bootstrap based Sphinx theme for FOSSASIA
+        
+        Installation
+        ------------
+        
+        Download the package or add it to your `requirements.txt`
+        
+        ::
+        
+            pip install sphinx_fossasia_theme
+        
+        In your conf.py file:
+        
+        ::
+        
+            html_theme = "sphinx_fossasia_theme"
+        
+        Configuration
+        -------------
+        
+        You can define the theme's project-wide configuration via `html_theme_options`. For example
+        
+        .. code:: python
+        
+           html_theme_options = {
+               'show_fossasia_logo': 'true',
+               'link_about': '/about',
+           }
+        
+        Following is a list of all available options:
+        
+        - *link_about*
+        - *link_docs*
+        - *link_blog*
+        - *link_donate*
+        - *link_contact*
+        - *link_twitter*
+        - *link_facebook*
+        - *show_fossasia_logo*
+        
+Platform: any
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Framework :: Sphinx :: Theme
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development :: Documentation

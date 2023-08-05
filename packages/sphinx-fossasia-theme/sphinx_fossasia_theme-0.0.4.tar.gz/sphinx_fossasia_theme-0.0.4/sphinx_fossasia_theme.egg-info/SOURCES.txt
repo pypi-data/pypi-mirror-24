@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+sphinx_fossasia_theme/__init__.py
+sphinx_fossasia_theme/layout.html
+sphinx_fossasia_theme/theme.conf
+sphinx_fossasia_theme.egg-info/PKG-INFO
+sphinx_fossasia_theme.egg-info/SOURCES.txt
+sphinx_fossasia_theme.egg-info/dependency_links.txt
+sphinx_fossasia_theme.egg-info/entry_points.txt
+sphinx_fossasia_theme.egg-info/requires.txt
+sphinx_fossasia_theme.egg-info/top_level.txt
+sphinx_fossasia_theme/static/fossasia.css_t
