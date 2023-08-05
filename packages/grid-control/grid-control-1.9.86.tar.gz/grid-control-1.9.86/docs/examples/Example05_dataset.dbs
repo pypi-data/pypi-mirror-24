@@ -1,0 +1,20 @@
+[/MY/SKIM1#1111]
+nickname = Dataset1
+metadata = ["META_KEY1", "META_KEY2"]
+metadata common = ["M1c"]
+/bin/env = 1 ["M2A"]
+/bin/arch = 1 ["M2B"]
+
+[/MY/SKIM2#2222]
+nickname = Dataset2
+metadata = ["META_KEY2", "META_KEY3"]
+metadata common = ["M2c"]
+/bin/gettext = 1 ["M3A"]
+/bin/grep = 1 ["M3B"]
+/bin/mail = 1 ["M3C"]
+/bin/mailx = 3 ["M3D"]
+
+[/MY/SKIM3#333]
+nickname = Dataset3
+/bin/ash = 2
+/bin/cp = 1

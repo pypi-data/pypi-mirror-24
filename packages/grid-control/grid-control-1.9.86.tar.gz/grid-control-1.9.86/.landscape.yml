@@ -1,0 +1,40 @@
+ignore-patterns:
+  - docs/*
+  - packages/grid_control/backends/htcondor_wms/*
+  - packages/grid_control_cms/DashboardAPI/*
+  - packages/grid_control_cms/Lexicon.py
+  - packages/grid_control_cms/share/fragmentForCMSSW.py
+  - packages/grid_control_gui/xmpp/*
+  - packages/python_compat_json.py
+  - packages/python_compat_tarfile.py
+  - packages/python_compat_urllib2.py
+  - packages/requests/*
+python-targets:
+  - 2
+  - 3
+strictness: veryhigh
+max-line-length: 160
+pylint:
+  options:
+    max-args: 15
+    max-attributes: 15
+    good-names: dn,fi,fn,fp,vn,_
+    bad-functions: map,filter,range,next,sorted,reduce
+  disable:
+    - bad-continuation
+    - broad-except
+    - cell-var-from-loop
+    - missing-docstring
+    - no-self-use
+    - redefined-builtin
+    - too-few-public-methods
+    - unused-argument
+pep8:
+  disable:
+    - W191
+    - E128
+    - E401
+    - E501
+mccabe:
+  disable:
+    - MC0001
