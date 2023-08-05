@@ -1,0 +1,5 @@
+include piplates/Applications/*.pdf
+include piplates/Applications/*.ui
+include piplates/Applications/*.py
+include piplates/Applications/Assets/*.png
+include piplates/Applications/Shortcuts/*.desktop
