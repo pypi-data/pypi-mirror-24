@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+base10/__init__.py
+base10/base.py
+base10/exceptions.py
+base10/helpers.py
+base10.egg-info/PKG-INFO
+base10.egg-info/SOURCES.txt
+base10.egg-info/dependency_links.txt
+base10.egg-info/requires.txt
+base10.egg-info/top_level.txt
