@@ -1,0 +1,8 @@
+setup.py
+iqq.egg-info/PKG-INFO
+iqq.egg-info/SOURCES.txt
+iqq.egg-info/dependency_links.txt
+iqq.egg-info/entry_points.txt
+iqq.egg-info/requires.txt
+iqq.egg-info/top_level.txt
+src/__init__.py
