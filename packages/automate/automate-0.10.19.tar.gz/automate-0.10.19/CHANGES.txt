@@ -1,0 +1,122 @@
+0.10.19 (2017-08-04)
+--------------------
+
+- First release with support for special support for AutomateFirmata features for Arduino module,
+  see <https://github.com/tuomas2/AutomateFirmata>.
+- VirtualWire support in Arduino. This allows wireless communication to remote Arduinos using
+  very cheap RF circuits. See documentation!
+- Add support to builtin pull up resistors in Arduino digital input pins.
+- Arduino service instance now serves only 1 device. Use multiple services if you want to
+  use many devices. For usage see examples/arduino2.py. Only ArduinoService attributes
+  were changed, see the documentation.
+
+
+0.10.18 (2017-07-19)
+--------------------
+
+- Logging improvements.
+
+
+0.10.17 (2017-07-19)
+--------------------
+
+- Pass action information to callables in kwargs and use information in PushOver.
+
+
+0.10.16 (2017-07-16)
+--------------------
+
+- Improved logging configuration (does not ever define root logger)
+
+
+0.10.15 (2017-07-15)
+--------------------
+
+- Fix broken python 2 support
+
+
+0.10.14 (2017-07-15)
+--------------------
+
+- Add support for Sentry (http://sentry.io) via raven library
+
+
+0.10.13 (2017-07-13)
+--------------------
+
+- Improve PushOver error handling and add some additional attributes
+
+
+0.10.12 (2017-07-13)
+--------------------
+
+- Fix wrong is_mocked status for ArduinoService
+
+
+0.10.11 (2017-07-13)
+--------------------
+
+- Always use latest pickle format
+- Show alert box about mocked services (if any) in web ui (any view)
+- Add services to threads view and rename view to system and threads
+- Move threads, uml, and console to "View" submenu.
+- Add function to cancel timers (and other threads that implement cancel)
+- Add PushOver push notification sender
+
+0.10.10 (2017-07-07)
+--------------------
+
+- Fix Python 3 bug (crash) in RpcService
+- Add SimplePollingSensor
+
+
+0.10.9 (2017-06-25)
+-------------------
+
+- Fix timezone problem caused by Django webui. Caused issues with CronTimerSensor
+- --no_input command line option
+- Other small fixes and improvements
+
+
+0.10.8 (2017-06-24)
+-------------------
+
+- Add Division/Div and Inverse/Inv callables
+
+
+0.10.7 (2017-06-23)
+-------------------
+
+- Fix arduino reloading
+
+
+0.10.6 (2017-06-23)
+-------------------
+
+- Fixed regression (SystemObject comparison)
+
+
+0.10.5 (2017-06-22)
+-------------------
+
+- Bugfixes
+
+
+0.10.4 (2017-06-22)
+-------------------
+
+- Change web implementation to conform more to ordinary Django app style
+- Add some real-life examples in more_examples/
+
+
+0.10.3 (2017-06-22)
+-------------------
+
+- Added support for RPI.GPIO which is now default.
+  If RPIO is desired, set rpio attribute in RpioService.
+
+0.10.0
+------
+
+- Python 3 support
+- Merged extensions (webui, rpio, arduino, rpc) into main repository

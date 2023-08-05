@@ -1,0 +1,16 @@
+include LICENCE.txt
+include tests/*.py
+
+include *.in
+include *.txt
+
+recursive-include src/automate/extensions/webui/static *.*
+recursive-include src/automate/extensions/webui/djangoapp/templates *.html
+
+exclude docs
+exclude examples
+exclude more_examples
+
+recursive-exclude docs *
+recursive-exclude examples *
+recursive-exclude more_examples *

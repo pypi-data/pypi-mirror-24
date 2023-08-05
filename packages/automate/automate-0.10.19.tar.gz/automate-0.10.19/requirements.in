@@ -1,0 +1,33 @@
+# automate core
+ansiconv
+colorlog
+croniter~=0.3.0
+future
+ipython<6.0
+pyinotify
+traits~=4.6
+raven
+requests
+
+#arduino:
+pyfirmata
+
+#rpio:
+RPIO
+
+#webui
+Django
+django-crispy-forms
+#whitenoise
+
+#wsgi
+tornado
+
+# testing
+pytest
+pytest-pycharm
+mock # py2.7
+pytest-cov
+
+# apps
+psutil
