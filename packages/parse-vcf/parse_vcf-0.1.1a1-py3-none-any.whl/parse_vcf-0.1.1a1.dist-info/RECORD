@@ -1,0 +1,9 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parse_vcf.py,sha256=WmRCl707Chp2R1e3W80YcKwfzxSMICgFY797rqJ9JRo,54532
+test_parse_vcf.py,sha256=RB2HkTkagfXhNTL-Z8B49Jawgs7RuAQ6XXpReoesz8A,2692
+parse_vcf-0.1.1a1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+parse_vcf-0.1.1a1.dist-info/METADATA,sha256=Va2shF69APRXkcFPWfCPMzwmyW0QZH7_9zW-_wPvi5A,728
+parse_vcf-0.1.1a1.dist-info/RECORD,,
+parse_vcf-0.1.1a1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+parse_vcf-0.1.1a1.dist-info/metadata.json,sha256=rlPzyMfz8R5tZGZQzwe16E4rJEQV3u6Y54SpDCZ1J1Y,934
+parse_vcf-0.1.1a1.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
