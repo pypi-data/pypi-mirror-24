@@ -1,0 +1,6 @@
+numpy
+keras
+matplotlib
+ipywidgets
+Pillow
+IPython
