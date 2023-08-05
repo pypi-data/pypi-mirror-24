@@ -1,0 +1,12 @@
+README.rst
+setup.py
+./__init__.py
+./__main__.py
+./ryd.py
+ryd.egg-info/PKG-INFO
+ryd.egg-info/SOURCES.txt
+ryd.egg-info/dependency_links.txt
+ryd.egg-info/entry_points.txt
+ryd.egg-info/namespace_packages.txt
+ryd.egg-info/requires.txt
+ryd.egg-info/top_level.txt
