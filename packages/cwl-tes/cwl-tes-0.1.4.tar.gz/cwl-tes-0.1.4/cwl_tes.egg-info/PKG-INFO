@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: cwl-tes
+Version: 0.1.4
+Summary: Common workflow language reference implementation backended     by a GA4GH Task Execution Service
+Home-page: https://github.com/common-workflow-language/cwl-tes
+Author: Adam Struck
+Author-email: strucka@ohsu.edu
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=2.7, <4
