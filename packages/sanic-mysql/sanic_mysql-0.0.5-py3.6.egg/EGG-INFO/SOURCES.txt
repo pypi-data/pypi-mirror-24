@@ -1,0 +1,9 @@
+setup.py
+sanic_mysql/__init__.py
+sanic_mysql/core.py
+sanic_mysql.egg-info/PKG-INFO
+sanic_mysql.egg-info/SOURCES.txt
+sanic_mysql.egg-info/dependency_links.txt
+sanic_mysql.egg-info/not-zip-safe
+sanic_mysql.egg-info/requires.txt
+sanic_mysql.egg-info/top_level.txt
