@@ -1,0 +1,16 @@
+pybase64/__init__.py,sha256=wz8T7QGvqkPnUs885ZdKO-ZwYcl-MRZNCpqGdleA8ME,2124
+pybase64/__main__.py,sha256=7dtBh64qdyq7USV8vNN-iAP75ilsq1jEDXYLxqO4YnM,2394
+pybase64/_fallback.py,sha256=9yrWEaYZv2Xo_mvupX8840QUfC6OEElLxVPpo-_BTEA,2866
+pybase64/_pybase64.cpython-35m-darwin.so,sha256=ws9rJM0la69l-yh0FBLeB62uYod9uJUyYFVgDeN4GkI,78520
+pybase64/_version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+pybase64/distutils/__init__.py,sha256=uae0hTghgXIwwIwKPo4lbcvpKGBgVYcNbXEVima-duQ,156
+pybase64/distutils/ccompilercapabilities.py,sha256=pRj5nGZUGsmuaikgaryHcTiheGePPrCRK8aaZHvCTII,5651
+pybase64/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybase64/tests/test_pybase64_unittest.py,sha256=KOAtvH07h-CwpJO8ZLiCX94No1zeO-Tlg4IcLpUiLpE,7852
+pybase64-0.1.0.dist-info/DESCRIPTION.rst,sha256=XmnCPlOmtIy7cB7r-Yn32fS2Nplq0g4VEM3W41Lr0yY,2261
+pybase64-0.1.0.dist-info/METADATA,sha256=SPZ3v5_q4VXH0zBKjw27D2zr1hPOctFyj5wxuxR0I6o,3160
+pybase64-0.1.0.dist-info/RECORD,,
+pybase64-0.1.0.dist-info/WHEEL,sha256=eUbynpjVKAjn-dj16FC8K29nAkj6iHZBcpPJzLRb2E4,109
+pybase64-0.1.0.dist-info/entry_points.txt,sha256=nFz7G55Rt0M97WCkhSbQ-fwt9rKtSCa-VwhT2w1yJZM,53
+pybase64-0.1.0.dist-info/metadata.json,sha256=PNJ-RnPLWCdH8igNLhBQQchqL3SOVlF7OcH1vzzQjVk,1220
+pybase64-0.1.0.dist-info/top_level.txt,sha256=Tm3tmGpMnLWAvjrxORS2E5I6LARaLepOEUjGaTmFuZg,9
