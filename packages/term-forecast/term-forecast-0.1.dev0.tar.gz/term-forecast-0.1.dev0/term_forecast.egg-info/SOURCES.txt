@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+setup.py
+docs/demo.gif
+term_forecast/__init__.py
+term_forecast/emojiParser.py
+term_forecast/loadingAnimation.py
+term_forecast/term_weather.py
+term_forecast.egg-info/PKG-INFO
+term_forecast.egg-info/SOURCES.txt
+term_forecast.egg-info/dependency_links.txt
+term_forecast.egg-info/entry_points.txt
+term_forecast.egg-info/requires.txt
+term_forecast.egg-info/top_level.txt

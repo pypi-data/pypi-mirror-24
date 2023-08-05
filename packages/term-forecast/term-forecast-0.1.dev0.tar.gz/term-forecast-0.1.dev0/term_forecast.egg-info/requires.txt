@@ -1,0 +1,4 @@
+fire==0.1.1
+geoip2==2.5.0
+fuzzywuzzy==0.15.1
+python-Levenshtein==0.12.0

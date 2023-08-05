@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: term-forecast
+Version: 0.1.dev0
+Summary: Terminal Forcast is a easily accessible terminal based weather forecaster
+Home-page: https://github.com/KevinMidboe/termWeather/
+Author: Kevin Midboe
+Author-email: support@kevinmidboe.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
