@@ -1,0 +1,89 @@
+Metadata-Version: 2.0
+Name: OpenATS
+Version: 0.0.dev14
+Summary: Open AI Training Station for Keras
+Home-page: https://github.com/peace098beat/OpenATS
+Author: FiFi
+Author-email: fifi@example.jp
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: Markdown (==2.6.8)
+Requires-Dist: OpenATS (==0.0.dev8)
+Requires-Dist: Werkzeug (==0.12.2)
+Requires-Dist: backports.weakref (==1.0rc1)
+Requires-Dist: bleach (==1.5.0)
+Requires-Dist: certifi (==2017.7.27.1)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: html5lib (==0.9999999)
+Requires-Dist: idna (==2.5)
+Requires-Dist: numpy (==1.13.1)
+Requires-Dist: pandoc (==1.0.0b2)
+Requires-Dist: pkginfo (==1.4.1)
+Requires-Dist: ply (==3.10)
+Requires-Dist: protobuf (==3.3.0)
+Requires-Dist: requests (==2.18.2)
+Requires-Dist: requests-toolbelt (==0.8.0)
+Requires-Dist: six (==1.10.0)
+Requires-Dist: tensorflow (==1.2.1)
+Requires-Dist: tqdm (==4.15.0)
+Requires-Dist: twine (==1.9.1)
+Requires-Dist: urllib3 (==1.22)
+
+====================
+Partial PyPI Mirrors
+====================
+
+Sometimes you want a PyPI mirror, but you don't want the whole thing. You
+certainly don't want external links. What you want are the things that you
+need and nothing more. What's more, you often know exactly what you need
+because you already have a pip requirements.txt file containing the list of
+things you expect to download from PyPI.
+
+pypi-mirror will build a local static mirror for you based on requirements
+files in git repos.
+
+Use with diskimage-builder
+--------------------------
+
+The config below shows a generic sample config. If you're using this mirror in
+conjunction with diskimage-builder, more specific notes (including some
+pre-requisites and installation instructions) can be found at
+https://git.openstack.org/cgit/openstack/diskimage-builder/tree/elements/pypi/README.md
+
+
+Configuration
+-------------
+
+A YAML configuration is needed to create a mirror. Below is an example
+configuration. ::
+
+  cache-root: /tmp/cache
+
+  mirrors:
+    - name: openstack
+      projects:
+        - https://git.openstack.org/openstack/requirements
+      output: /tmp/mirror/openstack
+
+    - name: openstack-infra
+      projects:
+        - https://git.openstack.org/openstack-infra/config
+      output: /tmp/mirror/openstack-infra
+
+
+Creating a mirror
+-----------------
+
+The run_mirror utility creates a mirror. ::
+
+  run-mirror -c mirror.yaml
+
+
+
