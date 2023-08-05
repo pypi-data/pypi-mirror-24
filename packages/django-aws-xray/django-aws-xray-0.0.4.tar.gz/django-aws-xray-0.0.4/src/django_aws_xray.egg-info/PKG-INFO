@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: django-aws-xray
+Version: 0.0.4
+Summary: Django AWS X-Ray
+Home-page: https://github.com/mvantellingen/django-xray
+Author: Michael van Tellingen
+Author-email: UNKNOWN
+License: MIT
+Description: ===============
+        django-aws-xray
+        ===============
+        
+        
+        Status
+        ======
+        .. image:: https://travis-ci.org/mvantellingen/django-aws-xray.svg?branch=master
+            :target: https://travis-ci.org/mvantellingen/django-aws-xray
+        
+        .. image:: http://codecov.io/github/mvantellingen/django-aws-xray/coverage.svg?branch=master
+            :target: http://codecov.io/github/mvantellingen/django-aws-xray?branch=master
+        
+        .. image:: https://img.shields.io/pypi/v/django-aws-xray.svg
+            :target: https://pypi.python.org/pypi/django-aws-xray/
+        
+        
+        Installation
+        ============
+        
+        .. code-block:: shell
+        
+           pip install django-aws-xray
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
