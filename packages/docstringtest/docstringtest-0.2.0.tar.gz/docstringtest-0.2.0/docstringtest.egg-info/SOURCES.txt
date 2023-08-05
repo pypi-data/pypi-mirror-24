@@ -1,0 +1,8 @@
+README.rst
+setup.py
+docstringtest/__init__.py
+docstringtest.egg-info/PKG-INFO
+docstringtest.egg-info/SOURCES.txt
+docstringtest.egg-info/dependency_links.txt
+docstringtest.egg-info/top_level.txt
+scripts/docstringtest
