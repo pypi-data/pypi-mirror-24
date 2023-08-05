@@ -1,0 +1,16 @@
+AUTHORS
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+TODO.md
+debian8-dist.sh
+setup.py
+docs/AIMA
+examples/mdp_framework_example.py
+examples/optimization_framework_example.py
+jdhp_pyai.egg-info/PKG-INFO
+jdhp_pyai.egg-info/SOURCES.txt
+jdhp_pyai.egg-info/dependency_links.txt
+jdhp_pyai.egg-info/top_level.txt
+pyai/__init__.py
