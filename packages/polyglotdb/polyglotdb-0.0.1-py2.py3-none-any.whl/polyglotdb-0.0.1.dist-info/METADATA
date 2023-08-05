@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: polyglotdb
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/MontrealCorpusTools/PolyglotDB
+Author: Montreal Corpus Tools
+Author-email: michael.e.mcauliffe@gmail.com
+License: UNKNOWN
+Keywords: phonology corpus phonetics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: acousticsim
+Requires-Dist: influxdb
+Requires-Dist: librosa
+Requires-Dist: neo4j-drivertextgrid
+Provides-Extra: testing
+Requires-Dist: pytest; extra == 'testing'
+
+UNKNOWN
+
+
