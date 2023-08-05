@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: gmind
+Version: 0.0.1
+Summary: Deep learning to help find gravitational waves using PyCBC and Keras
+Home-page: https://ligo-cbc.github.io
+Author: Ligo Virgo Collaboration
+Author-email: alex.nitz@ligo.org
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: ligo,physics,gravity,deep learning,astronomy,gravitational waves,machine learning
+Platform: UNKNOWN
