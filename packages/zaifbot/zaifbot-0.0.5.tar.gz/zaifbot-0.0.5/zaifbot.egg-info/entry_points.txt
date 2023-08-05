@@ -1,0 +1,4 @@
+      [console_scripts]
+      init_database = zaifbot.setup:init_database
+      install_ta_lib = zaifbot:install_ta_lib
+      
