@@ -1,0 +1,12 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+setup.py
+TVRegex.egg-info/PKG-INFO
+TVRegex.egg-info/SOURCES.txt
+TVRegex.egg-info/dependency_links.txt
+TVRegex.egg-info/entry_points.txt
+TVRegex.egg-info/top_level.txt
+tvregex/__init__.py
+tvregex/shownames.json
+tvregex/tvregex.py
