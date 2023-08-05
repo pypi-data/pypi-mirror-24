@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: rack-iam
+Version: 0.9.0
+Summary: A framework for AWS IAM components
+Home-page: https://github.com/rackerlabs/rack_iam_oss
+Author: Chris White
+Author-email: chris.white@rackspace.com
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: troposphere,rackspace,iam,aws
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Systems Administration
