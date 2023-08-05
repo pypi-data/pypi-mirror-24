@@ -1,0 +1,6 @@
+asyncio
+aioredis
+asyncpg
+pyOpenSSL
+autobahn
+service_identity
