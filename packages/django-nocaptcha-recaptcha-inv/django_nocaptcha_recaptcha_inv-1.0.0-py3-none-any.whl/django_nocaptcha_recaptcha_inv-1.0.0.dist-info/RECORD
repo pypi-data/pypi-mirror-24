@@ -1,0 +1,16 @@
+django_nocaptcha_recaptcha_inv-1.0.0.dist-info/DESCRIPTION.rst,sha256=39QCfT2UMal8K25Xg6sWNa4XuMYSASmu78fU2fYVxWs,493
+django_nocaptcha_recaptcha_inv-1.0.0.dist-info/METADATA,sha256=smpiaGNBJupwM7ab0LPHtho1QD-IK3zMuqJPNXuDyCU,1769
+django_nocaptcha_recaptcha_inv-1.0.0.dist-info/RECORD,,
+django_nocaptcha_recaptcha_inv-1.0.0.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+django_nocaptcha_recaptcha_inv-1.0.0.dist-info/metadata.json,sha256=FeGjk0siywElq0Sz-I3wivTO9VeWAr4Xuyj1KjGiJhw,1330
+django_nocaptcha_recaptcha_inv-1.0.0.dist-info/top_level.txt,sha256=GNCFt6uYP2OLXx7W8owhMpGwOmCc1sCIBDWRzMi3Ztc,20
+nocaptcha_recaptcha/__init__.py,sha256=bT6mBHWKBawhE9_q9FdeOZFpLl9L3B35lxTcHuXoCS4,104
+nocaptcha_recaptcha/_compat.py,sha256=Q6oZv614jQ4kL7smi-fynMrjVcnVSOtVA4bvHYm13eE,422
+nocaptcha_recaptcha/client.py,sha256=aYBZGvOtwx6kAbOjPG-NAhDok1SqKorQWPhjg9t-zZE,3311
+nocaptcha_recaptcha/fields.py,sha256=tZBQp2Ub5wSlTaI-cxwmGYspJ8tHYvFt7rhB58w9P88,2700
+nocaptcha_recaptcha/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nocaptcha_recaptcha/tests.py,sha256=fVFArsFkVeTuhjtvE3dKyT3GHVzmXLgfKdzL42Ki9iQ,2785
+nocaptcha_recaptcha/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nocaptcha_recaptcha/widgets.py,sha256=qu0cgvz2jVh65bGQvF8cbCx0VqOmhtuK5FDhQVmuiQw,1235
+nocaptcha_recaptcha/templates/nocaptcha_recaptcha/widget_invisible.html,sha256=W4SFXGnFjYzTWqXsBrsAs0fUcQ3u9YvpQyUoTqdOgN4,164
+nocaptcha_recaptcha/templates/nocaptcha_recaptcha/widget_nocaptcha.html,sha256=LjTS-u_ICVXGJA737Z0HJ-cfGZ54PDxYfM9ViCYw9BA,1174
