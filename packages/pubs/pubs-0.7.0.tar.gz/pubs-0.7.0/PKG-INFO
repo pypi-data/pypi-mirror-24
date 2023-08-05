@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pubs
+Version: 0.7.0
+Summary: command-line scientific bibliography manager
+Home-page: https://github.com/pubs/pubs
+Author: Olivier Mangin
+Author-email: fabien.benureau@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research

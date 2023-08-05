@@ -1,0 +1,6 @@
+pyyaml
+bibtexparser
+python-dateutil
+requests
+configobj
+beautifulsoup4
