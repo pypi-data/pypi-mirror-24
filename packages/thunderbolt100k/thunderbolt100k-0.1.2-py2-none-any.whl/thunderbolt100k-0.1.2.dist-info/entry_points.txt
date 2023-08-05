@@ -1,0 +1,3 @@
+[console_scripts]
+thunderbolt100k = thunderbolt100k.main:main
+
