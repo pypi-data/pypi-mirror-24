@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: yapylib
+Version: 0.0.1
+Summary: 常用工具类,拷贝在身边,一用好多年
+Home-page: https://github.com/twocucao/YaPyLib
+Author: twocucao
+Author-email: twocucao@gmail.com
+License: MIT
+Keywords: python utils terminal
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Requires-Dist: beautifulsoup4
+Requires-Dist: click
+Requires-Dist: jinja2
+Requires-Dist: parsel
+Requires-Dist: requests
+
+Micheal Gardner的Py工具类,拷贝在身边,一用好多年
+
+
