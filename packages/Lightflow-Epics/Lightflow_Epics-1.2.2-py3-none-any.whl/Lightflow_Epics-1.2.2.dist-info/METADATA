@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: Lightflow-Epics
+Version: 1.2.2
+Summary: An epics extension for Lightflow.
+Home-page: https://bitbucket.synchrotron.org.au/projects/DR/repos/lightflow-epics/browse
+Author: The Australian Synchrotron Python Group
+Author-email: python@synchrotron.org.au
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: lightflow (>=1.7.0)
+Requires-Dist: pyepics (>=3.2.6)
+
+
+Lightflow-Epics
+-----
+
+An epics extension for Lightflow.
+
+It adds tasks for common epics operations as well as a trigger task that monitors
+a PV and starts one or more dags.
+
+
+
