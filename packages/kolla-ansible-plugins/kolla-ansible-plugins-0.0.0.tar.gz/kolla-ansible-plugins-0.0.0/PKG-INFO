@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: kolla-ansible-plugins
+Version: 0.0.0
+Summary: Provide plugins for openstack/kolla-ansible
+Home-page: http://packages.python.org/kolla-ansible-plugins
+Author: Duong Ha-Quang
+Author-email: duonghq@vn.fujitsu.com
+License: GPLv3
+Description: ========================
+        Team and repository tags
+        ========================
+        
+        .. image:: http://governance.openstack.org/badges/kolla-ansible.svg
+            :target: http://governance.openstack.org/reference/tags/index.html
+        
+        .. Change things from this point on
+        
+        =============================
+        Kolla-Ansible-Plugin Overview
+        =============================
+        
+        The Kolla-Ansible-PLugin is plugins collections used in Kolla-Ansible with
+        ASLv2 incompatible license.
+        
+        
+Keywords: kolla-ansible
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5

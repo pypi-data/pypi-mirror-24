@@ -1,0 +1,16 @@
+========================
+Team and repository tags
+========================
+
+.. image:: http://governance.openstack.org/badges/kolla-ansible.svg
+    :target: http://governance.openstack.org/reference/tags/index.html
+
+.. Change things from this point on
+
+=============================
+Kolla-Ansible-Plugin Overview
+=============================
+
+The Kolla-Ansible-PLugin is plugins collections used in Kolla-Ansible with
+ASLv2 incompatible license.
+

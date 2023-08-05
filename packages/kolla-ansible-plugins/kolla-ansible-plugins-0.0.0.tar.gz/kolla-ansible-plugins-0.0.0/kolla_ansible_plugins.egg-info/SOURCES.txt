@@ -1,0 +1,6 @@
+README
+setup.py
+kolla_ansible_plugins.egg-info/PKG-INFO
+kolla_ansible_plugins.egg-info/SOURCES.txt
+kolla_ansible_plugins.egg-info/dependency_links.txt
+kolla_ansible_plugins.egg-info/top_level.txt
