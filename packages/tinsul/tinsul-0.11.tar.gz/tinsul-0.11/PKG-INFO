@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: tinsul
+Version: 0.11
+Summary: TInsul is a Python module to simulate condition-monitoring data for paper insulation degradation of large-scale transformers.
+Home-page: https://github.com/drericstrong/tinsul
+Author: Eric Strong
+Author-email: dr.eric.strong@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/drericstrong/tinsul/tarball/0.11
+Description: UNKNOWN
+Keywords: regression,data
+Platform: UNKNOWN
