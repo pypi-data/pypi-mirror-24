@@ -1,0 +1,1 @@
+recursive-include pycwt/sample *.py *.dat *.png

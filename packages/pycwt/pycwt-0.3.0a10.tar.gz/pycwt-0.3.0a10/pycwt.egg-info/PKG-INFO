@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: pycwt
+Version: 0.3.0a10
+Summary: Continuous wavelet transform module for Python.
+Home-page: https://github.com/regeirk/pycwt
+Author: Sebastian Krieger, Nabil Freij, Alexey Brazhe, Christopher Torrence, Gilbert P. Compo and contributors
+Author-email: sebastian@nublia.com
+License: BSD
+Description: 
+            A Python module for continuous wavelet spectral analysis. It includes a
+            collection of routines for wavelet transform and statistical analysis via
+            FFT algorithm. In addition, the module also includes cross-wavelet 
+            transforms, wavelet coherence tests and sample scripts.
+            
+Keywords: wavelet,spectral analysis,signal processing,data science,timeseries
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Science/Research
