@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: tweet-parser
+Version: 1.0.3
+Summary: Tools for Tweet parsing
+Home-page: https://github.com/fionapigott/tweet_parser
+Author: Fiona Pigott
+Author-email: fpigott@twitter.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
