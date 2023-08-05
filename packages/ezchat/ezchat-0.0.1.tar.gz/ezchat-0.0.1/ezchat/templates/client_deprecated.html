@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chat Client</title>
+</head>
+
+<body>
+    <h3>Chat</h3>
+
+    <p><input type="button" value="Leave chat room" id="leave" /></p>
+
+    <p>
+        <form id="connection">
+            <input type="text" name="name" id="nme" placeholder="Name..." size="50" autofocus />
+            <input type="text" name="room" id="rom" placeholder="Room..." size="50" autofocus />
+            <input type="text" name="host" id="hst" placeholder="Host..." size="50" autofocus />
+            <input type="text" name="port" id="prt" placeholder="Port..." size="50" autofocus />
+            <input type="submit" id="connect" value="Connect" />
+        </form>
+    </p>
+
+    <p>
+        <form action="/" id="chat_input">
+            <input type="text" name="message" id="msg" placeholder="Write msg..." size="50" autofocus />
+            <input type="submit" id="send_msg" value="Send" />
+        </form>
+    </p>
+
+    <div id="chat_zone"></div>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+
+    <script>
+        var URL_SOCKET;//= 'http://localhost:5000/chat';
+        var socket;//= io.connect(URL_SOCKET);
+        var name;//= 'User'
+        let room;//= 'default'
+        let socket_list = [];
+    </script>
+
+    <script>
+        // Connect
+        // socket std callback function
+        let cb = function (res) {
+            console.log('cb = ', JSON.stringify(res));
+        };
+
+        // var insertMsg = function (name, text) {
+        //     $('#chat_zone').prepend('<p><strong>' + name + '</strong> ' + text + '</p>');
+        // }
+
+
+        // $('#connection').on('submit', function () {
+        $('#connection').submit(function () {
+            name = $('#nme').val();
+            room = $('#rom').val();
+            console.log(name)
+            URL_SOCKET = 'http://' + $('#hst').val() + ':' + $('#prt').val() + '/chat';
+            console.log("URL_SOCKET " + URL_SOCKET);
+
+            if (socket_list.indexOf(URL_SOCKET) == -1) {
+                if (socket) { socket.close(); }
+                socket = io.connect(URL_SOCKET);
+                socket_list.push(URL_SOCKET);
+                console.log(socket_list)
+
+                socket.on('error', function (err) {
+                    console.log(err);
+                })
+
+                var insertMsg = function (name, text) {
+                    $('#chat_zone').prepend('<p><strong>' + name + '</strong> ' + text + '</p>');
+                }
+
+                socket.on('connect', function () {
+                    let data = { 'name': name, 'room': room };
+                    $("#chat_zone").html("");
+                    socket.emit('join', data, cb);
+                }, cb);
+                // return false; // blocks usual form send
+
+                // Add msg at top of chat_zone div upon reception
+                socket.on('msg', function (data) {
+                    alert('New msg'); // alert box
+                    let name = data.name;
+                    let text = data.text;
+                    insertMsg(name, text);
+                })
+
+                // Add msg at top of chat_zone div upon reception
+                socket.on('status', function (data) {
+                    let text = data.text;
+                    insertMsg('server', text);
+                })
+
+
+                // Send leave event to server
+                $('#leave').click(function () {
+                    socket.emit('leave', { 'name': name, 'room': room });
+                })
+
+                // Send msg to server and display
+                $('#chat_input').submit(function () {
+                    let text = $('#msg').val();
+                    socket.emit('msg', { name: name, room: room, text: text }); // Send msg
+                    insertMsg(name, text); // display msg
+                    $('#msg').val('').focus(); // empty input text and set autofocus
+                    return false; // blocks usual form send
+
+                });
+                // socket connection triggers join
+            }
+            return false; // blocks usual form send
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+# necessary to push to PyPI
+# cf. https://tom-christie.github.io/articles/pypi/
+
+# subfolders
+recursive-include ezchat/templates *
+
+include ezchat/chatbox/.babelrc
+include ezchat/chatbox/index.html
+include ezchat/chatbox/package.json
+include ezchat/chatbox/webpack.config.js
+
+recursive-include ezchat/chatbox/src *
+recursive-include ezchat/chatbox/src/css *
+recursive-include ezchat/chatbox/src/img *
+recursive-include ezchat/chatbox/src/components *
+recursive-include ezchat/chatbox/src/components/App *
+recursive-include ezchat/chatbox/src/components/ChatBox *
+recursive-include ezchat/chatbox/src/components/ChatLine *
+
+recursive-include ezchat/chatbox/dist *
+recursive-include ezchat/chatbox/dist/assets *
+recursive-include ezchat/chatbox/dist/assets/font *
+recursive-include ezchat/chatbox/dist/assets/style *
+
+# Demo notebook
+include demo_ezchat.ipynb
+
+# Misc
+include LICENSE
+include README.rst
+
