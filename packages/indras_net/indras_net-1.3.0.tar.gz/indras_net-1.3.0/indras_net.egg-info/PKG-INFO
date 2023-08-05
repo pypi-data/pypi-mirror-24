@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: indras-net
+Version: 1.3.0
+Summary: A framework for agent-based modeling in Python.
+Home-page: https://github.com/gcallah/indras_net.git
+Author: Gene Callahan and Nathan Conroy
+Author-email: gcallah@mac.com
+License: GNU
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
