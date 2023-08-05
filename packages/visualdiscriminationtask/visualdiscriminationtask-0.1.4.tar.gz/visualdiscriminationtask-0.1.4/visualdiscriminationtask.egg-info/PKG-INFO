@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: visualdiscriminationtask
+Version: 0.1.4
+Summary: A Visual Discrimination Task Whisker client
+Home-page: UNKNOWN
+Author: Tom Piercy
+Author-email: tap32@medschl.cam.ac.uk
+License: MIT
+Description: UNKNOWN
+Keywords: Whisker Visual Discrimination
+Platform: UNKNOWN
+Requires-Python: >=3
