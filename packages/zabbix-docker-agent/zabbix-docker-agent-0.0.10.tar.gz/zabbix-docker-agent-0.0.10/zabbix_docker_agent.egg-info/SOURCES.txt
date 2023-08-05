@@ -1,0 +1,14 @@
+README.txt
+setup.cfg
+setup.py
+zabbixAgentd
+ZabbixDockerAgent/__init__.py
+ZabbixDockerAgent/dockerdata.py
+ZabbixDockerAgent/test.py
+ZabbixDockerAgent/toolbox.py
+ZabbixDockerAgent/zabbix.py
+zabbix_docker_agent.egg-info/PKG-INFO
+zabbix_docker_agent.egg-info/SOURCES.txt
+zabbix_docker_agent.egg-info/dependency_links.txt
+zabbix_docker_agent.egg-info/requires.txt
+zabbix_docker_agent.egg-info/top_level.txt
