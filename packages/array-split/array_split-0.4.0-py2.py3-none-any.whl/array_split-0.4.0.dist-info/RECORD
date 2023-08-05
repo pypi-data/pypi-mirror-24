@@ -1,0 +1,17 @@
+array_split/__init__.py,sha256=U8p3jIt-yefc6rRC9suJJLRTIb7j07PYhNh2fIRgZeM,2630
+array_split/copyright.txt,sha256=Kn1cZDiLPzgR9O6e-_OT2q_BELBKeFLEyMja8X3YOpU,55
+array_split/git_describe.txt,sha256=QLjrQACpE6d5EJBTXykdPTaYdBYqie88nj1OiHobnnk,6
+array_split/license.py,sha256=Wn2H3zgk1L6eHMVl9mG4I1OU1myvHFFLGfBUOVY4B-4,1541
+array_split/license.txt,sha256=voJkgFtk2zV9dBOftdZ7NW3a_aXOLYErZcWZAK812-A,1022
+array_split/logging.py,sha256=qiXbMI_uiWsmH5TwUbos_y6Ha4g-nS2Z0hyBC_gW8A0,7997
+array_split/split.py,sha256=GOI5_jOCLjteVRyFvj75dI3xj_KUj6NOqS4IqfuyOGY,59852
+array_split/split_test.py,sha256=CGTzQzHlghEJFZ4FkAhgzcKzxxwPWrZnb1Mir5MEfJI,54603
+array_split/tests.py,sha256=kQKiPswkcWixPkfYy-64cWwoIRHJDxqbxqGp9SKUo2U,3043
+array_split/unittest.py,sha256=3kf8oFLX-CikKnv2gswfp4tutn-FV773-L6alnvPmiM,13031
+array_split/version.txt,sha256=QLjrQACpE6d5EJBTXykdPTaYdBYqie88nj1OiHobnnk,6
+array_split-0.4.0.dist-info/DESCRIPTION.rst,sha256=lDuACmFoWqtaSU9fuD4FhsioCYYp0rp2i73Vf_JX7JU,5258
+array_split-0.4.0.dist-info/METADATA,sha256=OY59fht5-zbPnCct2XtP6HVMrmiT6AA4jpqPlXauLBA,6406
+array_split-0.4.0.dist-info/RECORD,,
+array_split-0.4.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+array_split-0.4.0.dist-info/metadata.json,sha256=Bk6CckDiB6P0OJrs6fFGjede_mfYPvwm1O1JsvwEKwA,1292
+array_split-0.4.0.dist-info/top_level.txt,sha256=exjaJ5xH8Dhtj-gpoxxGnXIn4gga7_gnAmF7y3v0PBs,12
