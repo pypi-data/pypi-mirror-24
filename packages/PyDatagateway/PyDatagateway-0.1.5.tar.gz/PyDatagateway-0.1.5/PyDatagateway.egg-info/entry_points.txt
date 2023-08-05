@@ -1,0 +1,8 @@
+[sqlalchemy.databases]
+hive = pydatagateway.sqlalchemy_hive:HiveDialect
+presto = pydatagateway.sqlalchemy_presto:PrestoDialect
+
+[sqlalchemy.dialects]
+hive = pydatagateway.sqlalchemy_hive:HiveDialect
+presto = pydatagateway.sqlalchemy_presto:PrestoDialect
+
