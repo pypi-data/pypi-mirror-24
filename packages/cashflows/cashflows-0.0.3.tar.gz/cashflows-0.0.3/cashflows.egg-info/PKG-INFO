@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: cashflows
+Version: 0.0.3
+Summary: Investment modeling and advanced engineering economics using Python
+Home-page: http://github.com/jdvelasq/cashflows
+Author: Juan D. Velasquez & Ibeth K. Vergara
+Author-email: jdvelasq@unal.edu.co
+License: MIT
+Description: Investment modeling and advanced engineering economics using Python
+Keywords: cashflow investments bonds depreciation loan irr
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Office/Business :: Financial
