@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: aiopg_sqlite
+Version: 0.0.1a0
+Summary: Drop-in replacement for aiopg for various (mostly test) purposes
+Home-page: https://github.com/deathoxy/aiopg_sqlite
+Author: Ilya Samartsev
+Author-email: deathoxy@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries

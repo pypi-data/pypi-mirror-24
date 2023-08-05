@@ -1,0 +1,8 @@
+aiopg_sqlite.py
+setup.cfg
+setup.py
+aiopg_sqlite.egg-info/PKG-INFO
+aiopg_sqlite.egg-info/SOURCES.txt
+aiopg_sqlite.egg-info/dependency_links.txt
+aiopg_sqlite.egg-info/requires.txt
+aiopg_sqlite.egg-info/top_level.txt

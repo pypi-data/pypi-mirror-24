@@ -1,0 +1,4 @@
+sqlalchemy
+pytest
+pytest-cov
+pytest-aiohttp
