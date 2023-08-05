@@ -1,0 +1,10 @@
+setup.py
+lilith/__init__.py
+lilith/main.py
+lilith/work.py
+lilith.egg-info/PKG-INFO
+lilith.egg-info/SOURCES.txt
+lilith.egg-info/dependency_links.txt
+lilith.egg-info/entry_points.txt
+lilith.egg-info/requires.txt
+lilith.egg-info/top_level.txt
