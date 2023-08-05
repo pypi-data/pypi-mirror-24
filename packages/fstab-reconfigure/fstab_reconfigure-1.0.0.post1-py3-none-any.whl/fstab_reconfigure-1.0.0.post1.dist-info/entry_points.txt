@@ -1,0 +1,3 @@
+[console_scripts]
+fstab-reconfigure = fstab_reconfigure.__main__:main
+

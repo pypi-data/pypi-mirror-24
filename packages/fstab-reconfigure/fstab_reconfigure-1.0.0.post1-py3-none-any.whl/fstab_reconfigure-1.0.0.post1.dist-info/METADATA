@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: fstab-reconfigure
+Version: 1.0.0.post1
+Summary: Herramienta de configuración para el archivo /etc/fstab
+Home-page: https://linuxdevtips.blogspot.com/
+Author: Fernando Enzo Guarini
+Author-email: fernandoenzo@gmail.com
+License: GPLv3+
+Download-URL: https://bitbucket.org/fernandoenzo/fstab-reconfigure/
+Keywords: fstab reconfigure
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: Spanish
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: System :: Installation/Setup
+
+Herramienta a través de la cual se puede leer, modificar o reconfigurar automáticamente a través de una sencilla interfaz el archivo /etc/fstab para gestionar el punto de montaje de las particiones del sistema.
+
+
