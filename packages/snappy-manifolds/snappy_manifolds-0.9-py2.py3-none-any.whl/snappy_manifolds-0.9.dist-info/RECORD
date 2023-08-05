@@ -1,0 +1,14 @@
+snappy_manifolds/__init__.py,sha256=fisH32JRLXFGJDpN5byAXjO01ZEXvwyACmAAnXupQs8,124
+snappy_manifolds/database.py,sha256=jBJy67OV3LLPsyjHpKQQDKufxwrgLOoWdYu_GT5sY1g,27703
+snappy_manifolds/test.py,sha256=7KaM2HkaM1rswRHpyENl4zZj53xfGy6xunmKdT3Ph9A,468
+snappy_manifolds/database_files/__init__.py,sha256=uhR3ruY60qzxIs72xF6Vb7IefCsWR6iQc6len_zwqmI,65
+snappy_manifolds/database_files/make_sqlite_db.py,sha256=kfmKW43AGqwET4v01BjtqMeQuTB7tQhYLUqiCc9gW-w,15262
+snappy_manifolds/database_files/manifolds.sqlite,sha256=nfc5VuPv9EACvNlOQ9Yu9IwqANG-3c2Qso1V6JLFJWA,9302016
+snappy_manifolds/database_files/more_manifolds.sqlite,sha256=Z59GTD7huprq7ufR-NHOzpJkDvDtQQzEAAFM8gLKkzU,34238464
+snappy_manifolds/database_files/platonic_manifolds.sqlite,sha256=6GY7vzBJm_vDG7aAsQXyClW-AR1PBpXRak8mNF-we94,27467776
+snappy_manifolds-0.9.dist-info/DESCRIPTION.rst,sha256=0TIN7qnp7uLD-gkofI5k7KuDDAfv6AAfi-qK0MvI8BU,72
+snappy_manifolds-0.9.dist-info/METADATA,sha256=42U1T8ym7LE5F8C2qghmXtxCcEU4Q1zVmNM_CUn36sU,818
+snappy_manifolds-0.9.dist-info/RECORD,,
+snappy_manifolds-0.9.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+snappy_manifolds-0.9.dist-info/metadata.json,sha256=5uE5-F7V2ygxYw0bcbfYJ-cRrDtzYTYmMYAlhlkjh-s,877
+snappy_manifolds-0.9.dist-info/top_level.txt,sha256=bc3pG5QSfisFD312TX51L3tQ37f40IbmyLbgE7HIguo,49
