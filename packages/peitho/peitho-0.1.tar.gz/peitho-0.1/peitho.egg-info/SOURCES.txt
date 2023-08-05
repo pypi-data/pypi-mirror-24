@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+peitho/__init__.py
+peitho.egg-info/PKG-INFO
+peitho.egg-info/SOURCES.txt
+peitho.egg-info/dependency_links.txt
+peitho.egg-info/entry_points.txt
+peitho.egg-info/not-zip-safe
+peitho.egg-info/requires.txt
+peitho.egg-info/top_level.txt
