@@ -1,0 +1,16 @@
+odoo10_addon_account_invoice_triple_discount-10.0.1.0.0.99.dev1-py2.7-nspkg.pth,sha256=BRP8mvEvEhIFmA57wbSTfAVbaAesjZh6WbtWMKUVv1c,1118
+odoo/addons/account_invoice_triple_discount/README.rst,sha256=Qw85AIbmQbYygGrPP99JJq4fHmXWEFTxleqw1AQ_q2A,2072
+odoo/addons/account_invoice_triple_discount/__init__.py,sha256=Ax4qLxdb9ATk05MF7cSQ0BdpYCpGVYFy9n4U4zODf9o,46
+odoo/addons/account_invoice_triple_discount/__manifest__.py,sha256=FigxnypurigSOFQBYLgqt45al71cgbRalZtm4ItK7tg,581
+odoo/addons/account_invoice_triple_discount/models/__init__.py,sha256=MQCk5iu5V7lpgc7JeNpnWUJFe0qqcWoWlZdBClF2rPU,119
+odoo/addons/account_invoice_triple_discount/models/account_invoice.py,sha256=pwY15LeSnzF5MiQVvTmZkfNPnQJRTUjU43rovI-Xi-s,2110
+odoo/addons/account_invoice_triple_discount/tests/__init__.py,sha256=z2fJq_QWqve1AvsCG5Dy6etyA2p94tZwkLYBjp8mZ4o,68
+odoo/addons/account_invoice_triple_discount/tests/test_invoice_triple_discount.py,sha256=d2Mu3jE0KgKf122PVEsa87GbRQ21V1h6gqtTXwtmJQo,3471
+odoo/addons/account_invoice_triple_discount/views/account_invoice_view.xml,sha256=NjxwvK7avfcoxbKPgKOBaZuxCTONNjumSh-sEtaZUgM,1902
+odoo10_addon_account_invoice_triple_discount-10.0.1.0.0.99.dev1.dist-info/DESCRIPTION.rst,sha256=B-1uZnqfJg14UqM2diTPzdePhlmSqnJI_QI5l_juqso,2074
+odoo10_addon_account_invoice_triple_discount-10.0.1.0.0.99.dev1.dist-info/METADATA,sha256=VwefLfsOJeJcPQD42s9dWDbgrhcVsq_3-SCbx3_OnjE,2579
+odoo10_addon_account_invoice_triple_discount-10.0.1.0.0.99.dev1.dist-info/RECORD,,
+odoo10_addon_account_invoice_triple_discount-10.0.1.0.0.99.dev1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+odoo10_addon_account_invoice_triple_discount-10.0.1.0.0.99.dev1.dist-info/metadata.json,sha256=Ar6YYF0MmZitc8z9PTx8nl0WAfkowNfQu8cztzkIsXc,717
+odoo10_addon_account_invoice_triple_discount-10.0.1.0.0.99.dev1.dist-info/namespace_packages.txt,sha256=igDP6S4ywc6jzcMqzrKZpRtAUXrS-iYaA_Hu1EtlI48,17
+odoo10_addon_account_invoice_triple_discount-10.0.1.0.0.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
