@@ -1,0 +1,44 @@
+CHANGES
+=======
+
+0.0.3
+-----
+
+* Fix PyPI classifiers
+* Update pytest from 3.1.3 to 3.2.0
+
+0.0.2
+-----
+
+* Fix task routing in tests
+* Fallback to root package name when app name not set
+* Setup announce task routing
+* Setup service specific queue
+* Set specific name for announce task and ignore it's result
+* Shorten generated task names
+* Change app defaults
+* Update celery from 4.0.2 to 4.1.0
+* Update pytest-mock from 1.6.0 to 1.6.2
+* Update pytest from 3.1.2 to 3.1.3
+
+0.0.1
+-----
+
+* Update pytest from 3.1.1 to 3.1.2
+* Update pytest from 3.1.0 to 3.1.1
+* Update pytest from 3.0.7 to 3.1.0
+* Update pytest-cov from 2.5.0 to 2.5.1
+* Update pytest-cov from 2.4.0 to 2.5.0
+* Update pytest-mock from 1.5.0 to 1.6.0
+* Update pytest from 3.0.6 to 3.0.7
+* Update pytest from 3.0.5 to 3.0.6
+* Use dict.get() with default value instead of dict.update()
+* Fixed getting task routing, added test
+* Use Celery routing for task announcement
+* Some little refactoring
+* Update celery from 4.0.1 to 4.0.2
+* Update celery from 4.0.0 to 4.0.1
+* Temp tests fix
+* Fix attrs/methods calling from app/task
+* First draft
+* Initial commit
