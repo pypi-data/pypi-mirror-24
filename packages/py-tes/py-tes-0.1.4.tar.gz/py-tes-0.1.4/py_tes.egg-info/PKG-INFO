@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: py-tes
+Version: 0.1.4
+Summary: Library for communicating with the GA4GH Task Execution API
+Home-page: https://github.com/ohsu-comp-bio/py-tes
+Author: Adam Struck
+Author-email: strucka@ohsu.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=2.7, <4
