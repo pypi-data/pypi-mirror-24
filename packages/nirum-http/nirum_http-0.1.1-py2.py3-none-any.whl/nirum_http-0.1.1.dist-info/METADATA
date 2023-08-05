@@ -1,0 +1,75 @@
+Metadata-Version: 2.0
+Name: nirum-http
+Version: 0.1.1
+Summary: Nirum HTTP transport for Python
+Home-page: https://github.com/spoqa/nirum-python-http
+Author: Kang Hyojun
+Author-email: iam.kanghyojun@gmail.com
+License: MIT license
+Platform: UNKNOWN
+Requires-Dist: nirum (>=0.6.0)
+Requires-Dist: requests (>=2.11.1)
+Requires-Dist: six
+Requires-Dist: typing; python_version<'3.5'
+Provides-Extra: tests
+Requires-Dist: flake8-import-order (<1.0,>=0.12); extra == 'tests'
+Requires-Dist: flake8-import-order-spoqa (<2.0.0,>=1.0.0); extra == 'tests'
+Requires-Dist: pytest (<4.0.0,>=3.1.2); extra == 'tests'
+Requires-Dist: pytest-flake8 (>=0.8.1,<1.0.0); extra == 'tests'
+Requires-Dist: requests-mock (>=1.3.0,<1.4.0); extra == 'tests'
+
+Nirum HTTP transport for Python
+===============================
+
+.. image:: https://travis-ci.org/spoqa/nirum-python-http.svg?branch=master
+   :target: https://travis-ci.org/spoqa/nirum-python-http
+   :alt: Build status
+
+.. image:: https://badge.fury.io/py/nirum-http.svg
+   :target: https://pypi.org/project/nirum-http/
+   :alt: Latest PyPI version
+
+This package provides an HTTP transport for nirum-python_.
+
+.. code-block:: python
+
+   from youtservice import YourService_Client
+   from nirum_http import HttpTransport
+
+   transport = HttpTransport('https://service-host/')
+   client = YourService_Client(transport)
+
+Since ``HttpTransport`` utilizes requests_ library under the hood, it can take
+a `session object`_ as well:
+
+.. code-block:: python
+
+   from requests import Session
+
+   session = Session()
+   session.auth = ('user', 'password')
+   transport = HttpTransport('https://service-host/', session=session)
+
+.. _nirum-python: https://github.com/spoqa/nirum-python
+.. _requests: http://python-requests.org/
+.. _session object: http://docs.python-requests.org/en/master/user/advanced/#session-objects
+
+Changelog
+=========
+
+Version 0.1.1
+-------------
+
+Released on August 3, 2017.
+
+- Fixed a bug that message of ``UnexpectedNirumResponseError`` was not a ``str``
+  but ``unicode`` in Python 2.
+
+
+Version 0.1.0
+-------------
+
+Released on July 10, 2017.
+
+
+
