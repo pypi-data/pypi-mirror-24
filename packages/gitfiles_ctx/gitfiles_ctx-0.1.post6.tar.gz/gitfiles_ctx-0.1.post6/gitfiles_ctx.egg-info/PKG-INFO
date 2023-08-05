@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: gitfiles-ctx
+Version: 0.1.post6
+Summary: Context manager for a file-based view on a remote Git repository.
+Home-page: https://github.com/clearclaw/gitfiles_ctx
+Author: J C Lawrence
+Author-email: claw@kanga.nu
+License: LGPL v3.0
+Description: GitFiles_Ctx
+        ============
+        
+        This...will likely take some time to mature.  And is a hack.
+        
+        The broad intent is to provide a Git repository context at the file
+        level (over SSH).  In essence on entering the context, a path to an
+        ephemeral cleartext tree (top of master) of the remote repository will
+        be returned, and on exit that same tree will be removed.
+        
+        Intended use is for system configuration data maintained and managed
+        via Git -- ie update the data in git and the dependent tools
+        reconfigure to match when they run, sort of using Git as a hacky etcd.
+        
+Keywords: git,view,context
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Topic :: Utilities
