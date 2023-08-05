@@ -1,0 +1,12 @@
+cubric_mrs/__init__.py,sha256=EVnNy380Zl1xIINGveRhsCKhXQwlMSItJQbTotbzMFc,69
+cubric_mrs/_version.py,sha256=Nmswip0IUvJenHIhdfSyTYurDcwWTvOQ8mPDREtwE1o,21
+cubric_mrs/megapress.py,sha256=BGGILsjtnfGtyghD9bBgb9D3yjjhDQgM_bRGJKhTMkI,14354
+cubric_mrs/table.py,sha256=p4rM8YdasPrljEv506_LHrJeWcQ-EoIsu5AR6RZ3Tds,466
+cubric_mrs/voxel.py,sha256=5WXCZWDN83GJDy9DFfvL1jpm07ZlujyXUrczqsBzd1g,2729
+cubric_mrs-0.1.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+cubric_mrs-0.1.5.dist-info/METADATA,sha256=r7upOSy8phn2joqtKnU-dlqgXoBwuQ0l5-gjBkgguJw,911
+cubric_mrs-0.1.5.dist-info/RECORD,,
+cubric_mrs-0.1.5.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+cubric_mrs-0.1.5.dist-info/entry_points.txt,sha256=GamyDoalOA08O6XONFp22KP2jENhaGU9SFfHzPzklQ4,68
+cubric_mrs-0.1.5.dist-info/metadata.json,sha256=ALPuPJGvvE9Hmyt9eMRuP6BluTRD5-d5agTN9GAtbPk,1188
+cubric_mrs-0.1.5.dist-info/top_level.txt,sha256=6YX9fAj61G97yo9xM_5GlYTvCSCsWfpLIrJY2gSwsL0,11
