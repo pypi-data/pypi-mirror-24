@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: spark-basic-python
+Version: 1.0.5
+Summary: pyspark_develop
+Home-page: http://10.7.15.220:8090/display/sonar/Pyspark
+Author: yaoboxu_18333
+Author-email: 18333@etransfar.com
+License: BSD
+Description: lu jing data group
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Framework :: Django

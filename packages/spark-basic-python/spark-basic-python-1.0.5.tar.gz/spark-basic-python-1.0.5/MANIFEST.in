@@ -1,0 +1,5 @@
+include README.rst
+include requirements.txt
+include LICENSE
+include spark_basic_python/resources/pg.datasource.ini
+include spark_basic_python/resources/sparkbasic.ini
