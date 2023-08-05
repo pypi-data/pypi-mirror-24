@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+decorr/LinearDecorrelator.py
+decorr/__init__.py
+decorr.egg-info/PKG-INFO
+decorr.egg-info/SOURCES.txt
+decorr.egg-info/dependency_links.txt
+decorr.egg-info/not-zip-safe
+decorr.egg-info/top_level.txt
