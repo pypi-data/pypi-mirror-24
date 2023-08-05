@@ -1,0 +1,6 @@
+[flake8.extension]
+GQL = gql_checker.flake8_linter:Linter
+
+[pylama.linter]
+gql_checker = gql_checker.pylama_linter:Linter
+

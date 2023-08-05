@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: gql-checker
+Version: 0.1
+Summary: Flake8 and pylama plugin that checks gql GraphQL calls.
+Home-page: https://github.com/graphql-python/gql-checker
+Author: Syrus Akbary
+Author-email: me@syrusakbary.com
+License: MIT
+Description: gql-checker
+        ===========
+        
+        |Build Status|
+        
+        A `flake8 <http://flake8.readthedocs.org/en/latest/>`__ and
+        `Pylama <https://github.com/klen/pylama>`__ plugin that checks the
+        all the static gql calls given a GraphQL schema.
+        
+        It will not check anything else about the gql calls. Merely that the
+        GraphQL syntax is correct and it validates against the provided schema.
+        
+        Warnings
+        --------
+        
+        This package adds 3 new flake8 warnings
+        
+        -  ``GQL100``: The gql query is doesn't match GraphQL syntax
+        -  ``GQL101``: The gql query have valid syntax but doesn't validate against provided schema
+        
+        Configuration
+        -------------
+        
+        You will want to set the ``gql-introspection-schema`` option to a
+        file with the json introspection of the schema.
+        
+        
+        .. |Build Status| image:: https://travis-ci.org/graphql-python/gql-checker.png?branch=master
+           :target: https://travis-ci.org/graphql-python/gql-checker
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Operating System :: OS Independent
