@@ -1,0 +1,8 @@
+click
+pyyaml
+nbformat
+ipython
+nbconvert
+six
+jupyter_client
+pandas
