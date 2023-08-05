@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Keras-FB
+Version: 0.0.2
+Summary: Transmit the real-time training data(like accuracy/loss) to your Facebook Messenger account
+Home-page: UNKNOWN
+Author: Shou Chaofan
+Author-email: scf@ieee.org
+License: MIT License
+Description: UNKNOWN
+Keywords: Facebook,Keras,Bot
+Platform: any
