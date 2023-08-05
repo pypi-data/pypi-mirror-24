@@ -1,0 +1,9 @@
+setup.py
+src/seqlib/__init__.py
+src/seqlib/seqlib.cpp
+src/seqlib.egg-info/PKG-INFO
+src/seqlib.egg-info/SOURCES.txt
+src/seqlib.egg-info/dependency_links.txt
+src/seqlib.egg-info/not-zip-safe
+src/seqlib.egg-info/requires.txt
+src/seqlib.egg-info/top_level.txt

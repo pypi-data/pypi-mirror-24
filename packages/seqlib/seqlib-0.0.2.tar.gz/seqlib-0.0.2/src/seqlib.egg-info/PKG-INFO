@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: seqlib
+Version: 0.0.2
+Summary: provide an in-memory interface to bwa mem
+Home-page: UNKNOWN
+Author: Noah Spies
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: wraps SeqLib to allow python scripts to run bwa mem in-memory (maintaining and updating the index in memory in addition to actually aligning reads)
+Platform: UNKNOWN
