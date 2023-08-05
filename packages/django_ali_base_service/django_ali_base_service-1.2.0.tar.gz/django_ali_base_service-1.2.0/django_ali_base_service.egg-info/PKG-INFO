@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: django-ali-base-service
+Version: 1.2.0
+Summary: A base code for building webservices for django models based on Django Rest Framework
+Home-page: UNKNOWN
+Author: Alireza Ahmadi
+Author-email: alirezaahmadi69@gmail.com
+License: BSD License
+Description: =====
+        Ali Base Service
+        =====
+        
+        This project created for personal use only! It was not intended for public usage and it lacks detail documentation. You can use it however if you want. 
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
