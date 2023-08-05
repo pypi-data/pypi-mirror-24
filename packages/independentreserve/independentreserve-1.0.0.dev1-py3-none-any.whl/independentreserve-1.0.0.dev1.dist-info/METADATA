@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: independentreserve
+Version: 1.0.0.dev1
+Summary: Python Client for Independent Reserve Web API
+Home-page: https://github.com/chrisvasquez/independentreserve-python
+Author: Chris Vasquez
+Author-email: cvsvasquez@gmail.com
+License: Apache Version 2.0
+Keywords: web api client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+
+# independentreserve-python
+Python Client for Independent Reserve Web API
+
+
