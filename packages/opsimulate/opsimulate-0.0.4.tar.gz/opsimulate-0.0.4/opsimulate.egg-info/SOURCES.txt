@@ -1,0 +1,16 @@
+MANIFEST.in
+requirements.txt
+setup.cfg
+setup.py
+opsimulate/__init__.py
+opsimulate/cli.py
+opsimulate/constants.py
+opsimulate/exceptions.py
+opsimulate/gitlab-startup-script.sh
+opsimulate/helpers.py
+opsimulate.egg-info/PKG-INFO
+opsimulate.egg-info/SOURCES.txt
+opsimulate.egg-info/dependency_links.txt
+opsimulate.egg-info/entry_points.txt
+opsimulate.egg-info/requires.txt
+opsimulate.egg-info/top_level.txt

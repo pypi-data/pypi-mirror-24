@@ -1,0 +1,2 @@
+include opsimulate/gitlab-startup-script.sh
+include requirements.txt

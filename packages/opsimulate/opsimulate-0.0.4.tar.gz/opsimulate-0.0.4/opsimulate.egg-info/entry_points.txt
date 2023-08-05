@@ -1,0 +1,3 @@
+[console_scripts]
+opsimulate = opsimulate.cli:cli
+
