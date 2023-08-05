@@ -1,0 +1,5 @@
+requests
+texttable
+urllib3
+python-Levenshtein
+python-daemon
