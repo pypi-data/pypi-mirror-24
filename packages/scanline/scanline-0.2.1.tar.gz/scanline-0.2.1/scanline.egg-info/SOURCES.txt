@@ -1,0 +1,8 @@
+scanline.py
+setup.py
+scanline.egg-info/PKG-INFO
+scanline.egg-info/SOURCES.txt
+scanline.egg-info/dependency_links.txt
+scanline.egg-info/entry_points.txt
+scanline.egg-info/requires.txt
+scanline.egg-info/top_level.txt
