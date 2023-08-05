@@ -1,0 +1,38 @@
+Metadata-Version: 2.0
+Name: inspire-utils
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/inspirehep/inspire-utils
+Author: CERN
+Author-email: admin@inspirehep.net
+License: GPLv3
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 4 - Beta
+Requires-Dist: six (>=1.10.0,~=1.0)
+Provides-Extra: all
+Requires-Dist: pytest (~=3.0,>=3.2.0); extra == 'all'
+Requires-Dist: pytest (~=3.0,>=3.2.0); extra == 'all'
+Requires-Dist: pytest-cov (>=2.5.1,~=2.0); extra == 'all'
+Requires-Dist: pytest-cov (>=2.5.1,~=2.0); extra == 'all'
+Requires-Dist: pytest-flake8 (~=0.0,>=0.8.1); extra == 'all'
+Requires-Dist: pytest-flake8 (~=0.0,>=0.8.1); extra == 'all'
+Provides-Extra: docs
+Provides-Extra: tests
+Requires-Dist: pytest (~=3.0,>=3.2.0); extra == 'tests'
+Requires-Dist: pytest-cov (>=2.5.1,~=2.0); extra == 'tests'
+Requires-Dist: pytest-flake8 (~=0.0,>=0.8.1); extra == 'tests'
+
+UNKNOWN
+
+
