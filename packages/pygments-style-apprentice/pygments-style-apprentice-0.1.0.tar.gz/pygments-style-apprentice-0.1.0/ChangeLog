@@ -1,0 +1,12 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* Add dummy "build section"
+* Add only deploy section to travis?
+* Add travis configuration
+* Add shields to README
+* Add README
+* Initial commit
