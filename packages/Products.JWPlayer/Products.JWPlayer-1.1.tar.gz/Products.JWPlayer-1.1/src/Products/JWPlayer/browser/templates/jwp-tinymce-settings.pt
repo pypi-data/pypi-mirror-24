@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      lang="en"
+      i18n:domain="Products.JWPlayer">
+<head>
+  <title i18n:domain="plone.tinymce" i18n:translate="">Insert/Edit</title>
+  <script type="text/javascript" src="../tiny_mce_popup.js"></script>
+  <script type="text/javascript" src="../utils/mctabs.js"></script>
+  <script type="text/javascript" src="../utils/form_utils.js"></script>
+  <script type="text/javascript" src="../++resource++Products.JWPlayer/ProductsJWPlayer.js"></script>
+  <script type="text/javascript" src="popup.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="popup.css" />
+
+</head>
+
+<body>
+
+    <div class="jwp-settings">
+        <h4 i18n:translate="">JWPlayer Settings</h4>
+        <div class="host-type field">
+            <label class="toggle-label">
+                <input name="player_host_type" type="radio" class="toggle-trigger" id="is-cloud-hosted" checked="checked" data-target="#cloud-hosted-player" />
+                <span i18n:translate="">Use cloud player</span>
+            </label>
+            <label class="toggle-label">
+                <input name="player_host_type" type="radio" class="toggle-trigger" id="is-self-hosted" data-target="#self-hosted-player" />
+                <span i18n:translate="">Use self-hosted player</span>
+            </label>
+        </div>
+        <div id="cloud-hosted-player" class="toggle-content active">
+            <div class="field">
+                <label i18n:translate="">JW Player (Cloud) Library URL</label>
+                <input type="text" value="" id="jwp-player-url" name="jwp_player_url" placeholder="Example: https://content.jwplatform.com/libraries/xxXXxx.js" />
+            </div>
+        </div>
+        <div id="self-hosted-player" class="toggle-content">
+            <div class="field">
+                <label i18n:translate="">JW Player (Self-Hosted) Library URL</label>
+                <input type="text" value="" id="jwp-player-self-url" name="jwp_player_self_url" placeholder="Example: http://example.com/jwplayer/jwplayer.js" />
+            </div>
+            <div class="field">
+                <label i18n:translate="">JW Player (Self-Hosted) Key</label>
+                <input type="text" value="" id="jwp-player-self-key" name="jwp_player_self_key" />
+            </div>
+        </div>
+        <div class="field">
+            <label i18n:translate="">Enter URL to video</label>
+            <input type="text" value="" id="jwp-video-url" name="jwp_video_url" />
+        </div>
+        <div class="field">
+            <label>
+                <a href="https://developer.jwplayer.com/jw-player/docs/developer-guide/customization/configuration-reference/#setup" target="_blank" i18n:translate="">Player Options (one per line)</a>
+                <br /> <span i18n:translate="">Example</span>: <br/><i>  width = 650 <br /> height = 400</i>
+            </label>
+            <textarea class="" id="jwp-video-opts"></textarea>
+        </div>
+        <div class="buttons">
+            <input class="btn" type="button" id="jwp-insert" value="Insert" i18n:attributes="value" />
+            <input class="btn" type="button" id="jwp-preview" value="Preview" i18n:attributes="value" />
+            <input class="btn float-right" type="button" id="jwp-close" value="Close" i18n:attributes="value" />
+        </div>
+        
+    </div>
+
+    <div class="jwp-preview">
+        <div id="jwp-preview-tv"></div>
+    </div>
+
+</body>
+</html>
+

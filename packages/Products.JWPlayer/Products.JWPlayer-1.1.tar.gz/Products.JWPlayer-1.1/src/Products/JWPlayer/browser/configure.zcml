@@ -1,0 +1,35 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="Products.JWPlayer">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="Products.JWPlayer.interfaces.IProductsJwplayerLayer"/>
+
+  <!-- Publish static files -->
+  <plone:static
+      name="Products.JWPlayer"
+      type="plone"
+      directory="static"/>
+
+   <!-- Publish static files -->
+    <browser:resourceDirectory
+      name="Products.JWPlayer"
+      directory="static"  />
+
+	<!-- set up various views -->
+	
+    <!-- Bibfolder view settings (GEMI) -->
+	<browser:page
+		for="*"
+		name="jwp-tinymce-settings"
+		class=".jwplayer.TinyMCESettings"
+		permission="cmf.ModifyPortalContent"
+		layer="..interfaces.IProductsJwplayerLayer"
+	/>
+
+</configure>
