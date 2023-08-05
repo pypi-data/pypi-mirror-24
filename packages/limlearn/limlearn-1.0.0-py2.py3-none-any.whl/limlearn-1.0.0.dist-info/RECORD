@@ -1,0 +1,9 @@
+limlearn/__init__.py,sha256=XDToeOTrxvuALwyuGnZYpS4sD5n0dONsBsgBicJo9Gg,602
+limlearn/cv.py,sha256=T0DHBSg71_UQa8ErZAgHKyzO0oGnaeBCk1Ek7Eer8FQ,1077
+limlearn/mlp.py,sha256=tc2YF_2rmlevACHT9J1d52X_OGlOUbElnicYxveMSGE,3761
+limlearn-1.0.0.dist-info/DESCRIPTION.rst,sha256=mh_fDd_lwGnkIA5B9U3eaV47JiqJUP9azYbsHX9OlGU,20
+limlearn-1.0.0.dist-info/METADATA,sha256=wQcU-2vxzCk1pVaGZZee32FxtI668IXr5hkg_ougr54,686
+limlearn-1.0.0.dist-info/RECORD,,
+limlearn-1.0.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+limlearn-1.0.0.dist-info/metadata.json,sha256=Pw79lHQOwX_qYqNWMA8CX5yU8-pXNhfLapNhNdEgMzQ,858
+limlearn-1.0.0.dist-info/top_level.txt,sha256=G6Ke8hlpA42CQdZEtHcw7NOT_M8_TNLGc9wcU0C2Q-k,9
