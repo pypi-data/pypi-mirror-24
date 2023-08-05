@@ -1,0 +1,15 @@
+README.rst
+setup.py
+nimodinst/__init__.py
+nimodinst/ctypes_library.py
+nimodinst/ctypes_types.py
+nimodinst/errors.py
+nimodinst/library.py
+nimodinst/python_types.py
+nimodinst/session.py
+nimodinst.egg-info/PKG-INFO
+nimodinst.egg-info/SOURCES.txt
+nimodinst.egg-info/dependency_links.txt
+nimodinst.egg-info/not-zip-safe
+nimodinst.egg-info/requires.txt
+nimodinst.egg-info/top_level.txt
