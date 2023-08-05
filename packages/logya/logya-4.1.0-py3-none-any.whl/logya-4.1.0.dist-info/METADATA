@@ -1,0 +1,76 @@
+Metadata-Version: 2.0
+Name: logya
+Version: 4.1.0
+Summary: Logya: easy to use and flexible static Web site generator.
+Home-page: http://ramiro.org/logya/
+Author: Ramiro Gómez
+Author-email: code@ramiro.org
+License: MIT
+Keywords: Website Generator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: News/Diary
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Requires-Dist: Jinja2 (==2.9.6)
+Requires-Dist: Markdown (==2.6.8)
+Requires-Dist: MarkupSafe (==1.0)
+Requires-Dist: PyYAML (==3.12)
+
+Logya README
+============
+
+.. image:: https://badge.fury.io/py/logya.png
+        :target: http://badge.fury.io/py/logya
+.. image:: https://travis-ci.org/yaph/logya.png?branch=master
+        :target: https://travis-ci.org/yaph/logya
+.. image:: https://landscape.io/github/yaph/logya/master/landscape.png
+        :target: https://landscape.io/github/yaph/logya
+
+Logya is a static Web site generator written in Python designed to be easy
+to use and flexible.
+
+Quickstart
+----------
+
+::
+
+    # install logya and required packages
+    pip install logya
+
+    # create a barebone site
+    logya create mysite
+    cd mysite
+
+    # add content and then generate the site in the deploy directory
+    logya gen
+
+    # serve the site from deploy on http://localhost:8080
+    logya serve
+
+
+Please see the `documentation`_ for more information on how to use logya for
+creating Web sites.
+
+Sites built with logya
+----------------------
+
+* http://ramiro.org/
+* http://geeksta.net/
+* http://www.linux-netbook.com/
+* http://strahlungsarmehandys.com/
+* http://exploringdata.github.io/
+* http://d3-geomap.github.io/
+* http://guitarstreams.com/
+
+.. _`documentation`: http://pythonhosted.org/logya
+.. _`GitHub Issues`: https://github.com/yaph/logya/issues
+
