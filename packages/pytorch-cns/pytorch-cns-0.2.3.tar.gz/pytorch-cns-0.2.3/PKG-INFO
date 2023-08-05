@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pytorch-cns
+Version: 0.2.3
+Summary: Generalized Compressed Network Search with PyTorch
+Home-page: https://github.com/awentzonline/pytorch-cns
+Author: Adam Wentz
+Author-email: adam@adamwentz.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
