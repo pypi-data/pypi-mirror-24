@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: kubestash
+Version: 0.2
+Summary: Push your Credstash secrets to Kubernetes.
+Home-page: https://github.com/af-inet/kubestash
+Author: David Hargat
+Author-email: davidmhargat@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: k8s,kubernetes,credstash
+Platform: UNKNOWN
+Requires: kubernetes
+Requires: boto3
+Requires: credstash
