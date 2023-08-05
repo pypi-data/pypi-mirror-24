@@ -1,0 +1,36 @@
+CHANGES
+=======
+
+0.3.1
+-----
+
+* Add the missing "detailed" parameter
+* Support /health and /products API
+* Remove dates from QuotationManger list
+* Fix the cover job
+
+0.3.0
+-----
+
+* Support /credits API
+* Support /invoices and /quotations API
+* Fix py35 and pep8
+* Fix missing dependency for pep8 gate
+* Rename \`usage\` to \`measurements\`
+* Update README.rst
+
+0.2.0
+-----
+
+* Support distil V2 API
+* Add LICENSE
+
+0.1.1
+-----
+
+* Fix docs gate failure
+* V3 support for the distil client
+* Move other-requirements.txt to bindep.txt
+* List system dependencies for running common tests
+* Init commit for distil client
+* Added .gitreview
