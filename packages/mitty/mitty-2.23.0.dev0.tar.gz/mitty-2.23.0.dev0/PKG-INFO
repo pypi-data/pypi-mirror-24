@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: mitty
+Version: 2.23.0.dev0
+Summary: Simulator for genomic data
+Home-page: https://github.com/sbg/Mitty
+Author: Seven Bridges Genomics
+Author-email: kaushik.ghose@sbgdinc.com
+License: UNKNOWN
+Download-URL: https://github.com/sbg/Mitty/archive/development.zip
+Description: UNKNOWN
+Keywords: simulator,genomics,ngs,read mapper,aligner,variant caller
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.4
+Requires-Python: >=3.4
