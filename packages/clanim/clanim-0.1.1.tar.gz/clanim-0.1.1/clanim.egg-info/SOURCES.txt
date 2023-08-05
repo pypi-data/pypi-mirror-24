@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+clanim/__init__.py
+clanim/animation.py
+clanim/cli.py
+clanim/decorator.py
+clanim/util.py
+clanim.egg-info/PKG-INFO
+clanim.egg-info/SOURCES.txt
+clanim.egg-info/dependency_links.txt
+clanim.egg-info/not-zip-safe
+clanim.egg-info/requires.txt
+clanim.egg-info/top_level.txt
