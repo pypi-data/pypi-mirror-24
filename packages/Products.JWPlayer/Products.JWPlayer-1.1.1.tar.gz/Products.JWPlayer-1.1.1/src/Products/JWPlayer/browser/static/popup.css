@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+div {
+    display: block;
+    vertical-align: middle;
+}
+.jwp-settings .field {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 12px;
+
+}
+.jwp-settings .field label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: normal;
+    cursor: pointer
+
+}
+.jwp-settings .field label.toggle-label {
+    display: inline-block;
+    margin-right: 30px;
+}
+.jwp-settings h4{
+    font-size: 16px;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 20px;
+}
+
+.jwp-settings .field input,
+.jwp-settings .field textarea {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 96%;
+    padding: 5px;
+}
+.jwp-settings .field label.toggle-label input {
+    width: auto;
+}
+.jwp-settings .field textarea {
+    height: 100px;
+}
+
+.jwp-settings .buttons .btn {
+    background: #efefef;
+    color: #000;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.jwp-preview {
+    display: block;
+    margin-top: 25px;
+}
+.jwp-settings .field.float-left {
+    display: inline-block;
+    width: 44%;
+}
+.jwp-settings .float-right {
+    float: right;
+}
+.jwp-settings .or {
+    text-align: center;
+    display: inline-block;
+    width: 9%;
+    text-align: center;
+}
+#jwp-player-url-self {
+    margin-bottom: 10px;
+}
+#jwp-close {
+    margin-right: 25px;
+}
+.jwp-settings .toggle-content {
+    opacity: 0; 
+    height: 0;
+    overflow: hidden;
+    /*
+    transition: opacity 1s ease-out;
+    -webkit-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    -ms-transition: opacity 1s ease-out;
+    */
+}
+.jwp-settings .toggle-content.active {
+    display: block;
+    opacity: 1;
+    height: auto;
+}
+.jwp-settings a, .jwp-settings a:link, .jwp-settings a:visited {
+    color: #205c90;
+}
