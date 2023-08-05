@@ -1,0 +1,8 @@
+setup.py
+mf_client/MF_API_Client.py
+mf_client/MF_socketIO.py
+mf_client/__init__.py
+mf_client.egg-info/PKG-INFO
+mf_client.egg-info/SOURCES.txt
+mf_client.egg-info/dependency_links.txt
+mf_client.egg-info/top_level.txt
