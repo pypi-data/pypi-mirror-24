@@ -1,0 +1,9 @@
+README.rst
+setup.py
+jssourcemap/__init__.py
+jssourcemap/vlq.py
+jssourcemap.egg-info/PKG-INFO
+jssourcemap.egg-info/SOURCES.txt
+jssourcemap.egg-info/dependency_links.txt
+jssourcemap.egg-info/top_level.txt
+test/tests.py

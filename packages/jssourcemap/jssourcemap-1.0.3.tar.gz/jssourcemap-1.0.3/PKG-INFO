@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: jssourcemap
+Version: 1.0.3
+Summary: A library for reading, writing, and merging source maps
+Home-page: https://gitlab.com/mkleehammer/jssourcemap
+Author: Michael Kleehammer
+Author-email: michael@kleehammer.com
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: MIT License
