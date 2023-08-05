@@ -1,0 +1,3 @@
+[console_scripts]
+tvregex = tvregex:main
+
