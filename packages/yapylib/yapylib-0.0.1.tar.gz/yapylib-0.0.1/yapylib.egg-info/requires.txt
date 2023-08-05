@@ -1,0 +1,5 @@
+requests
+parsel
+beautifulsoup4
+jinja2
+click
