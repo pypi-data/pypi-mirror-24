@@ -1,0 +1,8 @@
+setup.py
+pysharefile/__init__.py
+pysharefile/pysharefile.py
+pysharefile.egg-info/PKG-INFO
+pysharefile.egg-info/SOURCES.txt
+pysharefile.egg-info/dependency_links.txt
+pysharefile.egg-info/not-zip-safe
+pysharefile.egg-info/top_level.txt
