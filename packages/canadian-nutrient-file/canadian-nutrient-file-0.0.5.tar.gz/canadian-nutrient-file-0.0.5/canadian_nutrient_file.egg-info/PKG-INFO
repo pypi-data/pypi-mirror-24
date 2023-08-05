@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: canadian-nutrient-file
+Version: 0.0.5
+Summary: UNKNOWN
+Home-page: http://github.com/cyrilrbt/canadian-nutrient-file
+Author: Cyril Robert
+Author-email: cyril@hippie.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Natural Language :: French
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
