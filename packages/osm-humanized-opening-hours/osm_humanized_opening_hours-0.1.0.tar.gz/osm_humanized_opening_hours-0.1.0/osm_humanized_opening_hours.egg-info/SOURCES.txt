@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+humanized_opening_hours/__init__.py
+humanized_opening_hours/hoh_en.json
+humanized_opening_hours/hoh_fr.json
+humanized_opening_hours/humanized_opening_hours.py
+osm_humanized_opening_hours.egg-info/PKG-INFO
+osm_humanized_opening_hours.egg-info/SOURCES.txt
+osm_humanized_opening_hours.egg-info/dependency_links.txt
+osm_humanized_opening_hours.egg-info/requires.txt
+osm_humanized_opening_hours.egg-info/top_level.txt
