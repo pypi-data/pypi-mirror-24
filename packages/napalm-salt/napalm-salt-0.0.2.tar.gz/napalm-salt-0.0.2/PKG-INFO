@@ -1,0 +1,115 @@
+Metadata-Version: 1.1
+Name: napalm-salt
+Version: 0.0.2
+Summary: NAPALM modules for Salt, to facilitate vendor-agnostic event-driven network automation and orchestration
+Home-page: https://github.com/napalm-automation/napalm-salt
+Author: Mircea Ulinic
+Author-email: mircea.ulinic@gmail.com
+License: Apache License 2.0
+Description: napalm-salt
+        ===========
+        
+        Modules for Salt, to retrieve, control, enforce and update configuration
+        of network devices
+        
+        Salt Basics
+        ===========
+        
+        New to Salt? Check out `this document`_ for a brief introduction to get
+        up to speed on the basics.
+        
+        Test Environment
+        ================
+        
+        Throughout the rest of this document, we’ll set up a test environment to
+        run some salt commands against routers. This test environment uses a
+        vagrant VM running Ubuntu 16.04, which acts as a salt-master as well as
+        a proxy-master, which establishes and maintains connections to the
+        routers in order to execute commands on them.
+        
+        Install Salt
+        ============
+        
+        The simplest way to install Salt is via `salt bootstrap`_. Here’s an
+        example of an installation:
+        
+        .. code:: bash
+        
+            wget -O bootstrap-salt.sh https://bootstrap.saltstack.com/develop
+            sudo sh bootstrap-salt.sh
+        
+        This will install the ``salt-minion`` and ``salt-proxy`` only, but we
+        also want this box to be the ``salt-master``, so we’ll install that:
+        
+        .. code:: bash
+        
+            sudo sh bootstrap-salt.sh -M
+        
+        For more specific installation instructions, see the `platform-specific
+        instructions`_ from the official Saltstack documentation. Be aware to
+        install the master distribution **from the PPA repo**, as on the local
+        server will run as Master, controlling the devices as Proxy minions.
+        
+        CentOS documentation can be found `here`_.
+        
+        Install NAPALM
+        ==============
+        
+        If NAPALM has never been installed on your system it will need to be
+        before napalm-salt can work:
+        
+        ::
+        
+            sudo apt-get install libffi-dev libssl-dev python-dev python-cffi libxslt1-dev python-pip
+            sudo pip install --upgrade cffi
+            sudo pip install napalm-junos napalm-iosxr napalm-ios
+        
+        The easy way: Salt users can install NAPALM through a single command,
+        using the `napalm-install Saltstack formula`_. A more detailed usage
+        example can be found at:
+        https://mirceaulinic.net/2017-07-06-napalm-install-formula/.
+        
+        Configure Salt Proxy (and Minion)
+        =================================
+        
+        The main configuration file needed to make Salt run as proxy-master is
+        located at ``/etc/salt/proxy``. This file should already exist, though
+        you may need to create it.
+        
+        We need to tell the proxy process that the local machine is the
+        ``salt-master``, and to turn off multiprocessing. You can add the
+        following to the top of your ``/etc/salt/proxy`` file:
+        
+        ::
+        
+            master: localhost
+            multiprocessing: false
+            mine_enabled: true # not required, but nice to have
+            pki_dir: /etc/salt/pki/proxy # not required - this separates the proxy keys into a different directory
+        
+        Additionally, you may want to edit the ``/etc/salt/minion`` file to
+        point the master location to itself. This is not necessary, but it
+        allows you to target the VM as a minion, i
+        
+        .. _this document: https://docs.saltstack.com/en/latest/topics/tutorials/walkthrough.html
+        .. _salt bootstrap: https://docs.saltstack.com/en/latest/topics/tutorials/salt_bootstrap.html
+        .. _platform-specific instructions: https://docs.saltstack.com/en/latest/topics/installation/#platform-specific-installation-instructions
+        .. _here: centos_installation.md
+        .. _napalm-install Saltstack formula: https://github.com/saltstack-formulas/napalm-install-formula
+        
+Keywords: napalm,salt,saltstack,network,automation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Networking
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Intended Audience :: Developers

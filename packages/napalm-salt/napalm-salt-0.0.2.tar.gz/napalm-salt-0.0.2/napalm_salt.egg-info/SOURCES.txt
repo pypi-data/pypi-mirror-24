@@ -1,0 +1,7 @@
+README.rst
+setup.py
+napalm_salt/__init__.py
+napalm_salt.egg-info/PKG-INFO
+napalm_salt.egg-info/SOURCES.txt
+napalm_salt.egg-info/dependency_links.txt
+napalm_salt.egg-info/top_level.txt
