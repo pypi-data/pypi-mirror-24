@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pypipeline-esb
+Version: 1.0.0
+Summary: ESB for Python
+Home-page: https://github.com/vaibhav-sinha/pypipeline
+Author: Vaibhav Sinha
+Author-email: vaibhavsinh@gmail.com
+License: UNKNOWN
+Description: PyPipeline is meant to be a lightweight ESB, configurable via an intutive DSL. PyPipeline implements many of the Enterprise Integration Patterns.
+        
+Keywords: esb,eip,pipeline
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
