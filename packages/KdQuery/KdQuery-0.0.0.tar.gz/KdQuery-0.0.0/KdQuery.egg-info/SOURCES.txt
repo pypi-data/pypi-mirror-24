@@ -1,0 +1,7 @@
+README.rst
+kdtree.py
+setup.py
+KdQuery.egg-info/PKG-INFO
+KdQuery.egg-info/SOURCES.txt
+KdQuery.egg-info/dependency_links.txt
+KdQuery.egg-info/top_level.txt
