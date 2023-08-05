@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+barrett/__init__.py
+barrett/data.py
+barrett/posterior.py
+barrett/profilelikelihood.py
+barrett/util.py
+barrett.egg-info/PKG-INFO
+barrett.egg-info/SOURCES.txt
+barrett.egg-info/dependency_links.txt
+barrett.egg-info/requires.txt
+barrett.egg-info/top_level.txt
