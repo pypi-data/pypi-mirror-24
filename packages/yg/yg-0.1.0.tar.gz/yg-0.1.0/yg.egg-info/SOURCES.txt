@@ -1,0 +1,8 @@
+setup.py
+yg/__init__.py
+yg/util.py
+yg.egg-info/PKG-INFO
+yg.egg-info/SOURCES.txt
+yg.egg-info/dependency_links.txt
+yg.egg-info/not-zip-safe
+yg.egg-info/top_level.txt
