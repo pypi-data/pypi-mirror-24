@@ -1,0 +1,4 @@
+pytweening
+sympy
+numpy
+scipy

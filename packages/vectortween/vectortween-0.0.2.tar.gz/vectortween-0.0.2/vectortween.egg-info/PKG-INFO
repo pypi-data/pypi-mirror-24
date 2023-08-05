@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: vectortween
+Version: 0.0.2
+Summary: animation library with tweening
+Home-page: https://github.com/shimpe/pyvectortween
+Author: stefaan himpe
+Author-email: stefaan.himpe@gmail.com
+License: MIT
+Description: animation library with tweening
+Keywords: tween,animation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3
