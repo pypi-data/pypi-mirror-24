@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: WrightTools
+Version: 2.13.4
+Summary: Tools for loading, processing, and plotting multidimensional spectroscopy data.
+Home-page: https://github.com/wright-group/WrightTools
+Author: Blaise Thompson
+Author-email: blaise@untzag.com
+License: MIT
+Download-URL: https://github.com/wright-group/WrightTools/archive/2.13.0.tar.gz
+Description: UNKNOWN
+Keywords: spectroscopy science multidimensional visualization
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering
