@@ -1,0 +1,251 @@
+
+description: Do actions with your RAPyDo project
+action:
+  name: action
+  help: all possible commands
+
+options:
+
+  # TODO: add the --env option (or --print-env)
+  # env:
+  #   alias: e
+  #   help: print the variables to be used with the command and exit
+
+  project:
+    alias: p
+    # NOTE: this is the equivalent of the old concept of `blueprint`
+    type: str
+    metavalue: PROJECT_NAME
+    help: The name of the project to use inside the './projects' directory
+    # The only one if exists otherwise list the projects.
+    default: null
+
+  mode:
+    alias: m
+    type: str
+    metavalue: CONTAINERS_YAML_SELECTED_MODE
+    default: debug
+    help: The mode is like a 'blueprint' marker of the configuration to launch
+
+  log-level:
+    alias: l
+    type: str
+    metavalue: LEVEL_OF_DEBUGGER
+    default: DEBUG
+    help: Level of verbosity
+
+  hostname:
+    alias: H
+    type: str
+    metavalue: MACHINE_HOST_NAME
+    default: localhost
+    help: "Host name of the current machine where running the server
+        (NOTE: only used in production mode)"
+
+  services:
+    alias: s
+    type: str
+    metavalue: SERVICES_COMA_SEPARATED
+    default: active services
+    help: List of services referring to a command
+
+  # force-env:
+  cache-env:
+    alias: env
+    type: bool
+    default: False
+    # help: Force recreation of the docker compose .env file even if existing
+    help: Cache the docker compose .env file instead of recreating it
+
+  # development:
+  #   type: bool
+  #   default: False
+  #   help: Allow to execute the code directly from rapydo core
+
+subcommands:
+  check:
+    description: "only verify if currently compliant to RAPyDo specs
+        (NOTE: this is done at every call)"
+    suboptions:
+      ignore-submodule:
+        alias: i
+        type: str
+        metavalue: IGNORE_SUBMODULE
+        default: 'upstream'
+        help: ignore a given list of submodules (command delimited)
+      skip-heavy-git-ops:
+        alias: s
+        type: bool
+        default: False
+        help: ignore the heaviest check operations on git commits
+      verify-upstream:
+        alias: u
+        type: bool
+        metavalue: TRUE_OR_FALSE
+        default: False
+        help: include upstream repo (rapydo-core) to checked submodules
+  init:
+    description: "
+      make current project compliant to RAPyDo requirements
+      (if not yet being)"
+  update:
+    description: update the current project
+    suboptions:
+      ignore-submodule:
+        alias: i
+        type: str
+        metavalue: IGNORE_SUBMODULE
+        default: 'upstream'
+        help: ignore a given list of submodules (command delimited)
+  # TODO: a tutorial mode to improve the project step by step
+  # instead of all at once like init
+  # tutorial:
+  #   description: Step-by-step guide to make your project RAPyDo compliant
+  status:
+    description: list current status of containers
+  build:
+    description: force building of one or more services docker images
+    suboptions:
+      rebuild-templates:
+        alias: r
+        type: bool
+        # metavalue: TRUE_OR_FALSE
+        default: False
+        help: Force building of templates docker images used in other builds
+      force:
+        alias: f
+        type: bool
+        # metavalue: TRUE_OR_FALSE
+        default: False
+        help: remove caches of previous builds on this service
+  log:
+    description: watch log tails of all or specified containers
+    suboptions:
+      follow:
+        alias: f
+        type: bool
+        metavalue: TRUE_OR_FALSE
+        default: False
+        help: tail logs
+  custom:
+    description: execute predefined custom commands inside containers
+  ssl-certificate:
+    description: Issue a production certificate with service Letsencrypt
+    container_exec:
+      name: letsencrypt
+      command: /bin/bash updatecertificates
+      service: proxy
+      user: root
+  ssl-dhparam:
+    description: Generate DH DSA parameters, 4096 bit long prime. **It could take long time**
+    container_exec:
+      name: dhparam
+      command: openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096
+      service: proxy
+      user: root
+  bower-install:
+    description: Install a new lib with bower
+    container_exec:
+      name: bower
+      # command: bower install
+      service: bower
+      user: develop
+    suboptions:
+      lib:
+        alias: l
+        type: str
+        metavalue: BOWER_LIB_TO_INSTALL
+        default: null
+        help: the bower lib to be installed
+  bower-update:
+    description: Update a lib with bower
+    container_exec:
+      name: bower
+      # command: bower update
+      service: bower
+      user: develop
+    suboptions:
+      lib:
+        alias: l
+        type: str
+        metavalue: BOWER_LIB_TO_INSTALL
+        default: null
+        help: the bower lib to be installed
+  interfaces:
+    description: run off some predefined interfaces to services
+    suboptions:
+      service:
+        positional: true
+        type: str
+        metavalue: SERVICE
+        default: null
+      port:
+        alias: p
+        type: int
+        metavalue: INTEGER_PORT_FOR_SERVICE
+        default: null
+        help: the port which would be associated to the service
+  shell:
+    description: open a shell inside the specified container
+    suboptions:
+      service:
+        positional: true
+        type: str
+        metavalue: SERVICE
+        default: null
+      user:
+        alias: u
+        type: str
+        metavalue: UNIX_EXISTING_USER
+        default: ''
+        help: user existing inside selected service
+      command:
+        alias: c
+        type: str
+        metavalue: TERMINAL_COMMAND_UNIX-LIKE
+        default: bash
+        help: UNIX command to be executed on selected running service
+  start:
+    description: Start containers for this configuration
+  stop:
+    description: Stop running containers, but do not remove them
+  restart:
+    description: Restart running containers
+  remove:
+    description: Stop containers if running and remove them
+  toggle-freeze:
+    description: Toggle a temporary block/pause of running services
+  clean:
+    description: "remove all:
+      containers, networks and OPTIONALLY data volumes"
+    suboptions:
+      rm-volumes:
+        alias: rm
+        type: bool
+        metavalue: TRUE_OR_FALSE
+        default: False
+        help: remove also containers persistent data
+  env:
+    description: "Print all configured variables"
+  template:
+    description: "Create a new endpoint template for your REST API"
+    suboptions:
+      endpoint:
+        positional: yes  # note: yes is equivalent to True in YAML
+        type: str
+        metavalue: ENDPOINT_NAME
+        default: foo
+      'yes':
+        alias: y
+        type: bool
+        metavalue: TRUE_OR_FALSE
+        default: False
+        help: say yes to all answers
+      service:
+        alias: s
+        type: str
+        metavalue: CONNECTED_SERVICE
+        default: sqlalchemy
+        help: The first service that will be connected inside the code
+  coverall:
+    description: "Send coverage computed to coveralls.io website"
