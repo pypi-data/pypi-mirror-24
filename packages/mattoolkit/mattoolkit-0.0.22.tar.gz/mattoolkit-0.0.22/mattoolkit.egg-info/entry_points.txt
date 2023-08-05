@@ -1,0 +1,3 @@
+[console_scripts]
+mtk-cli = mattoolkit.__main__:main
+
