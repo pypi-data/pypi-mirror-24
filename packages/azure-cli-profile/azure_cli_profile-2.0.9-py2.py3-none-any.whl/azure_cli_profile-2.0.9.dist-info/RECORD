@@ -1,0 +1,11 @@
+azure/cli/command_modules/profile/__init__.py,sha256=ThEZ7bd8TLgSXuuM56obksQQAcKroYq6_Hyi-4UgWic,692
+azure/cli/command_modules/profile/_help.py,sha256=vsn8MGrZh6E6ASiQHXsaJqgu4uTaH8G0rmVeL6RK_CM,2882
+azure/cli/command_modules/profile/_params.py,sha256=HWY5FJNTR8TRfSIym4buh177NW3wmW1UN-LOfJklCcU,2171
+azure/cli/command_modules/profile/commands.py,sha256=UeozaMebNxRTma1ABbMr1yD7Oc_gmTZI8_TQAVksuzw,1598
+azure/cli/command_modules/profile/custom.py,sha256=fd41Jmns1RhtMg4_3DZlt57uWZKddZ1ZspemFBxh7b8,5416
+azure_cli_profile-2.0.9.dist-info/DESCRIPTION.rst,sha256=HqjjqtBN7dOMiTprnPov2dEKkTaRuX_dyEgdkxf5Ri8,2196
+azure_cli_profile-2.0.9.dist-info/METADATA,sha256=uFISz3vdhxItOKcYvLi8yJlH09D4alBsg5pI6xrA28c,3130
+azure_cli_profile-2.0.9.dist-info/RECORD,,
+azure_cli_profile-2.0.9.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+azure_cli_profile-2.0.9.dist-info/metadata.json,sha256=Sw4Go43TnIVrF5Cr3ovZzXdHgsc_4Ub8gy5j3HbxDuo,1050
+azure_cli_profile-2.0.9.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
