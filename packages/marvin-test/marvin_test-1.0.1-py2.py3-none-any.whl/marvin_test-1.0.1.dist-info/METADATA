@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: marvin-test
+Version: 1.0.1
+Summary: Marvin - Automation Framework
+Home-page: https://github.com/argos83/marvin
+Author: Sebastian Tello
+Author-email: argos83@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: colorama
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
