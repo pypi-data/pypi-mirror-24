@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: VK-Scraper
+Version: 1.0.0.dev2
+Summary: UNKNOWN
+Home-page: https://github.com/vanyasem/VK-Scraper
+Author: Ivan Semkin
+Author-email: ivan@semkin.ru
+License: GPL-3.0
+Description: UNKNOWN
+Keywords: vk,vkontakte,scraper,download,media,photos,videos,stories
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
