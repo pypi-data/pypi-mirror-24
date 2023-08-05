@@ -1,0 +1,8 @@
+setup.py
+pws/__init__.py
+pws/app.py
+pws.egg-info/PKG-INFO
+pws.egg-info/SOURCES.txt
+pws.egg-info/dependency_links.txt
+pws.egg-info/not-zip-safe
+pws.egg-info/top_level.txt
