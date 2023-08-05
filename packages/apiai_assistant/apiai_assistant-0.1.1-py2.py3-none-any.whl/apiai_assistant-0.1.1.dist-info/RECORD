@@ -1,0 +1,12 @@
+apiai_assistant/__init__.py,sha256=D5heunJGUyqKI3re6c3qAk3yL9EZPnXuYlEekRWtQiU,41
+apiai_assistant/agent.py,sha256=kehO1rFJO0iIuPBf3h4E9Ck_2uQ2UJweaJZ11wRzYmY,7800
+apiai_assistant/assistant.py,sha256=BnV4LF9GU7NdlwglAt45DfwaOGkdz7yT4b704qJZ1WM,4269
+apiai_assistant/corpus.py,sha256=YOxsSjc0Gp7QQ8fQgex2ppQazPl5qXVlDoRNDr8vG94,2401
+apiai_assistant/parser.py,sha256=UgfoTFQN4Pg2Kbbw18Bv3Q8gylHp06b_3YgJkutpmgE,7229
+apiai_assistant/utils.py,sha256=DLRGCawpIPm6ql6w4kCPwWprTkUYCBwgjK63734yhoY,3637
+apiai_assistant-0.1.1.dist-info/DESCRIPTION.rst,sha256=2C62JzPHsEYDz0VTBEPScgKJ59-J4lO-xsPrGWpdDPw,5417
+apiai_assistant-0.1.1.dist-info/METADATA,sha256=jgF69XAvrpI8VgaNUoKCCL7gJhv6e4j1vXdIxCATZyc,6590
+apiai_assistant-0.1.1.dist-info/RECORD,,
+apiai_assistant-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+apiai_assistant-0.1.1.dist-info/metadata.json,sha256=RVtdY15bF0apKzpSNLnKCF3YHbayi9BaUniMY39BBl8,1268
+apiai_assistant-0.1.1.dist-info/top_level.txt,sha256=qLmZlBBP549c77yn0ob96xgMCXpgC7ozXsl1QQAXlP0,16
