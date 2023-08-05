@@ -1,0 +1,10 @@
+README.rst
+setup.py
+gtkpass/__init__.py
+gtkpass/main.py
+gtkpass.egg-info/PKG-INFO
+gtkpass.egg-info/SOURCES.txt
+gtkpass.egg-info/dependency_links.txt
+gtkpass.egg-info/entry_points.txt
+gtkpass.egg-info/requires.txt
+gtkpass.egg-info/top_level.txt

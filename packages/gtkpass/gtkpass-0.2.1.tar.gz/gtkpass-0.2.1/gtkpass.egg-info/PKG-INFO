@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: gtkpass
+Version: 0.2.1
+Summary: A GTK+ 3 program for the standard unix password manager
+Home-page: http://github.com/raghavsub/gtkpass
+Author: Raghav Subramaniam
+Author-email: raghavs511@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
