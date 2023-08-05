@@ -1,0 +1,63 @@
+# bot settings
+#
+bot:
+
+    on_enter: How can I help you?
+    on_exit: Bye for now
+
+# named lists
+#
+lists:
+
+    - name: The Famous Four
+      items:
+        - alice@acme.com
+        - bob@project.org
+        - celine@secret.mil
+        - dude@bangkok.travel
+
+    - name: SupportTeam
+      as_command: true
+      items:
+        - service.desk@acme.com
+        - supervisor@brother.mil
+
+# shell settings
+#
+shell:
+
+    commands:
+        - shellbot.commands.close
+
+# additional settings
+#
+process:
+    states:
+        - T100
+        - T200
+        - T300
+
+    initial: T100
+
+# local space settings
+#
+local:
+
+    # the title of the local space handled by this bot
+    #
+    title: Support channel
+
+    # the title of the team associated with the room
+    #
+    team: Support service
+
+    # pre-defined participants
+    #
+    participants:
+      - joe.bar@acme.com
+      - super.support@help.org
+
+    # the token that has been created for this bot should normally be set in
+    # the environment but you can override the configuration below
+    #
+    token: "<token here hkNWEtMJNkODk3ZDZLOGQ0OVGlZWU1NmYtyY>"
