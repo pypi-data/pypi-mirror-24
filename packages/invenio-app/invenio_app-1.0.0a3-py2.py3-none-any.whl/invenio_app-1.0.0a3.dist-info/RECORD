@@ -1,0 +1,17 @@
+invenio_app/__init__.py,sha256=wYa7F503_TvRNPL2hfEyaTvYJTs9ms5gR9Nzk0N2TCo,6072
+invenio_app/celery.py,sha256=pYWhKObSeIxPdj8SiyMlK6sIlzQgzxVmlvJAx4GK-Hw,1584
+invenio_app/cli.py,sha256=2JefqAU9B5_Aa-ae4tG6HsQKUdZRtdDX7toZDyKwJ5k,1215
+invenio_app/config.py,sha256=jzAlu1_rSZ_kQ1AliEfx_92VCi21wgi5hX56uHRIj6E,3649
+invenio_app/ext.py,sha256=z8LXg4LuwXV46hyvi1xI3AIbc_uEGZO4t0C2yJxOQk0,2555
+invenio_app/factory.py,sha256=I9VcOS0JB7tolXuBBvU1-SIJacOuqvROA93e_1ikhLM,4683
+invenio_app/version.py,sha256=BVTjh1Y8bsRWe_sB6SPktXhJOfJCEwjp0_gOQwTgSWo,1177
+invenio_app/wsgi.py,sha256=0DCntT_VA_xt-pclJvdlygWsqMpj4X7w9OnR4DmbNC0,1226
+invenio_app/wsgi_rest.py,sha256=1OY5tlaIu9mGtghe0aswDGu03SHUGZyISvKfuZ9ZOTA,1186
+invenio_app/wsgi_ui.py,sha256=r5foNl0bL2g2oUeeuEdKL-25mYGIJYN58M1UCb_VcBU,1176
+invenio_app-1.0.0a3.dist-info/top_level.txt,sha256=LeGTnFK7ZBrZ3Js1N8OkU86YekU7VRZX3YLzOwnYbME,12
+invenio_app-1.0.0a3.dist-info/entry_points.txt,sha256=mZ2ewBL9jShKTuut9fXZ37HdFSZEbJDMFNckCSDIpuo,169
+invenio_app-1.0.0a3.dist-info/METADATA,sha256=Kv5_70lWeF7Lx3RZ9spbgeQSTdu9136tegYGAnkITSk,5580
+invenio_app-1.0.0a3.dist-info/DESCRIPTION.rst,sha256=QI_ItP3MJghJcPcQEZFZmhh_-O9V2CaGVrQBDfdsaoA,2937
+invenio_app-1.0.0a3.dist-info/metadata.json,sha256=MbIRIX1VhpXQ5G3Ix73JuiRgvVCcbv4_Oc-YfN9sa3k,2530
+invenio_app-1.0.0a3.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
+invenio_app-1.0.0a3.dist-info/RECORD,,
