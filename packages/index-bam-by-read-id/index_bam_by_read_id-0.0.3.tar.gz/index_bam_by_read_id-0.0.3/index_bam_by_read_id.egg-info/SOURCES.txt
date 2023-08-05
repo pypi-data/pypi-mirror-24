@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+index_bam_by_read_id.py
+setup.cfg
+setup.py
+index_bam_by_read_id.egg-info/PKG-INFO
+index_bam_by_read_id.egg-info/SOURCES.txt
+index_bam_by_read_id.egg-info/dependency_links.txt
+index_bam_by_read_id.egg-info/requires.txt
+index_bam_by_read_id.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+include README.md
+include LICENSE.txt
+exclude test_index_bam_by_read.py 
