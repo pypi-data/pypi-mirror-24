@@ -1,0 +1,3 @@
+[console_scripts]
+neurofeatures = neurofeatures.__main__:main
+

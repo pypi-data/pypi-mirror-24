@@ -1,0 +1,10 @@
+setup.py
+neurofeatures/__init__.py
+neurofeatures/__main__.py
+neurofeatures/neurofeatures.py
+neurofeatures.egg-info/PKG-INFO
+neurofeatures.egg-info/SOURCES.txt
+neurofeatures.egg-info/dependency_links.txt
+neurofeatures.egg-info/entry_points.txt
+neurofeatures.egg-info/requires.txt
+neurofeatures.egg-info/top_level.txt

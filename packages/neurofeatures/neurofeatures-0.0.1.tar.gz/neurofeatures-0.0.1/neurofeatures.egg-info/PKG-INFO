@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: neurofeatures
+Version: 0.0.1
+Summary: Generic feature extraction package for neuroimaging features (examples include: connectivity from rs-fmri, regional mean fractional anisotropy, structural covariance etc)
+Home-page: https://github.com/raamana/neurofeatures
+Author: Pradeep Reddy Raamana
+Author-email: raamana@gmail.com
+License: UNKNOWN
+Description: Generic feature extraction package for neuroimaging features (examples include: connectivity from rs-fmri, regional mean fractional anisotropy, structural covariance etc); neurofeatures
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 2.7
