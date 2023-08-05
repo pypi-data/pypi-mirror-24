@@ -1,0 +1,97 @@
+#!/usr/bin/env python3
+#******************************************************************************
+# Copyright (C) 2017 Thomas "Cakeisalie5" Touhey <thomas@touhey.fr>
+#
+# This file is distributed aside the MastodonInstances Python 3.x module.
+# MastodonInstances is MIT-licensed.
+#******************************************************************************
+import os, sys, textwrap, configparser, argparse
+import MastodonInstances
+
+def parse_args():
+	""" Parse the arguments. """
+	
+	argparser = argparse.ArgumentParser()
+	argparser.add_argument('-C', '--config-file', dest='config',
+		help='the utility config file', default='~/.mastodon-instances')
+	subs = argparser.add_subparsers(title='subcommands', dest='command',
+		metavar='<command>')
+
+	use = subs.add_parser('use',
+		help='use a token.')
+	use.add_argument('token', help='the token to use')
+
+	reg = subs.add_parser('register',
+		help='register an application.')
+	reg.add_argument('name', help='the application name')
+	reg.add_argument('mail', help='the contact email')
+
+	get = subs.add_parser('get',
+		help='get information about an instance.')
+	get.add_argument('name', help='the instance name.')
+
+	args = argparser.parse_args()
+	if not args.command:
+		argparser.print_help()
+		exit(0)
+	args.config = os.path.expanduser(args.config)
+	return args
+
+def main():
+	""" Main function of the program. """
+
+	args = parse_args()
+	if   args.command == 'register':
+		print("Application registering through here is not available yet.",
+			file=sys.stderr)
+		print("Go to: https://instances.social/api/token",
+			file=sys.stderr)
+		print("Then use the `use` subcommand to set your token.",
+			file=sys.stderr)
+		return 1
+	elif args.command == 'use':
+		config = configparser.ConfigParser()
+		config['default'] = {'token': args.token}
+		config.write(open(args.config, 'w'))
+		return 0
+
+	try:
+		config = configparser.ConfigParser()
+		config.read(args.config)
+		token = config['default']['token']
+	except:
+		token = None
+	api = MastodonInstances.Instances(token)
+
+	if   args.command == 'get':
+		instance = api.get(args.name)
+		print("=== {} ({}running Mastodon v. {})".format(instance.name,
+			"DEAD, " if instance.dead else "DOWN, " if not instance.up else "",
+			instance.version))
+		print("{} user(s), {} status(es), {} connection(s)".format(\
+			instance.users, instance.statuses, instance.connections))
+
+		if instance.shortdesc:
+			print()
+			print(os.linesep.join(textwrap.wrap(instance.shortdesc,
+				width=79)))
+
+		print()
+		print("Uptime: {}%".format(instance.uptime * 100.0))
+		print("Accessible through IPv6: {}".format(["no", "yes"][instance.ipv6]))
+		if instance.https:
+			print("HTTPS rank: {} (score: {}/100)".format(instance.https.rank,
+				instance.https.score))
+
+	return 0
+
+if __name__ == '__main__':
+	try: main()
+	except MastodonInstances.NoTokenError:
+		print("Token required, use one of the `use` or `register` " \
+			"subcommands.", file=sys.stderr)
+	except (MastodonInstances.InvalidTokenError, \
+			MastodonInstances.InstanceNotFoundError) as e:
+		print(str(e), file=sys.stderr)
+
+# End of file.
