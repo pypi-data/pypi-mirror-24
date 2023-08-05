@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        patella=patella.click_commands:patella
+        
