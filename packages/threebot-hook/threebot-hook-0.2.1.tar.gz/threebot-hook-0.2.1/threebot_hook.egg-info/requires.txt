@@ -1,0 +1,2 @@
+djangorestframework>=3.5.3
+threebot>=0.1.1
