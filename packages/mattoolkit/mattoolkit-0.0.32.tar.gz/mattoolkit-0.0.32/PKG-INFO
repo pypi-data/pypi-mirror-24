@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: mattoolkit
+Version: 0.0.32
+Summary: Material Toolkit cli and library
+Home-page: https://gitlab.aves.io/mattoolkit/mattoolkit-client
+Author: Chris Ostrouchov
+Author-email: chris.ostrouchov+mtk-cli@gmail.com
+License: UNKNOWN
+Download-URL: https://gitlab.aves.io/mattoolkit/mattoolkit-client/repository/archive.zip?ref=v0.0.32
+Description: Mattoolkit CLI
+        ================================
+        
+        Used to execute the queued VASP calculations. Needs to be installed on
+        all clients to run jobs from the Material Toolkit.
+        
+        
+        
+        Handling Port Restrictions
+        ==========================
+        
+        .. code-block:: bash
+        
+           function ssh_tunnel()
+           {
+                if [[ $(ps aux | grep "[s]sh -D 8443") ]]; then
+        	     echo "SSH proxy already exists"
+                else
+                     echo "SSH socks proxy created on port 8443"
+        	     ssh -D 8443 -f -C -q -N newton
+                fi
+           }
+        
+           function tunnel_if_no_http()
+           {
+                if [[ $(nc -vz google.com 80 -w 1 |& grep failed) ]]; then
+        	    ssh_tunnel
+        
+        	    export http_proxy=socks5://localhost:8443/
+        	    export https_proxy=socks5://localhost:8443/
+                fi
+           }
+        
+           tunnel_if_no_http
+        
+Keywords: material toolkit material science hpc vasp
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
