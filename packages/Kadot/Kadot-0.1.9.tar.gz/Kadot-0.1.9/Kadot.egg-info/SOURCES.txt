@@ -1,0 +1,16 @@
+README
+setup.py
+Kadot.egg-info/PKG-INFO
+Kadot.egg-info/SOURCES.txt
+Kadot.egg-info/dependency_links.txt
+Kadot.egg-info/requires.txt
+Kadot.egg-info/top_level.txt
+kadot/__init__.py
+kadot/classifiers.py
+kadot/core.py
+kadot/fuzzy.py
+kadot/generators.py
+kadot/preprocessing.py
+kadot/text.py
+kadot/tokenizers.py
+kadot/vectorizers.py

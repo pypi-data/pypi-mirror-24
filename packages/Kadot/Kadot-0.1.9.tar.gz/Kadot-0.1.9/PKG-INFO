@@ -1,0 +1,54 @@
+Metadata-Version: 1.1
+Name: Kadot
+Version: 0.1.9
+Summary: Kadot, unsupervised natural language processing.
+Home-page: https://github.com/the-new-sky/Kadot
+Author: the_new_sky
+Author-email: lorisazerty@gmail.com
+License: MIT
+Download-URL: https://github.com/the-new-sky/Kadot/archive/0.1.9.tar.gz
+Description: Unsupervised natural language processing library.
+        
+        Kadot just lets you process a text easily.
+        
+        >>> hello_world = Text("Kadot just lets you process a text easily.")
+        >>> hello_world.ngrams(n=2)
+        
+        [('Kadot', 'just'), ('just', 'lets'), ('lets', 'you'), ('you', 'process'), ('process', 'a'), ('a', 'text'), ('text', 'easily')]
+        
+        
+        🔋 What's included ?
+        
+        Kadot includes tokenizers, text generators, classifiers, word-level and document-level vectorizers as well as a spell checker, a fuzzy string matching utility or a stopwords detector.
+        
+        The philosophy of Kadot is "never hardcode the language rules" : use unsupervised solutions to support most languages. So it will never includes Treebank based algorithms (like a POS Tagger).
+        
+        
+        🔨 Installation
+        
+        Use the "pip" command that refair to the Python 3.x interpreter.
+        In my case :
+        
+        $ pip3 install kadot
+        
+        It actually require the Python's standard library, Numpy, Scipy and Scikit-Learn.
+        
+        
+        ⚖️ License
+        
+        Kadot is under MIT license.
+        
+        
+        + More
+        
+        Check the GitHub repository : https://github.com/the-new-sky/Kadot
+        
+Keywords: natural language processing,text classification,text generation,tokenizer,word embeddings
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing :: General
