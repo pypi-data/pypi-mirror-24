@@ -1,0 +1,15 @@
+flask-restful
+SQLAlchemy
+Flask-SQLAlchemy
+Flask-Marshmallow
+marshmallow-sqlalchemy
+Flask-Script
+Flask-Migrate
+Flask-Caching
+Flask
+flask-httpauth
+requests
+numpy
+pyyaml
+faker
+inflect
