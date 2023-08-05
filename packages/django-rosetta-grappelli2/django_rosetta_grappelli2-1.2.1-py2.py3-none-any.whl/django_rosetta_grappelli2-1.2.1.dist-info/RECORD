@@ -1,0 +1,14 @@
+django_rosetta_grappelli2-1.2.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+django_rosetta_grappelli2-1.2.1.dist-info/LICENSE.txt,sha256=3XpFiRGyYXcvSIL0VTWSxEzqfn7MQe_OIKlFm6wLzSY,1128
+django_rosetta_grappelli2-1.2.1.dist-info/METADATA,sha256=mKvvc735sH46mwp_FBCmtWxJtzIkSU_qAp_ShEOuGj0,482
+django_rosetta_grappelli2-1.2.1.dist-info/RECORD,,
+django_rosetta_grappelli2-1.2.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_rosetta_grappelli2-1.2.1.dist-info/metadata.json,sha256=q4vvZSc2nMCEN5mO-cMMepwFSFZ2DbEeWqSyYUvynig,684
+django_rosetta_grappelli2-1.2.1.dist-info/top_level.txt,sha256=Wu8CADFgoi1kjMWFvhuXWfInDmINgfUI-quKA3iv1ZQ,18
+rosetta-grappelli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rosetta-grappelli/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rosetta-grappelli/templates/rosetta/base.html,sha256=EJOh2JsK374qNaPq6r40bzq5-Yf-vKofCHk-mOb4OHY,1265
+rosetta-grappelli/templates/rosetta/languages.html,sha256=9R-Un7k33MABn8_x0TUrq0aUIw8vjK20xIdWzP4Y3Ms,5374
+rosetta-grappelli/templates/rosetta/pofile.html,sha256=9sriasjRv77DnF5fCpRH-2zqsHzej7lZRcNxgHTpVE8,13791
+rosetta-grappelli/templates/rosetta/css/rosetta.css,sha256=7KMFaqVnxRrVwBWmnBsTBiWjf_HLZO4wjXpmrv17GAE,1789
+rosetta-grappelli/templates/rosetta/js/rosetta.js,sha256=-QjLfyRl95cWOR2sECwhSmxMS2EEN2wIx8HYhYcoTIo,3464
