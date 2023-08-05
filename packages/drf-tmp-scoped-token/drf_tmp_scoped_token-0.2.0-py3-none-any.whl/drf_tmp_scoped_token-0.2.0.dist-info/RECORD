@@ -1,0 +1,14 @@
+drf_tmp_scoped_token-0.2.0.dist-info/DESCRIPTION.rst,sha256=pjUriFWEGpOmrH7K_L-sxjK--L4rTlOuWl9GEP-IAD4,4370
+drf_tmp_scoped_token-0.2.0.dist-info/METADATA,sha256=T7WPpO0LHSu9C3uPwsuMZNB2CQk_VyBwVoG7_-zJ35U,4788
+drf_tmp_scoped_token-0.2.0.dist-info/RECORD,,
+drf_tmp_scoped_token-0.2.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+drf_tmp_scoped_token-0.2.0.dist-info/metadata.json,sha256=ZV5d08sJXNLG7g2lsp38yQrjb3FplKsWxiPfMR4mF1I,636
+drf_tmp_scoped_token-0.2.0.dist-info/top_level.txt,sha256=eZMPGTM6ovUTM_LBb_KVWFMyhCUroL7sJKQMC2pP7qw,38
+rest_framework_tmp_scoped_token/__init__.py,sha256=t7dE84a9iy-mwXCZV-twuDmUD3FVjRVJfvV9vXo5EgA,380
+rest_framework_tmp_scoped_token/auth.py,sha256=v06EuKDYVOcc3panlYo9RZB1M6OcbYC1Ghc2WRMTOO0,1469
+rest_framework_tmp_scoped_token/token.py,sha256=KkBJIH5GLns_183HzpK268Zo9vqISZWD_r3bGWmw1GA,4895
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/manage.py,sha256=TzKtVJoDcxSeKlOBnWeavepQftwxU1CcG_KwplDrVqs,242
+tests/settings.py,sha256=oPYs3fzCOztwIhkT6QGinV30Zr0zMII0noUGjph3vQU,387
+tests/test_app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_app/tests.py,sha256=vfl29GTeHcKGPOyYetY_kCZ-HTaCrT2YW5z96ZgOCOg,6457
