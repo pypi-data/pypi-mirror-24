@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+jupyter_c_kernel/__init__.py
+jupyter_c_kernel/__main__.py
+jupyter_c_kernel/kernel.py
+jupyter_c_kernel.egg-info/PKG-INFO
+jupyter_c_kernel.egg-info/SOURCES.txt
+jupyter_c_kernel.egg-info/dependency_links.txt
+jupyter_c_kernel.egg-info/top_level.txt
