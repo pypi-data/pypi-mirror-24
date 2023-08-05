@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: jenkins-job-linter
+Version: 0.1.1
+Summary: Perform linting checks against a directory of Jenkins job XML
+Home-page: https://github.com/OddBloke/jenkins-job-linter
+Author: Daniel Watkins
+Author-email: daniel@daniel-watkins.co.uk
+License: Apache-2
+Keywords: jenkins
+
+# jenkins-job-linter
+Perform linting checks against a directory of Jenkins job XML
+
+
+
