@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: aispace2
+Version: 0.1.5
+Summary: A Jupyter extension for the next-generation of AISpace
+Home-page: http://jupyter.org
+Author: dom
+Author-email: finaiized@gmail.com
+License: UNKNOWN
+Description: A Jupyter extension for the next-generation of AISpace
+Keywords: ipython,jupyter,widgets
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
