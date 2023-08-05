@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: animateimages
+Version: 0.1
+Summary: Animation of matplotlib images
+Home-page: https://github.com/boazmohar/animateImages
+Author: Boaz Mohar
+Author-email: boazmohar@gmail.com
+License: MIT
+Download-URL: https://github.com/boazmohar/animateImages/archive/0.1.tar.gz
+Description: # AnimateImages
+        Helper functions to make animations of images with corresponding traces and labels using matplotlib
+        
+Keywords: matplotlib,animation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
