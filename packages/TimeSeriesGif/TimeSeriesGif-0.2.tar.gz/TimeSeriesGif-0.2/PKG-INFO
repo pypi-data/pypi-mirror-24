@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: TimeSeriesGif
+Version: 0.2
+Summary: Create gifs from pandas time series.
+Home-page: https://github.com/handrew/TimeSeriesGif
+Author: Andrew Han
+Author-email: handrew11@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/handrew/TimeSeriesGif/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: time series,pandas,visualization
+Platform: UNKNOWN
