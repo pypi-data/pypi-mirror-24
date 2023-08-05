@@ -1,0 +1,3 @@
+[console_scripts]
+mrs_mega = cubric_mrs.megapress:megapress_script
+
