@@ -1,0 +1,12 @@
+scikit-learn
+numpy
+scipy
+intervaltree
+networkx
+wget
+pycorenlp
+lxml
+future
+bioc
+pytest_socket
+six
