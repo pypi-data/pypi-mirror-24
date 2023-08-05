@@ -1,0 +1,12 @@
+pytimesheet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytimesheet/cli.py,sha256=esgpmW7ZiAzNt4bNPtZtBcEaCk5MlTDWw3monmSBCPI,6367
+pytimesheet/generate.py,sha256=Hfodzv9pMc6ooXbF7u8fjyg6pAo77-BvnO8S1U7IH6M,1532
+pytimesheet/storage.py,sha256=QZWJWChJhpV6sjq0-c5FnClJ3eY0SA53dx1lODEh-vQ,1584
+pytimesheet/utils.py,sha256=2XkiPikmOw_KM3zhGCNnXIoFsj8jUAIAPQR1PnuAXUA,810
+pytimesheet-0.0.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pytimesheet-0.0.5.dist-info/METADATA,sha256=mg-gYAPkHEmjs6IO_Sv1y6FrbeE8pLxkDI3-74Hhux0,224
+pytimesheet-0.0.5.dist-info/RECORD,,
+pytimesheet-0.0.5.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pytimesheet-0.0.5.dist-info/entry_points.txt,sha256=SkdgzrRUQpWQhPB_RnFSOier23vEUTtPktwuWw7WjFI,54
+pytimesheet-0.0.5.dist-info/metadata.json,sha256=VuM9ZIY3k52inJJqes-pA_DoDJ3ihNZfbT1l85CoqBw,484
+pytimesheet-0.0.5.dist-info/top_level.txt,sha256=ffkLAAogVYL92-cQt74bNYU-ZygvG85BShqclXRkzKc,12

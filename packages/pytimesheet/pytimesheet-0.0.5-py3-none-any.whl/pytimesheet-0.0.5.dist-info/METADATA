@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: pytimesheet
+Version: 0.0.5
+Summary: timetracking for hiwis at tu darmstadt
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: GPL
+Platform: UNKNOWN
+Requires-Dist: Jinja2
+
+UNKNOWN
+
+
