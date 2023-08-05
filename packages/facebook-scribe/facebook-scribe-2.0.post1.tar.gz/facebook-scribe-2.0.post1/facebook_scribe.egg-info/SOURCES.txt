@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+setup.py
+facebook_scribe.egg-info/PKG-INFO
+facebook_scribe.egg-info/SOURCES.txt
+facebook_scribe.egg-info/dependency_links.txt
+facebook_scribe.egg-info/requires.txt
+facebook_scribe.egg-info/top_level.txt
+fb303/FacebookService.py
+fb303/__init__.py
+fb303/constants.py
+fb303/ttypes.py
+scribe/__init__.py
+scribe/constants.py
+scribe/scribe.py
+scribe/ttypes.py
