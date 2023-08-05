@@ -1,0 +1,5 @@
+ipython
+jupyter
+notebook
+ipywidgets>=6.0.0
+shortuuid
