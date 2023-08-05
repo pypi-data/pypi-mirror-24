@@ -1,0 +1,12 @@
+qgeneration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qgeneration/fields.py,sha256=6YBowfJtH71gbwsIvHN8SW1LlTVere9D3I5uTAtk3u4,2185
+qgeneration/functions.py,sha256=VRmPEZgJrqUEQPsd8wxEp7cMWzySWs7MojKDGZhjUCQ,28
+qgeneration/qfields.py,sha256=9xm0kwpFP6b7f4dtf1ASmE3XrLa43GtE9GdG8CmWgB8,2198
+qgeneration/qrecords.py,sha256=8INWkCnrhkDf0qyIAPFGAThB0prsdVyhuYvTI6fioC8,232
+qgeneration/records.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qgeneration-0.1a2.dist-info/DESCRIPTION.rst,sha256=1d5LMUCowCwkadVWf8pxO9VibC2t72-eMJXR-nXfcbM,913
+qgeneration-0.1a2.dist-info/METADATA,sha256=anpigMNzlgAZaMeJA_th_59xYS8r9DC0JDlLOeVt4lQ,1453
+qgeneration-0.1a2.dist-info/RECORD,,
+qgeneration-0.1a2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+qgeneration-0.1a2.dist-info/metadata.json,sha256=ER-TTgUVj6xYYi7rtkRxawDTZzj-i1EvbPPIakm8U0k,705
+qgeneration-0.1a2.dist-info/top_level.txt,sha256=eARD39RjyHlhDOBbCyCGrSMJOa73gkDPrrDHyKoLyuo,12
