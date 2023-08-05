@@ -1,0 +1,12 @@
+[orange.canvas.help]
+html-index = orangecontrib.variants.widgets:WIDGET_HELP_PATH
+
+[orange.widgets]
+Variants = orangecontrib.variants.widgets
+
+[orange.widgets.tutorials]
+vcftutorials = orangecontrib.variants.tutorials
+
+[orange3.addon]
+variants = orangecontrib.variants
+
