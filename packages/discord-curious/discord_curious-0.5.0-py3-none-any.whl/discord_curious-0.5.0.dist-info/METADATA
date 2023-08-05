@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: discord-curious
+Version: 0.5.0
+Summary: A curio library for the Discord API
+Home-page: https://github.com/SunDwarf/curious
+Author: Laura Dickinson
+Author-email: l@veriny.tf
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: cuiows (>=0.1.10)
+Requires-Dist: curio (==0.7.0)
+Requires-Dist: h11 (==0.7.0)
+Requires-Dist: multidict (==2.1.4)
+Requires-Dist: oauthlib (==2.0.2)
+Requires-Dist: pylru (==1.0.9)
+Requires-Dist: pytz
+Requires-Dist: yarl (==0.8.1)
+Provides-Extra: docs
+Requires-Dist: guzzle-sphinx-theme; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinxcontrib-asyncio; extra == 'docs'
+Provides-Extra: voice
+Requires-Dist: PyNaCL (==1.0.1); extra == 'voice'
+Requires-Dist: opuslib (==1.1.0); extra == 'voice'
+
+UNKNOWN
+
+
