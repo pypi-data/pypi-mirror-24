@@ -1,0 +1,8 @@
+README.rst
+setup.py
+nbplantuml/__init__.py
+nbplantuml.egg-info/PKG-INFO
+nbplantuml.egg-info/SOURCES.txt
+nbplantuml.egg-info/dependency_links.txt
+nbplantuml.egg-info/requires.txt
+nbplantuml.egg-info/top_level.txt

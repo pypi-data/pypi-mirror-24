@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: nbplantuml
+Version: 0.1.0
+Summary: Easily embed plantuml diagrams in your IPython noteboooks
+Home-page: UNKNOWN
+Author: Eyal Firstenberg
+Author-email: eyalfir@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
