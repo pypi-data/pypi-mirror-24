@@ -1,0 +1,13 @@
+MANIFEST.in
+requirements.txt
+setup.cfg
+setup.py
+oshino_prometheus/__init__.py
+oshino_prometheus/agent.py
+oshino_prometheus/util.py
+oshino_prometheus/version.py
+oshino_prometheus.egg-info/PKG-INFO
+oshino_prometheus.egg-info/SOURCES.txt
+oshino_prometheus.egg-info/dependency_links.txt
+oshino_prometheus.egg-info/requires.txt
+oshino_prometheus.egg-info/top_level.txt
