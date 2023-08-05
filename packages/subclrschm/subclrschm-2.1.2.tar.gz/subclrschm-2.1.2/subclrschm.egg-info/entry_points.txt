@@ -1,0 +1,3 @@
+[gui_scripts]
+subclrschm = subclrschm.__main__:main
+
