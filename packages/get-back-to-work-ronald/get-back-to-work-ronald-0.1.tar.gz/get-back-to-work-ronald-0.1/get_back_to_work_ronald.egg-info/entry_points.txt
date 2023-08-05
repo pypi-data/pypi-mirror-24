@@ -1,0 +1,3 @@
+[console_scripts]
+get-back-to-work-ronald = get_back_to_work_ronald:main
+
