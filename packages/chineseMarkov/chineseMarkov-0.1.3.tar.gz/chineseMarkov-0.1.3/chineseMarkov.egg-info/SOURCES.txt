@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+chineseMarkov/__init__.py
+chineseMarkov/gen.py
+chineseMarkov/punctuations.py
+chineseMarkov.egg-info/PKG-INFO
+chineseMarkov.egg-info/SOURCES.txt
+chineseMarkov.egg-info/dependency_links.txt
+chineseMarkov.egg-info/requires.txt
+chineseMarkov.egg-info/top_level.txt
