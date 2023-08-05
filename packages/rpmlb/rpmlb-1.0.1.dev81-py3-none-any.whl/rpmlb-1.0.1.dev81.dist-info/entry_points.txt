@@ -1,0 +1,3 @@
+[console_scripts]
+rpmlb = rpmlb.cli:run
+
