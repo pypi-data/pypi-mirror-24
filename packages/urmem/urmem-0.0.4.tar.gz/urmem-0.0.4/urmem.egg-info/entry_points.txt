@@ -1,0 +1,3 @@
+[console_scripts]
+urmem = urmem.__main__:main
+
