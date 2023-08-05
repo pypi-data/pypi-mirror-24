@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: slackdown
+Version: 0.0.3
+Summary: A simple Slack message text formatting to HTML code converter.
+Home-page: http://www.github.com/datadesk/slackdown/
+Author: Andrew Briz
+Author-email: briz.andrew@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+
+UNKNOWN
+
+
