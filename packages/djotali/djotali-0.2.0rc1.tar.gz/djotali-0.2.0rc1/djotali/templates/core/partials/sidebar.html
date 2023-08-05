@@ -1,0 +1,97 @@
+{% load static %}
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+        <ul class="nav" id="side-menu">
+            <li class="sidebar-search hidden-sm hidden-md hidden-lg">
+                <!-- Search input-group this is only view in mobile -->
+                <div class="input-group custom-search-form">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
+                        </span>
+                </div>
+                <!-- / Search input-group this is only view in mobile-->
+            </li>
+            {% if request.user.is_authenticated %}
+                <!-- User profile-->
+                <li class="user-pro">
+                    <a href="#" class="waves-effect">
+                        <img src="{% static 'plugins/images/users/varun.jpg' %}" alt="user-img" class="img-circle">
+                        <span class="hide-menu">
+                    {{ request.user.username | capfirst }}
+                    <span class="fa arrow"></span></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
+                        <li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Balance</a></li>
+                        <li><a href="javascript:void(0)"><i class="ti-email"></i> Inbox</a></li>
+                        <li><a href="javascript:void(0)"><i class="ti-settings"></i> Account Setting</a></li>
+                        <li><a href="{% url 'admin:logout' %}"><i class="fa fa-power-off"></i> Logout</a></li>
+                    </ul>
+                </li>
+                <!-- User profile-->
+            {% endif %}
+
+            <li>
+                <a href="{% url 'dashboard:index' %}" class="waves-effect">
+                    <i data-icon="v" class="icon-screen-desktop fa-fw"></i>
+                    <span class="hide-menu">
+                        Dashboard
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'campaigns:index' %}" class="waves-effect">
+                    <i data-icon="P" class="icon-rocket fa-fw"></i>
+                    <span class="hide-menu">
+                        Campagnes
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="waves-effect">
+                    <i data-icon="P" class="icon-user fa-fw"></i>
+                    <span class="hide-menu">
+                        Contacts
+                        <span class="fa arrow"></span>
+                    </span>
+                </a>
+
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="{% url 'contacts:index' %}">
+                            Tous les contacts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contacts-groups:index' %}">
+                            Groupes de Contacts
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+
+                <a href="{% url 'admin:index' %}" class="waves-effect" target="_blank">
+                    <i data-icon="P" class="icon-settings fa-fw"></i>
+                    <span class="hide-menu">
+                        Administration
+                    </span>
+                </a>
+            </li>
+            <li>
+
+                <a href="#" class="waves-effect">
+                    <i data-icon="v" class="icon-screen-desktop fa-fw"></i>
+                    <span class="hide-menu">
+                        Paramètres
+                    </span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
