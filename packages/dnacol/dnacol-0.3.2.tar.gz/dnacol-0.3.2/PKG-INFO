@@ -1,0 +1,114 @@
+Metadata-Version: 1.1
+Name: dnacol
+Version: 0.3.2
+Summary: Display FASTA/FASTQ/SAM/VCF files with colored DNA/RNA bases and quality scores in the terminal
+Home-page: https://github.com/koelling/dnacol/
+Author: Nils Koelling
+Author-email: git@nk.gl
+License: MIT
+Download-URL: https://github.com/koelling/dnacol/archive/v0.3.2.tar.gz
+Description: dnacol
+        ======
+        
+        Color DNA/RNA bases and quality scores in terminal output
+        
+        About
+        -----
+        
+        This is a python script to color DNA or RNA sequences in the terminal.
+        It will read lines from STDIN or from a file and color all strings of
+        DNA/RNA it can find. In addition, it can also color phred-encoded
+        quality scores in FASTQ/SAM files.
+        
+        Format-specific coloring
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        By default, ``dnacol`` will color all strings of ``[ACGTUN]+``. However,
+        it will also recognize a few standard file formats and apply more
+        targeting coloring. When reading a file, these formats will
+        automatically be recognized based on their file extensions. When reading
+        from STDIN, ``dnacol`` will try to identify the format based on the data
+        itself (for FASTQ/SAM/VCF files). The format can also be specified using
+        the ``--format`` option.
+        
+        -  SAM format (``--format=sam``, automatically enabled when filename
+           ends in ``.sam`` or a line matching the SAM format is found)
+        
+           -  Ignore headers, color the SEQ column as DNA and the QUAL column as
+              quality scores
+        
+        -  FASTQ format (``--format=fastq``, automatically enabled when filename
+           ends in ``.fastq`` or ``.fq`` or the first four lines match the FASTQ
+           format)
+        
+           -  Color the second line of every read as DNA
+           -  Color the fourth line of every read as quality scores
+        
+        -  VCF format (``--format=vcf``, automatically enabled when filename
+           ends in ``.vcf`` or a VCF header line is found)
+        
+           -  Ignore comments, only color the REF and ALT column
+        
+        -  FASTA format (``--format=fasta``, automatically enabled when filename
+           ends in ``.fasta`` or ``.fa``)
+        
+           -  Ignore sequence identifiers
+        
+        Options
+        -------
+        
+        ::
+        
+            -w, --wide
+                wide output (add spaces around each base)
+            -f FORMAT, --format FORMAT
+                file format (auto|text|sam|vcf|fastq|fasta)
+        
+        Download/Install
+        ----------------
+        
+        To install, use ``pip``::
+        
+            pip install dnacol
+        
+        If the system-wide directory is not writable, you can install to your home directory with::
+        
+            pip install dnacol --user
+        
+        Alternatively, you can clone this git
+        repository and use the provided ``setup.py`` script.
+        
+        ::
+        
+            git clone https://github.com/koelling/dnacol.git
+            cd dnacol && python setup.py install
+        
+        ``dnacol`` has been tested with Python 2.7 and Python 3.6.
+        
+        Examples
+        --------
+        
+        ::
+        
+            #read gzipped file
+            dnacol examples/phix.fa.gz | head
+        
+            #pipe from stdin
+            head examples/reads.txt | dnacol --wide
+        
+            #use `less -R` to display colors in less
+            dnacol examples/phix.fa.gz | less -R
+        
+        Screenshots
+        -----------
+        
+        .. image:: https://raw.githubusercontent.com/koelling/dnacol/master/screenshots_v0.3.png
+        
+Keywords: dnacol rnacol rna dna quality phred color colour bases console terminal stdout
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
