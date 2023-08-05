@@ -1,0 +1,10 @@
+emailgen/__init__.py,sha256=rOvZGQC4tLrKu8vvcH2ic5XPCcyUcMTQelNU9Wx6_M4,205
+emailgen/email.py,sha256=C5gmOQ7tctFppoA-uZuJpO6-YQPG27sNGzu_tjkrxrU,958
+emailgen/generator.py,sha256=UN3U-sRmVcXtFUezCNmNvKztbOr7jf66G4h5lySqQ3I,1477
+emailgen/themes.py,sha256=CSVndWL-q5M5j_3kDmhDacTgf6YizhBar_Sltnep0y0,10703
+emailgen-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+emailgen-0.1.0.dist-info/METADATA,sha256=bwlFbdJo_iBS_chtf5VrNhe5SbD-MuV1vF9Kty6pMMk,761
+emailgen-0.1.0.dist-info/RECORD,,
+emailgen-0.1.0.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+emailgen-0.1.0.dist-info/metadata.json,sha256=Z92hV3IoE1e7KUAuijRW_3dpB0BgmuV1dZxCL-QX1X0,919
+emailgen-0.1.0.dist-info/top_level.txt,sha256=84hE2kBdyC2xMLK6kdX7seJkGIVEwauXvHa0ef5FgNA,9
