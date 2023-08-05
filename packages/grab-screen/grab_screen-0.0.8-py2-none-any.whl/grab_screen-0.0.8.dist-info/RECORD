@@ -1,0 +1,15 @@
+grab_screen/__init__.py,sha256=ur6Xwy1xqkPAJcjRDKkxc6MQwBGNEwgawLf7GWQnb8c,90
+grab_screen/__main__.py,sha256=jB5QkSd7V8Gz1SGGM831uWtwmkMVDTQntIRR-HVHXTU,72
+grab_screen/cli.py,sha256=fJ1aHqaD0y6p1KDv13Wtzeh0eCf7dM0l-9gnq3C-Asw,2958
+grab_screen/exceptions.py,sha256=1nKhHBcDtFsWprFsUCBdWIxtQPGz5-t94-PfZAMxjw0,342
+grab_screen/utils.py,sha256=ZE8YFCh3HH1eSnyqatyoEumbt06Qj_UrJOnfbF0vC9Y,285
+grab_screen/version.py,sha256=YQY-i8MemQTvHljd9BqOGgeJEu3FrzurE3TEKDwAax4,22
+grab_screen/conf/default.ini,sha256=DyC3CY_vmRZB59M1syM3GKyLfv0GKfIDLwGmDGbOHyY,54
+grab_screen-0.0.8.dist-info/DESCRIPTION.rst,sha256=yxsPkkEvpjtEPkJJRZKsqzRp7Nk0e7AHE6K_WoHKsZM,1148
+grab_screen-0.0.8.dist-info/LICENSE.txt,sha256=tzKSTFjIiju7oxHj3RpRaHGFAOK01QiXBP06ALuuJ5U,1073
+grab_screen-0.0.8.dist-info/METADATA,sha256=SiKlngIFjZzXBHYpTrbIDvHc5ReK4wX-Z-OhFjo6pug,1993
+grab_screen-0.0.8.dist-info/RECORD,,
+grab_screen-0.0.8.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+grab_screen-0.0.8.dist-info/entry_points.txt,sha256=QHPAv_eDak-fA3-fr7y4pG2NLf3_Sk_KKF3oHg2NeG4,50
+grab_screen-0.0.8.dist-info/metadata.json,sha256=AUiJaIX8dYAqVlRdHfOM_DjSVxkRLEdFhNk_thbgcqI,1150
+grab_screen-0.0.8.dist-info/top_level.txt,sha256=PJZnmnbIGm8Cl_2BEjTrNzxGfZF_a8qy1LdLRtjt60E,12
