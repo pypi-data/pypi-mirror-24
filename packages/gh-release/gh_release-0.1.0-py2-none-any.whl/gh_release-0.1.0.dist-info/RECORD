@@ -1,0 +1,10 @@
+gh_release-0.1.0.data/scripts/ghrelease,sha256=KlPA3RJOkL8HvzUw_TpJ9kWugCjbAhNRkO-PikdqYpQ,78
+gh_release-0.1.0.dist-info/DESCRIPTION.rst,sha256=OMEvs26DADNBDPpa8mVnS4TLuKJ5iQpBCqwUgyZTAmQ,54
+gh_release-0.1.0.dist-info/METADATA,sha256=bXSrpPyFWkRxA2nj6egdT4y3BAkehvr7eqYzPO9_ADg,460
+gh_release-0.1.0.dist-info/RECORD,,
+gh_release-0.1.0.dist-info/WHEEL,sha256=u6Fy2U76CDFJ6q2P27rqtBo3AN6qpylFiMaYzNr2lJg,95
+gh_release-0.1.0.dist-info/metadata.json,sha256=JBc9ovet-EGSKCpP6JGClQ2JMefI3I1_nQR02ZZ4i6g,628
+gh_release-0.1.0.dist-info/top_level.txt,sha256=Dg6c9Y4Wck7mf4ENEvW4C63PWMJcIZjIrf3cG6OLZ1s,10
+ghrelease/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghrelease/cli.py,sha256=AWwUDdlG-gYjEmghVxIpvCLR9clLiPSN3JeQvUvaz3E,979
+ghrelease/upload_gh.py,sha256=1BzQpPdntSp6XymVdImkJ9zSV0gDud2VUQi0xsz5JBI,1863
