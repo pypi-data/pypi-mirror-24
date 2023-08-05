@@ -1,0 +1,34 @@
+[console_scripts]
+account-id = n_utils.cli:get_account_id
+add-deployer-server = n_utils.cli:add_deployer_server
+associate-eip = n_utils.cli:associate_eip
+assume-role = n_utils.cli:assume_role
+cf-delete-stack = n_utils.cli:delete_stack
+cf-follow-logs = n_utils.cli:tail_stack_logs
+cf-get-parameter = n_utils.cli:get_parameter
+cf-logical-id = n_utils.cli:logical_id
+cf-logs-to-cloudwatch = n_utils.cli:logs_to_cloudwatch
+cf-region = n_utils.cli:cf_region
+cf-signal-status = n_utils.cli:signal_cf_status
+cf-stack-id = n_utils.cli:stack_id
+cf-stack-name = n_utils.cli:stack_name
+cf-update-stack = n_utils.cli:update_stack
+create-userid-list = n_utils.cli:create_userid_list
+ec2-associate-eip = n_utils.cli:associate_eip
+ec2-clean-snapshots = n_utils.cli:clean_snapshots
+ec2-get-userdata = n_utils.cli:get_userdata
+ec2-instance-id = n_utils.cli:instance_id
+ec2-region = n_utils.cli:region
+json-to-yaml = n_utils.cli:json_to_yaml
+list-file-to-json = n_utils.cli:list_file_to_json
+logs-to-cloudwatch = n_utils.cli:logs_to_cloudwatch
+n-include = n_utils.cli:resolve_include
+n-utils-init = n_utils.cf_utils:init
+n-utils-resolve-include = n_utils.cli:resolve_include
+pytail = n_utils.cli:read_and_follow
+setup-cli = n_utils.cli:setup_cli
+setup-networks = n_utils.cli:setup_networks
+signal-cf-status = n_utils.cli:signal_cf_status
+vault = vault.cli:main
+yaml-to-json = n_utils.cli:yaml_to_json
+
