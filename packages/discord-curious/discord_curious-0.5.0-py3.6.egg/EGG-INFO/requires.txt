@@ -1,0 +1,17 @@
+cuiows>=0.1.10
+curio==0.7.0
+h11==0.7.0
+multidict==2.1.4
+pylru==1.0.9
+yarl==0.8.1
+oauthlib==2.0.2
+pytz
+
+[docs]
+guzzle_sphinx_theme
+sphinx
+sphinxcontrib-asyncio
+
+[voice]
+opuslib==1.1.0
+PyNaCL==1.0.1
