@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: derivcheck
+Version: 0.0.0
+Summary: A robust and very sensitive tester for analytic derivatives.
+Home-page: https://github.com/tovrstra/derivcheck
+Author: Toon Verstraelen
+Author-email: Toon.Verstraelen@UGent.be
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Requires-Python: ==2.7.*
