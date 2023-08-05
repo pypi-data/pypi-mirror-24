@@ -1,0 +1,12 @@
+python-telegram-bot
+boltons
+plumbum
+scdl
+bandcamp-downloader
+youtube_dl
+setuptools
+pydub
+mutagen
+patool
+pyshorteners
+Celery
