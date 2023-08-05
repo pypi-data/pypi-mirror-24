@@ -1,0 +1,6 @@
+google-cloud-core<0.27dev,>=0.26.0
+google-gax<0.16dev,>=0.15.13
+googleapis-common-protos[grpc]<2.0dev,>=1.5.2
+
+[:python_version<"3.4"]
+enum34
