@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: bless_deployer
+Version: 0.0.3.dev0
+Summary: Create configurations and deploy Bless to AWS
+Home-page: https://github.com/diasjorge/bless-deployer
+Author: Jorge Dias
+Author-email: jorge@mrdias.com
+License: FreeBSD License
+Description: UNKNOWN
+Keywords: AWS,Bless
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Utilities
