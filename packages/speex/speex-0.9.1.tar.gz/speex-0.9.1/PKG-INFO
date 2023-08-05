@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: speex
+Version: 0.9.1
+Summary: Speex Python interface
+Home-page: UNKNOWN
+Author: Thibault Cohen
+Author-email: titilambert@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides: speex
