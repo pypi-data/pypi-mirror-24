@@ -1,0 +1,6 @@
+[console_scripts]
+prmt = prmt.main:execute
+
+[gui_scripts]
+
+
