@@ -1,0 +1,12 @@
+zish/__init__.py,sha256=oVJ-eg4uYKPUUnDQGYvmVkuSfv9XYN2BkJ4fsyj5ymY,207
+zish/_version.py,sha256=OURB7dSWSiqfKd-F8v9C_7ZNA2v061QVx62jC6fZjDk,497
+zish/core.py,sha256=JeQFqPwyWD7BmWimuXJ1v6LO5iH86oASrnC7g8t6NuU,6934
+zish/antlr/ZishLexer.py,sha256=JZ61waPccQjCbqGO0d5moLwdlA9Gr0HwqVLS3wUkF0U,21157
+zish/antlr/ZishListener.py,sha256=9_zvJYT-5zCxmlNCn_9i_I8IBZ4sgyqnBPpS44UqS5s,2322
+zish/antlr/ZishParser.py,sha256=p781KvUaTvPjp3b9_xC7pvdBbiaizW7MHh8udpqABv4,40959
+zish-0.0.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+zish-0.0.2.dist-info/METADATA,sha256=qUC8rDuZMTQwHZPAEWvmqBc3O7sgbmqd0pmHijGokr0,317
+zish-0.0.2.dist-info/RECORD,,
+zish-0.0.2.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+zish-0.0.2.dist-info/metadata.json,sha256=OunEf74pejXj8N7R4Y9iYCcFe_1EjJGuOoBmuejQDSA,498
+zish-0.0.2.dist-info/top_level.txt,sha256=JcpQg5YFXJLKANguTCdMU4om2bWKT_HlFTWmONwhNBY,5
