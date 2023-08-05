@@ -1,0 +1,83 @@
+Metadata-Version: 2.0
+Name: exguard
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://edugit.org/Veripeditus/exguard
+Author: Eike Tim Jesinghaus
+Author-email: eike@naturalnet.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5
+
+exguard - Guard code against exceptions, e.g. for running untrusted module code in a framework
+==============================================================================================
+
+Description
+-----------
+
+exgurd provides a decorator to guard a function or method against
+exceptions. This is useful in situations where untrusted code is
+executed, e.g. when executing a third-party module in a framework.
+
+In comparison to the `suppress` context manager from Python 3, exguard
+provides more means to control exception handling:
+
+- filter on modules and namespaces to define which exceptions to catch
+  and leave exceptions in other code untouched
+- execute a callback function once an exception was caught
+- execute a callback function in the `finally` block
+
+For example, an API method in a web application that calls through to
+code in third-party modules can be guarded against exceptions in this
+modules only, while having exceptions in the framework itself be raised
+verbatim::
+
+    from exguard import guard
+
+    def throw_to_client(exception, module):
+        # Do something to pass a traceback to the browser, disable the plugin,…
+        pass
+
+    # All third-party modules are under one namespace
+    @guard(modules=["myframework.plugins"], submodules=True, fullstack=True, cb_except=throw_to_client)
+    def call_plugin_api():
+        myframework.plugins.evil.crash()
+
+
+Authors
+-------
+
+exguard has been started as a part of `Veripeditus
+<https://edugit.org/Veripeditus/veripeditus-server>`_, mainly by
+Eike Tim Jesinghaus <eike@naturalnet.de>.
+
+Licence and copyright
+---------------------
+
+::
+
+    exguard - Guard code against exceptions, e.g. for running untrusted module code in a framework
+    Copyright (C) 2017  Eike Tim Jesinghaus <eike@naturalnet.de>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version, with the Game Cartridge Exception.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+See the `COPYING.rst` file for the full licence, and each source
+file for detailed information.
+
+
