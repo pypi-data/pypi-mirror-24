@@ -1,0 +1,6 @@
+replace_me.py
+setup.py
+replace_me.egg-info/PKG-INFO
+replace_me.egg-info/SOURCES.txt
+replace_me.egg-info/dependency_links.txt
+replace_me.egg-info/top_level.txt
