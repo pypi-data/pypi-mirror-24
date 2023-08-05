@@ -1,0 +1,46 @@
+Metadata-Version: 2.0
+Name: qface-qtro
+Version: 1.4.1
+Summary: Generator based on the QFace library for QtRemoteObjects
+Home-page: https://github.com/Pelagicore/qface-qtro
+Author: jryannel
+Author-email: juergen@ryannel.org
+License: MIT
+Keywords: qt ipc generator
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Jinja2
+Requires-Dist: PyYAML
+Requires-Dist: click
+Requires-Dist: path.py
+Requires-Dist: qface (>=1.8)
+
+# QFace QtRemoteObjects Generator
+
+**Work In Progress**
+
+This generator tries to generate a complete micro service solution. It does so by
+reading the QFace IDL file and generating a client side plugin and a service
+for each interface. Each module will be bundled into one server with an own
+service registry where all interfaces from the module will be available.
+
+As a user you can simply import the QML generated plugin and ensure the server
+side generated stub is being implemented.
+
+The QML plugin will automatically connect to the server, which needs to run
+when the plugin is loaded.
+
+Each interface service is accessible using the fully qualified name. Different
+than the REPC the models are also integrated into the service interface as
+described via the QFace IDL.
+
+Open Issues:
+- Ideally the client side has a mean to start the server on demand.
+- What happens if the customer would like to have only one service registry for all
+modules (e.g. the whole system)?
+
+
