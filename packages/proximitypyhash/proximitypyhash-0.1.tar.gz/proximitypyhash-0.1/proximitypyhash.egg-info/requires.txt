@@ -1,0 +1,4 @@
+clint
+argparse
+georaptor>=2.0.3
+pygeohash==1.2.0

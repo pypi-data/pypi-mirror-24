@@ -1,0 +1,11 @@
+README.rst
+proximitypyhash.py
+setup.cfg
+setup.py
+proximitypyhash.egg-info/PKG-INFO
+proximitypyhash.egg-info/SOURCES.txt
+proximitypyhash.egg-info/dependency_links.txt
+proximitypyhash.egg-info/entry_points.txt
+proximitypyhash.egg-info/requires.txt
+proximitypyhash.egg-info/top_level.txt
+test/test_proximitypyhash.py
