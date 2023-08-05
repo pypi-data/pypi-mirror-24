@@ -1,0 +1,55 @@
+Metadata-Version: 1.1
+Name: fipipkg
+Version: 0.1.dev2
+Summary: Package Dependency: Validates package requirements
+Home-page: https://github.com/peace098beat/fipipkg
+Author: FiFi
+Author-email: FiFi@example.jp
+License: MIT
+Description: 
+        # Link
+        https://pypi.python.org/pypi/fipipkg
+        
+        
+        # .pypirc
+        ```
+        mkdir ~/.pypirc
+        chmod 600 ~/.pypirc
+        vim ~/.pypirc
+        
+        [distutils]
+        index-servers =
+          pypi
+          pypitest
+        
+        [pypi]
+        repository: https://pypi.python.org/pypi
+        username: <username>
+        password: <password>
+        
+        [pypitest]
+        repository: https://testpypi.python.org/pypi
+        username: <username>
+        password: <password>
+        ```
+        
+        # upload
+        ```
+        pip install twine
+        ```
+        
+        ```
+        python setup.py sdist
+        python setup.py bdist_wheel
+        
+        twine register dist/*.whl
+        twine upload dist/*
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: MIT License

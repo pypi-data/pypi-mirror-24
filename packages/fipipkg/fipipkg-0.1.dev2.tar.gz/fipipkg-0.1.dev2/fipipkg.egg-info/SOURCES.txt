@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+fipipkg/__init__.py
+fipipkg/verify.py
+fipipkg.egg-info/PKG-INFO
+fipipkg.egg-info/SOURCES.txt
+fipipkg.egg-info/dependency_links.txt
+fipipkg.egg-info/entry_points.txt
+fipipkg.egg-info/top_level.txt
