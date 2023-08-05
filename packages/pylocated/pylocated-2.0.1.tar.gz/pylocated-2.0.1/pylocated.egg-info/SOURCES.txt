@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+pylocated/__init__.py
+pylocated.egg-info/PKG-INFO
+pylocated.egg-info/SOURCES.txt
+pylocated.egg-info/dependency_links.txt
+pylocated.egg-info/top_level.txt
