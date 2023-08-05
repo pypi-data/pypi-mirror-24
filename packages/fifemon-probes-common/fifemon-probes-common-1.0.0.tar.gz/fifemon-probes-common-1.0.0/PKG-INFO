@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: fifemon-probes-common
+Version: 1.0.0
+Summary: Common modules for Fifemon monitoring probes
+Home-page: https://fifemon.github.io
+Author: The Fifemon Authors
+Author-email: fifemon@fnal.gov
+License: BSD
+Description: fifemon-probes-common
+        =====================
+        
+        Common modules for Fifemon data collection probes. See https://fifemon.github.io for more information.
+        
+Keywords: monitoring graphite influxdb fifemon
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Monitoring
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
