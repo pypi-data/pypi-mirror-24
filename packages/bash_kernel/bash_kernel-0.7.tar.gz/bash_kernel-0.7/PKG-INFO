@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: bash_kernel
+Version: 0.7
+Summary: A bash kernel for Jupyter
+Home-page: https://github.com/takluyver/bash_kernel
+Author: Thomas Kluyver
+Author-email: thomas@kluyver.me.uk
