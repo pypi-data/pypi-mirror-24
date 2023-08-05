@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: Teknik
+Version: 1.0.0
+Summary: A library for using the Teknik Services
+Home-page: https://git.teknik.io/Teknikode/Tools/src/master/Python
+Author: Uncled1023
+Author-email: admin@teknik.io
+License: BSD 3-Clause
+Description: Teknik Services
+        ===============
+        
+        This package allows easy access to Teknik Services through the API.
+Keywords: teknik services upload paste
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3
