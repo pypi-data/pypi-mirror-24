@@ -1,0 +1,8 @@
+README.rst
+exguard.py
+setup.py
+exguard.egg-info/PKG-INFO
+exguard.egg-info/SOURCES.txt
+exguard.egg-info/dependency_links.txt
+exguard.egg-info/not-zip-safe
+exguard.egg-info/top_level.txt
