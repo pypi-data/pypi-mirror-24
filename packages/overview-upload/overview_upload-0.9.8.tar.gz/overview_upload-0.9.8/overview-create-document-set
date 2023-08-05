@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+#
+# Create an empty document set on an Overview server.
+
+import argparse
+import logging
+from overview_upload import create_document_set, parse_metadata_json, read_metadata_json_file, parse_metadata_from_delimited_string_of_fields, DefaultMetadataSchema
+
+def main():
+    parser = argparse.ArgumentParser(description='Create a document set on an Overview server')
+    parser.add_argument('title', help='Title for new document set')
+    parser.add_argument('--api-token', '--token', help='API token from [server-url]/api-tokens', required=True)
+    parser.add_argument('--server', help='URL of Overview server, defaults to http://localhost:9000', default='http://localhost:9000')
+
+    group = parser.add_mutually_exclusive_group(required=False)
+    group.add_argument('--metadata-schema-json-file', help='JSON file containing metadata schema')
+    group.add_argument('--metadata-schema-json-string', help='JSON data containing metadata schema')
+    group.add_argument('--metadata-schema-field-names', help='List of comma-separated metadata field names')
+
+    args = parser.parse_args()
+
+    logger = logging.getLogger("overview-create-document-set")
+    logger.setLevel(logging.DEBUG)
+    logger.addHandler(logging.StreamHandler())
+
+    metadata_schema = DefaultMetadataSchema
+    if args.metadata_schema_json_file is not None:
+        metadata_schema = read_metadata_json_file(args.metadata_schema_json_file, logger)
+    elif args.metadata_schema_json_string is not None:
+        metadata_schema = parse_metadata_json(args.metadata_schema_json_string, logger)
+    elif args.metadata_schema_field_names is not None:
+        metadata_schema = parse_metadata_from_delimited_string_of_fields(args.metadata_schema_field_names)
+
+    ret = create_document_set(
+        args.server,
+        args.api_token,
+        args.title,
+        metadata_schema=metadata_schema,
+        logger=logger
+    )
+    print('Created document set "{}"'.format(ret['documentSet']['title']))
+    print('Metadata fields: {}'.format(', '.join([ f['name'] for f in ret['documentSet']['metadataSchema']['fields']])))
+    print('Document set ID: {}'.format(ret['documentSet']['id']))
+    print('View at: {}/documentsets/{}'.format(args.server, ret['documentSet']['id']))
+    print('Add documents with API token: {}'.format(ret['apiToken']['token']))
+
+if __name__ == '__main__':
+    main()
