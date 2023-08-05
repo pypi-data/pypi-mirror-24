@@ -1,0 +1,42 @@
+.TH benchsuite.cli 1 2017\-07\-11 "benchsuite.cli v.2.0.0.dev32"
+.SH NAME
+benchsuite.cli \- UNKNOWN
+.SH SYNOPSIS
+.B benchsuite.cli
+usage: benchsuite [-h] [--verbose] [--config CONFIG]
+                  {new-session,list-sessions,destroy-session,new-exec,prepare-exec,run-exec,list-execs,collect-exec,exec}
+                  ...
+
+.SH DESCRIPTION
+UNKNOWN
+.SH OPTIONS
+usage: benchsuite [-h] [--verbose] [--config CONFIG]
+                  {new-session,list-sessions,destroy-session,new-exec,prepare-exec,run-exec,list-execs,collect-exec,exec}
+                  ...
+
+positional arguments:
+  {new-session,list-sessions,destroy-session,new-exec,prepare-exec,run-exec,list-execs,collect-exec,exec}
+                        sub-command help
+    new-session         create-env help
+    list-sessions       a help
+    destroy-session     a help
+    new-exec            a help
+    prepare-exec        a help
+    run-exec            a help
+    list-execs          lists the executions
+    collect-exec        collects the outputs of an execution
+    exec                Execute a single benchmark test on single provider in
+                        one-step execution
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --verbose, -v         print more information (3 levels)
+  --config CONFIG, -c CONFIG
+                        foo help
+.SH AUTHORS
+.B benchsuite.cli
+was written by Gabriele Giammatteo <gabriele.giammatteo@eng.it>.
+.SH DISTRIBUTION
+The latest version of benchsuite.cli may be downloaded from
+.UR https://github.com/benchmarking\-suite/benchsuite\-cli
+.UE
