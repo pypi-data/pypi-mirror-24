@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: rnapk
+Version: 0.9
+Summary: A simple utility to send React Native APKs via email.
+Home-page: https://github.com/srishanbhattarai/rnapk
+Author: Srishan Bhattarai
+Author-email: srishanbhattarai@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
