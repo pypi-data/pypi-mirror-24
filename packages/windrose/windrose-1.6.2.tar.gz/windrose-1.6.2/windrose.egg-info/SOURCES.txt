@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+windrose/__init__.py
+windrose/version.py
+windrose/windrose.py
+windrose.egg-info/PKG-INFO
+windrose.egg-info/SOURCES.txt
+windrose.egg-info/dependency_links.txt
+windrose.egg-info/entry_points.txt
+windrose.egg-info/requires.txt
+windrose.egg-info/top_level.txt

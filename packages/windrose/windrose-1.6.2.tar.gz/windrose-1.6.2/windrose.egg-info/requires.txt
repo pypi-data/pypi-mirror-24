@@ -1,0 +1,14 @@
+matplotlib
+numpy
+
+[advanced]
+pandas
+scipy
+
+[dev]
+check-manifest
+nose
+
+[test]
+coverage
+nose
