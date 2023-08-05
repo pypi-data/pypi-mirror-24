@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+alexa_skill_kit/__init__.py
+alexa_skill_kit.egg-info/PKG-INFO
+alexa_skill_kit.egg-info/SOURCES.txt
+alexa_skill_kit.egg-info/dependency_links.txt
+alexa_skill_kit.egg-info/requires.txt
+alexa_skill_kit.egg-info/top_level.txt
+alexa_skill_kit.egg-info/zip-safe
