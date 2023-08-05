@@ -1,0 +1,13 @@
+Metadata-Version: 2.0
+Name: dj-database-waiter
+Version: 0.0.2
+Summary: Script to keep waiting until Django DB is ready.
+Home-page: https://github.com/pistatium/dj_database_waiter
+Author: pistatium
+Author-email: kimihiro.nisimura@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+UNKNOWN
+
+
