@@ -1,0 +1,7 @@
+jedi
+pygments
+untwisted==1.4.1
+quickirc==1.1.1
+
+
+
