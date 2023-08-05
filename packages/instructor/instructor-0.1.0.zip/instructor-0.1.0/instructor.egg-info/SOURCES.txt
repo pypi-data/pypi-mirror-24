@@ -1,0 +1,10 @@
+README.rst
+setup.py
+instructor/__init__.py
+instructor/errors.py
+instructor/fields.py
+instructor/model.py
+instructor.egg-info/PKG-INFO
+instructor.egg-info/SOURCES.txt
+instructor.egg-info/dependency_links.txt
+instructor.egg-info/top_level.txt
