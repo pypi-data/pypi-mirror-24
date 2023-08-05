@@ -1,0 +1,12 @@
+helga_trade/__init__.py,sha256=3KXfAcA5rzzQXMtfwpHphgbJNZdA0XWaW96kdWVSZJw,22
+helga_trade/helga_trade.py,sha256=vscfgnnhQJ8rgXzF8aLjWO45IxuwaJsB-ZcZr22THF8,2110
+helga_trade-1.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+helga_trade-1.0.1.dist-info/METADATA,sha256=Wy7A6cg4BVH2y9zfTxuZQI9lBkkMHkxaZZoNioaBZN0,753
+helga_trade-1.0.1.dist-info/RECORD,,
+helga_trade-1.0.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+helga_trade-1.0.1.dist-info/entry_points.txt,sha256=MrvO9e_6KR7_1IBrqBktutqhsLcfZFmzianhyiYAQDA,55
+helga_trade-1.0.1.dist-info/metadata.json,sha256=--Ff2lba5XxNlhJp--GQjNv1t1wPIYLeahE3CacVt8Y,952
+helga_trade-1.0.1.dist-info/top_level.txt,sha256=xkQeZletTDwCg_yFeDLYRCncnNGBgyJUImNfSKZ-hGo,18
+helga_trade-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_trade.py,sha256=429FDjOibIuIAL0ytKsW5B6Dp5fBxEstZhsvrC_qba4,1980

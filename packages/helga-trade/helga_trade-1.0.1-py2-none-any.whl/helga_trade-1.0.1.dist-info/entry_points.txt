@@ -1,0 +1,3 @@
+[helga_plugins]
+trade = helga_trade.helga_trade:trade
+
