@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: add-trailing-comma
+Version: 0.6.4
+Summary: Automatically add trailing commas to calls and literals
+Home-page: https://github.com/asottile/add-trailing-comma
+Author: Anthony Sottile
+Author-email: asottile@umich.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: tokenize-rt (>=2)
+
+UNKNOWN
+
+
