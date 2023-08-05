@@ -1,0 +1,12 @@
+.gitignore
+MANIFEST.in
+setup.py
+ptspeaker/__init__.py
+ptspeaker/configuration.py
+ptspeaker/setup.cfg
+ptspeaker.egg-info/PKG-INFO
+ptspeaker.egg-info/SOURCES.txt
+ptspeaker.egg-info/dependency_links.txt
+ptspeaker.egg-info/not-zip-safe
+ptspeaker.egg-info/requires.txt
+ptspeaker.egg-info/top_level.txt
