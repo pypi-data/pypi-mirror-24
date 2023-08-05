@@ -1,0 +1,14 @@
+facebook_scribe-2.0.post1.dist-info/DESCRIPTION.rst,sha256=GhBX-f2tKUH5XY-hUzTd4ZtCXB9QPHhSjlboemf6_bQ,862
+facebook_scribe-2.0.post1.dist-info/METADATA,sha256=kYn8dqtR4NIx7ucIA_1xgPylxN0CLbzNbSqrRvJseWg,1154
+facebook_scribe-2.0.post1.dist-info/RECORD,,
+facebook_scribe-2.0.post1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+facebook_scribe-2.0.post1.dist-info/metadata.json,sha256=6N6m4Thc3TNZZ-gc-ttoGwGYATRNA_LvdPO7juYWGVM,492
+facebook_scribe-2.0.post1.dist-info/top_level.txt,sha256=Tzf6X5vGY84WWQ97GF-t2Zw9ccq8HkhVhrNDABy4-Bk,13
+fb303/FacebookService.py,sha256=jEOxOx8DvzQzcLdH6vhLVn2Wp3pzs931FIBbTGdkKzY,58405
+fb303/__init__.py,sha256=FfuFTNlweQJwRgIcXKtE3tO1qxibpN9FrzEmM7wgZ2o,53
+fb303/constants.py,sha256=qMSlTMT1pUoGyYSYoOCuOSVJFlue9dJkvio2-NoVabk,244
+fb303/ttypes.py,sha256=ZHV-LN7aJipDEMwK1R1DE0Sd4NIao1DjVSd9X68VR9Q,827
+scribe/__init__.py,sha256=2wkdiu9sPPrTspBzOS7aBjYdX53eG_i6fC2aDwsVd4c,44
+scribe/constants.py,sha256=qMSlTMT1pUoGyYSYoOCuOSVJFlue9dJkvio2-NoVabk,244
+scribe/scribe.py,sha256=W-NJsMEhVC66XwjrZPcCclqpbm46fs-G1Tcq22sH3kY,6664
+scribe/ttypes.py,sha256=RAWT97S6Cg7Wyd_7gq83F0Mv8oP7BJ-Das5tzcXCwd0,2768
