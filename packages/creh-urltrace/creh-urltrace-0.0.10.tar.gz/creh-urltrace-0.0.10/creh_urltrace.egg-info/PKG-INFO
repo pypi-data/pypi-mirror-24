@@ -1,0 +1,51 @@
+Metadata-Version: 1.1
+Name: creh-urltrace
+Version: 0.0.10
+Summary: Url trace application
+Home-page: https://bitbucket.org/crehana/creh-urltrace
+Author: Enrique
+Author-email: enrique@crehana.com
+License: MIT
+Description: =====
+        Creh Url Trace
+        =====
+        
+        Creh-urltrace is a simple Django app, get the url reference  and insert in a group of url's.
+        
+        Detailed documentation is in the "docs" directory.
+        
+        Quick start
+        -----------
+        
+        1. creh-urltrace can be obtained directly from PyPI, and can be installed with pip:
+        
+            pip install creh-urltrace
+        
+        1. Add "urltrace" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'urltrace',
+                ...
+            ]
+        
+        2. Run "python manage.py migrate" to create the log models.
+        
+        3. Use
+        
+            MIDDLEWARE_CLASSES = (
+            ...
+            'urltrace.middleware.UrlTraceMiddleware',
+            ...
+            )
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
