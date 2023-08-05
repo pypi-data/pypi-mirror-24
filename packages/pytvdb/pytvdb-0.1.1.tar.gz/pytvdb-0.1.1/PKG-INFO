@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pytvdb
+Version: 0.1.1
+Summary: A library for connecting to the TVDB.com API
+Home-page: https://github.com/jwbaker/pytvdb
+Author: Jason Baker
+Author-email: bakerjwr@gmail.com
+License: Unlicense
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
