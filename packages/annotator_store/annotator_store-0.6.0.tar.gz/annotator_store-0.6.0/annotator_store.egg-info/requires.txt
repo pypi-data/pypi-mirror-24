@@ -1,0 +1,17 @@
+django>1.8
+pytz
+jsonfield
+eulcommon
+six
+
+[docs]
+sphinx
+
+[permissions]
+django-guardian
+
+[test]
+pytest
+pytest-django
+pytest-cov
+mock
