@@ -1,0 +1,6 @@
+graphenelib>=0.5.3
+websockets
+appdirs
+Events
+scrypt
+pycrypto
