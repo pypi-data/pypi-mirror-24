@@ -1,0 +1,10 @@
+pydsef-0.1.1.dist-info/RECORD,,
+pydsef-0.1.1.dist-info/WHEEL,sha256=-aSo8rHuuPDEFzkcqqQ55pDyCjy25bYMLxSiHWKAOTc,92
+pydsef-0.1.1.dist-info/top_level.txt,sha256=7uJEAToS6MNjnsPN2_sFi_qfAnUxEeU7a2DXyHAbNxY,7
+pydsef-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pydsef-0.1.1.dist-info/METADATA,sha256=qfnHF_Q9P-8rqw3kFD6EJJkUCcWAPUcbc9NrIN0duOg,357
+pydsef-0.1.1.dist-info/metadata.json,sha256=nNiT_2ur_n8-cyy7wS-0DAFs-yD5ttCHVYpRfZO7Ef8,550
+pydsef/__init__.py,sha256=9nfa9KLWfGjBQKNs7bFodv24TK67GjSHR-daYw3ff2A,189
+pydsef/service.py,sha256=jc2MCJaJ0LC8bznfR71eV6-aHvxMC5K6U0qCVP5XOXU,2208
+pydsef/experiment.py,sha256=u1Wr9VGopjdGOEYgdYbNfx2yjPQUUbyevqerAbSAyUs,4725
+pydsef/util.py,sha256=niAd9X0kZjJiWm9lzkmLrfzT5HhZo2Ld4ImS8oMAfWI,901
