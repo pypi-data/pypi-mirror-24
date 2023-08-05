@@ -1,0 +1,7 @@
+[nodeconductor_extensions]
+waldur_analytics = nodeconductor_assembly_waldur.analytics.extension:AnalyticsExtension
+waldur_experts = nodeconductor_assembly_waldur.experts.extension:ExpertsExtension
+waldur_invoices = nodeconductor_assembly_waldur.invoices.extension:InvoicesExtension
+waldur_packages = nodeconductor_assembly_waldur.packages.extension:PackagesExtension
+waldur_support = nodeconductor_assembly_waldur.support.extension:SupportExtension
+
