@@ -1,0 +1,3 @@
+[lektor.plugins]
+amp = lektor_amp:AmpPlugin
+
