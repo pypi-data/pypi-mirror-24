@@ -1,0 +1,6 @@
+python-xlib
+psutil
+babel
+
+[audible_alert]
+pyaudio
