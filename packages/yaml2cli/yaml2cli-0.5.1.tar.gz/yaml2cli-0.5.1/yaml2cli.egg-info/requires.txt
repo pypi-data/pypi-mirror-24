@@ -1,0 +1,14 @@
+pyyaml
+yamlordereddictloader
+
+[dev]
+check-manifest
+
+[test]
+pep8
+pylint
+pytest
+pytest-cov
+coverage
+coveralls
+future
