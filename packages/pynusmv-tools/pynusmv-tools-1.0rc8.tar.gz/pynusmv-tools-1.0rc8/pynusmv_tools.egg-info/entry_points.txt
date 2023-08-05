@@ -1,0 +1,17 @@
+[console_scripts]
+bmc_ltl = pynusmv_tools.bmcLTL.bmc_ltl:main
+bmc_ltl_li = pynusmv_tools.bmcLTL.bmc_ltl_li:main
+atl = pynusmv_tools.atl.check:main
+tlace = pynusmv_tools.tlace.tlace:main
+atlk_fo = pynusmv_tools.atlkFO.check:main
+smv_cmp = pynusmv_tools.compare:main
+fairctl = pynusmv_tools.fairctl.FairCTLcheck:main
+smv2dot = pynusmv_tools.dotDump:main
+atlk_irf = pynusmv_tools.atlk_irf:main
+atlk_po = pynusmv_tools.atlkPO.check:main
+ctl = pynusmv_tools.ctl.CTLcheck:main
+arctl = pynusmv_tools.arctl.cmd.trace:main
+ctlk = pynusmv_tools.ctlk.cmd.cmd:main
+bmc_ltl_py = pynusmv_tools.bmcLTL.bmc_ltl_py:main
+diagnos = pynusmv_tools.diagnosability:main
+
