@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daemons</title>
+</head>
+<body>
+<p><a href="/">Home</a></p>
+<p><a href="/conductor">Conductor</a></p>
+{% if daemons %}
+<ul>
+    {% for daemon in daemons %}
+    <li><a href="/daemon/{{ daemon[0].uuid }}">{{ daemon[0].uuid }}
+      </a>: IP ({{ daemon[0].ip }}) Port ({{daemon[0].port}}) CPU:{{ daemon[1]['user'] }}%</li>
+    {% end %}
+</ul>
+{% else %}
+<p>No daemons running.</p>
+{% end %}
+
+<a href="/config">Load configuration file</a>
+
+<h3>Processes</h3>
+<form action="/reset" method="get">
+  <input type="submit" value="Reset cluster">
+</form>
+{% if processes %}
+<ul>
+  {% for process in processes %}
+  <li><strong>{{ process.command }}</strong>: {{ process.when }},
+    <a href="/daemon/{{ process.host }}">{{ process.host }}</a>
+  </li>
+  {% end %}
+</ul>
+{% end %}
+
+</body>
+</html>

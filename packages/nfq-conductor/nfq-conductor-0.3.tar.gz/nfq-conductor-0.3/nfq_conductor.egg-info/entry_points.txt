@@ -1,0 +1,5 @@
+[console_scripts]
+nfq-conductor = nfq.conductor.server:run
+nfq-conductor-daemon = nfq.conductor.daemon:run
+nfq-conductor-submit = nfq.conductor.submit:run
+
