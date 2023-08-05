@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: fs-s3fs
+Version: 0.1.0a0
+Summary: Amazon S3 filesystem for PyFilesystem2
+Home-page: https://github.com/PyFilesystem/s3fs
+Author: Will McGugan
+Author-email: willmcgugan@gmail.com
+License: MIT
+Description: S3FS
+        ====
+        
+        S3FS is a `PyFilesystem interface <https://docs.pyfilesystem.org/>`__ to
+        Amazon S3 cloud storage.
+        
+        As a PyFilesystem concrete class, S3FS allows you to work with S3 in the
+        same as any other supported filesystem.
+        
+Keywords: pyfilesystem,Amazon,s3
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: System :: Filesystems
