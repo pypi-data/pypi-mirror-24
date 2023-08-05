@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: no-you-talk-to-the-hand
+Version: 0.3
+Summary: Boss your corporate network effortlessly. Automatic and organized tunneling with sshuttle + supervisord + yaml
+Home-page: UNKNOWN
+Author: flashashen
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: ssh vpn tunnel forward daemonn
+Platform: UNKNOWN
