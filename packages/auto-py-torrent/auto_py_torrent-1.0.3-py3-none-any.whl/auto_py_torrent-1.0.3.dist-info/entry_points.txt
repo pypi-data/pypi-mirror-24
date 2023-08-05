@@ -1,0 +1,3 @@
+[console_scripts]
+auto_py_torrent = auto_py_torrent.auto_py_torrent:main
+
