@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: porthos-python
+Version: 0.0.2
+Summary: A RPC over AMQP library for python
+Home-page: https://github.com/porthos-rpc/porthos-python
+Author: Germano Fronza
+Author-email: germano.inf@gmail.com
+License: BSD
+Keywords: python,rpc,amqp,rpc-client
+Platform: 
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Topic :: Utilities
+Requires-Dist: pika (>=0.11.0b1)
+
+UNKNOWN
+
+
