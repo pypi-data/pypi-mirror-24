@@ -1,0 +1,3 @@
+[console_scripts]
+bless-deployer = bless_deployer.__main__:main
+
