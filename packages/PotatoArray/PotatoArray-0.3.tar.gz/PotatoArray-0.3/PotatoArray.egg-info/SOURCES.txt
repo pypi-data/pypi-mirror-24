@@ -1,0 +1,6 @@
+PotatoArray.py
+setup.py
+PotatoArray.egg-info/PKG-INFO
+PotatoArray.egg-info/SOURCES.txt
+PotatoArray.egg-info/dependency_links.txt
+PotatoArray.egg-info/top_level.txt
