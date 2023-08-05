@@ -1,0 +1,12 @@
+all_repos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+all_repos/clone.py,sha256=puk9MxVi57I47CA8aHE9QjhrCVSml9n5rkA5OonFYXQ,4696
+all_repos/sources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+all_repos/sources/github.py,sha256=4CCm5eUiIVZRRic2_QAhcYWbrixahBkAxBj94soQHOg,1353
+all_repos/sources/json_file.py,sha256=rmFoewXaVQ4tjLHUGJLjzeZQiMpXtIvMomGvWzFL2uk,241
+all_repos-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+all_repos-0.1.0.dist-info/METADATA,sha256=06CRGkNrhxLhKnugv-C7-3LRZOYE6bLn6IkK9UdcaQU,443
+all_repos-0.1.0.dist-info/RECORD,,
+all_repos-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+all_repos-0.1.0.dist-info/entry_points.txt,sha256=44yqSJOje_FccfiVvQSYUTdNA1j7UIQHCyvc6pnYKDs,58
+all_repos-0.1.0.dist-info/metadata.json,sha256=Q_wUpZNcbWi3_ym__Ku8OKtoTtIf2KCUT8PvA-NP8Og,789
+all_repos-0.1.0.dist-info/top_level.txt,sha256=FCHbd5DEszFWVPHxBOfx7GpOP4crVYHgNzUBLtSJUIs,10
