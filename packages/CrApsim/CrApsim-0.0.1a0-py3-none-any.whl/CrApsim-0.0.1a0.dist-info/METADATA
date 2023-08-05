@@ -1,0 +1,72 @@
+Metadata-Version: 2.0
+Name: CrApsim
+Version: 0.0.1a0
+Summary: Creates Apsim-Project files from given parameters and files.
+Home-page: https://neulaender.net
+Author: Torsten Zielke
+Author-email: torsten.zielke@protonmail.com
+License: BSD
+Download-URL: https://neulaender.net/0.0.1a
+Keywords: apsim climate agrar production simulator agricultural systems
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Free for non-commercial use
+Classifier: Natural Language :: English
+Classifier: Framework :: Pytest
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Requires-Dist: coverage
+Requires-Dist: pypi-publisher
+Requires-Dist: pytest
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+
+CrApsim
+===============================
+
+version number: 0.0.1
+author: Torsten Zielke
+
+Overview
+--------
+
+Creates Apsim-Project files from given parameters and files.
+
+Installation / Usage
+--------------------
+
+To install use pip:
+
+    $ pip install CrApsim
+
+
+Or clone the repo:
+
+    $ git clone TBD
+    $ python setup.py install
+
+Contributing
+------------
+
+- Dr. Munir Hoffmann [TROPAGS](https://www.uni-goettingen.de/en/team/541835.html)
+- Dr. Marian Koch [TROPAGS](https://www.uni-goettingen.de/en/team/541835.html)
+
+Example
+-------
+
+TBD
+
+Links
+-----
+
+- [Apsim](https://apsim.info) aka Agricultural Production Systems sIMulator - The Model this whole project is based on.
+
+
