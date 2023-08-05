@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: Hjun
+Version: 0.2.2
+Summary: hjun machine learning
+Home-page: UNKNOWN
+Author: HJUN
+Author-email: hjun.jeon@samsung.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (==1.11.0)
+Requires-Dist: pillow (==3.2.0)
+Requires-Dist: scipy (==0.17.0)
+Requires-Dist: sklearn (==0.0)
+
+UNKNOWN
+
+
