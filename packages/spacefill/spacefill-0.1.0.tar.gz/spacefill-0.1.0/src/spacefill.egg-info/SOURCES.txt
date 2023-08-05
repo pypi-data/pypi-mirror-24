@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+src/spacefill/__init__.py
+src/spacefill/curvetools.py
+src/spacefill.egg-info/PKG-INFO
+src/spacefill.egg-info/SOURCES.txt
+src/spacefill.egg-info/dependency_links.txt
+src/spacefill.egg-info/top_level.txt
+test/test.py
