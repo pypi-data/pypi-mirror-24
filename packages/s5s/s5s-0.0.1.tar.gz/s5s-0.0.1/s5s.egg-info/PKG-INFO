@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: s5s
+Version: 0.0.1
+Summary: a simple socks5 server
+Home-page: https://www.jiguang.cn
+Author: c161216
+Author-email: c161216@gmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: shadowsocks,socks5
+Platform: any

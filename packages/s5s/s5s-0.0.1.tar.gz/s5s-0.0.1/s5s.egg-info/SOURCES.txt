@@ -1,0 +1,11 @@
+README.rst
+README.txt
+setup.py
+s5s/__init__.py
+s5s/s5s.py
+s5s.egg-info/PKG-INFO
+s5s.egg-info/SOURCES.txt
+s5s.egg-info/dependency_links.txt
+s5s.egg-info/entry_points.txt
+s5s.egg-info/requires.txt
+s5s.egg-info/top_level.txt
