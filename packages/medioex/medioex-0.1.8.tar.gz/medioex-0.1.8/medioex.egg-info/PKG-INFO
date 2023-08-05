@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: medioex
+Version: 0.1.8
+Summary: Python MedIOEx module
+Home-page: https://github.com/beyaznet/python-medioex-module
+Author: Beyaz R&D Team
+Author-email: arge@beyaz.net
+License: GNU GPLv3
+Description: UNKNOWN
+Keywords: raspberry pi medioex taliabee
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: C
+Requires-Python: >=3
