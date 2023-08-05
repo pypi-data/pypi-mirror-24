@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: RunNotebook
+Version: 0.2.1
+Summary: UNKNOWN
+Home-page: https://github.com/ngoldbaum/RunNotebook
+Author: Nathan Goldbaum
+Author-email: nathan12343@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: jupyter
+Requires-Dist: nbconvert
+Requires-Dist: nbformat
+Requires-Dist: sphinx
+
+UNKNOWN
+
+
