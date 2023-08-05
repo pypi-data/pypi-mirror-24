@@ -1,0 +1,67 @@
+Direct Installation
+-------------------
+
+Python Version
+--------------
+lorax will run under python 3.4 and up.  Testing took place under python 3.5
+and 3.6.  Make sure that you select the correct version of python
+in creating the virual environment.
+
+
+Update Using Package Manager
+----------------------------
+We recommend that you start direct installations by making sure your root
+python installation is up-to-date before creating a virtual environment
+(which may get updated by pip in a non-maintainable way).  Although it is
+possible to run lorax directly from the root installation, it is not advisable
+to do so because lorax's dependencies could break other
+python packages you may wish to install.
+
+
+Create a Virtual Environment
+----------------------------
+lorax requires a more recent version of setuptools than that distributed
+with python 3.6 as well as the use of pip.  Both of these may break distro
+package manager assumptions, so you will need to either create a working
+virtual environment or a root environment in user space.
+
+I prefer to use the name "loraxenv" for the virtual
+environment to prevent confusion between package and environment names.
+You should create this environment as the user under which you intend the
+web server to run, using the python version you wish to use selected
+as default, with the following commands:
+
+	python3.6 -m virtualenv loraxenv
+	cd loraxenv
+	source bin/activate
+
+Install/Update with pip
+-----------------------
+Next use pip to install dependencies:
+
+	pip install -U setuptools # may produce an error, don't worry
+	pip install -U numpy biopython
+	pip install --global-option=build_py lorax
+
+
+
+Put lorax_env script in alias or on path
+----------------------------------------
+The lorax_env script is the only executable that you will need to control
+lorax and associated process. You should usually not put the entire lorax
+bin/ directory into your path, as this may cause binaries from the virtual
+environment such as python to be used in contexts where they were not intended
+to be used.  The easiest way to do this is with a symlink to a directory
+on your path, typically ~/bin:
+
+        ln -s /path/to/loraxenv/bin/lorax_env ~/bin
+n/
+
+Deactivate virtual environment
+------------------------------
+You no longer need to work inside the virtual environment you created.  Leave
+the virtual environment with the following command:
+
+    deactivate
+
+Next, follow the instructions in INSTALL.configure+run.txt.
