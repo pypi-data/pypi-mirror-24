@@ -1,0 +1,13 @@
+formic/LICENSE.txt,sha256=6_yrDif1EuLsHZf3Zu9GL0yQkXqpGneSnwXMK1GL2yQ,32421
+formic/VERSION.txt,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+formic/__init__.py,sha256=MH4ADKCNsnWClMe9V9-wDCvbVobmDZcd4M7CAJG-dVs,1246
+formic/command.py,sha256=ZRtZgmFgj6YvttkISC1bMTeOOR6RtLlG4Imb0N0qEDw,8996
+formic/formic.py,sha256=1XNdcelzqS-USd1dbMdfW_TWhQ-SPVqU9mkQa6xYhPI,48543
+formic_py3-0.1.0.dist-info/DESCRIPTION.rst,sha256=pV3Zc0Izzq8ptEw3S4uKA7t6wk8HwupcnqwAyvfuI1Q,3021
+formic_py3-0.1.0.dist-info/METADATA,sha256=miKR9fcg6HCKdltCrTgohwxfmL4DwBJ5oIJ5RK1H6Qk,3785
+formic_py3-0.1.0.dist-info/RECORD,,
+formic_py3-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+formic_py3-0.1.0.dist-info/entry_points.txt,sha256=O4fq4FbQzaTkkCF3f3HLAwpPSvL1xcg0L6SWmtgc6KY,55
+formic_py3-0.1.0.dist-info/metadata.json,sha256=l2eH4S9i3-vbwZMdVLmDYdgCINjVLsidP-nrvsHO9Cc,1119
+formic_py3-0.1.0.dist-info/top_level.txt,sha256=419Wcm6qr-M-ta1wKZwjLpSOoiVvWgg-OAW0z7HSYC8,7
+formic_py3-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
