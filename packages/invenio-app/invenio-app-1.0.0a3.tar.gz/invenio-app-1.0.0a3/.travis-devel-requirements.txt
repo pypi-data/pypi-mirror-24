@@ -1,0 +1,15 @@
+check-manifest>=0.25
+coverage>=4.0
+flask-celeryext>=0.2.2
+-e git+https://github.com/alisaifee/flask-limiter.git#egg=Flask-Limiter
+flask-shell-ipython>=0.3.0
+-e git+https://github.com/GoogleCloudPlatform/flask-talisman.git#egg=Flask-Talisman
+invenio-base<1.1.0,>=1.0.0a14
+invenio-config<1.1.0,>=1.0.0b2
+isort>=4.2.2
+pydocstyle>=2.0.0
+pytest>=2.8.0
+pytest-cache>=1.0
+pytest-cov>=1.8.0
+pytest-pep8>=1.0.6
+Sphinx<1.6,>=1.5.6
