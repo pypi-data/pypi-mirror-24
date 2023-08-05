@@ -1,0 +1,10 @@
+PyOgg-0.5.4a1.dist-info/DESCRIPTION.rst,sha256=_fgMoR_iZlB8Uk0gIYQO3bf6-MW_9zZu803MqhHw2Q8,1039
+PyOgg-0.5.4a1.dist-info/METADATA,sha256=e_u-mOzJv9-hyAwHUph7eO6aBfuDo6cmzIU_ETkxCQ4,1834
+PyOgg-0.5.4a1.dist-info/RECORD,,
+PyOgg-0.5.4a1.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+PyOgg-0.5.4a1.dist-info/metadata.json,sha256=xwsht2cZAyUYJJ7MI__OVEVJqSZaosZA1dN4LTVF32s,904
+PyOgg-0.5.4a1.dist-info/top_level.txt,sha256=D8S6n_eP-FkE6Dfz_yxL_V9NV82Mfaq3KJ23soUjCyU,6
+pyogg/__init__.py,sha256=4ClAjPeKiCFWP12_ZPG3o-E7dVo5Z7OZDoxXd_akY-s,8617
+pyogg/ogg.py,sha256=UzXiuokWciKBVW9enmWOCiX6t37s4W00jjWSN3sAdII,17229
+pyogg/opus.py,sha256=BIr7Zo5ZtldDp5OkDNB5MpHfg9fXtNVwEgXMUd0Jo60,36008
+pyogg/vorbis.py,sha256=AGwZYuHk6D1RGrNvO0732IJ0UBPmZ-tdMj3R0T9HTzE,22305
