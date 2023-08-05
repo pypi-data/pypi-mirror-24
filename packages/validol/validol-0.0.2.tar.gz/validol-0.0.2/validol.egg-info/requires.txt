@@ -1,0 +1,7 @@
+pyparsing
+numpy
+pandas
+requests
+PyQt5
+sqlalchemy
+requests-cache
