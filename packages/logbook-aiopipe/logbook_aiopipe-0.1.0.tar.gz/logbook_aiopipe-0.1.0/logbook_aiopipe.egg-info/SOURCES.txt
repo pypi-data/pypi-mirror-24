@@ -1,0 +1,7 @@
+setup.py
+logbook_aiopipe/__init__.py
+logbook_aiopipe.egg-info/PKG-INFO
+logbook_aiopipe.egg-info/SOURCES.txt
+logbook_aiopipe.egg-info/dependency_links.txt
+logbook_aiopipe.egg-info/requires.txt
+logbook_aiopipe.egg-info/top_level.txt
