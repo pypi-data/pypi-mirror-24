@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: mercury-client
+Version: 0.1
+Summary: A redis PUB/SUB wrapper
+Home-page: http://dHydra.org
+Author: Wen Gu
+Author-email: emptyset110@gmail.com
+License: Apache Software License
+Description: UNKNOWN
+Keywords: redis,PUB/SUB
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
