@@ -1,0 +1,8 @@
+no_you_talk_to_the_hand.py
+setup.py
+no_you_talk_to_the_hand.egg-info/PKG-INFO
+no_you_talk_to_the_hand.egg-info/SOURCES.txt
+no_you_talk_to_the_hand.egg-info/dependency_links.txt
+no_you_talk_to_the_hand.egg-info/entry_points.txt
+no_you_talk_to_the_hand.egg-info/requires.txt
+no_you_talk_to_the_hand.egg-info/top_level.txt
