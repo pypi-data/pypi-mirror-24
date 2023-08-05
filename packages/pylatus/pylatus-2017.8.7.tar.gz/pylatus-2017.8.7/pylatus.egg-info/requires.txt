@@ -1,0 +1,8 @@
+pyqtgraph
+aspic
+cryio
+scipy
+numpy
+auxygen
+kombu
+pylatus_brokers
