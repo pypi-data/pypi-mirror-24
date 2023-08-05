@@ -1,0 +1,16 @@
+.bumpversion.cfg
+AUTHORS.rst
+LICENSE.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/folderhash/__init__.py
+src/folderhash/__main__.py
+src/folderhash/cli.py
+src/folderhash.egg-info/PKG-INFO
+src/folderhash.egg-info/SOURCES.txt
+src/folderhash.egg-info/dependency_links.txt
+src/folderhash.egg-info/entry_points.txt
+src/folderhash.egg-info/requires.txt
+src/folderhash.egg-info/top_level.txt
