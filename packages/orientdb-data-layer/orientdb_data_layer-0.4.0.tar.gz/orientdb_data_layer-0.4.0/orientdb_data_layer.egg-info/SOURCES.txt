@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+orientdb_data_layer/__init__.py
+orientdb_data_layer/data_connection.py
+orientdb_data_layer.egg-info/PKG-INFO
+orientdb_data_layer.egg-info/SOURCES.txt
+orientdb_data_layer.egg-info/dependency_links.txt
+orientdb_data_layer.egg-info/not-zip-safe
+orientdb_data_layer.egg-info/requires.txt
+orientdb_data_layer.egg-info/top_level.txt
+orientdb_data_layer/data/RepositoryBase.py
+orientdb_data_layer/data/__init__.py

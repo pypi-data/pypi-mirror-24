@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: orientdb-data-layer
+Version: 0.4.0
+Summary: Data layer provider for OrientDB. (ORM/Repository/helpers)
+Home-page: http://github.com/Muritiku/orientdb_data_layer
+Author: Anton Dziavitsyn
+Author-email: devitsin@gmail.com
+License: MIT
+Description: Data layer provider for OrientDB. Easy to use ORM and Repository provider for OrientDB (with using pyorient)
+Keywords: orientdb orient pyorient
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
