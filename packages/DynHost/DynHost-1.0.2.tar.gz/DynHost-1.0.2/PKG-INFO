@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: DynHost
+Version: 1.0.2
+Summary: Multiple DynDNS updating script
+Home-page: https://github.com/jaesivsm/DynHost
+Author: François Schmidts
+Author-email: francois@schmidts.fr
+License: GPLv3
+Description: UNKNOWN
+Keywords: dynhost dyndhs ovh
+Platform: UNKNOWN
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Internet :: Name Service (DNS)
+Classifier: Topic :: System :: Networking
