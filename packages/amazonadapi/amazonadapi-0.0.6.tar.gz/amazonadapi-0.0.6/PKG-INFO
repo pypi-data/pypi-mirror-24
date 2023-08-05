@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: amazonadapi
+Version: 0.0.6
+Summary: A client for interacting with the Amazon Ad API.
+Home-page: https://github.com/barce/amazonadapi
+Author: Jim Barcelona, Arun Suresh
+Author-email: barce@me.com, arunvsuresh@gmail.com
+License: LICENSE
+Description: # amazonadapi
+        Client for the Amazon Ad API
+        
+        Sample code:
+        
+        
+        from amazonadapi import AmazonClient
+        client = AmazonClient()
+        client.cli_auth_dance()
+        client.get_profiles()
+        
+        
+Platform: UNKNOWN
