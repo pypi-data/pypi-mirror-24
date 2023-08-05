@@ -1,0 +1,16 @@
+bsym/__init__.py,sha256=23A89nJdiH5bTFL3IQsQNlVryGbBsBbCxqk4cURlJoI,341
+bsym/bsym.py,sha256=ptPo3Tna18tTrpi7uq4uaESu8Fwd0cV1mOhzR4duM7I,316
+bsym/configuration.py,sha256=Lr0I437MKWooTbKGSk4CRNJCcbZUJSDKPvFZMLmhCpI,6778
+bsym/configuration_space.py,sha256=ywdlhe_aawZvL6ItyMnfykYPlJ2Ka83HPCkNORp8YNc,3648
+bsym/coordinate_config_space.py,sha256=WZWHOkeOpt7BLX07pwQrz72R2OfVM-txaFw-h7-XEtU,2037
+bsym/permutations.py,sha256=G_lYiO9qIj6IPLuwsB5nG0PGP_iA2PMfCUJkxIfpBoE,2002
+bsym/point_group.py,sha256=acCsBneqW_b7uIKuBNbVhasauz1SM3dtxF8viLK4VYI,97
+bsym/space_group.py,sha256=bWRpg_Q2tdCey3aLJg9sQHVU8cMCSr5Veru5JUGaifo,100
+bsym/symmetry_group.py,sha256=YiJPmnQzPvrj6PCJFh4BIQRlN5b2XFQJ8YFRbOnisjI,5075
+bsym/symmetry_operation.py,sha256=ag78IoV0JHU-2fFPBZmdFtz1isJGJEKmpmwNiQrIavk,5724
+bsym-1.0b2.dist-info/DESCRIPTION.rst,sha256=ZrbMtYoTGqD7-4AsT1LVXjBpTVTlwGQCIyRWfAkjigY,3654
+bsym-1.0b2.dist-info/METADATA,sha256=ngUQNfSbvKH_VzYzLGOW_Q1HysMfklbv1d1YNKR29CA,4053
+bsym-1.0b2.dist-info/RECORD,,
+bsym-1.0b2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+bsym-1.0b2.dist-info/metadata.json,sha256=t35ZhSsEYouJdzJ2ReVZiVlYJObsztOY0msDRpJjuZQ,590
+bsym-1.0b2.dist-info/top_level.txt,sha256=CG8ldteXAVeRQ_hizPDG1KrGijycu5rOoxeE1feiC3k,5
