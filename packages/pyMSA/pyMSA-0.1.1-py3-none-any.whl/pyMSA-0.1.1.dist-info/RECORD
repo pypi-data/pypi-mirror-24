@@ -1,0 +1,14 @@
+pyMSA-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pyMSA-0.1.1.dist-info/METADATA,sha256=LDTgqDLzO1QUOr8MKD4eGSFRVVy6Lc8UJlv-8jSo7cU,544
+pyMSA-0.1.1.dist-info/RECORD,,
+pyMSA-0.1.1.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+pyMSA-0.1.1.dist-info/metadata.json,sha256=vWPLlWeptdkoD_AK2d7o9V2CR_tnjceAns8x4B2lBFI,697
+pyMSA-0.1.1.dist-info/top_level.txt,sha256=oJT99Krn0FqJE1x513ZsciCZOzigix9N2o29nZJexqA,6
+pymsa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymsa/score.py,sha256=SBcs4c3LjXQjOGk96iyK7zWuTDszNEyB48P0L68YTBQ,5932
+pymsa/scoringExample.py,sha256=Fn2OB8_09fYj0H5z6VyMSbmV41bY-KnBfBRA8gnWXKU,2004
+pymsa/substitutionmatrix.py,sha256=gL27tVmv4e5MEHgQP7TdzZUur5UGFOpjBb_6X9qY3M0,11846
+pymsa/util.py,sha256=QYffMdFNO44i0TLFBEnt7NWtRcndmrcbrFKEl3_Nhlw,851
+pymsa/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymsa/tests/test_scoring.py,sha256=bTODIyM49jxw2GOhoxh-iazjRtJtt_8I87HVIO7_SoI,8683
+pymsa/tests/test_substitutionmatrix.py,sha256=wtnuwPXVlvQdjTy6F6Dcuwew_nZ0p5clwLI9s4jq6FQ,4291
