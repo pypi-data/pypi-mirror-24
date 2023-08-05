@@ -1,0 +1,12 @@
+setup.py
+hfile/__init__.py
+hfile/cli.py
+hfile/filterbymtime.py
+hfile/removefile.py
+hfile/walkdirectory.py
+hfile.egg-info/PKG-INFO
+hfile.egg-info/SOURCES.txt
+hfile.egg-info/dependency_links.txt
+hfile.egg-info/entry_points.txt
+hfile.egg-info/requires.txt
+hfile.egg-info/top_level.txt
