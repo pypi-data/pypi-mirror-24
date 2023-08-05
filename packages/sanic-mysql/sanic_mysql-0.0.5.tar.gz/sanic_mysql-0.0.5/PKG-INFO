@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: sanic_mysql
+Version: 0.0.5
+Summary: Adds mysql support to sanic .
+Home-page: https://github.com/jimgreat/sanic_mysql
+Author: jimgreat
+Author-email: UNKNOWN
+License: MIT
+Description: sanic_mysql is a sanic framework extension which adds support for the mysql.
+Keywords: Sanic,mysql,aiomysql
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
