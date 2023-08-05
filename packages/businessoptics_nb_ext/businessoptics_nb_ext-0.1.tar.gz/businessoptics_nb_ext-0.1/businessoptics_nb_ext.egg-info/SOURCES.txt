@@ -1,0 +1,9 @@
+setup.py
+businessoptics_nb_ext/__init__.py
+businessoptics_nb_ext/gitmanager.py
+businessoptics_nb_ext.egg-info/PKG-INFO
+businessoptics_nb_ext.egg-info/SOURCES.txt
+businessoptics_nb_ext.egg-info/dependency_links.txt
+businessoptics_nb_ext.egg-info/not-zip-safe
+businessoptics_nb_ext.egg-info/requires.txt
+businessoptics_nb_ext.egg-info/top_level.txt
