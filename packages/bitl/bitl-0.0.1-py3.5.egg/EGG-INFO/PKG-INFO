@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bitl
+Version: 0.0.1
+Summary: A module to benchmark bandit algorithms
+Home-page: https://github.com/tritas/bitl
+Author: Aris Tritas
+Author-email: aris.tritas@u-psud.fr
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
