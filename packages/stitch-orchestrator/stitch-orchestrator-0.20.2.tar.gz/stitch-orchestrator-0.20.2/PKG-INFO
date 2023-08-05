@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: stitch-orchestrator
+Version: 0.20.2
+Summary: Orchestrates streamers and persisters
+Home-page: https://github.com/stitchstreams/stitch-orchestrator
+Author: Stitch
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only

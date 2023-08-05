@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          stitch-orchestrator=stitch_orchestrator:main
+      
