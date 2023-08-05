@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+rereplace/__init__.py
+rereplace/rereplace.py
+rereplace.egg-info/PKG-INFO
+rereplace.egg-info/SOURCES.txt
+rereplace.egg-info/dependency_links.txt
+rereplace.egg-info/top_level.txt
