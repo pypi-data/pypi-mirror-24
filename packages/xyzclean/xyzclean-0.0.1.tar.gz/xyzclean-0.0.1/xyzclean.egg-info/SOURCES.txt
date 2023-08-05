@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+data/data_file
+xyzclean/__init__.py
+xyzclean/datacleaner.py
+xyzclean.egg-info/PKG-INFO
+xyzclean.egg-info/SOURCES.txt
+xyzclean.egg-info/dependency_links.txt
+xyzclean.egg-info/entry_points.txt
+xyzclean.egg-info/requires.txt
+xyzclean.egg-info/top_level.txt
