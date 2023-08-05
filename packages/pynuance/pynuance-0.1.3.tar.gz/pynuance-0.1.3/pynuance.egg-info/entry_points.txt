@@ -1,0 +1,3 @@
+[console_scripts]
+pynuance = pynuance.__main__:main
+
