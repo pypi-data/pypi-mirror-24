@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ph5
+Version: 4.0.0
+Summary: A library of PH5 APIs
+Home-page: https://github.com/PIC-IRIS/PH5/
+Author: IRIS PASSCAL Instrument Center
+Author-email: dhess@passcal.nmt.edu
+License: MIT
+Download-URL: https://github.com/PIC-IRIS/PH5/archive/v4.0.0.tar.gz
+Description: UNKNOWN
+Keywords: ph5 IRIS miniSEED sac segy seg-y segd seg-d
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
