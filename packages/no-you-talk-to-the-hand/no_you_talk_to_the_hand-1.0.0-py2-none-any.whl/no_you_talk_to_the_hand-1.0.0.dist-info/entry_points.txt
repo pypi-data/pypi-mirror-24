@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        nytth=no_you_talk_to_the_hand:cli
+    
