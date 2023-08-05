@@ -1,0 +1,12 @@
+Send2Trash-1.4.0.dist-info/DESCRIPTION.rst,sha256=kTj_fGMSERFOVcSfna2UckEYEttCRiSvYkYX0wJ5grI,2337
+Send2Trash-1.4.0.dist-info/METADATA,sha256=cTjPoSUxpzzc9myfhDsVWM4APP82hdMpHgsa0pWsY2g,3203
+Send2Trash-1.4.0.dist-info/RECORD,,
+Send2Trash-1.4.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+Send2Trash-1.4.0.dist-info/metadata.json,sha256=-VmrMcONjnuQyb09NBSTOQZkoOHCOzQ-w5yeRrR-Evk,961
+Send2Trash-1.4.0.dist-info/top_level.txt,sha256=zzknBLdmJWCrcVgRz2rcFNqih9a3y1MemuTJynvYyow,11
+send2trash/__init__.py,sha256=Yufjr-dmk1Utj_FN0OEr-mHcH_nhsTRTMBa3n8uhkE4,669
+send2trash/compat.py,sha256=hQFlRtSMuECK-y6mh1pL3h4JWvvXjIRiQjCIMAyk4J0,457
+send2trash/plat_gio.py,sha256=TPeRChKGyePkmguJPyvhTHirdWZiTJpbm5kjDAgbhsQ,457
+send2trash/plat_osx.py,sha256=s6HjHPCVdsMju1HC3BJr5744Xns9oZRvlLZJzL1ogao,1680
+send2trash/plat_other.py,sha256=XYdQ0jANjNVJBCiGio2gBq9kWpNq2GWkPBMJL8g9hWI,6280
+send2trash/plat_win.py,sha256=1u1-NwrwQDN4BafnkuODEfplB4FQcPk0YtoL-x061g8,1583
