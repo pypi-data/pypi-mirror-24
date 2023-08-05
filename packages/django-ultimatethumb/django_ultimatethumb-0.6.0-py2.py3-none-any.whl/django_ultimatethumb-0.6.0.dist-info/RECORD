@@ -1,0 +1,15 @@
+django_ultimatethumb-0.6.0.dist-info/DESCRIPTION.rst,sha256=LAoDXR_tvuIltbIqypS4rP4ldoWjQ9SnziWWKj2ji_k,5050
+django_ultimatethumb-0.6.0.dist-info/METADATA,sha256=WC_D13o8uDVWw4mSV0FXl0NnFAWJ91ZghUlu77nFEHA,6692
+django_ultimatethumb-0.6.0.dist-info/RECORD,,
+django_ultimatethumb-0.6.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_ultimatethumb-0.6.0.dist-info/metadata.json,sha256=_h2XOeMXYkn-s4eN9UZ3sDyRDFpd5i6ea30DYaJe35o,1580
+django_ultimatethumb-0.6.0.dist-info/top_level.txt,sha256=mNcpVaIcJATrmWwkpU4kFK57GSesws7vCkQamuFJazM,14
+ultimatethumb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ultimatethumb/commands.py,sha256=RxyFRMAwv3uGDw6v6VnYF43wsOwenp2atIyaFCGIgmI,636
+ultimatethumb/storage.py,sha256=rwL_5ZnXoBdcCasX_d35H2IfE9dWxbOo7Vaeg81PS6M,1216
+ultimatethumb/thumbnail.py,sha256=3KTA_xQ9ogHFlOgupujSxKmff3HkiXAwnguS_3SQeM4,8392
+ultimatethumb/urls.py,sha256=SmZDSPESoAcdrdxTj9Nc5rU9wOxjnztrMlOBa5NsSSs,431
+ultimatethumb/utils.py,sha256=gr8LfEANOuy-xc3QU63mINfdYL4L77AIQsH-gtSLdDI,3810
+ultimatethumb/views.py,sha256=47EBDT75Ylx7LsTaxaRXHvuzlRGxGUtm6E5QZkXZXAU,1874
+ultimatethumb/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ultimatethumb/templatetags/ultimatethumb_tags.py,sha256=P48Rws5jNUMf6Nf6eqvwQAZUG5A8hNrlkDULqc5eTdc,1081
