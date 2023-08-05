@@ -1,0 +1,19 @@
+ddt==0.8.0
+django-nose==1.4.4
+freezegun==0.1.11
+mock==1.0.1
+nose==1.3.3
+coverage==4.0.2
+python-dateutil==2.1
+
+# Quality
+pep8==1.6.2
+git+https://github.com/edx/edx-lint.git@v0.4.1#egg=edx_lint==0.4.1
+
+# Docs
+Sphinx==1.2
+sphinx-rtd-theme==0.1.5
+sphinxcontrib-napoleon==0.2.3
+
+# Tox
+tox==2.7.0
