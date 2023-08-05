@@ -1,0 +1,16 @@
+sanskrit_data/__init__.py,sha256=vrP0xXtgPDH0jZQniY6h0S593LIfYNKKSU1SyQ4yQcg,329
+sanskrit_data/db/__init__.py,sha256=ohM1-J5ho8f6WGWghLd4mmNIy4L345iDcnmhmq8g3eI,1710
+sanskrit_data/db/couchdb.py,sha256=ItpQuwzL_NdLL_FqoBwVJg_ql3N-e2pnYW64heu8Kcg,3365
+sanskrit_data/db/mongodb.py,sha256=P0UVr2HHZgQtopjgCO8t2QMb-sNkdOCgEBNk4IVW9gg,1314
+sanskrit_data/schema/__init__.py,sha256=L9FSyctBUJpzKn_8Cah80BOMzJZQJT0AyuS7QT1t-3s,360
+sanskrit_data/schema/books.py,sha256=yEC9xNtNWtQDpddajAjiT2TfhXY2FJWREgoBL6whPis,3508
+sanskrit_data/schema/common.py,sha256=F1S_yn1rlj4sKOBl5Nwfzr74HFwzo9IlXeEKUf-cy-k,15177
+sanskrit_data/schema/ullekhanam.py,sha256=waiw830fmqmDYygoaOTNmEVCIYgPIPcjp5iilEU3TPw,14066
+sanskrit_data/schema/users.py,sha256=3xug6gs_mFbJkK3H4yWNqlWfsoIcDn8yJj6PsXxOwS8,4032
+sanskrit_data/schema/vyaakaraNa.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sanskrit_data-0.2.1.dist-info/DESCRIPTION.rst,sha256=uQBygeAcHnu3FDrTZfZIIqDYvxKY0OKPOMPeXwr7Xjs,6248
+sanskrit_data-0.2.1.dist-info/METADATA,sha256=CieJB0psCBtuW7uZEQ2SqMEFOZkuuZnUEumzog9PzqM,7334
+sanskrit_data-0.2.1.dist-info/RECORD,,
+sanskrit_data-0.2.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+sanskrit_data-0.2.1.dist-info/metadata.json,sha256=6o5Y6NwXUYPkLwzX64S5eaJtr8BxXtKR_sNDwFc3x6g,1209
+sanskrit_data-0.2.1.dist-info/top_level.txt,sha256=vMGjtdfhTqgvYxDH6ZtuAIvwPVAp4VeQhLxnHalH9nw,14
