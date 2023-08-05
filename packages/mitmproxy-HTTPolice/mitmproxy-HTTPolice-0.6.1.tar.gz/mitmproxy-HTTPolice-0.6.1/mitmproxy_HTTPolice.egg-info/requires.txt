@@ -1,0 +1,2 @@
+mitmproxy >= 2.0.0
+HTTPolice >= 0.5.0
