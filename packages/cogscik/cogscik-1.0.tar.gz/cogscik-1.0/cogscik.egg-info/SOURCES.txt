@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+cogscik/CogSciK.py
+cogscik.egg-info/PKG-INFO
+cogscik.egg-info/SOURCES.txt
+cogscik.egg-info/dependency_links.txt
+cogscik.egg-info/top_level.txt
