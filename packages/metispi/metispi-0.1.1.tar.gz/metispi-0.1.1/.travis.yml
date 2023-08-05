@@ -1,0 +1,13 @@
+sudo: false
+language: "python"
+python: "3.6"
+
+script: "true"
+
+deploy:
+  - provider: pypi
+    user: okurkaiedova
+    password: $PYPI_PASSWORD
+    on:
+      tags: true
+      distributions: sdist
