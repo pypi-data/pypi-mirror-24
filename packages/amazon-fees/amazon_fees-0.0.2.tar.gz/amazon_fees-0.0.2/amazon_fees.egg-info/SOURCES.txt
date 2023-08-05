@@ -1,0 +1,9 @@
+README.rst
+setup.py
+amazon_fees.egg-info/PKG-INFO
+amazon_fees.egg-info/SOURCES.txt
+amazon_fees.egg-info/dependency_links.txt
+amazon_fees.egg-info/top_level.txt
+python_amazon_fees/__init__.py
+python_amazon_fees/package.py
+python_amazon_fees/parse.py
