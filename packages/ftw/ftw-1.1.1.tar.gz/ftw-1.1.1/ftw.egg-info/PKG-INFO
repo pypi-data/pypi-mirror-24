@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ftw
+Version: 1.1.1
+Summary: Framework for Testing WAFs
+Home-page: https://www.github.com/fastly/ftw
+Author: Chaim Sanders, Zack Allen
+Author-email: zma4580@gmail.com, chaim.sanders@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/fastly/ftw/tarball/1.1.1
+Description: UNKNOWN
+Keywords: waf
+Platform: UNKNOWN
