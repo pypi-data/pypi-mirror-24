@@ -1,0 +1,11 @@
+ttf/__init__.py,sha256=Apld05VlIinshjbpJ4ee3V4yuP5ethA7lIzJ78PBXpM,222
+ttf/cli.py,sha256=HuyVqsjoGaLnw25Axf3dESwnnu6-sc-lYgsEK6GossY,1593
+ttf/server.py,sha256=ohHASoHYSw7aWAYpRs4GFppUTML2gUmza_fQ51eMaqA,1075
+ttf/ttf.py,sha256=_FO-gzoLVQy0Gaeg1CinwPN_1lghc9QwoJkMZCB26gA,1619
+ttf-0.1.0.dist-info/DESCRIPTION.rst,sha256=Se6trtDYQZECzabeHVqImjY33ZFHI1Tq0wd2fuG77hU,1158
+ttf-0.1.0.dist-info/METADATA,sha256=2wfXIMuXfe_yJLpTNUz3SLlMP1QqXUqPkkIoYMuTqR8,2098
+ttf-0.1.0.dist-info/RECORD,,
+ttf-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+ttf-0.1.0.dist-info/entry_points.txt,sha256=NlU-rhaLB8VLnmaNLCGHmtBOgkyn6vcASpO6f2UTroc,37
+ttf-0.1.0.dist-info/metadata.json,sha256=2gM41MLNKffHZu4yiG2knMwC5au0XeFg90Hln4tZayk,1232
+ttf-0.1.0.dist-info/top_level.txt,sha256=I0YxEiwxGQwcfH01x8SaVejt7iYac_pA66yJsJcZukE,4
