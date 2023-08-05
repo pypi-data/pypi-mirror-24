@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: ploogz
+Version: 0.0.8
+Summary: A pretty simple plugin framework.
+Home-page: http://ploogz.readthedocs.io/en/latest/index.html
+Author: Pat Daburu
+Author-email: pat@daburu.net
+License: MIT
+Download-URL: https://github.com/pblair/ploogz/archive/0.0.8.tar.gz
+Description: Ploogz is a simple python plugin framework.  Have a look at the documentation
+        (http://ploogz.readthedocs.io/en/latest/index.html) for more information.
+Keywords: plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.1
