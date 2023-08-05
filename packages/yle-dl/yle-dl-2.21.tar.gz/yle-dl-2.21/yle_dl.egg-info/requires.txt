@@ -1,0 +1,4 @@
+pycrypto
+
+[youtubedl-backend]
+youtube_dl
