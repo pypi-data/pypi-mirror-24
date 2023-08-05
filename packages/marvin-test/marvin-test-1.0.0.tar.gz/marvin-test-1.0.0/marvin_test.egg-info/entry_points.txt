@@ -1,0 +1,3 @@
+[console_scripts]
+marvin = marvin.runner.cli:main
+
