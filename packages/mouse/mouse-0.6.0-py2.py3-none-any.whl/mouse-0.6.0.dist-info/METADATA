@@ -1,0 +1,12 @@
+Metadata-Version: 2.0
+Name: mouse
+Version: 0.6.0
+Summary: Hook and simulate global mouse events in pure Python
+Home-page: https://github.com/boppreh/mouse
+Author: BoppreH
+Author-email: boppreh@gmail.com
+License: MIT
+
+mouse
+
+

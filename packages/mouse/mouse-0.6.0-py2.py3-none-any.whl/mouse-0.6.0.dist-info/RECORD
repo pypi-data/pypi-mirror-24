@@ -1,0 +1,13 @@
+mouse/__init__.py,sha256=gEQJmNEY_LvUI89RvMzTyGU8ENSFZa0oObhJTP71jF8,8854
+mouse/_generic.py,sha256=J8brtaAneOQWWQHQWYiNgsaQgMxHo5_VOZmFAK-9iDE,2132
+mouse/_mouse_event.py,sha256=zRQGO6M6nbA-jvhI0yz4HzvQNcScF48PZ9iRegcTVjQ,422
+mouse/_mouse_tests.py,sha256=gNa_NW5sRIsbLMG35ZfXal3eHS2mEpEPhysJRDq0gQA,10000
+mouse/_nixcommon.py,sha256=FNXiCv7u_A0SzcYJQlYDJBSdIN6IUTVLG4g7oqXgj6o,5552
+mouse/_nixmouse.py,sha256=2IQSrqC4TZV4kGDFcPWojrVGf1thdH3zOO3kx1-Husw,3523
+mouse/_winmouse.py,sha256=Q1UwDUCTdGwYCM70rjkKWQAdkaIZe7b0aTDMO6nZ35k,5715
+mouse-0.6.0.dist-info/DESCRIPTION.rst,sha256=FVA9Z4mUGcEwyNPuh1KjD48IgR_uoeYnqhDvS6pv4yQ,8
+mouse-0.6.0.dist-info/METADATA,sha256=qBSerP_de8YJLTsYxKFl624HOSpMVlopAkHuStGYX6Y,225
+mouse-0.6.0.dist-info/RECORD,,
+mouse-0.6.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+mouse-0.6.0.dist-info/metadata.json,sha256=E1khGmmBwlYaqYhdMnnYu2tGzh0DqtnUjaLEVgrrTx4,421
+mouse-0.6.0.dist-info/top_level.txt,sha256=FiA9sXRt9_B8X6je4BlPesL9EakrmGZ0fDKPK09Ql6U,6
