@@ -1,0 +1,9 @@
+spacefill/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spacefill/curvetools.py,sha256=fxzT4hfWzU9Am0XtpYY-JkZ2BI03oPtT0fQlHYk43v4,22006
+spacefill/spacefill.py,sha256=CxysFtj2ij3see6YPY8CXNv1Sd-ehlXWX-mte3OqYm0,21875
+spacefill-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+spacefill-0.1.1.dist-info/METADATA,sha256=gwvZyXkKD3qx8CWmz-F043VtvFuRjX8ltPTSO-G6GkU,778
+spacefill-0.1.1.dist-info/RECORD,,
+spacefill-0.1.1.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+spacefill-0.1.1.dist-info/metadata.json,sha256=Yzckj2l52bAxOcjl27qLwMU6xeja6QlJMRb9-TqS91c,906
+spacefill-0.1.1.dist-info/top_level.txt,sha256=3odhQjqEEttJYqA_9h23IAlZl82vnkcOjUrDW7bVVds,10

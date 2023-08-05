@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: spacefill
+Version: 0.1.1
+Summary: Library containing functions to create space filling curves.
+Home-page: https://github.com/EgorDm/spacefill
+Author: Egor Dmitriev
+Author-email: egordmitriev2@gmail.com
+License: MIT
+Keywords: space filling curve hilbert
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+
+UNKNOWN
+
+
