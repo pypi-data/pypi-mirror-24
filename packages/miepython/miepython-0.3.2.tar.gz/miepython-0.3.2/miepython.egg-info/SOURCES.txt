@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+README
+setup.cfg
+setup.py
+miepython/__init__.py
+miepython/miepython.py
+miepython.egg-info/PKG-INFO
+miepython.egg-info/SOURCES.txt
+miepython.egg-info/dependency_links.txt
+miepython.egg-info/requires.txt
+miepython.egg-info/top_level.txt
+miepython/test/test.py
