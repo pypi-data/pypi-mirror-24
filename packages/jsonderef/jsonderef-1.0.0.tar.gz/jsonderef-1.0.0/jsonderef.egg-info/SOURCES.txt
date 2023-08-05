@@ -1,0 +1,9 @@
+README.rst
+jsonderef.py
+setup.cfg
+setup.py
+jsonderef.egg-info/PKG-INFO
+jsonderef.egg-info/SOURCES.txt
+jsonderef.egg-info/dependency_links.txt
+jsonderef.egg-info/requires.txt
+jsonderef.egg-info/top_level.txt
