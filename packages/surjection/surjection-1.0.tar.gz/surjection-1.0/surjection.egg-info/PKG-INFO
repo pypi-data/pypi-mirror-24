@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: surjection
+Version: 1.0
+Summary: An implementation of surjection based on Python dict
+Home-page: https://github.com/houluy/surjection
+Author: Houlu
+Author-email: houlu8674@bupt.edu.cn
+License: MIT
+Description: UNKNOWN
+Keywords: double-mapping dict
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

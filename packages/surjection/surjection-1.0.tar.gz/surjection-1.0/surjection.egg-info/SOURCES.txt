@@ -1,0 +1,6 @@
+setup.py
+surjection/__init__.py
+surjection.egg-info/PKG-INFO
+surjection.egg-info/SOURCES.txt
+surjection.egg-info/dependency_links.txt
+surjection.egg-info/top_level.txt
