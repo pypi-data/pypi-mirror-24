@@ -1,0 +1,16 @@
+README.txt
+ircbot
+setup.py
+bruce_ircbot.egg-info/PKG-INFO
+bruce_ircbot.egg-info/SOURCES.txt
+bruce_ircbot.egg-info/dependency_links.txt
+bruce_ircbot.egg-info/requires.txt
+bruce_ircbot.egg-info/top_level.txt
+pyircbot/__init__.py
+pyircbot/__main__.py
+pyircbot/globalvar.py
+pyircbot/plugins/__init__.py
+pyircbot/plugins/admin.py
+pyircbot/plugins/echo.py
+pyircbot/plugins/ip.py
+pyircbot/plugins/linkhandler.py

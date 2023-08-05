@@ -1,0 +1,6 @@
+irc
+termcolor
+requests
+Pillow
+BeautifulSoup4
+html5lib
