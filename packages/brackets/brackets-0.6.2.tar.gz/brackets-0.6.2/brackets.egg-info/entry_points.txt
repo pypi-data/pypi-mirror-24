@@ -1,0 +1,4 @@
+[console_scripts]
+bpy-compile = brackets.compile:main
+brackets = brackets.shell:main
+
