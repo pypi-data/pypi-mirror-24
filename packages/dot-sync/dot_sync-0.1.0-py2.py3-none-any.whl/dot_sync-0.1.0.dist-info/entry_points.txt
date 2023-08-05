@@ -1,0 +1,3 @@
+[console_scripts]
+dot_sync = dot_sync.dot_sync:main
+

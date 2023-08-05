@@ -1,0 +1,10 @@
+dot_sync/__init__.py,sha256=TCATP7KLS4NO1-fr-OCW3V44iD0rsc9Essb0iGbsOUc,154
+dot_sync/cli.py,sha256=xWlVn_uX_T6j-VmcygdqzwKbi2Xv_VTqwPhWV87EEOs,363
+dot_sync/dot_sync.py,sha256=Tnv4u6NWFVqSCVtCkZrC6KjxQ8Qx7tsEpIpXHTO4yiY,5148
+dot_sync-0.1.0.dist-info/DESCRIPTION.rst,sha256=ZHgjArx23YnruwNIBB9xkZ-wdwUYIGg8b6dCwbfs4R0,1113
+dot_sync-0.1.0.dist-info/METADATA,sha256=eUj5-ei4KSkccsed-7kQXcvdENIl698Cqk48x-Jv85E,1890
+dot_sync-0.1.0.dist-info/RECORD,,
+dot_sync-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+dot_sync-0.1.0.dist-info/entry_points.txt,sha256=goTPYrU5DClKYrd5o6r3xOLLUiwO5hnTaoSGRkUXXpo,53
+dot_sync-0.1.0.dist-info/metadata.json,sha256=mnR17JLbWgheOlHHkHrmuXUliq8o16V-4r4_ihcrLrY,1116
+dot_sync-0.1.0.dist-info/top_level.txt,sha256=15m5rr8dX4bvTJhLCfOTqCY7fGPFb-_vt86uA6xAdNI,9
