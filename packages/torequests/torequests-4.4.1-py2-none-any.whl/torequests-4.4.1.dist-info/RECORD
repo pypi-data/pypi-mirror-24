@@ -1,0 +1,17 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/mock_server.py,sha256=vvma9gTtBZqxSLRQG9D1gg5Lcdewcmc0KryM2e-eaxc,318
+tests/py3_features.py,sha256=tmqmPs5a7Y6tmYm-9UEa3n80ssPnoKPnbXKqMp--8XY,2432
+tests/test_features.py,sha256=lgvQuVbtTuiVIJXoxblCSkoZKftLR9nS1sLlxTrwKyo,569
+tests/test_utils.py,sha256=_PWiCHs82M7brl4xYSn9XPhcfYNO7OMc6CAi0zxgXFM,2249
+torequests/__init__.py,sha256=b2DyO7uHpOuHattAv3ipwgHqCojiCjDFQ037EW3EHKs,133
+torequests/dummy.py,sha256=mnwyvATKEUTJpPJTZRj5jCAhl7lOFU7_plLxpHDUqFI,12690
+torequests/main.py,sha256=JY98HXbIDCNaX-INl4rOxavVIKpWI_8dCHsRLviD2gg,6839
+torequests/process.py,sha256=qJPDRV1VUrjU1HNqe_LrI0agdXpgbGiqeSy4B3mJv1k,2878
+torequests/py3_patch.py,sha256=Jx4XtjaRijbFHrI2kOMLuzH2jCahN_7RfRcnLZkonn4,264
+torequests/utils.py,sha256=MxSi0q-JsxSOuUib9UC30nORZPKYB-z0DdLSf7ylidU,8440
+torequests-4.4.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+torequests-4.4.1.dist-info/METADATA,sha256=TFbzEJ-TkqucF3E1SYF4FzXYxHYwDC1ALabfV8ewUrw,598
+torequests-4.4.1.dist-info/RECORD,,
+torequests-4.4.1.dist-info/WHEEL,sha256=3BTqKpHqwt_rzaCQaFEIeFXHTrSWBSQKkqmeYbLAVWs,97
+torequests-4.4.1.dist-info/metadata.json,sha256=0g13fgVKiWR1tpl3IcW44fGW1VspOKHrM92XsTxeJgA,836
+torequests-4.4.1.dist-info/top_level.txt,sha256=fxnhAzgZl9fqmxwaoDhnY9v79Meoi8avQ92x6uzc3rQ,17
