@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: perflog
+Version: 2017.8.2
+Summary: Performance stats logger 
+Home-page: https://github.com/cjrh/perflog
+License: UNKNOWN
+Author: Caleb Hattingh
+Author-email: caleb.hattingh@gmail.com
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Requires-Dist: psutil
+Requires-Dist: typing; python_version < '3.5'
+Requires-Dist: enum34; python_version <= '2.7'
+
+perflog
+=======
+
+**WARNING - This is still in DRAFT**
+
+Structured logging support for application performance and monitoring data
+
