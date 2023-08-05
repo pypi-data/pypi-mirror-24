@@ -1,0 +1,73 @@
+CHANGES
+=======
+
+0.4.0
+-----
+
+* Bump snapcraft version to 0.4.0
+* Make CheckShebang testing more exhaustive
+* Fix CheckShebang to actually require -eux
+* Add pydocstyle to lint target (and fix violations)
+* Only accept readable files as --conf arguments
+* Pass config through to linters
+* Pass config through to lint\_job\_xml
+* Add (unused) --conf argument
+
+0.3.0
+-----
+
+* Bump snapcraft.yaml version to 0.3.0
+* Add --ignore-missing-imports to mypy tox target
+* Use Stevedore to enable third-party linters
+* Run mypy in strict mode
+* Handle empty shell sections in CheckShebang
+* Move linters to their own module
+* Configure the environment in the snap to make click happy
+
+0.2.0
+-----
+
+* Bump snapcraft.yaml version to 0.2.0
+* Add tests to lint target
+* Install test-requirements.txt in lint environment
+* Ensure isort detects jenkins\_job\_linter as a first-party module
+* Add lint to default tox targets
+* Use click to ensure argument is an existent directory
+* Modify TestMain to use click.testing.CliRunner
+* Replace argparse with click
+* Add requires.io badge
+* Add snapcraft badge
+* Add snapcraft.yaml to build a snap package
+* Add nocover pragmas for un-testable portions of the code
+* Add tests for full unit-test coverage
+* Add tests for main
+* Add tests for lint\_jobs\_from\_directory
+
+0.1.2
+-----
+
+* Add codecov badge
+* Pass the environment variables required by codecov
+* Add codecov tox/Travis target
+* Add Travis badge
+* Improve CheckShebang linting
+* Add .travis.yml
+* Add lint tox environment
+* Start adding testing
+* Add tox with mypy checking (and fix types)
+* Enable linters to indicate they aren't applicable to a file
+* Add CheckShebang linter
+* Allow linters to output explanatory text
+
+0.1.1
+-----
+
+* Restore [files] section of setup.cfg
+* Move file in to a package
+* Fix setup.cfg
+
+0.1.0
+-----
+
+* Add initial implementation
+* Initial commit
