@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: streettraffic
+Version: 0.2.0
+Summary: Monitor the traffic flow of your favorite routes, cities, and more
+Home-page: https://github.com/vwxyzjn/streettraffic
+Author: Costa Huang
+Author-email: Costa.Huang@outlook.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
