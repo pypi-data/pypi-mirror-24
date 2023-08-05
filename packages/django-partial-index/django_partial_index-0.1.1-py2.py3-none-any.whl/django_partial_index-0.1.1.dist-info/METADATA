@@ -1,0 +1,98 @@
+Metadata-Version: 2.0
+Name: django-partial-index
+Version: 0.1.1
+Summary: PostgreSQL partial indexes for Django
+Home-page: https://github.com/mattiaslinnap/django-partial-index
+Author: Mattias Linnap
+Author-email: mattias@linnap.com
+License: BSD
+Download-URL: https://github.com/mattiaslinnap/django-partial-index/archive/0.1.0.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Database
+Classifier: Topic :: Internet :: WWW/HTTP
+
+# django-partial-index
+
+Partial (sometimes also called filtered or conditional) index support for Django.
+
+With partial indexes, only some subset of the rows in the table have corresponding index entries.
+This can be useful for optimizing index size and query speed, and to add unique constraints for only selected rows.
+
+https://www.postgresql.org/docs/current/static/indexes-partial.html
+
+https://sqlite.org/partialindex.html
+
+
+## Install
+
+`pip install django-partial-index`
+
+Requirements:
+
+* Django 1.11 or later.
+* PostgreSQL or SQLite database backend. (Partial indexes are not supported on MySQL, and require major hackery on Oracle.)
+
+
+## Usage
+
+With `unique=True`, this can be used to create unique constraints for a subset of the rows.
+For example, to enforce that each user can only have one non-deleted room booking at a time:
+
+```python
+from partial_index import PartialIndex
+
+class RoomBooking(models.Model):
+    user = models.ForeignKey(User)
+    room = models.ForeignKey(Room)
+    deleted_at = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        # unique_together = [('user', 'room')] - Does not allow multiple deleted rows. Instead use:
+        indexes = [
+            PartialIndex(fields=['user', 'room'], unique=True, where='deleted_at IS NULL')
+        ]
+```
+
+With `unique=False`, partial indexes can be used to optimise lookups that return only a small subset of the rows.
+For example, on a job queue table with millions of completed, and very few pending jobs, it can be used to
+speed up a "find next pending job" query:
+
+```python
+from partial_index import PartialIndex
+
+class Job(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True)
+    is_complete = models.BooleanField(default=False)
+
+    class Meta:
+        indexes = [
+            PartialIndex(fields=['created_at'], unique=False, where='is_complete = false')
+        ]
+```
+
+Of course, these (unique) indexes could be created by a handwritten [RunSQL migration](https://docs.djangoproject.com/en/1.11/ref/migration-operations/#runsql).
+But the constraints are part of the business logic, and best kept close to the model definitions.
+
+
+## TODOs
+
+* Test on Python versions older than 3.6.
+* More thorough tests.
+* Replace `where='some sql expression'` with [Django's query expressions](https://docs.djangoproject.com/en/1.11/ref/models/expressions/) that are checked for valid syntax and field names.
+* Eventually make this package obsolete by getting it merged into Django's contrib.postgres module.
+
+
