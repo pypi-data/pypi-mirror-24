@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: brap-compiler-proxy
+Version: 0.0.1
+Summary: brap compiler: proxy
+Home-page: https://github.com/brap/brap-compiler-proxy
+Author: Brian Graham
+Author-email: drakain@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/incognito/brap/tarball/0.0.1
+Description: UNKNOWN
+Keywords: dependency,injection,container
+Platform: UNKNOWN
