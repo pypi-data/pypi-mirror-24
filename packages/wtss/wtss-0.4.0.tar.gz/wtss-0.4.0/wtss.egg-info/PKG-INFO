@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: wtss
+Version: 0.4.0
+Summary: Python Client API for Web Time Series Service
+Home-page: https://github.com/e-sensing/wtss.py
+Author: Gilberto Ribeiro de Queiroz
+Author-email: gribeiro@dpi.inpe.br
+License: LGPL3
+Description: UNKNOWN
+Platform: UNKNOWN

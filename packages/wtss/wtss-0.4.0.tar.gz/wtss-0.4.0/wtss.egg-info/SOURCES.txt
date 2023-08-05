@@ -1,0 +1,8 @@
+setup.py
+wtss/__init__.py
+wtss/wtss.py
+wtss.egg-info/PKG-INFO
+wtss.egg-info/SOURCES.txt
+wtss.egg-info/dependency_links.txt
+wtss.egg-info/not-zip-safe
+wtss.egg-info/top_level.txt
