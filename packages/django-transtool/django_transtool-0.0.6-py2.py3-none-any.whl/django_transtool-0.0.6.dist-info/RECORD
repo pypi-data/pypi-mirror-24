@@ -1,0 +1,16 @@
+django_transtool-0.0.6.dist-info/DESCRIPTION.rst,sha256=wjCzhW68spZPk_GoWUM87U0a9DrsOpDqn1yZHsdjeoo,553
+django_transtool-0.0.6.dist-info/METADATA,sha256=OWqmAzr3sDOKY-85W5siLLhrD9ZQtPaN4oYzCSkiwr8,1577
+django_transtool-0.0.6.dist-info/RECORD,,
+django_transtool-0.0.6.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_transtool-0.0.6.dist-info/metadata.json,sha256=Kba1y8qxk5v21FXwDtJKSZCo-48MYz62l1m99uiCuZ0,1165
+django_transtool-0.0.6.dist-info/top_level.txt,sha256=nBJhFeb5-v9OO6m_eXoU96D8_W4nszKd-Phh7FJsBPM,10
+transtool/__init__.py,sha256=FjaAQCDZVPNLrDYEFgdyzDJnE_1F_GPQY8Ms8NUAh9k,76
+transtool/apps.py,sha256=oPCPjh08VBysG6cIZf3usIM6J25gBIyRu6XYdkArxZs,161
+transtool/settings.py,sha256=3dWHgJJ9PT5ZipqtnfgCjqlBoA2Tp5b2QmTcK4krUIA,2153
+transtool/tools.py,sha256=DQXVcHIgXoYu4yeJMwNsZVgmevX2a2pf-GVPdhE6hnw,1474
+transtool/views.py,sha256=7WcspRjvY0L_pyH9CVHmHwBdw3kq2oSgAHlA3fOo3UM,1546
+transtool/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transtool/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transtool/management/commands/transtool_compilemessages.py,sha256=L64RwG8l6MI2aF2Rkp5Q12EFWwi6d8QdT3CJ7MPXA4I,633
+transtool/management/commands/transtool_import.py,sha256=LFImzFjrZevyGgpv-Ph4qxpG8eKoHIxqfyd8hPbIHmY,7234
+transtool/management/commands/transtool_makemessages.py,sha256=yEgoMSXkFKN5XZoG3YOFZ3C7cPLQom-odIPlMvoO71c,5443
