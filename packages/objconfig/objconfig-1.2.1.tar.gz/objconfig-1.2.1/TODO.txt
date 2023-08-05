@@ -1,0 +1,3 @@
+in XML writer: convert dictionary values to strings before processing in XML to avoid:
+    E       TypeError: cannot serialize 4 (type int)
+    /usr/lib/python3.4/xml/etree/ElementTree.py:1059: TypeError

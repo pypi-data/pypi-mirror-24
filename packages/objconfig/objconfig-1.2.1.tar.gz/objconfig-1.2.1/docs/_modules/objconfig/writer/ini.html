@@ -1,0 +1,315 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>objconfig.writer.ini &#8212; ObjConfig 1.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../objconfig.html" accesskey="U">objconfig</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for objconfig.writer.ini</h1><div class="highlight"><pre>
+<span></span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This is a port of zend-config to Python</span>
+
+<span class="sd">Some idioms of PHP are still employed, but where possible I have Pythonized it</span>
+
+<span class="sd">IGNORE:</span>
+<span class="sd">    Author: Asher Wolfstein Copyright 2017</span>
+<span class="sd">    Blog: http://wunk.me/</span>
+<span class="sd">    E-Mail: asherwunk@gmail.com</span>
+<span class="sd">    Twitter: https://twitter.com/asherwolfstein Send Me Some Love!</span>
+<span class="sd">    Package Homepage: http://wunk.me/programming-projects/objconfig-python/</span>
+<span class="sd">    GitHub: http://github.com/asherwunk/objconfig for the source repository</span>
+<span class="sd">    DevPost: https://devpost.com/software/objconfig</span>
+<span class="sd">    Buy Me A Coffee: https://ko-fi.com/A18224XC</span>
+<span class="sd">    Support Me On Patreon: https://www.patreon.com/asherwolfstein</span>
+<span class="sd">IGNORE</span>
+
+<span class="sd">Following is the header as given in zend-config::</span>
+
+<span class="sd">    /**</span>
+<span class="sd">     * Zend Framework (http://framework.zend.com/)</span>
+<span class="sd">     *</span>
+<span class="sd">     * @link      http://github.com/zendframework/zf2 for the</span>
+<span class="sd">     *            canonical source repository</span>
+<span class="sd">     * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc.</span>
+<span class="sd">     *            (http://www.zend.com)</span>
+<span class="sd">     * @license   http://framework.zend.com/license/new-bsd New BSD License</span>
+<span class="sd">     */</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">objconfig.writer</span> <span class="k">import</span> <span class="n">AbstractWriter</span>
+<span class="kn">from</span> <span class="nn">objconfig.exception</span> <span class="k">import</span> <span class="n">RuntimeException</span>
+<span class="kn">import</span> <span class="nn">inspect</span>
+
+
+<div class="viewcode-block" id="Ini"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.ini.Ini">[docs]</a><span class="k">class</span> <span class="nc">Ini</span><span class="p">(</span><span class="n">AbstractWriter</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Following is the class documentation as given in zend-config:</span>
+<span class="sd">    </span>
+<span class="sd">    There is no documentation</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nestSeparator</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">renderWithoutSections</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initializes nestSeparator and renderWithoutSections.&quot;&quot;&quot;</span>
+        
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Separator for nesting levels of configuration data identifiers.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @var string</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nestSeparator</span> <span class="o">=</span> <span class="n">nestSeparator</span>
+        
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * If true the INI string is rendered in the global namespace without</span>
+<span class="sd">             * sections.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @var bool</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">renderWithoutSections</span> <span class="o">=</span> <span class="n">renderWithoutSections</span>
+    
+<div class="viewcode-block" id="Ini.setNestSeparator"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.ini.Ini.setNestSeparator">[docs]</a>    <span class="k">def</span> <span class="nf">setNestSeparator</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">separator</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Set nest separator.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  string $separator</span>
+<span class="sd">             * @return self</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">nestSeparator</span> <span class="o">=</span> <span class="n">separator</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+    
+<div class="viewcode-block" id="Ini.getNestSeparator"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.ini.Ini.getNestSeparator">[docs]</a>    <span class="k">def</span> <span class="nf">getNestSeparator</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Get nest separator.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @return string</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nestSeparator</span></div>
+    
+<div class="viewcode-block" id="Ini.setRenderWithoutSectionsFlags"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.ini.Ini.setRenderWithoutSectionsFlags">[docs]</a>    <span class="k">def</span> <span class="nf">setRenderWithoutSectionsFlags</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">withoutSections</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Set if rendering should occur without sections or not.</span>
+<span class="sd">             *</span>
+<span class="sd">             * If set to true, the INI file is rendered without sections completely</span>
+<span class="sd">             * into the global namespace of the INI file.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  bool $withoutSections</span>
+<span class="sd">             * @return Ini</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">renderWithoutSections</span> <span class="o">=</span> <span class="n">withoutSections</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+    
+<div class="viewcode-block" id="Ini.shouldRenderWithoutSections"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.ini.Ini.shouldRenderWithoutSections">[docs]</a>    <span class="k">def</span> <span class="nf">shouldRenderWithoutSections</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Return whether the writer should render without sections.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @return bool</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">renderWithoutSections</span></div>
+    
+<div class="viewcode-block" id="Ini.processConfig"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.ini.Ini.processConfig">[docs]</a>    <span class="k">def</span> <span class="nf">processConfig</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * processConfig(): defined by AbstractWriter.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  array $config</span>
+<span class="sd">             * @return string</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="n">config</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">toArray</span><span class="p">()</span> <span class="k">if</span> <span class="s1">&#39;toArray&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">config</span><span class="p">)</span> <span class="ow">and</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">toArray</span><span class="p">)</span> <span class="k">else</span> <span class="n">config</span>
+        <span class="n">iniContents</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">shouldRenderWithoutSections</span><span class="p">():</span>
+            <span class="n">iniContents</span> <span class="o">=</span> <span class="s2">&quot;[DEFAULT]</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">addBranch</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">config</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sortRootElements</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;DEFAULT&quot;</span><span class="p">]:</span>
+                <span class="k">del</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;DEFAULT&quot;</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">sectionName</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                    <span class="n">iniContents</span> <span class="o">+=</span> <span class="n">sectionName</span> <span class="o">+</span> <span class="s2">&quot; = &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">prepareValue</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">iniContents</span> <span class="o">+=</span> <span class="s2">&quot;[&quot;</span> <span class="o">+</span> <span class="n">sectionName</span> <span class="o">+</span> <span class="s2">&quot;]</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">addBranch</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="k">return</span> <span class="n">iniContents</span></div>
+    
+<div class="viewcode-block" id="Ini.addBranch"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.ini.Ini.addBranch">[docs]</a>    <span class="k">def</span> <span class="nf">addBranch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="n">parents</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Add a branch to an INI string recursively.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  array $config</span>
+<span class="sd">             * @param  array $parents</span>
+<span class="sd">             * @return string</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="n">parents</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">parents</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">iniContents</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">group</span> <span class="o">=</span> <span class="n">parents</span> <span class="o">+</span> <span class="p">[</span><span class="n">key</span><span class="p">]</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">iniContents</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">addBranch</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">group</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">iniContents</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">nestSeparator</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">group</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; = &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">prepareValue</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="k">return</span> <span class="n">iniContents</span></div>
+    
+<div class="viewcode-block" id="Ini.prepareValue"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.ini.Ini.prepareValue">[docs]</a>    <span class="k">def</span> <span class="nf">prepareValue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        NOTE:</span>
+<span class="sd">            Just converts to string (minus double-quotes)</span>
+<span class="sd">        </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Prepare a value for INI.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  mixed $value</span>
+<span class="sd">             * @return string</span>
+<span class="sd">             * @throws Exception\RuntimeException</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="s1">&#39;&quot;&#39;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">RuntimeException</span><span class="p">(</span><span class="s2">&quot;Ini: Value Cannot Contain Double Quotes&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Ini.sortRootElements"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.ini.Ini.sortRootElements">[docs]</a>    <span class="k">def</span> <span class="nf">sortRootElements</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        NOTE:</span>
+<span class="sd">            Default section replaces empty section, as Ini reader won&#39;t read without sections</span>
+<span class="sd">        </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Root elements that are not assigned to any section needs to be on the</span>
+<span class="sd">             * top of config.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  array $config</span>
+<span class="sd">             * @return array</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="n">ret</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;DEFAULT&quot;</span><span class="p">:</span> <span class="p">{}}</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="c1"># v1.1.1 fixed error of two arguments into one dict</span>
+                <span class="n">ret</span><span class="p">[</span><span class="s2">&quot;DEFAULT&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">})</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">ret</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">return</span> <span class="n">ret</span></div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../objconfig.html" >objconfig</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Asher Wolfstein.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+# Include the license file
+include *.md
+include *.txt
+include LICENSE
+include Makefile
+recursive-include source *.py
+recursive-include source *.rst
+recursive-include docs *.buildinfo
+recursive-include docs *.css
+recursive-include docs *.gif
+recursive-include docs *.html
+recursive-include docs *.inv
+recursive-include docs *.js
+recursive-include docs *.nojekyll
+recursive-include docs *.png
+recursive-include docs *.txt

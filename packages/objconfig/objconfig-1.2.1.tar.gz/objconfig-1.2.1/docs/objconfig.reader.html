@@ -1,0 +1,593 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>objconfig.reader package &#8212; ObjConfig 1.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="objconfig.util package" href="objconfig.util.html" />
+    <link rel="prev" title="objconfig.processor package" href="objconfig.processor.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="objconfig.util.html" title="objconfig.util package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="objconfig.processor.html" title="objconfig.processor package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >objconfig</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="objconfig.html" accesskey="U">objconfig package</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="objconfig-reader-package">
+<h1>objconfig.reader package<a class="headerlink" href="#objconfig-reader-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-objconfig.reader.ini">
+<span id="objconfig-reader-ini-module"></span><h2>objconfig.reader.ini module<a class="headerlink" href="#module-objconfig.reader.ini" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.reader.ini.Ini">
+<em class="property">class </em><code class="descclassname">objconfig.reader.ini.</code><code class="descname">Ini</code><span class="sig-paren">(</span><em>nestSeparator=’.’</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/ini.html#Ini"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.ini.Ini" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#objconfig.reader.readerinterface.ReaderInterface" title="objconfig.reader.readerinterface.ReaderInterface"><code class="xref py py-class docutils literal"><span class="pre">objconfig.reader.readerinterface.ReaderInterface</span></code></a></p>
+<p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">INI</span> <span class="n">config</span> <span class="n">reader</span><span class="o">.</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="objconfig.reader.ini.Ini.buildNestedSection">
+<code class="descname">buildNestedSection</code><span class="sig-paren">(</span><em>sections</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/ini.html#Ini.buildNestedSection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.ini.Ini.buildNestedSection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Process a nested section
+ *
+ * @param array $sections
+ * @param mixed $value
+ * @return array
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="objconfig.reader.ini.Ini.configParserToDict">
+<em class="property">static </em><code class="descname">configParserToDict</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/ini.html#Ini.configParserToDict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.ini.Ini.configParserToDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform a configparser object into a dictionary.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.ini.Ini.fromFile">
+<code class="descname">fromFile</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/ini.html#Ini.fromFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.ini.Ini.fromFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * fromFile(): defined by Reader interface.
+ *
+ * @see    ReaderInterface::fromFile()
+ * @param  string $filename
+ * @return array
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.ini.Ini.fromString">
+<code class="descname">fromString</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/ini.html#Ini.fromString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.ini.Ini.fromString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * fromString(): defined by Reader interface.
+ *
+ * @param  string $string
+ * @return array|bool
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.ini.Ini.getNestSeparator">
+<code class="descname">getNestSeparator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/ini.html#Ini.getNestSeparator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.ini.Ini.getNestSeparator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Get</span> <span class="n">nest</span> <span class="n">separator</span><span class="o">.</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@return</span> <span class="n">string</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="objconfig.reader.ini.Ini.nestSeparator">
+<code class="descname">nestSeparator</code><em class="property"> = None</em><a class="headerlink" href="#objconfig.reader.ini.Ini.nestSeparator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Directory</span> <span class="n">of</span> <span class="n">the</span> <span class="n">file</span> <span class="n">to</span> <span class="n">process</span><span class="o">.</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@var</span> <span class="n">string</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.ini.Ini.process">
+<code class="descname">process</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/ini.html#Ini.process"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.ini.Ini.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Process data from the parsed ini file.
+ *
+ * @param  array $data
+ * @return array
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.ini.Ini.processKey">
+<code class="descname">processKey</code><span class="sig-paren">(</span><em>key</em>, <em>value</em>, <em>ret</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/ini.html#Ini.processKey"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.ini.Ini.processKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Process a key.
+ *
+ * @param  string $key
+ * @param  string $value
+ * @param  array  $config
+ * @return array
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.ini.Ini.processSection">
+<code class="descname">processSection</code><span class="sig-paren">(</span><em>section</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/ini.html#Ini.processSection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.ini.Ini.processSection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Process a section.
+ *
+ * @param  array $section
+ * @return array
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.ini.Ini.setNestSeparator">
+<code class="descname">setNestSeparator</code><span class="sig-paren">(</span><em>separator</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/ini.html#Ini.setNestSeparator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.ini.Ini.setNestSeparator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Set nest separator.
+ *
+ * @param  string $separator
+ * @return self
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.reader.json">
+<span id="objconfig-reader-json-module"></span><h2>objconfig.reader.json module<a class="headerlink" href="#module-objconfig.reader.json" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.reader.json.Json">
+<em class="property">class </em><code class="descclassname">objconfig.reader.json.</code><code class="descname">Json</code><a class="reference internal" href="_modules/objconfig/reader/json.html#Json"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.json.Json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#objconfig.reader.readerinterface.ReaderInterface" title="objconfig.reader.readerinterface.ReaderInterface"><code class="xref py py-class docutils literal"><span class="pre">objconfig.reader.readerinterface.ReaderInterface</span></code></a></p>
+<p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">JSON</span> <span class="n">config</span> <span class="n">reader</span><span class="o">.</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="objconfig.reader.json.Json.fromFile">
+<code class="descname">fromFile</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/json.html#Json.fromFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.json.Json.fromFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * fromFile(): defined by Reader interface.
+ *
+ * @see    ReaderInterface::fromFile()
+ * @param  string $filename
+ * @return array
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.json.Json.fromString">
+<code class="descname">fromString</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/json.html#Json.fromString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.json.Json.fromString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * fromString(): defined by Reader interface.
+ *
+ * @param  string $string
+ * @return array|bool
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.reader.readerinterface">
+<span id="objconfig-reader-readerinterface-module"></span><h2>objconfig.reader.readerinterface module<a class="headerlink" href="#module-objconfig.reader.readerinterface" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.reader.readerinterface.ReaderInterface">
+<em class="property">class </em><code class="descclassname">objconfig.reader.readerinterface.</code><code class="descname">ReaderInterface</code><a class="reference internal" href="_modules/objconfig/reader/readerinterface.html#ReaderInterface"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.readerinterface.ReaderInterface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>The following is an ‘interface’ (abstraction) to be implemented
+by all configuration readers</p>
+<dl class="method">
+<dt id="objconfig.reader.readerinterface.ReaderInterface.fromFile">
+<code class="descname">fromFile</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/readerinterface.html#ReaderInterface.fromFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.readerinterface.ReaderInterface.fromFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize configuration object from file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.readerinterface.ReaderInterface.fromString">
+<code class="descname">fromString</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/readerinterface.html#ReaderInterface.fromString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.readerinterface.ReaderInterface.fromString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize configuration object from a string.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.reader.xml">
+<span id="objconfig-reader-xml-module"></span><h2>objconfig.reader.xml module<a class="headerlink" href="#module-objconfig.reader.xml" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.reader.xml.Xml">
+<em class="property">class </em><code class="descclassname">objconfig.reader.xml.</code><code class="descname">Xml</code><a class="reference internal" href="_modules/objconfig/reader/xml.html#Xml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.xml.Xml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#objconfig.reader.readerinterface.ReaderInterface" title="objconfig.reader.readerinterface.ReaderInterface"><code class="xref py py-class docutils literal"><span class="pre">objconfig.reader.readerinterface.ReaderInterface</span></code></a></p>
+<p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">XML</span> <span class="n">config</span> <span class="n">reader</span><span class="o">.</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="objconfig.reader.xml.Xml.fromFile">
+<code class="descname">fromFile</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/xml.html#Xml.fromFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.xml.Xml.fromFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * fromFile(): defined by Reader interface.
+ *
+ * @see    ReaderInterface::fromFile()
+ * @param  string $filename
+ * @return array
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.xml.Xml.fromString">
+<code class="descname">fromString</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/xml.html#Xml.fromString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.xml.Xml.fromString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * fromString(): defined by Reader interface.
+ *
+ * @param  string $string
+ * @return array|bool
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.xml.Xml.loader">
+<code class="descname">loader</code><span class="sig-paren">(</span><em>href</em>, <em>parse</em>, <em>encoding=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/xml.html#Xml.loader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.xml.Xml.loader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the XML file from a file location</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>href: absolute/relative location of the file
+parse: do we immediately parse the file
+encoding: useful if not parsing, decodes the file from this encoding</dd>
+<dt>Returns:</dt>
+<dd>The file decoded file data if not parsed, otherwise the the ElementTree.parsed() root</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.xml.Xml.process">
+<code class="descname">process</code><span class="sig-paren">(</span><em>elem</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/xml.html#Xml.process"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.xml.Xml.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Process</span> <span class="n">the</span> <span class="nb">next</span> <span class="n">inner</span> <span class="n">element</span><span class="o">.</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@return</span> <span class="n">mixed</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="objconfig.reader.xml.Xml.root">
+<code class="descname">root</code><em class="property"> = None</em><a class="headerlink" href="#objconfig.reader.xml.Xml.root" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Directory</span> <span class="n">of</span> <span class="n">the</span> <span class="n">JSON</span> <span class="n">file</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@var</span> <span class="n">string</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.reader.yaml">
+<span id="objconfig-reader-yaml-module"></span><h2>objconfig.reader.yaml module<a class="headerlink" href="#module-objconfig.reader.yaml" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>NOTE: This file requires PyYaml, which is recorded in the setup.py</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.reader.yaml.Yaml">
+<em class="property">class </em><code class="descclassname">objconfig.reader.yaml.</code><code class="descname">Yaml</code><a class="reference internal" href="_modules/objconfig/reader/yaml.html#Yaml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.yaml.Yaml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#objconfig.reader.readerinterface.ReaderInterface" title="objconfig.reader.readerinterface.ReaderInterface"><code class="xref py py-class docutils literal"><span class="pre">objconfig.reader.readerinterface.ReaderInterface</span></code></a></p>
+<p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">YAML</span> <span class="n">config</span> <span class="n">reader</span><span class="o">.</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="objconfig.reader.yaml.Yaml.fromFile">
+<code class="descname">fromFile</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/yaml.html#Yaml.fromFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.yaml.Yaml.fromFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * fromFile(): defined by Reader interface.
+ *
+ * @see    ReaderInterface::fromFile()
+ * @param  string $filename
+ * @return array
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.yaml.Yaml.fromString">
+<code class="descname">fromString</code><span class="sig-paren">(</span><em>string</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/yaml.html#Yaml.fromString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.yaml.Yaml.fromString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * fromString(): defined by Reader interface.
+ *
+ * @param  string $string
+ * @return array|bool
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.reader.yaml.Yaml.process">
+<code class="descname">process</code><span class="sig-paren">(</span><em>array</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/reader/yaml.html#Yaml.process"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.reader.yaml.Yaml.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Process the array for @include
+ *
+ * @param  array $data
+ * @return array
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="objconfig.reader.yaml.Yaml.safe">
+<code class="descname">safe</code><em class="property"> = None</em><a class="headerlink" href="#objconfig.reader.yaml.Yaml.safe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Directory</span> <span class="n">of</span> <span class="n">the</span> <span class="n">JSON</span> <span class="n">file</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@var</span> <span class="n">string</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.reader">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-objconfig.reader" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">objconfig.reader package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-objconfig.reader.ini">objconfig.reader.ini module</a></li>
+<li><a class="reference internal" href="#module-objconfig.reader.json">objconfig.reader.json module</a></li>
+<li><a class="reference internal" href="#module-objconfig.reader.readerinterface">objconfig.reader.readerinterface module</a></li>
+<li><a class="reference internal" href="#module-objconfig.reader.xml">objconfig.reader.xml module</a></li>
+<li><a class="reference internal" href="#module-objconfig.reader.yaml">objconfig.reader.yaml module</a></li>
+<li><a class="reference internal" href="#module-objconfig.reader">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="objconfig.processor.html"
+                        title="previous chapter">objconfig.processor package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="objconfig.util.html"
+                        title="next chapter">objconfig.util package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/objconfig.reader.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="objconfig.util.html" title="objconfig.util package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="objconfig.processor.html" title="objconfig.processor package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >objconfig</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="objconfig.html" >objconfig package</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Asher Wolfstein.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.
+    </div>
+  </body>
+</html>

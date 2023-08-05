@@ -1,0 +1,8 @@
+pyyaml
+portalocker
+
+[test]
+coverage
+
+[dev]
+check-manifest

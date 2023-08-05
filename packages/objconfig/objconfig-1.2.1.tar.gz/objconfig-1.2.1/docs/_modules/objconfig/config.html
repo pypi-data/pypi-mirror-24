@@ -1,0 +1,504 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>objconfig.config &#8212; ObjConfig 1.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../objconfig.html" accesskey="U">objconfig</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for objconfig.config</h1><div class="highlight"><pre>
+<span></span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This is a port of zend-config to Python</span>
+
+<span class="sd">Some idioms of PHP are still employed, but where possible I have Pythonized it</span>
+
+<span class="sd">IGNORE:</span>
+<span class="sd">    Author: Asher Wolfstein Copyright 2017</span>
+<span class="sd">    Blog: http://wunk.me/</span>
+<span class="sd">    E-Mail: asherwunk@gmail.com</span>
+<span class="sd">    Twitter: https://twitter.com/asherwolfstein Send Me Some Love!</span>
+<span class="sd">    Package Homepage: http://wunk.me/programming-projects/objconfig-python/</span>
+<span class="sd">    GitHub: http://github.com/asherwunk/objconfig for the source repository</span>
+<span class="sd">    DevPost: https://devpost.com/software/objconfig</span>
+<span class="sd">    Buy Me A Coffee: https://ko-fi.com/A18224XC</span>
+<span class="sd">    Support Me On Patreon: https://www.patreon.com/asherwolfstein</span>
+<span class="sd">IGNORE</span>
+
+<span class="sd">Following is the header as given in zend-config::</span>
+
+<span class="sd">    /**</span>
+<span class="sd">     * Zend Framework (http://framework.zend.com/)</span>
+<span class="sd">     *</span>
+<span class="sd">     * @link      http://github.com/zendframework/zf2 for the</span>
+<span class="sd">     *            canonical source repository</span>
+<span class="sd">     * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc.</span>
+<span class="sd">     *            (http://www.zend.com)</span>
+<span class="sd">     * @license   http://framework.zend.com/license/new-bsd New BSD License</span>
+<span class="sd">     */</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">objconfig.util</span> <span class="k">import</span> <span class="n">ArrayAccess</span>
+<span class="kn">from</span> <span class="nn">objconfig.util</span> <span class="k">import</span> <span class="n">Countable</span>
+<span class="kn">from</span> <span class="nn">objconfig.util</span> <span class="k">import</span> <span class="n">Iterator</span>
+<span class="kn">from</span> <span class="nn">objconfig.exception</span> <span class="k">import</span> <span class="n">InvalidArgumentException</span>
+<span class="kn">from</span> <span class="nn">objconfig.exception</span> <span class="k">import</span> <span class="n">RuntimeException</span>
+<span class="kn">import</span> <span class="nn">inspect</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+
+
+<div class="viewcode-block" id="Config"><a class="viewcode-back" href="../../objconfig.html#objconfig.config.Config">[docs]</a><span class="k">class</span> <span class="nc">Config</span><span class="p">(</span><span class="n">Countable</span><span class="p">,</span> <span class="n">Iterator</span><span class="p">,</span> <span class="n">ArrayAccess</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Following is the class documentation as given in zend-config::</span>
+<span class="sd">    </span>
+<span class="sd">        /**</span>
+<span class="sd">         * Provides a property based interface to an array.</span>
+<span class="sd">         * The data are read-only unless $allowModifications is set to true</span>
+<span class="sd">         * on construction.</span>
+<span class="sd">         *</span>
+<span class="sd">         * Implements Countable, Iterator and ArrayAccess</span>
+<span class="sd">         * to facilitate easy access to the data.</span>
+<span class="sd">         */</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="k">def</span> <span class="nf">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Notes:</span>
+<span class="sd">            __len__ is inherited from Countable</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Notes:</span>
+<span class="sd">            __iter__ is inherited from Iterator</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">def</span> <span class="nf">ConfigIterator</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">yield</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span>
+        <span class="k">return</span> <span class="n">ConfigIterator</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Notes:</span>
+<span class="sd">            __getitem__ is inherited by ArrayAccess</span>
+<span class="sd">        </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * offsetGet(): defined by ArrayAccess interface.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @see    ArrayAccess::offsetGet()</span>
+<span class="sd">             * @param  mixed $offset</span>
+<span class="sd">             * @return mixed</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+    
+    <span class="k">def</span> <span class="nf">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Notes:</span>
+<span class="sd">            __setitem_ is inherited by ArrayAccess</span>
+<span class="sd">            </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * offsetSet(): defined by ArrayAccess interface.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @see    ArrayAccess::offsetSet()</span>
+<span class="sd">             * @param  mixed $offset</span>
+<span class="sd">             * @param  mixed $value</span>
+<span class="sd">             * @return void</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="fm">__setattr__</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">__delitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Notes:</span>
+<span class="sd">            __delitem__ is inherited by ArrayAccess</span>
+<span class="sd">        </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * offsetUnset(): defined by ArrayAccess interface.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @see    ArrayAccess::offsetUnset()</span>
+<span class="sd">             * @param  mixed $offset</span>
+<span class="sd">             * @return void</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="fm">__delattr__</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">array</span><span class="p">,</span> <span class="n">allowModifications</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Notes:</span>
+<span class="sd">            array is expected to be instance of dict</span>
+<span class="sd">            OR implement toArray() method</span>
+<span class="sd">        </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Constructor.</span>
+<span class="sd">             *</span>
+<span class="sd">             * Data is read-only unless $allowModifications is set to true</span>
+<span class="sd">             * on construction.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  array   $array</span>
+<span class="sd">             * @param  bool $allowModifications</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Whether modifications to configuration data are allowed.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @var bool</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__allowModifications</span> <span class="o">=</span> <span class="n">allowModifications</span>
+        
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        protected $skipNextIteration;</span>
+<span class="sd">        </span>
+<span class="sd">        Notes:</span>
+<span class="sd">            Not necessary, items() is an up-to-date view</span>
+<span class="sd">            </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Used when unsetting values during iteration to ensure we do not skip</span>
+<span class="sd">             * the next element.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @var bool</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>  <span class="c1"># -- unnecessary</span>
+        
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Data within the configuration.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @var array</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__data</span> <span class="o">=</span> <span class="p">{}</span>
+        
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">array</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="s1">&#39;items&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">allowModifications</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__allowModifications</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="s1">&#39;toArray&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="ow">and</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">toArray</span><span class="p">):</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">toArray</span><span class="p">(),</span> <span class="n">allowModifications</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__allowModifications</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">InvalidArgumentException</span><span class="p">(</span><span class="s2">&quot;Config: __init__ passed array doesn&#39;t implement key, value : items()&quot;</span><span class="p">)</span>
+    
+<div class="viewcode-block" id="Config.get"><a class="viewcode-back" href="../../objconfig.html#objconfig.config.Config.get">[docs]</a>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Retrieve a value and return $default if there is no element set.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  string $name</span>
+<span class="sd">             * @param  mixed  $default</span>
+<span class="sd">             * @return mixed</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">default</span></div>
+    
+    <span class="k">def</span> <span class="nf">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attribute</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Magic function so that $obj-&gt;value will work.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  string $name</span>
+<span class="sd">             * @return mixed</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">attribute</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">__setattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attribute</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Notes:</span>
+<span class="sd">            Makes a new Config object if value implements key, value : items()</span>
+<span class="sd">        </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Set a value in the config.</span>
+<span class="sd">             *</span>
+<span class="sd">             * Only allow setting of a property if $allowModifications  was set to true</span>
+<span class="sd">             * on construction. Otherwise, throw an exception.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  string $name</span>
+<span class="sd">             * @param  mixed  $value</span>
+<span class="sd">             * @return void</span>
+<span class="sd">             * @throws Exception\RuntimeException</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="n">attribute</span> <span class="o">==</span> <span class="s1">&#39;_Config__allowModifications&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;_Config__allowModifications&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+            <span class="k">return</span>
+        <span class="k">elif</span> <span class="n">attribute</span> <span class="o">==</span> <span class="s1">&#39;_Config__data&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;_Config__data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__allowModifications</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">attribute</span><span class="p">]</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">allowModifications</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">attribute</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">RuntimeException</span><span class="p">(</span><span class="s2">&quot;Config: __setattr__ attribute must have name&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">attribute</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">RuntimeException</span><span class="p">(</span><span class="s2">&quot;Config: __setattr__ config is read only&quot;</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">__deepcopy__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">memo</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Deep clone of this instance to ensure that nested Zend\Configs are also</span>
+<span class="sd">             * cloned.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @return void</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="n">copyconf</span> <span class="o">=</span> <span class="n">Config</span><span class="p">({},</span> <span class="n">allowModifications</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
+            <span class="nb">setattr</span><span class="p">(</span><span class="n">copyconf</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">__allowModifications</span><span class="p">:</span>
+            <span class="n">copyconf</span><span class="o">.</span><span class="n">isReadOnly</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">copyconf</span>
+    
+    <span class="k">def</span> <span class="nf">_clone</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    
+<div class="viewcode-block" id="Config.copy"><a class="viewcode-back" href="../../objconfig.html#objconfig.config.Config.copy">[docs]</a>    <span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_clone</span><span class="p">()</span></div>
+    
+<div class="viewcode-block" id="Config.toArray"><a class="viewcode-back" href="../../objconfig.html#objconfig.config.Config.toArray">[docs]</a>    <span class="k">def</span> <span class="nf">toArray</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Notes:</span>
+<span class="sd">            Returns a copy of the data dictionar(ies)</span>
+<span class="sd">    </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Return an associative array of the stored data.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @return array</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="n">array</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="s1">&#39;toArray&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="ow">and</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">toArray</span><span class="p">):</span>
+                <span class="n">array</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">toArray</span><span class="p">()</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">array</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">return</span> <span class="n">array</span></div>
+    
+    <span class="k">def</span> <span class="nf">_isset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attribute</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * isset() overloading</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  string $name</span>
+<span class="sd">             * @return bool</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="n">attribute</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__data</span>
+    
+    <span class="k">def</span> <span class="nf">__delattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attribute</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * unset() overloading</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  string $name</span>
+<span class="sd">             * @return void</span>
+<span class="sd">             * @throws Exception\InvalidArgumentException</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__allowModifications</span><span class="p">:</span>
+            <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">attribute</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">InvalidArgumentException</span><span class="p">(</span><span class="s2">&quot;Config: __delattr__ config is read only&quot;</span><span class="p">)</span>
+    
+<div class="viewcode-block" id="Config.merge"><a class="viewcode-back" href="../../objconfig.html#objconfig.config.Config.merge">[docs]</a>    <span class="k">def</span> <span class="nf">merge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">merge</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Notes:</span>
+<span class="sd">            Checks for existence of merge and toArray method</span>
+<span class="sd">        </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Merge another Config with this one.</span>
+<span class="sd">             *</span>
+<span class="sd">             * For duplicate keys, the following will be performed:</span>
+<span class="sd">             * - Nested Configs will be recursively merged.</span>
+<span class="sd">             * - Items in $merge with INTEGER keys will be appended.</span>
+<span class="sd">             * - Items in $merge with STRING keys will overwrite current values.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  Config $merge</span>
+<span class="sd">             * @return Config</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">merge</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">:</span>
+                <span class="k">if</span> <span class="p">((</span><span class="s1">&#39;toArray&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="ow">and</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">toArray</span><span class="p">))</span>
+                        <span class="ow">and</span> <span class="p">(</span><span class="s1">&#39;merge&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="ow">and</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">merge</span><span class="p">))):</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="s1">&#39;toArray&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="ow">and</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">toArray</span><span class="p">):</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">toArray</span><span class="p">(),</span> <span class="n">allowModifications</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__allowModifications</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="s1">&#39;toArray&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="ow">and</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">toArray</span><span class="p">):</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">toArray</span><span class="p">(),</span> <span class="n">allowModifications</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__allowModifications</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+    
+<div class="viewcode-block" id="Config.setReadOnly"><a class="viewcode-back" href="../../objconfig.html#objconfig.config.Config.setReadOnly">[docs]</a>    <span class="k">def</span> <span class="nf">setReadOnly</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Note:</span>
+<span class="sd">            Tests for setReadOnly method</span>
+<span class="sd">        </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Prevent any more modifications being made to this instance.</span>
+<span class="sd">             *</span>
+<span class="sd">             * Useful after merge() has been used to merge multiple Config objects</span>
+<span class="sd">             * into one object which should then not be modified again.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @return void</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">__allowModifications</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__data</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+            <span class="k">if</span> <span class="s1">&#39;setReadOnly&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="ow">and</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">setReadOnly</span><span class="p">):</span>
+                <span class="n">value</span><span class="o">.</span><span class="n">setReadOnly</span><span class="p">()</span></div>
+    
+<div class="viewcode-block" id="Config.isReadOnly"><a class="viewcode-back" href="../../objconfig.html#objconfig.config.Config.isReadOnly">[docs]</a>    <span class="k">def</span> <span class="nf">isReadOnly</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Returns whether this Config object is read only or not.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @return bool</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">__allowModifications</span></div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../objconfig.html" >objconfig</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Asher Wolfstein.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.
+    </div>
+  </body>
+</html>

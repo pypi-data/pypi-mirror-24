@@ -1,0 +1,282 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>objconfig.reader.xml &#8212; ObjConfig 1.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../objconfig.html" accesskey="U">objconfig</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for objconfig.reader.xml</h1><div class="highlight"><pre>
+<span></span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This is a port of zend-config to Python</span>
+
+<span class="sd">Some idioms of PHP are still employed, but where possible I have Pythonized it</span>
+
+<span class="sd">IGNORE:</span>
+<span class="sd">    Author: Asher Wolfstein Copyright 2017</span>
+<span class="sd">    Blog: http://wunk.me/</span>
+<span class="sd">    E-Mail: asherwunk@gmail.com</span>
+<span class="sd">    Twitter: https://twitter.com/asherwolfstein Send Me Some Love!</span>
+<span class="sd">    Package Homepage: http://wunk.me/programming-projects/objconfig-python/</span>
+<span class="sd">    GitHub: http://github.com/asherwunk/objconfig for the source repository</span>
+<span class="sd">    DevPost: https://devpost.com/software/objconfig</span>
+<span class="sd">    Buy Me A Coffee: https://ko-fi.com/A18224XC</span>
+<span class="sd">    Support Me On Patreon: https://www.patreon.com/asherwolfstein</span>
+<span class="sd">IGNORE</span>
+
+<span class="sd">Following is the header as given in zend-config::</span>
+
+<span class="sd">    /**</span>
+<span class="sd">     * Zend Framework (http://framework.zend.com/)</span>
+<span class="sd">     *</span>
+<span class="sd">     * @link      http://github.com/zendframework/zf2 for the</span>
+<span class="sd">     *            canonical source repository</span>
+<span class="sd">     * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc.</span>
+<span class="sd">     *            (http://www.zend.com)</span>
+<span class="sd">     * @license   http://framework.zend.com/license/new-bsd New BSD License</span>
+<span class="sd">     */</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">objconfig.reader</span> <span class="k">import</span> <span class="n">ReaderInterface</span>
+<span class="kn">from</span> <span class="nn">objconfig.exception</span> <span class="k">import</span> <span class="n">RuntimeException</span>
+<span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="nn">ElementTree</span>
+<span class="kn">import</span> <span class="nn">xml.etree.ElementInclude</span> <span class="k">as</span> <span class="nn">ElementInclude</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+
+<div class="viewcode-block" id="Xml"><a class="viewcode-back" href="../../../objconfig.reader.html#objconfig.reader.xml.Xml">[docs]</a><span class="k">class</span> <span class="nc">Xml</span><span class="p">(</span><span class="n">ReaderInterface</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Following is the class documentation as given in zend-config::</span>
+<span class="sd">    </span>
+<span class="sd">        /**</span>
+<span class="sd">         * XML config reader.</span>
+<span class="sd">         */</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+<div class="viewcode-block" id="Xml.loader"><a class="viewcode-back" href="../../../objconfig.reader.html#objconfig.reader.xml.Xml.loader">[docs]</a>    <span class="k">def</span> <span class="nf">loader</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">href</span><span class="p">,</span> <span class="n">parse</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Load the XML file from a file location</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            href: absolute/relative location of the file</span>
+<span class="sd">            parse: do we immediately parse the file</span>
+<span class="sd">            encoding: useful if not parsing, decodes the file from this encoding</span>
+<span class="sd">        </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            The file decoded file data if not parsed, otherwise the the ElementTree.parsed() root</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="n">href</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;/&#39;</span><span class="p">:</span>
+            <span class="n">href</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="n">href</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">href</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">access</span><span class="p">(</span><span class="n">href</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">R_OK</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">RuntimeException</span><span class="p">(</span><span class="s2">&quot;Xml: File </span><span class="si">%s</span><span class="s2"> Doesn&#39;t Exist or Not Readable (xi)&quot;</span> <span class="o">%</span> <span class="n">href</span><span class="p">)</span>
+        
+        <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">href</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">parse</span> <span class="o">==</span> <span class="s2">&quot;xml&quot;</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">ElementTree</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">file</span><span class="p">)</span><span class="o">.</span><span class="n">getroot</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">encoding</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">data</span></div>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize root and directory.&quot;&quot;&quot;</span>
+        
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Actually ElementTree root element</span>
+<span class="sd">        </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * XML Reader instance.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @var XMLReader</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">root</span> <span class="o">=</span> <span class="kc">None</span>
+        
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Directory of the JSON file</span>
+<span class="sd">             *</span>
+<span class="sd">             * @var string</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">directory</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    
+<div class="viewcode-block" id="Xml.fromFile"><a class="viewcode-back" href="../../../objconfig.reader.html#objconfig.reader.xml.Xml.fromFile">[docs]</a>    <span class="k">def</span> <span class="nf">fromFile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * fromFile(): defined by Reader interface.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @see    ReaderInterface::fromFile()</span>
+<span class="sd">             * @param  string $filename</span>
+<span class="sd">             * @return array</span>
+<span class="sd">             * @throws Exception\RuntimeException</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">access</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">R_OK</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">RuntimeException</span><span class="p">(</span><span class="s2">&quot;Xml: File </span><span class="si">%s</span><span class="s2"> Doesn&#39;t Exist or Not Readable&quot;</span> <span class="o">%</span> <span class="n">filename</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">filename</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">sep</span><span class="p">))</span> <span class="ow">or</span> <span class="s1">&#39;.&#39;</span>
+        
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">xmlcontent</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="s2">&quot;@include&quot;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+                        <span class="n">include</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="n">include</span><span class="p">),</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">includedfile</span><span class="p">:</span>
+                            <span class="k">for</span> <span class="n">includedline</span> <span class="ow">in</span> <span class="n">includedfile</span><span class="p">:</span>
+                                <span class="n">xmlcontent</span> <span class="o">+=</span> <span class="n">includedline</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">xmlcontent</span> <span class="o">+=</span> <span class="n">line</span>
+            
+            <span class="bp">self</span><span class="o">.</span><span class="n">root</span> <span class="o">=</span> <span class="n">ElementTree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">xmlcontent</span><span class="p">)</span>
+            <span class="n">ElementInclude</span><span class="o">.</span><span class="n">include</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">loader</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">ElementTree</span><span class="o">.</span><span class="n">ParseError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">RuntimeException</span><span class="p">(</span><span class="s2">&quot;Xml: Error Reading XML file </span><span class="se">\&quot;</span><span class="si">%s</span><span class="se">\&quot;</span><span class="s2">: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">e</span><span class="p">))</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Xml.fromString"><a class="viewcode-back" href="../../../objconfig.reader.html#objconfig.reader.xml.Xml.fromString">[docs]</a>    <span class="k">def</span> <span class="nf">fromString</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">string</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * fromString(): defined by Reader interface.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  string $string</span>
+<span class="sd">             * @return array|bool</span>
+<span class="sd">             * @throws Exception\RuntimeException</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">string</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">{}</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">directory</span> <span class="o">=</span> <span class="kc">None</span>
+        
+        <span class="k">if</span> <span class="s2">&quot;@include&quot;</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">RuntimeException</span><span class="p">(</span><span class="s2">&quot;Xml: Cannot Process @include When Reading From String&quot;</span><span class="p">)</span>
+        
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">root</span> <span class="o">=</span> <span class="n">ElementTree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">ElementTree</span><span class="o">.</span><span class="n">ParseError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">RuntimeException</span><span class="p">(</span><span class="s2">&quot;Xml: Error Reading XML string: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">e</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Xml.process"><a class="viewcode-back" href="../../../objconfig.reader.html#objconfig.reader.xml.Xml.process">[docs]</a>    <span class="k">def</span> <span class="nf">process</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">elem</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Process the next inner element.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @return mixed</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="n">ret</span> <span class="o">=</span> <span class="p">{}</span>
+        
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">elem</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">child</span><span class="o">.</span><span class="n">getchildren</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">child</span><span class="o">.</span><span class="n">attrib</span> <span class="ow">and</span> <span class="p">(</span><span class="s2">&quot;value&quot;</span> <span class="ow">in</span> <span class="n">child</span><span class="o">.</span><span class="n">attrib</span><span class="p">):</span>
+                    <span class="n">ret</span><span class="p">[</span><span class="n">child</span><span class="o">.</span><span class="n">tag</span><span class="p">]</span> <span class="o">=</span> <span class="n">child</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;value&quot;</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">ret</span><span class="p">[</span><span class="n">child</span><span class="o">.</span><span class="n">tag</span><span class="p">]</span> <span class="o">=</span> <span class="n">child</span><span class="o">.</span><span class="n">text</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">ret</span><span class="p">[</span><span class="n">child</span><span class="o">.</span><span class="n">tag</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="n">ret</span></div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../objconfig.html" >objconfig</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Asher Wolfstein.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.
+    </div>
+  </body>
+</html>

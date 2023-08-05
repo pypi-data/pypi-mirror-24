@@ -1,0 +1,7 @@
+objconfig v1.1: (3/2/2017)
+    token processor now operates on the value "in place" rather than returning copy
+    exception module "exports" ExceptionInterface
+    abstractwriter now implements an exclusive lock when asked using portalocker
+
+objconfig v1.1.1: (3/2/2017)
+    fixed call up dictionary method 'update' in ini writer

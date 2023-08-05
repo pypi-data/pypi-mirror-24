@@ -1,0 +1,384 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>objconfig.processor package &#8212; ObjConfig 1.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="objconfig.reader package" href="objconfig.reader.html" />
+    <link rel="prev" title="objconfig.exception package" href="objconfig.exception.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="objconfig.reader.html" title="objconfig.reader package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="objconfig.exception.html" title="objconfig.exception package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >objconfig</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="objconfig.html" accesskey="U">objconfig package</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="objconfig-processor-package">
+<h1>objconfig.processor package<a class="headerlink" href="#objconfig-processor-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-objconfig.processor.processorinterface">
+<span id="objconfig-processor-processorinterface-module"></span><h2>objconfig.processor.processorinterface module<a class="headerlink" href="#module-objconfig.processor.processorinterface" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.processor.processorinterface.ProcessorInterface">
+<em class="property">class </em><code class="descclassname">objconfig.processor.processorinterface.</code><code class="descname">ProcessorInterface</code><a class="reference internal" href="_modules/objconfig/processor/processorinterface.html#ProcessorInterface"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.processorinterface.ProcessorInterface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>The following is an ‘interface’ (abstraction) to be implemented
+by all configuration processors</p>
+<dl class="method">
+<dt id="objconfig.processor.processorinterface.ProcessorInterface.process">
+<code class="descname">process</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/processorinterface.html#ProcessorInterface.process"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.processorinterface.ProcessorInterface.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Process the whole Config structure and recursively parse all its values.
+ *
+ * @param  Config $value
+ * @return Config
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.processor.processorinterface.ProcessorInterface.processValue">
+<code class="descname">processValue</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/processorinterface.html#ProcessorInterface.processValue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.processorinterface.ProcessorInterface.processValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Process a single value
+ *
+ * @param  mixed $value
+ * @return mixed
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.processor.token">
+<span id="objconfig-processor-token-module"></span><h2>objconfig.processor.token module<a class="headerlink" href="#module-objconfig.processor.token" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.processor.token.Token">
+<em class="property">class </em><code class="descclassname">objconfig.processor.token.</code><code class="descname">Token</code><span class="sig-paren">(</span><em>tokens=None</em>, <em>prefix=”</em>, <em>suffix=”</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#objconfig.processor.processorinterface.ProcessorInterface" title="objconfig.processor.processorinterface.ProcessorInterface"><code class="xref py py-class docutils literal"><span class="pre">objconfig.processor.processorinterface.ProcessorInterface</span></code></a></p>
+<p>Following is the class documentation as given in zend-config:</p>
+<p>No class documentation was given.</p>
+<dl class="method">
+<dt id="objconfig.processor.token.Token.addToken">
+<code class="descname">addToken</code><span class="sig-paren">(</span><em>token</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token.addToken"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token.addToken" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Add new token.
+ *
+ * @param  string $token
+ * @param  mixed $value
+ * @return Token
+ * @throws Exception\InvalidArgumentException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.processor.token.Token.buildMap">
+<code class="descname">buildMap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token.buildMap"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token.buildMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Build</span> <span class="n">replacement</span> <span class="nb">map</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@return</span> <span class="n">array</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.processor.token.Token.doProcess">
+<code class="descname">doProcess</code><span class="sig-paren">(</span><em>value</em>, <em>replacements</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token.doProcess"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token.doProcess" title="Permalink to this definition">¶</a></dt>
+<dd><p>CHANGELOG:
+objconfig v1.1: edit value in place rather than return copy - 3/2/2017</p>
+<p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Applies replacement map to the given value by modifying the value itself
+ *
+ * @param mixed $value
+ * @param array $replacements
+ *
+ * @return mixed
+ *
+ * @throws Exception\InvalidArgumentException if the provided value is a read-only {@see Config}
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.processor.token.Token.getPrefix">
+<code class="descname">getPrefix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token.getPrefix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token.getPrefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="nd">@return</span> <span class="n">string</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.processor.token.Token.getSuffix">
+<code class="descname">getSuffix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token.getSuffix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token.getSuffix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="nd">@return</span> <span class="n">string</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.processor.token.Token.getTokens">
+<code class="descname">getTokens</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token.getTokens"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token.getTokens" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Get</span> <span class="n">current</span> <span class="n">token</span> <span class="n">registry</span><span class="o">.</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@return</span> <span class="n">array</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.processor.token.Token.process">
+<code class="descname">process</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token.process"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Process
+ *
+ * @param  Config $config
+ * @return Config
+ * @throws Exception\InvalidArgumentException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.processor.token.Token.processValue">
+<code class="descname">processValue</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token.processValue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token.processValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Process a single value
+ *
+ * @param $value
+ * @return mixed
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.processor.token.Token.setPrefix">
+<code class="descname">setPrefix</code><span class="sig-paren">(</span><em>prefix</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token.setPrefix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token.setPrefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * @param  string $prefix
+ * @return Token
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.processor.token.Token.setSuffix">
+<code class="descname">setSuffix</code><span class="sig-paren">(</span><em>suffix</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token.setSuffix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token.setSuffix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * @param  string $suffix
+ * @return Token
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.processor.token.Token.setToken">
+<code class="descname">setToken</code><span class="sig-paren">(</span><em>token</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token.setToken"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token.setToken" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Add new token.
+ *
+ * @param string $token
+ * @param mixed $value
+ * @return Token
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.processor.token.Token.setTokens">
+<code class="descname">setTokens</code><span class="sig-paren">(</span><em>tokens</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/processor/token.html#Token.setTokens"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.processor.token.Token.setTokens" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the class documentation as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Set token registry.
+ *
+ * @param  array|Config|Traversable  $tokens  Associative array of TOKEN =&gt; value
+ *                                            to replace it with
+ * @return Token
+ * @throws Exception\InvalidArgumentException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.processor">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-objconfig.processor" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">objconfig.processor package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-objconfig.processor.processorinterface">objconfig.processor.processorinterface module</a></li>
+<li><a class="reference internal" href="#module-objconfig.processor.token">objconfig.processor.token module</a></li>
+<li><a class="reference internal" href="#module-objconfig.processor">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="objconfig.exception.html"
+                        title="previous chapter">objconfig.exception package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="objconfig.reader.html"
+                        title="next chapter">objconfig.reader package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/objconfig.processor.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="objconfig.reader.html" title="objconfig.reader package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="objconfig.exception.html" title="objconfig.exception package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >objconfig</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="objconfig.html" >objconfig package</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Asher Wolfstein.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.
+    </div>
+  </body>
+</html>

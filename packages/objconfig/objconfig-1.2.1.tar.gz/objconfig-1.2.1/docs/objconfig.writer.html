@@ -1,0 +1,594 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>objconfig.writer package &#8212; ObjConfig 1.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="objconfig.util package" href="objconfig.util.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="objconfig.util.html" title="objconfig.util package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >objconfig</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="objconfig.html" accesskey="U">objconfig package</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="objconfig-writer-package">
+<h1>objconfig.writer package<a class="headerlink" href="#objconfig-writer-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-objconfig.writer.abstractwriter">
+<span id="objconfig-writer-abstractwriter-module"></span><h2>objconfig.writer.abstractwriter module<a class="headerlink" href="#module-objconfig.writer.abstractwriter" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.writer.abstractwriter.AbstractWriter">
+<em class="property">class </em><code class="descclassname">objconfig.writer.abstractwriter.</code><code class="descname">AbstractWriter</code><a class="reference internal" href="_modules/objconfig/writer/abstractwriter.html#AbstractWriter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.abstractwriter.AbstractWriter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#objconfig.writer.writerinterface.WriterInterface" title="objconfig.writer.writerinterface.WriterInterface"><code class="xref py py-class docutils literal"><span class="pre">objconfig.writer.writerinterface.WriterInterface</span></code></a></p>
+<p>Following is the class documentation as given in zend-config:</p>
+<p>There is no class documentation</p>
+<dl class="method">
+<dt id="objconfig.writer.abstractwriter.AbstractWriter.processConfig">
+<code class="descname">processConfig</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/abstractwriter.html#AbstractWriter.processConfig"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.abstractwriter.AbstractWriter.processConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * @param array $config
+ * @return string
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.abstractwriter.AbstractWriter.toFile">
+<code class="descname">toFile</code><span class="sig-paren">(</span><em>filename</em>, <em>config</em>, <em>exclusive=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/abstractwriter.html#AbstractWriter.toFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.abstractwriter.AbstractWriter.toFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>CHANGELOG:
+objconfig v1.1: use portalocker to establish an exclusive lock if given</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * toFile(): defined by Writer interface.
+ *
+ * @see    WriterInterface::toFile()
+ * @param  string  $filename
+ * @param  mixed   $config
+ * @param  bool $exclusiveLock
+ * @return void
+ * @throws Exception\InvalidArgumentException
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.abstractwriter.AbstractWriter.toString">
+<code class="descname">toString</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/abstractwriter.html#AbstractWriter.toString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.abstractwriter.AbstractWriter.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * fromString(): defined by Reader interface.
+ *
+ * @param  string $string
+ * @return array|bool
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.writer.ini">
+<span id="objconfig-writer-ini-module"></span><h2>objconfig.writer.ini module<a class="headerlink" href="#module-objconfig.writer.ini" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.writer.ini.Ini">
+<em class="property">class </em><code class="descclassname">objconfig.writer.ini.</code><code class="descname">Ini</code><span class="sig-paren">(</span><em>nestSeparator=’.’</em>, <em>renderWithoutSections=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/ini.html#Ini"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.ini.Ini" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#objconfig.writer.abstractwriter.AbstractWriter" title="objconfig.writer.abstractwriter.AbstractWriter"><code class="xref py py-class docutils literal"><span class="pre">objconfig.writer.abstractwriter.AbstractWriter</span></code></a></p>
+<p>Following is the class documentation as given in zend-config:</p>
+<p>There is no documentation</p>
+<dl class="method">
+<dt id="objconfig.writer.ini.Ini.addBranch">
+<code class="descname">addBranch</code><span class="sig-paren">(</span><em>config</em>, <em>parents=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/ini.html#Ini.addBranch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.ini.Ini.addBranch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Add a branch to an INI string recursively.
+ *
+ * @param  array $config
+ * @param  array $parents
+ * @return string
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.ini.Ini.getNestSeparator">
+<code class="descname">getNestSeparator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/ini.html#Ini.getNestSeparator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.ini.Ini.getNestSeparator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Get</span> <span class="n">nest</span> <span class="n">separator</span><span class="o">.</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@return</span> <span class="n">string</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="objconfig.writer.ini.Ini.nestSeparator">
+<code class="descname">nestSeparator</code><em class="property"> = None</em><a class="headerlink" href="#objconfig.writer.ini.Ini.nestSeparator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">If</span> <span class="n">true</span> <span class="n">the</span> <span class="n">INI</span> <span class="n">string</span> <span class="ow">is</span> <span class="n">rendered</span> <span class="ow">in</span> <span class="n">the</span> <span class="k">global</span> <span class="n">namespace</span> <span class="n">without</span>
+ <span class="o">*</span> <span class="n">sections</span><span class="o">.</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@var</span> <span class="nb">bool</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.ini.Ini.prepareValue">
+<code class="descname">prepareValue</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/ini.html#Ini.prepareValue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.ini.Ini.prepareValue" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>NOTE:</dt>
+<dd>Just converts to string (minus double-quotes)</dd>
+</dl>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Prepare a value for INI.
+ *
+ * @param  mixed $value
+ * @return string
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.ini.Ini.processConfig">
+<code class="descname">processConfig</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/ini.html#Ini.processConfig"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.ini.Ini.processConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * processConfig(): defined by AbstractWriter.
+ *
+ * @param  array $config
+ * @return string
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.ini.Ini.setNestSeparator">
+<code class="descname">setNestSeparator</code><span class="sig-paren">(</span><em>separator</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/ini.html#Ini.setNestSeparator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.ini.Ini.setNestSeparator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Set nest separator.
+ *
+ * @param  string $separator
+ * @return self
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.ini.Ini.setRenderWithoutSectionsFlags">
+<code class="descname">setRenderWithoutSectionsFlags</code><span class="sig-paren">(</span><em>withoutSections</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/ini.html#Ini.setRenderWithoutSectionsFlags"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.ini.Ini.setRenderWithoutSectionsFlags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Set if rendering should occur without sections or not.
+ *
+ * If set to true, the INI file is rendered without sections completely
+ * into the global namespace of the INI file.
+ *
+ * @param  bool $withoutSections
+ * @return Ini
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.ini.Ini.shouldRenderWithoutSections">
+<code class="descname">shouldRenderWithoutSections</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/ini.html#Ini.shouldRenderWithoutSections"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.ini.Ini.shouldRenderWithoutSections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Return</span> <span class="n">whether</span> <span class="n">the</span> <span class="n">writer</span> <span class="n">should</span> <span class="n">render</span> <span class="n">without</span> <span class="n">sections</span><span class="o">.</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@return</span> <span class="nb">bool</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.ini.Ini.sortRootElements">
+<code class="descname">sortRootElements</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/ini.html#Ini.sortRootElements"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.ini.Ini.sortRootElements" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>NOTE:</dt>
+<dd>Default section replaces empty section, as Ini reader won’t read without sections</dd>
+</dl>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Root elements that are not assigned to any section needs to be on the
+ * top of config.
+ *
+ * @param  array $config
+ * @return array
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.writer.json">
+<span id="objconfig-writer-json-module"></span><h2>objconfig.writer.json module<a class="headerlink" href="#module-objconfig.writer.json" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.writer.json.Json">
+<em class="property">class </em><code class="descclassname">objconfig.writer.json.</code><code class="descname">Json</code><a class="reference internal" href="_modules/objconfig/writer/json.html#Json"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.json.Json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#objconfig.writer.abstractwriter.AbstractWriter" title="objconfig.writer.abstractwriter.AbstractWriter"><code class="xref py py-class docutils literal"><span class="pre">objconfig.writer.abstractwriter.AbstractWriter</span></code></a></p>
+<p>Following is the class documentation as given in zend-config:</p>
+<p>There is no documentation</p>
+<dl class="method">
+<dt id="objconfig.writer.json.Json.processConfig">
+<code class="descname">processConfig</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/json.html#Json.processConfig"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.json.Json.processConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * processConfig(): defined by AbstractWriter.
+ *
+ * @param  array $config
+ * @return string
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.writer.writerinterface">
+<span id="objconfig-writer-writerinterface-module"></span><h2>objconfig.writer.writerinterface module<a class="headerlink" href="#module-objconfig.writer.writerinterface" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.writer.writerinterface.WriterInterface">
+<em class="property">class </em><code class="descclassname">objconfig.writer.writerinterface.</code><code class="descname">WriterInterface</code><a class="reference internal" href="_modules/objconfig/writer/writerinterface.html#WriterInterface"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.writerinterface.WriterInterface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>The following is an ‘interface’ (abstraction) to be implemented
+by all configuration writers</p>
+<dl class="method">
+<dt id="objconfig.writer.writerinterface.WriterInterface.toFile">
+<code class="descname">toFile</code><span class="sig-paren">(</span><em>filename</em>, <em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/writerinterface.html#WriterInterface.toFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.writerinterface.WriterInterface.toFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Write a config object to a file.
+ *
+ * @param  string  $filename
+ * @param  mixed   $config
+ * @param  bool $exclusiveLock
+ * @return void
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.writerinterface.WriterInterface.toString">
+<code class="descname">toString</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/writerinterface.html#WriterInterface.toString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.writerinterface.WriterInterface.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Write a config object to a string.
+ *
+ * @param  mixed $config
+ * @return string
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.writer.xml">
+<span id="objconfig-writer-xml-module"></span><h2>objconfig.writer.xml module<a class="headerlink" href="#module-objconfig.writer.xml" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.writer.xml.Xml">
+<em class="property">class </em><code class="descclassname">objconfig.writer.xml.</code><code class="descname">Xml</code><a class="reference internal" href="_modules/objconfig/writer/xml.html#Xml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.xml.Xml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#objconfig.writer.abstractwriter.AbstractWriter" title="objconfig.writer.abstractwriter.AbstractWriter"><code class="xref py py-class docutils literal"><span class="pre">objconfig.writer.abstractwriter.AbstractWriter</span></code></a></p>
+<p>Following is the class documentation as given in zend-config:</p>
+<p>There is no documentation</p>
+<dl class="method">
+<dt id="objconfig.writer.xml.Xml.addBranch">
+<code class="descname">addBranch</code><span class="sig-paren">(</span><em>branchName</em>, <em>config</em>, <em>root</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/xml.html#Xml.addBranch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.xml.Xml.addBranch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * Add a branch to an XML object recursively.
+ *
+ * @param  string    $branchName
+ * @param  array     $config
+ * @param  XMLWriter $writer
+ * @return void
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.xml.Xml.processConfig">
+<code class="descname">processConfig</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/xml.html#Xml.processConfig"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.xml.Xml.processConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * processConfig(): defined by AbstractWriter.
+ *
+ * @param  array $config
+ * @return string
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.xml.Xml.toFile">
+<code class="descname">toFile</code><span class="sig-paren">(</span><em>filename</em>, <em>config</em>, <em>exclusive=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/xml.html#Xml.toFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.xml.Xml.toFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>CHANGELOG:
+objconfig v1.2: use portalocker to establish an exclusive lock if given</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * toFile(): defined by Writer interface.
+ *
+ * @see    WriterInterface::toFile()
+ * @param  string  $filename
+ * @param  mixed   $config
+ * @param  bool $exclusiveLock
+ * @return void
+ * @throws Exception\InvalidArgumentException
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="objconfig.writer.xml.Xml.toString">
+<code class="descname">toString</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/xml.html#Xml.toString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.xml.Xml.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * fromString(): defined by Reader interface.
+ *
+ * @param  string $string
+ * @return array|bool
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.writer.yaml">
+<span id="objconfig-writer-yaml-module"></span><h2>objconfig.writer.yaml module<a class="headerlink" href="#module-objconfig.writer.yaml" title="Permalink to this headline">¶</a></h2>
+<p>This is a port of zend-config to Python</p>
+<p>Some idioms of PHP are still employed, but where possible I have Pythonized it</p>
+<p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/**</span>
+ <span class="o">*</span> <span class="n">Zend</span> <span class="n">Framework</span> <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="p">)</span>
+ <span class="o">*</span>
+ <span class="o">*</span> <span class="nd">@link</span>      <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zendframework</span><span class="o">/</span><span class="n">zf2</span> <span class="k">for</span> <span class="n">the</span>
+ <span class="o">*</span>            <span class="n">canonical</span> <span class="n">source</span> <span class="n">repository</span>
+ <span class="o">*</span> <span class="nd">@copyright</span> <span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2005</span><span class="o">-</span><span class="mi">2015</span> <span class="n">Zend</span> <span class="n">Technologies</span> <span class="n">USA</span> <span class="n">Inc</span><span class="o">.</span>
+ <span class="o">*</span>            <span class="p">(</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+ <span class="o">*</span> <span class="nd">@license</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">framework</span><span class="o">.</span><span class="n">zend</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">license</span><span class="o">/</span><span class="n">new</span><span class="o">-</span><span class="n">bsd</span> <span class="n">New</span> <span class="n">BSD</span> <span class="n">License</span>
+ <span class="o">*/</span>
+</pre></div>
+</div>
+<dl class="class">
+<dt id="objconfig.writer.yaml.Yaml">
+<em class="property">class </em><code class="descclassname">objconfig.writer.yaml.</code><code class="descname">Yaml</code><a class="reference internal" href="_modules/objconfig/writer/yaml.html#Yaml"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.yaml.Yaml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#objconfig.writer.abstractwriter.AbstractWriter" title="objconfig.writer.abstractwriter.AbstractWriter"><code class="xref py py-class docutils literal"><span class="pre">objconfig.writer.abstractwriter.AbstractWriter</span></code></a></p>
+<p>Following is the class documentation as given in zend-config:</p>
+<p>There is no documentation</p>
+<dl class="method">
+<dt id="objconfig.writer.yaml.Yaml.processConfig">
+<code class="descname">processConfig</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/objconfig/writer/yaml.html#Yaml.processConfig"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#objconfig.writer.yaml.Yaml.processConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Following is the header as given in zend-config:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>/**
+ * processConfig(): defined by AbstractWriter.
+ *
+ * @param  array $config
+ * @return string
+ * @throws Exception\RuntimeException
+ */
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-objconfig.writer">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-objconfig.writer" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">objconfig.writer package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-objconfig.writer.abstractwriter">objconfig.writer.abstractwriter module</a></li>
+<li><a class="reference internal" href="#module-objconfig.writer.ini">objconfig.writer.ini module</a></li>
+<li><a class="reference internal" href="#module-objconfig.writer.json">objconfig.writer.json module</a></li>
+<li><a class="reference internal" href="#module-objconfig.writer.writerinterface">objconfig.writer.writerinterface module</a></li>
+<li><a class="reference internal" href="#module-objconfig.writer.xml">objconfig.writer.xml module</a></li>
+<li><a class="reference internal" href="#module-objconfig.writer.yaml">objconfig.writer.yaml module</a></li>
+<li><a class="reference internal" href="#module-objconfig.writer">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="objconfig.util.html"
+                        title="previous chapter">objconfig.util package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/objconfig.writer.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="objconfig.util.html" title="objconfig.util package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >objconfig</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="objconfig.html" >objconfig package</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Asher Wolfstein.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.
+    </div>
+  </body>
+</html>

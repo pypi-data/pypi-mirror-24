@@ -1,0 +1,422 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>objconfig.processor.token &#8212; ObjConfig 1.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../objconfig.html" accesskey="U">objconfig</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for objconfig.processor.token</h1><div class="highlight"><pre>
+<span></span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This is a port of zend-config to Python</span>
+
+<span class="sd">Some idioms of PHP are still employed, but where possible I have Pythonized it</span>
+
+<span class="sd">IGNORE:</span>
+<span class="sd">    Author: Asher Wolfstein Copyright 2017</span>
+<span class="sd">    Blog: http://wunk.me/</span>
+<span class="sd">    E-Mail: asherwunk@gmail.com</span>
+<span class="sd">    Twitter: https://twitter.com/asherwolfstein Send Me Some Love!</span>
+<span class="sd">    Package Homepage: http://wunk.me/programming-projects/objconfig-python/</span>
+<span class="sd">    GitHub: http://github.com/asherwunk/objconfig for the source repository</span>
+<span class="sd">    DevPost: https://devpost.com/software/objconfig</span>
+<span class="sd">    Buy Me A Coffee: https://ko-fi.com/A18224XC</span>
+<span class="sd">    Support Me On Patreon: https://www.patreon.com/asherwolfstein</span>
+<span class="sd">IGNORE</span>
+
+<span class="sd">Following is the header as given in zend-config::</span>
+
+<span class="sd">    /**</span>
+<span class="sd">     * Zend Framework (http://framework.zend.com/)</span>
+<span class="sd">     *</span>
+<span class="sd">     * @link      http://github.com/zendframework/zf2 for the</span>
+<span class="sd">     *            canonical source repository</span>
+<span class="sd">     * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc.</span>
+<span class="sd">     *            (http://www.zend.com)</span>
+<span class="sd">     * @license   http://framework.zend.com/license/new-bsd New BSD License</span>
+<span class="sd">     */</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">objconfig.exception</span> <span class="k">import</span> <span class="n">InvalidArgumentException</span>
+<span class="kn">from</span> <span class="nn">objconfig.processor</span> <span class="k">import</span> <span class="n">ProcessorInterface</span>
+<span class="kn">from</span> <span class="nn">objconfig</span> <span class="k">import</span> <span class="n">Config</span>
+<span class="kn">import</span> <span class="nn">inspect</span>
+
+
+<div class="viewcode-block" id="Token"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token">[docs]</a><span class="k">class</span> <span class="nc">Token</span><span class="p">(</span><span class="n">ProcessorInterface</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Following is the class documentation as given in zend-config:</span>
+<span class="sd">    </span>
+<span class="sd">    No class documentation was given.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tokens</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Token Processor walks through a Config structure and replaces all</span>
+<span class="sd">             * occurrences of tokens with supplied values.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  array|Config|Traversable   $tokens  Associative array of TOKEN =&gt; value</span>
+<span class="sd">             *                                             to replace it with</span>
+<span class="sd">             * @param    string $prefix</span>
+<span class="sd">             * @param    string $suffix</span>
+<span class="sd">             * @return   Token</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+    
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Token prefix.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @var string</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setPrefix</span><span class="p">(</span><span class="n">prefix</span><span class="p">)</span>
+        
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Token suffix.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @var string</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setSuffix</span><span class="p">(</span><span class="n">suffix</span><span class="p">)</span>
+        
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * The registry of tokens</span>
+<span class="sd">             *</span>
+<span class="sd">             * @var array</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setTokens</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
+        
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Replacement map</span>
+<span class="sd">             *</span>
+<span class="sd">             * @var array</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">map</span> <span class="o">=</span> <span class="kc">None</span>
+    
+<div class="viewcode-block" id="Token.setPrefix"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token.setPrefix">[docs]</a>    <span class="k">def</span> <span class="nf">setPrefix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prefix</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * @param  string $prefix</span>
+<span class="sd">             * @return Token</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">map</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">prefix</span> <span class="o">=</span> <span class="n">prefix</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+    
+<div class="viewcode-block" id="Token.getPrefix"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token.getPrefix">[docs]</a>    <span class="k">def</span> <span class="nf">getPrefix</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * @return string</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">prefix</span></div>
+    
+<div class="viewcode-block" id="Token.setSuffix"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token.setSuffix">[docs]</a>    <span class="k">def</span> <span class="nf">setSuffix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">suffix</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * @param  string $suffix</span>
+<span class="sd">             * @return Token</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">map</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">suffix</span> <span class="o">=</span> <span class="n">suffix</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+    
+<div class="viewcode-block" id="Token.getSuffix"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token.getSuffix">[docs]</a>    <span class="k">def</span> <span class="nf">getSuffix</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * @return string</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">suffix</span></div>
+    
+<div class="viewcode-block" id="Token.setTokens"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token.setTokens">[docs]</a>    <span class="k">def</span> <span class="nf">setTokens</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tokens</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Set token registry.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  array|Config|Traversable  $tokens  Associative array of TOKEN =&gt; value</span>
+<span class="sd">             *                                            to replace it with</span>
+<span class="sd">             * @return Token</span>
+<span class="sd">             * @throws Exception\InvalidArgumentException</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="n">tokens</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span> <span class="o">=</span> <span class="n">tokens</span><span class="o">.</span><span class="n">toArray</span><span class="p">()</span> <span class="k">if</span> <span class="s1">&#39;toArray&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span> <span class="ow">and</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="n">tokens</span><span class="o">.</span><span class="n">toArray</span><span class="p">)</span> <span class="k">else</span> <span class="n">tokens</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span> <span class="o">=</span> <span class="p">{}</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tokens</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">tokens</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">val</span>
+            <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">InvalidArgumentException</span><span class="p">(</span><span class="s2">&quot;Token: Cannot Use </span><span class="si">%s</span><span class="s2"> As Token Registry&quot;</span> <span class="o">%</span> <span class="nb">type</span><span class="p">(</span><span class="n">tokens</span><span class="p">))</span>
+    
+        <span class="bp">self</span><span class="o">.</span><span class="n">map</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+    
+<div class="viewcode-block" id="Token.getTokens"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token.getTokens">[docs]</a>    <span class="k">def</span> <span class="nf">getTokens</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Get current token registry.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @return array</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span></div>
+    
+<div class="viewcode-block" id="Token.addToken"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token.addToken">[docs]</a>    <span class="k">def</span> <span class="nf">addToken</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">token</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Add new token.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  string $token</span>
+<span class="sd">             * @param  mixed $value</span>
+<span class="sd">             * @return Token</span>
+<span class="sd">             * @throws Exception\InvalidArgumentException</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">token</span><span class="p">),</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">InvalidArgumentException</span><span class="p">(</span><span class="s2">&quot;Token: Cannot Use </span><span class="si">%s</span><span class="s2"> As Token Name&quot;</span> <span class="o">%</span> <span class="nb">type</span><span class="p">(</span><span class="n">token</span><span class="p">))</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">token</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">map</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+    
+<div class="viewcode-block" id="Token.setToken"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token.setToken">[docs]</a>    <span class="k">def</span> <span class="nf">setToken</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">token</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Add new token.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param string $token</span>
+<span class="sd">             * @param mixed $value</span>
+<span class="sd">             * @return Token</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">addToken</span><span class="p">(</span><span class="n">token</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Token.buildMap"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token.buildMap">[docs]</a>    <span class="k">def</span> <span class="nf">buildMap</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Build replacement map</span>
+<span class="sd">             *</span>
+<span class="sd">             * @return array</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">map</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">suffix</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">map</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">map</span> <span class="o">=</span> <span class="p">{}</span>
+                <span class="k">for</span> <span class="n">token</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">map</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span> <span class="o">+</span> <span class="n">token</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">suffix</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+            
+            <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            foreach (array_keys($this-&gt;map) as $key) {</span>
+<span class="sd">                if (empty($key)) {</span>
+<span class="sd">                    unset($this-&gt;map[$key]);</span>
+<span class="sd">                }</span>
+<span class="sd">            }</span>
+<span class="sd">            &quot;&quot;&quot;</span>   <span class="c1"># -- ?</span>
+            
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">map</span></div>
+    
+<div class="viewcode-block" id="Token.process"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token.process">[docs]</a>    <span class="k">def</span> <span class="nf">process</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Process</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  Config $config</span>
+<span class="sd">             * @return Config</span>
+<span class="sd">             * @throws Exception\InvalidArgumentException</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">doProcess</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">buildMap</span><span class="p">())</span></div>
+    
+<div class="viewcode-block" id="Token.processValue"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token.processValue">[docs]</a>    <span class="k">def</span> <span class="nf">processValue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Process a single value</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param $value</span>
+<span class="sd">             * @return mixed</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">doProcess</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">buildMap</span><span class="p">())</span></div>
+    
+<div class="viewcode-block" id="Token.doProcess"><a class="viewcode-back" href="../../../objconfig.processor.html#objconfig.processor.token.Token.doProcess">[docs]</a>    <span class="k">def</span> <span class="nf">doProcess</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">replacements</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        CHANGELOG:</span>
+<span class="sd">        objconfig v1.1: edit value in place rather than return copy - 3/2/2017</span>
+<span class="sd">        </span>
+<span class="sd">        Following is the class documentation as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Applies replacement map to the given value by modifying the value itself</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param mixed $value</span>
+<span class="sd">             * @param array $replacements</span>
+<span class="sd">             *</span>
+<span class="sd">             * @return mixed</span>
+<span class="sd">             *</span>
+<span class="sd">             * @throws Exception\InvalidArgumentException if the provided value is a read-only {@see Config}</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Config</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">value</span><span class="o">.</span><span class="n">isReadOnly</span><span class="p">():</span>
+                <span class="k">raise</span> <span class="n">InvalidArgumentException</span><span class="p">(</span><span class="s2">&quot;Token: Cannot Process Config Because It Is Read-Only&quot;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">value</span><span class="p">:</span>
+                <span class="n">value</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">doProcess</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">replacements</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">value</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="n">value</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">doProcess</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">replacements</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">value</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">stringval</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">fr</span><span class="p">,</span> <span class="n">to</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">map</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="n">stringval</span> <span class="o">=</span> <span class="n">stringval</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">fr</span><span class="p">,</span> <span class="n">to</span><span class="p">)</span>
+            <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            if ($changedVal !== $stringVal) {</span>
+<span class="sd">                return $changedVal;</span>
+<span class="sd">            }</span>
+<span class="sd">            &quot;&quot;&quot;</span>  <span class="c1"># -- ?</span>
+            
+            <span class="k">return</span> <span class="n">stringval</span></div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../objconfig.html" >objconfig</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Asher Wolfstein.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.
+    </div>
+  </body>
+</html>

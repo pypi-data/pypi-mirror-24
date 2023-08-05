@@ -1,0 +1,244 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>objconfig.writer.xml &#8212; ObjConfig 1.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../objconfig.html" accesskey="U">objconfig</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for objconfig.writer.xml</h1><div class="highlight"><pre>
+<span></span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This is a port of zend-config to Python</span>
+
+<span class="sd">Some idioms of PHP are still employed, but where possible I have Pythonized it</span>
+
+<span class="sd">IGNORE:</span>
+<span class="sd">    Author: Asher Wolfstein Copyright 2017</span>
+<span class="sd">    Blog: http://wunk.me/</span>
+<span class="sd">    E-Mail: asherwunk@gmail.com</span>
+<span class="sd">    Twitter: https://twitter.com/asherwolfstein Send Me Some Love!</span>
+<span class="sd">    Package Homepage: http://wunk.me/programming-projects/objconfig-python/</span>
+<span class="sd">    GitHub: http://github.com/asherwunk/objconfig for the source repository</span>
+<span class="sd">    DevPost: https://devpost.com/software/objconfig</span>
+<span class="sd">    Buy Me A Coffee: https://ko-fi.com/A18224XC</span>
+<span class="sd">    Support Me On Patreon: https://www.patreon.com/asherwolfstein</span>
+<span class="sd">IGNORE</span>
+
+<span class="sd">Following is the header as given in zend-config::</span>
+
+<span class="sd">    /**</span>
+<span class="sd">     * Zend Framework (http://framework.zend.com/)</span>
+<span class="sd">     *</span>
+<span class="sd">     * @link      http://github.com/zendframework/zf2 for the</span>
+<span class="sd">     *            canonical source repository</span>
+<span class="sd">     * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc.</span>
+<span class="sd">     *            (http://www.zend.com)</span>
+<span class="sd">     * @license   http://framework.zend.com/license/new-bsd New BSD License</span>
+<span class="sd">     */</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">objconfig.writer</span> <span class="k">import</span> <span class="n">AbstractWriter</span>
+<span class="kn">from</span> <span class="nn">objconfig.exception</span> <span class="k">import</span> <span class="n">InvalidArgumentException</span>
+<span class="kn">from</span> <span class="nn">objconfig.exception</span> <span class="k">import</span> <span class="n">RuntimeException</span>
+<span class="kn">import</span> <span class="nn">inspect</span>
+<span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="nn">ElementTree</span>
+<span class="kn">import</span> <span class="nn">portalocker</span>
+
+
+<div class="viewcode-block" id="Xml"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.xml.Xml">[docs]</a><span class="k">class</span> <span class="nc">Xml</span><span class="p">(</span><span class="n">AbstractWriter</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Following is the class documentation as given in zend-config:</span>
+<span class="sd">    </span>
+<span class="sd">    There is no documentation</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initializes tree member.&quot;&quot;&quot;</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">tree</span> <span class="o">=</span> <span class="kc">None</span>
+    
+<div class="viewcode-block" id="Xml.toFile"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.xml.Xml.toFile">[docs]</a>    <span class="k">def</span> <span class="nf">toFile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="n">exclusive</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        CHANGELOG:</span>
+<span class="sd">        objconfig v1.2: use portalocker to establish an exclusive lock if given</span>
+<span class="sd">        </span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * toFile(): defined by Writer interface.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @see    WriterInterface::toFile()</span>
+<span class="sd">             * @param  string  $filename</span>
+<span class="sd">             * @param  mixed   $config</span>
+<span class="sd">             * @param  bool $exclusiveLock</span>
+<span class="sd">             * @return void</span>
+<span class="sd">             * @throws Exception\InvalidArgumentException</span>
+<span class="sd">             * @throws Exception\RuntimeException</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="s1">&#39;toArray&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">config</span><span class="p">)</span> <span class="ow">and</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">toArray</span><span class="p">))</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">InvalidArgumentException</span><span class="p">(</span><span class="s2">&quot;AbstractWriter: toFile() expects a dictionary or implementing toArray&quot;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">filename</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">InvalidArgumentException</span><span class="p">(</span><span class="s2">&quot;AbstractWriter: No Filename Specified&quot;</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">processConfig</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+        
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">exclusive</span><span class="p">:</span>
+                    <span class="n">portalocker</span><span class="o">.</span><span class="n">lock</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">portalocker</span><span class="o">.</span><span class="n">LOCK_EX</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">xml_declaration</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;unicode&#39;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">RuntimeException</span><span class="p">(</span><span class="s2">&quot;AbstractWriter: Error Writing to </span><span class="se">\&quot;</span><span class="si">%s</span><span class="se">\&quot;</span><span class="s2">: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">e</span><span class="p">))</span></div>
+    
+<div class="viewcode-block" id="Xml.toString"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.xml.Xml.toString">[docs]</a>    <span class="k">def</span> <span class="nf">toString</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * fromString(): defined by Reader interface.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  string $string</span>
+<span class="sd">             * @return array|bool</span>
+<span class="sd">             * @throws Exception\RuntimeException</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="s1">&#39;toArray&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">config</span><span class="p">)</span> <span class="ow">and</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">toArray</span><span class="p">))</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">InvalidArgumentException</span><span class="p">(</span><span class="s2">&quot;AbstractWriter: toString() expects a dictionary or implementing toArray&quot;</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">processConfig</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="n">ElementTree</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tree</span><span class="o">.</span><span class="n">getroot</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span></div>
+    
+<div class="viewcode-block" id="Xml.processConfig"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.xml.Xml.processConfig">[docs]</a>    <span class="k">def</span> <span class="nf">processConfig</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * processConfig(): defined by AbstractWriter.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  array $config</span>
+<span class="sd">             * @return string</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="n">config</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">toArray</span><span class="p">()</span> <span class="k">if</span> <span class="s1">&#39;toArray&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">config</span><span class="p">)</span> <span class="ow">and</span> <span class="n">inspect</span><span class="o">.</span><span class="n">ismethod</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">toArray</span><span class="p">)</span> <span class="k">else</span> <span class="n">config</span>
+        <span class="n">root</span> <span class="o">=</span> <span class="n">ElementTree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s2">&quot;zend-config&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">sectionName</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">element</span> <span class="o">=</span> <span class="n">ElementTree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="n">sectionName</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">element</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">data</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">addBranch</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">element</span><span class="p">)</span>
+            <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">tree</span> <span class="o">=</span> <span class="n">ElementTree</span><span class="o">.</span><span class="n">ElementTree</span><span class="p">(</span><span class="n">root</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="Xml.addBranch"><a class="viewcode-back" href="../../../objconfig.writer.html#objconfig.writer.xml.Xml.addBranch">[docs]</a>    <span class="k">def</span> <span class="nf">addBranch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">branchName</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="n">root</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Following is the header as given in zend-config::</span>
+<span class="sd">        </span>
+<span class="sd">            /**</span>
+<span class="sd">             * Add a branch to an XML object recursively.</span>
+<span class="sd">             *</span>
+<span class="sd">             * @param  string    $branchName</span>
+<span class="sd">             * @param  array     $config</span>
+<span class="sd">             * @param  XMLWriter $writer</span>
+<span class="sd">             * @return void</span>
+<span class="sd">             * @throws Exception\RuntimeException</span>
+<span class="sd">             */</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">element</span> <span class="o">=</span> <span class="n">ElementTree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">element</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">value</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">addBranch</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">element</span><span class="p">)</span>
+            <span class="n">root</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">)</span></div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">ObjConfig 1.2.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../objconfig.html" >objconfig</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Asher Wolfstein.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.
+    </div>
+  </body>
+</html>
