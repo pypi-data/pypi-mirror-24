@@ -1,0 +1,6 @@
+plumbum
+requests
+typing
+
+[emoji]
+emoji
