@@ -1,0 +1,16 @@
+six
+
+[filter_query]
+ply
+
+[inspect]
+humanfriendly
+
+[msgpack]
+msgpack-python
+
+[pint]
+pint
+
+[yaml]
+pyyaml
