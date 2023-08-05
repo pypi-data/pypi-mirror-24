@@ -1,0 +1,8 @@
+setup.py
+midipacks/__init__.py
+midipacks/pack.py
+midipacks.egg-info/PKG-INFO
+midipacks.egg-info/SOURCES.txt
+midipacks.egg-info/dependency_links.txt
+midipacks.egg-info/requires.txt
+midipacks.egg-info/top_level.txt
