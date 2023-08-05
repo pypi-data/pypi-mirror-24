@@ -1,0 +1,726 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>copr.client.client &mdash; python-copr 1.48 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.48',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="python-copr 1.48 documentation" href="../../../index.html" />
+    <link rel="up" title="Module code" href="../../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../../index.html">python-copr 1.48 documentation</a> &raquo;</li>
+          <li><a href="../../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <h1>Source code for copr.client.client</h1><div class="highlight"><pre>
+<span class="c"># -*- coding: UTF-8 -*-</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">absolute_import</span>
+
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">six</span>
+
+<span class="kn">from</span> <span class="nn">six.moves</span> <span class="kn">import</span> <span class="n">configparser</span>
+
+
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">WARN</span><span class="p">)</span>
+<span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">.exceptions</span> <span class="kn">import</span> <span class="n">CoprConfigException</span><span class="p">,</span> <span class="n">CoprNoConfException</span><span class="p">,</span> \
+    <span class="n">CoprRequestException</span><span class="p">,</span> \
+    <span class="n">CoprUnknownResponseException</span>
+
+<span class="kn">from</span> <span class="nn">.responses</span> <span class="kn">import</span> <span class="n">ProjectHandle</span><span class="p">,</span> \
+    <span class="n">CoprResponse</span><span class="p">,</span> <span class="n">BuildHandle</span><span class="p">,</span> <span class="n">BaseHandle</span><span class="p">,</span> <span class="n">ProjectChrootHandle</span>
+
+<span class="kn">from</span> <span class="nn">.parsers</span> <span class="kn">import</span> <span class="n">fabric_simple_fields_parser</span><span class="p">,</span> <span class="n">ProjectListParser</span><span class="p">,</span> \
+    <span class="n">CommonMsgErrorOutParser</span><span class="p">,</span> <span class="n">NewBuildListParser</span><span class="p">,</span> <span class="n">ProjectChrootsParser</span><span class="p">,</span> \
+    <span class="n">ProjectDetailsFieldsParser</span>
+
+
+<div class="viewcode-block" id="CoprClient"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient">[docs]</a><span class="k">class</span> <span class="nc">CoprClient</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Main interface to the copr service</span>
+
+<span class="sd">    :ivar unicode username: username used by default for all requests</span>
+<span class="sd">    :ivar unicode login: user login, used for identification</span>
+<span class="sd">    :ivar unicode token: copr api token</span>
+<span class="sd">    :ivar unicode copr_url: used as copr projects root</span>
+
+<span class="sd">    Could be created:</span>
+<span class="sd">        - directly by providing a `dict` with credentionals</span>
+<span class="sd">        - using static method :py:meth:`CoprClient.create_from_file_config`</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :param dict config: Dictionary with client configuration.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">token</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;token&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">login</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;login&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;username&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">copr_url</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;copr_url&quot;</span><span class="p">,</span> <span class="s">&quot;http://copr.fedoraproject.org/&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s">&quot;&lt;Copr client. username: {0}, api url: {1}&gt;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">api_url</span>
+        <span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">api_url</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            Url to API endpoint</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s">&quot;{0}/api&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">copr_url</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+<div class="viewcode-block" id="CoprClient.create_from_file_config"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient.create_from_file_config">[docs]</a>    <span class="k">def</span> <span class="nf">create_from_file_config</span><span class="p">(</span><span class="n">filepath</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Creates Copr client using the information from the config file.</span>
+
+<span class="sd">        :param filepath: specifies config location,</span>
+<span class="sd">            default: &quot;~/.config/copr&quot;</span>
+<span class="sd">        :type filepath: `str`</span>
+<span class="sd">        :rtype: :py:class:`~.client.CoprClient`</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">raw_config</span> <span class="o">=</span> <span class="n">configparser</span><span class="o">.</span><span class="n">ConfigParser</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">filepath</span><span class="p">:</span>
+            <span class="n">filepath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s">&quot;~&quot;</span><span class="p">),</span> <span class="s">&quot;.config&quot;</span><span class="p">,</span> <span class="s">&quot;copr&quot;</span><span class="p">)</span>
+        <span class="n">config</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">raw_config</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">filepath</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">CoprNoConfException</span><span class="p">(</span>
+                <span class="s">&quot;No configuration file &#39;~/.config/copr&#39; found. &quot;</span>
+                <span class="s">&quot;See man copr-cli for more information&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">field</span> <span class="ow">in</span> <span class="p">[</span><span class="s">&quot;username&quot;</span><span class="p">,</span> <span class="s">&quot;login&quot;</span><span class="p">,</span> <span class="s">&quot;token&quot;</span><span class="p">,</span> <span class="s">&quot;copr_url&quot;</span><span class="p">]:</span>
+                <span class="k">if</span> <span class="n">six</span><span class="o">.</span><span class="n">PY3</span><span class="p">:</span>
+                    <span class="n">config</span><span class="p">[</span><span class="n">field</span><span class="p">]</span> <span class="o">=</span> <span class="n">raw_config</span><span class="p">[</span><span class="s">&quot;copr-cli&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">config</span><span class="p">[</span><span class="n">field</span><span class="p">]</span> <span class="o">=</span> <span class="n">raw_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;copr-cli&quot;</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+
+        <span class="k">except</span> <span class="n">configparser</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CoprConfigException</span><span class="p">(</span>
+                <span class="s">&quot;Bad configuration file: {0}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">err</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">CoprClient</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span>
+</div>
+    <span class="k">def</span> <span class="nf">_fetch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">projectname</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+               <span class="n">method</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">skip_auth</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">on_error_response</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Fetches data from server,</span>
+<span class="sd">        checks response and raises a CoprRequestException with nice error message</span>
+<span class="sd">        or CoprUnknownResponseException in case of some some error. \n</span>
+<span class="sd">        Otherwise return unpacked json object.</span>
+
+<span class="sd">            :param url: formed url to fetch</span>
+<span class="sd">            :param data: [optional] serialised data to send</span>
+<span class="sd">            :param skip_auth: [optional] don&#39;t send auth credentials</span>
+<span class="sd">            :param projectname: [optional] name of the copr project</span>
+<span class="sd">            :param username: [optional] use alternative username</span>
+<span class="sd">            :param on_error_response: [optional] function to handle responses</span>
+<span class="sd">                with bad status code</span>
+
+<span class="sd">            :return: deserialized response</span>
+<span class="sd">            :rtype: dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="n">method</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;get&quot;</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">username</span><span class="p">:</span>
+            <span class="n">username</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span>
+
+        <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">&quot;Fetching url: {0}, for login: {1}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">login</span><span class="p">))</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">skip_auth</span><span class="p">:</span>
+            <span class="n">kwargs</span><span class="p">[</span><span class="s">&quot;auth&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">login</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">token</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">kwargs</span><span class="p">[</span><span class="s">&quot;data&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span>
+
+        <span class="k">if</span> <span class="n">method</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s">&quot;get&quot;</span><span class="p">,</span> <span class="s">&quot;post&quot;</span><span class="p">,</span> <span class="s">&quot;head&quot;</span><span class="p">,</span> <span class="s">&quot;delete&quot;</span><span class="p">,</span> <span class="s">&quot;put&quot;</span><span class="p">]:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s">&quot;Method {0} not allowed&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">method</span><span class="p">))</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span>
+            <span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span>
+            <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span>
+        <span class="p">)</span>
+        <span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s">&quot;raw response: {0}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="s">&quot;&lt;title&gt;Sign in Copr&lt;/title&gt;&quot;</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CoprRequestException</span><span class="p">(</span><span class="s">&quot;Invalid API token</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">&gt;</span> <span class="mi">299</span> <span class="ow">and</span> <span class="n">on_error_response</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">on_error_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+
+        <span class="c"># TODO: better status code handling</span>
+        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">projectname</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">CoprRequestException</span><span class="p">(</span>
+                    <span class="s">&quot;User {0} is unknown.</span><span class="se">\n</span><span class="s">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">username</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">CoprRequestException</span><span class="p">(</span>
+                    <span class="s">&quot;Project {0}/{1} not found.</span><span class="se">\n</span><span class="s">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                        <span class="n">username</span><span class="p">,</span> <span class="n">projectname</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="mi">400</span> <span class="o">&lt;=</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">&lt;</span> <span class="mi">500</span><span class="p">:</span>
+            <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">&quot;Bad request, raw response body: {0}&quot;</span><span class="o">.</span>
+                      <span class="n">format</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">&gt;=</span> <span class="mi">500</span><span class="p">:</span>
+            <span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s">&quot;Server error, raw response body: {0}&quot;</span><span class="o">.</span>
+                      <span class="n">format</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">))</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CoprUnknownResponseException</span><span class="p">(</span>
+                <span class="s">&quot;Unknown response from the server.&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CoprRequestException</span><span class="p">(</span><span class="n">output</span><span class="p">[</span><span class="s">&quot;error&quot;</span><span class="p">])</span>
+
+        <span class="k">if</span> <span class="n">output</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CoprUnknownResponseException</span><span class="p">(</span><span class="s">&quot;No response from the server.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">output</span>
+
+<div class="viewcode-block" id="CoprClient.get_build_details"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient.get_build_details">[docs]</a>    <span class="k">def</span> <span class="nf">get_build_details</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">build_id</span><span class="p">,</span> <span class="n">projectname</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Returns build details.</span>
+
+<span class="sd">            :param build_id: Build identifier</span>
+<span class="sd">            :type build_id: int</span>
+
+<span class="sd">            :param projectname: [optional] Copr project name</span>
+<span class="sd">            :param username: [optional] Copr project owner</span>
+
+<span class="sd">            :return: :py:class:`~.responses.CoprResponse` with additional fields:</span>
+
+<span class="sd">                - **handle:** :py:class:`~.responses.BuildHandle`</span>
+<span class="sd">                - text fields: &quot;project&quot;, &quot;owner&quot;, &quot;status&quot;, &quot;results&quot;,</span>
+<span class="sd">                &quot;submitted_on&quot;, &quot;started_on&quot;, &quot;ended_on&quot;,</span>
+<span class="sd">                &quot;built_pkgs&quot;, &quot;src_pkg&quot;, &quot;src_version&quot;</span>
+
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;{0}/coprs/build/{1}/&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">api_url</span><span class="p">,</span> <span class="n">build_id</span><span class="p">)</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">skip_auth</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">CoprResponse</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s">&quot;get_build_details&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+            <span class="n">parsers</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">CommonMsgErrorOutParser</span><span class="p">,</span>
+                <span class="n">fabric_simple_fields_parser</span><span class="p">(</span>
+                    <span class="p">[</span><span class="s">&quot;project&quot;</span><span class="p">,</span> <span class="s">&quot;owner&quot;</span><span class="p">,</span> <span class="s">&quot;status&quot;</span><span class="p">,</span> <span class="s">&quot;results&quot;</span><span class="p">,</span>
+                     <span class="s">&quot;submitted_on&quot;</span><span class="p">,</span> <span class="s">&quot;started_on&quot;</span><span class="p">,</span> <span class="s">&quot;ended_on&quot;</span><span class="p">,</span>
+                     <span class="s">&quot;built_pkgs&quot;</span><span class="p">,</span> <span class="s">&quot;src_pkg&quot;</span><span class="p">,</span> <span class="s">&quot;src_version&quot;</span><span class="p">,</span>
+                     <span class="p">],</span>  <span class="c"># TODO: convert unix time</span>
+                    <span class="s">&quot;BuildDetailsParser&quot;</span>
+                <span class="p">)</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">BuildHandle</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="n">response</span><span class="p">,</span> <span class="n">build_id</span><span class="o">=</span><span class="n">build_id</span><span class="p">,</span>
+            <span class="n">projectname</span><span class="o">=</span><span class="nb">getattr</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="s">&quot;project&quot;</span><span class="p">,</span> <span class="n">projectname</span><span class="p">),</span>
+            <span class="n">username</span><span class="o">=</span><span class="nb">getattr</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="s">&quot;owner&quot;</span><span class="p">,</span> <span class="n">username</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+</div>
+<div class="viewcode-block" id="CoprClient.cancel_build"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient.cancel_build">[docs]</a>    <span class="k">def</span> <span class="nf">cancel_build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">build_id</span><span class="p">,</span> <span class="n">projectname</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Cancels build.</span>
+<span class="sd">            Auth required.</span>
+<span class="sd">            If build can&#39;t be canceled do nothing.</span>
+
+<span class="sd">            :param build_id: Build identifier</span>
+<span class="sd">            :type build_id: int</span>
+
+<span class="sd">            :param projectname: [optional] Copr project name</span>
+<span class="sd">            :param username: [optional] Copr project owner</span>
+
+<span class="sd">            :return: :py:class:`~.responses.CoprResponse` with additional fields:</span>
+
+<span class="sd">                - **handle:** :py:class:`~.responses.BuildHandle`</span>
+<span class="sd">                - text fields: &quot;status&quot;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;{0}/coprs/cancel_build/{1}/&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">api_url</span><span class="p">,</span> <span class="n">build_id</span><span class="p">)</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">skip_auth</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s">&#39;post&#39;</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">CoprResponse</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s">&quot;cancel_build&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+            <span class="n">parsers</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">fabric_simple_fields_parser</span><span class="p">([</span><span class="s">&quot;status&quot;</span><span class="p">,</span> <span class="s">&quot;output&quot;</span><span class="p">,</span> <span class="s">&quot;error&quot;</span><span class="p">]),</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">BuildHandle</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="n">response</span><span class="p">,</span> <span class="n">build_id</span><span class="o">=</span><span class="n">build_id</span><span class="p">,</span>
+            <span class="n">projectname</span><span class="o">=</span><span class="n">projectname</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="n">username</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+</div>
+<div class="viewcode-block" id="CoprClient.create_new_build"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient.create_new_build">[docs]</a>    <span class="k">def</span> <span class="nf">create_new_build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">pkgs</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+                         <span class="n">timeout</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">memory</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">chroots</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Creates new build</span>
+
+<span class="sd">            :param projectname: name of Copr project (without user namespace)</span>
+<span class="sd">            :param pkgs: list of packages to include in build</span>
+<span class="sd">            :param username: [optional] use alternative username</span>
+<span class="sd">            :param timeout: [optional] build timeout</span>
+<span class="sd">            :param memory: [optional] amount of required memory for build process</span>
+<span class="sd">            :param chroots: [optional] build only with given chroots</span>
+
+<span class="sd">            :return: :py:class:`~.responses.CoprResponse` with additional fields:</span>
+
+<span class="sd">                - **builds_list**: list of :py:class:`~.responses.BuildWrapper`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">username</span><span class="p">:</span>
+            <span class="n">username</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;{0}/coprs/{1}/{2}/new_build/&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">api_url</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">projectname</span>
+        <span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s">&quot;pkgs&quot;</span><span class="p">:</span> <span class="s">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pkgs</span><span class="p">),</span>
+            <span class="s">&quot;memory_reqs&quot;</span><span class="p">:</span> <span class="n">memory</span><span class="p">,</span>
+            <span class="s">&quot;timeout&quot;</span><span class="p">:</span> <span class="n">timeout</span>
+        <span class="p">}</span>
+        <span class="k">for</span> <span class="n">chroot</span> <span class="ow">in</span> <span class="n">chroots</span> <span class="ow">or</span> <span class="p">[]:</span>
+            <span class="n">data</span><span class="p">[</span><span class="n">chroot</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;y&quot;</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="p">)</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="n">CoprResponse</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s">&quot;cancel_build&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+            <span class="n">request_kwargs</span><span class="o">=</span><span class="p">{</span>
+                <span class="s">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+                <span class="s">&quot;username&quot;</span><span class="p">:</span> <span class="n">username</span>
+            <span class="p">},</span>
+            <span class="n">parsers</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">CommonMsgErrorOutParser</span><span class="p">,</span>
+                <span class="n">NewBuildListParser</span><span class="p">,</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">BuildHandle</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="n">response</span><span class="p">,</span> <span class="n">build_id</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+            <span class="n">projectname</span><span class="o">=</span><span class="n">projectname</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="n">username</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+</div>
+<div class="viewcode-block" id="CoprClient.get_project_details"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient.get_project_details">[docs]</a>    <span class="k">def</span> <span class="nf">get_project_details</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Returns project details</span>
+
+<span class="sd">            :param projectname: Copr projectname</span>
+<span class="sd">            :param username: [optional] use alternative username</span>
+
+<span class="sd">            :return: :py:class:`~.responses.CoprResponse`</span>
+<span class="sd">                with additional fields:</span>
+
+<span class="sd">                - text fields: &quot;description&quot;, &quot;instructions&quot;, &quot;last_modified&quot;,</span>
+<span class="sd">                &quot;name&quot;</span>
+
+<span class="sd">                - **chroots_list**: list of</span>
+<span class="sd">                  :py:class:`~.responses.ProjectChrootWrapper`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">username</span><span class="p">:</span>
+            <span class="n">username</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;{0}/coprs/{1}/{2}/detail/&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">api_url</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">projectname</span>
+        <span class="p">)</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">skip_auth</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+        <span class="c"># return ProjectDetailsResponse(self, response, projectname, username)</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="n">CoprResponse</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s">&quot;get_project_details&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+            <span class="n">request_kwargs</span><span class="o">=</span><span class="p">{</span>
+                <span class="s">&quot;projectname&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+                <span class="s">&quot;username&quot;</span><span class="p">:</span> <span class="n">username</span>
+            <span class="p">},</span>
+            <span class="n">parsers</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">ProjectChrootsParser</span><span class="p">,</span>
+                <span class="n">ProjectDetailsFieldsParser</span><span class="p">,</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">ProjectHandle</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="n">response</span><span class="p">,</span>
+                                        <span class="n">projectname</span><span class="o">=</span><span class="n">projectname</span><span class="p">,</span>
+                                        <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+</div>
+<div class="viewcode-block" id="CoprClient.delete_project"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient.delete_project">[docs]</a>    <span class="k">def</span> <span class="nf">delete_project</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Deletes the entire project.</span>
+<span class="sd">            Auth required.</span>
+
+<span class="sd">            :param projectname: Copr projectname</span>
+<span class="sd">            :param username: [optional] use alternative username</span>
+
+<span class="sd">            :return: :py:class:`~.responses.CoprResponse`</span>
+<span class="sd">                with additional fields:</span>
+
+<span class="sd">                - text fields: &quot;message&quot;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">username</span><span class="p">:</span>
+            <span class="n">username</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;{0}/coprs/{1}/{2}/delete/&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">api_url</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">projectname</span>
+        <span class="p">)</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span>
+            <span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;verify&quot;</span><span class="p">:</span> <span class="s">&quot;yes&quot;</span><span class="p">},</span> <span class="n">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="p">)</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="n">CoprResponse</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s">&quot;delete_project&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+            <span class="n">parsers</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">CommonMsgErrorOutParser</span><span class="p">,</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">ProjectHandle</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="n">response</span><span class="p">,</span>
+                                        <span class="n">projectname</span><span class="o">=</span><span class="n">projectname</span><span class="p">,</span>
+                                        <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+</div>
+<div class="viewcode-block" id="CoprClient.create_project"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient.create_project">[docs]</a>    <span class="k">def</span> <span class="nf">create_project</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">chroots</span><span class="p">,</span>
+            <span class="n">description</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">instructions</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+            <span class="n">repos</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">initial_pkgs</span><span class="o">=</span><span class="bp">None</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Creates a new copr project</span>
+<span class="sd">            Auth required.</span>
+
+<span class="sd">            :param projectname: Copr project name</span>
+<span class="sd">            :param chroots: List of target chroots</span>
+<span class="sd">            :param description: [optional] Project description</span>
+<span class="sd">            :param instructions: [optional] Instructions for end users</span>
+
+<span class="sd">            :return: :py:class:`~.responses.CoprResponse`</span>
+<span class="sd">                with additional fields:</span>
+
+<span class="sd">                - **handle:** :py:class:`~.responses.ProjectHandle`</span>
+<span class="sd">                - text fields: &quot;message&quot;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;{0}/coprs/{1}/new/&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">api_url</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">chroots</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s">&quot;You should provide chroots&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">chroots</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">list</span><span class="p">:</span>
+            <span class="n">chroots</span> <span class="o">=</span> <span class="p">[</span><span class="n">chroots</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">repos</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">:</span>
+            <span class="n">repos</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">repos</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">initial_pkgs</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">:</span>
+            <span class="n">initial_pkgs</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">initial_pkgs</span><span class="p">)</span>
+
+        <span class="n">request_data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s">&quot;name&quot;</span><span class="p">:</span> <span class="n">projectname</span><span class="p">,</span>
+            <span class="s">&quot;repos&quot;</span><span class="p">:</span> <span class="n">repos</span><span class="p">,</span>
+            <span class="s">&quot;initial_pkgs&quot;</span><span class="p">:</span> <span class="n">initial_pkgs</span><span class="p">,</span>
+            <span class="s">&quot;description&quot;</span><span class="p">:</span> <span class="n">description</span><span class="p">,</span>
+            <span class="s">&quot;instructions&quot;</span><span class="p">:</span> <span class="n">instructions</span>
+        <span class="p">}</span>
+        <span class="k">for</span> <span class="n">chroot</span> <span class="ow">in</span> <span class="n">chroots</span><span class="p">:</span>
+            <span class="n">request_data</span><span class="p">[</span><span class="n">chroot</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;y&quot;</span>
+
+        <span class="c"># TODO: def on bad_response()</span>
+        <span class="n">result_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">request_data</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="p">)</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="n">CoprResponse</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s">&quot;create_project&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">result_data</span><span class="p">,</span>
+            <span class="n">parsers</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">CommonMsgErrorOutParser</span><span class="p">,</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">ProjectHandle</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="n">response</span><span class="p">,</span>
+                                        <span class="n">projectname</span><span class="o">=</span><span class="n">projectname</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+</div>
+<div class="viewcode-block" id="CoprClient.modify_project"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient.modify_project">[docs]</a>    <span class="k">def</span> <span class="nf">modify_project</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+                       <span class="n">description</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">instructions</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">repos</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Modifies main project configuration.</span>
+<span class="sd">            Auth required.</span>
+
+<span class="sd">            :param projectname: Copr project name</span>
+<span class="sd">            :param username: [optional] use alternative username</span>
+<span class="sd">            :param description: [optional] project description</span>
+<span class="sd">            :param instructions: [optional] instructions for end users</span>
+<span class="sd">            :param repos: [optional] list of additional repos to be used during</span>
+<span class="sd">                the build process</span>
+
+<span class="sd">            :return: :py:class:`~.responses.CoprResponse`</span>
+<span class="sd">                with additional fields:</span>
+
+<span class="sd">                - **handle:** :py:class:`~.responses.ProjectHandle`</span>
+<span class="sd">                - text fields: &quot;buildroot_pkgs&quot;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">username</span><span class="p">:</span>
+            <span class="n">username</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;{0}/coprs/{1}/{2}/modify/&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">api_url</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">projectname</span>
+        <span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="n">description</span><span class="p">:</span>
+            <span class="n">data</span><span class="p">[</span><span class="s">&quot;description&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">description</span>
+        <span class="k">if</span> <span class="n">instructions</span><span class="p">:</span>
+            <span class="n">data</span><span class="p">[</span><span class="s">&quot;instructions&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">instructions</span>
+        <span class="k">if</span> <span class="n">repos</span><span class="p">:</span>
+            <span class="n">data</span><span class="p">[</span><span class="s">&quot;repos&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">repos</span>
+
+        <span class="n">result_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="p">)</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="n">CoprResponse</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s">&quot;modify_project&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">result_data</span><span class="p">,</span>
+            <span class="n">parsers</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">CommonMsgErrorOutParser</span><span class="p">,</span>
+                <span class="n">fabric_simple_fields_parser</span><span class="p">([</span><span class="s">&quot;buildroot_pkgs&quot;</span><span class="p">])</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">ProjectHandle</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="n">response</span><span class="p">,</span>
+                                        <span class="n">projectname</span><span class="o">=</span><span class="n">projectname</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+</div>
+<div class="viewcode-block" id="CoprClient.get_projects_list"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient.get_projects_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_projects_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Returns list of projects created by the user</span>
+
+<span class="sd">            :param username: [optional] use alternative username</span>
+
+
+<span class="sd">            :return: :py:class:`~.responses.CoprResponse`</span>
+<span class="sd">                with additional fields:</span>
+
+<span class="sd">                - **projects_list**: list of</span>
+<span class="sd">                  :py:class:`~.responses.ProjectWrapper`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">username</span><span class="p">:</span>
+            <span class="n">username</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;{0}/coprs/{1}/&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">api_url</span><span class="p">,</span> <span class="n">username</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">CoprResponse</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s">&quot;get_projects_list&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+            <span class="n">parsers</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">CommonMsgErrorOutParser</span><span class="p">,</span>
+                <span class="n">ProjectListParser</span><span class="p">,</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">BaseHandle</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span>
+                                     <span class="n">response</span><span class="o">=</span><span class="n">response</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+</div>
+<div class="viewcode-block" id="CoprClient.get_project_chroot_details"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient.get_project_chroot_details">[docs]</a>    <span class="k">def</span> <span class="nf">get_project_chroot_details</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span>
+                                   <span class="n">chrootname</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Returns details of chroot used in project</span>
+
+<span class="sd">            :param projectname: Copr project name</span>
+<span class="sd">            :param chrootname: chroot name</span>
+
+<span class="sd">            :param username: [optional] use alternative username</span>
+
+<span class="sd">            :return: :py:class:`~.responses.CoprResponse`</span>
+<span class="sd">                with additional fields:</span>
+
+<span class="sd">                - **handle:** :py:class:`~.responses.ProjectChrootHandle`</span>
+<span class="sd">                - text fields: &quot;buildroot_pkgs&quot;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">username</span><span class="p">:</span>
+            <span class="n">username</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;{0}/coprs/{1}/{2}/detail/{3}/&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">api_url</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">chrootname</span>
+        <span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">skip_auth</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">CoprResponse</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s">&quot;get_project_chroot_details&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+            <span class="n">parsers</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">fabric_simple_fields_parser</span><span class="p">(</span>
+                    <span class="p">[</span><span class="s">&quot;buildroot_pkgs&quot;</span><span class="p">,</span> <span class="s">&quot;output&quot;</span><span class="p">,</span> <span class="s">&quot;error&quot;</span><span class="p">],</span>
+                    <span class="s">&quot;BuildDetailsParser&quot;</span>
+                <span class="p">)</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">ProjectChrootHandle</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">chrootname</span><span class="o">=</span><span class="n">chrootname</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span>
+            <span class="n">projectname</span><span class="o">=</span><span class="n">projectname</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="n">response</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+</div>
+<div class="viewcode-block" id="CoprClient.modify_project_chroot_details"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient.modify_project_chroot_details">[docs]</a>    <span class="k">def</span> <span class="nf">modify_project_chroot_details</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">chrootname</span><span class="p">,</span>
+                                      <span class="n">pkgs</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Modifies chroot used in project</span>
+
+<span class="sd">            :param projectname: Copr project name</span>
+<span class="sd">            :param chrootname: chroot name</span>
+
+<span class="sd">            :param username: [optional] use alternative username</span>
+
+<span class="sd">            :return: :py:class:`~.responses.CoprResponse`</span>
+<span class="sd">                with additional fields:</span>
+
+<span class="sd">                - **handle:** :py:class:`~.responses.ProjectChrootHandle`</span>
+<span class="sd">                - text fields: &quot;buildroot_pkgs&quot;</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">pkgs</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">pkgs</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">username</span><span class="p">:</span>
+            <span class="n">username</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;{0}/coprs/{1}/{2}/modify/{3}/&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">api_url</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">projectname</span><span class="p">,</span> <span class="n">chrootname</span>
+        <span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s">&quot;buildroot_pkgs&quot;</span><span class="p">:</span> <span class="s">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pkgs</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="p">)</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="n">CoprResponse</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s">&quot;modify_project_chroot_details&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+            <span class="n">parsers</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">fabric_simple_fields_parser</span><span class="p">(</span>
+                    <span class="p">[</span><span class="s">&quot;buildroot_pkgs&quot;</span><span class="p">,</span> <span class="s">&quot;output&quot;</span><span class="p">,</span> <span class="s">&quot;error&quot;</span><span class="p">],</span>
+                    <span class="s">&quot;BuildDetailsParser&quot;</span>
+                <span class="p">)</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">ProjectChrootHandle</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">chrootname</span><span class="o">=</span><span class="n">chrootname</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span>
+            <span class="n">projectname</span><span class="o">=</span><span class="n">projectname</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="n">response</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+</div>
+<div class="viewcode-block" id="CoprClient.search_projects"><a class="viewcode-back" href="../../../CoprClient.html#copr.client.client.CoprClient.search_projects">[docs]</a>    <span class="k">def</span> <span class="nf">search_projects</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Search projects by substring</span>
+
+<span class="sd">            :param query: substring to search</span>
+
+<span class="sd">            :return: :py:class:`~.responses.CoprResponse`</span>
+<span class="sd">                with additional fields:</span>
+
+<span class="sd">                - **projects_list**: list of</span>
+<span class="sd">                  :py:class:`~.responses.ProjectWrapper`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;{0}/coprs/search/{1}/&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">api_url</span><span class="p">,</span> <span class="n">query</span>
+        <span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">skip_auth</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="n">CoprResponse</span><span class="p">(</span>
+            <span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s">&quot;search_projects&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+            <span class="n">parsers</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">CommonMsgErrorOutParser</span><span class="p">,</span>
+                <span class="n">ProjectListParser</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">handle</span> <span class="o">=</span> <span class="n">BaseHandle</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="o">=</span><span class="n">response</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span>
+</pre></div></div></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../../index.html">python-copr 1.48 documentation</a> &raquo;</li>
+          <li><a href="../../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Valentin Gologuzov.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

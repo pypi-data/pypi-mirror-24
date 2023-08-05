@@ -1,0 +1,192 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>About &mdash; python-copr 1.48 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.48',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="python-copr 1.48 documentation" href="#" />
+    <link rel="next" title="CoprClient" href="CoprClient.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="CoprClient.html" title="CoprClient"
+             accesskey="N">next</a> |</li>
+        <li><a href="#">python-copr 1.48 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="about">
+<h1>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h1>
+<p>Python-copr is a python client to access the Copr build service
+through its <a class="reference external" href="http://copr.fedoraproject.org/api">API</a>.</p>
+<p>Python-copr right now is in alpha stage, so expect lot of changes. Now it targets python 2.6+
+and python3.3+.</p>
+</div>
+<div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dependencies">
+<h2>Dependencies:<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>python2.6+
+python-requests
+python-six</pre>
+</div>
+</div>
+<div class="section" id="repo">
+<h2>repo<a class="headerlink" href="#repo" title="Permalink to this headline">¶</a></h2>
+<p>[Soon] Available for fedora 19, fedora 20.</p>
+<div class="highlight-python"><pre>dnf install python-copr python-copr-doc</pre>
+</div>
+</div>
+<div class="section" id="source">
+<h2>source<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre>git clone https://git.fedorahosted.org/git/copr.git
+<span class="nb">cd </span>python
+<span class="c"># enable virtualenv if needed</span>
+pip install -r requirements.txt
+python setup.py install
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="contact">
+<h1>Contact<a class="headerlink" href="#contact" title="Permalink to this headline">¶</a></h1>
+<p>If you have any questions, please contact us:</p>
+<blockquote>
+<div><ul class="simple">
+<li>IRC: <a class="reference external" href="mailto:#fedora-buildsys&#37;&#52;&#48;irc&#46;freenode&#46;net">#fedora-buildsys<span>&#64;</span>irc<span>&#46;</span>freenode<span>&#46;</span>net</a></li>
+<li>mailing list: <a class="reference external" href="mailto:copr-devel&#37;&#52;&#48;lists&#46;fedorahosted&#46;org">copr-devel<span>&#64;</span>lists<span>&#46;</span>fedorahosted<span>&#46;</span>org</a>
+[<a class="reference external" href="https://fedorahosted.org/mailman/listinfo/copr-devel">signup</a>]
+[<a class="reference external" href="https://lists.fedorahosted.org/pipermail/copr-devel/">archives</a>]</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>All interaction are done through copr.CoprClient.
+It can be created directly or using config file <tt class="file docutils literal"><span class="pre">/etc/copr.conf</span></tt></p>
+<p><em>CoprClient</em> offers methods that directly reflect Copr api. Received data
+are wrapped into the Response object.
+Depending on used methods Responses will have different set of
+provided attributes and methods.</p>
+<div class="section" id="auto-generated-documentation">
+<h2>Auto-generated documentation<a class="headerlink" href="#auto-generated-documentation" title="Permalink to this headline">¶</a></h2>
+<p>See method signatures and response objects in
+the auto generated documentation:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="CoprClient.html">CoprClient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Responses.html">Responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Responses.html#data-wrappers">Data wrappers</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">About</a></li>
+<li><a class="reference internal" href="#installation">Installation</a><ul>
+<li><a class="reference internal" href="#dependencies">Dependencies:</a></li>
+<li><a class="reference internal" href="#repo">repo</a></li>
+<li><a class="reference internal" href="#source">source</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#contact">Contact</a></li>
+<li><a class="reference internal" href="#usage">Usage</a><ul>
+<li><a class="reference internal" href="#auto-generated-documentation">Auto-generated documentation</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="CoprClient.html"
+                        title="next chapter">CoprClient</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="CoprClient.html" title="CoprClient"
+             >next</a> |</li>
+        <li><a href="#">python-copr 1.48 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Valentin Gologuzov.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
