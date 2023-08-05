@@ -1,0 +1,4 @@
+django-filer
+django-cms>=3.0
+djangocms-admin-style
+cmsplugin-filer
