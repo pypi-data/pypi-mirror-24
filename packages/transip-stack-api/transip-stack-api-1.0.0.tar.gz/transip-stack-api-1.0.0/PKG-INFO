@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: transip-stack-api
+Version: 1.0.0
+Summary: Unofficial wrapper for the TransIP STACK API
+Home-page: https://github.com/Paradoxis/TransIP-STACK-API
+Author: Paradoxis
+Author-email: luke@paradoxis.nl
+License: MIT
+Download-URL: https://codeload.github.com/Paradoxis/TransIP-STACK-API/tar.gz/master
+Description: UNKNOWN
+Keywords: TransIP,STACK,Storage
+Platform: UNKNOWN
