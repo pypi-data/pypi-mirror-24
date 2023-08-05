@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+djx/__init__.py
+djx/environment.py
+djx/static.py
+djx/urls.py
+djx.egg-info/PKG-INFO
+djx.egg-info/SOURCES.txt
+djx.egg-info/dependency_links.txt
+djx.egg-info/requires.txt
+djx.egg-info/top_level.txt
