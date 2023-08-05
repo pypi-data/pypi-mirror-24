@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: PySkype
+Version: 0.0.16
+Summary: Unofficial library for Skype API, based on python 3.5+
+Home-page: https://github.com/HolmesInc/PySkype
+Author: Andrew Babenko
+Author-email: andruonline11@gmail.com
+License: LICENSE
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

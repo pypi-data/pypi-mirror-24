@@ -1,0 +1,10 @@
+README
+setup.py
+PySkype/__init__.py
+PySkype/skype_api_tools.py
+PySkype/utils.py
+PySkype.egg-info/PKG-INFO
+PySkype.egg-info/SOURCES.txt
+PySkype.egg-info/dependency_links.txt
+PySkype.egg-info/requires.txt
+PySkype.egg-info/top_level.txt
