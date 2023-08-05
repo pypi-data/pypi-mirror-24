@@ -1,0 +1,22 @@
+# Copyright (C) 2017 Jurriaan Bremer.
+# This file is part of SFlock - http://www.sflock.org/.
+# See the file 'docs/LICENSE.txt' for copying permission.
+
+from sflock.abstracts import Unpacker, File
+
+class OfficeFile(Unpacker):
+    name = "office"
+    package = "doc", "xls", "ppt"
+
+    def supported(self):
+        return True
+
+    def unpack(self, password=None, duplicates=None):
+        entries = []
+
+        if self.f.filepath:
+            filepath = self.f.filepath
+            temporary = False
+        else:
+            pass
+        return []
