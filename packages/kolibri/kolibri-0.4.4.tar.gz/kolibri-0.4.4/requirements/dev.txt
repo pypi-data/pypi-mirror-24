@@ -1,0 +1,6 @@
+-r base.txt
+flake8
+pre-commit
+tox
+django-debug-toolbar
+django-debug-panel
