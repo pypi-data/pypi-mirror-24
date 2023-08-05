@@ -1,0 +1,6 @@
+include *.txt
+include LICENSE
+include nixnet/VERSION
+recursive-include nixnet *.py
+recursive-include nixnet_examples *.py
+recursive-include tests *.py
