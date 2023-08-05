@@ -1,0 +1,13 @@
+django_improved_user-0.2.0.dist-info/DESCRIPTION.rst,sha256=DA1xav1yKWwr7dJ87RnC2DF3xbJIPST_u02Ix_lYkQ0,1284
+django_improved_user-0.2.0.dist-info/METADATA,sha256=gfxb0KPfwDWGYu8nZe6xf7x2mu_zd_IbSHKdTpVX8Rs,2315
+django_improved_user-0.2.0.dist-info/RECORD,,
+django_improved_user-0.2.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_improved_user-0.2.0.dist-info/metadata.json,sha256=ORvKqHHst_SkStwv_4EcUV2hw_KOW-6qiOblc2d25E0,1115
+django_improved_user-0.2.0.dist-info/top_level.txt,sha256=bNzKqfViDJlW_AP2J0h7Vf_QHyEUssUTx6LGMrDCXlQ,14
+improved_user/__init__.py,sha256=qPiyR_rH7n64pnSEk3rs-zJz5FqGT48jYbh_9_7kClU,272
+improved_user/admin.py,sha256=Ny-BcYgsMkX07TB7jb2RxpgfL53ktwq-UCoSFhqfZno,1146
+improved_user/apps.py,sha256=4hcKMWE4nDWIN-MRugtse_xTPUEBpBnqwNpkIw0Qf2Y,275
+improved_user/forms.py,sha256=qvx_VW8GYyUT5Yx85se915VOg0iHWRD8807YRFO2EXY,6048
+improved_user/models.py,sha256=ydcX1rzNF98PJ4zGiND1XYAix9g9G9Jk_YJQ48ZKxHs,3401
+improved_user/migrations/0001_initial.py,sha256=gNnzHAXegEuAhQFUdN6eeggbqpnbasgNqz2uGa2JIQg,2404
+improved_user/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
