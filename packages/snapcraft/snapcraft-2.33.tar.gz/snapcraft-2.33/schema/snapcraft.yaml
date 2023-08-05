@@ -1,0 +1,347 @@
+$schema: http://json-schema.org/draft-04/schema#
+
+definitions:
+  stage-packages:
+    type: array
+    minitems: 1
+    uniqueItems: true
+    items:
+      anyOf:
+        - type: string
+          usage: "<string>"
+        - type: object
+          usage: "on <selector>[,<selector>...]:"
+          additionalProperties: false
+          patternProperties:
+            ^on\s+.+$:
+              $ref: "#/definitions/stage-packages"
+        - type: object
+          usage: "try:"
+          additionalProperties: false
+          patternProperties:
+            ^try$:
+              $ref: "#/definitions/stage-packages"
+        - type: object
+          usage: "else:"
+          additionalProperties: false
+          patternProperties:
+            ^else$:
+              $ref: "#/definitions/stage-packages"
+
+title: snapcraft schema
+type: object
+properties:
+  build-packages:
+    type: array
+    description: top level build packages.
+    minItems: 1
+    uniqueItems: true
+    items:
+      - type: string
+  name:
+    type: string
+    description: name of the snap package
+    pattern: "^[a-z0-9][a-z0-9+-]*$"
+  architectures:
+    type: array
+    description: architectures to override with
+    minItems: 1
+    uniqueItems: true
+    items:
+      - type: string
+  version:
+    # python's defaul yaml loading code loads 1.0 as an int
+    # type: string
+    description: package version
+    pattern: "^[a-zA-Z0-9.+~-]+$"
+  version-script:
+    type: string
+    description: a script that echoes the version to set.
+  icon:
+    type: string
+    description: path to a 512x512 icon representing the package.
+    format: icon-path
+  summary:
+    type: string
+    description: one line summary for the package
+    maxLength: 78
+  description:
+    type: string
+    description: long description of the package
+  assumes:
+    type: array
+    description: featureset the snap requires in order to work.
+    minItems: 1
+    uniqueItems: true
+    items:
+      - type: string
+  type:
+    type: string
+    description: the snap type, the implicit type is 'app'
+    enum:
+      - app
+      - gadget
+      - kernel
+      - os
+  frameworks:
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items:
+      - type: string
+  confinement:
+    type: string
+    description: the type of confinement supported by the snap
+    default: strict
+    enum:
+      - classic
+      - devmode
+      - strict
+  grade:
+    type: string
+    description: the quality grade of the snap
+    default: stable
+    enum:
+      - stable
+      - devel
+  epoch:
+    description: the snap epoch, used to specify upgrade paths
+    format: epoch
+  environment:
+    type: object
+    description: environment entries for the snap as a whole
+    minItems: 1
+    additionalProperties:
+      anyOf:
+        - type: string
+          minLength: 1
+        - type: number
+  apps:
+    type: object
+    additionalProperties: false
+    patternProperties:
+      "^[a-zA-Z0-9](?:-?[a-zA-Z0-9])*$":
+        type: object
+        required:
+          - command
+        dependencies:
+          stop-command: ["daemon"]
+          post-stop-command: ["daemon"]
+          reload-command: ["daemon"]
+        additionalProperties: false
+        properties:
+          desktop:
+            type: string
+            description: path to a desktop file representing the app, relative to the prime directory
+          command:
+            type: string
+            description: command executed to run the binary
+          completer:
+            type: string
+            description: bash completion script relative to the prime directory
+          stop-command:
+            type: string
+            description: command executed to stop a service
+          post-stop-command:
+            type: string
+            description: command executed after stopping a service
+          stop-timeout:
+            description: timeout in seconds
+          reload-command:
+            description: command executed to reload a service
+          daemon:
+            type: string
+            description: signals that the app is a service.
+            enum:
+              - simple
+              - forking
+              - oneshot
+              - notify
+          restart-condition:
+              type: string
+              enum:
+                - on-success
+                - on-failure
+                - on-abnormal
+                - on-abort
+                - always
+                - never
+          slots:
+            type: array
+            minitems: 1
+            uniqueItems: true
+            items:
+              type: string
+          plugs:
+            type: array
+            minitems: 1
+            uniqueItems: true
+            items:
+              type: string
+          aliases:
+            type: array
+            uniqueItems: true
+            items:
+              type: string
+              pattern: "^[a-zA-Z0-9][-_.a-zA-Z0-9]*$"
+          environment:
+            type: object
+            description: environment entries for the specific app.
+            minItems: 1
+            additionalProperties:
+              anyOf:
+                - type: string
+                  minLength: 1
+                - type: number
+  hooks:
+    type: object
+    additionalProperties: false
+    patternProperties:
+      "^[a-zA-Z0-9](?:-?[a-zA-Z0-9])*$":
+        type: object
+        additionalProperties: false
+        properties:
+          plugs:
+            type: array
+            minitems: 1
+            uniqueItems: true
+            items:
+              type: string
+  parts:
+    type: object
+    minProperties: 1
+    additionalProperties: false
+    patternProperties:
+      ^(?!plugins$)[a-z0-9][a-z0-9+-\/]*$:
+        # Make sure snap/prime are mutually exclusive
+        allOf:
+          - not:
+              type: object
+              required: [snap, prime]
+              validation-failure: "{.instance} cannot contain both 'snap' and 'prime' keywords."
+        type: object
+        minProperties: 1
+        properties:
+          plugin:
+            type: string
+            description: plugin name
+          source:
+            type: string
+            default: '.'
+          source-checksum:
+              type: string
+              default: ''
+          source-branch:
+            type: string
+            default: ''
+          source-commit:
+            type: string
+            default: ''
+          source-depth:
+            type: integer
+            default: 0
+          source-subdir:
+            type: string
+            default: ''
+          source-tag:
+            type: string
+            default: ''
+          source-type:
+            type: string
+            default: ''
+            enum:
+              - bzr
+              - git
+              - hg
+              - mercurial
+              - subversion
+              - svn
+              - tar
+              - zip
+              - deb
+              - rpm
+              - 7z
+              - local
+          disable-parallel:
+            type: boolean
+            default: false
+          after:
+            type: array
+            minitems: 1
+            uniqueItems: true
+            items:
+              type: string
+            default: []
+          stage-packages:
+            $ref: "#/definitions/stage-packages"
+            default: [] # For some reason this doesn't work if in the ref
+          build-packages:
+            type: array
+            minitems: 1
+            uniqueItems: true
+            items:
+              type: string
+            default: []
+          build-attributes:
+            type: array
+            minitems: 1
+            uniqueItems: true
+            items:
+              type: string
+            default: []
+          organize:
+            type: object
+            default: {}
+            additionalProperties:
+              type: string
+              minLength: 1
+          filesets:
+            type: object
+            default: {}
+            additionalProperties:
+              type: array
+              minitems: 1
+          stage:
+            type: array
+            minitems: 1
+            uniqueItems: true
+            items:
+              type: string
+            default: ['*']
+          snap: # FIXME: This is deprecated, replaced by `prime`, below.
+            type: array
+            minitems: 1
+            uniqueItems: true
+            items:
+              type: string
+            default: ['*']
+          prime:
+            type: array
+            minitems: 1
+            uniqueItems: true
+            items:
+              type: string
+            default: ['*']
+          install:
+            type: string
+            default: ''
+          build:
+            type: string
+            default: ''
+          prepare:
+            type: string
+            default: ''
+  plugs:
+    type: object
+  slots:
+    type: object
+required:
+  - name
+  - version
+  - summary
+  - description
+  - parts
+dependencies:
+  license-agreement: ["license"]
+  license-version: ["license"]
+additionalProperties: false
