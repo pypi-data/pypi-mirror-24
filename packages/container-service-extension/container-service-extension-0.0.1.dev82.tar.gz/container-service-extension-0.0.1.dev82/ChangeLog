@@ -1,0 +1,77 @@
+CHANGES
+=======
+
+* wip
+* templates
+* removed scripts
+* removed deps
+* removed deps
+* removed deps
+* temp fix
+* fixed utils
+* removed pyc files
+* gitignore
+* allow client to fetch swagger files, packaged swagger with cse
+* flake8
+* doc
+* doc
+* gitignore
+* doc
+* moved-dir-up
+* new-sdk-client
+* new-sdk-client
+* new-sdk-client
+* new-sdk-client
+* new-sdk-client
+* deleted DS Stores
+* update
+* delete all kov-py files
+* created swagger file and deleted all kov-py stuff (swagger code-gen)
+* deps
+* wip
+* new-impl
+* fixed import error
+* deps
+* req
+* readme
+* kov-int
+* doc
+* adapter
+* vc-adapter
+* renamed the folder to pykov and added setup.cfg to get it to work with naming the package pykov
+* created the swagger-codgen generated python-sdk's
+* created the swagger-codgen generated python-sdk's
+* ci
+* wip
+* delete
+* Packer scripts for kub master and worker template creation
+* add-n-list
+* basic-reply
+* docs
+* wip
+* wip
+* wip
+* wip
+* wip
+* wip
+* wip
+* req
+* readme
+* init
+* pika
+* Add DCO information
+* Add DCO information
+* example
+* init
+* wip
+* wip
+* dir-renamed
+* dir-renamed
+* config
+* license
+* license
+* license
+* wip
+* Adding .gitignore template
+* Add CONTRIBUTING template
+* Add README template
