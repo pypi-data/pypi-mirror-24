@@ -1,0 +1,23 @@
+Metadata-Version: 1.0
+Name: scrubby
+Version: 0.1.8
+Summary: Let Scrubby clean your datasource.
+Home-page: http://github.com/typerandom/scrubby
+Author: Robin Orheden
+Author-email: orhedenr@gmail.com
+License: LICENSE.md
+Description: # Scrubby
+        
+        Scrub your data from sensitive values.
+        
+        ## Installation
+        
+        ```
+        $ pip install scrubby
+        ```
+        
+        ## License
+        
+        MIT
+Keywords: data scrubbing
+Platform: any
