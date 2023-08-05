@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+wsgi_monitor3.py
+wsgi_monitor3.egg-info/PKG-INFO
+wsgi_monitor3.egg-info/SOURCES.txt
+wsgi_monitor3.egg-info/dependency_links.txt
+wsgi_monitor3.egg-info/top_level.txt
