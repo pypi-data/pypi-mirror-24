@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pymyenv
+Version: 0.0.3
+Summary: pymyenv is a module to help you switch virtualenv easily
+Home-page: https://veltzer.github.io/pymyenv
+Author: Mark Veltzer
+Author-email: mark.veltzer@gmail.com
+License: MIT
+Description: pymyenv is a module to help you switch virtualenv easily
+Keywords: python virtualenv pip
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
