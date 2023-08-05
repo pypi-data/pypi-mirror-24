@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: workaround
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Tom Forbes
+Author-email: tom@tomforb.es
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: colorama
+Requires-Dist: docopt
+Requires-Dist: packaging
+Requires-Dist: regex
+Requires-Dist: requests
+Requires-Dist: requests
+Requires-Dist: semver
+Requires-Dist: termcolor
+Requires-Dist: typing; python_version < "3.6"
+
+UNKNOWN
+
+

@@ -1,0 +1,16 @@
+workaround/__init__.py,sha256=6uVRmGqQNUb5Cv7viAp3h5bcASYhyi8aYZGC5G5Jbrc,855
+workaround/cli.py,sha256=dUXFUcnUK3iD6evmsMpBpEtXXgeFzSzFs42rhuu7DPg,1335
+workaround/handle.py,sha256=rGq9eppsfPFGWmt2mA9F0_H16Tw_6BJGZAJRBbEtdEE,2095
+workaround/handlers/__init__.py,sha256=9V0YBde1cWKkr967cE6-AqK_EplAe144CHjT1zjcGf4,627
+workaround/handlers/base.py,sha256=nnEx1Bvd-OsdQ1V0CkDc8dqkvWGnids73UYmkcneg9Y,1467
+workaround/handlers/django.py,sha256=T12kfT0hoxIhyVsu4StB4P0lMQXLy57v3ZMbsPEjKeA,942
+workaround/handlers/github.py,sha256=ZlORCOgJKZZWpfJcZdvMkOuReNStB9n1RWidO8SOIyY,1104
+workaround/handlers/npm.py,sha256=v0jPuiWezgNbYZynpnxHIV94bLN5tbH-qVj-G60NJh4,687
+workaround/handlers/pypi.py,sha256=2yHJ_N-LSkK6O2SCgJdaY_mStbpmVqQR49nqsWKdrnw,915
+workaround-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+workaround-0.1.1.dist-info/METADATA,sha256=fNDJvXbBT9PmpVLORfg3jd4LwG9dlL5xt9TEG8A21jI,417
+workaround-0.1.1.dist-info/RECORD,,
+workaround-0.1.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+workaround-0.1.1.dist-info/entry_points.txt,sha256=zTmUENBYc-p4uYlPXZe5iAEA9Z7adR_x2uM2Pf48p1I,259
+workaround-0.1.1.dist-info/metadata.json,sha256=NTpCwOKBHWA3IqqjhtmKLDpoXof6iM4UdI4dyvstxyI,887
+workaround-0.1.1.dist-info/top_level.txt,sha256=Z9y54jEwzZvdNiH2rXD6vDnP2PE7ejamcvPoKzw7Ke4,11
