@@ -1,0 +1,6 @@
+cloudshell-shell-core
+requests
+PyYAML
+
+[testing]
+pytest
