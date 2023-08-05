@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: arable
+Version: 0.2.dev2
+Summary: A client library for connecting with Arable data service
+Home-page: https://github.com/Arable/apiclient.git
+Author: Arable Labs, Inc.
+Author-email: developer@arable.com
+License: UNKNOWN
+Keywords: weather,datascience,api
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.12.0)
+
+UNKNOWN
+
+
