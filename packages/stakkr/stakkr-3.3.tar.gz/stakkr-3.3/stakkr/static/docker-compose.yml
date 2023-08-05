@@ -1,0 +1,9 @@
+version: '2'
+
+networks:
+    stakkr:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: ${DOCKER_SUBNET}
+                  gateway: ${DOCKER_GATEWAY}
