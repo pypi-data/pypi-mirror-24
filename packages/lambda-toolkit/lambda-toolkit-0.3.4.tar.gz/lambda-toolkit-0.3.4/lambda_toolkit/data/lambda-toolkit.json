@@ -1,0 +1,86 @@
+{
+    "cli": {
+        "invoke": {
+          "commands": {
+            "local": [ "event-file", "projectname" ],
+            "remote": [ "event-file", [ "projectname", "proxyname"]]
+          }
+        },
+        "receiver": {
+          "commands": {
+            "collect": [ "projectname", "sqsname" ]
+          }
+        },
+        "role": {
+          "commands": {
+            "set-default": [ "rolename" ],
+            "unset-default": []
+          }
+        },
+        "proxy": {
+          "commands": {
+            "deploy": [ "sqsname", "proxyname", "rolename"],
+            "list": [],
+            "undeploy": [ "proxyname" ],
+            "undeploy-all": []
+          }
+        },
+        "queue": {
+          "commands": {
+            "purge": [ "sqsname" ],
+            "create": [ "sqsname" ],
+            "list": [],
+            "delete": [ "sqsname" ],
+            "delete-all": []
+          }
+        },
+        "project": {
+          "commands": {
+            "list-aws-all" : [],
+            "list-aws": [],
+            "list-all": [],
+            "undeploy": [ "projectname" ],
+            "deploy": [ "projectname" ],
+            "create": [ "projectname" ],
+            "list": [],
+            "import-all": [],
+            "undeploy-all": [],
+            "import": [ "projectname" ],
+            "deploy-all": [],
+            "delete": [ "projectname" ],
+            "delete-all": [],
+            "check-regions-delay": [],
+            "import-all-regions": [],
+            "delete-all-regions": [],
+            "undeploy-all-regions": [],
+            "deploy-all-regions": [ "rolename" ],
+            "set-variable": [ "projectname", "variable", "value" ],
+            "unset-variable": [ "projectname", "variable" ],
+            "list-variables": [ "projectname" ]
+          }
+        }
+    },
+    "aws-regions": ["ap-south-1", "eu-west-2", "eu-west-1", "ap-northeast-2", "ap-northeast-1", "sa-east-1", "ca-central-1", "ap-southeast-1", "ap-southeast-2", "eu-central-1", "us-east-1", "us-east-2", "us-west-1", "us-west-2"],
+    "settings": {
+        "C_DEFAULT_ROLE": "",
+        "C_LAMBDAS_DIR": "lambdas/",
+        "C_STANDARD_FOLDER_DIR": "data/standard-folder",
+        "C_LAMBDAS_ZIP_DIR": ".zips",
+        "C_LAMBDAPROXY_FUNC": "data/lambda-proxy/index.py",
+        "C_LAMBDASTANDARD_FUNC_PY": "data/standard-lambda/index.py",
+        "C_LAMBDASTANDARD_FUNC_JS": "data/standard-lambda/index.js",
+        "C_LAMBDACONTEXT_FUNC_PY": "data/contexts/",
+        "C_LAMBDAEVENTS_FUNC": "data/events/",
+        "C_INVOKE_DIR": "invoke/",
+        "C_INVOKE_DIR_EVT": "invoke/events/",
+        "C_INVOKE_DIR_CTX": "invoke/contexts/",
+        "C_INVOKE_CTX_FILE": "python.json",
+        "QUEUE_CREATEQUEUE_VISIBILITY_TIMEOUT": 3,
+        "C_LAMBDASTANDERD_FUNC_VAR_REPLACE": "TEMPLATEQUEUENAME",
+        "QUEUE_GETMESSAGE_VISIBILITY_TIMEOUT": 10,
+        "QUEUE_GETMESSAGE_MAXNUMBEROFMESSAGES": 10,
+        "C_BASE_DIR": "~/lambda-toolkit/",
+        "QUEUE_GETMESSAGE_WAITTIMESECONDS": 20,
+        "C_HELPS_FILES": "data/helps/"
+    }
+}
