@@ -1,0 +1,9 @@
+IPython>=4.0.0
+numpy
+sympy
+pysces
+matplotlib
+numpydoc
+jupyter-pip
+networkx
+jupyter
