@@ -1,0 +1,15 @@
+optimus/DfAnalizer.py,sha256=jsqAbizo7IJ9PiT5b6fqqtuDGYYVqUH5Zr9rlRyLL4Q,30337
+optimus/DfTransf.py,sha256=FcXPL_VBcTeQpDs-nvWyPFkusH5BNqAypq7pDxZHUIo,46100
+optimus/Optimus.py,sha256=FaS4eTb9MtQ58PQCJ-_GzReuv6UQ4MoGYfhOrB8B80s,4033
+optimus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimus/utilities.py,sha256=VSPFPaqM_MoWyKqdmj2DOJvHuWprHpqbrBoPh_Oxe1w,13540
+optimus/version.py,sha256=HAy16SU5BrwdgRF0HynVt0M09PVVzqBCLnpf2QErNhg,190
+optimuspyspark-0.3.2.dist-info/DESCRIPTION.rst,sha256=fW4zGrKgJ29McIDgv09NDbbKC2UCBeLyogcDNiOw2cU,588
+optimuspyspark-0.3.2.dist-info/METADATA,sha256=sKGrCu7yHN0PGPp5g3f7FqoPvYE3VO3kD99y9yDLAXU,2150
+optimuspyspark-0.3.2.dist-info/RECORD,,
+optimuspyspark-0.3.2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+optimuspyspark-0.3.2.dist-info/metadata.json,sha256=JTeY0MQDnOrTSvTrcFl3pGwl07BYBhQ8Fg4WvFAHry4,1425
+optimuspyspark-0.3.2.dist-info/top_level.txt,sha256=-a3sv_QD_4-R1vU1oVOVMHj75Kz3W1WuidwNJj3TK4g,14
+tests/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+tests/conftest.py,sha256=k92MwbwqNbPgXcOLrpyCk4muO5NVJ_wo__PQOeiZuHo,1186
+tests/math-test.py,sha256=qYcPANL_U0IOo4NaDyfUlwC2DsE-4C6m3KGsI5PlnzU,136
