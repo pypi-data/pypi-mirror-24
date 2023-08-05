@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: zabbix-docker-agent
+Version: 0.1.0
+Summary: Zabbix Docker Agent for collecting dynamic container statistics
+Home-page: https://github.com/akomic/zabbix-docker-agent
+Author: Alen Komic
+Author-email: akomic@gmail.com
+License: UNKNOWN
+Description: This is implementation of Zabbix Docker Agent only for docker based
+        container clusters with dynamic containers.
+        
+Keywords: docker,monitoring,metrics,zabbix
+Platform: UNKNOWN
