@@ -1,0 +1,62 @@
+<div>
+
+    <div class="page-title">
+        <h2>ezchat</h2>
+    </div>
+
+
+    <div class="container-fluid">
+
+
+        <div class="form-connect-group">
+            <input type="text" class="form-control five-input" placeholder="Hub IP or MA" v-model="hub" v-bind:disabled="isConnected">
+            <input type="text" class="form-control five-input" placeholder="Hub port" v-model="port" v-bind:disabled="isConnected">
+            <input type="text" class="form-control five-input" placeholder="Your pseudo" v-model="name" v-bind:disabled="isConnected">
+            <input type="text" class="form-control five-input" placeholder="Room name" v-model="room" v-bind:disabled="isConnected">
+            <input type="password" class="form-control five-input" placeholder="Room password" v-model="password" v-bind:disabled="isConnected">
+        </div>
+
+        <div class="enter-input">
+            <button v-bind:class="[connectStatusButtonType]" disabled="true">
+                <i v-bind:class="[connectStatusIcon]" aria-hidden="true"></i>
+                {{ connectStatus }}
+            </button>
+
+            <button class="btn btn-primary" @click="manageConnection()">
+                <i v-bind:class="[connectActionClass]" aria-hidden="true"></i>
+                {{ connectAction }}
+            </button>
+        </div>
+
+        <div v-bind:class="[errorMessageStyle]">
+            <span class="bold">{{ errorMessage }}</span>
+        </div>
+
+        <ul class="nav nav-pills people">
+            <li role="presentation" class="active">
+                <a href="#">
+                    Clients <span class="badge">{{ clients.length }}</span>
+                </a>
+            </li>
+            <li role="presentation" v-for="(client, index) in clients">
+                <a href="#">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                     <span class="bold">{{ client.name }}</span> - {{ client.datetime }}
+                </a>
+            </li>
+        </ul>
+
+        <div class="form-connect-group">
+            <input type="textarea" class="form-control send-input" placeholder="Your message" v-bind:disabled="!isConnected" v-model="message">
+            <button class="btn btn-primary" v-bind:disabled="!isConnected" @click="sendMessage()">Send</button>
+        </div>
+
+        <div class="room">
+            <chat-line v-for="(line, index) in lines" :key="index" :name="line.name" :sid="line.sid" :refsid="line.refsid" :text="line.text"
+                :datetime="line.datetime">
+            </chat-line>
+        </div>
+
+    </div>
+
+</div>
