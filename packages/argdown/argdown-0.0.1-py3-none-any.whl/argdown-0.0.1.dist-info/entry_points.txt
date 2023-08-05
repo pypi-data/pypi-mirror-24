@@ -1,0 +1,3 @@
+[console_scripts]
+argdown = argdown.argdown:main
+
