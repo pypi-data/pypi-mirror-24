@@ -1,0 +1,12 @@
+setup.py
+iThenticate/__init__.py
+iThenticate/API/Client.py
+iThenticate/API/Exceptions.py
+iThenticate/API/Helpers.py
+iThenticate/API/__init__.py
+ithenticate_api_python.egg-info/PKG-INFO
+ithenticate_api_python.egg-info/SOURCES.txt
+ithenticate_api_python.egg-info/dependency_links.txt
+ithenticate_api_python.egg-info/pbr.json
+ithenticate_api_python.egg-info/requires.txt
+ithenticate_api_python.egg-info/top_level.txt
