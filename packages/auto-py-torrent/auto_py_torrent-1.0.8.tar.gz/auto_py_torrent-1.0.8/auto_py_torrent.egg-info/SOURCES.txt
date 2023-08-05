@@ -1,0 +1,11 @@
+README.rst
+setup.py
+auto_py_torrent/__init__.py
+auto_py_torrent/__version__.py
+auto_py_torrent/auto_py_torrent.py
+auto_py_torrent.egg-info/PKG-INFO
+auto_py_torrent.egg-info/SOURCES.txt
+auto_py_torrent.egg-info/dependency_links.txt
+auto_py_torrent.egg-info/entry_points.txt
+auto_py_torrent.egg-info/requires.txt
+auto_py_torrent.egg-info/top_level.txt
