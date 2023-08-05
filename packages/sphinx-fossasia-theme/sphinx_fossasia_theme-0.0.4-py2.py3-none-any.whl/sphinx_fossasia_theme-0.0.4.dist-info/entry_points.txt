@@ -1,0 +1,6 @@
+[sphinx.html_themes]
+sphinx_fossasia_theme = sphinx_fossasia_theme
+
+[sphinx_themes]
+path = sphinx_fossasia_theme:get_html_theme_path
+
