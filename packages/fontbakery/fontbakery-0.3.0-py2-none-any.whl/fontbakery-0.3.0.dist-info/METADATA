@@ -1,0 +1,36 @@
+Metadata-Version: 2.0
+Name: fontbakery
+Version: 0.3.0
+Summary: Font Bakery is a set of command-line tools for testing font projects
+Home-page: https://github.com/googlefonts/fontbakery/
+Author: Font Bakery Authors: Dave Crossland, Felipe Sanches, Lasse Fister, Marc Foley, Vitaly Volkov
+Author-email: dave@lab6.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: lxml
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: fontaine
+Requires-Dist: html5lib
+Requires-Dist: python-magic
+Requires-Dist: markdown
+Requires-Dist: scrapy
+Requires-Dist: urwid
+Requires-Dist: GitPython (==0.3.2.RC1)
+Requires-Dist: defusedxml
+Requires-Dist: unidecode
+Requires-Dist: tabulate
+Requires-Dist: pyasn1
+Requires-Dist: protobuf
+Requires-Dist: flake8
+Requires-Dist: coveralls
+
+UNKNOWN
+
+
