@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: pixelscamp-api
+Version: 1.0
+Summary: PixelsCamp API wrapper in python
+Home-page: https://github.com/tofran/pixelscamp-api
+Author: Francisco Marques
+Author-email: franscopcmarques@gmail.com
+License: MIT
+Keywords: PixelsCamp REST API
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
