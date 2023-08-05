@@ -1,0 +1,13 @@
+fluiddevops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fluiddevops/_version.py,sha256=O22xqaFawGvYFEtwPR7eQBYgwdSDlQcUk8XsKjWhbwg,24
+fluiddevops/mirror/__init__.py,sha256=X5b7CFdAH4pvccZ47Hff87w7-KCxD6jsCgih83XBhOU,2433
+fluiddevops/mirror/__main__.py,sha256=qFGosm6j7WmXu0i_WJF-_TAlUngq67ZgwFS2lU74wB4,81
+fluiddevops/mirror/config.py,sha256=VJocJjYpzOiOMMyZiTfqHP6UhzYpijN8JNJQUhWMwWo,1075
+fluiddevops/mirror/vcs.py,sha256=xtpPZEDawDpEIm_uikeEJpW99BMox0TyiiEKLLtBp3c,1580
+fluiddevops-0.0.0b0.dist-info/DESCRIPTION.rst,sha256=Qh9_wRhxyyz9uUd_9Kg9ui1gAoScW5So9w5C_d9n7b4,1017
+fluiddevops-0.0.0b0.dist-info/METADATA,sha256=uQ31JfHTwFNviuIfTyl-OYU9yGaTnDalwziYn1NoXuE,1784
+fluiddevops-0.0.0b0.dist-info/RECORD,,
+fluiddevops-0.0.0b0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+fluiddevops-0.0.0b0.dist-info/entry_points.txt,sha256=KQt57cr6BM5fWyiNIUVxhBUhsSrWD3hHPaauH3mELK4,57
+fluiddevops-0.0.0b0.dist-info/metadata.json,sha256=jVRcCRxf-XfqRk57EawHF7JOhMtbavBH7e_SZLDS7Xw,1090
+fluiddevops-0.0.0b0.dist-info/top_level.txt,sha256=P8QnuB8shaGWppsngdYW-VG9zRuUfT8BDGlohYxT6pA,12
