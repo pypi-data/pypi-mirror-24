@@ -1,0 +1,60 @@
+Metadata-Version: 2.0
+Name: django-aws-xray
+Version: 0.0.2
+Summary: Something I made
+Home-page: https://github.com/mvantellingen/django-xray
+Author: Michael van Tellingen
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: Django (>=1.8)
+Requires-Dist: six (>=1.1)
+Provides-Extra: docs
+Requires-Dist: sphinx (>=1.4.0); extra == 'docs'
+Provides-Extra: test
+Requires-Dist: attrs (>=17.2.0); extra == 'test'
+Requires-Dist: coverage (==.4.2); extra == 'test'
+Requires-Dist: flake8 (==3.0.3); extra == 'test'
+Requires-Dist: flake8-blind-except (==0.1.1); extra == 'test'
+Requires-Dist: flake8-debugger (==1.4.0); extra == 'test'
+Requires-Dist: isort (==4.2.5); extra == 'test'
+Requires-Dist: pytest (==3.0.5); extra == 'test'
+Requires-Dist: pytest-django (==3.1.2); extra == 'test'
+
+===========
+django_xray
+===========
+
+
+Status
+======
+.. image:: https://travis-ci.org/mvantellingen/django-xray.svg?branch=master
+    :target: https://travis-ci.org/mvantellingen/django-xray
+
+.. image:: http://codecov.io/github/mvantellingen/django-xray/coverage.svg?branch=master
+    :target: http://codecov.io/github/mvantellingen/django-xray?branch=master
+
+.. image:: https://img.shields.io/pypi/v/django-xray.svg
+    :target: https://pypi.python.org/pypi/django-xray/
+
+
+Installation
+============
+
+.. code-block:: shell
+
+   pip install django_xray
+
+
