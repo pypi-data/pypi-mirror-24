@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+recip/__init__.py
+recip/one_cython_file.pyx
+recip/ultimate_question.py
+recip.egg-info/PKG-INFO
+recip.egg-info/SOURCES.txt
+recip.egg-info/dependency_links.txt
+recip.egg-info/requires.txt
+recip.egg-info/top_level.txt
