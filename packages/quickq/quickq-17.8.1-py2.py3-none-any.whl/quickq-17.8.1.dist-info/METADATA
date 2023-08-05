@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: quickq
+Version: 17.8.1
+Summary: The quickest way to execute async tasks with Django.
+Home-page: https://github.com/pizzapanther/pizzapanther.github.io/tree/master/libs/quickq
+Author: Paul Bailey
+Author-email: quickq@neutrondrive.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: Django (>=1.11)
+Requires-Dist: pyjwt
+Requires-Dist: requests-futures
+Provides-Extra: dev
+Requires-Dist: twine; extra == 'dev'
+Requires-Dist: wheel; extra == 'dev'
+
+# Django Quick Queue
+
+
