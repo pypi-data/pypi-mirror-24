@@ -1,0 +1,9 @@
+3to2
+applib
+chardet
+cmdln
+inflector
+six
+zope.cachedescriptors
+clang
+subprocess32
