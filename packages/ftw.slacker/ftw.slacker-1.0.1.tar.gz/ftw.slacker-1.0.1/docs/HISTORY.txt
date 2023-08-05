@@ -1,0 +1,14 @@
+Changelog
+=========
+
+1.0.1 (2017-07-27)
+------------------
+
+- Fix README.rst errors.
+  [elioschmutz]
+
+
+1.0.0 (2017-07-27)
+------------------
+
+- Initial release.
