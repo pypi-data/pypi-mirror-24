@@ -1,0 +1,4 @@
+[console_scripts]
+pgantomizer = pgantomizer.anonymize:main
+pgantomizer_dump = pgantomizer.dump:main
+

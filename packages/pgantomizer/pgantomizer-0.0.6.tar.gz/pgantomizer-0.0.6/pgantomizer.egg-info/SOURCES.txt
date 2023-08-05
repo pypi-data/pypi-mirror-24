@@ -1,0 +1,16 @@
+README.rst
+setup.cfg
+setup.py
+pgantomizer/__init__.py
+pgantomizer/anonymize.py
+pgantomizer/dump.py
+pgantomizer/utils.py
+pgantomizer.egg-info/PKG-INFO
+pgantomizer.egg-info/SOURCES.txt
+pgantomizer.egg-info/dependency_links.txt
+pgantomizer.egg-info/entry_points.txt
+pgantomizer.egg-info/requires.txt
+pgantomizer.egg-info/top_level.txt
+tests/__init__.py
+tests/asserts.py
+tests/test_pgantomizer.py
