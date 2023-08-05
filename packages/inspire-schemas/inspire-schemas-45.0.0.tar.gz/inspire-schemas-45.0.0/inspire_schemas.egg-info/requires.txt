@@ -1,0 +1,5 @@
+autosemver
+jsonschema
+idutils
+pyyaml
+six
