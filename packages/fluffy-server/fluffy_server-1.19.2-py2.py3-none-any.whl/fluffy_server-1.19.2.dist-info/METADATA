@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: fluffy-server
+Version: 1.19.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Chris Kuehl
+Author-email: ckuehl@ocf.berkeley.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: boto3
+Requires-Dist: mistune
+Requires-Dist: pyquery
+Requires-Dist: flask
+Requires-Dist: pygments
+Requires-Dist: cached-property
+
+UNKNOWN
+
+
