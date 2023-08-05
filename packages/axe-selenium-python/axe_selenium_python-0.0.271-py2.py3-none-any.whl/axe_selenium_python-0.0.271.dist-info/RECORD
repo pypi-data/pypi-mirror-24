@@ -1,0 +1,13 @@
+axe_selenium_python/__init__.py,sha256=WQ4pFyIx3SVuBmG1ZcyrELy7YtVmipiovI8Jz-KSoUc,221
+axe_selenium_python/axe.py,sha256=6aRxOdfmUHi9sIFj_Le1AbhSekew_vcO2KBasYvRZ1g,3196
+axe_selenium_python/axe_tests/__init__.py,sha256=R2GxiX4GPcWrum-c-WlQjnJ6y2cUFsGSu_B5cmU_Ix4,199
+axe_selenium_python/axe_tests/conftest.py,sha256=w06uC1HvRqFWy13H5-d_E0u66hJwNvPneap9CDvX6D0,1230
+axe_selenium_python/axe_tests/test_accessibility_rules.py,sha256=u2SISSdpM0nAt4Hx0ydshMnDb-JUno98_8ifz52IDuA,3281
+axe_selenium_python/axe_tests/test_axe.py,sha256=vn6ZBV1u626Kl0qhpsPEiBgs8iVuk86mxYDmgen_3JE,2124
+axe_selenium_python/src/axe.min.js,sha256=BGAllCBTUJjJXw3yOPMVai2Bj-1PVaEhK2na699nI_o,193747
+axe_selenium_python-0.0.271.dist-info/DESCRIPTION.rst,sha256=62Irm4yXhtt28ClQahPQSHHpf-D7LB-DeMZP-Cw2Kng,1193
+axe_selenium_python-0.0.271.dist-info/METADATA,sha256=GvlZAXjeW6G5NUBiNjkd3MPdbr2V_UL2yX0WkOkzB8s,1704
+axe_selenium_python-0.0.271.dist-info/RECORD,,
+axe_selenium_python-0.0.271.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+axe_selenium_python-0.0.271.dist-info/metadata.json,sha256=Ae01dPHVPjoUE4Gu0kLW10InXdXRXTMECFeReSsBBEs,743
+axe_selenium_python-0.0.271.dist-info/top_level.txt,sha256=QTzF9Gg2Gmtq2KA9N69JkHfOsXXXusfZJHOfv6CGbiI,20
