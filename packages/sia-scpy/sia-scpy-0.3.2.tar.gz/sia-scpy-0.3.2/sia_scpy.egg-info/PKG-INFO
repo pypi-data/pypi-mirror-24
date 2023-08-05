@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: sia-scpy
+Version: 0.3.2
+Summary: Python3 API bindings for the Sia API
+Home-page: https://github.com/emilio2601/scpy
+Author: Emilio Mendoza
+Author-email: emilio2601@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/emilio2601/scpy/archive/0.3.2.tar.gz
+Description: UNKNOWN
+Keywords: python3,sia,api,storage
+Platform: UNKNOWN
