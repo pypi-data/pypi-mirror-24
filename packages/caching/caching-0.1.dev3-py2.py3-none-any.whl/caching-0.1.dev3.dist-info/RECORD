@@ -1,0 +1,9 @@
+caching/__init__.py,sha256=FCh7RDYna03vNHCQ5eUopEBQf3ux8FbgrzHNSFSSWl8,122
+caching/cache.py,sha256=Bwm2EqNgiW2HB6wyIMqoOusO4Qvh1ndxz8UXepRMhmA,3472
+caching/storage.py,sha256=C_W2u8pku-fPdQWhfTPTHbXlKZNTlMbhOomt7YlYWus,4641
+caching-0.1.dev3.dist-info/DESCRIPTION.rst,sha256=XByxhDONKxIFMryp28bIxiV07pspkX3SERUD03BE4jc,3061
+caching-0.1.dev3.dist-info/METADATA,sha256=vVys9jhYGHJ1MU4HH6Tu_VaRUrbpJOYQSkHbd2jrcNs,3799
+caching-0.1.dev3.dist-info/RECORD,,
+caching-0.1.dev3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+caching-0.1.dev3.dist-info/metadata.json,sha256=PixRwkb__-S9U0wUvc1OvAiT1skWz-XXlWoz3v2zR4U,920
+caching-0.1.dev3.dist-info/top_level.txt,sha256=6HQwTX4Qkhurve82tUYGqHQxRS8PKc5pMZphVIN-HKM,8
