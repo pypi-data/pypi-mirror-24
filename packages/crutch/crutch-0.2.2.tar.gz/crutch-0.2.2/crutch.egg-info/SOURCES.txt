@@ -1,0 +1,8 @@
+README.rst
+setup.py
+crutch.egg-info/PKG-INFO
+crutch.egg-info/SOURCES.txt
+crutch.egg-info/dependency_links.txt
+crutch.egg-info/entry_points.txt
+crutch.egg-info/requires.txt
+crutch.egg-info/top_level.txt
