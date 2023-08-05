@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: command-streamer
+Version: 0.0.2
+Summary: Stream command output using asyncio
+Home-page: https://github.com/conanfanli/command-streamer
+Author: Conan Li
+Author-email: conanlics@gmail.com
+License: MIT
+Keywords: command streamer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: ~=3.6
+Provides-Extra: dev
+Requires-Dist: ipython; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+
+UNKNOWN
+
+
