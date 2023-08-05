@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: pinggraph
+Version: 1.0
+Summary: Ping, but with a graph. Visit the Github page for more info
+Home-page: https://github.com/orf/gping
+Author: Orf
+Author-email: tom@tomforb.es
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Requires: colorama
+Requires-Dist: colorama
+
+UNKNOWN
+
+
