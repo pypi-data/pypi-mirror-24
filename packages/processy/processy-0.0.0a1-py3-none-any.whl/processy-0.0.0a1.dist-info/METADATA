@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: processy
+Version: 0.0.0a1
+Summary: A popen wrapper.
+Home-page: https://github.com/feluxe/processy
+Author: Felix Meyer-Wolters
+Author-email: felix@meyerwolters.de
+License: unlicensed
+Download-URL: https://github.com/feluxe/processy/tarball/0.0.0-alpha.1
+Keywords: popen,wraper
+Platform: 
+
+```
+Inject Help Text here.
+```
+
+# processy
+
+<small>Project created on: 2017-08-06 20:26:18
+
+### Description
+
+A popen wrapper.
+
+
