@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: perflog
+Version: 2017.8.1
+Summary: Performance stats logger 
+Home-page: https://github.com/cjrh/perflog
+License: UNKNOWN
+Author: Caleb Hattingh
+Author-email: caleb.hattingh@gmail.com
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: psutil
+Requires-Dist: typing; python_version < '3.5'
+Requires-Dist: enum34 ; python_version <= '2.7'
