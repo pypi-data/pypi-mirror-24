@@ -1,0 +1,4 @@
+[console_scripts]
+validol = market_graphs.main:main
+validol-conf = market_graphs.migration_scripts.user_structures:main
+
