@@ -1,0 +1,2 @@
+simplejson
+UW-RestClients-Core>0.8,<1.0
