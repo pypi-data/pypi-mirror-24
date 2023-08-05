@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: seppelsmother
+Version: 0.2
+Summary: An abundance of coverage data
+Home-page: https://github.com/ftrautsch/seppelSHARK/tree/master/seppelshark-smother
+Author: Fabian Trautsch
+Author-email: trautsch@cs.uni-goettingen.de
+License: Apache
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: coverage (>=4)
+Requires-Dist: nose
+Requires-Dist: portalocker (>=0.4)
+Requires-Dist: six
+
+Coverage data collector for seppelSHARK
+
+
