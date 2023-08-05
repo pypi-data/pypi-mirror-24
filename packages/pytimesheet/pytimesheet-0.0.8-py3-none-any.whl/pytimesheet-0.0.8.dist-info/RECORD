@@ -1,0 +1,14 @@
+pytimesheet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytimesheet/cli.py,sha256=esgpmW7ZiAzNt4bNPtZtBcEaCk5MlTDWw3monmSBCPI,6367
+pytimesheet/generate.py,sha256=Hfodzv9pMc6ooXbF7u8fjyg6pAo77-BvnO8S1U7IH6M,1532
+pytimesheet/storage.py,sha256=QZWJWChJhpV6sjq0-c5FnClJ3eY0SA53dx1lODEh-vQ,1584
+pytimesheet/utils.py,sha256=sMPokk4jhke7a-gkhn5VJ6lnwoOE_9C1if5_7jby4a0,841
+pytimesheet/template/logo.png,sha256=syKOaZ5g11uqq5n0vRcJ7gmbGTGAfRA1Qb6xEsolASA,22578
+pytimesheet/template/stundenzettel_template.tex,sha256=lWQQ8lA2FRUA5ggptefuVBKY-qVhpn3ci7Uc7LjFC5M,2376
+pytimesheet-0.0.8.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pytimesheet-0.0.8.dist-info/METADATA,sha256=o0SVUnSfzjuXxzY8UO1zi6mqQkkBlkou0nWZkxYWkqg,224
+pytimesheet-0.0.8.dist-info/RECORD,,
+pytimesheet-0.0.8.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pytimesheet-0.0.8.dist-info/entry_points.txt,sha256=SkdgzrRUQpWQhPB_RnFSOier23vEUTtPktwuWw7WjFI,54
+pytimesheet-0.0.8.dist-info/metadata.json,sha256=saUQQIl8wsP-V0FXo8uNHZNdoyUYKqfkhZVmXIsiIvI,484
+pytimesheet-0.0.8.dist-info/top_level.txt,sha256=ffkLAAogVYL92-cQt74bNYU-ZygvG85BShqclXRkzKc,12
