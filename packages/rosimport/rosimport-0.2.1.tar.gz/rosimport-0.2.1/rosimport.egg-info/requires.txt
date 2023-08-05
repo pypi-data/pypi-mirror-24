@@ -1,0 +1,3 @@
+filefinder2>=0.4
+ros_genmsg
+ros_genpy

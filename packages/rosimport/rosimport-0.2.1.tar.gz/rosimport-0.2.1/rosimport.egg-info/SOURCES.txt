@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+rosimport/__init__.py
+rosimport/_ros_directory_finder.py
+rosimport/_ros_generator.py
+rosimport/_rosdef_loader.py
+rosimport/_utils.py
+rosimport/_version.py
+rosimport/rosmsg_metafinder.py
+rosimport.egg-info/PKG-INFO
+rosimport.egg-info/SOURCES.txt
+rosimport.egg-info/dependency_links.txt
+rosimport.egg-info/requires.txt
+rosimport.egg-info/top_level.txt
