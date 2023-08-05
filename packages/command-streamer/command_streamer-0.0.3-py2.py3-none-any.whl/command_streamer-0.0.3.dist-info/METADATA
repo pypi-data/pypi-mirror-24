@@ -1,0 +1,35 @@
+Metadata-Version: 2.0
+Name: command-streamer
+Version: 0.0.3
+Summary: Stream command output using asyncio
+Home-page: https://github.com/conanfanli/command-streamer
+Author: Conan Li
+Author-email: conanlics@gmail.com
+License: MIT
+Keywords: command streamer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: ~=3.6
+Provides-Extra: dev
+Requires-Dist: ipython; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+
+.. image:: https://travis-ci.org/conanfanli/command-streamer.svg?branch=master
+  :alt: Build Status
+  :target: https://travis-ci.org/conanfanli/command-streamer
+
+command-streamer 
+================
+Stream command output with asyncio
+
+Usage
+----------
+.. code-block:: python
+
+    from command_streamer import stream_command
+
+    stream_command(['bash', '-c', 'for i in `seq 1 2`; do echo $i; done'])
+
+
