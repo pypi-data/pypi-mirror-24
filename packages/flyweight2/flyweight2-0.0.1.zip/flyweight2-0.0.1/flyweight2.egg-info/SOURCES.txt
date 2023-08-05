@@ -1,0 +1,9 @@
+README.rst
+setup.py
+flyweight2/__init__.py
+flyweight2/classes.py
+flyweight2.egg-info/PKG-INFO
+flyweight2.egg-info/SOURCES.txt
+flyweight2.egg-info/dependency_links.txt
+flyweight2.egg-info/requires.txt
+flyweight2.egg-info/top_level.txt
