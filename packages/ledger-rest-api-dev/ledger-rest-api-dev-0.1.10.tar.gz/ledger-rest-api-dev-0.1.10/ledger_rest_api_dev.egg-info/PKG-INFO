@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ledger-rest-api-dev
+Version: 0.1.10
+Summary: REST wrapper for Sovrin client
+Home-page: https://github.com/evernym/sovrin-client-rest
+Author: Evernym, Inc.
+Author-email: dev@evernym.us
+License: Apache 2.0
+Description: REST wrapper for Sovrin client
+Keywords: Sovrin Client REST
+Platform: UNKNOWN

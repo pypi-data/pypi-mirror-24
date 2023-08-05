@@ -1,0 +1,4 @@
+aiohttp
+requests
+psutil
+indy-node==1.0.28
