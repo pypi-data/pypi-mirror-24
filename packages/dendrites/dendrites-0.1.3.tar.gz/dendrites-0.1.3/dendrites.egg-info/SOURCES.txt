@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+dendrites/__init__.py
+dendrites/log_format.py
+dendrites/neural_network.py
+dendrites.egg-info/PKG-INFO
+dendrites.egg-info/SOURCES.txt
+dendrites.egg-info/dependency_links.txt
+dendrites.egg-info/requires.txt
+dendrites.egg-info/top_level.txt
+dendrites.egg-info/zip-safe
