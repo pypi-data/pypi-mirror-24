@@ -1,0 +1,3 @@
+[flake8.extension]
+I8 = flake8_import_style:I8
+

@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: flake8-import-style
+Version: 0.3.0
+Summary: A flake8 plugin to ensure explicit module imports
+Home-page: https://github.com/sfstpala/flake8-import-style
+Author: Stefano Palazzo
+Author-email: stefano.palazzo@gmail.com
+License: ISC
+Description: flake8-import-style
+        ===================
+        
+        A flake8 plugin to ensure explicit module imports.
+        
+        For more information, see `github.com/sfstpala/flake8-import-style <https://github.com/sfstpala/flake8-import-style/>`_.
+        
+Platform: UNKNOWN
+Classifier: Framework :: Flake8
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
