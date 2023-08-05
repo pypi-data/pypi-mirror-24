@@ -1,0 +1,8 @@
+setup.py
+colorharmonies/__init__.py
+colorharmonies/colorharmonies.py
+colorharmonies.egg-info/PKG-INFO
+colorharmonies.egg-info/SOURCES.txt
+colorharmonies.egg-info/dependency_links.txt
+colorharmonies.egg-info/not-zip-safe
+colorharmonies.egg-info/top_level.txt
