@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: celldb
+Version: 2.4
+Summary: Functional genomics database python client.
+Home-page: https://github.com/david4096/celldb
+Author: David Steinberg
+Author-email: david@resium.com
+License: Apache License 2.0
+Keywords: genomics
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: redis
+
+celldb
+=======
+
+Database for functional genomics.
+
+::
+
+    docker run -itd -p 6379:6379 redis
+    pip install celldb
+    jupyter notebook notebooks/getting-started.ipynb
+
+

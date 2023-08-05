@@ -1,0 +1,11 @@
+celldb-2.4-py2.7-nspkg.pth,sha256=WFLosWTRCH0tY9YkPr3zUOmfLUITSgiVo0bO-pO0sYo,539
+celldb/client/__init__.py,sha256=uuObjXkIB8NgQsS1DMZhjvIuZFzBuWNt80G4nr_j0c0,236
+celldb/client/client.py,sha256=OC6h13A6Hv4-Uwf0IkL-koSoeFfzMENqXs_gFgDUnp8,5576
+celldb-2.4.dist-info/DESCRIPTION.rst,sha256=J4cq0yEebGFlXgK9MdseHfM5kwAqotg_ugsK8f-jTRY,172
+celldb-2.4.dist-info/METADATA,sha256=PCvvVkuzAK4MmcJwEBWVqGsbU86GO1AJwZOC8YKYdxY,728
+celldb-2.4.dist-info/RECORD,,
+celldb-2.4.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+celldb-2.4.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+celldb-2.4.dist-info/metadata.json,sha256=Tx70klmgI2GKPx4Q3asws7i4dwgD89eO3rxvrqy6MvU,841
+celldb-2.4.dist-info/namespace_packages.txt,sha256=_MHZ0HhC5jTVs5pox2S4yXJ1UM6OfXVXqmpx-cfI52k,7
+celldb-2.4.dist-info/top_level.txt,sha256=_MHZ0HhC5jTVs5pox2S4yXJ1UM6OfXVXqmpx-cfI52k,7
