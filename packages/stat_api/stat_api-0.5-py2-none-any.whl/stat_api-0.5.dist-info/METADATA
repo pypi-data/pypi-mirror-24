@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: stat-api
+Version: 0.5
+Summary: A wrapper for the getstat.com API
+Home-page: https://github.com/DistilledLtd/get-stat-api
+Author: Austin Platt
+Author-email: austin.platt@distilled.net
+License: UNKNOWN
+Download-URL: https://github.com/DistilledLtd/get-stat-api/tarball/0.3.1
+Keywords: stat,getstat,api,keyword
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
