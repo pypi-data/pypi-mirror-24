@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: chromeremote
+Version: 0.2.4
+Summary: Chrome Remote Dev Tools
+Home-page: https://github.com/sadnoodles/chromeremote
+Author: sadnoodles
+Author-email: sadnoodles@gmail.com
+License: GPL
+Download-URL: https://github.com/sadnoodles/chromeremote/releases
+Description: 
+        Chrome Remote is a tool for remote debug with Chrome. 
+        It can be used for web spider, automatic testing, XSS detection etc.
+        
+        See more from github https://github.com/sadnoodles/chromeremote.
+        
+Platform: any
