@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: blaster
+Version: 0.1.1
+Summary: Blast off a list of tasks concurrently calling each tasks methods defined
+Home-page: https://github.com/rywillia/blaster
+Author: Ryan Williams
+Author-email: rwilliams5262@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
