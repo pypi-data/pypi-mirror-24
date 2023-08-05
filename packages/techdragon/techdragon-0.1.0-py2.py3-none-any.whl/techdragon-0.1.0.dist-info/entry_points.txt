@@ -1,0 +1,3 @@
+[console_scripts]
+techdragon = techdragon.cli:main
+
