@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: vgit
+Version: 0.1
+Summary: a sleek terminal user interface for git
+Home-page: http://github.com/saulpw/vgit
+Author: Saul Pwanson
+Author-email: vgit@saul.pw
+License: GPLv3
+Download-URL: https://github.com/saulpw/vgit/tarball/0.1
+Description: UNKNOWN
+Keywords: console textpunk git version-controlcurses visidata tui terminal
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: Terminals

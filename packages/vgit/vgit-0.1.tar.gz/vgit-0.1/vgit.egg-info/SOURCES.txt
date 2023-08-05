@@ -1,0 +1,7 @@
+setup.py
+vgit
+vgit.egg-info/PKG-INFO
+vgit.egg-info/SOURCES.txt
+vgit.egg-info/dependency_links.txt
+vgit.egg-info/requires.txt
+vgit.egg-info/top_level.txt
