@@ -1,0 +1,15 @@
+vcs_repo_mgr/__init__.py,sha256=fTcnCEItF2G8EeF75uzQWhXSaTEaUaKk64YYep2cYvk,86677
+vcs_repo_mgr/cli.py,sha256=C4wy5SIGRYpwS9FR0xTxQw08Op7Y4mseYRh3x_nng0U,12146
+vcs_repo_mgr/exceptions.py,sha256=pu1jZz6Dk4w7pJ2D9WouCCFLsyqcjWxbsRgmEWC3r6s,2122
+vcs_repo_mgr/tests.py,sha256=DfuokLfXrtLDHNj9SApepBvpELqDoW2XRKXVeyFQSUs,47443
+vcs_repo_mgr/backends/__init__.py,sha256=g0pKqL6bn1XMRk2jBqTNk3T1-azkjXbyJoeNxuSuYfY,407
+vcs_repo_mgr/backends/bzr.py,sha256=VkfsHNuPHJq517cNCG_vviKYMGskyflK0wyy0chzFtE,11970
+vcs_repo_mgr/backends/git.py,sha256=98igBXQQS48fANjzu9c2f7AisArA92lLCgc6JzPV7f8,13396
+vcs_repo_mgr/backends/hg.py,sha256=XTuRNYE_RnZIaW9KAhTWvOibyx6hxJBYIyjxNQnrsSY,10740
+vcs_repo_mgr-2.0.1.dist-info/DESCRIPTION.rst,sha256=g3DeooSdsk7sg6snIuVXkc-hT6sUac5VWWJ9p-R7FdE,15577
+vcs_repo_mgr-2.0.1.dist-info/METADATA,sha256=myKYg6kk5VId36MyaM2l5jUkFWrv-lTXNRs2rN51mH0,17287
+vcs_repo_mgr-2.0.1.dist-info/RECORD,,
+vcs_repo_mgr-2.0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+vcs_repo_mgr-2.0.1.dist-info/entry_points.txt,sha256=eKvqMpeGjXk3YRbEI_5UptD6Ehx0m9APNpfaZrNVG4U,52
+vcs_repo_mgr-2.0.1.dist-info/metadata.json,sha256=FXx6wpFbbNzKYc8a9qeqboUAoFVylK2sRYUdwYJlnZE,1784
+vcs_repo_mgr-2.0.1.dist-info/top_level.txt,sha256=ze6VVKgdzxVAgn4bhnfMoWqYl23QfdMnbHPVrLaz_cw,13
