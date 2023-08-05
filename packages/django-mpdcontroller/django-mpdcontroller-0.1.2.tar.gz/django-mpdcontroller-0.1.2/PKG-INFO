@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: django-mpdcontroller
+Version: 0.1.2
+Summary: A web interface to command the music player daemon service (mpd).
+Home-page: https://github.com/Sebatyne/django-mpdcontroller
+Author: Nicolas Wavrant
+Author-email: nicolas.wavrant@gmail.com
+License: BSD
+Description: UNKNOWN
+Keywords: django interface mpd client
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP

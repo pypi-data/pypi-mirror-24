@@ -1,0 +1,13 @@
+setup.py
+django_mpdcontroller.egg-info/PKG-INFO
+django_mpdcontroller.egg-info/SOURCES.txt
+django_mpdcontroller.egg-info/dependency_links.txt
+django_mpdcontroller.egg-info/top_level.txt
+mpdcontroller/__init__.py
+mpdcontroller/admin.py
+mpdcontroller/apps.py
+mpdcontroller/models.py
+mpdcontroller/tests.py
+mpdcontroller/urls.py
+mpdcontroller/views.py
+mpdcontroller/migrations/__init__.py
