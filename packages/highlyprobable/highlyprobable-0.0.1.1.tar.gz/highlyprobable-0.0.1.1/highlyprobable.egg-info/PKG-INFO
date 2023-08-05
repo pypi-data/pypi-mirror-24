@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: highlyprobable
+Version: 0.0.1.1
+Summary: Client for HighlyProbable Cloud AI Framework.
+Home-page: https://github.com/Tranquant/HighlyProbable/
+Author: Mehrdad Pazooki
+Author-email: mehrdad@tranquant.com
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: Data Science,AI,Machine Learning,Natural Language Processing,Recommendation,Apache Spark,Classification
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: Apache Software License
