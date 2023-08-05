@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+jagular/__init__.py
+jagular/blah.py
+jagular/version.py
+jagular.egg-info/PKG-INFO
+jagular.egg-info/SOURCES.txt
+jagular.egg-info/dependency_links.txt
+jagular.egg-info/requires.txt
+jagular.egg-info/top_level.txt
