@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+clorox/__init__.py
+clorox/clorox.py
+clorox/matcher.py
+clorox/printer.py
+clorox/reporter.py
+clorox.egg-info/PKG-INFO
+clorox.egg-info/SOURCES.txt
+clorox.egg-info/dependency_links.txt
+clorox.egg-info/entry_points.txt
+clorox.egg-info/requires.txt
+clorox.egg-info/top_level.txt
