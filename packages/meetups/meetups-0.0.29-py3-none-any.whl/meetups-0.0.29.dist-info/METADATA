@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: meetups
+Version: 0.0.29
+Summary: automatically rsvp yes to all meetups
+Home-page: https://github.com/simonm3/meetups.git
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyYAML
+Requires-Dist: logcon
+Requires-Dist: requests
+Requires-Dist: xtools
+
+UNKNOWN
+
+
