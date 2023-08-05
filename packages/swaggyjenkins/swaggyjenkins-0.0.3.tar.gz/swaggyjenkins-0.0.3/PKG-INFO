@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: swaggyjenkins
+Version: 0.0.3
+Summary: Swaggy Jenkins
+Home-page: https://github.com/cliffano/swaggy-jenkins/tree/master/clients/python
+Author: UNKNOWN
+Author-email: blah@cliffano.com
+License: UNKNOWN
+Description:     Jenkins API clients generated from Swagger / Open API specification
+            
+Keywords: Swagger,Swaggy Jenkins
+Platform: UNKNOWN
