@@ -1,0 +1,8 @@
+requests
+rollbar
+python-magic
+
+[dev]
+PyInstaller==3.2.1
+
+[test]
