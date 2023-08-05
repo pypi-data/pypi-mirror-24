@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: datacost
+Version: 1.07
+Summary: Calculate cost based metrics about data based on the number    of positive and negative data points.
+Home-page: https://github.com/mikesiers/DataCost/
+Author: Michael J. Siers
+Author-email: mikesiers@live.com
+License: UNKNOWN
+Download-URL: https://github.com/mikesiers/DataCost/archive/1.07.tar.gz
+Description: UNKNOWN
+Keywords: cost-sensitive,machine-learning,data-science
+Platform: UNKNOWN
