@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: mini-jwt-backend
+Version: 17.8.1
+Summary: A simple JWT Django Auth backend
+Home-page: https://gitlab.com/chaosengine256/mini-jwt-backend
+Author: Chaos Engine
+Author-email: chaosengine256@gmail.com
+License: MIT
+Description: **Mini JWT Backend**
+        
+Platform: UNKNOWN

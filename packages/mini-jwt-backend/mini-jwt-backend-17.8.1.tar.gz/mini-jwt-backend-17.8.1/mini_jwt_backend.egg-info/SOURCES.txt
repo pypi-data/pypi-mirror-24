@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+mini-jwt-backend/__init__.py
+mini-jwt-backend/backends.py
+mini-jwt-backend/micro_requests.py
+mini_jwt_backend.egg-info/PKG-INFO
+mini_jwt_backend.egg-info/SOURCES.txt
+mini_jwt_backend.egg-info/dependency_links.txt
+mini_jwt_backend.egg-info/requires.txt
+mini_jwt_backend.egg-info/top_level.txt
