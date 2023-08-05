@@ -1,0 +1,14 @@
+zope.copy-4.1.0-py2.7-nspkg.pth,sha256=SWEVH-jEWsKYrL0qoC6GBJaStx_iKxGoAY9PQycFVC4,529
+zope/copy/__init__.py,sha256=GUGfk9Ui1XXD10eXc5IKa77LwoUcnaXALGTSxfi9Hs8,3398
+zope/copy/_compat.py,sha256=CvWMIAwb-qQ89BDxAlINHiyce1NJOtW2udQGwPMEim8,1197
+zope/copy/examples.py,sha256=4jgMDGFZxHEhTVVFuu9EKv0FvmeOBFFBWx41E5zobcI,1315
+zope/copy/interfaces.py,sha256=bmBMb8mp-E8FvPYM9vxL2XR2418IBSqKsIDpvUyaQvA,1691
+zope/copy/tests/__init__.py,sha256=nH3LrDEcAitnx5UrI9s8iB2tGDWAQLCMg_4I9F3SLKw,9
+zope/copy/tests/test_copy.py,sha256=dQB1NFG9_6debVEnlq32voKQbF4S_DSLn1ma6ji58GM,7797
+zope.copy-4.1.0.dist-info/DESCRIPTION.rst,sha256=JXdAEAirHRnzaFN6VNgrD8k7j3tjFzpNRN1GJnySw4A,2336
+zope.copy-4.1.0.dist-info/METADATA,sha256=JlyfIAWnI5vLpoXMUpLYy2vMrf11h7e2jJ0dAKWib5I,3758
+zope.copy-4.1.0.dist-info/RECORD,,
+zope.copy-4.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+zope.copy-4.1.0.dist-info/metadata.json,sha256=QNzW3vLGMBKF8PMIuuhSDTdoN5_ujeXUKc6w244XLWU,1391
+zope.copy-4.1.0.dist-info/namespace_packages.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.copy-4.1.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
