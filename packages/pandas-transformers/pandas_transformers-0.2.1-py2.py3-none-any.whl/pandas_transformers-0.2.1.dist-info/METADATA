@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: pandas-transformers
+Version: 0.2.1
+Summary: Use pandas dataframes in sklearn pipelines
+Home-page: UNKNOWN
+Author: Oguzhan Sagoglu
+Author-email: alwaysprep@gmail.com
+License: MIT
+Keywords: pandas sklearn pipeline transformers
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Requires-Python: >=2.7, <3
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
+UNKNOWN
+
+
