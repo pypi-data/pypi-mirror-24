@@ -1,0 +1,12 @@
+requests
+structlog
+pyopenssl
+cryptography
+
+[dev]
+coverage
+pypandoc
+twine
+wheel
+yapf
+flake8
