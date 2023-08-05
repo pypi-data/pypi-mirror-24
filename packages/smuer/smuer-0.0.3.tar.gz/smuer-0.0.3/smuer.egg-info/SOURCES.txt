@@ -1,0 +1,12 @@
+setup.py
+smuer/__init__.py
+smuer/courses.py
+smuer/grade.py
+smuer/home.py
+smuer/password.py
+smuer/smuer.py
+smuer.egg-info/PKG-INFO
+smuer.egg-info/SOURCES.txt
+smuer.egg-info/dependency_links.txt
+smuer.egg-info/requires.txt
+smuer.egg-info/top_level.txt
