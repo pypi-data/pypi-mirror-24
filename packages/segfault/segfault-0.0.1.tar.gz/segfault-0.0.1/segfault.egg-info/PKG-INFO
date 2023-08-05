@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: segfault
+Version: 0.0.1
+Summary: A library that makes the Python interpreter segfault.
+Home-page: https://github.com/cbgbt/segfault
+Author: Sean Kelly
+Author-email: sean.kelly.2992@gmail.com
+License: MIT
+Download-URL: https://github.com/cbgbt/segfault/archive/v0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: segfault
+Platform: UNKNOWN

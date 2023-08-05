@@ -1,0 +1,9 @@
+segfault.py
+setup.cfg
+setup.py
+segfault.egg-info/PKG-INFO
+segfault.egg-info/SOURCES.txt
+segfault.egg-info/dependency_links.txt
+segfault.egg-info/top_level.txt
+test/test_call.py
+test/test_raise.py
