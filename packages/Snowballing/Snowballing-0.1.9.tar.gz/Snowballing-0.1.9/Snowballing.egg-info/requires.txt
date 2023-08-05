@@ -1,0 +1,13 @@
+ipython
+jupyter
+ipywidgets
+pyposast
+svgwrite
+bibtexparser
+bs4
+selenium
+svgwrite
+matplotlib
+pandas
+seaborn
+numpy
