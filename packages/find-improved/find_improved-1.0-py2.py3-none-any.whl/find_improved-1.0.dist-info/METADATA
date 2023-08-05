@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: find-improved
+Version: 1.0
+Summary: fIND imPROVED - a command line tool similar to xargs or find -exec for executing a command pattern on multiple inputs
+Home-page: https://bitbucket.org/adamlabadorf/fim/overview
+Author: Adam Labadorf
+Author-email: alabadorf@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Environment :: Console
+Requires-Python: >= 2.7, >= 3
+Requires-Dist: docopt
+
+UNKNOWN
+
+
