@@ -1,0 +1,154 @@
+{
+  "branches": {
+    "only": [
+      "auto",
+      "master"
+    ]
+  },
+  "cache": "pip",
+  "dist": "trusty",
+  "git": {
+    "submodules": false
+  },
+  "install": [
+    "\n. scripts/travis-install.sh;\npip install -U pip;\npip install wheel;\nmake -e install-dev;\nmake -e install-$BUILD;\n"
+  ],
+  "language": "python",
+  "matrix": {
+    "include": [
+      {
+        "env": "BUILD=style BUILD_PRS=true",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=radicale REQUIREMENTS=devel BUILD_PRS=true ",
+        "python": "3.3"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=xandikos REQUIREMENTS=devel BUILD_PRS=true ",
+        "python": "3.3"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=radicale REQUIREMENTS=release BUILD_PRS=true ",
+        "python": "3.3"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=xandikos REQUIREMENTS=release BUILD_PRS=true ",
+        "python": "3.3"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=radicale REQUIREMENTS=minimal BUILD_PRS=true ",
+        "python": "3.3"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=xandikos REQUIREMENTS=minimal BUILD_PRS=true ",
+        "python": "3.3"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=radicale REQUIREMENTS=devel BUILD_PRS=true ",
+        "python": "3.4"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=xandikos REQUIREMENTS=devel BUILD_PRS=true ",
+        "python": "3.4"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=radicale REQUIREMENTS=release BUILD_PRS=true ",
+        "python": "3.4"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=xandikos REQUIREMENTS=release BUILD_PRS=true ",
+        "python": "3.4"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=radicale REQUIREMENTS=minimal BUILD_PRS=true ",
+        "python": "3.4"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=xandikos REQUIREMENTS=minimal BUILD_PRS=true ",
+        "python": "3.4"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=radicale REQUIREMENTS=devel BUILD_PRS=true ",
+        "python": "3.5"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=xandikos REQUIREMENTS=devel BUILD_PRS=true ",
+        "python": "3.5"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=radicale REQUIREMENTS=release BUILD_PRS=true ",
+        "python": "3.5"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=xandikos REQUIREMENTS=release BUILD_PRS=true ",
+        "python": "3.5"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=radicale REQUIREMENTS=minimal BUILD_PRS=true ",
+        "python": "3.5"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=xandikos REQUIREMENTS=minimal BUILD_PRS=true ",
+        "python": "3.5"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=radicale REQUIREMENTS=devel BUILD_PRS=true ",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=xandikos REQUIREMENTS=devel BUILD_PRS=true ",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=radicale REQUIREMENTS=release BUILD_PRS=true ",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=xandikos REQUIREMENTS=release BUILD_PRS=true ",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=owncloud REQUIREMENTS=release BUILD_PRS=true ",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=nextcloud REQUIREMENTS=release BUILD_PRS=true ",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=baikal REQUIREMENTS=release BUILD_PRS=true ",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=davical REQUIREMENTS=release BUILD_PRS=false ",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=fastmail REQUIREMENTS=release BUILD_PRS=false ",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=radicale REQUIREMENTS=minimal BUILD_PRS=true ",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test DAV_SERVER=xandikos REQUIREMENTS=minimal BUILD_PRS=true ",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test ETESYNC_TESTS=true REQUIREMENTS=latest BUILD_PRS=true ",
+        "python": "3.6"
+      },
+      {
+        "env": "BUILD=test BUILD_PRS=true",
+        "language": "generic",
+        "os": "osx"
+      }
+    ]
+  },
+  "script": [
+    "\nif [ \"$TRAVIS_PULL_REQUEST\" = \"false\" ] || [ \"$BUILD_PRS\" != \"false\" ];\nthen make -e $BUILD;\nfi"
+  ],
+  "sudo": true
+}
