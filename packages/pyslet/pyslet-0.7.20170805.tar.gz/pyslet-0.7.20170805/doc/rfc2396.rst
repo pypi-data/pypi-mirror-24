@@ -1,0 +1,329 @@
+Uniform Resource Identifiers (RFC2396)
+======================================
+
+.. py:module:: pyslet.rfc2396
+
+This module defines functions and classes for working with URI as
+defined by RFC2396: http://www.ietf.org/rfc/rfc2396.txt
+
+In keeping with usage in the specification we use URI in both the
+singular and plural sense.
+
+In addition to parsing and formating URI from strings, this module also
+supports computing and resolving relative URI.  To do this we define two
+notional operators.
+
+The resolve operator::
+
+	U = B [*] R
+
+calculates a new URI 'U' from a base URI 'B' and a relative URI 'R'.
+
+The relative operator::
+
+	U [/] B = R
+
+calcualtes the relative URI 'R' formed by expressing 'U' relative to 'B'.
+
+The Relative operator defines the reverse of the resolve operator,
+however note that in some cases several different values of R can
+resolve to the same URL with a common base URI.
+
+
+Creating URI Instances
+----------------------
+
+To create URI use the :meth:`URI.from_octets` class method.  This method
+takes both character and binary strings though in the first case the
+string must contain only ASCII characters and in the latter only bytes
+that represent ASCII characters.  The following function can help
+convert general character strings to a suitable format but it is not a
+full implementation of the IRI specification, in particular it does not
+encode delimiters (such as space) and it does not deal intelligently
+with unicode domain names (these must be converted to their ASCII URI
+forms first).
+ 
+..  autofunction::  encode_unicode_uri
+
+
+URI
+---
+
+..	autoclass:: URI
+	:members:
+	:show-inheritance:
+
+..  autoclass:: ServerBasedURL
+	:members:
+	:show-inheritance:
+
+..  autoclass:: FileURL
+	:members:
+	:show-inheritance:
+
+
+Canonicalization and Escaping
+-----------------------------
+
+..	autofunction::	canonicalize_data(source, unreserved_test=is_unreserved, allowed_test=is_allowed)
+
+..	autofunction::	escape_data(source, reserved_test=is_reserved, allowed_test=is_allowed)
+
+..	autofunction::	unescape_data
+
+..  autodata::      path_sep
+
+
+Basic Syntax
+------------
+
+RFC2396 defines a number of character classes (see
+:class:`pyslet.unicode5.CharClass`) to assist with the parsing of URI. 
+
+The bound test method of each class is exposed for convenience (you
+don't need to pass an instance).  These pseudo-functions therefore all
+take a single character as an argument and return True if the character
+matches the class.  They will also accept None and return False in that
+case.
+
+..	function::	is_upalpha(c)
+    
+    Tests production: upalpha
+
+..	function::	is_lowalpha(c)
+
+    Tests production: lowalpha
+
+..	function::	is_alpha(c)
+
+    Tests production: alpha
+    
+..	function::	is_digit(c)
+
+    Tests production: digit
+
+..	function::	is_alphanum(c)
+
+    Tests production: alphanum
+    
+..	function::	is_reserved(c)
+
+    Tests production: reserved
+
+    The reserved characters are::
+
+        ";" | "/" | "?" | ":" | "@" | "&" | "=" | "+" | "$" | "," | "[" | "]"
+
+    This function uses the larger reserved set defined by the update in
+    RFC2732.  The additional reserved characters are "[" and "]" which
+    were not originally part of the character set allowed in URI by
+    RFC2396.
+
+..	function::	is_reserved_2396(c)
+
+    Tests production: reserved
+
+    The reserved characters are::
+
+        ";" | "/" | "?" | ":" | "@" | "&" | "=" | "+" | "$" | ","
+
+    This function enables strict parsing according to RFC2396, for
+    general use you should use :func:`is_reserved` which takes into
+    consideration the update in RFC2732 to accommodate IPv6 literals.
+
+..	function::	is_reserved_1738(c)
+
+    Tests production: reserved
+
+    The reserved characters are::
+
+        ";" | "/" | "?" | ":" | "@" | "&" | "="
+
+    This function enables parsing according to the earlier RFC1738.
+
+..	function::	is_unreserved(c)
+
+    Tests production: unreserved
+
+    Despite the name, some characters are neither reserved nor
+    unreserved.
+
+..	function::	is_unreserved_1738(c)
+
+    Tests production: unreserved
+
+    Tests the definition of unreserved from the earlier RFC1738.  The
+    following characters were considered 'safe' in RFC1738 (and so are
+    unreserved there) but were later classified as reserved in RFC2396::
+
+        "$" | "+" | ","
+
+    The "~" is considered unreserved in RFC2396 but is neither reserved
+    nor unreserved in RFC1738 and so therefore must be escaped for
+    compatibility with early URL parsing systems.
+
+..	function::	is_safe_1738(c)
+
+    Test production: safe (RFC 1738 only)
+
+    The safe characters are::
+
+        "$" | "-" | "_" | "." | "+"
+    
+..	function::	is_extra_1738(c)
+
+    Test production: safe (RFC 1738 only)
+
+    The safe characters are::
+
+        "!" | "*" | "'" | "(" | ")" | ","
+    
+..	function::	is_mark(c)
+
+    Tests production: mark
+
+    The mark characters are::
+
+        "-" | "_" | "." | "!" | "~" | "*" | "'" | "(" | ")"
+
+..	function::	is_allowed(c)
+
+    Convenience function for testing allowed characters
+
+    Returns True if c is a character allowed in a URI according to the
+    looser definitions of RFC2732, False otherwise. A character is
+    allowed (unescaped) in a URI if it is either reserved or unreserved.
+
+..	function::	is_allowed_2396(c)
+
+    Convenience function for testing allowed characters
+
+    Returns True if c is a character allowed in a URI according to the
+    stricter definitions in RFC2396, False otherwise. A character is
+    allowed (unescaped) in a URI if it is either reserved or unreserved.
+
+..	function::	is_allowed_1738(c)
+
+    Convenience function for testing allowed characters
+
+    Returns True if c is a character allowed in a URI according to the
+    older definitions in RFC1738, False otherwise. A character is
+    allowed (unescaped) in a URI if it is either reserved or unreserved.
+
+..	function::	is_hex(c)
+
+    Tests production: hex
+
+    Accepts upper or lower case forms.
+
+..	function::	is_control(c)
+
+    Tests production: control
+    
+..	autofunction::	is_space
+
+..	function::	is_delims(c)
+
+    Tests production: delims
+
+    The delims characters are::
+
+        "<" | ">" | "#" | "%" | <">
+    
+..	function::	is_unwise(c)
+
+    Tests production: unwise
+
+    The unwise characters are::
+
+        "{" | "}" | "|" | "\" | "^" | "`"
+
+    This function uses the smaller unwise set defined by the update in
+    RFC2732.  The characters "[" and "]" were removed from this set in
+    order to support IPv6 literals.
+
+    This function is provided for completeness and is not used
+    internally for parsing URLs.
+
+..	function::	is_unwise_2396(c)
+
+    Tests production: unwise
+
+    The unwise characters are::
+
+        "{" | "}" | "|" | "\" | "^" | "[" | "]" | "`"
+
+    This function enables strict parsing according to RFC2396, the
+    definition of unwise characters was updated in RFC2732 to exclude
+    "[" and "]".
+
+..	function::	is_authority_reserved(c)
+
+    Convenience function for parsing production authority
+
+    Quoting the specification of production authority:
+
+        Within the authority component, the characters ";", ":", "@",
+        "?", and "/" are reserved
+    
+..	function::	is_path_segment_reserved(c)
+
+    Convenience function for escaping path segments
+
+    From RFC2396:
+
+        Within a path segment, the characters "/", ";", "=", and "?" are
+        reserved.
+
+..	function::	is_query_reserved(c)
+
+    Convenience function for escaping query strings
+
+    From RFC2396:
+
+        Within a query component, the characters ";", "/", "?", ":", "@",
+        "&", "=", "+", ",", and "$" are reserved    
+
+
+Some fragments of URI parsing are exposed for reuse by other modules.
+
+..	autofunction::	parse_uric(source, pos=0, allowed_test=is_allowed)
+
+..	autofunction::	split_server
+
+..	autofunction::	split_path
+
+..	autofunction::	split_abs_path
+
+..	autofunction::	split_rel_path
+
+..  autofunction::  normalize_segments
+
+
+Exceptions
+----------
+
+..	autoclass:: URIException
+	:members:
+	:show-inheritance:
+
+
+..	autoclass:: URIRelativeError
+	:members:
+	:show-inheritance:
+
+
+Legacy
+------
+
+The following definitions are provided for backwards compatibility only.
+
+..	data:: URIFactory
+	
+	An instance of :class:`URIFactoryClass` that can be used for
+	creating :class:`URI` instances.
+
+..	autoclass:: URIFactoryClass
+	:members:
+	:show-inheritance:
+
