@@ -1,0 +1,4 @@
+numpy
+numexpr
+matplotlib
+blosc
