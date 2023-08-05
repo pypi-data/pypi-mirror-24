@@ -1,0 +1,5 @@
+[console_scripts]
+pypathutil_add = pypathutil.scripts.add:main
+pypathutil_clean = pypathutil.scripts.clean:main
+pypathutil_remove = pypathutil.scripts.remove:main
+

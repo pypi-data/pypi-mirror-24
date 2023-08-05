@@ -1,0 +1,17 @@
+README.rst
+setup.py
+pypathutil/__init__.py
+pypathutil/common.py
+pypathutil.egg-info/PKG-INFO
+pypathutil.egg-info/SOURCES.txt
+pypathutil.egg-info/dependency_links.txt
+pypathutil.egg-info/entry_points.txt
+pypathutil.egg-info/requires.txt
+pypathutil.egg-info/top_level.txt
+pypathutil/scripts/__init__.py
+pypathutil/scripts/add.py
+pypathutil/scripts/clean.py
+pypathutil/scripts/remove.py
+tests/__init__.py
+tests/unit_tests/__init__.py
+tests/unit_tests/common.py

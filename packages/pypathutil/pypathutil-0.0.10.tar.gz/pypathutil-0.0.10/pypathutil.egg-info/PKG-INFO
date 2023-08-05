@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pypathutil
+Version: 0.0.10
+Summary: pypathutil is a module to help you deal with paths
+Home-page: https://veltzer.github.io/pypathutil
+Author: Mark Veltzer
+Author-email: mark.veltzer@gmail.com
+License: MIT
+Description: pypathutil is a module to help you deal with paths
+Keywords: python path utils bash
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
