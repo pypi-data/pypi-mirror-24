@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: jekyllmarkdown
+Version: 0.1
+Summary: Defines the JekyllMarkdownExporter class.
+Home-page: http://predictablynoisy.com/jekyllmarkdown
+License: UNKNOWN
+Author: Chris Holdgraf
+Author-email: choldgraf@berkeley.edu
+Classifier: License :: OSI Approved :: MIT License
