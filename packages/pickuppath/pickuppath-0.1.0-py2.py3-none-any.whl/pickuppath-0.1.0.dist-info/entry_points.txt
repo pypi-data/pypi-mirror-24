@@ -1,0 +1,3 @@
+
+    [console_scripts]
+    packuppath = pickuppath.__main__:main
