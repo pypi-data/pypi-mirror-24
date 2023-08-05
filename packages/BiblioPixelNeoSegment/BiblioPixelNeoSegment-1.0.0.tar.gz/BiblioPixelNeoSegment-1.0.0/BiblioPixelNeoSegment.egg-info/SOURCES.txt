@@ -1,0 +1,7 @@
+setup.py
+BiblioPixelNeoSegment.egg-info/PKG-INFO
+BiblioPixelNeoSegment.egg-info/SOURCES.txt
+BiblioPixelNeoSegment.egg-info/dependency_links.txt
+BiblioPixelNeoSegment.egg-info/top_level.txt
+NeoSegment/__init__.py
+NeoSegment/demo_anims.py
