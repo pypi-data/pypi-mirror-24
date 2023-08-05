@@ -1,0 +1,16 @@
+morph/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morph/action.py,sha256=6zFQusHQJ70TntZTOJP4qV6XuzDLoV-fly5hpHtGEwU,1207
+morph/base.py,sha256=rPVnRx-76YUuFnsi-mUCse90hhSR3RbWoEyBs5H1Mfw,195
+morph/examples.py,sha256=jFFPCSgnQrjZGpNLVoxrBaDp6bazY5VI636vfskHDyQ,2351
+morph/json_serializer.py,sha256=sJ14xX2-C77VoqdcYCNkuweJcaLJkSOsxskbMRKCjAA,182
+morph/message.py,sha256=ix5Qb4AO9bQpEV9HKLM0CqHvoR7AD4IVKZ5YlI4EeVY,3582
+morph/response.py,sha256=v7XNKqZxzXdVDcDWfTS4I589aVJ8HLELMB0ISoIFzBg,314
+morph/test.py,sha256=KWtWNu-KjXbV3Gwpwv4jSHwFUoPNGKqaGMDh2OB9dkI,141
+morph/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morph/variable.py,sha256=Q-gsCDujqhLOwceD5xOc-17WbFvsyREdCddGSJrL2ZU,863
+morph_ai-1.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+morph_ai-1.0.0.dist-info/METADATA,sha256=eBMbaIJ-a6k9kSTRg42hDxCVaJL6cAha9XkHrgzwIOY,375
+morph_ai-1.0.0.dist-info/RECORD,,
+morph_ai-1.0.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+morph_ai-1.0.0.dist-info/metadata.json,sha256=UaWZrpWQXk_Qzf3By08LFq4gEpWkR1cMyHalCfcpamg,550
+morph_ai-1.0.0.dist-info/top_level.txt,sha256=7gswjXR4MolmQPRV6umPxnPbYNlKVNxSLg1ENy2Y9YI,6
