@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+SecondPy/__init__.py
+SecondPy/test.py
+TestPythonPackaging.egg-info/PKG-INFO
+TestPythonPackaging.egg-info/SOURCES.txt
+TestPythonPackaging.egg-info/dependency_links.txt
+TestPythonPackaging.egg-info/top_level.txt
