@@ -1,0 +1,3 @@
+[console_scripts]
+lcov_cobertura = lcov_cobertura:main
+

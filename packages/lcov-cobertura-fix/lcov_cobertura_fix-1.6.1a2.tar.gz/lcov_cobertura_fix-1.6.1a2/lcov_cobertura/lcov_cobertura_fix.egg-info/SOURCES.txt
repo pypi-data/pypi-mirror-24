@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+lcov_cobertura/lcov_cobertura.py
+lcov_cobertura/lcov_cobertura_fix.egg-info/PKG-INFO
+lcov_cobertura/lcov_cobertura_fix.egg-info/SOURCES.txt
+lcov_cobertura/lcov_cobertura_fix.egg-info/dependency_links.txt
+lcov_cobertura/lcov_cobertura_fix.egg-info/entry_points.txt
+lcov_cobertura/lcov_cobertura_fix.egg-info/top_level.txt
