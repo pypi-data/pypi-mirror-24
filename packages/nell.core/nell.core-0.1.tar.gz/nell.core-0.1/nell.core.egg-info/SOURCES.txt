@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+nell/__init__.py
+nell.core.egg-info/PKG-INFO
+nell.core.egg-info/SOURCES.txt
+nell.core.egg-info/dependency_links.txt
+nell.core.egg-info/entry_points.txt
+nell.core.egg-info/namespace_packages.txt
+nell.core.egg-info/not-zip-safe
+nell.core.egg-info/requires.txt
+nell.core.egg-info/top_level.txt
+nell/core/__init__.py
+nell/core/cli.py
