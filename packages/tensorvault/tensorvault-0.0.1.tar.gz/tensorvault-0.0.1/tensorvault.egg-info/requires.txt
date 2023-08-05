@@ -1,0 +1,11 @@
+click~=6.0
+
+[test]
+pytest~=1.4.33
+path.py~=10.3.1
+
+[tf]
+tensorflow~=1.2
+
+[tf_gpu]
+tensorflow-gpu>=1.1

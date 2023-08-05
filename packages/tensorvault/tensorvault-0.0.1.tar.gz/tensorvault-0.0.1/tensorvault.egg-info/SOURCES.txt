@@ -1,0 +1,6 @@
+setup.py
+tensorvault.egg-info/PKG-INFO
+tensorvault.egg-info/SOURCES.txt
+tensorvault.egg-info/dependency_links.txt
+tensorvault.egg-info/requires.txt
+tensorvault.egg-info/top_level.txt
