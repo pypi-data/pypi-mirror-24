@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+Makefile
+README.rst
+setup.py
+asn1tools/__init__.py
+asn1tools/types.py
+asn1tools.egg-info/PKG-INFO
+asn1tools.egg-info/SOURCES.txt
+asn1tools.egg-info/dependency_links.txt
+asn1tools.egg-info/top_level.txt
+asn1tools/codecs/__init__.py
+asn1tools/codecs/ber.py
+tests/__init__.py
+tests/test_asn1tools.py
