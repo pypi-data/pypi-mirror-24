@@ -1,0 +1,9 @@
+[Core]
+Name = Local Filesystem Copy Module
+Module = local_copy
+
+[Documentation]
+Author = @sP0CkEr2
+Version = 0.1
+Website =
+Description = Module for Copying from the Local Filesystem

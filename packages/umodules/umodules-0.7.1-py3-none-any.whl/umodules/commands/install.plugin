@@ -1,0 +1,9 @@
+[Core]
+Name = Install Command
+Module = install
+
+[Documentation]
+Author = sP0CkEr2
+Version = 0.1
+Website =
+Description = Command for Installing a Project

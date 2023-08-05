@@ -1,0 +1,9 @@
+[Core]
+Name = Update Command
+Module = update
+
+[Documentation]
+Author = sP0CkEr2
+Version = 0.1
+Website =
+Description = Command for Updating a Project

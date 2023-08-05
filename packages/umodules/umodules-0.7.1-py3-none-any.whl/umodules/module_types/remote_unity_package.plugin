@@ -1,0 +1,9 @@
+[Core]
+Name = Remote Unity Package
+Module = remote_unity_package
+
+[Documentation]
+Author = Paul Hocker
+Version = 0.1
+Website =
+Description = Pull Unity Asset Packages from a Remote Website

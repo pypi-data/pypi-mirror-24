@@ -1,0 +1,9 @@
+[Core]
+Name = New Command
+Module = new
+
+[Documentation]
+Author = sP0CkEr2
+Version = 0.1
+Website =
+Description = Command for Creating a New Project
