@@ -1,0 +1,12 @@
+mimir_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mimir_cli/helpers.py,sha256=8sap6CBMMrR1-bipavtdCbFtxGmqXP8HB6NjzQrXCHk,5477
+mimir_cli/main.py,sha256=HSqD-3_QIfw3rfoGwGeZ0ruKrhdtPhPaUaOL7_BSXuM,5118
+mimir_cli/strings.py,sha256=qAnNg1dkM81sUcVsvLqFq2Rk5DqFWZB5BwqiakjWe8M,478
+mimir_cli-0.2.0.dist-info/DESCRIPTION.rst,sha256=WdAZECLFGDTEFw_V9O1Kd0VMJRpvbEhYd3UF6eFgP8I,24
+mimir_cli-0.2.0.dist-info/METADATA,sha256=Dd3FR6C9ipPXrbwqJJUqoqOWYRQFUMIu9fZal_6WZjk,648
+mimir_cli-0.2.0.dist-info/RECORD,,
+mimir_cli-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+mimir_cli-0.2.0.dist-info/entry_points.txt,sha256=qTyQdnsgGu0LbLO2I07SMOj1ljxym-_hjVwZRAe8i_A,223
+mimir_cli-0.2.0.dist-info/metadata.json,sha256=G60Ls54tMVMUXQl4VSRHvrYRSpaaXHpYPU7hcTZIRLs,1082
+mimir_cli-0.2.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mimir_cli-0.2.0.dist-info/top_level.txt,sha256=KP0Z2OFjjvF7mCgYT60Om2ZV5sZ9USpHcI7Zpxn_BeQ,10
