@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: pydsef
+Version: 0.1.2
+Summary: A python library that provides convience functions for DSEF
+Home-page: https://github.com/DSEF
+Author: ['Samuel Thomas', 'Yousif Aldolaijan']
+Author-email: sgt43@cornell.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: rpyc
+Requires-Dist: scp
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
