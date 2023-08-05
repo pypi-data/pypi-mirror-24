@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: webnsock
+Version: 0.0.3
+Summary: A web.py and websocket framework for interactive webservices
+Home-page: https://github.com/marc-hanheide/webnsock
+Author: Marc Hanheide
+Author-email: marc@hanheide.net
+License: UNKNOWN
+Download-URL: https://github.com/marc-hanheide/webnsock/archive/0.0.3.tar.gz
+Description: UNKNOWN
+Keywords: web.py,websockets,webserver
+Platform: UNKNOWN
