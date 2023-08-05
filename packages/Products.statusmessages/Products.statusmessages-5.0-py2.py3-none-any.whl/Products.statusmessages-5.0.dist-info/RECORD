@@ -1,0 +1,17 @@
+Products.statusmessages-5.0-py2.7-nspkg.pth,sha256=Bxm3KBLV40cyDuQCgcDy64Pf9yIjWR2ibWhLxkQQ3iw,565
+Products/statusmessages/__init__.py,sha256=vPOu4yfjbTHCWz9i9aDaA0i2DmLiGzyRr5Qq32JqQH8,60
+Products/statusmessages/adapter.py,sha256=xAnKLwQlB8Nk9r8iZ3mwcqcbws26sz9IOa_fWc7cSTU,3529
+Products/statusmessages/configure.zcml,sha256=bTehHH6U6E2oBBqEo6BIK3x4wumwqXyfemGOHnkd9Cg,709
+Products/statusmessages/interfaces.py,sha256=H7HhIaeZEXgglohb3Ijr2PAOowC4-mnf27OYXwZwuVA,760
+Products/statusmessages/message.py,sha256=4xBIHICTXjcjmSByEbA8T0THdBsGXcjqMamUDvKvqwM,2898
+Products/statusmessages/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Products/statusmessages/tests/test_adapter.py,sha256=So-QVy18Y5TNKp7k9YCPjIn2xCuUvlFzO7NaLH4LrZc,8034
+Products/statusmessages/tests/test_doctests.py,sha256=d-HrzO4zR3Rz3d8EbehXonj3XhO61ISYdAHhGGj9pjo,264
+Products/statusmessages/tests/test_encoding.py,sha256=wO-colJ35e6xGxAiNzGD23I2jBdJwV1jjm7DMfzvm48,1503
+Products.statusmessages-5.0.dist-info/DESCRIPTION.rst,sha256=5uZPsERM6-SjnTiZxTxW16PseoTwrh1KeOKoMI2qiQY,5458
+Products.statusmessages-5.0.dist-info/METADATA,sha256=mKfzhxFZ-lpTdMOHOFk9vCZN6aQNluxO1GDjePS4M8M,6521
+Products.statusmessages-5.0.dist-info/RECORD,,
+Products.statusmessages-5.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Products.statusmessages-5.0.dist-info/metadata.json,sha256=QdrLVNwOehBiWMd3dBYDmSsQFTjNTio5T8Vc5odp2Rw,1167
+Products.statusmessages-5.0.dist-info/namespace_packages.txt,sha256=UgMr3LVXWHS9vjnxTk8VOZd7xxgBn5T02HOaMRXjjTM,9
+Products.statusmessages-5.0.dist-info/top_level.txt,sha256=UgMr3LVXWHS9vjnxTk8VOZd7xxgBn5T02HOaMRXjjTM,9
