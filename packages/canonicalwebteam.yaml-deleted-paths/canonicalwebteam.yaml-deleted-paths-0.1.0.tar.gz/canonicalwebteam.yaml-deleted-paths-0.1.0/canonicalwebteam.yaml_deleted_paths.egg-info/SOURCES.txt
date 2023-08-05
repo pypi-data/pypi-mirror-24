@@ -1,0 +1,11 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+setup.cfg
+setup.py
+canonicalwebteam.yaml_deleted_paths.egg-info/PKG-INFO
+canonicalwebteam.yaml_deleted_paths.egg-info/SOURCES.txt
+canonicalwebteam.yaml_deleted_paths.egg-info/dependency_links.txt
+canonicalwebteam.yaml_deleted_paths.egg-info/requires.txt
+canonicalwebteam.yaml_deleted_paths.egg-info/top_level.txt
+canonicalwebteam/yaml_deleted_paths/__init__.py
