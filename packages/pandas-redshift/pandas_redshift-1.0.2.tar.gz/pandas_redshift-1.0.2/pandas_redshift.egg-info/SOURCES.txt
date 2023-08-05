@@ -1,0 +1,8 @@
+setup.py
+pandas_redshift/__init__.py
+pandas_redshift/core.py
+pandas_redshift.egg-info/PKG-INFO
+pandas_redshift.egg-info/SOURCES.txt
+pandas_redshift.egg-info/dependency_links.txt
+pandas_redshift.egg-info/requires.txt
+pandas_redshift.egg-info/top_level.txt
