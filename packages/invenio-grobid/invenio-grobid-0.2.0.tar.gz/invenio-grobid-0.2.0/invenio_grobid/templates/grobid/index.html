@@ -1,0 +1,108 @@
+{#
+# This file is part of Invenio.
+# Copyright (C) 2015 CERN.
+#
+# Invenio is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as
+# published by the Free Software Foundation; either version 2 of the
+# License, or (at your option) any later version.
+#
+# Invenio is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with Invenio; if not, write to the Free Software Foundation, Inc.,
+# 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
+#}
+
+{% extends config.GROBID_BASE_TEMPLATE %}
+
+
+{%- block css %}
+  {{ super() }}
+  {%- assets "invenio_grobid_css" %}
+    <link href="{{ ASSET_URL }}" rel="stylesheet">
+  {%- endassets %}
+{%- endblock css %}
+
+{% block javascript %}
+  {{ super() }}
+
+  {% assets "invenio_grobid_js" %}
+  <script src="{{ ASSET_URL }}"></script>
+  {% endassets %}
+
+  <script type="text/javascript">
+    require(["js/grobid/grobid"],
+      function(GROBID) {
+
+      var grobid = GROBID.GROBID({});
+    });
+  </script>
+{%- endblock javascript %}
+
+{% block body %}
+  <div class="container container-action">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="pull-left grobid-logo"><a href="{{url_for('grobid.index')}}">GROB<span>ID</span></a></h1>
+        <form action="{{url_for('grobid.process_file')}}" method="post" enctype="multipart/form-data" class="form-inline pull-right grobid-form">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control input-lg grobid-text" readonly/>
+              <span class="input-group-btn">
+                <span class="btn btn-warning btn-lg btn-file grobid-file">
+                  Choose File <input type="file" name="file"/>
+                </span>
+              </span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-lg btn-primary">Upload</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container container-results">
+    <dl class="dl-horizontal">
+      <dt>Title</dt>
+      <dd>The LCA Problem Revisited</dd>
+      <dt>Authors</dt>
+      <dd>
+        <ul>
+          <li>Michael A. Bender (SUNY Stony Brook)</li>
+          <li>Martín Farach-Colton (Rutgers University)</li>
+        </ul>
+      </dd>
+      <dt>Abstract</dt>
+      <dd>We present a very simple algorithm for the Least Common Ancestor problem. We thus dispel the frequently held notion that an optimal LCA computation is unwieldy and unimplementable. Interestingly, this algorithm is a sequentialization of a previously known PRAM algorithm of Berkman, Breslauer, Galil, Schieber, and Vishkin.</dd>
+      <dt>Keywords</dt>
+      <dd>
+        <ul>
+          <li>Data Structures</li>
+          <li>Least Common Ancestor (LCA)</li>
+          <li>Range Minimum Query (RMQ)</li>
+          <li>Cartesian Tree</li>
+        </ul>
+      </dd>
+      <dt>References</dt>
+      <dd>
+        <ol>
+          <li>O. Berkman, D. Breslauer, Z. Galil, B. Schieber, and U. Vishkin. Highly parallelizable problems. In <em>Proc. of the 21st Ann. ACM Symp on Theory of Computing</em>, pages 309-319, 1989.</li>
+          <li>D. Harel and R. E. Tarjan. Fast algorithms for finding nearest common ancestors. <em>SIAM J. Comput.,</em>, 13(2):338-355, 1984.</li>
+          <li>B. Schieber and U. Vishkin. On finding lowest common ancestors: Simplification and parallelization. <em>SIAM J. Comput.</em>, 17:1253-1262, 1988.</li>
+        </ol>
+      </dd>
+    </dl>
+  </div>
+
+  <div class="container container-action">
+    <div class="row">
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-primary btn-lg pull-right grobid-submit">Submit</button>
+      </div>
+    </div>
+  </div>
+{% endblock %}

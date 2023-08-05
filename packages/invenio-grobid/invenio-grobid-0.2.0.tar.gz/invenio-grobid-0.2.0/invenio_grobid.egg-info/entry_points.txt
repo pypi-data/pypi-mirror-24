@@ -1,0 +1,10 @@
+[invenio_assets.bundles]
+invenio_grobid_css = invenio_grobid.bundles:css
+invenio_grobid_js = invenio_grobid.bundles:js
+
+[invenio_base.api_apps]
+invenio_grobid_rest = invenio_grobid:InvenioGrobid
+
+[invenio_base.apps]
+invenio_grobid = invenio_grobid:InvenioGrobid
+

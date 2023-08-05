@@ -1,0 +1,67 @@
+{{!
+  This file is part of Invenio.
+  Copyright (C) 2015 CERN.
+
+  Invenio is free software; you can redistribute it and/or
+  modify it under the terms of the GNU General Public License as
+  published by the Free Software Foundation; either version 2 of the
+  License, or (at your option) any later version.
+
+  Invenio is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with Invenio; if not, write to the Free Software Foundation, Inc.,
+  59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
+}}
+<dl class="dl-horizontal">
+  <dt>Title</dt>
+  <dd>{{title}}</dd>
+  <dt>Authors</dt>
+  <dd>
+    <ul>
+    {{#authors}}
+      <li>
+        {{name}}
+        {{#affiliations}}
+          ({{value}})
+        {{/affiliations}}
+      </li>
+    {{/authors}}
+    </ul>
+  </dd>
+  <dt>Abstract</dt>
+  <dd>{{abstract}}</dd>
+  {{#keywords.0}}
+  <dt>Keywords</dt>
+  <dd>
+    <ul>
+    {{#keywords}}
+      <li>{{value}}</li>
+    {{/keywords}}
+    </ul>
+  </dd>
+  {{/keywords.0}}
+  <dt>References</dt>
+  <dd>
+    <ol>
+      {{#references}}
+        <li>
+          {{#authors}}
+            {{name}},
+          {{/authors}}
+          {{ref_title}},
+          {{#journal_pubnote}}
+            <i>{{journal_title}}</i>,
+            {{#journal_volume}}{{journal_volume}}{{/journal_volume}}
+            {{#journal_issue}}({{journal_issue}}){{/journal_issue}}
+            {{#page_range}}:{{page_range}}{{/page_range}},
+            {{year}}
+          {{/journal_pubnote}}
+        </li>
+      {{/references}}
+    </ol>
+  </dd>
+</dl>
