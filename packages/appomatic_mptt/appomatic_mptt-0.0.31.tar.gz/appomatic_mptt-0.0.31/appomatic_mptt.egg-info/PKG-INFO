@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: appomatic-mptt
+Version: 0.0.31
+Summary: Utilities for implementing Modified Preorder Tree Traversal with your Django Models.
+Home-page: https://github.com/django-mptt/django-mptt/
+Author: RedHog (Egil Moeller)
+Author-email: egil.moller@freecode.no
+License: GPL
+Description: UNKNOWN
+Keywords: appomatic django-mptt
+Platform: UNKNOWN

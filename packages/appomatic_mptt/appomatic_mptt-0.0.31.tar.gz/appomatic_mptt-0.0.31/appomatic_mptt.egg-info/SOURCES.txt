@@ -1,0 +1,14 @@
+MANIFEST.in
+__info__.py
+setup.py
+./appomatic_mptt.egg-info/SOURCES.txt
+./appomatic_mptt.egg-info/dependency_links.txt
+./appomatic_mptt.egg-info/requires.txt
+./appomatic_mptt.egg-info/top_level.txt
+appomatic_mptt/__app__.py
+appomatic_mptt/__init__.py
+appomatic_mptt.egg-info/PKG-INFO
+appomatic_mptt.egg-info/SOURCES.txt
+appomatic_mptt.egg-info/dependency_links.txt
+appomatic_mptt.egg-info/requires.txt
+appomatic_mptt.egg-info/top_level.txt
