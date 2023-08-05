@@ -1,0 +1,7 @@
+README.txt
+setup.py
+coalesce/__init__.py
+coalesce.egg-info/PKG-INFO
+coalesce.egg-info/SOURCES.txt
+coalesce.egg-info/dependency_links.txt
+coalesce.egg-info/top_level.txt
