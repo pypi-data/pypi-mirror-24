@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: parserutils
+Version: 1.0.1
+Summary: A collection of performant parsing utilities
+Home-page: https://github.com/consbio/parserutils
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: BSD
+Description: UNKNOWN
+Keywords: parser,parsing,utils,utilities,collections,dates,elements,numbers,strings,url,xml
+Platform: UNKNOWN
