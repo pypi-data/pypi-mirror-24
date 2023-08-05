@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: sabapi
+Version: 0.0.3
+Summary: Simple python wrapper for sabnzbd http api.
+Home-page: https://github.com/Hellowlol/sabapi
+Author: hellowlol
+Author-email: hellowlol1@gmail.com
+License: GPL3
+Description: sabapi
+        ------
+        
+        A simple async wrapper for Sabnzbd http api.
+        
+Keywords: sabnzbd api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
