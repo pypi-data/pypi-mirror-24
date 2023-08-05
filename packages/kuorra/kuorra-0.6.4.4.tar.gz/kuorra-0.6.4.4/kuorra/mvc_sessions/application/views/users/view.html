@@ -1,0 +1,10 @@
+$def with(users)
+<br>
+<h1>users</h1>
+username: $users.username <br>
+$if users.privilege == 0:
+    privilege: Admin<br>
+$else:
+    privilege: Guess<br>
+<br>
+<br>
