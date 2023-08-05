@@ -1,0 +1,12 @@
+certifi/__init__.py,sha256=-YYQ3Kn8_rhQ4MMDWsf-Lt8sj4fDymnBe9_9C77GyYI,63
+certifi/__main__.py,sha256=FiOYt1Fltst7wk9DRa6GCoBr8qBUxlNQu_MKJf04E6s,41
+certifi/cacert.pem,sha256=H1zXFqV-gILXM16kCI9onoUlQtpPQFRUx22fQXVygv8,296399
+certifi/core.py,sha256=DqvIINYNNXsp3Srlk_NRaiizaww8po3l8t8ksz-Xt6Q,716
+certifi/old_root.pem,sha256=HT0KIfaM83q0XHFqGEesiGyfmlSWuD2RI0-AVIS2srY,25626
+certifi/weak.pem,sha256=Oo30AxpvkrmeN29S3UgbVzTIfaxqAbdXUZ1y2V6nEe0,322025
+certifi-2017.7.27.dist-info/DESCRIPTION.rst,sha256=wVWYoH3eovdWFPZnYU2NT4itGRx3eN5C_s1IuNm4qF4,1731
+certifi-2017.7.27.dist-info/METADATA,sha256=CSSzQTVb897KxiyMj89lLjNPL1foMyu_tPlUUqUlm8I,2396
+certifi-2017.7.27.dist-info/RECORD,,
+certifi-2017.7.27.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+certifi-2017.7.27.dist-info/metadata.json,sha256=WMPv_y7vH4m8duAIaN5TZTXRCydwXLcqdE0swn2WbW0,790
+certifi-2017.7.27.dist-info/top_level.txt,sha256=KMu4vUCfsjLrkPbSNdgdekS-pVJzBAJFO__nI8NF6-U,8
