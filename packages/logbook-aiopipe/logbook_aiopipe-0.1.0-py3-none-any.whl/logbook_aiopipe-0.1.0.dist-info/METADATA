@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: logbook-aiopipe
+Version: 0.1.0
+Summary: Multiprocess logbook logging for asyncio
+Home-page: https://github.com/kchmck/logbook_aiopipe
+Author: Mick Koch
+Author-email: mick@kochm.co
+License: MIT
+Keywords: logbook async asyncio pipe
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Provides-Extra: dev
+Requires-Dist: pylint (==1.6.5); extra == 'dev'
+
+UNKNOWN
+
+
