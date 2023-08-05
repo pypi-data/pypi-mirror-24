@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+numina/__init__.py
+numina/cli.py
+numina/commands/__init__.py
+numina/commands/authenticate.py
+numina/commands/base.py
+numina/commands/counts.py
+numina/commands/devices.py
+numina/commands/movements.py
+numina/commands/utils.py
+tests/test_cli.py
+tests/__pycache__/test_cli.cpython-27-PYTEST.pyc
+tests/__pycache__/test_cli.cpython-34-PYTEST.pyc
