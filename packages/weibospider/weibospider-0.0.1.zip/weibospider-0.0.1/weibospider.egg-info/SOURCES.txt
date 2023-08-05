@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+weibospider/__init__.py
+weibospider/attitude.py
+weibospider/base.py
+weibospider/client.py
+weibospider/comment.py
+weibospider/people.py
+weibospider/repost.py
+weibospider/utils.py
+weibospider/weibo.py
+weibospider.egg-info/PKG-INFO
+weibospider.egg-info/SOURCES.txt
+weibospider.egg-info/dependency_links.txt
+weibospider.egg-info/requires.txt
+weibospider.egg-info/top_level.txt
