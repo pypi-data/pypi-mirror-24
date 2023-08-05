@@ -1,0 +1,8 @@
+emacs_bindings.py
+setup.cfg
+setup.py
+emacs_keys_everywhere.egg-info/PKG-INFO
+emacs_keys_everywhere.egg-info/SOURCES.txt
+emacs_keys_everywhere.egg-info/dependency_links.txt
+emacs_keys_everywhere.egg-info/entry_points.txt
+emacs_keys_everywhere.egg-info/top_level.txt
