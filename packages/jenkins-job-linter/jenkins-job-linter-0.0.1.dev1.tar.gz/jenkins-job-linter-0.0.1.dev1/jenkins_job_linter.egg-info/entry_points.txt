@@ -1,0 +1,3 @@
+[console_scripts]
+jenkins-job-linter = jenkins_job_linter:main
+
