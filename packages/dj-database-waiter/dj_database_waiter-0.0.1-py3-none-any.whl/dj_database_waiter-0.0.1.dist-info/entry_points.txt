@@ -1,0 +1,3 @@
+[console_scripts]
+dj_database_waiter = cmd:main
+
