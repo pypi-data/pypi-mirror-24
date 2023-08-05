@@ -1,0 +1,6 @@
+[pygal.maps]
+es = pygal_maps_es.maps
+
+[pygal.test.test_maps]
+es = pygal_maps_es.test.test_maps
+
