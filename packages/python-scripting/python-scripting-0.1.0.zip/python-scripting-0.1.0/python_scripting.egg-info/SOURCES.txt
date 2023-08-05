@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+python_scripting.egg-info/PKG-INFO
+python_scripting.egg-info/SOURCES.txt
+python_scripting.egg-info/dependency_links.txt
+python_scripting.egg-info/top_level.txt
+scripting/__init__.py
+scripting/delegates.py
+scripting/execution.py
+scripting/_terminal/__init__.py
+scripting/_terminal/_escapes.py
+scripting/_terminal/_unix.py
+scripting/_terminal/_windows.py
