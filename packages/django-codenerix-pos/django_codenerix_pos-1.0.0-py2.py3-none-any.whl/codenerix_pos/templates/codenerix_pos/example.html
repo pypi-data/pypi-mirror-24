@@ -1,0 +1,33 @@
+CODENERIX POS example websocket
+<script type="text/javascript" src="/static/codenerix/lib/jquery/jquery.js"></script>  
+<script type="text/javascript" src="/static/codenerix_pos/lib/reconnecting-websocket/reconnecting-websocket.js"></script>  
+<script type="text/javascript">
+$(function() {
+    // When we're using HTTPS, use WSS too.
+    var ws_scheme = window.location.protocol == "https:" ? "wss" : "ws";
+    var ws_path = ws_scheme + '://' + window.location.host + '/dashboard/';
+    var ws_path = ws_scheme + '://127.0.0.1:8000/codenerix_pos/';
+    console.log("Connecting to " + ws_path)
+    var socket = new ReconnectingWebSocket(ws_path);
+    socket.onmessage = function(message) {
+        console.log("Got message: " + message.data);
+        
+        // Read message
+        var answer=JSON.parse(message.data);
+        
+        var token='EURECzbRe8mh7JTAfA';
+        
+        console.log("Connected -> Start");
+        var packet={
+            'action': 'authenticate',
+            'id': 'C3PO',
+            'token': token,
+        };
+        socket.send(JSON.stringify(packet));
+        if (answer.action=='reply_channel') {
+               socket.send(JSON.stringify({'action':"start_sec3",'job_id':'xxx'}));
+        }
+        // var data = JSON.parse({'action':"start_sec3",'job_id':'xxx'});
+    };
+});
+</script>
