@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+sipster/__init__.py
+sipster.egg-info/PKG-INFO
+sipster.egg-info/SOURCES.txt
+sipster.egg-info/dependency_links.txt
+sipster.egg-info/requires.txt
+sipster.egg-info/top_level.txt
+sipster/scenarios/__init__.py
+sipster/scenarios/fastanswer.py
+sipster/scenarios/options.py

@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: sipster
+Version: 0.0.1
+Summary: Pure python tools for SIP testing
+Home-page: https://github.com/vodik/sipster
+Author: Simon Gomizelj
+Author-email: simon@vodik.xyz
+License: Apache 2
+Description: =======
+        sipster
+        =======
+        
+        Toying around with using aiosip for agent/scenario testing similar to
+        how SIPp works. Lost of stuff to do, but looking very, very promising.
+        
+        Currently almost non-functional, part of a fast answer scenario is
+        implemented, and that requires a customized aiosip install which I
+        haven't published yet - its stuff I want to get upstreamed.
+        
+        To run it:
+        
+        -------
+        Example
+        -------
+        
+        .. code-block:: bash
+        
+            python -m sipster.scenarios.fastanswer
+        
+        ----
+        TODO
+        ----
+        
+        - Upstream API changes where makes sense
+        - Integrate RTP and DTMF support from aiortp
+        - pytest integration via plugin
+        - Provide a set of useful general SIP compliance tests
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
