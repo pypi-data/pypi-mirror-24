@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: pipe-tool
+Version: 0.0.5
+Summary: Use map, filter, reduce functions as a sh like infix syntax with |.
+Home-page: UNKNOWN
+Author: Yixian Du
+Author-email: UNKNOWN
+License: MIT
+Keywords: pipe
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+Use map, filter, reduce functions as a sh like infix syntax with |.
+
+
