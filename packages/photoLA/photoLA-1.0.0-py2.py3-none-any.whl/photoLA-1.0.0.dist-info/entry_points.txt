@@ -1,0 +1,4 @@
+[console_scripts]
+photoLA_batch = photoLA.batch_LA:run_cmd
+photoLA_single = photoLA.single_LA:run_cmd
+
