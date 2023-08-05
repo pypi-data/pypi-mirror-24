@@ -1,0 +1,11 @@
+[Unit]
+Description=Snips Skills
+After=network.target
+
+[Service]
+Type=simple
+User=%i
+ExecStart=snips &> /dev/null & cd {{SNIPS_HOME_PATH}}; {{SNIPSSKILLS_PATH}} run
+
+[Install]
+WantedBy=multi-user.target
