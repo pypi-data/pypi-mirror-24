@@ -1,0 +1,13 @@
+django_stdimage-2.4.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+django_stdimage-2.4.2.dist-info/METADATA,sha256=wL_q-xIZuXNjWe-J98O7ZsNZ_WkyHrVgQCmGBjb86NI,1010
+django_stdimage-2.4.2.dist-info/RECORD,,
+django_stdimage-2.4.2.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+django_stdimage-2.4.2.dist-info/metadata.json,sha256=u2gI9vWXD9JS8mlXQHVWzXgRaBWFsC6wc_u0Mn_0rGs,1106
+django_stdimage-2.4.2.dist-info/top_level.txt,sha256=4kf_2oi60VBOJqYQzWfCY5g3ppOpaVGzU20gn6ONJo0,9
+stdimage/__init__.py,sha256=jDwSVxVvXa1mExMD-elDfB5g4-3nYdJLmbE4CsuJ7fM,126
+stdimage/models.py,sha256=nPACIu7k5wB2wb3Q2OjShAxC4w-xrvPBt6Q3lVenaiU,9956
+stdimage/utils.py,sha256=77sEGQ9Ta8VOIOCJgB2Cx6_f8AA_s4GZLZFzH1Mw3LQ,2934
+stdimage/validators.py,sha256=E8rCk_Kp8WpdOqu9DE3xcP1mow3apVRHYEnUsP1HdGw,1952
+stdimage/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stdimage/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stdimage/management/commands/rendervariations.py,sha256=iklQGIez_mMofDs8M20DgaNvsz5CZjBhESoqEAc49Io,3979
