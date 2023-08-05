@@ -1,0 +1,15 @@
+CHANGES
+=======
+
+0.0.1
+-----
+
+* Add pypi deploy with right name
+
+0.0.0
+-----
+
+* Add pypi deploy
+* Introduce a test suite
+* initial
+* Initial commit
