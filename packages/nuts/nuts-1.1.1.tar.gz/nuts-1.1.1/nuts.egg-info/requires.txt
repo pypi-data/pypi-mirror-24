@@ -1,0 +1,4 @@
+pyaml
+salt-pepper
+pykwalify
+colorama
