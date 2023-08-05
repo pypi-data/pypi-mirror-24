@@ -1,0 +1,12 @@
+pytodos/__init__.py,sha256=b-HhD8PL0I3KQj-P6h2Blmfcb3OJawUPAX71C3dvyec,49
+pytodos/colourful.py,sha256=CKY-nBVA-1d0zBWcla9Jih8AdcF8NoW_FriITY3Xn88,359
+pytodos/constants.py,sha256=J0rC8mswjpKFYl8h-RrvbpDHA232AinwX116Eb4OsBc,221
+pytodos/file_handler.py,sha256=TY7cA1o8PnEPUB1YTiZrsX7pjeILQw_Nbk3emaY1z0c,386
+pytodos/todo.py,sha256=ow6u_CWebaOqJUxgvhonWc7Jug4XSKvyouv3baLwhTg,2069
+pytodos-1.0.18.dist-info/DESCRIPTION.rst,sha256=BAEk9WKeDWLW7uVBlaUgFhPlxCklxqkBR7P3_-CL-sY,636
+pytodos-1.0.18.dist-info/METADATA,sha256=vjxtUj1tVOmCH1CRS_mQqS0FlYO_QvNuANViBYIDFzM,931
+pytodos-1.0.18.dist-info/RECORD,,
+pytodos-1.0.18.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+pytodos-1.0.18.dist-info/entry_points.txt,sha256=fLC6YSH-MA9ISXht5kMxPkI3GABNyfRyEeYb_24NTmI,92
+pytodos-1.0.18.dist-info/metadata.json,sha256=M6bCLQ5Kt4MqMzJ6RT_KRvIn25etbQD91Q4xGWYietI,733
+pytodos-1.0.18.dist-info/top_level.txt,sha256=xVPd84GBjSHh9xSik4AlliktFhdzhR5A8gRj8cuA1j0,8
