@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: thunderbolt100k
+Version: 0.1.1
+Summary: A cmdline tool to poll some info into local storage for later use
+Home-page: https://github.com/cuyu/thunderbolt100k
+Author: Curtis Yu
+Author-email: icyarm@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: python-daemon
+Requires-Dist: requests
+Requires-Dist: schedule
+
+UNKNOWN
+
+
