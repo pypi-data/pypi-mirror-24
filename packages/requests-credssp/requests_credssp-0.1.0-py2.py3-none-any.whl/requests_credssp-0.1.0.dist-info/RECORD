@@ -1,0 +1,11 @@
+requests_credssp/__init__.py,sha256=XwuwuRIl7OKC7tbAmPIDNrinzvJNAyv2qhQyVN-82vY,465
+requests_credssp/asn_helper.py,sha256=Zyruw7ZjwzK8le2P6uiFc66_CoXAVPgXOkfqgnGJNVI,8600
+requests_credssp/asn_structures.py,sha256=FPxYgGP7fovB8t-xAOF2DbT3MeYEZY_XZieovPn0IHg,7401
+requests_credssp/credssp.py,sha256=NXXzysbSsodDD7mEK-XWrmCmFxO8sZiQRpIH3Z8sPdc,21421
+requests_credssp/exceptions.py,sha256=HFS83-7SKuFcSfKt5Te7mLXvxJz_t5eDMuIQkBdON3Q,1150
+requests_credssp-0.1.0.dist-info/DESCRIPTION.rst,sha256=NOMPzM63_fikYGoKx1m-5NOfvoYHzOfDXgsySxYXV7g,4850
+requests_credssp-0.1.0.dist-info/METADATA,sha256=fL6olaZhVS1e2H-wY0JoDiiXZWkFhiW4dUgiie4GNV0,5810
+requests_credssp-0.1.0.dist-info/RECORD,,
+requests_credssp-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+requests_credssp-0.1.0.dist-info/metadata.json,sha256=fqTqv__mn3ZFGcmjzCaQJMuFlOG3Jj8kbp_S-9htnF0,1127
+requests_credssp-0.1.0.dist-info/top_level.txt,sha256=Imchr1v9yvqPew-lEU9PFJpzpdJESDzFT6DXvFgEEm0,17
