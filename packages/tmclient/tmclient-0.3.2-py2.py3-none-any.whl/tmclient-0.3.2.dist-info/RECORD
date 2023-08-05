@@ -1,0 +1,15 @@
+tmclient/__init__.py,sha256=645gn__vr3kFVGJPuxL4fB3p-3N7MxieRJxsA5cnqAg,682
+tmclient/api.py,sha256=qLdsNFX5HuOcvTMgW4FfkvUY4lILWYqt0Bxzjux1PxU,91662
+tmclient/auth.py,sha256=iPN_eN7Y_2krePeZIB6jTXTo-PQno7-jiCfM5h0gMlc,2516
+tmclient/base.py,sha256=WSnC2FWkMCcpxxJHJzkDAaNIo7FPeDDI-yQsDdvKl_g,4639
+tmclient/cli.py,sha256=GRevz0VhJilqjbCS_XEYw5YMK945aLhJxaGkAdwomDk,26612
+tmclient/errors.py,sha256=4RDGo_iC1Elm1xwltX5Qiqxdi3Vrvabx7LTiIklATOw,160
+tmclient/log.py,sha256=cRjukjAo7PrBttoiFlhFgBQVUfGGvYpZjMknI5MOa8o,3531
+tmclient/version.py,sha256=rcdg4jk0GDDRCs9UIfXpCZIckuaEQX1NkSOToqPqlUs,630
+tmclient-0.3.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+tmclient-0.3.2.dist-info/METADATA,sha256=YOrO4J5ee2RvAHo94X352Tk4azMI5sla9jFvuG-9jK8,1020
+tmclient-0.3.2.dist-info/RECORD,,
+tmclient-0.3.2.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+tmclient-0.3.2.dist-info/entry_points.txt,sha256=k3g-k_zyRnrvubFpR-7xRv0KpgBn86PgfSGoQS9F9WQ,62
+tmclient-0.3.2.dist-info/metadata.json,sha256=ZG5VgmvZfzfLVOSSMjY5IdqssKfN_zL1zvNfF0zvPV0,1248
+tmclient-0.3.2.dist-info/top_level.txt,sha256=0DMaVIN64CkEXOBM45v5e6oATYF9hcsnWZf_NF-qH2o,9
