@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: salmiak
+Version: 0.2
+Summary: The easiest movie file renamer this side of github
+Home-page: https://github.com/arkalon76/salmiak
+Author: Kenth Fagerlund
+Author-email: salmiak_code@gmail.com
+License: MIT
+Keywords: movie rename file scene
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Natural Language :: English
+Requires-Dist: guessit
+
+Look, it's not very powerful, but it's simple. And sometimes that's enough
+
+
