@@ -1,0 +1,10 @@
+README.rst
+setup.py
+bumpversionsimple/__init__.py
+bumpversionsimple/bumpversionsimple.py
+bumpversionsimple/version.py
+bumpversionsimple.egg-info/PKG-INFO
+bumpversionsimple.egg-info/SOURCES.txt
+bumpversionsimple.egg-info/dependency_links.txt
+bumpversionsimple.egg-info/entry_points.txt
+bumpversionsimple.egg-info/top_level.txt
