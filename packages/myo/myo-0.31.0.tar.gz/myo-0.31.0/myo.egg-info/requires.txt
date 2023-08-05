@@ -1,0 +1,5 @@
+ribosome>=10.3.0
+amino>=10.0.0
+libtmux
+psutil
+networkx
