@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: paramiko-tunnel
+Version: 0.3
+Summary: A lightweight library for creating SSH tunnels on top of Paramiko.
+Home-page: https://github.com/adamdelman/paramiko_tunnel
+Author: Adam Delman
+Author-email: flyn@flyn.cc
+License: GPLv3
+Download-URL: https://github.com/adamdelman/paramiko_tunnel/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: paramiko,ssh,tunnel
+Platform: UNKNOWN
