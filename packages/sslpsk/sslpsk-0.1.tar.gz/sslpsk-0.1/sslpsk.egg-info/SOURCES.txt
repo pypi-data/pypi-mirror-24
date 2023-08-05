@@ -1,0 +1,8 @@
+_sslpsk.c
+setup.cfg
+setup.py
+sslpsk.py
+sslpsk.egg-info/PKG-INFO
+sslpsk.egg-info/SOURCES.txt
+sslpsk.egg-info/dependency_links.txt
+sslpsk.egg-info/top_level.txt
