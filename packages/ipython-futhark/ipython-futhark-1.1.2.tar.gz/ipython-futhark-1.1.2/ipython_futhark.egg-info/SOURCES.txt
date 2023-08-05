@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+futhark/__init__.py
+futhark/futhark.py
+ipython_futhark.egg-info/PKG-INFO
+ipython_futhark.egg-info/SOURCES.txt
+ipython_futhark.egg-info/dependency_links.txt
+ipython_futhark.egg-info/requires.txt
+ipython_futhark.egg-info/top_level.txt
+ipython_futhark.egg-info/zip-safe
