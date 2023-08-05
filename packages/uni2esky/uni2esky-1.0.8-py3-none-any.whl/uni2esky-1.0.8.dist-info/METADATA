@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: uni2esky
+Version: 1.0.8
+Summary: Utilities for inspecting unknown code pages of printers or terminals and for interfacing with the Esky POS-58 printer specifically.
+Home-page: https://github.com/9999years/uni2esky
+Author: Rebecca Turner
+Author-email: 637275@gmail.com
+License: MIT
+Keywords: unicode esc/pos io printing
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+
+https://github.com/9999years/uni2esky/blob/master/readme.md
+
+
