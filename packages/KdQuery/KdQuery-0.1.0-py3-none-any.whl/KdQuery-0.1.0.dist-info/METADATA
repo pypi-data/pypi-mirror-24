@@ -1,0 +1,12 @@
+Metadata-Version: 2.0
+Name: KdQuery
+Version: 0.1.0
+Summary: Nearest point query for any kd-tree implementation
+Home-page: https://github.com/DeVilhena-Paulo/KdQuery
+Author: Paulo Emilio de Vilhena
+Author-email: pevilhena2@gmail.com
+License: APv2
+
+=======
+
+
