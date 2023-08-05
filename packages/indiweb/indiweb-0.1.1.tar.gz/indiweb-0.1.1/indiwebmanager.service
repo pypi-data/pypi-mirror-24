@@ -1,0 +1,13 @@
+[Unit]
+Description=INDI Web Manager
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStartPre=/bin/mkdir -p /usr/share/indi/config
+ExecStart=/usr/bin/indi-web -v -c /usr/share/indi/config
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
