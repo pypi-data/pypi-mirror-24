@@ -1,0 +1,23 @@
+MANIFEST.in
+setup.py
+brainart/__init__.py
+brainart/db.py
+brainart/get_data.py
+brainart/hello.py
+brainart/mosaic.py
+brainart/scripts.py
+brainart/template.py
+brainart/utils.py
+brainart.egg-info/PKG-INFO
+brainart.egg-info/PKG-INFO (vanessa-ThinkPad-T450s's conflicted copy 2016-03-25)
+brainart.egg-info/SOURCES.txt
+brainart.egg-info/dependency_links.txt
+brainart.egg-info/entry_points.txt
+brainart.egg-info/not-zip-safe
+brainart.egg-info/pbr.json
+brainart.egg-info/requires (vanessa-ThinkPad-T450s's conflicted copy 2016-03-25).txt
+brainart.egg-info/requires.txt
+brainart.egg-info/top_level.txt
+brainart/data/black_lookup.pkl
+brainart/data/white_lookup.pkl
+brainart/templates/index.html

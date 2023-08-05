@@ -1,0 +1,3 @@
+[console_scripts]
+brainart = brainart.scripts:main
+
