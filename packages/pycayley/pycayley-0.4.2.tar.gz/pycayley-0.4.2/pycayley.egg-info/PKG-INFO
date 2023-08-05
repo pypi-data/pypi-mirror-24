@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pycayley
+Version: 0.4.2
+Summary: Python client for an open-source graph database Cayley
+Home-page: https://github.com/haibinpark/pycayley
+Author: zhao haibin
+Author-email: zhaohaibin@outlook.com
+License: LICENSE
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pycayley/__init__.py
+pycayley/jsonutil.py
+pycayley/utils.py
+pycayley.egg-info/PKG-INFO
+pycayley.egg-info/SOURCES.txt
+pycayley.egg-info/dependency_links.txt
+pycayley.egg-info/requires.txt
+pycayley.egg-info/top_level.txt
