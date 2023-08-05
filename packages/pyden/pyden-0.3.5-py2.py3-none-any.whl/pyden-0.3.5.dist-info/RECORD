@@ -1,0 +1,12 @@
+pyden/__init__.py,sha256=34SUAI5tFe0EgAtowufTDliTxQqAaoAutcrC3hp7ZwI,316
+pyden/__version__.py,sha256=MBLmXA07h6FNHyN-kWsYKCKyRlLmu54jBjAVgrCiSWA,433
+pyden/api.py,sha256=eQbK3yL2jj2hdjJ6EGxaamXvPhMKlf6oXvQs0pBSeI8,1198
+pyden/exceptions.py,sha256=OJYNE2SeAq7M8hVOyFAUu0Ls0VlG-nqCSTL59gEiL48,382
+pyden/trash.py,sha256=ZnTYISGtu2INzGIa76uvdWigRpMcNBf7vBMt-fZI1X0,4520
+pyden/util.py,sha256=UxMq5yF70uxWncllO-Eqt86Gsp34CFbeGFvO-IodhAk,530
+pyden-0.3.5.dist-info/DESCRIPTION.rst,sha256=LpNCKQWIZjAAcFwsMdh4qPOECWhaQsQk5Mq2BPdOS44,2790
+pyden-0.3.5.dist-info/METADATA,sha256=03kPp9dHNRan7sqaS9y4_FRTsvsS9hY_IVrHGc8j8kY,3889
+pyden-0.3.5.dist-info/RECORD,,
+pyden-0.3.5.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pyden-0.3.5.dist-info/metadata.json,sha256=02v8Gk8-BQ3AMHd8fwEk87gnlNw8MITac02_Vmv7oOY,1164
+pyden-0.3.5.dist-info/top_level.txt,sha256=98K_lSzo6My08LPZr4_fbCVgQu0RKkscrdb2e1PU9cM,6
