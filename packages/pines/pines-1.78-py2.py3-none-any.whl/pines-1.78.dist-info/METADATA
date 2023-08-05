@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: pines
+Version: 1.78
+Summary: A toolkit for various purposes
+Home-page: https://github.com/jpn--/pines
+Author: Jeffrey Newman
+Author-email: jeff@newman.me
+License: MIT
+Keywords: reusable code
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+
+pines
+=====
+
+These collection of reusable code bits is not dead, it just pines for the fjords.
+
+
+
