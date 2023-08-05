@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: raven-python-lambda
+Version: 0.1.2.dev1
+Summary: Decorator for lambda sentry instrumentation.
+Home-page: https://github.com/Netflix-Skunkworks/raven-python-lambda
+Author: The developers
+Author-email: oss@netflix.com
+License: UNKNOWN
+Keywords: aws,sentry,raven,lambda
+Platform: UNKNOWN
+Requires-Dist: psutil (==5.2.2)
+Requires-Dist: raven (==6.1.0)
+Provides-Extra: tests
+Requires-Dist: coverall; extra == 'tests'
+Requires-Dist: pytest; extra == 'tests'
+
+See README.md
+
+
