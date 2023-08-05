@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pydeformation
+Version: 0.1.3
+Summary: Wrapper for deformation library by Sebastian Pancratz
+Home-page: https://github.com/jpflori/pydeformation
+Author: Jean-Pierre Flori
+Author-email: sage-devel@googlegroups.com
+License: GNU General Public License, version 3 or later
+Description: =============
+        Pydeformation
+        =============
+        
+        This package is a simple wrapper to integrate Sebastian Pancratz deformation code into SageMath.
+        
+Keywords: sagemath deformation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 2.7
