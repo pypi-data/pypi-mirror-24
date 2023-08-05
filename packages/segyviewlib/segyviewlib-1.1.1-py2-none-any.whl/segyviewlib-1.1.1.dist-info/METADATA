@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: segyviewlib
+Version: 1.1.1
+Summary: Simple viewer library for SEG-Y files
+Home-page: https://github.com/Statoil/segyviewer
+Author: Statoil ASA
+Author-email: fg_gpl@statoil.com
+License: LGPL-3.0
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: segyio
+
+=======
+SEGYVIEWER
+=======
+
+Segyviewer is a small LGPL licensed python library for easy viewing of SEG-Y
+files. It uses the segyio library for reading files.
+
