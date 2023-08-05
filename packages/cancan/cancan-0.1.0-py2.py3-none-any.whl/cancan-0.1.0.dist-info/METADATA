@@ -1,0 +1,13 @@
+Metadata-Version: 2.0
+Name: cancan
+Version: 0.1.0
+Summary: Simple python permission library based on ruby cancan library
+Home-page: http://github.com/cocoakekeyu/cancan
+Author: cocoakekeyu
+Author-email: cocoakekeyu@gmail.com
+License: MIT
+Platform: all
+
+UNKNOWN
+
+
