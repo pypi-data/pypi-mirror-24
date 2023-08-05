@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: getignore
+Version: 0.1.0
+Summary: Command line utility to download common .gitignore files
+Home-page: https://github.com/pypa/sampleproject
+Author: Jack Evans
+Author-email: jack@evans.gb.net
+License: MIT
+Keywords: sample setuptools development
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: prompt-toolkit
+
+==========
+Gitignorer
+==========
+
+Command line utility to fetch common .gitignore files
+
+
