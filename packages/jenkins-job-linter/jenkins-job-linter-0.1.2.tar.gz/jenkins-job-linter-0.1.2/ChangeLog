@@ -1,0 +1,31 @@
+CHANGES
+=======
+
+0.1.2
+-----
+
+* Add codecov badge
+* Pass the environment variables required by codecov
+* Add codecov tox/Travis target
+* Add Travis badge
+* Improve CheckShebang linting
+* Add .travis.yml
+* Add lint tox environment
+* Start adding testing
+* Add tox with mypy checking (and fix types)
+* Enable linters to indicate they aren't applicable to a file
+* Add CheckShebang linter
+* Allow linters to output explanatory text
+
+0.1.1
+-----
+
+* Restore [files] section of setup.cfg
+* Move file in to a package
+* Fix setup.cfg
+
+0.1.0
+-----
+
+* Add initial implementation
+* Initial commit
