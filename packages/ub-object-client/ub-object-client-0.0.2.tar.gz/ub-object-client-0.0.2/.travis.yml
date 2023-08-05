@@ -1,0 +1,21 @@
+language: python
+
+python:
+  - '3.4'
+
+install:
+  - pip install -r requirements.txt
+  - pip install -r test-requirements.txt
+
+script:
+  - pytest
+  - flake8
+
+deploy:
+  provider: pypi
+  user: internaphosting
+  password:
+    secure: ENhAbJg7xyML4Pbl7z6kY9hCP8eW4QYmNTKAUimxWCa+0Nuaxr6WtHZROJrSg/1h6TOuO1I7BHH4yZW5ZwOhnLSTtwgPx6jF/VjGk+YOZ8inyI4wYJRnlOiMJ9rjpwP2S+f3Cud0U2Rm4gQ+KnFMKZXF5xABB0G0nmBJeHaZbz4WHdZownWmp4S5fP1YL43V2DH86d0TsoNNsKibI4RC+SVvhymDYs8yu9xdM0awBtDpVZLztUkzXZD7U8LcM5SqMS2xt1XVBwnEYLDvgKOLb9tx3ktHPGpyRGtuxJIycQVjs+03/WGy15I9Aonu6bq96x31A1fYs+RKUl2R7FBf3x8f8bpgmXXsQaNph8Kxi5WKQQ3boBIKJhpNc2HJPcud6Mp0TX7iFY66MQbSUyMyAgKg9IoKYn5gjUmMhso76y4Rh8kXVaMsMzw8J9zAPB7b3JkEVlO0z1efYucOgorIISggyKPcGsJ9P05sg5+5iuZ2C9yY0kEU1bTlCo4a/uHgY7MA6rYgexdv8iYtg/zQdOr4TU8+YiJYt7X8kNlOdtNqpE+nOiOmE3dKT1GjrwBniB+TDhicahg436lch5Szw11HpYy9fzBTanEatDAU7xiuwaY51Wx52asEi8n9TJABZpEfgRSlmtrirCtgQGArnufd6UY44AHjzf7JM0GKBoM=
+  on:
+    tags: true
+    repo: internap/ub-object-client
