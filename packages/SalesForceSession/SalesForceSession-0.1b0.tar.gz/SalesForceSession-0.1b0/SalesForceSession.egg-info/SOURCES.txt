@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+SalesForceSession.egg-info/PKG-INFO
+SalesForceSession.egg-info/SOURCES.txt
+SalesForceSession.egg-info/dependency_links.txt
+SalesForceSession.egg-info/not-zip-safe
+SalesForceSession.egg-info/requires.txt
+SalesForceSession.egg-info/top_level.txt

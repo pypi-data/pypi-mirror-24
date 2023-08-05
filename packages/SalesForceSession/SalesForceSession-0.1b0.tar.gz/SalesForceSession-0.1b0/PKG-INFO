@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: SalesForceSession
+Version: 0.1b0
+Summary: A wrapper for simple-salesforce that creates a session and build valid SQL queries by passing query params rather than the raw sql.
+Home-page: https://github.com/configuresystems/salesforce-session
+Author: John Martin
+Author-email: john.martin@configure.systems
+License: MIT
+Description: UNKNOWN
+Keywords: salesforce simple-salesforce sessions
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
