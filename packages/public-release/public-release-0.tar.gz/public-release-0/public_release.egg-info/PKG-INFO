@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: public-release
+Version: 0
+Summary: UNKNOWN
+Home-page: https://github.com/petered/export-demo.git
+Author: Peter
+Author-email: poconn4@gmail.com
+License: UNKNOWN
+Description: A tool to help create a minimal public release of your code.
+Platform: UNKNOWN
