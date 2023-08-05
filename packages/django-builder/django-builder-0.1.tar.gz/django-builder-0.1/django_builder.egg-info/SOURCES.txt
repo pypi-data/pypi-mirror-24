@@ -1,0 +1,10 @@
+setup.py
+bin/django-setting
+django_builder.egg-info/PKG-INFO
+django_builder.egg-info/SOURCES.txt
+django_builder.egg-info/dependency_links.txt
+django_builder.egg-info/not-zip-safe
+django_builder.egg-info/top_level.txt
+django_setting/__init__.py
+django_setting/functions.py
+django_setting/utils.py
