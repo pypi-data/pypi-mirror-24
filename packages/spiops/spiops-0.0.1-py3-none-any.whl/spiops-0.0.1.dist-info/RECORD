@@ -1,0 +1,14 @@
+spiops/__init__.py,sha256=2mOgfX90SNeHTrB9JrMG0zeTp6WmO_nAD0ytKneWH8k,22
+spiops/spiops.py,sha256=Bwq3CdQxD1KdHCmrOFsp0sVkPQ7uuTSucNR9cYRd6os,16042
+spiops/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spiops/test/sandbox.py,sha256=XmokTPicgp3Alq_ArSG0JNxO8DV5O29Fx9LJDZmip_w,411
+spiops/test/test_functions.py,sha256=ulBClH9wkwMWX1oZVPX3DAjkVsAQ8mqwJPcLwN7dGh8,2274
+spiops/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spiops/utils/time.py,sha256=T-ho0yVb4k0ZPgG7Lbfd_QP5A4MsBiG_E9h5vIrXHKE,3567
+spiops-0.0.1.data/data/LICENSE,sha256=qcyXgo8qS468R2XdhGUetegz8qOgtJsyhrh83gorWCA,1073
+spiops-0.0.1.dist-info/DESCRIPTION.rst,sha256=-3Ho3ntruAXJjUObSIKmHWseYYFYrR_Ys89eUtNpHc4,5542
+spiops-0.0.1.dist-info/METADATA,sha256=S3BeRXoFC_tUtgYsk49hM8-Asy-z9jsxHvOJC99gilY,5898
+spiops-0.0.1.dist-info/RECORD,,
+spiops-0.0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+spiops-0.0.1.dist-info/metadata.json,sha256=ODsCT8THyMhsjZ_q2eCiB5MKWlHdae3AmWeHP8ktXJk,552
+spiops-0.0.1.dist-info/top_level.txt,sha256=g_ItLOPzT498WY__c3qOs60RWHl6p7Opg5DNCSWVDBU,7
