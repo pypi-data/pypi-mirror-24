@@ -1,0 +1,1 @@
+https://github.com/CSnap/django_teams/tarball/master
