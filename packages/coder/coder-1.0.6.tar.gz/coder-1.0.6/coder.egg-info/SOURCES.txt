@@ -1,0 +1,13 @@
+README.rst
+setup.py
+coder/UI.py
+coder/__init__.py
+coder/__main__.py
+coder/ascii-table.png
+coder/coder.py
+coder.egg-info/PKG-INFO
+coder.egg-info/SOURCES.txt
+coder.egg-info/dependency_links.txt
+coder.egg-info/entry_points.txt
+coder.egg-info/requires.txt
+coder.egg-info/top_level.txt
