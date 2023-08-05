@@ -1,0 +1,3 @@
+[console_scripts]
+jvc_proxy = jvc_proxy.jvc_proxy:main
+

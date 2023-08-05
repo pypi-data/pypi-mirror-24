@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+jvc_proxy.service
+setup.cfg
+setup.py
+jvc_proxy/__init__.py
+jvc_proxy/jvc_proxy.py
+jvc_proxy.egg-info/PKG-INFO
+jvc_proxy.egg-info/SOURCES.txt
+jvc_proxy.egg-info/dependency_links.txt
+jvc_proxy.egg-info/entry_points.txt
+jvc_proxy.egg-info/requires.txt
+jvc_proxy.egg-info/top_level.txt
+jvc_proxy.egg-info/zip-safe
