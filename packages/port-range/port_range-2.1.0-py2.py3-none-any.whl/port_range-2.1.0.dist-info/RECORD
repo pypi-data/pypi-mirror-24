@@ -1,0 +1,10 @@
+port_range/__init__.py,sha256=5fo-QTL4iUZRxB3sbRQqblenrW_Mds01EQt8xnF9Z_Y,8130
+port_range/tests/__init__.py,sha256=NaNPopQtVlUi7feSZtkfcp6LL3oHrN6b0tbEsPW-McU,381
+port_range/tests/test_port_range.py,sha256=7AMl0And0mchwj73RLj3jlOw8wHW1-U-Za79w27SxI4,8242
+port_range-2.1.0.dist-info/DESCRIPTION.rst,sha256=AkLUMSg1KWJuFaU8JORL5HuAl1XoNdaD7h1VuQfgP9k,3016
+port_range-2.1.0.dist-info/METADATA,sha256=g8aHRq2yEW0uuiXG9VBimhwJLQhM5uNNdiJku_6T0vI,4645
+port_range-2.1.0.dist-info/RECORD,,
+port_range-2.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+port_range-2.1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+port_range-2.1.0.dist-info/metadata.json,sha256=LtQCVLYRQJc3L3FH902WoRskrZ2Im_jGDDnUttC3dLk,1721
+port_range-2.1.0.dist-info/top_level.txt,sha256=7dHLCjizHx1b2hW-asT2FyfOJeNHJCeDmtkhxemQPXk,11
