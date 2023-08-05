@@ -1,0 +1,15 @@
+dynamorm/__init__.py,sha256=A4YZSse2H9k0_dKS9UBGcY5pGi4KiArwDEVfxWAbU8U,230
+dynamorm/exceptions.py,sha256=ww63XPx4644l7K-4T44W6FWbLAapvj3dALUuRLENzF4,1501
+dynamorm/local.py,sha256=S7pwypNYQ7_OMXYzCDOcDXO73gtgNaVPyAiUYqYL7wc,2498
+dynamorm/model.py,sha256=BtCTvDh3J77tvb0i7Gg6t1z2nwmybIGbJN1KAfTdNuI,20703
+dynamorm/table.py,sha256=7TYSXBESq1NfEITcfVWTquAMNaRHtcGdJPRFA-dhszE,14820
+dynamorm/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dynamorm/types/_marshmallow.py,sha256=m_WN3VRfua34CPZZ7PmNkYRQhh96EMC5XH8sY_3243A,1071
+dynamorm/types/_schematics.py,sha256=nBti_wT68Bx7tcgni0kZ_dtAPRaLIfsCH0dhrAQU60c,1186
+dynamorm/types/base.py,sha256=LJ5cvtkFyEQY_B3s_L5rMjCH_FEI5lDahGgadWiU5cI,1898
+dynamorm-0.2.5.dist-info/top_level.txt,sha256=ld0yLIYPZlqw53toYiGE-Z3MvhUoyQPlGrX6eD1glVc,9
+dynamorm-0.2.5.dist-info/METADATA,sha256=mCtrjzlBXgnHRI-HoHRxLSQfNzMVxM_uxrZMBsWPs00,5407
+dynamorm-0.2.5.dist-info/DESCRIPTION.rst,sha256=spUcrqLLdyx1va0fAiRguT9F2jXeY91L5OHDVoGkvOo,4697
+dynamorm-0.2.5.dist-info/metadata.json,sha256=d7btJ3c442wvIzKZCXoWvztZ1QL72bNF9pP_0bGVQRA,865
+dynamorm-0.2.5.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
+dynamorm-0.2.5.dist-info/RECORD,,
