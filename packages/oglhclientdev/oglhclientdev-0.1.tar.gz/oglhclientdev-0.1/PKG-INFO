@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: oglhclientdev
+Version: 0.1
+Summary: A client for Lighthouse API
+Home-page: https://github.com/thiagolcmelo/oglhclient
+Author: Thiago Melo
+Author-email: thiago.lc.melo@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/thiagolcmelo/oglhclient/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: testing,opengear,lighthouse
+Platform: UNKNOWN
