@@ -1,0 +1,8 @@
+django
+django-appconf
+django-common-models
+django-ordered-model
+django-mptt
+djangorestframework
+djangorestframework-filters
+jsonfield
