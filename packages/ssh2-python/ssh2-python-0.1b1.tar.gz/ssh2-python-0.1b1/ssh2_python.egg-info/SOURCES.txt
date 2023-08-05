@@ -1,0 +1,9 @@
+README.rst
+setup.py
+ssh2/__init__.py
+ssh2/ssh2.c
+ssh2_python.egg-info/PKG-INFO
+ssh2_python.egg-info/SOURCES.txt
+ssh2_python.egg-info/dependency_links.txt
+ssh2_python.egg-info/not-zip-safe
+ssh2_python.egg-info/top_level.txt
