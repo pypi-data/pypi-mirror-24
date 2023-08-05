@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_mail_templated_simple.egg-info/PKG-INFO
+django_mail_templated_simple.egg-info/SOURCES.txt
+django_mail_templated_simple.egg-info/dependency_links.txt
+django_mail_templated_simple.egg-info/not-zip-safe
+django_mail_templated_simple.egg-info/top_level.txt
+mail_templated_simple/__init__.py
+mail_templated_simple/models.py
+mail_templated_simple/templates/mail_templated_simple/base.tpl
