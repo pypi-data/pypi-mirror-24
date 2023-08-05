@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+RAKE/RAKE.py
+RAKE/__init__.py
+RAKE/stoplists/FoxStopList.py
+RAKE/stoplists/SmartStopList.py
+RAKE/stoplists/__init__.py
+python_rake.egg-info/PKG-INFO
+python_rake.egg-info/SOURCES.txt
+python_rake.egg-info/dependency_links.txt
+python_rake.egg-info/top_level.txt
