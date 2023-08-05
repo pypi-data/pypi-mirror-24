@@ -1,0 +1,28 @@
+Metadata-Version: 1.2
+Name: OSGridConverter
+Version: 0.1.0
+Summary: Library to convert co-ordinates between the (UK) Ordnance Survey National Grid and latitude/longitude
+Home-page: https://github.com/....
+Author: Julian Porter
+Author-email: julian@jpembedded.solutions
+License: MIT
+Description: UNKNOWN
+Keywords: gis mapping coordinates grid-reference mapping ordiance-survey lat-long
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Other Audience
+Classifier: Topic :: Education
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.4
