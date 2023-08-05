@@ -1,0 +1,12 @@
+freshnessstatus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freshnessstatus/__main__.py,sha256=zK9mzsCdbjqFoaCCWP02piM3F0EoFgwI-OJYWCySTIo,3730
+freshnessstatus/datafreshnessstatus.py,sha256=yo-9n1EFMcDDfsN8Yb2YO0ob8UaKaVAgaHL3Wg36fa8,6789
+freshnessstatus/project_configuration.yml,sha256=u0m-1wLvmIHwcE5UNn6ajyAF1Di9oDbYRX7WFf0u_N4,125
+hdx_data_freshness_emailer-0.13.dist-info/DESCRIPTION.rst,sha256=K7UTCf86_1tKgZBOD9r7iTbriTF1VdMpQ84Snnf2iGg,769
+hdx_data_freshness_emailer-0.13.dist-info/LICENSE.txt,sha256=wc-4GpMn-ODs-U_bTe1YCiPVgvcjzrpYOx2wPuyAeII,1079
+hdx_data_freshness_emailer-0.13.dist-info/METADATA,sha256=r45hPMhIlfaUDHyDgAVAndKBnYU1R1VOtGwWG9Lm0TE,1547
+hdx_data_freshness_emailer-0.13.dist-info/RECORD,,
+hdx_data_freshness_emailer-0.13.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+hdx_data_freshness_emailer-0.13.dist-info/metadata.json,sha256=HvR1ggSPKWrhnrkg2JO8YywwPkUFVHQUBxVT0iiJoc0,1026
+hdx_data_freshness_emailer-0.13.dist-info/top_level.txt,sha256=3i55AHsXi0yXnZBREKoXIUINbXFl_oUnTEi-gRrny1A,16
+hdx_data_freshness_emailer-0.13.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
