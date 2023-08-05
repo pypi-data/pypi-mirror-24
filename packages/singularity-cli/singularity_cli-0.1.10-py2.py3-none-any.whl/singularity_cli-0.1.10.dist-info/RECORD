@@ -1,0 +1,14 @@
+singularity/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+singularity/cli.py,sha256=l_qa_QWnFriWDoyO0eYapAAQM-yDkHKh-Wsd-gykY84,1495
+singularity/client.py,sha256=1yrb7PSD2ehThTZMp_qyZAgIApsKlTqdFoTzvY7Zbh8,4034
+singularity/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+singularity/commands/cmd_request.py,sha256=J87YzvqvJnEx7DvLd1X64dTBXzdBmDu0ObWZZIqr0P8,10225
+singularity/commands/cmd_state.py,sha256=h_CIRUMNOttYDxz4f39VsmpEooBtnuoYIFTkZpBF3bE,2022
+singularity/commands/cmd_task.py,sha256=P-ho8QIgOHMZPMLdeRrQmDLo7jZN4aGKTduHLb4z1sw,547
+singularity_cli-0.1.10.dist-info/DESCRIPTION.rst,sha256=xtvMhMPuFLLVGkGjQcYhqRNutatgcen_09f8RwNcqes,7483
+singularity_cli-0.1.10.dist-info/METADATA,sha256=0cpv0OM73TA_x1bow8O7tOK6pW3_zDMtmGETQUIVSrc,8426
+singularity_cli-0.1.10.dist-info/RECORD,,
+singularity_cli-0.1.10.dist-info/WHEEL,sha256=GrqQvamwgBV4nLoJe0vhYRSWzWsx7xjlt74FT0SWYfE,110
+singularity_cli-0.1.10.dist-info/entry_points.txt,sha256=cqJhqJvPW0vlu71czDpetunw3GvwOoJKoJLNuMZedsI,53
+singularity_cli-0.1.10.dist-info/metadata.json,sha256=x4b3z6Mu7y9JRykb1-iF9bbVF_3Nrz2PxalOiY7FyRM,1234
+singularity_cli-0.1.10.dist-info/top_level.txt,sha256=gBq5e92fjlIOeIRzvuLQP2jxgOIUm71NlAhBpSiYFuo,12
