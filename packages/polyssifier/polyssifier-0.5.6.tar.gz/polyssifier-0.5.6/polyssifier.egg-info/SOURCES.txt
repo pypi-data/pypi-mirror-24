@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+polyssifier/__init__.py
+polyssifier/logger.py
+polyssifier/poly_utils.py
+polyssifier/polyssifier.py
+polyssifier/report.py
+polyssifier.egg-info/PKG-INFO
+polyssifier.egg-info/SOURCES.txt
+polyssifier.egg-info/dependency_links.txt
+polyssifier.egg-info/requires.txt
+polyssifier.egg-info/top_level.txt
