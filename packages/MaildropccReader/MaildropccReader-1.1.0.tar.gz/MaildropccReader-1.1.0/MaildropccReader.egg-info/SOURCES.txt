@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.cfg
+setup.py
+MaildropccReader/__init__.py
+MaildropccReader.egg-info/PKG-INFO
+MaildropccReader.egg-info/SOURCES.txt
+MaildropccReader.egg-info/dependency_links.txt
+MaildropccReader.egg-info/requires.txt
+MaildropccReader.egg-info/top_level.txt
