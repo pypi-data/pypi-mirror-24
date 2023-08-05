@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+autocomplete_widget/__init__.py
+autocomplete_widget/widgets.py
+autocomplete_widget.egg-info/PKG-INFO
+autocomplete_widget.egg-info/SOURCES.txt
+autocomplete_widget.egg-info/dependency_links.txt
+autocomplete_widget.egg-info/not-zip-safe
+autocomplete_widget.egg-info/requires.txt
+autocomplete_widget.egg-info/top_level.txt
+autocomplete_widget/static/django-autocomplete-widget.css
+autocomplete_widget/static/django-autocomplete-widget.js
+autocomplete_widget/templates/autocomplete_widget/widget.html
