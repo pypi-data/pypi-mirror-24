@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: colorharmonies
+Version: 1.0.5
+Summary: Library to generate all your color harmonies with simplicity!
+Home-page: https://github.com/baptistemanteau/colorharmonies
+Author: Baptiste Manteau
+Author-email: manteau.baptiste@gmail.com
+License: MIT
+Keywords: color management RGB harmonies complementary monochromatic analogous
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Requires-Python: >=3
+
+UNKNOWN
+
+
