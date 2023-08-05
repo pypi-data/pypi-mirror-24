@@ -1,0 +1,13 @@
+CHANGES
+=======
+
+0.0.1
+-----
+
+* Add node composition functionality
+* Add node assembly action
+* Use py35 instead of py34 in tox
+* Expose RSDLib from top level
+* Implement node discovery
+* Initial Cookiecutter Commit
+* Added .gitreview
