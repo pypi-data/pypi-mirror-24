@@ -1,0 +1,14 @@
+python-dateutil>=2.6.1
+typepy>=0.0.17
+
+[docs]
+path.py
+readmemaker>=0.3.0
+sphinx_rtd_theme
+Sphinx
+
+[test]
+pytest-cov
+pytest
+pytz
+tox
