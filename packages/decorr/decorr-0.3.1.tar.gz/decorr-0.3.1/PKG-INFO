@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: decorr
+Version: 0.3.1
+Summary: Decorrelates variable from a pandas dataframe.
+Home-page: https://github.com/eddbrown/decorr
+Author: Edward Brown
+Author-email: edward.j.e.brown@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
