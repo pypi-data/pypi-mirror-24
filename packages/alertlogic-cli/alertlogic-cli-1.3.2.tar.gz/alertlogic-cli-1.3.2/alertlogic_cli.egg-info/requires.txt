@@ -1,0 +1,6 @@
+requests>=2.18
+
+[dev]
+pytest>=3
+mock>=2.0.0
+httpretty>=0.8.14
