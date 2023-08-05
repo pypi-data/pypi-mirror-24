@@ -1,0 +1,10 @@
+setup.py
+email_devino/__init__.py
+email_devino/client.py
+email_devino/tests/__init__.py
+email_devino/tests/test.py
+sw_python_email_devino.egg-info/PKG-INFO
+sw_python_email_devino.egg-info/SOURCES.txt
+sw_python_email_devino.egg-info/dependency_links.txt
+sw_python_email_devino.egg-info/requires.txt
+sw_python_email_devino.egg-info/top_level.txt
