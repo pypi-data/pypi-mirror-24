@@ -1,0 +1,12 @@
+ruamel.yaml
+
+[test]
+pytest
+pytest-cov
+pytest-mock
+pytest-xdist
+pytest-catchlog
+python-coveralls
+flake8
+mypy
+ruamel.yaml
