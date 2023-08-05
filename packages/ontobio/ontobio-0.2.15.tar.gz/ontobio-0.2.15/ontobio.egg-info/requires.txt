@@ -1,0 +1,16 @@
+networkx
+pyyaml
+pysolr
+requests
+sparqlwrapper
+cachier
+prefixcommons
+marshmallow
+scipy
+pandas
+
+[dev]
+plotly
+
+[test]
+pytest
