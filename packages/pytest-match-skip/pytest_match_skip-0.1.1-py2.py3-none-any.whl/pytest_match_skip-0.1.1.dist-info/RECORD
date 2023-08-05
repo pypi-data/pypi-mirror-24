@@ -1,0 +1,12 @@
+pytest_match_skip.py,sha256=Cq9DXK0POH_qWV3lk_cpP2mv6ct6QjkhJ4HVsYKqdN0,2745
+pytest_match_skip/check_skip_prefixes.py,sha256=jLjyiqNTCBMBFhqFf6Os87DMfjgNYYlnmssqN47KRmo,2286
+pytest_match_skip/hooks.py,sha256=Ip6T9hnFlKV_QsdqnFkGrdIMyhjvXQPkHa_di6q3kSE,399
+pytest_match_skip/plugin.py,sha256=UmWHKOs2q8JIutiNq88r1_8M-2cGXUg8cj_LnjJV5HU,1270
+pytest_match_skip/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_match_skip-0.1.1.dist-info/DESCRIPTION.rst,sha256=dGFo4URlDiORuB3t4I8DRD1ACgPxxuR4D0q7mh2DVTw,3052
+pytest_match_skip-0.1.1.dist-info/entry_points.txt,sha256=G1uqYlnHiOcH6YrOtnHVcIOMdSrpbZYxcrDzw8ywZJQ,50
+pytest_match_skip-0.1.1.dist-info/METADATA,sha256=FJPtwl4BDUmd3XNuiwvcIytCis9t6JNNG2c3YPHEb78,4229
+pytest_match_skip-0.1.1.dist-info/metadata.json,sha256=4oLnjBSnbjaClmvcYhPnHDi-SHT1iNc-fMVZaNJKNeY,1236
+pytest_match_skip-0.1.1.dist-info/RECORD,,
+pytest_match_skip-0.1.1.dist-info/top_level.txt,sha256=Gjul-Omum0JYtr3JKiGyFUtaF507xtYVsnR1J_mNoD8,18
+pytest_match_skip-0.1.1.dist-info/WHEEL,sha256=56WjMPRUEpmb30QaTzVbQCpri5lzKGby5HLDkAMQeIU,116
