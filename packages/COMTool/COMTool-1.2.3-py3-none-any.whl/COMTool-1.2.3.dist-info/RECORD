@@ -1,0 +1,17 @@
+COMTool/Combobox.py,sha256=9VbUoxMEm1RrAULxTZRDkNOvjsZ-xvraWwNmzhd31gM,351
+COMTool/Main.py,sha256=RM8Hribl0uVPnQJhgrTiTAASM9yk42ooYl3NYnujnAg,25567
+COMTool/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+COMTool/autoUpdate.py,sha256=Nt5uSpfD0QOijoKbTXYHgRayN7bZtTXuOw3hc6bakNM,1162
+COMTool/helpAbout.py,sha256=DERIlgmuvYCM4Me1fSSW4DdiEHrIXphpuIQGt8sXEI8,815
+COMTool/parameters.py,sha256=fVsZIFVQswszu7pZ7MznbTofVMBLFsFaeyQ2P5vQNO8,1689
+COMTool/test.py,sha256=CBNJa26jbppaZiqlaBeO0-m9tNuwcBfO6ghJ8qPIBro,327
+COMTool-1.2.3.data/data/COMToolData/assets/logo.ico,sha256=HkYPkawChnAyFfHuUdyD-Y-f9cJdtzDKRveweBGtAWY,370070
+COMTool-1.2.3.data/data/COMToolData/assets/logo.png,sha256=3AFHnalxGR--7C2BVpLwbqJTZ2JVQ9QFCRwdchIXxf0,27874
+COMTool-1.2.3.data/data/COMToolData/assets/logo2.png,sha256=nopjFZ5QqumFCCvMwSLXpLXJ2_CbntIwh0xPkYs97bU,20959
+COMTool-1.2.3.dist-info/DESCRIPTION.rst,sha256=BBEh5YouTPHJ0ePbSGNCeh_SnhKoE-OHkjf9wlnIeKI,2748
+COMTool-1.2.3.dist-info/METADATA,sha256=7D9RdZeE2FFSQssaNETu4L2ugTWMihZ0FirqowCPR3Y,3625
+COMTool-1.2.3.dist-info/RECORD,,
+COMTool-1.2.3.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+COMTool-1.2.3.dist-info/entry_points.txt,sha256=wTB78aAHZU0X6d-uRaAtclv3_IfNuq3HFqVZexFe340,43
+COMTool-1.2.3.dist-info/metadata.json,sha256=0D0IKhEp9v7EXKhFrIV4jnt16xFpmo-VyRD-YOBk6Qg,1166
+COMTool-1.2.3.dist-info/top_level.txt,sha256=O6T_Hi4JIV_TbvE5-gHRCD7Zpw1gCsluxT2AfKxwceo,8
