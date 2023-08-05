@@ -1,0 +1,3 @@
+[console_scripts]
+paper-git = papergit.bin.paper_git:main
+
