@@ -1,0 +1,7 @@
+setup.py
+PycordLib.egg-info/PKG-INFO
+PycordLib.egg-info/SOURCES.txt
+PycordLib.egg-info/dependency_links.txt
+PycordLib.egg-info/requires.txt
+PycordLib.egg-info/top_level.txt
+pycord/__init__.py
