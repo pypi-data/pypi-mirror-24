@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+pyMSA.egg-info/PKG-INFO
+pyMSA.egg-info/SOURCES.txt
+pyMSA.egg-info/dependency_links.txt
+pyMSA.egg-info/top_level.txt
+pymsa/__init__.py
+pymsa/score.py
+pymsa/scoringExample.py
+pymsa/substitutionmatrix.py
+pymsa/util.py
+pymsa/tests/__init__.py
+pymsa/tests/test_scoring.py
+pymsa/tests/test_substitutionmatrix.py
