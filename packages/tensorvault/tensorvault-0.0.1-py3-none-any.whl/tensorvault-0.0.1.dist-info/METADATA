@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: tensorvault
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/nottombrown/tensorvault
+Author: Tom B Brown
+Author-email: nottombrown@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click (~=6.0)
+Provides-Extra: test
+Requires-Dist: path.py (~=10.3.1); extra == 'test'
+Requires-Dist: pytest (~=1.4.33); extra == 'test'
+Provides-Extra: tf
+Requires-Dist: tensorflow (~=1.2); extra == 'tf'
+Provides-Extra: tf_gpu
+Requires-Dist: tensorflow-gpu (>=1.1); extra == 'tf_gpu'
+
+UNKNOWN
+
+
