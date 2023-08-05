@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: distill.py
+Version: 0.0.1
+Summary: Doc platform for coder.
+Home-page: https://github.com/magizbox/distill.py
+Author: Vu Anh
+Author-email: brother.rain.1024@gmail.com
+License: GNU General Public License v3
+Description: ========================================
+        distill.py
+        ========================================
+        
+        I love blogging. In fact, I love blogging too much. I used to use wordpress, mkdocs but I don't satisfy with these platform. So I create a platform FOR ME.
+        
+        PS: It's quick and very dirty project.
+        
+        
+        
+        
+        ========================================
+        History
+        ========================================
+        
+        0.0.1 (2017-08-03)
+        ----------------------------------------
+        
+        * Hello World
+        * Refactor feature_engineering code
+        
+        
+Keywords: underthesea
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.4
