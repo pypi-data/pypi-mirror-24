@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: goroutine
+Version: 0.0.1
+Summary: Use greenlets as coroutines in asyncio
+Home-page: http://github.com/rokups/goroutine
+Author: Rokas Kupstys
+Author-email: rokups+goroutine@zoho.com
+License: MIT
+Description: UNKNOWN
+Keywords: greenlet,coroutine,asyncio
+Platform: UNKNOWN

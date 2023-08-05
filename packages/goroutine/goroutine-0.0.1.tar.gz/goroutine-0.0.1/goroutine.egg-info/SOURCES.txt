@@ -1,0 +1,8 @@
+goroutine.py
+setup.cfg
+setup.py
+goroutine.egg-info/PKG-INFO
+goroutine.egg-info/SOURCES.txt
+goroutine.egg-info/dependency_links.txt
+goroutine.egg-info/requires.txt
+goroutine.egg-info/top_level.txt
