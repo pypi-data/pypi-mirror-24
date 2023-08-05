@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+pySpacebroClient/__init__.py
+pySpacebroClient/pySpacebroClient.py
+pySpacebroClient.egg-info/PKG-INFO
+pySpacebroClient.egg-info/SOURCES.txt
+pySpacebroClient.egg-info/dependency_links.txt
+pySpacebroClient.egg-info/requires.txt
+pySpacebroClient.egg-info/top_level.txt

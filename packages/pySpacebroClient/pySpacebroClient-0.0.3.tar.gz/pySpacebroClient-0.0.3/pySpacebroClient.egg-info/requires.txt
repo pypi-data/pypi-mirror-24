@@ -1,0 +1,7 @@
+socketIO-client-nexus>=0.7.5
+
+[dev]
+
+[test]
+mock>=1.0.1
+dotmap>=1.2.17
