@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: mfe-saw
+Version: 0.0.8
+Summary: McAfee SIEM API Wrapper (MFE_SAW) for McAfee ESM 10.x+
+Home-page: https://github.com/andywalden/mfe_saw
+Author: Andy Walden
+Author-email: aw@krakencodes.com
+License: ISC
+Description: UNKNOWN
+Keywords: mfe_saw
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3
