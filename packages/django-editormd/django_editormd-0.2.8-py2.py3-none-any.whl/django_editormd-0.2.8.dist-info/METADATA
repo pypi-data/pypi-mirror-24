@@ -1,0 +1,71 @@
+Metadata-Version: 2.0
+Name: django-editormd
+Version: 0.2.8
+Summary: django-editormd package helps integrate editor.md with Django.
+Home-page: http://github.com/chen2aaron/django-editormd
+Author: xixijun
+Author-email: chen2aaron@gmail.com
+License: MIT
+Keywords: editor.md,django,admin,editor,text,html,editor,rich,web
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: Pillow
+
+# Django Editor md
+
+>django-editormd package helps integrate [editor.md](https://github.com/pandao/editor.md) with Django.
+
+## Getting started
+
+Install the package:
+
+  `pip install django-editormd`
+
+
+Add `editormd` to INSTALLED_APPS in `settings.py`.
+
+
+## Usage
+
+
+1. Usage in models
+
+```python
+from editormd.models import EditorMdField
+
+
+class Page(models.Model):
+    content_editormd1 = EditorMdField()
+```
+
+2. OR Usage in forms
+
+```python
+from editormd.fields import EditorMdFormField
+
+
+class PageForm(forms.ModelForm):
+    content_editormd1 = EditorMdFormField()
+    content_editormd2 = EditorMdFormField()
+    content_editormd3 = EditorMdFormField()
+
+    class Meta:
+        model = Page
+        fields = '__all__'
+
+
+@admin.register(Page)
+class PageAdmin(admin.ModelAdmin):
+    form = PageForm
+```
+
+
