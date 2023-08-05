@@ -1,0 +1,7 @@
+setup.py
+gitkv/__init__.py
+gitkv.egg-info/PKG-INFO
+gitkv.egg-info/SOURCES.txt
+gitkv.egg-info/dependency_links.txt
+gitkv.egg-info/requires.txt
+gitkv.egg-info/top_level.txt

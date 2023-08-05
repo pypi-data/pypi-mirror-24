@@ -1,0 +1,4 @@
+sphinx
+flake8
+coverage
+pygit2==0.25
