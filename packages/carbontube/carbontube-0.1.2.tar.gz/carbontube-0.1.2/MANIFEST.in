@@ -1,0 +1,1 @@
+include COPYING *.rst docs/* carbontube/storage/redis-lua-scripts/* carbontube/storage/* docs/source/* requirements.txt carbontube/web carbontube/web/* carbontube/web/dist carbontube/web/dist/* carbontube/web/templates carbontube/web/templates/*

@@ -1,0 +1,3 @@
+[console_scripts]
+carbontube = carbontube.console.main:entrypoint
+

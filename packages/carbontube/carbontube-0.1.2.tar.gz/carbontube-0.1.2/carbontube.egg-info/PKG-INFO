@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: carbontube
+Version: 0.1.2
+Summary: CarbonTube is a ZeroMQ-based distributed pipeline framework.
+Home-page: https://github.com/gabrielfalcao/carbontube
+Author: Gabriel Falcao
+Author-email: gabriel@nacaolivre.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
