@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: DirTreeDigest
+Version: 0.6.2
+Summary: Directory Tree Digester
+Home-page: https://github.com/MartyMacGyver/DirTreeDigest
+Author: Martin F. Falatic
+Author-email: martin@falatic.com
+License: Apache License 2.0
+Description: 
+        A tool for generating cryptographic digests and collecting stats across a directory tree
+        
+        This is an **ALPHA** development release and is not considered final
+        
+        Currently works on Windows only (Linux/OSX development is ongoing)
+            
+Keywords: directory digest hashing integrity filesystem checksums
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 4 - Beta
