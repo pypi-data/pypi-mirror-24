@@ -1,0 +1,11 @@
+grapheme/__init__.py,sha256=bDOG2gI3CYTRP6pb44RtiyM_E75cJUCfyDA5MfgLAZ4,193
+grapheme/api.py,sha256=i0htKyMCdEplvTVCvhwsy1fY9aSmL8hY4KFBKTNI_c8,4421
+grapheme/finder.py,sha256=X2Pncs_hFR0wrUoqfnAMPArEhLNlJIQql0z15NU2m10,3723
+grapheme/grapheme_property_group.py,sha256=qWqGMkcgAQBy6W-hZ4fAozy0yfb_AvXJYpHXBc1-J2w,3869
+grapheme/data/grapheme_break_property.json,sha256=CT994I6WB0NqIqeOOjzzm88jzgaKW3veqf8BmYytisM,48214
+grapheme-0.2.1.dist-info/DESCRIPTION.rst,sha256=pRowMRqXH5TobQjQrag2F-UlhOV_C-LmVLDVfk25yS4,4815
+grapheme-0.2.1.dist-info/METADATA,sha256=H2SOjvHGF_vuZAIcmDt2bsIeQyjjQ3GOmRvmySoVvo4,5575
+grapheme-0.2.1.dist-info/RECORD,,
+grapheme-0.2.1.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+grapheme-0.2.1.dist-info/metadata.json,sha256=8XEGvp_Dl6paHutzMz5aP7Fa5kRpr-BVgb6xj-7r1zs,857
+grapheme-0.2.1.dist-info/top_level.txt,sha256=aI317Cnll2drrAuBOseMkxl72pcXsw8Vg3CsRz3tO7E,9
