@@ -1,0 +1,2 @@
+recursive-include brainart/data *
+recursive-include brainart/templates *
