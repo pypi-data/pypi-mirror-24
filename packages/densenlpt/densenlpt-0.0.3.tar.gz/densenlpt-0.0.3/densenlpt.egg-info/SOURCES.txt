@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+densenlpt/__init__.py
+densenlpt.egg-info/PKG-INFO
+densenlpt.egg-info/SOURCES.txt
+densenlpt.egg-info/dependency_links.txt
+densenlpt.egg-info/requires.txt
+densenlpt.egg-info/top_level.txt
