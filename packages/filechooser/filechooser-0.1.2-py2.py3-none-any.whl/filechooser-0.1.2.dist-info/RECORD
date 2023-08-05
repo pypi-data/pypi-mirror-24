@@ -1,0 +1,12 @@
+filechooser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filechooser/main.py,sha256=j1JolYw8R3N6JA2k1vkVQJl4xjDHHWU8TkWLVNbQFsY,2609
+filechooser/parse_commandline.py,sha256=RA8npJtdmwvyw81iBUQ7LyY5EtQjdXXI7bg53KUzM_M,1550
+filechooser-0.1.2.data/scripts/autorotate.sh,sha256=P6B7MpsQj-ngsc5lfQhs_l68o1vxmwLaO4xAJVU3gCw,555
+filechooser-0.1.2.dist-info/DESCRIPTION.rst,sha256=vmOmZBbWZhuHmB3v-hWcr6YgN44RlBRhLIhrqKBEHoQ,328
+filechooser-0.1.2.dist-info/METADATA,sha256=zRYhHjSJKnkgmDAhivllrOLe4T59u2XrsmMfg-FmGb4,641
+filechooser-0.1.2.dist-info/RECORD,,
+filechooser-0.1.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+filechooser-0.1.2.dist-info/entry_points.txt,sha256=Mvomk6GaDBB_mT0QglRey0Y9ZBj_FfHxaYB0W7TdJEM,54
+filechooser-0.1.2.dist-info/metadata.json,sha256=w5VYA0yc7F8p03xkOxnSbAh2CKkrXvvLysOPB028sr4,657
+filechooser-0.1.2.dist-info/top_level.txt,sha256=47-G8AVjkWs9A-0iF7PM_YNVQXTDQ3e71RC_lBlBa9s,18
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
