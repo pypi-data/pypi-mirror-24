@@ -1,0 +1,175 @@
+heat_template_version: pike
+
+description: >
+  OpenStack Libvirt Service
+
+parameters:
+  DockerNovaLibvirtImage:
+    description: image
+    type: string
+  # we configure libvirt via the nova-compute container due to coupling
+  # in the puppet modules
+  DockerNovaLibvirtConfigImage:
+    description: The container image to use for the nova_libvirt config_volume
+    type: string
+  EnablePackageInstall:
+    default: 'false'
+    description: Set to true to enable package installation at deploy time
+    type: boolean
+  ServiceData:
+    default: {}
+    description: Dictionary packing service data
+    type: json
+  ServiceNetMap:
+    default: {}
+    description: Mapping of service_name -> network name. Typically set
+                 via parameter_defaults in the resource registry.  This
+                 mapping overrides those in ServiceNetMapDefaults.
+    type: json
+  DefaultPasswords:
+    default: {}
+    type: json
+  RoleName:
+    default: ''
+    description: Role name on which the service is applied
+    type: string
+  RoleParameters:
+    default: {}
+    description: Parameters specific to the role
+    type: json
+  EndpointMap:
+    default: {}
+    description: Mapping of service endpoint -> protocol. Typically set
+                 via parameter_defaults in the resource registry.
+    type: json
+  EnableInternalTLS:
+    type: boolean
+    default: false
+  UseTLSTransportForLiveMigration:
+    type: boolean
+    default: true
+    description: If set to true and if EnableInternalTLS is enabled, it will
+                 set the libvirt URI's transport to tls and configure the
+                 relevant keys for libvirt.
+  DockerNovaMigrationSshdPort:
+    default: 2022
+    description: Port that dockerized nova migration target sshd service
+                 binds to.
+    type: number
+
+
+conditions:
+
+  use_tls_for_live_migration:
+    and:
+    - equals:
+      - {get_param: EnableInternalTLS}
+      - true
+    - equals:
+      - {get_param: UseTLSTransportForLiveMigration}
+      - true
+
+resources:
+
+  ContainersCommon:
+    type: ./containers-common.yaml
+
+  NovaLibvirtBase:
+    type: ../../puppet/services/nova-libvirt.yaml
+    properties:
+      EndpointMap: {get_param: EndpointMap}
+      ServiceData: {get_param: ServiceData}
+      ServiceNetMap: {get_param: ServiceNetMap}
+      DefaultPasswords: {get_param: DefaultPasswords}
+      RoleName: {get_param: RoleName}
+      RoleParameters: {get_param: RoleParameters}
+      MigrationSshPort: {get_param: DockerNovaMigrationSshdPort}
+
+outputs:
+  role_data:
+    description: Role data for the Libvirt service.
+    value:
+      service_name: {get_attr: [NovaLibvirtBase, role_data, service_name]}
+      config_settings:
+        get_attr: [NovaLibvirtBase, role_data, config_settings]
+      step_config: &step_config
+        get_attr: [NovaLibvirtBase, role_data, step_config]
+      puppet_config:
+        config_volume: nova_libvirt
+        puppet_tags: nova_config,file,exec
+        step_config: *step_config
+        config_image: {get_param: DockerNovaLibvirtConfigImage}
+      kolla_config:
+        /var/lib/kolla/config_files/nova_libvirt.json:
+          command:
+            if:
+              - use_tls_for_live_migration
+              - /usr/sbin/libvirtd --listen --config /etc/libvirt/libvirtd.conf
+              - /usr/sbin/libvirtd --config /etc/libvirt/libvirtd.conf
+          config_files:
+            - source: "/var/lib/kolla/config_files/src/*"
+              dest: "/"
+              merge: true
+              preserve_properties: true
+          permissions:
+            - path: /var/log/nova
+              owner: nova:nova
+              recurse: true
+      docker_config:
+        step_3:
+          nova_libvirt:
+            image: {get_param: DockerNovaLibvirtImage}
+            net: host
+            pid: host
+            privileged: true
+            restart: always
+            volumes:
+              list_concat:
+                - {get_attr: [ContainersCommon, volumes]}
+                -
+                  - /var/lib/kolla/config_files/nova_libvirt.json:/var/lib/kolla/config_files/config.json:ro
+                  - /var/lib/config-data/puppet-generated/nova_libvirt/:/var/lib/kolla/config_files/src:ro
+                  - /lib/modules:/lib/modules:ro
+                  - /dev:/dev
+                  - /run:/run
+                  - /sys/fs/cgroup:/sys/fs/cgroup
+                  - /var/lib/nova:/var/lib/nova
+                  - /etc/libvirt/secrets:/etc/libvirt/secrets
+                  # Needed to use host's virtlogd
+                  - /var/run/libvirt:/var/run/libvirt
+                  - /var/lib/libvirt:/var/lib/libvirt
+                  - /etc/libvirt/qemu:/etc/libvirt/qemu
+                  - /var/log/libvirt/qemu:/var/log/libvirt/qemu:ro
+                  - /var/log/containers/nova:/var/log/nova
+            environment:
+              - KOLLA_CONFIG_STRATEGY=COPY_ALWAYS
+      host_prep_tasks:
+        - name: create libvirt persistent data directories
+          file:
+            path: "{{ item }}"
+            state: directory
+          with_items:
+            - /etc/libvirt/secrets
+            - /etc/libvirt/qemu
+            - /var/lib/libvirt
+            - /var/log/containers/nova
+        - name: set enable_package_install fact
+          set_fact:
+            enable_package_install: {get_param: EnablePackageInstall}
+        # We use virtlogd on host, so when using Deployed Server
+        # feature, we need to ensure libvirt is installed.
+        - name: install libvirt-daemon
+          package:
+            name: libvirt-daemon
+            state: present
+          when: enable_package_install
+        - name: start virtlogd socket
+          service:
+            name: virtlogd.socket
+            state: started
+            enabled: yes
+          when: enable_package_install
+      upgrade_tasks:
+        - name: Stop and disable libvirtd service
+          tags: step2
+          service: name=libvirtd state=stopped enabled=no
