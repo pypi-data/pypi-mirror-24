@@ -1,0 +1,11 @@
+numpy==1.13.1
+pandas==0.20.3
+psycopg2==2.7.3
+py4j==0.10.4
+python-dateutil==2.6.1
+pytz==2017.2
+scikit-learn==0.18.2
+six==1.10.0
+sklearn==0.0
+virtualenv==15.1.0
+virtualenvwrapper-win==1.2.1
