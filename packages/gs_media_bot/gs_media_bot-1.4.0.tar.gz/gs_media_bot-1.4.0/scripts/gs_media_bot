@@ -1,0 +1,69 @@
+#!/usr/bin/env python3
+# pylint: disable=missing-docstring
+from argparse import ArgumentParser
+from glob import glob
+from json import dump, load
+from os.path import expanduser, isfile, join
+from random import choice
+from sys import stderr
+
+from gnusocial.statuses import update
+from xdg.BaseDirectory import save_config_path
+
+CONFIG_PATH = join(save_config_path('gs_media_bot'), 'config.json')
+PARSER = ArgumentParser(description='Bot for posting media to GNU Social.')
+PARSER.add_argument(
+    '-c', '--config_file',
+    help='''config file to use instead of
+$XDG_CONFIG_HOME/gs_media_bot/config.json''',
+    default=CONFIG_PATH
+)
+
+if not isfile(CONFIG_PATH):
+    dump(
+        {
+            "credentials": {
+                "server_url": "https://gnusocial.server",
+                "username": "username",
+                "password": "password",
+            },
+            "patterns": {
+                "~/My_Cool_Photos/my_photo.jpg": "Yet another photo!",
+                "~/Directory/With/subdirs/**": "random pic"
+            }
+        },
+        open(CONFIG_PATH, 'w'),
+        indent=4,
+        sort_keys=True
+    )
+    print('Config file created.')
+    quit()
+
+
+def main():
+    args = PARSER.parse_args()
+    config = load(open(args.config_file))
+    patterns = config['patterns']
+    for pattern in patterns:
+        credentials = config['credentials']
+        server_url = credentials['server_url']
+        username = credentials['username']
+        password = credentials['password']
+        message = patterns[pattern]
+        media = choice(glob(expanduser(pattern), recursive=True))
+        resp = update(
+            server_url,
+            auth=(username, password),
+            data={
+                'status': message,
+                'source': 'GS media bot'
+            },
+            files={'media': open(media, 'rb')}
+        )
+        error = resp.get('error')
+        if error:
+            print(err, file=stderr)
+            quit(1)
+
+if __name__ == '__main__':
+    main()

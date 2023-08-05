@@ -1,0 +1,8 @@
+README.rst
+setup.py
+gs_media_bot.egg-info/PKG-INFO
+gs_media_bot.egg-info/SOURCES.txt
+gs_media_bot.egg-info/dependency_links.txt
+gs_media_bot.egg-info/requires.txt
+gs_media_bot.egg-info/top_level.txt
+scripts/gs_media_bot

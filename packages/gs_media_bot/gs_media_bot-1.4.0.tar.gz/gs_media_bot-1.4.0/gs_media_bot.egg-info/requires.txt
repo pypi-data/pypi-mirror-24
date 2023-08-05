@@ -1,0 +1,2 @@
+gnusocial>=4.0,<5.0
+pyxdg
