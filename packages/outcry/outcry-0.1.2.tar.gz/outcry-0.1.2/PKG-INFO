@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: outcry
+Version: 0.1.2
+Summary: Parse and render REST documents using representers
+Home-page: https://github.com/kwngo/outcry
+Author: Kareem Kwong
+Author-email: kareem.kwong@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/kwngo/outcry/archive/0.1.0.tar.gz
+Description: UNKNOWN
+Keywords: json,parsing,render
+Platform: UNKNOWN
