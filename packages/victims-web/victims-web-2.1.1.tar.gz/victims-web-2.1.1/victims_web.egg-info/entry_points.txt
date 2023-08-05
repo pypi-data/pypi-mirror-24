@@ -1,0 +1,3 @@
+[console_scripts]
+victims-web-server = victims.web.__main__:main
+
