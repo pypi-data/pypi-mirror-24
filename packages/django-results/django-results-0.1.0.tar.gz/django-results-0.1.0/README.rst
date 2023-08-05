@@ -1,0 +1,62 @@
+==============
+django-results
+==============
+
+提供django下结果页
+
+Quick start
+-----------
+1. Install::
+
+    pip install django_results
+
+2. Add "results" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'results',
+    ]
+
+3. No Migrations
+
+4. Create results view::
+
+    # config in urls
+    from results import views as results_views
+    from results.views import error_result
+    urlpatterns = [
+        url(r'^error-result/$', partial(error_result, title='出错标题', message='出错消息'), name='error_result'),
+        url(r'^error-result/object-does-not-exist/$',
+            partial(error_result, error=ObjectDoesNotExist()),
+            name='error_result_object_does_not_exist'),
+
+        url(r'^result_view/success/$',
+            results_views.result_view,
+            {"title": "success的标题", "message": "success的消息", "class_": 'success'}, name='result_view_success'),
+        url(r'^result_view/danger/$',
+            results_views.result_view,
+            {"title": "danger的标题", "message": "danger的消息", "class_": 'danger'}, name='result_view_danger'),
+        url(r'^result_view/info/$',
+            results_views.result_view,
+            {"title": "info的标题", "message": "info的消息", "class_": 'info'}, name='result_view_info'),
+    ]
+
+    # handle form error in views
+    def form_error_view(request):
+        class TestForm(forms.Form):
+            required_field = forms.CharField(required=True)
+
+            invalid_field = forms.CharField(max_length=1)
+
+            def clean(self):
+                raise forms.ValidationError('non field error happened')
+
+        form = TestForm(data={'invalid_field': 'xxxxx'})
+
+        return render(request, 'results/result.html', context={
+            'class': 'danger',
+            'title': '这里有一个错误',
+            'message': '不知道当讲不当讲，算了我还是讲了',
+            'errors': form.errors,
+        })
+
