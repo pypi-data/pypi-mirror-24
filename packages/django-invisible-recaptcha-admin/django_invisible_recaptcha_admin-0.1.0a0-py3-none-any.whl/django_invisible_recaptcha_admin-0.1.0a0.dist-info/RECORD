@@ -1,0 +1,14 @@
+django_invisible_recaptcha_admin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_invisible_recaptcha_admin/admin.py,sha256=Pa0FbdicJVAzfcDFCHopxjuU-F8ca5rUUnC0jK7XzXM,341
+django_invisible_recaptcha_admin/forms.py,sha256=L5eDUriCfVBImWcfYzRo3dFDr0CRul6vU9n4eaul_OY,537
+django_invisible_recaptcha_admin/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_invisible_recaptcha_admin/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_invisible_recaptcha_admin/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+django_invisible_recaptcha_admin/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_invisible_recaptcha_admin/templates/admin/login.html,sha256=-rmpiNNhs7MrveCZV80Fdv-KQOiCZgDP0Db38yH_az8,2184
+django_invisible_recaptcha_admin-0.1.0a0.dist-info/DESCRIPTION.rst,sha256=pcc_U1Xxc-jFNIGPGLaI8L9r5kszw7GcyNir4BhRA-I,626
+django_invisible_recaptcha_admin-0.1.0a0.dist-info/METADATA,sha256=a-JFtSL5tLDXFwzltOW7fQ1J2_y2fWNcKJZ5_aWLpP4,1916
+django_invisible_recaptcha_admin-0.1.0a0.dist-info/RECORD,,
+django_invisible_recaptcha_admin-0.1.0a0.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+django_invisible_recaptcha_admin-0.1.0a0.dist-info/metadata.json,sha256=Rie4hKaJ3_KLDeDDBNvg9Ozf1JZyfcr4Wh2nSy0TkdE,1380
+django_invisible_recaptcha_admin-0.1.0a0.dist-info/top_level.txt,sha256=wfikQLwuMGcCt9UHNCzgmuZZRfWeoxLxtBD8kCuexPI,33
