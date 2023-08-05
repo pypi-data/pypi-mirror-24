@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: antlia
+Version: 0.1.8
+Summary: Flat Design GUI for Python based on SDL2
+Home-page: https://github.com/Romaingin/Antlia
+Author: Romain Ginestou
+Author-email: romain.ginestou@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/Romaingin/Antlia/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: SDL2,Flat Design,GUI
+Platform: UNKNOWN
