@@ -1,0 +1,34 @@
+==========
+Getignorer
+==========
+
+Command line utility to fetch common .gitignore files
+
+
+Usage
+=====
+
+Enter a variable number of language to create the .gitignore file from::
+
+    λ getignorer Python Haskell
+
+Output location can be change with -o (default is .gitignore)::
+
+    λ getignorer Python -o sample.txt
+
+Output can be previewed with --preview::
+
+    λ getignorer --preview
+
+Omitting languages from the command will show a prompt::
+
+    λ getignore        
+    Enter programing languages separated by commas in the prompt below
+        Press <TAB> to see available completions
+        E.g. Python, Go, Node
+
+    Enter languages >   
+
+For a full rundown of available options::
+
+    λ getignorer --help
