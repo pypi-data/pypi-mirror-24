@@ -1,0 +1,12 @@
+rawpy/__init__.py,sha256=UDPqDwonEBeHPPUCM6NhF53Jh8pu4vJkPxHbBa-6dHM,691
+rawpy/_rawpy.cp35-win32.pyd,sha256=Z_RFDny2v_ZC3-60W4qAdp85AifI8EXJ87diwzs6wTk,137728
+rawpy/_version.py,sha256=gAfvht5l6XwMWN5yki_8J8iES1bIulXaYUgBYpwz58I,22
+rawpy/enhance.py,sha256=GGdFScERlWTkrhpZfGflalio695owZrH2ylTCdX5Z00,14009
+rawpy/raw_r.dll,sha256=KDI_W4QWo0mtPowBljIDJfvDaLh8hPOKjR9np25TWIo,915968
+rawpy/vcomp140.dll,sha256=pKWOAh_97hh52jzVI4dXmuD9uHC7DLAexcxpc0UUrnc,138552
+rawpy-0.10.1.dist-info/DESCRIPTION.rst,sha256=XejxR1ejRL3N7TA_UeYT_P1VPidnjt5CAeQI1ke-uOY,3243
+rawpy-0.10.1.dist-info/METADATA,sha256=EUEMBiGrUUdtOx541LP7T8lmg-rhhgFyxNL9lDKOx6E,4298
+rawpy-0.10.1.dist-info/RECORD,,
+rawpy-0.10.1.dist-info/WHEEL,sha256=5EyYwp11c_jCV_end1zYJviefeCAGZlqF3kojmsWN7E,102
+rawpy-0.10.1.dist-info/metadata.json,sha256=kMV1IKtvRBRqnHr6gjUjZonEVLOeKXgBAeQggQMdKM8,1119
+rawpy-0.10.1.dist-info/top_level.txt,sha256=7jsQajvqWcvbFz1mx9zyPC_MjCPZvXAJ_H4cGYOBn6k,6
