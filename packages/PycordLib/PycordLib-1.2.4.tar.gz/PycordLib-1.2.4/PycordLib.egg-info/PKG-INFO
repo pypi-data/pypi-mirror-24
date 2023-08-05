@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: PycordLib
+Version: 1.2.4
+Summary: Simple Discord bot library
+Home-page: https://github.com/Celeo/Pycord
+Author: Matt Boulanger
+Author-email: celeodor@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: discord
+Platform: any
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
