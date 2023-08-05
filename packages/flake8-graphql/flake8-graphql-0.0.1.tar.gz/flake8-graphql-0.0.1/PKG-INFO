@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: flake8-graphql
+Version: 0.0.1
+Summary: A flake8 plugin to lint your graphql queries
+Home-page: https://github.com/michaelaquilina/flake8-graphql
+Author: Michael Aquilina
+Author-email: michaelaquilina@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Keywords: flake8,graphql
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
