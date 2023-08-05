@@ -1,0 +1,16 @@
+[paths]
+source =
+   src/techdragon
+   */site-packages/techdragon
+
+[run]
+branch = true
+source =
+    techdragon
+    tests
+parallel = true
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*
