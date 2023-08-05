@@ -1,0 +1,3 @@
+[console_scripts]
+sig2srv = sig2srv.cli:main
+
