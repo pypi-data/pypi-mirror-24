@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_static_md5url/__init__.py
+django_static_md5url.egg-info/PKG-INFO
+django_static_md5url.egg-info/SOURCES.txt
+django_static_md5url.egg-info/dependency_links.txt
+django_static_md5url.egg-info/not-zip-safe
+django_static_md5url.egg-info/top_level.txt
+django_static_md5url/templatetags/__init__.py
+django_static_md5url/templatetags/md5url.py
