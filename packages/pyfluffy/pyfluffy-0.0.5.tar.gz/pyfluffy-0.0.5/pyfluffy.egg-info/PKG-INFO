@@ -1,0 +1,50 @@
+Metadata-Version: 1.1
+Name: pyfluffy
+Version: 0.0.5
+Summary: Fluffy - A Firewall as a Service
+Home-page: https://github.com/m4ce/fluffy
+Author: Matteo Cerutti
+Author-email: matteo.cerutti@hotmail.co.uk
+License: Apache License 2.0
+Description: # Fluffy - A Firewall as a Service
+        
+        Fluffy is a firewall as a service solution that primarily targets Linux environments.
+        
+        ## Features
+        
+        * A fully documented RESTful API using Flasgger
+        * Session based configuration so that changes can be tested and committed atomically without affecting the active configuration
+        * Rollback methods using unattended server-side checks including rollback intervals with a *commit/confirm* type of functionality
+        * Source and destination addresses are managed by a global *addressbook* which also supports inheritance
+        * Source and destination services are managed by a global *services catalog*
+        * Chains support including default policy, packet matching tables etc.
+        * Interfaces support
+        
+        ## Puppet integration
+        
+        A module is available on [PuppetForge](https://forge.puppet.com/m4ce/fluffy).
+        
+        ## Running in Docker
+        
+        ```
+        $ docker pull m4ce/fluffy
+        ```
+        
+        The container needs to run in privileged mode (--privileged). Additionally, you will need to make sure the Docker daemon is started with `--iptables=false`.
+        
+        ## Author
+        Matteo Cerutti - matteo.cerutti@hotmail.co.uk
+        
+Keywords: firewall,fwaas,firewall as a service,iptables as a service
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Networking :: Firewalls
