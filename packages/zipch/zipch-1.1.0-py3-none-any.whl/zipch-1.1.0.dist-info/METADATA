@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: zipch
+Version: 1.1.0
+Summary: Database of zipcodes, cantons and municipalities for Switzerland
+Home-page: https://github.com/sephii/zipch
+Author: Sylvain Fankhauser
+Author-email: sylvain.fankhauser@liip.ch
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: MIT License
+
+UNKNOWN
+
+
