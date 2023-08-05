@@ -1,0 +1,17 @@
+
+[build]
+pypandoc
+wheel
+twine
+
+[ci]
+
+[dev]
+pytest-sugar
+
+[test]
+pytest>=3.1
+pytest-asyncio
+pytest-cov
+codecov
+flake8
