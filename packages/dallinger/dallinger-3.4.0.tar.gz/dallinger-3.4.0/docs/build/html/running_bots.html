@@ -1,0 +1,211 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Running bots as participants &#8212; Dallinger 3.4.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '3.4.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Learning to Use Dallinger" href="learning_to_use_dallinger.html" />
+    <link rel="prev" title="Demoing Dallinger" href="demoing_dallinger.html" />
+ <script type="text/javascript">
+   (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+     t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+   })(window, document, '_gscq','script','//widgets.getsitecontrol.com/58185/script.js');
+  </script>
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="running-bots-as-participants">
+<h1>Running bots as participants<a class="headerlink" href="#running-bots-as-participants" title="Permalink to this headline">¶</a></h1>
+<p>Dallinger supports using the Selenium framework to write bots that participate in
+experiments. Not all experiments will have bots available; the <a class="reference internal" href="demos/bartlett1932/index.html"><span class="doc">Bartlett (1932), stories</span></a>
+and <a class="reference internal" href="demos/chatroom/index.html"><span class="doc">Networked chatroom-based coordination game</span></a> demos are the only built-in experiments that do.</p>
+<div class="section" id="writing-a-bot">
+<h2>Writing a bot<a class="headerlink" href="#writing-a-bot" title="Permalink to this headline">¶</a></h2>
+<p>In your <code class="docutils literal"><span class="pre">experiment.py</span></code> you will need to create a subclass of BotBase called Bot.
+This class should implement the <code class="docutils literal"><span class="pre">participate</span></code> method, which will be called once
+the bot has navigated to the main experiment. Note, the BotBase class makes some
+assumptions about HTML structure, based on the demo experiments. If your HTML
+differs significantly you may need to override other methods too.</p>
+<dl class="class">
+<dt id="dallinger.bots.BotBase">
+<em class="property">class </em><code class="descclassname">dallinger.bots.</code><code class="descname">BotBase</code><span class="sig-paren">(</span><em>URL</em>, <em>assignment_id=''</em>, <em>worker_id=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/dallinger/bots.html#BotBase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dallinger.bots.BotBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>A base class for Bots that works with the built-in demos.</p>
+<dl class="method">
+<dt id="dallinger.bots.BotBase.complete_questionnaire">
+<code class="descname">complete_questionnaire</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/dallinger/bots.html#BotBase.complete_questionnaire"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dallinger.bots.BotBase.complete_questionnaire" title="Permalink to this definition">¶</a></dt>
+<dd><p>Complete the standard debriefing form.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="dallinger.bots.BotBase.driver">
+<code class="descname">driver</code><a class="headerlink" href="#dallinger.bots.BotBase.driver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a Selenium WebDriver instance of the type requested in the
+configuration.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dallinger.bots.BotBase.participate">
+<code class="descname">participate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/dallinger/bots.html#BotBase.participate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dallinger.bots.BotBase.participate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Participate in the experiment.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dallinger.bots.BotBase.run_experiment">
+<code class="descname">run_experiment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/dallinger/bots.html#BotBase.run_experiment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dallinger.bots.BotBase.run_experiment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sign up, run the <code class="docutils literal"><span class="pre">participate</span></code> method, then sign off and close
+the driver.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dallinger.bots.BotBase.sign_off">
+<code class="descname">sign_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/dallinger/bots.html#BotBase.sign_off"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dallinger.bots.BotBase.sign_off" title="Permalink to this definition">¶</a></dt>
+<dd><p>Submit questionnaire and finish.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dallinger.bots.BotBase.sign_up">
+<code class="descname">sign_up</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/dallinger/bots.html#BotBase.sign_up"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dallinger.bots.BotBase.sign_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accept HIT, give consent and start experiment.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="running-bots-locally">
+<h2>Running bots locally<a class="headerlink" href="#running-bots-locally" title="Permalink to this headline">¶</a></h2>
+<p>You must set the configuration value <code class="docutils literal"><span class="pre">recruiter='bots'</span></code> to run an experiment using its
+bot. As usual, this can be set in local or global configurations, as an
+environment variable or as a keyword argument to <a class="reference internal" href="the_experiment_class.html#dallinger.experiments.Experiment.run" title="dallinger.experiments.Experiment.run"><code class="xref py py-meth docutils literal"><span class="pre">run()</span></code></a>.
+You should also set <code class="docutils literal"><span class="pre">max_participants</span></code> to the number of bots you want to run at once.
+<code class="docutils literal"><span class="pre">num_dynos_worker</span></code> should be more than <code class="docutils literal"><span class="pre">max_participants</span></code>, as a bot takes up a worker
+process while it is running. In addition, you may want to increase <cite>num_dynos_web</cite> to improve
+performance.</p>
+<p>Dallinger uses Selenium to run bots locally. By default, it will try to run
+phantomJS directly, however it supports using Firefox and Chrome through
+configuration variables.</p>
+<div class="highlight-ini"><div class="highlight"><pre><span></span><span class="na">webdriver_type</span> <span class="o">=</span> <span class="s">firefox</span>
+</pre></div>
+</div>
+<p>We recommend using Firefox when writing bots, as it allows you to visually see
+its output and allows you to attach the development console directly to the
+bot’s browser session.</p>
+<p>Running an experiment with the API may look like:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">participants</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">experiment</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+    <span class="n">mode</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;debug&#39;</span><span class="p">,</span>
+    <span class="n">recruiter</span><span class="o">=</span><span class="sa">u</span><span class="s1">&#39;bots&#39;</span><span class="p">,</span>
+    <span class="n">max_participants</span><span class="o">=</span><span class="n">participants</span><span class="p">,</span>
+    <span class="n">num_dynos_web</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">participants</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="n">num_dynos_worker</span><span class="o">=</span><span class="n">participants</span><span class="p">,</span>
+    <span class="n">workers</span><span class="o">=</span><span class="n">participants</span><span class="o">+</span><span class="mi">5</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="running-a-single-bot">
+<h3>Running a single bot<a class="headerlink" href="#running-a-single-bot" title="Permalink to this headline">¶</a></h3>
+<p>If you want to run a single bot as part of an ongoing experiment, you can use
+the <a class="reference internal" href="command_line_utility.html#dallinger-bot"><span class="std std-ref">bot</span></a> command. This is useful for testing a single
+bot’s behavior as part of a longer-running experiment, and allows easy access
+to the Python pdb debugger.</p>
+</div>
+<div class="section" id="scaling-bots-locally">
+<h3>Scaling bots locally<a class="headerlink" href="#scaling-bots-locally" title="Permalink to this headline">¶</a></h3>
+<p>For example you may want to run a dedicated computer on your lab network to host
+bots, without slowing down experimenter computers. It is recommended that you
+run Selenium in a hub configuration, as a single Selenium instance will limit
+the number of concurrent sessions.</p>
+<p>You can also provide a URL to a Selenium WebDriver instance using the
+<code class="docutils literal"><span class="pre">webdriver_url</span></code> configuration setting. This is required if you’re running
+Selenium in a hub configuration. The hub does not need to be on the same computer
+as Dallinger, but it does need to be able to access the computer running
+Dallinger directly by its IP address.</p>
+<p>On Apple macOS, we recommend using Homebrew to install and run selenium, using:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">selenium</span><span class="o">-</span><span class="n">server</span><span class="o">-</span><span class="n">standalone</span>
+<span class="n">selenium</span><span class="o">-</span><span class="n">server</span> <span class="o">-</span><span class="n">port</span> <span class="mi">4444</span>
+</pre></div>
+</div>
+<p>On other platforms, download the latest <code class="docutils literal"><span class="pre">selenium-server-standalone.jar</span></code> file
+from <a class="reference external" href="http://www.seleniumhq.org/download/">SeleniumHQ</a> and run a hub using:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">java</span> <span class="o">-</span><span class="n">jar</span> <span class="n">selenium</span><span class="o">-</span><span class="n">server</span><span class="o">-</span><span class="n">standalone</span><span class="o">-</span><span class="mf">3.3</span><span class="o">.</span><span class="mf">1.</span><span class="n">jar</span> <span class="o">-</span><span class="n">role</span> <span class="n">hub</span>
+</pre></div>
+</div>
+<p>and attach multiple nodes by running:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">java</span> <span class="o">-</span><span class="n">jar</span> <span class="n">selenium</span><span class="o">-</span><span class="n">server</span><span class="o">-</span><span class="n">standalone</span><span class="o">-</span><span class="mf">3.3</span><span class="o">.</span><span class="mf">1.</span><span class="n">jar</span> <span class="o">-</span><span class="n">role</span> <span class="n">node</span> <span class="o">-</span><span class="n">hub</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">hubcomputer</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="mi">4444</span><span class="o">/</span><span class="n">grid</span><span class="o">/</span><span class="n">register</span>
+</pre></div>
+</div>
+<p>These nodes may be on other computers on the local network or on the same host
+machine. If they are on the same host you will need to add <code class="docutils literal"><span class="pre">-port</span> <span class="pre">4446</span></code> (for
+some port number) such that each Selenium node on the same server is listening
+on a different port.</p>
+<p>You will also need to set up the browser interfaces on each computer that’s running
+a node. This requires being able to run the browser and having the correct driver
+available in the system path, so the Selenium server can run it.</p>
+<p>We recommend using Chrome when running large numbers of bots, as it is more
+feature-complete than PhantomJS but with better performance at scale than Firefox. It
+is best to run at most three Firefox sessions on commodity hardware, so for best
+results 16 bots should be run over 6 Selenium servers. This will depend on how
+processor intensive your experiment is. It may be possible to run more sessions
+without performance degradation.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="demoing_dallinger.html" title="previous chapter">Demoing Dallinger</a></li>
+      <li>Next: <a href="learning_to_use_dallinger.html" title="next chapter">Learning to Use Dallinger</a></li>
+  </ul></li>
+</ul>
+</div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+    </div>
+
+    
+    <a href="https://github.com/Dallinger/Dallinger" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="_static/corner.jpg" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>
