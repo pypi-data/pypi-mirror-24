@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+streprogen/__init__.py
+streprogen/day.py
+streprogen/exercises.py
+streprogen/modeling.py
+streprogen/program.py
+streprogen/utils.py
+streprogen.egg-info/PKG-INFO
+streprogen.egg-info/SOURCES.txt
+streprogen.egg-info/dependency_links.txt
+streprogen.egg-info/requires.txt
+streprogen.egg-info/top_level.txt
