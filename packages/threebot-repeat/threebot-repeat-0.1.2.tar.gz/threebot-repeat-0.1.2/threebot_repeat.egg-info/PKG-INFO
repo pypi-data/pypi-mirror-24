@@ -1,0 +1,39 @@
+Metadata-Version: 1.1
+Name: threebot-repeat
+Version: 0.1.2
+Summary: Add repetitive Task management to you 3bot
+Home-page: UNKNOWN
+Author: arteria GmbH
+Author-email: admin@arteria.ch
+License: UNKNOWN
+Description: # 3bot-repeat
+        
+        Add repetitive Task management to you 3bot.
+        
+        
+        ## Installation
+        
+        ### Stable version from PyPI
+        
+        	pip install threebot-repeat
+        
+        ### Development version
+        
+        	pip install -e git+https://github.com/3bot/3bot-hook.git#egg=theebot_repeat
+        
+        ###
+        
+            'threebot_repeat',
+        ###
+        
+            url(r'^repeat/', include('threebot_repeat.urls')),
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 4 - Beta

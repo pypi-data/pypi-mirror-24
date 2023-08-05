@@ -1,0 +1,2 @@
+threebot>=0.1.1
+django-background-tasks>=1.1.9

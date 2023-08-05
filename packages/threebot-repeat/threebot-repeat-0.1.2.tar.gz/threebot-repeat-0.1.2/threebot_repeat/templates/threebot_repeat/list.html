@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load threebot_tags %}
+{% load threebot_repeat_tags %}
+{% load sekizai_tags %}
+
+{% block doctitle %}
+Scheduled Jobs
+{% endblock %}
+
+
+{% block content %}
+<h2>
+    Scheduled Jobs
+</h2>
+<p>
+    <small>Scheduled Jobs are Workflows that run periodically. To create a new Scheduled Job go to a successfully logged Workflow and use the "Replay" Button.</small>
+</p>
+
+{% if repetitive_tasks %}
+<div class="input-group" style="margin-bottom: 20px;"><span class="input-group-addon">Filter</span>
+    <input id="filter" type="text" class="form-control" onkeydown="clear_input(event, this);" placeholder="Type here..." autofocus>
+</div>
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>Workflow Log</th>
+        <th>Next Run</th>
+        <th>Repeat</th>
+        <th>Repeat Until</th>
+        <th>Stop Repetition</th>
+    </tr>
+    </thead>
+    <tbody class="searchable">
+        {% for repetitive_task in repetitive_tasks %}
+        <tr id="{{ repetitive_task.id }}">
+            {% repetitive_task_to_workflow_log repetitive_task as log %}
+            <td>{% if log %}<a href="{{ log.get_absolute_url }}">{{ log }}</a>{% else %}Unknown{% endif %} <small>(<a href="/admin/background_task/task/{{ repetitive_task.id }}">Show Background Task in Admin</a>)</small></td>
+            <td>{{ repetitive_task.run_at }} </td>
+            <td>{{ repetitive_task.get_repeat_display }}</td>
+            <td>{{ repetitive_task.repeat_until }}</td>
+            <td><a href="{% url 'threebot_replay_stop_repetition' repetitive_task.id %}">Stop</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% else %}
+<div class="alert alert-warning" role="alert"><strong>No Scheduled Jobs!</strong></div>
+{% endif %}
+
+{% addtoblock "js" %}
+<script type="text/javascript">
+$(document).ready(function () {
+    (function ($) {
+        $('#filter').keyup(function () {
+            var rex = new RegExp($(this).val(), 'i');
+            $('.searchable tr').hide();
+            $('.searchable tr').filter(function () {
+                return rex.test($(this).text());
+            }).show();
+        })
+    }(jQuery));
+});
+
+function clear_input(evt, input) {
+    var code = evt.charCode || evt.keyCode;
+    if (code == 27) { //esc
+        input.value = '';
+    }
+}
+</script>
+{% endaddtoblock %}
+
+{% endblock %}
