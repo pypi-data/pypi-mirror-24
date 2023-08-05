@@ -1,0 +1,16 @@
+tensorflow_serving_api-0.6.0.dist-info/WHEEL,sha256=54bVun1KfEBTJ68SHUmbxNPj80VxlQ0sHi4gZdGZXEY,92
+tensorflow_serving_api-0.6.0.dist-info/metadata.json,sha256=28q6GgcWg8ot2juN0In18r3_4zldlbooWKonbY_L8mA,627
+tensorflow_serving_api-0.6.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+tensorflow_serving_api-0.6.0.dist-info/METADATA,sha256=q2_mSEKs_Bz4_2ulcSyVbAMQKmoTJ8DZBXNojL9HCHo,405
+tensorflow_serving_api-0.6.0.dist-info/top_level.txt,sha256=N0Xxf3D2Xr3sEGwDEFgTk5wAcltpqVPZaa_SD3yPxzw,19
+tensorflow_serving_api-0.6.0.dist-info/RECORD,,
+tensorflow_serving/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensorflow_serving/apis/get_model_metadata_pb2.py,sha256=sqyoD7bxQa1poSD9RiDy8y0RLvMz8SW0Yk9SjY7bE_8,11393
+tensorflow_serving/apis/input_pb2.py,sha256=7NERiGSUYMiovf7MzUN4vU5duCSK7BuS3EWN8FwdziI,7354
+tensorflow_serving/apis/inference_pb2.py,sha256=xXaOVnoU099sSJmJ1N-n170AW1qq9HeTQnopzXQ63Aw,10153
+tensorflow_serving/apis/prediction_service_pb2.py,sha256=hW8ebKin_8Owuc8sTZXY35zzCV4F27t0JXiccOE-iMg,17952
+tensorflow_serving/apis/model_pb2.py,sha256=nG38UcOA-sdVf1F5Vxn1yObRGgMu_nwh_ipP35vVf54,3261
+tensorflow_serving/apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensorflow_serving/apis/regression_pb2.py,sha256=5HNiCe52OevF9CIT9IiuV5ENB5WjLRmBgo0P_3qXMmE,7164
+tensorflow_serving/apis/predict_pb2.py,sha256=UFxjB6qcUQ3TLNw1tl4Be_zJm82zsFPQGb54ho-h3nU,9234
+tensorflow_serving/apis/classification_pb2.py,sha256=sODatirfvFx6Nr146uKfPDfyIett1TUfxgZDaKozi8o,9029
