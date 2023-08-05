@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: alexa-skill-kit
+Version: 1.0.1
+Summary: Alexa Skill Kit for Python
+Home-page: https://github.com/KNNCreative/alexa-skill-kit
+Author: Kien Pham
+Author-email: kien@knncreative.com
+License: MIT
+Description: 
+        Alexa Skill Kit for Python
+        --------------------------
+        
+        Help you create Alexa skill super easy in Python, like 20 lines of code, promise!
+        
+        Please go to the repo for more info on getting started: https://github.com/KNNCreative/alexa-skill-kit
+        
+Keywords: alexa skill kit,alexa,skill kit,alex echo,alexa ask,aws alexa
+Platform: any
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
