@@ -1,0 +1,10 @@
+oshino_prometheus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oshino_prometheus/agent.py,sha256=U-dbCg4ju3rsNhARIHylOVU5vxQHm7vafFWiHu_dhUA,985
+oshino_prometheus/util.py,sha256=BaCkP1ZKilkp3-4gXEDrdjkpPVRNM1JuYLEzxXZYCB8,1056
+oshino_prometheus/version.py,sha256=l41-4DgVaiYMQQ1xl9198dpJdf0yWcuqIkk7N_hINj0,233
+oshino_prometheus-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+oshino_prometheus-0.1.0.dist-info/METADATA,sha256=fO2R-_UABiw3eOGJlf5Bq1jkVxrEyPFb3wjHgaZGUu8,255
+oshino_prometheus-0.1.0.dist-info/RECORD,,
+oshino_prometheus-0.1.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+oshino_prometheus-0.1.0.dist-info/metadata.json,sha256=F8La-iYBf0etyuv2mjDWIAuU_t6T4fX3Zq5oMbFjN_8,514
+oshino_prometheus-0.1.0.dist-info/top_level.txt,sha256=gEF5zkksYS9IpxIb32N2QYm4RVDdGOV8r9qcvBVCVsQ,18
