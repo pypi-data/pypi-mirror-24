@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+setup.cfg
+setup.py
+slackbot_atlassian.egg-info/PKG-INFO
+slackbot_atlassian.egg-info/SOURCES.txt
+slackbot_atlassian.egg-info/dependency_links.txt
+slackbot_atlassian.egg-info/requires.txt
+slackbot_atlassian.egg-info/top_level.txt
+slackbotatlassian/__init__.py
+slackbotatlassian/jira.py
