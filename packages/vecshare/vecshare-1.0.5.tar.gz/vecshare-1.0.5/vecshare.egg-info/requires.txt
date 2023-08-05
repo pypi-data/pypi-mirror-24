@@ -1,0 +1,8 @@
+pandas
+numpy
+nltk
+scipy
+datadotworld
+bs4
+selenium
+progressbar2
