@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    htmlele = htmlele.mkpage:main
+    

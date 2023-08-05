@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: htmlele
+Version: 0.0.3.dev0
+Summary: UNKNOWN
+Home-page: http://katolele.net/
+Author: katolele
+Author-email: katolele@katolele.net
+License: GPL
+Description:     create HTML files of website
+Keywords: HTML files
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
