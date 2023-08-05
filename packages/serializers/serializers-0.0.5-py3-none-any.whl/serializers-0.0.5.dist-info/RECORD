@@ -1,0 +1,10 @@
+serializers/__init__.py,sha256=LfYHN9eN-kXX1MRKypMaaaYSQNpiS43GZva9EJwqdY4,47
+serializers/association.py,sha256=Fdz4pcIkw8b8sIyyVJ7jCR2dDvDYngmfkLQcJ3MCZDM,1106
+serializers/attribute.py,sha256=gSneceBwPBY4VQICjy7yS-NlMspGZSRsTkiUag08Km8,511
+serializers/serializer.py,sha256=3-fHBy_vGRPcieL1-keeipnuv832pftjFeDMufQQJTI,1665
+serializers-0.0.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+serializers-0.0.5.dist-info/METADATA,sha256=oR0e1e1Y-sCBNZPUlGMhXALfkMqo-piMLFCU4_oU7Tc,706
+serializers-0.0.5.dist-info/RECORD,,
+serializers-0.0.5.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+serializers-0.0.5.dist-info/metadata.json,sha256=VufH3if2Eohu3fuD2NbCfkL5rUexkCUIGhc6jMBdi5s,844
+serializers-0.0.5.dist-info/top_level.txt,sha256=tRQVQ3RlaPJmpZzGoIOw9o30UUyHSi0YFH5AA2UsAVI,12
