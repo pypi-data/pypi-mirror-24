@@ -1,0 +1,4 @@
+[console_scripts]
+pisurvl-server = pisurvl.main:main
+pisurvl-setup = pisurvl.google.credentials:create_credentials
+
