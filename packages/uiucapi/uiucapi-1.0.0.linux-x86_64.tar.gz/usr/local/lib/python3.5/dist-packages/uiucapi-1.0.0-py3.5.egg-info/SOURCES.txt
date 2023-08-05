@@ -1,0 +1,12 @@
+README.rst
+setup.py
+objects/__init__.py
+objects/courseobjects.py
+uiucapi/__init__.py
+uiucapi/aioquery.py
+uiucapi/query.py
+uiucapi.egg-info/PKG-INFO
+uiucapi.egg-info/SOURCES.txt
+uiucapi.egg-info/dependency_links.txt
+uiucapi.egg-info/requires.txt
+uiucapi.egg-info/top_level.txt
