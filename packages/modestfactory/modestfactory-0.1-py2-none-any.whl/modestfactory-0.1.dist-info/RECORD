@@ -1,0 +1,10 @@
+modestfactory/__init__.py,sha256=i7bngGFkq1idZyQp3ODlsQl9ssH7rHcGSeh11K4Re98,98
+modestfactory/dependency.py,sha256=NAm4Aa-G4ahHYjOuACQGrW7A5MoyyTwAA3ONELqUrtk,843
+modestfactory/factory.py,sha256=4FdLaib-aHPkXa3eDhDw59Qp-Dpy9LpYWeUR9wILnxw,3043
+modestfactory/singleton.py,sha256=Oli6-fHV8Ylfcaqhfk3rHi4Ap_zsptrlazVjN_1EO_0,225
+modestfactory-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+modestfactory-0.1.dist-info/METADATA,sha256=G0mbJxbi51EJ7Z49paq5n9Tpsj0HXq-0VHrjH4tHVO8,298
+modestfactory-0.1.dist-info/RECORD,,
+modestfactory-0.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+modestfactory-0.1.dist-info/metadata.json,sha256=Ll5jVi9vIDcovVGJvPKlXZnFkBCqvo2mV9T-6MDLg1A,384
+modestfactory-0.1.dist-info/top_level.txt,sha256=WnA8nKlHhk1iNbCAtnCcIS_R_6ZJmlsrQ-JhA0Vgfoo,14
