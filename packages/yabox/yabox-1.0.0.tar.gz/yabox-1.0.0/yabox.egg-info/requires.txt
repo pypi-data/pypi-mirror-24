@@ -1,0 +1,7 @@
+numpy>=1.7
+
+[notebooks]
+jupyter>=1.0.0
+
+[visualization]
+matplotlib>=1.3
