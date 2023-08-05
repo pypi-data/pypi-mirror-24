@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: maxentropy
+Version: 0.2.3
+Summary: Maximum entropy and minimum divergence models in Python
+Home-page: https://github.com/PythonCharmers/maxentropy.git
+Author: Ed Schofield
+Author-email: ed@pythoncharmers.com
+License: BSD
+Description: UNKNOWN
+Keywords: maximum-entropy minimum-divergence kullback-leibler-divergence KL-divergence bayesian-inference bayes scikit-learn sklearn prior prior-distribution
+Platform: UNKNOWN
