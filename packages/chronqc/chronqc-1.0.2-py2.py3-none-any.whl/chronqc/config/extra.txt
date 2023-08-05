@@ -1,0 +1,22 @@
+Bamtools_duplicates_pct , Bamtools_mapped_reads_pct , Bcftools Stats_number_of_MNPs , Bcftools Stats_number_of_records , FastQC_avg_sequence_length , FastQC_percent_fails , QualiMap_1_x_pc , QualiMap_5_x_pc , QualiMap_10_x_pc , QualiMap_50_x_pc , QualiMap_avg_gc , QualiMap_mapped_reads, QualiMap_median_insert_size , QualiMap_percentage_aligned, QualiMap_total_reads , Samtools Flagstat_mapped_passed , 
+
+[General_chart_options]
+samples = all
+include_negative_control = False
+include_positive_control = False
+
+
+
+[Chart_title]
+mean_and_stdev = Historical runs {y-value} (with 1 year rolling mean and ± 2 standard deviation)
+absolute_threshold = Historical runs {y-value}
+percentage_of_samples_above_threshold = Percentage of samples in each run with {y-value} = PASS
+box_whisker_plot = Percentage of samples in each run with {y-value} >{threshold}
+percentage_of_PASS = Historical monthly box-and-whisker plot for {y-value}
+
+[y_label]
+mean_and_stdev = Mean {y-value} per run
+absolute_threshold = Mean {y-value} per run
+percentage_of_samples_above_threshold =  Percentage of samples in a run {y-value} = PASS
+box_whisker_plot =  Percentage of samples in a run {y-value} >{threshold}  
+percentage_of_PASS = {y-value} per month
