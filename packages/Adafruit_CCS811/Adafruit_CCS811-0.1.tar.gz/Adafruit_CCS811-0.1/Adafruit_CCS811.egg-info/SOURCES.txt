@@ -1,0 +1,8 @@
+setup.py
+Adafruit_CCS811/Adafruit_CCS811.py
+Adafruit_CCS811/__init__.py
+Adafruit_CCS811.egg-info/PKG-INFO
+Adafruit_CCS811.egg-info/SOURCES.txt
+Adafruit_CCS811.egg-info/dependency_links.txt
+Adafruit_CCS811.egg-info/requires.txt
+Adafruit_CCS811.egg-info/top_level.txt
