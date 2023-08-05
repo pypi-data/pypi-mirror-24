@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: lilith
+Version: 0.0.2
+Summary: show qrcode in terminal
+Home-page: https://github.com/RitterHou/Lilith
+Author: derobukal
+Author-email: derobukal@gmail.com
+License: GPL3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
