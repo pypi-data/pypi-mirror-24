@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: visitsimv2
+Version: 17.8.6
+Summary: Object oriented python interface for VisIt's simV2 insitu visualization.
+Home-page: https://github.com/cstatz/visitsimv2
+Author: Christoph Statz
+Author-email: christoph.statz@tu-dresden.de
+License: BSD-3-Clause
+Description: ===
+         visitsimv2 README
+        ===
+        
+        Introduction
+        ===
+        visitsimv2 wraps VisIt's simv2 insitu library based on the included SWIG wrapper for Python 2 and 3.
+        It can be installed using Pythons distutils/setuptools.
+        
+        Installation
+        ===
+        In order to install this package the path to VisIt's "visit" executable needs to be set, otherwise an OSError is thrown. 
+        
+        Usage
+        ===
+        In your limsim(V2) instrumented simulation:
+        Change the import statement to use visitsimv2 instead of simV2
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Natural Language :: English
