@@ -1,0 +1,3 @@
+[console_scripts]
+distill = distill.cli:main
+
