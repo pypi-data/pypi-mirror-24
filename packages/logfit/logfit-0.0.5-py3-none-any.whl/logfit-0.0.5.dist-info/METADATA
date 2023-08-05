@@ -1,0 +1,97 @@
+Metadata-Version: 2.0
+Name: logfit
+Version: 0.0.5
+Summary: Watch and upload log files to log.fit
+Home-page: https://github.com/albertyw/logfit-daemon
+Author: Albert Wang
+Author-email: daemon@log.fit
+License: MIT
+Keywords: logfit log.fit logging monitoring alerting
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Internet :: Log Analysis
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Monitoring
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: python-magic
+Requires-Dist: requests
+Requires-Dist: rollbar
+Provides-Extra: dev
+Requires-Dist: PyInstaller (==3.2.1); extra == 'dev'
+Provides-Extra: test
+
+LogFit Daemon
+=============
+
+|PyPI| |Python Versions|
+
+|Codeship Status for albertyw/logfit-daemon|
+
+The LogFit daemon watches log files and sends data to the LogFit app
+for analysis.
+
+Installation
+------------
+
+TODO
+
+Usage
+-----
+
+.. code:: bash
+
+    # Start in foreground mode
+    python3 logfit/client.py [run|foreground]
+
+    # Start in daemon mode
+    python3 logfit/client.py start
+
+    # Stop daemon
+    python3 logfit/client.py stop
+
+    # Restart the daemon
+    python3 logfit/client.py restart
+
+    # Get the daemon status
+    python3 logfit/client.py status
+
+
+Development
+-----------
+
+.. code:: bash
+
+    pip install -r requirements-test.txt
+    coverage run setup.py test
+    coverage report
+    flake8
+
+
+Publishing
+----------
+
+.. code:: bash
+
+    # Publish to PyPI
+    pip install twine
+    python setup.py sdist bdist_wheel
+    twine upload dist/*
+
+    # Generate a single executable
+    pyinstaller logfit/main.py -F -p logfit --hidden-import queue -n logfit
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/logfit.svg
+   :target: https://pypi.python.org/pypi/logfit/
+.. |Python Versions| image:: https://img.shields.io/pypi/pyversions/logfit.svg
+   :target: https://github.com/albertyw/logfit-daemon
+.. |Codeship Status for albertyw/logfit-daemon| image:: https://app.codeship.com/projects/30a05060-4276-0135-97f1-6255c2e8e3ba/status?branch=master
+   :target: https://app.codeship.com/projects/230349
+
+
