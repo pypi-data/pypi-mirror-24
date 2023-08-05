@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ypconfig
+Version: 1.0.1
+Summary: Tools required for ypconfig
+Home-page: https://github.com/ypconfig/ypconfig
+Author: Mark Schouten
+Author-email: mark@tuxis.nl
+License: BSD 2-Clause
+Description: UNKNOWN
+Platform: linux
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.5

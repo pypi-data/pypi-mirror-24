@@ -1,0 +1,3 @@
+[console_scripts]
+ypconfig = ypconfig.cli:main
+
