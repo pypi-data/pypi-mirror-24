@@ -1,0 +1,10 @@
+lambda_setuptools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lambda_setuptools/ldist.py,sha256=RIyknsV-wfOuzWlZJo4HavQHUXmd6rvni6zPQdnnunM,6172
+lambda_setuptools/lupload.py,sha256=BkbRtfpSL_G9Q_kA5ulcIqiArucuoQLxlWs8Lu-__so,3072
+lambda_setuptools-0.1.7.dist-info/DESCRIPTION.rst,sha256=4CU9wk6zL7OLZkS3ZjWJuceWdlboQF4SvsS9QBDsHbA,2711
+lambda_setuptools-0.1.7.dist-info/METADATA,sha256=BcVsg22YX80nWjXdJedeuM711g24IZBdsI5_U6T0lj8,3403
+lambda_setuptools-0.1.7.dist-info/RECORD,,
+lambda_setuptools-0.1.7.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+lambda_setuptools-0.1.7.dist-info/entry_points.txt,sha256=A0vRr1RC-oLm5A6xkj1RCZs9eSU_wIkgNB2RveLa96o,336
+lambda_setuptools-0.1.7.dist-info/metadata.json,sha256=Mdoe4Bs3usSJkbVuCYPcL4h6mkybjfJi5xDaxiDidoU,1252
+lambda_setuptools-0.1.7.dist-info/top_level.txt,sha256=Iy8O4YgEId5xc1TY-4rdfsC56CG3SRY9CpaJ26wCv-w,18
