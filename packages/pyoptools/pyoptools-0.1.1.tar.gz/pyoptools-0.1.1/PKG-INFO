@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pyoptools
+Version: 0.1.1
+Summary: Optical ray tracing simulation system
+Home-page: https://github.com/cihologramas/pyoptools/
+Author: Ricardo Amezquita Orozco
+Author-email: ramezquitao@cihologramas.com
+License: GPLv3
+Download-URL: https://github.com/cihologramas/pyoptools/archive/v0.1.1.zip
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: numpy
+Requires: cython
+Requires: PyOpenGl
+Requires: ipython
+Requires: scipy
+Requires: six
