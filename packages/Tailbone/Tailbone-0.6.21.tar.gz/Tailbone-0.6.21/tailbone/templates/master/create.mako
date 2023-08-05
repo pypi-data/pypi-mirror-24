@@ -1,0 +1,50 @@
+## -*- coding: utf-8; -*-
+<%inherit file="/base.mako" />
+
+<%def name="title()">New ${model_title}</%def>
+
+<%def name="extra_javascript()">
+  ${parent.extra_javascript()}
+  ${self.disable_button_js()}
+  % if dform is not Undefined:
+      % for field in dform:
+          <% resources = field.get_widget_resources() %>
+          % for path in resources['js']:
+              ${h.javascript_link(request.static_url(path))}
+          % endfor
+          % for path in resources['css']:
+              ${h.stylesheet_link(request.static_url(path))}
+          % endfor
+      % endfor
+  % endif
+</%def>
+
+<%def name="disable_button_js()">
+  <script type="text/javascript">
+
+    $(function() {
+
+        $('form').submit(function() {
+            var submit = $(this).find('input[type="submit"]');
+            if (submit.length) {
+                submit.button('disable').button('option', 'label', "Saving, please wait...");
+            }
+        });
+
+    });
+  </script>
+</%def>
+
+<%def name="context_menu_items()">
+  % if request.has_perm('{}.list'.format(permission_prefix)):
+      <li>${h.link_to("Back to {}".format(model_title_plural), index_url)}</li>
+  % endif
+</%def>
+
+<ul id="context-menu">
+  ${self.context_menu_items()}
+</ul>
+
+<div class="form-wrapper">
+  ${form.render()|n}
+</div><!-- form-wrapper -->
