@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dacq2py
+Version: 0.1
+Summary: Analysis of electrophysiological data recorded with the Axona recording system
+Home-page: https://github.com/rhayman/dacq2py
+Author: Robin Hayman
+Author-email: r.hayman@ucl.ac.uk
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
