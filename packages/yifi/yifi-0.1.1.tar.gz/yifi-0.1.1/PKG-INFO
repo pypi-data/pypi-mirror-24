@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: yifi
+Version: 0.1.1
+Summary: browse yifi on your command line
+Home-page: UNKNOWN
+Author: vitaminC
+Author-email: dmakhil@gmail.com
+License: GPLv3
+Description: usage
+        
+            -id     <number>      get the details of movie
+            -s      <r or s>      sort by rating 
+            -o      <a or d>      order by ascending or descending 
+            -l      <number>      list length (max of 50)
+            -p      <number>      page number
+            -f      <string>      find query term
+            -g      <geners>      search by geners
+            -m      <number>      minimum rating (max 10)
+        
+            --url                 displays the URL hit 
+            --download            downloads the torrent file
+            --magnet              downloads the movie using the magnet
+        
+        
+Keywords: yifi torrent download
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Software Development :: Bug Tracking
