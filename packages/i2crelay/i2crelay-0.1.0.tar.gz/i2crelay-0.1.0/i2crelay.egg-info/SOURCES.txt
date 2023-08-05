@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+setup.cfg
+setup.py
+i2crelay/__init__.py
+i2crelay/i2crelay.py
+i2crelay.egg-info/PKG-INFO
+i2crelay.egg-info/SOURCES.txt
+i2crelay.egg-info/dependency_links.txt
+i2crelay.egg-info/entry_points.txt
+i2crelay.egg-info/requires.txt
+i2crelay.egg-info/top_level.txt
+i2crelay/cmdlinetool/__init__.py
