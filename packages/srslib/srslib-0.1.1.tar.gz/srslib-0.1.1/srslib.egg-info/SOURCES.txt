@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+srslib.py
+srslib.egg-info/PKG-INFO
+srslib.egg-info/SOURCES.txt
+srslib.egg-info/dependency_links.txt
+srslib.egg-info/requires.txt
+srslib.egg-info/top_level.txt
