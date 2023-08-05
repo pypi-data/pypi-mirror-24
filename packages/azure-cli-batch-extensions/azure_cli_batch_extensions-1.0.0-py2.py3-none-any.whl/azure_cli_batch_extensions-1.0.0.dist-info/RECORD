@@ -1,0 +1,16 @@
+azure_cli_batch_extensions-1.0.0-py3.5-nspkg.pth,sha256=aPIFJ3To4dymK5pJu2qKZqtkK4BQuq879bxSMho_y6U,2365
+azure/cli/command_modules/batch_extensions/__init__.py,sha256=WFD9OmPzQRIUQbrx9esW7-9w8rx6R4b_4y5h1DSx3_w,786
+azure/cli/command_modules/batch_extensions/_client_factory.py,sha256=97VJHPlGhrRQTIoeJT5rYf35XqRAmiCNie_naFDD4bI,1071
+azure/cli/command_modules/batch_extensions/_help.py,sha256=CEOyWEjSk1_hlIwPX89cDfE6ysrGCw7k_T3JXIxnEHQ,1422
+azure/cli/command_modules/batch_extensions/_params.py,sha256=D75xWEQngAOfWnLYuDTy3rvmKrnGSLSRamnMGy4Y1yI,14443
+azure/cli/command_modules/batch_extensions/_validators.py,sha256=ovLHeI0eZQzEWVK--jzRRWcMwVBdjp_oSZxqtMdAjTk,9784
+azure/cli/command_modules/batch_extensions/commands.py,sha256=XLng7S4RserU4wi5AHb12WZ_8VztaKxzWaVkUznI068,2242
+azure/cli/command_modules/batch_extensions/custom.py,sha256=wEAKHkfUGmK9ZyERzhsCSChoK1nLl2D_Bq_HhZvAcaI,10082
+azure/cli/command_modules/batch_extensions/version.py,sha256=3qXqwdu_UcAMPGxoIaIPq7_P-NoI_sINibcDUbGShOs,370
+azure_cli_batch_extensions-1.0.0.dist-info/DESCRIPTION.rst,sha256=u2xALb-bdPPdTOhh-KLzeNUAFyoFI2Drm4SV5mDsjKk,66
+azure_cli_batch_extensions-1.0.0.dist-info/METADATA,sha256=FgU8ZAv3MBKVoPNL-KJ6aMdRzRbD6-6ITj2GfHkyGeM,732
+azure_cli_batch_extensions-1.0.0.dist-info/RECORD,,
+azure_cli_batch_extensions-1.0.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+azure_cli_batch_extensions-1.0.0.dist-info/metadata.json,sha256=oH2m6Mhdd9RBswm6rKI9gJVOG3nB3Ah5Z36mukfxc1E,843
+azure_cli_batch_extensions-1.0.0.dist-info/namespace_packages.txt,sha256=hHlqv96P5gmEVj1NUX_txxsUYDNmoXC9lXzAqSRYMrM,42
+azure_cli_batch_extensions-1.0.0.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
