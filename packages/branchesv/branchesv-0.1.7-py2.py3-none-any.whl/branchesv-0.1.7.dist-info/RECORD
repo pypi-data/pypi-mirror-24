@@ -1,0 +1,15 @@
+branchesv/__init__.py,sha256=vdQY0zCE8XpXsuo2oIKceCNy82HjWGiGPtcGFclkVdo,84
+branchesv/branches.py,sha256=L76o1UuiD2Fp8IxKArE6p4C6PKM1oh9eHZBv9pmep28,12186
+branchesv/branchesvcmd.py,sha256=TyHfAyFI611sn2s8O8FAuo2Q0AoJl4QW--T0C3EE3Zk,1605
+branchesv/utils.py,sha256=Q5SGVOrkct2QYGilq-_mF1oVzIdyN_PoCWqDyY97nx4,4141
+branchesv-0.1.7.dist-info/DESCRIPTION.rst,sha256=KOPnxBTpV_nbggAgkkydA2SfE6m_L6NpFOLSeVsQphg,1106
+branchesv-0.1.7.dist-info/METADATA,sha256=9M_RJm1VzYYiuHWtkMyQGl2QJbasUH6n3xGp_OLZQko,1845
+branchesv-0.1.7.dist-info/RECORD,,
+branchesv-0.1.7.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+branchesv-0.1.7.dist-info/entry_points.txt,sha256=EAjuAQUl0dBvuxNAy1tosdU3xoBc5Co-9R6DxMehQns,76
+branchesv-0.1.7.dist-info/metadata.json,sha256=YjZfgE1oYNoy87tNv-XHgh8eKDqP076s38BzBUE4hBU,1308
+branchesv-0.1.7.dist-info/top_level.txt,sha256=jVfxc74uj5t3fgWSviRUwg-anR0AOk-OUKiN_QbG2wg,16
+tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+tests/test_branchesv.py,sha256=Pj4Se1aERK4TTWO27-P4wA2RHFEknDfw_cZG4dbmuc8,3257
+tests/test_utils.py,sha256=R4rrL1_4xKojPbw9XCGnELOYV_Okub21KsvmyDSKM44,2826
+tests/files/branches.json,sha256=ZTon9Kz9xFtPAhrMcMQcajfbp4kQfiPDivrEin3c5ww,572
