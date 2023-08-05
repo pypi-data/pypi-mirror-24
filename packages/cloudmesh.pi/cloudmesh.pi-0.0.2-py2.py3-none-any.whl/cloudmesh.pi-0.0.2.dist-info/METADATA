@@ -1,0 +1,39 @@
+Metadata-Version: 2.0
+Name: cloudmesh.pi
+Version: 0.0.2
+Summary: A Library for Raspberry PI IoT and Robots
+Home-page: https://github.com/cloudmesh/cloudmesh.pi
+Author: Gregor von Laszewski
+Author-email: laszewski@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: cloudmesh.common
+Requires-Dist: coverage
+Requires-Dist: detox
+Requires-Dist: docopt
+Requires-Dist: eve
+Requires-Dist: flake8
+Requires-Dist: psutil
+Requires-Dist: pygments
+Requires-Dist: tox
+
+Cloudmesh Raspberry PI Library 
+==============================
+
+    mkdir ~/github
+    cd ~/github
+    git clone https://github.com/cloudmesh/cloudmesh.pi.git
+    pip install .
+
+ THis code contains some Grove Sensor libraries for developping IoT
+ and Robot projects tith Raspberry Pi and GRovePI+.
+
+
