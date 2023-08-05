@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pychammer
+Version: 0.0.1
+Summary: A Python Toolbox
+Home-page: http://www.k12diy.com
+Author: coolham
+Author-email: python@sohu.com
+License: MIT
+Description: UNKNOWN
+Keywords: sample setuptools development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
