@@ -1,0 +1,91 @@
+Metadata-Version: 1.1
+Name: pyramid_force_https
+Version: 0.1.1
+Summary: A tween to force HTTPS.
+Home-page: https://github.com/niteoweb/pyramid_force_https
+Author: NiteoWeb Ltd.
+Author-email: info@niteoweb.com
+License: BSD
+Description: pyramid_force_https
+        ===================
+        
+        ------------
+        Introduction
+        ------------
+        
+        pyramid_force_https is a `tween <https://docs.pylonsproject.org/projects/pyramid/en/latest/narr/hooks.html#registering-tweens>`_ for `Pyramid <http://www.trypyramid.com/>`_ to redirect all HTTP requests to HTTPS.
+        
+        ------------
+        Installation
+        ------------
+        
+        Just do
+        
+        ``pip install pyramid_force_https``
+        
+        or
+        
+        ``easy_install pyramid_force_https``
+        
+        -------------
+        Compatibility
+        -------------
+        
+        pyramid_force_https runs with pyramid>=1.7 and python>=2.7 and python>=3.5.
+        Other versions might also work.
+        
+        -------------
+        Documentation
+        -------------
+        
+        Usage example::
+        
+            def main(global_config, **settings):
+                config = Configurator(settings=settings)
+                config.include('pyramid_force_https')
+                return config.make_wsgi_app()
+        
+        See tests for more examples.
+        
+        If you use structlog, add the following configuration setting to your INI file to enable structlog-like logging::
+        
+            pyramid_force_https.structlog = true
+        
+        
+        Releasing
+        ---------
+        
+        #. Update CHANGES.rst.
+        #. Update setup.py version.
+        #. Run ``bin/longtest``.
+        #. Run ``bin/mkrelease -d pypi``.
+        
+        =======
+        Changes
+        =======
+        
+        0.1.1
+        -----
+        
+        * Better structlog variable names.
+          [zupo]
+        
+        
+        0.1
+        ---
+        
+        * Initial release.
+          [zupo]
+        
+        
+Keywords: pyramid ssl pylons web
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Pylons
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
