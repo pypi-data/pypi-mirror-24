@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: reframe
+Version: 1.0.1
+Summary: Relational algebra on top of Pandas DataFrames 
+Home-page: https://github.com/bnmnetp/reframe
+Author: Brad Miller
+Author-email: bonelake@mac.com
+License: GPL
+Keywords: database,relational
+Platform: UNKNOWN
+Requires-Dist: pandas (>=0.16.0)
+
+REFRAME
+=======
+
+For use in my data modeling and querying course, I have made this layer on top of Pandas DataFrames that behave like simple Relational Algebra Operators.
+
+Docs
+====
+
+Docs are hosted here:  http://reframe.readthedocs.org
+
+
+
