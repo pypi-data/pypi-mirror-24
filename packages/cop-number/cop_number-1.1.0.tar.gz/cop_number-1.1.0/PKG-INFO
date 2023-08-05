@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: cop_number
+Version: 1.1.0
+Summary: A NetworkX package solving k-FIXED COP NUMBER
+Home-page: https://github.com/Jabbath/Cop-Number
+Author: Anton Afanassiev
+Author-email: antonafana@yahoo.ca
+License: MIT
+Download-URL: https://github.com/Jabbath/Cop-Number/archive/1.1.0.tar.gz
+Description: A NetworkX graph theory package that calculates whether the cop number of a graph is larger than a fixed k.
+Keywords: graph,theory,cop,number,k-FIXED,cops,robbers,pursuit,evasion,search
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
