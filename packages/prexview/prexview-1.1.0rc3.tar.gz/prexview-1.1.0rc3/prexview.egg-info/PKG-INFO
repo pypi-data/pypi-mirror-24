@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: prexview
+Version: 1.1.0rc3
+Summary: A Python package to use PrexView a fast, scalable and friendly service for programatic HTML, PDF, PNG or JPG generation using JSON or XML data.
+Home-page: https://github.com/prexview/prexview-python
+Author: PrexView
+Author-email: code@prexview.com
+License: MIT
+Download-URL: https://github.com/prexview/prexview-python/archive/1.1.0.tar.gz
+Description: UNKNOWN
+Keywords: xml,json,converter,convert,transform,image,xml-parser,json-parser,document-conversion,xml-to-pdf,xml-to-png,xml-to-jpg,xml-to-html,json-to-pdf,json-to-png,json-to-jpg,json-to-html,html-to-pdf,html-to-png,html-to-jpg,pdf,html,png,jpg,renderer,prexview
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
