@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: defogging
+Version: 0.1.0
+Summary: Defogging based on Python
+Home-page: http://www.scloudyy.com/
+Author: scloudyy
+Author-email: onecloud.shen@gmail.com
+License: GPL
+Description: # Defogging
+        
+        Implement Defogging with Python(Pillow+Numpy)
+        
+Keywords: python image defogging dehaze
+Platform: UNKNOWN
