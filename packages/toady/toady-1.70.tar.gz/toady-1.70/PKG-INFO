@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: toady
+Version: 1.70
+Summary: Easily visualize high-dimensional data in 2d space
+Home-page: https://github.com/ianchute/toady
+Author: Ian Chu Te
+Author-email: ianchute@hotmail.com
+License: UNKNOWN
+Download-URL: https://github.com/ianchute/toady/archive/1.70.tar.gz
+Description: UNKNOWN
+Keywords: visualization,embedding,data science,data
+Platform: UNKNOWN
