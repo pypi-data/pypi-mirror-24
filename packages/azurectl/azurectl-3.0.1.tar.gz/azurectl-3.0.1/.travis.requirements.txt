@@ -1,0 +1,19 @@
+# Pip Requirement File
+# Install it with pip install -r .travis.requirements.txt
+#
+# Note:
+# The azure SDK is taken from the master branch
+# For details read azure-sdk-for-python-readme-suse.patch from
+# the Cloud:Tools/python-azure-sdk rpm package
+#
+# azure
+#
+flake8
+python-dateutil
+docopt
+APScheduler
+coverage
+pyOpenSSL
+pytest
+pytest-cov
+azure-storage

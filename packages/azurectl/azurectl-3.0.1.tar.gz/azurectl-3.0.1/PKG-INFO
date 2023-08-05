@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: azurectl
+Version: 3.0.1
+Summary: Manage Azure PubCloud Service
+Home-page: https://github.com/SUSE/azurectl
+Author: PubCloud Development team
+Author-email: public-cloud-dev@susecloud.net
+License: UNKNOWN
+Download-URL: https://github.com/SUSE/azurectl
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: System :: Operating System

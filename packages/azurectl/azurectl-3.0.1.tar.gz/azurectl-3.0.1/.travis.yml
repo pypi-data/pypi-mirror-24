@@ -1,0 +1,11 @@
+language: python
+
+sudo: false
+
+python:
+  - "3.4"
+
+install:
+  - pip install -r .travis.requirements.txt
+
+script: ./.travis.script

@@ -1,0 +1,3 @@
+[console_scripts]
+azurectl = azurectl.azurectl:main
+
