@@ -1,0 +1,4 @@
+colorama
+gcovr
+grip
+lxml
