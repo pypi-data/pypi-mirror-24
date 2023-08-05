@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+xpdf_python/__init__.py
+xpdf_python/pdf.py
+xpdf_python.egg-info/PKG-INFO
+xpdf_python.egg-info/SOURCES.txt
+xpdf_python.egg-info/dependency_links.txt
+xpdf_python.egg-info/requires.txt
+xpdf_python.egg-info/top_level.txt
