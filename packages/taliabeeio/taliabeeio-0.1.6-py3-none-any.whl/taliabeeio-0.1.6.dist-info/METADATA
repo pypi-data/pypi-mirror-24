@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: taliabeeio
+Version: 0.1.6
+Summary: Python TaliaBeeIO module
+Home-page: https://github.com/beyaznet/python-taliabeeio-module
+Author: Beyaz R&D Team
+Author-email: arge@beyaz.net
+License: MIT
+Keywords: raspberry pi medioex taliabee
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: requests
+
+UNKNOWN
+
+
