@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: imaction
+Version: 0.0.1
+Summary: Package for creating json based interfaces between different develop languages
+Home-page: UNKNOWN
+Author: jacksing.Tang
+Author-email: iterrole@163.com
+License: MIT License
+Keywords: redux,action,multi-lang,interface,document
+Platform: any
+Requires-Dist: six (>=1.10.0)
+
+UNKNOWN
+
+
