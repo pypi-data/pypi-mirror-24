@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+PyAndroid/PyAndroid.py
+PyAndroid/__init__.py
+PyAndroid.egg-info/PKG-INFO
+PyAndroid.egg-info/SOURCES.txt
+PyAndroid.egg-info/dependency_links.txt
+PyAndroid.egg-info/top_level.txt
+pyandroid/__init__.py
+pyandroid/pyandroid.py
