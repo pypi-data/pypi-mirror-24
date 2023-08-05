@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pyeventsummary
+Version: 0.0.15
+Summary: pyeventsummary is a way to aggregate and report on a host of errors and actions
+Home-page: https://veltzer.github.io/pyeventsummary
+Author: Mark Veltzer
+Author-email: mark.veltzer@gmail.com
+License: MIT
+Description: pyeventsummary is a way to aggregate and report on a host of errors and actions
+Keywords: python summary errors actions aggregate print enum
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
