@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: insta-browser
+Version: 0.7.2
+Summary: easy parsing/automation instagram.com
+Home-page: https://github.com/aLkRicha/insta_browser
+Author: Aleksej Krichevsky
+Author-email: krich.al.vl@gmail.com
+License: MIT
+Download-URL: https://github.com/aLkRicha/insta_browser/archive/0.7.2.tar.gz
+Description: Instabrowser
+        ============
+        
+        |Build Status| |PyPI| |Code Climate|
+        
+        👍 ♥️ 🏆 Library for instagram.com automation. Like instagram feed (whole
+        or by count), like username profile (whole or by count), like posts from
+        location.
+        
+        You need to have PhantomJS or Chrome web driver for work.
+        
+        Download and place binary from archive to bin folder: -
+        `PhantomJS <http://phantomjs.org/download.html>`__ -
+        `Chrome <https://sites.google.com/a/chromium.org/chromedriver/downloads>`__
+        
+        Example of using package:
+        `insta\_bot <https://github.com/aLkRicha/insta_bot>`__
+        
+        .. |Build Status| image:: https://travis-ci.org/aLkRicha/insta_browser.svg?branch=master
+           :target: https://travis-ci.org/aLkRicha/insta_browser
+        .. |PyPI| image:: https://img.shields.io/pypi/v/insta_browser.svg
+           :target: https://pypi.python.org/pypi/insta_browser
+        .. |Code Climate| image:: https://img.shields.io/codeclimate/github/aLkRicha/insta_browser.svg
+           :target: https://codeclimate.com/github/aLkRicha/insta_browser
+        
+Keywords: parsing,bot,instabot,automation,likes
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
