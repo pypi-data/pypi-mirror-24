@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: AsyncPQ
+Version: 0.44
+Summary: Low overhead, dead simple Asyncronous Priority Queue
+Home-page: https://github.com/themichaelusa/AsyncPQ
+Author: Michael Usachenko
+Author-email: meu2@illinois.edu
+License: UNKNOWN
+Download-URL: https://github.com/themichaelusa/AsyncPQ/archive/0.44.tar.gz
+Keywords: async,priority,queue
+Platform: UNKNOWN
+
+UNKNOWN
+
+
