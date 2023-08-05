@@ -1,0 +1,6 @@
+xlrd
+xlsxwriter
+apsw
+regex
+pycountry
+roman
