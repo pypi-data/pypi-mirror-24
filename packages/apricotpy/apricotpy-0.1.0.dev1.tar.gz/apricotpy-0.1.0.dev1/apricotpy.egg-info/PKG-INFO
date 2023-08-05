@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: apricotpy
+Version: 0.1.0.dev1
+Summary: A python event loop with persistence support
+Home-page: https://github.com/muhrin/apricotpy
+Author: Martin Uhrin
+Author-email: martin.uhrin@gmail.com
+License: MIT, see LICENSE file
+Description: # apricotpy
+        A python event loop with persistence support
+        
+Keywords: event loop,asynchronous
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7

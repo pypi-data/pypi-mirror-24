@@ -1,0 +1,9 @@
+
+[:python_version<"3.0"]
+future
+
+[:python_version<"3.2"]
+futures
+
+[:python_version<"3.4"]
+enum34
