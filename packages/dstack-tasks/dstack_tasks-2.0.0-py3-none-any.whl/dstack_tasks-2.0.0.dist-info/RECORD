@@ -1,0 +1,16 @@
+dstack_tasks/__init__.py,sha256=XCiAkcc9MzEb_X0hxxJO7Zmy9z6QhZFXVcYGIfygGbE,703
+dstack_tasks/base.py,sha256=3WPu8IFYFpv57FwipYInl4TqgCe1lB7Ht2U0G0a2uiU,7943
+dstack_tasks/develop.py,sha256=kJ0C0FLmLba79KjsWAP0BGwYBG4axIujBkHqd8kINNg,800
+dstack_tasks/factory.py,sha256=1XpzpTxmgxIR6wFcLPDgsz1j3-Jqsy381VYwAMOBY8A,11424
+dstack_tasks/main.py,sha256=n-g7C7kYEj-FGKEzfxe-DeYYK8hncJyZ3MBQZCXdWbs,519
+dstack_tasks/tasks.py,sha256=HyFNGuFpm_r43UICZIUyv-aHKQmcpB16J7cHuTSJOmU,5671
+dstack_tasks/utils.py,sha256=mnKPA8tXELXHr03xsQXLRYpwCFt8OYaWPwuauWimoJ8,2346
+dstack_tasks/wrap.py,sha256=Mhl4-TPgzM6Whb7apmLLDOV4mEx-i9Qqpp3uOvYQ4p4,7088
+dstack_tasks-2.0.0.dist-info/DESCRIPTION.rst,sha256=-47QCUbdwBI7QPsvu9bdoGeMXaRxo2xmRaFD7xwvtHY,2804
+dstack_tasks-2.0.0.dist-info/METADATA,sha256=Sr0MP6eGEiwDi32guRGbXLN3sHXtTa4EMWNIuawACnE,4178
+dstack_tasks-2.0.0.dist-info/RECORD,,
+dstack_tasks-2.0.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+dstack_tasks-2.0.0.dist-info/entry_points.txt,sha256=MulejaTZV2fHJuw-Q2h22acSYQMKXiM6wdyDQk_L5Pg,58
+dstack_tasks-2.0.0.dist-info/metadata.json,sha256=W5A5LKOhSc_RW61UHRvJM5irxCPMg58OrU17izDdGT0,1538
+dstack_tasks-2.0.0.dist-info/top_level.txt,sha256=5WDovjwG8WojHvRH2wnommhk3bp5KDybHeTzu99tRPM,13
+dstack_tasks-2.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
