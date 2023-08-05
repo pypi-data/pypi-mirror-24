@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: streprogen
+Version: 0.1.6
+Summary: The dynamic strength program generator.
+Home-page: https://github.com/TommyOd/streprogen
+Author: Tommy Odland
+Author-email: UNKNOWN
+License: GPLv3
+Description: Streprogen (short for Strength Program Generator) is a Python package that allows you to write flexible, powerful strength training programs in no time. Streprogen is simple to get started with and has sensible default values, but advanced users can change the underlying algorithms easily too. The training programs scale extremely well, any number of days, exercises and training program durations is possible.
+Keywords: strength training program
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
