@@ -1,0 +1,5 @@
+
+[test]
+pytest>=3.1
+coverage>=4.4
+tox>=2.7
