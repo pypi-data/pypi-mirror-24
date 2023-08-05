@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: roombapy
+Version: 1.3.0
+Summary: Python program and library to control Wi-Fi enabled iRobot Roomba vacuum cleaners
+Home-page: https://github.com/pschmitt/roombapy
+Author: UNKNOWN
+Author-email: nick.waterton@med.ge.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
