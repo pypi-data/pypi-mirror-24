@@ -1,0 +1,9 @@
+hidapi
+webrtcvad
+paho-mqtt
+pyyaml
+pyaudio
+pygame
+pyusb
+respeaker
+gTTS
