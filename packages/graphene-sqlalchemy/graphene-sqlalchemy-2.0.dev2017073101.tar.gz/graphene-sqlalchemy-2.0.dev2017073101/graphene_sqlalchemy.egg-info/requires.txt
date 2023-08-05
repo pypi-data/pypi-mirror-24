@@ -1,0 +1,5 @@
+six>=1.10.0
+graphene>=2.0.dev
+SQLAlchemy
+singledispatch>=3.4.0.3
+iso8601
