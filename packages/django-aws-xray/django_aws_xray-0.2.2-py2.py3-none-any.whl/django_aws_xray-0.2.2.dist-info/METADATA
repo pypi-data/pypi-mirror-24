@@ -1,0 +1,97 @@
+Metadata-Version: 2.0
+Name: django-aws-xray
+Version: 0.2.2
+Summary: Django AWS X-Ray
+Home-page: https://github.com/mvantellingen/django-aws-xray
+Author: Michael van Tellingen
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: Django (>=1.8)
+Requires-Dist: attrs (>=17.2.0)
+Requires-Dist: six (>=1.1)
+Requires-Dist: wrapt (<2,>=1.10.10)
+Provides-Extra: docs
+Requires-Dist: sphinx (>=1.4.0); extra == 'docs'
+Provides-Extra: test
+Requires-Dist: bumpversion (==0.5.3); extra == 'test'
+Requires-Dist: coverage (==.4.2); extra == 'test'
+Requires-Dist: flake8 (==3.0.3); extra == 'test'
+Requires-Dist: flake8-blind-except (==0.1.1); extra == 'test'
+Requires-Dist: flake8-debugger (==1.4.0); extra == 'test'
+Requires-Dist: isort (==4.2.5); extra == 'test'
+Requires-Dist: pytest (==3.0.5); extra == 'test'
+Requires-Dist: pytest-cov (==2.5.1); extra == 'test'
+Requires-Dist: pytest-django (==3.1.2); extra == 'test'
+
+
+
+===============
+django-aws-xray
+===============
+
+Leverage AWS X-Ray for your Django projects! This Django app instruments your code
+to send traces to the `X-Ray daemon`_.
+
+.. _`X-Ray daemon`: http://docs.aws.amazon.com/xray/latest/devguide/xray-daemon.html
+
+
+Installation
+============
+
+.. code-block:: shell
+
+   pip install django-aws-xray
+
+
+
+Update your Django settings:
+
+.. code-block:: python
+
+
+    INSTALLED_APPS += [
+        'django_aws_xray'
+    ]
+
+    MIDDLEWARE.insert(0, 'django_aws_xray.middleware.XRayMiddleware')
+
+    # Enable various instrumentation monkeypatches
+    AWS_XRAY_PATCHES = [
+        'django_aws_xray.patches.cache',
+        'django_aws_xray.patches.redis',
+        'django_aws_xray.patches.db',
+        'django_aws_xray.patches.requests',
+        'django_aws_xray.patches.templates',
+    ]
+
+
+Settings
+========
+
+=========================   =====================  ==========
+Setting                     Name                   Default
+=========================   =====================  ==========
+`AWS_XRAY_SAMPLING_RATE`    Sampling rate          100
+`AWS_XRAY_EXCLUDED_PATHS`   Exclude paths          `[]`
+`AWS_XRAY_HOST`             IP of X-Ray Daemon     127.0.0.1
+`AWS_XRAY_PORT`             Port of X-Ray Daemon   2000
+`AWS_XRAY_PATCHES`          Patches                ``[]``
+=========================   =====================  ==========
+
+
+Credits
+=======
+The database and cache instrumention code was based on the code from django-statsd
+
+
