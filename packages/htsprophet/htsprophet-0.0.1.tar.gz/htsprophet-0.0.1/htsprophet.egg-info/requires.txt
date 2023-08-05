@@ -1,0 +1,6 @@
+matplotlib
+pandas>=0.18.1
+numpy
+fbprophet
+sys
+scikit-learn>=0.18
