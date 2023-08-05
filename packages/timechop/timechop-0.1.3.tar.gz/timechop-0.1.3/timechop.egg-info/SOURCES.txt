@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+timechop/__init__.py
+timechop/timechop.py
+timechop/utils.py
+timechop.egg-info/PKG-INFO
+timechop.egg-info/SOURCES.txt
+timechop.egg-info/dependency_links.txt
+timechop.egg-info/not-zip-safe
+timechop.egg-info/requires.txt
+timechop.egg-info/top_level.txt
