@@ -1,0 +1,11 @@
+barrett/__init__.py,sha256=ZRB5go_tNYsq9p8S-NdS53Nh9JCyd2darcdnwsTMCAQ,211
+barrett/data.py,sha256=x_O7hr9rA8wGXQEV81NNdX6bqotVlCDM6Tf7y_2LGYU,3232
+barrett/posterior.py,sha256=Nmf14H1FafXtjWswRsn3_BEipz-5_cYlVkuqWk0ef2s,4659
+barrett/profilelikelihood.py,sha256=eUQ6jJdiIfwYPYRBUUcnqMBhr-J62mCtQeDqvl2w1I8,4705
+barrett/util.py,sha256=QQY0jIgSKblRjhirXrt8lmCiawTVQAPwf9qNCXFlWKw,2767
+barrett-0.2.1.dist-info/DESCRIPTION.rst,sha256=psJULauJOkSVY4d3HpUl4neWHfnzQCQv6NPGls1QUY8,1888
+barrett-0.2.1.dist-info/METADATA,sha256=AijizLOubFSj5BRnDbvwuCJjTVtmJpbpAlUARIvYoZ0,2540
+barrett-0.2.1.dist-info/RECORD,,
+barrett-0.2.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+barrett-0.2.1.dist-info/metadata.json,sha256=TrhDAS51WeNhd-oFv3xoEtE390PqG80hx4CpigWFopQ,826
+barrett-0.2.1.dist-info/top_level.txt,sha256=d2JMcGVmyaHYGVJ215S0cAmONb9ibnKGObLXZQfMh3k,8
