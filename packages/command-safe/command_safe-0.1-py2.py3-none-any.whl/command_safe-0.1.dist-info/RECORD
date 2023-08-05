@@ -1,0 +1,11 @@
+command_safe/__init__.py,sha256=53E-b8pJ2zT9qJl5PaXwMCTTwp3MrPG2kem4SUVBgAE,38
+command_safe/config.py,sha256=QD218BuuUBkHQDvVivNW-6myEZR9aRkNamb3XNB1NA0,131
+command_safe/main.py,sha256=_aMlLGwooZAVR1owhOHjHc97HH5riJNbk8UOQahtjvQ,1707
+command_safe/safe.py,sha256=EKPzwvSfXFSdOFd758uPxEuRqYJ8cUb33rVanEnSAfQ,1297
+command_safe-0.1.dist-info/DESCRIPTION.rst,sha256=94J4WeoftoyxPqIxSX9cFSzijvJYp1fRCcqvkrt1eMc,187
+command_safe-0.1.dist-info/METADATA,sha256=tMk_aTUD4qDySTMTloiTUD0Ol1vDjN3CiJCpI4W2m8E,963
+command_safe-0.1.dist-info/RECORD,,
+command_safe-0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+command_safe-0.1.dist-info/entry_points.txt,sha256=F9Y-9WiKCcQFkVEtkMTzh1Vb8b4Jw_u4c-ATebJNFWg,112
+command_safe-0.1.dist-info/metadata.json,sha256=COen77zXRfD89sNGMTMry17DJ2lXIljvFzNS79xW-kw,1187
+command_safe-0.1.dist-info/top_level.txt,sha256=SoTd-rLIWwg_JGTJ8siuXWWkjEqnbGIciBnDDvuNtkU,13
