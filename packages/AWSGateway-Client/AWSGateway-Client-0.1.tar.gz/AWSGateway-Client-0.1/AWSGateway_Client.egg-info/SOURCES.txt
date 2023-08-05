@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+AWSGateway_Client.egg-info/PKG-INFO
+AWSGateway_Client.egg-info/SOURCES.txt
+AWSGateway_Client.egg-info/dependency_links.txt
+AWSGateway_Client.egg-info/not-zip-safe
+AWSGateway_Client.egg-info/requires.txt
+AWSGateway_Client.egg-info/top_level.txt
+apigateway_client/__init__.py

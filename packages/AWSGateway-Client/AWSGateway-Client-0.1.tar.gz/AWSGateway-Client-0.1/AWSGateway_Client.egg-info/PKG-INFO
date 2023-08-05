@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: AWSGateway-Client
+Version: 0.1
+Summary: AWS Gateway Client
+Home-page: https://github.com/iamjohnnym/apigateway_client
+Author: iamjohnnym
+Author-email: j.martin0027@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: aws gateway client for boto3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Text Processing :: Linguistic
