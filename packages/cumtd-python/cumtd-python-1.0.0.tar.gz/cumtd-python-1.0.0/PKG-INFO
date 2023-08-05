@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cumtd-python
+Version: 1.0.0
+Summary: An unnoficial Python client for the CUMTD REST API. 
+Home-page: https://github.com/rthotakura97/cumtd-python
+Author: Rohit Thotakura
+Author-email: rthotakura97@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
