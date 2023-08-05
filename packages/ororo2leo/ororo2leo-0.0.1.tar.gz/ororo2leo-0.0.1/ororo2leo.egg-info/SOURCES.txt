@@ -1,0 +1,11 @@
+MANIFEST.in
+requirements.txt
+setup.py
+ororo2leo/__init__.py
+ororo2leo/ororo2leo.py
+ororo2leo.egg-info/PKG-INFO
+ororo2leo.egg-info/SOURCES.txt
+ororo2leo.egg-info/dependency_links.txt
+ororo2leo.egg-info/entry_points.txt
+ororo2leo.egg-info/requires.txt
+ororo2leo.egg-info/top_level.txt

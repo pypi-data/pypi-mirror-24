@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: ororo2leo
+Version: 0.0.1
+Summary: A command line tool for exporting ororo.tv dictionary to lingualeo
+Home-page: https://github.com/hayorov/ororo2leo
+Author: Sasha Khaerov
+Author-email: UNKNOWN
+License: Apache Software License
+Description: UNKNOWN
+Keywords: ororo.tv ororo lingualeo export import tool dictionary words
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix

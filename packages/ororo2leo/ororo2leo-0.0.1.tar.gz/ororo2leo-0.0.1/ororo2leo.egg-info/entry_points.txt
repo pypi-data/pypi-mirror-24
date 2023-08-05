@@ -1,0 +1,3 @@
+[console_scripts]
+ororo2leo = ororo2leo.ororo2leo:main
+
