@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: OpenATS
+Version: 0.0.dev11
+Summary: Open AI Training Station for Keras
+Home-page: https://github.com/peace098beat/OpenATS
+Author: FiFi
+Author-email: fifi@example.jp
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: Markdown (==2.6.8)
+Requires-Dist: OpenATS (==0.0.dev8)
+Requires-Dist: Werkzeug (==0.12.2)
+Requires-Dist: backports.weakref (==1.0rc1)
+Requires-Dist: bleach (==1.5.0)
+Requires-Dist: certifi (==2017.7.27.1)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: html5lib (==0.9999999)
+Requires-Dist: idna (==2.5)
+Requires-Dist: numpy (==1.13.1)
+Requires-Dist: pandoc (==1.0.0b2)
+Requires-Dist: pkginfo (==1.4.1)
+Requires-Dist: ply (==3.10)
+Requires-Dist: protobuf (==3.3.0)
+Requires-Dist: requests (==2.18.2)
+Requires-Dist: requests-toolbelt (==0.8.0)
+Requires-Dist: six (==1.10.0)
+Requires-Dist: tensorflow (==1.2.1)
+Requires-Dist: tqdm (==4.15.0)
+Requires-Dist: twine (==1.9.1)
+Requires-Dist: urllib3 (==1.22)
+
+
+test
+====
+
+
