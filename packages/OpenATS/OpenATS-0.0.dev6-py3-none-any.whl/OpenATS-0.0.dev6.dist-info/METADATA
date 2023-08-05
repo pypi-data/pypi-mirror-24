@@ -1,0 +1,177 @@
+Metadata-Version: 2.0
+Name: OpenATS
+Version: 0.0.dev6
+Summary: Open AI Training Station for Keras
+Home-page: https://github.com/peace098beat/OpenATS
+Author: FiFi
+Author-email: fifi@example.jp
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: Markdown (==2.6.8)
+Requires-Dist: OpenATS (==0.0.dev5)
+Requires-Dist: Werkzeug (==0.12.2)
+Requires-Dist: backports.weakref (==1.0rc1)
+Requires-Dist: bleach (==1.5.0)
+Requires-Dist: certifi (==2017.7.27.1)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: html5lib (==0.9999999)
+Requires-Dist: idna (==2.5)
+Requires-Dist: numpy (==1.13.1)
+Requires-Dist: pandoc (==1.0.0b2)
+Requires-Dist: pkginfo (==1.4.1)
+Requires-Dist: ply (==3.10)
+Requires-Dist: protobuf (==3.3.0)
+Requires-Dist: requests (==2.18.2)
+Requires-Dist: requests-toolbelt (==0.8.0)
+Requires-Dist: six (==1.10.0)
+Requires-Dist: tensorflow (==1.2.1)
+Requires-Dist: tqdm (==4.15.0)
+Requires-Dist: twine (==1.9.1)
+Requires-Dist: urllib3 (==1.22)
+
+# OpenATS
+Open AI Training Station
+
+## Install
+
+https://pypi.python.org/pypi/openATS
+
+## ルール
+ * r1. 1 Stationに 1 Dataset
+ * r2. 1 Stationに n Model
+ * r3. 1 Stationに n Setting
+
+つまり、1StationにつきNxNパターンの学習を実施する.
+
+## Usage
+ * Init
+ 初期ディレクトリツリーを作成する
+ ```
+ openATS init
+ ```
+ * Create Dataset
+ データセットを作り直す
+ ```
+ openATS makeDataset
+ ```
+ * Run
+ あるモデルと設定ファイルの組みで学習を開始する
+ ```
+ openATS run -m model001.py -s 01-setting.conf
+ ```
+ * Run All
+ モデル数x設定ファイルパターンの学習を開始する
+ ```
+ openATS runAll
+ ```
+ * Test
+ 少ないサンプルとエポック数で、正常に学習可能かテストする
+ ```
+ openATS run --test -m model001.py -s 01-settings.conf
+ openATS runALL --test
+ ```
+
+
+## Feature
+ * __テストモード__ : epoch1, datasize100, batch_size10,　計算ができるか実行する機能.
+ * __モデル保存__ : 
+   * (1)__BestAcc-Model__ : 最大Acc時の重みを保存. 
+   * (2)__LastAcc-Model__ : 最終Accを保存
+
+### Version1.x
+ * __Datasource__ : 信号データのみ対応
+ * __Dataset__ : mspec、mfccに対応
+ * __Model.py__ : Modelファイルはpyファイルのみ対応
+ * __Setting.conf__ : .confのみ対応
+
+### Version2.x
+ * __Datasource__ : 画像データの入力に対応
+ * __Model.json__ : Modelファイルのjsonインポートに対応
+ * __Setting.conf__ : json対応
+ * __HTTP Access__ : 指定したWebサーバーにログを送信する機能
+
+
+## dataset.conf
+```conf
+[Datasource]
+datasource_dirfullpath = /home/ubuntu/datasource/mp3/
+allow_subdirs = True
+datasource_ext = mp3
+
+[Dataset]
+max_duration_ms = 3000 # max duration. Zero padding if shorter.
+error_if_shorter = True # error_if_shorter_than_max_duration
+pipeline = "mspec" # "mfcc", "mspec"
+nfft = 4096
+nmel = 128
+```
+
+## setting.conf
+```
+[model]
+optimizer = "adam" # Keras opt. sgd,rmsprop,Adagrad,Adadelta,Adam,Adamax,Nadam
+# loss = "categorical_crossentropy" # binary_crossentropy
+metrics = 'accutuary'
+
+[train]
+epoch = 2
+batch_size = 32
+sample_size = 500
+```
+
+## 基本ディレクトリ構成
+
+initコマンドでコマンドを実行したディレクトリに初期構成を展開
+
+```
+$ openATS init
+Create default directory tree ..
+
+.gitignore
+Stationfile
+/dataset/
+    dataset.conf 
+    /train/
+    /test/
+/models/
+    001_cnn_4layer_a0.py
+    002_cnn_4layer_a0.py
+/settings/
+    base-setting.conf
+    argmentation.conf
+    non-argumentation.conf
+/results/
+    /001_cnn_4layer_a0-_sample-settings/
+        /tflogs/
+        training.csv
+        validate.csv
+        classification_report.csv
+        acc_vs_epoch.json
+        loss_vs_epoch.jon
+        model.png
+        model-bestepoch-200.model
+        model-lastepoch-1200.model
+        acc_vs_epoch.png
+        loss_vs_epoch.png
+```
+
+## .gitignore
+```
+*.pyc
+__pycache__/
+dataset/
+```
+
+## Resultディレクトリ
+ * 結果ファイルの格納方法
+ 解析中にはテンポラリディレクトリに結果ファイルを保存する。解析が完了後Resultディレクトリに移動
+
+
+
