@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: parski
+Version: 1.1.2.42
+Summary: Helper library for parsing vpc data feed
+Home-page: https://github.build.company.com/CloudPod/parski
+Author: Russell Endicott
+Author-email: rendicott@gmail.com
+License: UNKNOWN
+Download-URL: https://github.build.company.com/CloudPod/parski/releases/download/1.1.2.42/parski-1.1.2.42.tar.gz
+Description: UNKNOWN
+Keywords: vpc,json,parski
+Platform: UNKNOWN
