@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: github-blogging
+Version: 0.1.3
+Summary: A cmdline tool to help managing your blogs
+Home-page: https://github.com/cuyu/blogging
+Author: Curtis Yu
+Author-email: icyarm@icloud.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
