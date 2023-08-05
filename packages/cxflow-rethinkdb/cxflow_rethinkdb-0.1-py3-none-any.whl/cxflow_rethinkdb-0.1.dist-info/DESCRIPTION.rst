@@ -1,0 +1,3 @@
+Plugin providing RethinkDB support.
+
+
