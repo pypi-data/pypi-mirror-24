@@ -1,0 +1,6 @@
+[console_scripts]
+subs = subs.main:execute
+
+[gui_scripts]
+
+

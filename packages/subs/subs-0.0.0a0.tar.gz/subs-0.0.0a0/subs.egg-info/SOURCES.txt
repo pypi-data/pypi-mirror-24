@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+subs/__init__.py
+subs/utils.py
+subs.egg-info/PKG-INFO
+subs.egg-info/SOURCES.txt
+subs.egg-info/dependency_links.txt
+subs.egg-info/entry_points.txt
+subs.egg-info/requires.txt
+subs.egg-info/top_level.txt
