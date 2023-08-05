@@ -1,0 +1,8 @@
+MANIFEST.in
+README.rst
+setup.py
+aruudy/__init__.py
+aruudy.egg-info/PKG-INFO
+aruudy.egg-info/SOURCES.txt
+aruudy.egg-info/dependency_links.txt
+aruudy.egg-info/top_level.txt
