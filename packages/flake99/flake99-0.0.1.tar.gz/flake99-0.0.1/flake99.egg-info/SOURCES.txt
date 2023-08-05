@@ -1,0 +1,11 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+flake99.egg-info/PKG-INFO
+flake99.egg-info/SOURCES.txt
+flake99.egg-info/dependency_links.txt
+flake99.egg-info/not-zip-safe
+flake99.egg-info/top_level.txt
