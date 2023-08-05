@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+aptos/__init__.py
+aptos/__main__.py
+aptos/parser.py
+aptos/primitive.py
+aptos/visitor.py
+aptos.egg-info/PKG-INFO
+aptos.egg-info/SOURCES.txt
+aptos.egg-info/dependency_links.txt
+aptos.egg-info/entry_points.txt
+aptos.egg-info/top_level.txt
+aptos/schema/__init__.py
+aptos/schema/visitor.py
+aptos/swagger/__init__.py
