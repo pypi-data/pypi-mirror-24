@@ -1,0 +1,17 @@
+autoclass/__init__.py,sha256=fgd9Y__jECDsV9TVBf3c6GmCwE8v8_g3gUOG4JfeSs0,204
+autoclass/autoargs.py,sha256=qA-6B2FAMULwx5b96ClExywfXp8rhUzkBfyHs1gM_Tg,10999
+autoclass/autoprops.py,sha256=kVruF0hW_GDjdyT0tdlbTPEBqlm3YIJr8yal3vrTOUw,17073
+autoclass/booleans.py,sha256=iq6bYTCt94QRMgp9MU2qOD6HyWdmIh1zZIRp_Yg9O0Q,1215
+autoclass/utils.py,sha256=u9GQvj3TgiaUq_tnU2LkE426JKCYnEbrQoXbYJejEfo,1902
+autoclass/validate.py,sha256=KTcKswqXRmafiSTPmmsRw12ZaQ7aZTHIJCFNs5DkVGQ,5867
+autoclass/var_checker.py,sha256=_dLp0VcbXQ4XnpSAeX7_my3BBCaYm99Uu9l19ZxvIo8,4965
+autoclass/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoclass/tests/test_autocode_cl.py,sha256=ikeKIxlny6h0U1MbavCHEzOotjvMr2sSnm5dDGc7ISQ,19185
+autoclass/tests/test_perf_startup.py,sha256=MIqMwFt15-g9Uk7wa09U9J-qiIZqqSauePlttcZH5Ho,424
+autoclass/tests/test_validate.py,sha256=R9Z8Lgawgx4BA61dqFLvXwHUVHkkVOa1ZKJMTaAMFAM,1084
+autoclass-1.3.0.dist-info/DESCRIPTION.rst,sha256=vxCnuidZ4I6j4mDD9a_8XvOPBnxIUmLmJGkEW6bzWd0,2157
+autoclass-1.3.0.dist-info/METADATA,sha256=uckdOB7kpml8bzoRa9poIovuNx7pmHX5G3sOLhZsbIM,3113
+autoclass-1.3.0.dist-info/RECORD,,
+autoclass-1.3.0.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+autoclass-1.3.0.dist-info/metadata.json,sha256=v5g9pBDUZs6dMUW4XZM9wvjueV5kV9JTWDwqaXV-I5Y,1272
+autoclass-1.3.0.dist-info/top_level.txt,sha256=zfvUcSSEmjIqGDPxkJuk_HZH-Dx0k0NibUAXoWyL7D4,10
