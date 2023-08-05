@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: huatools
+Version: 0.1
+Summary: Hua Quotation projects
+Home-page: UNKNOWN
+Author: Danian Hu
+Author-email: hudanian@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: apsw
+Requires-Dist: pycountry
+Requires-Dist: regex
+Requires-Dist: roman
+Requires-Dist: xlrd
+Requires-Dist: xlsxwriter
+
+UNKNOWN
+
+
