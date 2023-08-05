@@ -1,0 +1,15 @@
+pyOutlook/__init__.py,sha256=r4lSuFFkqvFL7lD7WQhmVK82aYcm844z1BjTANwe6K8,134
+pyOutlook/core/__init__.py,sha256=bOdFRyc9GrFW9tR-H7YW6-vmjlS6hbxBj27fLyT2cmM,149
+pyOutlook/core/contact.py,sha256=vzGpTkuR0vhkNy46p-KjBtuhV4_9qYeq-CKUXgjaaOA,1359
+pyOutlook/core/folder.py,sha256=e4ax_ksb2TG5PG4BKDQ1yNBziR3WmMiayCe26SbG-ig,6653
+pyOutlook/core/main.py,sha256=Cmy7Y4pDPwSmkPsll07m-U5SrL6mgEkEmazlJuqp8mo,5384
+pyOutlook/core/message.py,sha256=mUWESLJlgn6rw8QKYJ6gvZ_nC7q4Q-YAIb1NrvdYc9s,15708
+pyOutlook/internal/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyOutlook/internal/errors.py,sha256=NvX4LGNFZGvWIWA_pKfsb_YWJ4tdyrkqbYWzYTloKX8,735
+pyOutlook/internal/utils.py,sha256=Ixl_XnHBD9e-T1vt2nkXippr0bvze6JfunfFJdwQZWE,1796
+pyOutlook-1.0.0.dev8.dist-info/DESCRIPTION.rst,sha256=HHDr7mfCmBFloDuWcTMHQa8G8_K7XDyETlb85etBi4s,8652
+pyOutlook-1.0.0.dev8.dist-info/METADATA,sha256=kwR_i_KH9vlciAY2AB-WRPbrFwkAldOSXk7RxK62CpA,9455
+pyOutlook-1.0.0.dev8.dist-info/RECORD,,
+pyOutlook-1.0.0.dev8.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pyOutlook-1.0.0.dev8.dist-info/metadata.json,sha256=MzA3uza7qRDCvpAxXgs5aPo-pYLYrgyAo_3nxz6Z81U,1050
+pyOutlook-1.0.0.dev8.dist-info/top_level.txt,sha256=fxOkInLKt4hsfW7KK79cz03nbh-a4X1tK2DvXPZ4J0E,10
