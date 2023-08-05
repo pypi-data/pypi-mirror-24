@@ -1,0 +1,13 @@
+pystalk/__init__.py,sha256=q6T_wqH0_ydw3AFjHo5LLe8NVdGgeXXq_nVMFHZl5lU,224
+pystalk/client.py,sha256=eG8t6UWuXKeRYRmb58M7fNFmfkheAgpVYmWaAzke9dQ,20298
+pystalk-0.3.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pystalk-0.3.0.dist-info/METADATA,sha256=84LOLPhVFXgsEKzXVPAVOpaYWE3XaT0ASUxdnHNEtio,796
+pystalk-0.3.0.dist-info/RECORD,,
+pystalk-0.3.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pystalk-0.3.0.dist-info/metadata.json,sha256=TQJ8hS5KMBEvjY2ED_O-8sFzXrb5Xo_mpaUuS_nI194,914
+pystalk-0.3.0.dist-info/top_level.txt,sha256=Uh1eT-ovSp_Evdgx9_rZ0yHJNa-C3IsUlJpmXSx9D38,14
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/conftest.py,sha256=bd-gqrYy02DA4qLBe8NOKSa9GREbrhKFPK4SeADpkZg,1398
+tests/integration/test_basic.py,sha256=noIML-tCUkZaH-nN645ZHhK0g_JbGV4yVIjqR55u43A,6620
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/test_pystalk.py,sha256=ql0fvs1iVjnlyvqLPoZ9J7uagHFQil-JYdHY7l91Siw,819
