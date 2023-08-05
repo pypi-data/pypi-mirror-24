@@ -1,0 +1,13 @@
+htsprophet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+htsprophet/fitForecast.py,sha256=m2DwFbaSkuJVD7K4Yi2-vvrubCpPpcrzuQDWGHs4R7Q,8432
+htsprophet/hts.py,sha256=2ZSZj49HnVfl3UYXOWzvk9qTkERRCnSL878xUDoJwO8,26249
+htsprophet/htsPlot.py,sha256=Nt59cWGcNmtcJXjLsjRRyJiFh2EZvyeCvQfdBvqJ490,13027
+htsprophet/makeWeekly.py,sha256=x3NVfvDgs4j8Zw3wbXd5MLkzTxLCYEzMNvsDfRVgcyk,2352
+htsprophet/orderHier.py,sha256=qM9EI4evRXG0pb1LiElZzsZsoidwjt9RjOj812fcoJ8,13777
+htsprophet/runHTS.py,sha256=z0-ZvzROt4_3vGWASKZn_xm5qwyWXRKqahHR7GtFUq8,2970
+htsprophet-0.0.8.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+htsprophet-0.0.8.dist-info/METADATA,sha256=2YergSRyBUJIKkCCQ6yjMFgqr2RcdTrOP_gERXaP2PI,489
+htsprophet-0.0.8.dist-info/RECORD,,
+htsprophet-0.0.8.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+htsprophet-0.0.8.dist-info/metadata.json,sha256=TvcLsE_4LI2oZVom3O1g-AGLN6_qYlkwNNKvS9q0TWw,718
+htsprophet-0.0.8.dist-info/top_level.txt,sha256=-KBRbKHkaPLYu1MOn_uG3j-D79FZZsaCov5HetibcJo,11
