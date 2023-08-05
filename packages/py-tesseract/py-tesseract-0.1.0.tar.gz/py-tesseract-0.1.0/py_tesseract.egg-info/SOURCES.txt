@@ -1,0 +1,12 @@
+setup.py
+py_tesseract.egg-info/PKG-INFO
+py_tesseract.egg-info/SOURCES.txt
+py_tesseract.egg-info/dependency_links.txt
+py_tesseract.egg-info/requires.txt
+py_tesseract.egg-info/top_level.txt
+py_tesseract.egg-info/zip-safe
+tesseract/__init__.py
+tesseract/filestore.py
+tesseract/tesseract.py
+tesseract/utils.py
+tesseract/resources/runner.py

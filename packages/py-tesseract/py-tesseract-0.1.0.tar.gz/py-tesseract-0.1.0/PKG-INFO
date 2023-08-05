@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: py-tesseract
+Version: 0.1.0
+Summary: Remote code execution with the GA4GH Task Execution API
+Home-page: https://github.com/ohsu-comp-bio/tesseract
+Author: Adam Struck
+Author-email: strucka@ohsu.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=2.6, <4
