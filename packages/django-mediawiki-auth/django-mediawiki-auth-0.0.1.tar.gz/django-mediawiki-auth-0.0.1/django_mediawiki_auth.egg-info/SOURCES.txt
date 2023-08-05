@@ -1,0 +1,15 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+django_mediawiki_auth.egg-info/PKG-INFO
+django_mediawiki_auth.egg-info/SOURCES.txt
+django_mediawiki_auth.egg-info/dependency_links.txt
+django_mediawiki_auth.egg-info/requires.txt
+django_mediawiki_auth.egg-info/top_level.txt
+mediawiki_auth/__init__.py
+mediawiki_auth/admin.py
+mediawiki_auth/mediawiki.py
+mediawiki_auth/middleware.py
+mediawiki_auth/models.py
