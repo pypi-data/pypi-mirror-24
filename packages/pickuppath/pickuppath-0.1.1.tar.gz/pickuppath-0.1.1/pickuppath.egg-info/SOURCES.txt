@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+pickuppath/__init__.py
+pickuppath/__main__.py
+pickuppath.egg-info/PKG-INFO
+pickuppath.egg-info/SOURCES.txt
+pickuppath.egg-info/dependency_links.txt
+pickuppath.egg-info/entry_points.txt
+pickuppath.egg-info/not-zip-safe
+pickuppath.egg-info/requires.txt
+pickuppath.egg-info/top_level.txt

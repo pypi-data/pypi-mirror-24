@@ -1,0 +1,3 @@
+
+    [console_scripts]
+    pickuppath=pickuppath.__main__:main
