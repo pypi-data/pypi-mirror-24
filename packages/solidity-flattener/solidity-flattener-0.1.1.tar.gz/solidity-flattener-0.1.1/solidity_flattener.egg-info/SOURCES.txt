@@ -1,0 +1,6 @@
+setup.py
+solidity_flattener.egg-info/PKG-INFO
+solidity_flattener.egg-info/SOURCES.txt
+solidity_flattener.egg-info/dependency_links.txt
+solidity_flattener.egg-info/top_level.txt
+src/solidity_flattener
