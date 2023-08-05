@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: django-setting
+Version: 0.1.2
+Summary: Help set up project for Deployment, Docker, Secret key management
+Home-page: UNKNOWN
+Author: lhy
+Author-email: dev@azelf.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
