@@ -1,0 +1,3 @@
+[console_scripts]
+compass = mflux.compass.main:entry
+
