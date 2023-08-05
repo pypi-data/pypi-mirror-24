@@ -1,0 +1,11 @@
+# Include the license file
+include LICENSE.md
+
+# Include the doc files in the source distribution
+# recursive-include docs *.md
+
+# recursive-include data *.json *.csv *.pkl.z *.ini
+# recursive-exclude data *.csv *.json *.xml *.ppck
+
+recursive-include vulnmine/plugins *.py *.yapsy-plugin
+recursive-exclude vulnmine/plugins *.pyc
