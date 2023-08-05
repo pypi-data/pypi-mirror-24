@@ -1,0 +1,2 @@
+hg+http://bitbucket.org/pygame/pygame
+git+https://github.com/snipsco/respeaker_python_library.git#egg=respeaker
