@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.cfg
+setup.py
+hexutil/__init__.py
+hexutil.egg-info/PKG-INFO
+hexutil.egg-info/SOURCES.txt
+hexutil.egg-info/dependency_links.txt
+hexutil.egg-info/requires.txt
+hexutil.egg-info/top_level.txt
