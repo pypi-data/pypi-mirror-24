@@ -1,0 +1,11 @@
+wagtail_uplift/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_uplift/wagtail_hooks.py,sha256=L8ENJceRynsyx4qNcrSGzj0tiUMClAiK9z1HJCW5x6E,802
+wagtail_uplift/static/css/wagtail_uplift.css,sha256=yS2IOBcrl3khAi1fptUoBQlYIkeJZdDHyaW95ul262g,35654
+wagtail_uplift/static/css/wagtail_uplift.min.css,sha256=06yXfFw8-Q8VxQpu-I-SVSJqC83kzpiKprsdD4J74Qg,25195
+wagtail_uplift/templates/wagtailadmin/base.html,sha256=bvJeENEE7AS0kRNii844jurq4eJkejQG9YuryLZRwYU,1688
+wagtail_uplift-0.0.8.dist-info/DESCRIPTION.rst,sha256=NFc5BG9HPeVUutNmo3d39RefrH1D_8RPVUNtzFG5MFA,761
+wagtail_uplift-0.0.8.dist-info/METADATA,sha256=-hNDxl1CMdPxqKVpzcvSMXp-OaosmcTZmwGijxD_kRg,1779
+wagtail_uplift-0.0.8.dist-info/RECORD,,
+wagtail_uplift-0.0.8.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+wagtail_uplift-0.0.8.dist-info/metadata.json,sha256=XDYzuI3_TQH2M-BIyHFNk6XetVCL_FRKSqpY0o2uPqU,1080
+wagtail_uplift-0.0.8.dist-info/top_level.txt,sha256=zdNylQCladPEML7ByIKkPQoU57TWV8kZW6irq9VWCUw,15
