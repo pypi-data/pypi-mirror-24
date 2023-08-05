@@ -1,0 +1,39 @@
+Metadata-Version: 2.0
+Name: aiotools
+Version: 0.4.3.dev0
+Summary: Idiomatic asyncio utilities
+Home-page: https://github.com/achimnol/aiotools
+Author: Joongi Kim
+Author-email: me@daybreaker.info
+License: MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Provides-Extra: build
+Requires-Dist: pypandoc; extra == 'build'
+Requires-Dist: twine; extra == 'build'
+Requires-Dist: wheel; extra == 'build'
+Provides-Extra: ci
+Provides-Extra: dev
+Requires-Dist: pytest-sugar; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: guzzle-sphinx-theme; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: codecov; extra == 'test'
+Requires-Dist: flake8; extra == 'test'
+Requires-Dist: pytest (>=3.1); extra == 'test'
+Requires-Dist: pytest-asyncio (~=0.6.0); extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+
+UNKNOWN
+
+
