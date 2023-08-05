@@ -1,0 +1,12 @@
+hfile/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hfile/cli.py,sha256=jhIXZtfTx0nVdGOAEreOA_sPDLEwBy3JjmqRMS71zrs,2473
+hfile/filterbymtime.py,sha256=Wfu7tlTul4-REYTYvFNHWK2ubV7S_X6eCq5KIUsnqaw,206
+hfile/removefile.py,sha256=au2PR1LZdgPoLCCkTzs_x7VLCTg7bzuDCfLGXhvOnPk,81
+hfile/walkdirectory.py,sha256=txicEGgpgFLzkbhqPDGDkNGc096ML8vqCoez_dQJBqc,322
+hfile-1.0.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+hfile-1.0.2.dist-info/METADATA,sha256=DL5l9sGXU2jyzqLu1ltmoJsaDVj5eZx0o5FRvEP8zug,852
+hfile-1.0.2.dist-info/RECORD,,
+hfile-1.0.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+hfile-1.0.2.dist-info/entry_points.txt,sha256=aSfdIbhzpfwMVI7p30kI1e5Jg9wH0GiyBcZJeRnpoLQ,42
+hfile-1.0.2.dist-info/metadata.json,sha256=MZdXsmmtpQFwef9OhtoEd_f5WthW5W_0XvLWolCocYA,976
+hfile-1.0.2.dist-info/top_level.txt,sha256=rDEBG-DjfMBZrEQ9XoeS-niVerSrkyNiqDvnAa3_Uug,6
