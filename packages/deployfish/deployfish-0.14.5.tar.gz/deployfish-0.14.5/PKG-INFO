@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: deployfish
+Version: 0.14.5
+Summary: ECS related deployment tools
+Home-page: https://github.com/caltechads/deployfish
+Author: IMSS ADS
+Author-email: imss-ads-staff@caltech.edu
+License: UNKNOWN
+Download-URL: https://github.com/caltechads/deployfish/archive/0.14.5.tar.gz
+Description: UNKNOWN
+Keywords: aws,ecs,docker,devops
+Platform: UNKNOWN
