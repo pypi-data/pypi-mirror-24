@@ -1,0 +1,8 @@
+setup.py
+bin/pixelate
+pixelate/__init__.py
+pixelate/pixelate.py
+pixelate.egg-info/PKG-INFO
+pixelate.egg-info/SOURCES.txt
+pixelate.egg-info/dependency_links.txt
+pixelate.egg-info/top_level.txt
