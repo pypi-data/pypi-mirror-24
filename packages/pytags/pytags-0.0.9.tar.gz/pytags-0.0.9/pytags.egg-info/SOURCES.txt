@@ -1,0 +1,14 @@
+README.rst
+setup.py
+pytags/__init__.py
+pytags/cmdline.py
+pytags/config.py
+pytags/mgr.py
+pytags/tagger.py
+pytags.egg-info/PKG-INFO
+pytags.egg-info/SOURCES.txt
+pytags.egg-info/dependency_links.txt
+pytags.egg-info/entry_points.txt
+pytags.egg-info/top_level.txt
+pytags/utils/__init__.py
+pytags/utils/boot.py

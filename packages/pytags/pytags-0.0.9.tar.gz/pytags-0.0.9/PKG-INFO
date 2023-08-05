@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pytags
+Version: 0.0.9
+Summary: module to help you tag interesting places in your code
+Home-page: https://veltzer.github.io/pytags
+Author: Mark Veltzer
+Author-email: mark.veltzer@gmail.com
+License: MIT
+Description: module to help you tag interesting places in your code
+Keywords: pytags tag code command line
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
