@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: furigana
+Version: 0.1
+Summary: convert Kanji in Japanese into Kanji with Hiragana placed above (Furigana(振り仮名)). For example, "澱んだ街角" => "澱(よど)んだ街角(まちかど)" 
+Home-page: https://github.com/MikimotoH/furigana
+Author: Miki.Liu
+Author-email: mikimotoh@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Japanese Language Processing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
