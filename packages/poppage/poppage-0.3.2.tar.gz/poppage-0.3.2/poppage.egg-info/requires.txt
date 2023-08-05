@@ -1,0 +1,8 @@
+auxly
+binaryornot
+docopt
+jinja2
+jinja2schema
+pyyaml
+qprompt
+requests
