@@ -1,0 +1,48 @@
+Metadata-Version: 2.0
+Name: qlink
+Version: 0.1a1
+Summary: Entity Resolution and Record Linkage library
+Home-page: https://github.com/KirovVerst/qlink
+Author: KirovVerst
+Author-email: kirov.verst@gmail.com
+License: MIT
+Keywords: deduplication,record linkage,entity resolution,match
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pathos
+Requires-Dist: sqlalchemy
+
+===== 
+qlink
+=====
+
+Entity Resolution and Record Linkage library.
+
+------------
+Installation
+------------
+.. code-block:: bash
+
+  $ pip install qgeneration
+
+------------------
+Algorithm workflow
+------------------
+..  image:: https://i.imgur.com/dd3E7tZ.png
+      :alt: Latest version released on PyPi
+
+---------
+Licensing
+---------
+
+The code in this project is licensed under MIT license.
+
+
