@@ -1,0 +1,126 @@
+# How to connect to JIRA?
+Connection:
+    domain: https://tools.hmcts.net/jira/
+    password: cu*K1234JEm+{@o?K
+    username: rudiger.wolf
+    verify: False
+
+
+#Criteria:
+#    Project:
+#        - ATCM # JIRA project key. Can query across multiple projects, add additional rows.
+#    Issue types: # Which issue types to include? - Delivery Story - Task - Bug
+#        - Release Feature
+#    Valid resolutions: # Which resolution statuses to include (unresolved is always included)
+#        - SIGNED OFF
+#        - DONE
+#    JQL:  fixVersion = "ATCM Release 1.0 - TfL" and priority = Must  AND status != Withdrawn
+#    # Additional filter as raw JQL, optional  eg labels != "Spike"
+
+#Criteria:
+#     Project:
+#        - ATCM # JIRA project key. Can query across multiple projects, add additional rows.
+#     Issue types:
+#        - Delivery Story
+#        - NFR
+#     Valid resolutions:
+#        - SIGNED OFF
+#        - DONE
+#     JQL: fixVersion = "ATCM Release 1.0 - TfL" 
+
+# Compound query for work done by multiple teams.
+Queries:
+    Attribute: CPP-Release
+    Criteria:
+        - Value: Feature
+          #Project:
+          #    - ATCM # JIRA project key. Can query across multiple projects, add additional rows.
+          Issue types: # Which issue types to include? - Delivery Story - Task - Bug
+              - Release Feature
+          #Valid resolutions: # Which resolution statuses to include (unresolved is always included)
+          #    - SIGNED OFF
+          #    - DONE
+          JQL:  status != Withdrawn
+
+# Describe the workflow. Each step can be mapped to either a single JIRA
+# status, or a list of statuses that will be treated as equivalent
+# At least two steps are required. Specify the steps in order.
+
+Workflow:
+    Open:
+      - OPEN
+      - To Do
+      - New
+      - Not Started
+      - Parked
+      - AWAITING SOLUTION
+    Analysis:
+      - REFINE
+      - CANDIDATE FOR SPRINT
+      - REFINE
+      - Research
+    Committed:
+      - READY FOR SPRINT
+      - READY TO COMMENCE
+      - Prioritised
+    Develop:
+      - Reopened
+      - BUILD
+      - DEVELOPMENT COMPLETE
+      - READY FOR BPO SIGN OFF
+      - BLOCKED
+      - Awaiting review
+      - In Progress
+      - In review
+      - Ready to Test
+      - READY FOR SIGN OFF
+      - Awaiting Sign Off
+      - In QA
+      - Integrated
+      - Reviewed
+      - In Acceptance
+      - Story Development
+      - Doing
+    Done:
+      - BUILD TO RELEASE
+      - HASS QA
+      - READY FOR LIVE
+      - DONE
+      - Closed
+      - Resolved
+      - Signed Off
+
+# High level Actionable Agile Metrics approach to viewing work flow
+# Map key columns to open, backlog, committed, final, complete, abandoned
+#Workflow StatusTypes Mapping:
+#    Open: open
+#    Analysis : backlog
+#    Committed : committed
+#    Develop : final
+#    Done : complete
+
+# Map field names to additional attributes to extract
+Attributes:
+    Components: Component/s
+    Priority: Priority
+    Release: Fix version/s
+    StoryPoints: Story Points
+    Labels: labels
+    Epic: Epic Link
+    #EpicLink: Epic Link
+    #EpicName: Epic Name
+    #Sprint: Sprint
+    DueDate: Due Date
+    ForecastDate: Forecast / Actual Date
+    ResponsibleTeam: Responsible Team
+
+#Known values:
+#    Release:
+#        - "CC Release 1.0 - C2I"
+
+# Additional parameters that can be overridden by command line options
+Max Results: 500
+Quantiles:
+    - 0.5
+    - 0.85
+    - 0.95
