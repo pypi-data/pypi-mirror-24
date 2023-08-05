@@ -1,0 +1,14 @@
+numpy
+scipy
+dask>=0.15
+distributed
+tinydb<3
+scikit-learn
+emcee
+pycalphad>=0.5
+
+[dev]
+sphinx
+sphinx_rtd_theme
+pytest
+twine
