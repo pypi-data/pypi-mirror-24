@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+robloxlib/__init__.py
+robloxlib/robloxlib.py
+robloxlib.egg-info/PKG-INFO
+robloxlib.egg-info/SOURCES.txt
+robloxlib.egg-info/dependency_links.txt
+robloxlib.egg-info/requires.txt
+robloxlib.egg-info/top_level.txt
