@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: fipipkg
+Version: 0.1.dev0
+Summary: Package Dependency: Validates package requirements
+Home-page: https://github.com/user/fipipkg
+Author: fifi
+Author-email: fifi@example.jp
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: MIT License
+
+UNKNOWN
+
+
