@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: bumpversionsimple
+Version: 0.1.7
+Summary: Lazily commit the bumped version of a package
+Home-page: https://github.com/wdecoster/bumpversion
+Author: Wouter De Coster
+Author-email: decosterwouter@gmail.com
+License: MIT
+Description: bumpversion
+        ===========
+        
+        Commit the bumping of the version.py file
+        
+        | This simple script searches for a single version.py file in the
+          current directory and subdirectories and commits its changes,
+          including the new version number in the commit message.
+        | When multiple version.py files are found the script will throw an
+          error and do nothing.
+        
+Keywords: package development
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
