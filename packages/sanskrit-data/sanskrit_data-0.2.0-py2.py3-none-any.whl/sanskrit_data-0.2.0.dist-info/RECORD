@@ -1,0 +1,16 @@
+sanskrit_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sanskrit_data/db/__init__.py,sha256=O4ooO3Eb15m7pi4o-huq0WGX0gibn3NFLesdMWnWJ4c,1639
+sanskrit_data/db/couchdb.py,sha256=8S2UGwHqK0X3mVpYgu92yHDLZyKe9Iq_Z7D5I9FfnKg,1734
+sanskrit_data/db/mongodb.py,sha256=wufbQC2sMtEbBMpyrsFNBiCzkjqqAUfHNKJUomLHWSk,2429
+sanskrit_data/schema/__init__.py,sha256=YaYnKsHwOb93GyFfKkP6FuIqtPFA97vnbJxLEQfKz_M,52
+sanskrit_data/schema/books.py,sha256=yEC9xNtNWtQDpddajAjiT2TfhXY2FJWREgoBL6whPis,3508
+sanskrit_data/schema/common.py,sha256=mHsfHpgqHM-JZXMizVCv2UXwSmnegQf_HY-GyrpzxdY,14757
+sanskrit_data/schema/ullekhanam.py,sha256=waiw830fmqmDYygoaOTNmEVCIYgPIPcjp5iilEU3TPw,14066
+sanskrit_data/schema/users.py,sha256=3xug6gs_mFbJkK3H4yWNqlWfsoIcDn8yJj6PsXxOwS8,4032
+sanskrit_data/schema/vyaakaraNa.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sanskrit_data-0.2.0.dist-info/DESCRIPTION.rst,sha256=O3grPtUaveVdVE-FxTOqzSI4qr2B4kj8cs4E3WnqLu8,5292
+sanskrit_data-0.2.0.dist-info/METADATA,sha256=OI0UjKZt1htSZ5QIaICn5iD1SAqB9DC5zj-MC7XS_Oo,6369
+sanskrit_data-0.2.0.dist-info/RECORD,,
+sanskrit_data-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+sanskrit_data-0.2.0.dist-info/metadata.json,sha256=Ekx_sX5NuYZrRt-O9_aFNkHNIBUy5fbrLNoIel7TXl0,1200
+sanskrit_data-0.2.0.dist-info/top_level.txt,sha256=vMGjtdfhTqgvYxDH6ZtuAIvwPVAp4VeQhLxnHalH9nw,14
