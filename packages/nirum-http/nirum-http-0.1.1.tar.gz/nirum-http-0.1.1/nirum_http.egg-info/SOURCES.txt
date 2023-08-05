@@ -1,0 +1,9 @@
+README.rst
+nirum_http.py
+setup.cfg
+setup.py
+nirum_http.egg-info/PKG-INFO
+nirum_http.egg-info/SOURCES.txt
+nirum_http.egg-info/dependency_links.txt
+nirum_http.egg-info/requires.txt
+nirum_http.egg-info/top_level.txt
