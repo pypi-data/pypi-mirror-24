@@ -1,0 +1,6 @@
+[automate.extension]
+arduino = automate.extensions.arduino:extension_classes
+rpc = automate.extensions.rpc:extension_classes
+rpio = automate.extensions.rpio:extension_classes
+webui = automate.extensions.webui:extension_classes
+
