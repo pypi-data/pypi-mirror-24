@@ -1,0 +1,16 @@
+[paths]
+source =
+   src/recursive_dictionary_update
+   */site-packages/recursive_dictionary_update
+
+[run]
+branch = true
+source =
+    recursive_dictionary_update
+    tests
+parallel = true
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*
