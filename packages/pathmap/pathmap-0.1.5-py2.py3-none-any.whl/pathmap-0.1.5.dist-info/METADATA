@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: pathmap
+Version: 0.1.5
+Summary: Path resolver
+Home-page: https://github.com/codecov/pathma://github.com/codecov/pathmap
+Author: Thordur Hermannsson
+Author-email: doddi@kott.is
+License: Apache Software License 2.0
+Keywords: pathmap
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+
+UNKNOWN
+
+
