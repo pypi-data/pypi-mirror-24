@@ -1,0 +1,5 @@
+[console_scripts]
+intoyuniot = platformio.__main__:main
+intoiot = platformio.__main__:main
+intoiotdebuggdb = platformio.__main__:debug_gdb_main
+
