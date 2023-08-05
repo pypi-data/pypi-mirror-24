@@ -1,0 +1,9 @@
+facechat
+facechat/ai/autoencoder/agn
+facechat/ai/autoencoder/test
+facechat/ai/cnn/mnist
+facechat/ai/data/reader
+facechat/ai/data/writer
+facechat/ai/simple/softmax
+facechat/ai/tool/properties
+facechat/ai/web/api
