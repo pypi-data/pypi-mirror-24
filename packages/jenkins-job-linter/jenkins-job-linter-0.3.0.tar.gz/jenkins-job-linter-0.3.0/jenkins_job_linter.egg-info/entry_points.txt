@@ -1,0 +1,7 @@
+[console_scripts]
+jenkins-job-linter = jenkins_job_linter:main
+
+[jjl.linters]
+check_shebang = jenkins_job_linter.linters:CheckShebang
+ensure_timestamps = jenkins_job_linter.linters:EnsureTimestamps
+
