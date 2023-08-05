@@ -1,0 +1,13 @@
+HISTORY.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+message_transform/__init__.py
+message_transform/message_transform.py
+message_transform.egg-info/PKG-INFO
+message_transform.egg-info/SOURCES.txt
+message_transform.egg-info/dependency_links.txt
+message_transform.egg-info/requires.txt
+message_transform.egg-info/top_level.txt
