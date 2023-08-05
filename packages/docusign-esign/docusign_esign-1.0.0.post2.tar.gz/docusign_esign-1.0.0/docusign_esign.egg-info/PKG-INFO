@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: docusign_esign
+Version: 1.0.0
+Summary: DocuSign REST API
+Home-page: https://www.docusign.com/developer-center
+Author: DocuSign DevCenter
+Author-email: devcenter@docusign.com
+License: MIT
+Description: The DocuSign REST API provides you with a powerful, convenient, and simple Web services API for interacting with DocuSign.
+            
+Keywords: DocuSign, SDK, API, OpenAPI, eSignature
+Platform: UNKNOWN
