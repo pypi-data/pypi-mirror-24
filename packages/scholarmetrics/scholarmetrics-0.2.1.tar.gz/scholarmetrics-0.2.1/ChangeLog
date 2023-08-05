@@ -1,0 +1,39 @@
+CHANGES
+=======
+
+0.2.1
+-----
+
+* Switch to PBR
+* Adding .codeclimate.yml to exclude files and check for PEP8
+* Revamp documentation
+* Expand functions to deal with nan values; correct docstrings
+* Rename script with functions
+
+0.2
+---
+
+* Prepare for 0.2.0
+* Rename euclidian to euclidean
+* Fix bugs in docstrings and with Sphinx
+* Add numpy as requirement
+* Implement euclidian (close #3)
+* Implement gindex (close #2)
+
+0.1.1
+-----
+
+* Set up versioneer
+* Prepare for Travis CI
+* Provide testing with nosetests
+* Integrate Code Climate
+* Add example for hindex
+* Provide setup files
+* Provide folder docs
+* Add HISTORY.rst and MANIFEST.in
+
+0.1
+---
+
+* Start project with hindex
+* Initial commit
