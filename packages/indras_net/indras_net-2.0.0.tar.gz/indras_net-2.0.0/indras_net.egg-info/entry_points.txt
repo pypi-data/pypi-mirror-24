@@ -1,0 +1,3 @@
+[console_scripts]
+indra = indra.__main__:main
+
