@@ -1,0 +1,10 @@
+watson/__init__.py,sha256=HAPFSDzYZTcMVQz_7AI3KlmE4Q0sbPgPAfOVkkvqDj4,321
+watson/routing/__init__.py,sha256=uIe7swOrideNIRZE-ltMZHrwEMpEw5JoWKGENr_qZOo,46
+watson/routing/routers.py,sha256=RVJRksIcd7l1u33yCwH8PfgECH115Sh0BlAcFPz8NMA,9391
+watson/routing/routes.py,sha256=spVhmtYz9NTv8QAEHR-4yIz9uqEI7ENcKB75y5kWklM,13364
+watson_routing-1.2.2.dist-info/DESCRIPTION.rst,sha256=65k3Ram7_b6qJ1kkGQvqwuL_GcphcDwklUUcX1akPKY,3123
+watson_routing-1.2.2.dist-info/METADATA,sha256=PcuTZC-K5_h2p1K_4tUuIm72z7HtQMNlmis6gq8vqlw,3634
+watson_routing-1.2.2.dist-info/RECORD,,
+watson_routing-1.2.2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+watson_routing-1.2.2.dist-info/metadata.json,sha256=5FcSttUDBmtUfHIvHbmft7uJuK26O40u8mKrAjETO8o,653
+watson_routing-1.2.2.dist-info/top_level.txt,sha256=QQZdZ6AxPCQ1a1p0y2MpAF1x2wkCHy_btt5UXoEjT34,7
