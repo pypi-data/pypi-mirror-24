@@ -1,0 +1,16 @@
+logbook
+pytablewriter>=0.23.2
+SimpleSQLite>=0.13.1
+six
+typepy>=0.0.17
+
+[docs]
+readmemaker>=0.3.0
+sphinx_rtd_theme
+Sphinx
+
+[test]
+pytablereader>=0.12.9
+pytest-cov
+pytest
+tox
