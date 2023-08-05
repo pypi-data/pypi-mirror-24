@@ -1,0 +1,23 @@
+{
+   "get": { 
+
+         
+         "skip": ["PixelData"],
+         "ids":{
+            "entity":"PatientID",
+            "item":"SOPInstanceUID"
+         }
+
+   },
+
+   "put":{
+
+          "default": "BLANK",
+          "actions":[
+ 
+              {"action":"ADD","field":"PatientIdentityRemoved","value": "Yes"},
+              {"action":"KEEP","field":"PixelData"}
+
+      ]
+   }
+}
