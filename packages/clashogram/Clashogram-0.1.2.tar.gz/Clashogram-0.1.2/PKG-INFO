@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: Clashogram
+Version: 0.1.2
+Summary: Clash of Clans war moniting for telegram channels.
+Home-page: https://github.com/mehdisadeghi/clashogram
+Author: Mehdi Sadeghi
+Author-email: mehdi@mehdix.org
+License: MIT
+Description: UNKNOWN
+Keywords: games,telegram,coc,notification
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Persian
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
