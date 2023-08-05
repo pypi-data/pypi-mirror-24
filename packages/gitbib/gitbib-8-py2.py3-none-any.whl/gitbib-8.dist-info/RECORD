@@ -1,0 +1,16 @@
+gitbib/__init__.py,sha256=8SRLaSEVx2DwasDryqM4T9f8qbrdsaVXFEXZCl-yBT4,469
+gitbib/abbreviations.json,sha256=T0PBZqCxe1hnzTHHPoC6MoOXfrDLzSrn3HeE4szZpTM,1526922
+gitbib/bibparse.py,sha256=PgrY3YsMjEW0qPAid2yn_2w-UhxRFMePAaZkZfuvJxY,3164
+gitbib/cache.py,sha256=edDwnqgiDZGaZwWgILXVwbnWvUCLJzpzcXghFJIlngQ,3611
+gitbib/command_line.py,sha256=HZRXlVMe1Wnu6V9LoEzu49qNIP0h6iRvz8PkK1WPye4,2145
+gitbib/gitbib.py,sha256=YalEBLQQKqTeRY1S_IGhBzwo6G1GngV1YwCLUNA-l2M,32716
+gitbib/query.py,sha256=TMIxHMVdulftzPU9XPgqFxsns-CYMZSwMNHkv9yh3XA,783
+gitbib/templates/index.html,sha256=AEZUU_fcwmtMFPnzjo1FKhJLCLpsn1kVCK9ejDTbWkk,1849
+gitbib/templates/template.bib,sha256=j_tNITGihdFP34vxgFcUEeQxuj449KurkS9FbmC4Kb8,1072
+gitbib/templates/template.html,sha256=tarmlcNv30aUXyg6XVsNodfeJ-ILXnHaXxkEcPcz6kI,7981
+gitbib/templates/template.md,sha256=0i9mlfAMpZAiyjDMN_JEJHnm8F6EqNFtqkVYW-o4eB4,1174
+gitbib/templates/template.tex,sha256=2VDJ2EdsIpNKBE57Q8gGNZtUS1eaW_GjXCvlmXYxKpA,1364
+gitbib-8.dist-info/entry_points.txt,sha256=c4hWPVY0n7b2AjWV0BigG7_6VsG2sNlIntz7sA7tBtI,92
+gitbib-8.dist-info/WHEEL,sha256=w_4EG5oOhRetdHRU_jXMWIcst5LMvnWgVti8MH9_bw8,98
+gitbib-8.dist-info/METADATA,sha256=UXmRt8i5Kq21N2Q5uVEoLIhlKyixoLVuyxgqKK8I-Ws,215
+gitbib-8.dist-info/RECORD,,

@@ -1,0 +1,4 @@
+[console_scripts]
+gitbib = gitbib.command_line:main
+gitbib-from-bib = gitbib.bibparse:main
+
