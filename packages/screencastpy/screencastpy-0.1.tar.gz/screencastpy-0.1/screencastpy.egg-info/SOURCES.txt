@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+screencastpy/__init__.py
+screencastpy/screencast.py
+screencastpy.egg-info/PKG-INFO
+screencastpy.egg-info/SOURCES.txt
+screencastpy.egg-info/dependency_links.txt
+screencastpy.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: screencastpy
+Version: 0.1
+Summary: Take screencast in a Selenium WebDriver test
+Home-page: https://github.com/carlosival/screencastpy
+Author: Carlos Martinez Ival
+Author-email: carlosmartinezival@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
