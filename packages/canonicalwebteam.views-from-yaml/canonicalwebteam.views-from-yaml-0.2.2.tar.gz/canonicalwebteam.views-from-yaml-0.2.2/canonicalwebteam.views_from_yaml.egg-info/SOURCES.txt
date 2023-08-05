@@ -1,0 +1,8 @@
+README.rst
+setup.py
+canonicalwebteam.views_from_yaml.egg-info/PKG-INFO
+canonicalwebteam.views_from_yaml.egg-info/SOURCES.txt
+canonicalwebteam.views_from_yaml.egg-info/dependency_links.txt
+canonicalwebteam.views_from_yaml.egg-info/requires.txt
+canonicalwebteam.views_from_yaml.egg-info/top_level.txt
+canonicalwebteam/views_from_yaml/__init__.py
