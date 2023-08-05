@@ -1,0 +1,12 @@
+tensorboard_logger/__init__.py,sha256=K-894BEUk5bG0OWGRr7gAFZrg5RDKdn6IQPuFS9bDZY,59
+tensorboard_logger/crc32c.py,sha256=0AI_QH1R2hUfb2P9Wpy2QimEhVoqreSTcM86xseLkbU,4434
+tensorboard_logger/tensorboard_logger.py,sha256=-_jHFXdy0XrXOu2ypzeWnE9xlaprdMz_PTv5rhJ3MUg,5039
+tensorboard_logger/tf_protobuf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensorboard_logger/tf_protobuf/event_pb2.py,sha256=5wAQLU5aibZ4lSzoAUaaGfOAzBCN6lkyri3aQveran8,14177
+tensorboard_logger/tf_protobuf/summary_pb2.py,sha256=ZKTXuTm64PlGaFON-JYzR-rKlTvUVd_2viTpneWPWtE,16254
+tensorboard_logger-0.0.4.dist-info/DESCRIPTION.rst,sha256=GHppFlJDnyMDx7zuMqHCICmAsRv90IW9Hg9fkbUGcjw,4955
+tensorboard_logger-0.0.4.dist-info/METADATA,sha256=gW7gbqMEO_WmWeGkMtzf6raacgi3pnp9NlwTSTScfms,5708
+tensorboard_logger-0.0.4.dist-info/RECORD,,
+tensorboard_logger-0.0.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+tensorboard_logger-0.0.4.dist-info/metadata.json,sha256=M8Eu66xxA6F23i4ac3Kk6cdmpOqDZOt4tBcsI7jnmWM,944
+tensorboard_logger-0.0.4.dist-info/top_level.txt,sha256=_zijQLWZg4QcLJ6cEWNZtJUS4vmWcr_iClMGdhI3ucM,19
