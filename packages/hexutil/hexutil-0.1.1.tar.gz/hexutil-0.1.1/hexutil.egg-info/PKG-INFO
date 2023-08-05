@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: hexutil
+Version: 0.1.1
+Summary: Classes and functions to deal with hexagonal grids
+Home-page: https://github.com/stephanh42/hexutil
+Author: Stephan Houben
+Author-email: stephanh42@gmail.com
+License: MIT
+Description: # hexutil
+        Classes and functions to deal with hexagonal grids.
+        
+Keywords: math game development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: ~=3.3
