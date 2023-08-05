@@ -1,0 +1,9 @@
+setup.py
+gmm_mml/__init__.py
+gmm_mml/gmm_mml.py
+gmm_mml.egg-info/PKG-INFO
+gmm_mml.egg-info/SOURCES.txt
+gmm_mml.egg-info/dependency_links.txt
+gmm_mml.egg-info/not-zip-safe
+gmm_mml.egg-info/requires.txt
+gmm_mml.egg-info/top_level.txt
