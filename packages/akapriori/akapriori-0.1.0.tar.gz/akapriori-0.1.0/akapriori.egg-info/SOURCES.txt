@@ -1,0 +1,7 @@
+setup.py
+akapriori/__init__.py
+akapriori/apriori.py
+akapriori.egg-info/PKG-INFO
+akapriori.egg-info/SOURCES.txt
+akapriori.egg-info/dependency_links.txt
+akapriori.egg-info/top_level.txt

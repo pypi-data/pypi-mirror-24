@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: akapriori
+Version: 0.1.0
+Summary: Python implementation of the Apriori Algorithm.
+Home-page: https://github.com/aknd/akapriori
+Author: Akihiro Kondo
+Author-email: akihirokondo511@gmail.com
+License: MIT
+Description: Python implementation of the Apriori Algorithm.
+Keywords: apriori
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
