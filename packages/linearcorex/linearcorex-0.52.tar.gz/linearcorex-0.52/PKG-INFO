@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: linearcorex
+Version: 0.52
+Summary: Linear CorEx finds latent factors that explain relationships in data.
+Home-page: http://github.com/gregversteeg/linearcorex
+Author: Greg Ver Steeg
+Author-email: gversteeg@gmail.com
+License: AGPL-3.0
+Download-URL: https://github.com/gregversteeg/linearcorex/archive/0.52.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
