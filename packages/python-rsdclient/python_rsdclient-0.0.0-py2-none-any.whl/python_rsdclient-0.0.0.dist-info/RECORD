@@ -1,0 +1,11 @@
+python_rsdclient-0.0.0.dist-info/DESCRIPTION.rst,sha256=M63OcYIl2z0c6W4gi3nTQcnQU-R2LNFDfH11KLls0B8,598
+python_rsdclient-0.0.0.dist-info/METADATA,sha256=pO1l9c0L8lSGqtrvD-VPQKee4Ni6Y-h1ftk-hBhb4-M,1426
+python_rsdclient-0.0.0.dist-info/RECORD,,
+python_rsdclient-0.0.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+python_rsdclient-0.0.0.dist-info/metadata.json,sha256=dGnsjToX5qAE_9SMOxxobrQ7uvuuVcgcKVMseFl8bNc,1210
+python_rsdclient-0.0.0.dist-info/pbr.json,sha256=P5SD1BTjPBl4jtLz6tGP6L0YZb1WVWs_6gLK_h112qQ,47
+python_rsdclient-0.0.0.dist-info/top_level.txt,sha256=qWwmiwdWC9lfOC7hi5QBsTulTUqW0-ShIEHQbcGWgh0,10
+rsdclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsdclient/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsdclient/tests/base.py,sha256=pgyHZ0FqhTANZcVw8CLiu2p0cBuRgPbB3ByyBavDu8c,794
+rsdclient/tests/test_rsdclient.py,sha256=gw1Z9b7Syc8cydKIj660DmdmBqjJxImb4zJWCwQdIOY,776
