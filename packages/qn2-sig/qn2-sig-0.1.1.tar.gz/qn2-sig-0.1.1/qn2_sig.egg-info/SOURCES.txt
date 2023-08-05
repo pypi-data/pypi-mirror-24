@@ -1,0 +1,9 @@
+README.txt
+setup.py
+./__init__.py
+./swpt.py
+qn2_sig.egg-info/PKG-INFO
+qn2_sig.egg-info/SOURCES.txt
+qn2_sig.egg-info/dependency_links.txt
+qn2_sig.egg-info/requires.txt
+qn2_sig.egg-info/top_level.txt
