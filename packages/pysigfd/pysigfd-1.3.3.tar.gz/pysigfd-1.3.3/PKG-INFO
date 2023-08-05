@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pysigfd
+Version: 1.3.3
+Summary: pysigfd is a module to help you deal with signals within python using the linux signal file     description construct
+Home-page: https://github.com/veltzer/pysigfd
+Author: Mark Veltzer
+Author-email: mark.veltzer@gmail.com
+License: PSF
+Description: pysigfd is a module to help you deal with signals within python using the linux signal file description construct
+Keywords: signalfd python3 linux
+Platform: UNKNOWN

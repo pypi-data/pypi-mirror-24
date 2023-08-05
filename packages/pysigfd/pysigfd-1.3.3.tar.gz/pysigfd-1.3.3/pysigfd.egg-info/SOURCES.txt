@@ -1,0 +1,9 @@
+README.rst
+setup.py
+pysigfd/__init__.py
+pysigfd/pysigfd.py
+pysigfd.egg-info/PKG-INFO
+pysigfd.egg-info/SOURCES.txt
+pysigfd.egg-info/dependency_links.txt
+pysigfd.egg-info/requires.txt
+pysigfd.egg-info/top_level.txt
