@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: OpenATS
+Version: 0.0.dev19
+Summary: Open AI Training Station for Keras
+Home-page: https://github.com/peace098beat/OpenATS
+Author: FiFi
+Author-email: fifi@example.jp
+License: MIT
+Description: Oops!  That was no valid number.  Try again...Unexpected error:<class 'ImportError'> error: No module named 'pypandoc'
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
