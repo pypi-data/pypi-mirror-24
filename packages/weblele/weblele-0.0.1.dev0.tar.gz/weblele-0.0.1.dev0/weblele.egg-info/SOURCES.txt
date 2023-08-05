@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+weblele/__init__.py
+weblele.egg-info/PKG-INFO
+weblele.egg-info/SOURCES.txt
+weblele.egg-info/dependency_links.txt
+weblele.egg-info/entry_points.txt
+weblele.egg-info/not-zip-safe
+weblele.egg-info/top_level.txt
