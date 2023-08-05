@@ -1,0 +1,7 @@
+include CHANGELOG.rst
+include LICENSE
+include README.md
+include NOTICE
+include requirements.txt
+recursive-include etc *
+recursive-include debian *
