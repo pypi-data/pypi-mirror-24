@@ -1,0 +1,13 @@
+awscli
+boto3
+pyperclip
+joblib
+stdplus
+stdplusAwsHelpers
+gnureadline
+
+[dev]
+check-manifest
+
+[test]
+coverage
