@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: crumby
+Version: 0.7.1
+Summary: A Flask based web analytics app
+Home-page: https://github.com/bmweiner/crumby
+Author: bmweiner
+Author-email: bmweiner@users.noreply.github.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN

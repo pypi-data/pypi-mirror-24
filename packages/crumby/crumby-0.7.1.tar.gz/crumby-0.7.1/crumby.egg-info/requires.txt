@@ -1,0 +1,7 @@
+Flask
+Flask-Bcrypt
+Flask-Login
+Flask-SQLAlchemy
+Jinja2
+SQLAlchemy
+geoip2
