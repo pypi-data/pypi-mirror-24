@@ -1,0 +1,12 @@
+SQLAlchemy
+slackclient
+pytz
+requests==2.13.0
+slack_logger
+zaifapi==1.5.3
+numpy
+pandas
+websocket-client==0.40.0
+
+[ta-lib]
+TA-Lib
