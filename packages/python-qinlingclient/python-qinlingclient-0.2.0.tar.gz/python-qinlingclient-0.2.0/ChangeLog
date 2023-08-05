@@ -1,0 +1,20 @@
+CHANGES
+=======
+
+0.2.0
+-----
+
+* Support job update CLI
+* Make sync/async work for creating function execution
+* Fix the http exception handling
+
+0.1.0
+-----
+
+* Implement get command
+* Support job CLI
+* Do not delete zip file after function creation
+* Add CLI support for runtime/function/execution
+* Function/Runtime list
+* Initial commit for python-qinlingclient
+* Added .gitreview
