@@ -1,0 +1,12 @@
+marshmallow_configparser/__init__.py,sha256=Cn809LhrAmDeOw5Ww5O1jWlgDaesJwGGmJe0aGrndds,409
+marshmallow_configparser/convenience_fields.py,sha256=Ohj_WCk8OzkjAsiJfhpPuyb4Jiti2RIGuuk5ljjgBAg,3252
+marshmallow_configparser/fields.py,sha256=qhTBmDCJHTubLo82bqow7rT13fr21alYmj6xWmbhN8I,4234
+marshmallow_configparser/helpers.py,sha256=jpzsrnhJlYcyJJLI1rzDEk0CnyzINFkQ5lh0qhrbaRk,69
+marshmallow_configparser/schema.py,sha256=BR04jD3UZJcNSzyvpu9Mz84y6JWXCb7TA4TaQdenROs,3326
+marshmallow_configparser/validators.py,sha256=GhYCF78vGbVCslJAKr-6JezHjNqvDm9m-7bCumbNr6Y,607
+marshmallow_configparser-0.3.1.dist-info/DESCRIPTION.rst,sha256=xOF9joMhd5gLAEukGoErtnM5hoRZgzKfE0USZ57wr1A,4064
+marshmallow_configparser-0.3.1.dist-info/METADATA,sha256=m6bs0bWP-jV_534I8JyEgTTpt-S0eZsMpYEllkNRkmU,5994
+marshmallow_configparser-0.3.1.dist-info/RECORD,,
+marshmallow_configparser-0.3.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+marshmallow_configparser-0.3.1.dist-info/metadata.json,sha256=3nZEolJY8sPx1v5uMRLdcfs3tb7h3J_1P2oHdOzaEEE,1491
+marshmallow_configparser-0.3.1.dist-info/top_level.txt,sha256=_amHaKQ4nQtTDjEvK4cdkONcg2-3sG18K_v9zDCBZrQ,25
