@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+furigana/__init__.py
+furigana/__main__.py
+furigana/furigana.py
+furigana.egg-info/PKG-INFO
+furigana.egg-info/SOURCES.txt
+furigana.egg-info/dependency_links.txt
+furigana.egg-info/top_level.txt
