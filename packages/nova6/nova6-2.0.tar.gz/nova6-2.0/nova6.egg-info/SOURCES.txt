@@ -1,0 +1,15 @@
+setup.py
+nova6/__init__.py
+nova6/helpers.py
+nova6/importer.py
+nova6/nova6.py
+nova6/nova6dl.py
+nova6/novaprinter.py
+nova6/sgmllib3.py
+nova6/socks.py
+nova6.egg-info/PKG-INFO
+nova6.egg-info/SOURCES.txt
+nova6.egg-info/dependency_links.txt
+nova6.egg-info/entry_points.txt
+nova6.egg-info/requires.txt
+nova6.egg-info/top_level.txt
