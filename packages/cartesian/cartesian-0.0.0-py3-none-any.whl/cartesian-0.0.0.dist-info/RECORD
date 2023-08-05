@@ -1,0 +1,13 @@
+cartesian/__init__.py,sha256=clZzKPJOBGKVCzKu666jd3HinWFT72SjAisEt7THSFQ,39
+cartesian/algorithm.py,sha256=sHmzaaYfWBT9AhUk9N2_haUhWd9D7m8ETnc3-qru45Q,1977
+cartesian/cgp.py,sha256=wzXpjrqIWXxlPTsJppT9jCgzCKutaMwHOovf1GSocNE,7092
+cartesian/util.py,sha256=R6SeA84lLHFrBjh12LBYC4IF2vqufKRj9jW9aXglqLs,108
+cartesian-0.0.0.dist-info/DESCRIPTION.rst,sha256=w5PBUKb6vum-5Zx8kDsHms0tSbFJfd9YUmhu40Ktwyw,373
+cartesian-0.0.0.dist-info/METADATA,sha256=nCAhKQKDl_H-czey3wtMuQXNIJw-M7IS5rC_svDxByg,853
+cartesian-0.0.0.dist-info/RECORD,,
+cartesian-0.0.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+cartesian-0.0.0.dist-info/metadata.json,sha256=AQh4KWbo-JbcLVqBlVDEfXsaKQPnKN_DGkh5vbmidrc,668
+cartesian-0.0.0.dist-info/top_level.txt,sha256=RL4alnstBxKqCBufX9jftd7UdAk-nQecwxWOuRKhajw,10
+cgp/__init__.py,sha256=MuAcZEwQKju6x6cEkE3K_7yMNoAu_WBKBI0s4xQqrDc,37
+cgp/cgp.py,sha256=SccONzSTcvTInhVSz7oShiF6iSxIELEkfYSRzys-WAE,4588
+cgp/util.py,sha256=R6SeA84lLHFrBjh12LBYC4IF2vqufKRj9jW9aXglqLs,108
