@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+gitfiles_ctx/__init__.py
+gitfiles_ctx/_version.py
+gitfiles_ctx/gitfiles_ctx.py
+gitfiles_ctx.egg-info/PKG-INFO
+gitfiles_ctx.egg-info/SOURCES.txt
+gitfiles_ctx.egg-info/dependency_links.txt
+gitfiles_ctx.egg-info/entry_points.txt
+gitfiles_ctx.egg-info/not-zip-safe
+gitfiles_ctx.egg-info/requires.txt
+gitfiles_ctx.egg-info/top_level.txt
