@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pyiw
+Version: 1.0.0
+Summary: 
+Command line tool and library wrappers around iwlist and
+/etc/network/interfaces.
+
+Home-page: UNKNOWN
+Author: Leonardo Lazzaro
+Author-email: lazzaroleonardo@gmail.com
+License: BSD
+Description: Wifi is command that makes it easier to connect the WiFi networks from the command line.
+Platform: Debian
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: System :: Networking
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3

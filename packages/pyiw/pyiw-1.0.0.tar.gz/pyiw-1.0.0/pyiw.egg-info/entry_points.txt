@@ -1,0 +1,3 @@
+[console_scripts]
+pyiw = pyiw.cli:main
+
