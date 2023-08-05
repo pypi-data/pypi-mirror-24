@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+all_repos/__init__.py
+all_repos/clone.py
+all_repos.egg-info/PKG-INFO
+all_repos.egg-info/SOURCES.txt
+all_repos.egg-info/dependency_links.txt
+all_repos.egg-info/entry_points.txt
+all_repos.egg-info/requires.txt
+all_repos.egg-info/top_level.txt
+all_repos/sources/__init__.py
+all_repos/sources/github.py
+all_repos/sources/json_file.py

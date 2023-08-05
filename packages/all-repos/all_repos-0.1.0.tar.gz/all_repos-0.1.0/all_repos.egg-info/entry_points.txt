@@ -1,0 +1,3 @@
+[console_scripts]
+all-repos-clone = all_repos.clone:main
+
