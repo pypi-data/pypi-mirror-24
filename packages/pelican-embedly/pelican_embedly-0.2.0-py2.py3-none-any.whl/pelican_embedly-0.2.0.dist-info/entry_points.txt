@@ -1,0 +1,3 @@
+[console_scripts]
+pelican-embedly = pelican_embedly.cli:main
+
