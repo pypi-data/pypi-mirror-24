@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: techlabreactor
+Version: 0.0.13
+Summary: Utility for performing replay analysis of SC2 replays
+Home-page: https://github.com/frugs/techlab-reactor
+Author: Hugo Wainwright
+Author-email: wainwrighthugo@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/frugs/techlab-reactor/tarball/0.0.13
+Description: UNKNOWN
+Keywords: sc2,replay,sc2reader
+Platform: UNKNOWN
