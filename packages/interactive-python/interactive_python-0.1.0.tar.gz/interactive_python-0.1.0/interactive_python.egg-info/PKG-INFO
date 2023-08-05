@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: interactive-python
+Version: 0.1.0
+Summary: Reference API implementation for Mixer Interactive 2
+Home-page: https://github.com/mixer/interactive-python
+Author: Connor Peet
+Author-email: connor@xbox.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
