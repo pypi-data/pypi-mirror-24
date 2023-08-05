@@ -1,0 +1,12 @@
+[Unit]
+Description=Snips Skills
+After=network.target
+
+[Service]
+Type=simple
+User=%i
+WorkingDirectory={{SNIPS_HOME_PATH}}
+ExecStart={{SNIPSSKILLS_PATH}} run
+
+[Install]
+WantedBy=multi-user.target
