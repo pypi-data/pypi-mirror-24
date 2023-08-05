@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.py
+propriecle/__init__.py
+propriecle/cli.py
+propriecle/conf.py
+propriecle/filez.py
+propriecle/helpers.py
+propriecle/keys.py
+propriecle/servers.py
+propriecle/ui.py
+propriecle/vault.py
+propriecle.egg-info/PKG-INFO
+propriecle.egg-info/SOURCES.txt
+propriecle.egg-info/dependency_links.txt
+propriecle.egg-info/entry_points.txt
+propriecle.egg-info/requires.txt
+propriecle.egg-info/top_level.txt
