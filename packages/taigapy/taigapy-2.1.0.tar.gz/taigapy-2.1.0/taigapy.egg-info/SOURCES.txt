@@ -1,0 +1,12 @@
+setup.py
+taigapy/S3UploadedFileMetadata.py
+taigapy/UploadFile.py
+taigapy/__init__.py
+taigapy/__main__.py
+taigapy/test_taiga1_get.py
+taigapy/test_taiga2_get.py
+taigapy.egg-info/PKG-INFO
+taigapy.egg-info/SOURCES.txt
+taigapy.egg-info/dependency_links.txt
+taigapy.egg-info/requires.txt
+taigapy.egg-info/top_level.txt
