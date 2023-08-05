@@ -1,0 +1,6 @@
+setuptools
+unicodecsv
+regex
+subprocess32
+panphon>=0.12
+marisa_trie
