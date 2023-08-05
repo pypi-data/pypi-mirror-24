@@ -1,0 +1,13 @@
+azure/cli/command_modules/lab/__init__.py,sha256=V7g5UznIkPhH9nQe_EaptT-hUgwOUKkwomF-q4Y_gks,679
+azure/cli/command_modules/lab/_client_factory.py,sha256=JDd9PI1FJUXdYeMYxLz20PiuDN7Qk4Gr0e83a74weU8,1910
+azure/cli/command_modules/lab/_help.py,sha256=nEoCIrf9O_Xex3A92V55cmLRbcUCXuKmRkVPS7xVKl8,15907
+azure/cli/command_modules/lab/commands.py,sha256=42q2afNjHPy1LbWkZgU8b8T9hPEriRese2d5ca1gPL8,9200
+azure/cli/command_modules/lab/custom.py,sha256=jfao7-h9IGpD7lmDwJNDM4Q1nhBW7xAvPEQU-vop5p0,6156
+azure/cli/command_modules/lab/params.py,sha256=OMadnmIuxntSgyyi1a94bP7wLpQV1I5hGDrBtjolcNU,5126
+azure/cli/command_modules/lab/validators.py,sha256=Hex-9-TMjPKFw-dMt6Q6WKdWYUGSpO6t3AO0_Bjkdnk,27495
+azure_cli_lab-0.0.9.dist-info/DESCRIPTION.rst,sha256=4qXu7N4_oDZMDb0D8eO1yaJoXOoyiRLI2TTOfzOx2dE,1288
+azure_cli_lab-0.0.9.dist-info/METADATA,sha256=d7toV0gTOylDiy0tuI24BFJtXJGDwaKXfCZ0XO7eJWY,2272
+azure_cli_lab-0.0.9.dist-info/RECORD,,
+azure_cli_lab-0.0.9.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+azure_cli_lab-0.0.9.dist-info/metadata.json,sha256=LlDu4phGhoPGjfrbljKDEk1WVxnyfrfEELOx7SrlGGo,1088
+azure_cli_lab-0.0.9.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
