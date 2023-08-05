@@ -1,0 +1,11 @@
+setup.py
+microscoper/__init__.py
+microscoper/__main__.py
+microscoper/args.py
+microscoper/io.py
+microscoper.egg-info/PKG-INFO
+microscoper.egg-info/SOURCES.txt
+microscoper.egg-info/dependency_links.txt
+microscoper.egg-info/not-zip-safe
+microscoper.egg-info/requires.txt
+microscoper.egg-info/top_level.txt
