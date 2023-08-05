@@ -1,0 +1,11 @@
+gouge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gouge/colourcli.py,sha256=75WIpjxAeTWTuImCa_Mu_MHi1EavvAxXisXfzOBI6yE,3323
+gouge/filters.py,sha256=9dPpEPMhUyZ-lHSs1F5pRGskSHwtf5Z185Cp8z4AwY4,3899
+gouge/parseable.py,sha256=DARitYBqd0GHIDQMofD5NIwpaLkMnx6yNzoIRSIFJjI,4285
+gouge/version.txt,sha256=HltRzeUVOWqfp2KQnPjKZYTMxWSzJdLuvup2F1_pXE0,6
+gouge-1.2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+gouge-1.2.0.dist-info/METADATA,sha256=7kr20ttpC9n_Si_FqtYBnOtNbiGSGagOWKCbT0HxwgQ,787
+gouge-1.2.0.dist-info/RECORD,,
+gouge-1.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+gouge-1.2.0.dist-info/metadata.json,sha256=fkxq7OxqV_2NOc3qV-hGElvxj5cjSj-9odGBr1lQycs,927
+gouge-1.2.0.dist-info/top_level.txt,sha256=Rm8deK7N96RJ4UkMgsiq9aUN4dHHvJO4Qsnv5rKIOBE,6
