@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+highlyprobable/highlyprobable.egg-info/PKG-INFO
+highlyprobable/highlyprobable.egg-info/SOURCES.txt
+highlyprobable/highlyprobable.egg-info/dependency_links.txt
+highlyprobable/highlyprobable.egg-info/requires.txt
+highlyprobable/highlyprobable.egg-info/top_level.txt
+highlyprobable/highlyprobable.egg-info/zip-safe
