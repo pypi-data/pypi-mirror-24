@@ -1,0 +1,61 @@
+language: python
+sudo: false
+cache: pip
+env:
+  global:
+    - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
+    - SEGFAULT_SIGNALS=all
+  matrix:
+    - TOXENV=check
+    - TOXENV=docs
+matrix:
+  include:
+    - python: '2.7'
+      env:
+        - TOXENV=2.7-cover,report,coveralls,codecov
+    - python: '2.7'
+      env:
+        - TOXENV=2.7-nocov
+    - python: '3.6'
+      env:
+        - TOXENV=3.6-cover,report,coveralls,codecov
+    - python: '3.6'
+      env:
+        - TOXENV=3.6-nocov
+before_install:
+  - python --version
+  - uname -a
+  - lsb_release -a
+install:
+  - pip install tox
+  - virtualenv --version
+  - easy_install --version
+  - pip --version
+  - tox --version
+script:
+  - tox -v
+after_failure:
+  - more .tox/log/* | cat
+  - more .tox/*/log/* | cat
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+deploy:
+  - provider: pypi
+    user: atteq
+    password:
+      secure: "GNnzfEX2fsKk6qD4nWkm9IQuCGdQwHQ7PvwyC3bwpv3YJgqFXl+UiD+TVp+s90dMh15n6rx/Wx691d0xcfIkHgxyWQdsDkN09AKNnjkc31y0/+jAGDhvYUuD1W7nwoquxXxxGm+vqsqIAdBeGdKFdUjmEgganzo1YS9GQww32Gf4AJDPPCSX8g6F51o1gRjBz79h+dfVjKxQz1I9OI+t/zbr+pc7rij/rQ8EFlzyQlTPnGVl1BNngzWbOy9EX1wb8EnnMQ5T1lpDNVt3USKvlnpWM2HhvwzXw14q8GXaIarm8kFqyJRaOqRqQ+hRTikFUR3sJAK2NcWrb3rmoAQzZcPsKTYog1ZqrJAwbuMav001xq/ClfFqBMMc3JOpvxpGfnqtT1QSQB8ARkRRpj1oFB799e5nfxbybcEZfj5JWhf3wFMzjs3fPtk1WJ3j8OA704pUll0RchxrbKNEyjxaEKu5rEyqnPSbSkeyTKjHMV+z37VF96J9j2NQOkXpuJ4rJDpW3t+UgnRF0UPJ5haior2DDOp/Jvx/UxvJIgSfX2hysIIQLlnqkD872mpSOtYYUI0S73ucQoWhyGhdhGTeSLGDtEYi3UbZSdnbZ4iliRs6ITRn3LlAaQ8aMXwUkUmu7Xawugc1xPFu2tddhOFr+AduIEtVeP89+GXYPu2Z46U="
+    on:
+      tags: true
+      distributions: sdist bdist_wheel
+      repo: AtteqCom/zsl_jwt
+  - provider: pypi
+    server: https://test.pypi.org/legacy/
+    user: atteq
+    password:
+      secure: "GNnzfEX2fsKk6qD4nWkm9IQuCGdQwHQ7PvwyC3bwpv3YJgqFXl+UiD+TVp+s90dMh15n6rx/Wx691d0xcfIkHgxyWQdsDkN09AKNnjkc31y0/+jAGDhvYUuD1W7nwoquxXxxGm+vqsqIAdBeGdKFdUjmEgganzo1YS9GQww32Gf4AJDPPCSX8g6F51o1gRjBz79h+dfVjKxQz1I9OI+t/zbr+pc7rij/rQ8EFlzyQlTPnGVl1BNngzWbOy9EX1wb8EnnMQ5T1lpDNVt3USKvlnpWM2HhvwzXw14q8GXaIarm8kFqyJRaOqRqQ+hRTikFUR3sJAK2NcWrb3rmoAQzZcPsKTYog1ZqrJAwbuMav001xq/ClfFqBMMc3JOpvxpGfnqtT1QSQB8ARkRRpj1oFB799e5nfxbybcEZfj5JWhf3wFMzjs3fPtk1WJ3j8OA704pUll0RchxrbKNEyjxaEKu5rEyqnPSbSkeyTKjHMV+z37VF96J9j2NQOkXpuJ4rJDpW3t+UgnRF0UPJ5haior2DDOp/Jvx/UxvJIgSfX2hysIIQLlnqkD872mpSOtYYUI0S73ucQoWhyGhdhGTeSLGDtEYi3UbZSdnbZ4iliRs6ITRn3LlAaQ8aMXwUkUmu7Xawugc1xPFu2tddhOFr+AduIEtVeP89+GXYPu2Z46U="
+    on:
+      branch: master
+      distributions: sdist
+      repo: AtteqCom/zsl_jwt

@@ -1,0 +1,100 @@
+Metadata-Version: 1.1
+Name: zsl-jwt
+Version: 0.1.7
+Summary: A JWT implementation for ZSL
+Home-page: https://github.com/AtteqCom/zsl_jwt
+Author: Martin Babka
+Author-email: babka@atteq.com
+License: BSD
+Description: ========
+        Overview
+        ========
+        
+        
+        
+        JWT implementation for ZSL framework. This modules adds security
+        possibilities to ZSL.
+        
+        * Free software: BSD license
+        
+        Installation
+        ============
+        
+        Just add `zsl_jwt` to your requirements or use
+        ::
+        
+            pip install zsl-jwt
+        
+        
+        Usage
+        =====
+        
+        Add `zsl_jwt.module.JWTModule` to the modules in your `IoCContainer`
+        and provide a `zsl_jwt.configuration.JWTConfiguration` in your
+        configuration under `JWT` variable.
+        
+        Documentation
+        =============
+        
+        See more in https://zsl_jwt.readthedocs.io/
+        
+        Development
+        ===========
+        
+        To run the all tests run::
+        
+            tox
+        
+        Note, to combine the coverage data from all the tox environments run:
+        
+        .. list-table::
+            :widths: 10 90
+            :stub-columns: 1
+        
+            - - Windows
+              - ::
+        
+                    set PYTEST_ADDOPTS=--cov-append
+                    tox
+        
+            - - Other
+              - ::
+        
+                    PYTEST_ADDOPTS=--cov-append tox
+        
+        
+        Changelog
+        =========
+        
+        0.1.3 (2017-07-19)
+        ------------------
+        
+        * Algorithm setting is moved to JWTProfile.
+        
+        0.1.2 (2017-07-18)
+        ------------------
+        
+        * Forgotten unit tests are added.
+        
+        0.1.1 (2017-07-18)
+        ------------------
+        
+        * A first version able to encode and decode.
+        
+        0.1.0 (2017-06-20)
+        ------------------
+        
+        * First release on PyPI.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
