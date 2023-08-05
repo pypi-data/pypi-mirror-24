@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+qgeneration/__init__.py
+qgeneration/qfields.py
+qgeneration/qrecords.py
+qgeneration.egg-info/PKG-INFO
+qgeneration.egg-info/SOURCES.txt
+qgeneration.egg-info/dependency_links.txt
+qgeneration.egg-info/top_level.txt
