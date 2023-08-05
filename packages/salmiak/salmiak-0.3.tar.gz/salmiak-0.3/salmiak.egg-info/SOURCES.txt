@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+salmiak/__init__.py
+salmiak.egg-info/PKG-INFO
+salmiak.egg-info/SOURCES.txt
+salmiak.egg-info/dependency_links.txt
+salmiak.egg-info/entry_points.txt
+salmiak.egg-info/not-zip-safe
+salmiak.egg-info/requires.txt
+salmiak.egg-info/top_level.txt
