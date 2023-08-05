@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: SiviCNCDriver
+Version: 0.1
+Summary: A software to control my CNC
+Home-page: http://github.com/klafyvel/SiviCNCDriver
+Author: klafyvel
+Author-email: sivigik@gmail.com
+License: GPL
+Description: # SiviCNCDriver
+        
+        An interface to control my CNC.
+Platform: UNKNOWN

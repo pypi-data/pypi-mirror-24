@@ -1,0 +1,3 @@
+include *.md
+recursive-include sivi_cnc_driver/rc *.png
+recursive-include sivi_cnc_driver/configs example.json
