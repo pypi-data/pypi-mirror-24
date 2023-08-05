@@ -1,0 +1,14 @@
+.coveragerc
+MANIFEST.in
+Makefile
+README.rst
+setup.py
+tox.ini
+fdict/__init__.py
+fdict/_version.py
+fdict/fdict.py
+fdict.egg-info/PKG-INFO
+fdict.egg-info/SOURCES.txt
+fdict.egg-info/dependency_links.txt
+fdict.egg-info/top_level.txt
+fdict/tests/tests_fdict.py
