@@ -1,0 +1,5 @@
+muffin              >= 0.10.1
+
+peewee              >= 2.8.3
+peewee-migrate      >= 0.9.1
+peewee-async        >= 0.5

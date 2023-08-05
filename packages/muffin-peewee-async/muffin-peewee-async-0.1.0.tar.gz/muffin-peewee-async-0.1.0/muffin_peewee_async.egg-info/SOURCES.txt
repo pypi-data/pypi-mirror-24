@@ -1,0 +1,13 @@
+AUTHORS.rst
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+muffin_peewee_async/__init__.py
+muffin_peewee_async/plugin.py
+muffin_peewee_async.egg-info/PKG-INFO
+muffin_peewee_async.egg-info/SOURCES.txt
+muffin_peewee_async.egg-info/dependency_links.txt
+muffin_peewee_async.egg-info/requires.txt
+muffin_peewee_async.egg-info/top_level.txt
