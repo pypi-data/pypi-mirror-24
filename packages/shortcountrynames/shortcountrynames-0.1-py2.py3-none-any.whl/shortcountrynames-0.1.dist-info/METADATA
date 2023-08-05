@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: shortcountrynames
+Version: 0.1
+Summary: Maps from three letter country codes to short names
+Home-page: https://github.com/rgieseke/shortcountrynames
+Author: Robert Gieseke
+Author-email: robert.gieseke@pik-potsdam.de
+License: CC0
+Keywords: country code
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+UNKNOWN
+
+
