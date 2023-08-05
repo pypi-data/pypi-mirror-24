@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: ai2-kubernetes-initializer
+Version: 0.1.0a1
+Summary: A simple Kubernetes initializer library.
+Home-page: https://github.com/allenai/kubernetes-initializer-python
+Author: Jesse Kinkead
+Author-email: jesse.kinkead@gmail.com
+License: Apache License 2.0
+Keywords: kubernetes initializer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Systems Administration
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: kubernetes
+Requires-Dist: requests[security]
+Requires-Dist: urllib3
+
+.. This RST document is used to populate the PyPi project's description.
+
+=============================
+Python Kubernetes Initializer
+=============================
+
+This is a simple library for writing `Kubernetes initializers <https://kubernetes.io/docs/admin/extensible-admission-controllers/>`_.
+
+Please see `the project's github page <https://github.com/allenai/kubernetes-initializer-python>`_ for full details.
+
+
