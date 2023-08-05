@@ -1,0 +1,7 @@
+include README.rst
+include CHANGELOG.rst
+include MANIFEST.in
+include Makefile
+recursive-include xml_overrider *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
