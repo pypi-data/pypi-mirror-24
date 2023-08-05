@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: mockquitto
+Version: 0.0.2.dev0
+Summary: A sample Python project
+Home-page: https://github.com/Samsung-IoT-Academy/mockquitto
+Author: Georgiy Odisharia
+Author-email: math.kraut.cat@gmail.com
+License: MIT
+Keywords: mqtt
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Education
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Requires-Python: ~=3.4
+Requires-Dist: hbmqtt-samsung (>0.9.0)
+
+MQTT mock broker-generator
+==========================
+
+Readme will be avaliable later
+
+----
+
+Readme будет заполнено позже
+
