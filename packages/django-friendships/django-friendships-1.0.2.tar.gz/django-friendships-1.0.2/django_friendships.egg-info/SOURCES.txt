@@ -1,0 +1,10 @@
+README.rst
+setup.py
+django_friendships.egg-info/PKG-INFO
+django_friendships.egg-info/SOURCES.txt
+django_friendships.egg-info/dependency_links.txt
+django_friendships.egg-info/top_level.txt
+friendship/__init__.py
+friendship/apps.py
+friendship/models.py
+friendship/test_friendships.py
