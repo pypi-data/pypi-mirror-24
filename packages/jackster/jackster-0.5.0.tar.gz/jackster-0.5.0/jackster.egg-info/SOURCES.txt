@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+jackster/__init__.py
+jackster/chain.py
+jackster/funcs.py
+jackster/request.py
+jackster/response.py
+jackster/router.py
+jackster.egg-info/PKG-INFO
+jackster.egg-info/SOURCES.txt
+jackster.egg-info/dependency_links.txt
+jackster.egg-info/requires.txt
+jackster.egg-info/top_level.txt
