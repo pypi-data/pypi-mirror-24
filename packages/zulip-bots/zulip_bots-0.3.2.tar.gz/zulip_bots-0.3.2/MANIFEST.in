@@ -1,0 +1,1 @@
+exclude zulip_bots/bots/*/test_*.py
