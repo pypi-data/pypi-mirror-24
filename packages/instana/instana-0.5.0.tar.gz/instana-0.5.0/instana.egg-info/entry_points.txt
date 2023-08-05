@@ -1,0 +1,9 @@
+[django]
+django.core.handlers.base = instana.django:hook
+
+[flask]
+flask.cli = instana.flaskana:hook
+
+[runtime]
+string = instana.runtime:hook
+
