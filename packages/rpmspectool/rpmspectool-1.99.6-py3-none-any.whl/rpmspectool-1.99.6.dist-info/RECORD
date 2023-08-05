@@ -1,0 +1,13 @@
+rpmspectool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rpmspectool/cli.py,sha256=iSCitxh0h0vRU7n7NT7D_BhQnZW5TSZD4Zos4TteXHs,7700
+rpmspectool/download.py,sha256=5u8ZMvnmhXEGvFHwVntB5l7A5hoycjgag5Sw3k4KlG8,2046
+rpmspectool/i18n.py,sha256=AmGOe7B_Hh8kEYvXzIJB_LbAzu5b7eflVP_k-6rGKCI,314
+rpmspectool/rpm.py,sha256=4h6Rj0TNakSvdzQNlXF-GjrVesYt5aHrCSU7fP7EhgA,7469
+rpmspectool/version.py,sha256=_1eyZQNQJmSHdi6ogYW51MHqNWmHnRTykGLAdsPKie8,109
+rpmspectool-1.99.6.data/scripts/rpmspectool,sha256=Uax_qYIUWqN18qnjAxGFQBEoL1CcIKr1UlS2frZCGH8,143
+rpmspectool-1.99.6.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+rpmspectool-1.99.6.dist-info/METADATA,sha256=xrlKxvMCl7GUIv-6J9S9jYZlSDKZ2ld71gqa_I9vLYc,669
+rpmspectool-1.99.6.dist-info/RECORD,,
+rpmspectool-1.99.6.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+rpmspectool-1.99.6.dist-info/metadata.json,sha256=FlWwYUS3DxRkBU0_VqY8w4I7CMQcmf3M5nq_xEm53ZU,818
+rpmspectool-1.99.6.dist-info/top_level.txt,sha256=Ym38a86sMU2M5y4AiKut4EsdcnVQ6sQZKUev4y0OiH4,12
