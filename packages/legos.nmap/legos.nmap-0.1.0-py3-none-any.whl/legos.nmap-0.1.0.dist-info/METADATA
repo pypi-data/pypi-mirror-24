@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: legos.nmap
+Version: 0.1.0
+Summary: Run nmap scans and get reports right from chat!
+Home-page: https://github.com/bbriggs/legos.nmap
+Author: Brenton Briggs II
+Author-email: UNKNOWN
+License: GPLv3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: legobot (>=1.0.1)
+Requires-Dist: python-nmap (>=0.6.1)
+
+UNKNOWN
+
+
