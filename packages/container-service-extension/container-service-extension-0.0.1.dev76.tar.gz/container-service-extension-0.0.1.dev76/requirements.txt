@@ -1,0 +1,7 @@
+click
+jsonpickle
+pika >= 0.10.0
+pyyaml
+bravado
+requests
+vca-cli >= 18.0.2.dev30
