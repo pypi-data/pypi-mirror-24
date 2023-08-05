@@ -1,0 +1,9 @@
+[fs.opener]
+file = fs.opener.osfs:OSFSOpener
+ftp = fs.opener.ftpfs:FTPOpener
+mem = fs.opener.memoryfs:MemOpener
+osfs = fs.opener.osfs:OSFSOpener
+tar = fs.opener.tarfs:TarOpener
+temp = fs.opener.tempfs:TempOpener
+zip = fs.opener.zipfs:ZipOpener
+
