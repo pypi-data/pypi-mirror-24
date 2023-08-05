@@ -1,0 +1,9 @@
+setup.py
+pyamap/__init__.py
+pyamap/amap.py
+pyamap/template.py
+pyamap.egg-info/PKG-INFO
+pyamap.egg-info/SOURCES.txt
+pyamap.egg-info/dependency_links.txt
+pyamap.egg-info/requires.txt
+pyamap.egg-info/top_level.txt
