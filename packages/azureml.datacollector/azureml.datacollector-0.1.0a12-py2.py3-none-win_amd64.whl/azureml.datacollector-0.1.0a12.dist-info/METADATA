@@ -1,0 +1,12 @@
+Metadata-Version: 2.0
+Name: azureml.datacollector
+Version: 0.1.0a12
+Summary: Microsoft Azure Machine Learning Python SDK for collecting model data during operationalization
+Home-page: UNKNOWN
+Author: Microsoft Corporation
+Author-email: alevine@microsoft.com
+License: MIT
+
+Microsoft Azure Machine Learning Data Collection API for Python
+
+
