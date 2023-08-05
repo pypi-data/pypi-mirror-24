@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: vc3-client
+Version: 2017.8.2
+Summary: vc3-client package
+Home-page: http://virtualclusters.org/
+Author: VC3 team
+Author-email: vc3-project@googlegroups.com
+License: GPL
+Description: This package contains vc3 client
+Platform: UNKNOWN

@@ -1,0 +1,5 @@
+requests
+pyopenssl
+cherrypy
+pyyaml
+vc3-info-service

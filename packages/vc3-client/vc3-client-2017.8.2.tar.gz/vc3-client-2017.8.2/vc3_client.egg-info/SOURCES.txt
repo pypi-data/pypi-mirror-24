@@ -1,0 +1,17 @@
+CHANGELOG
+LICENSE
+MANIFEST.in
+README
+setup.cfg
+setup.py
+etc/vc3-client.conf
+scripts/vc3-client
+vc3_client.egg-info/PKG-INFO
+vc3_client.egg-info/SOURCES.txt
+vc3_client.egg-info/dependency_links.txt
+vc3_client.egg-info/requires.txt
+vc3_client.egg-info/top_level.txt
+vc3client/__init__.py
+vc3client/client.py
+vc3client/clientcli.py
+vc3client/entities.py
