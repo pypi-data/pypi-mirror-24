@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+package.json
+setup.cfg
+setup.py
+ccxt/__init__.py
+ccxt.egg-info/PKG-INFO
+ccxt.egg-info/SOURCES.txt
+ccxt.egg-info/dependency_links.txt
+ccxt.egg-info/top_level.txt
