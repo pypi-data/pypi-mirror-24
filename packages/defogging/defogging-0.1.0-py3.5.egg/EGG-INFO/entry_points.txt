@@ -1,0 +1,3 @@
+[console_scripts]
+defogging = defogging.defogging:main
+
