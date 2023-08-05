@@ -1,0 +1,13 @@
+zope.hookable-4.1.0-py2.7-nspkg.pth,sha256=Fk_o2A-i22BhCwM4N3VfCHkYi8xa7S3LCjjGahlbWrk,350
+zope/hookable/__init__.py,sha256=qnZh07AC0zNS3rnqXUI-RG7w15PnQFRnR7THKetUQC0,1622
+zope/hookable/_zope_hookable.c,sha256=Wys7j4AQwNPtJNfcazhOgQubTYEbJ107XzBDAU98h6o,6667
+zope/hookable/_zope_hookable.pyd,sha256=IwKtA_Z4j17Ce_jwbPbV0MQBp8UJ41LakP6ivZooyRQ,7680
+zope/hookable/tests/__init__.py,sha256=Z9EJNKBQorYcdV6oaIRTRgF41SMRZEEoLltZCKyVPI8,47
+zope/hookable/tests/test_hookable.py,sha256=ulIHgHFaa0konn9q9PAVLweuJStSCTwLo6ziq_Qn2tE,3471
+zope.hookable-4.1.0.dist-info/DESCRIPTION.rst,sha256=wOifkWl594gKTh-p6hd5dPIccjTr2ZanpoA4O2M_BTI,2792
+zope.hookable-4.1.0.dist-info/METADATA,sha256=bkusJmY0OAoNLkqw9YH_aLjjLxkxCJzhOiNo9NYHZmQ,4344
+zope.hookable-4.1.0.dist-info/RECORD,,
+zope.hookable-4.1.0.dist-info/WHEEL,sha256=DJKIF4fXYhO5FvKr47vMFPnA882v1seiq13SS1FTbM4,102
+zope.hookable-4.1.0.dist-info/metadata.json,sha256=65Hw0DYW-zgYIxS0ARJ0gj3fBtIcCaFPmTy9THOA1Vs,1477
+zope.hookable-4.1.0.dist-info/namespace_packages.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.hookable-4.1.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
