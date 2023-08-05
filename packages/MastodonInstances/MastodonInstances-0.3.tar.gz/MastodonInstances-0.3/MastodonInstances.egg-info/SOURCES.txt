@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+MastodonInstances/Exceptions.py
+MastodonInstances/Instance.py
+MastodonInstances/Instances.py
+MastodonInstances/Register.py
+MastodonInstances/__init__.py
+MastodonInstances.egg-info/PKG-INFO
+MastodonInstances.egg-info/SOURCES.txt
+MastodonInstances.egg-info/dependency_links.txt
+MastodonInstances.egg-info/requires.txt
+MastodonInstances.egg-info/top_level.txt
+scripts/mastodon-instances
