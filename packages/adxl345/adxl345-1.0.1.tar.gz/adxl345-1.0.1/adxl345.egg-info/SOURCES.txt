@@ -1,0 +1,6 @@
+setup.py
+adxl345.egg-info/PKG-INFO
+adxl345.egg-info/SOURCES.txt
+adxl345.egg-info/dependency_links.txt
+adxl345.egg-info/not-zip-safe
+adxl345.egg-info/top_level.txt
