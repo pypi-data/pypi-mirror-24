@@ -1,0 +1,14 @@
+django_http_monitor-0.5.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+django_http_monitor-0.5.0.dist-info/METADATA,sha256=XRl0wE1TI5Rz6ILqVbYE-bLwcjCpzI1AYn4fQCda7G0,810
+django_http_monitor-0.5.0.dist-info/RECORD,,
+django_http_monitor-0.5.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_http_monitor-0.5.0.dist-info/metadata.json,sha256=753gBa2_UklNQGfjXOPy3pl4hSempghNbuuKS9kC4wA,904
+django_http_monitor-0.5.0.dist-info/top_level.txt,sha256=wNm98Ke41wuLwLVdrd_WzroVlpy57QmhXosvydCPHoM,19
+http_monitor/__init__.py,sha256=p9q6HLHOHbbuPDAY5gOmJqSCWi0sLT9-F0UlsTZCZoE,1675
+http_monitor/middleware.py,sha256=SFFVXGYmr8IHZF6QpbXupcygv5u1osokmRi0qTxEcFo,1359
+http_monitor/models.py,sha256=lJe5WQ7RUHASir55-cZU3KwfQN4duVHXUb98bledNK8,4364
+http_monitor/urls.py,sha256=7yG_UZ5Gyjjtnsl_Wput4zEQhqJeO1FFNqgMkMTnTgM,477
+http_monitor/views.py,sha256=gKj2rann4tmvCGboaAE4QEeMtR9tK4yDM87x3xOaII0,923
+http_monitor/with_mixin_middleware.py,sha256=O3lOV9rvqPZAzWkypdaOUo9ZeWq5OQeZ3ZsDdlseoCY,1421
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_settings.py,sha256=GU4TDoftxq77aajN5yyPLZ_NbsvraRGnXJ_nyNVEHyM,165
