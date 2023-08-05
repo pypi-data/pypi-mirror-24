@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pyfakeuse
+Version: 0.0.5
+Summary: pyfakeuse helps you fool development environments and code inspectors
+Home-page: https://veltzer.github.io/pyfakeuse
+Author: Mark Veltzer
+Author-email: mark.veltzer@gmail.com
+License: MIT
+Description: pyfakeuse helps you fool development environments and code inspectors
+Keywords: python fake use variables idea pycharm fool
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
