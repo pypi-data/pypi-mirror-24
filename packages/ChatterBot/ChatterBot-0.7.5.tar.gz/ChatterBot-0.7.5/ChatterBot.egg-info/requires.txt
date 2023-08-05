@@ -1,0 +1,7 @@
+chatterbot-corpus<1.1,>=1.0
+jsondatabase<1.0.0,>=0.1.7
+nltk<4.0,>=3.2
+pymongo<4.0,>=3.3
+python-dateutil<2.7,>=2.6
+python-twitter<4.0,>=3.0
+sqlalchemy<1.2,>=1.1
