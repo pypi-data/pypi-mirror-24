@@ -1,0 +1,17 @@
+percy/__init__.py,sha256=-ZxCo4LdKRZMNazHBGMFO0ftDOrIssbbKF6AcN75fAA,285
+percy/client.py,sha256=CwTLZ-6sCSHoS-Wz5Mq8eMIJ5dVEPNGgjI3OYXaX8Yg,4373
+percy/config.py,sha256=9NofGwyAwGuxgQvh3LE9WvZlo9rUvvEtvGHH3y2R7ig,984
+percy/connection.py,sha256=fcfZnJ3690vp7i801BNi04ehR9c2iSCqijKkYgWflto,970
+percy/environment.py,sha256=HUJUNtJFI0A-XY8eJV3RC-s8Mh3M-KlT3v8UR4B-bbs,9156
+percy/errors.py,sha256=K5JAMFa1Vu5ENMhuKQntFDld4bp2FkirkraRLmZjWUk,190
+percy/resource.py,sha256=RaumbhoteFuDDhsp8XXUlaOzAZhQ9zw8GKt5DASyh-8,1255
+percy/resource_loader.py,sha256=5O_mHtSZKPtmMGPixKPigshSqjtKIdIOsaTB4TswzaI,2268
+percy/runner.py,sha256=KE5QhlMZ57XPJR9Qpj-0gy36QY5QFgzEOTlP1hY2Q5c,4220
+percy/user_agent.py,sha256=KiqY1zdIQyyPlj0JC2rndAbAYfgJV9Vd9wkNduZ550w,1230
+percy/utils.py,sha256=F7msM6aSwCpHA53UXSjGf5ooZYYvjRvvv2dvz0m5KT0,740
+percy-1.0.4.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+percy-1.0.4.dist-info/METADATA,sha256=MaSryVREZ_RL7DBTnJB0JD3BUdMw0qiNWGMz1qjsFUk,810
+percy-1.0.4.dist-info/metadata.json,sha256=G_R-g222TPt5LSgZ_bgJDhBX3MRszimlCX31i6Y7j0k,970
+percy-1.0.4.dist-info/RECORD,,
+percy-1.0.4.dist-info/top_level.txt,sha256=GMFtmlJOT0In-Q-agFO17VH7Q0-g68iot5a-i3irkuM,6
+percy-1.0.4.dist-info/WHEEL,sha256=6lxp_S3wZGmTBtGMVmNNLyvKFcp7HqQw2Wn4YYk-Suo,110
