@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: lbp-print
+Version: 0.0.13
+Summary: Script for compiling LombardPress encoded XML documents to TeX and PDF.
+Home-page: https://github.com/stenskjaer/lbp_print
+Author: Michael Stenskjær Christensen
+Author-email: michael.stenskjaer@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
