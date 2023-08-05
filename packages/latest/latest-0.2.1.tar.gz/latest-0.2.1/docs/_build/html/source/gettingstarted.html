@@ -1,0 +1,249 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Getting Started &#8212; latest 0.1.2 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Help" href="help.html" />
+    <link rel="prev" title="Install" href="install.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="basic-syntax">
+<h2>Basic Syntax<a class="headerlink" href="#basic-syntax" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="commands-code-islands">
+<h3>Commands (code islands)<a class="headerlink" href="#commands-code-islands" title="Permalink to this headline">¶</a></h3>
+<p>The simplest thing that you can do with <a class="reference internal" href="latest.html#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> is to insert python expressions or <strong>command</strong> or <strong>code island</strong> inside a document. For a command to be evaluated a data context (python dictionary) had to be set up.</p>
+<p>By default commands are bracketed between <code class="code docutils literal"><span class="pre">\latest[options]{$</span></code> and <code class="code docutils literal"><span class="pre">$}</span></code>. You can change these in the configuration file (see <em>code_entry</em> and <em>code_exit</em> options in <em>lang</em> section).</p>
+<p>A plain text with code islands in between is called <strong>expression</strong>.</p>
+<p>For example the expression</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>If a = \latest{$ a $} and b = \latest{$ b $}, then a + b = \latest{$ a+b $}
+</pre></div>
+</div>
+<p>with a data context <code class="code docutils literal"><span class="pre">{a:</span> <span class="pre">'1',</span> <span class="pre">b:</span> <span class="pre">'2'}</span></code> evaluates to</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">If</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">then</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="namespaces">
+<h3>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h3>
+<p>Namespaces are a powerful concept in <a class="reference internal" href="latest.html#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a>. A namespace is a branch of a data context (python dictionary). It can be a single data context or a list of data contexts.</p>
+<p>A namespace can be useful to simplify variable names within python code with deep nested data contexts.</p>
+<p>More interestingly, namespaces allow to creates loops without standard loop syntax.</p>
+</div>
+<div class="section" id="environments">
+<h3>Environments<a class="headerlink" href="#environments" title="Permalink to this headline">¶</a></h3>
+<p>A more advanced concept is that of <strong>environments</strong>. An environment is defined by a namespace and an expression. The namespace define the branch of the data context in which to look for variable names in python code islands. If the namespace selects a list of dictionaries the environment is evaluated for each one of them and the results are joined by a special sequence of characters defined in a configuration file or as the option <code class="code docutils literal"><span class="pre">join_items</span></code>. This is effectively a <code class="code docutils literal"><span class="pre">for</span></code> loop implementation without the standard <code class="code docutils literal"><span class="pre">for</span></code> loop syntax.</p>
+</div>
+</div>
+<div class="section" id="creating-a-template">
+<h2>Creating a template<a class="headerlink" href="#creating-a-template" title="Permalink to this headline">¶</a></h2>
+<p>A template file can be of any type but latest searches in it for <strong>commands</strong> and <strong>enviroments</strong>.</p>
+</div>
+<div class="section" id="creating-a-data-file">
+<h2>Creating a data file<a class="headerlink" href="#creating-a-data-file" title="Permalink to this headline">¶</a></h2>
+<p>Data formats supported by <a class="reference internal" href="latest.html#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> are</p>
+<ul class="simple">
+<li>json</li>
+<li>yaml (require optional <code class="xref py py-mod docutils literal"><span class="pre">pyyaml</span></code>)</li>
+</ul>
+</div>
+<div class="section" id="the-latest-cli">
+<h2>The latest cli<a class="headerlink" href="#the-latest-cli" title="Permalink to this headline">¶</a></h2>
+<p>Run <cite>latest</cite> script from the command line</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ latest template data
+</pre></div>
+</div>
+<p>where</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>template</strong> is the path to a template file</li>
+<li><strong>data</strong> is the path to a <em>json</em> or <em>yaml</em> formatted data file.</li>
+</ul>
+</div></blockquote>
+<hr class="docutils" />
+<p>An example template file can be something like</p>
+<div class="highlight-latex"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span><span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> title </span><span class="s">$</span><span class="nb">}}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>latest<span class="nb">}{</span>content<span class="nb">}</span>
+x = <span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> x </span><span class="s">$</span><span class="nb">}</span> so that <span class="s">$</span><span class="nb">x^</span><span class="m">2</span><span class="s">$</span> = <span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> x</span><span class="o">**</span><span class="m">2</span><span class="nb"> </span><span class="s">$</span><span class="nb">}</span>.
+<span class="k">\end</span><span class="nb">{</span>latest<span class="nb">}</span>
+
+<span class="k">\section</span><span class="nb">{</span>Prime Numbers<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>latest<span class="nb">}{</span>content.primes<span class="nb">}</span>[join<span class="nb">_</span>items=<span class="nb">{</span><span class="k">\n</span><span class="nb">}</span>]
+<span class="k">\item</span> <span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> n </span><span class="s">$</span><span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>latest<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+
+<span class="k">\section</span><span class="nb">{</span>Fibonacci<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>latest<span class="nb">}{</span>content.fibonacci<span class="nb">}</span>[join<span class="nb">_</span>items=<span class="nb">{</span><span class="k">\n</span><span class="nb">}</span>]
+<span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> _index </span><span class="s">$</span><span class="nb">}</span>. <span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> _value </span><span class="s">$</span><span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>latest<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<p>while the data file can be something like (<em>yaml</em>)</p>
+<div class="highlight-yaml"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">title</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Testing latest</span>
+<span class="l l-Scalar l-Scalar-Plain">author</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Flavio Grandin</span>
+<span class="l l-Scalar l-Scalar-Plain">date</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Today</span>
+<span class="l l-Scalar l-Scalar-Plain">content</span><span class="p p-Indicator">:</span>
+  <span class="l l-Scalar l-Scalar-Plain">x</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
+  <span class="l l-Scalar l-Scalar-Plain">primes</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">n</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">n</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">n</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">n</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">7</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">n</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">11</span>
+  <span class="l l-Scalar l-Scalar-Plain">fibonacci</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">13</span>
+</pre></div>
+</div>
+<p>The expected output is</p>
+<div class="highlight-latex"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Testing latest<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+x = 3 so that <span class="s">$</span><span class="nb">x^</span><span class="m">2</span><span class="s">$</span> = 9.
+
+<span class="k">\section</span><span class="nb">{</span>Prime Numbers<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\item</span> 2
+<span class="k">\item</span> 3
+<span class="k">\item</span> 5
+<span class="k">\item</span> 7
+<span class="k">\item</span> 11
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+
+<span class="k">\section</span><span class="nb">{</span>Fibonacci<span class="nb">}</span>
+0. 1
+1. 1
+2. 2
+3. 3
+4. 5
+5. 8
+6. 13
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">latest</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-syntax">Basic Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-template">Creating a template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-data-file">Creating a data file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-latest-cli">The latest cli</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">API reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="install.html" title="previous chapter">Install</a></li>
+      <li>Next: <a href="help.html" title="next chapter">Help</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Flavio Grandin.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/source/gettingstarted.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

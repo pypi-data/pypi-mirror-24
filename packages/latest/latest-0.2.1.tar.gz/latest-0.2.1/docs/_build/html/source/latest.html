@@ -1,0 +1,463 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>latest package &#8212; latest 0.1.2 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="API reference" href="modules.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-latest">
+<span id="latest-package"></span><h1>latest package<a class="headerlink" href="#module-latest" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> is a LaTeX-oriented template engine.</p>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-latest.config">
+<span id="latest-config-module"></span><h2>latest.config module<a class="headerlink" href="#module-latest.config" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal"><span class="pre">config</span></code> module contains configuration functions and classes for <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> package.</p>
+<p><a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> is completely customizable in its syntax both programmatically and through a configuration file.</p>
+<p>Configurations are contained in an object of the class <code class="xref py py-class docutils literal"><span class="pre">_Config</span></code> that take an optional keyword argument in his <code class="code docutils literal"><span class="pre">__init__</span></code> method to specify the location of the configuration file. If no configuration file is specified, defaults are set in code. The default configuration object <code class="code docutils literal"><span class="pre">config</span></code> is defined in this module and can be imported to be used elsewhere. I suggest an import statement like</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">latest.config</span> <span class="k">import</span> <span class="n">config</span> <span class="k">as</span> <span class="n">Config</span>
+</pre></div>
+</div>
+<p>Then, you can think of the configuration object as a class with many static methods. To create an alternate configuration object you can use the public function <code class="code docutils literal"><span class="pre">create_config(config_file=None)</span></code> instead of directly instantiate an object of private class <code class="xref py py-class docutils literal"><span class="pre">_Config</span></code>.</p>
+<p>Configuration file is found by default (default configuration object look for this location) in <code class="code docutils literal"><span class="pre">~/.latest/latest.cfg</span></code> but one can use his own configuration file. Configuration files must be in <code class="code docutils literal"><span class="pre">ini</span></code> format. Useful sections are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>general</strong></li>
+<li><strong>lang</strong></li>
+</ul>
+</div></blockquote>
+<p>The section <em>lang</em> of the configuration file is where one can define its own syntax. Available options in <cite>lang</cite> section are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>cmd_entry</cite></li>
+<li><cite>cmd_exit</cite></li>
+<li><cite>env_entry</cite></li>
+<li><cite>env_exit</cite></li>
+<li><cite>ns_operator</cite></li>
+</ul>
+</div></blockquote>
+<dl class="function">
+<dt id="latest.config.create_config">
+<code class="descclassname">latest.config.</code><code class="descname">create_config</code><span class="sig-paren">(</span><em>config_file=None</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.config.create_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-latest.core">
+<span id="latest-core-module"></span><h2>latest.core module<a class="headerlink" href="#module-latest.core" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal"><span class="pre">core</span></code> contains core functions for templating.</p>
+<dl class="function">
+<dt id="latest.core.parse_options">
+<code class="descclassname">latest.core.</code><code class="descname">parse_options</code><span class="sig-paren">(</span><em>options</em>, <em>config=&lt;latest.config._Config object&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.parse_options" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses a string of options.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>options</strong> (<em>str</em>) – the string that defines options.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the dictionary with options as key-value pairs.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="latest.core.eval_code">
+<code class="descclassname">latest.core.</code><code class="descname">eval_code</code><span class="sig-paren">(</span><em>code</em>, <em>context</em>, <em>config=&lt;latest.config._Config object&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.eval_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses and evaluates code converting output to a string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>code</strong> (<em>str</em>) – the code to be evaluated.</li>
+<li><strong>context</strong> (<em>dict</em>) – the context to be evaluated in.</li>
+<li><strong>config</strong> (<em>config._Config</em>) – configuration object.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the output converted to a string.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">str</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><code class="xref py py-class docutils literal"><span class="pre">CodeError</span></code> – raised if a <code class="xref py py-class docutils literal"><span class="pre">SyntaxError</span></code> is raised by the builtin <code class="xref py py-func docutils literal"><span class="pre">eval()</span></code> function.</li>
+<li><code class="xref py py-class docutils literal"><span class="pre">ContextError</span></code> – raised when the context names do not match code names
+and a <code class="xref py py-class docutils literal"><span class="pre">NameError</span></code> is raised by the builtin <code class="xref py py-func docutils literal"><span class="pre">eval()</span></code> function.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="latest.core.eval_ns">
+<code class="descclassname">latest.core.</code><code class="descname">eval_ns</code><span class="sig-paren">(</span><em>path</em>, <em>context</em>, <em>config=&lt;latest.config._Config object&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.eval_ns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translates a path to a list of context dictionaries, a.k.a <em>namespace</em>.</p>
+<p>A <em>namespace</em> is a branch of a main context dictionary.</p>
+<p>The following rules apply:</p>
+<ul class="simple">
+<li>if the path specified points to a scalar it is first converted to a dict with the ‘_value’ key set to the scalar and a one-element list filled by the dict is returned</li>
+<li>if the path specified points to a vector the vector is returned by the elements are treated according to these rules</li>
+<li>if the path specified points to a tensor (dict or object) a one-element list filled with the tensor is returned</li>
+</ul>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> (<em>str</em>) – the path for the namespace.</li>
+<li><strong>context</strong> (<em>dict</em>) – the main context object.</li>
+<li><strong>config</strong> (<em>config._Config</em>) – configuration object.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the namespace, a list of context dictionaries.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="latest.core.eval_cmd">
+<code class="descclassname">latest.core.</code><code class="descname">eval_cmd</code><span class="sig-paren">(</span><em>code</em>, <em>context</em>, <em>config=&lt;latest.config._Config object&gt;</em>, <em>ns=None</em>, <em>join_items=''</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.eval_cmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate a <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> <em>command</em>.</p>
+<p>A <em>command</em> is a <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> directive to execute code within a namespace and output a string. The <em>command</em> directive specify a <em>code island</em>. If the namespace is a list of context dictionary the code island is evaluated against every context and the results are joined (concatenated) with a special string, which by default is specified as the <code class="code docutils literal"><span class="pre">join_items</span></code> attribute of the configuration object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>code</strong> (<em>str</em>) – the code to be executed.</li>
+<li><strong>context</strong> (<em>dict</em>) – the global context.</li>
+<li><strong>config</strong> (<em>config._Config</em>) – configuration object.</li>
+<li><strong>ns</strong> (<em>str</em>) – the namespace to be executed in.</li>
+<li><strong>join_items</strong> (<em>str</em>) – the string used to join the results from the contexts in the namespace.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the output of the code executed within the namespace and converted to string. If the namespace target a list of contexts the code is evaluated for every context and the results are concatenated by the string defined in the <code class="code docutils literal"><span class="pre">join_items</span></code> attribute of the configuration object or in the keyword argument <code class="code docutils literal"><span class="pre">join_items</span></code>.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="latest.core.eval_expr">
+<code class="descclassname">latest.core.</code><code class="descname">eval_expr</code><span class="sig-paren">(</span><em>expression</em>, <em>context</em>, <em>config=&lt;latest.config._Config object&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.eval_expr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate a <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> <em>expression</em>.</p>
+<p>An <em>expression</em> is a string of plain text with eventual code islands (<a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> commands) in between.
+The evaluation proceeds evaluating code islands and then concatenating the results with the fragments of plain text.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>expression</strong> (<em>str</em>) – the expression to be evaluated.</li>
+<li><strong>context</strong> (<em>dict</em>) – the context to be evaluated in.</li>
+<li><strong>config</strong> (<em>config._Config</em>) – configuration object.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the output obtained concatenating the plain text fragments with the output of code islands evaluation process.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="latest.core.eval_env">
+<code class="descclassname">latest.core.</code><code class="descname">eval_env</code><span class="sig-paren">(</span><em>content</em>, <em>namespace</em>, <em>context</em>, <em>config=&lt;latest.config._Config object&gt;</em>, <em>join_items=''</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.eval_env" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate a <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> <em>environment</em>.</p>
+<p>An <em>environment</em> is a section of a template to be executed within a namespace.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>content</strong> (<em>str</em>) – the content of the environment to be evaluated.</li>
+<li><strong>namespace</strong> (<em>str</em>) – the namespace within the global context to be evaluated in.</li>
+<li><strong>context</strong> (<em>dict</em>) – the global context.</li>
+<li><strong>config</strong> (<em>config._Config</em>) – configuration object.</li>
+<li><strong>join_items</strong> (<em>str</em>) – the string used to join the results from the evaluation process over the expression inside the environment against the contexts within the namespace.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the output obtained evaluating the expression within the namespace. If the namespace targets a list of context dictionaries, the expression is evaluated against every context and the results are joined with a special string which by default is specified in the <code class="code docutils literal"><span class="pre">join_items</span></code> attribute of the configuration object.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="latest.core.eval_latest">
+<code class="descclassname">latest.core.</code><code class="descname">eval_latest</code><span class="sig-paren">(</span><em>code</em>, <em>context</em>, <em>config=&lt;latest.config._Config object&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.eval_latest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluates an entire latest code/template.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>code</strong> (<em>str</em>) – the <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> formatted template code.</li>
+<li><strong>context</strong> (<em>dict</em>) – the global context.</li>
+<li><strong>config</strong> (<em>config._Config</em>) – configuration object.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the evaluated document.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-latest.exceptions">
+<span id="latest-exceptions-module"></span><h2>latest.exceptions module<a class="headerlink" href="#module-latest.exceptions" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal"><span class="pre">exceptions</span></code> module contains exceptions classes defined for <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> package.</p>
+<dl class="exception">
+<dt id="latest.exceptions.LatestError">
+<em class="property">exception </em><code class="descclassname">latest.exceptions.</code><code class="descname">LatestError</code><a class="headerlink" href="#latest.exceptions.LatestError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">Exception</span></code></p>
+<p>Base class for all <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> exceptions.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="latest.exceptions.CodeError">
+<em class="property">exception </em><code class="descclassname">latest.exceptions.</code><code class="descname">CodeError</code><a class="headerlink" href="#latest.exceptions.CodeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#latest.exceptions.LatestError" title="latest.exceptions.LatestError"><code class="xref py py-class docutils literal"><span class="pre">latest.exceptions.LatestError</span></code></a></p>
+<p>Exception raised when bad syntax code is parsed in a template.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="latest.exceptions.ContextError">
+<em class="property">exception </em><code class="descclassname">latest.exceptions.</code><code class="descname">ContextError</code><a class="headerlink" href="#latest.exceptions.ContextError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#latest.exceptions.LatestError" title="latest.exceptions.LatestError"><code class="xref py py-class docutils literal"><span class="pre">latest.exceptions.LatestError</span></code></a></p>
+<p>Exception raised when context dictionary doesn’t match names required by a template.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-latest.shortcuts">
+<span id="latest-shortcuts-module"></span><h2>latest.shortcuts module<a class="headerlink" href="#module-latest.shortcuts" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal"><span class="pre">shortcuts</span></code> module contains shortcut functions built upon core functionality of <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> package.</p>
+<dl class="function">
+<dt id="latest.shortcuts.render">
+<code class="descclassname">latest.shortcuts.</code><code class="descname">render</code><span class="sig-paren">(</span><em>template_filename</em>, <em>data_filename</em>, <em>config=&lt;latest.config._Config object&gt;</em>, <em>data_fmt=None</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.shortcuts.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render a template in a file within a context defined by a <em>json</em> or <em>yaml</em> formatted data file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>template_filename</strong> (<em>str</em>) – the path of the template file.</li>
+<li><strong>data_filename</strong> (<em>str</em>) – the path of the data .yaml file.</li>
+<li><strong>data_fmt</strong> (<em>str</em>) – format of data file; accepted: <em>json</em>, <em>yaml</em> (or <em>yml</em>).</li>
+<li><strong>config</strong> (<em>config._Config</em>) – configuration object.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the output of the evaluation process as defined by <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> core functions.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-latest.util">
+<span id="latest-util-module"></span><h2>latest.util module<a class="headerlink" href="#module-latest.util" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal"><span class="pre">util</span></code> module contains utility functions for <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> package.</p>
+<dl class="function">
+<dt id="latest.util.is_scalar">
+<code class="descclassname">latest.util.</code><code class="descname">is_scalar</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.is_scalar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.is_vector">
+<code class="descclassname">latest.util.</code><code class="descname">is_vector</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.is_vector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.is_tensor">
+<code class="descclassname">latest.util.</code><code class="descname">is_tensor</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.is_tensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.path">
+<code class="descclassname">latest.util.</code><code class="descname">path</code><span class="sig-paren">(</span><em>location</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.select">
+<code class="descclassname">latest.util.</code><code class="descname">select</code><span class="sig-paren">(</span><em>path</em>, <em>data</em>, <em>sep='/'</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.getopt">
+<code class="descclassname">latest.util.</code><code class="descname">getopt</code><span class="sig-paren">(</span><em>parser</em>, <em>section</em>, <em>key</em>, <em>default</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.getopt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.get_supported_data_fmts">
+<code class="descclassname">latest.util.</code><code class="descname">get_supported_data_fmts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.get_supported_data_fmts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.guess_data_fmt">
+<code class="descclassname">latest.util.</code><code class="descname">guess_data_fmt</code><span class="sig-paren">(</span><em>filename</em>, <em>default</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.guess_data_fmt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.load_json">
+<code class="descclassname">latest.util.</code><code class="descname">load_json</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.load_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.load_yaml">
+<code class="descclassname">latest.util.</code><code class="descname">load_yaml</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.load_yaml" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.load_data">
+<code class="descclassname">latest.util.</code><code class="descname">load_data</code><span class="sig-paren">(</span><em>filename</em>, <em>data_fmt</em>, <em>default_data_fmt</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.load_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.split">
+<code class="descclassname">latest.util.</code><code class="descname">split</code><span class="sig-paren">(</span><em>string</em>, <em>pattern</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">latest</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">latest package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">API reference</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">API reference</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Flavio Grandin.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/source/latest.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
