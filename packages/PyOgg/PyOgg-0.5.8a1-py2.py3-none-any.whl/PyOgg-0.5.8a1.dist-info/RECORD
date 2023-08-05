@@ -1,0 +1,11 @@
+PyOgg-0.5.8a1.dist-info/DESCRIPTION.rst,sha256=DhLZG-tWwTnb3IRK1W2bNPAlzTuoKZWAIaP6kMvF_Pw,1171
+PyOgg-0.5.8a1.dist-info/METADATA,sha256=mMvkbs1OH2Qcv_UyDSCysxtgA8gyl292CTgZF_UkzyE,1966
+PyOgg-0.5.8a1.dist-info/RECORD,,
+PyOgg-0.5.8a1.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+PyOgg-0.5.8a1.dist-info/metadata.json,sha256=ujL3Yxo2HPc0V-UpBuk8SCE5yheT5-ImWSvDpIlJUKI,904
+PyOgg-0.5.8a1.dist-info/top_level.txt,sha256=D8S6n_eP-FkE6Dfz_yxL_V9NV82Mfaq3KJ23soUjCyU,6
+pyogg/__init__.py,sha256=eOn0DsXrMt2AdRuwfecW41MU9UXtR_I1KrUBDZtRzJw,8697
+pyogg/flac.py,sha256=8b8TS6gIYOL4PdAZSQ7d1D7l4s0DApBGeYXWeSe_Xdk,109740
+pyogg/ogg.py,sha256=dbfstfe4xXPOuKIeV0YU1YeaqIIwfSZX-xFRjoHJEHE,17753
+pyogg/opus.py,sha256=S8Q9DYZr5VbzN_gj4GjfIUT3s5UGePPGCYnBbvigo10,45310
+pyogg/vorbis.py,sha256=VNrNlu27SJC1VOTCdXFPB9iCrWXPdAo6AOkgNX4DVZs,26362
