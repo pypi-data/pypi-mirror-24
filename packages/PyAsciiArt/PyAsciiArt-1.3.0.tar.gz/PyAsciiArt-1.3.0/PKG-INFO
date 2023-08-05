@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: PyAsciiArt
+Version: 1.3.0
+Summary: Convert image to character painting.
+Home-page: https://github.com/emptyxl/PyAsciiArt
+Author: empty_xl
+Author-email: empty_xl@163.com
+License: MIT
+Description: More information you can see: https://github.com/emptyxl/PyAsciiArt
+Keywords: python PyAsciiArt character painting
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
