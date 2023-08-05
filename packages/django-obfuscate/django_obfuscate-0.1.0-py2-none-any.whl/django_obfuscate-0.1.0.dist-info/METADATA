@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: django-obfuscate
+Version: 0.1.0
+Summary: Django app to obfuscate data.
+Home-page: https://github.com/dipcode-software/django-obfuscator
+Author: Dipcode
+Author-email: info@dipcode.com
+License: MIT
+Keywords: django,django-models,models,obfuscator
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: setuptools-git
+
+UNKNOWN
+
+
