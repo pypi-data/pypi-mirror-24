@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: rereplace
+Version: 1.0.0
+Summary: Transform a string matching regex A into a string matching regex B
+Home-page: https://github.com/LucasBerbesson/rereplace
+Author: Lucas Berbesson
+Author-email: lucas.berbesson@fabdev.fr
+License: MIT
+Download-URL: https://github.com/LucasBerbesson/rereplace/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: python,regex,replace,sub
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
