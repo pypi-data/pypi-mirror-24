@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: py-zap
+Version: 1.0.0
+Summary: Python scraper for accessing ratings from tvbythenumbers.zap2it.com
+Home-page: https://github.com/sharibarboza/py_zap
+Author: sharibarboza
+Author-email: barbozashari@gmail.com
+License: MIT License
+Download-URL: https://github.com/sharibarboza/py_zap/archive/1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: zap2it,ratings,tv
+Platform: UNKNOWN
