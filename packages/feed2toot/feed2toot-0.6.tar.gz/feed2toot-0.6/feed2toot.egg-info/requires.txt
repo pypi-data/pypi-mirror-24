@@ -1,0 +1,5 @@
+Mastodon.py
+feedparser
+
+[influxdb]
+influxdb
