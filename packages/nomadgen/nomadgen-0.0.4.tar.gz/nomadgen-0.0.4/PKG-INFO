@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: nomadgen
+Version: 0.0.4
+Summary: Configuration util in python syntax for Hashicorp's Nomad
+Home-page: https://github.com/smintz/nomadgen
+Author: Shahar Mintz
+Author-email: shahar.mintz309@gmail.com
+License: MIT
+Download-URL: https://github.com/smintz/nomadgen/archive/0.0.4.tar.gz
+Description: UNKNOWN
+Keywords: nomad,hcl,hashicorp
+Platform: UNKNOWN
+Requires: requests
+Requires: thrift
