@@ -1,0 +1,4 @@
+psyplot
+psy-simple
+statsmodels
+scipy
