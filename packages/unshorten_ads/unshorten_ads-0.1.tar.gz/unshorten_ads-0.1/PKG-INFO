@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: unshorten_ads
+Version: 0.1
+Summary: A python package to unshorten links
+Home-page: https://github.com/khotot/unshorten-ads
+Author: Mohamad Karam
+Author-email: muhakh2@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/khotot/unshorten-ads/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: unshorten,linkshrink
+Platform: UNKNOWN
