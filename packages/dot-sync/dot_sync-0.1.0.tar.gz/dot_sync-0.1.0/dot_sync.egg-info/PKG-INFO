@@ -1,0 +1,69 @@
+Metadata-Version: 1.1
+Name: dot-sync
+Version: 0.1.0
+Summary: A tool for syncing dotfiles between linux machines
+Home-page: https://github.com/carlba/dot_sync
+Author: Carl Bäckström
+Author-email: genzorg@gmail.com
+License: MIT license
+Description: ========
+        Dot Sync
+        ========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/dot_sync.svg
+                :target: https://pypi.python.org/pypi/dot_sync
+        
+        .. image:: https://img.shields.io/travis/carlba/dot_sync.svg
+                :target: https://travis-ci.org/carlba/dot_sync
+        
+        .. image:: https://readthedocs.org/projects/dot-sync/badge/?version=latest
+                :target: https://dot-sync.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        .. image:: https://pyup.io/repos/github/carlba/dot_sync/shield.svg
+             :target: https://pyup.io/repos/github/carlba/dot_sync/
+             :alt: Updates
+        
+        
+        A tool for syncing dotfiles between linux machines
+        
+        
+        * Free software: MIT license
+        * Documentation: https://dot-sync.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        ---------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2017-08-05)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: dot_sync
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5

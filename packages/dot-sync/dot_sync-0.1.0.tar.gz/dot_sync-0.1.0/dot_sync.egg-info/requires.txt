@@ -1,0 +1,4 @@
+Click>=6.7
+scandir>=1.5
+sh>=1.12.14
+pathlib2>=2.3.0
