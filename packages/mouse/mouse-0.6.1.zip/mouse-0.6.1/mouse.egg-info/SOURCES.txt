@@ -1,0 +1,12 @@
+setup.py
+mouse/__init__.py
+mouse/_generic.py
+mouse/_mouse_event.py
+mouse/_mouse_tests.py
+mouse/_nixcommon.py
+mouse/_nixmouse.py
+mouse/_winmouse.py
+mouse.egg-info/PKG-INFO
+mouse.egg-info/SOURCES.txt
+mouse.egg-info/dependency_links.txt
+mouse.egg-info/top_level.txt
