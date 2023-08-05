@@ -1,0 +1,17 @@
+CLASSIFIERS.txt
+KEYWORDS.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+pyrencode/__init__.py
+pyrencode/decode.py
+pyrencode/encode.py
+pyrencode.egg-info/PKG-INFO
+pyrencode.egg-info/SOURCES.txt
+pyrencode.egg-info/dependency_links.txt
+pyrencode.egg-info/top_level.txt
+pyrencode/settings/__init__.py
+pyrencode/settings/constants.py
+pyrencode/settings/utils.py
