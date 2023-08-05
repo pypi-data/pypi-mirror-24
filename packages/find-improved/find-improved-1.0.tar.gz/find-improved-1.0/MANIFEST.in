@@ -1,0 +1,3 @@
+include VERSION README.md
+recursive-include fim *.py
+recursive-include tests *.py

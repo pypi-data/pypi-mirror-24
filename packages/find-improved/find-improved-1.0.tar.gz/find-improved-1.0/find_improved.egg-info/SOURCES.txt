@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+fim/__init__.py
+fim/fim.py
+find_improved.egg-info/PKG-INFO
+find_improved.egg-info/SOURCES.txt
+find_improved.egg-info/dependency_links.txt
+find_improved.egg-info/entry_points.txt
+find_improved.egg-info/requires.txt
+find_improved.egg-info/top_level.txt
+tests/test_fim.py
