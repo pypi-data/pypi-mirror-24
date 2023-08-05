@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: MastodonInstances
+Version: 0.1
+Summary: Python Interface to instances.social
+Home-page: https://github.com/cakeisalie5/MastodonInstances
+Author: Thomas "Cakeisalie5" Touhey
+Author-email: thomas@touhey.fr
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: mastodon instances instances.social api microblogging
+Platform: UNKNOWN
