@@ -1,0 +1,16 @@
+spyder_notebook/__init__.py,sha256=sjQfs8byicscNfOp3THwJkvNZCpx0CEl2--xKG6aY-c,461
+spyder_notebook/_version.py,sha256=19yd3KOCFtEt5716DqNWkE8UfOIcPoaPXvBtt8A1qOw,92
+spyder_notebook/notebookplugin.py,sha256=FhrHbHtdxPsvgkERtI1avi0fpsI3Q0YX5C8kdmRV34o,18518
+spyder_notebook/tests/__init__.py,sha256=CXxXeKPzJgpmxp8La3veJyG0XGLYhore5XOEJYqlGDU,322
+spyder_notebook/tests/test_plugin.py,sha256=yt5DzrM6SwsvxCkJdOCP7C4GyadF7yrQ_BLKhjBeVgE,7738
+spyder_notebook/utils/__init__.py,sha256=-qJ-kF8PrAZwvpBMjU-QBUXudGmDy2VMnPdQYLSG4yo,350
+spyder_notebook/utils/nbopen.py,sha256=2zzMPx1fas6ZDj0OMcQP9vSz4msogA-bBRUVD0ZDUvk,3025
+spyder_notebook/widgets/__init__.py,sha256=0UhaAo4KhRDA-aaCr_4XOkreEH0t4lDdqm4yYj-Inrs,348
+spyder_notebook/widgets/client.py,sha256=2MOD9mScDf5UR2uRc6ho_9_GG6O1Qbw5PjutSis-E_A,9428
+spyder_notebook/widgets/dom.py,sha256=Fo0Z1BxQmkhu-mR-DRVJUckD7y0YcV7vFfBRVuni5kI,2321
+spyder_notebook-0.1.0.dist-info/DESCRIPTION.rst,sha256=8f1XZngtdD_vvcXLU2LAOW5nvYVvujuyb-YUTM_oJX8,77
+spyder_notebook-0.1.0.dist-info/METADATA,sha256=7swcu-emDe3UcpoQzBxVtyHMsnTyh4acHOVf79DClCg,838
+spyder_notebook-0.1.0.dist-info/RECORD,,
+spyder_notebook-0.1.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+spyder_notebook-0.1.0.dist-info/metadata.json,sha256=85YG3lxmqb9zi3IJJzSHx5lsGXNHCbfUqC5TTvkBM9w,870
+spyder_notebook-0.1.0.dist-info/top_level.txt,sha256=VBEZhY25qHIG5Tlz3ShfHPs_RWPhV4LVUQjRXZ3vKKs,16
