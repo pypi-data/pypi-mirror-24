@@ -1,0 +1,41 @@
+Metadata-Version: 2.0
+Name: asn1tools
+Version: 0.1.0
+Summary: ASN.1 tools.
+Home-page: https://github.com/eerimoq/asn1tools
+Author: Erik Moqvist
+Author-email: erik.moqvist@gmail.com
+License: MIT
+Keywords: ASN.1,asn1
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+
+About
+=====
+
+ASN.1 tools.
+
+Project homepage: https://github.com/eerimoq/asn1tools
+
+Installation
+============
+
+.. code-block:: python
+
+    pip install asn1tools
+
+Example usage
+=============
+
+Scripting
+---------
+
+.. code-block:: python
+
+   >>> import asn1tools
+
+See the test suite for additional examples: https://github.com/eerimoq/asn1tools/blob/master/tests/test_asn1tools.py
+
+
