@@ -1,0 +1,15 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+setup.py
+pyexcel_text/__init__.py
+pyexcel_text/jsonp.py
+pyexcel_text/jsonr.py
+pyexcel_text/ndjsonp.py
+pyexcel_text/textr.py
+pyexcel_text.egg-info/PKG-INFO
+pyexcel_text.egg-info/SOURCES.txt
+pyexcel_text.egg-info/dependency_links.txt
+pyexcel_text.egg-info/not-zip-safe
+pyexcel_text.egg-info/requires.txt
+pyexcel_text.egg-info/top_level.txt
