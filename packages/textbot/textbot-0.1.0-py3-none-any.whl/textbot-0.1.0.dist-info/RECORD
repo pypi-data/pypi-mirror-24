@@ -1,0 +1,12 @@
+textbot/__init__.py,sha256=BvCHOOh_t9Lbk9G7fn3Femz0w9vMLHtppRnwDgmSJJw,45
+textbot/__main__.py,sha256=n5Txr7rL_Bo6XXU6ONODgZ4Q5tE2y8p0UQva2MLL6yE,1293
+textbot/csv_ops.py,sha256=bhdaUOA6FXFCtNxUdHB9UWqIl9pPwp8s9Gu-j2VWZ60,4688
+textbot/pos_count.py,sha256=9vtv7Snh_hiOQ9HbNuylfj2xTfDTxQUwSZYJJXvWk3A,4450
+textbot/pos_tag.py,sha256=PEDQHfxat-E5wreA0cqP7NAYXCaMo0_FYgIm4j3haaE,3754
+textbot/select_filename.py,sha256=9lscrUGGY-Px9GZpcsVeQJ_mfkB_VNHkHALDhtBeCck,801
+textbot-0.1.0.dist-info/DESCRIPTION.rst,sha256=AIT0hcLXhRwXmvXZmtgja_G2p8NgJzhaLsiPlkLXcZc,522
+textbot-0.1.0.dist-info/METADATA,sha256=CC9ZF88NbgJcpWuZZ4MfkQZDC8vA3CrL6NLeYjrO2d0,1904
+textbot-0.1.0.dist-info/RECORD,,
+textbot-0.1.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+textbot-0.1.0.dist-info/metadata.json,sha256=g31zRwYkarsxSf4kpboUOGxGrGHP8lk2M5GN3-28fyA,1396
+textbot-0.1.0.dist-info/top_level.txt,sha256=gSDh-wEovHSRRLGRMVSaJUqzX22hDNrCgX8Evld7Xj8,8
