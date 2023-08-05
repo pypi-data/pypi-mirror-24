@@ -1,0 +1,3 @@
+include README.md
+include webnsock/www/*
+include webnsock/www/static/*/*
