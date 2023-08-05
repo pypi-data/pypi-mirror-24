@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.cfg
+setup.py
+env.conf.egg-info/PKG-INFO
+env.conf.egg-info/SOURCES.txt
+env.conf.egg-info/dependency_links.txt
+env.conf.egg-info/top_level.txt
+env_conf/__init__.py
+env_conf/errors.py
+env_conf/provider.py
+env_conf/types.py
