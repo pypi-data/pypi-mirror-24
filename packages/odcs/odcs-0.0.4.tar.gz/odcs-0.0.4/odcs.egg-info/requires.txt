@@ -1,0 +1,73 @@
+funcsigs  # Python2 only
+httplib2
+m2crypto
+m2ext
+mock
+munch
+pyOpenSSL
+python-fedora
+six
+futures  # Python 2 only
+requests
+
+[all]
+python-fedora
+mock
+pyldap
+pyOpenSSL
+pdc-client
+Flask-SQLAlchemy
+Flask
+m2crypto
+m2ext
+Flask-Login
+Flask-Migrate
+httplib2
+requests
+six
+munch
+futures  # Python 2 only
+sqlalchemy
+jinja2
+Flask-Script
+funcsigs  # Python2 only
+
+[client]
+funcsigs  # Python2 only
+httplib2
+m2crypto
+m2ext
+mock
+munch
+pyOpenSSL
+python-fedora
+six
+futures  # Python 2 only
+requests
+
+[common]
+funcsigs  # Python2 only
+six
+futures  # Python 2 only
+
+[server]
+funcsigs  # Python2 only
+httplib2
+m2crypto
+m2ext
+mock
+munch
+pdc-client
+pyOpenSSL
+python-fedora
+six
+sqlalchemy
+futures  # Python 2 only
+Flask
+Flask-Migrate
+Flask-SQLAlchemy
+Flask-Script
+Flask-Login
+requests
+jinja2
+pyldap
