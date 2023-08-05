@@ -1,0 +1,8 @@
+slackbot_atlassian-0.1.dist-info/DESCRIPTION.rst,sha256=9FEVlFSbyTseByDdIZ7TywxHd-qFVglKAjEov5QMEnM,43
+slackbot_atlassian-0.1.dist-info/METADATA,sha256=iZHTz3ooAZgDfH0_M-nGFj8OxXzRJvSP7mYO01B7xdQ,608
+slackbot_atlassian-0.1.dist-info/RECORD,,
+slackbot_atlassian-0.1.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+slackbot_atlassian-0.1.dist-info/metadata.json,sha256=3_CnalGh6r-SoxX1oed3gvPXR1TkWFqrbStIrMPhrl4,780
+slackbot_atlassian-0.1.dist-info/top_level.txt,sha256=BK_Gh7VNmCQYMND-ufnBbHrJc4t3sPIcppBvlU3H7PM,18
+slackbotatlassian/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slackbotatlassian/jira.py,sha256=dQMwj6QKPU2HVEqnlDmJe49MwLyLbykrJ6V-RUc2xxQ,3356

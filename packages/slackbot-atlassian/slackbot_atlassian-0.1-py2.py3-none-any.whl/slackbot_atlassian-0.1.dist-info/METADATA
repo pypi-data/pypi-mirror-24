@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: slackbot-atlassian
+Version: 0.1
+Summary: Slackbot plugins for the Atlassian suite
+Home-page: https://github.com/DandyDev/slackbot-atlassian
+Author: Daan Debie
+Author-email: debie.daan@gmail.com
+License: MIT
+Keywords: slack atlassian jira bamboo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: slackbot (==0.4.1)
+Requires-Dist: jira (==1.0.10)
+
+Slackbot plugins for the Atlassian suite
+
+
