@@ -1,0 +1,7 @@
+mockredispy-kblin
+
+[testing]
+coverage
+pytest
+pytest-asyncio
+pytest-cov
