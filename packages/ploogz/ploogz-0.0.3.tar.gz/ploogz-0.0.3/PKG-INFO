@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ploogz
+Version: 0.0.3
+Summary: A pretty simple plugin framework.
+Home-page: https://github.com/patdaburu/ploogz
+Author: Pat Daburu
+Author-email: pat@daburu.net
+License: MIT
+Download-URL: https://github.com/pblair/ploogz/archive/0.0.3.tar.gz
+Description: UNKNOWN
+Keywords: plugin
+Platform: UNKNOWN
