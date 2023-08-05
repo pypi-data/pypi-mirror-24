@@ -1,0 +1,3 @@
+[mopidy.ext]
+gpiocont = mopidy_gpiocont:Extension
+
