@@ -1,0 +1,16 @@
+requests
+sqlalchemy
+networkx
+pybel
+click
+pandas
+fuzzywuzzy
+ipython
+scipy
+numpy
+obonet
+artifactory
+jinja2
+
+[speed]
+python-Levenshtein
