@@ -1,0 +1,15 @@
+optimus/DfAnalizer.py,sha256=w8Oe0rWrcS3MxXlWk2mntdTj5785DbJTSLr2_zMAHkY,30719
+optimus/DfTransf.py,sha256=MGu-KdHLw1zErdd9_Z4d8BD4O5YyUDjhN8RkoHAOWsk,46082
+optimus/Optimus.py,sha256=FaS4eTb9MtQ58PQCJ-_GzReuv6UQ4MoGYfhOrB8B80s,4033
+optimus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimus/utilities.py,sha256=o6PtqTloPxKhgFJtE1TvEdrP_2m23N4kNwMZMIMnE1g,13606
+optimus/version.py,sha256=k5U26V1_9_y8RjWpa6KOxlLLc9cNn9I2Lpz1CYIiumY,190
+optimuspyspark-0.4.0.dist-info/DESCRIPTION.rst,sha256=9kqL7LuEM8XF8SSaCoPApYKzunER9vapi7AM_qAHZqc,745
+optimuspyspark-0.4.0.dist-info/METADATA,sha256=1RADlTWOHcnnLB7fj80hmX7fQO7WtSenDhpxG9ZTCJA,2307
+optimuspyspark-0.4.0.dist-info/RECORD,,
+optimuspyspark-0.4.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+optimuspyspark-0.4.0.dist-info/metadata.json,sha256=OkASFLZSwZaAWVavE8XXI84lQMWDwE84qsZjnBzw37M,1425
+optimuspyspark-0.4.0.dist-info/top_level.txt,sha256=-a3sv_QD_4-R1vU1oVOVMHj75Kz3W1WuidwNJj3TK4g,14
+tests/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+tests/conftest.py,sha256=k92MwbwqNbPgXcOLrpyCk4muO5NVJ_wo__PQOeiZuHo,1186
+tests/tests.py,sha256=qYcPANL_U0IOo4NaDyfUlwC2DsE-4C6m3KGsI5PlnzU,136
