@@ -1,0 +1,129 @@
+Metadata-Version: 2.0
+Name: drf-sideloading
+Version: 0.1.2
+Summary: Extension for Django Rest Framework to enable simple sideloading
+Home-page: https://github.com/namespace-ee/drf-sideloading
+Author: Demur Nodia
+Author-email: demur@namespace.ee
+License: MIT
+Keywords: drf-sideloading
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: Django (<1.12,>=1.8)
+Requires-Dist: djangorestframework (<=3.6.2,>=3.1.0)
+
+=============================
+drf-sideloading
+=============================
+
+.. image:: https://badge.fury.io/py/drf-sideloading.svg
+    :target: https://badge.fury.io/py/drf-sideloading
+
+.. image:: https://travis-ci.org/namespace-ee/drf-sideloading.svg?branch=master
+    :target: https://travis-ci.org/namespace-ee/drf-sideloading
+
+.. image:: https://codecov.io/gh/namespace-ee/drf-sideloading/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/namespace-ee/drf-sideloading
+
+Extention for Django Rest Framework to enable simple sidloading
+
+Documentation
+-------------
+
+The full documentation is at https://drf-sideloading.readthedocs.io.
+
+Quickstart
+----------
+
+Install drf-sideloading::
+
+    pip install drf-sideloading
+
+Import Mixin `SideloadableRelationsMixin`:
+
+.. code-block:: python
+
+    from drf_sideloading.mixins import SideloadableRelationsMixin
+
+Include mixin in view, define serializers dict `sideloadable_relations` and `base_model_name`
+
+.. code-block:: python
+
+    class ProductViewSet(SideloadableRelationsMixin, viewsets.ModelViewSet):
+        """
+        A simple ViewSet for viewing and editing products.
+        """
+        queryset = Product.objects.all()
+        serializer_class = ProductSerializer
+
+        base_model_name = 'product'
+
+        sideloadable_relations = {
+            'product': ProductSerializer,
+            'category': CategorySerializer,
+            'supplier': SupplierSerializer,
+            'partner': PartnerSerializer
+        }
+
+
+Add extra parameter and define comma separated relations:
+
+`GET` `http://example.com/product/?sideload=category,partner,supplier`
+
+
+Features
+--------
+
+* TODO
+* fix documentation
+* improve coverage
+* python3 support
+
+
+Running Tests
+-------------
+
+Does the code actually work?
+
+::
+
+    source <YOURVIRTUALENV>/bin/activate
+    (myenv) $ pip install tox
+    (myenv) $ tox
+
+Credits
+-------
+
+Tools used in rendering this package:
+
+*  Cookiecutter_
+*  `cookiecutter-djangopackage`_
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`cookiecutter-djangopackage`: https://github.com/pydanny/cookiecutter-djangopackage
+
+
+
+
+History
+-------
+
+0.1.0 (2017-07-20)
+++++++++++++++++++
+
+* First release on PyPI.
+
+
