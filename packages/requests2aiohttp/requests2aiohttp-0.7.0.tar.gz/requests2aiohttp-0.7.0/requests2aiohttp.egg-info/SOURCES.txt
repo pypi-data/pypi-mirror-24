@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+requirements.txt
+setup.cfg
+setup.py
+requests2aiohttp/__init__.py
+requests2aiohttp/sessions.py
+requests2aiohttp.egg-info/PKG-INFO
+requests2aiohttp.egg-info/SOURCES.txt
+requests2aiohttp.egg-info/dependency_links.txt
+requests2aiohttp.egg-info/not-zip-safe
+requests2aiohttp.egg-info/requires.txt
+requests2aiohttp.egg-info/top_level.txt
