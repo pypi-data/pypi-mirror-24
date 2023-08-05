@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: kenburns
+Version: 0.0.3
+Summary: Simple script to make a video by adding kenburns effect with some text to an image
+Home-page: https://github.com/helmot/kenburns
+Author: Ivan Helmot
+Author-email: mr.ivan.helmot@gmail.com
+License: http://www.apache.org/licenses/LICENSE-2.0
+Description: # kenburns
+        Simple script to make a video by adding kenburns effect with some text to an image
+        
+Platform: UNKNOWN
