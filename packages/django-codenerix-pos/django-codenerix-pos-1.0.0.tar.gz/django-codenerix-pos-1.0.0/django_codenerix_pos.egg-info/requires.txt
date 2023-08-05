@@ -1,0 +1,8 @@
+asgi_redis
+celery
+channels
+django-codenerix
+django-codenerix-invoicing
+django-codenerix-payments
+pyotp
+service_identity
