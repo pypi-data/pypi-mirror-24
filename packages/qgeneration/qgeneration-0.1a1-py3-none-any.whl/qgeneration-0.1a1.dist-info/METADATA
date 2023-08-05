@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: qgeneration
+Version: 0.1a1
+Summary: Data generation project
+Home-page: https://github.com/KirovVerst/qgeneration
+Author: KirovVerst
+Author-email: kirov.verst@gmail.com
+License: MIT
+Keywords: data,generator,fixtures,test
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+
+===========
+qgeneration
+===========
+Data generation library
+
+------------
+Installation
+------------
+.. code-block:: bash
+
+  $ pip install qgeneration
+
+-------
+Testing
+-------
+.. code-block:: bash
+
+  $ python setup.py test
+
+---------
+Licensing
+---------
+
+The code in this project is licensed under MIT license.
+
+
