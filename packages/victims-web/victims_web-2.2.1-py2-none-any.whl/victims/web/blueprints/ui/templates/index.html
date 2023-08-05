@@ -1,0 +1,37 @@
+{% extends "evd_base.html" %}
+
+{% block precontainer %}
+<div class="hero-unit">
+    <div class="container">
+        <div class="row-fluid">
+            <h1 class="site-title">victims</h1>
+            <p class="lead site-description">Embedded Vulnerability Detection</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    {% for group in groups %}
+    <div class="col-md-4">
+        <ul class="list-group">
+            <li class="list-group-item">
+            <h4 class="list-group-item-heading"><a href="{{ url_for('.hashes_singlegroup', group=group) }}">{{ group.title() }}</a></h4>
+            </li>
+            <li class="list-group-item">
+            Hashes <span class="badge pull-right">{{ stats[group]['hashes'] }}</span>
+            </li>
+
+            <li class="list-group-item">
+            Submitted<span class="badge pull-right">{{ stats[group]['submitted']}}</span>
+            </li>
+
+            <li class="list-group-item">
+            Pending<span class="badge pull-right">{{ stats[group]['pending']}}</span>
+            </li>
+        </ul>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
