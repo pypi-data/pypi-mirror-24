@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: ProfiledTest
+Version: 0.1
+Summary: Simple unit-test profiler
+Home-page: https://github.com/e0ne/profiled_test
+Author: Ivan Kolodyazhny
+Author-email: e0ne@e0ne.info
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
