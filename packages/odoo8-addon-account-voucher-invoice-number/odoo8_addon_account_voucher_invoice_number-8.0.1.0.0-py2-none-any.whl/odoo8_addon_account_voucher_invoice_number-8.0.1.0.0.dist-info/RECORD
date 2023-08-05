@@ -1,0 +1,17 @@
+odoo8_addon_account_voucher_invoice_number-8.0.1.0.0-py2.7-nspkg.pth,sha256=yjZbgHQAw5gimz4qZY5xWkpHSWWWy2Wr32eLa0psiH4,370
+odoo8_addon_account_voucher_invoice_number-8.0.1.0.0.dist-info/DESCRIPTION.rst,sha256=tp0-LVrn3PXSwNNnKLkvdh33aEzWr8bRUfKxNQ3Lw8Y,1853
+odoo8_addon_account_voucher_invoice_number-8.0.1.0.0.dist-info/METADATA,sha256=u58rUw3NA1SWgGBVnRINwz55I2zIKZBk8-Do0vi-sPI,2357
+odoo8_addon_account_voucher_invoice_number-8.0.1.0.0.dist-info/RECORD,,
+odoo8_addon_account_voucher_invoice_number-8.0.1.0.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+odoo8_addon_account_voucher_invoice_number-8.0.1.0.0.dist-info/metadata.json,sha256=EKm0Kx4efXMxmuDs_okXuNdkIfP5kZA9DCDb0Ax_eNw,716
+odoo8_addon_account_voucher_invoice_number-8.0.1.0.0.dist-info/namespace_packages.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo8_addon_account_voucher_invoice_number-8.0.1.0.0.dist-info/top_level.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo_addons/account_voucher_invoice_number/README.rst,sha256=qQDDtzB5vxHZQJl-sze9KUOT8ZLE8szYzDTNRbVXSCQ,1851
+odoo_addons/account_voucher_invoice_number/__init__.py,sha256=uculsrXZ0S-G6wEAXSkXgH5ZpopYBCo2iemKU-gs9Zc,167
+odoo_addons/account_voucher_invoice_number/__openerp__.py,sha256=22_XMNzK_ZOqTKetaHg66bWsaOzpOUbus4SZR8DoNy8,672
+odoo_addons/account_voucher_invoice_number/images/vouchers.png,sha256=9KpaTijf7MBqT7msq6moga9-IUyBvaSK4CbBtiDP4yA,38071
+odoo_addons/account_voucher_invoice_number/models/__init__.py,sha256=K56_IJyWK6_22H04kWc0aWby1z4QkIsmK8LcFbg-Uww,176
+odoo_addons/account_voucher_invoice_number/models/account_voucher.py,sha256=zcnPw0h79r3y-G6VZ8FjPBpsvGO2jNmgRgiP6u2XbVw,1164
+odoo_addons/account_voucher_invoice_number/tests/__init__.py,sha256=CL2k2iXpMYBBBxVgyUA9HIKWAeun-EpZPxNUUp-wgt8,181
+odoo_addons/account_voucher_invoice_number/tests/test_account_voucher.py,sha256=wZjzgu9Ea42ujEiOBiqfGpvTW3n2xy51clu26qYlTSU,2500
+odoo_addons/account_voucher_invoice_number/views/account_voucher_view.xml,sha256=ezS3BOFyeMUiJZfUhVtolXEMhnNXcDKOBCuFAFAgDmE,597
