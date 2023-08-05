@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: faste
+Version: 0.2.0
+Summary: dictionary style caches.
+Home-page: https://faste.readthedocs.io/
+Author: Patrick Dill
+Author-email: jamespatrickdill@gmail.com
+License: MIT
+Download-URL: http://github.com/reshanie/faste/archive/master.tar.gz
+Description: dictionary style caches
+        =======================
+        
+        Faste is a cache library to allow many different cache algorithms in Python, with the functionality of a regular dict.
+        Anything you can do to a dict, you can do to these caches.
+        
+        ``$ pip install faste``
+        
+        For documentation on all supported caches, visit http://faste.readthedocs.io/
+        
+        
+Keywords: faste cache caches LIFO FIFO RR LRU MRU LFU memory dict dictionary
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

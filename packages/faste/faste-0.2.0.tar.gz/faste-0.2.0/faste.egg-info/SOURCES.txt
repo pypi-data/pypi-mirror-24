@@ -1,0 +1,10 @@
+README.rst
+setup.py
+faste/__init__.py
+faste/caches.py
+faste/decorators.py
+faste/util.py
+faste.egg-info/PKG-INFO
+faste.egg-info/SOURCES.txt
+faste.egg-info/dependency_links.txt
+faste.egg-info/top_level.txt
