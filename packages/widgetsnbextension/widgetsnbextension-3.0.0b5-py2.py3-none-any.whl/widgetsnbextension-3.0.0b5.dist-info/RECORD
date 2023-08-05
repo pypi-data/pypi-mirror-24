@@ -1,0 +1,12 @@
+widgetsnbextension/__init__.py,sha256=Ix58iw6xT3misN2PudDxnGeIgFxBMPbUAhK3VPamQNY,765
+widgetsnbextension/_version.py,sha256=O-Hk9Wto9SBw5MEOvz7Hx43m3YYSQlxigkODl9zh8Dc,280
+widgetsnbextension/static/extension.js,sha256=4D_OnMFaeRYaEWQOMKNNGS8hvHryr_3-W76xn-9IJfI,1984272
+widgetsnbextension/static/extension.js.map,sha256=DiAkCLLSIdnsGxY1kaWM9VNxlhmL407dNSQVZUYrAgQ,2360219
+widgetsnbextension-3.0.0b5.data/data/share/jupyter/nbextensions/jupyter-js-widgets/extension.js,sha256=4D_OnMFaeRYaEWQOMKNNGS8hvHryr_3-W76xn-9IJfI,1984272
+widgetsnbextension-3.0.0b5.data/data/share/jupyter/nbextensions/jupyter-js-widgets/extension.js.map,sha256=DiAkCLLSIdnsGxY1kaWM9VNxlhmL407dNSQVZUYrAgQ,2360219
+widgetsnbextension-3.0.0b5.dist-info/DESCRIPTION.rst,sha256=r8IFq24_DWj6beTRFDkkCEpyBpX9EY_o4bs_3t1fsak,593
+widgetsnbextension-3.0.0b5.dist-info/METADATA,sha256=9ObXfb2ZW6771PKzTWL1yNVWA5vgU-YEOExMAyhq6NU,1459
+widgetsnbextension-3.0.0b5.dist-info/RECORD,,
+widgetsnbextension-3.0.0b5.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+widgetsnbextension-3.0.0b5.dist-info/metadata.json,sha256=qVa0Um1TklGWCypGZDbQY3XMnZS_A9emhs3j-86zOpM,1023
+widgetsnbextension-3.0.0b5.dist-info/top_level.txt,sha256=8mUbfjjdQrlSNE3WjLz-1BElRoeM8-4hzUZkHlbxVvs,19
