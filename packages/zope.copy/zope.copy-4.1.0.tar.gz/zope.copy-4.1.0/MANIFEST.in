@@ -1,0 +1,9 @@
+include *.py
+include *.rst
+include *.txt
+include buildout.cfg
+include tox.ini
+include .travis.yml
+include .coveragerc
+exclude .coverage
+recursive-include docs *.py *.bat *.rst Makefile .gitignore

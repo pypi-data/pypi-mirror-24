@@ -1,0 +1,4 @@
+repoze.sphinx.autointerface
+zope.component
+zope.interface
+zope.location
