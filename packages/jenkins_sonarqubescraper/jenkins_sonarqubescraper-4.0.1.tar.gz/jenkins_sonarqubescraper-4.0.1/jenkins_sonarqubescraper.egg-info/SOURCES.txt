@@ -1,0 +1,11 @@
+setup.py
+SonarQubeScraper/__init__.py
+SonarQubeScraper/csvhelper.py
+SonarQubeScraper/sonarhelper.py
+bin/sonar-analysis
+jenkins_sonarqubescraper.egg-info/PKG-INFO
+jenkins_sonarqubescraper.egg-info/SOURCES.txt
+jenkins_sonarqubescraper.egg-info/dependency_links.txt
+jenkins_sonarqubescraper.egg-info/not-zip-safe
+jenkins_sonarqubescraper.egg-info/requires.txt
+jenkins_sonarqubescraper.egg-info/top_level.txt
