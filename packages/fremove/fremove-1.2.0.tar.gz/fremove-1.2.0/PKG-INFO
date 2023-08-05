@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: fremove
+Version: 1.2.0
+Summary: A simple file and folder remover, install using pip install fremove, run using import fremove in your python interpreter
+Home-page: UNKNOWN
+Author: suryapoojary
+Author-email: pythonpoojary@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
