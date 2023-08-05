@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: bruce-ircbot
+Version: 2.0
+Summary: Yet another python based IRC bot framework.
+Home-page: https://github.com/BruceZhang1993/PyIrcBot
+Author: BruceZhang1993
+Author-email: zttt183525594@gmail.com
+License: MIT
+Keywords: irc,bot
+Platform: UNKNOWN
+Requires-Dist: BeautifulSoup4
+Requires-Dist: Pillow
+Requires-Dist: html5lib
+Requires-Dist: irc
+Requires-Dist: requests
+Requires-Dist: termcolor
+
+UNKNOWN
+
+
