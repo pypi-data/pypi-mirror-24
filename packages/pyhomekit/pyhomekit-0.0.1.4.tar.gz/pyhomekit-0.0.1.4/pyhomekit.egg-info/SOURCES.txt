@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+data/ble
+pyhomekit/__init__.py
+pyhomekit/ble.py
+pyhomekit/constants.py
+pyhomekit/encryption.py
+pyhomekit/utils.py
+pyhomekit.egg-info/PKG-INFO
+pyhomekit.egg-info/SOURCES.txt
+pyhomekit.egg-info/dependency_links.txt
+pyhomekit.egg-info/requires.txt
+pyhomekit.egg-info/top_level.txt

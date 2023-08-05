@@ -1,0 +1,12 @@
+bluepy
+libnacl
+srp
+tenacity
+
+[dev]
+py.test
+mypy
+pylint
+flake8
+docutils
+Sphinx
