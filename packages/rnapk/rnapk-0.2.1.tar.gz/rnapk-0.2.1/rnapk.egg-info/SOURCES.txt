@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+main.py
+setup.py
+rnapk.egg-info/PKG-INFO
+rnapk.egg-info/SOURCES.txt
+rnapk.egg-info/dependency_links.txt
+rnapk.egg-info/entry_points.txt
+rnapk.egg-info/requires.txt
+rnapk.egg-info/top_level.txt
