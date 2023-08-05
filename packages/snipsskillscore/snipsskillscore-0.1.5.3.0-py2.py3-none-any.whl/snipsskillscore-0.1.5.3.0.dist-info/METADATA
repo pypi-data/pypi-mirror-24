@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: snipsskillscore
+Version: 0.1.5.3.0
+Summary: The Snips skills core utilities for creating end-to-end assistants
+Home-page: https://github.com/snipsco/snips-skills-core
+Author: Michael Fester
+Author-email: michael.fester@gmail.com
+License: MIT
+Keywords: snips
+Platform: UNKNOWN
+Requires-Dist: paho-mqtt
+Requires-Dist: pyaudio
+Requires-Dist: pygame
+Requires-Dist: pyusb
+Requires-Dist: pyyaml
+Requires-Dist: respeaker
+
+UNKNOWN
+
+
