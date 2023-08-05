@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: montage-wrapper
+Version: 0.9.9
+Summary: Python wrapper for the Montage mosaicking toolkit
+Home-page: http://astropy.org/montage-wrapper/
+Author: Thomas Robitaille
+Author-email: thomas.robitaille@gmail.com
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: astropy
+
+
+This is an Astropy affiliated package.
+
+
