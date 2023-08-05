@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: histogram_plus
+Version: 0.1
+Summary: Overloaded histogram maker based on mpl
+Home-page: http://github.com/brovercleveland/histogram_plus
+Author: Brian Pollack
+Author-email: brianleepollack@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
