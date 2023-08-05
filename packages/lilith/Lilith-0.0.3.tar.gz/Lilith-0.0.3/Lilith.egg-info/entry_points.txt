@@ -1,0 +1,3 @@
+[console_scripts]
+lilith = lilith.main:show
+
