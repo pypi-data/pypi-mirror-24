@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dive
+Version: 0.1
+Summary: A tool for interactively traversing the python heap to find memory leaks
+Home-page: https://github.com/rhelmot/dumpsterdiver
+Author: rhelmot
+Author-email: andrewrdutcher@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: heap memory leak interative
+Platform: UNKNOWN
