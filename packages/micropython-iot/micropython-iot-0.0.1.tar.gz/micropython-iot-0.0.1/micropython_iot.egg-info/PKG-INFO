@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: micropython-iot
+Version: 0.0.1
+Summary: Micropython IoT libraries and tools
+Home-page: http://github.com/mzdaniel/micropython-iot'
+Author: Daniel Mizyrycki
+Author-email: mzdaniel@glidelink.net
+License: MIT
+Description: file: README.rst
+Keywords: micropython,iot,thingflow,sensors
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Hardware
+Provides: micropython_iot
