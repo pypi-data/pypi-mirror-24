@@ -1,0 +1,16 @@
+senf/__init__.py,sha256=V5g1jCTLbUvZgUcFm68hkdY1MPd9t_zgUET98Eb0wAg,2775
+senf/_argv.py,sha256=YXLoOB7JWvb7SBr9GnPXoVVo8VM7cAQfDAEypPIH10s,3341
+senf/_compat.py,sha256=F5gyIw0USh-32dM3_fvQkqsF4KhDoazjyZ-0_n6MTxE,1852
+senf/_environ.py,sha256=YhluOYQrPZRgBLmt04nQYDk270RV5saES9tta8K4rOo,6779
+senf/_fsnative.py,sha256=jmZiw3rdDQ7c1PoNMLcGw8YTVFrBUdgLKZfbiurY8yE,19812
+senf/_print.py,sha256=0W5C5CVL3iJH0Sycq3BP_4_E1M-T6WUc6cTDauUbk7I,12272
+senf/_stdlib.py,sha256=R9m5swZzADhwzepZyF5442GZ8Q-kiG5YHw2vwqzSjus,4466
+senf/_temp.py,sha256=NBJTQQZN_z_sIidtbubArYoFVPtIYcuJ9_Fz7MviUOo,3282
+senf/_winansi.py,sha256=4ApJ8btxFmJjVwHeu1g5qAf-38Lvle4ONyt-LOnRKsY,10596
+senf/_winapi.py,sha256=7m95w41CiI_-kX06r3ZFvrfKsDwTYcr-Td1k1n-O81I,6410
+senf-1.3.0.dist-info/DESCRIPTION.rst,sha256=Pnx9LgV7efF_IZfBgLfQPIZ0n6VQpEkhQSXslcaSm_k,907
+senf-1.3.0.dist-info/METADATA,sha256=znPyDCWKG-2_PoqRLLc0IUgvFbiF4pcBBYvuy0WBaNw,1763
+senf-1.3.0.dist-info/RECORD,,
+senf-1.3.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+senf-1.3.0.dist-info/metadata.json,sha256=4Zs_XEH8kONEhi1Z3TF76Aj3zjhLi2wCDpgt6zkJdzk,983
+senf-1.3.0.dist-info/top_level.txt,sha256=CK3K50anfg5enDREJYfTLSrV-pqrVrTfeOa4BIUqLmg,5
