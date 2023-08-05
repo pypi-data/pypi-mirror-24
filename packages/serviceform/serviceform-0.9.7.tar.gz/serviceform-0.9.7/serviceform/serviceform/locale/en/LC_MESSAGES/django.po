@@ -1,0 +1,1527 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-19 12:57+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Translators: This appears after "Changed" and is joined with "and"
+#: admin.py:106
+#, python-brace-format
+msgid " {label} to {new_value} (was {old_value}) "
+msgstr ""
+
+#: admin.py:107
+msgid "and"
+msgstr ""
+
+#: admin.py:115
+#, python-format
+msgid "Changed %s."
+msgstr ""
+
+#: admin.py:124
+#, python-format
+msgid "Added %(name)s \"%(object)s\"."
+msgstr ""
+
+#: admin.py:130
+#, python-format
+msgid "Changed %(list)s for %(name)s \"%(object)s\"."
+msgstr ""
+
+#: admin.py:136
+#, python-format
+msgid "Deleted %(name)s \"%(object)s\"."
+msgstr ""
+
+#: admin.py:140
+msgid "No fields changed."
+msgstr ""
+
+#: admin.py:260 admin.py:268
+msgid "Basic information"
+msgstr ""
+
+#: admin.py:261
+msgid "Ownership"
+msgstr ""
+
+#: admin.py:262
+msgid "Email settings"
+msgstr ""
+
+#: admin.py:263
+msgid "Customization"
+msgstr ""
+
+#: admin.py:264
+msgid "Ask details from participants"
+msgstr ""
+
+#: admin.py:265
+msgid "Require details from participants"
+msgstr ""
+
+#: admin.py:289
+msgid "Copy form as a new"
+msgstr ""
+
+#: admin.py:295
+msgid "Bulk email former participants now!"
+msgstr ""
+
+#: admin.py:301
+msgid "Bulk email responsibility persons now!"
+msgstr ""
+
+#: admin.py:307
+msgid "Shuffle participant data"
+msgstr ""
+
+#: admin.py:342
+msgid ""
+"You have {} level 1 categories. We recommend that no more than 7 level 1 "
+"categories are used, if form flow is split to categories, so that form is "
+"rendered correctly."
+msgstr ""
+
+#: admin.py:363
+msgid "Send mail"
+msgstr ""
+
+#: apps.py:25
+msgid "Service form application"
+msgstr ""
+
+#: emails.py:21
+msgid ""
+"Dear {{responsible}},\n"
+"\n"
+"Participation results for {{form}} are now available for you to view.\n"
+"You can see all participants for the activities you are responsible of in "
+"the following URL:\n"
+"{{url}}\n"
+"From now on, you will also receive a notification message, if a new "
+"participation submitted to\n"
+"the areas you are responsible of.You can also adjust your contact details "
+"and email notification\n"
+"preferences from previously given URL.\n"
+"\n"
+"Best regards,\n"
+"Service form system administrators\n"
+"\n"
+"Contact person:\n"
+"{{contact}}"
+msgstr ""
+
+#: emails.py:37
+msgid ""
+"Dear {{participant}},\n"
+"\n"
+"You are invited to participate in \"{{ form }}\".\n"
+"You can fill in your participation details at {{ url }}.\n"
+"\n"
+"Best regards,\n"
+"Service form system administrators\n"
+"\n"
+"Contact person:\n"
+"{{contact}}"
+msgstr ""
+
+#: emails.py:48
+msgid ""
+"Dear {{responsible}},\n"
+"\n"
+"New participation from {{participant}} has just been submitted to {{form}}.\n"
+"You can see all participants for the activities you are responsible of in "
+"the following URL:\n"
+"{{url}}\n"
+"You can also adjust your contact details and email notification preferences "
+"from that URL.\n"
+"\n"
+"Best regards,\n"
+"Service form system administrators\n"
+"\n"
+"Contact person:\n"
+"{{contact}}"
+msgstr ""
+
+#: emails.py:61
+msgid ""
+"Dear {{participant}},\n"
+"\n"
+"New form revision to \"{{ form }}\" has been published.\n"
+"Please update your participation information at {{ url }}.\n"
+"\n"
+"Best regards,\n"
+"Service form system administrators\n"
+"\n"
+"Contact person:\n"
+"{{contact}}"
+msgstr ""
+
+#: emails.py:72 emails.py:83
+msgid ""
+"Dear {{participant}},\n"
+"\n"
+"You submitted form \"{{ form }}\" on {{ last_modified }}.\n"
+"If you wish to change any of the details you gave, you can go to {{ url }}.\n"
+"\n"
+"Best regards,\n"
+"Service form system administrators\n"
+"\n"
+"Contact person:\n"
+"{{contact}}"
+msgstr ""
+
+#: emails.py:94
+msgid ""
+"Dear {{participant}},\n"
+"\n"
+"You submitted update to your data on form \"{{ form }}\" on "
+"{{ last_modified }}.\n"
+"If you wish to change any of the details you gave, you can go to {{ url }}.\n"
+"\n"
+"Best regards,\n"
+"Service form system administrators\n"
+"\n"
+"Contact person:\n"
+"{{contact}}"
+msgstr ""
+
+#: emails.py:106
+msgid ""
+"Dear {{responsible}},\n"
+"\n"
+"You can see all participants for the activities you are responsible of in "
+"the following URL:\n"
+"{{url}}\n"
+"\n"
+"Best regards,\n"
+"Service form system administrators\n"
+"\n"
+"Contact person:\n"
+"{{contact}}"
+msgstr ""
+
+#: emails.py:118
+msgid ""
+"Dear {{participant}},\n"
+"\n"
+"Your email address needs to be verified. Please do so by clicking link "
+"below. Then you can\n"
+"continue filling the form.\n"
+"\n"
+"{{url}}\n"
+"\n"
+"Best regards,\n"
+"Service form system administrators\n"
+"\n"
+"Contact person:\n"
+"{{contact}}"
+msgstr ""
+
+#: forms.py:54
+msgid "Revision"
+msgstr ""
+
+#: forms.py:65
+msgid "Current"
+msgstr ""
+
+#: forms.py:66
+msgid "All"
+msgstr ""
+
+#: forms.py:72
+msgid "Save settings"
+msgstr ""
+
+#: forms.py:86 models.py:525
+msgid "Password"
+msgstr ""
+
+#: forms.py:93
+msgid "Get in"
+msgstr ""
+
+#: forms.py:98
+msgid "Incorrect password"
+msgstr ""
+
+#: forms.py:103 forms.py:138 models.py:111 models.py:119
+#: templates/serviceform/participation/participation_form/snippets/responsible_contact_person.html:7
+#: templates/serviceform/participation/participation_form/snippets/responsible_tooltip.html:10
+msgid "Email"
+msgstr ""
+
+#: forms.py:110 forms.py:145
+msgid "Send the link!"
+msgstr ""
+
+#: forms.py:121
+msgid "There were no participation with email address {}"
+msgstr ""
+
+#: forms.py:130 forms.py:164
+msgid "Access link sent to email address {}"
+msgstr ""
+
+#: forms.py:132 forms.py:166
+msgid "Email could not be sent to email address {}"
+msgstr ""
+
+#: forms.py:155
+msgid "There were no responsible with email address {}"
+msgstr ""
+
+#: forms.py:189
+msgid "Continue"
+msgstr ""
+
+#: forms.py:192 forms.py:270
+msgid "Save details"
+msgstr ""
+
+#: forms.py:207
+msgid "Optional"
+msgstr ""
+
+#: forms.py:226
+msgid "Invalid year of birth"
+msgstr ""
+
+#: forms.py:228
+msgid "You must be at least 10 years old"
+msgstr ""
+
+#: forms.py:236
+msgid "If sending email is allowed email address need to be given"
+msgstr ""
+
+#: forms.py:247
+msgid "resend auth link to your email!"
+msgstr ""
+
+#: forms.py:249
+msgid ""
+"There is already participation with this email address. To edit earlier "
+"participation, {}"
+msgstr ""
+
+#: forms.py:285
+msgid "Yes I am sure"
+msgstr ""
+
+#: forms.py:291
+msgid "Delete"
+msgstr ""
+
+#: forms.py:391 forms.py:398
+msgid "Invalid activity input data"
+msgstr ""
+
+#: forms.py:401
+msgid "Invalid input data in radio button"
+msgstr ""
+
+#: forms.py:405 forms.py:413
+msgid "Invalid choice input data"
+msgstr ""
+
+#: forms.py:419
+msgid "Invalid input data"
+msgstr ""
+
+#: forms.py:426
+msgid "No choices selected!"
+msgstr ""
+
+#: forms.py:505
+msgid "Invalid question input data"
+msgstr ""
+
+#: forms.py:511
+msgid "Answer required"
+msgstr ""
+
+#: forms.py:521
+msgid ""
+"Send invitations also to participants that have participated in older form "
+"versions but not yet this form"
+msgstr ""
+
+#: forms.py:524
+msgid "Email addresses, separated by comma, space or enter"
+msgstr ""
+
+#: forms.py:531
+msgid "Send invites"
+msgstr ""
+
+#: forms.py:540
+msgid "Form is not yet published, emails can't be sent"
+msgstr ""
+
+#: forms.py:547
+msgid "Invalid email: {}"
+msgstr ""
+
+#: forms.py:559
+msgid "Invitation sent to {}"
+msgstr ""
+
+#: forms.py:562
+msgid "Invitation was not sent to {} because user already exists"
+msgstr ""
+
+#: forms.py:565
+msgid "Invitation was not sent to {} because user denied emailing"
+msgstr ""
+
+#: models.py:72
+msgid ""
+"Phone number must be entered in the format: '050123123' or '+35850123123'. "
+"Up to 15 digits allowed."
+msgstr ""
+
+#: models.py:80
+msgid "Enter a valid postal code."
+msgstr ""
+
+#: models.py:103
+msgid "Forename(s)"
+msgstr ""
+
+#: models.py:104
+msgid "Surname"
+msgstr ""
+
+#: models.py:106 models.py:562 models.py:566
+msgid "Street address"
+msgstr ""
+
+#: models.py:108
+msgid "Zip/Postal code"
+msgstr ""
+
+#: models.py:110
+msgid "City"
+msgstr ""
+
+#: models.py:113 models.py:121 models.py:563 models.py:567
+#: templates/serviceform/reports/snippets/_help.html:6
+msgid "Phone number"
+msgstr ""
+
+#: models.py:117 models.py:144
+#: templates/serviceform/reports/snippets/_help.html:5
+msgid "Name"
+msgstr ""
+
+#: models.py:123
+#: templates/serviceform/participation/participation_form/snippets/responsible_contact_person.html:14
+#: templates/serviceform/participation/participation_form/snippets/responsible_tooltip.html:13
+#: templates/serviceform/reports/snippets/_help.html:13
+msgid "Address"
+msgstr ""
+
+#: models.py:145 models.py:551
+#: templates/serviceform/participation/participation_form/snippets/extra_info.html:6
+msgid "Description"
+msgstr ""
+
+#: models.py:195
+msgid "Secret key"
+msgstr ""
+
+#: models.py:231
+msgid "Responsibility person"
+msgstr ""
+
+#: models.py:232
+msgid "Responsibility persons"
+msgstr ""
+
+#: models.py:240
+msgid "Send email notifications"
+msgstr ""
+
+#: models.py:242
+msgid ""
+"Send email notifications whenever new participation to administered "
+"activities is registered. Email contains also has a link that allows "
+"accessing raport of administered activities."
+msgstr ""
+
+#: models.py:246
+msgid "Hide contact details in form"
+msgstr ""
+
+#: models.py:247
+msgid "Grant access to full reports"
+msgstr ""
+
+#: models.py:258 models.py:1087
+msgid "Link to personal report"
+msgstr ""
+
+#: models.py:303
+msgid "Form revision"
+msgstr ""
+
+#: models.py:304
+msgid "Form revisions"
+msgstr ""
+
+#: models.py:308
+msgid "Revision name"
+msgstr ""
+
+#: models.py:309 models.py:421 templates/serviceform/base.html:12
+msgid "Service form"
+msgstr ""
+
+#: models.py:310
+msgid "Valid from"
+msgstr ""
+
+#: models.py:312
+msgid "Valid to"
+msgstr ""
+
+#: models.py:315
+msgid "Send bulk email to participants"
+msgstr ""
+
+#: models.py:316
+msgid ""
+"Send email to participants that filled the form when this revision was "
+"active. Email is sent when new current revision is published."
+msgstr ""
+
+#: models.py:320
+msgid "Email sending starts"
+msgstr ""
+
+#: models.py:322
+msgid ""
+"Sends bulk email to responsibility persons at specified time, after which it "
+"will send email for each new participation"
+msgstr ""
+
+#: models.py:351 models.py:407
+msgid "Content"
+msgstr ""
+
+#: models.py:356 models.py:406
+msgid "Subject"
+msgstr ""
+
+#: models.py:399
+msgid "Email template"
+msgstr ""
+
+#: models.py:400
+msgid "Email templates"
+msgstr ""
+
+#: models.py:405
+msgid "Template name"
+msgstr ""
+
+#: models.py:408
+msgid ""
+"Following context may (depending on topic) be available for both subject and "
+"content: {{responsible}}, {{participant}}, {{last_modified}}, {{form}}, "
+"{{url}}, {{contact}}"
+msgstr ""
+
+#: models.py:422
+msgid "Service forms"
+msgstr ""
+
+#: models.py:428
+msgid "Name of the serviceform"
+msgstr ""
+
+#: models.py:429
+msgid "Slug"
+msgstr ""
+
+#: models.py:430
+msgid "This is part of the form url, i.e. form will be located {}/yourslug"
+msgstr ""
+
+#: models.py:433 models.py:1010
+msgid "Created at"
+msgstr ""
+
+#: models.py:434
+msgid "Last updated"
+msgstr ""
+
+#: models.py:435
+msgid "Last edited by"
+msgstr ""
+
+#: models.py:441 models.py:599
+msgid "Responsible"
+msgstr ""
+
+#: models.py:444
+msgid "Require email verification"
+msgstr ""
+
+#: models.py:449
+msgid "Verification email to participant"
+msgstr ""
+
+#: models.py:451
+msgid ""
+"Email verification message that is sent to participant when filling form, if "
+"email verification is enabled"
+msgstr ""
+
+#: models.py:458
+msgid "Email to responsibles"
+msgstr ""
+
+#: models.py:459
+msgid "Email that is sent to responsibles when new participation is registered"
+msgstr ""
+
+#: models.py:464
+msgid "Bulk email to responsibles"
+msgstr ""
+
+#: models.py:465
+msgid "Email that is sent to responsibles when emailing starts"
+msgstr ""
+
+#: models.py:472
+msgid "Responsible requests auth link"
+msgstr ""
+
+#: models.py:474
+msgid "Email that is sent to responsible when he requests auth link"
+msgstr ""
+
+#: models.py:483
+msgid "Email to participant, on finish"
+msgstr ""
+
+#: models.py:484
+msgid ""
+"Email that is sent to participant after he has fulfilled his participation"
+msgstr ""
+
+#: models.py:489
+msgid "Email to participant, on update"
+msgstr ""
+
+#: models.py:490
+msgid ""
+"Email that is sent to participant after he has updated his participation"
+msgstr ""
+
+#: models.py:496
+msgid "Resend email to participant"
+msgstr ""
+
+#: models.py:497
+msgid "Email that is sent to participant if he requests resending email"
+msgstr ""
+
+#: models.py:503
+msgid "Bulk email to former participants"
+msgstr ""
+
+#: models.py:504
+msgid "Email that is sent to former participants when form is published"
+msgstr ""
+
+#: models.py:510
+msgid "Invite email"
+msgstr ""
+
+#: models.py:512
+msgid ""
+"Email that is sent when user is invited to the form manually via invite form"
+msgstr ""
+
+#: models.py:518
+msgid "Current revision"
+msgstr ""
+
+#: models.py:520
+msgid ""
+"You need to first add a revision to form (see below) and save. Then newly "
+"created revision will appear in the list."
+msgstr ""
+
+#: models.py:526
+msgid "Password that is asked from participants"
+msgstr ""
+
+#: models.py:530
+msgid "Hide contact details (other than email) in form"
+msgstr ""
+
+#: models.py:531
+msgid "Split participation form to level 1 categories"
+msgstr ""
+
+#: models.py:533
+msgid "Please note that preview shows full form despite this option"
+msgstr ""
+
+#: models.py:535
+msgid "Allow jumping between categories"
+msgstr ""
+
+#: models.py:537
+msgid ""
+"In effect only if flow by categories option is enabled. If this option is "
+"enabled, user can jump between categories. If disabled, he must proceed them "
+"one by one."
+msgstr ""
+
+#: models.py:541
+msgid "Level 1 category default background color"
+msgstr ""
+
+#: models.py:543
+msgid "If left blank (black), default coloring will be used"
+msgstr ""
+
+#: models.py:544
+msgid "Level 2 category default background color"
+msgstr ""
+
+#: models.py:546
+msgid "If left blank (black), it will be derived from level 1 background color"
+msgstr ""
+
+#: models.py:547
+msgid "Activity default background color"
+msgstr ""
+
+#: models.py:548
+msgid "If left blank (black), it will be derived from level 2 background color"
+msgstr ""
+
+#: models.py:552
+msgid ""
+"Description box will be shown before instruction box in participation view."
+msgstr ""
+
+#: models.py:554 templates/serviceform/participation/participation_view.html:16
+msgid "Instructions"
+msgstr ""
+
+#: models.py:555
+msgid ""
+"Use HTML formatting. Leave this empty to use default. This is shown in "
+"participation view."
+msgstr ""
+
+#: models.py:558
+msgid "Login text"
+msgstr ""
+
+#: models.py:559
+msgid "This will be shown in the login screen"
+msgstr ""
+
+#: models.py:561 models.py:565 models.py:1007 models.py:1037
+msgid "Year of birth"
+msgstr ""
+
+#: models.py:579
+msgid "Can access"
+msgstr ""
+
+#: models.py:598
+msgid "Default"
+msgstr ""
+
+#: models.py:600
+msgid "defaultresponsible@email.com"
+msgstr ""
+
+#: models.py:614
+msgid "Default bulk email to responsibles"
+msgstr ""
+
+#: models.py:616
+msgid "Participations can be now viewed for form {{form}}"
+msgstr ""
+
+#: models.py:620
+msgid "Default email to responsibles"
+msgstr ""
+
+#: models.py:622
+msgid "New participation arrived for form {{form}}"
+msgstr ""
+
+#: models.py:626
+msgid "Default email to participant, on finish"
+msgstr ""
+
+#: models.py:628
+msgid "Your update to form {{form}}"
+msgstr ""
+
+#: models.py:632
+msgid "Default email to participant, on update"
+msgstr ""
+
+#: models.py:634
+msgid "Your updated participation to form {{form}}"
+msgstr ""
+
+#: models.py:638
+msgid "Default email to former participants"
+msgstr ""
+
+#: models.py:640
+msgid "New form revision to form {{form}} has been published"
+msgstr ""
+
+#: models.py:644
+msgid "Default resend email to participant"
+msgstr ""
+
+#: models.py:646
+msgid "Your participation to form {{form}}"
+msgstr ""
+
+#: models.py:650
+msgid "Default invite email to participants"
+msgstr ""
+
+#: models.py:652
+msgid "Invitation to fill participation in {{form}}"
+msgstr ""
+
+#: models.py:656
+msgid "Default request responsible auth link email"
+msgstr ""
+
+#: models.py:658
+msgid "Your report in {{form}}"
+msgstr ""
+
+#: models.py:662
+msgid "Default verification email to participant"
+msgstr ""
+
+#: models.py:664
+msgid "Please verify your email in {{form}}"
+msgstr ""
+
+#: models.py:711
+msgid "Is open?"
+msgstr ""
+
+#: models.py:734
+msgid "To report"
+msgstr ""
+
+#: models.py:736
+msgid "To form"
+msgstr ""
+
+#: models.py:738 urls.py:81
+msgid "Preview"
+msgstr ""
+
+#: models.py:740
+msgid "Printable"
+msgstr ""
+
+#: models.py:742 urls.py:103
+msgid "Invite"
+msgstr ""
+
+#: models.py:745
+msgid "Links"
+msgstr ""
+
+#: models.py:760
+msgid "Participation count"
+msgstr ""
+
+#: models.py:802
+msgid "Order"
+msgstr ""
+
+#: models.py:804
+msgid "Responsible persons"
+msgstr ""
+
+#: models.py:806
+msgid "Choose responsibles"
+msgstr ""
+
+#: models.py:816
+msgid "{} (and others)"
+msgstr ""
+
+#: models.py:823 models.py:838
+msgid "Background color"
+msgstr ""
+
+#: models.py:826 models.py:844
+msgid "Level 1 category"
+msgstr ""
+
+#: models.py:827
+msgid "Level 1 categories"
+msgstr ""
+
+#: models.py:841
+msgid "Level 2 category"
+msgstr ""
+
+#: models.py:842
+msgid "Level 2 categories"
+msgstr ""
+
+#: models.py:859 templates/serviceform/participation/preview_view.html:33
+#: templates/serviceform/reports/view_participant.html:25
+msgid "Activity"
+msgstr ""
+
+#: models.py:860 models.py:1071
+msgid "Activities"
+msgstr ""
+
+#: models.py:862
+msgid "Category"
+msgstr ""
+
+#: models.py:864
+msgid "Multichoice"
+msgstr ""
+
+#: models.py:865 models.py:900
+msgid "Needed"
+msgstr ""
+
+#: models.py:866 models.py:901
+msgid "Skip"
+msgstr ""
+
+#: models.py:896
+msgid "Activity choice"
+msgstr ""
+
+#: models.py:897
+msgid "Activity choices"
+msgstr ""
+
+#: models.py:930 models.py:947
+#: templates/serviceform/participation/preview_view.html:73
+#: templates/serviceform/reports/view_participant.html:60
+msgid "Question"
+msgstr ""
+
+#: models.py:931 urls.py:79
+msgid "Questions"
+msgstr ""
+
+#: models.py:939
+msgid "Integer"
+msgstr ""
+
+#: models.py:940
+msgid "Short text"
+msgstr ""
+
+#: models.py:941
+msgid "Long text"
+msgstr ""
+
+#: models.py:942
+msgid "Boolean"
+msgstr ""
+
+#: models.py:943
+msgid "Date"
+msgstr ""
+
+#: models.py:949
+msgid "Answer type"
+msgstr ""
+
+#: models.py:950
+msgid "Answer required?"
+msgstr ""
+
+#: models.py:973
+msgid "Participant"
+msgstr ""
+
+#: models.py:974 urls.py:90
+msgid "Participants"
+msgstr ""
+
+#: models.py:1001
+msgid "invited"
+msgstr ""
+
+#: models.py:1002
+msgid "ongoing"
+msgstr ""
+
+#: models.py:1003
+msgid "updating"
+msgstr ""
+
+#: models.py:1004
+msgid "finished"
+msgstr ""
+
+#: models.py:1011 models.py:1043
+msgid "Last modified"
+msgstr ""
+
+#: models.py:1012 models.py:1042
+msgid "Last finished"
+msgstr ""
+
+#: models.py:1017
+msgid "Email verified"
+msgstr ""
+
+#: models.py:1019
+msgid "Sending email allowed"
+msgstr ""
+
+#: models.py:1020
+msgid ""
+"You will receive email that contains a link that allows later modification "
+"of the form. Also when new version of form is published, you will be "
+"notified. It is highly recommended that you keep this enabled unless you "
+"move away and do not want to participate at all any more. You can also "
+"change this setting later if you wish."
+msgstr ""
+
+#: models.py:1041
+msgid "Participant created in system"
+msgstr ""
+
+#: models.py:1044
+msgid "Email address verified"
+msgstr ""
+
+#: models.py:1044 models.py:1045
+#: templates/serviceform/participation/preview_view.html:89
+#: templates/serviceform/reports/contents/_all_questions.html:13
+#: templates/serviceform/reports/contents/_responsible_contents.html:62
+#: templates/serviceform/reports/view_participant.html:76
+msgid "No"
+msgstr ""
+
+#: models.py:1044 models.py:1045
+#: templates/serviceform/participation/preview_view.html:87
+#: templates/serviceform/reports/contents/_all_questions.html:11
+#: templates/serviceform/reports/contents/_responsible_contents.html:60
+#: templates/serviceform/reports/view_participant.html:74
+msgid "Yes"
+msgstr ""
+
+#: models.py:1045
+msgid "Emails allowed"
+msgstr ""
+
+#: models.py:1046
+msgid "Form status"
+msgstr ""
+
+#: models.py:1080
+msgid "Form"
+msgstr ""
+
+#: models.py:1221
+msgid ""
+"Updated information has been stored! Please proceed until the end of the "
+"form."
+msgstr ""
+
+#: templates/serviceform/error/404.html:5
+msgid "Sorry, page was not found. "
+msgstr ""
+
+#: templates/serviceform/login/_login_navbar.html:12 urls.py:108
+msgid "Admin"
+msgstr ""
+
+#: templates/serviceform/login/_login_navbar.html:18
+#: templates/serviceform/navbar/navbar_base.html:28
+#: templates/serviceform/navbar/navbar_base.html:41
+#: templates/serviceform/reports/_report_navbar.html:11
+msgid "current"
+msgstr ""
+
+#: templates/serviceform/login/password_login.html:4
+msgid ""
+"If this is the first time you fill this form, you need a password to continue"
+msgstr ""
+
+#: templates/serviceform/login/send_participant_auth_link.html:5
+msgid ""
+"If you have filled this form already in the past, please give your email\n"
+"  below so we can send you a personal link to update your participation "
+"information.\n"
+"  "
+msgstr ""
+
+#: templates/serviceform/login/send_responsible_auth_link.html:5
+msgid ""
+"If you are marked as a responsible person, please give your email below so\n"
+"    we can send you a personal link to view your participation report."
+msgstr ""
+
+#: templates/serviceform/login/unsubscribe_participant.html:4
+msgid "You won't be getting any emails (as participant for "
+msgstr ""
+
+#: templates/serviceform/login/unsubscribe_participant.html:4
+#: templates/serviceform/login/unsubscribe_responsible.html:4
+msgid ") from this system any more."
+msgstr ""
+
+#: templates/serviceform/login/unsubscribe_responsible.html:4
+msgid "You won't be getting any emails (as responsible for "
+msgstr ""
+
+#: templates/serviceform/main_page.html:4
+msgid "Serviceform root. Nothing here"
+msgstr ""
+
+#: templates/serviceform/navbar/navbar_base.html:10
+msgid "Toggle navigation"
+msgstr ""
+
+#: templates/serviceform/participation/contact_view.html:7
+msgid "You can delete your participation from the system by clicking"
+msgstr ""
+
+#: templates/serviceform/participation/contact_view.html:7
+msgid "here"
+msgstr ""
+
+#: templates/serviceform/participation/contact_view.html:8
+msgid ""
+"Otherwise, please check if the information is correct and update it if "
+"necessary. "
+msgstr ""
+
+#: templates/serviceform/participation/contact_view.html:10
+msgid "Please fill in your contact details"
+msgstr ""
+
+#: templates/serviceform/participation/delete_participation.html:6
+msgid ""
+"Are you sure you want to delete your participation permanently from the "
+"system?"
+msgstr ""
+
+#: templates/serviceform/participation/email_verification.html:6
+msgid "Email sent to"
+msgstr ""
+
+#: templates/serviceform/participation/email_verification.html:7
+msgid ""
+"Please verify your email address by clicking the link that is given in "
+"email. Then you can continue filling the form."
+msgstr ""
+
+#: templates/serviceform/participation/login_base.html:12
+msgid "Form is not public at the moment."
+msgstr ""
+
+#: templates/serviceform/participation/participation_form/participation_form.html:6
+#: templates/serviceform/participation/question_form/question_form.html:5
+msgid "Please fix errors below"
+msgstr ""
+
+#: templates/serviceform/participation/participation_form/snippets/category.html:27
+#: templates/serviceform/participation/participation_form/snippets/extra_info.html:14
+msgid "Responsible contact person(s)"
+msgstr ""
+
+#: templates/serviceform/participation/participation_form/snippets/extra_info.html:20
+msgid "Please give additional information if needed"
+msgstr ""
+
+#: templates/serviceform/participation/participation_form/snippets/responsible_contact_person.html:11
+#: templates/serviceform/participation/participation_form/snippets/responsible_tooltip.html:11
+msgid "Phone"
+msgstr ""
+
+#: templates/serviceform/participation/participation_form/snippets/responsible_tooltip.html:7
+#: templates/serviceform/participation/preview_view.html:8
+#: templates/serviceform/reports/view_participant.html:6 urls.py:73
+msgid "Contact details"
+msgstr ""
+
+#: templates/serviceform/participation/participation_view.html:19
+msgid ""
+"Select all activities that you would like to participate by ticking boxes "
+"below."
+msgstr ""
+
+#: templates/serviceform/participation/participation_view.html:22
+msgid ""
+"You can get more information about activity by pressing <span class='fa fa-"
+"info'></span> button."
+msgstr ""
+
+#: templates/serviceform/participation/participation_view.html:25
+msgid ""
+"\n"
+"            If you wish to give some extra information about your "
+"participation\n"
+"            (such as when and how often you would like to participate), you "
+"can type\n"
+"            extra details to the textbox that appears when you press <span "
+"class=\"fa fa-pencil\"></span> button.\n"
+"          "
+msgstr ""
+
+#: templates/serviceform/participation/participation_view.html:66
+msgid "Go to admin"
+msgstr ""
+
+#: templates/serviceform/participation/participation_view.html:68
+#: templates/serviceform/participation/question_view.html:11
+msgid "Save and continue"
+msgstr ""
+
+#: templates/serviceform/participation/participation_view.html:74
+#: templates/serviceform/participation/question_view.html:15
+msgid "Are you sure you want to leave form unsaved?"
+msgstr ""
+
+#: templates/serviceform/participation/preview_view.html:6
+msgid "Please check that the given data is correct "
+msgstr ""
+
+#: templates/serviceform/participation/preview_view.html:24
+msgid "Change contact details"
+msgstr ""
+
+#: templates/serviceform/participation/preview_view.html:30
+#: templates/serviceform/reports/view_participant.html:22
+msgid "I am wishing to participate in the following activities"
+msgstr ""
+
+#: templates/serviceform/participation/preview_view.html:36
+#: templates/serviceform/reports/snippets/_participant_row.html:59
+#: templates/serviceform/reports/view_participant.html:28
+msgid "Additional info"
+msgstr ""
+
+#: templates/serviceform/participation/preview_view.html:63
+msgid "Adjust participation information"
+msgstr ""
+
+#: templates/serviceform/participation/preview_view.html:70
+#: templates/serviceform/reports/contents/_all_questions.html:2
+#: templates/serviceform/reports/contents/_responsible_contents.html:50
+#: templates/serviceform/reports/view_participant.html:57
+msgid "Answers to questions"
+msgstr ""
+
+#: templates/serviceform/participation/preview_view.html:76
+#: templates/serviceform/reports/view_participant.html:63
+msgid "Answer"
+msgstr ""
+
+#: templates/serviceform/participation/preview_view.html:100
+msgid "Modify question answers"
+msgstr ""
+
+#: templates/serviceform/participation/preview_view.html:106
+msgid "Are you ready to send data?"
+msgstr ""
+
+#: templates/serviceform/participation/preview_view.html:111
+msgid "Send data!"
+msgstr ""
+
+#: templates/serviceform/participation/question_view.html:6
+msgid "Please answer following questions."
+msgstr ""
+
+#: templates/serviceform/participation/submitted_view.html:5
+msgid "Thank you!"
+msgstr ""
+
+#: templates/serviceform/participation/submitted_view.html:7
+msgid ""
+"Your data was saved into the system and related responsibles will be "
+"informed about your participation."
+msgstr ""
+
+#: templates/serviceform/participation/submitted_view.html:8
+msgid ""
+"You will receive also email that contains a link that you can use to edit "
+"your participation."
+msgstr ""
+
+#: templates/serviceform/participation/submitted_view.html:11
+msgid "Fill a new form"
+msgstr ""
+
+#: templates/serviceform/reports/_report_navbar.html:7
+msgid "Actions"
+msgstr ""
+
+#: templates/serviceform/reports/base/anonymous_report_base.html:4
+#: templates/serviceform/reports/base/report_base.html:4
+msgid "Report for"
+msgstr ""
+
+#: templates/serviceform/reports/contents/_all_activities.html:4
+msgid "All activities"
+msgstr ""
+
+#: templates/serviceform/reports/contents/_all_participants.html:2
+msgid "All participants"
+msgstr ""
+
+#: templates/serviceform/reports/contents/_all_responsibles.html:2
+msgid "Responsible contact persons"
+msgstr ""
+
+#: templates/serviceform/reports/contents/_responsible_contents.html:2
+msgid "Participation to activities"
+msgstr ""
+
+#: templates/serviceform/reports/edit_responsible.html:4
+msgid "Edit details"
+msgstr ""
+
+#: templates/serviceform/reports/invite.html:4
+msgid "Send invitations"
+msgstr ""
+
+#: templates/serviceform/reports/responsible.html:13
+#: templates/serviceform/reports/responsible_anonymous.html:12
+msgid "Responsible person contact details"
+msgstr ""
+
+#: templates/serviceform/reports/responsible.html:16
+#: templates/serviceform/reports/responsible_anonymous.html:15
+msgid "Can see full report"
+msgstr ""
+
+#: templates/serviceform/reports/responsible.html:20
+#: templates/serviceform/reports/responsible_anonymous.html:20
+msgid "Configuration"
+msgstr ""
+
+#: templates/serviceform/reports/responsible.html:24
+#: templates/serviceform/reports/responsible_anonymous.html:28
+msgid "Expand all info"
+msgstr ""
+
+#: templates/serviceform/reports/responsible_anonymous.html:24
+msgid "Show participations from earlier revisions"
+msgstr ""
+
+#: templates/serviceform/reports/settings.html:5
+msgid "Settings"
+msgstr ""
+
+#: templates/serviceform/reports/snippets/_help.html:3
+msgid "Each participant rows contains the following data"
+msgstr ""
+
+#: templates/serviceform/reports/snippets/_help.html:7
+msgid "Email address"
+msgstr ""
+
+#: templates/serviceform/reports/snippets/_help.html:8
+msgid "Age"
+msgstr ""
+
+#: templates/serviceform/reports/snippets/_help.html:9
+msgid ""
+"Number of activities; colors from green (1 activity) to red (10 or more "
+"activities)."
+msgstr ""
+
+#: templates/serviceform/reports/snippets/_help.html:10
+msgid "Information buttons; pushing button will give more information"
+msgstr ""
+
+#: templates/serviceform/reports/snippets/_help.html:12
+msgid "More information is given"
+msgstr ""
+
+#: templates/serviceform/reports/snippets/_help.html:14
+msgid "Notes have been entered"
+msgstr ""
+
+#: templates/serviceform/reports/snippets/_participant_row.html:32
+msgid "Number of activities"
+msgstr ""
+
+#: templates/serviceform/reports/snippets/_participant_row.html:64
+#: templates/serviceform/reports/view_participant.html:104
+msgid "Log"
+msgstr ""
+
+#: templates/serviceform/reports/view_participant.html:88
+msgid "Other information"
+msgstr ""
+
+#: templates/serviceform/reports/view_participant.html:113
+msgid "Add entry"
+msgstr ""
+
+#: templatetags/serviceform_tags.py:211
+msgid "True"
+msgstr ""
+
+#: templatetags/serviceform_tags.py:212
+msgid "False"
+msgstr ""
+
+#: urls.py:75
+msgid "Email verification"
+msgstr ""
+
+#: urls.py:77
+msgid "Participation details"
+msgstr ""
+
+#: urls.py:83
+msgid "Ready!"
+msgstr ""
+
+#: urls.py:88 urls.py:133
+msgid "Responsibles"
+msgstr ""
+
+#: urls.py:92
+msgid "Participations"
+msgstr ""
+
+#: urls.py:94
+msgid "Answers"
+msgstr ""
+
+#: urls.py:96
+msgid "My report"
+msgstr ""
+
+#: urls.py:101
+msgid "Report settings"
+msgstr ""
+
+#: urls.py:105
+msgid "Edit form"
+msgstr ""
+
+#: urls.py:110 urls.py:125
+msgid "Log out"
+msgstr ""
+
+#: urls.py:115
+msgid "Your report"
+msgstr ""
+
+#: urls.py:118
+msgid "Edit your contact details"
+msgstr ""
+
+#: urls.py:121
+msgid "To full report"
+msgstr ""
+
+#: urls.py:129
+msgid "Password login"
+msgstr ""
+
+#: urls.py:131
+msgid "Former users"
+msgstr ""
+
+#: urls.py:135
+msgid "Admin login"
+msgstr ""
+
+#: utils.py:112
+msgid "User is not allowed to access document"
+msgstr ""
+
+#: utils.py:168
+msgid "Copy of {}"
+msgstr ""
+
+#: utils.py:172
+msgid "new-revision"
+msgstr ""
+
+#: utils.py:429
+msgid "Your authentication URL was expired. New link has been sent to {}"
+msgstr ""
+
+#: views/participation_views.py:73
+msgid "Verification email already sent to {}, not sending again."
+msgstr ""
+
+#: views/participation_views.py:162
+msgid "Authentication link was sent to email address {}."
+msgstr ""
+
+#: views/participation_views.py:170
+msgid "Your email {} is now verified successfully!"
+msgstr ""
+
+#: views/participation_views.py:202 views/reports_views.py:46
+msgid ""
+"Given URL might be expired. Please give your email address and we'll send "
+"you a new link"
+msgstr ""
+
+#: views/participation_views.py:230
+msgid "Your participation was deleted"
+msgstr ""
+
+#: views/reports_views.py:71
+msgid "Settings saved"
+msgstr ""
+
+#: views/reports_views.py:73
+msgid "Settings could not be saved"
+msgstr ""
+
+#: views/reports_views.py:168
+msgid "Saved contact details"
+msgstr ""
+
+#: views/reports_views.py:186
+msgid "You have been logged out"
+msgstr ""
