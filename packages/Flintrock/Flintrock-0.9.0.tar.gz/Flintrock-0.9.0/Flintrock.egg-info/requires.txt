@@ -1,0 +1,7 @@
+boto3==1.4.4
+botocore==1.5.10
+click==6.7
+paramiko==2.1.1
+PyYAML==3.12
+python-dateutil>=2.5.3
+cryptography>=1.7.2
