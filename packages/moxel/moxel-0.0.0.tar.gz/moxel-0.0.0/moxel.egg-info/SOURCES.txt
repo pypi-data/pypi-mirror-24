@@ -1,0 +1,7 @@
+README.rst
+setup.py
+moxel/__init__.py
+moxel.egg-info/PKG-INFO
+moxel.egg-info/SOURCES.txt
+moxel.egg-info/dependency_links.txt
+moxel.egg-info/top_level.txt

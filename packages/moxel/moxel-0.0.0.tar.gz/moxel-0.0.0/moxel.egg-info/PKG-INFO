@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: moxel
+Version: 0.0.0
+Summary: moxel library.
+Home-page: UNKNOWN
+Author: Dr. Ford
+Author-email: UNKNOWN
+License: GPLv3
+Description: moxel
+        =====
+        
+        Planning
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
