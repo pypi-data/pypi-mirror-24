@@ -1,0 +1,8 @@
+
+      # -*- Entry points: -*-
+      [console_scripts]
+      ats-init = OpenATS.commands:init
+      ats-makeDataset = OpenATS.commands:makeDataset
+      ats-run = OpenATS.commands:run
+      ats-runAll = OpenATS.commands:runAll
+    
