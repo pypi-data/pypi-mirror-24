@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: lepo
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/akx/lepo
+Author: Aarni Koskela
+Author-email: akx@iki.fi
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: Django
+Requires-Dist: iso8601
+Requires-Dist: jsonschema
+Requires-Dist: marshmallow
+
+UNKNOWN
+
+
