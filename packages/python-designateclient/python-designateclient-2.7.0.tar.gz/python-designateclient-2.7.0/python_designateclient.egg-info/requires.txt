@@ -1,0 +1,10 @@
+cliff>=2.6.0
+jsonschema!=2.5.0,<3.0.0,>=2.0.0
+osc-lib>=1.5.1
+oslo.utils>=3.20.0
+pbr!=2.1.0,>=2.0.0
+keystoneauth1>=2.21.0
+requests>=2.14.2
+six>=1.9.0
+stevedore>=1.20.0
+debtcollector>=1.2.0
