@@ -1,0 +1,8 @@
+setup.py
+clouds_aws/__init__.py
+clouds_aws.egg-info/PKG-INFO
+clouds_aws.egg-info/SOURCES.txt
+clouds_aws.egg-info/dependency_links.txt
+clouds_aws.egg-info/entry_points.txt
+clouds_aws.egg-info/requires.txt
+clouds_aws.egg-info/top_level.txt
