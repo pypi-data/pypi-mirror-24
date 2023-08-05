@@ -1,0 +1,3 @@
+---
+- name: Adding veth if needed
+  debug: var=hosts[inventory_hostname]

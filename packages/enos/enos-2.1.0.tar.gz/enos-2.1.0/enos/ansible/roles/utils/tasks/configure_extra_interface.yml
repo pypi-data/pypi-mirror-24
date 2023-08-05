@@ -1,0 +1,5 @@
+---
+- name: Adding veth if needed
+  debug: msg="configure"
+  when:
+    - ( devices[inventory_hostname] | length == 1 ) or single_interface
