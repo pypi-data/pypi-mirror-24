@@ -1,0 +1,3 @@
+[console_scripts]
+zulip-run-bot = zulip_bots.run:main
+
