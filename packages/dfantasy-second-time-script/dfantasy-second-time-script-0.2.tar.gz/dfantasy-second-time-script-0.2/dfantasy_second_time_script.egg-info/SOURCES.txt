@@ -1,0 +1,6 @@
+helloworld
+setup.py
+dfantasy_second_time_script.egg-info/PKG-INFO
+dfantasy_second_time_script.egg-info/SOURCES.txt
+dfantasy_second_time_script.egg-info/dependency_links.txt
+dfantasy_second_time_script.egg-info/top_level.txt
