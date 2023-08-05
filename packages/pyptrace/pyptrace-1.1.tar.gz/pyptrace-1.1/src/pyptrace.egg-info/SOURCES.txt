@@ -1,0 +1,8 @@
+setup.py
+libptrace/ptrace.c
+src/pyptrace/__init__.py
+src/pyptrace/ptrace.py
+src/pyptrace.egg-info/PKG-INFO
+src/pyptrace.egg-info/SOURCES.txt
+src/pyptrace.egg-info/dependency_links.txt
+src/pyptrace.egg-info/top_level.txt
