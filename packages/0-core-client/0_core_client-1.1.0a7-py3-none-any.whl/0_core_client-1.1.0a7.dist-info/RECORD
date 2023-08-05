@@ -1,0 +1,11 @@
+0_core_client-1.1.0a7.dist-info/DESCRIPTION.rst,sha256=W3aratzU4Bg0U89hSA5HbY8At7FyixFNRZ1P3o0VZXs,436
+0_core_client-1.1.0a7.dist-info/METADATA,sha256=ugNUMC_UuonpaSRHoAojd4kxwiUVWp5ok_KXtDoodaA,703
+0_core_client-1.1.0a7.dist-info/RECORD,,
+0_core_client-1.1.0a7.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+0_core_client-1.1.0a7.dist-info/metadata.json,sha256=oD_mB9PFbxQ_pxtIc9A_fb0BB4_rj1R-0M1CSjRj9gw,489
+0_core_client-1.1.0a7.dist-info/top_level.txt,sha256=I6rZjykGgm1L0Ur2syGLv_IvlTSlMwjYos_cZbML110,7
+zeroos/__init__.py,sha256=G-d438vPx7m_ks5e9XTtM3u7LDRO5dSSukibukWmyPM,56
+zeroos/core0/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zeroos/core0/client/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+zeroos/core0/client/client.py,sha256=jNuYanA0WRnnA-WTrmTxjIS9q0zhvzJhJqxoSfmaytE,82434
+zeroos/core0/client/typchk.py,sha256=DjOmwY50XYo6CsrZYsGclop7sQ71b6YF4vxR1Q8waj4,6748
