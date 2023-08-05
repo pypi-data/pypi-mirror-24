@@ -1,0 +1,4 @@
+recursive-include hca *.jinja 
+include *.rst hca/*.json
+include test/*
+include client_secrets.json
