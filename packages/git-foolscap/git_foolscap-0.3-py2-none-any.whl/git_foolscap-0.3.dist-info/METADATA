@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: git-foolscap
+Version: 0.3
+Summary: Tools to run Git over Foolscap FURLs.
+Home-page: https://github.com/warner/git-foolscap
+Author: Brian Warner
+Author-email: warner-foolscap@lothar.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: Software Development
+Requires-Dist: foolscap (>=0.8.0)
+
+Tools to run Git over Foolscap FURLs.
+
+
