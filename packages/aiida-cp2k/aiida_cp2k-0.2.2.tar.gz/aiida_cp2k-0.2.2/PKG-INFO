@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: aiida_cp2k
+Version: 0.2.2
+Summary: A plugin to run CP2K calculations and workflows
+Home-page: https://github.com/cp2k/aiida-cp2k
+Author: Ole Schütt, Aliaksandr Yakutovich, Patrick Seewald, Tiziano Müller, Andreas Glöss, Leonid Kahle
+Author-email: ole.schuett@empa.ch
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Development Status :: 3 - Alpha
