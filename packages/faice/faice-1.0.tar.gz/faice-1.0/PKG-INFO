@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: faice
+Version: 1.0
+Summary: FAICE (Fair Collaboration and Experiments) is a tool suite, helping researchers to work with experiments published in the FAICE description format. The FAICE software is developed at CBMI (HTW Berlin - University of Applied Sciences)
+Home-page: https://github.com/curious-containers/faice
+Author: Christoph Jansen
+Author-email: Christoph.Jansen@htw-berlin.de
+License: GPL-3.0
+Description: UNKNOWN
+Platform: any
