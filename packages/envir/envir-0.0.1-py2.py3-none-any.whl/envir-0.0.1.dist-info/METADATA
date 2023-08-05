@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: envir
+Version: 0.0.1
+Summary: better way to load and format environment variables
+Home-page: https://github.com/kilerd/envir
+Author: Kilerd Chan
+Author-email: blove694@gmail.com
+License: MIT
+Keywords: yai index package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+
+envir
+
+better way to load and format environment variables
+
+```python
+import envir
+
+envir.load('DEBUG', format=envir.STR, default='TRUE')
+
+```
+
