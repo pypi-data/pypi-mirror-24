@@ -1,0 +1,4 @@
+flake8
+pytest
+pytest-cov
+yapf==0.16.3

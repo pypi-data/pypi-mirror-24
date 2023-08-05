@@ -1,0 +1,3 @@
+[console_scripts]
+photon = photon.shell:main
+

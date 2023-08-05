@@ -1,0 +1,38 @@
+---
+azs:
+  proxmox:
+    inventory: path/to/inventory
+    env:
+      ANSIBLE_VAULT_PASSWORD_FILE: path/to/vault.pass
+  proxmox2:
+    inventory: path/to/inventory2
+    env:
+      ANSIBLE_VAULT_PASSWORD_FILE: path/to/vault.pass
+
+workflows:
+  update_passwords:
+    # passed to all playbooks in this workflow
+    flags:
+      - --become
+    playbooks:
+      - path: playbooks/update_passwords.yml
+        # passed only to this playbook
+        flags:
+          - --tags="update_passwords"
+          - --extra-vars="update_all=True"
+
+  test_password_playbooks:
+    # all by default, this allows us to lock a workflow to a particular az
+    # in this case, we can't run our test password playbooks against anything but proxmox
+    allowed_azs:
+      - proxmox
+    playbooks:
+      - path: playbooks/update_passwords.yml
+        flags:
+          - --tags=update_all_passwords
+      - path: playbooks/update_other_passwords.yml
+        flags:
+          - --tags=update_other_passwords
+      - path: playbooks/update_more_passwords.yml
+        flags:
+          - --tags=update_cluster_password
