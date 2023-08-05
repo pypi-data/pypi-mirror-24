@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: ptv
+Version: 0.1
+Summary: Python client for the Public Transport Victoria real-time API
+Home-page: http://www.github.com/andycasey/ptv/
+Author: Andrew R. Casey
+Author-email: andycasey@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+# PTV API Client 
+
+A Python client for the Public Transport of Victoria API.
+
+# Authors
+
+- [Andy Casey](http://astrowizici.st)
+
+
