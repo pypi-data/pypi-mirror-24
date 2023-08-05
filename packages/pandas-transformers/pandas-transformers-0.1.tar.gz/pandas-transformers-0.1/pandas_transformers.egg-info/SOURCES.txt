@@ -1,0 +1,8 @@
+setup.py
+pandas_transformers.egg-info/PKG-INFO
+pandas_transformers.egg-info/SOURCES.txt
+pandas_transformers.egg-info/dependency_links.txt
+pandas_transformers.egg-info/requires.txt
+pandas_transformers.egg-info/top_level.txt
+pd_tran/__init__.py
+pd_tran/pipeline.py
