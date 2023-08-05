@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: jdconfig
+Version: 1.0
+Summary: Designed for highly convenient and flexible configuration in Deep Learning
+Home-page: https://github.com/WarBean/jdconfig
+Author: Huabin Zheng
+Author-email: warbean@qq.com
+License: MIT
+Description: Designed for highly convenient and flexible configuration in Deep Learning
+        =======================================================
+        
+        `Documentation and source code on GitHub <https://github.com/WarBean/dotconfig`_
+        
+Keywords: dict dictionary configuration dot deep learning DL
+Platform: UNKNOWN

@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+jdconfig.py
+setup.py
+jdconfig.egg-info/PKG-INFO
+jdconfig.egg-info/SOURCES.txt
+jdconfig.egg-info/dependency_links.txt
+jdconfig.egg-info/not-zip-safe
+jdconfig.egg-info/top_level.txt
