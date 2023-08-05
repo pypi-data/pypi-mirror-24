@@ -1,0 +1,7 @@
+requests
+wheel
+pyyaml
+filelock
+pycrypto
+leveldb
+m3-cdecimal
