@@ -1,0 +1,3 @@
+[console_scripts]
+qchviewer = qchviewer.__main__:main
+
