@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: kaggle-metrics
+Version: 0.1
+Summary: Metrics for Kaggle competitions
+Home-page: https://github.com/krzjoa/kaggle-metrics
+Author: Krzysztof Joachimiak
+Author-email: joachimiak.krzysztof@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: kaggle,metrics
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
