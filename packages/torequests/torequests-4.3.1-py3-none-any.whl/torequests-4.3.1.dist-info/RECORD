@@ -1,0 +1,17 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/mock_server.py,sha256=GtgUb2-GQyJvqYsNPWQ_nUkmRL6Zaw7Qq2HPAJGB_FU,301
+tests/test_features.py,sha256=qmXvpkrM_TxElL_iAJafrNTtFlZuZ7djmX0ko3Byne4,1389
+tests/test_speed.py,sha256=nk2tnEmpN05emoPaJXCtRQ7H1aR8NW2CvL7SR243wjc,486
+tests/test_utils.py,sha256=mcjRNu6OQuN9ckpxpOEFSsbr3fFr5DIpjFtiz8fQ0tM,2214
+torequests/__init__.py,sha256=pXdi80jY-cJamn9fZf7r98Sh54WaJNgjjRkOPqyE748,129
+torequests/dummy.py,sha256=SVHut9f7K7rBfGu-M-wv8WLUI1BbkFbLL5OUX9gafoc,10969
+torequests/log.py,sha256=sxSFWs7Q6tigKCFKK3OqHWhQXYsg-QamCueMKIss-vQ,2123
+torequests/main.py,sha256=5dtSdJAv9-28zykjDqmmjTfbR_DXPS6-tDRK6MaR1bA,6464
+torequests/process.py,sha256=eHWYAWXJ2QRjA1Bst4RYNJGvaCzEAgJ6dbE0wGy3d7c,2787
+torequests/utils.py,sha256=F27kyRdcQvLdgAUSDCFvXkbiO-_tS1tRD9eNFCr5pgo,8158
+torequests-4.3.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+torequests-4.3.1.dist-info/METADATA,sha256=UbbXg2Gz_SaG-QB4GRiexpoeJHzkkcCXYSmF4aGbauI,582
+torequests-4.3.1.dist-info/RECORD,,
+torequests-4.3.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+torequests-4.3.1.dist-info/metadata.json,sha256=fpkjmK9A_fS3BiAbjVNJ8cDc5BiN21ySjNvHtyHbSEU,836
+torequests-4.3.1.dist-info/top_level.txt,sha256=fxnhAzgZl9fqmxwaoDhnY9v79Meoi8avQ92x6uzc3rQ,17
