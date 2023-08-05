@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+hdgfrom/__init__.py
+hdgfrom/adapters.py
+hdgfrom/cli.py
+hdgfrom/errors.py
+hdgfrom/flow.py
+hdgfrom.egg-info/PKG-INFO
+hdgfrom.egg-info/SOURCES.txt
+hdgfrom.egg-info/dependency_links.txt
+hdgfrom.egg-info/entry_points.txt
+hdgfrom.egg-info/top_level.txt
