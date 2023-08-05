@@ -1,0 +1,10 @@
+cancan/__init__.py,sha256=jIAz82py667jmpID-BDJwmqUbCH8ZShS9W1QsP3Psu4,101
+cancan/ability.py,sha256=NNl3nqYOytK3jQZAO_4psX0zwhUhGhST52w5J5AfOL0,3920
+cancan/rule.py,sha256=aln9FDJOvDkqxKKeugismTE-wLmnfa_UfAnyXHUfzAA,2882
+cancan/tests.py,sha256=eMd9MFIMDZAh6piLuycPAq53xtrPYST1OPF_YkKxdwM,2535
+cancan-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+cancan-0.1.1.dist-info/METADATA,sha256=Abh19LanSxGmrpVDu2VCbSiKTTW_RBw7ffU7Ht2NGiE,263
+cancan-0.1.1.dist-info/RECORD,,
+cancan-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+cancan-0.1.1.dist-info/metadata.json,sha256=iMpbug2DvjEb6f9f-lt499L0bfi7yJaz8eRSbgA-fUA,462
+cancan-0.1.1.dist-info/top_level.txt,sha256=yPwRmN-661Q2uDtoZ7LaG-rdsXMMauuW00uIIdHSm_c,7
