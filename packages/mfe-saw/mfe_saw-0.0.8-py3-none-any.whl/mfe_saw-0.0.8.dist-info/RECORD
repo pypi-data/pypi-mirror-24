@@ -1,0 +1,16 @@
+mfe_saw/__init__.py,sha256=lVL4VPz3c4kWCgjPtL4uuQLNmgwK92q1ffAsv5El02k,25
+mfe_saw/base.py,sha256=NcrQq_y4Lr0HIsT3WbONU08NcxxwwHDWZHktfStPUkI,6879
+mfe_saw/cli.py,sha256=XND6gDJsefmKIVxf8i09M0UbxydGnpA80-xZAuSzYls,17243
+mfe_saw/datasource.py,sha256=MKg4kyw7Yhc82_rhrSy82Fyqy-FqG48D6QQnSFrIAvM,29068
+mfe_saw/esm.py,sha256=6C2evKZ5BQmXUTWjU9O5ICJn2MZ5eDJK-ijwsQBrTiQ,10454
+mfe_saw/exceptions.py,sha256=-6DGGTcmFM_TIJmW9XHS-216IRxq6vYDGBOPhhIv1mQ,279
+mfe_saw/params.py,sha256=e37QM8HqXtFNc3d9cDImauMW1yl1gfevxgIHSzv8hTA,8005
+mfe_saw/utils.py,sha256=6VY1PBt35G38zoL1a6xQQZpT7XLRdKz3Rc5rXyS0mfU,1996
+mfe_saw/version.py,sha256=7AHieJWOysxo3FihM8siftUcNXLoneswFbkjK8BkHY8,20
+mfe_saw-0.0.8.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+mfe_saw-0.0.8.dist-info/METADATA,sha256=B-4kuiwwsrVrITdZilqQ8Ou6BigaJ3vgF55c4AulcVo,745
+mfe_saw-0.0.8.dist-info/RECORD,,
+mfe_saw-0.0.8.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+mfe_saw-0.0.8.dist-info/entry_points.txt,sha256=mRxHlpoKIte9ydxNc9_tUIgDJTnwQNbvWt8z67MY36o,46
+mfe_saw-0.0.8.dist-info/metadata.json,sha256=ZVhfwSVNoFPZZlqebf08i5iuYzlw4Qq-01aQqm5jCjw,1096
+mfe_saw-0.0.8.dist-info/top_level.txt,sha256=tUQfOcRYWZcyTBzvYcwnZaYuz3jvTsKex2kTsBuV1r0,8

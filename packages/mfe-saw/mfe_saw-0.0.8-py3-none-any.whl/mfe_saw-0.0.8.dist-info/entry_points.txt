@@ -1,0 +1,3 @@
+[console_scripts]
+mfe_saw = mfe_saw.cli:main
+
