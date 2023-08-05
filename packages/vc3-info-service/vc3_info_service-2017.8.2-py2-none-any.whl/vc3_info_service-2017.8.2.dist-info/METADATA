@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: vc3-info-service
+Version: 2017.8.2
+Summary: vc3-info-service package
+Home-page: https://github.com/vc3-project
+Author: John Hover
+Author-email: jhover@bnl.gov
+License: GPL
+Platform: UNKNOWN
+Requires-Dist: cherrypy
+Requires-Dist: pluginmanager
+Requires-Dist: pyopenssl
+
+This package contains the VC3 Information Service
+
+
