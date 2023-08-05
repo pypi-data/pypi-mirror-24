@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: django_viewedmodels
+Version: 0.1.2
+Summary: A Django app to define Postgres Views as Models
+Home-page: https://www.example.com/
+Author: Joshua Brooks
+Author-email: josh@catalpa.io
+License: GPLv3
+Description: ============
+        ViewedModels
+        ============
+        
+        Viewed Models is a simple way to add PostGres "views" which look to Django just like Models.
+        This lets us go outside the Django ORM to create views or materialized views to harness
+        the power of PostGreSQL without losing the power to access that data using the ORM.
+        
+        Usage:
+         - A model which uses this framework should inherit from ViewedModel
+         - The model requires an "sql" method which returns the sql required to create view
+         - The model also requires a "dependencies" attribute. These are useful in generating table names within the SQL statement as well as dependency resolution.
+         - The model also requires fields specified in the standard Django way. Foreign keys should work fine
+             - Foreign Keys: For ``ForeignKey(myApp.MyModel')`` we need to have a field 'mymodel_id' returned from the SQL.
+        
+         - Every Django model (including these ViewedModels) requires an 'id' field. We can fake this by including ``row_number() OVER () AS id`` somewhere in our SELECT statement.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
