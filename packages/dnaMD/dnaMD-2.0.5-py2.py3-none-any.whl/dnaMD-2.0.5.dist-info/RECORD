@@ -1,0 +1,16 @@
+dnaMD/__init__.py,sha256=sAn9F47TW5l7d-R-4fCG4sZSReC0gsStcDJwLSB7kGc,42
+dnaMD/dnaEY.py,sha256=sFYL7c8aUtSW6lUn4c6UBlZFuxRr9aCVYrS9B2jJTQo,8598
+dnaMD/dnaMD.py,sha256=R6zFQCyEAEJtnVJzHz84HuTRXIaB0dlNlQsOGPJBoBw,105280
+dnaMD/main.py,sha256=JITSw7HDYtyO_sGkWMR-rwNHksO7on3KJsR0eAUWB3M,1041
+dnaMD/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnaMD/commands/curvature.py,sha256=Vds8t54D_Z8_mvab_0h3ZLALe2BuLAxrkbrABU8svUg,10266
+dnaMD/commands/saveAsH5.py,sha256=5NJYT-mN33n4vj-9xHshFLUw6e6GV24bopmemU_wfHs,7737
+dnaMD/commands/test.py,sha256=FiKgYJMfRdKGyB40ShHOporyAhphdWIcK_hfLlBg_Y8,7696
+dnaMD/commands/vsTime.py,sha256=1cUxxUlB8gRk1CbN4NaFNIRG50tGJrrAL4WRiEDoLYA,8170
+dnaMD-2.0.5.dist-info/DESCRIPTION.rst,sha256=QMpK8LPApbp6BEWn8_cxHyF80L89FzWHOzDDsDa7Kbo,606
+dnaMD-2.0.5.dist-info/METADATA,sha256=OYWwajgbKu-t73YgRU-MHlDMce08fAyl135nXU2oR2g,1522
+dnaMD-2.0.5.dist-info/RECORD,,
+dnaMD-2.0.5.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+dnaMD-2.0.5.dist-info/entry_points.txt,sha256=NL9mHP1AF04RTOFx77MeazJfLxC3RvBVldfUOvoneho,43
+dnaMD-2.0.5.dist-info/metadata.json,sha256=NuOVAQ_UnSSKsTcKVlmxzLtg4JoKJxdG5zSD9z0ryAw,1217
+dnaMD-2.0.5.dist-info/top_level.txt,sha256=-9pIk8MfMgZHjPMsKcxjNre-KEegvn98kJnFfm9JZuw,6
