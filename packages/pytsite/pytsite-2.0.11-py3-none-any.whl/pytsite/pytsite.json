@@ -1,0 +1,9 @@
+{
+  "name": "PytSite",
+  "version": "2.0.11",
+  "description": "Brand New Python Web Framework",
+  "url": "https://pytsite.xyz",
+  "author": "Alexander Shepetko",
+  "author_email": "a@shepetko.com",
+  "license_name": "MIT"
+}
