@@ -1,0 +1,8 @@
+README.rst
+reframe.py
+setup.py
+reframe.egg-info/PKG-INFO
+reframe.egg-info/SOURCES.txt
+reframe.egg-info/dependency_links.txt
+reframe.egg-info/requires.txt
+reframe.egg-info/top_level.txt
