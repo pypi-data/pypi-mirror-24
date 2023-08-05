@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: Flask-Multipass-LDAP-CERN
+Version: 1.0.3
+Summary: CERN-specific Flask-Multipass providers
+Home-page: https://github.com/indico/flask-multipass-ldap-cern
+Author: Indico Team
+Author-email: indico-team@cern.ch
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: flask-multipass
+Requires-Dist: python-ldap
+
+This package provides the ``ldap_cern`` and ``oauth_cern`` auth providers
+and the ``ldap_cern`` identity provider.
+
+These providers are only useful if you are at CERN and intend to use
+Flask-Multipass with the CERN authentication infrastructure (LDAP, OAuth
+or Shibboleth).
+
