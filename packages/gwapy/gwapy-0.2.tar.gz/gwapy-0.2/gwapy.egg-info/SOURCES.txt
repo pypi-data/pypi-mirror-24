@@ -1,0 +1,12 @@
+setup.py
+gwapy/__init__.py
+gwapy/githubapi.py
+gwapy/gwapy.py
+gwapy/incidentrecord.py
+gwapy/wa_fields.py
+gwapy/winaproachapi.py
+gwapy.egg-info/PKG-INFO
+gwapy.egg-info/SOURCES.txt
+gwapy.egg-info/dependency_links.txt
+gwapy.egg-info/not-zip-safe
+gwapy.egg-info/top_level.txt
