@@ -1,0 +1,5 @@
+setup.py
+colify.egg-info/PKG-INFO
+colify.egg-info/SOURCES.txt
+colify.egg-info/dependency_links.txt
+colify.egg-info/top_level.txt
