@@ -1,0 +1,12 @@
+CHANGELOG.rst
+README.rst
+setup.cfg
+setup.py
+src/__init__.py
+src/iso6709/__init__.py
+src/iso6709/iso6709.py
+src/iso6709.egg-info/PKG-INFO
+src/iso6709.egg-info/SOURCES.txt
+src/iso6709.egg-info/dependency_links.txt
+src/iso6709.egg-info/not-zip-safe
+src/iso6709.egg-info/top_level.txt
