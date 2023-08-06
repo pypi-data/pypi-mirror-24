@@ -1,0 +1,2814 @@
+<?xml version="1.0"?>
+<log>
+<logentry revision="6372" node="74c4985dfb28f1b91286ab38f35bc026326ec995">
+<tag>v19.4</tag>
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-07T17:18:27-05:00</date>
+<msg xml:space="preserve">Created release v19.4</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6374" node="c2286914c854bf5a570fe3fd9d3359de775ef2dc">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-07T17:19:46-05:00</date>
+<msg xml:space="preserve">Record last changeset and set PATCH version to 99</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+<path action="M">docs/.logger_revnum</path>
+</paths>
+</logentry>
+<logentry revision="6375" node="f7969146a5e459cd327611f4c28212d09222925e">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-09T20:14:42-05:00</date>
+<msg xml:space="preserve">Fixed cmake file to correctly enable C++11 by default.</msg>
+<paths>
+<path action="M">tools/htmlify/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6376" node="05aded11b02710a38c5210bab4689a6640b53b23">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-09T20:53:35-05:00</date>
+<msg xml:space="preserve">More possible intel arch strings.</msg>
+<paths>
+<path action="M">dlib/cmake</path>
+</paths>
+</logentry>
+<logentry revision="6377" node="7100036ec519f6aad40a57574ec7478c26161ad5">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-16T11:30:02-04:00</date>
+<msg xml:space="preserve">Removed use of const_temp_matrix here because it prevents binding to BLAS.</msg>
+<paths>
+<path action="M">dlib/optimization/optimization_solve_qp_using_smo.h</path>
+</paths>
+</logentry>
+<logentry revision="6378" node="d290c16ba7d368319018e328793d23cdfbde81c6">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-18T13:00:16-04:00</date>
+<msg xml:space="preserve">Fixed double delete</msg>
+<paths>
+<path action="M">dlib/tokenizer/tokenizer_kernel_1.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6379" node="29e864121dcf27dc46a3bb9c26f27ad4c38603c7">
+<parent revision="6377" node="7100036ec519f6aad40a57574ec7478c26161ad5" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-20T16:41:22-04:00</date>
+<msg xml:space="preserve">Added solve_qp_box_constrained_blockdiag()</msg>
+<paths>
+<path action="M">dlib/optimization/optimization_solve_qp_using_smo.h</path>
+<path action="M">dlib/optimization/optimization_solve_qp_using_smo_abstract.h</path>
+<path action="M">dlib/test/opt_qp_solver.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6382" node="d6e70cc1c54f7f575e276255b274054a6e4a73d9">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-20T21:10:36-04:00</date>
+<msg xml:space="preserve">Fixed error in pyramid_down&lt;2&gt; that caused the output image to be a little
+funny looking in some cases.</msg>
+<paths>
+<path action="M">dlib/image_transforms/image_pyramid.h</path>
+</paths>
+</logentry>
+<logentry revision="6383" node="b11d0851a3019b42cbaaf14e73aefd815f0cc51a">
+<parent revision="6378" node="d290c16ba7d368319018e328793d23cdfbde81c6" />
+<author email="stefan.neumueller@gmail.com">ebroglio</author>
+<date>2017-03-18T20:17:52+01:00</date>
+<msg xml:space="preserve">remove unused variable in edge_list_graphs.h (#486)</msg>
+<paths>
+<path action="M">dlib/graph_utils/edge_list_graphs.h</path>
+</paths>
+</logentry>
+<logentry revision="6384" node="d4bf051a4dd873847386ea50b87fcaab5c11c6c9">
+<author email="stefan.neumueller@gmail.com">ebroglio</author>
+<date>2017-03-18T20:54:46+01:00</date>
+<msg xml:space="preserve">dets cleared twice in evaluate_detectors of scan_fhog_pyramid.h (#487)
+
+already cleared at the beginning</msg>
+<paths>
+<path action="M">dlib/image_processing/scan_fhog_pyramid.h</path>
+</paths>
+</logentry>
+<logentry revision="6386" node="26b9c3127cecd89d4deabe92e7deb797cb8d67b9">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-21T09:50:01-04:00</date>
+<msg xml:space="preserve">Removed unneeded code.</msg>
+<paths>
+<path action="M">dlib/optimization/optimization_solve_qp_using_smo.h</path>
+</paths>
+</logentry>
+<logentry revision="6387" node="bbcdc96dc4fb68e2cd28f3bd977dddae6596887f">
+<parent revision="6385" node="7a1c7289b8a1292734d22415cf997884a54ba2d9" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-21T21:05:21-04:00</date>
+<msg xml:space="preserve">Added age and gender fields to image metadata.</msg>
+<paths>
+<path action="M">dlib/data_io/image_dataset_metadata.cpp</path>
+<path action="M">dlib/data_io/image_dataset_metadata.h</path>
+</paths>
+</logentry>
+<logentry revision="6389" node="76cb31c027c18564bba999d98b529575c9b1a368">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-22T11:00:27-04:00</date>
+<msg xml:space="preserve">Made the mex wrapper deal with cell arrays that have null elements.</msg>
+<paths>
+<path action="M">dlib/matlab/mex_wrapper.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6390" node="a1458a5153637fe1b8bf4ef5a3897b639f5baca9">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-22T12:49:12-04:00</date>
+<msg xml:space="preserve">Added missing requires clause.</msg>
+<paths>
+<path action="M">dlib/optimization/optimization_solve_qp_using_smo.h</path>
+<path action="M">dlib/optimization/optimization_solve_qp_using_smo_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6391" node="465eff072b9d31fa5bbbc05cc75548700484b2a4">
+<parent revision="6389" node="76cb31c027c18564bba999d98b529575c9b1a368" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-22T15:59:06-04:00</date>
+<msg xml:space="preserve">Added another code path inside solve_qp_box_constrained_blockdiag() that is
+much faster when the off-diagonal vectors are all simple multiples of the
+ones_matrix().</msg>
+<paths>
+<path action="M">dlib/optimization/optimization_solve_qp_using_smo.h</path>
+<path action="M">dlib/test/opt_qp_solver.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6392" node="e0aad42281e637faf129c4c91567cf583548a2c3">
+<parent revision="6391" node="465eff072b9d31fa5bbbc05cc75548700484b2a4" />
+<parent revision="6390" node="a1458a5153637fe1b8bf4ef5a3897b639f5baca9" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-22T15:59:53-04:00</date>
+<msg xml:space="preserve">merged</msg>
+<paths>
+<path action="M">dlib/optimization/optimization_solve_qp_using_smo.h</path>
+<path action="M">dlib/optimization/optimization_solve_qp_using_smo_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6393" node="22568dfb174282f52e31e85a0884cf138ec4990e">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-24T09:15:43-04:00</date>
+<msg xml:space="preserve">Made it more obvious that this file is a cmake tutorial.  Also added a few more comments about how to use cmake.</msg>
+<paths>
+<path action="M">examples/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6394" node="6154ad414637b54a72b13c29e6c832c4723ec51e">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-27T20:11:04-04:00</date>
+<msg xml:space="preserve">Made it so you can remove images by pressing ctrl+r.</msg>
+<paths>
+<path action="M">tools/imglab/src/main.cpp</path>
+<path action="M">tools/imglab/src/metadata_editor.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6395" node="386305577dc83e185e5e51b2547eb10b64061529">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-27T20:13:39-04:00</date>
+<msg xml:space="preserve">Changed to ctrl+d since it&#39;s easier to press.</msg>
+<paths>
+<path action="M">tools/imglab/src/metadata_editor.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6396" node="8b28b30a98d91f99c911c34291292dcb92ce22f0">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-27T21:00:37-04:00</date>
+<msg xml:space="preserve">Changed from ctrl to alt because otherwise it&#39;s easy to accidentally hit ctrl up and jump when you don&#39;t meant to while pruning an image list.</msg>
+<paths>
+<path action="M">tools/imglab/src/metadata_editor.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6397" node="8f7255877534648a63219b1c9487e7549df8b73b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-30T07:32:42-04:00</date>
+<msg xml:space="preserve">Fixed the visit_layers_backwards() and visit_layers_backwards_range() routines
+so they visit layers in the correct order.</msg>
+<paths>
+<path action="M">dlib/dnn/core.h</path>
+</paths>
+</logentry>
+<logentry revision="6399" node="dcd6d464fa69c862db2d21de3eff87e5b12e931f">
+<author email="marcos.vzla@gmail.com">marcovzla</author>
+<date>2017-03-24T14:20:33-07:00</date>
+<msg xml:space="preserve">remove miniconda (#500)</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6401" node="4d29d54c03ae914cdf018bc8aa54ffb483392f73">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-03-30T10:43:49-04:00</date>
+<msg xml:space="preserve">Made the title bar show the current image&#39;s number.</msg>
+<paths>
+<path action="M">tools/imglab/src/metadata_editor.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6402" node="e4468f6d706476df766bf4c02e36d62752677fe6">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-02T14:03:51-04:00</date>
+<msg xml:space="preserve">Added a version of tt::affine_transform() that operates on a sub-rectangle
+rather than the entire tensor.</msg>
+<paths>
+<path action="M">dlib/dnn/cpu_dlib.cpp</path>
+<path action="M">dlib/dnn/cpu_dlib.h</path>
+<path action="M">dlib/dnn/cuda_dlib.cu</path>
+<path action="M">dlib/dnn/cuda_dlib.h</path>
+<path action="M">dlib/dnn/tensor_tools.cpp</path>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6403" node="91ce4560b9328fb49c1368c2ef335b8c511ae3b6">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-02T16:31:55-04:00</date>
+<msg xml:space="preserve">fixed spelling error in comment</msg>
+<paths>
+<path action="M">dlib/timer/timer_heavy.h</path>
+</paths>
+</logentry>
+<logentry revision="6404" node="c191fe1994525a0a0b8f163d20f79df65c6eb584">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-03T06:10:19-04:00</date>
+<msg xml:space="preserve">Added support for cuDNN 6</msg>
+<paths>
+<path action="M">dlib/dnn/cudnn_dlibapi.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6405" node="c7e95f3b5f375a5bcb468e3e811d556ea7a24009">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-04T14:29:41-04:00</date>
+<msg xml:space="preserve">Added cuda_data, a templated container for GPU memory.</msg>
+<paths>
+<path action="M">dlib/dnn/cuda_utils.h</path>
+</paths>
+</logentry>
+<logentry revision="6406" node="d0562135ef97eaceac484acf4812eb3031b517bc">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-04T14:30:06-04:00</date>
+<msg xml:space="preserve">Added cusolver_error class.</msg>
+<paths>
+<path action="M">dlib/dnn/cuda_errors.h</path>
+</paths>
+</logentry>
+<logentry revision="6407" node="d684b7468c8f2bfa7a43aad0fea3f56a46b58ce6">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-04T15:21:19-04:00</date>
+<msg xml:space="preserve">Moved the cuda_data class into its own file, renamed it to cuda_data_ptr, and
+also pushed all the cuda #includes into a .cpp file.</msg>
+<paths>
+<path action="A">dlib/dnn/cuda_data_ptr.cpp</path>
+<path action="A">dlib/dnn/cuda_data_ptr.h</path>
+<path action="M">dlib/CMakeLists.txt</path>
+<path action="M">dlib/dnn/cuda_utils.h</path>
+</paths>
+</logentry>
+<logentry revision="6408" node="154c991285d2c6ff53aa010a110b3ff12ab2edd9">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-04T15:56:58-04:00</date>
+<msg xml:space="preserve">removed cruft</msg>
+<paths>
+<path action="M">dlib/dnn/cuda_utils.h</path>
+</paths>
+</logentry>
+<logentry revision="6409" node="12e38fe71aeed3009aee29eaf2bf257d2de489e9">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-04T21:18:30-04:00</date>
+<msg xml:space="preserve">Added a tt::inv() for computing matrix inversions on the GPU.</msg>
+<paths>
+<path action="A">dlib/dnn/cusolver_dlibapi.cu</path>
+<path action="A">dlib/dnn/cusolver_dlibapi.h</path>
+<path action="M">dlib/CMakeLists.txt</path>
+<path action="M">dlib/dnn/tensor_tools.cpp</path>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+<path action="M">dlib/test/cublas.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6410" node="1d99d801574d5434427ac59159532b89bfbff0d7">
+<parent revision="6404" node="c191fe1994525a0a0b8f163d20f79df65c6eb584" />
+<author email="sigbjorn.helset@gmail.com">sigbjorn</author>
+<date>2017-04-04T20:28:19+02:00</date>
+<msg xml:space="preserve">Provide cleanup for timer_global_clock singleton, issue #505 (#512)
+
+* temporary workaround for python hanging on dlib::shared_ptr_thread_safe&lt;global_clock&gt; when extension-module using dlib is unloaded on windows platform
+
+* added some more doc and tests for the new delete_global_clock function. Minor adjustment to singleton pattern to allow easy access to singleton shared ptr
+
+* alternate _WIN32 specific solution, with no extra functions nor user-actions needed
+
+* removed floating/obsolete delete_global_clock, tab to space
+
+* leaving linux code unchanged in static desctructor
+
+* cleanup not modified files
+
+* align formatting</msg>
+<paths>
+<path action="M">dlib/timer/timer.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6412" node="7836cc0c0b216607c55760515932b75083f41fb3">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-04T21:37:38-04:00</date>
+<msg xml:space="preserve">Fixed code not compiling when cuda is disabled.</msg>
+<paths>
+<path action="M">dlib/dnn/tensor_tools.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6413" node="dbc83cda3b5401e37f08a960ea8d537779593f05">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-05T05:47:06-04:00</date>
+<msg xml:space="preserve">Added missing quotes so that cmake works on windows.</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6414" node="6ead4fdd4cdbcae9390c5b8def916a4928e7f0d0">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-05T06:15:39-04:00</date>
+<msg xml:space="preserve">Fixed visual studio errors about openmp compiler flags not being right.</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6415" node="3f189157af659cb966aea7a1e53cf5fc79ea08ff">
+<author email="goodfriendsfzg@gmail.com">goodloop</author>
+<date>2017-04-05T22:58:15+08:00</date>
+<msg xml:space="preserve">fix unneeded reference for cblas_strsm and cblas_dtrsm when DLIB_USE_BLAS is not defined (#519)</msg>
+<paths>
+<path action="M">dlib/matrix/matrix_trsm.h</path>
+</paths>
+</logentry>
+<logentry revision="6416" node="f4ed7e576481801f0ddf9dcc85c77c0237da93cd">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-05T11:08:32-04:00</date>
+<msg xml:space="preserve">Fixed bad results when using CUDA and the Intel MKL at the same time.  This
+was because of a bug introduced yesterday in the CMake scripts which would
+accidentally pull in two versions of the OpenMP libraries, the GNU one and the
+Intel one, but you can&#39;t mix them together at the same time.</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+<path action="M">dlib/cmake_utils/cmake_find_blas.txt</path>
+</paths>
+</logentry>
+<logentry revision="6417" node="f5255d583370c41d92220d91442c19e66eb44475">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-05T11:19:00-04:00</date>
+<msg xml:space="preserve">Don&#39;t try to use any CUDA stuff when making matlab mex files.</msg>
+<paths>
+<path action="M">dlib/matlab/cmake_mex_wrapper</path>
+</paths>
+</logentry>
+<logentry revision="6418" node="dc709769b48049ba6a72a457d58fdf2bf998ec9b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-05T11:50:20-04:00</date>
+<msg xml:space="preserve">Minor CMake cleanup</msg>
+<paths>
+<path action="M">dlib/test/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6419" node="db665c35d1076ed41f3e869a8a6cc286668acc4f">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-05T20:02:26-04:00</date>
+<msg xml:space="preserve">Fixed cmake so openmp is handled properly in visual studio.  The change yesterday
+messed it up and effectively disabled cuda in visual studio.  This fixes that.</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6420" node="77669010b5182f50160231c63a9f700ed051cd5b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-06T17:07:07-04:00</date>
+<msg xml:space="preserve">Stopped using CMAKE_CXX_FLAGS to set dlib&#39;s preprocessor switches and instead
+now use target_compile_options().  This should avoid weird configuration
+errors that happen in rare instances on some platforms.</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6421" node="5739b256a6eb6138cca4968941fc9988b307e933">
+<author email="courteauxmartijn@gmail.com">Martijn Courteaux</author>
+<date>2017-04-07T01:41:20+02:00</date>
+<msg xml:space="preserve">Fix asserts, super clean! (#526)
+
+* Wether asserts are enabled or not, is now only suggested by dlib, and not longer imposed. The user can override using SET(CACHE FORCE) or command line -DDLIB_ENABLE_ASSERT=ON/OFF anytime.
+
+* Fixed missing line in cmake for asserts.</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6422" node="8f7170dcdb5139c53873e5e386cfa2457ddebdaa">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-06T20:28:08-04:00</date>
+<msg xml:space="preserve">Tweak assert enable/disable behavior so the asserts still come on or off as a
+function of the release/debug drop down menu when using visual studio&#39;s IDE.</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6423" node="81942f1a2e279806ee141298dacd469f16640674">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-19T22:19:17-04:00</date>
+<msg xml:space="preserve">Added python requirements.txt file for scikit-image</msg>
+<paths>
+<path action="A">python_examples/requirements.txt</path>
+</paths>
+</logentry>
+<logentry revision="6424" node="8a6bf5db9bc39fd4fd5f5d583ef83f84b8b378bd">
+<parent revision="6422" node="8f7170dcdb5139c53873e5e386cfa2457ddebdaa" />
+<author email="github@joo.st">Joost van Amersfoort</author>
+<date>2017-04-07T16:02:37+01:00</date>
+<msg xml:space="preserve">Add support for Python3.6 lib search with Cmake (#527)
+
+* Add support for Python3.6 lib search with Cmake
+
+A recent commit added support for python3.5 lib search with Cmake. This PR extends that to python 3.6.
+
+Relevant old commit: https://github.com/davisking/dlib/commit/17a2c75ddffb13e915686803c5e3bf4cc1389a96
+
+* Turn python versions into a list</msg>
+<paths>
+<path action="M">dlib/cmake_utils/add_python_module</path>
+</paths>
+</logentry>
+<logentry revision="6425" node="17edc910ea074b5955715bfbd260992087afd500">
+<author email="ernestotapiar@users.noreply.github.com">ernestotapiar</author>
+<date>2017-04-14T15:41:25+02:00</date>
+<msg xml:space="preserve">Corrected typo that generated an erroneus Hessian of Brown&#39;s function. (#534)</msg>
+<paths>
+<path action="M">dlib/test/optimization_test_functions.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6426" node="4157beda1498593af693f1b19b185983f32a21c0">
+<author email="macdonald.roy@gmail.com">Roy Macdonald</author>
+<date>2017-04-14T21:41:22-03:00</date>
+<msg xml:space="preserve">Fixes issue with object named nil that collide with apple&#39;s definition. (#537)
+
+* Fixes issue with object named nil that collide with apple&#39;s definition.
+
+* fix nil named objects: changed name to no_parent</msg>
+<paths>
+<path action="M">dlib/graph_cuts/min_cut.h</path>
+<path action="M">dlib/matrix/lapack/gees.h</path>
+<path action="M">dlib/test/tuple.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6427" node="08eca19334f45ac4286836ec9a971ceaac8da3d9">
+<author email="soap@gentoo.org">David Seifert</author>
+<date>2017-04-16T18:14:21+02:00</date>
+<msg xml:space="preserve">CMake improvements (#539)
+
+* Use GNUInstallDirs to allow changing target directories
+
+* Multi-lib distributions need to change the libdir
+  which is only portably possible with `GNUInstallDirs`.
+  The current `LIB_INSTALL_DIR` solution is not portable
+  and not supported upstream by Kitware.
+* Multi-arch distributions such as Debian and Exherbo
+  need to be able to change the bindir.
+
+* Do not install LICENSE.txt
+
+* Most distributions do not install license files, as they
+  have all licenses stored in a central repository, in order
+  not to duplicate the same file over and over.
+* License files do not need to be installed for a piece of
+  software to be licensed under that license.</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+<path action="M">dlib/cmake_utils/dlib.pc.in</path>
+</paths>
+</logentry>
+<logentry revision="6429" node="f96f0a6d552bf0092bb648b3c255d5dfcac452c1">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-21T10:15:27-04:00</date>
+<msg xml:space="preserve">Fixed tabbing</msg>
+<paths>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+</paths>
+</logentry>
+<logentry revision="6430" node="7c55b1ef14be9a9754e6ded3baa8dd2eac00df6d">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-04-21T10:45:02-04:00</date>
+<msg xml:space="preserve">Added tt::log(), tt::exp(), and tt::log10()</msg>
+<paths>
+<path action="M">dlib/dnn/cuda_dlib.cu</path>
+<path action="M">dlib/dnn/cuda_dlib.h</path>
+<path action="M">dlib/dnn/tensor_tools.cpp</path>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6431" node="cecc99498a2323bb21fb4704d1c8b6e1a1fbfdaa">
+<author email="evgeniy.fm@gmail.com">Evgeniy Fominov</author>
+<date>2017-04-29T21:39:35+04:00</date>
+<msg xml:space="preserve">ARM NEON SIMD support (#564)
+
+* added neon functions
+
+* TK1 tests passed
+
+* code cleanup
+
+* Re-tested on TK1
+
+* improve simd4i
+
+* fixed simd4f_bool neon
+
+* fix simd8i sse operator &lt;=
+
+* restored rsqrt/VSX
+
+* fixed simd4f/neon/reciprocal_sqrt</msg>
+<paths>
+<path action="M">dlib/simd/simd4f.h</path>
+<path action="M">dlib/simd/simd4i.h</path>
+<path action="M">dlib/simd/simd_check.h</path>
+</paths>
+</logentry>
+<logentry revision="6432" node="16134dee16e1933e93ff8091ddb77062601b376c">
+<author email="cclough@users.noreply.github.com">cclough</author>
+<date>2017-04-30T17:48:51-07:00</date>
+<msg xml:space="preserve">Update CMakeLists.txt (#566)</msg>
+<paths>
+<path action="M">examples/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6433" node="a7859342b893164d0e7c83506dfa17bab558c258">
+<author email="evgeniy.fm@gmail.com">Evgeniy Fominov</author>
+<date>2017-05-01T18:31:36+03:00</date>
+<msg xml:space="preserve">Multiarch installation fix (#567)
+
+* fix multiarch install
+
+* fix include dir
+
+* cleaned up stuff and removed things we don&#39;t need anymore</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+<path action="M">dlib/cmake_utils/dlibConfig.cmake.in</path>
+</paths>
+</logentry>
+<logentry revision="6434" node="25cf9e1177db1f0834c847f322926a418a3d4b4b">
+<author email="xyf.jim@gmail.com">Jim61C</author>
+<date>2017-05-03T05:40:04-04:00</date>
+<msg xml:space="preserve">remove enum in function signature to avoid cblas declaration conflicts (#571)</msg>
+<paths>
+<path action="M">dlib/matrix/matrix_blas_bindings.h</path>
+<path action="M">dlib/matrix/matrix_trsm.h</path>
+</paths>
+</logentry>
+<logentry revision="6436" node="140a70ec4fc945618c06ae6e4e9bc2434f14a104">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-05T05:42:13-04:00</date>
+<msg xml:space="preserve">Added more comments</msg>
+<paths>
+<path action="M">examples/dnn_face_recognition_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6437" node="b1b5e6de383df644190c6fc5949d607cb48cee0a">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-06T12:46:19-04:00</date>
+<msg xml:space="preserve">Made the attribute_list of the xml parser a little more friendly by allowing
+you to ask for attributes that don&#39;t exist and get a defined behavior (an
+exception being thrown) rather than it being a contract violation.</msg>
+<paths>
+<path action="M">dlib/xml_parser/xml_parser_kernel_1.h</path>
+<path action="M">dlib/xml_parser/xml_parser_kernel_interfaces.h</path>
+</paths>
+</logentry>
+<logentry revision="6438" node="e326d0c0a08262ecf37cb13cf40c874870ded1f4">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T17:17:56-04:00</date>
+<msg xml:space="preserve">Made net_to_xml() output floating point numbers with more digits.</msg>
+<paths>
+<path action="M">dlib/dnn/utilities.h</path>
+</paths>
+</logentry>
+<logentry revision="6439" node="0deaaacf074903fe523db18072d5791d5ae67976">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T17:19:26-04:00</date>
+<msg xml:space="preserve">Changed the XML format output by net_to_xml().  Specifically, the XML tag for
+affine layers was changed so to use the same conventions as other layers that
+support convolutional vs fully connected modes.</msg>
+<paths>
+<path action="M">dlib/dnn/layers.h</path>
+</paths>
+</logentry>
+<logentry revision="6440" node="93ddd177d4241cda40214b63193fe91441596e48">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T17:32:15-04:00</date>
+<msg xml:space="preserve">Added an overload of net_to_xml() that takes a string filename.</msg>
+<paths>
+<path action="M">dlib/dnn/utilities.h</path>
+<path action="M">dlib/dnn/utilities_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6441" node="b422f960daf58c78d67546db3b3ae28d19ec40e3">
+<parent revision="6437" node="b1b5e6de383df644190c6fc5949d607cb48cee0a" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-06T15:02:38-04:00</date>
+<msg xml:space="preserve">Added a simple tool to convert dlib model files, which are saved as XML files,
+to caffe models.  Not all layers are supported yet, but it works on the net
+from the first dlib dnn example program.  Will add the rest of the layers soon.</msg>
+<paths>
+<path action="A">tools/convert_dlib_nets_to_caffe/CMakeLists.txt</path>
+<path action="A">tools/convert_dlib_nets_to_caffe/dlib_driver.py</path>
+<path action="A">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6442" node="e414011a9bbd73d1631c9d6c2cf6f9f2757feb09">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T15:26:18-04:00</date>
+<msg xml:space="preserve">Added support for all the other dlib layers that make sense.</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6443" node="e1dffb71454fee96cb389bb1a4b1fe6d1ea67310">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T15:49:19-04:00</date>
+<msg xml:space="preserve">Cleaned up how the output is output.</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6444" node="d73d2d82bb409fb3577fcd67c0407719d572aefa">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T16:23:35-04:00</date>
+<msg xml:space="preserve">Added missing sig and prelu layer support.</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6445" node="d66e5da9d57d2aa0d5c337491b4c9c7d3cae5524">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T16:57:34-04:00</date>
+<msg xml:space="preserve">Fixed affine_fc and clarified error message.</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6446" node="a950eb8d61bb25308d2fc720f3ec1ff9310eb9d1">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T17:16:08-04:00</date>
+<msg xml:space="preserve">Added more comments</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6448" node="0a24828d2080d8a817d39508e26c25879a6612ca">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T19:07:18-04:00</date>
+<msg xml:space="preserve">Improved example python script</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/dlib_driver.py</path>
+</paths>
+</logentry>
+<logentry revision="6449" node="755c0ac22b15ee8848c588efbeb99ae26fb770a0">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T19:08:41-04:00</date>
+<msg xml:space="preserve">Renamed file</msg>
+<paths>
+<path action="A">tools/convert_dlib_nets_to_caffe/running_a_dlib_model_with_caffe_example.py</path>
+<path action="R">tools/convert_dlib_nets_to_caffe/dlib_driver.py</path>
+</paths>
+<copies>
+<copy source="tools/convert_dlib_nets_to_caffe/dlib_driver.py">tools/convert_dlib_nets_to_caffe/running_a_dlib_model_with_caffe_example.py</copy>
+</copies>
+</logentry>
+<logentry revision="6450" node="dd4d30f3521efe26308499e0dff3f8d11241336b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T19:11:52-04:00</date>
+<msg xml:space="preserve">Changed the location of the set_synchronization_file() call so that rerunning
+the example restarts correctly.</msg>
+<paths>
+<path action="M">examples/dnn_introduction2_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6451" node="7c5ef62bc9326d82a8e7059f30922f432131716a">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T19:12:12-04:00</date>
+<msg xml:space="preserve">Added a note about exporting to XML.</msg>
+<paths>
+<path action="M">examples/dnn_introduction_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6452" node="073194d2bf33b2a55c5e54ae999f53a3fee35e93">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-07T19:40:42-04:00</date>
+<msg xml:space="preserve">Fixed spelling error</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6453" node="f1ba17502aeafe99cab2188866349fe3fb2f11e8">
+<author email="elel@3wh.net">elelel</author>
+<date>2017-05-12T20:40:59+00:00</date>
+<msg xml:space="preserve">Replace shared_ptr/weak_ptr with STL&#39;s versions (#588)
+
+* Replace shared_ptr/weak_ptr with stdlib counterparts
+
+* Fix ptr usage through tests compilation
+
+* Bring back dlib smart ptrs as legacy
+
+* Include scoped_ptr directly
+
+* Add explanation about smart_ptr deprecation</msg>
+<paths>
+<path action="M">dlib/any/any.h</path>
+<path action="M">dlib/any/any_decision_function.h</path>
+<path action="M">dlib/any/any_function.h</path>
+<path action="M">dlib/any/any_trainer.h</path>
+<path action="M">dlib/bayes_utils/bayes_utils.h</path>
+<path action="M">dlib/bridge/bridge.h</path>
+<path action="M">dlib/bsp/bsp.cpp</path>
+<path action="M">dlib/bsp/bsp.h</path>
+<path action="M">dlib/cmd_line_parser/cmd_line_parser_print_1.h</path>
+<path action="M">dlib/directed_graph/directed_graph_kernel_1.h</path>
+<path action="M">dlib/graph/graph_kernel_1.h</path>
+<path action="M">dlib/gui_widgets/base_widgets.h</path>
+<path action="M">dlib/gui_widgets/widgets.h</path>
+<path action="M">dlib/image_loader/jpeg_loader.h</path>
+<path action="M">dlib/image_loader/png_loader.h</path>
+<path action="M">dlib/logger/logger_kernel_1.h</path>
+<path action="M">dlib/optimization/optimization_bobyqa.h</path>
+<path action="M">dlib/serialize.h</path>
+<path action="M">dlib/server/server_kernel.h</path>
+<path action="M">dlib/smart_pointers.h</path>
+<path action="M">dlib/sockets/sockets_extensions.h</path>
+<path action="M">dlib/sockets/sockets_kernel_2.h</path>
+<path action="M">dlib/sqlite/sqlite.h</path>
+<path action="M">dlib/svm/kkmeans.h</path>
+<path action="M">dlib/svm/pegasos.h</path>
+<path action="M">dlib/svm/structural_svm_distributed.h</path>
+<path action="M">dlib/svm/svm_threaded.h</path>
+<path action="M">dlib/test/CMakeLists.txt</path>
+<path action="M">dlib/test/smart_pointers.cpp</path>
+<path action="M">dlib/test/sockstreambuf.cpp</path>
+<path action="M">dlib/threads/thread_function_extension.h</path>
+<path action="M">dlib/threads/thread_pool_extension.cpp</path>
+<path action="M">dlib/threads/thread_pool_extension.h</path>
+<path action="M">examples/bayes_net_gui_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6454" node="da3e6e946e5007006044a880e0640c8a5d7e84d2">
+<author email="elel@3wh.net">elelel</author>
+<date>2017-05-13T18:05:23+00:00</date>
+<msg xml:space="preserve">Replace shared_ptr_thread_safe with std::shared_ptr (#590)
+
+* Replace shared_ptr/weak_ptr with stdlib counterparts
+
+* Fix ptr usage through tests compilation
+
+* Bring back dlib smart ptrs as legacy
+
+* Include scoped_ptr directly
+
+* Add explanation about smart_ptr deprecation
+
+* Replace shared_ptr_thread_safe
+
+* Fix missed old include
+
+* Removed missed old include</msg>
+<paths>
+<path action="M">dlib/gui_core/gui_core_kernel_1.cpp</path>
+<path action="M">dlib/gui_core/gui_core_kernel_1.h</path>
+<path action="M">dlib/gui_core/gui_core_kernel_2.cpp</path>
+<path action="M">dlib/gui_widgets/base_widgets.cpp</path>
+<path action="M">dlib/gui_widgets/base_widgets.h</path>
+<path action="M">dlib/gui_widgets/drawable.h</path>
+<path action="M">dlib/gui_widgets/fonts.cpp</path>
+<path action="M">dlib/gui_widgets/fonts.h</path>
+<path action="M">dlib/gui_widgets/nativefont.h</path>
+<path action="M">dlib/gui_widgets/widgets.cpp</path>
+<path action="M">dlib/gui_widgets/widgets.h</path>
+<path action="M">dlib/iosockstream/iosockstream.h</path>
+<path action="M">dlib/smart_pointers_thread_safe.h</path>
+<path action="M">dlib/sockets/sockets_kernel_1.h</path>
+<path action="M">dlib/test/gui/main.cpp</path>
+<path action="M">dlib/threads/thread_pool_extension.h</path>
+<path action="M">dlib/timer/timer.cpp</path>
+<path action="M">dlib/timer/timer.h</path>
+</paths>
+</logentry>
+<logentry revision="6455" node="dc1e020634471405995ce21a1974fe05b2b00262">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-13T14:23:24-04:00</date>
+<msg xml:space="preserve">Added more outputs to unit test error message.</msg>
+<paths>
+<path action="M">dlib/test/opt_qp_solver.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6457" node="ef0782f1c88c775c3a292e6333a1b2b2f555b963">
+<parent revision="6455" node="dc1e020634471405995ce21a1974fe05b2b00262" />
+<author email="elel@3wh.net">elelel</author>
+<date>2017-05-13T22:05:52+00:00</date>
+<msg xml:space="preserve">Change type traits from inherited to explicit (#591)</msg>
+<paths>
+<path action="M">dlib/geometry/vector.h</path>
+</paths>
+</logentry>
+<logentry revision="6459" node="4a38ad612a5dae29488307f61f4d1c16108414af">
+<author email="elel@3wh.net">elelel</author>
+<date>2017-05-14T23:52:34+00:00</date>
+<msg xml:space="preserve">Migrate from dlib::scoped_ptr to std::unique_ptr (#593)
+
+* Convert unique_ptr
+
+* Fix passing unique_ptr as copy by value
+
+* Remove scoped_ptr implementation
+
+* Fix missed files
+
+* Move bool cast into tester macro
+
+* Reexport scoped_ptr alias from sockets</msg>
+<paths>
+<path action="R">dlib/smart_pointers/scoped_ptr_abstract.h</path>
+<path action="M">dlib/any/any.h</path>
+<path action="M">dlib/any/any_decision_function.h</path>
+<path action="M">dlib/any/any_function_impl.h</path>
+<path action="M">dlib/any/any_trainer.h</path>
+<path action="M">dlib/bayes_utils/bayes_utils.h</path>
+<path action="M">dlib/bridge/bridge.h</path>
+<path action="M">dlib/bsp/bsp.cpp</path>
+<path action="M">dlib/bsp/bsp.h</path>
+<path action="M">dlib/gui_widgets/base_widgets.h</path>
+<path action="M">dlib/gui_widgets/widgets.cpp</path>
+<path action="M">dlib/gui_widgets/widgets.h</path>
+<path action="M">dlib/image_loader/png_loader.h</path>
+<path action="M">dlib/iosockstream/iosockstream.h</path>
+<path action="M">dlib/logger/logger_kernel_1.cpp</path>
+<path action="M">dlib/logger/logger_kernel_1.h</path>
+<path action="M">dlib/optimization/optimization_bobyqa.h</path>
+<path action="M">dlib/server/server_kernel.h</path>
+<path action="M">dlib/smart_pointers.h</path>
+<path action="M">dlib/smart_pointers/scoped_ptr.h</path>
+<path action="M">dlib/sockets/sockets_extensions.cpp</path>
+<path action="M">dlib/sockets/sockets_extensions.h</path>
+<path action="M">dlib/sockets/sockets_extensions_abstract.h</path>
+<path action="M">dlib/sockets/sockets_kernel_1.cpp</path>
+<path action="M">dlib/sockets/sockets_kernel_1.h</path>
+<path action="M">dlib/sockets/sockets_kernel_2.cpp</path>
+<path action="M">dlib/sockets/sockets_kernel_2.h</path>
+<path action="M">dlib/sockets/sockets_kernel_abstract.h</path>
+<path action="M">dlib/sockstreambuf/sockstreambuf.h</path>
+<path action="M">dlib/sockstreambuf/sockstreambuf_abstract.h</path>
+<path action="M">dlib/sockstreambuf/sockstreambuf_unbuffered.h</path>
+<path action="M">dlib/svm/kkmeans.h</path>
+<path action="M">dlib/svm/structural_svm_distributed.h</path>
+<path action="M">dlib/test/sockets.cpp</path>
+<path action="M">dlib/test/sockets2.cpp</path>
+<path action="M">dlib/test/sockstreambuf.cpp</path>
+<path action="M">dlib/test/tester.h</path>
+<path action="M">dlib/threads/thread_function_extension.h</path>
+<path action="M">examples/bayes_net_gui_ex.cpp</path>
+<path action="M">examples/sockstreambuf_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6460" node="a48bc42b6ba55508358c9fb0bb99b62cd808da2b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-14T19:55:01-04:00</date>
+<msg xml:space="preserve">removed cruft</msg>
+<paths>
+<path action="M">dlib/test/makefile</path>
+</paths>
+</logentry>
+<logentry revision="6462" node="8e0cabe86d7e501db62b285c7fb9ec71c0f59efe">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-14T20:07:16-04:00</date>
+<msg xml:space="preserve">A minor change to hopefully reduce inane warnings from visual studio.</msg>
+<paths>
+<path action="M">examples/dnn_face_recognition_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6463" node="fd29101367974642b9fffd375d07e6062b595b24">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-15T07:12:18-04:00</date>
+<msg xml:space="preserve">More logging messages</msg>
+<paths>
+<path action="M">dlib/test/opt_qp_solver.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6464" node="0ec5f02648fba7109da3edf4c4edc7ab89a4a561">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-16T09:55:34-04:00</date>
+<msg xml:space="preserve">A test to see more info about what&#39;s going weird on appveyor.</msg>
+<paths>
+<path action="M">dlib/test/opt_qp_solver.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6465" node="82781a9eb9329af9d8c8c80d4ae8369b7031f7c1">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-16T20:50:34-04:00</date>
+<msg xml:space="preserve">yet more print statements</msg>
+<paths>
+<path action="M">dlib/test/opt_qp_solver.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6466" node="8a628dc5a9c53d8a8e5a1019e7dd605c914e63a7">
+<parent revision="6464" node="0ec5f02648fba7109da3edf4c4edc7ab89a4a561" />
+<author email="tschw@users.noreply.github.com">tschw</author>
+<date>2017-05-16T20:47:53+02:00</date>
+<msg xml:space="preserve">Fix installed CMake targets when DLIB_ISO_CPP_ONLY (#595) (#597)</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6468" node="d3fd1a0bc906b7496a4120fa98a75dd43147e9bc">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-16T21:14:09-04:00</date>
+<msg xml:space="preserve">Cleanup and also fixed a cmake error when building dlib outside a project.</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6469" node="cbeec8729b42008c9c548529e4a0aa5917067e51">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-17T16:43:32-04:00</date>
+<msg xml:space="preserve">Fixed uninitialized variable in test that caused unreliable test results.</msg>
+<paths>
+<path action="M">dlib/test/opt_qp_solver.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6470" node="43a8742c0823d982fe01042a9d65d4e34e12bb3e">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-19T20:16:40-04:00</date>
+<msg xml:space="preserve">Dlib and caffe actually do use max pooling layers with padding in the same way.
+So I just removed the error check that was preventing the conversion from
+proceeding in that case.  I also added more useful output messages about
+setting input tensor dimensions.</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6471" node="d975568a1a9e41ccf610c6161c836ead9523f3f8">
+<author email="emptyVoid@users.noreply.github.com">emptyVoid</author>
+<date>2017-05-20T20:37:40+07:00</date>
+<msg xml:space="preserve">Move shape_predictor_trainer to a separate header (#599)
+
+Moved shape_predictor_trainer to its own header in order to support the
+use of shape_predictor with DLIB_ISO_CPP_ONLY defined (i.e. without
+threading API wrappers).</msg>
+<paths>
+<path action="A">dlib/image_processing/shape_predictor_trainer.h</path>
+<path action="A">dlib/image_processing/shape_predictor_trainer_abstract.h</path>
+<path action="M">dlib/image_processing.h</path>
+<path action="M">dlib/image_processing/shape_predictor.h</path>
+<path action="M">dlib/image_processing/shape_predictor_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6473" node="0fa88f3431233d21300899d29425a32bdd8325ef">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-22T19:06:55-04:00</date>
+<msg xml:space="preserve">Changed caffe converter to require the user to specify the input tensor size
+when the converter is run.</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+<path action="M">tools/convert_dlib_nets_to_caffe/running_a_dlib_model_with_caffe_example.py</path>
+</paths>
+</logentry>
+<logentry revision="6474" node="7aead3cfc4860e72ce0cf3dfb062be95e70b32af">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-22T19:11:00-04:00</date>
+<msg xml:space="preserve">Made error message slightly better.</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6475" node="525ffd8652c7e66bc5e4850a2361bde806433bb9">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-24T07:24:12-04:00</date>
+<msg xml:space="preserve">Made the converter add zero padding layers when needed by Eltwise to replicate
+the behavior of dlib&#39;s add_prev layers.</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6476" node="96836695f84bbe1525af5af5ad8b8aa86193348c">
+<parent revision="6472" node="eb4422856806652965b1b7c3f43dc832d06c9785" />
+<author email="juha.reunanen@gmail.com">Juha Reunanen</author>
+<date>2017-05-22T15:58:27+03:00</date>
+<msg xml:space="preserve">Noticed compiler warning C4800: &#39;double&#39;: forcing value to bool &#39;true&#39; or &#39;false&#39; (performance warning) (#538)
+
+- suggesting to change the test to what perhaps was the original intention</msg>
+<paths>
+<path action="M">dlib/test/elastic_net.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6478" node="08f6d8abf9582e8b77b2ef2bf73b79ef97b181de">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-26T17:23:58-04:00</date>
+<msg xml:space="preserve">Added visit_layers_until_tag()</msg>
+<paths>
+<path action="M">dlib/dnn/core.h</path>
+<path action="M">dlib/dnn/core_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6480" node="8d673c4363ac749465261d7392bb6c7d1c1911dc">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-27T11:59:32-04:00</date>
+<msg xml:space="preserve">Made calling clean() on network objects also call clean on any layer detail
+objects that also provide a .clean() method.</msg>
+<paths>
+<path action="M">dlib/dnn/core.h</path>
+<path action="M">dlib/dnn/core_abstract.h</path>
+<path action="M">dlib/dnn/layers.h</path>
+<path action="M">dlib/dnn/layers_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6481" node="033799853c74caf750cf41338b90fabec1d849d8">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-27T12:56:24-04:00</date>
+<msg xml:space="preserve">Work around a bug in visual studio 2015.</msg>
+<paths>
+<path action="M">dlib/dnn/core.h</path>
+</paths>
+</logentry>
+<logentry revision="6482" node="232d654d576228ee2ce3fdc61dd9227c5b9b4191">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-28T11:07:02-04:00</date>
+<msg xml:space="preserve">Made the converter handle caffe&#39;s odd pooling layer output size calculations.</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6483" node="75122fdd0ac0cacbb46091cffc441785b24508ca">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-29T20:06:37-04:00</date>
+<msg xml:space="preserve">Relaxed the default non-max suppression parameters used by the mmod_options
+object so that users of the deep learning MMOD tool don&#39;t get spurious errors
+about impossibly labeled objects during training.</msg>
+<paths>
+<path action="M">dlib/dnn/loss.h</path>
+</paths>
+</logentry>
+<logentry revision="6485" node="6021c01284a2bd82249bc4e1e6b660df357fa763">
+<parent revision="6483" node="75122fdd0ac0cacbb46091cffc441785b24508ca" />
+<author email="evgeniy.fm@gmail.com">Evgeniy Fominov</author>
+<date>2017-05-30T12:40:11+03:00</date>
+<msg xml:space="preserve">Possible CLang fix for Neon-based SIMD4i (#612)</msg>
+<paths>
+<path action="M">dlib/simd/simd4f.h</path>
+<path action="M">dlib/simd/simd4i.h</path>
+</paths>
+</logentry>
+<logentry revision="6487" node="5360858bb0c7f5e0deabae75481f07236f049808">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-05-31T16:08:00-04:00</date>
+<msg xml:space="preserve">Added a .fill() member to curand_generator that can create random 32bit
+integers.</msg>
+<paths>
+<path action="M">dlib/dnn/curand_dlibapi.cpp</path>
+<path action="M">dlib/dnn/curand_dlibapi.h</path>
+</paths>
+</logentry>
+<logentry revision="6488" node="ab209be41074163270018ad17fdb000c06ebc994">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-06-02T22:50:01-04:00</date>
+<msg xml:space="preserve">Added set_rect_area()</msg>
+<paths>
+<path action="M">dlib/geometry/drectangle.h</path>
+<path action="M">dlib/geometry/drectangle_abstract.h</path>
+<path action="M">dlib/geometry/rectangle.h</path>
+<path action="M">dlib/geometry/rectangle_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6490" node="d2719abaf6546a6ff7cfa59270280583b350af23">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-06-04T10:06:44-04:00</date>
+<msg xml:space="preserve">Changed the converter so that, rather than producing one python file with
+everything in it, it now makes a python file as before but an additional binary
+file with all the weights in it.  This way, if you are working with a network
+with a very large number of weights you won&#39;t end up with a crazy large python
+script.</msg>
+<paths>
+<path action="M">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6491" node="108467d3815cfcabc9a66bc857145348b741a759">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-06-06T05:47:00-04:00</date>
+<msg xml:space="preserve">Switched order of things in if statement so cmake hopefully won&#39;t give weird errors.</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6492" node="5faee3477597fea27385d155edb1ee260e33d084">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-06-17T12:34:26-04:00</date>
+<msg xml:space="preserve">Changed the random_cropper&#39;s interface so that instead of talking in terms of
+min and max object height, it&#39;s now min and max object size.  This way, if you
+have objects that are short and wide (i.e. objects where the relevant dimension
+is width rather than height) you will get sensible behavior out of the random
+cropper.</msg>
+<paths>
+<path action="M">dlib/image_transforms/random_cropper.h</path>
+<path action="M">dlib/image_transforms/random_cropper_abstract.h</path>
+<path action="M">examples/dnn_face_recognition_ex.cpp</path>
+<path action="M">examples/dnn_mmod_ex.cpp</path>
+<path action="M">examples/random_cropper_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6493" node="722b93ed91244b645a808ae39d42352e09373c8c">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-06-18T08:11:54-04:00</date>
+<msg xml:space="preserve">Updated code to work with new random_cropper interface.</msg>
+<paths>
+<path action="M">tools/python/src/face_recognition.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6494" node="1b250933cc9382b31ec091295e564632f9d97fa0">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-06-19T20:54:45-04:00</date>
+<msg xml:space="preserve">Made is so pressing e in imglab toggles between views of the image where the
+histogram is equalized or unmodified.  This way, if you are looking at
+particularly dark or badly contrasted images you can toggle this mode and maybe
+get a better view of what you are labeling.</msg>
+<paths>
+<path action="M">tools/imglab/src/main.cpp</path>
+<path action="M">tools/imglab/src/metadata_editor.cpp</path>
+<path action="M">tools/imglab/src/metadata_editor.h</path>
+</paths>
+</logentry>
+<logentry revision="6495" node="03333233fd7f0e7f7b08a229f963a988dd66ca4b">
+<parent revision="6491" node="108467d3815cfcabc9a66bc857145348b741a759" />
+<author email="plumtus@lotis.org">Plumtus</author>
+<date>2017-06-07T02:19:23+08:00</date>
+<msg xml:space="preserve">Reinitialize averagers when saved sync file was reloaded. (#629)</msg>
+<paths>
+<path action="M">dlib/dnn/trainer.h</path>
+</paths>
+</logentry>
+<logentry revision="6496" node="a871b6765e9f5461c7d294c8989f65cd9fd22ec7">
+<author email="grigorisg9gr@users.noreply.github.com">Grigoris</author>
+<date>2017-06-07T11:51:19+01:00</date>
+<msg xml:space="preserve">Minor typo corrections in shape predictor trainer. (#633)</msg>
+<paths>
+<path action="M">dlib/image_processing/shape_predictor_trainer.h</path>
+</paths>
+</logentry>
+<logentry revision="6498" node="9e977a1bed81dd2af94ee5067d0bea76f18940fe">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-06-21T09:10:34-04:00</date>
+<msg xml:space="preserve">Added operator= for simd8f so assignment from float compiles.</msg>
+<paths>
+<path action="M">dlib/simd/simd8f.h</path>
+</paths>
+</logentry>
+<logentry revision="6499" node="e8cf0eeb0696abff831bc2b2a49ec5fcdbd94d6c">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-06-21T17:06:48-04:00</date>
+<msg xml:space="preserve">Fixed mex class code printing</msg>
+<paths>
+<path action="M">dlib/matlab/mex_wrapper.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6500" node="88b121a1fedc1130a7b368c778bb0f92f4602ae3">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-06-28T08:53:43-04:00</date>
+<msg xml:space="preserve">Minor change to avoid errors from some versions of cmake.</msg>
+<paths>
+<path action="M">dlib/cmake_utils/test_for_cudnn/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6501" node="4e0b6915da3a4ddda74b0f050e43ed9617dc1ed0">
+<parent revision="6376" node="05aded11b02710a38c5210bab4689a6640b53b23" />
+<author email="joachim@filmlight.ltd.uk">Joachim</author>
+<date>2017-03-13T15:34:13+00:00</date>
+<msg xml:space="preserve">add initial version of convolutional transpose layer</msg>
+<paths>
+<path action="M">dlib/dnn/cpu_dlib.cpp</path>
+<path action="M">dlib/dnn/cpu_dlib.h</path>
+<path action="M">dlib/dnn/cudnn_dlibapi.cpp</path>
+<path action="M">dlib/dnn/cudnn_dlibapi.h</path>
+<path action="M">dlib/dnn/layers.h</path>
+<path action="M">dlib/dnn/layers_abstract.h</path>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6502" node="324a5638cdebfcb12bf08c2041db692ecf7bc040">
+<author email="joachim@filmlight.ltd.uk">Joachim</author>
+<date>2017-03-16T12:19:26+00:00</date>
+<msg xml:space="preserve">fixed backward pass in cont layer to accumulate gradients this will pass the layer test now also removed compile warnings and changed some comments</msg>
+<paths>
+<path action="M">dlib/dnn/cpu_dlib.h</path>
+<path action="M">dlib/dnn/layers.h</path>
+<path action="M">dlib/dnn/layers_abstract.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6503" node="224183b025f1b138861a39a5f8b103ba3a797457">
+<parent revision="6502" node="324a5638cdebfcb12bf08c2041db692ecf7bc040" />
+<parent revision="6424" node="8a6bf5db9bc39fd4fd5f5d583ef83f84b8b378bd" />
+<author email="joachim@filmlight.ltd.uk">Joachim</author>
+<date>2017-04-10T13:17:54+01:00</date>
+<msg xml:space="preserve">Merge remote-tracking branch &#39;upstream/master&#39;</msg>
+<paths>
+<path action="A">dlib/dnn/cuda_data_ptr.cpp</path>
+<path action="A">dlib/dnn/cuda_data_ptr.h</path>
+<path action="A">dlib/dnn/cusolver_dlibapi.cu</path>
+<path action="A">dlib/dnn/cusolver_dlibapi.h</path>
+<path action="M">README.md</path>
+<path action="M">dlib/CMakeLists.txt</path>
+<path action="M">dlib/cmake_utils/add_python_module</path>
+<path action="M">dlib/cmake_utils/cmake_find_blas.txt</path>
+<path action="M">dlib/data_io/image_dataset_metadata.cpp</path>
+<path action="M">dlib/data_io/image_dataset_metadata.h</path>
+<path action="M">dlib/dnn/core.h</path>
+<path action="M">dlib/dnn/cpu_dlib.cpp</path>
+<path action="M">dlib/dnn/cpu_dlib.h</path>
+<path action="M">dlib/dnn/cuda_dlib.cu</path>
+<path action="M">dlib/dnn/cuda_dlib.h</path>
+<path action="M">dlib/dnn/cuda_errors.h</path>
+<path action="M">dlib/dnn/cuda_utils.h</path>
+<path action="M">dlib/dnn/cudnn_dlibapi.cpp</path>
+<path action="M">dlib/dnn/tensor_tools.cpp</path>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+<path action="M">dlib/graph_utils/edge_list_graphs.h</path>
+<path action="M">dlib/image_processing/scan_fhog_pyramid.h</path>
+<path action="M">dlib/image_transforms/image_pyramid.h</path>
+<path action="M">dlib/matlab/cmake_mex_wrapper</path>
+<path action="M">dlib/matlab/mex_wrapper.cpp</path>
+<path action="M">dlib/matrix/matrix_trsm.h</path>
+<path action="M">dlib/optimization/optimization_solve_qp_using_smo.h</path>
+<path action="M">dlib/optimization/optimization_solve_qp_using_smo_abstract.h</path>
+<path action="M">dlib/test/CMakeLists.txt</path>
+<path action="M">dlib/test/cublas.cpp</path>
+<path action="M">dlib/test/dnn.cpp</path>
+<path action="M">dlib/test/opt_qp_solver.cpp</path>
+<path action="M">dlib/timer/timer.cpp</path>
+<path action="M">dlib/timer/timer_heavy.h</path>
+<path action="M">dlib/tokenizer/tokenizer_kernel_1.cpp</path>
+<path action="M">docs/docs/optimization.xml</path>
+<path action="M">docs/docs/term_index.xml</path>
+<path action="M">examples/CMakeLists.txt</path>
+<path action="M">tools/imglab/src/main.cpp</path>
+<path action="M">tools/imglab/src/metadata_editor.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6504" node="e0b16a54ce28359e42872a57218ea8de34442e72">
+<parent revision="6503" node="224183b025f1b138861a39a5f8b103ba3a797457" />
+<parent revision="6496" node="a871b6765e9f5461c7d294c8989f65cd9fd22ec7" />
+<author email="joachim@filmlight.ltd.uk">Joachim</author>
+<date>2017-06-13T13:33:42+01:00</date>
+<msg xml:space="preserve">Merge branch &#39;master&#39; of https://github.com/davisking/dlib</msg>
+<paths>
+<path action="A">appveyor.yml</path>
+<path action="A">dlib/image_processing/shape_predictor_trainer.h</path>
+<path action="A">dlib/image_processing/shape_predictor_trainer_abstract.h</path>
+<path action="A">python_examples/requirements.txt</path>
+<path action="A">tools/convert_dlib_nets_to_caffe/CMakeLists.txt</path>
+<path action="A">tools/convert_dlib_nets_to_caffe/main.cpp</path>
+<path action="A">tools/convert_dlib_nets_to_caffe/running_a_dlib_model_with_caffe_example.py</path>
+<path action="R">dlib/smart_pointers/scoped_ptr_abstract.h</path>
+<path action="M">dlib/CMakeLists.txt</path>
+<path action="M">dlib/any/any.h</path>
+<path action="M">dlib/any/any_decision_function.h</path>
+<path action="M">dlib/any/any_function.h</path>
+<path action="M">dlib/any/any_function_impl.h</path>
+<path action="M">dlib/any/any_trainer.h</path>
+<path action="M">dlib/bayes_utils/bayes_utils.h</path>
+<path action="M">dlib/bridge/bridge.h</path>
+<path action="M">dlib/bsp/bsp.cpp</path>
+<path action="M">dlib/bsp/bsp.h</path>
+<path action="M">dlib/cmake_utils/dlib.pc.in</path>
+<path action="M">dlib/cmake_utils/dlibConfig.cmake.in</path>
+<path action="M">dlib/cmd_line_parser/cmd_line_parser_print_1.h</path>
+<path action="M">dlib/directed_graph/directed_graph_kernel_1.h</path>
+<path action="M">dlib/dnn/core.h</path>
+<path action="M">dlib/dnn/core_abstract.h</path>
+<path action="M">dlib/dnn/cuda_dlib.cu</path>
+<path action="M">dlib/dnn/cuda_dlib.h</path>
+<path action="M">dlib/dnn/curand_dlibapi.cpp</path>
+<path action="M">dlib/dnn/curand_dlibapi.h</path>
+<path action="M">dlib/dnn/layers.h</path>
+<path action="M">dlib/dnn/layers_abstract.h</path>
+<path action="M">dlib/dnn/loss.h</path>
+<path action="M">dlib/dnn/tensor_tools.cpp</path>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+<path action="M">dlib/dnn/trainer.h</path>
+<path action="M">dlib/dnn/utilities.h</path>
+<path action="M">dlib/dnn/utilities_abstract.h</path>
+<path action="M">dlib/geometry/drectangle.h</path>
+<path action="M">dlib/geometry/drectangle_abstract.h</path>
+<path action="M">dlib/geometry/rectangle.h</path>
+<path action="M">dlib/geometry/rectangle_abstract.h</path>
+<path action="M">dlib/geometry/vector.h</path>
+<path action="M">dlib/graph/graph_kernel_1.h</path>
+<path action="M">dlib/graph_cuts/min_cut.h</path>
+<path action="M">dlib/gui_core/gui_core_kernel_1.cpp</path>
+<path action="M">dlib/gui_core/gui_core_kernel_1.h</path>
+<path action="M">dlib/gui_core/gui_core_kernel_2.cpp</path>
+<path action="M">dlib/gui_widgets/base_widgets.cpp</path>
+<path action="M">dlib/gui_widgets/base_widgets.h</path>
+<path action="M">dlib/gui_widgets/drawable.h</path>
+<path action="M">dlib/gui_widgets/fonts.cpp</path>
+<path action="M">dlib/gui_widgets/fonts.h</path>
+<path action="M">dlib/gui_widgets/nativefont.h</path>
+<path action="M">dlib/gui_widgets/widgets.cpp</path>
+<path action="M">dlib/gui_widgets/widgets.h</path>
+<path action="M">dlib/image_loader/jpeg_loader.h</path>
+<path action="M">dlib/image_loader/png_loader.h</path>
+<path action="M">dlib/image_processing.h</path>
+<path action="M">dlib/image_processing/shape_predictor.h</path>
+<path action="M">dlib/image_processing/shape_predictor_abstract.h</path>
+<path action="M">dlib/iosockstream/iosockstream.h</path>
+<path action="M">dlib/logger/logger_kernel_1.cpp</path>
+<path action="M">dlib/logger/logger_kernel_1.h</path>
+<path action="M">dlib/matrix/lapack/gees.h</path>
+<path action="M">dlib/matrix/matrix_blas_bindings.h</path>
+<path action="M">dlib/matrix/matrix_trsm.h</path>
+<path action="M">dlib/optimization/optimization_bobyqa.h</path>
+<path action="M">dlib/serialize.h</path>
+<path action="M">dlib/server/server_kernel.h</path>
+<path action="M">dlib/simd/simd4f.h</path>
+<path action="M">dlib/simd/simd4i.h</path>
+<path action="M">dlib/simd/simd_check.h</path>
+<path action="M">dlib/smart_pointers.h</path>
+<path action="M">dlib/smart_pointers/scoped_ptr.h</path>
+<path action="M">dlib/smart_pointers_thread_safe.h</path>
+<path action="M">dlib/sockets/sockets_extensions.cpp</path>
+<path action="M">dlib/sockets/sockets_extensions.h</path>
+<path action="M">dlib/sockets/sockets_extensions_abstract.h</path>
+<path action="M">dlib/sockets/sockets_kernel_1.cpp</path>
+<path action="M">dlib/sockets/sockets_kernel_1.h</path>
+<path action="M">dlib/sockets/sockets_kernel_2.cpp</path>
+<path action="M">dlib/sockets/sockets_kernel_2.h</path>
+<path action="M">dlib/sockets/sockets_kernel_abstract.h</path>
+<path action="M">dlib/sockstreambuf/sockstreambuf.h</path>
+<path action="M">dlib/sockstreambuf/sockstreambuf_abstract.h</path>
+<path action="M">dlib/sockstreambuf/sockstreambuf_unbuffered.h</path>
+<path action="M">dlib/sqlite/sqlite.h</path>
+<path action="M">dlib/svm/kkmeans.h</path>
+<path action="M">dlib/svm/pegasos.h</path>
+<path action="M">dlib/svm/structural_svm_distributed.h</path>
+<path action="M">dlib/svm/svm_threaded.h</path>
+<path action="M">dlib/test/CMakeLists.txt</path>
+<path action="M">dlib/test/dnn.cpp</path>
+<path action="M">dlib/test/elastic_net.cpp</path>
+<path action="M">dlib/test/gui/main.cpp</path>
+<path action="M">dlib/test/makefile</path>
+<path action="M">dlib/test/opt_qp_solver.cpp</path>
+<path action="M">dlib/test/optimization_test_functions.cpp</path>
+<path action="M">dlib/test/smart_pointers.cpp</path>
+<path action="M">dlib/test/sockets.cpp</path>
+<path action="M">dlib/test/sockets2.cpp</path>
+<path action="M">dlib/test/sockstreambuf.cpp</path>
+<path action="M">dlib/test/tester.h</path>
+<path action="M">dlib/test/tuple.cpp</path>
+<path action="M">dlib/threads/thread_function_extension.h</path>
+<path action="M">dlib/threads/thread_pool_extension.cpp</path>
+<path action="M">dlib/threads/thread_pool_extension.h</path>
+<path action="M">dlib/timer/timer.cpp</path>
+<path action="M">dlib/timer/timer.h</path>
+<path action="M">dlib/xml_parser/xml_parser_kernel_1.h</path>
+<path action="M">dlib/xml_parser/xml_parser_kernel_interfaces.h</path>
+<path action="M">docs/docs/containers.xml</path>
+<path action="M">docs/docs/howto_contribute.xml</path>
+<path action="M">docs/docs/linear_algebra.xml</path>
+<path action="M">docs/docs/ml.xml</path>
+<path action="M">docs/docs/term_index.xml</path>
+<path action="M">examples/CMakeLists.txt</path>
+<path action="M">examples/bayes_net_gui_ex.cpp</path>
+<path action="M">examples/dnn_face_recognition_ex.cpp</path>
+<path action="M">examples/dnn_introduction2_ex.cpp</path>
+<path action="M">examples/dnn_introduction_ex.cpp</path>
+<path action="M">examples/sockstreambuf_ex.cpp</path>
+<path action="M">setup.py</path>
+</paths>
+</logentry>
+<logentry revision="6505" node="d50bd56510b31ab651a30dc71ed318b18f615e17">
+<author email="joachim@filmlight.ltd.uk">OranjeeGeneral</author>
+<date>2017-06-22T17:55:20+01:00</date>
+<msg xml:space="preserve">refactored interface to reduce complexity so conv and convt layers forward passes have to call setup explicit now and there is only one ()-operator</msg>
+<paths>
+<path action="M">dlib/dnn/cpu_dlib.cpp</path>
+<path action="M">dlib/dnn/cpu_dlib.h</path>
+<path action="M">dlib/dnn/cudnn_dlibapi.cpp</path>
+<path action="M">dlib/dnn/cudnn_dlibapi.h</path>
+<path action="M">dlib/dnn/layers.h</path>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6507" node="5f43b527f26068b6e686a64e275f1f2a72cf8472">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-06-26T21:01:47-04:00</date>
+<msg xml:space="preserve">Fixed typo in comment.</msg>
+<paths>
+<path action="M">dlib/dnn/core.h</path>
+</paths>
+</logentry>
+<logentry revision="6508" node="bc43b7b4a15064e791f93d31f2f338f9531995a4">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-06-26T21:06:59-04:00</date>
+<msg xml:space="preserve">Cleaned up documentation for conv_.  Also removed unnecessary tensor
+reallocation and copying inside conv_&#39;s backward pass.  Doing this
+required adding an add_to_output boolean option to the methods of
+tensor_conv.</msg>
+<paths>
+<path action="M">dlib/dnn/cpu_dlib.cpp</path>
+<path action="M">dlib/dnn/cpu_dlib.h</path>
+<path action="M">dlib/dnn/cudnn_dlibapi.cpp</path>
+<path action="M">dlib/dnn/cudnn_dlibapi.h</path>
+<path action="M">dlib/dnn/layers.h</path>
+<path action="M">dlib/dnn/layers_abstract.h</path>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6511" node="b5b8b55a3d1c6781055b3706363a5a92756b4d85">
+<parent revision="6499" node="e8cf0eeb0696abff831bc2b2a49ec5fcdbd94d6c" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-01T10:38:15-04:00</date>
+<msg xml:space="preserve">Added last_modified() method to dlib::file.</msg>
+<paths>
+<path action="M">dlib/dir_nav/dir_nav_kernel_2.cpp</path>
+<path action="M">dlib/dir_nav/dir_nav_kernel_2.h</path>
+</paths>
+</logentry>
+<logentry revision="6513" node="e44118d86e385fa95076ed3599a0d3a28437e524">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-01T11:20:45-04:00</date>
+<msg xml:space="preserve">Added file::last_modified() for windows version of code.</msg>
+<paths>
+<path action="M">dlib/dir_nav/dir_nav_kernel_1.cpp</path>
+<path action="M">dlib/dir_nav/dir_nav_kernel_1.h</path>
+</paths>
+</logentry>
+<logentry revision="6514" node="93a30ab0bf7065d5173010c9ad36763269d0a69f">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-01T11:34:35-04:00</date>
+<msg xml:space="preserve">updated docs</msg>
+<paths>
+<path action="M">dlib/dir_nav/dir_nav_kernel_1.h</path>
+<path action="M">dlib/dir_nav/dir_nav_kernel_2.h</path>
+<path action="M">dlib/dir_nav/dir_nav_kernel_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6515" node="5d7f0f9e1ac6f673226557fdf66af54fcfbc5500">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-01T11:37:16-04:00</date>
+<msg xml:space="preserve">Added select_oldest_file() and select_newest_file()</msg>
+<paths>
+<path action="M">dlib/dir_nav/dir_nav_extensions.cpp</path>
+<path action="M">dlib/dir_nav/dir_nav_extensions.h</path>
+<path action="M">dlib/dir_nav/dir_nav_extensions_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6516" node="307c1b509117864df299bb88871060bb8efd17af">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-01T11:41:26-04:00</date>
+<msg xml:space="preserve">Made dnn_trainer sync its state to two separate sync files that it alternates
+between.  This should make syncing more robust to sudden hardware failure that
+happens right when saving to disk.</msg>
+<paths>
+<path action="M">dlib/dnn/trainer.h</path>
+<path action="M">dlib/dnn/trainer_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6517" node="1df4a8a67e95897542203e87ee216b958023f7db">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-01T11:53:38-04:00</date>
+<msg xml:space="preserve">Made it so you can set the number of output filters for con_ layers at runtime.</msg>
+<paths>
+<path action="M">dlib/dnn/layers.h</path>
+</paths>
+</logentry>
+<logentry revision="6519" node="f46c094db0c8fbdb3dcba3a2c33be6ef06e0f86f">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-01T11:54:20-04:00</date>
+<msg xml:space="preserve">updated spec about con_</msg>
+<paths>
+<path action="M">dlib/dnn/layers_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6520" node="4d594cdbcfea87314f0e48f9cc0b61411d37c98a">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-01T12:12:30-04:00</date>
+<msg xml:space="preserve">Added process() and process_batch() to add_loss_layer.  These routines let you
+easily pass arguments to any optional parameters of a loss layer&#39;s to_tensor()
+routine.  For instance, it makes it more convenient to set loss_mmod_&#39;s
+adjust_threshold parameter.</msg>
+<paths>
+<path action="M">dlib/dnn/core.h</path>
+<path action="M">dlib/dnn/core_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6521" node="77d5852d5ca0e243c1f6fa214d6de5e7bd62cbfb">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-01T14:46:27-04:00</date>
+<msg xml:space="preserve">Upgraded loss_mmod_ to support objects of varying aspect ratio.  This changes
+the API for the mmod_options struct slightly.</msg>
+<paths>
+<path action="M">dlib/dnn/loss.h</path>
+<path action="M">dlib/dnn/loss_abstract.h</path>
+<path action="M">examples/dnn_mmod_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6522" node="c27b1f28cee43d94fbcad8f63300dee3a962b896">
+<parent revision="6510" node="16cce715afeb5b60519d70f377bd753de22260d5" />
+<author email="juha.reunanen@gmail.com">Juha Reunanen</author>
+<date>2017-06-30T12:47:21+03:00</date>
+<msg xml:space="preserve">Problem:    Visual Studio&#39;s vcpkgsrv.exe constantly uses a single CPU core, (#666)
+
+apparently never finishing whatever it&#39;s trying to do. Moreover,
+            this issue prevents some operations like switching from Debug to
+            Release (and vice versa) in the IDE. (Your mileage may vary.)
+Workaround: Keep manually killing the vcpkgsrv.exe process.
+Solution:   Disable IntelliSense for some files. Which files? Unfortunately
+            this seems to be a trial-and-error process.</msg>
+<paths>
+<path action="M">dlib/dnn.h</path>
+</paths>
+</logentry>
+<logentry revision="6524" node="222d67337366cc7162e45033179c6f7926a021e5">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-01T15:24:25-04:00</date>
+<msg xml:space="preserve">suppress compiler warnings</msg>
+<paths>
+<path action="M">dlib/dnn/layers.h</path>
+<path action="M">dlib/dnn/loss.h</path>
+</paths>
+</logentry>
+<logentry revision="6525" node="4dbaea3d09b01eb55ac0f14eef39ea32fb5a162d">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-01T15:46:25-04:00</date>
+<msg xml:space="preserve">Fixed broken copy constructor and assignment operator of con_, which became
+broken about an hour ago.  Oops.</msg>
+<paths>
+<path action="M">dlib/dnn/layers.h</path>
+</paths>
+</logentry>
+<logentry revision="6526" node="fad0fb2c55eee3d244be6dfb87a0ab342b7c7b15">
+<author email="juha.reunanen@gmail.com">Juha Reunanen</author>
+<date>2017-07-01T23:12:34+03:00</date>
+<msg xml:space="preserve">Add new loss layer for semantic segmentation (pixel-wise classification) (#540)
+
+* #288 - add new layer loss_multiclass_log_matrixoutput for semantic-segmentation purposes
+
+* In semantic segmentation, add capability to ignore individual pixels when computing gradients
+
+* In semantic segmentation, 65535 classes ought to be enough for anybody
+
+* Divide matrix output loss by matrix dimensions too, in order to make losses related to differently sized matrices more comparable
+- note that this affects the required learning rate as well!
+
+* Review fix: avoid matrix copy
+
+* Review fix: rename to loss_multiclass_log_per_pixel
+
+* Review fix: just use uint16_t as the label type
+
+* Add more tests: check that network params and outputs are correct
+
+* Improve error message when output and truth matrix dimensions do not match
+
+* Add test case verifying that a single call of loss_multiclass_log_per_pixel equals multiple corresponding calls of loss_multiclass_log
+
+* Fix test failure by training longer
+
+* Remove the test case that fails on Travis for some reason, even though it works on AppVeyor and locally</msg>
+<paths>
+<path action="M">dlib/dnn/loss.h</path>
+<path action="M">dlib/dnn/loss_abstract.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6527" node="70e5e7dc8d677f6894ffdee310d75ba6f504b6f4">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-01T16:26:58-04:00</date>
+<msg xml:space="preserve">Moved label_to_ignore into loss_multiclass_log_per_pixel_ and also cleaned up a
+few minor things.</msg>
+<paths>
+<path action="M">dlib/dnn/loss.h</path>
+<path action="M">dlib/dnn/loss_abstract.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6528" node="9bb59097442a3284059966525bc044a89772b13a">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-02T08:16:16-04:00</date>
+<msg xml:space="preserve">Removed default argument from process_batch since it upsets older versions of
+gcc and I can imagine scenarios where having it leads to user errors anyway.</msg>
+<paths>
+<path action="M">dlib/dnn/core.h</path>
+<path action="M">dlib/dnn/core_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6529" node="5104476d6c0f726c8a655442444fa4a9933785b0">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-02T08:43:45-04:00</date>
+<msg xml:space="preserve">Added a comment</msg>
+<paths>
+<path action="M">examples/dnn_mmod_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6530" node="8b157ee76aa94558dad969122b5d6c6731f76205">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-04T08:52:12-04:00</date>
+<msg xml:space="preserve">Clarified spec slightly.</msg>
+<paths>
+<path action="M">dlib/dnn/tensor_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6531" node="a5d65a463f81c319c4554226dade5eb434968a24">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-04T11:52:56-04:00</date>
+<msg xml:space="preserve">Added tt::resize_bilinear() and tt::resize_bilinear_gradient().</msg>
+<paths>
+<path action="M">dlib/dnn/cpu_dlib.cpp</path>
+<path action="M">dlib/dnn/cpu_dlib.h</path>
+<path action="M">dlib/dnn/cuda_dlib.cu</path>
+<path action="M">dlib/dnn/cuda_dlib.h</path>
+<path action="M">dlib/dnn/tensor_tools.cpp</path>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6532" node="e7500aaabbc0733b208d07b8d2254c6ef25e5a15">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-04T13:14:05-04:00</date>
+<msg xml:space="preserve">Added upsample_ layer that upsamples a tensor using bilinear interpolation.</msg>
+<paths>
+<path action="M">dlib/dnn/layers.h</path>
+<path action="M">dlib/dnn/layers_abstract.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6533" node="42edf220ec2b9da1a769a71357d49e48859a6558">
+<parent revision="6529" node="5104476d6c0f726c8a655442444fa4a9933785b0" />
+<author email="juha.reunanen@gmail.com">Juha Reunanen</author>
+<date>2017-07-03T23:24:45+03:00</date>
+<msg xml:space="preserve">Disable IntelliSense for all DNN unit tests (#678)
+
+* Problem:    Visual Studio&#39;s vcpkgsrv.exe constantly uses a single CPU core,
+            apparently never finishing whatever it&#39;s trying to do. Moreover,
+            this issue prevents some operations like switching from Debug to
+            Release (and vice versa) in the IDE. (Your mileage may vary.)
+Workaround: Keep manually killing the vcpkgsrv.exe process.
+Solution:   Disable IntelliSense for some files. Which files? Unfortunately
+            this seems to be a trial-and-error process.
+
+* Disable IntelliSense for the ResNet declarations
+
+* Disable IntelliSense for even more stuff
+
+* Disable IntelliSense for all DNN unit tests</msg>
+<paths>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6534" node="97039314d589b354fe28f6e782f07343c661caad">
+<parent revision="6532" node="e7500aaabbc0733b208d07b8d2254c6ef25e5a15" />
+<parent revision="6533" node="42edf220ec2b9da1a769a71357d49e48859a6558" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-04T13:19:41-04:00</date>
+<msg xml:space="preserve">merged</msg>
+<paths>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6535" node="1d7f57b67c4421e36a28c50a59e7c40d5deabccf">
+<author email="yuang86@gmail.com">bot1131357</author>
+<date>2017-07-06T01:53:48+10:00</date>
+<msg xml:space="preserve">Check for __ARM_NEON__ for libpng (#679)
+
+*  Added check to see if __ARM_NEON__ is defined. Now we can use the following command: cmake --build --config Release ..
+
+* Rename to use_arm_neon.cmake to check_if_neon_available.cmake for clarity, minor tidying up of script, and simplifying try_compile() code for ARM NEON.</msg>
+<paths>
+<path action="A">dlib/cmake_utils/check_if_neon_available.cmake</path>
+<path action="A">dlib/cmake_utils/test_for_neon/CMakeLists.txt</path>
+<path action="A">dlib/cmake_utils/test_for_neon/neon_test.cpp</path>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6536" node="a7313c5603749aa28313b251e24c1b87bdb618d7">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-05T12:12:43-04:00</date>
+<msg xml:space="preserve">Renamed a few things to make the code and messages clearer.</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+<path action="M">dlib/cmake_utils/check_if_neon_available.cmake</path>
+</paths>
+</logentry>
+<logentry revision="6537" node="4233d5ba4a1aaad0b124b3f3deb2d161bfca6145">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-06T10:04:02-04:00</date>
+<msg xml:space="preserve">Made ctrl+c detection in a mex file work more reliably in newer versions of
+matlab.</msg>
+<paths>
+<path action="M">dlib/matlab/mex_wrapper.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6539" node="8000a172af6d1a00a11fffc7b1e4c7d5632c1040">
+<author email="juha.reunanen@gmail.com">Juha Reunanen</author>
+<date>2017-07-07T17:26:29+03:00</date>
+<msg xml:space="preserve">Add new loss for weighted pixel inputs (#685)
+
+* Add new loss for weighted pixel inputs (may be useful e.g. to emphasize rare classes)
+
+* Deduplicate method loss_multiclass_log_per_pixel_(weighted_)::to_label
+
+* Add a simple test case for weighted inputs
+(also, fix a typo in test_tensor_resize_bilienar&#39;s name)
+
+* Add loss_multiclass_log_per_pixel_weighted_ to loss_abstract.h
+
+* Decrease the amount of weighting
+
+* There&#39;s no need to train for a very long time</msg>
+<paths>
+<path action="M">dlib/dnn/loss.h</path>
+<path action="M">dlib/dnn/loss_abstract.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6541" node="2c9e5703a0c1c0bd155db6a2c02600e2ae6640a0">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-07T10:42:29-04:00</date>
+<msg xml:space="preserve">Improved error message from the svmstruct object detector.</msg>
+<paths>
+<path action="M">dlib/svm/structural_svm_object_detection_problem.h</path>
+</paths>
+</logentry>
+<logentry revision="6542" node="49c1d15ec8edf4bc3a1641f642bc3b80dd3ca68b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-08T15:56:40-04:00</date>
+<msg xml:space="preserve">Fixed name lookup problem for calls to serialize() on network objects.</msg>
+<paths>
+<path action="M">dlib/dnn/core.h</path>
+</paths>
+</logentry>
+<logentry revision="6543" node="c2b2bc909b8f2acb5d80a8ca84eb63fa1fe7c8a6">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-08T16:50:38-04:00</date>
+<msg xml:space="preserve">Work around funny name lookup rules for serialize() call.</msg>
+<paths>
+<path action="M">dlib/dnn/core.h</path>
+</paths>
+</logentry>
+<logentry revision="6544" node="24db262ee5fa81fc9c52af418a1ca1908edd4180">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-08T16:53:29-04:00</date>
+<msg xml:space="preserve">Added Juha Reunanen serialize test case, but one with dlib:: in front and one
+without to make sure both types of lookup work.</msg>
+<paths>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6545" node="a3a3d46411f8d79da854518a0b85dc83a337a465">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-09T12:20:21-04:00</date>
+<msg xml:space="preserve">Fixed typo in spec.</msg>
+<paths>
+<path action="M">dlib/dnn/tensor_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6546" node="fd0f8feaf3a1d09c7508735ad93d59e39d941c43">
+<author email="mamba.wong@gmail.com">MambaWong</author>
+<date>2017-07-12T02:11:06+08:00</date>
+<msg xml:space="preserve">Update webcam_face_pose_ex.cpp (#702)
+
+Test on a given video like this cv::VideoCapture cap(&quot;Sample.avi&quot;) may be broken when the video frames are not enough before the main window is closed by the user.</msg>
+<paths>
+<path action="M">examples/webcam_face_pose_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6547" node="d0841d570136ae02452dbe1118a62f57dfd6d69c">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-11T18:12:47-04:00</date>
+<msg xml:space="preserve">Make travis-ci build the python api</msg>
+<paths>
+<path action="M">.travis.yml</path>
+<path action="M">dlib/travis/build-and-test.sh</path>
+</paths>
+</logentry>
+<logentry revision="6552" node="8cc5d90e0f1f70bb16a4da340770ce0bc73be451">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-11T19:52:18-04:00</date>
+<msg xml:space="preserve">More python build tests</msg>
+<paths>
+<path action="M">dlib/travis/build-and-test.sh</path>
+</paths>
+</logentry>
+<logentry revision="6553" node="72d0ff9885268f8c0e36118e4107a3eae22bd054">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-11T20:46:29-04:00</date>
+<msg xml:space="preserve">Add cmake to path for travis</msg>
+<paths>
+<path action="M">dlib/travis/build-and-test.sh</path>
+</paths>
+</logentry>
+<logentry revision="6554" node="401c6e1e465f059d998197343ce91d3d04764c91">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-11T22:02:26-04:00</date>
+<msg xml:space="preserve">Trying again...</msg>
+<paths>
+<path action="M">dlib/travis/build-and-test.sh</path>
+</paths>
+</logentry>
+<logentry revision="6555" node="05f40d904621210b6e77b94a73e32a7cd64d1ea8">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-11T22:17:07-04:00</date>
+<msg xml:space="preserve">Trying another python build test.</msg>
+<paths>
+<path action="M">dlib/travis/build-and-test.sh</path>
+</paths>
+</logentry>
+<logentry revision="6556" node="89ab0bac484c0a621887dbe4239ca4becb521aca">
+<author email="github@joo.st">Joost van Amersfoort</author>
+<date>2017-07-15T02:12:00+01:00</date>
+<msg xml:space="preserve">remove linking to libpython on linux/OSX (#703)
+
+* remove linking to libpython on linux
+
+* add OSX libpython free building
+
+* add automatic discovery of include python dir back in
+
+* make the libs non required for building on manylinux</msg>
+<paths>
+<path action="M">dlib/cmake_utils/add_python_module</path>
+</paths>
+</logentry>
+<logentry revision="6557" node="6f82b11e5fc09b96340e87e5792bba8628279876">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-15T22:29:44-04:00</date>
+<msg xml:space="preserve">Hopefully improved compiler error diagnostic when using gcc and a user misconfigures their build environment.</msg>
+<paths>
+<path action="A">dlib/bits/c++config.h</path>
+</paths>
+</logentry>
+<logentry revision="6558" node="4309baf01093704db1ffbb2488dbab7191d93dad">
+<author email="juha.reunanen@gmail.com">Juha Reunanen</author>
+<date>2017-07-16T14:23:59+03:00</date>
+<msg xml:space="preserve">Add per-pixel mean square loss (#690)
+
+* Add per-pixel mean square loss
+
+* Add documentation of loss_mean_squared_per_pixel_
+
+* Add test case for per-pixel mean square loss: a simple autoencoder
+
+* Review fix: reorder params of function tensor_index, so that the order corresponds to the convention used in the rest of the dlib code base
+
+* Review fix: add breaks as intended, and change the rest of the test accordingly
+
+* Again a case where the tests already work locally for me, but not on AppVeyor/Travis - this commit is a blindfolded attempt to fix the problem
+(and it also fixes a compiler warning)</msg>
+<paths>
+<path action="M">dlib/dnn/loss.h</path>
+<path action="M">dlib/dnn/loss_abstract.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6559" node="bf5bfffb2b74e0b6130c0cd77f3c978d7152ee29">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-18T22:19:29-04:00</date>
+<msg xml:space="preserve">Added --sort and also the ability to propagate boxes from one image to the
+next using dlib::correlation_tracker.</msg>
+<paths>
+<path action="M">tools/imglab/src/main.cpp</path>
+<path action="M">tools/imglab/src/metadata_editor.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6560" node="98605f018fd15cc1c775a5180db7cfaa39cf9cb8">
+<parent revision="6558" node="4309baf01093704db1ffbb2488dbab7191d93dad" />
+<author email="Morosko@users.noreply.github.com">Morosko</author>
+<date>2017-07-18T15:33:27+02:00</date>
+<msg xml:space="preserve">Make http_client compile in C++11 and above (#714)
+
+* Make http_client compile in C++11 and above
+
+* Optimize file reading</msg>
+<paths>
+<path action="M">dlib/http_client/http_client.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6562" node="396b7ed0e6e085742b5bdcbbe0e587f91f766474">
+<author email="k.pavan@invizotechnologies.com">Pavan kumar</author>
+<date>2017-07-19T18:38:28+05:30</date>
+<msg xml:space="preserve">Just small typo (#716)</msg>
+<paths>
+<path action="M">python_examples/face_recognition.py</path>
+</paths>
+</logentry>
+<logentry revision="6563" node="d3ab7b9cda03f0ded1f53abd352e43bcff030c23">
+<author email="evgeniy.fm@gmail.com">Evgeniy Fominov</author>
+<date>2017-07-21T19:37:46+03:00</date>
+<msg xml:space="preserve">cuDNN convolution algorithms shared workspace (#695)
+
+* added shared workspace
+
+* rewrite shared workspace code
+
+* rename and device-based buffer allocation
+
+* fix cudnn_device_buffer constructors</msg>
+<paths>
+<path action="M">dlib/dnn/cuda_data_ptr.h</path>
+<path action="M">dlib/dnn/cudnn_dlibapi.cpp</path>
+<path action="M">dlib/dnn/cudnn_dlibapi.h</path>
+</paths>
+</logentry>
+<logentry revision="6564" node="f7fbb3219aeaedc3306a080f277fc42c537845e7">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-22T07:50:52-04:00</date>
+<msg xml:space="preserve">Made tensor_conv hold references to the cuda_data_void_ptr work buffers in the
+member area of the class.  This way, we avoid a potential error where the
+buffers are reallocated while cuDNN is still using them in the background.</msg>
+<paths>
+<path action="M">dlib/dnn/cudnn_dlibapi.cpp</path>
+<path action="M">dlib/dnn/cudnn_dlibapi.h</path>
+</paths>
+</logentry>
+<logentry revision="6565" node="69b6bb1130fc5fd31293b23cb45d62ba94b2f0d8">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-22T11:41:48-04:00</date>
+<msg xml:space="preserve">Improved errors from libpng when users link against a different version of
+libpng than they built against.</msg>
+<paths>
+<path action="M">dlib/image_loader/png_loader.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6566" node="11755added24a5396d0c9a68f5dbe9e8eaaa6171">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-24T10:01:23-04:00</date>
+<msg xml:space="preserve">Fixed grammar</msg>
+<paths>
+<path action="M">examples/dnn_inception_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6567" node="8fc176117752ac5f4aec9e6e46cf6fe11ccdd81a">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-24T10:01:30-04:00</date>
+<msg xml:space="preserve">Fixed tabbing</msg>
+<paths>
+<path action="M">dlib/dnn/cpu_dlib.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6568" node="f1b45f1446062c59d69b254825fec0532e142938">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-29T05:51:59-04:00</date>
+<msg xml:space="preserve">Minor adjustments to avoid false alarms in cca test.</msg>
+<paths>
+<path action="M">dlib/test/cca.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6569" node="9a69628a43de0d972f60f3bcfa879c6603013450">
+<parent revision="6567" node="8fc176117752ac5f4aec9e6e46cf6fe11ccdd81a" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-25T15:41:30-04:00</date>
+<msg xml:space="preserve">Added cmake scripts and some related tooling that makes it easy to call C++
+code from java.</msg>
+<paths>
+<path action="A">dlib/java/CMakeLists.txt</path>
+<path action="A">dlib/java/cmake_swig_jni</path>
+<path action="A">dlib/java/jvector.h</path>
+<path action="A">dlib/java/run_test.sh</path>
+<path action="A">dlib/java/swig_api.h</path>
+<path action="A">dlib/java/swig_test.java</path>
+</paths>
+</logentry>
+<logentry revision="6570" node="d9452d905bfb6ac6e3672f78922edf09f8264403">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-25T15:42:13-04:00</date>
+<msg xml:space="preserve">Updated cmake required version</msg>
+<paths>
+<path action="M">dlib/java/cmake_swig_jni</path>
+</paths>
+</logentry>
+<logentry revision="6573" node="b4c4c47cbeb4e6f9f3701eb97082c24b362d1925">
+<parent revision="6565" node="69b6bb1130fc5fd31293b23cb45d62ba94b2f0d8" />
+<author email="elel@3wh.net">Leo</author>
+<date>2017-07-28T16:03:41-07:00</date>
+<msg xml:space="preserve">Fix strange dash in Box-Muller (#732)</msg>
+<paths>
+<path action="M">dlib/general_hash/random_hashing.h</path>
+</paths>
+</logentry>
+<logentry revision="6574" node="49ad8b55b00ee7881d1529b69c9b98ac4b0b79d2">
+<author email="namar0x0309@users.noreply.github.com">ᴚ∀W∀ᴎ</author>
+<date>2017-07-29T02:42:42-07:00</date>
+<msg xml:space="preserve">differential std::clamp from c++17 with dlib:: prefix to clamp() (#734)</msg>
+<paths>
+<path action="M">dlib/control/mpc.h</path>
+<path action="M">dlib/matrix/matrix_la.h</path>
+<path action="M">dlib/optimization/optimization.h</path>
+<path action="M">dlib/optimization/optimization_solve_qp_using_smo.h</path>
+<path action="M">dlib/test/matrix2.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6576" node="80e4c75351a5e37e78e5efd8dd43165e20d08700">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-30T20:55:04-04:00</date>
+<msg xml:space="preserve">Gave test_object_detection_function() an option to set how ignore box overlap is tested.</msg>
+<paths>
+<path action="M">dlib/dnn/validation.h</path>
+<path action="M">dlib/svm/cross_validate_object_detection_trainer.h</path>
+<path action="M">dlib/svm/cross_validate_object_detection_trainer_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6577" node="2d821a1b149b262b76b3e71befb5e47ccf8444a5">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-31T19:43:49-04:00</date>
+<msg xml:space="preserve">Clarified spec</msg>
+<paths>
+<path action="M">dlib/dnn/loss_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6578" node="c23b8fb76cd961639209ec325a4811fe76b9f34f">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-07-31T19:49:46-04:00</date>
+<msg xml:space="preserve">Added missing input validation to loss_mmod_.  Specifically, the loss layer now
+checks if the user is giving truth boxes that can&#39;t be detected because the
+non-max suppression settings would prevent them from being output at the same
+time.  If this happens then we print a warning message and set one of the
+offending boxes to &quot;ignore&quot;.</msg>
+<paths>
+<path action="M">dlib/dnn/loss.h</path>
+</paths>
+</logentry>
+<logentry revision="6579" node="6230ef7cabc2f565b5df358940f2686c119cfbeb">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-03T09:14:36-04:00</date>
+<msg xml:space="preserve">Fixed spelling error in comment.</msg>
+<paths>
+<path action="M">dlib/serialize.h</path>
+</paths>
+</logentry>
+<logentry revision="6580" node="6a1608b5d348414a68e26d1b80a36377da98c524">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-03T09:36:51-04:00</date>
+<msg xml:space="preserve">Clarified spec</msg>
+<paths>
+<path action="M">dlib/dnn/trainer_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6581" node="f333a561d3aa649b237e4b47d69fd24b98621dd4">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-03T15:28:26-04:00</date>
+<msg xml:space="preserve">Filled out the options for loss_mmod&#39;s operator&lt;&lt;.</msg>
+<paths>
+<path action="M">dlib/dnn/loss.h</path>
+</paths>
+</logentry>
+<logentry revision="6582" node="a9e364c0ef45edece8c16d404bc6990e8e0686bd">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-03T15:40:51-04:00</date>
+<msg xml:space="preserve">Added operator&lt;&lt; for random_cropper.</msg>
+<paths>
+<path action="M">dlib/image_transforms/random_cropper.h</path>
+<path action="M">dlib/image_transforms/random_cropper_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6583" node="a72fd3b281342ddd2b5d0a5a332d1814bac908f2">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-03T15:47:08-04:00</date>
+<msg xml:space="preserve">Added operator&lt;&lt; for the DNN solvers.</msg>
+<paths>
+<path action="M">dlib/dnn/solvers.h</path>
+<path action="M">dlib/dnn/solvers_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6584" node="65a32f50b0c67588c4008c2ab6650e5090640de3">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-03T15:55:57-04:00</date>
+<msg xml:space="preserve">Added get_synchronization_file() and get_test_one_step_calls() to dnn_trainer.
+Also added an operator&lt;&lt; for dnn_trainer that prints the parameters it&#39;s using.
+
+These changes also break backwards compatibility with the previous
+serialization format for dnn_trainer objects.</msg>
+<paths>
+<path action="M">dlib/dnn/trainer.h</path>
+<path action="M">dlib/dnn/trainer_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6585" node="d10ac2240922c54a0f40009c96157db3b5d50b51">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-04T22:46:46-04:00</date>
+<msg xml:space="preserve">Improved how the relaxed mmod overlap settings are determined.</msg>
+<paths>
+<path action="M">dlib/dnn/loss.h</path>
+</paths>
+</logentry>
+<logentry revision="6586" node="a2810bebf9f5a6bbaf92bd6a15ff22cc2d23936b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-05T15:24:47-04:00</date>
+<msg xml:space="preserve">Made dnn_trainer print the network size when logged to an iostream.</msg>
+<paths>
+<path action="M">dlib/dnn/trainer.h</path>
+</paths>
+</logentry>
+<logentry revision="6587" node="aea2c9f4a7daf579f423a6501b01c77b20bc2e4b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-06T08:54:10-04:00</date>
+<msg xml:space="preserve">Changed how we print the network hash.</msg>
+<paths>
+<path action="M">dlib/dnn/trainer.h</path>
+</paths>
+</logentry>
+<logentry revision="6588" node="a3a15599f79256ed6527b4ee491213720e80d5d4">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-06T11:34:07-04:00</date>
+<msg xml:space="preserve">Added note about logging training parameters.</msg>
+<paths>
+<path action="M">examples/dnn_mmod_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6589" node="4e84498e368b7d954d6e1c12a3992538f6a2fd3f">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-09T21:42:14-04:00</date>
+<msg xml:space="preserve">Fixed a bug in the warning message about NMS overlap where it would sometimes false alarm.</msg>
+<paths>
+<path action="M">dlib/dnn/loss.h</path>
+</paths>
+</logentry>
+<logentry revision="6590" node="88ec0c153bcd9ff9ecf939d16d2846417a00b3f4">
+<parent revision="6571" node="b7788fdf670db18125ae36b925642eac888b8dec" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-08T15:00:38-04:00</date>
+<msg xml:space="preserve">Relaxes test to avoid false alarms.</msg>
+<paths>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6591" node="ac06c03e5ec8fc3a3d8ef6db6838b70b29a46fd0">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-08T15:10:17-04:00</date>
+<msg xml:space="preserve">Added an overload of mat() that takes a row stride value.</msg>
+<paths>
+<path action="M">dlib/matrix/matrix_blas_bindings.h</path>
+<path action="M">dlib/matrix/matrix_mat.h</path>
+<path action="M">dlib/matrix/matrix_mat_abstract.h</path>
+<path action="M">dlib/test/matrix.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6592" node="0b26f900adfc416e5c3493537b91fbb86632df3d">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-09T12:19:41-04:00</date>
+<msg xml:space="preserve">Added an object that lets you hold a copyable reference to a java array.  Also
+renamed the objects and generally improved documentation.</msg>
+<paths>
+<path action="A">dlib/java/java_array.h</path>
+<path action="R">dlib/java/jvector.h</path>
+<path action="M">dlib/java/cmake_swig_jni</path>
+<path action="M">dlib/java/swig_api.h</path>
+<path action="M">dlib/java/swig_test.java</path>
+</paths>
+<copies>
+<copy source="dlib/java/jvector.h">dlib/java/java_array.h</copy>
+</copies>
+</logentry>
+<logentry revision="6593" node="b2395d8b583f14d0b246795728eeb94bee042985">
+<parent revision="6588" node="a3a15599f79256ed6527b4ee491213720e80d5d4" />
+<parent revision="6592" node="0b26f900adfc416e5c3493537b91fbb86632df3d" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-09T12:20:06-04:00</date>
+<msg xml:space="preserve">merged</msg>
+<paths>
+<path action="A">dlib/java/java_array.h</path>
+<path action="R">dlib/java/jvector.h</path>
+<path action="M">dlib/java/cmake_swig_jni</path>
+<path action="M">dlib/java/swig_api.h</path>
+<path action="M">dlib/java/swig_test.java</path>
+<path action="M">dlib/matrix/matrix_blas_bindings.h</path>
+<path action="M">dlib/matrix/matrix_mat.h</path>
+<path action="M">dlib/matrix/matrix_mat_abstract.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+<path action="M">dlib/test/matrix.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6594" node="039977decba9d23f2ae834c8ded83c3c8229d9de">
+<parent revision="6589" node="4e84498e368b7d954d6e1c12a3992538f6a2fd3f" />
+<parent revision="6593" node="b2395d8b583f14d0b246795728eeb94bee042985" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-09T21:42:29-04:00</date>
+<msg xml:space="preserve">merged</msg>
+<paths>
+<path action="A">dlib/java/java_array.h</path>
+<path action="R">dlib/java/jvector.h</path>
+<path action="M">dlib/java/cmake_swig_jni</path>
+<path action="M">dlib/java/swig_api.h</path>
+<path action="M">dlib/java/swig_test.java</path>
+<path action="M">dlib/matrix/matrix_blas_bindings.h</path>
+<path action="M">dlib/matrix/matrix_mat.h</path>
+<path action="M">dlib/matrix/matrix_mat_abstract.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+<path action="M">dlib/test/matrix.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6595" node="8b70bcb314ac92fcc65fe4dfe3c159fa79e9155b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-14T21:36:18-04:00</date>
+<msg xml:space="preserve">Fixed grammar</msg>
+<paths>
+<path action="M">dlib/dnn/loss_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6596" node="7ded71367ca9d62826d45d8fa7681b80601eec64">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-18T05:30:11-04:00</date>
+<msg xml:space="preserve">Changed the random_cropper so that it samples background patches uniformly
+across scales regardless of the input image size.  Previously, if you gave
+really large images or really small images it had a bias towards giving only
+large patches or small patches respectively.</msg>
+<paths>
+<path action="M">dlib/image_transforms/random_cropper.h</path>
+</paths>
+</logentry>
+<logentry revision="6597" node="1ff7211cc05b042264ebe9effe1aae8ce978cac8">
+<parent revision="6593" node="b2395d8b583f14d0b246795728eeb94bee042985" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-10T14:38:41-04:00</date>
+<msg xml:space="preserve">Added more options for controlling the install folder paths.</msg>
+<paths>
+<path action="M">dlib/java/CMakeLists.txt</path>
+<path action="M">dlib/java/cmake_swig_jni</path>
+</paths>
+</logentry>
+<logentry revision="6599" node="0fc640f24e8baf64f4503fa181fd9197e1b9490b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-10T15:16:21-04:00</date>
+<msg xml:space="preserve">A bit of path cleanup</msg>
+<paths>
+<path action="M">dlib/java/CMakeLists.txt</path>
+<path action="M">dlib/java/cmake_swig_jni</path>
+<path action="M">dlib/java/swig_api.h</path>
+</paths>
+</logentry>
+<logentry revision="6600" node="885c55c71009c06a193c77bf9ec340343063e1e2">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-10T15:31:02-04:00</date>
+<msg xml:space="preserve">Removed exit call on load library failure.</msg>
+<paths>
+<path action="M">dlib/java/cmake_swig_jni</path>
+</paths>
+</logentry>
+<logentry revision="6601" node="e9b7a2b23d9a9219e4ca55f9df0edabe75527885">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-10T16:07:12-04:00</date>
+<msg xml:space="preserve">Fixed missing java:: qualifiers.</msg>
+<paths>
+<path action="M">dlib/java/java_array.h</path>
+</paths>
+</logentry>
+<logentry revision="6602" node="f9108f60012e7e6e37e66e525599a95d7773827c">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-10T16:07:42-04:00</date>
+<msg xml:space="preserve">Added DLIB_NO_ABORT_ON_2ND_FATAL_ERROR for dlib::fatal_error as a generic
+switch for use in plugin environments.</msg>
+<paths>
+<path action="M">dlib/error.h</path>
+</paths>
+</logentry>
+<logentry revision="6603" node="f038970afe17f4ef6aa1b3838655e062c2b950a1">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-10T17:05:35-04:00</date>
+<msg xml:space="preserve">Made swig always run when you rebuild to avoid stale swig outputs.</msg>
+<paths>
+<path action="M">dlib/java/cmake_swig_jni</path>
+</paths>
+</logentry>
+<logentry revision="6604" node="547865907036994d1778a2fe519e2c6b5cd46f05">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-11T16:39:00-04:00</date>
+<msg xml:space="preserve">Added multiply_zero_padded()</msg>
+<paths>
+<path action="M">dlib/dnn/cpu_dlib.cpp</path>
+<path action="M">dlib/dnn/cpu_dlib.h</path>
+<path action="M">dlib/dnn/cuda_dlib.cu</path>
+<path action="M">dlib/dnn/cuda_dlib.h</path>
+<path action="M">dlib/dnn/tensor_tools.cpp</path>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6605" node="024940c678875ea67833bbb8ab3fd4497d5a0b3b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-11T17:47:19-04:00</date>
+<msg xml:space="preserve">Added mult_prev layer.</msg>
+<paths>
+<path action="M">dlib/dnn/layers.h</path>
+<path action="M">dlib/dnn/layers_abstract.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6606" node="05ffcd2add434f4039a7e5c8e9188f81cacbcc6e">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-14T09:52:53-04:00</date>
+<msg xml:space="preserve">Made copy_tensor() use cudaMemcpyAsync() rather than cudaMemcpy().</msg>
+<paths>
+<path action="M">dlib/dnn/cuda_dlib.cu</path>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+</paths>
+</logentry>
+<logentry revision="6607" node="1786adb70faeead4cb870b9d02b3a59446613019">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-14T12:28:26-04:00</date>
+<msg xml:space="preserve">Added an &quot;add_to&quot; option to tt:copy_tensor().  There was also a bug in the
+concat layer&#39;s backward() method.  It was assigning the gradient to previous
+layers instead of adding the gradient, as required by the layer interface
+specification.  This change also noticeably speeds up concat layers since only
+one CUDA kernel launch now happens per concat operation, rather than one
+kernel launch for each sample in a tensor.</msg>
+<paths>
+<path action="M">dlib/dnn/cpu_dlib.cpp</path>
+<path action="M">dlib/dnn/cpu_dlib.h</path>
+<path action="M">dlib/dnn/cuda_dlib.cu</path>
+<path action="M">dlib/dnn/cuda_dlib.h</path>
+<path action="M">dlib/dnn/layers.h</path>
+<path action="M">dlib/dnn/tensor_tools.cpp</path>
+<path action="M">dlib/dnn/tensor_tools.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6608" node="2735e30a69fde8edf43ecbf7037ba6d31c6dab2e">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-14T12:48:37-04:00</date>
+<msg xml:space="preserve">Added more tests for copy_tensor()</msg>
+<paths>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6609" node="6fbcc1849eff3c47c7d34a4ca2bfe9f49b79c7cd">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-14T13:50:47-04:00</date>
+<msg xml:space="preserve">Added extract_ layer</msg>
+<paths>
+<path action="M">dlib/dnn/layers.h</path>
+<path action="M">dlib/dnn/layers_abstract.h</path>
+<path action="M">dlib/test/dnn.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6610" node="22c842bb0ea24a87a775d25b94273be241f946c1">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-14T14:04:16-04:00</date>
+<msg xml:space="preserve">Updated solvers to correctly pull in cont_&#39;s bias parameter multipliers.</msg>
+<paths>
+<path action="M">dlib/dnn/solvers.h</path>
+</paths>
+</logentry>
+<logentry revision="6612" node="a5d7d71af997d1bee939a7ecae6e5fe8dbb6dd12">
+<parent revision="6610" node="22c842bb0ea24a87a775d25b94273be241f946c1" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-15T15:52:00-04:00</date>
+<msg xml:space="preserve">Fixed spelling error</msg>
+<paths>
+<path action="M">dlib/statistics/running_gradient.h</path>
+</paths>
+</logentry>
+<logentry revision="6615" node="e8b6ec9ee3de5dc214bd3d57a0e9ef19c442e4e1">
+<parent revision="6594" node="039977decba9d23f2ae834c8ded83c3c8229d9de" />
+<author email="ageitgey@gmail.com">Adam Geitgey</author>
+<date>2017-08-18T13:30:33-07:00</date>
+<msg xml:space="preserve">Add a python wrapper for using the mmod face detector (#753)</msg>
+<paths>
+<path action="A">python_examples/cnn_face_detector.py</path>
+<path action="A">tools/python/src/cnn_face_detector.cpp</path>
+<path action="M">tools/python/CMakeLists.txt</path>
+<path action="M">tools/python/src/dlib.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6617" node="67eb90d2a5eab5f64c01c8a0697caff36ac22bfd">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-19T08:42:17-04:00</date>
+<msg xml:space="preserve">Suppress compiler warning</msg>
+<paths>
+<path action="M">dlib/dnn/layers.h</path>
+</paths>
+</logentry>
+<logentry revision="6618" node="935a4626e5a7650ec60c51a7b3e66de561168c7d">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-19T08:48:48-04:00</date>
+<msg xml:space="preserve">Make DLIB_ASSERT statements not abort the python interpreter, but just trigger an exception.</msg>
+<paths>
+<path action="M">tools/python/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6619" node="dee0369231464ef39d719e98c5f38d416cd5fc11">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-20T07:14:40-04:00</date>
+<msg xml:space="preserve">The input_rgb_image_sized is supposed to be convertible to input_rgb_image,
+which it was in all ways except you couldn&#39;t deserialize directly like you
+would expect.  This has now been fixed.</msg>
+<paths>
+<path action="M">dlib/dnn/input.h</path>
+</paths>
+</logentry>
+<logentry revision="6620" node="4ce6f4a3e766e65a7d96a71ebca9236eb2611a6f">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-20T19:28:08-04:00</date>
+<msg xml:space="preserve">Made the dnn_trainer not forget all the previous loss values it knows about
+when it determines that there have been a lot of steps without progress and
+shrinks the learning rate.  Instead, it removes only the oldest 100.  The
+problem with the old way of removing all the loss values in the history was
+that if you set the steps without progress threshold to a really high number
+you would often observe that the last few learning rate values were obviously
+not making progress, however, since all the previous loss values were forgotten
+the trainer needed to fully populate it&#39;s loss history from scratch before it
+would figure this out.  This new style makes the trainer not waste time running
+this excessive optimization of obviously useless mini-batches.</msg>
+<paths>
+<path action="M">dlib/dnn/trainer.h</path>
+</paths>
+</logentry>
+<logentry revision="6621" node="4be725b8b96defea949f5c4c6a478f7b8a240bc8">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-20T19:30:11-04:00</date>
+<msg xml:space="preserve">Changed the default get_test_iterations_without_progress_threshold() from 200
+to 500.  Now that we have a better history management of loss values in the
+trainer it&#39;s much more sensible to have a larger value here.</msg>
+<paths>
+<path action="M">dlib/dnn/trainer.h</path>
+<path action="M">dlib/dnn/trainer_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6622" node="c3db550a43997eafa18a50f81aad967cdc5d1b09">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-20T19:42:12-04:00</date>
+<msg xml:space="preserve">Made the input_tensor_to_output_tensor() and output_tensor_to_input_tensor()
+coordinate mappings work on networks that contain skip layers.</msg>
+<paths>
+<path action="M">dlib/dnn/utilities.h</path>
+<path action="M">dlib/dnn/utilities_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6623" node="b2b9c59b46a2578254658a3e2f80b856d4c4f526">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-20T20:08:03-04:00</date>
+<msg xml:space="preserve">Made the loss value management a little more conservative.</msg>
+<paths>
+<path action="M">dlib/dnn/trainer.h</path>
+</paths>
+</logentry>
+<logentry revision="6624" node="4fd8c1322933d0f1b8b79ce323e0a064722687f6">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-20T20:39:44-04:00</date>
+<msg xml:space="preserve">Added serialization support for the running_stats_decayed object.</msg>
+<paths>
+<path action="M">dlib/statistics/statistics.h</path>
+<path action="M">dlib/statistics/statistics_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6625" node="692a89abe25d650fd6252058904bb42271156bd8">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-20T20:47:00-04:00</date>
+<msg xml:space="preserve">Made the test loss in the verbose output messages from the dnn_trainer not jump
+in variance when the learning rate resets.</msg>
+<paths>
+<path action="M">dlib/dnn/trainer.h</path>
+</paths>
+</logentry>
+<logentry revision="6626" node="94fc5255cebe509fc7ace4b78321b97b2d93312a">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-21T19:35:42-04:00</date>
+<msg xml:space="preserve">Fixed warning in visual studio.</msg>
+<paths>
+<path action="M">dlib/dnn/tensor.h</path>
+</paths>
+</logentry>
+<logentry revision="6627" node="28cdb9ba38ab7fe1e0ada937588e010aab4be7b1">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-21T21:27:12-04:00</date>
+<msg xml:space="preserve">Fixed linker errors when building pyhton on windows.  This fixes a bug that was introduced in a recent PR.
+
+Also fixed compiler errors that occurred in visual studio.</msg>
+<paths>
+<path action="M">dlib/cmake_utils/add_python_module</path>
+<path action="M">dlib/python/numpy.h</path>
+<path action="M">dlib/python/serialize_pickle.h</path>
+</paths>
+</logentry>
+<logentry revision="6628" node="44466b8bccd7eab71413ed05811deffa24a4d57b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-21T21:27:38-04:00</date>
+<msg xml:space="preserve">Made windows testing bat file use rmdir rather than rm since rm isn&#39;t always available on windows.</msg>
+<paths>
+<path action="M">dlib/test/WINDOWS_build_and_run_all_unit_tests.bat</path>
+</paths>
+</logentry>
+<logentry revision="6629" node="b5e05441d5e718fc9aed48d4767461bc51b2fa51">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-21T21:32:36-04:00</date>
+<msg xml:space="preserve">Fixed incorrect size() for simd8i.</msg>
+<paths>
+<path action="M">dlib/simd/simd8i.h</path>
+</paths>
+</logentry>
+<logentry revision="6630" node="68e4d543c0bc3316efcdd3e9d4dc31a1de4ba69c">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-22T22:02:19-04:00</date>
+<msg xml:space="preserve">Fixed grammar</msg>
+<paths>
+<path action="M">dlib/smart_pointers.h</path>
+</paths>
+</logentry>
+<logentry revision="6633" node="012387c880b9cb3ece8d4e92fd2b7b91fec6c878">
+<author email="31295733+ipeterson@users.noreply.github.com">ipeterson</author>
+<date>2017-08-23T18:33:52-07:00</date>
+<msg xml:space="preserve">Pull in external libpng dependencies properly (#770)
+
+PNG_LIBRARY set by libpng&#39;s FindPNG.cmake does not contain zlib dependancy.  This causes the CHECK_FUNCTION_EXISTS(png_create_read_struct LIBPNG_IS_GOOD) to fail with liner errors, and for dlib to use it&#39;s internal copy of PNG.
+
+Updated to use libpng&#39;s PNG_LIBRARIES variable.  This also sets both PNG and ZLib libraries in dlib_needed_libraries.</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6634" node="c99fbc13def291908ffb667d4693684116ff94e0">
+<author email="evgeniy.fm@gmail.com">Evgeniy Fominov</author>
+<date>2017-08-24T15:12:31+03:00</date>
+<msg xml:space="preserve">Clang support for windows (#772)</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+<path action="M">dlib/cmake_utils/use_cpp_11.cmake</path>
+</paths>
+</logentry>
+<logentry revision="6635" node="ed7d1cd9986c67b1f27c7d6ceeb15cf5c7a0703c">
+<parent revision="6633" node="012387c880b9cb3ece8d4e92fd2b7b91fec6c878" />
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-24T18:41:07-04:00</date>
+<msg xml:space="preserve">Fully qualified boost::python::list to hopefully avoid compiler errors in some environments.</msg>
+<paths>
+<path action="M">tools/python/src/other.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6637" node="37cc31f07f19f57429f6141e0af13ab2f3d5666d">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-24T19:24:28-04:00</date>
+<msg xml:space="preserve">Fixed spelling error in comment.</msg>
+<paths>
+<path action="M">dlib/dnn/cuda_data_ptr.h</path>
+</paths>
+</logentry>
+<logentry revision="6638" node="7c97ae6e8fb6ccb204b36ab59753351c290cced8">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-24T19:42:22-04:00</date>
+<msg xml:space="preserve">Fixed grammar</msg>
+<paths>
+<path action="M">dlib/dnn/layers_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6640" node="8a4db312e35c76baff08c248f3e3294f54d1aef2">
+<author email="denizevrenci@gmail.com">Deniz Evrenci</author>
+<date>2017-08-25T18:39:07+09:00</date>
+<msg xml:space="preserve">Include drectangle.h to point_transforms.h (#777)</msg>
+<paths>
+<path action="M">dlib/geometry/point_transforms.h</path>
+</paths>
+</logentry>
+<logentry revision="6641" node="e983c3baaffffb82b8c098b3ddd1abb1c16f3ede">
+<author email="denizevrenci@gmail.com">Deniz Evrenci</author>
+<date>2017-08-25T18:40:22+09:00</date>
+<msg xml:space="preserve">C++11 features (#778)
+
+* Make noncopyable constructor and destructor default
+
+C++11 provides the functionality.
+Defining empty functions cause all classes derived from noncopyable
+to be non-trivially constructible and non-trivially destructible.
+
+For example, matrix with compile-time layout by definition does not
+require an explicit destructor and should be trivially destructible
+; however, deriving from noncopyable makes it non-trivially
+destrutible. This also affects vector&lt;T, 2&gt; and vector&lt;T, 3&gt;.
+
+* Delete array2d copy constructor and assignment operators</msg>
+<paths>
+<path action="M">dlib/array2d/array2d_kernel.h</path>
+<path action="M">dlib/array2d/array2d_kernel_abstract.h</path>
+<path action="M">dlib/noncopyable.h</path>
+</paths>
+</logentry>
+<logentry revision="6642" node="1cf38f0c65c0a29769525853744b3359b22ba603">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-25T12:59:55-04:00</date>
+<msg xml:space="preserve">Clarified spec</msg>
+<paths>
+<path action="M">dlib/image_transforms/colormaps_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6643" node="3eae6bb90b2bc710f398690b7574d875ffbffe93">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-25T18:20:17-04:00</date>
+<msg xml:space="preserve">Clarified spec</msg>
+<paths>
+<path action="M">dlib/image_transforms/colormaps_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6644" node="f19f8301f63d9f1834022e7632f5c0158e116479">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-25T18:21:35-04:00</date>
+<msg xml:space="preserve">Made resize_image() and functions that use it like the pyramid objects produce
+better results when run on float and double images.  There was needless
+rounding to integers happening in the bilinear interpolation.  Now if you work
+with a float image the entire process will run without integer rounding.</msg>
+<paths>
+<path action="M">dlib/image_transforms/interpolation.h</path>
+</paths>
+</logentry>
+<logentry revision="6645" node="6418906f383c6b6026c0b6a076bd679283aa8fbe">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-25T18:38:40-04:00</date>
+<msg xml:space="preserve">Changed the functions that transform between input tensor coordinates and
+output tensor coordinates to use dpoint instead of point.  This way, we can
+obtain sub-pixel coordinates if we need them.</msg>
+<paths>
+<path action="M">dlib/dnn/layers.h</path>
+<path action="M">dlib/dnn/layers_abstract.h</path>
+<path action="M">dlib/dnn/utilities.h</path>
+<path action="M">dlib/dnn/utilities_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6646" node="6a9b82d06a3afec810ee9d3fb64978d5b9cb4a4b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-25T20:35:47-04:00</date>
+<msg xml:space="preserve">Gave create_tiled_pyramid() the ability to include padding around the outsides
+of the pyramid image.</msg>
+<paths>
+<path action="M">dlib/image_transforms/image_pyramid.h</path>
+<path action="M">dlib/image_transforms/image_pyramid_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6647" node="1f57c3504835dfba0438269bcf3606eb7a0a3c53">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-25T22:01:02-04:00</date>
+<msg xml:space="preserve">Added options to input_rgb_image_pyramid that let the user set create_tiled_pyramid()&#39;s padding parameters.
+
+Also changed the default outer border padding from 0 to 11. This effects even
+previously trained models.  So any model that doesn&#39;t explicitly set the outer
+patting to something else will have a padding of 11.  This should be a more
+reasonable value for most networks.</msg>
+<paths>
+<path action="M">dlib/dnn/input.h</path>
+<path action="M">dlib/dnn/input_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6648" node="f723ce2ef3c754bc475e06bb0d3db1d0f0e2f002">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-25T22:29:40-04:00</date>
+<msg xml:space="preserve">Made imglab --cluster ignore ignored boxes when doing all aspects of clustering.</msg>
+<paths>
+<path action="M">tools/imglab/src/cluster.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6649" node="01340662b0e82203465925b73cb251e0f2b59e8b">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-26T08:39:18-04:00</date>
+<msg xml:space="preserve">Added overloads of max_pointwise() and min_pointwise() that take 3 arguments.</msg>
+<paths>
+<path action="M">dlib/matrix/matrix_utilities.h</path>
+<path action="M">dlib/matrix/matrix_utilities_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6650" node="9bc47990f9eea691f646f4daa9ab085fbc7e3184">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-26T08:49:19-04:00</date>
+<msg xml:space="preserve">Added a version of resize_image() that works inplace.</msg>
+<paths>
+<path action="M">dlib/image_transforms/interpolation.h</path>
+<path action="M">dlib/image_transforms/interpolation_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6651" node="ff289ff45018c550b495ae0ae5b8192c32f36a21">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-26T17:13:47-04:00</date>
+<msg xml:space="preserve">Added two vehicle detection examples.</msg>
+<paths>
+<path action="A">examples/dnn_mmod_find_cars_ex.cpp</path>
+<path action="A">examples/dnn_mmod_train_find_cars_ex.cpp</path>
+<path action="A">examples/mmod_cars_test_image.jpg</path>
+<path action="M">examples/CMakeLists.txt</path>
+</paths>
+</logentry>
+<logentry revision="6653" node="36f354fb6bba6236750af3ed738bae7262ef7f07">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-27T07:31:38-04:00</date>
+<msg xml:space="preserve">Gave upsample_image_dataset() an option to limit upsampling on really large images.</msg>
+<paths>
+<path action="M">dlib/image_transforms/interpolation.h</path>
+<path action="M">dlib/image_transforms/interpolation_abstract.h</path>
+</paths>
+</logentry>
+<logentry revision="6654" node="3db195f39ddebe0525e6b6659f1a78e15348ca99">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-27T07:31:50-04:00</date>
+<msg xml:space="preserve">Cleanup</msg>
+<paths>
+<path action="M">examples/dnn_mmod_train_find_cars_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6655" node="bcf2eccb2563b3d92cad4838d1dfb58efc8bbb41">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-27T08:29:36-04:00</date>
+<msg xml:space="preserve">Added more comments</msg>
+<paths>
+<path action="M">examples/dnn_mmod_train_find_cars_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6656" node="3a9d5d4742ad6ad8c47873dd5ee80cae5d27f940">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-27T09:11:49-04:00</date>
+<msg xml:space="preserve">More comments</msg>
+<paths>
+<path action="M">examples/dnn_mmod_find_cars_ex.cpp</path>
+<path action="M">examples/dnn_mmod_train_find_cars_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6657" node="5e2a0b81bafb45f2472a4cb328d52d5ab90fea56">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-27T09:17:05-04:00</date>
+<msg xml:space="preserve">Added youtube links</msg>
+<paths>
+<path action="M">examples/dnn_mmod_find_cars_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6658" node="df39ce20e79712948c3e1084c77ee8cf6066d684">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-27T09:23:49-04:00</date>
+<msg xml:space="preserve">Fixed compiler warnings</msg>
+<paths>
+<path action="M">dlib/image_transforms/image_pyramid.h</path>
+<path action="M">dlib/image_transforms/interpolation.h</path>
+</paths>
+</logentry>
+<logentry revision="6659" node="00deb336c1cb64228262cc1edb312b9831557e6c">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-27T09:23:57-04:00</date>
+<msg xml:space="preserve">Fixed compiler warning</msg>
+<paths>
+<path action="M">examples/dnn_mmod_find_cars_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6660" node="a245be12cb44c533533d43a5711f5812e37a6b05">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-27T10:46:49-04:00</date>
+<msg xml:space="preserve">cleanup</msg>
+<paths>
+<path action="M">examples/dnn_mmod_find_cars_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6661" node="c7d818690882a448e7bb0bd4fcf411d55faf9e65">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-27T12:01:24-04:00</date>
+<msg xml:space="preserve">Yet more comments</msg>
+<paths>
+<path action="M">examples/dnn_mmod_ex.cpp</path>
+<path action="M">examples/dnn_mmod_train_find_cars_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6663" node="e7708c5dd4bc4d29921bc9240bbff86f6cfb9b9f">
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-27T18:18:00-04:00</date>
+<msg xml:space="preserve">Minor cleanup</msg>
+<paths>
+<path action="M">examples/dnn_mmod_find_cars_ex.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6665" node="96e8daf12f37b8eb50093ce1dd413bdb8d80f119">
+<parent revision="6662" node="978b0e023b061b1b88b67ba35ea15a7409eef345" />
+<author email="guigzzz@users.noreply.github.com">Guillaume Ramé</author>
+<date>2017-08-27T23:40:31+01:00</date>
+<msg xml:space="preserve">improvements to cnn face detection python interface (#780)
+
+* improvements to cnn face detection interface
+
+* mmod rectangle object renaming. possibility to set batch size in multi image detection. Added check to make sure images are all the same size.</msg>
+<paths>
+<path action="M">dlib/image_processing/full_object_detection.h</path>
+<path action="M">python_examples/cnn_face_detector.py</path>
+<path action="M">tools/python/src/cnn_face_detector.cpp</path>
+</paths>
+</logentry>
+<logentry revision="6667" node="b2cc8f1da3f778d7a0bf7a66c8672353f6813343">
+<bookmark>master</bookmark>
+<tag>dlib-github/master</tag>
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-27T19:13:46-04:00</date>
+<msg xml:space="preserve">Set this file to executable</msg>
+<paths>
+<path action="M">python_examples/cnn_face_detector.py</path>
+</paths>
+</logentry>
+<logentry revision="6668" node="9121e039950df93507fdf27bbb102bb5bc1ab429">
+<tag>v19.5</tag>
+<author email="davis@dlib.net">Davis King</author>
+<date>2017-08-27T19:34:24-04:00</date>
+<msg xml:space="preserve">Created release v19.5</msg>
+<paths>
+<path action="M">dlib/CMakeLists.txt</path>
+</paths>
+</logentry>
+</log>
