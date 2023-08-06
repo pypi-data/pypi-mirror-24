@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: rvt_detector
+Version: 0.3.0
+Summary: Simple helper to:
+Home-page: https://github.com/frederic-beaupere/rvt_detector
+License: UNKNOWN
+Author: Frederic Beaupere
+Author-email: beaupere@gmx.de
+Requires-Python: >=3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: olefile (==0.44)
+Requires-Dist: pefile (==2017.8.1)
+
+# rvt_detector
+Simple python helper for Revit model version and install path detection.
+
