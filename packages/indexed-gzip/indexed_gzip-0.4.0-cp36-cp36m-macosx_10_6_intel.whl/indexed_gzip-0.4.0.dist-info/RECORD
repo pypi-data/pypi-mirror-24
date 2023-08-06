@@ -1,0 +1,9 @@
+indexed_gzip.cpython-36m-darwin.so,sha256=GGVH8sb0RP8YGN2xr9vHkhDfYX5TOSmjXgYfI7xWjig,401664
+indexed_gzip-0.4.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+indexed_gzip-0.4.0.dist-info/METADATA,sha256=li_VCFuBTm2Is175qLzyQiZ_CxjOh-WcqBAql-2tDVk,648
+indexed_gzip-0.4.0.dist-info/RECORD,,
+indexed_gzip-0.4.0.dist-info/WHEEL,sha256=n5Qi9LsnJ0zl3SHl7-DnZPyZfWOd4go9ixl9Bl1aXdA,109
+indexed_gzip-0.4.0.dist-info/metadata.json,sha256=nRRQkQN0N9fKF534guk08KGjBYoKS5xksW8Xzz_emco,823
+indexed_gzip-0.4.0.dist-info/top_level.txt,sha256=ZtT6XcvtROROjkejIjpZGm6gUTpmqU9eaAFyckcr0lQ,19
+tests/ctest_indexed_gzip.cpython-36m-darwin.so,sha256=0GwYG9HFCL4qcOTrS0CTaPcR4Lxlg-yWbtKj89RU8Mo,594680
+tests/ctest_zran.cpython-36m-darwin.so,sha256=6LENZsUMk-p-XqkqHWtlgun01rwSWur1mXx_gZJGWAs,685228
