@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: equityscraper
+Version: 0.1.1
+Summary: Web scraper that stores fundamental stock data, analyst estimates, and earnings surprises as .pkl and/or .csv
+Home-page: https://github.com/JamesWhiteleyIV/Equity-Data-Web-Scraper
+Author: James Whiteley IV
+Author-email: jameswhiteleyiv@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: web scraper investments  pandas
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
