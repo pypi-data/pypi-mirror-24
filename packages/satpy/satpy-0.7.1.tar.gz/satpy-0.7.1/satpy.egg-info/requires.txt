@@ -1,0 +1,50 @@
+numpy >=1.4.1
+pillow
+pyresample >=1.4.0
+trollsift
+trollimage
+pykdtree
+six
+pyyaml
+
+[abi_l1b]
+h5netcdf
+
+[hdfeos_l1b]
+python-hdf4
+
+[hrit_msg]
+pytroll-schedule
+
+[hrpt]
+pyorbital
+pygac
+python-geotiepoints
+
+[nc]
+netCDF4 >= 1.1.8
+
+[nc_nwcsaf_msg]
+h5netcdf
+
+[proj]
+pyresample
+
+[pyorbital]
+pyorbital >= v0.2.3
+
+[pyspectral]
+pyspectral
+
+[sar_c]
+python-geotiepoints
+gdal
+
+[viirs]
+h5py >= 2.7.0
+
+[viirs_compact]
+h5py >= 2.7.0
+
+[xRIT]
+mipp >= 0.6.0
