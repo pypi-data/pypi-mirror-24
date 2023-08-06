@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: adpix
+Version: 1.0rc0
+Summary: Python client for adPix API services
+Home-page: https://github.com/adPix/adpix-python
+Author: Surya Teja Cheedella
+Author-email: surya@snshine.in
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: requests (==2.13.0)
+
+UNKNOWN
+
+
