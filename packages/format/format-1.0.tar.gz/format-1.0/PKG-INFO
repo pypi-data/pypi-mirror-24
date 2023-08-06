@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: format
+Version: 1.0
+Summary: Faux string interpolation for Python >2.4 && <3.6
+Home-page: https://github.com/shaded-enmity/format
+Author: Pavel Odvody
+Author-email: podvody@redhat.com
+License: MIT
+Description: UNKNOWN
+Keywords: string interpolation
+Platform: UNKNOWN
