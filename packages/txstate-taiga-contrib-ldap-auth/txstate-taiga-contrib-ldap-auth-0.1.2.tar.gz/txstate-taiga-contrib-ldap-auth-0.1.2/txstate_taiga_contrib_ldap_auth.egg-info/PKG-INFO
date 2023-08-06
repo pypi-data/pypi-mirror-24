@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: txstate-taiga-contrib-ldap-auth
+Version: 0.1.2
+Summary: TxState adaptation of the Taiga plugin for ldap authentication
+Home-page: https://github.com/txstate-etc/txstate-taiga-contrib-ldap-auth/tree/master/txstate_taiga_contrib_ldap_auth
+Author: Andrew Thyng
+Author-email: ajt79@txstate.edu
+License: AGPL
+Description: UNKNOWN
+Keywords: txstate taiga
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP

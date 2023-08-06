@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+setup.cfg
+setup.py
+txstate_taiga_contrib_ldap_auth/__init__.py
+txstate_taiga_contrib_ldap_auth/apps.py
+txstate_taiga_contrib_ldap_auth/connector.py
+txstate_taiga_contrib_ldap_auth/services.py
+txstate_taiga_contrib_ldap_auth.egg-info/PKG-INFO
+txstate_taiga_contrib_ldap_auth.egg-info/SOURCES.txt
+txstate_taiga_contrib_ldap_auth.egg-info/dependency_links.txt
+txstate_taiga_contrib_ldap_auth.egg-info/requires.txt
+txstate_taiga_contrib_ldap_auth.egg-info/top_level.txt
