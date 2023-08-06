@@ -1,0 +1,13 @@
+rubicon_objc-0.2.8-py3.4-nspkg.pth,sha256=NwwU-h4xNPMq8YIB5c3OhSJG6ElyV7WFSBtxAssV0Gc,544
+rubicon/objc/__init__.py,sha256=NbGlnAWLm9hF6eIOREvQfLnkft2TrHdxVvk_VTWRk-o,766
+rubicon/objc/core_foundation.py,sha256=ORIxB1BqmpXyM_Ragg90-Lkfyy8dJf3bJwJM1a65rgU,8948
+rubicon/objc/objc.py,sha256=6f3yK1Pun7Up-__ClVwNDRDX4jI4HcYGQJ12impko20,62555
+rubicon/objc/types.py,sha256=a--TC06cv2r4t_FUYZ_QSwT08Fh1hggaStgaeJD1U18,23686
+rubicon_objc-0.2.8.dist-info/DESCRIPTION.rst,sha256=mdQ0SkPJUkq88DpJSjXErNsXvI-mlYD0VuYqOSjwH8s,5839
+rubicon_objc-0.2.8.dist-info/METADATA,sha256=9jMOu8kuyTNrMMJjfwzV03P0NYrELF2YpPpsnNuQ2jQ,6538
+rubicon_objc-0.2.8.dist-info/RECORD,,
+rubicon_objc-0.2.8.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+rubicon_objc-0.2.8.dist-info/metadata.json,sha256=q63oL75M9hgEB_CbMWVcj2digxiaVlo7EqFf67OoH9M,821
+rubicon_objc-0.2.8.dist-info/namespace_packages.txt,sha256=EWgQZTBqvpDWyS3EacpRBApxh67OK_yt43gzM2f7xg4,8
+rubicon_objc-0.2.8.dist-info/pbr.json,sha256=Hg3eoBrbiONTWJnvrqZ5_uVb6drRHwicrJe7ZjmJk78,47
+rubicon_objc-0.2.8.dist-info/top_level.txt,sha256=EWgQZTBqvpDWyS3EacpRBApxh67OK_yt43gzM2f7xg4,8
