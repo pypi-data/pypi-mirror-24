@@ -1,0 +1,12 @@
+rstwatch/__init__.py,sha256=4RI3MC6BSqsczOBE7Mq3OB8hVJB2xa3GJKsULzuLosk,47
+rstwatch/__main__.py,sha256=EmBRruvGn1G3iJ7vRSDJ4ugjwbzf00u9ZKHhnBbovJ8,1508
+rstwatch/api.py,sha256=UZ5r4cHI4SWILnF7YKMq1YeaOVIZMjv7p3DlwLvy0H4,1510
+rstwatch/util.py,sha256=SBr_AuPyZtzBCPK5yEKs_gTpq3-iXPSSZvR6wdNBYjM,10358
+rstwatch/version.py,sha256=ZTipNH6wyC6qsq1H_lZsvJyVruUa1nu3y4EysMdkpuU,22
+rstwatch-1.0.2.dist-info/DESCRIPTION.rst,sha256=EhyHLzOFTBKa6EzY3p2Uo9tuM1OQWjo5_f-IZevQEqY,3433
+rstwatch-1.0.2.dist-info/METADATA,sha256=tItm1hBfmx-YS-GeBTF5As1F1LuskBbUtZkk_9fLvgA,4490
+rstwatch-1.0.2.dist-info/RECORD,,
+rstwatch-1.0.2.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+rstwatch-1.0.2.dist-info/entry_points.txt,sha256=h17brCNvqU4C85tZJw2F-hx9vVwk4PcTQQdwHNbyU4Y,53
+rstwatch-1.0.2.dist-info/metadata.json,sha256=89T1NG_5ONgI9ydTIbtq9h_eiCYdxz7JP6W0aZTBaVo,1331
+rstwatch-1.0.2.dist-info/top_level.txt,sha256=5uqHz3GcsGSt9DJK59GwQbukjjX72Fdg0fo016mrNEM,9
