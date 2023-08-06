@@ -1,0 +1,16 @@
+MANIFEST.in
+jpyreport
+setup.py
+jpyreport/__init__.py
+jpyreport/junit_parser.py
+jpyreport/report.js
+jpyreport/report_items.py
+jpyreport/runner.py
+jpyreport/style.css
+jpyreport.egg-info/PKG-INFO
+jpyreport.egg-info/SOURCES.txt
+jpyreport.egg-info/dependency_links.txt
+jpyreport.egg-info/entry_points.txt
+jpyreport.egg-info/pbr.json
+jpyreport.egg-info/requires.txt
+jpyreport.egg-info/top_level.txt
