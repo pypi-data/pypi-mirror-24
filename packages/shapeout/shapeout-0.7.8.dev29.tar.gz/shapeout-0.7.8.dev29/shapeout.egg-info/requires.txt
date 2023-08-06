@@ -1,0 +1,11 @@
+appdirs
+dclab
+NumPy>=1.7.0
+SciPy>=0.10.0
+pyper
+
+[GUI]
+wxPython
+chaco
+imageio
+simplejson

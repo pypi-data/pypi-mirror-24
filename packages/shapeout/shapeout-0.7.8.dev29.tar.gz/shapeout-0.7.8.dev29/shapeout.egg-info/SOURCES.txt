@@ -1,0 +1,17 @@
+README.rst
+setup.cfg
+setup.py
+shapeout/ShapeOut.py
+shapeout/__init__.py
+shapeout/__main__.py
+shapeout/_version.py
+shapeout/_version_save.py
+shapeout/analysis.py
+shapeout/configuration.py
+shapeout/lin_mix_mod.py
+shapeout/tlabwrap.py
+shapeout.egg-info/PKG-INFO
+shapeout.egg-info/SOURCES.txt
+shapeout.egg-info/dependency_links.txt
+shapeout.egg-info/requires.txt
+shapeout.egg-info/top_level.txt
