@@ -1,0 +1,29 @@
+CHANGES
+=======
+
+1.0.3
+-----
+
+* Fix Sphinx 1.7 compatibility
+* Fix unicode from breaking module import
+* Add various \_format\_XXX functions
+
+1.0.2
+-----
+
+* sorts the commands and subcommands
+* tox: Add 'release' target
+
+1.0.1
+-----
+
+* docs: Add example for modifying 'sys.path'
+* Handle commands without a docstring
+* README: Update usage example
+
+1.0.0
+-----
+
+* Initial release
+* Basic project setup
+* Initial commit
