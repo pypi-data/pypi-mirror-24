@@ -1,0 +1,16 @@
+buscore:
+    host: 192.168.1.20
+    port: 1981
+    internal_port: 20001
+
+log:
+    log_directory: /tmp/sibus
+
+sql_database:
+    host: 127.0.0.1
+    port: 3306
+    login: root
+    password: alpi
+    database: sibus_database
+
+
