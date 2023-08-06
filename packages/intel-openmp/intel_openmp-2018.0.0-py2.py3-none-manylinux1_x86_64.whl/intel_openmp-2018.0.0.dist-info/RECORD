@@ -1,0 +1,9 @@
+intel_openmp-2018.0.0.data/data/lib/libiomp5.so,sha256=FqcvPACIKUuFvfxJXMOEKl7kZexjruD7jyZS0WkUjP0,1842723
+intel_openmp-2018.0.0.data/data/lib/libiompstubs5.so,sha256=mlHS5Qh9k0RWtIAndL5XZ3zLspZIPlfu9PCXdx7X8UA,100423
+intel_openmp-2018.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+intel_openmp-2018.0.0.dist-info/LICENSE.txt,sha256=jrI4f--SDHTctENykcWxnTRaUDu6J52qfHw9MMqfia8,4348
+intel_openmp-2018.0.0.dist-info/METADATA,sha256=1x2jhgkqFJLvX3m6-irBTfjXqIKahxvFQgViO3WlbWM,840
+intel_openmp-2018.0.0.dist-info/RECORD,,
+intel_openmp-2018.0.0.dist-info/WHEEL,sha256=R0gbetX6N7MKrzgBuMuq9daFXjAPcLxH0tVw4U8UbMA,138
+intel_openmp-2018.0.0.dist-info/metadata.json,sha256=GwwMxIYZ9A1CIE6glTKYDEhKr-py5UDdPOGQetWEUv8,951
+intel_openmp-2018.0.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
