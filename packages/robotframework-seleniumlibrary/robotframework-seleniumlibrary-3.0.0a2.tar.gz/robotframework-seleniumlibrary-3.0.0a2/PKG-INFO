@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: robotframework-seleniumlibrary
+Version: 3.0.0a2
+Summary: Web testing library for Robot Framework
+Home-page: https://github.com/robotframework/SeleniumLibrary
+Author: Tatu Aalto
+Author-email: aalto.tatu@gmail.com
+License: Apache License 2.0
+Description: SeleniumLibrary is a web testing library for Robot Framework
+        that utilizes the Selenium tool internally.
+Keywords: robotframework testing testautomation selenium webdriver web
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Testing
+Classifier: Framework :: Robot Framework
