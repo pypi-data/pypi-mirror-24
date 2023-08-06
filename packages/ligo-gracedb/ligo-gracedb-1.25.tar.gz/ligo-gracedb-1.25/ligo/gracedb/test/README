@@ -1,0 +1,44 @@
+Testing gracedb-client
+======================
+*Last updated 2 Aug 2017*
+
+To run REST API tests with the Python client:
+
+    If using a virtualenv with ligo-gracedb installed:
+	    python test.py
+
+    If not, go to the root of this repository and run:
+        PYTHONPATH=. python ligo/gracedb/test/test.py
+
+To run tests of creating/modifying VOEvents with the Python client,
+do the same as above, replacing 'test.py' with 'test_voevents.py'.
+Note that this requires the Python package voeventparse to be installed,
+which can be done with 'pip install voevent-parse'.
+
+To run tests of the command-line client:
+
+    If using a virtualenv with ligo-gracedb installed:
+        ./test.sh
+
+    If not, go to the root of this repository and run:
+	    PYTHONPATH=. GRACEDB='python bin/gracedb' ligo/gracedb/test/test.sh 
+
+        This seems to work too:
+	        PYTHONPATH=. GRACEDB=bin/gracedb ligo/gracedb/test/test.sh 
+
+The default GraceDB service for tests is at https://gracedb-test.ligo.org/api/
+To change this, you can add 
+
+    TEST_SERVICE={url}
+
+to the beginning of any of the above commands. Or, you can set TEST_SERVICE
+in your environment and then run these commands:
+
+    export TEST_SERVICE={url}
+
+To use production servers, set environment for CLI and REST API, respectively:
+
+	export TEST_SERVICE=https://gracedb.ligo.org/api/
+
+To use custom test data, set TEST_DATA_DIR. (see test.py and test.sh
+for more info about test data)
