@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+tilemapbase/__init__.py
+tilemapbase/cache.py
+tilemapbase/mapping.py
+tilemapbase/ordnancesurvey.py
+tilemapbase/tiles.py
+tilemapbase/utils.py
+tilemapbase.egg-info/PKG-INFO
+tilemapbase.egg-info/SOURCES.txt
+tilemapbase.egg-info/dependency_links.txt
+tilemapbase.egg-info/requires.txt
+tilemapbase.egg-info/top_level.txt
