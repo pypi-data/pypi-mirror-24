@@ -1,0 +1,3 @@
+aj==2.1.22
+pyyaml
+requests
