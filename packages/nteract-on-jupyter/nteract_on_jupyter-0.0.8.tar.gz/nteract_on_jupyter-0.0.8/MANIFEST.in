@@ -1,0 +1,7 @@
+include README.md
+include setup.py
+recursive-include nteract_on_jupyter *
+prune nteract_on_jupyter/node_modules
+recursive-include nteract_on_jupyter/node_modules/@nteract *.css
+recursive-include nteract_on_jupyter/node_modules/plotly.js plotly.min.js
+recursive-include nteract_on_jupyter/node_modules/codemirror *.css
