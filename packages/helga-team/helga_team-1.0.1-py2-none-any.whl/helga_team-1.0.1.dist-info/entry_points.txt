@@ -1,0 +1,3 @@
+[helga_plugins]
+team = helga_team.helga_team:team
+

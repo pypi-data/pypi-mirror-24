@@ -1,0 +1,12 @@
+helga_team/__init__.py,sha256=3KXfAcA5rzzQXMtfwpHphgbJNZdA0XWaW96kdWVSZJw,22
+helga_team/helga_team.py,sha256=oCsSPCsbWOy-sRlve76tTWyD6nxxf4jUmqBU8aA2_bQ,3727
+helga_team-1.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+helga_team-1.0.1.dist-info/METADATA,sha256=W0yVK42P4GPvI00BfGwphtWgrVARIA9h4jeaejbgEbA,696
+helga_team-1.0.1.dist-info/RECORD,,
+helga_team-1.0.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+helga_team-1.0.1.dist-info/entry_points.txt,sha256=7B-5i12WL-Wgf1XJ0D5e3Vk2fHcqvXHgKXiyDBMXYuE,51
+helga_team-1.0.1.dist-info/metadata.json,sha256=Ifq2yewbKQaXCYmtgpM62wLH-BrEmbeiZSNKGPPwRV4,915
+helga_team-1.0.1.dist-info/top_level.txt,sha256=dTEa8SUokguLe-wbsvpjIBjc0hn91JDmuNqK_Z-G1oA,17
+helga_team-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_team.py,sha256=C-Ks7Z2yDQyOWbm0h3WremyJK4zKFjs5m_ib1QA2wTY,2502
