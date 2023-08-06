@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Introduction &#8212; ivalutils 0.8.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.8.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/sidebar.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="shortcut icon" type="image/png" href="../_static/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.8">
+    
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="responsive-menu"><a href="#sidebar-anchor" title="Navigation">&#9776;</a></li>
+        <li><a href="../index.html">ivalutils 0.8.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-a-quantity">
+<h2>What is a Quantity?<a class="headerlink" href="#what-is-a-quantity" title="Permalink to this headline">¶</a></h2>
+<p>“The value of a quantity is generally expressed as the product of a number
+and a unit. The unit is simply a particular example of the quantity concerned
+which is used as a reference, and the number is the ratio of the value of the
+quantity to the unit.” (Bureau International des Poids et Mesures: The
+International System of Units, 8th edition, 2006)</p>
+<p><strong>Basic</strong> types of quantities are defined “by convention”, they do not depend on
+other types of quantities, for example Length, Mass or Duration.</p>
+<p><strong>Derived</strong> types of quantities, on the opposite, are defined as products of
+other types of quantities raised by some exponent.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li>Volume = Length ** 3</li>
+<li>Velocity = Length ** 1 * Duration ** -1</li>
+<li>Acceleration = Length ** 1 * Duration ** -2</li>
+<li>Force = Mass ** 1 * Acceleration ** 1</li>
+</ul>
+<p>Each type of quantity may have one special unit which is used as a reference
+for the definition of all other units, for example Metre, Kilogram and
+Second. The other units are then defined by their relation to the reference
+unit.</p>
+<p>If a type of quantity is derived from types of quantities that all have a
+reference unit, then the reference unit of that type is defined by a formula
+that follows the formula defining the type of quantity.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li>Velocity -&gt; Metre per Second = Metre ** 1 * Second ** -1</li>
+<li>Acceleration -&gt; Metre per Second squared = Metre ** 1 * Second ** -2</li>
+<li>Force -&gt; Newton = Kilogram ** 1 * Metre ** 1 * Second ** -2</li>
+</ul>
+<div class="section" id="systems-of-measure">
+<h3>“Systems of Measure”<a class="headerlink" href="#systems-of-measure" title="Permalink to this headline">¶</a></h3>
+<p>There may be different systems which define quantities, their units and the
+relations between these units in a different way.</p>
+<p>This is not directly supported by this module. For each type of quantity there
+can be only no or exactly one reference unit. But, if you have units from
+different systems for the same type of quantity, you can define these units
+and provide mechanisms to convert between them (see <span class="xref std std-ref">converters_label</span>).</p>
+</div>
+</div>
+<div class="section" id="main-package-contents">
+<h2>Main Package Contents<a class="headerlink" href="#main-package-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-basics-quantity-and-unit">
+<h3>The Basics: Quantity and Unit<a class="headerlink" href="#the-basics-quantity-and-unit" title="Permalink to this headline">¶</a></h3>
+<p>The essential functionality of the package <code class="xref py py-mod docutils literal"><span class="pre">quantity</span></code> is provided by the
+two classes <code class="xref py py-class docutils literal"><span class="pre">Quantity</span></code> and <code class="xref py py-class docutils literal"><span class="pre">Unit</span></code>.</p>
+<p>A <strong>basic</strong> type of quantity is declared just by sub-classing
+<code class="xref py py-class docutils literal"><span class="pre">Quantity</span></code>. A <strong>derived</strong> type of quantity is declared by
+giving a definition based on more basic types of quantities. For details see
+<span class="xref std std-ref">defining_a_qty_label</span>.</p>
+</div>
+<div class="section" id="utility-functions-and-classes">
+<h3>Utility functions and classes<a class="headerlink" href="#utility-functions-and-classes" title="Permalink to this headline">¶</a></h3>
+<p>In addition, the package <code class="xref py py-mod docutils literal"><span class="pre">quantity</span></code> provides some utility functions (see
+<span class="xref std std-ref">functions_label</span>), base classes for defining unit converters (see
+<span class="xref std std-ref">Converter classes</span>) and some specific
+exceptions (see <span class="xref std std-ref">exceptions_label</span>).</p>
+</div>
+<div class="section" id="commonly-used-quantities">
+<h3>Commonly Used Quantities<a class="headerlink" href="#commonly-used-quantities" title="Permalink to this headline">¶</a></h3>
+<p>The module <code class="xref py py-mod docutils literal"><span class="pre">quantity.predefined</span></code> provides definitions of commonly used
+quantities and units.</p>
+</div>
+<div class="section" id="a-special-quantity-money">
+<h3>A Special Quantity: Money<a class="headerlink" href="#a-special-quantity-money" title="Permalink to this headline">¶</a></h3>
+<p>Money is a special type of quantity. Its unit type is known as currency.</p>
+<p>Money differs from physical quantities mainly in two aspects:</p>
+<ul class="simple">
+<li>Money amounts are discrete. For each currency there is a smallest fraction
+that can not be split further.</li>
+<li>The relation between different currencies is not fixed, instead, it varies
+over time.</li>
+</ul>
+<p>The sub-package <code class="xref py py-mod docutils literal"><span class="pre">quantity.money</span></code> provides classes and functions dealing
+with these specifics. Its main classes <code class="xref py py-class docutils literal"><span class="pre">Money</span></code>,
+<code class="xref py py-class docutils literal"><span class="pre">Currency</span></code>, <code class="xref py py-class docutils literal"><span class="pre">ExchangeRate</span></code> and
+the function <code class="xref py py-func docutils literal"><span class="pre">registerCurrency()</span></code> can also be imported
+from <code class="xref py py-mod docutils literal"><span class="pre">quantity</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <a id="sidebar-anchor"></a>
+    
+
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#what-is-a-quantity">What is a Quantity?</a><ul>
+<li><a class="reference internal" href="#systems-of-measure">“Systems of Measure”</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#main-package-contents">Main Package Contents</a><ul>
+<li><a class="reference internal" href="#the-basics-quantity-and-unit">The Basics: Quantity and Unit</a></li>
+<li><a class="reference internal" href="#utility-functions-and-classes">Utility functions and classes</a></li>
+<li><a class="reference internal" href="#commonly-used-quantities">Commonly Used Quantities</a></li>
+<li><a class="reference internal" href="#a-special-quantity-money">A Special Quantity: Money</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016 ff., Michael Amrhein.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>
