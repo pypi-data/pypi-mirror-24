@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: html-snippet
+Version: 0.2
+Summary: Utility to extract snippets from webpages
+Home-page: https://github.com/aplicacionamedida/html_snippet
+Author: Miguel Martinez Lopez
+Author-email: aplicacionamedida@gmail.com
+License: LICENSE.txt
+Description: This code extracts snippets using a CSS or XPATH selector or evaluating a javascript code. The snippet could be generated using two different approaches: Extracting only the necessary CSS selector or computing the CSS values for every element
+Keywords: html css snippet
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities

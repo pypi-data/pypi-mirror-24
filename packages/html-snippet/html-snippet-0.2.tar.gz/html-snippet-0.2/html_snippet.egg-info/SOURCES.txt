@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+html_snippet/__init__.py
+html_snippet/create_snippet_extracting_css_styles.js
+html_snippet/create_snippet_using_computed_css.js
+html_snippet/default_browser_css_values.js
+html_snippet/empty.html
+html_snippet/html_snippet.py
+html_snippet.egg-info/PKG-INFO
+html_snippet.egg-info/SOURCES.txt
+html_snippet.egg-info/dependency_links.txt
+html_snippet.egg-info/entry_points.txt
+html_snippet.egg-info/requires.txt
+html_snippet.egg-info/top_level.txt

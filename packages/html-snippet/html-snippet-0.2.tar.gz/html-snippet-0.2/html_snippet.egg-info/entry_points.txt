@@ -1,0 +1,3 @@
+[console_scripts]
+html_snippet = html_snippet:main
+
