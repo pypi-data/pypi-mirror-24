@@ -1,0 +1,16 @@
+django_rest_offlinesync-0.5.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+django_rest_offlinesync-0.5.0.dist-info/METADATA,sha256=6h-rNPh86lYZaIaWPUgiD2cm8mgQFRo7mrn4QkRJHzo,815
+django_rest_offlinesync-0.5.0.dist-info/RECORD,,
+django_rest_offlinesync-0.5.0.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+django_rest_offlinesync-0.5.0.dist-info/metadata.json,sha256=IFODJsPXtSHOd439zQ5MzCd19KJDzDzmm0ioHzij1zk,973
+django_rest_offlinesync-0.5.0.dist-info/top_level.txt,sha256=lAkjLOGRf776TYFyhqTYddurA5h5gZCyHIGMNVTl3Bo,17
+rest_offlinesync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rest_offlinesync/delete.py,sha256=MLxmIBC8D0_wXYSFnJmOKXp-wM2YBCYKE2EiXMBJccM,723
+rest_offlinesync/limit.py,sha256=rRDxa24aALoyRnpdIqq2rMj7w8IZ7OcMikbTi4sZaRk,4158
+rest_offlinesync/mixin.py,sha256=sVzyu1HVX6vG1NQ38g_JAHyPLDZFz4Q73a-PZJnpeec,535
+rest_offlinesync/models.py,sha256=rBfltNgHsi9UXQmFGial7RWN3Y92Tv5hZDbmf0P5s_U,260
+rest_offlinesync/nest.py,sha256=NAef-wpCRqBOs6E9EOZnrifqdvZRY7dk-Ds2yRLYzBQ,3259
+rest_offlinesync/sync.py,sha256=7yuJjDDqnxGbnrQmk2PrPptrxL6-VfrTbioKreKdbZo,4604
+rest_offlinesync/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rest_offlinesync/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rest_offlinesync/management/commands/cleardeleted.py,sha256=pfm-5SpMq-C0H2spE0UtKJgPdkrYfJihyYo5is9_D9E,1171
