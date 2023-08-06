@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gil_load/__init__.py
+gil_load/__version__.py
+gil_load/gil_load.c
+gil_load.egg-info/PKG-INFO
+gil_load.egg-info/SOURCES.txt
+gil_load.egg-info/dependency_links.txt
+gil_load.egg-info/top_level.txt
