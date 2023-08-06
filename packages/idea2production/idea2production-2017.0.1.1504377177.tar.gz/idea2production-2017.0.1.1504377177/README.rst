@@ -1,0 +1,35 @@
+<a href="https://gitlab.com/martincollado.com/i2p-python/commits/master"><img alt="pipeline status" src="https://gitlab.com/martincollado.com/i2p-python/badges/master/pipeline.svg" /></a>
+<a href="https://gitlab.com/martincollado.com/i2p-python/commits/master"><img alt="coverage report" src="https://gitlab.com/martincollado.com/i2p-python/badges/master/coverage.svg" /></a>
+
+.. image:: https://readthedocs.org/projects/i2p-python/badge/?version=latest
+:target: http://i2p-python.readthedocs.io/es/latest/?badge=latest
+:alt: Documentation Status
+
+HRL From Idea to Production Tutorial
+====================================
+
+This repo exists to provide  `an example setup.py <https://github.com/kennethreitz/setup.py/blob/master/setup.py>`_ file, that can be used to bootstrap your next Python project. It includes some advanced patterns and best practices for ``setup.py``, as well as some commented–out nice–to–haves.
+
+For example, this ``setup.py`` provides a ``$ python setup.py publish`` command, which creates a *universal wheel* (and *sdist*) and uploads your package to `PyPi <https://docs.python.org/3/distutils/packageindex.html>`_ using `Twine <https://pypi.python.org/pypi/twine>`_, without the need for an annoying ``setup.cfg`` file. 
+
+In short, ``setup.py`` files can be daunting to approach, when first starting out — even Guido has been heard saying, "everyone cargo cults thems". It's true — so, I want this repo to be the best place to copy–paste from :)
+
+`Check out the example! <https://github.com/kennethreitz/setup.py/blob/master/setup.py>`_
+
+To Do
+-----
+
+- Tests via ``$ setup.py test`` (if it's concise).
+
+Pull requests are encouraged!
+
+
+License
+-------
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
