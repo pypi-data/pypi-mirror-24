@@ -1,0 +1,6 @@
+random_script.py
+setup.py
+random_script.egg-info/PKG-INFO
+random_script.egg-info/SOURCES.txt
+random_script.egg-info/dependency_links.txt
+random_script.egg-info/top_level.txt
