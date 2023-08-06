@@ -1,0 +1,14 @@
+url: http://ci.infra.local/gerrit
+auth_type: basic
+username: admin
+password: "KLnlIKJwqLDEKCSMcApx+G1UlurN3jNHO82yO6PfGg"
+
+#url: http://review.openstack.org
+#auth_type: digest
+#username: vkulanov
+#password: "2sMSkGcCyLoe/KBmKIWZbcESQPtZa/HarU9n9oSxwA"
+
+#url: http://ci.csn.khai.edu/gerrit
+#auth_type: basic
+#username: vkulanov
+#password: "K1eSt5IjwphHsvKLQER+O30+O2HiH/ErNhRVG6Wf8w"
