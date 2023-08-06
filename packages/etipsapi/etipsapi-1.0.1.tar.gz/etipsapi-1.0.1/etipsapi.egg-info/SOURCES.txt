@@ -1,0 +1,11 @@
+MANIFEST.in
+README
+setup.py
+EtipsApi/EtipsApi.py
+EtipsApi/__init__.py
+EtipsApi/tests.py
+etipsapi.egg-info/PKG-INFO
+etipsapi.egg-info/SOURCES.txt
+etipsapi.egg-info/dependency_links.txt
+etipsapi.egg-info/requires.txt
+etipsapi.egg-info/top_level.txt
