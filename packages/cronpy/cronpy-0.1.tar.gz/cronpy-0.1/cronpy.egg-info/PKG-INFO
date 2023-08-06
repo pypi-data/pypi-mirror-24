@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cronpy
+Version: 0.1
+Summary: Lightweight Python task scheduler with easy syntax.
+Home-page: https://github.com/speedyturkey/cronpy
+Author: Billy McMonagle
+Author-email: speedyturkey@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
