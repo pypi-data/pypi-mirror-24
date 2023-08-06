@@ -1,0 +1,13 @@
+autoscrub/__init__.py,sha256=TZvEC2JSBkKYvWpsirxLC9jYM__HqJjbCzaIj3Neq1c,35836
+autoscrub/__version__.py,sha256=V10Z8hxlSGZEM8ktVLDE8IAX8ivoXdZpB9hLXFRe96g,23
+autoscrub/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoscrub/scripts/cli.py,sha256=AHPuDRrNe4l_FOgh_ETGzNZwGOORB260yEKcSPHQB3c,17482
+autoscrub-0.2.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+autoscrub-0.2.1.dist-info/METADATA,sha256=y7Lh_1BEl9vY8YqXe0m1b_Rxr3mEC8xhiMIeuOlN8HA,593
+autoscrub-0.2.1.dist-info/RECORD,,
+autoscrub-0.2.1.dist-info/WHEEL,sha256=90z-L1FjHEv_g8pMPaPbaXuhBIvSlvYObRaa122x8ag,97
+autoscrub-0.2.1.dist-info/entry_points.txt,sha256=qBrjeYl-Xz4rV0mP8ASlBAxskiqYqGHQxZ-Z17d2dZg,75
+autoscrub-0.2.1.dist-info/metadata.json,sha256=42S__4vOGzyIknMvvuo7q3n8u9pXx3gaUIR0zqx7JDQ,896
+autoscrub-0.2.1.dist-info/top_level.txt,sha256=gkIxjItnnN5LDha-IjVJU5qBa_WDdgQFnpNdw_TxEMQ,15
+docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs/conf.py,sha256=QWYtpPsBNFdA_4W-A9BwPxkZ-EbNHn5_wMr0P2hYpX4,5520
