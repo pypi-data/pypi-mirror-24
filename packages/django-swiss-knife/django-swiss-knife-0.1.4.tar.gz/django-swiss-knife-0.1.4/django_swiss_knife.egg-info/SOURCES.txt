@@ -1,0 +1,17 @@
+README.rst
+setup.py
+django_swiss_knife/__init__.py
+django_swiss_knife/breadcrumbs.py
+django_swiss_knife/buttons.py
+django_swiss_knife/decorators.py
+django_swiss_knife/fields.py
+django_swiss_knife/filters.py
+django_swiss_knife/models.py
+django_swiss_knife/settings.py
+django_swiss_knife/views.py
+django_swiss_knife/widgets.py
+django_swiss_knife.egg-info/PKG-INFO
+django_swiss_knife.egg-info/SOURCES.txt
+django_swiss_knife.egg-info/dependency_links.txt
+django_swiss_knife.egg-info/requires.txt
+django_swiss_knife.egg-info/top_level.txt
