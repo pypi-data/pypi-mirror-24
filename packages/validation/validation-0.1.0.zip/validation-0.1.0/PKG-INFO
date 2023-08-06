@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: validation
+Version: 0.1.0
+Summary: A library for runtime type checking and validation of python values
+Home-page: https://github.com/JOIVY/validation
+Author: Ben Mather
+Author-email: bwhmather@bwhmather.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

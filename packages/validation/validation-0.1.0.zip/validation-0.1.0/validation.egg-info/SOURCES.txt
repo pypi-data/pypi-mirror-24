@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+validation/__init__.py
+validation/core.py
+validation/core.pyi
+validation/datastructures.py
+validation/datastructures.pyi
+validation/tests/__init__.py
+validation/tests/test_core.py
+validation/tests/test_datastructures.py
