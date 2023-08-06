@@ -1,0 +1,11 @@
+cxmate/__init__.py,sha256=71nNImhovyRqix8nnSr_hTuxXyLbW7Fg-EX_eLUjeTE,38
+cxmate/cxmate_pb2.py,sha256=nvFdtOkQUGRg1APKmcJ-pGo2qh3IH2crGCOOytx7Mo8,92271
+cxmate/cxmate_pb2_grpc.py,sha256=PNIPdv1ipQBDKdqggYpJ73C5iBrOoqVOETJWq_3oBiw,1595
+cxmate/service.py,sha256=C81utoePG_nzyDykjnfqypDnOPiRVvvjB3QeZMMVJRU,8459
+cxmate/service_test.py,sha256=O1VLJf30TNL7bIJVq2vhOiWMrUdmxbxY4kizKwU9ud4,4885
+cxmate-0.7.0.dist-info/DESCRIPTION.rst,sha256=hqqJHFKU_4rDiUrtMPjXzfi8irAeZXto1z7wGxSgIlM,298
+cxmate-0.7.0.dist-info/METADATA,sha256=zDPKOrYedxyyHv762Ica-kS_o30rt0BOzrqCU5Cbs0g,1004
+cxmate-0.7.0.dist-info/RECORD,,
+cxmate-0.7.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+cxmate-0.7.0.dist-info/metadata.json,sha256=HE1AvO-mvwmLHL0Dv217Yh-JTMV5DRjlmFWMJ07EpnI,877
+cxmate-0.7.0.dist-info/top_level.txt,sha256=7vxMEnUfcBqVDPr0djN4BIx0YjhXC2Y-v3r_4p3JD6o,7
