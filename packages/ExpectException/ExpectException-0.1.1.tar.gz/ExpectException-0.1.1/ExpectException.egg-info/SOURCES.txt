@@ -1,0 +1,7 @@
+setup.py
+ExpectException.egg-info/PKG-INFO
+ExpectException.egg-info/SOURCES.txt
+ExpectException.egg-info/dependency_links.txt
+ExpectException.egg-info/top_level.txt
+expectexception/__init__.py
+expectexception/excpectexceptionmagic.py

@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: ExpectException
+Version: 0.1.1
+Summary: Jupyter magic for exceptions
+Home-page: https://github.com/thedataincubator/expectexception
+Author: Robert Schroll
+Author-email: robert@thedataincubator.com
+License: BSD
+Description: Display exceptions and tracebacks in Jupyter notebooks without halting execution.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
