@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+geckoboard/__init__.py
+geckoboard/api.py
+geckoboard/client.py
+geckoboard/connection.py
+geckoboard/dataset.py
+geckoboard/datasets_client.py
+geckoboard/response_handler.py
+geckoboard.py.egg-info/PKG-INFO
+geckoboard.py.egg-info/SOURCES.txt
+geckoboard.py.egg-info/dependency_links.txt
+geckoboard.py.egg-info/requires.txt
+geckoboard.py.egg-info/top_level.txt
