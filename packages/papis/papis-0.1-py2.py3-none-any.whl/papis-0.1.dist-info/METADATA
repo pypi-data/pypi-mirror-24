@@ -1,0 +1,46 @@
+Metadata-Version: 2.0
+Name: papis
+Version: 0.1
+Summary: Simple program to manage literature
+Home-page: https://github.com/alejandrogallo/papis
+Author: Alejandro Gallo
+Author-email: aamsgallo@gmail.com
+License: GPL3
+Keywords: document,books,bibtex,management,cli,biliography
+Platform: linux
+Platform: osx
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+Requires-Dist: PyYAML (>=3.12)
+Requires-Dist: argcomplete (>=1.8.2)
+Requires-Dist: arxiv2bib (>=1.0.7)
+Requires-Dist: beautifulsoup4 (>=4.4.1)
+Requires-Dist: chardet (>=3.0.2)
+Requires-Dist: configparser (>=3.0.0)
+Requires-Dist: prompt-toolkit (>=1.0.0)
+Requires-Dist: python-rofi
+Requires-Dist: requests (>=2.11.1)
+Requires-Dist: vobject (>=0.9.4.1)
+Provides-Extra: develop
+Requires-Dist: pytest; extra == 'develop'
+Requires-Dist: sphinx; extra == 'develop'
+Requires-Dist: sphinx-argparse; extra == 'develop'
+Requires-Dist: sphinx-rtd-theme; extra == 'develop'
+
+Simple program to manage literature
+
+
