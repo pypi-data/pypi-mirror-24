@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: pyradigm
+Version: 0.3.0.3
+Summary: Python-based data structure to improve handling of datasets in machine learning workflows
+Home-page: https://github.com/raamana/pyradigm
+Author: Pradeep Reddy Raamana
+Author-email: raamana@gmail.com
+License: UNKNOWN
+Keywords: machine learning,test dataset,python,workflow,provenance,data structure
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: setuptools
+
+Pyradigm: Python-based data structure to improve handling of datasets in machine learning workflows
+
+
