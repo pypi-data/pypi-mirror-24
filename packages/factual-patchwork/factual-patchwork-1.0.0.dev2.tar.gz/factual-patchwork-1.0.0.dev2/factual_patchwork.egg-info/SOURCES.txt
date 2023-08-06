@@ -1,0 +1,6 @@
+setup.py
+factual_patchwork.egg-info/PKG-INFO
+factual_patchwork.egg-info/SOURCES.txt
+factual_patchwork.egg-info/dependency_links.txt
+factual_patchwork.egg-info/entry_points.txt
+factual_patchwork.egg-info/top_level.txt
