@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: sibus_lib
+Version: 0.0.1
+Summary: Library for SiBus elements
+Home-page: https://github.com/picusalex/sibus_lib
+Author: PicusAlex
+Author-email: picusalex@yahoo.fr
+License: WTFPL
+Description: SiBus Lib - Library for creating SiBus clients and servers
+        ========================================================
+        
+        Vous pouvez l'installer avec pip:
+        
+            pip install sibus_lib
+        
+        Exemple d'usage:
+        
+            >>> from sibus_lib import proclamer
+            >>> proclamer()
+        
+        Ce code est sous licence WTFPL.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Communications
