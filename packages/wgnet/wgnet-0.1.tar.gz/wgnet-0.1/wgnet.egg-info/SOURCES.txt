@@ -1,0 +1,7 @@
+setup.py
+wgnet/__init__.py
+wgnet.egg-info/PKG-INFO
+wgnet.egg-info/SOURCES.txt
+wgnet.egg-info/dependency_links.txt
+wgnet.egg-info/not-zip-safe
+wgnet.egg-info/top_level.txt
