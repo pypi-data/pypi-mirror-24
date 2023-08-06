@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: doctor_leipzig
+Version: 1.1
+Summary: Interlinear (Leipzig Rules) glossing for Markdown
+Home-page: https://github.com/parryc/doctor_leipzig
+Author: parryc
+Author-email: parry@parryc.com
+License: MIT
+Description: Doctor Lepizig is a set of additional Markdown syntax items that help with constructing interlinear glosses within Markdown pages. Please see the README or website for full API.
+Keywords: interlinear leipzig glossing gloss markdown
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: Markup :: HTML
