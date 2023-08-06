@@ -1,0 +1,14 @@
+sxs/__init__.py,sha256=Wqgi6rEoLnrNS1-KEMi8F6sL7KWWU4KJ_9M-uC7g8sw,205
+sxs/_version.py,sha256=trs4VRXnMwfZCblmFz1s54sYoX_UuAwxDxdsnlMhTDk,48
+sxs/metadata/__init__.py,sha256=BYuwOgkLe1Ihf0BNCJmW5AYrM8HAZvQ-tRn49ydQAnA,15772
+sxs/metadata/_version.py,sha256=trs4VRXnMwfZCblmFz1s54sYoX_UuAwxDxdsnlMhTDk,48
+sxs/metadata/catalog.py,sha256=HtvI-UO2GUmphVORgu7qasTScQ9t0ivFhH1ThtzD3ac,16443
+sxs/metadata/field_mapping.py,sha256=pLCno1U5730kkgEISQv3R3rzrCFn1oVpagWe8d5fTjY,4634
+sxs/metadata/fields.py,sha256=iJTkzc2Ix5URxF6g1cdQleVOAaWB3Jh6SXHooyG0DEM,9699
+sxs/metadata/web.py,sha256=DFCb3CmXPGxVFrI6wCm09FHMH_Y4uSiOSGt1N4r41Mk,6339
+sxs-2017.8.29.22.16.2.dev174694041.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+sxs-2017.8.29.22.16.2.dev174694041.dist-info/METADATA,sha256=gg0nuK1mNRT6Nq1Qcn_6DaFO9XDcxguoEuAndrFo5Eg,291
+sxs-2017.8.29.22.16.2.dev174694041.dist-info/RECORD,,
+sxs-2017.8.29.22.16.2.dev174694041.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+sxs-2017.8.29.22.16.2.dev174694041.dist-info/metadata.json,sha256=nCtgWAkaVzezBf8Mlqg_l8sXBO_-a1_Vy48eHQ_ngMw,445
+sxs-2017.8.29.22.16.2.dev174694041.dist-info/top_level.txt,sha256=D8ut2acV4k_6R_AdSV75unGONPgX---LdQ2Qdl6IS3o,4
