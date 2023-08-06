@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: scenechange
+Version: 0.12
+Summary: Insert chapter markers for scene changes using Matroska using ffmpeg and mkvpropedit
+Home-page: UNKNOWN
+Author: Kieran O'Leary
+Author-email: kieran.o.leary@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
