@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: rxt-backend-base
+Version: 0.2.0
+Summary: Base backend for RxTender
+Home-page: https://github.com/rxtender/rxt-backend-base
+Author: Romain Picard
+Author-email: romain.picard@oakbits.com
+License: MIT
+Description: 
+        # RxTender Base backend
+        
+        - serialization:
+            - json : es2015, python
+        - observable:
+            - python
+        
+        ## Running tests
+        
+        ### es2015
+        
+        go into a virtualenv environment where the backend is installed.
+        
+            cd test/es2015
+            npm run tests
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Debuggers
