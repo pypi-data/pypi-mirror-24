@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pdispatch
+Version: 0.0.0.0
+Summary: A small ad hoc plugin applicator and binder for Python 3.
+Home-page: https://github.com/srishanbhattarai/pdispatch
+Author: Srishan Bhattarai
+Author-email: srishanbhattarai@gmail.com
+License: MIT
+Description: # pdispatch
+        
+        > A small ad hoc plugin applicator and binder for Python 3.
+        
+Platform: UNKNOWN
+Classifier: Operating System :: MacOS :: MacOS X

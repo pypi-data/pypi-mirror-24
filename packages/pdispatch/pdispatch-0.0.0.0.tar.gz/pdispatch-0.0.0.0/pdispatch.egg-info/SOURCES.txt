@@ -1,0 +1,7 @@
+setup.py
+pdispatch/pdispatch.py
+pdispatch.egg-info/PKG-INFO
+pdispatch.egg-info/SOURCES.txt
+pdispatch.egg-info/dependency_links.txt
+pdispatch.egg-info/top_level.txt
+test/test_noop.py
