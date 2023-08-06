@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+fixwhitespace/__init__.py
+fixwhitespace/fixwhitespace.py
+fixwhitespace.egg-info/PKG-INFO
+fixwhitespace.egg-info/SOURCES.txt
+fixwhitespace.egg-info/dependency_links.txt
+fixwhitespace.egg-info/entry_points.txt
+fixwhitespace.egg-info/not-zip-safe
+fixwhitespace.egg-info/top_level.txt
