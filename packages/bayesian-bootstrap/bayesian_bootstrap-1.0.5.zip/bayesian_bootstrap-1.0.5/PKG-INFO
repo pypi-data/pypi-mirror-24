@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: bayesian_bootstrap
+Version: 1.0.5
+Summary: Bayesian Bootstrapping for statistics and regression models
+Home-page: https://github.com/lmc2179/bayesian_bootstrap
+Author: Louis Cialdella
+Author-email: louiscialdella@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/lmc2179/bayesian_bootstrap/archive/master.zip
+Description: bayesian_bootstrap is a package for Bayesian bootstrapping in Python. For more information about this package and its usage, visit https://github.com/lmc2179/bayesian_bootstrap.
+Keywords: statistics,bayesian,machine learning,bootstrap,bayes,probability,inference
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
