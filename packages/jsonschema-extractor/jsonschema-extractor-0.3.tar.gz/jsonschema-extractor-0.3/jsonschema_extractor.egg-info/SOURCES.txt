@@ -1,0 +1,17 @@
+README.rst
+setup.py
+jsonschema_extractor/__init__.py
+jsonschema_extractor/attrs_extractor.py
+jsonschema_extractor/compat.py
+jsonschema_extractor/exceptions.py
+jsonschema_extractor/extractor_set.py
+jsonschema_extractor/typing_extractor.py
+jsonschema_extractor/utils.py
+jsonschema_extractor.egg-info/PKG-INFO
+jsonschema_extractor.egg-info/SOURCES.txt
+jsonschema_extractor.egg-info/dependency_links.txt
+jsonschema_extractor.egg-info/requires.txt
+jsonschema_extractor.egg-info/top_level.txt
+jsonschema_extractor/schema_extractor/__init__.py
+jsonschema_extractor/tests/__init__.py
+jsonschema_extractor/tests/test_full.py
