@@ -1,0 +1,7 @@
+README.txt
+setup.py
+u.py
+prod.egg-info/PKG-INFO
+prod.egg-info/SOURCES.txt
+prod.egg-info/dependency_links.txt
+prod.egg-info/top_level.txt
