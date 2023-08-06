@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: glintpy
+Version: 0.0.9.7
+Summary: An AWS service automation tools for the missing pieces of CloudFormation
+Home-page: UNKNOWN
+Author: Argomi Pte Ltd
+Author-email: cheng.chen@argomi.com
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: argomi,automation,aws
+Platform: any

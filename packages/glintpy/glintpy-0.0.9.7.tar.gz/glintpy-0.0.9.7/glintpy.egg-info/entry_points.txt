@@ -1,0 +1,3 @@
+[console_scripts]
+glint = backendautomation.glint:master_command
+

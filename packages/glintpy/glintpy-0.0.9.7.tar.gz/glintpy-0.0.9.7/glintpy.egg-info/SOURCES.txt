@@ -1,0 +1,13 @@
+setup.py
+backendautomation/__init__.py
+backendautomation/glint.py
+backendautomation/scripts/__init__.py
+backendautomation/scripts/lambdas.py
+backendautomation/scripts/new_stack.py
+backendautomation/scripts/step_function.py
+glintpy.egg-info/PKG-INFO
+glintpy.egg-info/SOURCES.txt
+glintpy.egg-info/dependency_links.txt
+glintpy.egg-info/entry_points.txt
+glintpy.egg-info/requires.txt
+glintpy.egg-info/top_level.txt
