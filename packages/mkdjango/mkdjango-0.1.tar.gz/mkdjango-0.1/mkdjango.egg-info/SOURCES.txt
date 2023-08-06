@@ -1,0 +1,15 @@
+MANIFEST.in
+VERSION
+setup.py
+mkdjango/__init__.py
+mkdjango/ajax.py
+mkdjango/logging.py
+mkdjango/models.py
+mkdjango/paging.py
+mkdjango/serialize.py
+mkdjango/views.py
+mkdjango.egg-info/PKG-INFO
+mkdjango.egg-info/SOURCES.txt
+mkdjango.egg-info/dependency_links.txt
+mkdjango.egg-info/requires.txt
+mkdjango.egg-info/top_level.txt
