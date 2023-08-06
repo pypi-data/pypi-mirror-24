@@ -1,0 +1,13 @@
+[run]
+branch = True
+source = Products.orderedbtreefolder
+
+[report]
+precision = 2
+omit = */tests/*
+       */tests.py
+       */setup.py
+       */interfaces.py
+
+[html]
+directory = htmlcov
