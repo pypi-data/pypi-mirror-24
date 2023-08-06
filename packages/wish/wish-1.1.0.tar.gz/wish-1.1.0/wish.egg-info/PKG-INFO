@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: wish
+Version: 1.1.0
+Summary: Selectable Return Values for Python
+Home-page: http://boisgera.github.io/wish/
+Author: Sébastien Boisgérault
+Author-email: Sebastien.Boisgerault@gmail.com
+License: MIT License
+Description: Wish
+        ====
+        
+        |Build Status|
+        
+        **Selectable Return Values for Python**
+        
+        Homepage: http://boisgera.github.io/wish/
+        
+        .. |Build Status| image:: https://travis-ci.org/boisgera/wish.svg?branch=master
+           :target: https://travis-ci.org/boisgera/wish
+        
+Platform: UNKNOWN
