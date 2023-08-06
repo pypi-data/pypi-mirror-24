@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+palpyutil/__init__.py
+palpyutil/_version.py
+palpyutil.egg-info/PKG-INFO
+palpyutil.egg-info/SOURCES.txt
+palpyutil.egg-info/dependency_links.txt
+palpyutil.egg-info/requires.txt
+palpyutil.egg-info/top_level.txt
