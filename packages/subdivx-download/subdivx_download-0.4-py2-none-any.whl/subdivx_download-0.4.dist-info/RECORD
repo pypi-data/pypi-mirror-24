@@ -1,0 +1,11 @@
+subdivx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+subdivx/retriever.py,sha256=2WAjMvTUSElJF7tGVNQyOTyQeQSlcZEp-KDvB3mAZPg,1241
+subdivx/smarter.py,sha256=LafIkj9mmMOirlnHeqVfqTLhbdTJyDnynUv0YiEMCLM,4170
+subdivx/subdivxlib.py,sha256=1NLExAVYbp1VQtp-5mjTVIlmASA2pcLFM7MN_1nBrDo,4234
+subdivx_download-0.4.dist-info/DESCRIPTION.rst,sha256=-Iixe_xd4Lrt76S3O_hUiisk0lpzlNG1VgVp_acl0gU,1070
+subdivx_download-0.4.dist-info/METADATA,sha256=3MDQ6UHIS9ukoi7b2ggjzVVitJ_3R99o4mQC7NXzXKM,1850
+subdivx_download-0.4.dist-info/RECORD,,
+subdivx_download-0.4.dist-info/WHEEL,sha256=u6Fy2U76CDFJ6q2P27rqtBo3AN6qpylFiMaYzNr2lJg,95
+subdivx_download-0.4.dist-info/entry_points.txt,sha256=7wg6D9zGWjl9T6MN3-asPQOwnj9xZ2akVyUC40MBZAg,59
+subdivx_download-0.4.dist-info/metadata.json,sha256=XXXR5X7CYHj1KfKVD7MNjwhQJ_aS2BfXpEd04KfPZcE,1106
+subdivx_download-0.4.dist-info/top_level.txt,sha256=YbkxW_XFDq2dIyqdffwmufM6GRwwOwjWzx74_U1HLcU,8
