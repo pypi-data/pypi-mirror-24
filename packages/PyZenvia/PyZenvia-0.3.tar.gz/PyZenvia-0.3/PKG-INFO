@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: PyZenvia
+Version: 0.3
+Summary: package for send sms by Zenvia API
+Home-page: https://github.com/mrlucascardoso/pyzenvia
+Author: Lucas Cardoso
+Author-email: mr.lucascardoso@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: sms,zenvia
+Platform: UNKNOWN
