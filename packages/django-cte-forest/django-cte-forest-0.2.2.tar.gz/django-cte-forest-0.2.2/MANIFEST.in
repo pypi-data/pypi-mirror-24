@@ -1,0 +1,6 @@
+include LICENSE
+include MANIFEST.in
+include README.rst
+recursive-include cte_forest/static *
+recursive-include cte_forest/locale *
+recursive-include cte_forest/templates *
