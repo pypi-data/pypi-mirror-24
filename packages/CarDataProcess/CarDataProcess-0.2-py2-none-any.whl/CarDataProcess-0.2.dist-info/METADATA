@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: CarDataProcess
+Version: 0.2
+Summary: This is a cardata process program!
+Home-page: UNKNOWN
+Author: louis
+Author-email: me@example.com
+License: MIT
+Keywords: CarDataProcess  example examples
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
