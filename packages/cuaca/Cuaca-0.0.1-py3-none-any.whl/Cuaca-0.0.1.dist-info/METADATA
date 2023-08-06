@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: Cuaca
+Version: 0.0.1
+Summary: A python wrapper for Malaysian Weather Service API
+Home-page: https://github.com/sweemeng/cuaca
+Author: Ng Swee Meng
+Author-email: sweester@gmail.com
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: requests
+
+This is a Wrapper for the Malaysian Weather Service API
+
+
