@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+django_keycloak/__init__.py
+django_keycloak/middleware.py
+django_rest_framework_keycloak.egg-info/PKG-INFO
+django_rest_framework_keycloak.egg-info/SOURCES.txt
+django_rest_framework_keycloak.egg-info/dependency_links.txt
+django_rest_framework_keycloak.egg-info/requires.txt
+django_rest_framework_keycloak.egg-info/top_level.txt
