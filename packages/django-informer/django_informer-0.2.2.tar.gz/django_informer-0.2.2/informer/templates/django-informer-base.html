@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" data-ng-app="informer">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="a pluggable app to monitoring third party services.">
+        <meta name="keywords" content="Python, Django, Web Development, Monitoring">
+        <meta name="author" content="Rodrigo Braga">
+
+        <link rel="shortcut icon" href="{% static "django_informer/assets/images/favicon.ico" %}" />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css" />
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css" />
+
+        <link rel="stylesheet" href="{% static 'django_informer/assets/styles/django-informer.css' %}" type="text/css" />
+
+        <link rel="alternate" type="application/rss+xml" title="feed" href="{% url 'feed-informer' %}" />
+
+        <title>Informer &middot; a pluggable app to monitoring your own infrastructure and third party services.</title>
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col mdl-typography--text-center">
+                <a href="/"><div id="github" class="icon material-icons">code</div></a>
+                <div class="mdl-tooltip" data-mdl-for="github">
+                    get more info about <strong>Informer</strong>
+                </div>
+            </div>
+        </div><br /><br />
+
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </body>
+</html>

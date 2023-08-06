@@ -1,0 +1,12 @@
+include DESCRIPTION.rst
+include README.rst
+include LICENSE
+
+recursive-include informer/checker *
+recursive-include informer/management *
+recursive-include informer/migrations *
+recursive-include informer/static *
+recursive-include informer/templates *
+
+global-exclude __pycache__
+global-exclude *.py[co]
