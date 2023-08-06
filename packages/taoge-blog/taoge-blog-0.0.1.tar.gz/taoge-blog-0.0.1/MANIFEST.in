@@ -1,0 +1,7 @@
+recursive-include taoge_blog *.rst *.html *.ico *.png
+include Makefile README.md requirements.txt
+
+
+
+
+
