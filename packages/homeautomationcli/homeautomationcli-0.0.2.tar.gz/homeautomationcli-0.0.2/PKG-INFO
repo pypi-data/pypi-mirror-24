@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: homeautomationcli
+Version: 0.0.2
+Summary: Epsum Labs Home Automation CLI
+Home-page: https://github.com/Epsumlabs/homeautomationcli
+Author: saiprasad
+Author-email: saiprasad1996@hotmail.com
+License: MIT
+Description: 
+        	This project is a command line utility tool, complimented with Epsumlabs Open Source IoT platform project.
+        
+Keywords: cli,homeautomation,IoT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
