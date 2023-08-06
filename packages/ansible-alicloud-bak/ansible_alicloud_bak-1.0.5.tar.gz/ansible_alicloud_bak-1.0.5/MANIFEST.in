@@ -1,0 +1,7 @@
+prune ticket_stubs
+prune hacking
+
+exclude cloud/__init__.py
+exclude cloud/setup.py
+exclude *.egg-info
+exclude cloud/dist
