@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: track-grabber
+Version: 0.5
+Summary: Track grabber finds the most popular songs of a given artists and generates an html page with youtube links to those songs.
+Home-page: https://pypi.python.org/pypi/track-grabber
+Author: Joseph Jones
+Author-email: josephjones15470@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
