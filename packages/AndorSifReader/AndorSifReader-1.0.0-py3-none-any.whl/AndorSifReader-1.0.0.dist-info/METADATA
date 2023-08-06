@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: AndorSifReader
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/ardiloot/AndorSifReader
+Author: Ardi Loot
+Author-email: ardi.loot@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+UNKNOWN
+
+
