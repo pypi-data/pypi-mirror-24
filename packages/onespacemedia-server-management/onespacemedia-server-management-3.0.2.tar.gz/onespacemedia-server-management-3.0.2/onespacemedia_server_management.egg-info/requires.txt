@@ -1,0 +1,4 @@
+django
+fabric3
+requests
+fabric3-virtualenv
