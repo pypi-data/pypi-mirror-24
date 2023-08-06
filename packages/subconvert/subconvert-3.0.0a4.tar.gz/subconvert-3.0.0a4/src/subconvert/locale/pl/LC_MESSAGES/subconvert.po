@@ -1,0 +1,1152 @@
+# Polish translations for subconvert package.
+# Copyright (C) 2013 Michal Goral
+# This file is distributed under the same license as the subconvert package.
+# Michal Goral <michal.goral@mgoral.org>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: subconvert 3.0.0\n"
+"Report-Msgid-Bugs-To: https://gitlab.com/mgoral/subconvert/issues\n"
+"POT-Creation-Date: 2017-08-22 12:13+0200\n"
+"PO-Revision-Date: 2017-08-22 12:08+0200\n"
+"Last-Translator: Michal Goral\n"
+"Language: pl\n"
+"Language-Team: Polish\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.0\n"
+
+#: src/subconvert/apprunner.py:44
+#, python-format
+msgid "No such file: '%s'"
+msgstr "Plik nie istnieje: '%s'"
+
+#: src/subconvert/apprunner.py:50
+msgid "Subconvert is a movie subtitles editor and converter."
+msgstr "Subconvert jest edytorem i konwerterem napisów filmowych."
+
+#: src/subconvert/apprunner.py:52 src/subconvert/apprunner.py:62
+#: src/subconvert/apprunner.py:75
+msgid "FILE"
+msgstr "PLIK"
+
+#: src/subconvert/apprunner.py:53
+msgid "files to open"
+msgstr "pliki do otwarcia"
+
+#: src/subconvert/apprunner.py:56
+msgid "runs Subconvert in console"
+msgstr "uruchamia Subconverta w konsoli"
+
+#: src/subconvert/apprunner.py:58
+msgid "forces all operations without asking (assuming yes)"
+msgstr "wymusza wszystkie operacje bez pytania (zakładając zgodę)"
+
+#: src/subconvert/apprunner.py:61
+msgid "subtitle options"
+msgstr "opcje dla napisów"
+
+#. Translators: Do not translate '%%f'
+#: src/subconvert/apprunner.py:65
+#, python-format
+msgid ""
+"output file. All occurences of '%%f', will be replaced by input file name"
+" base"
+msgstr ""
+"plik wyjściowy. Wszystkie wystąpienia '%%f' zostaną zastąpione nazwą "
+"pliku bez rozszerzenia"
+
+#: src/subconvert/apprunner.py:66 src/subconvert/apprunner.py:69
+msgid "ENC"
+msgstr "ENC"
+
+#: src/subconvert/apprunner.py:68
+msgid "input file encoding"
+msgstr "kodowanie wejściowe pliku"
+
+#: src/subconvert/apprunner.py:71
+msgid "changes output file encoding to ENC"
+msgstr "zmienia kodowanie wyjściowe pliku na ENC"
+
+#: src/subconvert/apprunner.py:72
+msgid "FMT"
+msgstr "FMT"
+
+#: src/subconvert/apprunner.py:74
+msgid "sets output subtitle format to FMT"
+msgstr "ustawia format wyjściowy pliku na FMT"
+
+#: src/subconvert/apprunner.py:78
+msgid "loads settings from spf (subtitle property file)"
+msgstr "wczytuje ustawienia z pliku spf"
+
+#: src/subconvert/apprunner.py:79
+msgid "SPEC"
+msgstr "FMT"
+
+#: src/subconvert/apprunner.py:81
+msgid "synchronize subtitles according to SPEC"
+msgstr "synchronizuj napisy według formatu FMT"
+
+#: src/subconvert/apprunner.py:83
+msgid "video options"
+msgstr "opcje wideo"
+
+#: src/subconvert/apprunner.py:85
+msgid "specifies video frames per second"
+msgstr "określa ilość klatek na sekundę dla pliku wideo"
+
+#: src/subconvert/apprunner.py:86
+msgid "VIDEO"
+msgstr "WIDEO"
+
+#. Translators: Do not translate '%%f'
+#: src/subconvert/apprunner.py:88
+#, python-format
+msgid ""
+"specifies a video file to get FPS value from. All occurences of '%%f' "
+"will be replaced by input file name base"
+msgstr ""
+"określa plik filmowy, z którego zostanie pobrana wartość FPS. Wszystkie "
+"wystąpienia '%%f' zostaną zastąpione nazwą pliku bez rozszerzenia"
+
+#: src/subconvert/apprunner.py:91
+msgid "miscellaneous options"
+msgstr "pozostałe usttawienia"
+
+#: src/subconvert/apprunner.py:93
+msgid "enables debug prints"
+msgstr "włącza logi debugowe"
+
+#: src/subconvert/apprunner.py:95
+msgid "silences Subconvert output"
+msgstr "ucisza wyjście Subconverta"
+
+#: src/subconvert/apprunner.py:97
+msgid "prints program version and exit"
+msgstr "wyświetla numer wersji programu i kończy działanie"
+
+#: src/subconvert/cli/MainApp.py:57
+#, python-format
+msgid "Couldn't parse file '%s'"
+msgstr "Nie udało się sparsować pliku '%s'"
+
+#: src/subconvert/cli/MainApp.py:87
+#, python-format
+msgid "Unknown output format: '%s'"
+msgstr "Nieznany format wyjściowy: '%s'"
+
+#: src/subconvert/cli/MainApp.py:116
+#, python-format
+msgid "File %s saved."
+msgstr "Plik %s zapisany."
+
+#: src/subconvert/cli/MainApp.py:119
+msgid "y"
+msgstr "t"
+
+#: src/subconvert/cli/MainApp.py:119
+msgid "n"
+msgstr "n"
+
+#: src/subconvert/cli/MainApp.py:119
+msgid "q"
+msgstr "z"
+
+#: src/subconvert/cli/MainApp.py:119
+msgid "b"
+msgstr "b"
+
+#: src/subconvert/cli/MainApp.py:131
+#, python-format
+msgid "File '%(file)s' exists. Overwrite? [%(yes)s/%(no)s/%(bck)s/%(quit)s]"
+msgstr "Plik '%(file)s' już istnieje. Nadpisać? [%(yes)s/%(no)s/%(bck)s/%(quit)s]"
+
+#: src/subconvert/cli/MainApp.py:136
+#, python-format
+msgid "Backup: %s"
+msgstr "Backup: %s"
+
+#: src/subconvert/cli/MainApp.py:137 src/subconvert/cli/MainApp.py:143
+#, python-format
+msgid "Overwriting %s"
+msgstr "Nadpisywanie %s"
+
+#: src/subconvert/cli/MainApp.py:140
+#, python-format
+msgid "Skipping %s"
+msgstr "Pominięto %s"
+
+#: src/subconvert/cli/MainApp.py:146
+msgid "Quitting converting work."
+msgstr "Zakończenie konwersji."
+
+#: src/subconvert/cli/MainApp.py:162
+msgid "No files selected."
+msgstr "Nie wybrano żadnych plików."
+
+#: src/subconvert/cli/MainApp.py:165
+#, python-format
+msgid "Starting a job for file: %s"
+msgstr "Rozpoczynanie pracy dla pliku: %s"
+
+#: src/subconvert/cli/MainApp.py:169
+#, python-format
+msgid "File '%s' doesn't exist. Skipping..."
+msgstr "Plik '%s' nie istnieje. Pomijanie..."
+
+#: src/subconvert/cli/MainApp.py:182
+msgid "Unhandled Subconvert exception occured:"
+msgstr "Nastąpił nieobsłużony wyjątek Subconverta:"
+
+#: src/subconvert/cli/MainApp.py:189
+#, python-format
+msgid "File properties for %s:"
+msgstr "Właściwości pliku dla %s:"
+
+#: src/subconvert/cli/MainApp.py:190
+#, python-format
+msgid "FPS             : %s"
+msgstr "FPS                 : %s"
+
+#: src/subconvert/cli/MainApp.py:191
+#, python-format
+msgid "Input encoding  : %s"
+msgstr "Kodowanie wejściowe : %s"
+
+#: src/subconvert/cli/MainApp.py:192
+#, python-format
+msgid "Output encoding : %s"
+msgstr "Kodowanie wyjściowe : %s"
+
+#: src/subconvert/cli/MainApp.py:193
+#, python-format
+msgid "Output format   : %s"
+msgstr "Format wyjściowy    : %s"
+
+#: src/subconvert/cli/MainApp.py:220
+#, python-format
+msgid "Incorrect encoding: '%s'"
+msgstr "Niepoprawne kodowanie: '%s'"
+
+#: src/subconvert/cli/syncparse.py:52
+msgid "Sync: time spec cannot be empty"
+msgstr "Synch.: format czasu nie może być pusty"
+
+#: src/subconvert/cli/syncparse.py:68
+msgid "Sync: non-unique time units in time spec"
+msgstr "Synch.: jednostki czasu w formacie powtarzają się"
+
+#: src/subconvert/cli/syncparse.py:74
+msgid "Sync: some characters not parsed"
+msgstr "Synch.: niektóre znaki nie zostały sparsowane"
+
+#: src/subconvert/cli/syncparse.py:79
+msgid "Sync: incorrect time spec units"
+msgstr "Synch.: niepoprawne jednostki w formacie czasu"
+
+#: src/subconvert/cli/syncparse.py:88
+msgid "Sync: offset must be relative. Did you forget a +/- sign?"
+msgstr "Synch.: przesunięcie musi być względne. Czy brakuje znaku +/-?"
+
+#: src/subconvert/cli/syncparse.py:96
+msgid "Sync: expected subtitle number"
+msgstr "Synch.: brak numeru porządkowego napisu"
+
+#: src/subconvert/cli/syncparse.py:97
+msgid "Sync: expected time spec"
+msgstr "Synch.: brak formatu czasu"
+
+#: src/subconvert/cli/syncparse.py:102 src/subconvert/cli/syncparse.py:103
+#, python-format
+msgid "Sync: incorrect subtitle number: %s"
+msgstr "Synch.: niepoprawny numer porządkowy napisu: %s"
+
+#: src/subconvert/cli/syncparse.py:140
+msgid "Sync: incorrect offset. Resulting subtitle time would be lower than 0"
+msgstr "Synch.: niepoprawne przesunięcie. Wynikowy czas napisu byłby ujemny"
+
+#: src/subconvert/cli/syncparse.py:150
+msgid "Sync: expected sync request"
+msgstr "Synch.: spodziewano się żądania synchronizacji"
+
+#: src/subconvert/cli/syncparse.py:154
+#, python-format
+msgid "Sync: incorrect subtitle number: %d"
+msgstr "Synch.: niepoprawny numer porządkowy napisu: %d"
+
+#: src/subconvert/cli/syncparse.py:163
+msgid "Sync: incorrect time spec. Resulting subtitle time would be lower than 0"
+msgstr "Synch.: niepoprawny format czasu. Wynikowy czas napisu byłby ujemny"
+
+#: src/subconvert/gui/Detail.py:30
+msgid "[Auto]"
+msgstr "[Auto]"
+
+#: src/subconvert/gui/Detail.py:155
+msgid "An error occured when trying to open a file:"
+msgid_plural "Errors occured when trying to open following files:"
+msgstr[0] "Przy otwieraniu pliku wystąpił błąd:"
+msgstr[1] "Przy otwieraniu plików wystąpił błąd:"
+msgstr[2] "Przy otwieraniu plików wystąpił błąd:"
+
+#: src/subconvert/gui/FileDialogs.py:45
+msgid "File encoding:"
+msgstr "Kodowanie pliku:"
+
+#: src/subconvert/gui/FileDialogs.py:51
+msgid "Change file encoding"
+msgstr "Zmiana kodowania pliku"
+
+#: src/subconvert/gui/FileDialogs.py:64
+msgid "Subtitle format:"
+msgstr "Format napisów:"
+
+#: src/subconvert/gui/MainWindow.py:61
+msgid ""
+"\n"
+"<h2>Subconvert</h2>\n"
+"<p>\n"
+"Version: $version<br/>\n"
+"Website: <a href=\"$website\">$website</a><br/>\n"
+"License: $license\n"
+"</p>\n"
+"\n"
+"<h3>Authors</h3>\n"
+"<p>\n"
+"Development: $author<br/>\n"
+"Logo: $author<br/>\n"
+"Icons: <a href=\"$icon_website\">$icon_author</a><br/>\n"
+"Translations: $translators\n"
+"</p>\n"
+"\n"
+"<h3>About</h3>\n"
+"<p>This is Subconvert - movie subtitles editor and converter.</p>\n"
+"<p>If you'd like to help at developing Subconvert, see program <a "
+"href=\"$website\">website</a> or contact author.</p>\n"
+msgstr ""
+"\n"
+"<h2>Subconvert</h2>\n"
+"<p>\n"
+"Wersja: $version<br/>\n"
+"Strona internetowa: <a href=\"$website\">$website</a><br/>\n"
+"Licencja: $license\n"
+"</p>\n"
+"\n"
+"<h3>Autorzy</h3>\n"
+"<p>\n"
+"Programowanie: $author<br/>\n"
+"Logo: $author<br/>\n"
+"Ikony: <a href=\"$icon_website\">$icon_author</a><br/>\n"
+"Tłumaczenia: $translators\n"
+"</p>\n"
+"\n"
+"<h3>O programie</h3>\n"
+"<p>Oto Subconvert - edytor i konwerter napisów do filmów.</p>\n"
+"<p>Jeśli chcesz pomóc przy rozwoju programu, zajrzyj na <a "
+"href=\"$website\">stronę Subconverta</a> lub skontaktuj się z "
+"autorem.</p>\n"
+
+#: src/subconvert/gui/MainWindow.py:85
+#, python-format
+msgid "Theme search paths: %s"
+msgstr "Ścieżki szukania motywów: %s"
+
+#: src/subconvert/gui/MainWindow.py:86
+#, python-format
+msgid "Used theme name: '%s'"
+msgstr "Używany motyw: '%s'"
+
+#: src/subconvert/gui/MainWindow.py:146
+msgid "&Open"
+msgstr "&Otwórz"
+
+#: src/subconvert/gui/MainWindow.py:146
+msgid "Open subtitle file."
+msgstr "Otwiera plik napisów."
+
+#: src/subconvert/gui/MainWindow.py:148
+msgid "&Save"
+msgstr "&Zapisz"
+
+#: src/subconvert/gui/MainWindow.py:148
+msgid "Save current file."
+msgstr "Zapisuje bieżący plik."
+
+#: src/subconvert/gui/MainWindow.py:150
+msgid "S&ave as..."
+msgstr "Z&apisz jako..."
+
+#: src/subconvert/gui/MainWindow.py:150
+msgid "Save current file as..."
+msgstr "Zapisuje bieżący plik jako..."
+
+#: src/subconvert/gui/MainWindow.py:153
+msgid "Sa&ve all"
+msgstr "Zapi&sz wszystko"
+
+#: src/subconvert/gui/MainWindow.py:153
+msgid "Save all opened files."
+msgstr "Zapisuje wszystkie otwarte pliki"
+
+#: src/subconvert/gui/MainWindow.py:157
+msgid "&Exit"
+msgstr "&Wyjście"
+
+#: src/subconvert/gui/MainWindow.py:157
+msgid "Exit Subconvert."
+msgstr "Zakańcza Subconverta"
+
+#: src/subconvert/gui/MainWindow.py:169 src/subconvert/gui/SubtitleTabs.py:231
+msgid "&Undo"
+msgstr "&Cofnij"
+
+#: src/subconvert/gui/MainWindow.py:171 src/subconvert/gui/SubtitleTabs.py:235
+msgid "&Redo"
+msgstr "&Powtórz"
+
+#: src/subconvert/gui/MainWindow.py:192 src/subconvert/gui/SubtitleTabs.py:195
+msgid "&Link video"
+msgstr "P&rzypisz wideo"
+
+#: src/subconvert/gui/MainWindow.py:195 src/subconvert/gui/SubtitleTabs.py:200
+msgid "U&nlink video"
+msgstr "U&suń przypisanie wideo"
+
+#: src/subconvert/gui/MainWindow.py:198 src/subconvert/gui/SubtitleTabs.py:204
+msgid "&Get FPS"
+msgstr "Pobierz &FPS"
+
+#: src/subconvert/gui/MainWindow.py:201 src/subconvert/gui/SubtitleTabs.py:569
+msgid "&Insert subtitle"
+msgstr "&Wstaw napis"
+
+#: src/subconvert/gui/MainWindow.py:205 src/subconvert/gui/SubtitleTabs.py:573
+msgid "&Add subtitle"
+msgstr "&Dodaj napis"
+
+#: src/subconvert/gui/MainWindow.py:209 src/subconvert/gui/SubtitleTabs.py:188
+msgid "&Offset"
+msgstr "Pr&zesunięcie"
+
+#: src/subconvert/gui/MainWindow.py:212 src/subconvert/gui/SubtitleTabs.py:577
+msgid "&Remove subtitles"
+msgstr "&Usuń napis"
+
+#: src/subconvert/gui/MainWindow.py:216
+msgid "&Find..."
+msgstr "Szuk&aj..."
+
+#: src/subconvert/gui/MainWindow.py:221
+msgid "&Play/pause"
+msgstr "&Odtwórz/wstrzymaj"
+
+#: src/subconvert/gui/MainWindow.py:221
+msgid "Toggle video playback"
+msgstr "Przełącza odtwarzanie pliku wideo"
+
+#: src/subconvert/gui/MainWindow.py:224
+msgid "&Forward"
+msgstr "&Do przodu"
+
+#: src/subconvert/gui/MainWindow.py:226
+msgid "&Rewind"
+msgstr "&Cofnij"
+
+#: src/subconvert/gui/MainWindow.py:228
+msgid "Next &frame"
+msgstr "&Następna ramka"
+
+#: src/subconvert/gui/MainWindow.py:228
+msgid "Go to the next frame in a video"
+msgstr "Przechodzi do następnej ramki w pliku wideo"
+
+#: src/subconvert/gui/MainWindow.py:231
+msgid "Previous f&rame"
+msgstr "&Poprzednia ramka"
+
+#: src/subconvert/gui/MainWindow.py:231
+msgid "Go to the previous frame in a video"
+msgstr "Przechodzi do poprzedniej ramki w pliku wideo"
+
+#: src/subconvert/gui/MainWindow.py:235
+msgid "&Jump to subtitle"
+msgstr "&Skocz do napisu"
+
+#: src/subconvert/gui/MainWindow.py:239
+msgid "Subtitle &Properties Editor"
+msgstr "Edytor &Właściwości Napisów"
+
+#: src/subconvert/gui/MainWindow.py:243
+msgid "&Video player"
+msgstr "Odtwarzacz &wideo"
+
+#: src/subconvert/gui/MainWindow.py:243
+msgid "Show or hide video player"
+msgstr "Pokazuje lub ukrywa panel wideo"
+
+#: src/subconvert/gui/MainWindow.py:245
+msgid "Side &panel"
+msgstr "&Panel boczny"
+
+#: src/subconvert/gui/MainWindow.py:245
+msgid "Show or hide left panel"
+msgstr "Pokazuje lub ukrywa lewy panel"
+
+#: src/subconvert/gui/MainWindow.py:249 src/subconvert/gui/MainWindow.py:313
+msgid "&Help"
+msgstr "&Pomoc"
+
+#: src/subconvert/gui/MainWindow.py:249
+msgid "Open &help page"
+msgstr "Otwiera stronę pomocy"
+
+#: src/subconvert/gui/MainWindow.py:251
+msgid "&About Subconvert"
+msgstr "&O programie Subconvert"
+
+#: src/subconvert/gui/MainWindow.py:255
+msgid "&File"
+msgstr "&Plik"
+
+#: src/subconvert/gui/MainWindow.py:264
+msgid "&Subtitles"
+msgstr "Napi&sy"
+
+#: src/subconvert/gui/MainWindow.py:273 src/subconvert/gui/SubtitleTabs.py:153
+msgid "&Frames per second"
+msgstr "&Klatki na sekundę"
+
+#: src/subconvert/gui/MainWindow.py:277 src/subconvert/gui/SubtitleTabs.py:162
+msgid "Subtitles forma&t"
+msgstr "Forma&t napisów"
+
+#: src/subconvert/gui/MainWindow.py:280 src/subconvert/gui/SubtitleTabs.py:171
+msgid "Input &encoding"
+msgstr "Kodowanie w&ejściowe"
+
+#: src/subconvert/gui/MainWindow.py:281 src/subconvert/gui/SubtitleTabs.py:173
+msgid "&Output encoding"
+msgstr "Kodowanie w&yjściowe"
+
+#: src/subconvert/gui/MainWindow.py:292
+msgid "&Video"
+msgstr "Wi&deo"
+
+#: src/subconvert/gui/MainWindow.py:295
+msgid "&Playback"
+msgstr "O&dtwarzanie"
+
+#: src/subconvert/gui/MainWindow.py:306
+msgid "Vie&w"
+msgstr "&Widok"
+
+#: src/subconvert/gui/MainWindow.py:310
+msgid "&Tools"
+msgstr "&Narzędzia"
+
+#: src/subconvert/gui/MainWindow.py:324
+msgid "Default"
+msgstr "Domyślne"
+
+#: src/subconvert/gui/MainWindow.py:463 src/subconvert/gui/SubtitleTabs.py:147
+msgid "Open file"
+msgstr "Otwórz plik"
+
+#: src/subconvert/gui/MainWindow.py:465
+#, python-format
+msgid "Subtitles (%s);;All files (*)"
+msgstr "Napisy (%s);;Wszystkie pliki (*)"
+
+#: src/subconvert/gui/MainWindow.py:485
+msgid "Couldn't save file"
+msgstr "Nie udało się zapisać pliku"
+
+#: src/subconvert/gui/MainWindow.py:493
+msgid "Save as..."
+msgstr "Zapisz jako..."
+
+#: src/subconvert/gui/MainWindow.py:519
+#, python-format
+msgid "Overwritten by %s"
+msgstr "Nadpisane przez %s"
+
+#: src/subconvert/gui/MainWindow.py:550
+msgid "Error on saving a file"
+msgid_plural "Error on saving files"
+msgstr[0] "Błąd przy zapisywaniu pliku"
+msgstr[1] "Błąd przy zapisywaniu plików"
+msgstr[2] "Błąd przy zapisywaniu plików"
+
+#: src/subconvert/gui/MainWindow.py:555
+msgid "Following error occured when trying to save a file:"
+msgid_plural "Following errors occured when trying to save files:"
+msgstr[0] "Przy zapisywaniu pliku wystąpił błąd:"
+msgstr[1] "Przy zapisywaniu plików wystąpił błąd:"
+msgstr[2] "Przy zapisywaniu plików wystąpił błąd:"
+
+#: src/subconvert/gui/MainWindow.py:639
+msgid "About Subconvert"
+msgstr "O programie Subconvert"
+
+#: src/subconvert/gui/MainWindow.py:651
+msgid "Couldn't open URL"
+msgstr "Nie udało się otworzyć adresu internetowego"
+
+#: src/subconvert/gui/MainWindow.py:652
+#, python-format
+msgid "Failed to open URL: <a href=\"%(url)s\">%(url)s</a>."
+msgstr ""
+"Nie udało się otworzyć adresu internetowego: <a "
+"href=\"%(url)s\">%(url)s</a>."
+
+#: src/subconvert/gui/MainWindow.py:694 src/subconvert/gui/SubtitleTabs.py:386
+msgid "Select a video"
+msgstr "Wybór pliku wideo"
+
+#: src/subconvert/gui/MainWindow.py:696 src/subconvert/gui/SubtitleTabs.py:388
+#, python-format
+msgid "Video files (%s);;All files (*)"
+msgstr "Pliki wideo (%s);;Wszystkie pliki (*)"
+
+#: src/subconvert/gui/OffsetDialog.py:36
+msgid "Offset:"
+msgstr "&Przesunięcie"
+
+#: src/subconvert/gui/OffsetDialog.py:46
+msgid "Offset"
+msgstr "Przesunięcie"
+
+#: src/subconvert/gui/PropertyFileEditor.py:71
+msgid "Subtitle Properties Editor"
+msgstr "Edytor Właściwości Napisów"
+
+#: src/subconvert/gui/PropertyFileEditor.py:83
+#: src/subconvert/gui/SubtitleTabs.py:100
+msgid "FPS"
+msgstr "Klatki na sekundę"
+
+#: src/subconvert/gui/PropertyFileEditor.py:86
+msgid "Auto FPS"
+msgstr "Pobieraj automatycznie"
+
+#: src/subconvert/gui/PropertyFileEditor.py:98
+msgid "File Encoding"
+msgstr "Kodowanie pliku"
+
+#: src/subconvert/gui/PropertyFileEditor.py:102
+msgid "Auto input encoding"
+msgstr "Automatyczne kodowanie wejściowe"
+
+#: src/subconvert/gui/PropertyFileEditor.py:106
+#: src/subconvert/gui/SubtitleTabs.py:99
+msgid "Input encoding"
+msgstr "Kodowanie wejściowe"
+
+#: src/subconvert/gui/PropertyFileEditor.py:108
+msgid "Change encoding on save"
+msgstr "Zmieniaj kodowanie pliku przy zapisie"
+
+#: src/subconvert/gui/PropertyFileEditor.py:112
+#: src/subconvert/gui/SubtitleTabs.py:99
+msgid "Output encoding"
+msgstr "Kodowanie wyjściowe"
+
+#: src/subconvert/gui/PropertyFileEditor.py:124
+#: src/subconvert/gui/SubtitleTabs.py:99
+msgid "Subtitle format"
+msgstr "Format napisów"
+
+#: src/subconvert/gui/PropertyFileEditor.py:131
+msgid "Output format"
+msgstr "Format wyjściowy"
+
+#: src/subconvert/gui/PropertyFileEditor.py:142
+msgid "Open"
+msgstr "Otwórz"
+
+#: src/subconvert/gui/PropertyFileEditor.py:143
+msgid "Save"
+msgstr "Zapisz"
+
+#: src/subconvert/gui/PropertyFileEditor.py:144
+msgid "Close"
+msgstr "Zamknij"
+
+#: src/subconvert/gui/PropertyFileEditor.py:182
+#, python-format
+msgid "Subtitle format (%s) doesn't match any of known formats!"
+msgstr "Nieznany format napisów (%s)!"
+
+#: src/subconvert/gui/PropertyFileEditor.py:193
+msgid "Incorrect value"
+msgstr "Niepoprawna wartość"
+
+#: src/subconvert/gui/PropertyFileEditor.py:194
+msgid "Could not save SPF file because of incorrect parameters."
+msgstr "Nie udało się zapisać pliku SPF z powodu błędnych parametrów."
+
+#: src/subconvert/gui/PropertyFileEditor.py:201
+msgid "Save Subtitle Properties"
+msgstr "Zapisz właściwości napisów"
+
+#: src/subconvert/gui/PropertyFileEditor.py:219
+#: src/subconvert/gui/SubtitleTabs.py:352
+msgid "Open Subtitle Properties"
+msgstr "Otwórz plik właściwości napisów"
+
+#: src/subconvert/gui/PropertyFileEditor.py:221
+#: src/subconvert/gui/SubtitleTabs.py:354
+msgid "Subtitle Properties (*.spf);;All files (*)"
+msgstr "Pliki Własciwości (*spf);;Wszystkie pliki (*)"
+
+#: src/subconvert/gui/SubtitleCommands.py:83
+#, python-format
+msgid "Subtitle change (%d: %s)"
+msgstr "Zmiana napisu (%d: %s)"
+
+#: src/subconvert/gui/SubtitleCommands.py:118
+msgid "Subtitle data change"
+msgstr "Zmiana danych napisu"
+
+#: src/subconvert/gui/SubtitleCommands.py:148
+#, python-format
+msgid "New file: %s"
+msgstr "Nowy plik: %s"
+
+#: src/subconvert/gui/SubtitleCommands.py:168
+#, python-format
+msgid "New file (copy): %s"
+msgstr "Nowy plik (kopia): %s"
+
+#: src/subconvert/gui/SubtitleCommands.py:188
+#, python-format
+msgid "Removal of file: %s"
+msgstr "Usunięcie pliku: %s"
+
+#: src/subconvert/gui/SubtitleCommands.py:211
+#, python-format
+msgid "New subtitle (%d)"
+msgstr "Nowy napis (%d)"
+
+#: src/subconvert/gui/SubtitleCommands.py:243
+msgid "Subtitle removal"
+msgstr "Usunięcie napisu"
+
+#: src/subconvert/gui/SubtitleCommands.py:249
+#, python-format
+msgid "Subtitle removal (%(sub)s)"
+msgid_plural "%(noOfSubs)d subtitles removal (%(sub)s)"
+msgstr[0] "Usunięcie napisu (%(sub)s)"
+msgstr[1] "Usunięte %(noOfSubs)d napisy (%(sub)s)"
+msgstr[2] "Usuniętych %(noOfSubs)d napisów (%(sub)s)"
+
+#: src/subconvert/gui/SubtitleTabs.py:99
+msgid "File name"
+msgstr "Nazwa pliku"
+
+#: src/subconvert/gui/SubtitleTabs.py:128
+msgid "&Open in tab"
+msgstr "&Otwórz na karcie"
+
+#: src/subconvert/gui/SubtitleTabs.py:136
+msgid "Use Subtitle &Properties"
+msgstr "Użyj &właściwości napisów"
+
+#: src/subconvert/gui/SubtitleTabs.py:218
+msgid "&Show subtitles"
+msgstr "&Wyświetl napisy"
+
+#: src/subconvert/gui/SubtitleTabs.py:223
+msgid "&Close subtitles"
+msgstr "&Zamknij napisy"
+
+#: src/subconvert/gui/SubtitleTabs.py:346
+#, python-format
+msgid "Property file: %s"
+msgstr "Plik właściwości: %s"
+
+#: src/subconvert/gui/SubtitleTabs.py:368
+#, python-format
+msgid "Cannot read %s as Subtitle Property file."
+msgstr "Błąd przy odczytywaniu %s jako pliku Właściwości Napisów."
+
+#: src/subconvert/gui/SubtitleTabs.py:409
+#: src/subconvert/gui/SubtitleTabs.py:760
+#, python-format
+msgid "FPS: %s"
+msgstr "FPS: %s"
+
+#: src/subconvert/gui/SubtitleTabs.py:419
+#: src/subconvert/gui/SubtitleTabs.py:767
+#, python-format
+msgid "Video path: %s"
+msgstr "Ścieżka do wideo: %s"
+
+#: src/subconvert/gui/SubtitleTabs.py:437
+#: src/subconvert/gui/SubtitleTabs.py:774
+#, python-format
+msgid "No FPS for '%s' (empty subtitles)."
+msgstr "Brak wartości klatek na sekundę dla '%s' (puste napisy)."
+
+#: src/subconvert/gui/SubtitleTabs.py:442
+#: src/subconvert/gui/SubtitleTabs.py:779
+#, python-format
+msgid "Offset by: %s"
+msgstr "Przesunięcie o: %s"
+
+#: src/subconvert/gui/SubtitleTabs.py:456
+#: src/subconvert/gui/SubtitleTabs.py:790
+#, python-format
+msgid "Detected FPS: %s"
+msgstr "Wykryte FPS: %s"
+
+#: src/subconvert/gui/SubtitleTabs.py:466
+#, python-format
+msgid "Format: %s "
+msgstr "Format: %s"
+
+#: src/subconvert/gui/SubtitleTabs.py:479
+#, python-format
+msgid "Cannot decode subtitles to '%s' encoding."
+msgstr "Błąd przy dekodowaniu napisów do '%s'."
+
+#: src/subconvert/gui/SubtitleTabs.py:481
+#: src/subconvert/gui/SubtitleTabs.py:738
+#, python-format
+msgid "Input encoding: %s"
+msgstr "Kodowanie wejściowe : %s"
+
+#: src/subconvert/gui/SubtitleTabs.py:491
+#: src/subconvert/gui/SubtitleTabs.py:745
+#, python-format
+msgid "Output encoding: %s"
+msgstr "Kodowanie wyjściowe : %s"
+
+#: src/subconvert/gui/SubtitleTabs.py:539
+msgid "Begin"
+msgstr "Początek"
+
+#: src/subconvert/gui/SubtitleTabs.py:539
+msgid "End"
+msgstr "Koniec"
+
+#: src/subconvert/gui/SubtitleTabs.py:539
+#: src/subconvert/gui/tools/Synchronizer.py:175
+msgid "Subtitle"
+msgstr "Tekst"
+
+#: src/subconvert/gui/SubtitleTabs.py:725
+msgid "Decoding error"
+msgstr "Błąd dekodowania"
+
+#: src/subconvert/gui/SubtitleTabs.py:726
+#, python-format
+msgid ""
+"Cannot decode subtitles to '%s' encoding.\n"
+"Please try different encoding."
+msgstr ""
+"Błąd przy dekodowaniu napisów do '%s'.\n"
+"Proszę spróbować innego kodowania"
+
+#: src/subconvert/gui/SubtitleTabs.py:732
+msgid "Unknown encoding"
+msgstr "Nieznane kodowanie"
+
+#: src/subconvert/gui/SubtitleTabs.py:732
+#, python-format
+msgid "Unknown encoding: '%s'"
+msgstr "Nieznane kodowanie: '%s'"
+
+#: src/subconvert/gui/SubtitleWindow.py:78
+msgid "Subtitles"
+msgstr "Napisy"
+
+#: src/subconvert/gui/SubtitleWindow.py:178
+#, python-format
+msgid "SubtitleEditor not created for %s!"
+msgstr "Edytor napisów nie utworzony dla %s!"
+
+#: src/subconvert/gui/ToolBox.py:92
+msgid "No subtitle data"
+msgstr "Brak napisów"
+
+#: src/subconvert/gui/ToolBox.py:93
+msgid "Open subtitles in a new tab to see their details."
+msgstr "Aby zobaczyć szczegóły napisów, należy je otworzyć w nowej zakładce."
+
+#: src/subconvert/gui/VideoWidget.py:29
+msgid "mpv cannot be imported. Video player disabled."
+msgstr "Moduł mpv nie mógł być zaimportowany. Odtwarzacz został wyłączony."
+
+#: src/subconvert/gui/_VideoWidget.py:190
+msgid "Play/Pause"
+msgstr "Odtwórz/wstrzymaj"
+
+#: src/subconvert/gui/tools/Details.py:72
+msgid "No video"
+msgstr "Brak wideo"
+
+#: src/subconvert/gui/tools/Details.py:74
+msgid "File name:"
+msgstr "Nazwa pliku:"
+
+#: src/subconvert/gui/tools/Details.py:75
+msgid "Video:"
+msgstr "Wideo:"
+
+#: src/subconvert/gui/tools/Details.py:76
+msgid "FPS:"
+msgstr "FPS:"
+
+#: src/subconvert/gui/tools/Details.py:77
+msgid "Format:"
+msgstr "Format:"
+
+#: src/subconvert/gui/tools/Details.py:78
+msgid "Input encoding:"
+msgstr "Kodowanie wejściowe:"
+
+#: src/subconvert/gui/tools/Details.py:79
+msgid "Output encoding:"
+msgstr "Kodowanie wyjściowe:"
+
+#: src/subconvert/gui/tools/Details.py:89
+msgid "Details"
+msgstr "Szczegóły"
+
+#: src/subconvert/gui/tools/History.py:33
+msgid "History of changes"
+msgstr "Historia zmian"
+
+#: src/subconvert/gui/tools/History.py:38
+msgid "<Original file>"
+msgstr "<Oryginalny plik>"
+
+#: src/subconvert/gui/tools/Synchronizer.py:60
+msgid "Synchronize"
+msgstr "Synchronizacja"
+
+#: src/subconvert/gui/tools/Synchronizer.py:98
+msgid "Subtitles synchronization"
+msgstr "Synchronizacja napisów"
+
+#: src/subconvert/gui/tools/Synchronizer.py:107
+msgid "Select a subtitle and position in current video first."
+msgstr "Najpierw należy wybrać odpowiedni napis i pozycję w bieżącym pliku wideo."
+
+#: src/subconvert/gui/tools/Synchronizer.py:117
+msgid "Can't repeat synchronization points"
+msgstr "Punkty synchronizacji nie mogą się powtarzać"
+
+#: src/subconvert/gui/tools/Synchronizer.py:121
+#, python-format
+msgid "Subtitle and video have different framerates (%(sub)s vs%(vid)s"
+msgstr "Napisy i wideo mają różne prędkości (%(sub)s i %(vid)s"
+
+#: src/subconvert/gui/tools/Synchronizer.py:174
+msgid "No."
+msgstr "Poz."
+
+#: src/subconvert/gui/tools/Synchronizer.py:174
+msgid "New begin"
+msgstr "Nowy początek"
+
+#: src/subconvert/gui/tools/Synchronizer.py:174
+msgid "New end"
+msgstr "Nowy koniec"
+
+#: src/subconvert/gui/tools/Synchronizer.py:293
+msgid "Add new synchronization point"
+msgstr "Dodaj nowy punkt synchronizacji"
+
+#: src/subconvert/gui/tools/Synchronizer.py:298
+msgid "Apply"
+msgstr "Zastosuj"
+
+#: src/subconvert/parsing/Core.py:309
+msgid "Not a known subtitle format"
+msgstr "Nieznany format napisów"
+
+#: src/subconvert/parsing/Core.py:338
+msgid "Parsing error"
+msgstr "Błąd parsowania"
+
+#: src/subconvert/parsing/Formats.py:184 src/subconvert/parsing/Formats.py:245
+#: src/subconvert/parsing/Formats.py:287 src/subconvert/parsing/Formats.py:325
+#: src/subconvert/parsing/Formats.py:420 src/subconvert/parsing/Formats.py:454
+msgid "Negative time present."
+msgstr "Wykryto ujemną wartość czasu."
+
+#: src/subconvert/parsing/FrameTime.py:164
+#: src/subconvert/parsing/FrameTime.py:168
+#: src/subconvert/parsing/FrameTime.py:173
+#: src/subconvert/parsing/FrameTime.py:178
+msgid "FPS values are not equal"
+msgstr "Wartości FPS nie są równe"
+
+#: src/subconvert/parsing/Offset.py:93
+msgid "Syncing times for sync points:"
+msgstr "Synchronizacja według punktów:"
+
+#: src/subconvert/parsing/Offset.py:128
+#, python-format
+msgid "Currently synced subtitle has lower time than a previous one:%s < %s"
+msgstr "Czas bieżącego napisu jest niższy od wcześniejszego: %s < %s"
+
+#: src/subconvert/utils/PropertyFile.py:147
+#, python-format
+msgid "Unknown format: %s"
+msgstr "Nieznany format: '%s'"
+
+#: src/subconvert/utils/SubFile.py:90
+#, python-format
+msgid "Detecting encoding from %d byte"
+msgid_plural "Detecting encoding from %d bytes"
+msgstr[0] "Wykrywanie kodowania z %d. bajtu"
+msgstr[1] "Wykrywanie kodowania z %d. bajtów"
+msgstr[2] "Wykrywanie kodowania z %d. bajtów"
+
+#: src/subconvert/utils/SubFile.py:94
+#, python-format
+msgid " ...chardet: %s"
+msgstr " ...chardet: %s"
+
+#: src/subconvert/utils/SubFile.py:97
+#, python-format
+msgid " ...detected %s encoding."
+msgstr " ...wykryto kodowanie %s"
+
+#: src/subconvert/utils/SubFile.py:99
+#, python-format
+msgid ""
+"I am not too confident about encoding (most probably %(enc)s). Returning "
+"default %(def)s"
+msgstr ""
+"Nie jestem pewien co do kodowania (prawdopodobnie %(enc)s). Zwracanie "
+"domyślnego %(def)s"
+
+#: src/subconvert/utils/SubFile.py:112 src/subconvert/utils/SubFile.py:135
+#, python-format
+msgid "Unknown encoding name: '%s'."
+msgstr "Nieznana nazwa kodowania: '%s'."
+
+#: src/subconvert/utils/SubFile.py:115
+#, python-format
+msgid "Cannot handle '%(file)s' with '%(enc)s' encoding."
+msgstr "Nie można otworzyć pliku '%(file)s' przy użyciu kodowania '%(enc)s'."
+
+#: src/subconvert/utils/SubFile.py:127
+#, python-format
+msgid "Real file path to write: %s"
+msgstr "Pełna ścieżka pliku do zapisu: %s"
+
+#: src/subconvert/utils/SubFile.py:138
+#, python-format
+msgid ""
+"There are some characters in '%(file)s' that cannot be encoded to "
+"'%(enc)s'."
+msgstr ""
+"W pliku '%(file)s' są znaki, które nie mogą zostać zakodowane przy użyciu"
+" '%(enc)s'."
+
+#: src/subconvert/utils/SubFile.py:175
+#, python-format
+msgid "File already exists: %s"
+msgstr "Plik istnieje: %s"
+
+#: src/subconvert/utils/SubFile.py:184
+#, python-format
+msgid "'%s' exists and needs to be removed before backing up."
+msgstr ""
+"Plik '%s' istnieje i musi zostać usunięty przed wykonaniem kopii "
+"zapasowej."
+
+#: src/subconvert/utils/SubFile.py:218
+#, python-format
+msgid "Got %(fps)s FPS from '%(movie)s'."
+msgid_plural "Got %(fps)s FPS from '%(movie)s'."
+msgstr[0] "Otrzymano %(fps)s. klatkę na sekundę z '%(movie)s'."
+msgstr[1] "Otrzymano %(fps)s klatki na sekundę z '%(movie)s'."
+msgstr[2] "Otrzymano %(fps)s klatek na sekundę z '%(movie)s'."
+
+#: src/subconvert/utils/SubFile.py:259
+msgid "libmediainfo is not available. Subconvert will not analyze videos."
+msgstr ""
+"Biblioteka libmediainfo jest niedostępna. Subconvert nie będzie "
+"analizował plików wideo."
+
+#~ msgid "Saving to file: %s"
+#~ msgstr "Zapisywanie do pliku: %s"
+
+#~ msgid "From current &video"
+#~ msgstr "Pobierz z pliku &wideo"
+
+#~ msgid "Copied subtitles: %s"
+#~ msgstr "Skopiowane napisy: %s"
+
+#~ msgid "FPS change: %s"
+#~ msgstr "Zmiana klatek na sekundę: %s"
+
+#~ msgid "Encoding changed: %s"
+#~ msgstr "Zmiana kodowania: %s"
+
+#~ msgid "Output encoding changed: %s"
+#~ msgstr "Zmiana kodowania wyjściowego: %s"
+
+#~ msgid "MOVIE"
+#~ msgstr "FILM"
+
+#~ msgid "Select &movie"
+#~ msgstr "Wybierz &film"
+
+#~ msgid "&View"
+#~ msgstr "&Widok"
+
+#~ msgid "Output data change"
+#~ msgstr "Zmiana danych wyjściowych"
+
+#~ msgid "Couldn't get FPS info from mplayer."
+#~ msgstr "Nie udało się pobrać ilości klatek na sekundę z MPlayera."
+
+#~ msgid "Unable to parse file '%s'."
+#~ msgstr "Nie udało się sparsować pliku '%s'"
+
+#~ msgid "Handling file: '%s'"
+#~ msgstr "Parsowanie pliku: %s"
+
+#~ msgid "uses MPlayer to automatically get FPS value from the video"
+#~ msgstr ""
+#~ "używa MPlayera do automatycznego pobrania "
+#~ "ilości klatek na sekundę z wideo"
+
+#~ msgid "&Open video"
+#~ msgstr "&Otwórz plik wideo"
+
+#~ msgid "Fill"
+#~ msgstr "Wypełnij"
+
+#~ msgid "&Aspect ratio"
+#~ msgstr "Współczynnik &proporcji"
+
+#~ msgid "Cannot substract higher time from lower"
+#~ msgstr "Nie można odjąć większego czasu od mniejszego"
+
+#~ msgid ""
+#~ "Couldn't run mplayer. It has to be"
+#~ " installed and placed in your $PATH"
+#~ " to detect FPS."
+#~ msgstr ""
+#~ "Nie udało się uruchomić MPlayera. Aby"
+#~ " wykryć ilość klatek na sekundę, musi"
+#~ " być on zainstalowany w $PATH. "
+
+#~ msgid "Couldn't get FPS from %(movie)s. Using default value: %(fps)s."
+#~ msgstr ""
+#~ "Nie udało się pobrać ilości klatek "
+#~ "na sekundę dla pliku %(movie)s. Użycie"
+#~ " domyślnej wartości: %(fps)s."
+

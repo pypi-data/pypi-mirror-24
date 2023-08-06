@@ -1,0 +1,34 @@
+= Subconvert 0.8.3 changelog
+
+NOTE: Subconvert wasn't using Semantic Versioning at this point
+
+== Changes since 0.8.2:
+
+=== New features
+
+* Polish translation
+
+* Auto detection of more movie formats (both GUI and CLI)
+
+* New install script
+
+=== Bug fixes
+
+* SubConvert detects both upper case and lower case movie extensions
+
+* with '-v' option, SubConvert will not require any additional parameters and 
+  will simply try to get FPS from a given file
+
+* #25: changed string concat method in MicroDVD
+
+* Crash when input string contained non-ascii characters
+
+* SubConvert will now try to auto detect locale path
+
+=== Other changes
+
+* 'Auto FPS' checkbox is now checked on GUI start
+
+* Removed combo box from GUI with an output sub extension
+
+// vim: set tw=80 colorcolumn=81 :

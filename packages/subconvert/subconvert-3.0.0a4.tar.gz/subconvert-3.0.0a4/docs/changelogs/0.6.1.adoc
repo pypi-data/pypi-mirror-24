@@ -1,0 +1,13 @@
+= Subconvert 0.6.1 changelog
+
+NOTE: Subconvert wasn't using Semantic Versioning at this point
+
+== Changes since 0.6.0:
+
+=== Bug fixes
+
+* Uniform backup system
+
+* A lot of code refactoring. Subconvert now works slightly faster
+
+// vim: set tw=80 colorcolumn=81 :

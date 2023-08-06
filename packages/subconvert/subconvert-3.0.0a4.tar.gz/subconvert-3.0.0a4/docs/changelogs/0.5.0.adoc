@@ -1,0 +1,13 @@
+= Subconvert 0.5.0 changelog
+
+NOTE: Subconvert wasn't using Semantic Versioning at this point
+
+=== New features
+
+* SubRip and MicroDVD parsers/handlers
+
+* Writing output to a file
+
+* Automatic handling all newly implemented file formats
+
+// vim: set tw=80 colorcolumn=81 :

@@ -1,0 +1,67 @@
+[[property-files]]
+== Property Files
+
+Property Files let you group together frequently used options into a _rules_
+which can be re-used for different subtitle files:
+
+* FPS setting and automatic FPS detection;
+* changing and detecting encodings;
+* changing formats.
+
+=== Using Property Files
+
+Property Files can be easily applied to subtitles both in CLI and GUI mode:
+
+* in CLI mode use *-p --pfile=_FILE_* switch:
++
+----
+$ subconvert -c -p props.spf subs.txt
+----
+
+* in GUI mode select subtitles for which you want to use Property Files (you can
+  select multiple files e.g. by holding kbd:[shift] or kbd:[ctrl]), then right
+  click anywhere on file list and select "Use Subtitle Properties". You can
+  select from recently used Property Files or you can open one from arbitrary
+  location.
++
+.Property File Selection
+image::spf-selection.png[Property File Selection,align="center"]
+
+=== Creating Property Files
+
+The easiest way to create a new Property File is to use the Editor located at
+menu:Tools[Subtitle Properties Editor]. There you can choose any of the
+following options:
+
+.Summary of Subtitle Properties Editor options
+[cols="1,4", options="header"]
+|===
+| Option | Description
+
+| Auto FPS
+| When enabled, Subconvert will try to automatically find out FPS value from a
+  matching video
+
+| Default FPS value
+a| FPS value for subtitles used when:
+   * Auto FPS is disabled
+   * Fetching FPS from a video failed
+
+| Auto input encoding
+| When enabled, Subconvert will automatically detect encoding of subtitles
+
+| Input encoding
+| Lets you select encoding of subtitles. Only available when "Auto input
+  encoding" is disabled
+
+| Change encoding on save
+| If enabled, encoding of output files will be changed to a chosen one.
+  If disabled, input encoding (detected or pre-selected) will be preserved.
+
+| Change output format
+| If enabled, subtitles will be converted to a chosen format. If disabled, the
+  original format of subtitles will be preserved.
+|===
+
+NOTE: Although it's not officially supported, if you want, you can edit Property
+Files with any text editor. It's just a JSON file with a bunch of options.

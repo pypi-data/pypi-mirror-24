@@ -1,0 +1,28 @@
+= Subconvert 0.8.0 changelog
+
+NOTE: Subconvert wasn't using Semantic Versioning at this point
+
+== Changes since 0.7.0:
+
+=== New features
+
+* setup.py (installer)
+
+* GUI
+
+* option to stop converting when file exists. Not only it stops file from being
+  updated but also quits batch work.
+
+=== Bug fixes
+
+* remove file extension from subviewer's [TITLE]
+
+* let the shell find python in $PATH
+
+* Add maximum file size limit to subtitle files.
+
+* Better parsing state output.
+
+* Don't save not completely parsed files anymore.
+
+// vim: set tw=80 colorcolumn=81 :

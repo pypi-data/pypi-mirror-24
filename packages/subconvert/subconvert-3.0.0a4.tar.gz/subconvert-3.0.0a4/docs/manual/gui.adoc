@@ -1,0 +1,47 @@
+[[gui]]
+== Graphical User Interface
+
+=== Window layout
+
+Main Subconvert window consists of several of tabs and panels.
+
+image::filelist.png[File list]
+
+First tab is always a **file list**. You cannot close it or move it. It contains
+a list of *loaded* subtitle files with several handy informations about them
+plus an icon representing current state of file status. If file's modified
+somehow, it changes to a yellow star. If it's "clean" (i.e. not modified), it
+changes to a green tick.
+
+Next tabs (second one, third one and so on) contain **opened subtitle files**.
+New tabs are not opened by default. To *open* a file in a new tab double click
+it on a file list. To open a file in new tab in background middle-click it.
+
+Above the file list there's a **video player** panel. It shows currently opened
+video file and its state. You can toggle its visibility under
+`View/Movie player` menu.
+
+On the left there's a **side panel**. It contains several tools, each
+responsible for a different thing:
+
+.Side panel tools
+[cols="1,4", options="header"]
+|===
+| Tool | Description
+
+| Details
+| displays informations about currently loaded subtitle file;
+
+| Synchronize
+| allows synchronizing subtitles with a video;
+
+| History of changes
+| tab allows moving through recorded history of changes for loaded subtitles.
+|===
+
+=== File management
+
+CAUTION: TBD
+
+
+// vim: set tw=80 colorcolumn=81 ft=asciidoc :

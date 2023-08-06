@@ -1,0 +1,30 @@
+= Subconvert 0.8.2 changelog
+
+NOTE: Subconvert wasn't using Semantic Versioning at this point
+
+== Changes since 0.8.1:
+
+=== New features
+
+* option to specify output file(s) encoding
+
+* MPL2 format support
+
+=== Bug fixes
+
+* HUGE code refactoring
+
+* ugly converting error (which doubled first subtitle and removed the last one)
+
+* incorrect SubViewer miliseconds converting
+
+* SubRip skipping last sub when no new line at the EOF (now Generic Parser
+  forces parsing a section at the EOF)
+
+* smart skipping of incorrect empty lines
+
+=== Other changes
+
+* removed custom updater
+
+// vim: set tw=80 colorcolumn=81 :
