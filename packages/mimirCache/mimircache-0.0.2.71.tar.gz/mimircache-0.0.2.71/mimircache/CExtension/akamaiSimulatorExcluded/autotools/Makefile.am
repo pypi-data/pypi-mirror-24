@@ -1,0 +1,3 @@
+AUTOMAKE_OPTIONS=foreign
+bin_PROGRAMS=akamaiSimulator
+helloworld_SOURCES=helloworld.c
