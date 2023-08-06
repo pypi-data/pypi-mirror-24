@@ -1,0 +1,17 @@
+buildbot_profiler/VERSION,sha256=IGYgplfxzMivcrhm_c7yDmQcSPOc4n8zjOgxOUnGPlM,5
+buildbot_profiler/__init__.py,sha256=X4e2JgeOK2MuM-xoaPp1I7BYUK_jHhQy5Pco9c8zVf8,232
+buildbot_profiler/api.py,sha256=PLAjVPqEtxrk-WUFbUMe1TkEs5ywVgTnoWxOvaoXpTw,8264
+buildbot_profiler/app.py,sha256=cQ77lvHVNRCaJfaJPNHMMjtn7N_R8dFJtyhhyqwWyDM,442
+buildbot_profiler/static/fixtures.js,sha256=mCAwIXmzJ-7ohaok-LmVrUY7FHdt6MPE2rYmartRLSE,6849444
+buildbot_profiler/static/index.html,sha256=Ik2gUsrZDsI4xWRXWHIWSW33AH7J9O59Sg1JA4sz0pM,766
+buildbot_profiler/static/scripts.js,sha256=10EGtv9yr-k7PebwZiiLvgfMn5RxFk57qVcJj-jmrvg,418938
+buildbot_profiler/static/scripts.js.map,sha256=7LHZoRPOuFn1fU-u39j5GVBbgSQJZ8q2nNPkL77M5yM,1175337
+buildbot_profiler/static/styles.css,sha256=x7QW4AjUmNd79dMB4Go6z0RmVgl4JNGXd9VUW6IApS0,9469
+buildbot_profiler/static/tests.js,sha256=KIHw__TpW80ihT8Y3SPd3QY6BryPgs6KF73DHI38i9Q,1994100
+buildbot_profiler-1.2.1.dist-info/DESCRIPTION.rst,sha256=vVlOP7ur2avWc3BfZqehZLq1np9obh8KuriaJqLEFhQ,2397
+buildbot_profiler-1.2.1.dist-info/METADATA,sha256=hXQ84jTVMy-JaSmItoQ5pVHFYQrhv1I-G_GFUPlJO1g,2706
+buildbot_profiler-1.2.1.dist-info/RECORD,,
+buildbot_profiler-1.2.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+buildbot_profiler-1.2.1.dist-info/entry_points.txt,sha256=kTyktUp-U6EnDuyxB2dckOCSXTImF8n4MwXv17drLyY,226
+buildbot_profiler-1.2.1.dist-info/metadata.json,sha256=Cx2xb8vjH892muDOkBEc1FAsgcF9l59tR7WQXzhu-78,822
+buildbot_profiler-1.2.1.dist-info/top_level.txt,sha256=6FghsI4e8iAOZyeDi-L01syhGrkc-nRLWmZ_S5fQbcY,18
