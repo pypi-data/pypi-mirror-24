@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: raspir
+Version: 1.0.2
+Summary: A library to detect IR signals from receivers on Raspberry Pi
+Home-page: https://github.com/SyncroIT/Raspir
+Author: Pavlo Kochylo
+Author-email: kochylo.paolo@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/SyncroIT/Raspir/archive/1.0.2.tar.gz
+Description: UNKNOWN
+Keywords: ir,raspberry,infrared,decoder
+Platform: UNKNOWN
