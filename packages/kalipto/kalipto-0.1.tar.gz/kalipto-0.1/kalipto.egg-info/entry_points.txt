@@ -1,0 +1,3 @@
+[console_scripts]
+kalipto = kalipto.cmdline:main
+

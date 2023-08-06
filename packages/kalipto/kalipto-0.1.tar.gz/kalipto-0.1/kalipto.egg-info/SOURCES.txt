@@ -1,0 +1,10 @@
+setup.py
+kalipto/__init__.py
+kalipto/cmdline.py
+kalipto.egg-info/PKG-INFO
+kalipto.egg-info/SOURCES.txt
+kalipto.egg-info/dependency_links.txt
+kalipto.egg-info/entry_points.txt
+kalipto.egg-info/not-zip-safe
+kalipto.egg-info/requires.txt
+kalipto.egg-info/top_level.txt
