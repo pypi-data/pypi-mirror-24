@@ -1,0 +1,7 @@
+README.rst
+gogo
+setup.py
+gogo.egg-info/PKG-INFO
+gogo.egg-info/SOURCES.txt
+gogo.egg-info/dependency_links.txt
+gogo.egg-info/top_level.txt
