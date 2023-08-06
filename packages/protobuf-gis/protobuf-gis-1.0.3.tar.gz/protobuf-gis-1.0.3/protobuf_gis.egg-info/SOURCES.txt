@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+gis/__init__.py
+gis/protobuf/__init__.py
+gis/protobuf/linestring_pb2.py
+gis/protobuf/point_pb2.py
+gis/protobuf/polygon_pb2.py
+protobuf_gis.egg-info/PKG-INFO
+protobuf_gis.egg-info/SOURCES.txt
+protobuf_gis.egg-info/dependency_links.txt
+protobuf_gis.egg-info/top_level.txt
