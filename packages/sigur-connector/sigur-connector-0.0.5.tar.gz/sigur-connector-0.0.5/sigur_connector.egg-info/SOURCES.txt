@@ -1,0 +1,7 @@
+setup.py
+sigur/__init__.py
+sigur/sigur.py
+sigur_connector.egg-info/PKG-INFO
+sigur_connector.egg-info/SOURCES.txt
+sigur_connector.egg-info/dependency_links.txt
+sigur_connector.egg-info/top_level.txt
