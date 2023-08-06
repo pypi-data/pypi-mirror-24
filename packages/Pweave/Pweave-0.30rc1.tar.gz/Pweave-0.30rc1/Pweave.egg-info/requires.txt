@@ -1,0 +1,7 @@
+markdown
+pygments
+ipython
+nbformat
+nbconvert
+jupyter_client
+ipykernel
