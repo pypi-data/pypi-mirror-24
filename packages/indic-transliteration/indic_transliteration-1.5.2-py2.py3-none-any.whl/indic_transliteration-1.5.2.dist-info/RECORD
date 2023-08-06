@@ -1,0 +1,13 @@
+indic_transliteration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+indic_transliteration/detect.py,sha256=xfdx-5_6YaBwe-cF05BFnqVSiEKITjkKhJ-DJK6IQk0,2933
+indic_transliteration/iscii2utf8.py,sha256=oozEjqzquMXH6NMqDUGJezMJ1u9z-qR9N5xS91qwe-c,19910
+indic_transliteration/sanscript.py,sha256=n8jbwfdljhyHsKjma3GtUJ1YeFuAayLDdELL6nLPB7s,21349
+indic_transliteration/little/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+indic_transliteration/little/transliterator.py,sha256=QoULFBICAuS4f-qv2h5teyDuV9A7IEp1fejiFRHnTaA,32036
+indic_transliteration/little/transliterator_tam.py,sha256=ZigoTMFweIyxnDWm1IImgDzp2NGzZiBosZvdHd3EQG0,33230
+indic_transliteration-1.5.2.dist-info/DESCRIPTION.rst,sha256=QioyEJGqGEyDjzAY1NrxsqlMxdo5enJfxww-sPOACM8,1294
+indic_transliteration-1.5.2.dist-info/METADATA,sha256=x_EWOw3TjZO6fhbW7Ah7uX5UD_v9_NQ-KjB40I8ftHs,2598
+indic_transliteration-1.5.2.dist-info/RECORD,,
+indic_transliteration-1.5.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+indic_transliteration-1.5.2.dist-info/metadata.json,sha256=eE8HEgys3LUsI9xWbVz9kHAQQ-0UpJ3ide6l_c4D7qo,1420
+indic_transliteration-1.5.2.dist-info/top_level.txt,sha256=PoxdJobwnallcG2bSqCNhLKCO2hChorKOTF1t1wH658,22
