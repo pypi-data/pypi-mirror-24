@@ -1,0 +1,3 @@
+[console_scripts]
+icenine = icenine.ui.app:launch
+

@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: icenine
+Version: 0.1.0a2
+Summary: A graphical Ethereum cold storage wallet
+Home-page: https://github.com/mikeshultz/icenine
+Author: Mike Shultz
+Author-email: mike@gointo.software
+License: GPLv3+
+Download-URL: https://github.com/mikeshultz/icenine/archive/v0.1.0a2.tar.gz
+Description: UNKNOWN
+Keywords: ethereum wallet cold storage air gapped
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Environment :: MacOS X
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Topic :: Office/Business :: Financial
+Requires-Python: ~=3.4
