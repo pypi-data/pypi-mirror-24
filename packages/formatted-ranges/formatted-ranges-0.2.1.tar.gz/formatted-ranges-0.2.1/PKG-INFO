@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: formatted-ranges
+Version: 0.2.1
+Summary: Generate various kinds of ranges, either in whatever Python             data type is appropriate or as a list of strings that retain all               the various quirks of your start, stop and step arguments.
+Home-page: http://stdbrouw.github.com/python-ranges/
+Author: Stijn Debrouwere
+Author-email: stijn@debrouwere.org
+License: MIT
+Download-URL: http://www.github.com/stdbrouw/python-ranges/tarball/master
+Description: UNKNOWN
+Keywords: data range utilities
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
