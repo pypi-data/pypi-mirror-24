@@ -1,0 +1,7 @@
+setup.py
+memeda/__init__.py
+memeda.egg-info/PKG-INFO
+memeda.egg-info/SOURCES.txt
+memeda.egg-info/dependency_links.txt
+memeda.egg-info/entry_points.txt
+memeda.egg-info/top_level.txt
