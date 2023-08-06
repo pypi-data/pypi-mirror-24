@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libcode/__init__.py
+libcode/app_lib.py
+newlibcode.egg-info/PKG-INFO
+newlibcode.egg-info/SOURCES.txt
+newlibcode.egg-info/dependency_links.txt
+newlibcode.egg-info/top_level.txt
