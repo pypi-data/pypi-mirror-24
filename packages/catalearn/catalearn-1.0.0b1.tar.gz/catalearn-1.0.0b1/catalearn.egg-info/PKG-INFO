@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: catalearn
+Version: 1.0.0b1
+Summary: A module for running machine learning code on cloud GPUs
+Home-page: https://github.com/Catalearn/catalearn
+Author: Edward Liu
+Author-email: edward@catalearn.com
+License: MIT
+Description: UNKNOWN
+Keywords: machinelearning gpu cloud
+Platform: UNKNOWN
+Requires-Python: >=3

@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+catalearn/__init__.py
+catalearn/admin.py
+catalearn/catalearn.py
+catalearn/connector.py
+catalearn/runner.py
+catalearn/saver.py
+catalearn/settings.py
+catalearn.egg-info/PKG-INFO
+catalearn.egg-info/SOURCES.txt
+catalearn.egg-info/dependency_links.txt
+catalearn.egg-info/requires.txt
+catalearn.egg-info/top_level.txt
+catalearn/resources/gpu_modules.json

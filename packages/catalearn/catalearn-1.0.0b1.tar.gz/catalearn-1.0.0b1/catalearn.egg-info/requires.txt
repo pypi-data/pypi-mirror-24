@@ -1,0 +1,6 @@
+dill
+requests
+websocket-client
+requests_toolbelt
+Ipython
+tqdm
