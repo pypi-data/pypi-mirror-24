@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: geoweather
+Version: 0.1
+Summary: Useful weather functions
+Home-page: http://github.com/nanodan/geoweather
+Author: Daniel J. Lewis
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires: numpy
+Requires: matplotlib
+
+UNKNOWN
+
+
