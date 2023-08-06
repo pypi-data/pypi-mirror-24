@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: OpenKoreanText
+Version: 0.2.6
+Summary: Python interface to open-korean-text, a Korean morphological analyzer.
+Home-page: https://github.com/EdenYoon/open-korean-text-wrapper-python
+Author: Eden Yoon
+Author-email: yolha79@gmail.com
+License: Apache 2.0
+Download-URL: https://github.com/EdenYoon/open-korean-text-wrapper-python/tree/master
+Description: UNKNOWN
+Keywords: open-korean-text,openkoreantext,morphological analyzer,morphology,analyzer,korean,tokenizer
+Platform: Operating System :: MacOS :: MacOS X
+Platform: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: Korean
+Classifier: Programming Language :: Java
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
