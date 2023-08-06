@@ -1,0 +1,14 @@
+org/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+org/openbaton/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+org/openbaton/plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+org/openbaton/plugin/sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+org/openbaton/plugin/sdk/abstracts.py,sha256=PaGwvWCnGU2tBWfzoXeA9UWBmjW2p-FASpiYpXwdPy0,4752
+org/openbaton/plugin/sdk/catalogue.py,sha256=VpjLKQlZ2UcdgFpnjmfct1O4bE6Jocfy-kEBcFTM-WU,12112
+org/openbaton/plugin/sdk/utils.py,sha256=gAeoRaNifqeqfg-GM3TXo6jTiCT_MX-N60zLmvUh0-E,6643
+org/openbaton/plugin/sdk/vim.py,sha256=Rvvsx9eK0udTPyuBV_6tWQHFSoi2yPtxjZpX3WfxpFs,5567
+python_plugin_sdk-4.0.1b0.dist-info/DESCRIPTION.rst,sha256=7lBQNhZ3AZViWJ4AkbybmvqOJFMRCxgF2G0qDCRckXc,4894
+python_plugin_sdk-4.0.1b0.dist-info/METADATA,sha256=Feo3i5eH3OTbwOs6dyAk2vjQobLv1EuoYI15kI3BZTk,5453
+python_plugin_sdk-4.0.1b0.dist-info/RECORD,,
+python_plugin_sdk-4.0.1b0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+python_plugin_sdk-4.0.1b0.dist-info/metadata.json,sha256=mKRthDCLA9rMjrjTc11Xd4H8vdWay0ZQJp1Ut0RaU4A,778
+python_plugin_sdk-4.0.1b0.dist-info/top_level.txt,sha256=Y-Q3pQ6MMlBKzHVfq3nXGvODPPpbfj5OBXrcr17O02w,4
