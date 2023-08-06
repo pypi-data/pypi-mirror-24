@@ -1,0 +1,9 @@
+ipywidgets>=7.0.0b12
+
+[docs]
+sphinx
+recommonmark
+sphinx_rtd_theme
+
+[test]
+pytest
