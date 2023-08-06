@@ -1,0 +1,1 @@
+{"AA": false, "RA": false, "RD": false, "TC": false, "TTLs": "-", "Z": 0, "answers": "-", "id.orig_h": "192.168.120.225", "id.orig_p": 59116, "id.resp_h": "192.168.120.1", "id.resp_p": 53, "proto": "udp", "qclass": "-", "qclass_name": "-", "qtype": "-", "qtype_name": "-", "query": "-", "rcode": 2, "rcode_name": "SERVFAIL", "rejected": true, "rtt": 
