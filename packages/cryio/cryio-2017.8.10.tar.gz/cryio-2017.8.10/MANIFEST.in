@@ -1,0 +1,5 @@
+exclude .hgignore Makefile Makefile.in
+exclude templates/*.jinja2
+exclude templates/*.base64
+exclude templates/compile_templates.py
+prune tests
