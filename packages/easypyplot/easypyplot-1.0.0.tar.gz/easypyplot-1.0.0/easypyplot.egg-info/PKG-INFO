@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: easypyplot
+Version: 1.0.0
+Summary: Lightweight utilities and wrappers for Python matplotlib.
+Home-page: https://github.com/gaomy3832/easypyplot
+Author: Mingyu Gao
+Author-email: mgao12@stanford.edu
+License: BSD 3-clause
+Description: easypyplot
+        ==========
+        
+        .. image:: https://travis-ci.org/gaomy3832/easypyplot.svg?branch=master
+            :target: https://travis-ci.org/gaomy3832/easypyplot
+        .. image:: https://coveralls.io/repos/github/gaomy3832/easypyplot/badge.svg?branch=master
+            :target: https://coveralls.io/github/gaomy3832/easypyplot?branch=master
+        
+        *Mingyu Gao*
+        
+        Lightweight utilities and wrappers for Python matplotlib to make plot easier.
+        
+        
+Keywords: matplotlib python-plot
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Multimedia :: Graphics :: Presentation
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Utilities
