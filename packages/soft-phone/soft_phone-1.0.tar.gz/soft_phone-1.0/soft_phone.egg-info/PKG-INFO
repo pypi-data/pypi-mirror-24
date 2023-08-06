@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: soft-phone
+Version: 1.0
+Summary: Python library for automated phone call testing using PJSIP/PJSUA
+Home-page: https://github.com/g-farrow/soft_phone
+Author: Greg Farrow
+Author-email: greg.farrow1@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: phone sip soft phone testing
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3
