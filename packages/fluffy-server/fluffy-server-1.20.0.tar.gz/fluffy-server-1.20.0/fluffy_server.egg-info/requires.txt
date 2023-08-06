@@ -1,0 +1,6 @@
+pygments
+pyquery
+flask
+cached_property
+mistune
+boto3
