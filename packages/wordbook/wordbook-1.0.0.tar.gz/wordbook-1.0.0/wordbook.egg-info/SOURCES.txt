@@ -1,0 +1,10 @@
+README.rst
+setup.py
+wordbook/__init__.py
+wordbook/dictbase.py
+wordbook/exceptions.py
+wordbook/wordbook.py
+wordbook.egg-info/PKG-INFO
+wordbook.egg-info/SOURCES.txt
+wordbook.egg-info/dependency_links.txt
+wordbook.egg-info/top_level.txt
