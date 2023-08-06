@@ -1,0 +1,8 @@
+
+CHANGES
+=======
+
+4.0.2 (2017-08-18)
+------------------
+
+- Initial packaging of qrious as a fanstatic package.

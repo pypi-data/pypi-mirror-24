@@ -1,0 +1,3 @@
+recursive-include js/qrious/resources *.*
+recursive-include js/qrious *.txt
+include *.txt *.cfg

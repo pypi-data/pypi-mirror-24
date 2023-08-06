@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: js.qrious
+Version: 4.0.2
+Summary: Fanstatic packaging of Qrious
+Home-page: https://github.com/minddistrict/js.qrious
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Description: js.trix
+        *******
+        
+        Introduction
+        ============
+        
+        This library packages `qrious`_ for `fanstatic`_.
+        
+        .. _`fanstatic`: http://fanstatic.org
+        .. _`qrious`: https://github.com/neocotic/qrious
+        
+        This requires integration between your web framework and ``fanstatic``,
+        and making sure that the original resources (shipped in the ``resources``
+        directory in ``js.qrious``) are published to some URL.
+        
+        How to use?
+        ===========
+        
+        
+        You can import ``qrious`` from ``js.qrious`` and ``need`` it where you want
+        these resources to be included on a page::
+        
+          >>> from js.qrious import qrious
+          >>> qrious.need()
+        
+        
+        CHANGES
+        =======
+        
+        4.0.2 (2017-08-18)
+        ------------------
+        
+        - Initial packaging of qrious as a fanstatic package.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: Implementation :: PyPy
