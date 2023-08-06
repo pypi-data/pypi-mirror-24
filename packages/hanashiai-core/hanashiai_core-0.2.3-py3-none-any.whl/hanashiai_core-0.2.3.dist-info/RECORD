@@ -1,0 +1,11 @@
+hanashiai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hanashiai/core/__init__.py,sha256=0Q8WH3H_Q9xQTTLzrVq3ynl09XYaYgyyjGAluKDU9lQ,158
+hanashiai/core/exceptions.py,sha256=fV6WPQbzP2l5LgbzTqN8Oae1UXyJm6s7P8sSKXi2Ge4,588
+hanashiai/core/interfaces.py,sha256=EAMFHZy41rAjbNxMo_urz6lr1aXyLiq4QcR95eD0Ca8,6137
+hanashiai/core/models.py,sha256=7pbzWvDoc9baHMoPUP4IAuLpUfZt7UBFokamOpw-IwU,186
+hanashiai_core-0.2.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+hanashiai_core-0.2.3.dist-info/METADATA,sha256=9EXp5dN3kglAMkyrvMFGxM8yRq5mv8L96jB0-1sLZas,668
+hanashiai_core-0.2.3.dist-info/RECORD,,
+hanashiai_core-0.2.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+hanashiai_core-0.2.3.dist-info/metadata.json,sha256=yPXdJILgDfYebfeI6ZYGr34lFDLUC-jx7ljhlRpQFDA,789
+hanashiai_core-0.2.3.dist-info/top_level.txt,sha256=PElX9VU6HmfdnTUDmA7uPp_uuRpoU9Skcud1YoVb9Ac,10
