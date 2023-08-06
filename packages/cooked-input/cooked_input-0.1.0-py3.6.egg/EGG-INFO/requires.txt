@@ -1,0 +1,8 @@
+dateparser
+prettytable
+
+[dev]
+check-manifest
+
+[test]
+coverage

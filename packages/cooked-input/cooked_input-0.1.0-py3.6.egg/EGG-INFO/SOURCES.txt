@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+cooked_input/__init__.py
+cooked_input/cleaners.py
+cooked_input/convertors.py
+cooked_input/io_get_input.py
+cooked_input/validators.py
+cooked_input.egg-info/PKG-INFO
+cooked_input.egg-info/SOURCES.txt
+cooked_input.egg-info/dependency_links.txt
+cooked_input.egg-info/entry_points.txt
+cooked_input.egg-info/requires.txt
+cooked_input.egg-info/top_level.txt
