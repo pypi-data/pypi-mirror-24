@@ -1,0 +1,82 @@
+Metadata-Version: 2.0
+Name: jyotisha
+Version: 0.0.2
+Summary: Tools for computations involved in the jyotiSha vedAnga
+Home-page: https://github.com/sanskrit-coders/jyotisha
+Author: Sanskrit programmers
+Author-email: sanskrit-programmers@googlegroups.com
+License: MIT
+Keywords: indic vedic sanskrit astronomy astrology jyotisa jyotish jyotis,panchanga,panchangam tithi
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: icalendar
+Requires-Dist: indic-transliteration
+Requires-Dist: pyswisseph
+Requires-Dist: pytz
+Requires-Dist: scipy
+
+JyotiSha tools
+==============
+
+For users
+=========
+
+For detailed examples and help, please see individual module files in
+this package.
+
+Installation or upgrade:
+------------------------
+
+-  ``sudo pip install jyotisha -U``
+-  ``sudo pip install git+https://github.com/sanskrit-coders/jyotisha/@master -U``
+-  `Web <https://pypi.python.org/pypi/jyotisha>`__.
+
+Usage
+-----
+
+-  Please see the generated python sphynx docs in one of the following
+   places:
+
+   -  http://jyotisha.readthedocs.io
+   -  `project
+      page <https://sanskrit-coders.github.io/jyotisha/build/html/jyotisha.html>`__.
+   -  under docs/\_build/html/index.html
+
+For contributors
+================
+
+Contact
+-------
+
+Have a problem or question? Please head to
+`github <https://github.com/sanskrit-coders/jyotisha>`__.
+
+Packaging
+---------
+
+-  ~/.pypirc should have your pypi login credentials.
+
+   ::
+
+       python setup.py bdist_wheel
+       twine upload dist/* --skip-existing
+
+Document generation
+-------------------
+
+-  Sphynx html docs can be generated with ``cd docs; make html``
+-  http://jyotisha.readthedocs.io/en/latest/jyotisha.html should
+   automatically have good updated documentation - unless there are
+   build errors.
+
+
