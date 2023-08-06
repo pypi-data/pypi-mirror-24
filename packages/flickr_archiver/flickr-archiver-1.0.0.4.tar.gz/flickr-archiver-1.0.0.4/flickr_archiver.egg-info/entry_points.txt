@@ -1,0 +1,3 @@
+[console_scripts]
+flickrarchiver = flickr_archiver:main
+
