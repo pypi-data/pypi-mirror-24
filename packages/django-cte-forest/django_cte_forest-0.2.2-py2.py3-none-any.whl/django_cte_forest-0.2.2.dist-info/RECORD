@@ -1,0 +1,10 @@
+cte_forest/__init__.py,sha256=Zl34_JlUBM-JxM4OPmp3DhVzm51zf4TrKUelHP_2QZE,1877
+cte_forest/fields.py,sha256=0BxEp6mAMxAyBD3XNT7zKrj9PmfDhW_vPIx4ryhiJqc,2314
+cte_forest/models.py,sha256=-FQ5_fxGyYZxfcsom8901UFYb1_0t2h0qeEjRK2fHsc,56432
+cte_forest/query.py,sha256=eWCgziunbDBp3Yj-ViS7auBTYjoby-ruBPqMXjm89mM,19944
+django_cte_forest-0.2.2.dist-info/DESCRIPTION.rst,sha256=VHLITbAm9yfXfCeO1T3EL3QJDV9xsohz-ldpRtc_VmA,722
+django_cte_forest-0.2.2.dist-info/METADATA,sha256=xZYw0UbzUqE-43Hn3Lxp17pjZ_RCxRcQp7xTosb50i0,1401
+django_cte_forest-0.2.2.dist-info/RECORD,,
+django_cte_forest-0.2.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_cte_forest-0.2.2.dist-info/metadata.json,sha256=VsZeHkzsi66F1LPzxUaL-J1E-eVl9y7SzmODbmhor5U,810
+django_cte_forest-0.2.2.dist-info/top_level.txt,sha256=C1OelRlkMOu1vBLMIKtPMue7ljsqrGEha-y2fgqiL2E,11
