@@ -1,0 +1,10 @@
+JsonNetworkStream-1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+JsonNetworkStream-1.0.dist-info/METADATA,sha256=2ab-sOUDi174iEAIM1e9hvNmUmytxMEP8pewnPpU1aY,322
+JsonNetworkStream-1.0.dist-info/RECORD,,
+JsonNetworkStream-1.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+JsonNetworkStream-1.0.dist-info/metadata.json,sha256=gNP_stNx4EHWH4MwrrirvQ-VUCz7L4nBhUfJOs1LMg8,461
+JsonNetworkStream-1.0.dist-info/top_level.txt,sha256=KwhQx6Np9abTSEPy-jGTR0d0L38g9ZW1Io1VGoS9ejE,14
+client/__init__.py,sha256=n2ELTW9hs-VKCCjkKSvYEEkVJ699HLdVCnKfjzb_mjk,92
+client/my_client.py,sha256=nSrikAq-uA4Yo5oEVSJ9Lt3WcMbz44B6wZ837VNEwy0,2898
+server/__init__.py,sha256=JCxKCJDzXkQ8wdmr-r1Na1T6azSjURifUlj8kMy989k,34
+server/my_server.py,sha256=Ds84KvnjhlywTkYLiR4fnuZV3yskxrEVkIMjvoyXfH4,4093
