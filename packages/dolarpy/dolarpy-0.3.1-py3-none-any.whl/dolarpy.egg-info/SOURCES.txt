@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+/home/marce/dev/dolarPy-wrapper-python/build/lib/dolarpy.egg-info/PKG-INFO
+/home/marce/dev/dolarPy-wrapper-python/build/lib/dolarpy.egg-info/SOURCES.txt
+/home/marce/dev/dolarPy-wrapper-python/build/lib/dolarpy.egg-info/dependency_links.txt
+/home/marce/dev/dolarPy-wrapper-python/build/lib/dolarpy.egg-info/requires.txt
+/home/marce/dev/dolarPy-wrapper-python/build/lib/dolarpy.egg-info/top_level.txt
+dolarpy/__init__.py
+dolarpy/dolarpy.py
+dolarpy/exchange.py
+dolarpy/settings.py

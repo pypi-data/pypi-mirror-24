@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: dolarpy
+Version: 0.3.1
+Summary: Wrapper for DolarPy, an PYG/USD exchange rate API.
+Home-page: https://github.com/melizeche/dolarpy-wrapper-python
+Author: Marcelo Elizeche Landó
+Author-email: melizeche@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Office/Business :: Financial
