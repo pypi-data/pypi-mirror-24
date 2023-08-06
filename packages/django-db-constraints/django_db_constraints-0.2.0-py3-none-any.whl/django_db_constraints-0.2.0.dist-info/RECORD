@@ -1,0 +1,10 @@
+django_db_constraints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_db_constraints/apps.py,sha256=sxuKxRCNSgsn7fBVe3IRxGHBCl14F09wm_ptw3wFFCg,657
+django_db_constraints/autodetector.py,sha256=Y4Ul9WgfVhWhqSvZmwQ39iVWSg3ux0_nRYdP3P5KA4w,2101
+django_db_constraints/operations.py,sha256=VfYmX2SUW4LsEWq15qqVAtre1_04OClZwqSd_PIgn80,2652
+django_db_constraints-0.2.0.dist-info/DESCRIPTION.rst,sha256=Hsb-UlWsLKRXnLEbF4EH5y20LXOH1VXDPKqzBr9d-b4,2152
+django_db_constraints-0.2.0.dist-info/METADATA,sha256=YTgjgm1UMClEiuNH7SpkHaEwjmetCEuuu0KdBeE1-JM,2446
+django_db_constraints-0.2.0.dist-info/RECORD,,
+django_db_constraints-0.2.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_db_constraints-0.2.0.dist-info/metadata.json,sha256=-uMR-a9tVbTyaIi-oY2WULHL28dK9xk-ZrMEBDOMB84,496
+django_db_constraints-0.2.0.dist-info/top_level.txt,sha256=9WJfSLJfkZM1MgvEcufskrv1zUi49IbiILlPLzg2BtE,22
