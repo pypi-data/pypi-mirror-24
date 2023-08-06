@@ -1,0 +1,3 @@
+include README LICENSE config.ini phishme_intelligence/output/manifest.ini
+recursive-include pm_lib_intel *
+
