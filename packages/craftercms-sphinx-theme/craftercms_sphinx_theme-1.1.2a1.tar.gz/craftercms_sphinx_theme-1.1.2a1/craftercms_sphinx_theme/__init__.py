@@ -1,0 +1,9 @@
+"""
+Sphinx theme for CrafterCMS docs.
+From https://github.com/rart/craftercms-sphinx-theme.
+"""
+
+from os import path
+
+def setup(app):
+  app.add_html_theme('craftercms_sphinx_theme', path.abspath(path.dirname(__file__)))
