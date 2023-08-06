@@ -1,0 +1,10 @@
+README.rst
+pwdpp.py
+setup.py
+pwdpp.egg-info/PKG-INFO
+pwdpp.egg-info/SOURCES.txt
+pwdpp.egg-info/dependency_links.txt
+pwdpp.egg-info/entry_points.txt
+pwdpp.egg-info/not-zip-safe
+pwdpp.egg-info/requires.txt
+pwdpp.egg-info/top_level.txt
