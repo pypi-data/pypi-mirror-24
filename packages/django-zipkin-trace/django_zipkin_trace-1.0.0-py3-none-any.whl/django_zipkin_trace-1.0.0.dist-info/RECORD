@@ -1,0 +1,13 @@
+django_zipkin_trace-1.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+django_zipkin_trace-1.0.0.dist-info/METADATA,sha256=PN2WhGJDAP_OYd4kv3RuycBXvr6BMuiAqovNxY0YWXU,1021
+django_zipkin_trace-1.0.0.dist-info/RECORD,,
+django_zipkin_trace-1.0.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_zipkin_trace-1.0.0.dist-info/metadata.json,sha256=hxVcSe98j9wCtAmqIZPtQhea4LnZXg4Pw9c5NudoLCc,1109
+django_zipkin_trace-1.0.0.dist-info/top_level.txt,sha256=Gh-EDj0l1JS9U__Z6a1vvTzuzMYj54oKkE7cDWg-1Oo,13
+zipkin_trace/__init__.py,sha256=mlt3fF258XUM5fOUg9uUzqL2-tqE8b1oCNxh_QsfgpU,41
+zipkin_trace/db_tracing.py,sha256=WkOUB-vlgn7mILcFWDvhhTvWI6uPA07zUCESyH_D15w,1087
+zipkin_trace/middleware.py,sha256=VaS2jzPQzYdOgPAg0tOKY2XWhF2daTIfX0VPYfMLtjo,2429
+zipkin_trace/monkey_patch.py,sha256=PpS84vnFkR9syhY0FHKKzi4diWB4sZT-MLZ0yWMnuQI,415
+zipkin_trace/template_tracing.py,sha256=YHfTd_WSdIL-crLuv9a_Jn_EDMSytUnFYPbuWMFqS1s,328
+zipkin_trace/urllib3_tracing.py,sha256=D_FKJtYpY8IC_0BELwNqINbtz4XDYkGw-NN_EWoiFDI,1666
+zipkin_trace/utils.py,sha256=PML1PZT3xzAyn8XHtnir7M7kShtC_VnaGcVTvKBxDPE,795
