@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: rls
+Version: 0.1.1
+Summary: Downloads SoundCloud tracks linked from Reddit
+Home-page: http://github.com/pansapiens/rls
+Author: Andrew Perry
+Author-email: ajperry@pansapiens.com
+License: MIT
+Download-URL: https://github.com/pansapiens/for-reddit-so-loved-soundcloud/archive/0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: SoundCloud Reddit music mp3 download
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
