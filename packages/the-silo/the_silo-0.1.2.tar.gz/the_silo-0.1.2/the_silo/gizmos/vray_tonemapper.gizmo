@@ -1,0 +1,87 @@
+#! C:/Program Files/Nuke9.0v7/nuke-9.0.7.dll -nx
+version 9.0 v7
+Gizmo {
+ addUserKnob {20 settings l Settings}
+ addUserKnob {4 tonemapper l Tonemapper M {Reinhard Exponential}}
+ tonemapper Exponential
+ addUserKnob {20 reinhard l Reinhard n 1}
+ addUserKnob {7 reinhard_mult l Multiplier R 0 5}
+ reinhard_mult 1
+ addUserKnob {7 reinhard_burn l Burn}
+ reinhard_burn 0.5
+ addUserKnob {20 endGroup n -1}
+ addUserKnob {20 exponential l Exponential n 1}
+ addUserKnob {7 exp_dark l "Dark Multiplier" R 1 3}
+ exp_dark 1
+ addUserKnob {7 exp_bright l "Bright Multiplier" R 1 3}
+ exp_bright 1
+ addUserKnob {20 endGroup_1 l endGroup n -1}
+}
+ Input {
+  inputs 0
+  name In
+  xpos 70
+  ypos 86
+ }
+set Na941ac00 [stack 0]
+ Dot {
+  name Dot2
+  xpos 214
+  ypos 90
+ }
+ Expression {
+  expr0 "1.0 - exp(-red * (exp_dark * (1.0 - red) + exp_bright * red))"
+  expr1 "1.0 - exp(-green *( exp_dark * (1.0 - green) + exp_bright * green))"
+  expr2 "1.0 - exp(-blue * (exp_dark * (1.0 - blue) + exp_bright * blue))"
+  expr3 alpha
+  name Exponential_Tonemap
+  xpos 180
+  ypos 230
+ }
+ Dot {
+  name Dot4
+  xpos 214
+  ypos 306
+ }
+push $Na941ac00
+ Dot {
+  name Dot1
+  xpos -6
+  ypos 90
+ }
+ Multiply {
+  channels rgb
+  value {{reinhard_mult}}
+  name Reinhard_Multiplier
+  xpos -40
+  ypos 158
+ }
+ Expression {
+  temp_name0 burn
+  temp_expr0 reinhard_burn
+  expr0 "red * (1 + red * (burn * burn)) / (1 + red)"
+  expr1 "green * (1 + green * (burn * burn)) / (1 + green)"
+  expr2 "blue * (1 + blue * (burn * burn)) / (1 + blue)"
+  expr3 alpha
+  name Reinhard_Tonemap
+  xpos -40
+  ypos 230
+ }
+ Dot {
+  name Dot3
+  xpos -6
+  ypos 306
+ }
+ Switch {
+  inputs 2
+  which {{tonemapper}}
+  name Tonemap_Switch
+  xpos 70
+  ypos 374
+ }
+ Output {
+  name Out
+  xpos 70
+  ypos 446
+ }
+end_group

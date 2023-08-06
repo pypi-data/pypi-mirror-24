@@ -1,0 +1,223 @@
+#! C:/Program Files/Nuke9.0v7/nuke-9.0.7.dll -nx
+version 9.0 v7
+Gizmo {
+ inputs 2
+ addUserKnob {20 settings l Settings}
+ addUserKnob {7 amount l Amount}
+ amount 0.003
+ addUserKnob {41 mix l Mix T MERGE_RGBA.mix}
+ addUserKnob {26 effect l Effect}
+ addUserKnob {6 preview l "Preview Effect" +STARTLINE}
+ addUserKnob {6 use_mask l "Use Mask Input" +STARTLINE}
+ addUserKnob {41 softness l Softness T MASK.softness}
+ addUserKnob {41 scale l Scale T TRANSFORM.scale}
+ addUserKnob {20 advanced l Advanced n 1}
+ advanced 0
+ addUserKnob {26 weights l Weights}
+ addUserKnob {7 weight_r l R R 1 5}
+ weight_r 2.5
+ addUserKnob {7 weight_g l G R 1 5}
+ weight_g 1.5
+ addUserKnob {7 weight_b l B R 1 5}
+ weight_b 2
+ addUserKnob {26 aspect_ratios l "Aspect Ratios"}
+ addUserKnob {7 aspect_r l R R 0.95 1.05}
+ aspect_r 1
+ addUserKnob {7 aspect_g l G R 0.95 1.05}
+ aspect_g 1
+ addUserKnob {7 aspect_b l B R 0.95 1.05}
+ aspect_b 1
+ addUserKnob {20 endGroup n -1}
+}
+ Input {
+  inputs 0
+  name Mask
+  xpos 1390
+  ypos 974
+  number 1
+ }
+ Dot {
+  name Dot1
+  xpos 1424
+  ypos 1122
+ }
+ Radial {
+  inputs 0
+  area {{root.format.x} {root.format.y} {root.format.r} {root.format.t}}
+  name MASK
+  xpos 1170
+  ypos 974
+ }
+ Invert {
+  channels rgba
+  name INVERT
+  xpos 1170
+  ypos 1046
+ }
+ Transform {
+  scale 1.6
+  center {{root.format.r/2} {root.format.t/2}}
+  black_outside false
+  name TRANSFORM
+  xpos 1170
+  ypos 1118
+ }
+ Switch {
+  inputs 2
+  which {{use_mask}}
+  name MASK_SWITCH
+  xpos 1280
+  ypos 1190
+ }
+set N5253b400 [stack 0]
+ Input {
+  inputs 0
+  name In
+  xpos 840
+  ypos 590
+ }
+set Nf06f3400 [stack 0]
+ Dot {
+  name Dot65
+  xpos 874
+  ypos 666
+ }
+set Nf06f3000 [stack 0]
+ Dot {
+  name Dot66
+  xpos 984
+  ypos 666
+ }
+ Transform {
+  scale {{"1 + amount * weight_b * aspect_b"} {"w * (1 / aspect_b)"}}
+  center {{root.format.r/2} {root.format.t/2}}
+  name BLUE
+  xpos 950
+  ypos 734
+ }
+ Shuffle {
+  red black
+  green black
+  alpha black
+  name Shuffle_BLUE
+  xpos 950
+  ypos 806
+ }
+push 0
+push $Nf06f3000
+ Transform {
+  scale {{"1 + amount * weight_g * aspect_g"} {"w * (1 / aspect_g)"}}
+  center {{root.format.r/2} {root.format.t/2}}
+  name GREEN
+  xpos 840
+  ypos 734
+ }
+ Shuffle {
+  red black
+  blue black
+  alpha black
+  name Shuffle_GREEN
+  xpos 840
+  ypos 806
+ }
+push $Nf06f3000
+ Dot {
+  name Dot64
+  xpos 764
+  ypos 666
+ }
+ Transform {
+  scale {{"1 + amount * weight_r * aspect_r"} {"w * (1 / aspect_r)"}}
+  center {{root.format.r/2} {root.format.t/2}}
+  name RED
+  xpos 730
+  ypos 734
+ }
+ Shuffle {
+  green black
+  blue black
+  alpha black
+  name Shuffle_RED
+  xpos 730
+  ypos 806
+ }
+ Merge2 {
+  inputs 3+1
+  operation plus
+  name ADD_CHANNELS
+  xpos 840
+  ypos 878
+ }
+set N31e0c00 [stack 0]
+ Dot {
+  name Dot5
+  xpos 1644
+  ypos 882
+ }
+push $Nf06f3400
+ Dot {
+  name Dot4
+  xpos 1864
+  ypos 594
+ }
+ Dot {
+  name Dot6
+  xpos 1864
+  ypos 882
+ }
+ MergeExpression {
+  inputs 2
+  expr0 "A.r - B.r"
+  expr1 "A.g - B.g"
+  expr2 "A.b - B.b"
+  name MERGE_PREVIEW
+  xpos 1720
+  ypos 1094
+ }
+ ShuffleCopy {
+  inputs 2
+  name PREVIEW_ALPHA_SUB
+  xpos 1720
+  ypos 1190
+ }
+ Premult {
+  name PREVIEW_CUTOUT
+  xpos 1720
+  ypos 1286
+ }
+push $N5253b400
+push $N31e0c00
+push $Nf06f3400
+ Dot {
+  name Dot2
+  xpos 654
+  ypos 594
+ }
+ Dot {
+  name Dot3
+  xpos 654
+  ypos 1194
+ }
+ MergeExpression {
+  inputs 2+1
+  expr0 A.red
+  expr1 A.green
+  expr2 A.blue
+  expr3 B.alpha
+  name MERGE_RGBA
+  xpos 840
+  ypos 1190
+ }
+ Switch {
+  inputs 2
+  which {{preview}}
+  name PREVIEW_SWITCH
+  xpos 840
+  ypos 1286
+ }
+ Output {
+  name Out
+  xpos 840
+  ypos 1382
+ }
+end_group

@@ -1,0 +1,12 @@
+include .gitignore
+include LICENSE
+include README.rst
+include the_silo/silo_data.json
+
+graft tests
+graft docs
+graft the_silo/gizmos
+
+global-exclude *.py[cod]
+
+prune docs/build

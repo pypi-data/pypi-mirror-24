@@ -1,0 +1,97 @@
+#! /Applications/Nuke10.0v5/Nuke10.0v5.app/Contents/MacOS/libnuke-10.0.5.dylib -nx
+version 10.0 v5
+Gizmo {
+ inputs 2
+ addUserKnob {20 grade_layer l "Grade Layer"}
+ addUserKnob {20 endGroup n -1}
+ addUserKnob {41 in l Layer T layer_select.in}
+ addUserKnob {41 blackpoint T __GRADE__.blackpoint}
+ addUserKnob {41 whitepoint T __GRADE__.whitepoint}
+ addUserKnob {41 black l lift T __GRADE__.black}
+ addUserKnob {41 white l gain T __GRADE__.white}
+ addUserKnob {41 multiply T __GRADE__.multiply}
+ addUserKnob {41 add l offset T __GRADE__.add}
+ addUserKnob {41 gamma T __GRADE__.gamma}
+ addUserKnob {26 "" l "  "}
+ addUserKnob {41 reverse T __GRADE__.reverse}
+ addUserKnob {41 black_clamp l "black clamp" -STARTLINE T __GRADE__.black_clamp}
+ addUserKnob {41 white_clamp l "white clamp" -STARTLINE T __GRADE__.white_clamp}
+ addUserKnob {26 "" l mask}
+ addUserKnob {41 maskChannelMask l "" -STARTLINE T __GRADE__.maskChannelMask}
+ addUserKnob {41 maskChannelInput l "" -STARTLINE T __GRADE__.maskChannelInput}
+ addUserKnob {41 inject T __GRADE__.inject}
+ addUserKnob {41 invert_mask l invert -STARTLINE T __GRADE__.invert_mask}
+ addUserKnob {41 fringe -STARTLINE T __GRADE__.fringe}
+ addUserKnob {41 unpremult l "(un)premult by" T __GRADE__.unpremult}
+ addUserKnob {41 invert_unpremult l invert T __GRADE__.invert_unpremult}
+}
+ Input {
+  inputs 0
+  name Mask
+  xpos 400
+  ypos 302
+  number 1
+ }
+ Input {
+  inputs 0
+  name In
+  xpos -40
+  ypos -10
+ }
+ Dot {
+  name Dot1
+  xpos -6
+  ypos 90
+ }
+set N32630aa0 [stack 0]
+ Shuffle {
+  in rgb
+  alpha black
+  name layer_select
+  selected true
+  xpos 180
+  ypos 87
+ }
+set N326348d0 [stack 0]
+ Grade {
+  inputs 1+1
+  maskChannelMask -rgba.alpha
+  name __GRADE__
+  xpos 180
+  ypos 302
+ }
+push $N32630aa0
+push $N326348d0
+ Merge2 {
+  inputs 2
+  operation minus
+  name subtract_layer
+  xpos 70
+  ypos 158
+ }
+push $N32630aa0
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 rgba.red
+  from1 rgba.green
+  to1 rgba.green
+  from2 rgba.blue
+  to2 rgba.blue
+  name replace_main_color
+  xpos -40
+  ypos 211
+ }
+ Merge2 {
+  inputs 2
+  operation plus
+  name add_graded_layer
+  xpos -40
+  ypos 302
+ }
+ Output {
+  name Out
+  xpos -40
+  ypos 398
+ }
+end_group
