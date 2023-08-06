@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+VERSION
+setup.cfg
+setup.py
+django_snow/__init__.py
+django_snow/apps.py
+django_snow/models.py
+django_snow.egg-info/PKG-INFO
+django_snow.egg-info/SOURCES.txt
+django_snow.egg-info/dependency_links.txt
+django_snow.egg-info/not-zip-safe
+django_snow.egg-info/requires.txt
+django_snow.egg-info/top_level.txt
