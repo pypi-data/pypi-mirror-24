@@ -1,0 +1,12 @@
+loopialib/__init__.py,sha256=EALFn1ia6lBHov8NWvT7hpLZrlrtPBRs4jFCzjCL5zI,160
+loopialib/_compat.py,sha256=5z2Arh15MCv3mocsejTzsKuI2JyuzxafiJJFjzTyPU0,322
+loopialib/client.py,sha256=9n7G0D93D2jJKsGbFHcLdh9B5gZkzPZ6E7MzV7HAfRg,3488
+loopialib/exceptions.py,sha256=zaDkUmPwc1XbWV3jGUYR3h1XX7cwBBeTTK-_w0gEECY,1440
+loopialib/types.py,sha256=pC7WAxbnI23kJGu8iSQCqxQzrc6qN4kLwUtn2qU0QCY,4181
+loopialib/utils.py,sha256=4LZpjw0ExLhYgqX9uiFKazghlz9a0upiMMERnwFD6VY,11759
+loopialib-0.2.0.dist-info/DESCRIPTION.rst,sha256=XRRcieKM7uAepZhCy-NP_17_Ak9B6Ep5M7s9ezrqMFE,1345
+loopialib-0.2.0.dist-info/METADATA,sha256=My-9EF4-FWaW_K0lE_8s7j1vqZ2HGWq36AveM8ZzVHU,2036
+loopialib-0.2.0.dist-info/metadata.json,sha256=T_eEtqt-PLhD9XosB-4LgOAAzLTKSLr27Id59Bp4FRc,796
+loopialib-0.2.0.dist-info/RECORD,,
+loopialib-0.2.0.dist-info/top_level.txt,sha256=3VUH_yy3EbXn7--NFLK0N0-KnNrFbcXbpFhjzcYSgmc,10
+loopialib-0.2.0.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
