@@ -1,0 +1,5 @@
+markdown>=2.6.7
+keyring>=10.0.2
+dropbox>=8.0.0
+kitchen>=1.2.4
+pillow>=3.4.2
