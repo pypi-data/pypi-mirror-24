@@ -1,0 +1,3 @@
+[console_scripts]
+ssdedupe = ssdedupe.cli:main
+
