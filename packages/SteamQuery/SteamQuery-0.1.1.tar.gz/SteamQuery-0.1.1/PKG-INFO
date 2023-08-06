@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: SteamQuery
+Version: 0.1.1
+Summary: A library for querying steam game servers
+Home-page: https://github.com/Jason2605/SteamQuery
+Author: Jason Hall
+Author-email: jasonhall96686@gmail.com
+License: General Public License v3.0
+Description: A library for querying steam game servers, could be used for discord bots, or used in endpoints in websites...
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
