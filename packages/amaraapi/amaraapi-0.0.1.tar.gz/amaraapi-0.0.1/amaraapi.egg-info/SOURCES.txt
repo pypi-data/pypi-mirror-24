@@ -1,0 +1,8 @@
+setup.py
+amaraapi/__init__.py
+amaraapi/amara.py
+amaraapi.egg-info/PKG-INFO
+amaraapi.egg-info/SOURCES.txt
+amaraapi.egg-info/dependency_links.txt
+amaraapi.egg-info/requires.txt
+amaraapi.egg-info/top_level.txt
