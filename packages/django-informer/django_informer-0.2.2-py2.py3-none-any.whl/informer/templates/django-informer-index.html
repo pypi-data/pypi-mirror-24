@@ -1,0 +1,27 @@
+{% extends "django-informer-base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--1-col"></div>
+        <div class="mdl-cell mdl-cell--10-col">
+
+            <h1 class="mdl-typography--display-4 mdl-typography--display-4-color-contrast">Informer</h1>
+            <h4 class="mdl-typography--display-1 mdl-typography--display-1-color-contrast">{{ status }}</h4>
+
+            <ul class="mdl-list">
+                {% for informer in result %}
+                <li class="mdl-list__item mdl-list__item--two-line">
+                    <span class="mdl-list__item-primary-content">
+                        <span><a href="{{ informer.url }}">{{ informer.name }}</a></span>
+                        <span class="mdl-list__item-sub-title">{{ informer.message }}</span>
+                    </span>
+                </li>
+            {% empty %}
+                <li class="mdl-list__item mdl-list__item--two-line">nothing to show</li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="mdl-cell mdl-cell--1-col"></div>
+    </div>
+{% endblock %}
