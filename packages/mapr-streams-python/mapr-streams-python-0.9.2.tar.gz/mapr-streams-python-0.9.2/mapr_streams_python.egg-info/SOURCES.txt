@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mapr_streams_python/__init__.py
+mapr_streams_python.egg-info/PKG-INFO
+mapr_streams_python.egg-info/SOURCES.txt
+mapr_streams_python.egg-info/dependency_links.txt
+mapr_streams_python.egg-info/top_level.txt
+mapr_streams_python/kafkatest/__init__.py
+mapr_streams_python/kafkatest/verifiable_client.py
+mapr_streams_python/kafkatest/verifiable_consumer.py
+mapr_streams_python/kafkatest/verifiable_producer.py
+mapr_streams_python/src/Consumer.c
+mapr_streams_python/src/Producer.c
+mapr_streams_python/src/mapr_streams_python.c
+mapr_streams_python/src/mapr_streams_python.h
