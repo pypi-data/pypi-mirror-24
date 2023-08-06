@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: diraas
+Version: 0.0.2
+Summary: Make directory as a service.
+Home-page: UNKNOWN
+Author: wonder
+Author-email: wonderbeyond@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Flask (~=0.12.2)
+
+UNKNOWN
+
+
