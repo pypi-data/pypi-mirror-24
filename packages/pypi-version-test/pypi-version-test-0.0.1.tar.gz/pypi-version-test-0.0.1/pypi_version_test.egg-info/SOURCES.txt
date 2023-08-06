@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.py
+gaort/Main.py
+gaort/__init__.py
+pypi_version_test.egg-info/PKG-INFO
+pypi_version_test.egg-info/SOURCES.txt
+pypi_version_test.egg-info/dependency_links.txt
+pypi_version_test.egg-info/top_level.txt
