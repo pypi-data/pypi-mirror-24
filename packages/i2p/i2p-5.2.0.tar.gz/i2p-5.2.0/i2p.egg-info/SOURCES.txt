@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+i2p/__init__.py
+i2p/__version__.py
+i2p/core.py
+i2p.egg-info/PKG-INFO
+i2p.egg-info/SOURCES.txt
+i2p.egg-info/dependency_links.txt
+i2p.egg-info/requires.txt
+i2p.egg-info/top_level.txt
