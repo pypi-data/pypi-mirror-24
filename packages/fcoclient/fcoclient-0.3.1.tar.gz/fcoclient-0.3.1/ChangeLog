@@ -1,0 +1,56 @@
+CHANGES
+=======
+
+0.3.1
+-----
+
+* Secure configure command
+
+0.3.0
+-----
+
+* Add short documentation stub
+* Make it possible to apply firewall template
+* Extract wait argument adding to separate function
+* Add firewall template management
+* Update server skeleton
+* Add network interface management functionality
+* Factor out waiting for job termination
+* Add support for listing network interfaces
+* Make server skeleton more useful
+* Fix exception creation
+* Make it possible to add SSH keys to server
+* Fix waiting for disk and server creation
+* Add network command
+* Add sshkey command
+* Add image command
+* Add server start and stop commands
+* Add convenience acessor for monitored item
+* Generalize waiting support
+* Centralize json formatting
+* Add server creation support
+* Reorganize sources
+* Add server resource and client
+* Factor out common functionality of commands
+* Improve error message on missing configuration
+* Add wait parameter to asynchronous operations
+* Factor out resource filtering
+* Add delete command to disk cli command
+* Make it possible to delete resource
+* Make it possible to wait for job termination
+* Add disk creation functionality
+* Add virtual data center client
+* Add job client and data types
+* Sort json keys on output
+* Rename commands classes to avoid name clashes
+* Add disk skeleton
+* Add skeleton generation support
+* List commands in alphabetical order
+* Add disk resource and client
+* Remove unused self reference
+* Factor out common parser functionalities
+* Make sure we only catch parse errors
+* Remove unsafe default value
+* Package logger setup into function
+* Add product offer listing functionality
+* Add license and readme files
