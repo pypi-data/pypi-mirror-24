@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+dirtyclean/__init__.py
+dirtyclean/dirtyclean.py
+dirtyclean.egg-info/PKG-INFO
+dirtyclean.egg-info/SOURCES.txt
+dirtyclean.egg-info/dependency_links.txt
+dirtyclean.egg-info/not-zip-safe
+dirtyclean.egg-info/top_level.txt
+dirtyclean/tests/multiline.txt
