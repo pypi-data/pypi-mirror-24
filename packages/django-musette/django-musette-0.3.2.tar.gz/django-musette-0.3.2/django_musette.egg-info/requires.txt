@@ -1,0 +1,5 @@
+Django>=1.10
+channels==1.1.6
+djangorestframework
+django-endless-pagination-vue==1.4
+django-hitcount==1.2.2
