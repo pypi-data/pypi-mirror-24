@@ -1,0 +1,4 @@
+[console_scripts]
+dcs = dcs.cli:run
+docker-context-streamer = dcs.cli:run
+
