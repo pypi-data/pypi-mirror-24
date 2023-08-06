@@ -1,0 +1,13 @@
+setup.py
+stalimet_run
+stalimet/__init__.py
+stalimet/corpus.py
+stalimet/ibm2_exact.py
+stalimet/main.py
+stalimet/preprocess.py
+stalimet/score.py
+stalimet.egg-info/PKG-INFO
+stalimet.egg-info/SOURCES.txt
+stalimet.egg-info/dependency_links.txt
+stalimet.egg-info/requires.txt
+stalimet.egg-info/top_level.txt

@@ -1,0 +1,26 @@
+#!/usr/bin/python
+
+from optparse import OptionParser
+from os.path import isfile
+from stalimet import Stalimet
+
+if __name__ == '__main__':
+    parser = OptionParser()
+
+    parser.add_option("-t", "--target", dest="tgt", help="Text file with target segments - one per line")
+    parser.add_option("-r", "--reference", dest="ref", help="Text file with reference segments - one per line")
+    parser.add_option("-l", "--language", dest="lang", default="english", help="Language name - from nltk languages, "
+                                                                               "default: english")
+
+    (options, args) = parser.parse_args()
+
+    if not options.tgt or not options.ref or not isfile(options.tgt) or not isfile(options.ref):
+        print("you must specify valid target and reference files")
+        parser.print_help()
+        exit()
+
+    stalimet = Stalimet(options.tgt, options.ref, language=options.lang)
+    stalimet.train()
+    for score in stalimet.score():
+        print(score)
+
