@@ -1,0 +1,4 @@
+[console_scripts]
+patchwork = src.patchwork:main
+patchwork-config = src.config:main
+
