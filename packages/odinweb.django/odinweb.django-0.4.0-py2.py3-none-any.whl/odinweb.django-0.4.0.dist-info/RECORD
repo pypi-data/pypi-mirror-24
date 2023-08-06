@@ -1,0 +1,13 @@
+odinweb/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+odinweb/django/__init__.py,sha256=t3jU5NgJx67ZUmndiuIM5VbHgEgKCgBya2AS2qnOemU,161
+odinweb/django/models.py,sha256=jMHgdrd4JIso4ZPCSjk8dwWOfDWmgwDkckecmoAwnBo,9688
+odinweb/django/api/__init__.py,sha256=sv1NapKHnhO3jgwLBV7cqxHWWkSuOv8BhnlyYKeNg28,3477
+odinweb/django/api/middleware.py,sha256=xKp6Jhz3bZLnVRknHkHKZ1BZH49X-wdSQSalsyGMflc,775
+odinweb/django/api/models.py,sha256=MPfXHyEUuSE5quRQ7--u7F6xaT_uZiCf33GIHyjjC3I,5072
+odinweb.django-0.4.0.dist-info/DESCRIPTION.rst,sha256=vvBRpG5yWX4DfP3COwfP_KO5x6xNNEbFXi_tKtDASxw,134
+odinweb.django-0.4.0.dist-info/METADATA,sha256=EHrL71JpBa9PE9Ac3skxj0uZB3a6_kKMwp0qcfytJN4,453
+odinweb.django-0.4.0.dist-info/RECORD,,
+odinweb.django-0.4.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+odinweb.django-0.4.0.dist-info/metadata.json,sha256=Xx1zP3a-mnkdFPycjqF09p6RWvV8Or5egirh6GbFWYA,554
+odinweb.django-0.4.0.dist-info/pbr.json,sha256=3ty3fCgws9FTT0Sjyfc1fj7evGRP4L26d0YGzPjqI2w,47
+odinweb.django-0.4.0.dist-info/top_level.txt,sha256=8ODcr_T48kQXVpjqg5hTaXglCw_AbPzVHQVByKRQIGM,8

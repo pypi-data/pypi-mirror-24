@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: odinweb.django
+Version: 0.4.0
+Summary: Toolkit for building web API's using Odin and Django.
+Home-page: https://github.com/python-odin/odinweb.django
+Author: Tim Savage
+Author-email: tim@savage.company
+License: BSD
+Keywords: web
+Requires-Dist: django (>=1.8)
+Requires-Dist: odinweb (>=0.4)
+
+===============
+Odin Web Django
+===============
+
+Odin web modules for the `Django <https://www.djangoproject.org>`_ web framework.
+
+
+
