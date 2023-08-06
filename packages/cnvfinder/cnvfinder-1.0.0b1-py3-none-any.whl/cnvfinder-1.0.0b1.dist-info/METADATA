@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: cnvfinder
+Version: 1.0.0b1
+Summary: A Python3.x package for CNV detection
+Home-page: UNKNOWN
+Author: IP4 Team
+Author-email: ip4.developers@gmail.com
+License: MIT
+Keywords: CNV analysis development
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: pysam
+
+CNVfinder is a Python package for Copy Number Variation (CNV) detection using data from whole exome sequencing (WES).
+
+
