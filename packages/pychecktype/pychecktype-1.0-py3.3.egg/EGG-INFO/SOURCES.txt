@@ -1,0 +1,7 @@
+README.rst
+setup.py
+pychecktype/__init__.py
+pychecktype.egg-info/PKG-INFO
+pychecktype.egg-info/SOURCES.txt
+pychecktype.egg-info/dependency_links.txt
+pychecktype.egg-info/top_level.txt
