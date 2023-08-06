@@ -1,0 +1,15 @@
+table_compositor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+table_compositor/grid.py,sha256=DWsUEc7cr23U0jU-MqZJKbB_8MY_hceWwNu7prVV51c,4889
+table_compositor/html_styles.py,sha256=knoA3mBdtY5CbQEqBLfl8qN1qvVx9DuzbfK4U3wPiP4,5487
+table_compositor/html_writer.py,sha256=QJJ0aW5sv-OTiV5pysKTYOGQk9tZrJ53907HGjZlPog,5582
+table_compositor/presentation_model.py,sha256=FxYLQcrx1mccRu5kiWiaZnu3p9yAkYqZ3f9MLOjM1pU,25551
+table_compositor/table_compositor.py,sha256=g3nolipW7dQ4pl4QRKj-HXS3oKCr1asiH5onCbPbiLc,10190
+table_compositor/util.py,sha256=LmxihGpBZOIdRpc43TE1m81OauacIE20VCFr1zdkzP4,665
+table_compositor/xlsx_styles.py,sha256=CiIUMeXBwwSqBfjPzlKdLn6NTFboR2D4lOOrf3_yR8A,8098
+table_compositor/xlsx_writer.py,sha256=FbwxSvy9ts38NyPFa5ZPHwtEeBpZlyuotK9upTeEMM4,4976
+table_compositor-1.0.0.dist-info/DESCRIPTION.rst,sha256=8j8h6v-T8kguYh5mpvhH8mH6fcdcCql0Q9mkUWsqxK8,1153
+table_compositor-1.0.0.dist-info/METADATA,sha256=I5J3U1xUJLn0I2UMwuL2BHuT5si0HU7N-du6WN_n1hM,1810
+table_compositor-1.0.0.dist-info/RECORD,,
+table_compositor-1.0.0.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+table_compositor-1.0.0.dist-info/metadata.json,sha256=oxQywP5iFzWwdOnCzgiKxUQWrx8tkBnR9QpFLXmyOII,829
+table_compositor-1.0.0.dist-info/top_level.txt,sha256=rjQ08WkUB1RJuaZHLBwG0-PpijeoawhhVM8Fe1pZwGY,17
