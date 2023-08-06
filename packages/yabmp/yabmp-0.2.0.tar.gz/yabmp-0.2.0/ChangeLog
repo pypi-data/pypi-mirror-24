@@ -1,0 +1,44 @@
+CHANGES
+=======
+
+* version 0.2.0
+* edit readme
+* fixed the peer ip parsing error (#10)
+* A new handler to cast message of peer up and down (#9)
+* Update protocol.py (#6)
+* init handler (#4)
+* typo error
+* Rfc7854 compliance and bug fixes (#3)
+* change yabmp default running mode is standalone
+* edit message format
+* send peer up/down message to message queue
+* edit bmp server for mq
+* add rabbit mq channel code
+* fixed upddate message parse error
+* remove import which useless
+* updates requirements.txt
+* updates requirements.txt
+* updates README.rst
+* changed the default bmp message path
+* change message file location
+* change some code for log
+* Update requirements.txt
+* Update requirements.txt
+* Update requirements.txt
+* update requirements.txt for yabgp version
+* update requirements.txt for yabgp version
+* replace ipaddr with netaddr
+* change yabgp's version in requirements.txt
+* update README.rst
+* Create .mailmap
+* Added Gitter badge
+* change RADME.rst badges
+* refactor from openbmp to yabmp
+* implement protocol code
+* implement BMP message class
+* change entry_points
+* implement starting server code
+* implement factory and exception code
+* edit README.rst file
+* add some bmp config options and fixed pep8 errors
+* init code structure
