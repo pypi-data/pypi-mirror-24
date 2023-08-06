@@ -1,0 +1,11 @@
+samsift/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+samsift/increment_version.py,sha256=41-UFmPXHxZWaRF_O9O8nMw3BJ8xqsJSPPHTdDD9ugY,289
+samsift/samsift.py,sha256=nLpaiTAtQBFnhlcC9IdW9HMhChcKC3yiXDr9izhHvqA,7713
+samsift/version.py,sha256=KOkC0fymOyQ8LQRlhDVve8gsju6fMqLyie3Jqt9A7dY,16
+samsift-0.2.0.dist-info/DESCRIPTION.rst,sha256=JZIr-3sSpolj42NYLiIiMxprBmG54nqnJXZbN1vL2aI,8150
+samsift-0.2.0.dist-info/METADATA,sha256=nvagtUfzVmvGCk-fDhls4Wg2cncrBmf220fmFSlx1xU,8789
+samsift-0.2.0.dist-info/RECORD,,
+samsift-0.2.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+samsift-0.2.0.dist-info/entry_points.txt,sha256=DVM8r-toLXWq-DNdjnT77QM3kazaVRdJbmE5Egk6y6M,50
+samsift-0.2.0.dist-info/metadata.json,sha256=IIizfuhrzrGL2ia0DL-07i3lgMm6QyqQOOoZ_dqpHL4,966
+samsift-0.2.0.dist-info/top_level.txt,sha256=2Gb01LcuI2Ve83MTI5PoAtsQPA0lfLMVJbe_KnX7ekc,8
