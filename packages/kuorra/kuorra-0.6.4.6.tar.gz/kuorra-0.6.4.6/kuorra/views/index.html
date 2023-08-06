@@ -1,0 +1,16 @@
+$def with(table_name)
+<h1>table_name</h1>
+<table class="table table-hoview">
+	<th>table_name</th>
+	<th>Edit</th>
+	<th>Delete</th>
+
+	$for item in table_name:
+	<tr>
+		<td><a href='/table_name/view/$item.primary_key'>$item.primary_key</a></td>
+		<td><a href='/table_name/edit/$item.primary_key'><span class="glyphicon glyphicon-pencil"></span></a></td>
+		<td><a href='/table_name/delete/$item.primary_key'><span class="glyphicon glyphicon-trash"></span></a></td>
+	</tr>
+</table>
+<br>
+<br>
