@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: aquami
+Version: 0.9.3
+Summary: A module to extract quantitative microstructure information from micrographs of morphologically complex microstructures.
+Home-page: https://github.com/JStuckner/aquami
+Author: Joshua Stuckner
+Author-email: stuckner@vt.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: Pillow (>=4.0.0)
+Requires-Dist: matplotlib (>=1.5.3)
+Requires-Dist: numpy (>=1.12.0)
+Requires-Dist: openpyxl (>=2.3.2)
+Requires-Dist: pandas (>=0.18.1)
+Requires-Dist: scikit-image (>=0.12.3)
+Requires-Dist: scipy (>=0.18.1)
+Requires-Dist: setuptools (>=34.3.2)
+
+AQUAMI
+======
+An open source package and GUI for automatic analysis of micrographs containing morphologically complex multiphase materials.  Designed especially for analysis of nanoporous metals and bicontinuous composites. Automatically returns quantitative mean and distribution measurements of microstructural features such as ligament/pore diameter, node-to-node length, particle/pore area, and area fraction.  Measurements and summaries can be conveniently output into excel and pdf files.
+
+Installing
+~~~~~~~~~~
+
+A standalone version that does not require Python can be found at `This website <https://google.com>`_'s.
+
+The easiest way to install the Python version is with pip.  In the command prompt type:
+
+.. code:: python
+
+    pip install aquami
+
+Running the program
+~~~~~~~~~~~~~~~~~~~
+Type the following in the command prompt pressing the <enter> key between lines:
+
+.. code:: python
+	python
+	from aquami import gui
+	gui.run()
+
