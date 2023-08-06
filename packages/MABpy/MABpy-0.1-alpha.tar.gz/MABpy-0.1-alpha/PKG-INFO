@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: MABpy
+Version: 0.1-alpha
+Summary: The multi-armed bandit problem models library and various strategies analysis.
+Home-page: https://github.com/iJKos/MABpy
+Author: iJKos
+Author-email: JK.Ermakov@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/iJKos/MABpy/releases/tag/v0.1-alpha
+Description: UNKNOWN
+Keywords: MultiArmedBandits,ReinforsmentLearning
+Platform: UNKNOWN
