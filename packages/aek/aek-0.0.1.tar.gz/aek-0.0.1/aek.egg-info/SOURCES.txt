@@ -1,0 +1,5 @@
+setup.py
+aek.egg-info/PKG-INFO
+aek.egg-info/SOURCES.txt
+aek.egg-info/dependency_links.txt
+aek.egg-info/top_level.txt
