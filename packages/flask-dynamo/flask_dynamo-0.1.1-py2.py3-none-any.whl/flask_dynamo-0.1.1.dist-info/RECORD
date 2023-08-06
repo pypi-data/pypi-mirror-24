@@ -1,0 +1,9 @@
+flask_dynamo/__init__.py,sha256=kM_ETntdXcrkQF5RJfZv12uqaOjRYlefZqSDpZpE-SY,189
+flask_dynamo/errors.py,sha256=A54TgN8gJ7sdN52Vlz9X5paxCiXv0hB0BHifxExOabM,171
+flask_dynamo/manager.py,sha256=6DSC8vhWMi2l6setaD-w7ZZry0_J9-c9m_N6UoFjkS8,7799
+flask_dynamo-0.1.1.dist-info/DESCRIPTION.rst,sha256=4lF4R6DYcg7EXtK0q0eYyQAPXRC1_eH7NpMeisKLkno,171
+flask_dynamo-0.1.1.dist-info/METADATA,sha256=gpN1DcXEiAsu7yw45On3gfzpspkuxXn3O1ZbgVVoA48,1316
+flask_dynamo-0.1.1.dist-info/RECORD,,
+flask_dynamo-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+flask_dynamo-0.1.1.dist-info/metadata.json,sha256=oiLut4WMtL85cGlz4MQFvBVP3HJV1epOyehQzdo9fJw,1279
+flask_dynamo-0.1.1.dist-info/top_level.txt,sha256=u9D3BMSG9mRqJ3qfQvnSXUyr_SZDOYzzawk4nY0Dt8o,13
