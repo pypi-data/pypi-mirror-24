@@ -1,0 +1,7 @@
+certifi
+chardet
+highlyprobable
+idna
+Pygments
+requests
+urllib3
