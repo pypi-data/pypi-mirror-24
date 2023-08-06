@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: jirachi
+Version: 0.1.2
+Summary: jirachi is a actor model IO framework based on pulsar
+Home-page: UNKNOWN
+Author: ryankung
+Author-email: ryankung@ieee.org
+License: MIT
+Description: # Jirachi
+        
+        ## TL;DR
+        
+        Jirachi is a actor model IO framwork based on Pulsar
+        
+        ## Install
+        
+        `
+        pip3 install jirachi
+        `
+        
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
