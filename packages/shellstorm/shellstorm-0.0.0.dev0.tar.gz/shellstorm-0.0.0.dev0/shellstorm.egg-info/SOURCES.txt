@@ -1,0 +1,5 @@
+setup.py
+shellstorm.egg-info/PKG-INFO
+shellstorm.egg-info/SOURCES.txt
+shellstorm.egg-info/dependency_links.txt
+shellstorm.egg-info/top_level.txt

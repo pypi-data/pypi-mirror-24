@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: shellstorm
+Version: 0.0.0.dev0
+Summary: Terminals over websockets with tornado.
+Home-page: https://www.asidatascience.com/
+Author: ASI Data Science
+Author-email: engineering@asidatascience.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
