@@ -1,0 +1,13 @@
+slack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slack/utils.py,sha256=DhZXZPBPtZfpqjgFvXqyqwYtUhypVhS1IJKH0siWHR4,1385
+slack/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slack/io/abc.py,sha256=8l_og5iOisoMm7pM9mkNVT-qcThRQ6ukWGMT3cAkN1w,2330
+slack/io/aiohttp.py,sha256=6gC2LYeTp5XpBykr2E5XD9r9iSYLpmEk9puJK_nuj4U,1793
+slack/io/sync.py,sha256=4l-GVZrNfqqOOhlu7WbeZE4p1B-KBJEmelyFM2RbAjQ,780
+slack_sansio-0.0.3.dist-info/DESCRIPTION.rst,sha256=yIdh_XN5a2V86lsYAg3OlWjOSzdE-QhPcLHk0nJXby8,307
+slack_sansio-0.0.3.dist-info/METADATA,sha256=6Z0IwPAewObMXXAZLXBqV6P-jFEe1DUm055bi17ZNu0,1141
+slack_sansio-0.0.3.dist-info/RECORD,,
+slack_sansio-0.0.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+slack_sansio-0.0.3.dist-info/metadata.json,sha256=WoblRyzmbTxI7o_DN3WdeZIAxTQc_Gkgeog3eTEYYZw,995
+slack_sansio-0.0.3.dist-info/top_level.txt,sha256=vBoOMavyMpVKb8sKb-lx2951Lj4ltLu_Is9rfSgBa6o,6
+slack_sansio-0.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
