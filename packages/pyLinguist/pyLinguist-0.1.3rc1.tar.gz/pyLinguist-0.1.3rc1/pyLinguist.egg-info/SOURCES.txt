@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+pyLinguist/Prediction.py
+pyLinguist/Translate.py
+pyLinguist/Vocabulary.py
+pyLinguist/__init__.py
+pyLinguist/baseTypes.py
+pyLinguist/config.py
+pyLinguist.egg-info/PKG-INFO
+pyLinguist.egg-info/SOURCES.txt
+pyLinguist.egg-info/dependency_links.txt
+pyLinguist.egg-info/top_level.txt
