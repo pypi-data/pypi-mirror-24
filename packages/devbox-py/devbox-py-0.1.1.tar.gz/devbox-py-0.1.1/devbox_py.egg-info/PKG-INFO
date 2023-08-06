@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: devbox-py
+Version: 0.1.1
+Summary: DevBox for Python - Managing environments and boilerplates.
+Home-page: UNKNOWN
+Author: D. Misic
+Author-email: dion@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
