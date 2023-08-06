@@ -1,0 +1,6 @@
+[console_scripts]
+recast-directsub = recastbackend.submitcli:submit
+recast-listen = recastbackend.listener:listen
+recast-status = recastbackend.statuscli:status
+recast-track = recastbackend.tracker:track
+
