@@ -1,0 +1,25 @@
+{
+  "name": "root",
+  "ranges": [
+    {
+      "name": "board_matching",
+      "descriptions": [
+        "strong",
+        "good",
+        "weak",
+        "air"
+      ],
+      "ranges": [
+        {
+          "name": "rainbow_board",
+          "sub_ranges": [
+            "MS+, SD16_16+, SD12_12+:(TP,MP,BP), T2P+:SD8_8+",
+            "T2P+, SD12_12+, TP+:SD8_8+",
+            "TP+,(MP,BP):GS+,SD8_8+",
+            "*"
+          ]
+        }
+      ]
+    }
+  ]
+}

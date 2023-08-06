@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: ploev
+Version: 0.2.0
+Summary: Python library for ProPokerTools Odds Oracle
+Home-page: https://github.com/vyvojer/ploev
+Author: Alexey Londkevich
+Author-email: vyvojer@gmail.com
+License: GPLv3+
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
