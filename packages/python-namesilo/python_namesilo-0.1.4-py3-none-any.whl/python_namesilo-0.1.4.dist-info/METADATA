@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: python-namesilo
+Version: 0.1.4
+Summary: API wrapper for Namesilo service
+Home-page: https://github.com/goranvrbaski/python-namesilo
+Author: Goran Vrbaski
+Author-email: vrbaski.goran@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: xmltodict
+
+UNKNOWN
+
+
