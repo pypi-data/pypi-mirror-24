@@ -1,0 +1,19 @@
+{
+    "blenderplayer_missing": "no belnderplayer directory for blender version {} found.\nplease download the latest Windows 64bit Portable and Mac OSX 64bit Mac zip folder from https://www.blender.org/ .\nunzip the folders. move Windows blenderplayer, all dll files (Microsoft dynamic link libraries), the lib folder and Mac OSX blenderplayer to {}/\n!",
+    "code_dict": "d_code conatnis no valid item. valid items are {}.",
+    "code_initialize": "\ninitialize Code object ...",
+    "docker_daemon_run": "can not connect to the docker daemon at the default socket. is the daemon running?",
+    "initialize_ok": "initialization 0k.",
+    "internet_connection_no": "  warning: can not build new image. can not connect to the internet.",
+    "gps_initialize": "\ninitialize GlobalPositionSystem object ...",
+    "gps_key": "Error: LEFT_SHIFT, LEFT_CTRL and LEFT_ALT can not be used as GlobalPositionSystem main key, as those keys are used as modifier key to store and recall the positions.",
+    "mesh_initialize": "\ninitialize Mesh object ...",
+    "navigation_initialize": "\ninitialize Navigation object ...",
+    "os_unknown": "unknowen 64bit operating system {} to render for.\nknowen are Linux, Darwin and Windows.",
+    "render_ok": "blending 0k.",
+    "scene_initialize": "\ninitialize Scene object ...",
+    "torch_initialize": "\ninitialize Torch object ...",
+    "zerogblender_initialize": "\ninitialize zeroGblender object, which migth take a while ...",
+    "zerogblender_blend_game": "\nblend zerogravity game, which migth take a while ...",
+    "the_last_of_us": "nop"
+}

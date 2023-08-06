@@ -1,0 +1,9 @@
+# bue 20170514: blenderplayer to render games for other oses then linux goes here
+
+# macOS 64bit
++ Blender278sub0/blenderplayer.app
+
+# Windows 64bit portable
++ Blender278sub0/blenderplayer.exe
++ Blender278sub0/lib
++ Blender278sub0/*.dll

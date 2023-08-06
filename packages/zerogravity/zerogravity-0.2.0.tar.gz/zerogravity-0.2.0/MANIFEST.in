@@ -1,0 +1,14 @@
+# license
+include LICENSE.txt
+
+# docker
+#include zerogravity/Dockerfile
+
+# blender player folder
+#graft zerogravity/bplayer
+#prune zerogravity/bplayer/Blender*
+
+# example folder
+#graft example
+#recursive-exclude example zeroGcode*
+#prune example/zeroGgame*
