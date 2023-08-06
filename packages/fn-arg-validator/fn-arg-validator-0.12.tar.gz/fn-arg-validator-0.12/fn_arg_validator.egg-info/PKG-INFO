@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: fn-arg-validator
+Version: 0.12
+Summary: Provides a decorates which validates the arguments passed to a function
+Home-page: UNKNOWN
+Author: aash
+Author-email: aash.discover@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
