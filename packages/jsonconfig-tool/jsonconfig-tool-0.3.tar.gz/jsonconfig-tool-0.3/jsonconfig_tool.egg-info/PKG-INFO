@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: jsonconfig-tool
+Version: 0.3
+Summary: Configuration made easy: JSON, encrypted, environ vars, etc.
+Home-page: http://github.com/json-transformations/jsonconfig
+Author: Brian Peterson
+Author-email: bpeterso2000@yahoo.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: config configuration json encryption passwords simple easy
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
