@@ -1,0 +1,10 @@
+{
+  "api_key": "852588c460c9069ad409",
+  "api_organization": "leckman_orga",
+  "slack_webhook": "https://hooks.slack.com/services/WEBHOOK",
+  "test_webhook": "https://hooks.slack.com/services/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",
+  "directory": "DEFAULT",
+  "report_directory": "DEFAULT",
+  "traversal_depth": "DEFAULT",
+  "subdirectory_blacklist": ["node_modules", "chef"]
+}
