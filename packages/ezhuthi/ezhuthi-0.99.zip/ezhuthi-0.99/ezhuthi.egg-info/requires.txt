@@ -1,0 +1,4 @@
+ezhil
+pygobject
+open-tamil
+argparse
