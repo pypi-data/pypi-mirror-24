@@ -1,0 +1,83 @@
+CHANGES
+=======
+
+1.0.3
+-----
+
+* Base URI return values
+* Refined installation instructions
+* Remove translation of log messages from gluon
+* Fixing broken import statement
+* Fixing DB test after sqlite_db config option was removed
+* Remove unused import statements
+
+1.0.2
+-----
+
+* Cherry Pick - Update Gluon Installation Instruction
+* Cherry Pick - Fix the module-name typos
+* Cherry Pick - Remove unused logging import
+* Cherry Pick - Bug fix: Update the descripton of Base URL Access
+* Back port this bug fix to stable/ocata
+* Update UPPER_CONSTRAINTS_FILE for stable/ocata
+* Update .gitreview for stable/ocata
+
+1.0.0
+-----
+
+* Gluon Documentation Update
+* Updating the ODL shim layer to port binding model
+* Using config option to bind to etcd server
+* Contrail ML2 mechanism driver info
+
+1.0.0.0rc2
+----------
+
+* Updated Requirements and py35 Support
+* Gluon Access Control Blueprint - updates
+* Sample policy.json and proton.conf files
+* Test case for api.baseObject module
+* Test case for DataBaseModelGenerator
+* Update code to comply with Gluon API Spec
+* Remove execute permission bits from API spec doc
+* Remove white space between print ()
+* Unit testing for db.sqlalchemy.api.py
+* Support keystone authentication on cli
+* Gluon RBAC using keystone and oslo.policy
+* Config option for model handlers and backends
+* Catch the right type of exceptions
+* Add entry point to our Neutron plugin
+* Test case for particleGenerator.generator
+* Adding ODL backend to generic shim layer framework
+* cli test cases
+* Gluon API Specification
+* [WIP]Test Case Proposal
+* Fix unhandled etcd read exception
+* Remove two pep8 ignores and fix corresponding bugs
+* Gluon RBAC using keystone and oslo.policy
+* Fix function return none
+* Fix Exception.message deprecated error
+* First draft of Gluon access control blueprint
+* Add/Update documentation for Gluon Developers
+* Test Case for particleGenerator.ApiGenerator
+* Port and Service Binding Model for Gluon
+* Proton server to support multiple API models
+* fix py34 not supporting unicode issue
+* Enable pep8
+* Example Shim Server Improvements
+* trivial fix
+* Synchronize Port Bind Operation
+* Fix undefined variable new_controller
+* Enable release notes translation
+* Nitpicking Cleanup to initial Gluon code
+* Updated from global requirements
+* Gluon Plugin Wrapper Design
+* Update flake8 ignore list
+* Initial Gluon Code
+* Database Migration Strategy
+* Task list
+* cleanup tox.ini, enable constraints
+* First draft of High Level Design document
+* Document proposed repo structure Implements: blueprint repo-structure Change-Id: If52f6f328e39491e9757ae5bd75d31fd7636f5c4
+* Initial repo from cookiecutter
+* Added .gitreview
