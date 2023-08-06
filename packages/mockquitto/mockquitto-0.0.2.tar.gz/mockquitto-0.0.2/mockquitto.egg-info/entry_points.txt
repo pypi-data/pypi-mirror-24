@@ -1,0 +1,4 @@
+[console_scripts]
+mqtt-async-generator = mockquitto.scripts.mqtt_generator_asyncio:main
+mqtt-broker = mockquitto.scripts.broker:main
+
