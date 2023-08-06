@@ -1,0 +1,11 @@
+recfast4py/__init__.py,sha256=9pJDSl1cpDo-6Uvo1mg01Np1_BOIGZ4ayG-r0oxgnFo,247
+recfast4py/_recfast.cpython-36m-darwin.so,sha256=pxZ-KBupb3lS6OLdnCz8IORohEwGCuGL6BO-row6hAk,297584
+recfast4py/recfast.py,sha256=GefaAxWwwqCUd4iNHx3-5lh_AZ8wYV07jhSu7cMETzU,1022
+recfast4py/recfast4py.py,sha256=lGwZ-vlPmjz0gZeskh7G4Q4odFp3TomF3GQoyNVyaK4,227
+recfast4py/data/DXe_Xe.CT2010.dat,sha256=Kr3CTusaF14w4eGl6RONIyH4iX1CnrNknwbD6a7sd0A,23196
+recfast4py-0.1.2.dist-info/DESCRIPTION.rst,sha256=zoImIOAoq0scty0k1X6ssbvOumWDx5uPg73uuC2dRco,132
+recfast4py-0.1.2.dist-info/METADATA,sha256=dlR2JADHKIdwEO_39WSGPdD6YCLz5EZmMv8kOTFWlJ4,830
+recfast4py-0.1.2.dist-info/RECORD,,
+recfast4py-0.1.2.dist-info/WHEEL,sha256=n5Qi9LsnJ0zl3SHl7-DnZPyZfWOd4go9ixl9Bl1aXdA,109
+recfast4py-0.1.2.dist-info/metadata.json,sha256=r5zTwEqWxXYNbKnohWysRA2y7iLmdmiWF52RyRSnZ7g,843
+recfast4py-0.1.2.dist-info/top_level.txt,sha256=ol_iXNiP5mqvxAfTxcU-vUGQVnB-8jc9AM3e_34r24Q,11
