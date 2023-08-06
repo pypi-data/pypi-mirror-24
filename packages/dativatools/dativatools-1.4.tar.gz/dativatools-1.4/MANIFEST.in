@@ -1,0 +1,9 @@
+#python modules
+recursive-include dativatools/commonutilitytool *
+recursive-include dativatools/databasetool *
+recursive-include dativatools/datatool *
+recursive-include dativatools/fileprocessingtool *
+recursive-include dativatools/s3tool *
+
+
+
