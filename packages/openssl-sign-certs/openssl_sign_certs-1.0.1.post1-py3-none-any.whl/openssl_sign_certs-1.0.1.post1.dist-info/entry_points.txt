@@ -1,0 +1,3 @@
+[console_scripts]
+openssl-sign-certs = openssl_sign_certs.__main__:main
+
