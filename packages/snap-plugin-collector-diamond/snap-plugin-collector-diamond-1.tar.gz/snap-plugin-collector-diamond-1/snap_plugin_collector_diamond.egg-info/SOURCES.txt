@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+snap_diamond/__init__.py
+snap_diamond/_version.py
+snap_diamond/plugin.py
+snap_plugin_collector_diamond.egg-info/PKG-INFO
+snap_plugin_collector_diamond.egg-info/SOURCES.txt
+snap_plugin_collector_diamond.egg-info/dependency_links.txt
+snap_plugin_collector_diamond.egg-info/entry_points.txt
+snap_plugin_collector_diamond.egg-info/requires.txt
+snap_plugin_collector_diamond.egg-info/top_level.txt
