@@ -1,0 +1,8 @@
+dask[dataframe,delayed]
+ipywidgets
+matplotlib
+numpy>=1.11
+pandas
+plotly
+scipy
+tdigest
