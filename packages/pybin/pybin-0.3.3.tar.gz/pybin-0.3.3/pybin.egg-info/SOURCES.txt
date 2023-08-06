@@ -1,0 +1,16 @@
+LICENSE-APACHE
+LICENSE-MIT
+MANIFEST.in
+README.rst
+setup.py
+pybin/__init__.py
+pybin/__main__.py
+pybin/cli.py
+pybin/core.py
+pybin.egg-info/PKG-INFO
+pybin.egg-info/SOURCES.txt
+pybin.egg-info/dependency_links.txt
+pybin.egg-info/entry_points.txt
+pybin.egg-info/requires.txt
+pybin.egg-info/top_level.txt
+tests/__init__.py
