@@ -1,0 +1,61 @@
+Metadata-Version: 1.1
+Name: sci2pdf
+Version: 0.0.3
+Summary: Downloads pdfs via a DOI number, article title or a bibtex file, sci-hub
+Home-page: https://github.com/bibcure/sci2pdf
+Author: Bruno Messias
+Author-email: messias.physics@gmail.com
+License: GPLv3
+Download-URL: https://github.com/bibcure/sci2pdf/archive/0.0.3.tar.gz
+Description: SciHub to PDF
+        =============
+        
+        Description
+        -----------
+        
+        sci2pdf is a module of `bibcure <https://github.com/bibcure/bibcure>`__
+        
+        Downloads pdfs via a DOI number, article title or a bibtex file, using
+        the database of libgen(sci-hub).
+        
+        Install
+        -------
+        
+        ::
+        
+            $ sudo pip install sci2pdf
+        
+        Features and how to use
+        -----------------------
+        
+        Given a bibtex file
+        
+        ::
+        
+            $ sci2pdf -i input.bib 
+        
+        Given a DOI number...
+        
+        ::
+        
+            $ sci2pdf 10.1038/s41524-017-0032-0
+        
+        Given a title...
+        
+        ::
+        
+            $ sci2bib --title An useful paper
+        
+        Location folder as argument
+        
+        ::
+        
+            $ sci2pdf -i input.bib -l somefoler/
+        
+        
+Keywords: bibtex,sci-hub,libgen,doi,science,scientific-journals
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Text Processing :: Markup :: LaTeX

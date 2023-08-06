@@ -1,0 +1,5 @@
+bibtexparser
+title2bib
+future
+requests
+lxml
