@@ -1,0 +1,10 @@
+django_jsonlistedit/__init__.py,sha256=0JTxmFR07aBZPjXVNwYicD99EGnwT1zEPtLeJEjjPqo,3175
+django_jsonlistedit/static/jsonlistedit/jsonlistedit.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_jsonlistedit/static/jsonlistedit/jsonlistedit.js,sha256=Ureg21Sa_FA1-mUG07dUJk-xLCGB0OyLT4eixf4SYZk,12196
+django_jsonlistedit/templates/jsonlisteditwidget.html,sha256=uvO2ZrDgQG-THSip2lSr9OH-Oacfu29Hn3iAi0w5BLc,206
+django_jsonlistedit-0.0.8.dist-info/DESCRIPTION.rst,sha256=nseQUKEKl4Ah3QqmeB80WCgkPP0MJ-96P_YbBzxBmSw,636
+django_jsonlistedit-0.0.8.dist-info/METADATA,sha256=x5Ct6gPWxGRf4sONFQZwY3PIGc01Zg-ywr6B1DeyTyU,1325
+django_jsonlistedit-0.0.8.dist-info/RECORD,,
+django_jsonlistedit-0.0.8.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_jsonlistedit-0.0.8.dist-info/metadata.json,sha256=w_wsnGRKbe0FPynyzXI5-jRGN5K0RNDxbASgyzU3mxM,870
+django_jsonlistedit-0.0.8.dist-info/top_level.txt,sha256=C5KGeKUkJMO2XGuynZcUN7zlY3_96br8lP9PIZbE6QM,20
