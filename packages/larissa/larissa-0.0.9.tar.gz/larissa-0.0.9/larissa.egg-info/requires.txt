@@ -1,0 +1,12 @@
+pyelftools
+prettytable
+
+[dev]
+six
+ipython<6
+twine
+pytest
+python-coveralls
+coverage
+pytest-cov
+pytest-xdist
