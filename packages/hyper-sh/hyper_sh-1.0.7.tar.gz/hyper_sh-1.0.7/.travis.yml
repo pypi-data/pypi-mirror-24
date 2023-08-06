@@ -1,0 +1,25 @@
+language: python
+python:
+- '2.7'
+- '3.5'
+- '3.6'
+- pypy
+
+install:
+- pip install -e .
+- pip install flake8 yapf
+- pip install nose
+
+script:
+- yapf -dr hyper_sh tests
+- flake8 hyper_sh/*.py tests
+- nosetests tests
+
+deploy:
+  provider: pypi
+  user: Pierre.Tardy
+  on:
+    tags: true
+    branch: master
+  password:
+    secure: SwklkOkvzczL4p/MVE3BFXF/sgRB+3tUcMzYOCmfSCaeaIMhCsPETyG2uuwemUUFDkPT0TXg43Z/TRvkQTcCi5amn0A7JJRFEfqPw8Pg22DIgMhRzUcPCjNhCQ/yr82Ku0HEZnHEBNjMSc9tHqMwF5pBS9Ljs5tDVY1yuBLO8iWo268d3yi6yf53VS77T4Bya/xA1nnLDw8Ig8mXR5axWfG4lqVIAqEwP6KLXsuspWoUjXJwvYb9eN8HJhYwKf0izVbjDw6+dewlTWwpU6DNoVpQohybBMn/0Jg61t3A4ViPgg45CvUjfuKKtyICKsgLOAVYKD2MJkkWFG/5mhR3fUou8PJw5N0+vEyFnzhEBwYVWdrk6WF2zhMuVf3yQAAnkSyVspsAtikjJyB3tCtoXiqKKoegoytxnwM9acOTWVkzQ7uaMEJ9Hr/cl5ynttMH9mxzAnjQothi5DKqHqFEvOEZjDEWY1jhv49kLoAq9Uv9aP8OZ7rY24R/LzjjamrN3FN8oyf2D37u7R+P716v49AOUuAc0egYqjvzTorW0UgkGVz8iRowwrFPfJp9zT69dWuIdD3x+jgKzmkuGtZ8PlNvoXqE5CZG24MyXlwZpzUwziTCBOMd7q5DPIK0fobtthXPWza9LI4XfFXMZR1j+Z7N2+iXHLHzC2RcLst8Szs=
