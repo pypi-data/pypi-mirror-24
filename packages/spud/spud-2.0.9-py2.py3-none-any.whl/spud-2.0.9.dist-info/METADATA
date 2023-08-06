@@ -1,0 +1,37 @@
+Metadata-Version: 2.0
+Name: spud
+Version: 2.0.9
+Summary: SPUD is a Sortable Photo album Using a Django based database.
+Home-page: https://github.com/brianmay/spud
+Author: Brian May
+Author-email: brian@microcomaustralia.com.au
+License: GPL3+
+Keywords: photo database
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: Django (>=1.8)
+Requires-Dist: Pillow
+Requires-Dist: cssmin
+Requires-Dist: django-cors-headers
+Requires-Dist: django-environ
+Requires-Dist: django-pipeline
+Requires-Dist: djangorestframework (>=3.0.5)
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: six
+Requires-Dist: slimit (>=0.8.1)
+
+spud
+====
+
+Sortable Photo album Using a Django based database.
+
+
