@@ -1,0 +1,10 @@
+setup.py
+brokerpackager/broker.py
+brokerpackager/cli.py
+brokerpackager/installer.py
+brokerpackager.egg-info/PKG-INFO
+brokerpackager.egg-info/SOURCES.txt
+brokerpackager.egg-info/dependency_links.txt
+brokerpackager.egg-info/requires.txt
+brokerpackager.egg-info/top_level.txt
+script/broker-packager
