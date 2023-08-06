@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: password_gen
+Version: 0.1dev
+Summary: Generates memorable strong passwords.
+Home-page: https://github.com/weirdestnerd/password-generator
+Author: Olu Gbadebo
+Author-email: odgbadeb@asu.edu
+License: UNKNOWN
+Description: During my recent encounter on an article about the vulnerability of weak passwords,
+        I was enlightened on the dangers of weak passwords, which includes single-handedly serving as the "weakest link" to a web server.
+        In details, if my weak password is guessed by an hacker, the whole web server of the site is vulnerable.
+        
+        # password-generator:
+        CLI program that generates a memorable, but absolutely random, password. The password generated would have four words seperated by either digits or special characters.
+        
+        # "I want to use it":
+        Feel free to clone/fork it.
+        ## Before runnning `create.py`:
+        You'll need to fill in:
+        1. `env/env.sh`: the default values for the range of values.
+        EX: DIG_START='2', DIG_STOP='6'. This sets the range for DIGITS to [2,6]. The generator will randomly use a digit between 2 and 6.
+        
+        **Make sure the range for CHARACTERS is valid ascii values for special characters.**
+        
+        2. `create.py`: dictionary.txt, which holds the words used by the generator.
+        You can create yours by getting a datasets of words (from sources like [google-10000-english](https://github.com/first20hours/google-10000-english)) and using `scraper.py` to save words to dictionary.txt.
+        
+        **Make sure to set the file paths in `create.py`, and `scraper.py` if you'll use it.**
+        ## Program output:
+        For readaility, spaces are added to the password generated.
+        # Future updates:
+        1. Error handling
+        2. REST API
+        
+        ...
+        
+Keywords: password-generator,passwords,generator
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Testing
