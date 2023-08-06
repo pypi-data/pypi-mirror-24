@@ -1,0 +1,2 @@
+pymummer>=0.10.3
+biopython>=1.70

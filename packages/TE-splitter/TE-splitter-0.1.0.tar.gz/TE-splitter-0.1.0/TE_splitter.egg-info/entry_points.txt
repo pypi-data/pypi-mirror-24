@@ -1,0 +1,4 @@
+[console_scripts]
+tsplit-LTR = tesplitter.cmd_LTR:main
+tsplit-TIR = tesplitter.cmd_TIR:main
+

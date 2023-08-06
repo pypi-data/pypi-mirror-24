@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+TE_splitter.egg-info/PKG-INFO
+TE_splitter.egg-info/SOURCES.txt
+TE_splitter.egg-info/dependency_links.txt
+TE_splitter.egg-info/entry_points.txt
+TE_splitter.egg-info/not-zip-safe
+TE_splitter.egg-info/requires.txt
+TE_splitter.egg-info/top_level.txt
+tesplitter/__init__.py
+tesplitter/cmd_LTR.py
+tesplitter/cmd_TIR.py
+tesplitter/runBlastn.py

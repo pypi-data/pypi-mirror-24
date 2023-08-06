@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: TE-splitter
+Version: 0.1.0
+Summary: Extract terminal repeats from retrotransposons (LTRs) or DNA transposons (TIRs). Compose synthetic MITES from complete DNA transposons.
+Home-page: https://github.com/Adamtaranto/TE-splitter
+Author: Adam Taranto
+Author-email: adam.taranto@anu.edu.au
+License: MIT
+Description: UNKNOWN
+Keywords: Transposon,LTR,TIR,MITE,TE,retrotransposon
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
