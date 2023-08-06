@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: runtime_typecheck
+Version: 0.1
+Summary: Check that a value satisfies a Python 3.6 type
+Home-page: https://github.com/jacopofar/runtime_typecheck
+Author: Jacopo Farina
+Author-email: jacopo1.farina@gmail.com
+License: MIT
+Download-URL: https://github.com/jacopofar/runtime_typecheck/archive/0.1.tar.gz
+Description: Check the correspondence between a value and a Python 3.6 type at runtime
+Platform: UNKNOWN
