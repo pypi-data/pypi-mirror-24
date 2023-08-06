@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+pydpi/__init__.py
+pydpi/dispatch.py
+pydpi/utils.py
+pydpi/src/bridge/ies/invoke.c
+pydpi/templates/pydpi_gen_common.sv
+pydpi/templates/pydpi_gen_func_{func_name}.sv
+python_svlog.egg-info/PKG-INFO
+python_svlog.egg-info/SOURCES.txt
+python_svlog.egg-info/dependency_links.txt
+python_svlog.egg-info/entry_points.txt
+python_svlog.egg-info/requires.txt
+python_svlog.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+[console_scripts]
+pydpi-build = pydpi.utils:run_build_bridge
+pydpi-gen = pydpi.utils:run_gen
+pydpi-run = pydpi.utils:run_run
+
