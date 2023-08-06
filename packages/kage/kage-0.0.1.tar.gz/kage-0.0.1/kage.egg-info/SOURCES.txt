@@ -1,0 +1,8 @@
+setup.py
+kage/__init__.py
+kage.egg-info/PKG-INFO
+kage.egg-info/SOURCES.txt
+kage.egg-info/dependency_links.txt
+kage.egg-info/entry_points.txt
+kage.egg-info/not-zip-safe
+kage.egg-info/top_level.txt
