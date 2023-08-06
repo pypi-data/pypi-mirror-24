@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+hellocivis/__init__.py
+hellocivis/hello_civis.py
+hellocivis.egg-info/PKG-INFO
+hellocivis.egg-info/SOURCES.txt
+hellocivis.egg-info/dependency_links.txt
+hellocivis.egg-info/entry_points.txt
+hellocivis.egg-info/top_level.txt
+hellocivis/scripts/run_script.py

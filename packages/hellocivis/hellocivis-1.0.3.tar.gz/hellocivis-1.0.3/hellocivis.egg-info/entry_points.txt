@@ -1,0 +1,3 @@
+[console_scripts]
+hellocivis = hello_civis:main
+
