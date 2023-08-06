@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+sxtools/__init__.py
+sxtools/cli.py
+sxtools/string_utils.py
+sxtools.egg-info/PKG-INFO
+sxtools.egg-info/SOURCES.txt
+sxtools.egg-info/dependency_links.txt
+sxtools.egg-info/entry_points.txt
+sxtools.egg-info/requires.txt
+sxtools.egg-info/top_level.txt
