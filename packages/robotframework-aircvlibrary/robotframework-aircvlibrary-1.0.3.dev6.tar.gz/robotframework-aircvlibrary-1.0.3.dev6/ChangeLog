@@ -1,0 +1,57 @@
+CHANGES
+=======
+
+* + future to import builtins
+* fix a bug
+* Update README.md
+* Update README.md
+* Update README.md
+* update redeme
+
+1.0.2
+-----
+
+* add ios support
+* Update setup.cfg
+* Update README.md
+* fix typo
+* chdir
+* fix pkg install path
+* update build stage
+* Update README.md
+* fix typo
+* +README.rst
+
+1.0.1
+-----
+
+* m requirements.txt
+* Update README.md
+* modify .travia.yml
+* modify .travis.yml deploy
+* [.travis.yml]::rm on:
+* more powerful .gitifnore
+* update gitignore
+* + .travis.yml
+* Update README.md
+* Update README.md
+* Update README.md
+* Update README.md
+* Update README.md
+* Update README.md
+* #html\_theme && rm robot.Built mock
+* Update requirements.txt
+* Update conf.py
+* fix sphinx conf.py syntax
+* mock  cv2 && numpy
+* [usage.rst]::AircvLibrary -> AircvLibrary.AircvLibrary
+* ../  ../src  -> ./  ./src
+* Update usage.rst
+* update README.md
+* sphinx -> docs
+* +README.md
+* +sphinx
+* Update AircvLibrary.py
+* click -> \_mobilelib.click
+* init
+* Update .gitignore
