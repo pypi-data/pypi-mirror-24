@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bagcat
+Version: 0.0.4
+Summary: A command line utility for managing BagIt packages in Amazon S3
+Home-page: https://github.com/umd-mith/bagcat/
+Author: Ed Summers
+Author-email: ehs@pobox.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
