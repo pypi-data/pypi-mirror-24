@@ -1,0 +1,3 @@
+[console_scripts]
+simplepacker = simplepacker.simplepacker:main
+

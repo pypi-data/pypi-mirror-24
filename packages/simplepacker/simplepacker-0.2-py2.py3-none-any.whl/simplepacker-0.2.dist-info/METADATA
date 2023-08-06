@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: simplepacker
+Version: 0.2
+Summary: Simplepacker packs many images into one or several files
+Home-page: https://github.com/lchsk/simplepacker
+Author: Maciej Lechowski
+Author-email: mjlechowski@gmail.com
+License: GPL
+Download-URL: https://github.com/lchsk/simplepacker/archive/v0.2.tar.gz
+Keywords: images,graphics,packing,packer,texture,textures,games
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Multimedia :: Graphics
+Requires-Dist: Pillow (==4.1.1)
+
+UNKNOWN
+
+
