@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: vdom
+Version: 0.1
+Summary: VDOM for Python
+Home-page: https://github.com/nteract/vdom
+Author: nteract contributors
+Author-email: jupyter@googlegroups.com
+License: BSD
+Keywords: vdom,html
+Platform: UNKNOWN
+Requires-Dist: ipython
+
+UNKNOWN
+
+
