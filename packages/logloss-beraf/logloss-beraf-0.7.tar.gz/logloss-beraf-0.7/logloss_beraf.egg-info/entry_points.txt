@@ -1,0 +1,3 @@
+[console_scripts]
+logloss_beraf = logloss_beraf:main
+
