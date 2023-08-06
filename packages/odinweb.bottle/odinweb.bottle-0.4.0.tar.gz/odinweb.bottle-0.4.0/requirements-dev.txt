@@ -1,0 +1,6 @@
+-r requirements.txt
+webtest
+pytest
+pytest-cov
+pytest-mock
+mock
