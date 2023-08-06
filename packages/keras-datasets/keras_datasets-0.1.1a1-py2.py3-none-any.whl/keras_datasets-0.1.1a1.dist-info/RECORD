@@ -1,0 +1,16 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keras_datasets/__init__.py,sha256=Tabf_O9_lhUtn5VXCbF5d7SLoj3BJkzJLOJQdQAhJT0,111
+keras_datasets/datasets.py,sha256=FZk9hm7vBsK8G16pNugputbrrEciYqJc_XRAhTCcojI,46
+keras_datasets/network_exceptions.py,sha256=t0jrFtF-ZzzhhICxFqOPicWy1Ln_846h7XIi05-jtio,2013
+keras_datasets/utils.py,sha256=XmjFg5Maw8lNWAKmH7WdzDg9wPGze6dYAG47dO0wPi4,512
+keras_datasets/dummy_image_dataset/__init__.py,sha256=pue5F4GvUBhUtFewgky6hOOt1aVaeLS7raAy9ryF_0c,126
+keras_datasets/tests/__init__.py,sha256=FZk9hm7vBsK8G16pNugputbrrEciYqJc_XRAhTCcojI,46
+keras_datasets/tests/dummy_image_dataset/__init__.py,sha256=FZk9hm7vBsK8G16pNugputbrrEciYqJc_XRAhTCcojI,46
+keras_datasets/tests/dummy_image_dataset/test_dummy.py,sha256=O_gjdTvWi3x8ng3xxZLBzNq_GmbSs1AOWYSXPD7yKfU,288
+keras_datasets-0.1.1a1.dist-info/DESCRIPTION.rst,sha256=SoiamN4vX3zicuaJHlDn89wWMRQ_gFtGWZIY-eL_-qQ,7219
+keras_datasets-0.1.1a1.dist-info/METADATA,sha256=N9AhGHfWv6JkNRkBn_-kKeOXRPpX2jc3ZP3t_f8VB4M,9227
+keras_datasets-0.1.1a1.dist-info/RECORD,,
+keras_datasets-0.1.1a1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+keras_datasets-0.1.1a1.dist-info/metadata.json,sha256=tnXM6_CbyOpoD1gL4aJuAUmpYJteO198wFzV5GtPD3M,1933
+keras_datasets-0.1.1a1.dist-info/top_level.txt,sha256=11M8xe5UuJpNxzTM6c0x6lF4cBQ3aOWcvJz1Y1o2iSs,24
+keras_datasets-0.1.1a1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
