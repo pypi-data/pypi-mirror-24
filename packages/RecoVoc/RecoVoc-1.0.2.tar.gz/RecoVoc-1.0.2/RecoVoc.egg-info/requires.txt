@@ -1,0 +1,6 @@
+SpeechRecognition
+pyaudio
+pygame
+pyttsx3
+pyuserinput
+textblob
