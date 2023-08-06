@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+s3client/__init__.py
+s3client/file.py
+s3client/path.py
+s3client.egg-info/PKG-INFO
+s3client.egg-info/SOURCES.txt
+s3client.egg-info/dependency_links.txt
+s3client.egg-info/requires.txt
+s3client.egg-info/top_level.txt
