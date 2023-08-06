@@ -1,0 +1,11 @@
+basis/__init__.py,sha256=FcsFgxRrsD3amcTkZaC53jWpFiK3rOs_13ET9f38GzI,136
+basis/character_container.py,sha256=j_JIsAtQvOwIz5aZuhgqAz1bk_WsIjpfVvyE7ytWuYg,1916
+basis/token_container.py,sha256=j38rkNKOVwloX5pSexmrtQMXfRmklZBaX5bBdsJaans,11917
+basis/utils.py,sha256=mhtc4QG5garJEPrr4DyxncNvAyTxjTZsL_0LM4vXBrY,2364
+basis/word_container.py,sha256=ZB_QhhAVaSzno0vFM_GWn95j3-OwXHiiJ1rkx-OXK1Y,928
+basis-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+basis-0.1.0.dist-info/METADATA,sha256=qDSTl8O3tYybC8LxMuKPlyh78pXBQGgj7rMp0FbGm04,897
+basis-0.1.0.dist-info/RECORD,,
+basis-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+basis-0.1.0.dist-info/metadata.json,sha256=Blnz7mGE6EduRxzUkuFGlyw5xKWLS0Zq4buAlv7fdLg,1055
+basis-0.1.0.dist-info/top_level.txt,sha256=67UgYIoEaJFTXBMWecgURtPs1FJuI4oVK0jwqezgtow,6
