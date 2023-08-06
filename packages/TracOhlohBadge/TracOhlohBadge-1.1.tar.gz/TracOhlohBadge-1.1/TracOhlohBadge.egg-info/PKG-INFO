@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: TracOhlohBadge
+Version: 1.1
+Summary: A Trac wiki macro to display Ohloh project badges.
+Home-page: https://trac-hacks.org/wiki/OhlohBadgeMacro
+Author: Ryan J Ollos
+Author-email: ryan.j.ollos@gmail.com
+License: BSD 3-Clause
+Description: UNKNOWN
+Keywords: trac plugin macro ohloh badge
+Platform: UNKNOWN
+Classifier: Framework :: Trac
