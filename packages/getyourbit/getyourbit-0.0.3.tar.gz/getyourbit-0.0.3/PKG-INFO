@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: getyourbit
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: http://github.com/ortexx/getyourbit-python
+Author: Alexandr Balasyan
+Author-email: mywebstreet@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: getyoubit getyoubit.com ip proxy api geolocation cidr
+Platform: UNKNOWN
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
