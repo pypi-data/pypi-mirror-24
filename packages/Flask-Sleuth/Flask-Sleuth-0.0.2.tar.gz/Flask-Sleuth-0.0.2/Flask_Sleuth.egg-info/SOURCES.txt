@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.cfg
+setup.py
+Flask_Sleuth.egg-info/PKG-INFO
+Flask_Sleuth.egg-info/SOURCES.txt
+Flask_Sleuth.egg-info/dependency_links.txt
+Flask_Sleuth.egg-info/requires.txt
+Flask_Sleuth.egg-info/top_level.txt
+Flask_Sleuth.egg-info/zip-safe
+sleuth/__init__.py
