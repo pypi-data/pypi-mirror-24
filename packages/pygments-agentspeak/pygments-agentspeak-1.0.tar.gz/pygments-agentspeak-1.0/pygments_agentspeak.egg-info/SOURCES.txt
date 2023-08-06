@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+lexers/__init__.py
+pygments_agentspeak.egg-info/PKG-INFO
+pygments_agentspeak.egg-info/SOURCES.txt
+pygments_agentspeak.egg-info/dependency_links.txt
+pygments_agentspeak.egg-info/entry_points.txt
+pygments_agentspeak.egg-info/requires.txt
+pygments_agentspeak.egg-info/top_level.txt
+styles/__init__.py

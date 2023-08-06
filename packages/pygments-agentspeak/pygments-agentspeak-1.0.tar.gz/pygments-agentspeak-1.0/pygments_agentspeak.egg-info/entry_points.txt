@@ -1,0 +1,8 @@
+
+  [pygments.lexers]
+  jason = lexers:JasonAgentLexer
+  jasonproject = lexers:JasonProjectLexer
+  jacamoproject = lexers:JaCaMoProjectLexer
+  [pygments.styles]
+  jacamo = styles:JaCaMoStyle
+  
