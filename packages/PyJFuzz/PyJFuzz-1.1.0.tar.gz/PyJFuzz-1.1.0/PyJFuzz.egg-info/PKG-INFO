@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: PyJFuzz
+Version: 1.1.0
+Summary: Trivial JSON fuzzer written in python
+Home-page: https://github.com/mseclab/PyJFuzz
+Author: Daniele Lingualossa
+Author-email: d.linguaglossa@mseclab.it
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
