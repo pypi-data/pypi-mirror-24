@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: gcode_analyzer
+Version: 1.0.0
+Summary: GCode Analyzer Tool
+Home-page: https://github.com/zaxe3d/gcode_analyzer
+Author: Can Gelis
+Author-email: geliscan@gmail.com
+License: MIT
+Download-URL: https://github.com/zaxe3d/gcode_analyzer/archive/1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: gcode,3d,analyzer
+Platform: UNKNOWN
