@@ -1,0 +1,17 @@
+odoo10_addon_base_locale_uom_default-10.0.1.0.0-py2.7-nspkg.pth,sha256=BRP8mvEvEhIFmA57wbSTfAVbaAesjZh6WbtWMKUVv1c,1118
+odoo/addons/base_locale_uom_default/README.rst,sha256=SvypNqJOntQPU-VQN4NgSPN2FHhbYerdp8F24bq2gmY,2080
+odoo/addons/base_locale_uom_default/__init__.py,sha256=-jaKR9Ln81y9weB9znotIGElStutucXeJSAuqarYKyY,140
+odoo/addons/base_locale_uom_default/__manifest__.py,sha256=04bHrPkbakwWu3GkAJEDeHCMPh-r4lYcYLbZ-OxHwIc,669
+odoo/addons/base_locale_uom_default/demo/res_lang_demo.xml,sha256=ecO2lfuAWXq1q-KAOaEL_eZ5S-PSk9ACw2CTtr5J0tg,459
+odoo/addons/base_locale_uom_default/models/__init__.py,sha256=_LKNKIOZkulBIQK96mvWhDcdvWUgNaUOE4iTG-sacYM,142
+odoo/addons/base_locale_uom_default/models/res_lang.py,sha256=4b-2aSjWBVKdRwUh_I9p5YKkGbOFIzvSX5bs9dHq-rw,1775
+odoo/addons/base_locale_uom_default/tests/__init__.py,sha256=tq_U68yck9rHwmzIh0nkXBKXZXGImeUa-uVFKv9KgME,147
+odoo/addons/base_locale_uom_default/tests/test_res_lang.py,sha256=9UppjVxtVE0jDCto1Sd7zvj4jp4i2RmD8C9tA04-920,1605
+odoo/addons/base_locale_uom_default/views/res_lang_view.xml,sha256=WmbS6mA1NuRQLjJhLyUElnyewlks1tzrocULzbNfrXY,490
+odoo10_addon_base_locale_uom_default-10.0.1.0.0.dist-info/DESCRIPTION.rst,sha256=sGCw_-V6995slUO9Yp69ANuzuzKF8L9Q_07pNoe_hjg,2082
+odoo10_addon_base_locale_uom_default-10.0.1.0.0.dist-info/METADATA,sha256=mIynVo0BtSJr7Q_uwLv15J-EVcoLhTfrRgSfX9Zx3yg,2606
+odoo10_addon_base_locale_uom_default-10.0.1.0.0.dist-info/RECORD,,
+odoo10_addon_base_locale_uom_default-10.0.1.0.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+odoo10_addon_base_locale_uom_default-10.0.1.0.0.dist-info/metadata.json,sha256=rL9DCkyBSNhiHeFY2WmUl5_2tmFyjoTHOPQaSygnNmI,736
+odoo10_addon_base_locale_uom_default-10.0.1.0.0.dist-info/namespace_packages.txt,sha256=igDP6S4ywc6jzcMqzrKZpRtAUXrS-iYaA_Hu1EtlI48,17
+odoo10_addon_base_locale_uom_default-10.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
