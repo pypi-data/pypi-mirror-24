@@ -1,0 +1,59 @@
+Copyright (c) 2017 Robert Badea
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Description: 
+           ...    *    .   _  .
+        *  .  *     .   * (_)   *
+          .      |*  ..   *   ..
+           .  * \|  *  ___  . . *
+        *   \/   |/ \/{o,o}     .
+          _\_\   |  / /)  )* _/_ *
+              \ \| /,--"-"---  ..
+        _-----`  |(,__,__/__/_ .
+               \ ||      ..
+                ||| .            *
+                |||
+                |||
+          , -=-~' .-^- _
+        
+        Hoottit is a command line tool that can stream Reddit data (submissions
+        and comments) to a MongoDB database of choice. All it needs is two Reddit app
+        keys (in praw.ini) and a MongoDB URI set in the HOOT_MONGODBURI env variable.
+        If the database URI is not set, it automatically tries to connect
+        to localhost:27017. Since this application is best used as a long running
+        script, an optional HOOT_SENTRYDSN env variable can be set to capture any
+        warnings and errors that might appear (usually caused by problems with the
+        connection, but not only). The keepalive script can be used to keep the
+        application alive after it crashes. For more information about using the
+        application, type hoottit --help.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-AlphaEnvironment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT LicenseOperating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
