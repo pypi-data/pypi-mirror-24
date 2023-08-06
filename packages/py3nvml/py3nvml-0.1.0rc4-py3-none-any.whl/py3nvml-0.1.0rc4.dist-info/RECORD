@@ -1,0 +1,12 @@
+py3nvml/__init__.py,sha256=mcak2oJXXbdL27vYCL7QnsWkZQpdRpyMCl8KYJHC3i0,170
+py3nvml/nvidia_smi.py,sha256=F5Nne4BexgwZoPjqih9rYIZpEv_nAHhtUUn8ao8q4GM,37232
+py3nvml/py3nvml.py,sha256=0Mbaq1Q33vRfp2YBuy_-UDaN4ntISHkFuw4yghX5p2k,58335
+py3nvml/tf_utils.py,sha256=RO2dCMhzN9jBYHsUGAuXngdTutgusGO4UOFuES93fZ4,4635
+py3nvml/utils.py,sha256=jKVnCZJVIdHIowFWOkJGYF0_-N_9wbrK7YuDBQDdL5g,4791
+py3nvml-0.1.0rc4.dist-info/DESCRIPTION.rst,sha256=qFaIQVPbSEvH6grB3IyUrB1RQbndopX-wwUw40gPoRE,7973
+py3nvml-0.1.0rc4.dist-info/LICENSE.txt,sha256=nE5huyI7VKn3i0t8X9zXd8d4Lev1d_3cbgfv6s7vzJg,1533
+py3nvml-0.1.0rc4.dist-info/METADATA,sha256=43kogxn8_czDRW-R0zBmQK1nYcNFmi0Gyn7MoFqI1jk,8851
+py3nvml-0.1.0rc4.dist-info/RECORD,,
+py3nvml-0.1.0rc4.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+py3nvml-0.1.0rc4.dist-info/metadata.json,sha256=6sQXeIvKLkqbPJZiySRy5QWmfxKM6snugD9s0Y5oWdA,1013
+py3nvml-0.1.0rc4.dist-info/top_level.txt,sha256=7EhPFhTXF1HV3PBHOtG5uOtTlEOIkgjfoBbnLdvz8EA,8
