@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: iversions
+Version: 0.0.1
+Summary: A cell magic command for IPython/Jupyter to display name and version of the imported modules
+Home-page: https://github.com/iamaziz/iversions
+Author: Aziz Alto
+Author-email: iamaziz.alto@gmail.com
