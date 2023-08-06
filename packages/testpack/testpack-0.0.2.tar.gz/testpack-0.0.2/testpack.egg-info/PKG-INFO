@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: testpack
+Version: 0.0.2
+Summary: A very simple networking library for seperating MAC Frame written by Rohit G Bal (@rohitgbal).
+Home-page: https://sites.google.com/site/rohitgbal/
+Author: Rohit G BAl
+Author-email: rohitgbal@gmail.com
+License: MIT Lisence
+Description: UNKNOWN
+Keywords: TEST
+Platform: UNKNOWN
