@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: licpy
+Version: 0.1
+Summary: Line Integral Convolution
+Home-page: http://github.com/drufat/licpy.git
+Author: Dzhelil Rufat
+Author-email: drufat@caltech.edu
+License: GNU GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: numpy
+Requires: tensorflow
+Requires: pybindcpp
