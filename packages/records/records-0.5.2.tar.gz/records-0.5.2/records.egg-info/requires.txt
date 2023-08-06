@@ -1,0 +1,6 @@
+SQLAlchemy
+tablib
+docopt
+
+[pandas]
+tablib[pandas]
