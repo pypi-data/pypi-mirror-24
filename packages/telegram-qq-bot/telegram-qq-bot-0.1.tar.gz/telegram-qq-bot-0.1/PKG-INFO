@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: telegram-qq-bot
+Version: 0.1
+Summary: A telegram bot that forwards subscribed messages to telegram
+Home-page: UNKNOWN
+Author: Extremezhazha
+Author-email: extremezhazha@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Keywords: python smartqq telegram
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Communications :: Chat
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent

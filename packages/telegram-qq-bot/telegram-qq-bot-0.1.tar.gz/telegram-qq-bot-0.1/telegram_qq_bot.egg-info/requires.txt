@@ -1,0 +1,2 @@
+python-smartqq-client
+pymongo
