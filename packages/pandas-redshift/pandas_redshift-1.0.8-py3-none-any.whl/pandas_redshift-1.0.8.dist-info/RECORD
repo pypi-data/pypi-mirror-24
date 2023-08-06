@@ -1,0 +1,9 @@
+pandas_redshift/__init__.py,sha256=_-685PC8HEYdi54HKSrUhwdtgRlHJ19M3bDT5RDwnxc,35
+pandas_redshift/core.py,sha256=cCvzN2Dskrra2dKn_f5v5WAThehWbNI2S412GTU7-CM,5164
+pandas_redshift/redshift_reserve_words.txt,sha256=D8Po4ouh_xncCFFz7qliikmMtUbh869kE-_ei7-d7FI,1114
+pandas_redshift-1.0.8.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pandas_redshift-1.0.8.dist-info/METADATA,sha256=6IUUiWpapdlTAkK30Npwx70QLUBaILLNWwDz7X4ALZA,348
+pandas_redshift-1.0.8.dist-info/RECORD,,
+pandas_redshift-1.0.8.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pandas_redshift-1.0.8.dist-info/metadata.json,sha256=krdl3YHKQ1KX7DcY8Ht7Uy163OaHJkv9Z8DrAlzdotU,482
+pandas_redshift-1.0.8.dist-info/top_level.txt,sha256=BvgGQHMO9FwpEZIujP5ODRTiWLOMVXHQv0NvhZMibQI,16
