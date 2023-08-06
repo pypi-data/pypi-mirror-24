@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: RSA-Cipher
+Version: 1.0.3
+Summary: Generate encrypted/decrypted text using RSA method
+Home-page: https://github.com/PizzaPat/RSA_Cipher
+Author: Patrapee Pongtana
+Author-email: patpongtana@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: RSA
+Platform: UNKNOWN
