@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+vidme/__init__.py
+vidme/client.py
+vidme/gateway.py
+vidme/users.py
+vidme/videos.py
+vidme.py.egg-info/PKG-INFO
+vidme.py.egg-info/SOURCES.txt
+vidme.py.egg-info/dependency_links.txt
+vidme.py.egg-info/requires.txt
+vidme.py.egg-info/top_level.txt
