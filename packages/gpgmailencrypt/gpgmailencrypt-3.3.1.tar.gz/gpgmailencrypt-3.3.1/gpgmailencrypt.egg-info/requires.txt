@@ -1,0 +1,8 @@
+pypdf2
+beautifulsoup4
+html5lib
+python-magic
+requests
+lxml
+passlib
+bcrypt
