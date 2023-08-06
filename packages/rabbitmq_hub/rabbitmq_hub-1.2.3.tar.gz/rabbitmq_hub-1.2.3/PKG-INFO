@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: rabbitmq_hub
+Version: 1.2.3
+Summary: rabbitmq connection manager
+Home-page: UNKNOWN
+Author: Mageia
+Author-email: yzg963@gmail.com
+License: Proprietary
+Description: # rabbitmq_hub
+        
+Platform: any
