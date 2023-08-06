@@ -1,0 +1,15 @@
+mir/protology.py,sha256=W_Sz_E31LpVuG_tZKjrFr3rxv-_8NKs2PuUoCGKhyns,703
+mir/termdbg.py,sha256=hj9dAYFtteaPieGRlE0mQfGv_uhY-fsNNDdXpoYKaXk,1758
+mir/termdbg/__init__.py,sha256=J2-jcSZRudQUZGp8XHlS4b6z8I0LcJ8yWvJUyz3-1q4,642
+mir/termdbg/__main__.py,sha256=_ah3WcnW_rwNMzaPutpAQwleB-pszPLCSsLmJkrEzPs,1606
+mir/termdbg/ascii.csv,sha256=0z1tlrcvB1Yq31SISrPxo923O26u4DlFdPBIYZf_EI0,914
+mir/termdbg/ascii.py,sha256=2SsESbuYwv-lWFM9WbqW2YSy_5N9ApIpW5l8wV4viqE,1864
+mir/termdbg/ccr.py,sha256=kQnPUyXZAybqZPk8OUTC4qfs32L53zjA2qsO-YyU8tc,866
+mir/termdbg/format.py,sha256=7Br25HVQDbD4xdx97NHm8ZAvGVtgIvcjJdi8jQxvSeE,1566
+mir/termdbg/term.py,sha256=U_-hzDxozNNlLEOklpRrAyUlO4mDzwLBY-7ERj4g4zg,1309
+mir.termdbg-2.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+mir.termdbg-2.0.0.dist-info/METADATA,sha256=SX03bojq-f2U2LOjSDJH03Oqcc06HtUxQNWmkDe_kpM,444
+mir.termdbg-2.0.0.dist-info/RECORD,,
+mir.termdbg-2.0.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+mir.termdbg-2.0.0.dist-info/metadata.json,sha256=ZzR1hT7zw6daXAXxmziyHr5eYeTsWNyvkOHiAy_iqhs,579
+mir.termdbg-2.0.0.dist-info/top_level.txt,sha256=AncyDUeb-6naxuA6oqYf2DJvGk05FcF4Vs_3gvWePOI,4
