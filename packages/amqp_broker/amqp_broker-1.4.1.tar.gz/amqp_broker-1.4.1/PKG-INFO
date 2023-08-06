@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: amqp_broker
+Version: 1.4.1
+Summary: Python library that simplified the utilisation of a AMQP client/server
+Home-page: https://github.com/nbeguier/amqp_broker
+Author: Nicolas Beguier
+Author-email: nicolas_beguier@hotmail.com
+License: UNKNOWN
+Download-URL: https://github.com/nbeguier/amqp_broker/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: amqp,broker,client
+Platform: UNKNOWN
