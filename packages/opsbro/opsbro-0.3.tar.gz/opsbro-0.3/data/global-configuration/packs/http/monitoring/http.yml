@@ -1,0 +1,5 @@
+check:
+    if_group: http
+    script: "/usr/lib/nagios/plugins/check_http -H localhost"
+    interval: "10s"
+

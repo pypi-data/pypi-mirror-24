@@ -1,0 +1,141 @@
+#!/usr/bin/env python
+
+# Copyright (C) 2014:
+#    Gabes Jean, naparuba@gmail.com
+
+
+import optparse
+import sys
+import os
+
+import signal
+
+sys.path.append('.')
+
+from opsbro.log import cprint, logger, is_tty
+from opsbro.cli import CLICommander
+
+from opsbro.info import VERSION, BANNER, TXT_BANNER
+from opsbro.misc.bro_quotes import get_quote
+from opsbro.defaultpaths import DEFAULT_CFG_FILE
+from opsbro.yamlmgr import yamler
+
+logger.setLevel('WARNING')
+
+CLI = None
+
+
+# Handle some signals
+def sig_handler(signalnum, handle):
+    """ Handle some signals """
+    sys.exit(0)
+
+
+signal.signal(signal.SIGTERM, sig_handler)
+signal.signal(signal.SIGINT, sig_handler)
+
+CONFIG = {}
+
+
+def print_full_help():
+    if is_tty():
+        cprint(BANNER)
+    else:
+        cprint(TXT_BANNER, color='blue')
+    # Also print some quotes
+    quote, from_film = get_quote()
+    cprint('  >> %s  (%s)\n' % (quote, from_film), color='grey')
+    
+    parser.print_help()
+    CLI.print_list()
+    sys.exit(0)
+
+
+if __name__ == '__main__':
+    parser = optparse.OptionParser('', version="%prog " + VERSION, add_help_option=False)
+    parser.add_option('--proxy', dest="proxy", help="""Proxy URI. Like http://user:password@proxy-server:3128""")
+    parser.add_option('-l', '--list', action='store_true', dest="do_list", help=("List available commands"))
+    parser.add_option('-D', action='store_true', dest="do_debug", help=("Enable the debug mode"))
+    parser.add_option('-c', '--config', dest="ymlconfig", default=DEFAULT_CFG_FILE, help=("Path to your local.yml file. Default: %s" % DEFAULT_CFG_FILE))
+    parser.add_option('-v', action='store_true', dest="do_verbose", help=("Be more verbose"))
+    parser.add_option('-h', '--help', action='store_true', dest="do_help", help=("Print help"))
+    
+    # First parsing, for purely internal parameters, but disable
+    # errors, because we only want to see the -D -v things
+    old_error = parser.error
+    parser.error = lambda x: 1
+    opts, args = parser.parse_args()
+    # reenable the errors for later use
+    parser.error = old_error
+    
+    # Is args are setting them, they must be force to the rest of the execution without looking at the configuration
+    if opts.do_verbose:
+        logger.setLevel('INFO', force=True)
+    
+    if opts.do_debug:
+        logger.setLevel('DEBUG', force=True)
+    
+    cfg = None
+    if not os.path.exists(opts.ymlconfig):
+        logger.debug('Missing configuration file!')
+    else:
+        try:
+            with open(opts.ymlconfig, 'r') as f:
+                buf = f.read()
+                CONFIG = yamler.loads(buf)
+            logger.debug("Loaded configuration file %s : %s" % (opts.ymlconfig, CONFIG))
+        except Exception, exp:
+            logger.error('Cannot load configuration file %s: %s' % (opts.ymlconfig, exp))
+            sys.exit(2)
+    
+    CLI = CLICommander(CONFIG, opts)
+    
+    bash_completion_mode = ('EXEC_COMPLETION' in os.environ)
+    
+    # We will remove specific commands from the sys.argv list and keep
+    # them for parsing them after
+    # NOTE: in bash completion we do not want
+    if not bash_completion_mode:
+        command_args = CLI.hack_sys_argv()
+    
+    # Global command parsing, with the error enabled this time
+    opts, args = parser.parse_args()
+    
+    logger.debug('CLI ARGS: %s' % args)
+    
+    if bash_completion_mode:
+        CLI.print_completion(args)
+        sys.exit(0)
+    
+    if opts.do_help:
+        if len(command_args) == 0:
+            logger.error("Cannot find any help for you")
+            sys.exit(1)
+        if len(command_args) == 1:
+            sub_cmd = 'global'
+        else:
+            sub_cmd = command_args.pop(0)
+        a = command_args.pop(0)
+        if a not in CLI.keywords[sub_cmd]:
+            logger.error("Cannot find any help for %s" % a)
+            sys.exit(1)
+        cprint('%s' % a, 'green')
+        for arg in CLI.keywords[sub_cmd][a].args:
+            n = arg.get('name', '')
+            desc = arg.get('description', '')
+            cprint('\t%s' % n.ljust(10), 'green', end='')
+            cprint(': %s' % desc)
+        
+        sys.exit(0)
+    
+    # Maybe he/she just want to list our commands?
+    if opts.do_list:
+        CLI.print_list(' '.join(command_args))
+        sys.exit(0)
+    
+    # if just call opsbro, we must show the available commands
+    if len(command_args) == 0:
+        print_full_help()
+    
+    # If it's just a one call shot, do it!
+    CLI.one_loop(command_args)

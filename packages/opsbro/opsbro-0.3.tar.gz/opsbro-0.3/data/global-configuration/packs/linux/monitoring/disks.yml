@@ -1,0 +1,12 @@
+check:
+    if_group: "linux"
+    
+    ok_output: "'OK: / is at %s%%' % {{collector.diskusage./.pct_used}}"
+    
+    critical_if: "{{collector.diskusage./.pct_used}} > {{parameters.diskuse_critical}}"
+    critical_output: "'CRITICAL: / is at %s%%' % {{collector.diskusage./.pct_used}}"
+
+    warning_if: "{{collector.diskusage./.pct_used}} > {{parameters.diskuse_warning}}"
+    warning_output:  "'WARNING: / is at %s%%' % {{collector.diskusage./.pct_used}}"
+    
+    interval: "60s"

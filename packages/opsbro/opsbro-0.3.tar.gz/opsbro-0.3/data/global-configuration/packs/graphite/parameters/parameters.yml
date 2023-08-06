@@ -1,0 +1,15 @@
+
+# Is the graphite listener module is enabled
+# default to false
+enabled: false
+
+# Which port to listen for graphite data
+port:    2003
+
+# Listen in UDP for graphite data
+# default to true
+udp:     true
+
+# Listen in TCP for graphite data
+# default to true
+tcp:     true

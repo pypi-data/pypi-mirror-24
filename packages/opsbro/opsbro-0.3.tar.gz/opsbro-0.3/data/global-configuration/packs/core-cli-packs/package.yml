@@ -1,0 +1,19 @@
+name: core-cli-packs
+types:
+    - cli
+version: "1.0"
+homepage: ""
+author: Shinken Solutions
+description:  CLI for launching/querying the OpsBro agent about the pack configuration
+contributors:
+    - Jean Gabès
+repository: ""
+keywords:
+    - cli
+    - agent
+    - configuration
+    - packs
+
+dependencies:
+    core: ">=1.0"
+license: ""
