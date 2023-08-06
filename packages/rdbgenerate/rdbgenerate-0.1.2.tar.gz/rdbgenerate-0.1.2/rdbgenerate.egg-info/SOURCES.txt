@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+rdbgenerate/__init__.py
+rdbgenerate/constants.py
+rdbgenerate/crc64.py
+rdbgenerate/rdbgen.py
+rdbgenerate.egg-info/PKG-INFO
+rdbgenerate.egg-info/SOURCES.txt
+rdbgenerate.egg-info/dependency_links.txt
+rdbgenerate.egg-info/requires.txt
+rdbgenerate.egg-info/top_level.txt
+test/test_crc64.py
+test/test_rdbconvert.py
