@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: qspin
+Version: 0.1.8
+Summary: Learn quantum spin and entanglement
+Home-page: https://bitbucket.org/donald_gavel/qspin
+Author: Don Gavel
+Author-email: donald.gavel@gmail.com
+License: UNKNOWN
+Download-URL: https://bitbucket.org/donald_gavel/qspin/downloads
+Keywords: quantum,spin,electron
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+UNKNOWN
+
+
