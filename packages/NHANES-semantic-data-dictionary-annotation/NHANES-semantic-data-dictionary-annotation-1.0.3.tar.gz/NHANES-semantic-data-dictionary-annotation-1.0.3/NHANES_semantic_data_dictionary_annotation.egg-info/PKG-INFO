@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: NHANES-semantic-data-dictionary-annotation
+Version: 1.0.3
+Summary: Scripts for extracting semantic data dictionaries from NHANES data
+Home-page: https://github.com/rashidsabbir/extractor
+Author: Ryan Sherman, Sabbir Rashid
+Author-email: rjsfox8@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
