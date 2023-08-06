@@ -1,0 +1,4 @@
+mosql
+PyYAML
+click
+daiquiri
