@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: cryptocompare
+Version: 0.1
+Summary: Wrapper for CryptoCompare.com
+Home-page: https://github.com/lagerfeuer/cryptocompare
+Author: lagerfeuer
+Author-email: lukas.deutz@tuta.io
+License: MIT
+Description: UNKNOWN
+Keywords: crypto cryptocurrency wrapper cryptocompare
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
