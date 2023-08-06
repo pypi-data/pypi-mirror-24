@@ -1,0 +1,17 @@
+README.rst
+setup.py
+Ordinati.egg-info/PKG-INFO
+Ordinati.egg-info/SOURCES.txt
+Ordinati.egg-info/dependency_links.txt
+Ordinati.egg-info/entry_points.txt
+Ordinati.egg-info/requires.txt
+Ordinati.egg-info/top_level.txt
+ordinati/__init__.py
+ordinati/ordinati.py
+ordinati/commands/__init__.py
+ordinati/commands/ordinati_add.py
+ordinati/commands/ordinati_remove.py
+ordinati/commands/ordinati_show.py
+ordinati/commands/ordinati_tag.py
+ordinati/commands/ordinati_update.py
+ordinati/commands/ordinati_verify.py
