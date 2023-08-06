@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pysrim
+Version: 0.1.5
+Summary: Srim Automation of Tasks
+Home-page: https://gitlab.aves.io/costrouc/pysrim
+Author: Christopher Ostrouchov
+Author-email: chris.ostrouchov+pysrim@gmail.com
+License: UNKNOWN
+Download-URL: https://gitlab.aves.io/costrouc/pysrim/repository/archive.zip?ref=v0.1.5
+Description: Pythonic Wrapper to SRIM
+Keywords: material srim automation plotting
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
