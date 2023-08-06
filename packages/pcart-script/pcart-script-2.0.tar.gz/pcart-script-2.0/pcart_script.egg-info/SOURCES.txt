@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+pcart_script/__init__.py
+pcart_script/interpreter.py
+pcart_script.egg-info/PKG-INFO
+pcart_script.egg-info/SOURCES.txt
+pcart_script.egg-info/dependency_links.txt
+pcart_script.egg-info/not-zip-safe
+pcart_script.egg-info/requires.txt
+pcart_script.egg-info/top_level.txt
