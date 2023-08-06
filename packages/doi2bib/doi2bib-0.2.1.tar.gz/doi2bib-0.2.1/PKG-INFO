@@ -1,0 +1,77 @@
+Metadata-Version: 1.1
+Name: doi2bib
+Version: 0.2.1
+Summary: Generate a bibtex given a doi
+Home-page: https://github.com/bibcure/doi2bib
+Author: Bruno Messias
+Author-email: messias.physics@gmail.com
+License: GPLv3
+Download-URL: https://github.com/bibcure/doi2bib/archive/0.2.1.tar.gz
+Description: Description
+        -----------
+        
+        doi2bib is a module of `bibcure <https://github.com/bibcure/bibcure>`__
+        ## Install
+        
+        ::
+        
+            $ sudo pip install doi2bib
+        
+        or if you want the full version
+        
+        ::
+        
+            $ sudo pip install bibcure
+        
+        Features and how to use
+        -----------------------
+        
+        ::
+        
+            $ bibcure -i input.bib -o output.bib
+        
+        Given a bib file... \* check sure the Arxiv items have been published,
+        then update them(requires internet connection) \* complete all
+        fields(url, journal, etc) of all bib items using DOI number(requires
+        internet connection) \* find and create DOI number associated with each
+        bib item which has not DOI field(requires internet connection) \*
+        abbreviate jorunals names
+        
+        ::
+        
+            $ doi2bib 10.1038/s41524-017-0032-0
+        
+        Given a DOI number... \* get bib item given a doi(requires internet
+        connection)
+        
+        ::
+        
+            $ titletobib An useful paper
+        
+        Given a title... \* search papers related and return a bib for the
+        selected paper(requires internet connection)
+        
+        ::
+        
+            $ arxivcheck 1601.02785
+        
+        Given a arxiv id... \* given an arixiv id, check if has been published,
+        and then returns the updated bib (requires internet connection)
+        
+        Next Version
+        ~~~~~~~~~~~~
+        
+        ::
+        
+            $ bibcure -i input.bib -o output.bib
+        
+        -  contract authors names
+        
+        
+Keywords: bibtex,science,scientific-journals
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
