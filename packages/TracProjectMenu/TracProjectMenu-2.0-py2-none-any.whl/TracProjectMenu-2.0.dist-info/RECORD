@@ -1,0 +1,10 @@
+TracProjectMenu-2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+TracProjectMenu-2.0.dist-info/METADATA,sha256=tMTtosibN-dWBPLW7CFlPVa_8U6Qna-ytv-pBq5q4ZU,379
+TracProjectMenu-2.0.dist-info/RECORD,,
+TracProjectMenu-2.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+TracProjectMenu-2.0.dist-info/entry_points.txt,sha256=urgPv-ObcxeXmduC73bXySSKBGlSpfUzA840kKvPSmA,56
+TracProjectMenu-2.0.dist-info/metadata.json,sha256=uER8KWDiYa4aCdIUhimYQaYzOS2XSgMnPuKo8a4FA-s,658
+TracProjectMenu-2.0.dist-info/top_level.txt,sha256=gf424ixk_btM7cKM7VOWnTxmrTV3dYuvD7p3t_zVi_o,12
+projectmenu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+projectmenu/web_ui.py,sha256=2-oWa6cmk1ve5SjM9qvPJXdwVhdWVEVMmhd7tv5YkGM,2404
+projectmenu/htdocs/projectmenu.js,sha256=8p2LUxpkjl0fEHyMMJdRkl6-Net7LMFxrVakqKUHo7U,153
