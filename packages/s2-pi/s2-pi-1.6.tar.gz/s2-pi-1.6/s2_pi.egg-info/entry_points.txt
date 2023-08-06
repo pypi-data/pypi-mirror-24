@@ -1,0 +1,3 @@
+[console_scripts]
+s2pi = s2_pi.s2_pi:run_server
+
