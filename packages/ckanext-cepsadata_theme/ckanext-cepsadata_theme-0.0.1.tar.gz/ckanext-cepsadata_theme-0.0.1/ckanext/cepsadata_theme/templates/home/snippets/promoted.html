@@ -1,0 +1,13 @@
+{% ckan_extends %}
+
+{% block home_image_caption %}
+  {{ _("Veja dados estatísticos sobre demografia, população e saúde em Moçambique") }}
+{% endblock %}
+
+{# Replace the promoted image. #}
+{% block home_image_content %}
+  <a class="media-image" href="#">
+    <img src="/promoted-image.jpg" alt="Featured image"
+         width="420" height="220" />
+  </a>
+{% endblock %}
