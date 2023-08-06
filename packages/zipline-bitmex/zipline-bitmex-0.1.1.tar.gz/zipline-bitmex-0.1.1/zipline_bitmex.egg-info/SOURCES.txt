@@ -1,0 +1,10 @@
+README.rst
+setup.py
+zipline_bitmex/__init__.py
+zipline_bitmex/bitmex.py
+zipline_bitmex/cal.py
+zipline_bitmex.egg-info/PKG-INFO
+zipline_bitmex.egg-info/SOURCES.txt
+zipline_bitmex.egg-info/dependency_links.txt
+zipline_bitmex.egg-info/requires.txt
+zipline_bitmex.egg-info/top_level.txt
