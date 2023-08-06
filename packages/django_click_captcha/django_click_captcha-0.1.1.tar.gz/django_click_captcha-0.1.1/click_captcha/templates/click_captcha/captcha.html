@@ -1,0 +1,11 @@
+<div class="captcha-input-wrapper">
+    <div class="captcha-operate">
+        <input type="hidden" name="{{ value_name }}" class="captcha-field">
+        <input type="hidden" name="{{ id_name }}" value="{{ uuid }}">
+        <label class="captcha-prompt is-hidden">请点击图中所有倒立的文字</label>
+        <span id="captcha-refresh" class="glyphicon glyphicon-repeat" aria-hidden="true"><i class="icon-refresh"></i></span>
+    </div>
+    <div class="captcha-image-wrapper" data-time-refresh="{{ timeout }}">
+        <img id="captcha-image" alt="验证码" src="{% url 'click_captcha' uuid %}" style="display: block;">
+    </div>
+</div>

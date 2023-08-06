@@ -1,0 +1,109 @@
+
+.captcha-input-wrapper {
+    position: relative;
+    width: 90%;
+}
+
+/*.captcha-input-wrapper label {*/
+/**/
+/*}*/
+
+.captcha-input-wrapper .captcha-operate {
+    position: relative;
+    color: #555;
+    line-height: 16px;
+    height: 16px;
+    margin-bottom: 6px;
+}
+
+.captcha-input-wrapper .captcha-operate .captcha-prompt {
+    position: absolute;
+    font-size: 14px;
+    vertical-align: middle;
+    -webkit-transition: .25s ease-out;
+    transition: .25s ease-out;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    cursor: default;
+}
+
+/*.captcha-input-wrapper .captcha-operate label .error {*/
+/*position: absolute;*/
+/*left: 0;*/
+/*top: 0;*/
+/*line-height: inherit;*/
+/*color: #c33;*/
+/*visibility: hidden;*/
+/*opacity: 0;*/
+/*padding: 0;*/
+/*-webkit-transition: .25s ease-out;*/
+/*transition: .25s ease-out;*/
+/*-webkit-transform: translate(-20px, 0);*/
+/*-ms-transform: translate(-20px, 0);*/
+/*transform: translate(-20px, 0);*/
+/*background: 0 0;*/
+/*}*/
+
+.captcha-input-wrapper .captcha-operate span {
+    position: absolute;
+    font-size: 24px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.captcha-input-wrapper .captcha-operate span:hover {
+    color: #dd33ff;
+}
+
+.captcha-input-wrapper .captcha-image-wrapper span {
+    border: 1px solid #639fb7;
+    position: absolute;
+    border-radius: 50%;
+    background: #639fb7;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    color: #dd22ff;
+    margin: 0;
+    padding: 0;
+}
+
+.glyphicon-remove:after {
+    content: 'X';
+    top: 0;
+    right: 3px;
+    position: absolute;
+}
+
+.glyphicon {
+    /*position: relative;*/
+}
+
+/*.error .is-hidden {*/
+    /*display: none;*/
+/*}*/
+
+/*form .is-visible{*/
+    /*display: none;*/
+/*}*/
+
+/*.error .is-visible{*/
+    /*display: block;*/
+/*}*/
+
+@keyframes rainbow {
+  0% { color: #9EC4E6; }
+  50% { color: orange; }
+  100% { color: red; }
+}
+
+
+.error label {
+    /*display: block;*/
+    animation: 3s rainbow infinite;
+}
+
