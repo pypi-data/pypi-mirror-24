@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+ldrpyutils/__init__.py
+ldrpyutils/core.py
+ldrpyutils.egg-info/PKG-INFO
+ldrpyutils.egg-info/SOURCES.txt
+ldrpyutils.egg-info/dependency_links.txt
+ldrpyutils.egg-info/entry_points.txt
+ldrpyutils.egg-info/requires.txt
+ldrpyutils.egg-info/top_level.txt
