@@ -1,0 +1,14 @@
+google_cloud_dns-0.27.0-py3.6-nspkg.pth,sha256=ofmGPN1MmlzzixfrH6h3KelmTtzqTJmHlj89rIEGizE,1134
+google/cloud/dns/__init__.py,sha256=5JswUXYJMsQFH0EIWZ1bpp5_B-lJz6wCR4UXR9BMjgo,1416
+google/cloud/dns/_http.py,sha256=zLnE_OS6tGu-WyxPzos_WAUy2zPLFlw6e-BXehEvCxg,1396
+google/cloud/dns/changes.py,sha256=Gdm33S1qO7YvwBHzs_xv-n_o4CjCKCtbcGqG5_ztwBM,8922
+google/cloud/dns/client.py,sha256=npydqplnLocmU4S1WhWOgHlSLC_Y4J518o_juNV55uc,5327
+google/cloud/dns/resource_record_set.py,sha256=DhjBX2vyr_mm15t_i3BcnTNcpiucjBdr5bB4HMI5vqs,2210
+google/cloud/dns/zone.py,sha256=kj4vkDa6c4IPcQqUxzdsEPAL2wqNQS6EV2ivwCMlLcY,14600
+google_cloud_dns-0.27.0.dist-info/DESCRIPTION.rst,sha256=eFT53MgXZ4rf3qSJGY8l22sxaFp0R6aSUDwgb7KVTAA,1542
+google_cloud_dns-0.27.0.dist-info/METADATA,sha256=C17z7jTIfdPY4tvsRkJ3lUjg53GNOViucvjx3y7s8gQ,2425
+google_cloud_dns-0.27.0.dist-info/RECORD,,
+google_cloud_dns-0.27.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+google_cloud_dns-0.27.0.dist-info/metadata.json,sha256=IdHKIlZ8lGsk4nOiCyCXP5j_kok2KA1drs-OUguFda4,1046
+google_cloud_dns-0.27.0.dist-info/namespace_packages.txt,sha256=v8IaYqRE2a0onAGJIpZeFkkH83wXSWZRR9eOyfMwoTc,20
+google_cloud_dns-0.27.0.dist-info/top_level.txt,sha256=_1QvSJIhFAGfxb79D6DhB7SUw2X6T4rwnz_LLrbcD3c,7
