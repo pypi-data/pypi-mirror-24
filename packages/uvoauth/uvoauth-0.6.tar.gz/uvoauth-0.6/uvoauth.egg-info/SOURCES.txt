@@ -1,0 +1,11 @@
+MANIFEST.in
+requirements.txt
+setup.py
+uvoauth/__init__.py
+uvoauth/utils.py
+uvoauth/uvoauth.py
+uvoauth.egg-info/PKG-INFO
+uvoauth.egg-info/SOURCES.txt
+uvoauth.egg-info/dependency_links.txt
+uvoauth.egg-info/requires.txt
+uvoauth.egg-info/top_level.txt
