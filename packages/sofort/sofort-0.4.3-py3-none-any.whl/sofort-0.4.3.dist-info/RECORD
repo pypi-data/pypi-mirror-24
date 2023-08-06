@@ -1,0 +1,13 @@
+sofort/__init__.py,sha256=dAsRfe2muHst35DfhNlT9dRtfO6TZ4ESePChEJn5OQQ,122
+sofort/_version.py,sha256=GI8jYEksCyU_GLvu0eW6pPFjDcmTuWNQVavfvCX2KuQ,22
+sofort/client.py,sha256=wEbX_1X0OxT1FIWfyc8vAbeCQhefW85M3URMpKr5x7o,4111
+sofort/exceptions.py,sha256=Cdkz13YQdMbsKc0ZQNxedQXSWENfxfUmjeglSA1TlBA,1036
+sofort/internals.py,sha256=LaFI846JfJzMXRbi_F-zhxN4bpXm8nlPkX2YVQ1pkZI,784
+sofort/model.py,sha256=C0jGLufTsNBc5UFWocnWAYZ9YzOaSK3KNJ_kVovP6d8,4584
+sofort/xml.py,sha256=EkRpgdZuFi54WgZqkjgZ9nrcR0LS6wWKTFtazRUp63U,4181
+sofort-0.4.3.dist-info/DESCRIPTION.rst,sha256=g1cCY8otq84AdIeB8B16SKWwBTSnkyQ1GQsXjctqQ9A,3790
+sofort-0.4.3.dist-info/METADATA,sha256=HQSOYPd2_BUbX6lwMbZaEoIysEIbo100cjXwP3prnEQ,4573
+sofort-0.4.3.dist-info/RECORD,,
+sofort-0.4.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+sofort-0.4.3.dist-info/metadata.json,sha256=own2tiWyRTRi0jLjxFe34QRuE3w7mK0E1ZS3v1eo19c,887
+sofort-0.4.3.dist-info/top_level.txt,sha256=GwcfDn-8BFgl7x57Pv3AB3vtBqs_LVwllp5ev_V3E-E,7
