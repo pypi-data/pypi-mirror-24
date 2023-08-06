@@ -1,0 +1,259 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{Automatically change matplotlib figures to LaTeX figures.}
+
+\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{k+kn}{from} \PYG{n+nn}{contextlib} \PYG{k+kn}{import} \PYG{n}{contextmanager}
+\PYG{k+kn}{import} \PYG{n+nn}{errno}
+\PYG{k+kn}{import} \PYG{n+nn}{logging}
+\PYG{k+kn}{import} \PYG{n+nn}{math}
+\PYG{k+kn}{from} \PYG{n+nn}{pathlib} \PYG{k+kn}{import} \PYG{n}{Path}
+\PYG{k+kn}{import} \PYG{n+nn}{warnings}
+
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k+kn}{as} \PYG{n+nn}{plt}
+
+
+\PYG{n}{logger} \PYG{o}{=} \PYG{n}{logging}\PYG{o}{.}\PYG{n}{getLogger}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}latexipy\PYGZsq{}}\PYG{p}{)}
+
+
+\PYG{n}{INCH\PYGZus{}PER\PYGZus{}POINT} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mf}{72.27}
+\PYG{n}{GOLDEN\PYGZus{}RATIO} \PYG{o}{=} \PYG{p}{(}\PYG{n}{math}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{)}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.0}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mf}{2.0}
+
+\PYG{n}{MAX\PYGZus{}HEIGHT\PYGZus{}INCH} \PYG{o}{=} \PYG{l+m+mi}{8}
+\PYG{n}{FONT\PYGZus{}SIZE} \PYG{o}{=} \PYG{l+m+mi}{8}
+
+\PYG{n}{PARAMS} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}pgf.texsystem\PYGZsq{}}\PYG{p}{:} \PYG{l+s+s1}{\PYGZsq{}xelatex\PYGZsq{}}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{} pdflatex, xelatex, lualatex}
+    \PYG{l+s+s1}{\PYGZsq{}text.usetex\PYGZsq{}}\PYG{p}{:} \PYG{n+nb+bp}{True}\PYG{p}{,}
+    \PYG{l+s+s1}{\PYGZsq{}font.family\PYGZsq{}}\PYG{p}{:} \PYG{l+s+s1}{\PYGZsq{}serif\PYGZsq{}}\PYG{p}{,}
+    \PYG{l+s+s1}{\PYGZsq{}font.serif\PYGZsq{}}\PYG{p}{:} \PYG{p}{[],}
+    \PYG{l+s+s1}{\PYGZsq{}font.sans\PYGZhy{}serif\PYGZsq{}}\PYG{p}{:} \PYG{p}{[],}
+    \PYG{l+s+s1}{\PYGZsq{}font.monospace\PYGZsq{}}\PYG{p}{:} \PYG{p}{[],}
+    \PYG{l+s+s1}{\PYGZsq{}pgf.preamble\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}
+      \PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}\PYGZbs{}usepackage[utf8x]\PYGZob{}inputenc\PYGZcb{}\PYGZsq{}}\PYG{p}{,}
+      \PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}\PYGZbs{}usepackage[T1]\PYGZob{}fontenc\PYGZcb{}\PYGZsq{}}\PYG{p}{,}
+      \PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}font.size\PYGZsq{}}\PYG{p}{:} \PYG{n}{FONT\PYGZus{}SIZE}\PYG{p}{,}
+    \PYG{l+s+s1}{\PYGZsq{}axes.labelsize\PYGZsq{}}\PYG{p}{:} \PYG{n}{FONT\PYGZus{}SIZE}\PYG{p}{,}
+    \PYG{l+s+s1}{\PYGZsq{}axes.titlesize\PYGZsq{}}\PYG{p}{:} \PYG{n}{FONT\PYGZus{}SIZE}\PYG{p}{,}
+    \PYG{l+s+s1}{\PYGZsq{}legend.fontsize\PYGZsq{}}\PYG{p}{:} \PYG{n}{FONT\PYGZus{}SIZE}\PYG{p}{,}
+    \PYG{l+s+s1}{\PYGZsq{}xtick.labelsize\PYGZsq{}}\PYG{p}{:} \PYG{n}{FONT\PYGZus{}SIZE}\PYG{p}{,}
+    \PYG{l+s+s1}{\PYGZsq{}ytick.labelsize\PYGZsq{}}\PYG{p}{:} \PYG{n}{FONT\PYGZus{}SIZE}\PYG{p}{,}
+\PYG{p}{\PYGZcb{}}
+
+
+\PYG{k}{def} \PYG{n+nf}{latexify}\PYG{p}{(}\PYG{n}{params}\PYG{o}{=}\PYG{n}{PARAMS}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{    Set up matplotlib\PYGZsq{}s RC params for LaTeX plotting.}
+
+\PYG{l+s+sd}{    Call this function before plotting the first figure.}
+
+\PYG{l+s+sd}{    Parameters}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    params : Optional[dict]}
+\PYG{l+s+sd}{        A dictionary containing the RC params that need to be updated. Default}
+\PYG{l+s+sd}{        is `PARAMS`. The defaults should be okay for most cases, but `PARAMS`}
+\PYG{l+s+sd}{        can be updated via `.update()` as well.}
+
+\PYG{l+s+sd}{    Example}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    \PYGZgt{}\PYGZgt{}\PYGZgt{} params = PARAMS.copy()}
+\PYG{l+s+sd}{    \PYGZgt{}\PYGZgt{}\PYGZgt{} params.update(\PYGZob{}\PYGZsq{}font.family\PYGZsq{}: \PYGZsq{}sans\PYGZhy{}serif\PYGZsq{}\PYGZcb{})}
+\PYG{l+s+sd}{    \PYGZgt{}\PYGZgt{}\PYGZgt{} latexify(params)}
+
+\PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{rcParams}\PYG{o}{.}\PYG{n}{update}\PYG{p}{(}\PYG{n}{params}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{switch\PYGZus{}backend}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}pgf\PYGZsq{}}\PYG{p}{)}
+
+
+\PYG{k}{def} \PYG{n+nf}{figure\PYGZus{}size}\PYG{p}{(}\PYG{n}{width\PYGZus{}tw}\PYG{o}{=}\PYG{l+m+mf}{0.9}\PYG{p}{,} \PYG{o}{*}\PYG{p}{,} \PYG{n}{ratio}\PYG{o}{=}\PYG{n+nb+bp}{None}\PYG{p}{,} \PYG{n}{height}\PYG{o}{=}\PYG{n+nb+bp}{None}\PYG{p}{,} \PYG{n}{n\PYGZus{}columns}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,}
+                \PYG{n}{max\PYGZus{}height}\PYG{o}{=}\PYG{n}{MAX\PYGZus{}HEIGHT\PYGZus{}INCH}\PYG{p}{,} \PYG{n}{doc\PYGZus{}width\PYGZus{}pt}\PYG{o}{=}\PYG{l+m+mi}{345}\PYG{p}{):}
+    \PYG{l+s+sa}{r}\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{    Get the necessary figure size.}
+
+\PYG{l+s+sd}{    Parameters}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    width\PYGZus{}tw : Optional[float]}
+\PYG{l+s+sd}{        The width of the figure, as a proportion of the text width, between 0}
+\PYG{l+s+sd}{        and 1. Default is 0.9.}
+\PYG{l+s+sd}{    ratio: Optional[float]}
+\PYG{l+s+sd}{        The ratio of the figure height to figure width. If `height` is}
+\PYG{l+s+sd}{        specified, `ratio` is calculated from that and `width`. Default is the}
+\PYG{l+s+sd}{        golden ratio.}
+\PYG{l+s+sd}{    height : Optional[float]}
+\PYG{l+s+sd}{        The height of the figure in inches. If `ratio` is specified, `height`}
+\PYG{l+s+sd}{        is ignored. Default is the golden ratio of the width.}
+\PYG{l+s+sd}{    n\PYGZus{}columns : Optional[int]}
+\PYG{l+s+sd}{        The number of equally sized columns in the document. The figure will}
+\PYG{l+s+sd}{        never be larger than the width of one column.  Default is 1.}
+\PYG{l+s+sd}{    max\PYGZus{}height : Optional[float]}
+\PYG{l+s+sd}{        The maximum height of the figure, in inches. Default is}
+\PYG{l+s+sd}{        `MAX\PYGZus{}HEIGHT\PYGZus{}INCH`.}
+\PYG{l+s+sd}{    doc\PYGZus{}width\PYGZus{}pt : float}
+\PYG{l+s+sd}{        The text width of the document, in points. It can be obtained by typing}
+\PYG{l+s+sd}{        `\PYGZbs{}the\PYGZbs{}textwidth` in the LaTeX document. Default is 345.}
+
+\PYG{l+s+sd}{    Returns}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    width : float}
+\PYG{l+s+sd}{        The figure width, in inches.}
+\PYG{l+s+sd}{    height : float}
+\PYG{l+s+sd}{        The figure height in inches.}
+
+\PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{n}{doc\PYGZus{}width\PYGZus{}in} \PYG{o}{=} \PYG{n}{doc\PYGZus{}width\PYGZus{}pt} \PYG{o}{*} \PYG{n}{INCH\PYGZus{}PER\PYGZus{}POINT}
+    \PYG{n}{width} \PYG{o}{=} \PYG{n}{doc\PYGZus{}width\PYGZus{}in} \PYG{o}{*} \PYG{n}{width\PYGZus{}tw} \PYG{o}{/} \PYG{n}{n\PYGZus{}columns}
+
+    \PYG{k}{if} \PYG{n}{ratio} \PYG{o+ow}{is} \PYG{n+nb+bp}{None}\PYG{p}{:}
+        \PYG{k}{if} \PYG{n}{height} \PYG{o+ow}{is} \PYG{n+nb+bp}{None}\PYG{p}{:}
+            \PYG{n}{ratio} \PYG{o}{=} \PYG{n}{GOLDEN\PYGZus{}RATIO}
+        \PYG{k}{else}\PYG{p}{:}
+            \PYG{n}{ratio} \PYG{o}{=} \PYG{n}{height} \PYG{o}{/} \PYG{n}{width}
+
+    \PYG{n}{height} \PYG{o}{=} \PYG{n}{width} \PYG{o}{*} \PYG{n}{ratio}
+
+    \PYG{k}{if} \PYG{n}{height} \PYG{o}{\PYGZgt{}} \PYG{n}{max\PYGZus{}height}\PYG{p}{:}
+        \PYG{n}{warnings}\PYG{o}{.}\PYG{n}{warn}\PYG{p}{(}\PYG{n}{f}\PYG{l+s+s1}{\PYGZsq{}height too large at \PYGZob{}height\PYGZcb{} inches; \PYGZsq{}}
+                      \PYG{n}{f}\PYG{l+s+s1}{\PYGZsq{}will automatically reduce to \PYGZob{}max\PYGZus{}height\PYGZcb{} inches.\PYGZsq{}}\PYG{p}{)}
+        \PYG{n}{height} \PYG{o}{=} \PYG{n}{max\PYGZus{}height}
+    \PYG{k}{return} \PYG{n}{width}\PYG{p}{,} \PYG{n}{height}
+
+
+\PYG{k}{def} \PYG{n+nf}{save\PYGZus{}figure}\PYG{p}{(}\PYG{n}{filename}\PYG{p}{,} \PYG{n}{directory}\PYG{p}{,} \PYG{n}{exts}\PYG{p}{,} \PYG{n}{mkdir}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,}
+                \PYG{n}{from\PYGZus{}context\PYGZus{}manager}\PYG{o}{=}\PYG{n+nb+bp}{False}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{    Save the figure in each of the extensions.}
+
+\PYG{l+s+sd}{    Parameters}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    filename : str}
+\PYG{l+s+sd}{        The base name of the file, without extensions.}
+\PYG{l+s+sd}{    directory : str}
+\PYG{l+s+sd}{        The name of the directory in which to store the saved files.}
+\PYG{l+s+sd}{    exts : Sequence}
+\PYG{l+s+sd}{        A list of all the extensions to be saved, without the dot.}
+\PYG{l+s+sd}{    mkdir : Optional[bool]}
+\PYG{l+s+sd}{        Whether the directory should be created automatically if it does not}
+\PYG{l+s+sd}{        exist.  Default is True.}
+\PYG{l+s+sd}{    from\PYGZus{}context\PYGZus{}manager : Optional[bool]}
+\PYG{l+s+sd}{        Whether the function is being called from the `figure` context manager.}
+\PYG{l+s+sd}{        This only affects the logging output. Default is False.}
+
+\PYG{l+s+sd}{    Raises}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    FileNotFoundError}
+\PYG{l+s+sd}{        If the target directory does not exist and cannot be created.}
+\PYG{l+s+sd}{    NotADirectoryError}
+\PYG{l+s+sd}{        If the target directory is actually a file.}
+\PYG{l+s+sd}{    PermissionError}
+\PYG{l+s+sd}{        If there is no permission to write to the target directory.}
+\PYG{l+s+sd}{    ValueError}
+\PYG{l+s+sd}{        If the format is not supported.}
+
+\PYG{l+s+sd}{    Notes}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    When integrating with LaTeX, the recommended format is PGF. PNG can be used}
+\PYG{l+s+sd}{    externally, such as in blog posts or as embedded images, while PDF can be}
+\PYG{l+s+sd}{    standalone, or inserted into LaTeX documents. A full list of supported}
+\PYG{l+s+sd}{    formats can be found by calling}
+\PYG{l+s+sd}{    `plt.gcf().canvas.get\PYGZus{}supported\PYGZus{}filetypes\PYGZus{}grouped()`}
+
+\PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{n}{directory} \PYG{o}{=} \PYG{n}{Path}\PYG{p}{(}\PYG{n}{directory}\PYG{p}{)}
+
+    \PYG{k}{if} \PYG{o+ow}{not} \PYG{n}{from\PYGZus{}context\PYGZus{}manager}\PYG{p}{:}
+        \PYG{n}{logger}\PYG{o}{.}\PYG{n}{info}\PYG{p}{(}\PYG{n}{f}\PYG{l+s+s1}{\PYGZsq{}Saving \PYGZob{}filename\PYGZcb{}...  \PYGZsq{}}\PYG{p}{)}
+
+    \PYG{k}{try}\PYG{p}{:}
+        \PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+    \PYG{k}{except} \PYG{n+ne}{ValueError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+        \PYG{n}{warnings}\PYG{o}{.}\PYG{n}{warn}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}No figures to save.\PYGZsq{}}\PYG{p}{)}
+
+    \PYG{k}{if} \PYG{n}{mkdir}\PYG{p}{:}
+        \PYG{k}{if} \PYG{n}{directory}\PYG{o}{.}\PYG{n}{is\PYGZus{}file}\PYG{p}{():}
+            \PYG{n}{msg} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}A file exists at directory location\PYGZsq{}}
+            \PYG{n}{e} \PYG{o}{=} \PYG{n}{NotADirectoryError}\PYG{p}{(}\PYG{n}{errno}\PYG{o}{.}\PYG{n}{ENOTDIR}\PYG{p}{,} \PYG{n}{msg}\PYG{p}{,} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{directory}\PYG{p}{))}
+            \PYG{n}{logger}\PYG{o}{.}\PYG{n}{error}\PYG{p}{(}\PYG{n}{f}\PYG{l+s+s1}{\PYGZsq{}Directory set to file: \PYGZob{}str(directory)\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+            \PYG{k}{raise} \PYG{n}{e}
+        \PYG{k}{try}\PYG{p}{:}
+            \PYG{n}{directory}\PYG{o}{.}\PYG{n}{mkdir}\PYG{p}{(}\PYG{n}{parents}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{exist\PYGZus{}ok}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+        \PYG{k}{except} \PYG{n}{PermissionError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+            \PYG{n}{logger}\PYG{o}{.}\PYG{n}{error}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Permission denied for directory: \PYGZsq{}}
+                         \PYG{n}{f}\PYG{l+s+s1}{\PYGZsq{}\PYGZob{}str(directory)!r\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+            \PYG{k}{raise}
+
+    \PYG{k}{for} \PYG{n}{ext} \PYG{o+ow}{in} \PYG{n}{exts}\PYG{p}{:}
+        \PYG{k}{if} \PYG{n}{from\PYGZus{}context\PYGZus{}manager}\PYG{p}{:}
+            \PYG{n}{logger}\PYG{o}{.}\PYG{n}{info}\PYG{p}{(}\PYG{n}{f}\PYG{l+s+s1}{\PYGZsq{}  Saving \PYGZob{}ext\PYGZcb{}...\PYGZsq{}}\PYG{p}{)}
+        \PYG{n}{full\PYGZus{}filename} \PYG{o}{=} \PYG{n}{f}\PYG{l+s+s1}{\PYGZsq{}\PYGZob{}filename\PYGZcb{}.\PYGZob{}ext\PYGZcb{}\PYGZsq{}}
+        \PYG{k}{try}\PYG{p}{:}
+            \PYG{n}{plt}\PYG{o}{.}\PYG{n}{savefig}\PYG{p}{(}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{directory}\PYG{o}{/}\PYG{n}{full\PYGZus{}filename}\PYG{p}{))}
+        \PYG{k}{except} \PYG{n}{FileNotFoundError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+            \PYG{n}{logger}\PYG{o}{.}\PYG{n}{error}\PYG{p}{(}\PYG{n}{f}\PYG{l+s+s1}{\PYGZsq{}Directory does not exist: \PYGZob{}str(directory)!r\PYGZcb{}.\PYGZsq{}}
+                         \PYG{l+s+s1}{\PYGZsq{}Please create it or set mkdir to True.\PYGZsq{}}\PYG{p}{)}
+            \PYG{k}{raise}
+        \PYG{k}{except} \PYG{n}{PermissionError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+            \PYG{n}{logger}\PYG{o}{.}\PYG{n}{error}\PYG{p}{(}\PYG{n}{f}\PYG{l+s+s1}{\PYGZsq{}Permission denied for file (\PYGZob{}full\PYGZus{}filename!r\PYGZcb{}) in\PYGZsq{}}
+                         \PYG{n}{f}\PYG{l+s+s1}{\PYGZsq{}directory: \PYGZob{}str(directory)!r\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+            \PYG{k}{raise}
+        \PYG{k}{except} \PYG{n+ne}{ValueError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+            \PYG{n}{logger}\PYG{o}{.}\PYG{n}{error}\PYG{p}{(}\PYG{n}{f}\PYG{l+s+s1}{\PYGZsq{}Unsupported file format: \PYGZob{}ext\PYGZcb{}\PYGZsq{}}\PYG{p}{)}
+            \PYG{k}{raise}
+
+
+\PYG{n+nd}{@contextmanager}
+\PYG{k}{def} \PYG{n+nf}{figure}\PYG{p}{(}\PYG{n}{filename}\PYG{p}{,} \PYG{o}{*}\PYG{p}{,} \PYG{n}{directory}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}img\PYGZsq{}}\PYG{p}{,} \PYG{n}{exts}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}pgf\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}png\PYGZsq{}}\PYG{p}{],} \PYG{n}{size}\PYG{o}{=}\PYG{n+nb+bp}{None}\PYG{p}{,}
+           \PYG{n}{mkdir}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{    The primary interface for creating figures.}
+
+\PYG{l+s+sd}{    Any matplotlib\PYGZhy{}derived code in the scope of this context manager is valid,}
+\PYG{l+s+sd}{    and should output as expected.}
+
+\PYG{l+s+sd}{    Parameters}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    filename : str}
+\PYG{l+s+sd}{        The base name of the file, without extensions.}
+\PYG{l+s+sd}{    directory : Optional[str]}
+\PYG{l+s+sd}{        The name of the directory in which to store the saved files. Default is}
+\PYG{l+s+sd}{        \PYGZsq{}img\PYGZsq{}.}
+\PYG{l+s+sd}{    exts : Sequence}
+\PYG{l+s+sd}{        A list of all the extensions to be saved, without the dot. Default is}
+\PYG{l+s+sd}{        [\PYGZsq{}pgf\PYGZsq{}, \PYGZsq{}png\PYGZsq{}].}
+\PYG{l+s+sd}{    size : Optional[Sequence[float, float]]}
+\PYG{l+s+sd}{        The width and height of the figure, in inches. Default is}
+\PYG{l+s+sd}{        `figure\PYGZus{}size()`.}
+\PYG{l+s+sd}{    mkdir : Optional[bool]}
+\PYG{l+s+sd}{        Whether the directory should be created automatically if it does not}
+\PYG{l+s+sd}{        exist.  Default is True.}
+
+\PYG{l+s+sd}{    Raises}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    FileNotFoundError}
+\PYG{l+s+sd}{        If the target directory does not exist and cannot be created.}
+\PYG{l+s+sd}{    NotADirectoryError}
+\PYG{l+s+sd}{        If the target directory is actually a file.}
+\PYG{l+s+sd}{    PermissionError}
+\PYG{l+s+sd}{        If there is no permission to write to the target directory.}
+\PYG{l+s+sd}{    ValueError}
+\PYG{l+s+sd}{        If the format is not supported.}
+
+\PYG{l+s+sd}{    Notes}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    When integrating with LaTeX, the recommended format is PGF. PNG can be used}
+\PYG{l+s+sd}{    externally, such as in blog posts or as embedded images, while PDF can be}
+\PYG{l+s+sd}{    standalone, or inserted into LaTeX documents. A full list of supported}
+\PYG{l+s+sd}{    formats can be found by calling}
+\PYG{l+s+sd}{    `plt.gcf().canvas.get\PYGZus{}supported\PYGZus{}filetypes\PYGZus{}grouped()`}
+
+\PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{k}{if} \PYG{n}{size} \PYG{o+ow}{is} \PYG{n+nb+bp}{None}\PYG{p}{:}
+        \PYG{n}{size} \PYG{o}{=} \PYG{n}{figure\PYGZus{}size}\PYG{p}{()}
+    \PYG{n}{logger}\PYG{o}{.}\PYG{n}{info}\PYG{p}{(}\PYG{n}{f}\PYG{l+s+s1}{\PYGZsq{}\PYGZob{}filename\PYGZcb{}:\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{logger}\PYG{o}{.}\PYG{n}{info}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}  Plotting...\PYGZsq{}}\PYG{p}{)}
+    \PYG{k}{yield}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{gcf}\PYG{p}{()}\PYG{o}{.}\PYG{n}{set\PYGZus{}size\PYGZus{}inches}\PYG{p}{(}\PYG{o}{*}\PYG{n}{size}\PYG{p}{)}
+    \PYG{n}{save\PYGZus{}figure}\PYG{p}{(}\PYG{n}{filename}\PYG{o}{=}\PYG{n}{filename}\PYG{p}{,} \PYG{n}{directory}\PYG{o}{=}\PYG{n}{directory}\PYG{p}{,} \PYG{n}{exts}\PYG{o}{=}\PYG{n}{exts}\PYG{p}{,} \PYG{n}{mkdir}\PYG{o}{=}\PYG{n}{mkdir}\PYG{p}{,}
+                \PYG{n}{from\PYGZus{}context\PYGZus{}manager}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{close}\PYG{p}{()}
+\end{Verbatim}

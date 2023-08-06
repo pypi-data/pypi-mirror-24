@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}documentclass}\PYG{n+nb}{\PYGZob{}}article\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}pgf\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}figure\PYG{n+nb}{\PYGZcb{}}[h]
+    \PYG{k}{\PYGZbs{}centering}
+    \PYG{k}{\PYGZbs{}input}\PYG{n+nb}{\PYGZob{}}img/filename.pgf\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}caption}\PYG{n+na}{[LOF caption]}\PYG{n+nb}{\PYGZob{}}Regular caption.\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}label}\PYG{n+nb}{\PYGZob{}}fig:pgf\PYG{n+nb}{\PYGZus{}}example\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}figure\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

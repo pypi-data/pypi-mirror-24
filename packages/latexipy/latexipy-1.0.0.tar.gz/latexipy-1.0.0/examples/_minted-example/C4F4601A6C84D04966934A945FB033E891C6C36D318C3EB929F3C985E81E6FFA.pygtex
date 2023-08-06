@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}import\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}import}\PYG{n+nb}{\PYGZob{}}\PYGZlt{}path to file\PYGZgt{}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYGZlt{}filename\PYGZgt{}.pgf\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

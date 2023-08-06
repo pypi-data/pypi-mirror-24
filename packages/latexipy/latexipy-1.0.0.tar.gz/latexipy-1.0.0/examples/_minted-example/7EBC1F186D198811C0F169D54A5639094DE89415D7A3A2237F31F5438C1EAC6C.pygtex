@@ -1,0 +1,118 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/usr/bin/env python}
+\PYG{k+kn}{from} \PYG{n+nn}{functools} \PYG{k+kn}{import} \PYG{n}{partial}
+\PYG{k+kn}{import} \PYG{n+nn}{logging}
+\PYG{k+kn}{from} \PYG{n+nn}{pathlib} \PYG{k+kn}{import} \PYG{n}{Path}
+
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k+kn}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k+kn}{as} \PYG{n+nn}{np}
+
+\PYG{k+kn}{import} \PYG{n+nn}{latexipy} \PYG{k+kn}{as} \PYG{n+nn}{lp}
+
+
+\PYG{n}{logging}\PYG{o}{.}\PYG{n}{basicConfig}\PYG{p}{(}\PYG{n}{level}\PYG{o}{=}\PYG{n}{logging}\PYG{o}{.}\PYG{n}{INFO}\PYG{p}{)}
+
+\PYG{n}{DIRECTORY} \PYG{o}{=} \PYG{n}{Path}\PYG{p}{(}\PYG{n+nv+vm}{\PYGZus{}\PYGZus{}file\PYGZus{}\PYGZus{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{parent}\PYG{o}{/}\PYG{l+s+s1}{\PYGZsq{}img\PYGZsq{}}
+
+\PYG{n}{\PYGZus{}x} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{p}{)}
+
+
+\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}sin}\PYG{p}{(}\PYG{n}{x}\PYG{o}{=}\PYG{n}{\PYGZus{}x}\PYG{p}{):}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{p}{))}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Sine\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}\PYGZdl{}\PYGZbs{}theta\PYGZdl{}\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Value\PYGZsq{}}\PYG{p}{)}
+
+
+\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}cos}\PYG{p}{(}\PYG{n}{x}\PYG{o}{=}\PYG{n}{\PYGZus{}x}\PYG{p}{):}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{x}\PYG{p}{),} \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}C1\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Cosine\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}\PYGZdl{}\PYGZbs{}theta\PYGZdl{}\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Value\PYGZsq{}}\PYG{p}{)}
+
+
+\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{(}\PYG{n}{x}\PYG{o}{=}\PYG{n}{\PYGZus{}x}\PYG{p}{):}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{p}{),} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}sine\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{x}\PYG{p}{),} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}cosine\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Sine and cosine\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}\PYGZdl{}\PYGZbs{}theta\PYGZdl{}\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Value\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{()}
+
+
+\PYG{n}{PLOT\PYGZus{}TYPES} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}sin\PYGZsq{}}\PYG{p}{:} \PYG{n}{plot\PYGZus{}sin}\PYG{p}{,}
+    \PYG{l+s+s1}{\PYGZsq{}cos\PYGZsq{}}\PYG{p}{:} \PYG{n}{plot\PYGZus{}cos}\PYG{p}{,}
+    \PYG{l+s+s1}{\PYGZsq{}sincos\PYGZsq{}}\PYG{p}{:} \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{,}
+\PYG{p}{\PYGZcb{}}
+
+
+\PYG{k}{def} \PYG{n+nf}{generate\PYGZus{}figures}\PYG{p}{(}\PYG{n}{suffix}\PYG{p}{,} \PYG{n}{figure}\PYG{o}{=}\PYG{n}{lp}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{,} \PYG{n}{plot\PYGZus{}types}\PYG{o}{=}\PYG{n}{PLOT\PYGZus{}TYPES}\PYG{p}{):}
+    \PYG{k}{for} \PYG{n}{plot\PYGZus{}name}\PYG{p}{,} \PYG{n}{plot\PYGZus{}function} \PYG{o+ow}{in} \PYG{n}{plot\PYGZus{}types}\PYG{o}{.}\PYG{n}{items}\PYG{p}{():}
+        \PYG{k}{with} \PYG{n}{figure}\PYG{p}{(}\PYG{n}{plot\PYGZus{}name} \PYG{o}{+} \PYG{n}{suffix}\PYG{p}{):}
+            \PYG{n}{plot\PYGZus{}function}\PYG{p}{()}
+
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZsq{}}\PYG{p}{:}
+    \PYG{c+c1}{\PYGZsh{} If you are repeating arguments, you might want to register a partial.}
+    \PYG{n}{figure} \PYG{o}{=} \PYG{n}{partial}\PYG{p}{(}\PYG{n}{lp}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{,} \PYG{n}{directory}\PYG{o}{=}\PYG{n}{DIRECTORY}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} You can generate figures without calling lp.latexify().}
+    \PYG{n}{generate\PYGZus{}figures}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZus{}no\PYGZus{}latex\PYGZsq{}}\PYG{p}{,} \PYG{n}{figure}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} latexify chooses values that go well with publications.}
+    \PYG{n}{lp}\PYG{o}{.}\PYG{n}{latexify}\PYG{p}{()}
+    \PYG{n}{generate\PYGZus{}figures}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZus{}with\PYGZus{}latex\PYGZsq{}}\PYG{p}{,} \PYG{n}{figure}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} You can use the partial function just as you would the original.}
+    \PYG{k}{with} \PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}sincos\PYGZus{}defaults\PYGZsq{}}\PYG{p}{):}
+        \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{()}
+
+    \PYG{c+c1}{\PYGZsh{} You can change the size. 0.45\PYGZbs{}textwidth is useful when using two columns.}
+    \PYG{k}{with} \PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}sincos\PYGZus{}small\PYGZsq{}}\PYG{p}{,} \PYG{n}{size}\PYG{o}{=}\PYG{n}{lp}\PYG{o}{.}\PYG{n}{figure\PYGZus{}size}\PYG{p}{(}\PYG{l+m+mf}{0.45}\PYG{p}{)):}
+        \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{()}
+
+    \PYG{c+c1}{\PYGZsh{} A ratio of 1 is great for squares.}
+    \PYG{k}{with} \PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}sincos\PYGZus{}square\PYGZsq{}}\PYG{p}{,} \PYG{n}{size}\PYG{o}{=}\PYG{n}{lp}\PYG{o}{.}\PYG{n}{figure\PYGZus{}size}\PYG{p}{(}\PYG{n}{ratio}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)):}
+        \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{()}
+
+    \PYG{c+c1}{\PYGZsh{} And we can have a high figure if, for instance, stacking subplots.}
+    \PYG{k}{with} \PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}sincos\PYGZus{}tall\PYGZsq{}}\PYG{p}{,} \PYG{n}{size}\PYG{o}{=}\PYG{n}{lp}\PYG{o}{.}\PYG{n}{figure\PYGZus{}size}\PYG{p}{(}\PYG{l+m+mf}{0.6}\PYG{p}{,} \PYG{n}{ratio}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)):}
+        \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{()}
+
+    \PYG{c+c1}{\PYGZsh{} It is equivalent to the original function with the right arguments.}
+    \PYG{k}{with} \PYG{n}{lp}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}sincos\PYGZus{}defaults\PYGZus{}no\PYGZus{}partial\PYGZsq{}}\PYG{p}{,} \PYG{n}{directory}\PYG{o}{=}\PYG{n}{DIRECTORY}\PYG{p}{):}
+        \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{()}
+
+    \PYG{c+c1}{\PYGZsh{} You can temporarily change parameters. To increase font size:}
+\PYG{n}{font\PYGZus{}size} \PYG{o}{=} \PYG{l+m+mi}{10}
+\PYG{k}{with} \PYG{n}{lp}\PYG{o}{.}\PYG{n}{temp\PYGZus{}params}\PYG{p}{(}\PYG{n}{font\PYGZus{}size}\PYG{o}{=}\PYG{n}{font\PYGZus{}size}\PYG{p}{):}
+    \PYG{k}{with} \PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}sincos\PYGZus{}big\PYGZus{}font\PYGZus{}temp\PYGZsq{}}\PYG{p}{):}
+        \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{()}
+
+\PYG{c+c1}{\PYGZsh{} You can permanently change them too.}
+\PYG{n}{font\PYGZus{}size} \PYG{o}{=} \PYG{l+m+mi}{10}
+\PYG{n}{params} \PYG{o}{=} \PYG{n}{lp}\PYG{o}{.}\PYG{n}{PARAMS}\PYG{o}{.}\PYG{n}{copy}\PYG{p}{()}
+\PYG{n}{params}\PYG{o}{.}\PYG{n}{update}\PYG{p}{(\PYGZob{}}\PYG{n}{param}\PYG{p}{:} \PYG{n}{font\PYGZus{}size}
+               \PYG{k}{for} \PYG{n}{param} \PYG{o+ow}{in} \PYG{n}{params}
+               \PYG{k}{if} \PYG{l+s+s1}{\PYGZsq{}size\PYGZsq{}} \PYG{o+ow}{in} \PYG{n}{param}\PYG{p}{\PYGZcb{})}
+\PYG{n}{lp}\PYG{o}{.}\PYG{n}{latexify}\PYG{p}{(}\PYG{n}{params}\PYG{p}{)}
+
+\PYG{k}{with} \PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}sincos\PYGZus{}big\PYGZus{}font\PYGZus{}permanent\PYGZsq{}}\PYG{p}{):}
+    \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{()}
+
+\PYG{c+c1}{\PYGZsh{} Or revert at any time.}
+\PYG{n}{lp}\PYG{o}{.}\PYG{n}{revert}\PYG{p}{()}
+\PYG{k}{with} \PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}sincos\PYGZus{}after\PYGZus{}revert\PYGZsq{}}\PYG{p}{):}
+    \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{()}
+
+\PYG{n}{lp}\PYG{o}{.}\PYG{n}{latexify}\PYG{p}{()}
+
+\PYG{c+c1}{\PYGZsh{} Extra\PYGZhy{}big label and legend.}
+\PYG{k}{with} \PYG{n}{lp}\PYG{o}{.}\PYG{n}{temp\PYGZus{}params}\PYG{p}{(}\PYG{n}{font\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{params\PYGZus{}dict}\PYG{o}{=}\PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}axes.labelsize\PYGZsq{}}\PYG{p}{:} \PYG{l+m+mi}{12}\PYG{p}{,}
+    \PYG{l+s+s1}{\PYGZsq{}axes.titlesize\PYGZsq{}}\PYG{p}{:} \PYG{l+m+mi}{12}\PYG{p}{,}
+    \PYG{p}{\PYGZcb{}):}
+    \PYG{k}{with} \PYG{n}{lp}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}sincos\PYGZus{}big\PYGZus{}label\PYGZus{}title\PYGZsq{}}\PYG{p}{):}
+        \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{()}
+\end{Verbatim}

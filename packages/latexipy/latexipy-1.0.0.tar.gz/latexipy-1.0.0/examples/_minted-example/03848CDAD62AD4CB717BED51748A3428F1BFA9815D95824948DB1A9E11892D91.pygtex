@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nd}{@contextmanager}
+\PYG{k}{def} \PYG{n+nf}{figure}\PYG{p}{(}\PYG{n}{filename}\PYG{p}{,} \PYG{o}{*}\PYG{p}{,} \PYG{n}{directory}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}img\PYGZsq{}}\PYG{p}{,} \PYG{n}{exts}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}pgf\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}png\PYGZsq{}}\PYG{p}{],}
+           \PYG{n}{size}\PYG{o}{=}\PYG{n+nb+bp}{None}\PYG{p}{,} \PYG{n}{mkdir}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{):}
+\end{Verbatim}
