@@ -1,0 +1,16 @@
+zappa_django_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappa_django_utils/admin.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappa_django_utils/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappa_django_utils/urls.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappa_django_utils/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappa_django_utils/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappa_django_utils/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappa_django_utils/management/commands/create_admin_user.py,sha256=1aBJIP_78YvOeQ7hDjIxq7iWqtQSyyPWp40GjDa9APg,735
+zappa_django_utils/management/commands/create_pg_db.py,sha256=Sd1irUnMhLJCJ5NNoad5i0n47trkG-hYxbxZ6xhdsfY,964
+zappa_django_utils/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappa_django_utils-0.0.3.dist-info/DESCRIPTION.rst,sha256=J0ZnkHGrkhfrcTl9fxmAGjBUNVOMo0GwiAz4qyq3ePE,1052
+zappa_django_utils-0.0.3.dist-info/METADATA,sha256=k5i-lM_Y-v9_d3STwwjwBP6rr2BGynte8hwkgbvBMDw,1731
+zappa_django_utils-0.0.3.dist-info/RECORD,,
+zappa_django_utils-0.0.3.dist-info/WHEEL,sha256=u6Fy2U76CDFJ6q2P27rqtBo3AN6qpylFiMaYzNr2lJg,95
+zappa_django_utils-0.0.3.dist-info/metadata.json,sha256=Zyw2XQND49j0P8C6lLzpglTK7sqhmJVfi4LurcrPbPw,886
+zappa_django_utils-0.0.3.dist-info/top_level.txt,sha256=dOxzb6tSdl-ecsfJjybhWV6VRTlhIeZV1SIS3BQ17Io,19
