@@ -1,0 +1,14 @@
+setup.py
+dictionary/__init__.py
+dictionary/match.py
+dictionary/navigate.py
+dictionary/reshape.py
+dictionary/serialize.py
+dictionary/tests.py
+dictionary/transform.py
+dictionary/types.py
+dictionary/utils.py
+dictionary_helpers.egg-info/PKG-INFO
+dictionary_helpers.egg-info/SOURCES.txt
+dictionary_helpers.egg-info/dependency_links.txt
+dictionary_helpers.egg-info/top_level.txt

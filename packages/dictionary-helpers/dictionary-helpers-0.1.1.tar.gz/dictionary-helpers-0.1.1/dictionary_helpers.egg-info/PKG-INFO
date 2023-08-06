@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: dictionary-helpers
+Version: 0.1.1
+Summary: Utility functions for working with dictionaries.
+Home-page: UNKNOWN
+Author: Stijn Debrouwere
+Author-email: stijn@debrouwere.org
+License: ISC
+Download-URL: http://www.github.com/debrouwere/python-dictionary/tarball/master
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
