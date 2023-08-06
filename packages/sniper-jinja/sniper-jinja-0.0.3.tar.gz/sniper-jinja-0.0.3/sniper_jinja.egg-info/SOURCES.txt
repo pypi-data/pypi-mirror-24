@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+pip-req.d/install.txt
+pip-req.d/test.txt
+sniper_jinja/__init__.py
+sniper_jinja/controllers.py
+sniper_jinja/template.py
+sniper_jinja.egg-info/PKG-INFO
+sniper_jinja.egg-info/SOURCES.txt
+sniper_jinja.egg-info/dependency_links.txt
+sniper_jinja.egg-info/requires.txt
+sniper_jinja.egg-info/top_level.txt
