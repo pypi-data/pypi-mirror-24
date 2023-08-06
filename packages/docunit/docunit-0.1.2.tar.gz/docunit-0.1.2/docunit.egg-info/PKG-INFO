@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: docunit
+Version: 0.1.2
+Summary: Docunit - A package to conveniently hook doctests and unit tests together.
+Home-page: http://www.joeflack.net/
+Author: Joe Flack
+Author-email: joeflack4@gmail.com
+License: MIT
+Download-URL: https://github.com/joeflack4/docunit/archive/0.1.2.tar.gz
+Description-Content-Type: UNKNOWN
+Description: Docunit - A package to conveniently hook doctests and unit tests together.
+        
+        Authors:
+            - Joe Flack, joeflack4@gmail.com
+        
+Keywords: joeflack4,docunit,doctest,unittest
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Environment :: Other Environment
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Plugins

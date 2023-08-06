@@ -1,0 +1,2 @@
+"""Init."""
+from .error import *

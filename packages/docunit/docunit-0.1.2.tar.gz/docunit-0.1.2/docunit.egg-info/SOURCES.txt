@@ -1,0 +1,10 @@
+README.md
+setup.py
+docunit/__init__.py
+docunit.egg-info/PKG-INFO
+docunit.egg-info/SOURCES.txt
+docunit.egg-info/dependency_links.txt
+docunit.egg-info/not-zip-safe
+docunit.egg-info/top_level.txt
+docunit/definitions/__init__.py
+docunit/definitions/error.py
