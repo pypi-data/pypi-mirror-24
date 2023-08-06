@@ -1,0 +1,7 @@
+future
+
+[hdf]
+h5py
+
+[test]
+pytest
