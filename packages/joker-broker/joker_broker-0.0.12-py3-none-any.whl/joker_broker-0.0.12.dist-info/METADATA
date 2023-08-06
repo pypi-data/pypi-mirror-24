@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: joker-broker
+Version: 0.0.12
+Summary: access resources conveniently
+Home-page: https://github.com/frozflame/joker-broker
+Author: frozflame
+Author-email: frozflame@outlook.com
+License: GNU General Public License (GPL)
+Keywords: resource database access joker
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: fakeredis
+Requires-Dist: joker-cast (>=0.0.3)
+Requires-Dist: psycopg2
+Requires-Dist: pyyaml
+Requires-Dist: six
+Requires-Dist: sqlalchemy
+
+UNKNOWN
+
+
