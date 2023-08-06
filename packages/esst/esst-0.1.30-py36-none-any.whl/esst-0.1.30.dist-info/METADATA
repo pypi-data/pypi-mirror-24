@@ -1,0 +1,27 @@
+Metadata-Version: 2.0
+Name: esst
+Version: 0.1.30
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: argh
+Requires-Dist: certifi
+Requires-Dist: click
+Requires-Dist: discord.py
+Requires-Dist: emiz
+Requires-Dist: everett
+Requires-Dist: github3.py (==1.0.0a4)
+Requires-Dist: humanize
+Requires-Dist: jinja2
+Requires-Dist: pefile
+Requires-Dist: psutil
+Requires-Dist: raven
+Requires-Dist: requests
+
+UNKNOWN
+
+
