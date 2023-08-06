@@ -1,0 +1,9 @@
+requests_mauth/__init__.py,sha256=o7XPEM7jWA6fxWgpRwbstKnbkNEOLEEjE-IvAdGtPXE,97
+requests_mauth/client.py,sha256=y8QTYK3e_WM7nYcOwl6j5_xhzIIBekHEWD1xrAKGbuU,2704
+requests_mauth/rsa_sign.py,sha256=6OnKgGpw8a6rCRSGMPcgvv82HuK65c-fRPO4u0ESOHI,2670
+requests_mauth-1.0.2.dist-info/DESCRIPTION.rst,sha256=fLBPjFACO9XP1U0NFZNmP6EDSp730NqDlDw_3Tvr4Ug,3527
+requests_mauth-1.0.2.dist-info/METADATA,sha256=tNuVtjeslkKCPjflpIMA43snoFH-txNAVUWSoMpUUQ8,4481
+requests_mauth-1.0.2.dist-info/RECORD,,
+requests_mauth-1.0.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+requests_mauth-1.0.2.dist-info/metadata.json,sha256=XWhRCJrPU8snZt_AUGVaU3MtaK7B6bjLqOpo0Nt36Zk,1064
+requests_mauth-1.0.2.dist-info/top_level.txt,sha256=9_wCsdcgQ13HxNx2IqfzqgRRwS4mg4yUmS6_HY_6Hnk,15
