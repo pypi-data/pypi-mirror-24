@@ -1,0 +1,13 @@
+README.rst
+setup.py
+reversegear/__init__.py
+reversegear/__main__.py
+reversegear/ids.py
+reversegear/reversegear.py
+reversegear/uds.py
+reversegear.egg-info/PKG-INFO
+reversegear.egg-info/SOURCES.txt
+reversegear.egg-info/dependency_links.txt
+reversegear.egg-info/entry_points.txt
+reversegear.egg-info/requires.txt
+reversegear.egg-info/top_level.txt

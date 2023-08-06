@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: reversegear
+Version: 0.1.0
+Summary: Offline reverse engineering tools for automotive networks.
+Home-page: UNKNOWN
+Author: Eric Evenchick
+Author-email: eric@evenchick.com
+License: UNKNOWN
+Download-URL: https://github.com/linklayer/reversegear/archive/0.1.0.tar.gz
+Description: See: https://github.com/linklayer/reversegear/blob/master/README.rst
+Keywords: networks,automotive,reverse engineering
+Platform: UNKNOWN
