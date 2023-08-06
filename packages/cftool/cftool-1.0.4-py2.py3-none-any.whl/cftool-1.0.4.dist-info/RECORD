@@ -1,0 +1,14 @@
+cftool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cftool/cftool.py,sha256=Lzfy3TqIFVvd6wPzqW_aRdzi5PyhSoTFgIh_T25w9_8,5872
+cftool/compile.py,sha256=FP5_mZOLWEG7cxhdGXB30mtoDAZl3JnPiepliqDY4yo,2471
+cftool/html.py,sha256=EnqO-KekZnXl6bOjQoszYMAQMJAWV2vhn4lEbBNyMw8,5090
+cftool/prefs.json,sha256=ET1O0LW1NbeSv5crpM20phF9e2av8XwSZEzqkO-ZG1E,907
+cftool/run.py,sha256=FZtPCuFL9Zj0k20pd2pQNSWNpBg8r3w3X92WmHkN-ss,2524
+cftool/save.py,sha256=LX9R_46PSmwmh86fHLtZ138kNDO7r2xR-XN_6XxDpVU,948
+cftool-1.0.4.dist-info/DESCRIPTION.rst,sha256=kW7VLAlS9opgiKk9rwtPImGD7Wdy_msIiOKtxBth2iQ,1188
+cftool-1.0.4.dist-info/METADATA,sha256=DbA7lwvIchQ0Clfy3DvsX9mnpPcA9hnndwPODplKg3Q,1573
+cftool-1.0.4.dist-info/RECORD,,
+cftool-1.0.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+cftool-1.0.4.dist-info/entry_points.txt,sha256=wTBmBS5Ko7EhADnztUyYjAqdaGREi1zW7F0IOJO0eI0,47
+cftool-1.0.4.dist-info/metadata.json,sha256=_XHc-Z5VJIe07l08AgOVBayOF_NFvOq4fzqpN2kRNHM,759
+cftool-1.0.4.dist-info/top_level.txt,sha256=Dc6k4XLHD3RfJGTWTvgsb3DH254ghQEP0b9Amf-lnVs,7
