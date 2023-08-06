@@ -1,0 +1,4 @@
+include *.md
+recursive-include Recopytex *.css *.js *.html
+include run.py
+include config.py
