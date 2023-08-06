@@ -1,0 +1,10 @@
+BiobankRead-2.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+BiobankRead-2.2.dist-info/METADATA,sha256=mYq2iHbPMvwJ1t0QskklzsTP5kOWpUxzWWn3v_LHlow,330
+BiobankRead-2.2.dist-info/RECORD,,
+BiobankRead-2.2.dist-info/WHEEL,sha256=90z-L1FjHEv_g8pMPaPbaXuhBIvSlvYObRaa122x8ag,97
+BiobankRead-2.2.dist-info/metadata.json,sha256=E-irSSwO1L-w8gDq0JxGkJb_Lr4gMEuW33AKt1nz1Vs,430
+BiobankRead-2.2.dist-info/top_level.txt,sha256=UMDO10WOYTkf-JegiOnM3Lsaq-8rvN8QHluF1z-oaCw,13
+BiobankRead2/BiobankRead2.py,sha256=qGhpVDNoSjqMrYZlC7dqIXpbrDNF8vlrMpCZC1peqLk,28841
+BiobankRead2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BiobankRead2/data/ICD10_UKB.tsv,sha256=D5V9q9GqFLmtSec5qJfpr6hyONc1xEMRai43zIAznQQ,1259054
+BiobankRead2/data/ICD9_codes.csv,sha256=JYy5EF0GT2S85RVFvHKecfen-CyiBPcajEBc9vZT5sQ,1266028
