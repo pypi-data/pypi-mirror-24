@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: noaaport
+Version: 1.1.0
+Summary: NOAAPORT and EMWIN weather data feed library
+Home-page: https://github.com/JeremyGrosser/python-emwin
+Author: Jeremy Grosser
+Author-email: jeremy@synack.me
+License: BSD-2-Clause
+Description: UNKNOWN
+Platform: UNKNOWN

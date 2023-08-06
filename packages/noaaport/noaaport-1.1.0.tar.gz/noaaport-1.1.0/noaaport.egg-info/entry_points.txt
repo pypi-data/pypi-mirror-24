@@ -1,0 +1,3 @@
+[console_scripts]
+noaaport-pipe = noaaport.pipe:main
+
