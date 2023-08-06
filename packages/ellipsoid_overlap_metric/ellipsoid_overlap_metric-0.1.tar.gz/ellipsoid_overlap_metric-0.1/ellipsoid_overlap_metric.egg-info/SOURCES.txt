@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+ellipsoid_overlap_metric/Scorer.py
+ellipsoid_overlap_metric/__init__.py
+ellipsoid_overlap_metric.egg-info/PKG-INFO
+ellipsoid_overlap_metric.egg-info/SOURCES.txt
+ellipsoid_overlap_metric.egg-info/dependency_links.txt
+ellipsoid_overlap_metric.egg-info/not-zip-safe
+ellipsoid_overlap_metric.egg-info/top_level.txt
