@@ -1,0 +1,11 @@
+README.rst
+setup.py
+tapioca_asana/__init__.py
+tapioca_asana/resource_mapping.py
+tapioca_asana/tapioca_asana.py
+tapioca_asana.egg-info/PKG-INFO
+tapioca_asana.egg-info/SOURCES.txt
+tapioca_asana.egg-info/dependency_links.txt
+tapioca_asana.egg-info/not-zip-safe
+tapioca_asana.egg-info/requires.txt
+tapioca_asana.egg-info/top_level.txt
