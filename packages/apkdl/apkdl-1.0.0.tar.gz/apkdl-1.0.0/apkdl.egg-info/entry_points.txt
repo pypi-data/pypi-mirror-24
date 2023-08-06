@@ -1,0 +1,3 @@
+[console_scripts]
+apkdl = apkdl.__main__:main
+

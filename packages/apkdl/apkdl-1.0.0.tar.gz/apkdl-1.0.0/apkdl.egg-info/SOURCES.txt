@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+apkdl/__init__.py
+apkdl/__main__.py
+apkdl/dl.py
+apkdl.egg-info/PKG-INFO
+apkdl.egg-info/SOURCES.txt
+apkdl.egg-info/dependency_links.txt
+apkdl.egg-info/entry_points.txt
+apkdl.egg-info/requires.txt
+apkdl.egg-info/top_level.txt
