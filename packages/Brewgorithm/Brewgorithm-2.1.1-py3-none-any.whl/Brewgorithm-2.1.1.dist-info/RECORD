@@ -1,0 +1,12 @@
+Brewgorithm-2.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+Brewgorithm-2.1.1.dist-info/METADATA,sha256=8u4kxYRLnv310DhGVelIdGWKK-iDac9dao1R7drLm6Y,843
+Brewgorithm-2.1.1.dist-info/RECORD,,
+Brewgorithm-2.1.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+Brewgorithm-2.1.1.dist-info/metadata.json,sha256=KsKI4Sxa8XCphA2GIxSWoelciqsLtzwcJi45erjvZwM,968
+Brewgorithm-2.1.1.dist-info/top_level.txt,sha256=KIGIIQq7xKE7DcTdLpntHun3r-9C-YaTdnoernIeKGU,12
+brewgorithm/__init__.py,sha256=3inHPreHF0y4Q_y_dzsq3yhlJDJ4KEl8t7HnOH8g5BY,77
+brewgorithm/language/__init__.py,sha256=nmzcNAzdMP-LGTM7MitTKo6Sea_VeWURZSEsdFgplYU,156
+brewgorithm/language/cleaning.py,sha256=XXWn5pU-VDeiHrqF_mP0AEHmffCQhglV0y4Tlu_Q8ZY,605
+brewgorithm/language/config.py,sha256=ZmSvWIW04vUIwDrnXHylRFi1ovit-MQf8o7K7y7V9l0,302
+brewgorithm/language/parsing.py,sha256=XPs-A7fAo2TOvvlD4zf4QcVwSNO-EOrCU5zGfD5FC3c,944
+brewgorithm/language/sense_emb.py,sha256=apwStERPDpW7gmQHJZNiDRJVl1wTooqM4N03HMs5ayo,2915
