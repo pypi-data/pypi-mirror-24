@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: ibpythonic
+Version: 0.1.2
+Summary: IbPy-like interface for the Interactive Brokers Python API
+Home-page: https://github.com/quantrocket-llc/ibpythonic
+Author: QuantRocket LLC
+Author-email: support@quantrocket.com
+License: BSD License
+Platform: UNKNOWN
+Requires-Dist: ibapi-grease
+
+UNKNOWN
+
+

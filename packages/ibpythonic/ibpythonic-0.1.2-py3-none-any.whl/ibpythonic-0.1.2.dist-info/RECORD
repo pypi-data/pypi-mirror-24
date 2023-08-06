@@ -1,0 +1,17 @@
+ibpythonic/__init__.py,sha256=EMcD-sLWfXOoFR-x0cGVytMqXKC3E1UC4BXFOoFglhA,853
+ibpythonic/_version.py,sha256=4yvidvaAVQaobnZvk5xnNfONQ1L5FuT0idf4Phr3Ytk,497
+ibpythonic/connection.py,sha256=oEPXATjMbf0iUBsyut2DK55VVbKSeLlDitNFzeybKd8,3341
+ibpythonic/dispatcher.py,sha256=8kDormldLnmlyTdsGIGaFRA4qjEEgKVTEMVzdEJrRkU,4305
+ibpythonic/message.py,sha256=_lqJqk3IGlyTQwQozBnOn34OHANNwNUv6QBhLt94i84,4733
+ibpythonic/messagetools.py,sha256=u908OdhL6ujLZFkys-jYzO8FfN1hNN52PZguuLaUirU,1748
+ibpythonic/receiver.py,sha256=JnIYzyvv3Dk6kQJ4275XhKw8dcjXgPx7mgE2bSHPBvA,2939
+ibpythonic/sender.py,sha256=ZiNB7uccc1enwEQMOrAMOxnOgxIZ9GE_H0J6RZ-Xxzs,2432
+ibpythonic/lib/__init__.py,sha256=-Cb7oANCkVVQScNFmH8ik2veyIyh0lP3R5Ko_CuPgEA,9181
+ibpythonic/lib/overloading.py,sha256=ybg-4z8HRt8qISF2aDkjV3BweLEQi8c5JaVbxMr_x1o,5553
+ibpythonic/sym/__init__.py,sha256=6Ef5hUt02sEjxx0_Q4KK_Z8iiM88EcIGAgSOb-iIuJ8,2514
+ibpythonic-0.1.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+ibpythonic-0.1.2.dist-info/METADATA,sha256=QZq04KuEkVg5WPx6SKXwG2hINN-uYd_FG1GLlMBuAP8,319
+ibpythonic-0.1.2.dist-info/RECORD,,
+ibpythonic-0.1.2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+ibpythonic-0.1.2.dist-info/metadata.json,sha256=8l-WrKpFyxM559BPDP-MAnIgJjwJqHg-R76of8GdvjI,531
+ibpythonic-0.1.2.dist-info/top_level.txt,sha256=35z91sLNkFpKKxzZwXSw0ImsdpOrZnlYMnTd9mLhM6s,41
