@@ -1,0 +1,12 @@
+py_tools_ds>=0.4.2
+numpy
+matplotlib
+six
+gdal
+shapely
+geopandas
+dill
+mpld3
+geojson
+folium
+scikit-image
