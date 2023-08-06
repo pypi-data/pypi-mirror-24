@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: friend
+Version: 0.1.0
+Summary: Python utility library
+Home-page: https://github.com/cloudboss/friend
+Author: Joseph Wright
+Author-email: joseph@cloudboss.co
+License: UNKNOWN
+Download-URL: https://github.com/cloudboss/friend/releases/0.1.0
+Platform: UNKNOWN
+
+# friend
+
+A Python utility library.
+
+
