@@ -1,0 +1,4 @@
+gitpython
+logtool
+path.py
+setuptools-lint
