@@ -1,0 +1,10 @@
+guillotina_statsd/__init__.py,sha256=ZCysNQl-ZO6dIOUGNH-zKAb38KrWJydTFY5HZhHA0B8,368
+guillotina_statsd/install.py,sha256=-bqW8mvcK7_0LOp4P1uT90jlnGGw_tggKo0yuUADubQ,511
+guillotina_statsd/middleware.py,sha256=GXfj-AijFq0W1_ois0gMqiQ2_8cM7vuSXb4Eiufp0S8,1465
+guillotina_statsd/utility.py,sha256=SM71dRE1NaPWMP2fRRZGVmA-qeNtrLU2GMvuI8LAlk8,801
+guillotina_statsd-1.0.1.dist-info/DESCRIPTION.rst,sha256=yvZ0A1zEzXefOIISSlrAA8xjWtPimdFgSlZ715zWwq8,442
+guillotina_statsd-1.0.1.dist-info/METADATA,sha256=XzmWCqb8ww7dxlsHFpCbP5Mz_AAnKTX3qpIYFJ_MNyY,769
+guillotina_statsd-1.0.1.dist-info/RECORD,,
+guillotina_statsd-1.0.1.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+guillotina_statsd-1.0.1.dist-info/metadata.json,sha256=NhoieeOiZn0NbiV9LuNZDRmetvkw23TFkqAlQCGpXCc,515
+guillotina_statsd-1.0.1.dist-info/top_level.txt,sha256=sF7_E2AzPFZicA9OSX7Is-d6uBTmz6w7STk5ZOD0fis,18
