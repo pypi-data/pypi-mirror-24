@@ -1,0 +1,4 @@
+pyperclip>=1.5.27
+logging-helper>=1.5.0
+conversionutil>=1.0.10
+watchdog>=0.8.3
