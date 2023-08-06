@@ -1,0 +1,9 @@
+[console_scripts]
+faraday-aprs = faraday.aprs:main
+faraday-data = faraday.data:main
+faraday-deviceconfiguration = faraday.deviceconfiguration:main
+faraday-proxy = faraday.proxy:main
+faraday-simpleconfig = faraday.simpleconfig:main
+faraday-simpleui = faraday.simpleui:main
+faraday-telemetry = faraday.telemetry:main
+
