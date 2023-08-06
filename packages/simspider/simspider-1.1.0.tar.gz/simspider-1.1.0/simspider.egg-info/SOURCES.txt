@@ -1,0 +1,17 @@
+setup.py
+simspider/__init__.py
+simspider/download.py
+simspider/model.py
+simspider/parse.py
+simspider/save.py
+simspider/simcode.py
+simspider/simgo.py
+simspider/simtest.py
+simspider/spider.py
+simspider.egg-info/PKG-INFO
+simspider.egg-info/SOURCES.txt
+simspider.egg-info/dependency_links.txt
+simspider.egg-info/entry_points.txt
+simspider.egg-info/not-zip-safe
+simspider.egg-info/requires.txt
+simspider.egg-info/top_level.txt

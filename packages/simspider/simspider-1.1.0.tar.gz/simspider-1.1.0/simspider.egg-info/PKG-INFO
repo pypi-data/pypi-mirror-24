@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: simspider
+Version: 1.1.0
+Summary: 简单的定向爬虫框架
+Home-page: UNKNOWN
+Author: 陈粮
+Author-email: 1570184051@qq.com
+License: MIT
+Description: UNKNOWN
+Keywords: crawl,spider,定向爬虫
+Platform: any
