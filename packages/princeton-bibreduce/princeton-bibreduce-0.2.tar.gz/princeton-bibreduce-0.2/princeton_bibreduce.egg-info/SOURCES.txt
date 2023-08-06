@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+bibreduce/__init__.py
+bibreduce/__main__.py
+bibreduce/bibreduce.py
+bibreduce/cminfc.py
+bibreduce/fieldModifiers.py
+bin/princeton-bibreduce
+princeton_bibreduce.egg-info/PKG-INFO
+princeton_bibreduce.egg-info/SOURCES.txt
+princeton_bibreduce.egg-info/dependency_links.txt
+princeton_bibreduce.egg-info/entry_points.txt
+princeton_bibreduce.egg-info/not-zip-safe
+princeton_bibreduce.egg-info/requires.txt
+princeton_bibreduce.egg-info/top_level.txt

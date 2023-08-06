@@ -1,0 +1,3 @@
+[console_scripts]
+bibreduce = bibreduce.bibreduce:cmMain
+
