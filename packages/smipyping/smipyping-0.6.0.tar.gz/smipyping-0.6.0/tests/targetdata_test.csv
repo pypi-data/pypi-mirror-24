@@ -1,0 +1,8 @@
+TargetID,CompanyName,Namespace,SMIVersion,Product,Principal,Credential,CimomVersion,IPAddress,InteropNamespace,Protocol,Port,ScanEnabled
+01,CompanyA,root/brocade1,,ProductA,Administrator,Plugfest2012,J WBEM Server 1.2.1,10.1.134.163,interop,https,5989,Enabled
+02,CompanyA,root/brocade1,,Product B,Administrator,Plugfest2012,J WBEM Server 1.2.1,10.1.134.163,interop,https,5989,Enabled
+03,CompanyB,cimv2,1.5,ProductC,smilab6,F00sb4ll,J WBEM Server 3.7.1,10.1.137.211,interop,https,5989,Enabled
+04,CompanyC,root/cimv2,1.5,StorageA,smilab,F00sb4ll,Pegasus 2.11.1 JMPI,10.1.134.96,interop,https,5989,Enabled
+05,CompanyD,root/companyd,1.5,StorageB,smilab6,F00sb4ll,SFCB 1.3.11,10.1.134.117,root/interop,https,5989,Enabled
+06,CompanyD,root/companyd,1.5,StorageB,smilab6,F00sb4ll,SFCB 1.3.11,10.1.134.116,root/interop,https,5989,Disabled
+

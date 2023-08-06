@@ -1,0 +1,3 @@
+TargetID,CompanyName,Namespace,SMIVersion,Product,Principal,Credential,CimomVersion,IPAddress,InteropNamespace,Protocol,Port,ScanEnabled
+01,<company>,<ns>,,<productName>,<credential>,<password>,<product>,10.1.134.163,<interop ns>,https,5989,Enabled
+

@@ -1,0 +1,214 @@
+CHANGES
+=======
+
+0.6.0
+-----
+
+* Merged in clean\_more\_files (pull request #26)
+* .~lock.othersClientObjectStruct.odp# deleted online with Bitbucket
+* C:\nppdf32Log\debuglog.txt deleted online with Bitbucket
+* .~lock.othersClientObjectStruct.odp# deleted online with Bitbucket
+* Remove more old files
+* Merged in clean-files (pull request #25)
+* Turn off mysql tests
+* Commit csv test date cleaned
+* Fix tests
+* Remove plugfest target files
+* Move old scripts to attic
+* Merged in cim\_report (pull request #24)
+* make table global
+* Clean up docs
+* Add smicli-example.ini file and clean README.rst
+* Merged in sqlite (pull request #23)
+* move some files to background
+* minor fixes
+* Add pings table for mysql
+* Merged in doc2 (pull request #22)
+* Fix tests
+* move sweep to smicli
+* Merged in ping-table (pull request #21)
+* add -h in addition to --help to get help
+* Add tests, add ping id along with ids
+* Clean up disabled logic
+* Fix disable in target table
+* Fix disabled in targetdata
+* make simpleping multithread
+* Complete table definitions and add more tests
+* Add all remaining tables for mysql
+* Merged in new-tcp-pinger (pull request #20)
+* add table for cimping all
+* Fix example csv for current addresses
+* Add logging to sweep
+* Add tcp port scan function
+* Merged in add-tests (pull request #19)
+* Move pyscan to tools
+* More changes to id vs ids
+* add README.rst
+* Remove README.md
+* Move to README.rst
+* Add pyscan.py file as a test
+* Merged in do-sql (pull request #18)
+* Temp commit the tests data
+* Add test script that executes commands
+* Fix issue with fields in targets
+* Fix targets list to test for field names
+* Merged in fix-ip-range (pull request #17)
+* add nl to table output
+* Fix tables and explorer
+* Change script
+* Reinstall smicli.ini
+* fix script
+* use - for ip range
+* Merged in csv-update (pull request #16)
+* More stuff
+* Minor fix
+* Add the run\_serversweep components
+* More cleanup
+* Add classes displayer
+* Fixes to output
+* Complete first version of table
+* Implement correct table outputter
+* New table module
+* Change tables to allow multiple formats
+* Merged in fixdoc (pull request #15)
+* Fix documentation and force only python 2.7 for now
+* Clean number of minor errors
+* Merged in fix\_table (pull request #14)
+* Fix issues with default in simpleping
+* Add log to simpleping
+* Change to use smicli.ini
+* Fix html table and folding
+* Merged in fix-simplesweep (pull request #13)
+* Fix todo
+* add test\_logging.py
+* Clean up documentation
+* Recommit the sample config file
+* Add logging test and clean up basic logging
+* add new subcommand
+* More fixes
+* Merged in newdb (pull request #12)
+* Clean up functions
+* Merged in fixsmicli (pull request #11)
+* Fix targets msg
+* Add - to flake8 run
+* set verbose on diagnostic outputs
+* fix help
+* Fix up documentation
+* fix test\_common, change pingtable to \_pingtable
+* Start on setting disable in db
+* Minor tech cleanups around makefile
+* Extend .gitignore
+* Clean reports in serversweep
+* fix table test
+* Add ascii table test
+* Remove another pylintrc
+* Change pylintrc to .pylintrc
+* Change name of terminaltable and add headers
+* More fixes for setup
+* Add setup.cfg
+* Add requirements files
+* go to clean version environment
+* fix cmd\_explorer and tests. add \_common
+* Minor cleanup
+* Fix issue with \_\_init\_\_
+* Fix mysql-cursor
+* fix issue with mysql-connector
+* sweep add new display and fix ctrl c stop
+* Add script level test for serverwseep
+* Fix issues with server sweep and add --dryrun and test for script
+* Fix config
+* Add new doc
+* clean up local scrpts
+* Minor cleanups
+* Clean up scripts
+* remove old coverage file
+* Change coveragerc to .coveragerc and makefile to Makefile
+* Fix utilities
+* Fix DBTYPE. add click config
+* Multiple
+* Merged in extendsweep (pull request #10)
+* test with mysql
+* Clean up simpleping tests, etc
+* Temp and not finished testing
+* Merged in fastscan (pull request #9)
+* Add new smicli component
+* clean up tests and add to smicli
+* Fix smicli
+* Clean up flake8 and add repl code
+* Add doc functionality
+* doc one of the demos
+* Interim commit to clean up
+* Move serversweep to a class. Works
+* Fix serversweep
+* Commit changes to new net defintion for scanner
+* Cleaned up explore, sweeper, etc
+* fix smicli
+* Clean up explore
+* Add bunch of stuff
+* Merged in testall (pull request #8)
+* Fix time display issues
+* Fix error in setup.py
+* Merged in issue#2usr-to-target (pull request #7)
+* clean up explore
+* updates for serversweep and targetdata
+* Update with more running
+* Fixed at least part of tests
+* Add new files
+* Add attic directory
+* move user to targets, create smicli with database options
+* commit start of smicli code
+* Fix for sql
+* Merged in issue#1-from-plugfest (pull request #6)
+* Multiple cleanup
+* more
+* update to clean up after plugfest. Mostly done
+* Add tests and simpleping now working
+* makefile
+* Cleanup of userdata, config, etc
+* Add coverage and tox ini files
+* Update readme
+* update INSTALL.md
+* fix text on simpleping
+* more
+* Add some documentation
+* Clean up terminal table displays
+* Clean up userdata unittest
+* Rename pingall and set up first tests
+* Fixes for simpleping, etc
+* Clean up serversweep and set default to threaded
+* Fix make install
+* Remove message from scapy
+* Fix ping
+* Fix ping
+* Merged in addping (pull request #5)
+* Add simple ping function
+* Merged in fixserversweep (pull request #4)
+* Sweep now works and fixes to userdata
+* Catchup changes
+* Merged in addsweep (pull request #3)
+* some fixes to makefile
+* commit fix to serversweep for threaded attribute
+* Fix readme and help on simpleping.py
+* Merged in addsweep (pull request #2)
+* Add new script to setup.py
+* More scripts
+* Merged in work (pull request #1)
+* Add explore and userdata, etc
+* change name to record
+* Clean up userdata and explore
+* more
+* more fixes
+* Fix terminal tables
+* Set version to 0.5 and clean simpleping.py
+* Fix the simpleping script
+* Fix simpleping.py
+* Fix .gitignore
+* Clean up license, install
+* Add disable flag
+* Clean up userdata code and fix issue with test table
+* Minor
+* more fixes to work
+* Clean up prints, etc
+* Clean up for demo
+* Name change to smipyping
+* initial commit with new name

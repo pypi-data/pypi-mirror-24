@@ -1,0 +1,3 @@
+[console_scripts]
+smicli = smipyping.smicli:cli
+

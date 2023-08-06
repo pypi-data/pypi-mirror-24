@@ -1,0 +1,16 @@
+pywbem>=0.10.0
+terminaltables>=3.1.0
+scapy>-2.3.3
+mysql_connector==2.1.4
+configparser>=3.5.0
+click>=6.6
+click-repl>=0.1.0
+click-spinner>=0.1.6
+click-configfile>=0.2.2
+decorator>=4.0.10
+pbr>=1.10.0
+prompt_toolkit>=1.0.9
+six>=1.10.0
+sqlalchemy>=1.1.13
+tabulate>=0.7.7
+wcwidth>=0.1.7
