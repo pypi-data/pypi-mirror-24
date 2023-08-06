@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: cwtimer
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/cxmcc/cwtimer
+Author: Xiuming Chen
+Author-email: cc@cxm.cc
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: timer,Cloudwatch
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: System :: Clustering
