@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+hurry/__init__.py
+hurry/main.py
+hurry/utils.py
+hurry_script.egg-info/PKG-INFO
+hurry_script.egg-info/SOURCES.txt
+hurry_script.egg-info/dependency_links.txt
+hurry_script.egg-info/entry_points.txt
+hurry_script.egg-info/requires.txt
+hurry_script.egg-info/top_level.txt
