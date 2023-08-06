@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: dockerfile2json
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/hassio-addons/dockerfile2json
+Author: Franck Nijhof
+Author-email: frenck@geekchimp.com
+License: MIT
+Download-URL: https://github.com/hassio-addons/dockerfile2json/archive/0.1.0.tar.gz
+Description: 
+        Dockerfile2JSON
+        
+        This little tool allows you convert any Dockerfile to JSON, using the actual
+        Dockerfile parser from Docker.
+        
+Keywords: docker,dockerfile,json
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: System
+Classifier: Topic :: Utilities
+Requires: simplejson
+Requires: dockerfile
