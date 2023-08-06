@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+toggl_jira_sync/__init__.py
+toggl_jira_sync/jira.py
+toggl_jira_sync/load_config.py
+toggl_jira_sync/main.py
+toggl_jira_sync/toggl.py
+toggl_jira_sync.egg-info/PKG-INFO
+toggl_jira_sync.egg-info/SOURCES.txt
+toggl_jira_sync.egg-info/dependency_links.txt
+toggl_jira_sync.egg-info/entry_points.txt
+toggl_jira_sync.egg-info/requires.txt
+toggl_jira_sync.egg-info/top_level.txt
