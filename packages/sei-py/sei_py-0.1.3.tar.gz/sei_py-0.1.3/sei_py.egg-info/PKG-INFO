@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: sei-py
+Version: 0.1.3
+Summary: A Caveon SEI helper library
+Home-page: https://github.com/xh4zr/sei-py
+Author: Evan Anderson
+Author-email: evan.anderson@caveon.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: caveon,sei,exam,test security
+Platform: UNKNOWN
