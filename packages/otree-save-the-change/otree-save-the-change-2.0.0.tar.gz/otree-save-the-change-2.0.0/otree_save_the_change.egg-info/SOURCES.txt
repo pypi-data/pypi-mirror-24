@@ -1,0 +1,17 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+test_requirements.txt
+otree_save_the_change/__init__.py
+otree_save_the_change/decorators.py
+otree_save_the_change/descriptors.py
+otree_save_the_change/mappings.py
+otree_save_the_change/mixins.py
+otree_save_the_change/util.py
+otree_save_the_change.egg-info/PKG-INFO
+otree_save_the_change.egg-info/SOURCES.txt
+otree_save_the_change.egg-info/dependency_links.txt
+otree_save_the_change.egg-info/not-zip-safe
+otree_save_the_change.egg-info/top_level.txt
