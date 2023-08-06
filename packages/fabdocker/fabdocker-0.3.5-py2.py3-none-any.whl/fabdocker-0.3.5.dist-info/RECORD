@@ -1,0 +1,9 @@
+fabdocker/__init__.py,sha256=hFadlANggJ5sFMBStjzR1SusApQNu-Xr2SapGe2cSHo,108
+fabdocker/compose.py,sha256=gUwGmirKxOZOqXCZTewzTHvVwy-scJF0a6eZYZlbLzM,688
+fabdocker/docker.py,sha256=DHbNgleqNsiCUKEtfXT5Vr7Vo0sf98aCXOTHLx_v-Ac,7881
+fabdocker-0.3.5.dist-info/DESCRIPTION.rst,sha256=kgh8a-fcSxNUGaJdQZkLGf5q1rCgw8b-M7O_o7L85Xg,40
+fabdocker-0.3.5.dist-info/METADATA,sha256=9zaN9JcFv1BTgZpM6XbnpMJUqC8qrBJM6XW6x4wcFgc,712
+fabdocker-0.3.5.dist-info/RECORD,,
+fabdocker-0.3.5.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+fabdocker-0.3.5.dist-info/metadata.json,sha256=BEtBpUraZVzr1ceNjzTseHPItoVBbsb4pIZeM9vSH8Y,844
+fabdocker-0.3.5.dist-info/top_level.txt,sha256=4Lq8tY8-V0AMMUdENMxwzh40zhOsnDX0vDldJauEDH0,10
