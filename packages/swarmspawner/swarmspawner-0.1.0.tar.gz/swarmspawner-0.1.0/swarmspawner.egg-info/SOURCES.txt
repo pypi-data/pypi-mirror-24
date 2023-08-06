@@ -1,0 +1,9 @@
+README.rst
+setup.py
+cassinyspawner/__init__.py
+cassinyspawner/swarmspawner.py
+swarmspawner.egg-info/PKG-INFO
+swarmspawner.egg-info/SOURCES.txt
+swarmspawner.egg-info/dependency_links.txt
+swarmspawner.egg-info/requires.txt
+swarmspawner.egg-info/top_level.txt
