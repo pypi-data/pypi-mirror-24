@@ -1,0 +1,9 @@
+EPAB-0.1.9.dist-info/DESCRIPTION.rst,sha256=WqFhDl662j_J8bSn8U-Vns5moA1sDGaqZE5cgev3vAE,721
+EPAB-0.1.9.dist-info/METADATA,sha256=tgDYd0mJknbtjsS3F6iBlxAM0TwgSUl7ENte_dMIawg,2064
+EPAB-0.1.9.dist-info/RECORD,,
+EPAB-0.1.9.dist-info/WHEEL,sha256=YsNSO4YgbOpLnA3uS0CxruRmWRgUMtRpuejsJnBrn4o,98
+EPAB-0.1.9.dist-info/entry_points.txt,sha256=VY2EIejdI4WhRaQQcsaSPyO7p-iFDTd7L3WIMw5le7Y,37
+EPAB-0.1.9.dist-info/metadata.json,sha256=IUvhkJuWuz1UGcbj0an-PqU5nlUHjYqCiR1uJN5Xmuk,1725
+EPAB-0.1.9.dist-info/top_level.txt,sha256=JnqeUW40lQ8Lz6vJCztElCxzHGXVJaEUcgdLlDtb0HI,5
+epab/__init__.py,sha256=XaqWqgjBgi9nFYOr64iIBTKEhsrCZdAnqAdp70abTmw,40
+epab/cli.py,sha256=6zn4W4jaRMyt6eTWN4URdMjE5H73vzDPuAlbZkSlqwI,18952
