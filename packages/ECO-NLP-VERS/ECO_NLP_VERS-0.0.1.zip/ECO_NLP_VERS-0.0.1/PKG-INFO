@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: ECO_NLP_VERS
+Version: 0.0.1
+Summary: This package provides tools for analyzing the influence of economic news on Chinese stock market.
+Home-page: https://github.com/VersElectronics/ECO_NLP_VERS
+Author: VersElectronics
+Author-email: jiachengzhu1994@gmail.com
+License: MIT Licences
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.5
