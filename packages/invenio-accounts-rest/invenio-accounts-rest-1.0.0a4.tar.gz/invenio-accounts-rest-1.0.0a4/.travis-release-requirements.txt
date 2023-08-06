@@ -1,0 +1,5 @@
+invenio-access>=1.0.0a11
+invenio-accounts>=1.0.0b9
+invenio-db<1.1.0,>=1.0.0b3
+invenio-oauth2server>=1.0.0a12
+invenio-rest>=1.0.0a10
