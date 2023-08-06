@@ -1,0 +1,13 @@
+PyOpenAL-0.6.7a1.dist-info/DESCRIPTION.rst,sha256=PV0hJ9UaUE7oyJH8YX9V5yeL_yROecY3dzh4V55Ov8Y,3412
+PyOpenAL-0.6.7a1.dist-info/METADATA,sha256=IjcYPy1uKqKkPgG4YnwxI76JB_NliwuLYG4VT8ygxTk,4257
+PyOpenAL-0.6.7a1.dist-info/RECORD,,
+PyOpenAL-0.6.7a1.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+PyOpenAL-0.6.7a1.dist-info/metadata.json,sha256=e1iPpsqt5tCHhCY7o6C32TR-mrIS5lwY7EiGYT7tMdE,954
+PyOpenAL-0.6.7a1.dist-info/top_level.txt,sha256=91karsmzJvYg6jvcbxlqBYQHgo1VDKoWys-XTU_H_E4,7
+openal/__init__.py,sha256=9S8IHKAliR610hY_6E3W8w9Nkx6yWDCel7hI-oeBDYo,39824
+openal/_al.py,sha256=57pJES3crPD9qGtAZIyU6HtJv1YmqSyYOC7Fz2J_ID0,16249
+openal/_alc.py,sha256=WvS36BSY9xQqup2tBdHhr-0K4cASipHUk0Ya5ValOq0,5848
+pyogg/__init__.py,sha256=xzH6fhv27n7A_a_7csIFN0A3kzJn_O13eVNKhrw8b68,6602
+pyogg/ogg.py,sha256=UzXiuokWciKBVW9enmWOCiX6t37s4W00jjWSN3sAdII,17229
+pyogg/opus.py,sha256=BIr7Zo5ZtldDp5OkDNB5MpHfg9fXtNVwEgXMUd0Jo60,36008
+pyogg/vorbis.py,sha256=AGwZYuHk6D1RGrNvO0732IJ0UBPmZ-tdMj3R0T9HTzE,22305
