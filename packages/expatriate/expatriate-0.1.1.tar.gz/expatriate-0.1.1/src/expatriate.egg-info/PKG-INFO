@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: expatriate
+Version: 0.1.1
+Summary: Library wrapping expat for parsing and generating XML
+Home-page: https://github.com/cjaymes/expatriate
+Author: Casey Jaymes
+Author-email: cjaymes@gmail.com
+License: LGPL
+Description: expatriate
+        ==========
+        
+        XML parsing and generation library on top of expat.
+        
+        Install using:
+        
+            pip install expatriate
+        
+        
+        
+Keywords: XML
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+
+Classifier: Environment :: Other Environment
+
+Classifier: Intended Audience :: Developers
+
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+
+Classifier: Operating System :: OS Independent
+
+Classifier: Programming Language :: Python
+
+Classifier: Programming Language :: Python :: 3
+
+Classifier: Programming Language :: Python :: 3.5
+
+Classifier: Programming Language :: Python :: 3.6
+
+Classifier: Programming Language :: Python :: Implementation :: CPython
+
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+Classifier: Topic :: Text Processing :: Markup :: XML
+
