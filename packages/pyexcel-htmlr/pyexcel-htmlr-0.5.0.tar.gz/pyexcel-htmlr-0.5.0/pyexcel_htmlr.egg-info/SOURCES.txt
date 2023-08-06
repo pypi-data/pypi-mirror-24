@@ -1,0 +1,14 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pyexcel_htmlr/__init__.py
+pyexcel_htmlr/_version.py
+pyexcel_htmlr/htmlr.py
+pyexcel_htmlr.egg-info/PKG-INFO
+pyexcel_htmlr.egg-info/SOURCES.txt
+pyexcel_htmlr.egg-info/dependency_links.txt
+pyexcel_htmlr.egg-info/not-zip-safe
+pyexcel_htmlr.egg-info/requires.txt
+pyexcel_htmlr.egg-info/top_level.txt
