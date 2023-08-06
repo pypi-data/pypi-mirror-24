@@ -1,0 +1,37 @@
+Metadata-Version: 2.0
+Name: common-ml
+Version: 0.0.12
+Summary: Common Machine Learning Library
+Home-page: https://github.com/bizreach/common-ml
+Author: BizReach AI Team
+Author-email: shinsuke.sugaya@bizreach.co.jp
+License: Apache Software License
+Download-URL: https://github.com/bizreach/common-ml/tarball/0.0.12
+Keywords: machine learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: numpy
+Requires-Dist: scikit-learn (>=0.17)
+Requires-Dist: scipy
+Requires-Dist: six
+Provides-Extra: all
+Requires-Dist: chainer; extra == 'all'
+Requires-Dist: elasticsearch (>=2.0.0); extra == 'all'
+Requires-Dist: pillow; extra == 'all'
+Requires-Dist: pyyaml; extra == 'all'
+Provides-Extra: chainer
+Requires-Dist: chainer; extra == 'chainer'
+Provides-Extra: elasticsearch
+Requires-Dist: elasticsearch (>=2.0.0); extra == 'elasticsearch'
+Provides-Extra: image
+Requires-Dist: pillow; extra == 'image'
+Provides-Extra: runner
+Requires-Dist: pyyaml; extra == 'runner'
+
+UNKNOWN
+
+
