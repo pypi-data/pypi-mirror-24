@@ -1,0 +1,13 @@
+libscrc/__init__.py,sha256=yN9lkKjIvJ-fsCVwmzLwo1R660KpRcSC9DgpQ-I3xM4,615
+libscrc/_crc16.cp36-win32.pyd,sha256=9D6LQ1bXguUqBdhH-RcZkhomO9eRQk6YkPVK1EvRhfQ,12800
+libscrc/_crc32.cp36-win32.pyd,sha256=1tR1-sqaKy2aYk7f1zObG0-gM-4akn77IOASWMRFZSs,10752
+libscrc/_crc64.cp36-win32.pyd,sha256=-KJPY3j5CF_Lc36TH6v5CcJff90fh73HZb15KYS9dg8,11264
+libscrc/_crc8.cp36-win32.pyd,sha256=KkFYRU0Ms91kriVprHiAIvlXqhb_uv1A7lGDjqRpyjA,10752
+libscrc/testcrc64.py,sha256=eMy-8VGyV3zkyX8IxCMNTB_NUmUrYgQk3ONsIdD2uvA,1737
+libscrc/testmodbus.py,sha256=ygNBOSaPRgIpPystefHoNiB__ALTHgm_5zKFloeTzXk,1666
+libscrc-0.1.2.dist-info/DESCRIPTION.rst,sha256=CzeWrgwMGTtA6Vsn1YEqIscIQfUuDoGOwj9Wy8TFsUg,2652
+libscrc-0.1.2.dist-info/METADATA,sha256=kliecli99NErygWdUstlnfEi6Zl-IE5iXJWvlP_IzzA,3489
+libscrc-0.1.2.dist-info/RECORD,,
+libscrc-0.1.2.dist-info/WHEEL,sha256=xiHTm3JxoVljPSD6nSGhq3B4VY9iUqMNXwYQ259n1PI,102
+libscrc-0.1.2.dist-info/metadata.json,sha256=wRuBik7o_i2HRWF6ms5Y8AFUTkK8H0Tctk3FFqRSamI,952
+libscrc-0.1.2.dist-info/top_level.txt,sha256=j8elyX8PEpgoQ0zwvun_4gI27RymPFWlkGB2sDNEQsg,8
