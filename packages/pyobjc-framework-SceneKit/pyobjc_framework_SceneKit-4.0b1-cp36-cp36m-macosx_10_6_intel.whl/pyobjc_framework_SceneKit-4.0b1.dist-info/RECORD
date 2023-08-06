@@ -1,0 +1,10 @@
+SceneKit/_SceneKit.cpython-36m-darwin.so,sha256=U3QGlqYx0RQLVsobeFJK31Ewrug5KPTWml1oVIvWBv0,51060
+SceneKit/__init__.py,sha256=ZbkPAktVU1l0VVxPFspB0-cH3JfUbUmx0Vb-gGX76s8,1239
+SceneKit/_inlines.cpython-36m-darwin.so,sha256=4e5Vb_5t4MgVdrPWx1LWXxyihO-mnV7DDCy68zWizQg,59032
+SceneKit/_metadata.py,sha256=u53Uk1e-jlguPkR1zBt2M6sxUGj3-tKqEocm1rTTtzU,45512
+pyobjc_framework_SceneKit-4.0b1.dist-info/DESCRIPTION.rst,sha256=HWGvtkinQC1rXtuaDkQCo2MXAAUhb1AXdlH4Ee3hK4E,324
+pyobjc_framework_SceneKit-4.0b1.dist-info/METADATA,sha256=NLeDkw1Ewr-wVB8XPsjHJKZEia3s3BgEDcFUgdkBNDk,1644
+pyobjc_framework_SceneKit-4.0b1.dist-info/RECORD,,
+pyobjc_framework_SceneKit-4.0b1.dist-info/WHEEL,sha256=n5Qi9LsnJ0zl3SHl7-DnZPyZfWOd4go9ixl9Bl1aXdA,109
+pyobjc_framework_SceneKit-4.0b1.dist-info/metadata.json,sha256=GfLRPuBKthqnjeOA19q4OHyWAzVMzpM43QX0-t0OMX8,1415
+pyobjc_framework_SceneKit-4.0b1.dist-info/top_level.txt,sha256=_7EB7slh_d5YNPX_L7q0WgOt3hOc59D_9z9f1uvQC6I,9
