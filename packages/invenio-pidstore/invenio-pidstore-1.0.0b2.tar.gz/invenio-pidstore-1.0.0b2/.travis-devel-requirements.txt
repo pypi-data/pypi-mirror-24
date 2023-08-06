@@ -1,0 +1,5 @@
+-e git+https://github.com/inveniosoftware/datacite.git#egg=datacite
+enum34>=1.0.4
+Flask>=0.11.1
+Flask-BabelEx>=0.9.3
+-e git+https://github.com/inveniosoftware/invenio-db#egg=invenio-db
