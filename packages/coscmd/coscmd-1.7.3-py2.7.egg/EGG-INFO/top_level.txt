@@ -1,0 +1,3 @@
+coscmd
+coscmd2
+coscmd3
