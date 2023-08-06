@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: corextext
+Version: 0.1.0
+Summary: CorexText finds latent factors that explain the most multivariate mutual information in bag of words representation of documents.
+Home-page: https://github.com/gregversteeg/corex_topic.git
+Author: Greg Ver Steeg/Rob Brekelmans
+Author-email: brekelma@usc.edu
+License: AGPL-3.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
