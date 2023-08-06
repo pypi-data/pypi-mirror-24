@@ -1,0 +1,41 @@
+Metadata-Version: 2.0
+Name: fcoclient
+Version: 0.3.1
+Summary: FCO REST client
+Home-page: https://github.com/xlab-si/fcoclient
+Author: XLAB d.o.o.
+Author-email: pypi@xlab.si
+License: Apache-2
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: requests (<3,>=2.10)
+Requires-Dist: enum34 (>=1,<2); (python_version <"3.4")
+
+FCO REST client
+===============
+
+This repository contains minimalistic python client for FCO REST API, together
+with command line client.
+
+
+Quickstart
+----------
+
+At the moment, documentation is non existent, so the best way of learning to
+use the tool is to experiment. Command line tool is configured to print help
+messages on bad invocations, so you can safely execute any command without
+risking doing any damage.
+
+
+
