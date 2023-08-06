@@ -1,0 +1,107 @@
+Metadata-Version: 1.1
+Name: impulsare-ruler
+Version: 0.1a5
+Summary: Reads records from a queue (put there by reader) and process records
+to another (writer). It's a middleware that transforms / validate / generate data.
+Home-page: https://github.com/impulsare/ruler
+Author: Emmanuel Dyan
+Author-email: emmanuel@impulsare.io
+License: AGPLv3
+Download-URL: https://github.com/impulsare/ruler/tarball/0.1a5
+Description: impulsare/ruler
+        ===============================
+        
+        .. image:: https://travis-ci.org/impulsare/ruler.svg?branch=master
+            :target: https://travis-ci.org/impulsare/ruler
+        
+        .. image:: https://scrutinizer-ci.com/g/impulsare/ruler/badges/quality-score.png?b=master
+            :target: https://scrutinizer-ci.com/g/impulsare/ruler/
+        
+        .. image:: https://scrutinizer-ci.com/g/impulsare/ruler/badges/coverage.png?b=master
+            :target: https://travis-ci.org/impulsare/ruler
+        
+        
+        Overview
+        --------------------
+        
+        Reads records from a queue (put there by ``reader``) and process records to another (``writer``).
+        It's a middleware that transforms / validate / generate data.
+        
+        **WARNING** : For now it does nothing than passing records from one queue to another.
+        
+        
+        Installation / Usage
+        --------------------
+        
+        To install use pip:
+        
+        .. code-block:: bash
+        
+            $ pip install --upgrade impulsare-ruler
+        
+        
+        
+        Configuration
+        -------------
+        To be able to use the ruler you need to have a complete configuration file
+        which looks like the following (the same is used for extractor / writer) :
+        
+        .. code-block:: yaml
+        
+            job:
+                db: /home/app/data/impulsare.db
+            logger:
+                level: DEBUG
+                directory: /home/app/log
+                handlers:
+                    file: true
+                    console: true
+            distributer:
+                host: redis
+        
+        
+        An extra config also defines where to send the data once it has been *ruled* :
+        
+        
+        .. code-block:: yaml
+        
+            ruler:
+                queue: writer
+        
+        
+        
+        Run the listener
+        ----------------
+        
+        .. code-block:: shell
+        
+            $ CONFIG_FILE=/home/app/conf/config.yml queue-listener -h redis -q ruler
+        
+        
+        Tests
+        --------
+        
+        .. code-block:: bash
+        
+            $ pip install -r requirements.txt
+            $ pip install -r requirements-dev.txt
+            $ py.test
+        
+        
+        **WARNING** : As the component is not ready yet, it contains no tests.
+        
+Keywords: redis,queue,transform,python,impulsare
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Systems Administration
