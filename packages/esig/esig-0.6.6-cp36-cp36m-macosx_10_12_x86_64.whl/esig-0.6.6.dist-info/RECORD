@@ -1,0 +1,12 @@
+esig/__init__.py,sha256=6uv-Nf4zk5v6cPYESDqBq5NaverLOebbPhublb6Ti04,1642
+esig/tosig.cpython-36m-darwin.so,sha256=MB0mMLJkiSKJgOab2KoTVBTfnMOXO6k_Eo8ptd3CK8M,4168724
+esig/tests/__init__.py,sha256=HOr3o0Ku6EHG0AZ6LyWZPOFD6HNQ4uQIuYHPFazFVC4,1491
+esig/tests/auxiliaryfunct.py,sha256=3aU4n3KprKUoodYj6nlMhSrcl6VMZQbZf10apNSl3d8,17223
+esig/tests/esigtests.py,sha256=XwegmyAlWiYM7P0-IN56rkVW_CeRc45IouTsWaincgc,9690
+esig/tests/test_package.py,sha256=h31w_MQitCx1jnRfywQV0sQiluuZ-UTV3M2yPsblyyY,3557
+esig-0.6.6.dist-info/DESCRIPTION.rst,sha256=YfzKY7Tw_Ku7xrEzVQ8uJnQcePDjdR4vb5YVb36BwRE,222
+esig-0.6.6.dist-info/METADATA,sha256=T2VhrmLwOm49WN1-Gc4bU5bHj5e95HUVwMe5ZA5GBTE,910
+esig-0.6.6.dist-info/RECORD,,
+esig-0.6.6.dist-info/WHEEL,sha256=QEvztwsMQ1oQRmYScPHtkrFIJvQwksPEh_MrMJMgwgA,111
+esig-0.6.6.dist-info/metadata.json,sha256=j7j3Cygkz0mprBIMa6ZA25DDZ4nzsWFyCGdyyrCwImY,940
+esig-0.6.6.dist-info/top_level.txt,sha256=F1eEcl8RqWaqM2uiFckw6psL2BknGzFQS44-WMtHetA,5
