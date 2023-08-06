@@ -1,0 +1,9 @@
+requests
+Click
+flake8
+xmltodict
+biopython
+dicttoxml
+
+[testing]
+pytest
