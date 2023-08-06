@@ -1,0 +1,7 @@
+setup.py
+c7n_traildb.egg-info/PKG-INFO
+c7n_traildb.egg-info/SOURCES.txt
+c7n_traildb.egg-info/dependency_links.txt
+c7n_traildb.egg-info/entry_points.txt
+c7n_traildb.egg-info/requires.txt
+c7n_traildb.egg-info/top_level.txt
