@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+yapyvcloud/__init__.py
+yapyvcloud/yapyvcloud.py
+yapyvcloud.egg-info/PKG-INFO
+yapyvcloud.egg-info/SOURCES.txt
+yapyvcloud.egg-info/dependency_links.txt
+yapyvcloud.egg-info/requires.txt
+yapyvcloud.egg-info/top_level.txt
