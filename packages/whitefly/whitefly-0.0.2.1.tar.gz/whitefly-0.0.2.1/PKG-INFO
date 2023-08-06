@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: whitefly
+Version: 0.0.2.1
+Summary: Making the database migrations the easiest step on continuous delivery
+Home-page: https://github.com/kloiasoft/whitefly
+Author: Mehmet Ali Aydin
+Author-email: maaydin@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/kloiasoft/whitefly/archive/0.0.2.tar.gz
+Description: UNKNOWN
+Keywords: db,database,migration
+Platform: UNKNOWN
