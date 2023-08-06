@@ -1,0 +1,9 @@
+setuptools
+
+[:python_version>="3.5"]
+aiohttp
+cchardet
+aiodns
+
+[qa]
+flake8
