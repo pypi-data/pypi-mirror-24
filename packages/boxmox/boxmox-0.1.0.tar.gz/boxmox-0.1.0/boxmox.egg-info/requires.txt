@@ -1,0 +1,6 @@
+numpy
+f90nml
+pyparsing
+
+[:python_version < "3.0"]
+subprocess32
