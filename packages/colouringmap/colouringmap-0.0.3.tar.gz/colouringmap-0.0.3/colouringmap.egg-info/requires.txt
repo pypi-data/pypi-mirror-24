@@ -1,0 +1,6 @@
+numpy
+jenkspy
+palettable
+geopandas
+descartes
+matplotlib_scalebar
