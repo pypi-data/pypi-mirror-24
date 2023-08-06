@@ -1,0 +1,1190 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Signal_Analysis.features.signal &#8212; Signal_Analysis 0.1.5 documentation</title>
+    <link rel="stylesheet" href="../../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '0.1.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Signal_Analysis 0.1.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for Signal_Analysis.features.signal</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">peakutils</span> <span class="k">as</span> <span class="nn">pu</span>
+
+<div class="viewcode-block" id="get_F_0"><a class="viewcode-back" href="../../../Signal_Analysis.features.html#Signal_Analysis.features.signal.get_F_0">[docs]</a><span class="k">def</span> <span class="nf">get_F_0</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">time_step</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">min_pitch</span> <span class="o">=</span> <span class="mi">75</span><span class="p">,</span> <span class="n">max_pitch</span> <span class="o">=</span> <span class="mi">600</span><span class="p">,</span> 
+            <span class="n">max_num_cands</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">silence_thres</span> <span class="o">=</span> <span class="o">.</span><span class="mi">03</span><span class="p">,</span> <span class="n">voicing_thres</span> <span class="o">=</span> <span class="o">.</span><span class="mi">45</span><span class="p">,</span> 
+            <span class="n">octave_cost</span> <span class="o">=</span> <span class="o">.</span><span class="mi">01</span><span class="p">,</span> <span class="n">octave_jump_cost</span> <span class="o">=</span> <span class="o">.</span><span class="mi">35</span><span class="p">,</span>
+            <span class="n">voiced_unvoiced_cost</span> <span class="o">=</span> <span class="o">.</span><span class="mi">14</span><span class="p">,</span> <span class="n">accurate</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">pulse</span> <span class="o">=</span> <span class="kc">False</span> <span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Computes median Fundamental Frequency ( :math:`F_0` ).</span>
+<span class="sd">    </span>
+<span class="sd">    .. note::</span>
+<span class="sd">        It has been shown that depressed and suicidal men speak with a reduced </span>
+<span class="sd">        fundamental frequency range ( described in: </span>
+<span class="sd">        http://ameriquests.org/index.php/vurj/article/download/2783/1181 ) and </span>
+<span class="sd">        patients responding well to depression treatment show an increase in </span>
+<span class="sd">        their fundamental frequency variability ( described in :</span>
+<span class="sd">        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3022333/ ). Because </span>
+<span class="sd">        acoustical properties of speech are the earliest and most consistent </span>
+<span class="sd">        indicators of mood disorders, early detection of fundamental frequency </span>
+<span class="sd">        changes could significantly improve recovery time for disorders with</span>
+<span class="sd">        psychomotor symptoms.</span>
+<span class="sd">        </span>
+<span class="sd">    The fundamental frequency ( :math:`F_0` ) of a signal is the lowest </span>
+<span class="sd">    frequency, or the longest wavelength of a periodic waveform. In the context</span>
+<span class="sd">    of this algorithm, :math:`F_0` is calculated by segmenting a signal into </span>
+<span class="sd">    frames, then for each frame the most likely candidate is chosen from the </span>
+<span class="sd">    lowest possible frequencies to be :math:`F_0` of that frame. From all of </span>
+<span class="sd">    these values, the median value is returned. More specifically, the </span>
+<span class="sd">    algorithm filters out frequencies higher than the Nyquist Frequency from </span>
+<span class="sd">    the signal, then segments the signal into frames of at least 3 periods of </span>
+<span class="sd">    the minimum pitch.  For each frame, it then calculates the normalized </span>
+<span class="sd">    autocorrelation ( :math:`r_a` ), or the correlation of the signal to a </span>
+<span class="sd">    delayed copy of itself. :math:`r_a` is calculated according to Boersma&#39;s </span>
+<span class="sd">    paper ( referenced below ), which is an improvement of previous methods. </span>
+<span class="sd">    :math:`r_a` is estimated by dividing the autocorrelation of the windowed </span>
+<span class="sd">    signal by the autocorrelation of the window. After :math:`r_a` is </span>
+<span class="sd">    calculated the maxima values of :math:`r_a` are found. These points</span>
+<span class="sd">    correspond to the lag domain, or points in the delayed signal, where the </span>
+<span class="sd">    correlation value has peaked, with higher peaks indicating a stronger </span>
+<span class="sd">    correlations. These points in the lag domain suggest places of wave </span>
+<span class="sd">    repetition and are the candidates for :math:`F_0`. The best candidate for </span>
+<span class="sd">    :math:`F_0` of each frame is picked by a cost function that compares the </span>
+<span class="sd">    cost of transitioning from the best :math:`F_0` of the previous frame to </span>
+<span class="sd">    all possible :math:`F_0&#39;s` of the current frame. Once the path of </span>
+<span class="sd">    :math:`F_0&#39;s` of least cost has been determined, the median :math:`F_0` of </span>
+<span class="sd">    all voiced frames is returned.</span>
+<span class="sd">    This algorithm is adapted from: </span>
+<span class="sd">    http://www.fon.hum.uva.nl/david/ba_shs/2010/Boersma_Proceedings_1993.pdf</span>
+<span class="sd">    and from:</span>
+<span class="sd">    https://github.com/praat/praat/blob/master/fon/Sound_to_Pitch.cpp</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        signal ( numpy.ndarray ): The signal :math:`F_0` will be calculated from.</span>
+<span class="sd">        </span>
+<span class="sd">        rate ( int ): the number of samples per seconds that the signal was sampled at.</span>
+<span class="sd">        </span>
+<span class="sd">        time_step ( float ): ( optional, default value: 0.0 ) the measurement, in seconds, of time passing between each frame. The smaller the time_step, the more overlap that will occur. If 0 is supplied the degree of oversampling will be equal to four.</span>
+<span class="sd">        </span>
+<span class="sd">        min_pitch ( float ): ( optional, default value: 75 ) minimum value to be returned as pitch, cannot be less than or equal to zero</span>
+<span class="sd">        </span>
+<span class="sd">        max_pitch ( float ): ( optional, default value: 600 ) maximum value to be returned as pitch, cannot be greater than Nyquist Frequency</span>
+<span class="sd">        </span>
+<span class="sd">        max_num_cands ( int ): ( optional, default value: 15 ) maximum number of candidates to be considered for each frame, unvoiced candidate ( i.e. :math:`F_0` equal to zero ) is always considered.</span>
+<span class="sd">        </span>
+<span class="sd">        silence_thres ( float ): ( optional, default value: 0.03 ) frames that do not contain amplitudes above this threshold ( relative to the global maximum amplitude ), are probably silent.</span>
+<span class="sd">        </span>
+<span class="sd">        voicing_thres ( float ): ( optional, default value: 0.45 ) the strength of the unvoiced candidate, relative to the maximum possible autocorrelation. To increase the number of unvoiced decisions, increase this value.</span>
+<span class="sd">        </span>
+<span class="sd">        octave_cost ( float ): ( optional, default value: 0.01 per octave ) degree of favouring of high-frequency candidates, relative to the maximum possible :math:`r_a`. This is necessary because in the case of a perfectly periodic signal, all undertones of :math:`F_0` are equally strong candidates as :math:`F_0` itself. To more strongly favour recruitment of high-frequency candidates, increase this value.</span>
+<span class="sd">        </span>
+<span class="sd">        octave_jump_cost ( float ): ( optional, default value: 0.35 ) degree of disfavouring of pitch changes, relative to the maximum possible :math:`r_a`. To decrease the number of large frequency jumps, increase this value. </span>
+<span class="sd">        </span>
+<span class="sd">        voiced_unvoiced_cost ( float ): ( optional, default value: 0.14 ) degree of disfavouring of voiced/unvoiced transitions, relative to the maximum possible :math:`r_a`. To decrease the number of voiced/unvoiced transitions, increase this value.</span>
+<span class="sd">        </span>
+<span class="sd">        accurate ( bool ): ( optional, default value: False ) if False, the window is a Hanning window with a length of :math:`\\frac{ 3.0} {min\_pitch}`. If True, the window is a Gaussian window with a length of :math:`\\frac{6.0}{min\_pitch}`, i.e. twice the length.</span>
+<span class="sd">        </span>
+<span class="sd">        pulse ( bool ): ( optional, default value: False ) if False, returns a list containing only the median :math:`F_0`, if True, returns a list with all values necessary to calculate pulses. This list contains the median :math:`F_0`, the frequencies for each frame in a list, a list of tuples containing the beginning time of the frame, and the ending time of the frame, and the signal filtered by the Nyquist Frequency. The indicies in the second and third list correspond to each other.</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        list: index 0 contains the median :math:`F_0` in hz, if pulse is set </span>
+<span class="sd">        equal to True, indicies 1, 2, and 3 will contain:</span>
+<span class="sd">            a list of all voiced frequencies in order,\n</span>
+<span class="sd">            a list of tuples of the beginning and ending time of a voiced </span>
+<span class="sd">            interval, each index in the list corresponding to the previous </span>
+<span class="sd">            list, and \n</span>
+<span class="sd">            a numpy.ndarray of the signal filtered by the Nyquist Frequency. </span>
+<span class="sd">        If pulse is set equal to False, or left to the default value, then the </span>
+<span class="sd">        list will only contain the median :math:`F_0`.</span>
+<span class="sd">        </span>
+<span class="sd">    Raises:</span>
+<span class="sd">        ValueError: min_pitch has to be greater than zero.</span>
+<span class="sd">        </span>
+<span class="sd">        ValueError: octave_cost isn&#39;t in [ 0, 1 ].</span>
+<span class="sd">        </span>
+<span class="sd">        ValueError: silence_thres isn&#39;t in [ 0, 1 ].</span>
+<span class="sd">        </span>
+<span class="sd">        ValueError: voicing_thres isn&#39;t in [ 0, 1 ].</span>
+<span class="sd">        </span>
+<span class="sd">        ValueError: max_pitch can&#39;t be larger than Nyquist Frequency.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">    The example below demonstrates what different outputs this function gives, </span>
+<span class="sd">    using a synthesized signal.</span>
+<span class="sd">        &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">        &gt;&gt;&gt; from matplotlib import pyplot as plt</span>
+<span class="sd">        &gt;&gt;&gt; domain = np.linspace( 0, 6, 300000 )</span>
+<span class="sd">        &gt;&gt;&gt; rate = 50000</span>
+<span class="sd">        &gt;&gt;&gt; y = lambda x: np.sin( 2 * np.pi * 140 * x )</span>
+<span class="sd">        &gt;&gt;&gt; signal = y( domain )</span>
+<span class="sd">        &gt;&gt;&gt; get_F_0( signal, rate )</span>
+<span class="sd">        [ 139.70588235294116 ]</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; get_F_0( signal, rate, voicing_threshold = .99, accurate = True )</span>
+<span class="sd">        [ 139.70588235294116 ]</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; w, x, y, z = get_F_0( signal, rate, pulse = True )</span>
+<span class="sd">        &gt;&gt;&gt; print( w )</span>
+<span class="sd">        139.70588235294116</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; print( x[ :5 ] )</span>
+<span class="sd">        [ 0.00715789  0.00715789  0.00715789  0.00715789  0.00715789 ]</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; print( y[ :5 ] )</span>
+<span class="sd">        [ ( 0.002500008333361111, 0.037500125000416669 ),</span>
+<span class="sd">          ( 0.012500041666805555, 0.047500158333861113 ),</span>
+<span class="sd">          ( 0.022500075000249999, 0.057500191667305557 ),</span>
+<span class="sd">          ( 0.032500108333694447, 0.067500225000749994 ),</span>
+<span class="sd">          ( 0.042500141667138891, 0.077500258334194452 ) ]</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; print( z[ : 5 ] )</span>
+<span class="sd">        [ 0.          0.01759207  0.0351787   0.05275443  0.07031384 ]</span>
+<span class="sd">        </span>
+<span class="sd">    The example below demonstrates the algorithms ability to adjust for signals</span>
+<span class="sd">    with dynamic frequencies, by comparing a plot of a synthesized signal with </span>
+<span class="sd">    an increasing frequency and the calculated frequencies for that signal.</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; domain = np.linspace( 1, 2, 10000 )</span>
+<span class="sd">        &gt;&gt;&gt; rate = 10000</span>
+<span class="sd">        &gt;&gt;&gt; y = lambda x : np.sin( x ** 8 )</span>
+<span class="sd">        &gt;&gt;&gt; signal = y( domain )</span>
+<span class="sd">        &gt;&gt;&gt; median_F_0, periods, time_vals, modified_sig = get_F_0( signal, </span>
+<span class="sd">        rate, pulse = True )</span>
+<span class="sd">        &gt;&gt;&gt; plt.subplot( 211 )</span>
+<span class="sd">        &gt;&gt;&gt; plt.plot( domain, signal )</span>
+<span class="sd">        &gt;&gt;&gt; plt.title( &quot;Synthesized Signal&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.ylabel( &quot;Amplitude&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.subplot( 212 )</span>
+<span class="sd">        &gt;&gt;&gt; plt.plot( np.linspace( 1, 2, len( periods ) ), 1.0 / np.array( </span>
+<span class="sd">        periods ) )</span>
+<span class="sd">        &gt;&gt;&gt; plt.title( &quot;Frequencies of Signal&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.xlabel( &quot;Samples&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.ylabel( &quot;Frequency&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.suptitle( &quot;Comparison of Synthesized Signal and it&#39;s Calculated Frequencies&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.show()</span>
+<span class="sd">        </span>
+<span class="sd">    .. figure::  figures/F_0_synthesized_sig.png</span>
+<span class="sd">       :align:   center</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">min_pitch</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span> <span class="s2">&quot;min_pitch has to be greater than zero.&quot;</span> <span class="p">)</span>
+        
+    <span class="k">if</span> <span class="n">max_num_cands</span> <span class="o">&lt;</span> <span class="n">max_pitch</span> <span class="o">/</span> <span class="n">min_pitch</span><span class="p">:</span>
+        <span class="n">max_num_cands</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="n">max_pitch</span> <span class="o">/</span> <span class="n">min_pitch</span> <span class="p">)</span>
+    
+    <span class="n">initial_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span> <span class="n">signal</span> <span class="p">)</span>
+    <span class="n">total_time</span> <span class="o">=</span> <span class="n">initial_len</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span> <span class="n">rate</span> <span class="p">)</span>
+    <span class="n">tot_time_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="n">total_time</span><span class="p">,</span> <span class="n">initial_len</span> <span class="p">)</span>
+    <span class="n">max_place_poss</span>  <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">min_pitch</span>
+    <span class="n">min_place_poss</span>  <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">max_pitch</span>
+    <span class="c1">#to silence formants</span>
+    <span class="n">min_place_poss2</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">/</span> <span class="n">max_pitch</span>
+    
+    <span class="k">if</span> <span class="n">accurate</span><span class="p">:</span> <span class="n">pds_per_window</span> <span class="o">=</span> <span class="mf">6.0</span>
+    <span class="k">else</span><span class="p">:</span>        <span class="n">pds_per_window</span> <span class="o">=</span> <span class="mf">3.0</span>
+    
+    <span class="c1">#degree of oversampling is 4    </span>
+    <span class="k">if</span> <span class="n">time_step</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span> <span class="n">time_step</span> <span class="o">=</span> <span class="p">(</span> <span class="n">pds_per_window</span> <span class="o">/</span> <span class="mf">4.0</span> <span class="p">)</span> <span class="o">/</span> <span class="n">min_pitch</span>
+                                   
+    <span class="n">w_len</span> <span class="o">=</span> <span class="n">pds_per_window</span> <span class="o">/</span> <span class="n">min_pitch</span>
+    <span class="c1">#correcting for time_step       </span>
+    <span class="n">octave_jump_cost</span>     <span class="o">*=</span> <span class="o">.</span><span class="mi">01</span> <span class="o">/</span> <span class="n">time_step</span>
+    <span class="n">voiced_unvoiced_cost</span> <span class="o">*=</span> <span class="o">.</span><span class="mi">01</span> <span class="o">/</span> <span class="n">time_step</span> 
+    
+    <span class="n">Nyquist_Frequency</span> <span class="o">=</span> <span class="n">rate</span> <span class="o">/</span>  <span class="mf">2.0</span>
+    <span class="n">upper_bound</span> <span class="o">=</span> <span class="o">.</span><span class="mi">95</span> <span class="o">*</span> <span class="n">Nyquist_Frequency</span>
+    <span class="n">zeros_pad</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">**</span> <span class="p">(</span> <span class="nb">int</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span> <span class="n">initial_len</span> <span class="p">)</span> <span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">)</span> <span class="o">-</span> <span class="n">initial_len</span>
+    <span class="n">signal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span> <span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="n">zeros_pad</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+    <span class="n">fft_signal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span> <span class="n">signal</span> <span class="p">)</span>
+    <span class="n">fft_signal</span><span class="p">[</span> <span class="nb">int</span><span class="p">(</span> <span class="n">upper_bound</span> <span class="p">)</span> <span class="p">:</span> <span class="o">-</span><span class="nb">int</span><span class="p">(</span> <span class="n">upper_bound</span> <span class="p">)</span> <span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">sig</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">ifft</span><span class="p">(</span> <span class="n">fft_signal</span> <span class="p">)</span>
+    <span class="n">sig</span> <span class="o">=</span> <span class="n">sig</span><span class="p">[</span> <span class="p">:</span><span class="n">initial_len</span> <span class="p">]</span><span class="o">.</span><span class="n">real</span>
+             
+    <span class="c1">#checking to make sure values are valid</span>
+    <span class="k">if</span> <span class="n">Nyquist_Frequency</span> <span class="o">&lt;</span> <span class="n">max_pitch</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span> <span class="s2">&quot;max_pitch can&#39;t be larger than Nyquist Frequency.&quot;</span> <span class="p">)</span>
+    <span class="k">if</span> <span class="n">octave_cost</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">octave_cost</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span> <span class="s2">&quot;octave_cost isn&#39;t in [ 0, 1 ]&quot;</span> <span class="p">)</span>            
+    <span class="k">if</span> <span class="n">voicing_thres</span><span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">voicing_thres</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span> <span class="s2">&quot;voicing_thres isn&#39;t in [ 0, 1 ]&quot;</span> <span class="p">)</span> 
+    <span class="k">if</span> <span class="n">silence_thres</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">silence_thres</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span> <span class="s2">&quot;silence_thres isn&#39;t in [ 0, 1 ]&quot;</span> <span class="p">)</span>
+        
+    <span class="c1">#finding number of samples per frame and time_step</span>
+    <span class="n">frame_len</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="n">w_len</span> <span class="o">*</span> <span class="n">rate</span> <span class="o">+</span> <span class="o">.</span><span class="mi">5</span> <span class="p">)</span>
+    <span class="n">time_len</span>  <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="n">time_step</span>  <span class="o">*</span> <span class="n">rate</span> <span class="o">+</span> <span class="o">.</span><span class="mi">5</span> <span class="p">)</span>
+        
+    <span class="c1">#initializing list of candidates for F_0, and their strengths</span>
+    <span class="n">best_cands</span><span class="p">,</span> <span class="n">strengths</span><span class="p">,</span> <span class="n">time_vals</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+    
+    <span class="c1">#finding the global peak the way Praat does</span>
+    <span class="n">global_peak</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">sig</span> <span class="o">-</span> <span class="n">sig</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">global_peak</span><span class="p">),</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">e</span>
+    <span class="n">inf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+    <span class="n">log</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log2</span>
+    <span class="n">start_i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">start_i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span> <span class="n">sig</span> <span class="p">)</span> <span class="o">-</span> <span class="n">frame_len</span> <span class="p">:</span>
+        <span class="n">end_i</span> <span class="o">=</span> <span class="n">start_i</span> <span class="o">+</span> <span class="n">frame_len</span>
+        <span class="n">segment</span> <span class="o">=</span> <span class="n">sig</span><span class="p">[</span> <span class="n">start_i</span> <span class="p">:</span> <span class="n">end_i</span> <span class="p">]</span>
+        
+        <span class="k">if</span> <span class="n">accurate</span><span class="p">:</span>
+            <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="n">w_len</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span> <span class="n">segment</span> <span class="p">)</span> <span class="p">)</span>
+            <span class="n">numerator</span> <span class="o">=</span> <span class="n">e</span> <span class="o">**</span> <span class="p">(</span> <span class="o">-</span><span class="mf">12.0</span> <span class="o">*</span> <span class="p">(</span> <span class="n">t</span> <span class="o">/</span> <span class="n">w_len</span> <span class="o">-</span> <span class="o">.</span><span class="mi">5</span> <span class="p">)</span> <span class="o">**</span> <span class="mf">2.0</span> <span class="p">)</span> <span class="o">-</span> <span class="n">e</span> <span class="o">**</span> <span class="o">-</span><span class="mf">12.0</span>
+            <span class="n">denominator</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="n">e</span> <span class="o">**</span> <span class="o">-</span><span class="mf">12.0</span>
+            <span class="n">window</span> <span class="o">=</span> <span class="n">numerator</span> <span class="o">/</span> <span class="n">denominator</span>
+            <span class="n">interpolation_depth</span> <span class="o">=</span> <span class="mf">0.25</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="n">window</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hanning</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">segment</span> <span class="p">)</span> <span class="p">)</span>    
+            <span class="n">interpolation_depth</span> <span class="o">=</span> <span class="mf">0.50</span>
+        
+        <span class="c1">#shave off ends of time intervals to account for overlapping</span>
+        <span class="n">start_time</span> <span class="o">=</span> <span class="n">tot_time_arr</span><span class="p">[</span> <span class="n">start_i</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span> <span class="n">time_len</span> <span class="o">/</span> <span class="mf">4.0</span> <span class="p">)</span> <span class="p">]</span>
+        <span class="n">stop_time</span>  <span class="o">=</span> <span class="n">tot_time_arr</span><span class="p">[</span> <span class="n">end_i</span>   <span class="o">-</span> <span class="nb">int</span><span class="p">(</span> <span class="n">time_len</span> <span class="o">/</span> <span class="mf">4.0</span> <span class="p">)</span> <span class="p">]</span>
+        <span class="n">time_vals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span> <span class="n">start_time</span><span class="p">,</span> <span class="n">stop_time</span> <span class="p">)</span> <span class="p">)</span>
+          
+        <span class="n">start_i</span> <span class="o">+=</span> <span class="n">time_len</span>
+        
+        <span class="n">long_pd_i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="n">rate</span> <span class="o">/</span> <span class="n">min_pitch</span> <span class="p">)</span>
+        <span class="n">half_pd_i</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="n">long_pd_i</span> <span class="o">/</span> <span class="mf">2.0</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">)</span>
+        
+        <span class="n">long_pd_cushion</span> <span class="o">=</span> <span class="n">segment</span><span class="p">[</span> <span class="n">half_pd_i</span> <span class="p">:</span> <span class="o">-</span> <span class="n">half_pd_i</span> <span class="p">]</span>  
+        <span class="c1">#finding local peak and local mean the way Praat does</span>
+        <span class="c1">#local mean is found by looking a longest period to either side of the </span>
+        <span class="c1">#center of the frame, and using only the values within this interval to </span>
+        <span class="c1">#calculate the local mean, and similarly local peak is found by looking</span>
+        <span class="c1">#a half of the longest period to either side of the center of the </span>
+        <span class="c1">#frame, ( after the frame has windowed ) and choosing the absolute </span>
+        <span class="c1">#maximum in this interval</span>
+        <span class="n">local_mean</span> <span class="o">=</span> <span class="n">long_pd_cushion</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> 
+        <span class="n">segment</span> <span class="o">=</span> <span class="n">segment</span> <span class="o">-</span> <span class="n">local_mean</span>
+        <span class="n">segment</span> <span class="o">*=</span> <span class="n">window</span>
+        <span class="n">half_pd_cushion</span> <span class="o">=</span> <span class="n">segment</span><span class="p">[</span> <span class="n">long_pd_i</span> <span class="p">:</span> <span class="o">-</span><span class="n">long_pd_i</span> <span class="p">]</span> 
+        <span class="n">local_peak</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">half_pd_cushion</span> <span class="p">)</span> <span class="p">)</span>
+        <span class="k">if</span> <span class="n">local_peak</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1">#shortcut -&gt; complete silence and only candidate is silent candidate</span>
+            <span class="n">best_cands</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">[</span> <span class="n">inf</span> <span class="p">]</span> <span class="p">)</span>
+            <span class="n">strengths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">[</span> <span class="n">voicing_thres</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">]</span> <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1">#calculating autocorrelation, based off steps 3.2-3.10</span>
+            <span class="n">intensity</span> <span class="o">=</span> <span class="n">local_peak</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span> <span class="n">global_peak</span> <span class="p">)</span>
+         
+            <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span> <span class="n">segment</span> <span class="p">)</span>
+            <span class="n">nFFT</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">**</span> <span class="nb">int</span><span class="p">(</span> <span class="n">log</span><span class="p">(</span> <span class="p">(</span> <span class="mf">1.0</span> <span class="o">+</span> <span class="n">interpolation_depth</span> <span class="p">)</span> <span class="o">*</span> <span class="n">N</span> <span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">)</span>
+            <span class="n">window</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span> <span class="p">(</span>   <span class="n">window</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="n">nFFT</span> <span class="o">-</span> <span class="n">N</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span> 
+            <span class="n">segment</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span> <span class="p">(</span>  <span class="n">segment</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="n">nFFT</span> <span class="o">-</span> <span class="n">N</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+            <span class="n">x_fft</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span> <span class="n">segment</span> <span class="p">)</span>
+            <span class="n">r_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span> <span class="n">x_fft</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span> <span class="n">x_fft</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+            <span class="n">r_a</span> <span class="o">=</span> <span class="n">r_a</span><span class="p">[</span> <span class="p">:</span> <span class="nb">int</span><span class="p">(</span> <span class="n">N</span> <span class="o">/</span> <span class="n">pds_per_window</span> <span class="p">)</span> <span class="p">]</span>
+                       
+            <span class="n">x_fft</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span> <span class="n">window</span> <span class="p">)</span>
+            <span class="n">r_w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span> <span class="n">x_fft</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span> <span class="n">x_fft</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+            <span class="n">r_w</span> <span class="o">=</span> <span class="n">r_w</span><span class="p">[</span> <span class="p">:</span> <span class="nb">int</span><span class="p">(</span> <span class="n">N</span> <span class="o">/</span> <span class="n">pds_per_window</span> <span class="p">)</span> <span class="p">]</span>
+            <span class="n">r_x</span> <span class="o">=</span> <span class="n">r_a</span> <span class="o">/</span> <span class="n">r_w</span>
+            <span class="n">r_x</span> <span class="o">/=</span> <span class="n">r_x</span><span class="p">[</span> <span class="mi">0</span> <span class="p">]</span>
+            
+            <span class="c1">#creating an array of the points in time corresponding to sampled </span>
+            <span class="c1">#autocorrelation of the signal ( r_x )</span>
+            <span class="n">time_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="mi">0</span> <span class="p">,</span> <span class="n">w_len</span> <span class="o">/</span> <span class="n">pds_per_window</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span> <span class="n">r_x</span> <span class="p">)</span> <span class="p">)</span>
+            <span class="n">peaks</span> <span class="o">=</span> <span class="n">pu</span><span class="o">.</span><span class="n">indexes</span><span class="p">(</span> <span class="n">r_x</span> <span class="p">,</span> <span class="n">thres</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">)</span>
+            <span class="n">max_values</span><span class="p">,</span> <span class="n">max_places</span> <span class="o">=</span> <span class="n">r_x</span><span class="p">[</span> <span class="n">peaks</span> <span class="p">],</span> <span class="n">time_array</span><span class="p">[</span> <span class="n">peaks</span> <span class="p">]</span>
+            
+            <span class="c1">#only consider places that are voiced over a certain threshold</span>
+            <span class="n">max_places</span> <span class="o">=</span> <span class="n">max_places</span><span class="p">[</span> <span class="n">max_values</span> <span class="o">&gt;</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">voicing_thres</span> <span class="p">]</span>
+            <span class="n">max_values</span> <span class="o">=</span> <span class="n">max_values</span><span class="p">[</span> <span class="n">max_values</span> <span class="o">&gt;</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">voicing_thres</span> <span class="p">]</span>  
+            
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">max_values</span> <span class="p">)</span> <span class="p">):</span>
+                <span class="c1">#reflecting values &gt; 1 through 1.</span>
+                <span class="k">if</span> <span class="n">max_values</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">&gt;</span> <span class="mf">1.0</span> <span class="p">:</span> 
+                    <span class="n">max_values</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">max_values</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span>
+            
+            <span class="c1">#calculating the relative strength value</span>
+            <span class="n">rel_val</span> <span class="o">=</span> <span class="p">[</span> <span class="n">val</span> <span class="o">-</span> <span class="n">octave_cost</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span> <span class="n">place</span> <span class="o">*</span> <span class="n">min_pitch</span> <span class="p">)</span> <span class="k">for</span> 
+                        <span class="n">val</span><span class="p">,</span> <span class="n">place</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span> <span class="n">max_values</span><span class="p">,</span> <span class="n">max_places</span> <span class="p">)</span> <span class="p">]</span>
+            
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span> <span class="n">max_values</span> <span class="p">)</span> <span class="o">&gt;</span> <span class="mf">0.0</span> <span class="p">:</span>
+                <span class="c1">#finding the max_num_cands-1 maximizers, and maximums, then </span>
+                <span class="c1">#calculating their strengths ( eq. 23 and 24 ) and accounting for </span>
+                <span class="c1">#silent candidate</span>
+                <span class="n">max_places</span> <span class="o">=</span> <span class="p">[</span> <span class="n">max_places</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span> <span class="n">rel_val</span> <span class="p">)[</span>
+                        <span class="o">-</span><span class="n">max_num_cands</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:</span> <span class="p">]</span> <span class="p">]</span> 
+                <span class="n">max_values</span> <span class="o">=</span> <span class="p">[</span> <span class="n">max_values</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span> <span class="n">rel_val</span> <span class="p">)[</span>
+                        <span class="o">-</span><span class="n">max_num_cands</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:</span> <span class="p">]</span> <span class="p">]</span> 
+                <span class="n">max_places</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="n">max_places</span> <span class="p">)</span>
+                <span class="n">max_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="n">max_values</span> <span class="p">)</span>
+                
+                <span class="n">rel_val</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span> <span class="n">rel_val</span> <span class="p">)[</span> <span class="o">-</span><span class="n">max_num_cands</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:</span> <span class="p">]</span> <span class="p">)</span>
+                <span class="c1">#adding the silent candidate&#39;s strength to strengths</span>
+                <span class="n">rel_val</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">voicing_thres</span> <span class="o">+</span> <span class="nb">max</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">-</span> <span class="p">(</span> <span class="n">intensity</span> <span class="o">/</span> 
+                        <span class="p">(</span> <span class="n">silence_thres</span> <span class="o">/</span> <span class="p">(</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">voicing_thres</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+                
+                <span class="c1">#inf is our silent candidate</span>
+                <span class="n">max_places</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span> <span class="p">(</span> <span class="n">max_places</span><span class="p">,</span> <span class="n">inf</span> <span class="p">)</span> <span class="p">)</span>
+                
+                <span class="n">best_cands</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span> <span class="n">max_places</span> <span class="p">)</span> <span class="p">)</span>
+                <span class="n">strengths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">rel_val</span> <span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1">#if there are no available maximums, only account for silent </span>
+                <span class="c1">#candidate</span>
+                <span class="n">best_cands</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">[</span> <span class="n">inf</span> <span class="p">]</span> <span class="p">)</span>
+                <span class="n">strengths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">[</span> <span class="n">voicing_thres</span> <span class="o">+</span> <span class="nb">max</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">-</span> <span class="n">intensity</span> <span class="o">/</span>
+                        <span class="p">(</span> <span class="n">silence_thres</span> <span class="o">/</span> <span class="p">(</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">voicing_thres</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span> <span class="p">]</span> <span class="p">)</span>
+            
+    <span class="c1">#Calculates smallest costing path through list of candidates ( forwards ), </span>
+    <span class="c1">#and returns path.</span>
+    <span class="n">best_total_cost</span><span class="p">,</span> <span class="n">best_total_path</span> <span class="o">=</span> <span class="o">-</span><span class="n">inf</span><span class="p">,</span> <span class="p">[]</span>
+    <span class="c1">#for each initial candidate find the path of least cost, then of those </span>
+    <span class="c1">#paths, choose the one with the least cost.</span>
+    <span class="k">for</span> <span class="n">cand</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">best_cands</span><span class="p">[</span> <span class="mi">0</span> <span class="p">]</span> <span class="p">)</span> <span class="p">):</span>
+        <span class="n">start_val</span> <span class="o">=</span> <span class="n">best_cands</span><span class="p">[</span> <span class="mi">0</span> <span class="p">][</span> <span class="n">cand</span> <span class="p">]</span>
+        <span class="n">total_path</span> <span class="o">=</span> <span class="p">[</span> <span class="n">start_val</span> <span class="p">]</span>
+        <span class="n">level</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">prev_delta</span> <span class="o">=</span> <span class="n">strengths</span><span class="p">[</span> <span class="mi">0</span> <span class="p">][</span> <span class="n">cand</span> <span class="p">]</span>
+        <span class="n">maximum</span> <span class="o">=</span> <span class="o">-</span><span class="n">inf</span>
+        <span class="k">while</span> <span class="n">level</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span> <span class="n">best_cands</span> <span class="p">)</span> <span class="p">:</span>
+            <span class="n">prev_val</span> <span class="o">=</span> <span class="n">total_path</span><span class="p">[</span> <span class="o">-</span><span class="mi">1</span> <span class="p">]</span>
+            <span class="n">best_val</span>  <span class="o">=</span> <span class="n">inf</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">best_cands</span><span class="p">[</span> <span class="n">level</span> <span class="p">]</span> <span class="p">)</span> <span class="p">):</span>
+                <span class="n">cur_val</span>   <span class="o">=</span> <span class="n">best_cands</span><span class="p">[</span> <span class="n">level</span> <span class="p">][</span> <span class="n">j</span> <span class="p">]</span> 
+                <span class="n">cur_delta</span> <span class="o">=</span>  <span class="n">strengths</span><span class="p">[</span> <span class="n">level</span> <span class="p">][</span> <span class="n">j</span> <span class="p">]</span>
+                <span class="n">cost</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">cur_unvoiced</span>  <span class="o">=</span> <span class="n">cur_val</span>  <span class="o">==</span> <span class="n">inf</span> <span class="ow">or</span> <span class="n">cur_val</span>  <span class="o">&lt;</span> <span class="n">min_place_poss2</span>
+                <span class="n">prev_unvoiced</span> <span class="o">=</span> <span class="n">prev_val</span> <span class="o">==</span> <span class="n">inf</span> <span class="ow">or</span> <span class="n">prev_val</span> <span class="o">&lt;</span> <span class="n">min_place_poss2</span> 
+                
+                <span class="k">if</span> <span class="n">cur_unvoiced</span><span class="p">:</span>
+                    <span class="c1">#both voiceless</span>
+                    <span class="k">if</span> <span class="n">prev_unvoiced</span><span class="p">:</span> 
+                        <span class="n">cost</span> <span class="o">=</span> <span class="mi">0</span> 
+                    <span class="c1">#voiced-to-unvoiced transition</span>
+                    <span class="k">else</span><span class="p">:</span>             
+                        <span class="n">cost</span> <span class="o">=</span> <span class="n">voiced_unvoiced_cost</span> 
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1">#unvoiced-to-voiced transition</span>
+                    <span class="k">if</span> <span class="n">prev_unvoiced</span><span class="p">:</span> 
+                        <span class="n">cost</span> <span class="o">=</span> <span class="n">voiced_unvoiced_cost</span>
+                    <span class="c1">#both are voiced</span>
+                    <span class="k">else</span><span class="p">:</span>             
+                        <span class="n">cost</span> <span class="o">=</span> <span class="n">octave_jump_cost</span> <span class="o">*</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">log</span><span class="p">(</span> <span class="n">cur_val</span> <span class="o">/</span>
+                                                           <span class="n">prev_val</span> <span class="p">)</span> <span class="p">)</span>
+                            
+                <span class="c1">#The cost for any given candidate is given by the transition </span>
+                <span class="c1">#cost, minus the strength of the given candidate</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="n">prev_delta</span> <span class="o">-</span> <span class="n">cost</span> <span class="o">+</span> <span class="n">cur_delta</span>
+                <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="n">maximum</span><span class="p">:</span> <span class="n">maximum</span><span class="p">,</span> <span class="n">best_val</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="n">cur_val</span>
+                    
+            <span class="n">prev_delta</span> <span class="o">=</span> <span class="n">maximum</span>        
+            <span class="n">total_path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">best_val</span> <span class="p">)</span>
+            <span class="n">level</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+        <span class="k">if</span> <span class="n">maximum</span> <span class="o">&gt;</span> <span class="n">best_total_cost</span><span class="p">:</span> 
+            <span class="n">best_total_cost</span><span class="p">,</span> <span class="n">best_total_path</span> <span class="o">=</span> <span class="n">maximum</span><span class="p">,</span> <span class="n">total_path</span>
+            
+    <span class="n">f_0_forth</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="n">best_total_path</span> <span class="p">)</span>        
+    
+    <span class="c1">#Calculates smallest costing path through list of candidates ( backwards ), </span>
+    <span class="c1">#and returns path. Going through the path backwards introduces frequencies </span>
+    <span class="c1">#previously marked as unvoiced, or increases undertones, to decrease </span>
+    <span class="c1">#frequency jumps</span>
+    
+    <span class="n">best_total_cost</span><span class="p">,</span> <span class="n">best_total_path2</span> <span class="o">=</span> <span class="o">-</span><span class="n">inf</span><span class="p">,</span> <span class="p">[]</span>
+    
+    <span class="c1">#Starting at the end, for each initial candidate find the path of least </span>
+    <span class="c1">#cost, then of those paths, choose the one with the least cost.</span>
+    <span class="k">for</span> <span class="n">cand</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">best_cands</span><span class="p">[</span> <span class="o">-</span><span class="mi">1</span> <span class="p">]</span> <span class="p">)</span> <span class="p">):</span>
+        <span class="n">start_val</span> <span class="o">=</span> <span class="n">best_cands</span><span class="p">[</span> <span class="o">-</span><span class="mi">1</span> <span class="p">][</span> <span class="n">cand</span> <span class="p">]</span>
+        <span class="n">total_path</span> <span class="o">=</span> <span class="p">[</span> <span class="n">start_val</span> <span class="p">]</span>
+        <span class="n">level</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span> <span class="n">best_cands</span> <span class="p">)</span> <span class="o">-</span> <span class="mi">2</span>
+        <span class="n">prev_delta</span> <span class="o">=</span> <span class="n">strengths</span><span class="p">[</span> <span class="o">-</span><span class="mi">1</span> <span class="p">][</span> <span class="n">cand</span> <span class="p">]</span>
+        <span class="n">maximum</span> <span class="o">=</span> <span class="o">-</span><span class="n">inf</span>
+        <span class="k">while</span> <span class="n">level</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span>
+            <span class="n">prev_val</span> <span class="o">=</span> <span class="n">total_path</span><span class="p">[</span> <span class="o">-</span><span class="mi">1</span> <span class="p">]</span>
+            <span class="n">best_val</span>  <span class="o">=</span> <span class="n">inf</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">best_cands</span><span class="p">[</span> <span class="n">level</span> <span class="p">]</span> <span class="p">)</span> <span class="p">):</span>
+                <span class="n">cur_val</span>   <span class="o">=</span> <span class="n">best_cands</span><span class="p">[</span> <span class="n">level</span> <span class="p">][</span> <span class="n">j</span> <span class="p">]</span> 
+                <span class="n">cur_delta</span> <span class="o">=</span>  <span class="n">strengths</span><span class="p">[</span> <span class="n">level</span> <span class="p">][</span> <span class="n">j</span> <span class="p">]</span>
+                <span class="n">cost</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">cur_unvoiced</span>  <span class="o">=</span> <span class="n">cur_val</span>  <span class="o">==</span> <span class="n">inf</span> <span class="ow">or</span> <span class="n">cur_val</span>  <span class="o">&lt;</span> <span class="n">min_place_poss2</span> 
+                <span class="n">prev_unvoiced</span> <span class="o">=</span> <span class="n">prev_val</span> <span class="o">==</span> <span class="n">inf</span> <span class="ow">or</span> <span class="n">prev_val</span> <span class="o">&lt;</span> <span class="n">min_place_poss2</span> 
+                
+                <span class="k">if</span> <span class="n">cur_unvoiced</span><span class="p">:</span>
+                    <span class="c1">#both voiceless</span>
+                    <span class="k">if</span> <span class="n">prev_unvoiced</span><span class="p">:</span> 
+                        <span class="n">cost</span> <span class="o">=</span> <span class="mi">0</span> 
+                    <span class="c1">#voiced-to-unvoiced transition</span>
+                    <span class="k">else</span><span class="p">:</span>             
+                        <span class="n">cost</span> <span class="o">=</span> <span class="n">voiced_unvoiced_cost</span> 
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1">#unvoiced-to-voiced transition</span>
+                    <span class="k">if</span> <span class="n">prev_unvoiced</span><span class="p">:</span> 
+                        <span class="n">cost</span> <span class="o">=</span> <span class="n">voiced_unvoiced_cost</span>
+                    <span class="c1">#both are voiced</span>
+                    <span class="k">else</span><span class="p">:</span>             
+                        <span class="n">cost</span> <span class="o">=</span> <span class="n">octave_jump_cost</span> <span class="o">*</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">log</span><span class="p">(</span> <span class="n">cur_val</span> <span class="o">/</span> 
+                                                           <span class="n">prev_val</span> <span class="p">)</span> <span class="p">)</span>
+                    
+                <span class="c1">#The cost for any given candidate is given by the transition </span>
+                <span class="c1">#cost, minus the strength of the given candidate</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="n">prev_delta</span> <span class="o">-</span> <span class="n">cost</span> <span class="o">+</span> <span class="n">cur_delta</span>
+                <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="n">maximum</span><span class="p">:</span> <span class="n">maximum</span><span class="p">,</span> <span class="n">best_val</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="n">cur_val</span>
+                    
+            <span class="n">prev_delta</span> <span class="o">=</span> <span class="n">maximum</span>        
+            <span class="n">total_path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">best_val</span> <span class="p">)</span>
+            <span class="n">level</span> <span class="o">-=</span> <span class="mi">1</span>
+            
+        <span class="k">if</span> <span class="n">maximum</span> <span class="o">&gt;</span> <span class="n">best_total_cost</span><span class="p">:</span> 
+            <span class="n">best_total_cost</span><span class="p">,</span> <span class="n">best_total_path2</span> <span class="o">=</span> <span class="n">maximum</span><span class="p">,</span> <span class="n">total_path</span>
+            
+    <span class="n">f_0_back</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="n">best_total_path2</span> <span class="p">)</span> 
+    <span class="c1">#reversing f_0_backward so the initial value corresponds to first frequency</span>
+    <span class="n">f_0_back</span> <span class="o">=</span> <span class="n">f_0_back</span><span class="p">[</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">]</span> 
+
+    <span class="c1">#choose the maximum frequency from each path for the total path</span>
+    <span class="n">f_0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="nb">min</span><span class="p">(</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span> <span class="n">f_0_forth</span><span class="p">,</span> <span class="n">f_0_back</span> <span class="p">)</span> <span class="p">]</span> <span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">pulse</span><span class="p">:</span>
+        <span class="c1">#removing all unvoiced time intervals from list</span>
+        <span class="n">removed</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">f_0</span> <span class="p">)</span> <span class="p">):</span>
+            <span class="k">if</span> <span class="n">f_0</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">&gt;</span> <span class="n">max_place_poss</span> <span class="ow">or</span> <span class="n">f_0</span><span class="p">[</span> <span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">min_place_poss</span><span class="p">:</span>
+                <span class="n">time_vals</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span> <span class="n">time_vals</span><span class="p">[</span> <span class="n">i</span> <span class="o">-</span> <span class="n">removed</span> <span class="p">]</span> <span class="p">)</span>
+                <span class="n">removed</span> <span class="o">+=</span> <span class="mi">1</span>
+      
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">f_0</span> <span class="p">)</span> <span class="p">):</span>
+        <span class="c1">#if f_0 is voiceless assign occurance of peak to inf -&gt; when divided  </span>
+        <span class="c1">#by one this will give us a frequency of 0, corresponding to a unvoiced</span>
+        <span class="c1">#frame</span>
+        <span class="k">if</span> <span class="n">f_0</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">&gt;</span> <span class="n">max_place_poss</span> <span class="ow">or</span> <span class="n">f_0</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">&lt;</span> <span class="n">min_place_poss</span> <span class="p">:</span>
+            <span class="n">f_0</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">=</span> <span class="n">inf</span>
+              
+    <span class="n">f_0</span> <span class="o">=</span> <span class="n">f_0</span><span class="p">[</span> <span class="n">f_0</span> <span class="o">&lt;</span> <span class="n">inf</span> <span class="p">]</span>
+    <span class="k">if</span> <span class="n">pulse</span><span class="p">:</span>              
+        <span class="k">return</span> <span class="p">[</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">f_0</span> <span class="p">),</span> <span class="nb">list</span><span class="p">(</span> <span class="n">f_0</span> <span class="p">),</span> <span class="n">time_vals</span><span class="p">,</span> <span class="n">signal</span> <span class="p">]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span> <span class="n">f_0</span> <span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>    
+        <span class="k">return</span> <span class="p">[</span> <span class="mi">0</span> <span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>                   
+        <span class="k">return</span> <span class="p">[</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">f_0</span> <span class="p">)</span> <span class="p">]</span>   </div>
+
+<div class="viewcode-block" id="get_HNR"><a class="viewcode-back" href="../../../Signal_Analysis.features.html#Signal_Analysis.features.signal.get_HNR">[docs]</a><span class="k">def</span> <span class="nf">get_HNR</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">time_step</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">min_pitch</span> <span class="o">=</span> <span class="mi">75</span><span class="p">,</span> 
+             <span class="n">silence_threshold</span> <span class="o">=</span> <span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="n">periods_per_window</span> <span class="o">=</span> <span class="mf">4.5</span> <span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Computes mean Harmonics-to-Noise ratio ( HNR ).</span>
+<span class="sd">    </span>
+<span class="sd">    .. note::</span>
+<span class="sd">        The Harmonics-to-Noise ratio of a person&#39;s voice is strongly negatively</span>
+<span class="sd">        correlated to depression severity ( described in: </span>
+<span class="sd">        https://ll.mit.edu/mission/cybersec/publications/publication-files/full_papers/2012_09_09_MalyskaN_Interspeech_FP.pdf )</span>
+<span class="sd">        and can be used as an early indicator depression and suicide risk. </span>
+<span class="sd">        After this indicator has been realized, preventative medicine can be </span>
+<span class="sd">        implemented, improving recovery time or even preventing further </span>
+<span class="sd">        symptoms.</span>
+<span class="sd">        </span>
+<span class="sd">    The Harmonics-to-Noise ratio ( HNR ) is the ratio</span>
+<span class="sd">    of the energy of a periodic signal to the energy of the noise in the </span>
+<span class="sd">    signal, expressed in dB, and often used as a measure of hoarseness in a </span>
+<span class="sd">    person&#39;s voice. By way of illustration, if 99% of the energy of the signal </span>
+<span class="sd">    is in the periodic part and 1% of the energy is in noise, then the HNR is </span>
+<span class="sd">    :math:`10 \cdot log_{10}( \\frac{99}{1} ) = 20`. A HNR of 0 dB means that </span>
+<span class="sd">    there is equal energy in the harmonics and in the noise. The first step for </span>
+<span class="sd">    HNR  determination for a signal, in the context of this algorithm, is to </span>
+<span class="sd">    set the maximum frequency to the signal&#39;s Nyquist  Frequency. Then the </span>
+<span class="sd">    signal is segmented into frames of length </span>
+<span class="sd">    :math:`\\frac{periods\_per\_window}{min\_pitch}`. For each frame it then </span>
+<span class="sd">    calculates the normalized autocorrelation ( :math:`r_a` ), or the </span>
+<span class="sd">    correlation of the signal  to a delayed copy of itself. :math:`r_a` is </span>
+<span class="sd">    calculated according to Boersma&#39;s paper ( referenced below ). The highest </span>
+<span class="sd">    peak is picked from :math:`r_a`. If the height of this peak is larger that </span>
+<span class="sd">    the strength of the silent candidate then the HNR for this frame is </span>
+<span class="sd">    calculated from that peak. The height of the peak corresponds to the energy</span>
+<span class="sd">    of the periodic part of the signal. Once the HNR value has been calculated </span>
+<span class="sd">    for all voiced frames, the mean is taken from these values and returned.</span>
+<span class="sd">    This algorithm is adapted from: </span>
+<span class="sd">    http://www.fon.hum.uva.nl/david/ba_shs/2010/Boersma_Proceedings_1993.pdf</span>
+<span class="sd">    and from:</span>
+<span class="sd">    https://github.com/praat/praat/blob/master/fon/Sound_to_Harmonicity.cpp</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        signal ( numpy.ndarray ): The signal the HNR will be calculated from.</span>
+<span class="sd">        </span>
+<span class="sd">        rate ( int ): the number of samples per seconds that the signal was sampled at.</span>
+
+<span class="sd">        time_step ( float ): ( optional, default value: 0.0 ) the measurement, in seconds, of time passing between each frame. The smaller the time_step, the more overlap that will occur. If 0 is supplied the degree of oversampling will be equal to four.</span>
+
+<span class="sd">        min_pitch ( float ): ( optional, default value: 75 ) minimum value to be returned as pitch, cannot be less than or equal to zero</span>
+<span class="sd">                  </span>
+<span class="sd">        silence_threshold ( float ): ( optional, default value: 0.1 ) frames that do not contain amplitudes above this threshold ( relative to the global maximum amplitude ), are considered silent.</span>
+
+<span class="sd">        periods_per_window ( float ): ( optional, default value: 4.5 ) 4.5 is best for speech. The more periods contained per frame the more the algorithm becomes sensitive to dynamic changes in the signal.</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        float: The mean HNR of the signal expressed in dB.</span>
+<span class="sd">        </span>
+<span class="sd">    Raises:</span>
+<span class="sd">        ValueError: min_pitch has to be greater than zero.</span>
+<span class="sd">        </span>
+<span class="sd">        ValueError: silence_threshold isn&#39;t in [ 0, 1 ].</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">    The example below adjusts parameters of the function, using the same </span>
+<span class="sd">    synthesized signal with added noise to demonstrate the stability of the</span>
+<span class="sd">    function.</span>
+<span class="sd">        &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">        &gt;&gt;&gt; from matplotlib import pyplot as plt</span>
+<span class="sd">        &gt;&gt;&gt; domain = np.linspace( 0, 6, 300000 )</span>
+<span class="sd">        &gt;&gt;&gt; rate = 50000</span>
+<span class="sd">        &gt;&gt;&gt; y = lambda x:( 1 + .3 * np.sin( 2 * np.pi * 140 * x ) ) * np.sin( </span>
+<span class="sd">            2 * np.pi * 140 * x )</span>
+<span class="sd">        &gt;&gt;&gt; signal = y( domain ) + .2 * np.random.random( 300000 )</span>
+<span class="sd">        &gt;&gt;&gt; get_HNR( signal, rate )</span>
+<span class="sd">        21.885338007330802</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; get_HNR( signal, rate, periods_per_window = 6 )</span>
+<span class="sd">        21.866307805597849</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; get_HNR( signal, rate, time_step = .04, periods_per_window = 6 )</span>
+<span class="sd">        21.878451649148804</span>
+<span class="sd">        </span>
+<span class="sd">    We&#39;d expect that an increase in noise would reduce HNR and that when the </span>
+<span class="sd">    energy of the noise and the energy of the signal are similar HNR approaches </span>
+<span class="sd">    zero, demonstrated below.</span>
+<span class="sd">        &gt;&gt;&gt; signals = [ y( domain ) + i / 10.0 * np.random.random( 300000 ) for</span>
+<span class="sd">        i in range( 1, 11 ) ]</span>
+<span class="sd">        &gt;&gt;&gt; HNRx10 = [ get_HNR( sig, rate ) for sig in signals ]</span>
+<span class="sd">        &gt;&gt;&gt; plt.plot( np.linspace( .1, 1, 10 ), HNRx10 )</span>
+<span class="sd">        &gt;&gt;&gt; plt.xlabel( &quot;Amount of Added Noise&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.ylabel( &quot;HNR&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.title( &quot;HNR Values of Signals with Added Noise&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.show()</span>
+<span class="sd">        </span>
+<span class="sd">    .. figure::  figures/HNR_values_added_noise.png</span>
+<span class="sd">       :align:   center</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#checking to make sure values are valid</span>
+    <span class="k">if</span> <span class="n">min_pitch</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span> <span class="s2">&quot;min_pitch has to be greater than zero.&quot;</span> <span class="p">)</span>
+    <span class="k">if</span> <span class="n">silence_threshold</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">silence_threshold</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span> <span class="s2">&quot;silence_threshold isn&#39;t in [ 0, 1 ].&quot;</span> <span class="p">)</span>
+    <span class="c1">#degree of overlap is four</span>
+    <span class="k">if</span> <span class="n">time_step</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span> <span class="n">time_step</span> <span class="o">=</span> <span class="p">(</span> <span class="n">periods_per_window</span> <span class="o">/</span> <span class="mf">4.0</span> <span class="p">)</span> <span class="o">/</span> <span class="n">min_pitch</span> 
+                                   
+    <span class="n">Nyquist_Frequency</span> <span class="o">=</span> <span class="n">rate</span> <span class="o">/</span> <span class="mf">2.0</span>
+    <span class="n">max_pitch</span> <span class="o">=</span> <span class="n">Nyquist_Frequency</span>
+    <span class="n">global_peak</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">signal</span> <span class="o">-</span> <span class="n">signal</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span> 
+    
+    <span class="n">window_len</span> <span class="o">=</span> <span class="n">periods_per_window</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span> <span class="n">min_pitch</span> <span class="p">)</span>
+    
+    <span class="c1">#finding number of samples per frame and time_step</span>
+    <span class="n">frame_len</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="n">window_len</span> <span class="o">*</span> <span class="n">rate</span> <span class="p">)</span>
+    <span class="n">t_len</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="n">time_step</span> <span class="o">*</span> <span class="n">rate</span> <span class="p">)</span>
+    
+    <span class="c1">#segmenting signal, there has to be at least one frame</span>
+    <span class="n">num_frames</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">signal</span> <span class="p">)</span> <span class="o">/</span> <span class="n">t_len</span> <span class="o">+</span> <span class="o">.</span><span class="mi">5</span> <span class="p">)</span> <span class="p">)</span> 
+    
+    <span class="n">seg_signal</span> <span class="o">=</span> <span class="p">[</span> <span class="n">signal</span><span class="p">[</span> <span class="nb">int</span><span class="p">(</span> <span class="n">i</span> <span class="o">*</span> <span class="n">t_len</span> <span class="p">)</span> <span class="p">:</span> <span class="nb">int</span><span class="p">(</span> <span class="n">i</span>  <span class="o">*</span> <span class="n">t_len</span> <span class="p">)</span> <span class="o">+</span> <span class="n">frame_len</span> <span class="p">]</span>  
+                                           <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="n">num_frames</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">]</span>
+
+    <span class="c1">#initializing list of candidates for HNR</span>
+    <span class="n">best_cands</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">seg_signal</span> <span class="p">)</span> <span class="p">):</span>
+        
+        <span class="n">segment</span> <span class="o">=</span> <span class="n">seg_signal</span><span class="p">[</span> <span class="n">index</span> <span class="p">]</span>
+        <span class="c1">#ignoring any potential empty segment</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span> <span class="n">segment</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">window_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span> <span class="n">segment</span> <span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span> <span class="n">rate</span> <span class="p">)</span>
+    
+            <span class="c1">#calculating autocorrelation, based off steps 3.2-3.10</span>
+            <span class="n">segment</span> <span class="o">=</span> <span class="n">segment</span> <span class="o">-</span> <span class="n">segment</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+            <span class="n">local_peak</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">segment</span> <span class="p">)</span> <span class="p">)</span> 
+            <span class="k">if</span> <span class="n">local_peak</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+                <span class="n">best_cands</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="o">.</span><span class="mi">5</span> <span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">intensity</span> <span class="o">=</span> <span class="n">local_peak</span> <span class="o">/</span> <span class="n">global_peak</span> 
+                <span class="n">window</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hanning</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">segment</span> <span class="p">)</span> <span class="p">)</span>
+                <span class="n">segment</span> <span class="o">*=</span> <span class="n">window</span>
+               
+                <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span> <span class="n">segment</span> <span class="p">)</span>
+                <span class="n">nsampFFT</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">**</span> <span class="nb">int</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span> <span class="n">N</span> <span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">)</span>
+                <span class="n">window</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span> <span class="p">(</span>   <span class="n">window</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="n">nsampFFT</span> <span class="o">-</span> <span class="n">N</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span> 
+                <span class="n">segment</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span> <span class="p">(</span>  <span class="n">segment</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="n">nsampFFT</span> <span class="o">-</span> <span class="n">N</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+                <span class="n">x_fft</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span> <span class="n">segment</span> <span class="p">)</span>
+                <span class="n">r_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span> <span class="n">x_fft</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span> <span class="n">x_fft</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+                <span class="n">r_a</span> <span class="o">=</span> <span class="n">r_a</span><span class="p">[</span> <span class="p">:</span> <span class="n">N</span> <span class="p">]</span>
+                <span class="n">r_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan_to_num</span><span class="p">(</span> <span class="n">r_a</span> <span class="p">)</span>
+                
+                <span class="n">x_fft</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span> <span class="n">window</span> <span class="p">)</span>
+                <span class="n">r_w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span> <span class="n">x_fft</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">conjugate</span><span class="p">(</span> <span class="n">x_fft</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+                <span class="n">r_w</span> <span class="o">=</span> <span class="n">r_w</span><span class="p">[</span> <span class="p">:</span> <span class="n">N</span> <span class="p">]</span>
+                <span class="n">r_w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan_to_num</span><span class="p">(</span> <span class="n">r_w</span> <span class="p">)</span>
+                <span class="n">r_x</span> <span class="o">=</span> <span class="n">r_a</span> <span class="o">/</span> <span class="n">r_w</span>
+                
+                <span class="n">r_x</span> <span class="o">/=</span> <span class="n">r_x</span><span class="p">[</span> <span class="mi">0</span> <span class="p">]</span>
+                <span class="c1">#creating an array of the points in time corresponding to the </span>
+                <span class="c1">#sampled autocorrelation of the signal ( r_x )</span>
+                <span class="n">time_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="n">window_len</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span> <span class="n">r_x</span> <span class="p">)</span> <span class="p">)</span>
+                <span class="n">i</span> <span class="o">=</span> <span class="n">pu</span><span class="o">.</span><span class="n">indexes</span><span class="p">(</span> <span class="n">r_x</span> <span class="p">)</span>
+                <span class="n">max_values</span><span class="p">,</span> <span class="n">max_places</span> <span class="o">=</span> <span class="n">r_x</span><span class="p">[</span> <span class="n">i</span> <span class="p">],</span> <span class="n">time_array</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span>
+                <span class="n">max_place_poss</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">min_pitch</span>
+                <span class="n">min_place_poss</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">max_pitch</span>
+        
+                <span class="n">max_values</span> <span class="o">=</span> <span class="n">max_values</span><span class="p">[</span> <span class="n">max_places</span> <span class="o">&gt;=</span> <span class="n">min_place_poss</span> <span class="p">]</span>
+                <span class="n">max_places</span> <span class="o">=</span> <span class="n">max_places</span><span class="p">[</span> <span class="n">max_places</span> <span class="o">&gt;=</span> <span class="n">min_place_poss</span> <span class="p">]</span>
+                
+                <span class="n">max_values</span> <span class="o">=</span> <span class="n">max_values</span><span class="p">[</span> <span class="n">max_places</span> <span class="o">&lt;=</span> <span class="n">max_place_poss</span> <span class="p">]</span>
+                <span class="n">max_places</span> <span class="o">=</span> <span class="n">max_places</span><span class="p">[</span> <span class="n">max_places</span> <span class="o">&lt;=</span> <span class="n">max_place_poss</span> <span class="p">]</span>
+                
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">max_values</span> <span class="p">)</span> <span class="p">):</span>
+                    <span class="c1">#reflecting values &gt; 1 through 1.</span>
+                    <span class="k">if</span> <span class="n">max_values</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">&gt;</span> <span class="mf">1.0</span> <span class="p">:</span> 
+                        <span class="n">max_values</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">max_values</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span>
+                
+                <span class="c1">#eq. 23 and 24 with octave_cost, and voicing_threshold set to zero</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span> <span class="n">max_values</span> <span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">strengths</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">max</span><span class="p">(</span> <span class="n">max_values</span> <span class="p">),</span> <span class="nb">max</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">-</span> <span class="p">(</span> <span class="n">intensity</span> <span class="o">/</span>
+                                                            <span class="p">(</span> <span class="n">silence_threshold</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span> <span class="p">]</span>
+                <span class="c1">#if the maximum strength is the unvoiced candidate, then .5 </span>
+                <span class="c1">#corresponds to HNR of 0</span>
+                    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span> <span class="n">strengths</span> <span class="p">):</span>
+                        <span class="n">best_cands</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="mf">0.5</span> <span class="p">)</span>  
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">best_cands</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">strengths</span><span class="p">[</span> <span class="mi">0</span> <span class="p">]</span> <span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">best_cands</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="mf">0.5</span> <span class="p">)</span>
+    
+    <span class="n">best_cands</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="n">best_cands</span> <span class="p">)</span>
+    <span class="n">best_cands</span> <span class="o">=</span> <span class="n">best_cands</span><span class="p">[</span> <span class="n">best_cands</span> <span class="o">&gt;</span> <span class="mf">0.5</span> <span class="p">]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">best_cands</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="c1">#eq. 4</span>
+    <span class="n">best_cands</span> <span class="o">=</span> <span class="mf">10.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span> <span class="n">best_cands</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="n">best_cands</span> <span class="p">)</span> <span class="p">)</span>
+    <span class="n">best_candidate</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span> <span class="n">best_cands</span> <span class="p">)</span>
+    <span class="k">return</span> <span class="n">best_candidate</span></div>
+    
+<div class="viewcode-block" id="get_Pulses"><a class="viewcode-back" href="../../../Signal_Analysis.features.html#Signal_Analysis.features.signal.get_Pulses">[docs]</a><span class="k">def</span> <span class="nf">get_Pulses</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">min_pitch</span> <span class="o">=</span> <span class="mi">75</span><span class="p">,</span> <span class="n">max_pitch</span> <span class="o">=</span> <span class="mi">600</span><span class="p">,</span>
+                <span class="n">include_max</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">include_min</span> <span class="o">=</span> <span class="kc">True</span> <span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Computes glottal pulses of a signal.</span>
+<span class="sd">    </span>
+<span class="sd">    .. note::</span>
+<span class="sd">        This algorithm is a helper function for the jitter algorithm, that </span>
+<span class="sd">        returns a list of points in the time domain corresponding to minima or </span>
+<span class="sd">        maxima of the signal. These minima or maxima are the sequence of </span>
+<span class="sd">        glottal closures in vocal-fold vibration. The distance between </span>
+<span class="sd">        consecutive pulses is defined as the wavelength of the signal at this </span>
+<span class="sd">        interval, which can be used to later calculate jitter. </span>
+<span class="sd">        </span>
+<span class="sd">    This algorithm relies on the voiced/unvoiced decisions and fundamental </span>
+<span class="sd">    frequencies calculated for each voiced frame by get_F_0. For every voiced </span>
+<span class="sd">    interval, a list of points is created by finding the initial point </span>
+<span class="sd">    :math:`t_1`, which is the absolute extremum ( or the maximum/minimum, </span>
+<span class="sd">    depending on your include_max and include_min parameters ) of the amplitude </span>
+<span class="sd">    of the sound in the interval </span>
+<span class="sd">    :math:`[\ t_{mid} - \\frac{T_0}{2},\ t_{mid} + \\frac{T_0}{2}\ ]`, where </span>
+<span class="sd">    :math:`t_{mid}` is the midpoint of the interval, and :math:`T_0` is the </span>
+<span class="sd">    period at :math:`t_{mid}`, as can be linearly interpolated from the periods</span>
+<span class="sd">    acquired from get_F_0. From this point, the algorithm searches for points </span>
+<span class="sd">    :math:`t_i` to the left until we reach the left edge of the interval. These</span>
+<span class="sd">    points are the absolute extrema ( or the maxima/minima ) in the interval</span>
+<span class="sd">    :math:`[\ t_{i-1} - 1.25 \cdot T_{i-1},\ t_{i-1} - 0.8 \cdot T_{i-1}\ ]`, </span>
+<span class="sd">    with :math:`t_{i-1}` being the last found point, and :math:`T_{i-1}` the </span>
+<span class="sd">    period at this point. The same is done to the right of :math:`t_1`. The </span>
+<span class="sd">    points are returned in consecutive order.</span>
+<span class="sd">    This algorithm is adapted from: </span>
+<span class="sd">    https://pdfs.semanticscholar.org/16d5/980ba1cf168d5782379692517250e80f0082.pdf</span>
+<span class="sd">    and from:</span>
+<span class="sd">    https://github.com/praat/praat/blob/master/fon/Sound_to_PointProcess.cpp</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        signal ( numpy.ndarray ): The signal the glottal pulses will be calculated from.</span>
+<span class="sd">        </span>
+<span class="sd">        rate ( int ): the number of samples per seconds that the signal was sampled at.</span>
+<span class="sd">        </span>
+<span class="sd">        min_pitch ( float ): ( optional, default value: 75 ) minimum value to be returned as pitch, cannot be less than or equal to zero</span>
+<span class="sd">        </span>
+<span class="sd">        max_pitch ( float ): ( optional, default value: 600 ) maximum value to be returned as pitch, cannot be greater than Nyquist Frequency   </span>
+<span class="sd">        </span>
+<span class="sd">        include_max ( bool ): ( optional, default value: False ) determines if maxima values will be used when calculating pulses</span>
+<span class="sd">        </span>
+<span class="sd">        include_min ( bool ): ( optional, default value: True ) determines if minima values will be used when calculating pulses</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        numpy.ndarray: an array of points in a time series that correspond to </span>
+<span class="sd">        the signal periodicity</span>
+<span class="sd">    </span>
+<span class="sd">    Raises:</span>
+<span class="sd">        ValueError: include_min and include_max can&#39;t both be False</span>
+<span class="sd">        </span>
+<span class="sd">    Example:</span>
+<span class="sd">    Pulses are calculated for a synthesized signal, and the variation in time </span>
+<span class="sd">    between each pulse is shown.</span>
+<span class="sd">        &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">        &gt;&gt;&gt; from matplotlib import pyplot as plt</span>
+<span class="sd">        &gt;&gt;&gt; domain = np.linspace( 0, 6, 300000 )</span>
+<span class="sd">        &gt;&gt;&gt; y = lambda x:( 1 + .3 * np.sin( 2 * np.pi * 140 * x ) ) * np.sin( </span>
+<span class="sd">            2 * np.pi * 140 * x )</span>
+<span class="sd">        &gt;&gt;&gt; signal = y( domain ) + .2 * np.random.random( 300000 )</span>
+<span class="sd">        &gt;&gt;&gt; rate = 50000</span>
+<span class="sd">        &gt;&gt;&gt; p = get_Pulses( signal, rate )</span>
+<span class="sd">        &gt;&gt;&gt; print( p[ :5 ] )</span>
+<span class="sd">        [ 0.00542001  0.01236002  0.01946004  0.02702005  0.03402006 ]</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; print( np.diff( p[ :6 ] ) )</span>
+<span class="sd">        [ 0.00694001  0.00710001  0.00756001  0.00700001  0.00712001 ]</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; p = get_Pulses( signal, rate, include_max = True )</span>
+<span class="sd">        &gt;&gt;&gt; print( p[ :5 ] )</span>
+<span class="sd">        [ 0.00886002  0.01608003  0.02340004  0.03038006  0.03732007 ]</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; print( np.diff( p[ :6 ] ) )</span>
+<span class="sd">        [ 0.00722001  0.00732001  0.00698001  0.00694001  0.00734001 ]</span>
+<span class="sd">        </span>
+<span class="sd">        </span>
+<span class="sd">    A synthesized signal, with an increasing frequency and the calculated pulses </span>
+<span class="sd">    of that signal are plotted together to demonstrate the algorithms ability </span>
+<span class="sd">    to adapt to dynamic pulses.</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; domain = np.linspace( 1.85, 2.05, 10000 )</span>
+<span class="sd">        &gt;&gt;&gt; rate = 50000</span>
+<span class="sd">        &gt;&gt;&gt; y = lambda x : np.sin( x ** 8 )</span>
+<span class="sd">        &gt;&gt;&gt; signal = np.hstack( ( np.zeros( 2500 ), y( domain[ 2500: -2500 ] ),</span>
+<span class="sd">        np.zeros( 2500 ) ) )</span>
+<span class="sd">        &gt;&gt;&gt; pulses = get_Pulses( signal, rate )</span>
+<span class="sd">        &gt;&gt;&gt; plt.plot( domain, signal, &#39;r&#39;, alpha = .5, label = &quot;Signal&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.plot( ( 1.85 + pulses[ 0 ] ) * np.ones ( 5 ), </span>
+<span class="sd">        np.linspace( -1, 1, 5 ), &#39;b&#39;, alpha = .5, label = &quot;Pulses&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.legend()</span>
+<span class="sd">        &gt;&gt;&gt; for pulse in pulses[ 1: ]:</span>
+<span class="sd">        &gt;&gt;&gt;     plt.plot( ( 1.85 + pulse ) * np.ones ( 5 ), </span>
+<span class="sd">                np.linspace( -1, 1, 5 ), &#39;b&#39;, alpha = .5 )</span>
+<span class="sd">        &gt;&gt;&gt; plt.xlabel( &quot;Samples&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.ylabel( &quot;Amplitude&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.title( &quot;Signal with Pulses, Calculated from Minima of Signal&quot; )</span>
+<span class="sd">        &gt;&gt;&gt; plt.show() </span>
+<span class="sd">        </span>
+<span class="sd">    .. figure::  figures/Pulses_sig.png</span>
+<span class="sd">       :align:   center           </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#first calculate F_0 estimates for each voiced interval</span>
+    <span class="n">add</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">include_max</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">include_min</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span> <span class="s2">&quot;include_min and include_max can&#39;t both be False&quot;</span> <span class="p">)</span>
+        
+    <span class="n">median</span><span class="p">,</span> <span class="n">period</span><span class="p">,</span> <span class="n">intervals</span><span class="p">,</span> <span class="n">signal</span> <span class="o">=</span> <span class="n">get_F_0</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> 
+                                                <span class="n">min_pitch</span> <span class="o">=</span> <span class="n">min_pitch</span><span class="p">,</span> 
+                                                <span class="n">max_pitch</span> <span class="o">=</span> <span class="n">max_pitch</span><span class="p">,</span> 
+                                                <span class="n">pulse</span> <span class="o">=</span> <span class="kc">True</span> <span class="p">)</span>
+    <span class="n">global_peak</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">signal</span> <span class="o">-</span> <span class="n">signal</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span>
+    <span class="c1">#points will be a list of points where pulses occur, voiced_intervals will</span>
+    <span class="c1">#be a list of tuples consisting of voiced intervals with overlap</span>
+    <span class="c1">#eliminated</span>
+    <span class="n">points</span><span class="p">,</span> <span class="n">voiced_intervals</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+    <span class="c1">#f_times will be an array of times corresponding to our given frequencies,</span>
+    <span class="c1">#to be used for interpolating, v_time be an array consisting of all the </span>
+    <span class="c1">#points in time that are voiced</span>
+    <span class="n">f_times</span><span class="p">,</span> <span class="n">v_time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[]</span> <span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[]</span> <span class="p">)</span>
+    <span class="n">total_time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span> <span class="n">signal</span> <span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span> <span class="n">rate</span> <span class="p">),</span> <span class="nb">len</span><span class="p">(</span> <span class="n">signal</span> <span class="p">)</span> <span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">interval</span> <span class="ow">in</span> <span class="n">intervals</span><span class="p">:</span>
+        <span class="n">start</span><span class="p">,</span> <span class="n">stop</span> <span class="o">=</span> <span class="n">interval</span>
+        <span class="c1">#finding all midpoints for each interval </span>
+        <span class="n">f_times</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span> <span class="p">(</span> <span class="n">f_times</span><span class="p">,</span> <span class="p">(</span> <span class="n">start</span> <span class="o">+</span> <span class="n">stop</span> <span class="p">)</span> <span class="o">/</span> <span class="mf">2.0</span> <span class="p">)</span> <span class="p">)</span>
+        
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>  
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span> <span class="n">intervals</span> <span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">:</span>
+        <span class="n">start</span><span class="p">,</span> <span class="n">stop</span> <span class="o">=</span> <span class="n">intervals</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span>
+        <span class="n">i_start</span><span class="p">,</span> <span class="n">prev_stop</span> <span class="o">=</span> <span class="n">intervals</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span>
+        <span class="c1">#while there is overlap, look to the next interval</span>
+        <span class="k">while</span> <span class="n">start</span> <span class="o">&lt;=</span> <span class="n">prev_stop</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span> <span class="n">intervals</span> <span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">:</span>
+            <span class="n">prev_start</span><span class="p">,</span> <span class="n">prev_stop</span> <span class="o">=</span> <span class="n">intervals</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">start</span><span class="p">,</span> <span class="n">stop</span> <span class="o">=</span> <span class="n">intervals</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span> <span class="n">intervals</span> <span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">samp</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span> <span class="p">(</span>      <span class="n">stop</span> <span class="o">-</span> <span class="n">i_start</span> <span class="p">)</span> <span class="o">*</span> <span class="n">rate</span> <span class="p">)</span>
+            <span class="n">v_time</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span> <span class="p">(</span> <span class="n">v_time</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="n">i_start</span><span class="p">,</span>      <span class="n">stop</span><span class="p">,</span> <span class="n">samp</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span>
+            <span class="n">voiced_intervals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span> <span class="n">i_start</span><span class="p">,</span> <span class="n">stop</span> <span class="p">)</span> <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">samp</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span> <span class="p">(</span> <span class="n">prev_stop</span> <span class="o">-</span> <span class="n">i_start</span> <span class="p">)</span> <span class="o">*</span> <span class="n">rate</span> <span class="p">)</span>
+            <span class="n">v_time</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span> <span class="p">(</span> <span class="n">v_time</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="n">i_start</span><span class="p">,</span> <span class="n">prev_stop</span><span class="p">,</span> <span class="n">samp</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span>	
+            <span class="n">voiced_intervals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span> <span class="n">i_start</span><span class="p">,</span> <span class="n">prev_stop</span> <span class="p">)</span> <span class="p">)</span>
+    
+    <span class="c1">#interpolate the periods so that each voiced point has a corresponding</span>
+    <span class="c1">#period attached to it</span>
+    <span class="n">periods_interp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span> <span class="n">v_time</span><span class="p">,</span> <span class="n">f_times</span><span class="p">,</span> <span class="n">period</span> <span class="p">)</span>
+
+    
+    <span class="k">for</span> <span class="n">interval</span> <span class="ow">in</span> <span class="n">voiced_intervals</span><span class="p">:</span>
+        <span class="n">start</span><span class="p">,</span> <span class="n">stop</span> <span class="o">=</span> <span class="n">interval</span>
+        <span class="n">midpoint</span> <span class="o">=</span> <span class="p">(</span> <span class="n">start</span> <span class="o">+</span> <span class="n">stop</span> <span class="p">)</span> <span class="o">/</span> <span class="mf">2.0</span>
+        <span class="c1">#out of all the voiced points, look for index of the one that is </span>
+        <span class="c1">#closest to our calculated midpoint</span>
+        <span class="n">midpoint_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">v_time</span> <span class="o">-</span> <span class="n">midpoint</span> <span class="p">)</span> <span class="p">)</span>
+        <span class="n">midpoint</span> <span class="o">=</span> <span class="n">v_time</span><span class="p">[</span> <span class="n">midpoint_index</span> <span class="p">]</span>
+        <span class="n">T_0</span> <span class="o">=</span> <span class="n">periods_interp</span><span class="p">[</span> <span class="n">midpoint_index</span> <span class="p">]</span>
+        <span class="n">frame_start</span> <span class="o">=</span> <span class="n">midpoint</span> <span class="o">-</span> <span class="n">T_0</span>
+        <span class="n">frame_stop</span>  <span class="o">=</span> <span class="n">midpoint</span> <span class="o">+</span> <span class="n">T_0</span>
+        <span class="c1">#finding points, start by looking to the left of the center of the </span>
+        <span class="c1">#voiced interval</span>
+        <span class="k">while</span> <span class="n">frame_start</span> <span class="o">&gt;</span> <span class="n">start</span> <span class="p">:</span>
+            <span class="c1">#out of all given time points in signal, find index of closest to</span>
+            <span class="c1">#start and stop</span>
+            <span class="n">frame_start_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">total_time</span> <span class="o">-</span> <span class="n">frame_start</span> <span class="p">)</span> <span class="p">)</span>
+            <span class="n">frame_stop_index</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">total_time</span> <span class="o">-</span> <span class="n">frame_stop</span>  <span class="p">)</span> <span class="p">)</span>
+            
+            <span class="n">frame</span> <span class="o">=</span> <span class="n">signal</span><span class="p">[</span> <span class="n">frame_start_index</span> <span class="p">:</span> <span class="n">frame_stop_index</span> <span class="p">]</span>
+            
+            <span class="k">if</span> <span class="n">include_max</span> <span class="ow">and</span> <span class="n">include_min</span><span class="p">:</span> 
+                <span class="n">p_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">frame</span> <span class="p">)</span> <span class="p">)</span> <span class="o">+</span> <span class="n">frame_start_index</span>
+            <span class="k">elif</span> <span class="n">include_max</span><span class="p">:</span>                  
+                <span class="n">p_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span> <span class="n">frame</span> <span class="p">)</span>        <span class="o">+</span> <span class="n">frame_start_index</span>
+            <span class="k">else</span><span class="p">:</span>                                 
+                <span class="n">p_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span> <span class="n">frame</span> <span class="p">)</span>        <span class="o">+</span> <span class="n">frame_start_index</span> 
+                                                                     
+            <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">signal</span><span class="p">[</span> <span class="n">p_index</span> <span class="p">]</span> <span class="p">)</span> <span class="o">&gt;</span> <span class="o">.</span><span class="mi">02333</span> <span class="o">*</span> <span class="n">global_peak</span><span class="p">:</span> 
+                <span class="n">points</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">total_time</span><span class="p">[</span> <span class="n">p_index</span> <span class="p">]</span> <span class="p">)</span>
+                
+            <span class="n">t</span> <span class="o">=</span> <span class="n">total_time</span><span class="p">[</span> <span class="n">p_index</span> <span class="p">]</span>
+            <span class="n">t_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">v_time</span> <span class="o">-</span> <span class="n">t</span> <span class="p">)</span> <span class="p">)</span>
+            <span class="n">T_0</span> <span class="o">=</span> <span class="n">periods_interp</span><span class="p">[</span> <span class="n">t_index</span> <span class="p">]</span>
+            <span class="n">frame_start</span> <span class="o">=</span> <span class="n">t</span> <span class="o">-</span> <span class="mf">1.25</span> <span class="o">*</span> <span class="n">T_0</span>
+            <span class="n">frame_stop</span>  <span class="o">=</span> <span class="n">t</span> <span class="o">-</span> <span class="mf">0.80</span> <span class="o">*</span> <span class="n">T_0</span>
+            
+        <span class="n">T_0</span> <span class="o">=</span> <span class="n">periods_interp</span><span class="p">[</span> <span class="n">midpoint_index</span> <span class="p">]</span>    
+        <span class="n">frame_start</span> <span class="o">=</span> <span class="n">midpoint</span> <span class="o">-</span> <span class="n">T_0</span>
+        <span class="n">frame_stop</span>  <span class="o">=</span> <span class="n">midpoint</span> <span class="o">+</span> <span class="n">T_0</span>  
+        
+        <span class="c1">#finding points by now looking to the right of the center of the </span>
+        <span class="c1">#voiced interval</span>
+        <span class="k">while</span> <span class="n">frame_stop</span> <span class="o">&lt;</span> <span class="n">stop</span> <span class="p">:</span>
+            <span class="c1">#out of all given time points in signal, find index of closest to</span>
+            <span class="c1">#start and stop</span>
+            <span class="n">frame_start_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">total_time</span> <span class="o">-</span> <span class="n">frame_start</span> <span class="p">)</span> <span class="p">)</span>
+            <span class="n">frame_stop_index</span>  <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">total_time</span> <span class="o">-</span> <span class="n">frame_stop</span>  <span class="p">)</span> <span class="p">)</span>
+            <span class="n">frame</span> <span class="o">=</span> <span class="n">signal</span><span class="p">[</span> <span class="n">frame_start_index</span> <span class="p">:</span> <span class="n">frame_stop_index</span> <span class="p">]</span>
+            
+            <span class="k">if</span> <span class="n">include_max</span> <span class="ow">and</span> <span class="n">include_min</span><span class="p">:</span> 
+                <span class="n">p_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">frame</span> <span class="p">)</span> <span class="p">)</span> <span class="o">+</span> <span class="n">frame_start_index</span>
+            <span class="k">elif</span> <span class="n">include_max</span><span class="p">:</span>                  
+                <span class="n">p_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span> <span class="n">frame</span> <span class="p">)</span>        <span class="o">+</span> <span class="n">frame_start_index</span>
+            <span class="k">else</span><span class="p">:</span>                                 
+                <span class="n">p_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span> <span class="n">frame</span> <span class="p">)</span>        <span class="o">+</span> <span class="n">frame_start_index</span> 
+                                                                     
+            <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">signal</span><span class="p">[</span> <span class="n">p_index</span> <span class="p">]</span> <span class="p">)</span> <span class="o">&gt;</span> <span class="o">.</span><span class="mi">02333</span> <span class="o">*</span> <span class="n">global_peak</span><span class="p">:</span> 
+                <span class="n">points</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">total_time</span><span class="p">[</span> <span class="n">p_index</span> <span class="p">]</span> <span class="p">)</span>  
+            
+            <span class="n">t</span> <span class="o">=</span> <span class="n">total_time</span><span class="p">[</span> <span class="n">p_index</span> <span class="p">]</span>
+            <span class="n">t_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">v_time</span> <span class="o">-</span> <span class="n">t</span> <span class="p">)</span> <span class="p">)</span>
+            <span class="n">T_0</span> <span class="o">=</span> <span class="n">periods_interp</span><span class="p">[</span> <span class="n">t_index</span> <span class="p">]</span>
+            <span class="n">frame_start</span> <span class="o">=</span> <span class="n">t</span> <span class="o">+</span> <span class="mf">0.80</span> <span class="o">*</span> <span class="n">T_0</span>
+            <span class="n">frame_stop</span>  <span class="o">=</span> <span class="n">t</span> <span class="o">+</span> <span class="mf">1.25</span> <span class="o">*</span> <span class="n">T_0</span> 
+            
+    <span class="c1">#returning an ordered array of points with any duplicates removed         </span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="nb">sorted</span><span class="p">(</span> <span class="nb">list</span><span class="p">(</span> <span class="nb">set</span><span class="p">(</span> <span class="n">points</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span> <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="get_Jitter"><a class="viewcode-back" href="../../../Signal_Analysis.features.html#Signal_Analysis.features.signal.get_Jitter">[docs]</a><span class="k">def</span> <span class="nf">get_Jitter</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">period_floor</span> <span class="o">=</span> <span class="o">.</span><span class="mi">0001</span><span class="p">,</span> <span class="n">period_ceiling</span> <span class="o">=</span> <span class="o">.</span><span class="mi">02</span><span class="p">,</span> 
+                <span class="n">max_period_factor</span> <span class="o">=</span> <span class="mf">1.3</span> <span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Compute Jitter.</span>
+<span class="sd">    </span>
+<span class="sd">    .. note::</span>
+<span class="sd">        Significant differences can occur in jitter and shimmer measurements </span>
+<span class="sd">        between different speaking styles, these differences make it possible to </span>
+<span class="sd">        use jitter as a feature for speaker recognition ( referenced below ). </span>
+<span class="sd">        </span>
+<span class="sd">    Jitter is the measurement of random pertubations in period length. For most </span>
+<span class="sd">    accurate jitter measurements, calculations are typically only performed on </span>
+<span class="sd">    long sustained vowels. This algorithm calculates 5 different types of </span>
+<span class="sd">    jitter for all voiced intervals, each type of jitter describing different </span>
+<span class="sd">    characteristics of period pertubations. The 5 types of jitter are absolute </span>
+<span class="sd">    jitter, relative jitter, relative average perturbation ( rap ), the 5-point</span>
+<span class="sd">    period pertubation quotient ( ppq5 ), and the difference of differences of </span>
+<span class="sd">    periods ( ddp ).\n</span>
+<span class="sd">    Absolute jitter is defined as the cycle-to-cycle variation of </span>
+<span class="sd">    fundamental frequency, or in other words, the average absolute difference </span>
+<span class="sd">    between consecutive periods.</span>
+<span class="sd">    </span>
+<span class="sd">    .. math::</span>
+<span class="sd">        \\frac{1}{N-1}\sum_{i=1}^{N-1}|T_i-T_{i-1}|</span>
+<span class="sd">        </span>
+<span class="sd">    Relative jitter is defined as the average absolute difference between </span>
+<span class="sd">    consecutive periods ( absolute jitter ), divided by the average period. </span>
+<span class="sd">    </span>
+<span class="sd">    .. math::</span>
+<span class="sd">        \\frac{\\frac{1}{N-1}\sum_{i=1}^{N-1}|T_i-T_{i-1}|}{\\frac{1}{N}\sum_{i=1}^N T_i}</span>
+<span class="sd">    </span>
+<span class="sd">    Relative average perturbation is defined as the average absolute difference</span>
+<span class="sd">    between a period and the average of it and its two neighbors divided by the</span>
+<span class="sd">    average period.</span>
+<span class="sd">    </span>
+<span class="sd">    .. math::</span>
+<span class="sd">        \\frac{\\frac{1}{N-1}\sum_{i=1}^{N-1}|T_i-(\\frac{1}{3}\sum_{n=i-1}^{i+1}T_n)|}{\\frac{1}{N}\sum_{i=1}^N T_i}</span>
+<span class="sd">    </span>
+<span class="sd">    The 5-point period pertubation quotient is defined as the average absolute </span>
+<span class="sd">    difference between a period and the average of it and its 4 closest neighbors </span>
+<span class="sd">    divided by the average period.</span>
+<span class="sd">    </span>
+<span class="sd">    .. math::</span>
+<span class="sd">        \\frac{\\frac{1}{N-1}\sum_{i=2}^{N-2}|T_i-(\\frac{1}{5}\sum_{n=i-2}^{i+2}T_n)|}{\\frac{1}{N}\sum_{i=1}^N T_i}</span>
+<span class="sd">    </span>
+<span class="sd">    The difference of differences of periods is defined as the relative mean </span>
+<span class="sd">    absolute second-order difference of periods, which is equivalent to 3 times</span>
+<span class="sd">    rap.</span>
+<span class="sd">    </span>
+<span class="sd">    .. math::</span>
+<span class="sd">        \\frac{\\frac{1}{N-2}\sum_{i=2}^{N-1}|(T_{i+1}-T_i)-(T_i-T_{i-1})|}{\\frac{1}{N}\sum_{i=1}^{N}T_i}</span>
+<span class="sd">    </span>
+<span class="sd">    After each type of jitter has been calculated the values are </span>
+<span class="sd">    returned in a dictionary.</span>
+<span class="sd">    </span>
+<span class="sd">    .. warning::</span>
+<span class="sd">        This algorithm has 4.2% relative error when compared to Praat&#39;s values.</span>
+<span class="sd">        </span>
+<span class="sd">    This algorithm is adapted from:  </span>
+<span class="sd">    http://www.lsi.upc.edu/~nlp/papers/far_jit_07.pdf</span>
+<span class="sd">    and from:</span>
+<span class="sd">    http://ac.els-cdn.com/S2212017313002788/1-s2.0-S2212017313002788-main.pdf?_tid=0c860a76-7eda-11e7-a827-00000aab0f02&amp;acdnat=1502486243_009951b8dc70e35597f4cd19f8e05930</span>
+<span class="sd">    and from:</span>
+<span class="sd">    https://github.com/praat/praat/blob/master/fon/VoiceAnalysis.cpp</span>
+<span class="sd">        </span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        signal ( numpy.ndarray ): The signal the jitter will be calculated from.</span>
+<span class="sd">        </span>
+<span class="sd">        rate ( int ): the rate per seconds that the signal was sampled at.</span>
+<span class="sd">        </span>
+<span class="sd">        period_floor ( float ): ( optional, default value: .0001 ) the shortest possible interval that will be used in the computation of jitter, in seconds. If an interval is shorter than this, it will be ignored in the computation of jitter ( the previous and next intervals will not be regarded as consecutive ).</span>
+<span class="sd">        </span>
+<span class="sd">        period_ceiling ( float ): ( optional, default value: .02 ) the longest possible interval that will be used in the computation of jitter, in seconds. If an interval is longer than this, it will be ignored in the computation of jitter ( the previous and next intervals will not be regarded as consecutive ).</span>
+<span class="sd">        </span>
+<span class="sd">        max_period_factor ( float ): ( optional, default value: 1.3 ) the largest possible difference between consecutive intervals that will be used in the computation of jitter. If the ratio of the durations of two consecutive intervals is greater than this, this pair of intervals will be ignored in the computation of jitter ( each of the intervals could still take part in the computation of jitter in a comparison with its neighbor on the other side ).</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        dict: a dictionary with keys: &#39;local&#39;, &#39;local, absolute&#39;, &#39;rap&#39;, </span>
+<span class="sd">        &#39;ppq5&#39;, and &#39;ddp&#39;. The values correspond to each type of jitter.\n</span>
+<span class="sd">        local jitter is expressed as a ratio of mean absolute period variation </span>
+<span class="sd">        to the mean period. \n</span>
+<span class="sd">        local absolute jitter is given in seconds.\n</span>
+<span class="sd">        rap is expressed as a ratio of the mean absolute difference between a </span>
+<span class="sd">        period and the mean of its 2 neighbors to the mean period.\n</span>
+<span class="sd">        ppq5 is expressed as a ratio of the mean absolute difference between a </span>
+<span class="sd">        period and the mean of its 4 neighbors to the mean period.\n</span>
+<span class="sd">        ddp is expressed as a ratio of the mean absolute second-order </span>
+<span class="sd">        difference to the mean period.</span>
+<span class="sd">    </span>
+<span class="sd">    Example:</span>
+<span class="sd">    In the example below a synthesized signal is used to demonstrate random </span>
+<span class="sd">    perturbations in periods, and how get_Jitter responds.</span>
+<span class="sd">        &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">        &gt;&gt;&gt; domain = np.linspace( 0, 6, 300000 )</span>
+<span class="sd">        &gt;&gt;&gt; y = lambda x:( 1 - .3 * np.sin( 2 * np.pi * 140 * x ) ) * np.sin( </span>
+<span class="sd">        2 * np.pi * 140 * x )</span>
+<span class="sd">        &gt;&gt;&gt; signal = y( domain ) + .2 * np.random.random( 300000 )</span>
+<span class="sd">        &gt;&gt;&gt; rate = 50000</span>
+<span class="sd">        &gt;&gt;&gt; get_Jitter( signal, rate )</span>
+<span class="sd">        { &#39;ddp&#39;: 0.047411037373434134,</span>
+<span class="sd">          &#39;local&#39;: 0.02581897560637415,</span>
+<span class="sd">          &#39;local, absolute&#39;: 0.00018442618908563846,</span>
+<span class="sd">          &#39;ppq5&#39;: 0.014805010237029443,</span>
+<span class="sd">          &#39;rap&#39;: 0.015803679124478043 } </span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; get_Jitter( signal, rate, period_floor = .001, </span>
+<span class="sd">        period_ceiling = .01, max_period_factor = 1.05 )</span>
+<span class="sd">        { &#39;ddp&#39;: 0.03264516540374475,</span>
+<span class="sd">          &#39;local&#39;: 0.019927260366800197,</span>
+<span class="sd">          &#39;local, absolute&#39;: 0.00014233584195389132,</span>
+<span class="sd">          &#39;ppq5&#39;: 0.011472274162612033,</span>
+<span class="sd">          &#39;rap&#39;: 0.01088172180124825 }</span>
+<span class="sd">        </span>
+<span class="sd">        &gt;&gt;&gt; y = lambda x:( 1 - .3 * np.sin( 2 * np.pi * 140 * x ) ) * np.sin( </span>
+<span class="sd">        2 * np.pi * 140 * x )</span>
+<span class="sd">        &gt;&gt;&gt; signal = y( domain )</span>
+<span class="sd">        &gt;&gt;&gt; get_Jitter( signal, rate )</span>
+<span class="sd">        { &#39;ddp&#39;: 0.0015827628114371581,</span>
+<span class="sd">          &#39;local&#39;: 0.00079043477724730755,</span>
+<span class="sd">          &#39;local, absolute&#39;: 5.6459437833161522e-06,</span>
+<span class="sd">          &#39;ppq5&#39;: 0.00063462518488944565,</span>
+<span class="sd">          &#39;rap&#39;: 0.00052758760381238598 }</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">pulses</span> <span class="o">=</span> <span class="n">get_Pulses</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span> <span class="p">)</span>
+    <span class="n">periods</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span> <span class="n">pulses</span> <span class="p">)</span>
+    
+    <span class="n">min_period_factor</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">max_period_factor</span>
+    
+    <span class="c1">#finding local, absolute</span>
+    <span class="c1">#described at:</span>
+    <span class="c1">#http://www.fon.hum.uva.nl/praat/manual/PointProcess__Get_jitter__local__absolute____.html</span>
+    <span class="n">sum_total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">num_periods</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span> <span class="n">pulses</span> <span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">periods</span> <span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">):</span>
+        <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span> <span class="o">=</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="p">],</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">]</span>
+        
+        <span class="n">ratio</span> <span class="o">=</span> <span class="n">p2</span> <span class="o">/</span> <span class="n">p1</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">ratio</span> <span class="o">&lt;</span> <span class="n">max_period_factor</span> <span class="ow">and</span> <span class="n">ratio</span> <span class="o">&gt;</span> <span class="n">min_period_factor</span> <span class="ow">and</span> 
+            <span class="n">p1</span>    <span class="o">&lt;</span> <span class="n">period_ceiling</span>    <span class="ow">and</span> <span class="n">p1</span>    <span class="o">&gt;</span> <span class="n">period_floor</span>      <span class="ow">and</span>
+            <span class="n">p2</span>    <span class="o">&lt;</span> <span class="n">period_ceiling</span>    <span class="ow">and</span> <span class="n">p2</span>    <span class="o">&gt;</span> <span class="n">period_floor</span>      <span class="p">):</span>
+            
+                <span class="n">sum_total</span> <span class="o">+=</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">]</span> <span class="o">-</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="p">)</span> 
+        <span class="k">else</span><span class="p">:</span> <span class="n">num_periods</span> <span class="o">-=</span> <span class="mi">1</span>
+                
+    <span class="n">absolute</span> <span class="o">=</span> <span class="n">sum_total</span> <span class="o">/</span> <span class="p">(</span> <span class="n">num_periods</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">)</span>
+    
+    <span class="c1">#finding local, </span>
+    <span class="c1">#described at: </span>
+    <span class="c1">#http://www.fon.hum.uva.nl/praat/manual/PointProcess__Get_jitter__local____.html</span>
+    <span class="n">sum_total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">num_periods</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="c1">#duplicating edges so there is no need to test edge cases</span>
+    <span class="n">periods</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span> <span class="p">(</span> <span class="n">periods</span><span class="p">[</span> <span class="mi">0</span> <span class="p">],</span> <span class="n">periods</span><span class="p">,</span> <span class="n">periods</span><span class="p">[</span> <span class="o">-</span><span class="mi">1</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">periods</span> <span class="p">)</span> <span class="o">-</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span> <span class="o">=</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="p">],</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">],</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">]</span>
+        
+        <span class="n">ratio_1</span><span class="p">,</span> <span class="n">ratio_2</span> <span class="o">=</span> <span class="n">p1</span> <span class="o">/</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p2</span> <span class="o">/</span> <span class="n">p3</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">ratio_1</span> <span class="o">&lt;</span> <span class="n">max_period_factor</span> <span class="ow">and</span> <span class="n">ratio_1</span> <span class="o">&gt;</span> <span class="n">min_period_factor</span> <span class="ow">and</span> 
+            <span class="n">ratio_2</span> <span class="o">&lt;</span> <span class="n">max_period_factor</span> <span class="ow">and</span> <span class="n">ratio_2</span> <span class="o">&gt;</span> <span class="n">min_period_factor</span> <span class="ow">and</span> 
+            <span class="n">p2</span>      <span class="o">&lt;</span> <span class="n">period_ceiling</span>    <span class="ow">and</span> <span class="n">p2</span>      <span class="o">&gt;</span> <span class="n">period_floor</span>      <span class="p">):</span>
+            
+            <span class="n">sum_total</span> <span class="o">+=</span> <span class="n">p2</span>
+            <span class="n">num_periods</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+    <span class="c1">#removing duplicated edges        </span>
+    <span class="n">periods</span> <span class="o">=</span> <span class="n">periods</span><span class="p">[</span> <span class="mi">1</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">]</span>
+    <span class="n">avg_period</span> <span class="o">=</span> <span class="n">sum_total</span> <span class="o">/</span> <span class="p">(</span> <span class="n">num_periods</span> <span class="p">)</span> 
+    <span class="n">relative</span> <span class="o">=</span> <span class="n">absolute</span> <span class="o">/</span> <span class="n">avg_period</span>
+    
+    <span class="c1">#finding rap</span>
+    <span class="c1">#described at: </span>
+    <span class="c1">#http://www.fon.hum.uva.nl/praat/manual/PointProcess__Get_jitter__rap____.html</span>
+    <span class="n">sum_total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">num_periods</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">periods</span> <span class="p">)</span> <span class="o">-</span> <span class="mi">2</span> <span class="p">):</span>
+        <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span> <span class="o">=</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="p">],</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">],</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">]</span>
+        
+        <span class="n">ratio_1</span><span class="p">,</span> <span class="n">ratio_2</span> <span class="o">=</span> <span class="n">p1</span> <span class="o">/</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p2</span> <span class="o">/</span> <span class="n">p3</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">ratio_1</span> <span class="o">&lt;</span> <span class="n">max_period_factor</span> <span class="ow">and</span> <span class="n">ratio_1</span> <span class="o">&gt;</span> <span class="n">min_period_factor</span> <span class="ow">and</span> 
+            <span class="n">ratio_2</span> <span class="o">&lt;</span> <span class="n">max_period_factor</span> <span class="ow">and</span> <span class="n">ratio_2</span> <span class="o">&gt;</span> <span class="n">min_period_factor</span> <span class="ow">and</span> 
+            <span class="n">p1</span>      <span class="o">&lt;</span> <span class="n">period_ceiling</span>    <span class="ow">and</span> <span class="n">p1</span>      <span class="o">&gt;</span> <span class="n">period_floor</span>      <span class="ow">and</span>
+            <span class="n">p2</span>      <span class="o">&lt;</span> <span class="n">period_ceiling</span>    <span class="ow">and</span> <span class="n">p2</span>      <span class="o">&gt;</span> <span class="n">period_floor</span>      <span class="ow">and</span>
+            <span class="n">p3</span>      <span class="o">&lt;</span> <span class="n">period_ceiling</span>    <span class="ow">and</span> <span class="n">p3</span>      <span class="o">&gt;</span> <span class="n">period_floor</span>      <span class="p">):</span>
+            
+            <span class="n">sum_total</span> <span class="o">+=</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">p2</span> <span class="o">-</span> <span class="p">(</span> <span class="n">p1</span> <span class="o">+</span> <span class="n">p2</span> <span class="o">+</span> <span class="n">p3</span> <span class="p">)</span> <span class="o">/</span> <span class="mf">3.0</span> <span class="p">)</span>
+            <span class="n">num_periods</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">rap</span> <span class="o">=</span> <span class="p">(</span> <span class="n">sum_total</span> <span class="o">/</span> <span class="n">num_periods</span> <span class="p">)</span> <span class="o">/</span> <span class="n">avg_period</span> 
+          
+    <span class="c1">#finding ppq5</span>
+    <span class="c1">#described at: </span>
+    <span class="c1">#http://www.fon.hum.uva.nl/praat/manual/PointProcess__Get_jitter__ppq5____.html</span>
+    <span class="n">sum_total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">num_periods</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">periods</span> <span class="p">)</span> <span class="o">-</span> <span class="mi">4</span> <span class="p">):</span>
+        <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span> <span class="o">=</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="p">],</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">],</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">]</span>
+        <span class="n">p4</span><span class="p">,</span> <span class="n">p5</span> <span class="o">=</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">3</span> <span class="p">],</span> <span class="n">periods</span><span class="p">[</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">4</span> <span class="p">]</span>
+        
+        <span class="n">ratio_1</span><span class="p">,</span> <span class="n">ratio_2</span><span class="p">,</span> <span class="n">ratio_3</span><span class="p">,</span> <span class="n">ratio_4</span> <span class="o">=</span> <span class="n">p1</span> <span class="o">/</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p2</span> <span class="o">/</span> <span class="n">p3</span><span class="p">,</span> <span class="n">p3</span> <span class="o">/</span> <span class="n">p4</span><span class="p">,</span> <span class="n">p4</span> <span class="o">/</span> <span class="n">p5</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">ratio_1</span> <span class="o">&lt;</span> <span class="n">max_period_factor</span> <span class="ow">and</span> <span class="n">ratio_1</span> <span class="o">&gt;</span> <span class="n">min_period_factor</span> <span class="ow">and</span> 
+            <span class="n">ratio_2</span> <span class="o">&lt;</span> <span class="n">max_period_factor</span> <span class="ow">and</span> <span class="n">ratio_2</span> <span class="o">&gt;</span> <span class="n">min_period_factor</span> <span class="ow">and</span> 
+            <span class="n">ratio_3</span> <span class="o">&lt;</span> <span class="n">max_period_factor</span> <span class="ow">and</span> <span class="n">ratio_3</span> <span class="o">&gt;</span> <span class="n">min_period_factor</span> <span class="ow">and</span> 
+            <span class="n">ratio_4</span> <span class="o">&lt;</span> <span class="n">max_period_factor</span> <span class="ow">and</span> <span class="n">ratio_4</span> <span class="o">&gt;</span> <span class="n">min_period_factor</span> <span class="ow">and</span> 
+            <span class="n">p1</span>      <span class="o">&lt;</span> <span class="n">period_ceiling</span>    <span class="ow">and</span> <span class="n">p1</span>      <span class="o">&gt;</span> <span class="n">period_floor</span>      <span class="ow">and</span>
+            <span class="n">p2</span>      <span class="o">&lt;</span> <span class="n">period_ceiling</span>    <span class="ow">and</span> <span class="n">p2</span>      <span class="o">&gt;</span> <span class="n">period_floor</span>      <span class="ow">and</span>
+            <span class="n">p3</span>      <span class="o">&lt;</span> <span class="n">period_ceiling</span>    <span class="ow">and</span> <span class="n">p3</span>      <span class="o">&gt;</span> <span class="n">period_floor</span>      <span class="ow">and</span>
+            <span class="n">p4</span>      <span class="o">&lt;</span> <span class="n">period_ceiling</span>    <span class="ow">and</span> <span class="n">p4</span>      <span class="o">&gt;</span> <span class="n">period_floor</span>      <span class="ow">and</span>
+            <span class="n">p5</span>      <span class="o">&lt;</span> <span class="n">period_ceiling</span>    <span class="ow">and</span> <span class="n">p5</span>      <span class="o">&gt;</span> <span class="n">period_floor</span>      <span class="p">):</span>
+            
+            <span class="n">sum_total</span> <span class="o">+=</span> <span class="nb">abs</span><span class="p">(</span> <span class="n">p3</span> <span class="o">-</span> <span class="p">(</span> <span class="n">p1</span> <span class="o">+</span> <span class="n">p2</span> <span class="o">+</span> <span class="n">p3</span> <span class="o">+</span><span class="n">p4</span> <span class="o">+</span> <span class="n">p5</span> <span class="p">)</span> <span class="o">/</span> <span class="mf">5.0</span> <span class="p">)</span>
+            <span class="n">num_periods</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+    <span class="n">ppq5</span> <span class="o">=</span> <span class="p">(</span> <span class="n">sum_total</span> <span class="o">/</span> <span class="n">num_periods</span> <span class="p">)</span> <span class="o">/</span> <span class="n">avg_period</span>
+            
+    <span class="c1">#Praat calculates ddp by multiplying rap by 3</span>
+    <span class="c1">#described at:</span>
+    <span class="c1">#http://www.fon.hum.uva.nl/praat/manual/PointProcess__Get_jitter__ddp____.html</span>
+    
+    <span class="k">return</span> <span class="p">{</span>  <span class="s1">&#39;local&#39;</span> <span class="p">:</span> <span class="n">relative</span><span class="p">,</span> <span class="s1">&#39;local, absolute&#39;</span> <span class="p">:</span> <span class="n">absolute</span><span class="p">,</span> <span class="s1">&#39;rap&#39;</span> <span class="p">:</span> <span class="n">rap</span><span class="p">,</span> 
+                                            <span class="s1">&#39;ppq5&#39;</span> <span class="p">:</span> <span class="n">ppq5</span><span class="p">,</span> <span class="s1">&#39;ddp&#39;</span> <span class="p">:</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">rap</span> <span class="p">}</span></div>
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Signal_Analysis 0.1.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Brooke Mosby.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

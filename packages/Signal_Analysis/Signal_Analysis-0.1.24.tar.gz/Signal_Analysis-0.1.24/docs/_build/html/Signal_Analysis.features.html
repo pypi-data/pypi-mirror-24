@@ -1,0 +1,638 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Signal_Analysis.features package &#8212; Signal_Analysis 0.1.5 documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Signal_Analysis package" href="Signal_Analysis.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Signal_Analysis.html" title="Signal_Analysis package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Signal_Analysis 0.1.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Project Modules</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="Signal_Analysis.html" accesskey="U">Signal_Analysis package</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Signal_Analysis.features package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-Signal_Analysis.features.signal">Signal_Analysis.features.signal module</a></li>
+<li><a class="reference internal" href="#module-Signal_Analysis.features">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Signal_Analysis.html"
+                        title="previous chapter">Signal_Analysis package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Signal_Analysis.features.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="signal-analysis-features-package">
+<h1>Signal_Analysis.features package<a class="headerlink" href="#signal-analysis-features-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Signal_Analysis.features.signal">
+<span id="signal-analysis-features-signal-module"></span><h2>Signal_Analysis.features.signal module<a class="headerlink" href="#module-Signal_Analysis.features.signal" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="Signal_Analysis.features.signal.get_F_0">
+<code class="descclassname">Signal_Analysis.features.signal.</code><code class="descname">get_F_0</code><span class="sig-paren">(</span><em>signal</em>, <em>rate</em>, <em>time_step=0.0</em>, <em>min_pitch=75</em>, <em>max_pitch=600</em>, <em>max_num_cands=15</em>, <em>silence_thres=0.03</em>, <em>voicing_thres=0.45</em>, <em>octave_cost=0.01</em>, <em>octave_jump_cost=0.35</em>, <em>voiced_unvoiced_cost=0.14</em>, <em>accurate=False</em>, <em>pulse=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Signal_Analysis/features/signal.html#get_F_0"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Signal_Analysis.features.signal.get_F_0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes median Fundamental Frequency ( <span class="math">\(F_0\)</span> ).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It has been shown that depressed and suicidal men speak with a reduced
+fundamental frequency range ( described in:
+<a class="reference external" href="http://ameriquests.org/index.php/vurj/article/download/2783/1181">http://ameriquests.org/index.php/vurj/article/download/2783/1181</a> ) and
+patients responding well to depression treatment show an increase in
+their fundamental frequency variability ( described in :
+<a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3022333/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3022333/</a> ). Because
+acoustical properties of speech are the earliest and most consistent
+indicators of mood disorders, early detection of fundamental frequency
+changes could significantly improve recovery time for disorders with
+psychomotor symptoms.</p>
+</div>
+<p>The fundamental frequency ( <span class="math">\(F_0\)</span> ) of a signal is the lowest
+frequency, or the longest wavelength of a periodic waveform. In the context
+of this algorithm, <span class="math">\(F_0\)</span> is calculated by segmenting a signal into
+frames, then for each frame the most likely candidate is chosen from the
+lowest possible frequencies to be <span class="math">\(F_0\)</span> of that frame. From all of
+these values, the median value is returned. More specifically, the
+algorithm filters out frequencies higher than the Nyquist Frequency from
+the signal, then segments the signal into frames of at least 3 periods of
+the minimum pitch.  For each frame, it then calculates the normalized
+autocorrelation ( <span class="math">\(r_a\)</span> ), or the correlation of the signal to a
+delayed copy of itself. <span class="math">\(r_a\)</span> is calculated according to Boersma’s
+paper ( referenced below ), which is an improvement of previous methods.
+<span class="math">\(r_a\)</span> is estimated by dividing the autocorrelation of the windowed
+signal by the autocorrelation of the window. After <span class="math">\(r_a\)</span> is
+calculated the maxima values of <span class="math">\(r_a\)</span> are found. These points
+correspond to the lag domain, or points in the delayed signal, where the
+correlation value has peaked, with higher peaks indicating a stronger
+correlations. These points in the lag domain suggest places of wave
+repetition and are the candidates for <span class="math">\(F_0\)</span>. The best candidate for
+<span class="math">\(F_0\)</span> of each frame is picked by a cost function that compares the
+cost of transitioning from the best <span class="math">\(F_0\)</span> of the previous frame to
+all possible <span class="math">\(F_0's\)</span> of the current frame. Once the path of
+<span class="math">\(F_0's\)</span> of least cost has been determined, the median <span class="math">\(F_0\)</span> of
+all voiced frames is returned.
+This algorithm is adapted from:
+<a class="reference external" href="http://www.fon.hum.uva.nl/david/ba_shs/2010/Boersma_Proceedings_1993.pdf">http://www.fon.hum.uva.nl/david/ba_shs/2010/Boersma_Proceedings_1993.pdf</a>
+and from:
+<a class="reference external" href="https://github.com/praat/praat/blob/master/fon/Sound_to_Pitch.cpp">https://github.com/praat/praat/blob/master/fon/Sound_to_Pitch.cpp</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>signal</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)"><em>numpy.ndarray</em></a>) – The signal <span class="math">\(F_0\)</span> will be calculated from.</li>
+<li><strong>rate</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – the number of samples per seconds that the signal was sampled at.</li>
+<li><strong>time_step</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 0.0 ) the measurement, in seconds, of time passing between each frame. The smaller the time_step, the more overlap that will occur. If 0 is supplied the degree of oversampling will be equal to four.</li>
+<li><strong>min_pitch</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 75 ) minimum value to be returned as pitch, cannot be less than or equal to zero</li>
+<li><strong>max_pitch</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 600 ) maximum value to be returned as pitch, cannot be greater than Nyquist Frequency</li>
+<li><strong>max_num_cands</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – ( optional, default value: 15 ) maximum number of candidates to be considered for each frame, unvoiced candidate ( i.e. <span class="math">\(F_0\)</span> equal to zero ) is always considered.</li>
+<li><strong>silence_thres</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 0.03 ) frames that do not contain amplitudes above this threshold ( relative to the global maximum amplitude ), are probably silent.</li>
+<li><strong>voicing_thres</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 0.45 ) the strength of the unvoiced candidate, relative to the maximum possible autocorrelation. To increase the number of unvoiced decisions, increase this value.</li>
+<li><strong>octave_cost</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 0.01 per octave ) degree of favouring of high-frequency candidates, relative to the maximum possible <span class="math">\(r_a\)</span>. This is necessary because in the case of a perfectly periodic signal, all undertones of <span class="math">\(F_0\)</span> are equally strong candidates as <span class="math">\(F_0\)</span> itself. To more strongly favour recruitment of high-frequency candidates, increase this value.</li>
+<li><strong>octave_jump_cost</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 0.35 ) degree of disfavouring of pitch changes, relative to the maximum possible <span class="math">\(r_a\)</span>. To decrease the number of large frequency jumps, increase this value.</li>
+<li><strong>voiced_unvoiced_cost</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 0.14 ) degree of disfavouring of voiced/unvoiced transitions, relative to the maximum possible <span class="math">\(r_a\)</span>. To decrease the number of voiced/unvoiced transitions, increase this value.</li>
+<li><strong>accurate</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><em>bool</em></a>) – ( optional, default value: False ) if False, the window is a Hanning window with a length of <span class="math">\(\frac{ 3.0} {min\_pitch}\)</span>. If True, the window is a Gaussian window with a length of <span class="math">\(\frac{6.0}{min\_pitch}\)</span>, i.e. twice the length.</li>
+<li><strong>pulse</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><em>bool</em></a>) – ( optional, default value: False ) if False, returns a list containing only the median <span class="math">\(F_0\)</span>, if True, returns a list with all values necessary to calculate pulses. This list contains the median <span class="math">\(F_0\)</span>, the frequencies for each frame in a list, a list of tuples containing the beginning time of the frame, and the ending time of the frame, and the signal filtered by the Nyquist Frequency. The indicies in the second and third list correspond to each other.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>index 0 contains the median <span class="math">\(F_0\)</span> in hz, if pulse is set
+equal to True, indicies 1, 2, and 3 will contain:</p>
+<blockquote>
+<div><p>a list of all voiced frequencies in order,</p>
+<p>a list of tuples of the beginning and ending time of a voiced
+interval, each index in the list corresponding to the previous
+list, and</p>
+<p>a numpy.ndarray of the signal filtered by the Nyquist Frequency.</p>
+</div></blockquote>
+<p>If pulse is set equal to False, or left to the default value, then the
+list will only contain the median <span class="math">\(F_0\)</span>.</p>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">list</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code> – min_pitch has to be greater than zero.</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code> – octave_cost isn’t in [ 0, 1 ].</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code> – silence_thres isn’t in [ 0, 1 ].</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code> – voicing_thres isn’t in [ 0, 1 ].</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code> – max_pitch can’t be larger than Nyquist Frequency.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Example:
+The example below demonstrates what different outputs this function gives,
+using a synthesized signal.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">domain</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">300000</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rate</span> <span class="o">=</span> <span class="mi">50000</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="mi">140</span> <span class="o">*</span> <span class="n">x</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">signal</span> <span class="o">=</span> <span class="n">y</span><span class="p">(</span> <span class="n">domain</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">get_F_0</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span> <span class="p">)</span>
+<span class="go">[ 139.70588235294116 ]</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">get_F_0</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">voicing_threshold</span> <span class="o">=</span> <span class="o">.</span><span class="mi">99</span><span class="p">,</span> <span class="n">accurate</span> <span class="o">=</span> <span class="kc">True</span> <span class="p">)</span>
+<span class="go">[ 139.70588235294116 ]</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">w</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">get_F_0</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">pulse</span> <span class="o">=</span> <span class="kc">True</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span> <span class="n">w</span> <span class="p">)</span>
+<span class="go">139.70588235294116</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span> <span class="n">x</span><span class="p">[</span> <span class="p">:</span><span class="mi">5</span> <span class="p">]</span> <span class="p">)</span>
+<span class="go">[ 0.00715789  0.00715789  0.00715789  0.00715789  0.00715789 ]</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span> <span class="n">y</span><span class="p">[</span> <span class="p">:</span><span class="mi">5</span> <span class="p">]</span> <span class="p">)</span>
+<span class="go">[ ( 0.002500008333361111, 0.037500125000416669 ),</span>
+<span class="go">  ( 0.012500041666805555, 0.047500158333861113 ),</span>
+<span class="go">  ( 0.022500075000249999, 0.057500191667305557 ),</span>
+<span class="go">  ( 0.032500108333694447, 0.067500225000749994 ),</span>
+<span class="go">  ( 0.042500141667138891, 0.077500258334194452 ) ]</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span> <span class="n">z</span><span class="p">[</span> <span class="p">:</span> <span class="mi">5</span> <span class="p">]</span> <span class="p">)</span>
+<span class="go">[ 0.          0.01759207  0.0351787   0.05275443  0.07031384 ]</span>
+</pre></div>
+</div>
+<p>The example below demonstrates the algorithms ability to adjust for signals
+with dynamic frequencies, by comparing a plot of a synthesized signal with
+an increasing frequency and the calculated frequencies for that signal.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">domain</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10000</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rate</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">8</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">signal</span> <span class="o">=</span> <span class="n">y</span><span class="p">(</span> <span class="n">domain</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">median_F_0</span><span class="p">,</span> <span class="n">periods</span><span class="p">,</span> <span class="n">time_vals</span><span class="p">,</span> <span class="n">modified_sig</span> <span class="o">=</span> <span class="n">get_F_0</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span>
+<span class="go">rate, pulse = True )</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span> <span class="mi">211</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span> <span class="n">domain</span><span class="p">,</span> <span class="n">signal</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span> <span class="s2">&quot;Synthesized Signal&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span> <span class="s2">&quot;Amplitude&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span> <span class="mi">212</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span> <span class="n">periods</span> <span class="p">)</span> <span class="p">),</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span>
+<span class="go">periods ) )</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span> <span class="s2">&quot;Frequencies of Signal&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span> <span class="s2">&quot;Samples&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span> <span class="s2">&quot;Frequency&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span> <span class="s2">&quot;Comparison of Synthesized Signal and it&#39;s Calculated Frequencies&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="figure align-center">
+<img alt="_images/F_0_synthesized_sig.png" src="_images/F_0_synthesized_sig.png" />
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="Signal_Analysis.features.signal.get_HNR">
+<code class="descclassname">Signal_Analysis.features.signal.</code><code class="descname">get_HNR</code><span class="sig-paren">(</span><em>signal</em>, <em>rate</em>, <em>time_step=0</em>, <em>min_pitch=75</em>, <em>silence_threshold=0.1</em>, <em>periods_per_window=4.5</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Signal_Analysis/features/signal.html#get_HNR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Signal_Analysis.features.signal.get_HNR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes mean Harmonics-to-Noise ratio ( HNR ).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Harmonics-to-Noise ratio of a person’s voice is strongly negatively
+correlated to depression severity ( described in:
+<a class="reference external" href="https://ll.mit.edu/mission/cybersec/publications/publication-files/full_papers/2012_09_09_MalyskaN_Interspeech_FP.pdf">https://ll.mit.edu/mission/cybersec/publications/publication-files/full_papers/2012_09_09_MalyskaN_Interspeech_FP.pdf</a> )
+and can be used as an early indicator depression and suicide risk.
+After this indicator has been realized, preventative medicine can be
+implemented, improving recovery time or even preventing further
+symptoms.</p>
+</div>
+<p>The Harmonics-to-Noise ratio ( HNR ) is the ratio
+of the energy of a periodic signal to the energy of the noise in the
+signal, expressed in dB, and often used as a measure of hoarseness in a
+person’s voice. By way of illustration, if 99% of the energy of the signal
+is in the periodic part and 1% of the energy is in noise, then the HNR is
+<span class="math">\(10 \cdot log_{10}( \frac{99}{1} ) = 20\)</span>. A HNR of 0 dB means that
+there is equal energy in the harmonics and in the noise. The first step for
+HNR  determination for a signal, in the context of this algorithm, is to
+set the maximum frequency to the signal’s Nyquist  Frequency. Then the
+signal is segmented into frames of length
+<span class="math">\(\frac{periods\_per\_window}{min\_pitch}\)</span>. For each frame it then
+calculates the normalized autocorrelation ( <span class="math">\(r_a\)</span> ), or the
+correlation of the signal  to a delayed copy of itself. <span class="math">\(r_a\)</span> is
+calculated according to Boersma’s paper ( referenced below ). The highest
+peak is picked from <span class="math">\(r_a\)</span>. If the height of this peak is larger that
+the strength of the silent candidate then the HNR for this frame is
+calculated from that peak. The height of the peak corresponds to the energy
+of the periodic part of the signal. Once the HNR value has been calculated
+for all voiced frames, the mean is taken from these values and returned.
+This algorithm is adapted from:
+<a class="reference external" href="http://www.fon.hum.uva.nl/david/ba_shs/2010/Boersma_Proceedings_1993.pdf">http://www.fon.hum.uva.nl/david/ba_shs/2010/Boersma_Proceedings_1993.pdf</a>
+and from:
+<a class="reference external" href="https://github.com/praat/praat/blob/master/fon/Sound_to_Harmonicity.cpp">https://github.com/praat/praat/blob/master/fon/Sound_to_Harmonicity.cpp</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>signal</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)"><em>numpy.ndarray</em></a>) – The signal the HNR will be calculated from.</li>
+<li><strong>rate</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – the number of samples per seconds that the signal was sampled at.</li>
+<li><strong>time_step</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 0.0 ) the measurement, in seconds, of time passing between each frame. The smaller the time_step, the more overlap that will occur. If 0 is supplied the degree of oversampling will be equal to four.</li>
+<li><strong>min_pitch</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 75 ) minimum value to be returned as pitch, cannot be less than or equal to zero</li>
+<li><strong>silence_threshold</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 0.1 ) frames that do not contain amplitudes above this threshold ( relative to the global maximum amplitude ), are considered silent.</li>
+<li><strong>periods_per_window</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 4.5 ) 4.5 is best for speech. The more periods contained per frame the more the algorithm becomes sensitive to dynamic changes in the signal.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The mean HNR of the signal expressed in dB.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)">float</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code> – min_pitch has to be greater than zero.</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code> – silence_threshold isn’t in [ 0, 1 ].</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Example:
+The example below adjusts parameters of the function, using the same
+synthesized signal with added noise to demonstrate the stability of the
+function.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">domain</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">300000</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rate</span> <span class="o">=</span> <span class="mi">50000</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:(</span> <span class="mi">1</span> <span class="o">+</span> <span class="o">.</span><span class="mi">3</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="mi">140</span> <span class="o">*</span> <span class="n">x</span> <span class="p">)</span> <span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span>
+<span class="go">    2 * np.pi * 140 * x )</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">signal</span> <span class="o">=</span> <span class="n">y</span><span class="p">(</span> <span class="n">domain</span> <span class="p">)</span> <span class="o">+</span> <span class="o">.</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span> <span class="mi">300000</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">get_HNR</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span> <span class="p">)</span>
+<span class="go">21.885338007330802</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">get_HNR</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">periods_per_window</span> <span class="o">=</span> <span class="mi">6</span> <span class="p">)</span>
+<span class="go">21.866307805597849</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">get_HNR</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">time_step</span> <span class="o">=</span> <span class="o">.</span><span class="mi">04</span><span class="p">,</span> <span class="n">periods_per_window</span> <span class="o">=</span> <span class="mi">6</span> <span class="p">)</span>
+<span class="go">21.878451649148804</span>
+</pre></div>
+</div>
+<p>We’d expect that an increase in noise would reduce HNR and that when the
+energy of the noise and the energy of the signal are similar HNR approaches
+zero, demonstrated below.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">signals</span> <span class="o">=</span> <span class="p">[</span> <span class="n">y</span><span class="p">(</span> <span class="n">domain</span> <span class="p">)</span> <span class="o">+</span> <span class="n">i</span> <span class="o">/</span> <span class="mf">10.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span> <span class="mi">300000</span> <span class="p">)</span> <span class="k">for</span>
+<span class="go">i in range( 1, 11 ) ]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">HNRx10</span> <span class="o">=</span> <span class="p">[</span> <span class="n">get_HNR</span><span class="p">(</span> <span class="n">sig</span><span class="p">,</span> <span class="n">rate</span> <span class="p">)</span> <span class="k">for</span> <span class="n">sig</span> <span class="ow">in</span> <span class="n">signals</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span> <span class="p">),</span> <span class="n">HNRx10</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span> <span class="s2">&quot;Amount of Added Noise&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span> <span class="s2">&quot;HNR&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span> <span class="s2">&quot;HNR Values of Signals with Added Noise&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="figure align-center">
+<img alt="_images/HNR_values_added_noise.png" src="_images/HNR_values_added_noise.png" />
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="Signal_Analysis.features.signal.get_Jitter">
+<code class="descclassname">Signal_Analysis.features.signal.</code><code class="descname">get_Jitter</code><span class="sig-paren">(</span><em>signal</em>, <em>rate</em>, <em>period_floor=0.0001</em>, <em>period_ceiling=0.02</em>, <em>max_period_factor=1.3</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Signal_Analysis/features/signal.html#get_Jitter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Signal_Analysis.features.signal.get_Jitter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute Jitter.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Significant differences can occur in jitter and shimmer measurements
+between different speaking styles, these differences make it possible to
+use jitter as a feature for speaker recognition ( referenced below ).</p>
+</div>
+<p>Jitter is the measurement of random pertubations in period length. For most
+accurate jitter measurements, calculations are typically only performed on
+long sustained vowels. This algorithm calculates 5 different types of
+jitter for all voiced intervals, each type of jitter describing different
+characteristics of period pertubations. The 5 types of jitter are absolute
+jitter, relative jitter, relative average perturbation ( rap ), the 5-point
+period pertubation quotient ( ppq5 ), and the difference of differences of
+periods ( ddp ).</p>
+<p>Absolute jitter is defined as the cycle-to-cycle variation of
+fundamental frequency, or in other words, the average absolute difference
+between consecutive periods.</p>
+<div class="math">
+\[\frac{1}{N-1}\sum_{i=1}^{N-1}|T_i-T_{i-1}|\]</div>
+<p>Relative jitter is defined as the average absolute difference between
+consecutive periods ( absolute jitter ), divided by the average period.</p>
+<div class="math">
+\[\frac{\frac{1}{N-1}\sum_{i=1}^{N-1}|T_i-T_{i-1}|}{\frac{1}{N}\sum_{i=1}^N T_i}\]</div>
+<p>Relative average perturbation is defined as the average absolute difference
+between a period and the average of it and its two neighbors divided by the
+average period.</p>
+<div class="math">
+\[\frac{\frac{1}{N-1}\sum_{i=1}^{N-1}|T_i-(\frac{1}{3}\sum_{n=i-1}^{i+1}T_n)|}{\frac{1}{N}\sum_{i=1}^N T_i}\]</div>
+<p>The 5-point period pertubation quotient is defined as the average absolute
+difference between a period and the average of it and its 4 closest neighbors
+divided by the average period.</p>
+<div class="math">
+\[\frac{\frac{1}{N-1}\sum_{i=2}^{N-2}|T_i-(\frac{1}{5}\sum_{n=i-2}^{i+2}T_n)|}{\frac{1}{N}\sum_{i=1}^N T_i}\]</div>
+<p>The difference of differences of periods is defined as the relative mean
+absolute second-order difference of periods, which is equivalent to 3 times
+rap.</p>
+<div class="math">
+\[\frac{\frac{1}{N-2}\sum_{i=2}^{N-1}|(T_{i+1}-T_i)-(T_i-T_{i-1})|}{\frac{1}{N}\sum_{i=1}^{N}T_i}\]</div>
+<p>After each type of jitter has been calculated the values are
+returned in a dictionary.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This algorithm has 4.2% relative error when compared to Praat’s values.</p>
+</div>
+<p>This algorithm is adapted from:
+<a class="reference external" href="http://www.lsi.upc.edu/~nlp/papers/far_jit_07.pdf">http://www.lsi.upc.edu/~nlp/papers/far_jit_07.pdf</a>
+and from:
+<a class="reference external" href="http://ac.els-cdn.com/S2212017313002788/1-s2.0-S2212017313002788-main.pdf?_tid=0c860a76-7eda-11e7-a827-00000aab0f02&amp;acdnat=1502486243_009951b8dc70e35597f4cd19f8e05930">http://ac.els-cdn.com/S2212017313002788/1-s2.0-S2212017313002788-main.pdf?_tid=0c860a76-7eda-11e7-a827-00000aab0f02&amp;acdnat=1502486243_009951b8dc70e35597f4cd19f8e05930</a>
+and from:
+<a class="reference external" href="https://github.com/praat/praat/blob/master/fon/VoiceAnalysis.cpp">https://github.com/praat/praat/blob/master/fon/VoiceAnalysis.cpp</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>signal</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)"><em>numpy.ndarray</em></a>) – The signal the jitter will be calculated from.</li>
+<li><strong>rate</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – the rate per seconds that the signal was sampled at.</li>
+<li><strong>period_floor</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: .0001 ) the shortest possible interval that will be used in the computation of jitter, in seconds. If an interval is shorter than this, it will be ignored in the computation of jitter ( the previous and next intervals will not be regarded as consecutive ).</li>
+<li><strong>period_ceiling</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: .02 ) the longest possible interval that will be used in the computation of jitter, in seconds. If an interval is longer than this, it will be ignored in the computation of jitter ( the previous and next intervals will not be regarded as consecutive ).</li>
+<li><strong>max_period_factor</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 1.3 ) the largest possible difference between consecutive intervals that will be used in the computation of jitter. If the ratio of the durations of two consecutive intervals is greater than this, this pair of intervals will be ignored in the computation of jitter ( each of the intervals could still take part in the computation of jitter in a comparison with its neighbor on the other side ).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>a dictionary with keys: ‘local’, ‘local, absolute’, ‘rap’,
+‘ppq5’, and ‘ddp’. The values correspond to each type of jitter.</p>
+<p>local jitter is expressed as a ratio of mean absolute period variation
+to the mean period.</p>
+<p>local absolute jitter is given in seconds.</p>
+<p>rap is expressed as a ratio of the mean absolute difference between a
+period and the mean of its 2 neighbors to the mean period.</p>
+<p>ppq5 is expressed as a ratio of the mean absolute difference between a
+period and the mean of its 4 neighbors to the mean period.</p>
+<p>ddp is expressed as a ratio of the mean absolute second-order
+difference to the mean period.</p>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/2.7/library/stdtypes.html#dict" title="(in Python v2.7)">dict</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Example:
+In the example below a synthesized signal is used to demonstrate random
+perturbations in periods, and how get_Jitter responds.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">domain</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">300000</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:(</span> <span class="mi">1</span> <span class="o">-</span> <span class="o">.</span><span class="mi">3</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="mi">140</span> <span class="o">*</span> <span class="n">x</span> <span class="p">)</span> <span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span>
+<span class="go">2 * np.pi * 140 * x )</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">signal</span> <span class="o">=</span> <span class="n">y</span><span class="p">(</span> <span class="n">domain</span> <span class="p">)</span> <span class="o">+</span> <span class="o">.</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span> <span class="mi">300000</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rate</span> <span class="o">=</span> <span class="mi">50000</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">get_Jitter</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span> <span class="p">)</span>
+<span class="go">{ &#39;ddp&#39;: 0.047411037373434134,</span>
+<span class="go">  &#39;local&#39;: 0.02581897560637415,</span>
+<span class="go">  &#39;local, absolute&#39;: 0.00018442618908563846,</span>
+<span class="go">  &#39;ppq5&#39;: 0.014805010237029443,</span>
+<span class="go">  &#39;rap&#39;: 0.015803679124478043 }</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">get_Jitter</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">period_floor</span> <span class="o">=</span> <span class="o">.</span><span class="mi">001</span><span class="p">,</span>
+<span class="go">period_ceiling = .01, max_period_factor = 1.05 )</span>
+<span class="go">{ &#39;ddp&#39;: 0.03264516540374475,</span>
+<span class="go">  &#39;local&#39;: 0.019927260366800197,</span>
+<span class="go">  &#39;local, absolute&#39;: 0.00014233584195389132,</span>
+<span class="go">  &#39;ppq5&#39;: 0.011472274162612033,</span>
+<span class="go">  &#39;rap&#39;: 0.01088172180124825 }</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:(</span> <span class="mi">1</span> <span class="o">-</span> <span class="o">.</span><span class="mi">3</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="mi">140</span> <span class="o">*</span> <span class="n">x</span> <span class="p">)</span> <span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span>
+<span class="go">2 * np.pi * 140 * x )</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">signal</span> <span class="o">=</span> <span class="n">y</span><span class="p">(</span> <span class="n">domain</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">get_Jitter</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span> <span class="p">)</span>
+<span class="go">{ &#39;ddp&#39;: 0.0015827628114371581,</span>
+<span class="go">  &#39;local&#39;: 0.00079043477724730755,</span>
+<span class="go">  &#39;local, absolute&#39;: 5.6459437833161522e-06,</span>
+<span class="go">  &#39;ppq5&#39;: 0.00063462518488944565,</span>
+<span class="go">  &#39;rap&#39;: 0.00052758760381238598 }</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="Signal_Analysis.features.signal.get_Pulses">
+<code class="descclassname">Signal_Analysis.features.signal.</code><code class="descname">get_Pulses</code><span class="sig-paren">(</span><em>signal</em>, <em>rate</em>, <em>min_pitch=75</em>, <em>max_pitch=600</em>, <em>include_max=False</em>, <em>include_min=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Signal_Analysis/features/signal.html#get_Pulses"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Signal_Analysis.features.signal.get_Pulses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes glottal pulses of a signal.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This algorithm is a helper function for the jitter algorithm, that
+returns a list of points in the time domain corresponding to minima or
+maxima of the signal. These minima or maxima are the sequence of
+glottal closures in vocal-fold vibration. The distance between
+consecutive pulses is defined as the wavelength of the signal at this
+interval, which can be used to later calculate jitter.</p>
+</div>
+<p>This algorithm relies on the voiced/unvoiced decisions and fundamental
+frequencies calculated for each voiced frame by get_F_0. For every voiced
+interval, a list of points is created by finding the initial point
+<span class="math">\(t_1\)</span>, which is the absolute extremum ( or the maximum/minimum,
+depending on your include_max and include_min parameters ) of the amplitude
+of the sound in the interval
+<span class="math">\([\ t_{mid} - \frac{T_0}{2},\ t_{mid} + \frac{T_0}{2}\ ]\)</span>, where
+<span class="math">\(t_{mid}\)</span> is the midpoint of the interval, and <span class="math">\(T_0\)</span> is the
+period at <span class="math">\(t_{mid}\)</span>, as can be linearly interpolated from the periods
+acquired from get_F_0. From this point, the algorithm searches for points
+<span class="math">\(t_i\)</span> to the left until we reach the left edge of the interval. These
+points are the absolute extrema ( or the maxima/minima ) in the interval
+<span class="math">\([\ t_{i-1} - 1.25 \cdot T_{i-1},\ t_{i-1} - 0.8 \cdot T_{i-1}\ ]\)</span>,
+with <span class="math">\(t_{i-1}\)</span> being the last found point, and <span class="math">\(T_{i-1}\)</span> the
+period at this point. The same is done to the right of <span class="math">\(t_1\)</span>. The
+points are returned in consecutive order.
+This algorithm is adapted from:
+<a class="reference external" href="https://pdfs.semanticscholar.org/16d5/980ba1cf168d5782379692517250e80f0082.pdf">https://pdfs.semanticscholar.org/16d5/980ba1cf168d5782379692517250e80f0082.pdf</a>
+and from:
+<a class="reference external" href="https://github.com/praat/praat/blob/master/fon/Sound_to_PointProcess.cpp">https://github.com/praat/praat/blob/master/fon/Sound_to_PointProcess.cpp</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>signal</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)"><em>numpy.ndarray</em></a>) – The signal the glottal pulses will be calculated from.</li>
+<li><strong>rate</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – the number of samples per seconds that the signal was sampled at.</li>
+<li><strong>min_pitch</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 75 ) minimum value to be returned as pitch, cannot be less than or equal to zero</li>
+<li><strong>max_pitch</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – ( optional, default value: 600 ) maximum value to be returned as pitch, cannot be greater than Nyquist Frequency</li>
+<li><strong>include_max</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><em>bool</em></a>) – ( optional, default value: False ) determines if maxima values will be used when calculating pulses</li>
+<li><strong>include_min</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)"><em>bool</em></a>) – ( optional, default value: True ) determines if minima values will be used when calculating pulses</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">an array of points in a time series that correspond to
+the signal periodicity</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)">numpy.ndarray</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><code class="xref py py-exc docutils literal"><span class="pre">ValueError</span></code> – include_min and include_max can’t both be False</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Example:
+Pulses are calculated for a synthesized signal, and the variation in time
+between each pulse is shown.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">domain</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">300000</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:(</span> <span class="mi">1</span> <span class="o">+</span> <span class="o">.</span><span class="mi">3</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="mi">140</span> <span class="o">*</span> <span class="n">x</span> <span class="p">)</span> <span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span>
+<span class="go">    2 * np.pi * 140 * x )</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">signal</span> <span class="o">=</span> <span class="n">y</span><span class="p">(</span> <span class="n">domain</span> <span class="p">)</span> <span class="o">+</span> <span class="o">.</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span> <span class="mi">300000</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rate</span> <span class="o">=</span> <span class="mi">50000</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">get_Pulses</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span> <span class="n">p</span><span class="p">[</span> <span class="p">:</span><span class="mi">5</span> <span class="p">]</span> <span class="p">)</span>
+<span class="go">[ 0.00542001  0.01236002  0.01946004  0.02702005  0.03402006 ]</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span> <span class="n">p</span><span class="p">[</span> <span class="p">:</span><span class="mi">6</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+<span class="go">[ 0.00694001  0.00710001  0.00756001  0.00700001  0.00712001 ]</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">get_Pulses</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">include_max</span> <span class="o">=</span> <span class="kc">True</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span> <span class="n">p</span><span class="p">[</span> <span class="p">:</span><span class="mi">5</span> <span class="p">]</span> <span class="p">)</span>
+<span class="go">[ 0.00886002  0.01608003  0.02340004  0.03038006  0.03732007 ]</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span> <span class="n">p</span><span class="p">[</span> <span class="p">:</span><span class="mi">6</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span>
+<span class="go">[ 0.00722001  0.00732001  0.00698001  0.00694001  0.00734001 ]</span>
+</pre></div>
+</div>
+<p>A synthesized signal, with an increasing frequency and the calculated pulses
+of that signal are plotted together to demonstrate the algorithms ability
+to adapt to dynamic pulses.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">domain</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span> <span class="mf">1.85</span><span class="p">,</span> <span class="mf">2.05</span><span class="p">,</span> <span class="mi">10000</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rate</span> <span class="o">=</span> <span class="mi">50000</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">8</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">signal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span> <span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="mi">2500</span> <span class="p">),</span> <span class="n">y</span><span class="p">(</span> <span class="n">domain</span><span class="p">[</span> <span class="mi">2500</span><span class="p">:</span> <span class="o">-</span><span class="mi">2500</span> <span class="p">]</span> <span class="p">),</span>
+<span class="go">np.zeros( 2500 ) ) )</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pulses</span> <span class="o">=</span> <span class="n">get_Pulses</span><span class="p">(</span> <span class="n">signal</span><span class="p">,</span> <span class="n">rate</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span> <span class="n">domain</span><span class="p">,</span> <span class="n">signal</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;Signal&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span> <span class="p">(</span> <span class="mf">1.85</span> <span class="o">+</span> <span class="n">pulses</span><span class="p">[</span> <span class="mi">0</span> <span class="p">]</span> <span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span> <span class="p">(</span> <span class="mi">5</span> <span class="p">),</span>
+<span class="go">np.linspace( -1, 1, 5 ), &#39;b&#39;, alpha = .5, label = &quot;Pulses&quot; )</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">pulse</span> <span class="ow">in</span> <span class="n">pulses</span><span class="p">[</span> <span class="mi">1</span><span class="p">:</span> <span class="p">]:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span> <span class="p">(</span> <span class="mf">1.85</span> <span class="o">+</span> <span class="n">pulse</span> <span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span> <span class="p">(</span> <span class="mi">5</span> <span class="p">),</span>
+<span class="go">        np.linspace( -1, 1, 5 ), &#39;b&#39;, alpha = .5 )</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span> <span class="s2">&quot;Samples&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span> <span class="s2">&quot;Amplitude&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span> <span class="s2">&quot;Signal with Pulses, Calculated from Minima of Signal&quot;</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="figure align-center">
+<img alt="_images/Pulses_sig.png" src="_images/Pulses_sig.png" />
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-Signal_Analysis.features">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Signal_Analysis.features" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="Signal_Analysis.html" title="Signal_Analysis package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Signal_Analysis 0.1.5 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Project Modules</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="Signal_Analysis.html" >Signal_Analysis package</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Brooke Mosby.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>
