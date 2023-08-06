@@ -1,0 +1,15 @@
+setup.py
+scrapy_rediscluster/__init__.py
+scrapy_rediscluster/connection.py
+scrapy_rediscluster/defaults.py
+scrapy_rediscluster/dupefilter.py
+scrapy_rediscluster/picklecompat.py
+scrapy_rediscluster/pipelines.py
+scrapy_rediscluster/queue.py
+scrapy_rediscluster/scheduler.py
+scrapy_rediscluster/spiders.py
+scrapy_rediscluster/utils.py
+scrapy_rediscluster.egg-info/PKG-INFO
+scrapy_rediscluster.egg-info/SOURCES.txt
+scrapy_rediscluster.egg-info/dependency_links.txt
+scrapy_rediscluster.egg-info/top_level.txt
