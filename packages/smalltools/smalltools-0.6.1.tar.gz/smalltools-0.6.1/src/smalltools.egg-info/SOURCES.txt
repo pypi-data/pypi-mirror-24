@@ -1,0 +1,12 @@
+setup.py
+src/smalltools/Other.py
+src/smalltools/__init__.py
+src/smalltools/opsFile.py
+src/smalltools/opsXLS.py
+src/smalltools/parseConfig.py
+src/smalltools/smartLog.py
+src/smalltools.egg-info/PKG-INFO
+src/smalltools.egg-info/SOURCES.txt
+src/smalltools.egg-info/dependency_links.txt
+src/smalltools.egg-info/requires.txt
+src/smalltools.egg-info/top_level.txt
