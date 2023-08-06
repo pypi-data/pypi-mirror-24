@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: zomatopy
+Version: 1.0.7
+Summary: A simple python wrapper for the Zomato API
+Home-page: https://github.com/sharadbhat/Zomatopy
+Author: Sharad Bhat
+Author-email: UNKNOWN
+License: MIT
+Description: Please see the `official documentation <https://github.com/sharadbhat/Zomatopy>`_
+        .
+Keywords: Zomato
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
