@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: dojo-ftp
+Version: 0.0.2
+Summary: Dojo FTP drop source adapter
+Home-page: https://dojo.dataup.me/
+Author: Data Up
+Author-email: dojo@dataup.me
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: dojo
+
+UNKNOWN
+
+
