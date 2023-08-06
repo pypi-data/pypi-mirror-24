@@ -1,0 +1,14 @@
+sanic_aioorm/__init__.py,sha256=P1o2ZVNBpKdL-7eydf6WUZT97giJFVf4_7MXBZLWrn0,243
+sanic_aioorm/aiomodel.py,sha256=GInmMKjUli9Grfcq85KAGZatbUR93QFpi64nNkSb3Og,318
+sanic_aioorm/core.py,sha256=flAI6IX0gxt6rc0TLi-gcFEzwKy69NsRSWA8NM3g1Gg,1909
+sanic_aioorm/regist_mixin.py,sha256=g5Zo7Kt-NiOElW0j6A5PrCIZz7zDdE0f2phVtfxUxbo,2033
+sanic_aioorm/set_config_mixin.py,sha256=GDzXpve5YkwEyJ0ND5usBv31Zl6ILQlinaIb_TmhHaA,227
+sanic_aioorm-0.0.5.data/data/requirements/requirements.txt,sha256=4i5u6DZEN2TP00oeb0WLoZP4plH2WsgApNXsnwOB9qc,15
+sanic_aioorm-0.0.5.data/data/requirements/requirements_dev.txt,sha256=_lwqBtGWMfbhuI03rQ5HQHftt7XrWmbUUW3hhXCu-Es,53
+sanic_aioorm-0.0.5.data/data/requirements/requirements_test.txt,sha256=a2dOt2_CyPVvTI-wqJZjMLhUH13fPkv0dXaSnflg0Bw,39
+sanic_aioorm-0.0.5.dist-info/DESCRIPTION.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sanic_aioorm-0.0.5.dist-info/METADATA,sha256=26yb2TvjM-drmOpVMyMFd9g78XkQivaOgRxas2Y4Uxc,3403
+sanic_aioorm-0.0.5.dist-info/RECORD,,
+sanic_aioorm-0.0.5.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+sanic_aioorm-0.0.5.dist-info/metadata.json,sha256=JSz9xsNyi7QUZjXSqdspw4arGwddmIBjun8yS99txdc,680
+sanic_aioorm-0.0.5.dist-info/top_level.txt,sha256=kzVDtrUkXT8DRnFjJ5odKSz2muc4UoPKLsEy7IBWN0M,13
