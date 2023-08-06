@@ -1,0 +1,16 @@
+setup.py
+wholly/__init__.py
+wholly/constants.py
+wholly/image.py
+wholly/logconfig.py
+wholly/package.py
+wholly/parser.py
+wholly/repository.py
+wholly/version.py
+wholly/wholly.py
+wholly.egg-info/PKG-INFO
+wholly.egg-info/SOURCES.txt
+wholly.egg-info/dependency_links.txt
+wholly.egg-info/entry_points.txt
+wholly.egg-info/requires.txt
+wholly.egg-info/top_level.txt
