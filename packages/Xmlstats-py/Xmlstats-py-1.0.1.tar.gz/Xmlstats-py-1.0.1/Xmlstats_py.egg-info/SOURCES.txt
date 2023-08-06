@@ -1,0 +1,14 @@
+CHANGES.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+Xmlstats_py.egg-info/PKG-INFO
+Xmlstats_py.egg-info/SOURCES.txt
+Xmlstats_py.egg-info/dependency_links.txt
+Xmlstats_py.egg-info/requires.txt
+Xmlstats_py.egg-info/top_level.txt
+tests/test_boxscore.json
+xmlstats/__init__.py
+xmlstats/xmlstats.py
