@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: dfkernel
+Version: 0.1.0a2
+Summary: Dataflow Python Kernel for Jupyter
+Home-page: http://dataflownb.github.io/
+Author: Dataflow Notebook Development Team
+Author-email: dataflownb@users.noreply.github.com
+License: BSD
+Description: UNKNOWN
+Keywords: Dataflow,Interactive,Interpreter,Shell,Web
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
