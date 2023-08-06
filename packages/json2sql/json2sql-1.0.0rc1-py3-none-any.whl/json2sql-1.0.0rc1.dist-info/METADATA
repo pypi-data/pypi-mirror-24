@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: json2sql
+Version: 1.0.0rc1
+Summary: A lightweight Python3 library for describing SQL statements using JSON or dictionary.
+Home-page: https://github.com/fridex/json2sql
+Author: Fridolin Pokorny
+Author-email: fridolin.pokorny@gmail.com
+License: ASL 2.0
+Keywords: json sql tool converter
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: PyYAML
+Requires-Dist: click
+Requires-Dist: daiquiri
+Requires-Dist: mosql
+
+UNKNOWN
+
+

@@ -1,0 +1,11 @@
+json2sql/__init__.py,sha256=IKm3mtq_1xdMvXYm6o3iMLDDygpp1946B624kPWfFVw,969
+json2sql/errors.py,sha256=g7UW96E8ij5-lhFd9u97vlOiA02ak0W0Z2q-zccfkk4,975
+json2sql/json2sql.py,sha256=mPSyicOF8hcf3K3ZjF2ckzubm6z9x3j3EJzjgvWVJ7c,3860
+json2sql/select.py,sha256=LTnx2rGLHkt9eNW70a7IFvwYYz1jw6ByvbDNGxuzUOk,3962
+json2sql/utils.py,sha256=L7cF9g8cBEXmG2q1KhILnuWwO7TPYLc9BkXCeGMLRFA,1927
+json2sql-1.0.0rc1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+json2sql-1.0.0rc1.dist-info/METADATA,sha256=GquDMC7cLO6AEYoWsbDV-YbMg0-HpVZ_mnwKzhcPyzg,810
+json2sql-1.0.0rc1.dist-info/RECORD,,
+json2sql-1.0.0rc1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+json2sql-1.0.0rc1.dist-info/metadata.json,sha256=2nHRD8T5HruL_KGaw9FMfHqj41O4yiVdv8_OGx1HIsE,956
+json2sql-1.0.0rc1.dist-info/top_level.txt,sha256=GIxNSWw6MKBsUgRKWoW4nVQ5ztR-sxGhfPYcQirfURY,9
