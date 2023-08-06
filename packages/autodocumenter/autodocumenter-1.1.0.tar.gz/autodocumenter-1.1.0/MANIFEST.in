@@ -1,0 +1,4 @@
+include LICENSE
+include templates/template.css
+include templates/template.html
+include README.md
