@@ -1,0 +1,40 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* devstack: Remove workaround for horizon plugin framework
+* Move VPN panel in the left menu lower by default
+* Consume stable/pike for u-c and horizon
+* Update .gitreview for stable/pike
+
+0.1.0
+-----
+
+* Update Korean translation
+* Update URLs in documents according to document migration
+* Ensure log messages are not translated
+* Translation import
+* Translation import for ja
+* tox\_install: Don't leave IFS set
+* Updated from global requirements
+* Updated from global requirements
+* Manually sync with g-r
+* Update openstackdocstheme configuration
+* Consume horizon master
+* Prepare initial documentationn
+* DevStack plugin for neutron-vpnaas-dashboard
+* Add .gitreview
+* Change the hirarchy of vpn panel
+* Setup release notes
+* Setup documentation build
+* Cleanup test env
+* Import API tests
+* Pass unit tests
+* Update flake8 and hacking rules
+* Import VPNaaS test data
+* Use horizon local fork w/o VPNaaS dashboard
+* Setup test environment
+* Add some required python files
+* Initial commit
