@@ -1,0 +1,2 @@
+kernelhive>=1.2.7
+pyrrd
