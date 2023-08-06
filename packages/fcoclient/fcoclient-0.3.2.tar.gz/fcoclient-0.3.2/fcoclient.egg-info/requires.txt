@@ -1,0 +1,4 @@
+requests<3,>=2.10
+
+[:(python_version <"3.4")]
+enum34<2,>=1
