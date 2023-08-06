@@ -1,0 +1,14 @@
+setup.py
+optimize_later/__init__.py
+optimize_later/apps.py
+optimize_later/config.py
+optimize_later/core.py
+optimize_later/utils.py
+optimize_later.egg-info/PKG-INFO
+optimize_later.egg-info/SOURCES.txt
+optimize_later.egg-info/dependency_links.txt
+optimize_later.egg-info/not-zip-safe
+optimize_later.egg-info/top_level.txt
+optimize_later/tests/__init__.py
+optimize_later/tests/test_django.py
+optimize_later/tests/test_standard.py
