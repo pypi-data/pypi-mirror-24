@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: cs.py.func
+Version: 20170906.1
+Summary: Convenience facilities related to Python functions.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: * funcname: return a function's name, preferably __name__
+        * funccite: cite a function (name and code location)
+        * @prop: replacement for @property which turns internal AttributeErrors into RuntimeErrors
+        * some decorators to verifying the return types of functions
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
