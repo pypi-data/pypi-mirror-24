@@ -1,0 +1,2 @@
+spyder>=3.2.0
+pweave
