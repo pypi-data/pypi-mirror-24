@@ -1,0 +1,33 @@
+Metadata-Version: 1.2
+Name: jaraco.ui
+Version: 1.6
+Summary: jaraco.ui
+Home-page: https://github.com/jaraco/jaraco.ui
+Author: Jason R. Coombs
+Author-email: jaraco@jaraco.com
+License: UNKNOWN
+Description: .. image:: https://img.shields.io/pypi/v/jaraco.ui.svg
+           :target: https://pypi.org/project/jaraco.ui
+        
+        .. image:: https://img.shields.io/pypi/pyversions/jaraco.ui.svg
+        
+        .. image:: https://img.shields.io/pypi/dm/jaraco.ui.svg
+        
+        .. image:: https://img.shields.io/travis/jaraco/jaraco.ui/master.svg
+           :target: http://travis-ci.org/jaraco/jaraco.ui
+        
+        
+        License
+        =======
+        
+        License is indicated in the project metadata (typically one or more
+        of the Trove classifiers). For more details, see `this explanation
+        <https://github.com/jaraco/skeleton/issues/1>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
