@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: s2clientprotocol
+Version: 1.1
+Summary: StarCraft II - client protocol.
+Home-page: UNKNOWN
+Author: Blizzard
+Author-email: jrepp@blizzard.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: protobuf
+
+UNKNOWN
+
+
