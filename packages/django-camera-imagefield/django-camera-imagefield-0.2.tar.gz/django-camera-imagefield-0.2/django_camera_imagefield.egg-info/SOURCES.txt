@@ -1,0 +1,16 @@
+MANIFEST.in
+requirements.txt
+setup.py
+camera_imagefield/__init__.py
+camera_imagefield/fields.py
+camera_imagefield/widgets.py
+camera_imagefield/static/camera_imagefield/camera_imagefield.css
+camera_imagefield/static/camera_imagefield/camera_imagefield.js
+camera_imagefield/tests/__init__.py
+camera_imagefield/tests/settings.py
+camera_imagefield/tests/tests.py
+django_camera_imagefield.egg-info/PKG-INFO
+django_camera_imagefield.egg-info/SOURCES.txt
+django_camera_imagefield.egg-info/dependency_links.txt
+django_camera_imagefield.egg-info/requires.txt
+django_camera_imagefield.egg-info/top_level.txt

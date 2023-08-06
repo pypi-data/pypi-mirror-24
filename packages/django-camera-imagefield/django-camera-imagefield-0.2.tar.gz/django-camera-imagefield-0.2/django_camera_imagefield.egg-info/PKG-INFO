@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: django-camera-imagefield
+Version: 0.2
+Summary: A Django widget for using a device's camera to get an image to upload
+Home-page: https://github.com/alexsdutton/django-camera-imagefield
+Author: Alexander Dutton
+Author-email: code@alexdutton.co.uk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
