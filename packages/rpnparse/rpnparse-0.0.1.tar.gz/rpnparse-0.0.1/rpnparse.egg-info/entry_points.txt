@@ -1,0 +1,3 @@
+[console_scripts]
+rpnl = rpnparse.rpnparse:console
+
