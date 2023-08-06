@@ -1,0 +1,28 @@
+CHANGES
+=======
+
+0.4
+---
+
+* Removed database file from git
+* Updated API
+* Migrated to pkgutil for namespaces
+* Blame the bubbles, spelling mistake! :/ ..
+* Added oodinweb >=0.3 requirement
+* Bumped dev status to Beta
+* Added correct development requirements
+* Add comments and use collate\_methods flag
+* Migration of test database table
+* Added model mapping code from baldr, implemented model api. Fixed mapping of methods to operations
+* Updates for to handle updates in odinweb
+* Migrated to PBR
+* Bumped version
+
+0.2
+---
+
+* Added PermissionRequired middleware for django
+* Migrated to include using a string
+* Started expanding on django middleware
+* Django support added (not including many of the useful mixins from Baldr)
+* Initial commit (based off a modified flask version)
