@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: igdb_api_python
+Version: 1.000
+Summary: Python wrapper for IGDB.com API
+Home-page: https://github.com/igdb/igdb_api_python
+Author: Sander Brauwers
+Author-email: sander.brauwers@igdb.com
+License: UNKNOWN
+Download-URL: https://github.com/igdb/igdb_api_python/releases/tag/1.000.tar.gz
+Description: UNKNOWN
+Keywords: igdb,videogame,api,database
+Platform: UNKNOWN
