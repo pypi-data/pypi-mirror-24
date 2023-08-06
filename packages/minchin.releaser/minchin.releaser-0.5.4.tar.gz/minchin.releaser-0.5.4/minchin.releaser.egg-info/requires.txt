@@ -1,0 +1,17 @@
+colorama
+invoke
+isort
+semantic_version
+twine>=1.9.1
+wheel
+gitpython
+
+[all]
+pip-tools
+
+[build]
+pip-tools
+
+[docs]
+
+[test]
