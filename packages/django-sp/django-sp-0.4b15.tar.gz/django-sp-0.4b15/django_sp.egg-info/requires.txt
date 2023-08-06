@@ -1,0 +1,12 @@
+django-jenkins
+django<1.12
+python-social-auth
+social-auth-app-django
+django-otp
+django-oauth-toolkit
+djangorestframework
+django-errors
+easy_thumbnails
+django-image-cropping
+django-user-sessions
+django-axes
