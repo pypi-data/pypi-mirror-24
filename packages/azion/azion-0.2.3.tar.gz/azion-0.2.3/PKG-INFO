@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: azion
+Version: 0.2.3
+Summary: AZION Python SDK - API abstraction layer.
+Home-page: https://github.com/mtulio/azion-sdk-python
+Author: Marco Tulio R Braga
+Author-email: braga@mtulio.eng.br
+License: Apache-2.0
+Download-URL: https://github.com/mtulio/azion-python-sdk/archive/0.2.3.tar.gz
+Description: UNKNOWN
+Keywords: AZOIN,SDK
+Platform: UNKNOWN
