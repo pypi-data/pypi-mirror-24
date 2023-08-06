@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+RecoVoc.egg-info/PKG-INFO
+RecoVoc.egg-info/SOURCES.txt
+RecoVoc.egg-info/dependency_links.txt
+RecoVoc.egg-info/requires.txt
+RecoVoc.egg-info/top_level.txt
