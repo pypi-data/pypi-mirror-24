@@ -1,0 +1,9 @@
+indexed_gzip.so,sha256=fLujIdLouF3Veelcci-gObtkPFyoD7eleTWWRyYjISU,389128
+indexed_gzip-0.4.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+indexed_gzip-0.4.0.dist-info/METADATA,sha256=OmVON2JsNquQy6mD5ssK4hsQ9VdZdgT8-xsSWl2HNZI,682
+indexed_gzip-0.4.0.dist-info/RECORD,,
+indexed_gzip-0.4.0.dist-info/WHEEL,sha256=wuofTmOE8nXIq3BJgbj6nlvhnup4MfTp3_eVScoY-R8,112
+indexed_gzip-0.4.0.dist-info/metadata.json,sha256=KR9x5q4oqO5hI4O3Fbx4wYkq4IQUbW2XiaZ-J9D2RU4,865
+indexed_gzip-0.4.0.dist-info/top_level.txt,sha256=ZtT6XcvtROROjkejIjpZGm6gUTpmqU9eaAFyckcr0lQ,19
+tests/ctest_indexed_gzip.so,sha256=kcKfArgkAejH4WaN-gWpBRr5Hf2w2bCW1iXaZIZITqw,631120
+tests/ctest_zran.so,sha256=H1huDDrWsfVcKjAPa3kHy055KyL0M0ZL4-2x8aTZIoE,697344
