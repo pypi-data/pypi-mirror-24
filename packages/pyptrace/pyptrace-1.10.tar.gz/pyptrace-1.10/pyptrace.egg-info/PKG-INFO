@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyptrace
+Version: 1.10
+Summary: Python wrapper for Linux ptrace system call.
+Home-page: https://github.com/kikimo/pyptrace
+Author: wenlin.wu
+Author-email: wenlin.wu@outlook.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: linux ptrace
+Platform: UNKNOWN
