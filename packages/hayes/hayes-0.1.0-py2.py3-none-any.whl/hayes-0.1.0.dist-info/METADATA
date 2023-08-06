@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: hayes
+Version: 0.1.0
+Summary: Hayes -- Simpler Elasticsearch for Django
+Home-page: https://github.com/andersinno/hayes/
+Author: Anders Innovations
+Author-email: support@anders.fi
+License: MIT
+Keywords: elastictsearch,django
+Platform: any
+Requires-Dist: pyes
+Requires-Dist: requests (>=1.0)
+Requires-Dist: six (>=1.9.0,<2.0)
+
+Hayes
+=====
+
+Simpler Elasticsearch for Django.
+
+Very much a work in progress.
+
+May contain hot buttered soul.
+
+Usage Example
+-------------
+
+See the demo app.
+
+
