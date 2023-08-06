@@ -1,0 +1,10 @@
+django_dropbox_upload_handler/__init__.py,sha256=QX4yMqJ87Ksz-WnVBcRAZDmK5F3dP6Y2N8sKUbMtkx8,1416
+django_dropbox_upload_handler/handler.py,sha256=9Dg9B1TpnQ1qnU-DYYuHn94pIN2gZUEYHSYhxv-7hvY,3634
+django_dropbox_upload_handler/urls.py,sha256=e9bFoNkyIqVrj8gSIK2TtXg6LETqdhhoRYAoT6zWt7o,156
+django_dropbox_upload_handler/views.py,sha256=AHJKk5DaG6Ml18PODWL3uvDTaJtBYvGvGP3GB4_oLW0,805
+django_dropbox_upload_handler-0.1.1.dist-info/DESCRIPTION.rst,sha256=Q43UQrk0V4ccMuE3jKcmA_PH5ESnRwEl9VAemS441NI,4198
+django_dropbox_upload_handler-0.1.1.dist-info/METADATA,sha256=lTH3OZ6Vp1Vzl6ybmITlEvvducO8TTqhndAGelLxRQg,5373
+django_dropbox_upload_handler-0.1.1.dist-info/RECORD,,
+django_dropbox_upload_handler-0.1.1.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+django_dropbox_upload_handler-0.1.1.dist-info/metadata.json,sha256=mc7Dsk69lg1qqULknnvSrARn4eGZ8N5uHX-KpfixChU,1064
+django_dropbox_upload_handler-0.1.1.dist-info/top_level.txt,sha256=bGDASMaTkxzts9kbZKkRiVKJGJWChFO_STcyisVOsw4,30
