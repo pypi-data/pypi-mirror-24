@@ -1,0 +1,5 @@
+Click>=6.0
+jinja2>=2.9.6
+pyyaml>=3.12
+ruamel.yaml>=0.15.23
+weasyprint>=0.39
