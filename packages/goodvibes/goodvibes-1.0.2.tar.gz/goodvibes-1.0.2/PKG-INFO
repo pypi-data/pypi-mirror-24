@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: goodvibes
+Version: 1.0.2
+Summary: Calculates quasi-harmonic free energies from Gaussian output files with temperature and haptic corrections
+Home-page: https://github.com/bobbypaton/goodvibes
+Author: Robert Paton
+Author-email: robert.paton@chem.ox.ac.uk
+License: UNKNOWN
+Download-URL: https://zenodo.org/record/841362/files/bobbypaton/GoodVibes-1.0.2.zip
+Description: UNKNOWN
+Keywords: compchem,thermochemistry,gaussian,vibrational-entropies,temperature
+Platform: UNKNOWN
