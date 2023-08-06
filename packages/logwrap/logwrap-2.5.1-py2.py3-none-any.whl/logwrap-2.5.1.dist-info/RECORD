@@ -1,0 +1,14 @@
+logwrap/__init__.py,sha256=OW-1OXZGenfLbSRObWWLSmJRQg_iZmfPHMp8reP5BMA,1388
+logwrap/_class_decorator.py,sha256=i05s3rQZrJL_dl5qh5gQoS8yleU1OoBFXJSehTjAcYw,2510
+logwrap/_formatters.py,sha256=D_KVXs0ls6RtB1ydoQv7CxKEJA-yyZznEMSe4sV5b4s,3269
+logwrap/_log_wrap2.py,sha256=mLUF2cd6Eomn2P4SGrGOIWP6nsI3M4gRxmBPXPcSHRE,4841
+logwrap/_log_wrap3.py,sha256=qZzk2IYB3MIuw25lzG-F2xsx7x7tZ_-gN9BhqmjBZpA,6249
+logwrap/_log_wrap_shared.py,sha256=8LImkYgXrfppboEGIk6896kMRVpn54ikRqtdC-mbl-g,11607
+logwrap/_repr_utils.py,sha256=7TuOUX7gxuFBiuJt8P5Jj2EyHj9cYg_dzYklLLteCG8,13076
+logwrap-2.5.1.dist-info/DESCRIPTION.rst,sha256=M6Rjs-FgJtKnTSzV39kCso62X27Ey8lpq86IYDvOld0,8683
+logwrap-2.5.1.dist-info/METADATA,sha256=Y5x4vR7hYAa6sJgo4VRmfQEpXZNCffiN7LaApbMOsyg,9961
+logwrap-2.5.1.dist-info/RECORD,,
+logwrap-2.5.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+logwrap-2.5.1.dist-info/metadata.json,sha256=2i4LnB6woqOH3-FFnMhz0vFlwM_7ucqA-tlIVw4KkEg,1452
+logwrap-2.5.1.dist-info/top_level.txt,sha256=7q47MQq8ZedycLFMKaloOJ1NjkeTpxqwcdtYqVXduwM,8
+logwrap-2.5.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
