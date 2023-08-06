@@ -1,0 +1,11 @@
+gis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gis/protobuf/__init__.py,sha256=lfOX6rLEvGoPDgQCCcFQFoCXRo9v6v4y36UmvF64ufY,2245
+gis/protobuf/linestring_pb2.py,sha256=PLPMJtX01DM983l2w70JG2JfJjD9CHK94JxNc_haA4g,6132
+gis/protobuf/point_pb2.py,sha256=wYH6vIexLZ5dFMPOZt2u0ovDD6ztEaV-cQwWC4kmDho,6425
+gis/protobuf/polygon_pb2.py,sha256=YXhvwqYsAWixUYShsLBvdn7nZkMQnWSYJFgTO1dMelo,5907
+protobuf_gis-1.0.3.dist-info/DESCRIPTION.rst,sha256=U-6rpWzibphSyP-XGEeibAiKQ4eaRVhsNuRLVuO4msE,4936
+protobuf_gis-1.0.3.dist-info/METADATA,sha256=Z2SqUJ_cwKospq2bYTOlhhx_eUNV4Yl1XZp28pVUzpY,5904
+protobuf_gis-1.0.3.dist-info/RECORD,,
+protobuf_gis-1.0.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+protobuf_gis-1.0.3.dist-info/metadata.json,sha256=TxBZvBs9KDhOtbzEjxud_vNdo4ODNo_zkjN450zl9eE,1036
+protobuf_gis-1.0.3.dist-info/top_level.txt,sha256=9iHrI7Ki7uFmPjpU4P3WNQifUtwKJs68a-iOj1m7za0,4
