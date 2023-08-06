@@ -1,0 +1,11 @@
+pyfastnoisesimd/__init__.py,sha256=PZvUiqoCg0Wa0rWmLCH9MTIXV3k9lVT0bMw3ZAhw71g,677
+pyfastnoisesimd/cpuinfo.py,sha256=g_Y--yPZ13Mhjbs_nsFOsSWnoIrXCNYX9bv_vqibXD4,46533
+pyfastnoisesimd/extension.cp36-win_amd64.pyd,sha256=zAXySEbJQOk8ZVdIDOvovOC9xyy6ijVzZVnJhb9HZh8,566272
+pyfastnoisesimd/helpers.py,sha256=iFddsP6jS01KCQrqEJLp3Ue9XpfRHVtdYnXhPh9d7fA,4794
+pyfastnoisesimd/version.py,sha256=BExkhjhefCAQ9u2ctbvnYU0AFq-_8lNGbZ0h-XZ0N1o,28
+pyfastnoisesimd-0.1.0.dev0.dist-info/DESCRIPTION.rst,sha256=FlMCXwK507OXyD-Fp4f6P9BliDLyK3Y-UE5wsr9G_p0,306
+pyfastnoisesimd-0.1.0.dev0.dist-info/METADATA,sha256=9kbey_ZiV12cG6gj_kqL5LecL78_IQBsq6C86jDwCps,1200
+pyfastnoisesimd-0.1.0.dev0.dist-info/RECORD,,
+pyfastnoisesimd-0.1.0.dev0.dist-info/WHEEL,sha256=4fkP9V5fUlnPlEu2h0nt7u0cPpJipYsJO32nXNevnFk,106
+pyfastnoisesimd-0.1.0.dev0.dist-info/metadata.json,sha256=P1D5x8Jn1WNzujgmv2wcvsW6YPLvBLsmaL604VbIN2k,1012
+pyfastnoisesimd-0.1.0.dev0.dist-info/top_level.txt,sha256=AEWqF5rj_AuWkyNcWprAmM9wr47whsdUU9VAt25ES6k,16
