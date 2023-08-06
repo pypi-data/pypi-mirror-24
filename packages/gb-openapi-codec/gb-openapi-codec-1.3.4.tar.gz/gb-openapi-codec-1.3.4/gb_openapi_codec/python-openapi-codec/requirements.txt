@@ -1,0 +1,7 @@
+# Package requirements
+coreapi
+
+# Testing requirements
+coverage
+flake8
+pytest
