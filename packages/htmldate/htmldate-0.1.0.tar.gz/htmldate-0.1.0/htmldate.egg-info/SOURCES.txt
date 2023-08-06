@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tox.ini
+htmldate/__init__.py
+htmldate/cli.py
+htmldate/core.py
+htmldate.egg-info/PKG-INFO
+htmldate.egg-info/SOURCES.txt
+htmldate.egg-info/dependency_links.txt
+htmldate.egg-info/entry_points.txt
+htmldate.egg-info/not-zip-safe
+htmldate.egg-info/requires.txt
+htmldate.egg-info/top_level.txt
