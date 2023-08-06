@@ -1,0 +1,14 @@
+numpy
+scipy
+pwkit
+sdmpy
+pyfftw
+click
+dask
+distributed
+attrs
+future
+astropy
+pyyaml
+numba
+rtpipe
