@@ -1,0 +1,5 @@
+[console_scripts]
+auto_delete = coursetool.course:auto_delete
+auto_select = coursetool.course:auto_select
+coursetool = coursetool.course:help
+
