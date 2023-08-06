@@ -1,0 +1,8 @@
+setup.py
+adstex/__init__.py
+adstex.egg-info/PKG-INFO
+adstex.egg-info/SOURCES.txt
+adstex.egg-info/dependency_links.txt
+adstex.egg-info/entry_points.txt
+adstex.egg-info/requires.txt
+adstex.egg-info/top_level.txt
