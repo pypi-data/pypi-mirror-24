@@ -1,0 +1,12 @@
+codecov
+pytest
+pytest-cov
+pytest-pep8
+PyYAML
+numpy
+pandas
+python-dateutil
+boto3
+tables
+tox
+bumpversion
