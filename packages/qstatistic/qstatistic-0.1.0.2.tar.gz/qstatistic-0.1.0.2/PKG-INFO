@@ -1,0 +1,72 @@
+Metadata-Version: 1.1
+Name: qstatistic
+Version: 0.1.0.2
+Summary: qstatistic Library.
+Home-page: https://github.com/yan-duarte/qstatistic
+Author: Yan Anderson Siriano Duarte
+Author-email: yan_asd@hotmail.com
+License: GNU General Public License v3
+Description: ==========
+        qstatistic
+        ==========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/qstatistic.svg
+                :target: https://pypi.python.org/pypi/qstatistic
+        
+        .. image:: https://img.shields.io/travis/yan-duarte/qstatistic.svg
+                :target: https://travis-ci.org/yan-duarte/qstatistic
+        
+        .. image:: https://readthedocs.org/projects/qstatistic/badge/?version=latest
+                :target: https://qstatistic.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        .. image:: https://pyup.io/repos/github/yan-duarte/qstatistic/shield.svg
+             :target: https://pyup.io/repos/github/yan-duarte/qstatistic/
+             :alt: Updates
+        
+        
+        Python Boilerplate contains all the boilerplate you need to create a Python package.
+        
+        
+        * Free software: GNU General Public License v3
+        * Documentation: https://qstatistic.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        ---------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0.2 (2017-09-03)
+        ------------------
+        
+        * qSigmoid now accept a numpy array as input.
+        * Made some tests for qSigmoid.
+        
+        0.1.0.1 (2017-08-31)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: qstatistic
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
