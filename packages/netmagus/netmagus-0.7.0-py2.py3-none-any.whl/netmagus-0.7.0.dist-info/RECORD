@@ -1,0 +1,13 @@
+netmagus/__init__.py,sha256=k3rtp2EA3Hv5dXHxwt2GrYb23WUNNLjVE7ggEebT59E,16
+netmagus/__main__.py,sha256=2qWAn6SjC8aGi50TFOPfHoIQFn5TNiw5-BAcBgLP4zA,2604
+netmagus/form.py,sha256=nZ8ZozB2phcW0zYQ3hTrKNmx9hvTaFqmwRoxBG6SGA0,10543
+netmagus/netop.py,sha256=X0E5mdhpQj_A1-oBo0IrwfcFsR3qLDw0ZaInbNhzBhk,990
+netmagus/rpc.py,sha256=F_fhXvwp2KCcVadOaR1utFNqKiwqppqF6Dl1H4Lljcc,11383
+netmagus/screen.py,sha256=OW6oPj-6DZLSohveDynjNVETQJ_6o1lN8swkyzgA_5c,9276
+netmagus/session.py,sha256=E00QH10Kb4XZzXu2ubbLR-jDGWSH2xotQIBWza8rgGc,18055
+netmagus-0.7.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+netmagus-0.7.0.dist-info/METADATA,sha256=bWOZab62iMBxPP44hYhelWgZqKOqAcG1Ub8a_BtMpec,1021
+netmagus-0.7.0.dist-info/RECORD,,
+netmagus-0.7.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+netmagus-0.7.0.dist-info/metadata.json,sha256=QKwsQaKqT4OrjwGrkE6sh3K5tfgmBmhQuC4VKiGDP0k,1155
+netmagus-0.7.0.dist-info/top_level.txt,sha256=kqRkF9s3ZxBVRSXHQ7CPXPvD3Sk5SrbkEChC4iClOuA,9
