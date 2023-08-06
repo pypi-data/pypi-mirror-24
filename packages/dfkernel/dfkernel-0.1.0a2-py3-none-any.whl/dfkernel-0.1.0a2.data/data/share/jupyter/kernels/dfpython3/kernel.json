@@ -1,0 +1,11 @@
+{
+ "display_name": "DFPython 3",
+ "language": "python",
+ "argv": [
+  "python",
+  "-m",
+  "dfkernel_launcher",
+  "-f",
+  "{connection_file}"
+ ]
+}

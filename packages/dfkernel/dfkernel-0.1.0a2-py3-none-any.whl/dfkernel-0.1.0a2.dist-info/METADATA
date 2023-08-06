@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: dfkernel
+Version: 0.1.0a2
+Summary: Dataflow Python Kernel for Jupyter
+Home-page: http://dataflownb.github.io/
+Author: Dataflow Notebook Development Team
+Author-email: dataflownb@users.noreply.github.com
+License: BSD
+Keywords: Dataflow,Interactive,Interpreter,Shell,Web
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: ipykernel (>=4.6)
+Requires-Dist: ipython (>=4.0.0)
+Requires-Dist: jupyter-client
+Requires-Dist: notebook (>=5.0)
+Requires-Dist: tornado (>=4.0)
+Requires-Dist: traitlets (>=4.1.0)
+Provides-Extra: test
+Requires-Dist: nose-timer; extra == 'test'
+Requires-Dist: nose-warnings-filters; extra == 'test'
+
+UNKNOWN
+
+
