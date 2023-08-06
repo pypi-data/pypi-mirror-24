@@ -1,0 +1,77 @@
+Pyscales
+========
+
+This module provides representations for musical notes and intervals in the
+basic 12-note even tempered system that is typically used in western music. It
+provides basic arithmetic and conversion to and from midi numbers.
+
+
+Classes, Functions and Definitions
+----------------------------------
+
+This module provides the following classes:
+
+``Note``: represents a musical note
+
+``Interval``: represents the interval between two notes
+
+
+It also provides the following utility functions:
+
+``get_midi_number(note_string)`` -> midi number
+
+``in_chord(note, root, chord)`` -> boolean
+
+
+The following intervals are predefined:
+
+::
+
+    P1 = unison = Interval(0)
+    m2 = semitone = Interval(1)
+    M2 = Interval(2)
+    m3 = Interval(3)
+    M3 = Interval(4)
+    P4 = Interval(5)
+    aug4 = dim5 = Interval(6)
+    P5 = Interval(7)
+    m6 = Interval(8)
+    M6 = Interval(9)
+    m7 = Interval(10)
+    M7 = Interval(11)
+    P8 = octave = Interval(12)
+
+
+The following chord types are predefined:
+
+::
+
+    MAJOR = (unison, M3, P5)
+    MINOR = (unison, m3, P5)
+    SEVENTH = (unison, M3, P5, m7)
+
+
+Examples
+--------
+
+Some examples of use:
+
+::
+
+    >>> Note('c') - Note('a-2')
+    Interval(16)
+    >>> Note('c') + M3
+    Note(64)
+    >>> (Note('c3') + P5).get_note_string()
+    'G3'
+    >>> in_chord(Note('c5'), Note('a'), MINOR)
+    True
+    >>> in_chord(Note('c5'), Note('a'), MAJOR)
+    False
+
+
+Installing
+----------
+
+To install pyscales, use ``pip install pyscales``.
+
