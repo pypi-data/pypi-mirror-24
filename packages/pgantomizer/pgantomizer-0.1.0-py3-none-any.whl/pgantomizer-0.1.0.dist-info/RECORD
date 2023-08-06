@@ -1,0 +1,14 @@
+pgantomizer/__init__.py,sha256=2B-z-t3OlbHRW2vqKoLAFbiocqimT96-dS4pqTyHCJA,85
+pgantomizer/anonymize.py,sha256=_5fso0Q3J5QYGP7rUaeA6A_S-rGmssNNnuOqdBs2omg,8192
+pgantomizer/dump.py,sha256=JhQwA1Pk0oGHOVq4-cxZ-c22Dw2hYCPpHtNnyLRs-SM,2562
+pgantomizer/utils.py,sha256=zbEdq7YzsCyecTd4emQZbHa1hsHZAEc8xdVrJhxeqSM,239
+pgantomizer-0.1.0.dist-info/DESCRIPTION.rst,sha256=LZWdxkEcOZBYWgp6PU9pcKbROWUMOXnEe0U8bBPBH5U,5074
+pgantomizer-0.1.0.dist-info/METADATA,sha256=a7qhSLFoSXasrmIrtPYujfwrJrsQ972rYldZ9OIw6sI,5747
+pgantomizer-0.1.0.dist-info/RECORD,,
+pgantomizer-0.1.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pgantomizer-0.1.0.dist-info/entry_points.txt,sha256=p6Cyf2OhUSSOf0DcklzmAhVOrLiqHXoVUuAA1R0XmLU,101
+pgantomizer-0.1.0.dist-info/metadata.json,sha256=chUNYiKCOsfxbLUtXkqC8ikFf3XyGhuGgXlRb8HDkmM,1186
+pgantomizer-0.1.0.dist-info/top_level.txt,sha256=C6fJgOEAS1VMYzV50rXlZZU-dm6QC66M6Vvq28FGWcs,18
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/asserts.py,sha256=jA0uhvccwbd_LF8WEX2ba5qB0ahcGJUxfvnxenqGg8I,1206
+tests/test_pgantomizer.py,sha256=zSXftgz6b10wB_kePYzu_or_s1Wvq2k78-2lt3vagvE,4572
