@@ -1,0 +1,12 @@
+README
+setup.cfg
+setup.py
+discoin/__init__.py
+discoin/classes.py
+discoin/client.py
+discoin/errors.py
+discoin.egg-info/PKG-INFO
+discoin.egg-info/SOURCES.txt
+discoin.egg-info/dependency_links.txt
+discoin.egg-info/requires.txt
+discoin.egg-info/top_level.txt
