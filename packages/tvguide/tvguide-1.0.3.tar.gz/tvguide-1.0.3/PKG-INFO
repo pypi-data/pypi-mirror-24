@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: tvguide
+Version: 1.0.3
+Summary: Determine whether targets are observable TESS.
+Home-page: https://github.com/tessgi/tvguide
+Author: Tom Barclay
+Author-email: tom@tombarclay.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
