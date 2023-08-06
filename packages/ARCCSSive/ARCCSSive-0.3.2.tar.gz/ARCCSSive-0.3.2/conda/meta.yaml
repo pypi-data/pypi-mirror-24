@@ -1,0 +1,44 @@
+package:
+    name: arccssive
+    version: {{ GIT_DESCRIBE_TAG }}
+
+build:
+    number: {{ GIT_DESCRIBE_NUMBER }}
+    string: {{ GIT_BUILD_STR }}
+
+source:
+    git_url: ../
+
+build:
+    script: python setup.py install
+
+    entry_points:
+        - search_replica = ARCCSSive.cli.search_replica:main
+        - compare_ESGF = ARCCSSive.cli.compare_ESGF:main # [py2k]
+
+requirements:
+    build:
+        - python
+        - pbr
+    run:
+        - python
+        - six
+        - sqlalchemy
+        - esgf-pyclient # [py2k]
+
+test:
+    source_files:
+        - setup.cfg
+        - tests
+    requires:
+        - pytest
+    commands:
+        - py.test
+        - search_replica -h
+        - compare_ESGF -h # [py2k]
+
+about:
+    home: https://github.com/coecms/ARCCSSive
+    license: Apache 2.0
+    license_file: LICENSE
+    summary: ARCCSS Data Archive Tools
