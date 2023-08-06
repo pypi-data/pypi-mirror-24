@@ -1,0 +1,3 @@
+[console_scripts]
+word-embedding-loader = word_embedding_loader.cli:cli
+
