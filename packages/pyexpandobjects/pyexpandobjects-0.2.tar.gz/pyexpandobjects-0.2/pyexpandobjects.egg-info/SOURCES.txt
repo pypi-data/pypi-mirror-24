@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+expandobjects/__init__.py
+expandobjects/exceptions.py
+expandobjects/expander.py
+expandobjects/main.py
+pyexpandobjects.egg-info/PKG-INFO
+pyexpandobjects.egg-info/SOURCES.txt
+pyexpandobjects.egg-info/dependency_links.txt
+pyexpandobjects.egg-info/entry_points.txt
+pyexpandobjects.egg-info/requires.txt
+pyexpandobjects.egg-info/top_level.txt
