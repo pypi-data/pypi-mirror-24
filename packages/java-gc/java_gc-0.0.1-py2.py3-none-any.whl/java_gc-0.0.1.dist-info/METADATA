@@ -1,0 +1,84 @@
+Metadata-Version: 2.0
+Name: java-gc
+Version: 0.0.1
+Summary: Trigger a full Java garbage collection
+Home-page: https://github.com/mmmorris1975/java-gc
+Author: Michael Morris
+Author-email: mmmorris1975@netscape.net
+License: MIT
+Keywords: java gc jcmd
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7, <4
+
+=======
+JAVA GC
+=======
+
+A command to trigger a full java garbage collection via the `jcmd` tool.  On systems which use the systemd init system,
+you can specify the service name as the program argument.  The `-r` option can also be used on systemd based systems to
+allow have this utility attempt to automatically restart the service if the jcmd garbage collection fails.
+
+Requirements
+============
+
+- Tested on python 2.7 and python 3
+- No 3rd party libraries required
+
+Installation
+============
+
+Using `pip` is the preferred method to install this tool, and will install the package from pypi.  `pip install java-gc`
+
+It can also be installed via `pip` from a local copy of the source repo, `pip install .` from the repo directory should do the trick.
+Running `make install` should also work as well.
+
+Usage
+=====
+
+| usage: java-gc [-h] [-u USER] [-t T] [-r]
+|                [-l {debug,info,warning,error,critical}] [-v]
+|                proc
+|
+| Trigger a full GC on a java process
+|
+| positional arguments:
+|   proc                  The service name, or pid, to trigger the GC on
+|
+| optional arguments:
+|   -h, --help            show this help message and exit
+|   -u USER, --user USER  User owning the process (default to current user)
+|   -t T, --timeout T     seconds to wait for GC before raising error
+|   -r, --restart         restart the service if timeout occurred, else exit
+|                         with error
+|   -l {debug,info,warning,error,critical}, --loglevel {debug,info,warning,error,critical}
+|                         set log level
+|   -v, --version         print program version and exit
+
+Contributing
+============
+
+The usual github model for forking the repo and creating a pull request is the preferred way to
+contribute to this tool.  Bug fixes, enhancements, doc updates, translations are always welcomed.
+
+Building from source
+--------------------
+
+A `Makefile` has been included in the repository to handle the steps of creating the package and
+uploading it to pypi.  If you don't have the `make` utility installed, the contents of the Makefile
+should be instructive (and simple) enough to execute manually.
+
+The following targets are available in the Makefile:
+
+* `package` - the default target, calls the setup.py script to create the package to upload to pypi.
+* `upload` - depends on the `package` target, and uploads the generated package archive to pypi.
+* `install` - use `pip` to install the package locally
+* `clean` - clean up the artifacts left by the `package` step.
+* `distclean` - depends on the `clean` target, and additionally cleans up misc. files.
+
+
