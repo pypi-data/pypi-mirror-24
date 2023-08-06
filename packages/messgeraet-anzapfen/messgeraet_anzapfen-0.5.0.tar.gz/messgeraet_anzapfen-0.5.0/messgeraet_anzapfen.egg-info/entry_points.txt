@@ -1,0 +1,7 @@
+[console_scripts]
+anzapfen = messgeraet_anzapfen.main:run
+token = messgeraet_anzapfen.server_token:run
+
+[messgeraet_sensoren]
+constant = messgeraet_anzapfen.sensors.constant:Constant.factory
+
