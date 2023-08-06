@@ -1,0 +1,7 @@
+setup.py
+mycroftapi/__init__.py
+mycroftapi.egg-info/PKG-INFO
+mycroftapi.egg-info/SOURCES.txt
+mycroftapi.egg-info/dependency_links.txt
+mycroftapi.egg-info/requires.txt
+mycroftapi.egg-info/top_level.txt
