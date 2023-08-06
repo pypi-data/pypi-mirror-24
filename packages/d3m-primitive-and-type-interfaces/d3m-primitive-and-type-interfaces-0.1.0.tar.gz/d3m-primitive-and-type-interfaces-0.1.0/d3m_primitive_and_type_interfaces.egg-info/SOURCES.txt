@@ -1,0 +1,8 @@
+README
+primitive.py
+setup.py
+type.py
+d3m_primitive_and_type_interfaces.egg-info/PKG-INFO
+d3m_primitive_and_type_interfaces.egg-info/SOURCES.txt
+d3m_primitive_and_type_interfaces.egg-info/dependency_links.txt
+d3m_primitive_and_type_interfaces.egg-info/top_level.txt
