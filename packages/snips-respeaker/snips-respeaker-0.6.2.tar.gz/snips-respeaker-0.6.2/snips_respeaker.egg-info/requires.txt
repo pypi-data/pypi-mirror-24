@@ -1,0 +1,4 @@
+webrtcvad
+pyaudio
+requests
+hidapi
