@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: panphon
+Version: 0.13
+Summary: Tools for using the International Phonetic Alphabet with phonological features
+Home-page: https://github.com/dmort27/panphon
+Author: David R. Mortensen
+Author-email: dmortens@cs.cmu.edu
+License: MIT
+Download-URL: https://github.com/dmort27/panphon/tarball/0.13
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: setuptools
+Requires-Dist: unicodecsv
+Requires-Dist: PyYAML
+Requires-Dist: regex
+Requires-Dist: numpy
+Requires-Dist: editdistance
+Requires-Dist: munkres
+
+UNKNOWN
+
+
