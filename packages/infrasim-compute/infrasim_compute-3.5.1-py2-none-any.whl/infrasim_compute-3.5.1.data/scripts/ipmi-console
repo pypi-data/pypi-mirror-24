@@ -1,0 +1,5 @@
+#!python
+from infrasim import ipmiconsole
+
+if __name__ == '__main__':
+    ipmiconsole.console_main()
