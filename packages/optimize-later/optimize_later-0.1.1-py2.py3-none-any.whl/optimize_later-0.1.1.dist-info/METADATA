@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: optimize-later
+Version: 0.1.1
+Summary: Mark potentially slow blocks for notifications when it actually turns out too slow, so you can optimize it.
+Home-page: https://github.com/quantum5/optimize-later
+Author: Quantum
+Author-email: quantum@dmoj.ca
+License: MIT
+Keywords: optimize profiler speed
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+UNKNOWN
+
+
