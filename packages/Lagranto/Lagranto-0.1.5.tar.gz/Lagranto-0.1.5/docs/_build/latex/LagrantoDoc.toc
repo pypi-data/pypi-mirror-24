@@ -1,0 +1,16 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Installation}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Using pip}{3}{section.1.1}
+\contentsline {chapter}{\numberline {2}Lagranto}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Calculation}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Analyze}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Plotting}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Writing}{7}{section.2.4}
+\contentsline {chapter}{\numberline {3}lagranto package}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Examples}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}DocStrings}{9}{section.3.2}
+\contentsline {paragraph}{Examples}{10}{paragraph*.4}
+\contentsline {paragraph}{Examples}{10}{paragraph*.6}
+\contentsline {paragraph}{Examples}{10}{paragraph*.8}
+\contentsline {chapter}{\numberline {4}Indices and tables}{15}{chapter.4}
+\contentsline {chapter}{Index}{17}{section*.21}

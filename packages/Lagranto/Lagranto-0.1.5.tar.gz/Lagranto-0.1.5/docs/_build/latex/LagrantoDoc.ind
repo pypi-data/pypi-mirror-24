@@ -1,0 +1,45 @@
+\begin{sphinxtheindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter A
+  \item append() (lagranto.Tra method), \hyperpage{10}
+
+  \indexspace
+  \bigletter C
+  \item concatenate() (lagranto.Tra method), \hyperpage{10}
+  \item create\_startf() (lagranto.LagrantoRun method), \hyperpage{12}
+
+  \indexspace
+  \bigletter D
+  \item duration (lagranto.Tra attribute), \hyperpage{10}
+
+  \indexspace
+  \bigletter I
+  \item initial (lagranto.Tra attribute), \hyperpage{11}
+
+  \indexspace
+  \bigletter L
+  \item LagrantoRun (class in lagranto), \hyperpage{11}
+  \item load\_ascii() (lagranto.Tra method), \hyperpage{11}
+  \item load\_netcdf() (lagranto.Tra method), \hyperpage{11}
+
+  \indexspace
+  \bigletter R
+  \item run() (lagranto.LagrantoRun method), \hyperpage{12}
+  \item run\_parallel() (lagranto.LagrantoRun method), \hyperpage{12}
+
+  \indexspace
+  \bigletter S
+  \item set\_array() (lagranto.Tra method), \hyperpage{11}
+
+  \indexspace
+  \bigletter T
+  \item Tra (class in lagranto), \hyperpage{9}
+  \item trace() (lagranto.LagrantoRun method), \hyperpage{12}
+
+  \indexspace
+  \bigletter W
+  \item write\_ascii() (lagranto.Tra method), \hyperpage{11}
+  \item write\_netcdf() (lagranto.Tra method), \hyperpage{11}
+
+\end{sphinxtheindex}
