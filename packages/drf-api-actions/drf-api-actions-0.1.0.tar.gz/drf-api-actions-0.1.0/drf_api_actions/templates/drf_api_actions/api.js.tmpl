@@ -1,0 +1,5 @@
+let codec = new coreapi.codecs.CoreJSONCodec()
+
+let schema = codec.decode(atob('{{ schema }}'))
+
+let api = {{ api }}
