@@ -1,0 +1,3 @@
+[console_scripts]
+py2sh = py2sh:py2sh_demo
+
