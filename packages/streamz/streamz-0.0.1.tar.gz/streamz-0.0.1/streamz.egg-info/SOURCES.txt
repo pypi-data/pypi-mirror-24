@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+streamz/__init__.py
+streamz/core.py
+streamz/dask.py
+streamz/graph.py
+streamz/sources.py
+streamz/utils_test.py
+streamz.egg-info/PKG-INFO
+streamz.egg-info/SOURCES.txt
+streamz.egg-info/dependency_links.txt
+streamz.egg-info/not-zip-safe
+streamz.egg-info/requires.txt
+streamz.egg-info/top_level.txt
