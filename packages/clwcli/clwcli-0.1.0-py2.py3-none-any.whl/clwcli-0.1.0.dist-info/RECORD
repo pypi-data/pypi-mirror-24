@@ -1,0 +1,11 @@
+clwcli/__init__.py,sha256=IJpnDfFP42hLFhuxnUH2uw0-ml_9031PVbkdMOnLalM,36
+clwcli/__main__.py,sha256=nmdOLqD4HXDOl7hgGXIDD6pc5UNC2BaJ_lv26cgn4Xo,89
+clwcli/cli.py,sha256=pEXj6LDDBY9exSkq_hSgA0avacINTQgZQhHFZ2ioMts,801
+clwcli/utils.py,sha256=3ETFuUuw9ZVKW4LRT4zjXH05W-1B4IzFNgzAYzNNaIk,2185
+clwcli-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+clwcli-0.1.0.dist-info/METADATA,sha256=Pa1lHJsu-GR4DbOPjR_GwpKMz5x0aKdEUypL6oQHmaA,1028
+clwcli-0.1.0.dist-info/RECORD,,
+clwcli-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+clwcli-0.1.0.dist-info/entry_points.txt,sha256=Y8NC1BC0Wom-Im8H69vdDwfnuO0DZC3RrvLg6fs0LW8,59
+clwcli-0.1.0.dist-info/metadata.json,sha256=6IElibp2-LhwqkrKn5axMiJ5Rv6dVSQQxb8tFjbTdJo,1208
+clwcli-0.1.0.dist-info/top_level.txt,sha256=uCvE70qZ-FGvebV4yIUQk_fyRQsrVmP1CWju1IpEHJM,7

@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        clw=clwcli.cli:main
+    
