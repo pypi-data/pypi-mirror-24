@@ -1,0 +1,3 @@
+include changelog.md  LICENSE README.md  requirements.txt 
+recursive-include bin *.*
+recursive-include epw *.* 
