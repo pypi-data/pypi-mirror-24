@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: blackmagic
+Version: 0.0.1
+Summary: A Python black magic library.
+Home-page: https://github.com/devunt/blackmagic
+Author: Bae Junehyeon
+Author-email: devunt@gmail.com
+License: MIT License (MIT)
+Description: # blackmagic
+        Python black magics
+        
+Keywords: magic,hack
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Debuggers
