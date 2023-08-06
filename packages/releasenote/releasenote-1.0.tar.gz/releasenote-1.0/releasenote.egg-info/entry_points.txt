@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        releasenote=releasenote:get_release_note
+    

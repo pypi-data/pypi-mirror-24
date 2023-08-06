@@ -1,0 +1,12 @@
+setup.py
+releasenote/__init__.py
+releasenote/git.py
+releasenote/mingle.py
+releasenote/parser.py
+releasenote.egg-info/PKG-INFO
+releasenote.egg-info/SOURCES.txt
+releasenote.egg-info/dependency_links.txt
+releasenote.egg-info/entry_points.txt
+releasenote.egg-info/not-zip-safe
+releasenote.egg-info/requires.txt
+releasenote.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: releasenote
+Version: 1.0
+Summary: Gives release note using git commit message and mingle cards
+Home-page: https://github.com/NivedhaSenthil/releasenote
+Author: Nivedha Senthil
+Author-email: nivedhasenthil@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
