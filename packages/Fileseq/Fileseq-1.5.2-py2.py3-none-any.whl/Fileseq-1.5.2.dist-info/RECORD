@@ -1,0 +1,13 @@
+Fileseq-1.5.2.dist-info/DESCRIPTION.rst,sha256=KThytydWRS-LyM9C89PmN6G8Xm_s8UFglXrGrlLvGB8,3543
+Fileseq-1.5.2.dist-info/METADATA,sha256=Jved_7a9wcoMvqWoEA9nd7yxhqcesXFt2fGf3xcFUWE,4057
+Fileseq-1.5.2.dist-info/RECORD,,
+Fileseq-1.5.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Fileseq-1.5.2.dist-info/metadata.json,sha256=cUu1CtsMKOVhPubrkXmCvqcmaQRDOYwalZO2lv5OZP8,715
+Fileseq-1.5.2.dist-info/top_level.txt,sha256=Z-u4Bkx5BxyXGkriLWP5UBVq9NrZC8vzLDt6qc-pxds,8
+fileseq/__init__.py,sha256=tKupO6V44cZZW_De_2egimSVZYL_K6H13LaTeR5ZezA,1701
+fileseq/__version__.py,sha256=l_m-0-0bfRsAKcenvAk4AZVqaiD1LKz6_9X_QfaXbtw,22
+fileseq/constants.py,sha256=f-C_upYUL_hl2KKPnn-FIMPY2no1QIgEdarIKvRuo8M,1402
+fileseq/exceptions.py,sha256=BbJ8CLFp_9jRL-tH4vrfmcwYRVIOLL-Lcg5PtBVyjXo,447
+fileseq/filesequence.py,sha256=iNmC6V8Pkq9K5f_wGsHjwNcRsX2VM1YSVZCGg0z1AqY,18143
+fileseq/frameset.py,sha256=N55m1G4s6LsyRH6mPq7mOf4dctIa2qTcjNo20zHhSYg,34704
+fileseq/utils.py,sha256=3dePmzC5x5feuj-wq7ybNlsLLO9h2tQV74XbctFWYgg,3632
