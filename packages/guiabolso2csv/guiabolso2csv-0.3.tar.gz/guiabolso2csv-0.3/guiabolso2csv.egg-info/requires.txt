@@ -1,0 +1,4 @@
+requests
+click
+unicodecsv
+openpyxl
