@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{figure} \PYG{o}{=} \PYG{n}{partial}\PYG{p}{(}\PYG{n}{lp}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{,} \PYG{n}{directory}\PYG{o}{=}\PYG{n}{DIRECTORY}\PYG{p}{)}
+
+\PYG{k}{with} \PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}sincos\PYGZus{}partial\PYGZsq{}}\PYG{p}{):}
+    \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{()}
+\end{Verbatim}

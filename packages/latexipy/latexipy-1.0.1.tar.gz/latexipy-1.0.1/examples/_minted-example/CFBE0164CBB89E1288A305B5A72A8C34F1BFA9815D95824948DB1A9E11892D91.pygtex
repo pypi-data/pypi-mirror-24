@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{with} \PYG{n}{lp}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}sincos\PYGZus{}no\PYGZus{}latex\PYGZsq{}}\PYG{p}{):}
+    \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{()}
+\end{Verbatim}

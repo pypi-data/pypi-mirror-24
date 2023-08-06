@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Online resources}{2}{section.1}
+\contentsline {section}{\numberline {2}Assumptions}{2}{section.2}
+\contentsline {section}{\numberline {3}Plotting}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Without \LaTeX ify}{2}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}With \LaTeX ify}{3}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Custom parameters}{4}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Reverting the settings}{6}{subsection.3.4}
+\contentsline {section}{\numberline {4}Programming tips}{6}{section.4}
+\contentsline {section}{\numberline {5}Using in \LaTeX }{6}{section.5}

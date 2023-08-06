@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/usr/bin/env python}
+\PYG{k+kn}{import} \PYG{n+nn}{latexipy} \PYG{k+kn}{as} \PYG{n+nn}{lp}
+\PYG{k+kn}{from} \PYG{n+nn}{plotting} \PYG{k+kn}{import} \PYG{n}{DIRECTORY}\PYG{p}{,} \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}
+
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZsq{}}\PYG{p}{:}
+    \PYG{n}{lp}\PYG{o}{.}\PYG{n}{latexify}\PYG{p}{()}
+
+    \PYG{k}{with} \PYG{n}{lp}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}sincos\PYGZus{}defaults\PYGZsq{}}\PYG{p}{,} \PYG{n}{directory}\PYG{o}{=}\PYG{n}{DIRECTORY}\PYG{p}{):}
+        \PYG{n}{plot\PYGZus{}sin\PYGZus{}and\PYGZus{}cos}\PYG{p}{()}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{pathlib}\PYG{o}{.}\PYG{n}{Path}\PYG{p}{()}
+\end{Verbatim}
