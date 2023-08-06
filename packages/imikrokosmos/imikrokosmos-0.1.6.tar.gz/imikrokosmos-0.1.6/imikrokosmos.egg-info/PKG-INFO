@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: imikrokosmos
+Version: 0.1.6
+Summary: A Jupyter kernel for the mikrokosmos lambda interpreter
+Home-page: https://github.com/M42/jupyter-mikrokosmos
+Author: Mario Román
+Author-email: mromang08@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
