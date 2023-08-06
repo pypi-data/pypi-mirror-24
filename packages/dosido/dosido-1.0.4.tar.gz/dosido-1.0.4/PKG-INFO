@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dosido
+Version: 1.0.4
+Summary: Manage HelpScout knowledge base with VCS markdown
+Home-page: https://github.com/TannerBaldus/dosido
+Author: Tanner Baldus
+Author-email: me@tannerbaldus.com
+License: MIT
+Description: UNKNOWN
+Keywords: helpscout markdown docs documentation github vcs knowledge base
+Platform: UNKNOWN

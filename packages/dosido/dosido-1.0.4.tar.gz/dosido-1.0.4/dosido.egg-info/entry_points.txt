@@ -1,0 +1,3 @@
+[console_scripts]
+dosido = dosido.main:main
+
