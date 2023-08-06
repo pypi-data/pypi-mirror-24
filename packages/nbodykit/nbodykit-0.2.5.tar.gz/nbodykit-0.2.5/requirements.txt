@@ -1,0 +1,16 @@
+numpy
+scipy
+astropy
+mpi4py
+six
+runtests
+pmesh
+kdcount
+mpsort
+bigfile
+pandas
+dask>=0.13
+cachey
+sympy
+numexpr
+Corrfunc
