@@ -1,0 +1,31 @@
+setuptools>=20.2.2
+DataProperty>=0.25.6
+dominate>=2.3.1
+elasticsearch>=5.4.0
+logbook>=1.1.0
+mbstrdecoder
+pathvalidate>=0.16.1
+pytablereader>=0.13.3
+SimpleSQLite>=0.15.0
+six
+toml>=0.9.2
+typepy>=0.0.20
+XlsxWriter>=0.9.8
+xlwt
+
+[:python_version < "3.3"]
+ipaddress
+
+[:python_version < "3.4"]
+enum34
+
+[docs]
+path.py
+readmemaker>=0.3.0
+sphinx_rtd_theme
+Sphinx
+
+[test]
+pytest-cov
+pytest
+tox
