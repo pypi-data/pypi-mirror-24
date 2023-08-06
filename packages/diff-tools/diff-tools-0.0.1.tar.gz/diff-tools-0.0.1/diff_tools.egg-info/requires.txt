@@ -1,0 +1,7 @@
+numpy
+flask
+pandas
+pyyaml
+enum34
+tabulate
+jinja2
