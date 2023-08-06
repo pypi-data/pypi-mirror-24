@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+manuf/__init__.py
+manuf/manuf.py
+manuf.egg-info/PKG-INFO
+manuf.egg-info/SOURCES.txt
+manuf.egg-info/dependency_links.txt
+manuf.egg-info/top_level.txt
