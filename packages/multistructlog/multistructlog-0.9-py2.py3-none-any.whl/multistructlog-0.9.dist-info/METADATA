@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: multistructlog
+Version: 0.9
+Summary: structlog with multiple simultaneous logging backends
+Home-page: UNKNOWN
+Author: Varun Belur, Sapan Bhatia
+Author-email: varun@opennetworking.org,sapan@opennetworking.org
+License: Apache 2
+Keywords: multistructlog,structlog,multiple backends,xos logging
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Logging
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: colorama
+Requires-Dist: python-logstash
+Requires-Dist: structlog
+
+UNKNOWN
+
+
