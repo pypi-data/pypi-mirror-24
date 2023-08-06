@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: gaesd
+Version: 0.7.1
+Summary: Capture and dispatch Stack-Driver compatible traces using a pure python implementation with a pythonic api:context managers, thread-locals (for web requests) and method decorators. The full patchTraces API is supported.Uses the `google_api_python_client` and `oauth2client` libraries under the hood and easily usable on AppEngineif these libraries are vendored-in.
+Home-page: https://github.com/JOIVY/gaesd
+Author: Francis Horsman
+Author-email: francis.horsman@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires: six
+Requires: pip
+Requires: enum34
+Requires: google_api_python_client
+Requires: oauth2client
+
+UNKNOWN
+
+
