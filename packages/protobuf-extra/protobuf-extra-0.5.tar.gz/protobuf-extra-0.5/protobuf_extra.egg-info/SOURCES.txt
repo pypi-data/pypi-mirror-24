@@ -1,0 +1,9 @@
+README.rst
+setup.py
+protobuf_extra/__init__.py
+protobuf_extra.egg-info/PKG-INFO
+protobuf_extra.egg-info/SOURCES.txt
+protobuf_extra.egg-info/dependency_links.txt
+protobuf_extra.egg-info/entry_points.txt
+protobuf_extra.egg-info/requires.txt
+protobuf_extra.egg-info/top_level.txt
