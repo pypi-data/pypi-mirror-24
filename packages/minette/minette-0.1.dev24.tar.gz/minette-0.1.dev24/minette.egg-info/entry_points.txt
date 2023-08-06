@@ -1,0 +1,3 @@
+[console_scripts]
+minette = minette.script.console:main
+
