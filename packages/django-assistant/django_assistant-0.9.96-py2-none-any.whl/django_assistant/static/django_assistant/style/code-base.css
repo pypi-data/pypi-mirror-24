@@ -1,0 +1,139 @@
+body{
+    background:#fafafa;
+    height:98vh;
+}
+.container_assistant{
+    width:96%;
+    margin:auto;
+}
+.assistant_tabs{
+    margin-top:2vh;
+    margin-bottom:2vh;
+}
+.code_base_container, .container_api_manager{
+    width:99%;
+    margin:auto;
+    padding:10px 20px;
+    background:#fff;
+    box-shadow:0px 1px 3px 0px #ccc;
+    min-height:91vh;
+}
+.model_details.active{
+    color:#f90;
+}
+.paddingLeftZero{
+    padding-left:0px;
+}
+.paddingRightZero{
+    padding-right:0px;
+}
+#trial{
+    height:70vh;
+    overflow-y:auto;
+}
+.trial_outer{
+    margin-top:2vh;
+    border:1px solid #fafafa;
+    padding:10px 10px;
+    box-shadow:0px 1px 3px 0px #ccc;
+}
+#trial::-webkit-scrollbar {
+    width: 12px;
+}
+#trial::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -moz-box-shadow   : inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow:         inset 0 0 6px rgba(0,0,0,0.3);
+    
+}
+#trial::-webkit-scrollbar-thumb {
+  background-color: #666;
+  outline: 1px solid slategrey;
+}
+#trial2{
+    max-height:42vh;
+    overflow-y:auto;
+    margin-left:3%;
+    
+}
+#trial2::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+#trial2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+ 
+#trial2::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+#trial3{
+    overflow-y:auto;
+    margin-left:3%;
+    box-shadow:0px 1px 3px 0px #ccc;
+    display:none;
+    padding: 0% 0% 2% 0%;
+    margin-bottom:2%;
+}
+#trial3 h4{
+    margin: 0;
+    padding: 10px 2%;
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    border-bottom:1px solid #ccc;
+    background:#fafafa;
+}
+#trial3 p{
+    height:8vh;
+    text-align: center;
+    margin: 0;
+    padding: 2% 5% 2px 5%;
+    overflow-y:auto;
+    width: auto;
+    line-height:1.7em;
+}
+#trial3 p span{
+    border:1px solid #ccc;
+    border-radius:20px;
+    padding:3px 0px 3px 10px;
+    font-size:12px;
+}
+#trial3 p span i{
+    border-radius:20px;
+    font-size:12px;
+    font-style:normal;
+}
+
+#trial3 p::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+#trial3 p::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+}
+ 
+#trial3 p::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+.addtoDiagramCreator.choosedmodel{
+    color:green;
+}
+#ModalDiagramCreator button{
+    right: 29px;
+    top: 20px;
+    border: 1px solid #f90;
+    padding: 3px 9px;
+    border-radius: 50%;
+    background: #f90;
+    position: absolute;
+    z-index:10;
+}
+#ModalDiagramCreator button span{ 
+    background: #f90;
+    color: white;
+}

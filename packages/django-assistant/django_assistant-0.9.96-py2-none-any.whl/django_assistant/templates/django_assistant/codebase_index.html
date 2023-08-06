@@ -1,0 +1,304 @@
+    
+{% extends "django_assistant/assistant-base.html" %}
+{% block content %}  
+
+
+    <div class="container-fluid code_base_container">
+	<div class="cb_btns">
+	    <button class="btn btn-default find_function first_mem" arrayname="code_base_view">Views</button>
+	    <button class="btn btn-default find_function" arrayname="code_base_models">Models</button>
+	    <button class="btn btn-default find_function" arrayname="code_base_tasks">Tasks</button>
+	    <button class="btn btn-default find_function" arrayname="code_base_urls">URLS</button>
+	    <button class="btn btn-default find_function" arrayname="code_base_htmlToViews">HTML to views</button>
+	    <button class="btn btn-default find_function" arrayname="code_base_ajaxcalls">Ajax calls</button>
+	    <button class="btn btn-default find_function" arrayname="code_base_csvdetails">CSS searcher</button><br><br>
+	</div>
+	<input type="text" id="code_base_search" class="form-control" style="width:42%;" arrayname="code_base_view">
+	<!--
+	    <input type="text" id="ajax_calls_search" class="form-control" style="width:50%;" arrayname="code_base_view">
+	-->
+    
+	<div class="row">
+	    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 paddingLeftZero paddingRightZero">
+		<div class="trial_outer" style="display:none;">
+		    <div id="trial"></div>
+		</div>
+	    </div>
+	    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 paddingLeftZero paddingRightZero">
+		<br>
+		
+		<div id="trial3" class="text-center">
+		    <h4 class="text-left">Model Diagram </h4><br>
+		    <p></p>
+		    <button class="btn btn-default CreateDiagram">Create model diagram</button>
+		    <button class="btn btn-default reset_DiagramCreator">Reset</button>
+		</div>
+		
+		<div id="trial2" style="white-space: pre; line-height:1.6em; font-size:14px"></div>
+	    </div>
+	</div>
+    </div>
+    
+    <!--  modal for Diagram creator- Start-->
+
+    <div class="modal fade" id="ModalDiagramCreator" tabindex="-1" role="dialog">
+	<div class="modal-dialog" style="width:100%; margin:0px; height:100vh;">
+	    <div class="modal-content" style="width:100%; height:100vh; margin:0px; border-radius:0px;">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<div class="modal-body" style="height:100vh; overflow-y:auto; margin:0px; padding:0px;">
+		    
+		    <img src="/static/new/images/bg1.jpg" style="height:99%; margin:0 .5%;">
+		    
+		</div>
+	    </div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!--  modal for Diagram creator - End -->
+    
+    
+    <script>
+	// global  variable for code base search
+	var code_base_view = [];
+	var code_base_models = [];
+	var code_base_tasks = [];
+	var code_base_urls = [];
+	var code_base_ajaxcalls = [];
+	var code_base_csvdetails = [];
+	var code_base_htmlToViews = [];
+	var code_base_URLinHTML = [];
+	var current_view = ''
+	
+	$.widget("custom.catcomplete", $.ui.autocomplete, {
+	    _create: function() {
+		this._super();
+		this.widget().menu("option", "items", "> :not(.ui-autocomplete-category)");
+	    },
+	    _renderMenu: function(ul, items) {
+		var that = this,
+		currentCategory = "";
+		$('#trial').html('')
+		$.each(items, function(index, item) {
+		    var li;
+		    if (item.category != currentCategory) {
+			//~ ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+			currentCategory = item.category;
+			$('#trial').append('<br><br><p class="ui-autocomplete-category" style="font-size:18px; letter-spacing:.023em; color:#36d; font-weight:normal;">#' + item.category + '</p>')
+		    }
+
+		    //~ li = that._renderItemData( ul, item );
+		    if (item.category) {
+
+			//~ li.attr( "aria-label", item.category + " : " + item.label );
+			if ($("#code_base_search").attr('arrayname') == 'code_base_models') {
+			    $('#trial').append('<li style="fonr-size:13px; letter-spacing:.018em; list-style-type:square; line-height:1.6em; cursor:pointer; width:70%;" class="model_details pull-left" app_name="' + item.category + '" model_name="' + item.label + '" >' + item.label + '</li><p class="pull-left addtoDiagramCreator" app_name="' + item.category + '" model_name="' + item.label + '" style="cursor:pointer;">add to diagram</p><br>')
+			} else {
+			    $('#trial').append('<li class="sd">' + item.label + '</li>')
+			}
+
+
+		    }
+		});
+		$('.trial_outer').show()
+	    }
+	});
+
+	
+	
+	$.getJSON('/django_assistant/code_base_info/', function(data) {
+	    $.each(data['views'], function(key, val) {
+		$.each(val, function(index, value) {
+		    var dict1 = {};
+		    dict1['label'] = value;
+		    dict1['category'] = key;
+		    code_base_view.push(dict1)
+		})
+	    });
+	    $.each(data['models'], function(key, val) {
+		$.each(val, function(index, value) {
+		    var dict1 = {};
+		    dict1['label'] = value;
+		    dict1['category'] = key;
+		    code_base_models.push(dict1)
+		})
+	    });
+	    $.each(data['tasks'], function(key, val) {
+		$.each(val, function(index, value) {
+		    var dict1 = {};
+		    dict1['label'] = value;
+		    dict1['category'] = key;
+		    code_base_tasks.push(dict1)
+		})
+	    });
+	    $.each(data['urls'], function(key, val) {
+		var dict1 = {};
+		dict1['label'] = val;
+		dict1['category'] = 'urls';
+		code_base_urls.push(dict1)
+
+	    });
+	    //~ $.each(data['ajaxcalls'], function(key,val){
+	    //~ $.each(val,function(index,value){	
+	    //~ var dict1 = {};
+	    //~ dict1['label'] = value;
+	    //~ dict1['category'] = key;
+	    //~ code_base_ajaxcalls.push(dict1)
+	    //~ })
+	    //~ 
+	    //~ });
+	    $.each(data['views_html_mapper'], function(key, val) {
+		$.each(val, function(key2, value) {
+		    var dict1 = {};
+		    dict1['label'] = value['views'] + " - " + value['html'];
+		    dict1['category'] = key;
+		    code_base_htmlToViews.push(dict1)
+		})
+	    })
+	    $.each(data['ajaxcalls'], function(key, val) {
+		//~ console.log(key,val)
+		$.each(val, function(key2, value) {
+		    //~ console.log(key2,value)
+		    var dict1 = {};
+		    dict1['label'] = value['url'];
+		    dict1['category'] = value['file_name'];
+		    code_base_ajaxcalls.push(dict1)
+		})
+	    })
+	    $.each(data['csvdetails'], function(key, val) {
+		    //~ console.log(key,val)
+		    $.each(val, function(key2, value) {
+			//~ console.log(key2,value)
+			var dict1 = {};
+			dict1['label'] = value['line'];
+			dict1['category'] = value['file_name'];
+			code_base_csvdetails.push(dict1)
+		    })
+		})
+		//~ console.log(code_base_csvdetails)
+            });
+	
+	activate_btn($('.first_mem'))
+	
+	function activate_btn(that){
+	    $('#trial').html('')
+	    $('#trial2').html('')
+	    $('.trial_outer').hide()
+	    $("#code_base_search").val('')
+	    $('.find_function').removeClass('active')
+	    that.addClass('active');
+	    current_view = that.attr('arrayname')
+	    $("#code_base_search").attr('arrayname', that.attr('arrayname'))
+	    $("#code_base_search").catcomplete({
+		delay: 0,
+		source: eval($("#code_base_search").attr('arrayname'))
+	    })
+	}
+	
+	$('body').on('click', '.find_function', function() {
+	    $('#trial3').hide()
+	    activate_btn($(this))
+	});
+
+	$('#ajax_calls_search').on('keyup', function() {
+	    $('#trial2').html('')
+	    var url = $(this).val()
+	    $.each(code_base_ajaxcalls, function(a, b) {
+		$.each(b, function(c, d) {
+		    if (url == d) {
+			//~ alert()
+			$('#trial2').append('<li>' + code_base_ajaxcalls[a]['category'] + '</li>')
+		    }
+		})
+	    })
+	})
+	//~ console.log(eval($("#code_base_search" ).attr('arrayname')))
+
+	$('body').on('click', '.model_details', function() {
+	    $('.model_details').removeClass('active')
+	    $(this).addClass('active')
+	    var app_name = $(this).attr('app_name')
+	    var model_name = $(this).attr('model_name')
+	    $.ajax({
+		url	: '/django_assistant/get/model_details/',
+		type	: 'POST',
+		data	: {
+				app_name: app_name,
+				model_name: model_name
+		},
+		success	: function(json) {
+				$('#trial2').html('')
+				var list = ''
+				$.each(json['code'], function(a, b) {
+				    //~ console.log(b)
+				    list = list + b
+				    //~ list = list + '\n'
+				    //~ $('#trial2').append(b)
+				    //~ $('#trial2').append('<br>')
+
+				    //~ console.log(list)
+				})
+				//~ list = list.toString()
+				$('#trial2').text(list)
+				$('#trial3').show()
+		}
+	    })
+	
+	})
+	
+	var model_name = []
+	$('body').on('click', '.addtoDiagramCreator', function() {
+	    $(this).addClass('choosedmodel')
+	    var mod_name = $(this).attr('model_name')
+	    if(model_name.indexOf(mod_name) == -1){
+		model_name.push($(this).attr('model_name'))
+		$('#trial3 p').append('&nbsp;<span>'+$(this).attr('model_name')+'&nbsp;<i class="btn btn-xs btn-default removemodelfmdcreator" model_name="'+$(this).attr('model_name')+'" >X</i></span>')
+		$('#trial3 button').attr('model_name',model_name)
+	    }else{
+		//~ alert('Already choosed')
+	    }
+	    $('#trial3').show()
+	});
+	
+	$('body').on('click', '.removemodelfmdcreator', function() {
+	    var item = $(this).attr('model_name')
+	    var i = model_name.indexOf(item);
+	    model_name.splice(i, 1);
+	    $(this).parent().remove()
+	    $('#trial p[model_name="'+item+'"]').removeClass('choosedmodel')
+	    $('#trial3 button').attr('model_name',model_name)
+	});
+	// aa
+	
+	$('body').on('click', '.CreateDiagram', function() {
+	     var model_name = $(this).attr('model_name')
+	     //~ $('#ModalDiagramCreator img').attr('src','/static/new/images/models_relationship_graph.png')
+	     //~ $('#ModalDiagramCreator').modal('show')
+	     //~ alert(model_name)
+	     $.ajax({
+		url	: '/django_assistant/a_create_model_relationship_diagram/',
+		type	: 'POST',
+		data	: {	
+				model_names	: JSON.stringify(model_name),
+		},
+		success	: function(json) {
+				if(json['result'] === 'Success' ){
+				    $('#ModalDiagramCreator img').attr('src',json['relationship_diagram']+'?'+new Date().getTime())
+				    $('#ModalDiagramCreator').modal('show')
+				}
+				
+		}
+	    })
+	
+	});
+	
+	$('body').on('click', '.reset_DiagramCreator', function() {
+	    model_name = []
+	    $('#trial3 button').attr('model_name','')
+	    $('#trial3 p').html('')
+	    $('#trial p').removeClass('choosedmodel')
+	});
+    </script>
+    
+    
+
+{% endblock %}

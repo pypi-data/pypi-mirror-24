@@ -1,0 +1,345 @@
+    
+{% extends "django_assistant/assistant-base.html" %}
+{% block content %} 
+<div class="container_api_manager">
+    <div class="row">
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 paddingLeftZero">
+	    <div class="left_sec_api">
+		<div class="left_tabs">
+		    <ul class="list-inline">
+			<li id="created_api" class="active"> API Collection</li>
+			<li id="create_api"> Create API  </li>
+		    </ul>
+		</div>
+		
+		<!--
+		    <button class="btn btn-default create_api_modal_btn">Create API</button><br><br>
+		-->
+		
+		<div id="id_created_api" class="left_tab_data">
+		    <input type="text" id="search_api_collection" placeholder="search in URL collection" class="url_search form-control" style="width:90%; border-radius: 6px; margin: auto;"/>
+		    <div class="api_stat">
+			<ul class="list-inline text-center">
+			    <li> <p class="api_status_1"></p> 11</li>
+			    <li> <p class="api_status_2"></p> 34</li>
+			    <li> <p class="api_status_3"></p> 34</li>
+			    <li> <p class="api_status_4"></p> 43</li>
+			</ul>
+		    </div>
+		    <ul class="api_list" ></ul>
+		</div>
+		
+		<div id="id_create_api" class="left_tab_data" style="display:none;">
+		    <div class="create_api_container">
+			<select class="httptype_value form-control pull-left" style="width:28%;">
+			    <option value="get">GET</option>
+			    <option  value="post">POST</option>
+			</select><br>
+			
+			<input type="text" placeholder="URL" class="api_url1 form-control" style="width:100%;"><br>
+			
+			<textarea placeholder="Description" class="descr_value" style="width:100%; resize:none; height: 100px;"></textarea><br><br>
+			
+			<!--
+			<select type="text"  id="id_tags" style="width:50%" 
+			    data-placeholder="Search for designations" class="chosen-select .custom_dropdown form-control" >
+			</select>
+			
+			-->
+		    </div>
+		    <div>
+			<button  class="btn btn-default btn-sm btn_green create_api_btn pull-right" >Save API</button>
+		    </div>
+		</div>
+	    </div>
+	</div>
+
+	<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 paddingRightZero">
+	    <div class="row api_details_top" > 
+		<select class="http_type form-control pull-left" style="width:15%;">
+		    <option value="get">GET</option>
+		    <option value="post">POST</option>
+		</select>
+		<input type="text" style="width:60%; margin-left:5px;" class="api_url form-control pull-left" >
+		<input type="button" class="btn btn-default hit_api form-control pull-left" style="width:15%; margin-left:5px;" value="Send">
+		<button class="btn edit_api_m pull-right" style="width:8%; display:none;">Edit</button><br><br>
+	    </div>
+	   
+	    <div class="row">
+		<div class="row">
+		    <div class="api_details_outer">
+		    
+			<div class="tab_belt">
+			    <ul class="list-inline" style="display:none;">
+				<li class="data_info" tab="level1" target="id_info">Info</li>
+
+				<li class="add_input active" tab="level1" target="id_inputs">Inputs</li>
+				<li id ="api_status" class=" pull-right" tab="level1" target="id_inputs" data-toggle="popover" data-html="true" 
+				data-content="	<form id='api_status_form'>
+						    <input type='radio' name='api_status' value='1'>Under Construction<br>
+						    <input type='radio' name='api_status' value='2'>Leaking<br>
+						    <input type='radio' name='api_status' value='3'>Renovation<br>
+						    <input type='radio' name='api_status' value='4'>Usable<br>
+						</form>" 
+						data-trigger="hover" data-placement="auto top">Status
+				</li>					
+			    </ul>
+			</div>
+			
+			<div class="tab_belt_data" style="display:none;">
+			    <div id="id_info" class="each_tab_belt_data" style="display:none;">
+				<div>
+				    <ul class="list-inline">
+
+					<li class="description active" tab="level2" target="create_container">Description</li>
+
+				    </ul>
+				</div>
+				<div id="info_tab_data_container" >
+
+				    <div id="description_container">
+					<p class="api_descr">Info render here</p>
+				    </div>
+				    
+				</div>
+				
+			    </div>
+			   
+			    <div id="id_inputs" class="each_tab_belt_data" >
+				<div>
+				    <ul class="list-inline">
+
+					<li class="add_input" tab="level2" target="create_container">Add Input</li>
+
+				    </ul>
+				</div>
+				<div id="input_tab_data_container">
+				    <div id="create_container" class="add_new_input">
+					<div id ="param_container" class="key_value_pair_outer">
+					    
+					    <div class="each_key_val_pair">  <!-- repeating unit -->
+						<input type="text" placeholder="key" class="key" style="width:200px;">
+						<input type="text" placeholder="value" class="value" style="width:200px;">
+					    </div>
+					    <div class="each_key_val_pair">  <!-- repeating unit -->
+						<input type="text" placeholder="key" class="key" style="width:200px;">
+						<input type="text" placeholder="value" class="value" style="width:200px;">
+					    </div>
+					    <div class="each_key_val_pair">  <!-- repeating unit -->
+						<input type="text" placeholder="key" class="key" style="width:200px;">
+						<input type="text" placeholder="value" class="value" style="width:200px;">
+					    </div>
+					    <div class="each_key_val_pair">  <!-- repeating unit -->
+						<input type="text" placeholder="key" class="key" style="width:200px;">
+						<input type="text" placeholder="value" class="value" style="width:200px;">
+					    </div>
+					    <div class="each_key_val_pair">  <!-- repeating unit -->
+						<input type="text" placeholder="key" class="key" style="width:200px;">
+						<input type="text" placeholder="value" class="value" style="width:200px;">
+					    </div>
+					    <div class="each_key_val_pair">  <!-- repeating unit -->
+						<input type="text" placeholder="key" class="key" style="width:200px;">
+						<input type="text" placeholder="value" class="value" style="width:200px;">
+					    </div>
+					    <div class="each_key_val_pair">  <!-- repeating unit -->
+						<input type="text" placeholder="key" class="key" style="width:200px;">
+						<input type="text" placeholder="value" class="value" style="width:200px;">
+					    </div>
+					    <div class="each_key_val_pair">  <!-- repeating unit -->
+						<input type="text" placeholder="key" class="key" style="width:200px;">
+						<input type="text" placeholder="value" class="value" style="width:200px;">
+					    </div>
+					    <div class="each_key_val_pair">  <!-- repeating unit -->
+						<input type="text" placeholder="key" class="key" style="width:200px;">
+						<input type="text" placeholder="value" class="value" style="width:200px;">
+					    </div>
+					    <div class="each_key_val_pair">  <!-- repeating unit -->
+						<input type="text" placeholder="key" class="key" style="width:200px;">
+						<input type="text" placeholder="value" class="value" style="width:200px;">
+					    </div>
+					    <div>
+						<button class="btn add_params" parent_element="param_container" edit_mode="add" api_id="">SAVE</button>
+					    </div>
+					</div>
+				    </div>
+				</div>
+				
+			    </div>
+			    
+			</div>
+		    
+		    </div>
+		    
+		</div>
+	    </div>
+	    
+	    <br>
+	    <div class="row api_result pull-right">
+		
+	    </div>
+	</div>
+
+    </div>
+</div>
+	    
+	    
+<!--  modal for create a api - Start-->
+
+<div class="modal fade create_api1" id="createAPI_1" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+	<div class="modal-content">
+	    <div class="modal-header" style="color:fff; background:#39a385;">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title"></h4>
+	    </div>
+	    <div class="modal-body">
+		<div class="create_api_outer">
+		    <div>
+			<select class="httptype_value">
+			    <option value="get">GET</option>
+			    <option  value="post">POST</option>
+			</select>
+			<input type="text" placeholder="URL" class="api_url" style="width:300px;"><br><br>
+			<textarea placeholder="Description" class="descr_value" style="width:366px; resize:none; height: 100px;"></textarea>
+		    </div>
+		</div>
+	    </div>
+	    <div class="modal-footer">
+		 <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+		<button  class="btn btn-default btn-sm btn_green create_api_btn" >Save API</button>
+	    </div>
+	</div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--  modal for create a api - End -->
+
+<!--  modal for edit api - Start-->
+
+<div class="modal fade " id="edit_api" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+	<div class="modal-content">
+	    <div class="modal-header" style="color:fff; background:#39a385;">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title">Edit API</h4>
+	    </div>
+	    <div class="modal-body">
+		<div class="nav_options">
+		    <ul class="list-inline" >
+			<li target="basic_info" class="active">Basic Info</li>
+			<li target="info">Info</li>
+			<li target="inputs">Inputs</li>
+		    </ul>
+		</div>
+		<div>
+		    <div id="basic_info">
+			<input type="text" class="edit_api_url form-control"><br>
+			<input type="text" class="edit_api_http_type form-control"><br><br>
+			
+			<input type="button" class="btn save_api" edit_element="basic_info" value="Save Basic Info">
+		    </div>
+		    
+		    <div id="info" style="display:none;">
+			<div>
+			    <ul class="list-inline">
+
+				<li class="description active" tab="level2" target="edit_descr">Description</li>
+
+			    </ul>
+			</div>
+			<div>
+			    <div id="edit_descr">
+				<div>
+				    <textarea class="edit_api_descr"></textarea><br><br>
+				    <input type="button" edit_element="info" class="btn save_api" value="Save Description">
+				</div>
+			    </div>
+			
+			</div>
+		    </div>
+		 
+		    <div id="inputs" style="display:none;">
+			<div class="nav_options">
+			    <ul class="list-inline">
+			       
+			    </ul>
+			</div>
+			<div id="edit_inputs_container">
+			
+			</div>
+		    </div>
+		</div>
+	    </div>
+	    
+	</div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--  modal for edit api - End -->
+
+<!--  modal for edit api - Start-->
+
+<div class="modal fade " id="delete_inputset" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+	<div class="modal-content">
+	    <div class="modal-header" style="color:fff; background:#39a385;">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title">Edit API</h4>
+	    </div>
+	    <div class="modal-body">
+		
+		Are you sure you want to delete <span class="input_name"></span>
+		
+	    </div>
+	    <div class="modal-footer">
+		<button class="btn delete_inputset_confirm btn-danger">YES</button>
+		<button class="btn">No</button>
+	    </div>
+	</div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--  modal for edit api - End -->
+
+<!--  modal for delete api - Start-->
+
+<div class="modal fade " id="deleteAPI" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+	<div class="modal-content">
+	    <div class="modal-header" style="color:fff; background:#39a385;">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title">Delete API</h4>
+	    </div>
+	    <div class="modal-body">
+		
+		Are you sure you want to delete &nbsp;<span class="api_name"></span>
+		
+	    </div>
+	    <div class="modal-footer">
+		<button class="btn delete_API_confirm btn-danger">YES</button>
+		<button class="btn" class="close" data-dismiss="modal" aria-label="Close">No</button>
+	    </div>
+	</div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--  modal for delete api - End -->
+
+
+
+
+<script>
+    $(document).ready(function(){
+	$('body').on('click','.create_api_modal_btn',function(){
+	    //~ alert()
+	    $('#createAPI_1').modal('show')
+	});
+	$('body').on('click','.edit_api_m',function(){
+	    //~ alert()
+	    $('#edit_api').modal('show')
+	});
+		
+    });
+</script>
+
+{% endblock %}
