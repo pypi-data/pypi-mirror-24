@@ -1,0 +1,15 @@
+pathlib_mate/__init__.py,sha256=vIwFWWSx7LWquuY-qhNIcl5LSzg8Ez2BCBZb_52jzaU,424
+pathlib_mate/__init__.pyc,sha256=BDOt95994ehaWoHRs1E-EhK6ExqF_7uSrDU6mE8IqUU,643
+pathlib_mate/mate.py,sha256=D54vww-B2kLUODq2KroQQ0DGkeqaYTinr49cWCmbPBo,33306
+pathlib_mate/mate.pyc,sha256=Hmz-rcT7kC_yEqNWR-aDQiIlRrc0OkYgMUkUgqukVwc,36118
+pathlib_mate/pathlib.py,sha256=7hsJZQNkOrOAG5vnOPIz15555Dc6V8cEJOr35773-t8,51717
+pathlib_mate/pathlib.pyc,sha256=RlWcNnUbYTMTJm5bHbIkVc8je6H3sye7KbZZYl0uFL4,58348
+pathlib_mate/six.py,sha256=X4pkHzmjBok5ETu3WJ2qKolRaTf2gIt0KftwDfFHAYU,30288
+pathlib_mate/six.pyc,sha256=xin7Z3_gMgjENxxj7z8v1kbGDOywFQ9mze8tNOtZ6yI,32727
+pathlib_mate/zzz_ezinstall.py,sha256=DWhaY0rUonZyw9ZdnDshyHwtvKh77HgMYgIyZJpJlfc,162
+pathlib_mate-0.0.11.dist-info/DESCRIPTION.rst,sha256=dvTnLxiMzJ9b7zIYZXfWSjjeuQVyO3C7_dtUNSK2Has,2375
+pathlib_mate-0.0.11.dist-info/METADATA,sha256=86Cuu1wse4U0bT6A7NuFX4qC2_P1pxnzWOJJnnEinDI,3269
+pathlib_mate-0.0.11.dist-info/RECORD,,
+pathlib_mate-0.0.11.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+pathlib_mate-0.0.11.dist-info/metadata.json,sha256=sfj2JLoQaa1qSkLLyDCrW4TmzDYKEHyjFCE4KSM20p0,1022
+pathlib_mate-0.0.11.dist-info/top_level.txt,sha256=oJ9eodqZhxR29jco26Oyzx20U_8A9pRR9G-loTID0dQ,13
