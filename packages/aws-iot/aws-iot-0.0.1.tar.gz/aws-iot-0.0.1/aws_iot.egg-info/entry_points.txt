@@ -1,0 +1,3 @@
+[console_scripts]
+aws-iot = commands.awsiot:main
+
