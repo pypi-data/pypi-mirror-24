@@ -1,0 +1,17 @@
+README.rst
+setup.py
+automan/__init__.py
+automan/api.py
+automan/automation.py
+automan/cluster_manager.py
+automan/jobs.py
+automan.egg-info/PKG-INFO
+automan.egg-info/SOURCES.txt
+automan.egg-info/dependency_links.txt
+automan.egg-info/requires.txt
+automan.egg-info/top_level.txt
+automan/tests/__init__.py
+automan/tests/example.py
+automan/tests/test_automation.py
+automan/tests/test_cluster_manager.py
+automan/tests/test_jobs.py
