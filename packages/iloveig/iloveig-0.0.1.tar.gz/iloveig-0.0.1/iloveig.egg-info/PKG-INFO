@@ -1,0 +1,42 @@
+Metadata-Version: 1.0
+Name: iloveig
+Version: 0.0.1
+Summary: Download images from instagram
+Home-page: https://github.com/xwaynec/iloveig
+Author: xwaynec
+Author-email: xwaynec@gmail.com
+License: v0.1.0, 2017.07.13 -- Initial release.
+
+Description: I love Instagram
+        ==========
+        
+        
+        Inspired by iloveck101
+        
+        
+        How to install
+        ==========
+        
+        ```bash
+        pip install iloveig
+        ```
+        
+        
+        How to use
+        ==========
+        
+        ```bash
+        iloveig [instagram url]
+        ```
+        
+        
+        Example
+        
+        ```bash
+        iloveig https://www.instagram.com/instagram/
+        ```
+        
+        
+        You could find account folder in ~/Pictures/`iloveig`
+        
+Platform: UNKNOWN

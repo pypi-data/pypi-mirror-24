@@ -1,0 +1,3 @@
+[console_scripts]
+iloveig = iloveig.iloveig:main
+
