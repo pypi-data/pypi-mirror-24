@@ -1,0 +1,109 @@
+Metadata-Version: 1.1
+Name: django-logon-testcase
+Version: 0.1.1
+Summary: Simple enhancement to the TestCase which creates user and loggs him in.
+Home-page: https://github.com/PetrDlouhy/django-logon-testcase
+Author: Petr Dlouhý
+Author-email: petr.dlouhy@email.cz
+License: MIT
+Description: =============================
+        Django Logon TestCase
+        =============================
+        
+        .. image:: https://badge.fury.io/py/django-logon-testcase.svg
+            :target: https://badge.fury.io/py/django-logon-testcase
+        
+        .. image:: https://travis-ci.org/PetrDlouhy/django-logon-testcase.svg?branch=master
+            :target: https://travis-ci.org/PetrDlouhy/django-logon-testcase
+        
+        .. image:: https://codecov.io/gh/PetrDlouhy/django-logon-testcase/branch/master/graph/badge.svg
+            :target: https://codecov.io/gh/PetrDlouhy/django-logon-testcase
+        
+        Simple enhancement to the TestCase which creates user and loggs him in.
+        
+        Documentation
+        -------------
+        
+        The full documentation is at https://django-logon-testcase.readthedocs.io.
+        
+        Quickstart
+        ----------
+        
+        Install Django Logon TestCase::
+        
+            pip install django-logon-testcase
+        
+        Use it in your tests:
+        
+        .. code-block:: python
+        
+            from django.test import TestCase
+        
+            from logon_testcase import LogonMixin
+        
+            class MyTestCase(LogonMixin, TestCase):
+                 ...
+        
+        The logged user is available in `self.user` variable.
+        
+        Features
+        --------
+        
+        You can get your own user for the test by overriding `get_user` function:
+        
+        .. code-block:: python
+        
+            class MyTestCase(LogonMixin):
+                 def get_user(self):
+                     return User.objects.create()
+        
+        
+        Running Tests
+        -------------
+        
+        Does the code actually work?
+        
+        ::
+        
+            source <YOURVIRTUALENV>/bin/activate
+            (myenv) $ pip install tox
+            (myenv) $ tox
+        
+        Credits
+        -------
+        
+        Tools used in rendering this package:
+        
+        *  Cookiecutter_
+        *  `cookiecutter-djangopackage`_
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`cookiecutter-djangopackage`: https://github.com/pydanny/cookiecutter-djangopackage
+        
+        
+        
+        
+        History
+        -------
+        
+        0.1.0 (2017-08-10)
+        ++++++++++++++++++
+        
+        * First release on PyPI.
+        
+Keywords: django-logon-testcase
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
