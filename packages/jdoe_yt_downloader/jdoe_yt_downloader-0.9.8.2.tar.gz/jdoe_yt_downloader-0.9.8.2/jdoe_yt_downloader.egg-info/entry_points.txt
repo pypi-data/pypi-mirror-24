@@ -1,0 +1,3 @@
+[console_scripts]
+jdoe_yt_downloader = jdoe_yt_downloader.__main__:main
+
