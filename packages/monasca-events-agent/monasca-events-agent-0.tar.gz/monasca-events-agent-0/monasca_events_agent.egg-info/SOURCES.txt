@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+monasca_events_agent/main.py
+monasca_events_agent.egg-info/PKG-INFO
+monasca_events_agent.egg-info/SOURCES.txt
+monasca_events_agent.egg-info/dependency_links.txt
+monasca_events_agent.egg-info/entry_points.txt
+monasca_events_agent.egg-info/not-zip-safe
+monasca_events_agent.egg-info/top_level.txt

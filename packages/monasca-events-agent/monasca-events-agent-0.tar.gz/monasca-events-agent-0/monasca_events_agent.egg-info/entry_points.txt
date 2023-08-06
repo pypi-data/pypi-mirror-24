@@ -1,0 +1,3 @@
+[console_scripts]
+monasca-events-agent = monasca_events_agent.main:main
+
