@@ -1,0 +1,14 @@
+postino/__init__.py,sha256=2GB2RZAeuT5a6IL1QsM4Ru0jWJ-ALDEQtVsvJ6aUfuA,189
+postino/address.py,sha256=BJSD1bKuIrBZFn59HOj2oRXw2AhmQoTkq5G2XTA22b8,1235
+postino/config.py,sha256=7voe6NeOHvIq5P5OSekkx0cGTn2xb4vSNRwGOvkYXDg,139
+postino/constants.py,sha256=iTsgITrS3CyE2l_ULrh68u_H5WQZbrulZO_eaDEIja8,71
+postino/construct.py,sha256=ZdyIqIS6XC0qimnoxIJEKMf_FKlwWZEeJQNE9PURWmA,3561
+postino/postino.py,sha256=KN0jun_aCFdwmo2eNAixP1R2JDZzDaH6d-RPeD4PNe4,1411
+postino/send.py,sha256=_RFLG1IgJJDGeVLdIe_LaO2Avt9RQmc_EsbR15ec7QY,568
+postino/utils.py,sha256=IsFtzDMrgjL2NjzWuIYanhwfVfA2Ys4QJVH1Vfi1xeg,212
+postino-0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+postino-0.3.dist-info/METADATA,sha256=sYMCvOU3YkhEyEIiKz_ooYvEvcRf597pWWEqRSebuUQ,228
+postino-0.3.dist-info/RECORD,,
+postino-0.3.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+postino-0.3.dist-info/metadata.json,sha256=VupdDzHqw5wh_byodbmh2fmYEGYq2t0sji_DxIi2gb8,412
+postino-0.3.dist-info/top_level.txt,sha256=zjqEz1IrZstEXX9HBte7jMCAWvQ7nTC7M6gFWDMG9U8,8
