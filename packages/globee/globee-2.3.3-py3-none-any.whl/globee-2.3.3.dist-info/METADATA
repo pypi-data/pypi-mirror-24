@@ -1,0 +1,37 @@
+Metadata-Version: 2.0
+Name: globee
+Version: 2.3.3
+Summary: Accept altcoins with GloBee
+Home-page: https://github.com/GloBee-Official/bitpay-python
+Author: GloBee Integrations Team
+Author-email: integrations@globee.com
+License: UNKNOWN
+Download-URL: https://github.com/GloBee-Official/bitpay-python/tarball/v2.3.3
+Keywords: bitcoin,payments,crypto,altcoins
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Office/Business :: Financial
+Requires-Dist: ecdsa
+Requires-Dist: requests
+
+Python Library for integrating with GloBee
+-------------------------------------
+
+This library is a simple way to integrate your application with
+GloBee for accepting bitcoin & altcoin payments. It exposes three basic
+functions, authenticating with globee, creating invoices,
+and retrieving invoices. It is not meant as a replacement for 
+the entire GloBee API. However, the key_utils module contains
+all of the tools you need to use the BitPay API for other
+purposes.
+
+This version requires Python 3 or later; a Python 2 version is available separately.
+
+
