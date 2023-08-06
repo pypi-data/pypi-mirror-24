@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+release-history.rst
+requirements.txt
+setup.py
+ezinstall/__init__.py
+ezinstall/__init__.pyc
+ezinstall/ezinstall.py
+ezinstall/ezinstall.pyc
+ezinstall/zzz_ezinstall.py
+ezinstall.egg-info/PKG-INFO
+ezinstall.egg-info/SOURCES.txt
+ezinstall.egg-info/dependency_links.txt
+ezinstall.egg-info/top_level.txt
