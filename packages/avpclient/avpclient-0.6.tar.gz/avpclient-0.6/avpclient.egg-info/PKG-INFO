@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: avpclient
+Version: 0.6
+Summary: client library for initiating distributed/async web api calls to AIDVP
+Home-page: https://github.com/aidvp/avpclient
+Author: AIDVP
+Author-email: aidvpservice@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.6
