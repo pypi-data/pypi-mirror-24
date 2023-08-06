@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: pysympla
+Version: 0.0.2
+Summary: Scraper para acessar informações dos seus eventos no Sympla.
+Home-page: https://github.com/Lrcezimbra/pysympla
+Author: Lucas Rangel Cezimbra
+Author-email: lucas.cezimbra@gmail.com
+License: MIT License
+Keywords: sympla,scraper,requests,events
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4 (==4.6.0)
+Requires-Dist: requests (==2.18.4)
+
+# pysympla
+
+
