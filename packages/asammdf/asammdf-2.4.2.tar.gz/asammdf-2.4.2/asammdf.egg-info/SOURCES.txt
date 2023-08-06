@@ -1,0 +1,29 @@
+README.rst
+setup.cfg
+setup.py
+asammdf/__init__.py
+asammdf/mdf.py
+asammdf/mdf3.py
+asammdf/mdf4.py
+asammdf/signal.py
+asammdf/signalconstants.py
+asammdf/utils.py
+asammdf/v3blocks.py
+asammdf/v3constants.py
+asammdf/v4blocks.py
+asammdf/v4constants.py
+asammdf - Copy/__init__.py
+asammdf - Copy/mdf.py
+asammdf - Copy/mdf3.py
+asammdf - Copy/mdf4.py
+asammdf - Copy/signal.py
+asammdf - Copy/utils.py
+asammdf - Copy/v3blocks.py
+asammdf - Copy/v3constants.py
+asammdf - Copy/v4blocks.py
+asammdf - Copy/v4constants.py
+asammdf.egg-info/PKG-INFO
+asammdf.egg-info/SOURCES.txt
+asammdf.egg-info/dependency_links.txt
+asammdf.egg-info/requires.txt
+asammdf.egg-info/top_level.txt
