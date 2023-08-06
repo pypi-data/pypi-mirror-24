@@ -1,0 +1,44 @@
+CHANGES
+=======
+
+0.3
+---
+
+* set back to namespaced package
+* Updated setup files so package builds correctly
+* Install self to ensure namespacing works
+* Blame the bubbles, spelling mistake! :/ ..
+* Added oodinweb >=0.3 requirement
+* Bumped dev status to Beta
+* Added correct development requirements
+* Built out Bottle interface and expanded test cases
+* More tests for bottle API interface
+* Updated requirements
+* Added landscape and travis config
+* Added test for request proxy to ensure it conforms
+* Updated bottle to support API changes
+* Migrated to PBR
+* Migrated to PBR
+* Bumped version
+
+0.2
+---
+
+* Updated PathNode to PathParam
+* Updated Bottle API to check match API
+* Upgrade bottle to work with redesigned OdinWeb API
+* Removed resource references
+* Updates to support updated odinweb api
+* Added tests placeholder
+* Updated docs
+* Normalised example apps between bottle and flask
+* Added Request proxy, expanded parse\_node to handle known types
+* Updated examples with doc changes
+* Updated example with swagger
+* Changes from odinweb api interface changes
+* Handle HttpResponses and map Request objects
+* Quick update to handle layout changes in odinweb
+* Basic integration with flask and bottle web micro-frameworks
+* Bumped version of bottle to at least 0.10 to support the new syntax
+* Setup as odinweb plugins
+* Initial commit
