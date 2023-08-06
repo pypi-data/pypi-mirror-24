@@ -1,0 +1,24 @@
+# coding=utf8
+
+import settings
+
+from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.pool import QueuePool
+
+
+engine = create_engine("mysql://%s:%s@%s:%s/%s" % (
+    settings.MYSQL_USERNAME,
+    settings.MYSQL_PASSWORD,
+    settings.MYSQL_HOST,
+    settings.MYSQL_PORT,
+    settings.MYSQL_DBNAME),
+    encoding='utf8',
+    echo=bool(settings.DEBUG),
+    pool_size=50, poolclass=QueuePool, pool_recycle=3600)
+
+Session = sessionmaker(bind=engine)
+session = Session()
+Base = declarative_base()
+

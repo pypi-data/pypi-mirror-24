@@ -1,0 +1,25 @@
+# coding=utf8
+
+
+import os
+
+DEBUG = False
+SENTRY_PATH = ''
+
+MYSQL_USERNAME = '{{package}}_rw'
+MYSQL_PASSWORD = 'password'
+MYSQL_HOST = 'host'
+MYSQL_PORT = '3306'
+MYSQL_DBNAME = '{{package}}'
+
+
+# put your settings here
+
+
+
+
+
+
+
+if os.path.exists('{{package}}/local_settings.py'):
+    from local_settings import *
