@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+nikepysdk/__init__.py
+nikepysdk/event.py
+nikepysdk/wrapper.py
+nikepysdk.egg-info/PKG-INFO
+nikepysdk.egg-info/SOURCES.txt
+nikepysdk.egg-info/dependency_links.txt
+nikepysdk.egg-info/requires.txt
+nikepysdk.egg-info/top_level.txt
