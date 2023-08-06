@@ -1,0 +1,111 @@
+{
+  "src/components/EditableTable.react.js": {
+    "description": "",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of the component, used to identify the component\nin Dash callbacks"
+      },
+      "changed_data": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "dataframe": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "custom",
+            "raw": "PropTypes.objectOf"
+          }
+        },
+        "required": false,
+        "description": "The data of this table, in the form of a Pandas DataFrame.to_dict()\nThe keys of the dict are the column names and the values are a\ndict that represents the column where the keys of the column are the\nvalues of the index and the values are the rows.\nFor example,\n{\n   \"Column 1\": {\"0\": \"Value A\", \"1\": \"Value B\"},\n   \"Column 2\": {\"0\": 3129, \"1\": 4931},\n}\n\nIf `editable=True`, then this `dataframe` will be updated when the\nuser changes values"
+      },
+      "column_order": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Order of the columns"
+      },
+      "index_name": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The name of the index column.\nThis name is not included in the `dataframe` object",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "editable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Whether or not this table is editable",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "base_styles": {
+        "type": {
+          "name": "custom",
+          "raw": "STYLE_SHAPE"
+        },
+        "required": false,
+        "description": "CSS styles for all of the different elements in this table.\nThe `base_styles` have a default value. If you want to remove\nall default styles, set `base_styles` to `{}`.",
+        "defaultValue": {
+          "value": "{\n    'numeric': {\n        'text-align': 'right',\n        'font-family': '\\'Droid Sans Mono\\', Courier, monospace'\n    },\n\n    'string': {\n        'text-align': 'left'\n    },\n\n    'input': {\n        'padding': 0,\n        'margin': 0,\n        'width': '80px',\n        'border': 'none',\n        'font-size': '1rem'\n    },\n\n    'input-active': {\n        'outline': '#7FDBFF auto 3px'\n    },\n\n    'table': {\n        'border-collapse': 'collapse',\n        'box-sizing': 'border-box',\n        'font-size': '1rem'\n    },\n\n    'thead': {\n        'display': 'table-row-group'\n    },\n\n    'th': {\n        'text-align': 'left',\n        'font-weight': 'normal',\n        'border': 'thin lightgrey solid',\n        'width': '80px'\n    },\n\n    'td': {\n        'white-space': 'nowrap',\n        'border': 'thin lightgrey solid',\n        'width': '80px',\n        'max-width': '80px',\n        'text-overflow': 'ellipsis',\n        'overflow-x': 'hidden'\n    }\n}",
+          "computed": false
+        }
+      },
+      "merged_styles": {
+        "type": {
+          "name": "custom",
+          "raw": "STYLE_SHAPE"
+        },
+        "required": false,
+        "description": "`merged_styles` is recursively merged into `base_styles`.\nUse `merged_styles` if you want to update or overwrite a small set\nof the base styles.",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "types": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash supplied function"
+      }
+    }
+  }
+}
