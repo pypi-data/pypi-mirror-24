@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: MABpy
+Version: 0.1a0
+Summary: The multi-armed bandit problem models library and various strategies analysis.
+Home-page: https://github.com/iJKos/MABpy
+Author: iJKos
+Author-email: JK.Ermakov@gmail.com
+License: MIT
+Download-URL: https://github.com/iJKos/MABpy/releases/tag/v0.1-alpha
+Description: # MAB
+        The multi-armed bandit problem models library and various strategies analysis.
+        
+        
+        
+        - VBDE
+        
+        http://www.tokic.com/www/tokicm/publikationen/papers/AdaptiveEpsilonGreedyExploration.pdf
+Keywords: MultiArmedBandits,ReinforsmentLearning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

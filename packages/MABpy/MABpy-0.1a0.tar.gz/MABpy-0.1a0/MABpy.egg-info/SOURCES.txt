@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+MABpy/ActionRewardAgents.py
+MABpy/GameEngine.py
+MABpy/MarkovianMAB.py
+MABpy/SimpleMAB.py
+MABpy/__init__.py
+MABpy/base.py
+MABpy.egg-info/PKG-INFO
+MABpy.egg-info/SOURCES.txt
+MABpy.egg-info/dependency_links.txt
+MABpy.egg-info/requires.txt
+MABpy.egg-info/top_level.txt
