@@ -1,0 +1,9 @@
+sqlalchemy_django/__init__.py,sha256=fniXv5lPoNXCpZUit6RymUQz4m3bkUxowU-LMpgUHpc,4631
+sqlalchemy_django/middleware.py,sha256=wDShgyqaretIrKVYZjJjXGDdedz_RnRQ1zEd5RvZNWI,1189
+sqlalchemy_django/sqlalchemyencoder.py,sha256=asVIsdCf4Ji90YUslvZ70kscogSgwEvEFZTJLtTSBYQ,1031
+sqlalchemy_django-0.0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+sqlalchemy_django-0.0.3.dist-info/METADATA,sha256=GAfu0ukBG-0Qkw3taow_1sFlEUwUhQhsqEdxbjIAvro,255
+sqlalchemy_django-0.0.3.dist-info/RECORD,,
+sqlalchemy_django-0.0.3.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+sqlalchemy_django-0.0.3.dist-info/metadata.json,sha256=CgLLnAIC5iHfKI23-yoPWyzBWoLU3Tc2lObWY42a_So,445
+sqlalchemy_django-0.0.3.dist-info/top_level.txt,sha256=_H3cW_p-wjgGybnHQkkbqYowfclqTLIgvHSbJAQX_Ts,18
