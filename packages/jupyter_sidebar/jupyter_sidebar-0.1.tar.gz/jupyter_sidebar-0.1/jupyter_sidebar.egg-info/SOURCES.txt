@@ -1,0 +1,12 @@
+setup.py
+jupyter_sidebar/__init__.py
+jupyter_sidebar/numpy.py
+jupyter_sidebar.egg-info/PKG-INFO
+jupyter_sidebar.egg-info/SOURCES.txt
+jupyter_sidebar.egg-info/dependency_links.txt
+jupyter_sidebar.egg-info/top_level.txt
+jupyter_sidebar/static/default.js
+jupyter_sidebar/static/numpy.js
+jupyter_sidebar/static/resize-handle.js
+jupyter_sidebar/static/sidebar.css
+jupyter_sidebar/static/sidebar.js
