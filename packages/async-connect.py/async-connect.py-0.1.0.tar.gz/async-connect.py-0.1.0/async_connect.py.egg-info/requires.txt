@@ -1,0 +1,5 @@
+aiohttp>=2.2.5
+
+[performance]
+uvloop>=0.8.0
+ujson>=1.35
