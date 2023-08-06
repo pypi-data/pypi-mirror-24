@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: regionskate
+Version: 1.0.0
+Summary: A fast sparse algorithm for spatial regionalization.
+Home-page: https://github.com/ljwolf/regionskate
+Author: Levi John Wolf
+Author-email: levi.john.wolf@gmail.com
+License: ISC
+Description: 
+        regionskate
+        ========================
+        
+        This region aims to provide a fast, simple implementation of the SKATER spatial regionalization algorithm based on spanning tree pruning. 
+        
+        The module depends on scikit-learn, scipy, numpy, and pysal.
+        
+        This will get merged into pysal/region by Dec 1, 2017.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython

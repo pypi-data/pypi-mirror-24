@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+regionskate/__init__.py
+regionskate/__version__.py
+regionskate/skater.py
+regionskate/test_skater.py
+regionskate.egg-info/PKG-INFO
+regionskate.egg-info/SOURCES.txt
+regionskate.egg-info/dependency_links.txt
+regionskate.egg-info/requires.txt
+regionskate.egg-info/top_level.txt
