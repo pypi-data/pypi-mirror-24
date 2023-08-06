@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: folderid3
+Version: 0.4.1
+Summary: A tool for quick editing od id3 tags of audio files in a folder.
+Home-page: https://github.com/jrizmal/folderid3
+Author: Jaka Rizmal
+Author-email: jrizmal@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/jrizmal/folderid3/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: id3,music,mp3,tag,editor,id3 tag
+Platform: UNKNOWN
