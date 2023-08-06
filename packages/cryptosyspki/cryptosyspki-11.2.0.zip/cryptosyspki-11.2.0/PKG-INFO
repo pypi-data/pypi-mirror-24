@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cryptosyspki
+Version: 11.2.0
+Summary: Python interface to CryptoSys PKI
+Home-page: http://www.cryptosys.net/pki/
+Author: David Ireland
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: Windows
