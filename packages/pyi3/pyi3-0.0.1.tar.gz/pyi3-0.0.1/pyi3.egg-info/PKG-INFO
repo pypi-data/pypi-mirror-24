@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pyi3
+Version: 0.0.1
+Summary: A type-hinted python module to communicate with i3.
+Home-page: https://gitlab.com/tarcisioe/pyi3
+Author: Tarcísio Eduardo Moreira Crocomo
+Author-email: tarcisio.crocomo+pypi@gmail.com
+License: UNKNOWN
+Download-URL: https://gitlab.com/tarcisioe/carl/repository/archive.tar.gz?ref=0.0.1
+Description: UNKNOWN
+Keywords: i3,type
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
