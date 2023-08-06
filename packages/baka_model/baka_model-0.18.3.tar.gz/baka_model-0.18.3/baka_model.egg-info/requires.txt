@@ -1,0 +1,12 @@
+setuptools
+pyramid
+sqlalchemy
+zope.sqlalchemy
+psycopg2
+python-dateutil
+transaction
+pyramid_tm
+sqlalchemy_utils
+awesome-slugify
+python-dateutil
+bcrypt
