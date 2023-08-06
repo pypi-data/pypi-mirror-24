@@ -1,0 +1,69 @@
+Metadata-Version: 2.0
+Name: evalidator
+Version: 0.1.0
+Summary: Checks if an e-mail address exists or not
+Home-page: https://www.github.com/ritiek/email-validator
+Author: Ritiek Malhotra
+Author-email: ritiekmalhotra123@gmail.com
+License: MIT
+Download-URL: https://github.com/ritiek/email-validator/archive/v0.1.0.tar.gz
+Keywords: email,validator,exists,check,command-line,library,python
+Platform: UNKNOWN
+Requires-Dist: requests
+
+email-validator
+===============
+
+|Build Status|
+
+Checks if an e-mail address exists or not.
+
+Installation
+------------
+
+::
+
+    pip install evalidator
+
+Those who can't wait for the next release:
+
+::
+
+    python setup.py install
+
+Command-line Usage
+------------------
+
+::
+
+    $ evalidate someone@email.com
+
+This will tell you if the given e-mail address exists on the internet or
+not.
+
+Library Usage
+-------------
+
+::
+
+    >>> import evalidator
+    >>> evalidator.validate('someone@email.com')
+
+Supported Services
+------------------
+
+- Google Mail
+- Yahoo! Mail
+
+Please open a new issue if you would like to validate e-mail
+addresses for some other e-mail service.
+
+License
+-------
+
+``The MIT License``
+
+.. |Build Status| image:: https://travis-ci.org/ritiek/email-validator.svg?branch=master
+   :target: https://travis-ci.org/ritiek/email-validator
+
+
