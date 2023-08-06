@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: entro
+Version: 1.01
+Summary: Information entropy measurements library
+Home-page: https://github.com/mikesiers/entro.py/
+Author: Michael J. Siers
+Author-email: mikesiers@live.com
+License: UNKNOWN
+Download-URL: https://github.com/mikesiers/entro.py/archive/1.01.tar.gz
+Description: UNKNOWN
+Keywords: information-entropy,machine-learning,data-science
+Platform: UNKNOWN
