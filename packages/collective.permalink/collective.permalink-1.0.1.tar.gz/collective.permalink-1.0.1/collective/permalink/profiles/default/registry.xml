@@ -1,0 +1,17 @@
+<registry>
+
+  <records
+      interface="collective.permalink.interfaces.IPermalinkControlPanel"
+      prefix="collective.permalink.interfaces.IPermalinkControlPanel"
+      />
+
+  <records
+      prefix="plone.bundles/permalink"
+      interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="expression">object/@@is_clipboardjs_enabled</value>
+    <value key="enabled">True</value>
+    <value key="jscompilation">++resource++collective.permalink.static/script.js</value>
+    <value key="depends">plone</value>
+  </records>
+
+</registry>
