@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: EinsteinVision
+Version: 0.4
+Summary: Wrapper for Salesforce's Einstein Predictive Vision API
+Home-page: https://github.com/feliperyan/EinsteinVisionPython
+Author: Felipe Ryan
+Author-email: feliperyan@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/feliperyan/EinsteinVisionPython/archive/0.4.tar.gz
+Description: UNKNOWN
+Keywords: api,einsteinpredictivevision,metamind,salesforce
+Platform: UNKNOWN
