@@ -1,0 +1,12 @@
+README.rst
+setup.py
+pytest_nginx/__init__.py
+pytest_nginx/factories.py
+pytest_nginx/plugin.py
+pytest_nginx.egg-info/PKG-INFO
+pytest_nginx.egg-info/SOURCES.txt
+pytest_nginx.egg-info/dependency_links.txt
+pytest_nginx.egg-info/entry_points.txt
+pytest_nginx.egg-info/not-zip-safe
+pytest_nginx.egg-info/requires.txt
+pytest_nginx.egg-info/top_level.txt
