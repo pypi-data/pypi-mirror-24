@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_db_constraints/__init__.py
+django_db_constraints/apps.py
+django_db_constraints/autodetector.py
+django_db_constraints/operations.py
+django_db_constraints.egg-info/PKG-INFO
+django_db_constraints.egg-info/SOURCES.txt
+django_db_constraints.egg-info/dependency_links.txt
+django_db_constraints.egg-info/requires.txt
+django_db_constraints.egg-info/top_level.txt
