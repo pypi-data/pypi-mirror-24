@@ -1,0 +1,11 @@
+setup.py
+src/axelrod_dojo/__init__.py
+src/axelrod_dojo/utils.py
+src/axelrod_dojo/version.py
+src/axelrod_dojo.egg-info/PKG-INFO
+src/axelrod_dojo.egg-info/SOURCES.txt
+src/axelrod_dojo.egg-info/dependency_links.txt
+src/axelrod_dojo.egg-info/requires.txt
+src/axelrod_dojo.egg-info/top_level.txt
+src/axelrod_dojo/archetypes/__init__.py
+src/axelrod_dojo/archetypes/fsm.py
