@@ -1,0 +1,103 @@
+# Example case for an isolated system
+
+case water_dimer
+    system opttest/water_dimer.chk
+    forcefield test/parameters_water.txt
+    dof cartesian
+    maxiter 353
+    energy -1314.5
+    gpos_rms 1e-6
+
+case alpha_quartz_cartesian
+    system opttest/alpha_quartz.chk
+    forcefield test/parameters_bks.txt
+    dof cartesian
+    maxiter 8
+    energy -16864.0
+    gpos_rms 1e-5
+
+case alpha_quartz_strain
+    system opttest/alpha_quartz.chk
+    forcefield test/parameters_bks.txt
+    dof strain
+    maxiter 31
+    energy -16864.0
+    gpos_rms 1e-5
+
+case alpha_quartz_distorted_cartesian
+    system opttest/alpha_quartz_distorted.chk
+    forcefield test/parameters_bks.txt
+    dof cartesian
+    maxiter 15
+    energy -16864.0
+    gpos_rms 1e-6
+
+case merlonite_fragment_overbonded
+    system opttest/merlonite_fragment_overbonded.chk
+    forcefield opttest/merlonite_debug.pot
+    dof cartesian
+    maxiter 835
+    energy 12434
+    gpos_rms 1e-5
+
+case merlonite_fragment
+    system opttest/merlonite_fragment.chk
+    forcefield opttest/merlonite_debug.pot
+    dof cartesian
+    maxiter 835
+    energy 31238
+    gpos_rms 1e-5
+
+case steven-quickff-DUB
+    system opttest/DUBXXKHIPWMCDR-UHFFFAOYSA-N.chk
+    forcefield opttest/DUBXXKHIPWMCDR-UHFFFAOYSA-N-pars-quickff.txt
+    dof cartesian
+    maxiter 600
+    energy -374
+    gpos_rms 1e-8
+    neg_hessian_evals 0
+
+case steven-quickff-GZL
+    system opttest/GZLNXARBGMAZKZ-KVFPUHGPSA-N.chk
+    forcefield opttest/GZLNXARBGMAZKZ-KVFPUHGPSA-N-pars-quickff.txt
+    dof cartesian
+    maxiter 100
+    energy 148
+    gpos_rms 1e-8
+    neg_hessian_evals 1
+
+case steven-quickff-JQW
+    system opttest/JQWBTFGGAKGQPA-UHFFFAOYSA-N.chk
+    forcefield opttest/JQWBTFGGAKGQPA-UHFFFAOYSA-N-pars-quickff.txt
+    dof cartesian
+    maxiter 100
+    energy -1629
+    gpos_rms 1e-8
+    neg_hessian_evals 2
+
+case steven-quickff-QRM
+    system opttest/QRMPKOFEUHIBNM-ZKCHVHJHSA-N.chk
+    forcefield opttest/QRMPKOFEUHIBNM-ZKCHVHJHSA-N-pars-quickff.txt
+    dof cartesian
+    maxiter 100
+    energy -49
+    gpos_rms 1e-8
+    neg_hessian_evals 2
+
+case steven-quickff-WFZ
+    system opttest/WFZUBZAEFXETBF-UHFFFAOYSA-N.chk
+    forcefield opttest/WFZUBZAEFXETBF-UHFFFAOYSA-N-pars-quickff.txt
+    dof cartesian
+    maxiter 286
+    energy -447
+    gpos_rms 1e-8
+    neg_hessian_evals 0
+
+case steven-quickff-ZPJ
+    system opttest/ZPJJOVNASWLIRQ-UHFFFAOYSA-N.chk
+    forcefield opttest/ZPJJOVNASWLIRQ-UHFFFAOYSA-N-pars-quickff.txt
+    dof cartesian
+    maxiter 200
+    energy -352
+    gpos_rms 1e-8
+    neg_hessian_evals 1
