@@ -1,0 +1,15 @@
+version_query/__init__.py,sha256=iAR04ZQ4UsEP538kYIXiQCjI5XaVGVVdjJZqEFtUftE,618
+version_query/__main__.py,sha256=8wMrsnOi2mxMCR-gbGxnENT4pKFN9MVRJBq8KJ_mOJM,661
+version_query/_version.py,sha256=1nm2LHEwpPyo07apqj2071qbvcWmwlzXfFOCRj171vo,118
+version_query/caller.py,sha256=OHiy76s2y6NlgxbVi-IoFh6vgt5G1wxghyeLHohfp1E,1281
+version_query/config.py,sha256=mE218qSGbZN1CVzEtz6pxZAl0g2tvVdRlp4qzLT7528,92
+version_query/determine.py,sha256=X-sVEcs4ybDgj-g0_ILNoiTFTC8OXXIN8-c7nwnIIZA,3907
+version_query/git_tag.py,sha256=Yw1iKZ1PbnN78YZcfY0z07vitYW7vDhYs-tqdNtyKjY,312
+version_query/increment.py,sha256=550xham5hp_aK7jAMA-0i901orQBX_jx4HNO7YN72-I,4403
+version_query/version.py,sha256=7le4xZdDXpJ3Ta5Idl5wIuuFmYC0NxrSi4AsvHkdduA,5344
+version_query-0.0.1.dev2.dist-info/DESCRIPTION.rst,sha256=LuwHgovVsZTy1MsDcKaEw8AWNr19tuYj8douklwDktg,6334
+version_query-0.0.1.dev2.dist-info/METADATA,sha256=Wh6RLgnXeuYVyMQcB8sLaeFyL3P9-5C0lkfhgGXEv0I,7422
+version_query-0.0.1.dev2.dist-info/RECORD,,
+version_query-0.0.1.dev2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+version_query-0.0.1.dev2.dist-info/metadata.json,sha256=PlULalaJrK6svIv26pI73JRaPCGMU3QrcVkjO21aj3M,1206
+version_query-0.0.1.dev2.dist-info/top_level.txt,sha256=Sw335Q29h6EUZHfPSji8rGTnBv2osM7_kzDqwJc9l_I,14
