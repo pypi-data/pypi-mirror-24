@@ -1,0 +1,6 @@
+unipy
+pymysql
+psycopg2==2.7.1
+sqlalchemy>=1.1.11
+ibm_db_sa>=0.3.3
+pandas>=0.20.2
