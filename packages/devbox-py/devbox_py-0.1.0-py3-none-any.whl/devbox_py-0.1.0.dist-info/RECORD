@@ -1,0 +1,10 @@
+devbox/__init__.py,sha256=QMQ-WaAJk-wMMYb4fYlq5KbYa1Nah7k7tq0qBmsVtzA,59
+devbox/devbox.py,sha256=VxV4IMA14DFBhzvsoUX6MJmSmW0_gG14fsnxnr3fGtk,4756
+devbox/storage.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devbox/terminal.py,sha256=vHpqszjl-goniakVOprRdRhJnwClZG3Dozfg8C2tCww,33660
+devbox_py-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+devbox_py-0.1.0.dist-info/METADATA,sha256=FUyvr858gzAciZ1NBIgOLRSgXd9pAFxTbchW1gS3KGA,475
+devbox_py-0.1.0.dist-info/RECORD,,
+devbox_py-0.1.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+devbox_py-0.1.0.dist-info/metadata.json,sha256=wgJ_C2I-ddiOFFuAODnoKArQ3YFreXLsi1CQHMQP0Xk,586
+devbox_py-0.1.0.dist-info/top_level.txt,sha256=2qLXRbA7jX0pSGSf_yin8SIPBKYwj9i8NvBwjjngN78,7
