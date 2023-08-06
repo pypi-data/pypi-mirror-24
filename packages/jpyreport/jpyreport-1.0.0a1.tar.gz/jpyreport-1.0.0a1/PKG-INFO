@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: jpyreport
+Version: 1.0.0a1
+Summary: Generate single HTML report from Junit xml reports
+Home-page: https://github.com/lub0v/jpyreport
+Author: Liubov Pitko
+Author-email: lub0vpik0@gmail.com
+License: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Description: Generate single HTML report from Junit xml reports
+Keywords: junit html reports generation
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 2
