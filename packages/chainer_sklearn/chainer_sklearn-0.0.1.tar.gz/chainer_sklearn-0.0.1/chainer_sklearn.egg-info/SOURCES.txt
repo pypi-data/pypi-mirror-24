@@ -1,0 +1,12 @@
+setup.py
+chainer_sklearn/__init__.py
+chainer_sklearn.egg-info/PKG-INFO
+chainer_sklearn.egg-info/SOURCES.txt
+chainer_sklearn.egg-info/dependency_links.txt
+chainer_sklearn.egg-info/requires.txt
+chainer_sklearn.egg-info/top_level.txt
+chainer_sklearn/links/__init__.py
+chainer_sklearn/links/sklearn/__init__.py
+chainer_sklearn/links/sklearn/sklearn_wrapper.py
+tests/__init__.py
+tests/check_estimator.py

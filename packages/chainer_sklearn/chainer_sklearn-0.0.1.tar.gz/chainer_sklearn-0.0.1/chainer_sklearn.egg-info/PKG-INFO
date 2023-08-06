@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: chainer-sklearn
+Version: 0.0.1
+Summary: Chainer scikit-learn wrapper.
+Home-page: https://github.com/corochann/chainer-sklearn-wrapper
+Author: corochann
+Author-email: corochannz@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
