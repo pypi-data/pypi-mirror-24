@@ -1,0 +1,17 @@
+pip_manager/__init__.py,sha256=9FK36A6_KYy_d3gHiTKnJH5akqrEw0-pcfs2oPopkhI,46
+pip_manager/app.py,sha256=EoyOQlgUm--NTEDrpeIWi91nmcnX3sUZZzy_r-QojHI,5767
+pip_manager/config.ini,sha256=0DK1qj1nQ0-sK9iB9LmKzBd0UTbQeoC9RgoLCqGkd6Y,53
+pip_manager/distribution.py,sha256=janq2HIucX7f1CYomKGYEtVXJU4_Nic_2wfXvLUDfbE,1983
+pip_manager/gui.py,sha256=m7Qs16SH9A8cFRA2n_ydO8MG_aUDEr0fLuKDcIE27NA,5230
+pip_manager/run.py,sha256=ZedhXqF1BmiwhTT6Xo0WBBz20BtsKpQXlMGvCKlqOM0,238
+pip_manager/utils.py,sha256=UyBY8_KqgTYjwIRa3WFMthaS4S8WiukqqxfsOa1xQR0,1083
+pip_manager/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pip_manager/tests/test_Distribution.py,sha256=ySBtF1PUQimFqt7GrEbjRguv9p4nj-fcknESh5kap_I,1667
+pip_manager/tests/test_PipManager.py,sha256=udBhkDt8eNSQjXX-zYFcJCuhRQJvrHn67uqFklmMh90,6861
+pip_manager-1.0.0.dist-info/DESCRIPTION.rst,sha256=bJ3X5XopSfw82ZBIdNdEt6d3bo9Hmd-3-V1_3BIuwd4,5118
+pip_manager-1.0.0.dist-info/METADATA,sha256=DhUPpO6XCan6Gc7PX7lX0cY-ZkeEEozSaoisCgRGLgk,5937
+pip_manager-1.0.0.dist-info/RECORD,,
+pip_manager-1.0.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pip_manager-1.0.0.dist-info/entry_points.txt,sha256=M9TnJA99BtLFHs5lKIitp6-hEaUOadNlM8qiJRSTfgY,54
+pip_manager-1.0.0.dist-info/metadata.json,sha256=mgxOmsskErzry-Pu2z6HgxsjcRXmYVzXgkThbblVLQ8,1187
+pip_manager-1.0.0.dist-info/top_level.txt,sha256=EOgAKo90GAEHXNTHaDg6XKXqLo1ACNvHeQubZQAAZs8,12
