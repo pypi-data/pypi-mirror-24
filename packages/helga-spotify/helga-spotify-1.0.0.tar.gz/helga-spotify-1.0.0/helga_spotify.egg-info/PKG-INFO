@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: helga-spotify
+Version: 1.0.0
+Summary: spotify slurping
+Home-page: UNKNOWN
+Author: Justin Caratzas
+Author-email: bigjust@lambdaphil.es
+License: LICENSE
+Description: helga-spotify
+        ===========
+        
+        slurps open.spotify.com urls and displays relevant info
+        
+        Requires SPOTIFY_CLIENT_ID and SPOTIFY_SECRET settings
+        
+        License
+        -------
+        
+        Copyright (c) 2017 Justin Caratzas
+        
+        GPLv3 Licensed
+        
+Keywords: irc bot spotify
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

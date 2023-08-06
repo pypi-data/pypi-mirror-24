@@ -1,0 +1,3 @@
+[helga_plugins]
+spotify = helga_spotify:spotify
+

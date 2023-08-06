@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+helga_spotify.py
+setup.py
+helga_spotify.egg-info/PKG-INFO
+helga_spotify.egg-info/SOURCES.txt
+helga_spotify.egg-info/dependency_links.txt
+helga_spotify.egg-info/entry_points.txt
+helga_spotify.egg-info/top_level.txt
+helga_spotify.egg-info/zip-safe
