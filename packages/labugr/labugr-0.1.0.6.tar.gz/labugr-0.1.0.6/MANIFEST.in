@@ -1,0 +1,1 @@
+recursive-include labugr/fftpack *.info *.src *.pyf bscript
