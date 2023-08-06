@@ -1,0 +1,7 @@
+setup.py
+lsd/__init__.py
+lsd.egg-info/PKG-INFO
+lsd.egg-info/SOURCES.txt
+lsd.egg-info/dependency_links.txt
+lsd.egg-info/not-zip-safe
+lsd.egg-info/top_level.txt
