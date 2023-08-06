@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: zalgo_text
+Version: 0.4
+Summary: A small library to create zalgo text
+Home-page: https://github.com/gregoryneal/zalgo
+Author: Greg Pritchard
+Author-email: gregcraig23@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/gregoryneal/zalgo/dist/0.4.tar.gz
+Description: UNKNOWN
+Keywords: diacritic,filter,zalgo
+Platform: UNKNOWN
