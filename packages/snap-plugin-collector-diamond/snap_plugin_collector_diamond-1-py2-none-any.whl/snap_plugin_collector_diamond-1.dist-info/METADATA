@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: snap-plugin-collector-diamond
+Version: 1
+Summary: This is a plugin for the Snap telemetry framework wrapping Diamond daemon plugins.
+Home-page: http://github.com/intelsdi-x/snap-plugin-collector-diamond
+Author: Joel Cooklin
+Author-email: joel.cooklin@gmail.com
+License: Apache 2.0
+Keywords: snap telemetry plugin plugins metrics diamond
+Platform: UNKNOWN
+Requires-Dist: diamond (>=4.0.515)
+Requires-Dist: psutil (>=5.0.0)
+Requires-Dist: snap-plugin-lib-py (>=1.0.10,<2)
+
+Snap Plugin Collector Diamond
+=============================
+
+This is plugin for `Snap telemetry framework <http://snap-telemetry.io/>`_.
+For overview of Snap checkout its GitHub repo `here <https://github.com/intelsdi-x/snap>`_.
+
+For more information about this plugin visit its `repo <http://github.com/intelsdi-x/snap-plugin-collector-diamond>`_.
+
+
