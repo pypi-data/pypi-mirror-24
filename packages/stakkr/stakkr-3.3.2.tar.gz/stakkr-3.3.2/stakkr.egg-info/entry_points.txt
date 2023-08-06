@@ -1,0 +1,4 @@
+[console_scripts]
+stakkr=stakkr.cli:main
+docker-clean=stakkr.docker_clean:main
+stakkr-compose=stakkr.stakkr_compose:cli
