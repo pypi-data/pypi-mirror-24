@@ -1,0 +1,12 @@
+jubi/__init__.py,sha256=LGRQpzh6c4Y7UO_4VKIV1pAPi3y3cl_dLQA-irbavDI,97
+jubi/abc.py,sha256=i379ensx-W8boNCIrhzVv2XImqEyDsEedogGdRVvFMY,576
+jubi/core.py,sha256=qYYjDU3vi0o1eivdGT4TQ9bZX7Xue22QhpAWCADIvgM,9678
+jubi/utils.py,sha256=UlNCJg6QbdPZWb90b01l8e_7mnu5xqabFVoPyQfWWCU,338
+jubi/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jubi/contrib/aiohttp.py,sha256=iI4ayTml54-ud2TKejKZcKtZmPIOKmGGqBVt7SxRRiA,851
+jubi-0.1.0.dist-info/DESCRIPTION.rst,sha256=nIWpH9brzQmdFAFTCotBMHdjYSrYjgmXkNLxe3IZa78,1517
+jubi-0.1.0.dist-info/METADATA,sha256=U6zjeQBhcqGBggIDImTqHSnxd0AZ9FdgzOneiWkNdWA,2488
+jubi-0.1.0.dist-info/RECORD,,
+jubi-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+jubi-0.1.0.dist-info/metadata.json,sha256=C8ZMjixmpYOdwBJ3sMLILUWKjc5GuV1gXFd2-QksqSY,1088
+jubi-0.1.0.dist-info/top_level.txt,sha256=klPwzi_qMK6xCqv3UOfu-eN_Lk1ajTIutO6GsYG82nQ,5

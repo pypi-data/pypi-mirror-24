@@ -1,0 +1,60 @@
+===============================
+jubi
+===============================
+
+.. image:: https://img.shields.io/pypi/v/jubi.svg
+        :target: https://pypi.python.org/pypi/jubi
+
+.. image:: https://img.shields.io/travis/mozillazg/jubi.svg
+        :target: https://travis-ci.org/mozillazg/jubi
+
+.. image:: https://img.shields.io/coveralls/mozillazg/jubi/master.svg
+        :target: https://coveralls.io/r/mozillazg/jubi
+
+.. image:: https://readthedocs.org/projects/jubi/badge/?version=latest
+        :target: https://readthedocs.org/projects/jubi/?badge=latest
+        :alt: Documentation Status
+
+.. image:: https://img.shields.io/pypi/dm/jubi.svg
+        :target: https://pypi.python.org/pypi/jubi
+
+.. image:: https://badges.gitter.im/mozillazg/jubi.svg
+        :alt: Join the chat at https://gitter.im/mozillazg/jubi
+        :target: https://gitter.im/mozillazg/jubi
+
+
+
+An async jubi API library for Python
+
+* Free software: MIT license
+* Documentation: https://jubi.readthedocs.org
+* GitHub: https://github.com/mozillazg/jubi
+* PyPI: https://pypi.python.org/pypi/jubi
+* Python version: 2.7, pypy, 3.3, 3.4, 3.5, 3.6
+
+Features
+--------
+
+* TODO
+
+Installation
+--------------
+
+At the command line::
+
+    $ pip install jubi
+
+Usage
+--------
+
+* TODO
+
+Credits
+---------
+
+This package was created with Cookiecutter_ and the `mozillazg/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`mozillazg/cookiecutter-pypackage`: https://github.com/mozillazg/cookiecutter-pypackage
+
+
