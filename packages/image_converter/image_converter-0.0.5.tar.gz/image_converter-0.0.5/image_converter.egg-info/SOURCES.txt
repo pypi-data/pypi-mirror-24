@@ -1,0 +1,8 @@
+setup.py
+image_converter/__init__.py
+image_converter/converter.py
+image_converter.egg-info/PKG-INFO
+image_converter.egg-info/SOURCES.txt
+image_converter.egg-info/dependency_links.txt
+image_converter.egg-info/requires.txt
+image_converter.egg-info/top_level.txt
