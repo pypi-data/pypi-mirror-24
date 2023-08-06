@@ -1,0 +1,17 @@
+check-manifest>=0.25
+coverage>=4.0
+-e git+https://github.com/inveniosoftware/flask-celeryext.git#egg=flask-celeryext
+-e git+https://github.com/alisaifee/flask-limiter.git#egg=Flask-Limiter
+flask-shell-ipython>=0.3.0
+-e git+https://github.com/GoogleCloudPlatform/flask-talisman.git#egg=Flask-Talisman
+-e git+https://github.com/inveniosoftware/invenio-base.git#egg=invenio-base
+-e git+https://github.com/inveniosoftware/invenio-cache.git#egg=invenio-cache
+-e git+https://github.com/inveniosoftware/invenio-config.git#egg=invenio-config
+isort>=4.2.2
+pydocstyle>=2.0.0
+pytest>=2.8.0
+pytest-cache>=1.0
+pytest-cov>=1.8.0
+pytest-pep8>=1.0.6
+redis>=2.10.5
+Sphinx<1.6,>=1.5.6
