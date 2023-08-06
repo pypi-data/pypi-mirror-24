@@ -1,0 +1,7 @@
+setup.py
+ckippy/__init__.py
+ckippy.egg-info/PKG-INFO
+ckippy.egg-info/SOURCES.txt
+ckippy.egg-info/dependency_links.txt
+ckippy.egg-info/requires.txt
+ckippy.egg-info/top_level.txt
