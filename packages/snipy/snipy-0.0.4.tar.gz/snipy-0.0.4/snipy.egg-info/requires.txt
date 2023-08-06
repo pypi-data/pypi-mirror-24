@@ -1,0 +1,13 @@
+six
+Jinja2
+numpy
+setuptools
+matplotlib
+scandir
+Pillow
+python_cjson
+h5py
+joblib
+noise
+scikit-image
+pympler
