@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: raweye
+Version: 0.1
+Summary: a tool to show raw10/raw16 or convert it to jpeg/png.
+Home-page: https://github.com/TUSSON/raweye
+Author: Tusson
+Author-email: tusson@163.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: raw10,raw16
+Platform: UNKNOWN
