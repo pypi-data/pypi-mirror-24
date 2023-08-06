@@ -1,0 +1,9 @@
+setup.py
+mycelery/__init__.py
+mycelery/mycelery.py
+mycelery.egg-info/PKG-INFO
+mycelery.egg-info/SOURCES.txt
+mycelery.egg-info/dependency_links.txt
+mycelery.egg-info/entry_points.txt
+mycelery.egg-info/not-zip-safe
+mycelery.egg-info/top_level.txt
