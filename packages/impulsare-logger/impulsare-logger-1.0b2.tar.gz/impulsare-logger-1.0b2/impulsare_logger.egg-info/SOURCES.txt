@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+impulsare_logger/__init__.py
+impulsare_logger/logger.py
+impulsare_logger.egg-info/PKG-INFO
+impulsare_logger.egg-info/SOURCES.txt
+impulsare_logger.egg-info/dependency_links.txt
+impulsare_logger.egg-info/requires.txt
+impulsare_logger.egg-info/top_level.txt
+impulsare_logger/static/default.yml
+impulsare_logger/static/specs.yml

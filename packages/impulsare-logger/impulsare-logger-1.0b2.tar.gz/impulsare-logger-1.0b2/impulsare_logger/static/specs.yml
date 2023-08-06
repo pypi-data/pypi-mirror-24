@@ -1,0 +1,23 @@
+type: object
+properties:
+    logger:
+        type: object
+        properties:
+            directory:
+                type: string
+            level:
+                type: string
+                enum: [CRITICAL, ERROR, WARNING, INFO, DEBUG]
+            formatter:
+                type: string
+            max_size:
+                type: integer
+            rotate:
+                type: integer
+            handlers:
+                type: object
+                properties:
+                    console:
+                        type: boolean
+                    file:
+                        type: boolean
