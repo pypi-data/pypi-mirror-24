@@ -1,0 +1,5 @@
+logwrap/_class_decorator.so
+logwrap/_log_wrap_shared.so
+logwrap/_log_wrap2.so
+logwrap/_repr_utils.so
+logwrap/_formatters.so
