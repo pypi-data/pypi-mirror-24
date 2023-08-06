@@ -1,0 +1,4 @@
+[console_scripts]
+sheetsite = sheetsite.cmdline:cmd_sheetsite
+sheetwatch = sheetsite.sheetwatch:run
+
