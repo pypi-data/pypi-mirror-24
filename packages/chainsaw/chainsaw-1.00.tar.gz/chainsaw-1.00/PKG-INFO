@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: chainsaw
+Version: 1.00
+Summary: Functions for splitting decision trees.
+Home-page: https://github.com/mikesiers/chainsaw/
+Author: Michael J. Siers
+Author-email: mikesiers@live.com
+License: UNKNOWN
+Download-URL: https://github.com/mikesiers/chainsaw/archive/1.00.tar.gz
+Description: UNKNOWN
+Keywords: cost-sensitive,machine-learning,data-science
+Platform: UNKNOWN
