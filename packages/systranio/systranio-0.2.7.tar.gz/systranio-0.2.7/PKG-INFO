@@ -1,0 +1,36 @@
+Metadata-Version: 1.1
+Name: systranio
+Version: 0.2.7
+Summary: A simple REST API client for Systran.io
+Home-page: https://gitlab.com/canarduck/systranio
+Author: Canarduck
+Author-email: renaud@canarduck.com
+License: UNKNOWN
+Description: Systran Translation Client
+        ==========================
+        
+        |pipeline status| |coverage report|
+        
+        An unofficial python client to Systran.io APIs, `official
+        libraries <https://github.com/SYSTRAN/translation-api-python-client>`__
+        are also available. I am *not* affiliated with Systran *at all*.
+        
+        -  Documentation : https://canarduck.gitlab.io/systranio
+        -  Repository : https://gitlab.com/canarduck/systranio
+        -  Pypi : https://pypi.python.org/pypi/systranio
+        
+        .. |pipeline status| image:: https://gitlab.com/canarduck/systranio/badges/master/pipeline.svg
+           :target: https://gitlab.com/canarduck/systranio/commits/master
+        .. |coverage report| image:: https://gitlab.com/canarduck/systranio/badges/master/coverage.svg
+           :target: https://gitlab.com/canarduck/systranio/commits/master
+        
+Keywords: api rest systran translation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
