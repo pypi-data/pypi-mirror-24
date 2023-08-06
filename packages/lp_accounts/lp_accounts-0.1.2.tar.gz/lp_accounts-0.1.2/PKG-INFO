@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: lp_accounts
+Version: 0.1.2
+Summary: REST Framework for User Accounts
+Home-page: https://github.com/Launchpeer/django-rest-account
+Author: Jim Simon
+Author-email: hello@launchpeer.com
+License: UNKNOWN
+Download-URL: https://github.com/Launchpeer/django-rest-account/archive/master.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
