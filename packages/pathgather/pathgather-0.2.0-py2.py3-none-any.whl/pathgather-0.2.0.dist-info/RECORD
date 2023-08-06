@@ -1,0 +1,13 @@
+pathgather/__init__.py,sha256=FDp_9-an785_bZPkvjZcAaeVLBtDcSVLquIXw3hp0DQ,941
+pathgather/client.py,sha256=k355gVtVQUyIiyjLUz2XqeZsUPaDjHR5YqYoLehk9yA,3158
+pathgather/content.py,sha256=VhBU77shVEsvdV_MsWGkjPPBW6Lnd2ER52u2RwVwP7E,5830
+pathgather/exceptions.py,sha256=sDhgXauhObuvS_4plWFYg8t1GmYUH7zZnw3pTKp3nrs,1014
+pathgather/paths.py,sha256=tsZ63_NYOZ6roa7ffH92TfxprGx4Dpz3iL6K6ZqKDCI,1853
+pathgather/types.py,sha256=wgnwEZza1LWEIlN49bVMYZxgdwTfASVRAsZpne1pBNc,1103
+pathgather/users.py,sha256=2E3Txt0YkC19pnq1-QFDthrJ4CR2w3IKVOO7xdZjP7s,7106
+pathgather-0.2.0.dist-info/DESCRIPTION.rst,sha256=wBjDIp4pj-wtNknQuaWGHQf0MM3oHSzieasD0jwN41c,1015
+pathgather-0.2.0.dist-info/METADATA,sha256=2WKW1F8z6u37YuyDaxyaMnrbjiUJPeGBEPfbnj5AoWk,1805
+pathgather-0.2.0.dist-info/RECORD,,
+pathgather-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pathgather-0.2.0.dist-info/metadata.json,sha256=mdrGg0OqDdKSW70uaIHad4qLQa8SLUVrJalhfc74Zzo,938
+pathgather-0.2.0.dist-info/top_level.txt,sha256=jDC-Wdwkg3Pf5YVzmaH4xEXymQM3jVq0JdIlQvzNV1E,11
