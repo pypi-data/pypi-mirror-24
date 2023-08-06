@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: ansicode
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://pypi.python.org/pypi/ansicolor
+Author: Samuele Santi
+Author-email: samuele@samuelesanti.com
+License: BSD License
+Description: Ansi codes
+        ##########
+        
+        Provides nicer support for generating ANSI codes from Python scripts.
+        
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
