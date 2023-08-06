@@ -1,0 +1,10 @@
+[console_scripts]
+pocketwalk = pocketwalk.core:main
+
+[pocketwalk]
+cancellation = pocketwalk.plugins.cancellation:get_cancellation
+config = pocketwalk.plugins.config:get_config
+context_manager = pocketwalk.plugins.context_manager:get_context_manager
+runner = pocketwalk.plugins.tool_runner:get_tool_runner
+vcs = pocketwalk.plugins.vcs:get_vcs
+
