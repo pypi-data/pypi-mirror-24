@@ -1,0 +1,16 @@
+django_spgateway-0.2.0.dist-info/DESCRIPTION.rst,sha256=ZMZvxMM0Ntcy9sCjXGxMCVp8IFPeXSCsDFx5wR401i4,3907
+django_spgateway-0.2.0.dist-info/METADATA,sha256=AKST8hsklqo_x6g_E1xk6A60NYzCpSVvItTtoBkQKZ8,4662
+django_spgateway-0.2.0.dist-info/RECORD,,
+django_spgateway-0.2.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_spgateway-0.2.0.dist-info/metadata.json,sha256=wQ9Yrj2adFDtM7hp11wjlMdS6unFpg9SkEYz5ovLf08,920
+django_spgateway-0.2.0.dist-info/top_level.txt,sha256=7ZjIv2-3fdMZvxrUJkbLwncwIHMXx96XTIjc-OYIjtA,10
+spgateway/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spgateway/apps.py,sha256=_hmmbW0cb7VUmZDzXw8XjKctxaQ2On7RGm7gqwEveG0,93
+spgateway/forms.py,sha256=9O-LhmRd7RGI3jI24stmPHLW-XwliWLYOLYSXwZBv9Q,502
+spgateway/helpers.py,sha256=XAQ-mSs4oXgW03XlfUuVo1XCrhVzyK735dP0CnapodI,13564
+spgateway/models.py,sha256=JkwcH4sz1tuLadshIL1D42fPhtGHfd3ndlg5wwcVDJI,16504
+spgateway/urls.py,sha256=BUXYsYdUWHSLCbSZ_KhPGX7GuwwT5JMHhS7y6HaiNR8,346
+spgateway/views.py,sha256=MXVOpKoDL8Aqk04GVh-n_ZRrW9pV4AFO9b8SI1KAhws,6861
+spgateway/migrations/0001_initial.py,sha256=BaxKq4gFn263DrHzIFqdhGfiVZvhMUWd4lUKFKxMVuA,8094
+spgateway/migrations/0002_generate_slug_for_none.py,sha256=9Oo42U6jTsBz8DmZ-S5i-8SxRLTAfHUM5Ap3Wo-sxHo,775
+spgateway/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
