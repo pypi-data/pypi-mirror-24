@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: timesketch-api-client
+Version: 20170815
+Summary: Timesketch API client
+Home-page: http://www.timesketch.org/
+Author: Timesketch development team
+Author-email: timesketch-dev@googlegroups.com
+License: Apache License, Version 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
