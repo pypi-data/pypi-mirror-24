@@ -1,0 +1,345 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Survey accessors &mdash; sdx-common 0.7.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="sdx-common 0.7.1 documentation" href="index.html"/>
+        <link rel="next" title="Processing functions" href="processor.html"/>
+        <link rel="prev" title="Setting Log Levels" href="log_levels.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> sdx-common
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.7.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="log_levels.html">Setting Log Levels</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Survey accessors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="processor.html">Processing functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transformers.html">Transformers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formats.html">Formatters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Tooling</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sdx-common</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Survey accessors</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/survey.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="survey-accessors">
+<span id="survey"></span><h1>Survey accessors<a class="headerlink" href="#survey-accessors" title="Permalink to this headline">¶</a></h1>
+<p>Surveys come to SDX as JSON messages. They are then loaded via Python’s <code class="docutils literal"><span class="pre">json</span></code> module,
+which returns a nested dictionary.</p>
+<span class="target" id="module-sdx.common.survey"></span><p>The survey module provides functions to access survey reply data.
+These will be of use in <a class="reference internal" href="processor.html#processors"><span class="std std-ref">Processing functions</span></a> and <a class="reference internal" href="transformers.html#transformers"><span class="std std-ref">Transformers</span></a>.</p>
+<dl class="class">
+<dt id="sdx.common.survey.Survey">
+<em class="property">class </em><code class="descclassname">sdx.common.survey.</code><code class="descname">Survey</code><a class="reference internal" href="_modules/sdx/common/survey.html#Survey"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.survey.Survey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide operations and accessors to survey data.</p>
+<dl class="staticmethod">
+<dt id="sdx.common.survey.Survey.load_survey">
+<em class="property">static </em><code class="descname">load_survey</code><span class="sig-paren">(</span><em>ids</em>, <em>package</em>, <em>pattern</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/survey.html#Survey.load_survey"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.survey.Survey.load_survey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the survey definition by id.</p>
+<p>This function takes metadata from a survey reply, finds the JSON definition of
+that survey, and loads it as a Python object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ids</strong> (<a class="reference internal" href="#sdx.common.survey.Survey.Identifiers" title="sdx.common.survey.Survey.Identifiers"><code class="xref py py-class docutils literal"><span class="pre">sdx.common.survey.Survey.Identifiers</span></code></a>) – Survey response ids.</li>
+<li><strong>package</strong> (<em>str</em>) – The name of the Python package where the survey is to be found,
+eg: <cite>“sdx.common”</cite>. Within standalone apps which do not declare
+themselves as Python packages, pass in the variable <cite>__name__</cite>.</li>
+<li><strong>pattern</strong> (<em>str</em>) – <p>A query for the survey definition. This will be
+a file path relative to the package location which uniquely
+identifies the survey definition file. It accepts keyword
+formatting arguments for any of the attributes of
+<a class="reference internal" href="#sdx.common.survey.Survey.Identifiers" title="sdx.common.survey.Survey.Identifiers"><code class="xref py py-class docutils literal"><span class="pre">sdx.common.survey.Survey.Identifiers</span></code></a>.</p>
+<p>For example: <cite>“surveys/{survey_id}.{inst_id}.json”</cite>.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="sdx.common.survey.Survey.bind_logger">
+<em class="property">static </em><code class="descname">bind_logger</code><span class="sig-paren">(</span><em>log</em>, <em>ids</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/survey.html#Survey.bind_logger"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.survey.Survey.bind_logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bind a structured logger with survey response metadata.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>log</strong> – The logger object to be bound.</li>
+<li><strong>ids</strong> (<a class="reference internal" href="#sdx.common.survey.Survey.Identifiers" title="sdx.common.survey.Survey.Identifiers"><code class="xref py py-class docutils literal"><span class="pre">sdx.common.survey.Survey.Identifiers</span></code></a>) – The survey response ids to bind to the logger.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="sdx.common.survey.Survey.parse_timestamp">
+<em class="property">static </em><code class="descname">parse_timestamp</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/survey.html#Survey.parse_timestamp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.survey.Survey.parse_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a text field for a date or timestamp.</p>
+<p>Date and time formats vary across surveys.
+This method reads those formats.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>text</strong> (<em>str</em>) – The date or timestamp value.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Python date or datetime.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="sdx.common.survey.Survey.identifiers">
+<em class="property">static </em><code class="descname">identifiers</code><span class="sig-paren">(</span><em>data</em>, <em>batch_nr=0</em>, <em>seq_nr=0</em>, <em>log=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/survey.html#Survey.identifiers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.survey.Survey.identifiers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse common metadata from the survey.</p>
+<p>Return a named tuple which code can use to access the various ids and discriminators.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>data</strong> (<em>dict</em>) – A survey reply.</li>
+<li><strong>batch_nr</strong> (<em>int</em>) – A batch number for the reply.</li>
+<li><strong>seq_nr</strong> (<em>int</em>) – An image sequence number for the reply.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sdx.common.survey.Survey.Identifiers">
+<code class="descclassname">Survey.</code><code class="descname">Identifiers</code><em class="property"> (batch_nr, seq_nr, ts, tx_id, survey_id, inst_id, user_ts, user_id, ru_ref, ru_check, period)</em><a class="headerlink" href="#sdx.common.survey.Survey.Identifiers" title="Permalink to this definition">¶</a></dt>
+<dd><p>A named tuple type to capture ids and discriminators from a survey response.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="processor.html" class="btn btn-neutral float-right" title="Processing functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="log_levels.html" class="btn btn-neutral" title="Setting Log Levels" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ONS.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.7.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

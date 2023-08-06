@@ -1,0 +1,429 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Transformers &mdash; sdx-common 0.7.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="sdx-common 0.7.1 documentation" href="index.html"/>
+        <link rel="next" title="Formatters" href="formats.html"/>
+        <link rel="prev" title="Processing functions" href="processor.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> sdx-common
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.7.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="log_levels.html">Setting Log Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="survey.html">Survey accessors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="processor.html">Processing functions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Transformers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-sdx.common.transformer">Transformer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-sdx.common.transforms.ImageTransformer">ImageTransformer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-sdx.common.transforms.PDFTransformer">PDFTransformer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="formats.html">Formatters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Tooling</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sdx-common</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Transformers</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/transformers.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="transformers">
+<span id="id1"></span><h1>Transformers<a class="headerlink" href="#transformers" title="Permalink to this headline">¶</a></h1>
+<p>Every different survey type which passes through SDX may require:</p>
+<blockquote>
+<div><ul class="simple">
+<li>validation of data fields</li>
+<li>application of business logic</li>
+<li>conversion to downstream formats</li>
+</ul>
+</div></blockquote>
+<p>We give each survey type its own transformer class. The class implements
+the custom behaviour required.</p>
+<p>In order to minimise duplication of code, each new transformer class should inherit
+from a base class which already provides that functionality: <a class="reference internal" href="#transformer">Transformer</a>.</p>
+<p>Two legacy classes exist for the generation of page images. Transformer classes
+delegate to them for image generation:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#imagetransformer">ImageTransformer</a></li>
+<li><a class="reference internal" href="#pdftransformer">PDFTransformer</a></li>
+</ul>
+</div></blockquote>
+<div class="section" id="module-sdx.common.transformer">
+<span id="transformer"></span><h2>Transformer<a class="headerlink" href="#module-sdx.common.transformer" title="Permalink to this headline">¶</a></h2>
+<p>Transform survey data into formats required downstream.</p>
+<dl class="class">
+<dt id="sdx.common.transformer.Transformer">
+<em class="property">class </em><code class="descclassname">sdx.common.transformer.</code><code class="descname">Transformer</code><span class="sig-paren">(</span><em>response</em>, <em>seq_nr=0</em>, <em>log=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/transformer.html#Transformer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.transformer.Transformer" title="Permalink to this definition">¶</a></dt>
+<dd><p>A base class for SDX transformers.</p>
+<p>Subclasses should define the contents of the following class variables:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#sdx.common.transformer.Transformer.defn" title="sdx.common.transformer.Transformer.defn"><code class="xref py py-const docutils literal"><span class="pre">defn</span></code></a></li>
+<li><a class="reference internal" href="#sdx.common.transformer.Transformer.package" title="sdx.common.transformer.Transformer.package"><code class="xref py py-const docutils literal"><span class="pre">package</span></code></a></li>
+<li><a class="reference internal" href="#sdx.common.transformer.Transformer.pattern" title="sdx.common.transformer.Transformer.pattern"><code class="xref py py-const docutils literal"><span class="pre">pattern</span></code></a></li>
+</ul>
+</div></blockquote>
+<dl class="attribute">
+<dt id="sdx.common.transformer.Transformer.defn">
+<code class="descname">defn</code><em class="property"> = []</em><a class="headerlink" href="#sdx.common.transformer.Transformer.defn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transformer subclasses declare their transforms in this class variable.
+Each element is a 3-tuple consisting of:</p>
+<ol class="arabic simple">
+<li>An integer or range corresponding to one or more question ids.</li>
+<li>A default value for the question(s).</li>
+<li>A <a class="reference internal" href="processor.html#processors"><span class="std std-ref">Processing function</span></a>.</li>
+</ol>
+<p>Eg, to declare question ids 151, 152, 153 as unsigned integers with a default
+of 0:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">defn</span> <span class="o">=</span> <span class="p">[</span>
+ <span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">151</span><span class="p">,</span> <span class="mi">154</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Processor</span><span class="o">.</span><span class="n">unsigned_integer</span><span class="p">),</span>
+
+<span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sdx.common.transformer.Transformer.package">
+<code class="descname">package</code><em class="property"> = 'sdx.common'</em><a class="headerlink" href="#sdx.common.transformer.Transformer.package" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the package where survey definitions can be found.
+For deployed Python packages, this will be a dotted package name.
+If your Transformer class is deployed from a source repository,
+you should set this class variable to <cite>__name__</cite>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sdx.common.transformer.Transformer.pattern">
+<code class="descname">pattern</code><em class="property"> = '../surveys/{survey_id}.{inst_id}.json'</em><a class="headerlink" href="#sdx.common.transformer.Transformer.pattern" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a search pattern for survey definitions based on identifiers.
+The path is relative to the location specified by <a class="reference internal" href="#sdx.common.transformer.Transformer.package" title="sdx.common.transformer.Transformer.package"><code class="xref py py-const docutils literal"><span class="pre">package</span></code></a> above.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="sdx.common.transformer.Transformer.ops">
+<em class="property">classmethod </em><code class="descname">ops</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/transformer.html#Transformer.ops"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.transformer.Transformer.ops" title="Permalink to this definition">¶</a></dt>
+<dd><p>Publish the sequence of operations for the transform.</p>
+<p>Return an ordered mapping from question id to default value and processing function.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="sdx.common.transformer.Transformer.transform">
+<em class="property">classmethod </em><code class="descname">transform</code><span class="sig-paren">(</span><em>data</em>, <em>survey=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/transformer.html#Transformer.transform"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.transformer.Transformer.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform a transform on survey data.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="sdx.common.transformer.Transformer.create_zip">
+<em class="property">static </em><code class="descname">create_zip</code><span class="sig-paren">(</span><em>locn</em>, <em>manifest</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/transformer.html#Transformer.create_zip"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.transformer.Transformer.create_zip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a zip archive from a local directory and a manifest list.</p>
+<p>Return the contents of the zip as bytes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sdx.common.transformer.Transformer.pack">
+<code class="descname">pack</code><span class="sig-paren">(</span><em>settings=None</em>, <em>img_seq=None</em>, <em>tmp='tmp'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/transformer.html#Transformer.pack"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.transformer.Transformer.pack" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform transformation on the survey data and pack the output into a zip file.</p>
+<p>Return the contents of the zip as bytes.
+The object maintains a temporary directory while the output is generated.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-sdx.common.transforms.ImageTransformer">
+<span id="imagetransformer"></span><h2>ImageTransformer<a class="headerlink" href="#module-sdx.common.transforms.ImageTransformer" title="Permalink to this headline">¶</a></h2>
+<p>The SDX Image Transformer:</p>
+<dl class="class">
+<dt id="sdx.common.transforms.ImageTransformer.ImageTransformer">
+<em class="property">class </em><code class="descclassname">sdx.common.transforms.ImageTransformer.</code><code class="descname">ImageTransformer</code><span class="sig-paren">(</span><em>logger</em>, <em>settings</em>, <em>survey</em>, <em>response_data</em>, <em>sequence_no=1000</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/transforms/ImageTransformer.html#ImageTransformer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.transforms.ImageTransformer.ImageTransformer" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="staticmethod">
+<dt id="sdx.common.transforms.ImageTransformer.ImageTransformer.extract_pdf_images">
+<em class="property">static </em><code class="descname">extract_pdf_images</code><span class="sig-paren">(</span><em>path</em>, <em>f_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/transforms/ImageTransformer.html#ImageTransformer.extract_pdf_images"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.transforms.ImageTransformer.ImageTransformer.extract_pdf_images" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract pages from a PDF document.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> (<em>str</em>) – The location of the working directory.</li>
+<li><strong>f_name</strong> (<em>str</em>) – The file name of the PDF document.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A sorted sequence of image file names.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>This method delegates to the <em>pdftoppm</em> utility.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sdx.common.transforms.ImageTransformer.ImageTransformer.create_image_sequence">
+<code class="descname">create_image_sequence</code><span class="sig-paren">(</span><em>path</em>, <em>nmbr_seq=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/transforms/ImageTransformer.html#ImageTransformer.create_image_sequence"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.transforms.ImageTransformer.ImageTransformer.create_image_sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renumber the image sequence extracted from pdf</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> (<em>str</em>) – The location of the working directory.</li>
+<li><strong>nmbr_seq</strong> (<em>list</em><em> or </em><em>generator.</em>) – A sequence or generator of integers.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A generator of file paths.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sdx.common.transforms.ImageTransformer.ImageTransformer.create_image_index">
+<code class="descname">create_image_index</code><span class="sig-paren">(</span><em>images</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/transforms/ImageTransformer.html#ImageTransformer.create_image_index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.transforms.ImageTransformer.ImageTransformer.create_image_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes a list of images and creates a index csv from them</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sdx.common.transforms.ImageTransformer.ImageTransformer.create_zip">
+<code class="descname">create_zip</code><span class="sig-paren">(</span><em>images</em>, <em>index</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/transforms/ImageTransformer.html#ImageTransformer.create_zip"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.transforms.ImageTransformer.ImageTransformer.create_zip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a zip from a renumbered sequence</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sdx.common.transforms.ImageTransformer.ImageTransformer.cleanup">
+<code class="descname">cleanup</code><span class="sig-paren">(</span><em>locn</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sdx/common/transforms/ImageTransformer.html#ImageTransformer.cleanup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.transforms.ImageTransformer.ImageTransformer.cleanup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove all temporary files, by removing top level dir</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-sdx.common.transforms.PDFTransformer">
+<span id="pdftransformer"></span><h2>PDFTransformer<a class="headerlink" href="#module-sdx.common.transforms.PDFTransformer" title="Permalink to this headline">¶</a></h2>
+<p>SDX PDF Transformer.</p>
+<p>Example:</p>
+<p>python transform/transformers/PDFTransformer.py –survey transform/surveys/144.0001.json &lt; tests/replies/ukis-01.json &gt; output.pdf</p>
+<dl class="class">
+<dt id="sdx.common.transforms.PDFTransformer.PDFTransformer">
+<em class="property">class </em><code class="descclassname">sdx.common.transforms.PDFTransformer.</code><code class="descname">PDFTransformer</code><a class="reference internal" href="_modules/sdx/common/transforms/PDFTransformer.html#PDFTransformer"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sdx.common.transforms.PDFTransformer.PDFTransformer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="formats.html" class="btn btn-neutral float-right" title="Formatters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="processor.html" class="btn btn-neutral" title="Processing functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ONS.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.7.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
