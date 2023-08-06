@@ -1,0 +1,5 @@
+pandas==0.16.2
+pysam==0.8.4
+pyvcf==0.6.7
+biopython==1.65
+coloredlogs==5.2

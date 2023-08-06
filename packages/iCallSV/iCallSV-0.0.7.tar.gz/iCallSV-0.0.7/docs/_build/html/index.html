@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>iCallSV: Structural Aberration Detection from NGS datasets &#8212; iCallSV  documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="iCallSV  documentation" href="#" />
+    <link rel="next" title="iCallSV: Structural Aberration Detection from NGS datasets" href="iCallSV.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="iCallSV.html" title="iCallSV: Structural Aberration Detection from NGS datasets"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">iCallSV  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="icallsv-structural-aberration-detection-from-ngs-datasets">
+<h1>iCallSV: Structural Aberration Detection from NGS datasets<a class="headerlink" href="#icallsv-structural-aberration-detection-from-ngs-datasets" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">Ronak H Shah</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Contact:</th><td class="field-body"><a class="reference external" href="mailto:rons&#46;shah&#37;&#52;&#48;gmail&#46;com">rons<span>&#46;</span>shah<span>&#64;</span>gmail<span>&#46;</span>com</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Source code:</th><td class="field-body"><a class="reference external" href="http://github.com/rhshah/iCallSV">http://github.com/rhshah/iCallSV</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Wiki:</th><td class="field-body"><a class="reference external" href="http://icallsv.readthedocs.io/en/latest/">http://icallsv.readthedocs.io/en/latest/</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">License:</th><td class="field-body"><a class="reference external" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></td>
+</tr>
+</tbody>
+</table>
+<a class="reference external image-reference" href="https://landscape.io/github/rhshah/iCallSV/master"><img alt="Code Health" src="https://landscape.io/github/rhshah/iCallSV/master/landscape.svg?style=flat" /></a>
+<a class="reference external image-reference" href="https://doi.org/10.5281/zenodo.184864"><img alt="https://zenodo.org/badge/DOI/10.5281/zenodo.184864.svg" src="https://zenodo.org/badge/DOI/10.5281/zenodo.184864.svg" /></a>
+<a class="reference external image-reference" href="https://codecov.io/gh/rhshah/iCallSV"><img alt="https://codecov.io/gh/rhshah/iCallSV/branch/master/graph/badge.svg" src="https://codecov.io/gh/rhshah/iCallSV/branch/master/graph/badge.svg" /></a>
+<p>iCallSV is a Python library and command-line software toolkit to call structural aberrations from Next Generation DNA sequencing data. Behind the scenes it uses Delly2 to do structural variant calling. It is designed for use with hybrid capture, including both whole-exome and custom target panels, and
+short-read sequencing platforms such as Illumina.</p>
+</div>
+<div class="section" id="citation">
+<h1>Citation<a class="headerlink" href="#citation" title="Permalink to this headline">¶</a></h1>
+<p>We are in the process of publishing a manuscript describing iCallSV as part of the Structural Variant Detection framework.
+If you use this software in a publication, for now, please cite our website <a class="reference external" href="http://github.com/rhshah/iCallSV">iCallSV</a>.</p>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="iCallSV.html">iCallSV: Structural Aberration Detection from NGS datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iCallSV.html#note">Note</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iCallSV.html#required-packages">Required Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iCallSV.html#required-data-files">Required Data Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iCallSV.html#configuration-file-format">Configuration File Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iCallSV.html#quick-usage">Quick Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iCallSV.html#running-on-sge-or-lsf">Running on SGE or LSF</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#sge">SGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#lsf">LSF</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="iCallSV.html#utilities">Utilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#running-icallsv-on-msk-impact-pools">Running iCallSV on MSK-IMPACT Pools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#taking-the-icallsv-and-chechking-for-processed-transcript-cdna-in-samples">Taking the iCallSV and chechking for processed transcript/cDNA in samples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="iCallSV.html#submodules">Submodules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.iCallSV">iCallSV.iCallSV module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#icallsv">iCallSV</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.FilterDellyCalls">iCallSV.FilterDellyCalls module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#filterdellycalls">FilterDellyCalls</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.Run_Delly">iCallSV.Run_Delly module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#run-delly">Run_Delly</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.Run_iAnnotateSV">iCallSV.Run_iAnnotateSV module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#run-iannotate">Run_iAnnotate</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.Run_samblaster">iCallSV.Run_samblaster module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#run-samblaster">Run_samblaster</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.Run_targetSeqView">iCallSV.Run_targetSeqView module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#run-targetseqview">Run_targetSeqView</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.checkBlackList">iCallSV.checkBlackList module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#checkblacklist">checkBlackList</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.checkHotSpotList">iCallSV.checkHotSpotList module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#checkhotspotlist">checkHotSpotList</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.checkparameters">iCallSV.checkparameters module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#checkparameters">checkparameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.combineVCF">iCallSV.combineVCF module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#combinevcf">combineVCF</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.dellyVcf2Tab">iCallSV.dellyVcf2Tab module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#dellyvcf2tab">dellyVcf2Tab</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.dellyVcf2targetSeqView">iCallSV.dellyVcf2targetSeqView module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#dellyvcf2targetseqview">dellyVcf2targetSeqView</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.filterAnnotatedSV">iCallSV.filterAnnotatedSV module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#filterannotatedsv">filterAnnotatedSV</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#icallsv-utilities-icallsv-dmp-wrapper-module">iCallSV.utilities.iCallSV_dmp_wrapper module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#icallsv-utilities-check-cdna-contamination-module">iCallSV.utilities.check_cDNA_contamination module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.launchThreads">iCallSV.launchThreads module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.launch_FilterDellyCalls">iCallSV.launch_FilterDellyCalls module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#launch-filterdellycalls">launch_FilterDellyCalls</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.launch_Run_Delly">iCallSV.launch_Run_Delly module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#launch-run-delly">launch_Run_Delly</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.make_analysis_dir">iCallSV.make_analysis_dir module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#make-analysis-dir">make_analysis_dir</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.makebamindex">iCallSV.makebamindex module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#makebamindex">makebamindex</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.mergeFinalFiles">iCallSV.mergeFinalFiles module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#mergefinalfiles">mergeFinalFiles</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.sortbamByCoordinate">iCallSV.sortbamByCoordinate module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#sortbambycoordinate">sortbamByCoordinate</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV.sortbamByReadName">iCallSV.sortbamByReadName module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="iCallSV.html#sortbambyreadname">sortbamByReadName</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="iCallSV.html#module-iCallSV">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">iCallSV: Structural Aberration Detection from NGS datasets</a></li>
+<li><a class="reference internal" href="#citation">Citation</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="iCallSV.html"
+                        title="next chapter">iCallSV: Structural Aberration Detection from NGS datasets</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="iCallSV.html" title="iCallSV: Structural Aberration Detection from NGS datasets"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">iCallSV  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Author.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.6.
+    </div>
+  </body>
+</html>
