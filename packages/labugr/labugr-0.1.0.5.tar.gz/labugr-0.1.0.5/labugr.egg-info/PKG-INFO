@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: labugr
+Version: 0.1.0.5
+Summary: Laboratorio de señales UGR.
+Home-page: http://github.com/lserraga/labugr
+Author: Luis Serra Garcia
+Author-email: lsgarcia@correo.ugr.es
+License: UNKNOWN
+Description: open('README.md').read()
+Platform: UNKNOWN
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*
