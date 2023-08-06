@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+impulsare_distributer/__init__.py
+impulsare_distributer/queue_listener.py
+impulsare_distributer/queue_manager.py
+impulsare_distributer.egg-info/PKG-INFO
+impulsare_distributer.egg-info/SOURCES.txt
+impulsare_distributer.egg-info/dependency_links.txt
+impulsare_distributer.egg-info/entry_points.txt
+impulsare_distributer.egg-info/requires.txt
+impulsare_distributer.egg-info/top_level.txt
+impulsare_distributer/static/default.yml
+impulsare_distributer/static/specs.yml
