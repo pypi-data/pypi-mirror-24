@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: legos.codinglove
+Version: 0.1.1
+Summary: Fetch a post from TheCodingLove tumblr
+Home-page: https://github.com/bbriggs/legos.codinglove
+Author: Brenton Briggs II
+Author-email: UNKNOWN
+License: GPLv3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Requires-Dist: legobot (>=1.0.1)
+Requires-Dist: requests
+
+UNKNOWN
+
+
