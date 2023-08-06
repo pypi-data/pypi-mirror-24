@@ -1,0 +1,27 @@
+Metadata-Version: 2.0
+Name: columnclient
+Version: 0.1.0
+Summary: A thin client to communicate with the Column API.
+Home-page: https://github.com/vmware/python-columnclient
+Author: VMware
+Author-email: UNKNOWN
+License: BSD-2
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: requests
+
+Column is a thin wrapper on top of ansible API, to serve
+as an entry point for other code when ansible is needed. As ansible
+internal API is not officially exposed and thus changes are very likely,
+this wrapper should be used instead of touching ansible directly,
+so that any further ansible API change will only incur change in this module.
+
+
+
