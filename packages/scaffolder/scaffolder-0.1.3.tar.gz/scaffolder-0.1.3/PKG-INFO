@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: scaffolder
+Version: 0.1.3
+Summary: High level project and application modeling tool based on the rules of Scaffolder DSL which utilizes Scaffolder aPaaS to generate all source code, configuration and testing files.
+Home-page: https://scaffoder.io
+Author: Goran Angelkovski
+Author-email: goran@scaffolder.io
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: code generator,scaffolding,automatic coding
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Code Generators
