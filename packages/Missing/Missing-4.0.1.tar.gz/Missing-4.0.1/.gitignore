@@ -1,0 +1,16 @@
+bin
+build
+dist
+lib
+parts
+
+*.pyc
+*.pyo
+.installed.cfg
+develop-eggs/
+eggs/
+*.egg-info/
+.coverage
+coverage.xml
+.tox
+nosetests.xml
