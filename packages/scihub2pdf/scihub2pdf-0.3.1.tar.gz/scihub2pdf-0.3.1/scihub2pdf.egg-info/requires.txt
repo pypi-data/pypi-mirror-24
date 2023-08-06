@@ -1,0 +1,7 @@
+bibtexparser
+title2bib
+arxivcheck
+future
+Pillow
+requests
+lxml
