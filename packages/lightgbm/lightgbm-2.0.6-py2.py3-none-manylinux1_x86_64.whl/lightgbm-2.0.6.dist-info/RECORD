@@ -1,0 +1,17 @@
+lightgbm/VERSION.txt,sha256=VYa6smQV_hWo1aznerkyNY0_8K9ii4rK8yZBUpODiqY,5
+lightgbm/__init__.py,sha256=3xMIHzHRgbbXUAVWOkIN79Ar5F6yFiJaFTtJ3WbZxCQ,1101
+lightgbm/basic.py,sha256=Kj44aodgThJht_O9B8mXTdEwPKiRi41-_XTcDti8YEY,70848
+lightgbm/callback.py,sha256=S37RKPQnPrpx3uNXYZuqruYC3cEelHshxO-e-4kOU24,6614
+lightgbm/compat.py,sha256=qpzVCHvVZ60MPAFuv4ohmrHEfeF5C9FqaHVMpC5I6hs,2239
+lightgbm/engine.py,sha256=I7Sqiayj-zL9a4TPpYMXDVyDfVJdno_z3DRJAaUPLAk,20115
+lightgbm/lib_lightgbm.so,sha256=gk0wxuCF5WyWEofL0fgNU9c9vXyI8rTMbGLU8w87_mE,1531113
+lightgbm/libpath.py,sha256=3R2NewMW0RLRYNSJhHTTJ9bTo8BOcGZPKk5K8JDVX_A,1246
+lightgbm/plotting.py,sha256=CC3C6Il2aYJ1LQDIn7Yfzm8RdfB3ph97IZqAn1mSt_c,14437
+lightgbm/sklearn.py,sha256=wlsxmtoxOqGNuaLb48s_kTnOJYcvx6Ft-KW024wfiCM,26604
+lightgbm-2.0.6.data/data/lightgbm/lib_lightgbm.so,sha256=gk0wxuCF5WyWEofL0fgNU9c9vXyI8rTMbGLU8w87_mE,1531113
+lightgbm-2.0.6.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+lightgbm-2.0.6.dist-info/METADATA,sha256=JU_D90cMWRv91t1O1lPCug42RkFcTbh8p9zih19F8vY,326
+lightgbm-2.0.6.dist-info/RECORD,,
+lightgbm-2.0.6.dist-info/WHEEL,sha256=R0gbetX6N7MKrzgBuMuq9daFXjAPcLxH0tVw4U8UbMA,138
+lightgbm-2.0.6.dist-info/metadata.json,sha256=tKmULQesqItVk6cieD9tdTJo4Q15LYfGhMOEJyJX7pI,514
+lightgbm-2.0.6.dist-info/top_level.txt,sha256=nyX4HO8fPYWoJzYvXQRNFU4GbqrEb6cBKnzufKAl908,9
