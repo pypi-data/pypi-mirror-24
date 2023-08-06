@@ -1,0 +1,23 @@
+<div class="icon {{ class|default:"info" }}"></div>
+
+<h1 class="text-{{ class|default:"info" }}">{{ title }}</h1>
+
+<div class="message">
+  {% if message %}
+    <p>{{ message }}</p>
+  {% endif %}
+
+  {% if errors %}
+    <ul>
+      {% for key, li in errors.items|dictsort:0 %}
+        {% for error in li %}
+          {% if key == '__all__' %}
+            <li>{{ error }}</li>
+          {% else %}
+            <li><b>{{ key }}</b>: {{ error }}</li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
