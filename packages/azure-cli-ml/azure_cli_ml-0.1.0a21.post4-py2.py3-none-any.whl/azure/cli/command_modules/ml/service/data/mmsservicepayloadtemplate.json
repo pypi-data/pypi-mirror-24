@@ -1,0 +1,19 @@
+{
+	"imageId": "",
+	"name": "",
+	"numReplicas": 1,
+	"appInsightsEnabled": false,
+	"dataCollection": {
+		"storageEnabled": false,
+		"eventHubEnabled": false
+	},
+	"computeResource": {
+		"id": "",
+		"type": "Cluster"
+	},
+	"containerResourceReservation": {
+		"cpu": "",
+		"memory": ""
+	},
+	"maxConcurrentRequestsPerContainer": 0
+}
