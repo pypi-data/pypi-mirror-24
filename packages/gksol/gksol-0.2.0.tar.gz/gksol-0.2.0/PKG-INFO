@@ -1,0 +1,36 @@
+Metadata-Version: 1.1
+Name: gksol
+Version: 0.2.0
+Summary: Game of Life Tutorial Implementation and Framework
+Home-page: https://github.com/MaineKuehn/gksol
+Author: Eileen Kuehn, Max Fischer
+Author-email: maxfischer2781@gmail.com
+License: MIT
+Description: ############################################################
+        Advanced Python Software Development - Gridka School of Life
+        ############################################################
+        
+        The main library to support the "Advanced Python Software Development" workshop at GridKa School 2017.
+        Implements Conway's "Game of Life" as a package.
+        
+        Installation
+        ############
+        
+        Download this repository, and install it with ``python3 setup.py install``.
+        
+        .. code::
+        
+            git clone https://github.com/MaineKuehn/workshop-advanced_python.git
+            cd workshop-advanced_python
+            python3 setup.py install
+Keywords: gridkaschool tutorial game-of-life gol
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
