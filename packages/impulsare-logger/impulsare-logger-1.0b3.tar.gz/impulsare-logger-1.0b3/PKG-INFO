@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: impulsare-logger
+Version: 1.0b3
+Summary: A simple python logger that creates two handlers with a nice formatting : Stream and File
+Home-page: https://github.com/impulsare/logger
+Author: Emmanuel Dyan
+Author-email: emmanuel@impulsare.io
+License: AGPLv3
+Download-URL: https://github.com/impulsare/logger/tarball/1.0b3
+Description: A logger that sends its logs to rotated files + directly to console (configurable).
+Keywords: logger,python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
