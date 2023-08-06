@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: satori-raspberry
+Version: 0.0.1
+Summary: Raspberry Pi framework to work with Satori
+Home-page: https://github.com/satori-com/satori-raspberry
+Author: Satori Worldwide, Inc.
+Author-email: sdk@satori.com
+License: Proprietary
+Description: UNKNOWN
+Keywords: satori,raspberry,iot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
