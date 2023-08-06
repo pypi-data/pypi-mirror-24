@@ -1,0 +1,7 @@
+paramset_pyspecdata
+sympy
+numpy
+scipy
+h5py
+matplotlib
+tables
