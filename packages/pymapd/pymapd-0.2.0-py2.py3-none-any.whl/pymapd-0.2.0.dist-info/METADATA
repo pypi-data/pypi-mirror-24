@@ -1,0 +1,86 @@
+Metadata-Version: 2.0
+Name: pymapd
+Version: 0.2.0
+Summary: A python DB API 2 compatible client for mapd.
+Home-page: https://github.com/mapd/mapd-core
+Author: Tom Augspurger
+Author-email: taugspurger@continuum.io
+License: Apache Software License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: six
+Requires-Dist: sqlalchemy
+Requires-Dist: thrift
+Provides-Extra: arrow
+Requires-Dist: pyarrow; extra == 'arrow'
+Provides-Extra: complete
+Requires-Dist: coverage; extra == 'complete'
+Requires-Dist: libgdf; extra == 'complete'
+Requires-Dist: numpydoc; extra == 'complete'
+Requires-Dist: pyarrow; extra == 'complete'
+Requires-Dist: pygdf; extra == 'complete'
+Requires-Dist: pytest; extra == 'complete'
+Requires-Dist: pytest-mock; extra == 'complete'
+Requires-Dist: sphinx; extra == 'complete'
+Requires-Dist: sphinx-rtd-theme; extra == 'complete'
+Provides-Extra: dev
+Requires-Dist: coverage; extra == 'dev'
+Requires-Dist: numpydoc; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-mock; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: numpydoc; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+Provides-Extra: gpu
+Requires-Dist: libgdf; extra == 'gpu'
+Requires-Dist: pygdf; extra == 'gpu'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-mock; extra == 'test'
+
+======
+pymapd
+======
+
+.. image:: https://travis-ci.org/mapd/pymapd.svg?branch=master
+   :target: https://travis-ci.org/mapd/pymapd
+
+
+.. image:: https://readthedocs.org/projects/pymapd/badge/?version=latest
+   :target: http://pymapd.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
+A python `DB API`_ compliant interface for `mapd`_. See the `documentation`_ for more.
+
+Quick Install
+-------------
+
+Packages are available on conda-forge and PyPI::
+
+   conda install -c conda-forge pymapd
+
+Developer builds of each commit are available on the ``pymapd`` channel (Linux only)::
+
+   conda install -c pymapd/label/dev -c conda-forge -c gpuopenanalytics/label/dev pymapd
+
+
+.. _DB API: https://www.python.org/dev/peps/pep-0249/
+.. _mapd: https://www.mapd.com/
+.. _mapd-core: https://github.com/mapd-core/
+.. _documentation: http://pymapd.readthedocs.io/en/latest/?badge=latest
+
+
