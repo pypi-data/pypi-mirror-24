@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: remoteclick
+Version: 0.1.2
+Summary: Remoteclick REST API Client.
+Home-page: UNKNOWN
+Author: www.remoteclick.ch
+Author-email: info@remoteclick.ch
+License: MIT
+Keywords: remoteclick.ch remoteclick rest api client
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: requests
+
+UNKNOWN
+
+
