@@ -1,0 +1,2 @@
+sglite.pyd
+xcore/sglite.pyd
