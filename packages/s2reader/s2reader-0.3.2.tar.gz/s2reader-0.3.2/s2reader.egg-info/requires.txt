@@ -1,0 +1,5 @@
+shapely
+numpy
+pyproj
+cached_property
+zipfile2
