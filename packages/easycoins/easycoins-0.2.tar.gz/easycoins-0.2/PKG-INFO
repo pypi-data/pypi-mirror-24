@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: easycoins
+Version: 0.2
+Summary: A python sdk wrapper for various bitcoin trading platforms.
+Home-page: http://dHydra.org
+Author: Wen Gu
+Author-email: emptyset110@gmail.com
+License: Apache Software License
+Description: UNKNOWN
+Keywords: okcoin,huobi,btc
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
