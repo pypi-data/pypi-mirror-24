@@ -1,0 +1,14 @@
+README.rst
+setup.py
+reoptimize/REsqlite3.db
+reoptimize/Restriction_Dictionary.py
+reoptimize/__init__.py
+reoptimize/assay_DNAs.fasta
+reoptimize/make_sqlite_database.py
+reoptimize/reoptimize.py
+reoptimize.egg-info/PKG-INFO
+reoptimize.egg-info/SOURCES.txt
+reoptimize.egg-info/dependency_links.txt
+reoptimize.egg-info/entry_points.txt
+reoptimize.egg-info/requires.txt
+reoptimize.egg-info/top_level.txt

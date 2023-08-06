@@ -1,0 +1,3 @@
+[console_scripts]
+reoptimize = reoptimize.reoptimize:run
+
