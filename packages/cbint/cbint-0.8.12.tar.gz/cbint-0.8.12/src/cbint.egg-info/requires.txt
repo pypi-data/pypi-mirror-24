@@ -1,0 +1,5 @@
+flask
+python-dateutil
+netifaces
+cbapi==1.2.0
+cbfeeds==0.8.0
