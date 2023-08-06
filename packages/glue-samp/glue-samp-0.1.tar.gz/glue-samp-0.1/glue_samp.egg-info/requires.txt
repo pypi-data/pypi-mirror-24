@@ -1,0 +1,4 @@
+astropy
+glue-core>=0.11
+numpy
+qtpy
