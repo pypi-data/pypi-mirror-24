@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+amqpipe/__init__.py
+amqpipe/amqpipe.py
+amqpipe/utils.py
+amqpipe.egg-info/PKG-INFO
+amqpipe.egg-info/SOURCES.txt
+amqpipe.egg-info/dependency_links.txt
+amqpipe.egg-info/requires.txt
+amqpipe.egg-info/top_level.txt
