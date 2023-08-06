@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: slack-sansio
+Version: 0.0.1
+Summary: (a)sync Slack API library
+Home-page: https://github.com/pyslackers/slack-sansio
+Author: Ovv
+Author-email: contact@ovv.wtf
+License: MIT
+Keywords: bot,slack,api,sans-io,async
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: aiohttp
+Requires-Dist: aiohttp; extra == 'aiohttp'
+Provides-Extra: install
+Provides-Extra: setup
+Provides-Extra: sync
+Requires-Dist: requests; extra == 'sync'
+Provides-Extra: tests
+Requires-Dist: flake8; extra == 'tests'
+
+UNKNOWN
+
+
