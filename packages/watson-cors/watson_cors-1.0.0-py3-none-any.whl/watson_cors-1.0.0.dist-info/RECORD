@@ -1,0 +1,12 @@
+watson/__init__.py,sha256=HAPFSDzYZTcMVQz_7AI3KlmE4Q0sbPgPAfOVkkvqDj4,321
+watson/cors/__init__.py,sha256=9FK36A6_KYy_d3gHiTKnJH5akqrEw0-pcfs2oPopkhI,46
+watson/cors/config.py,sha256=HFi2g3rVktYh-xvaf7EsjonBBigcQ8rly3y4EETMCpY,508
+watson/cors/decorators.py,sha256=rHLLM2aVDUJS6uUjT3TGOQsiK3s97eSNPTLi2fnnwok,1598
+watson/cors/listeners.py,sha256=DgbHgGk15FBoeAYgtfvh1hO79feO3DntmpZxI-zIu3Q,519
+watson/cors/utils.py,sha256=45INWVe4HXhHQIsPxHOBEaA_8HreQPy7zz4ZiHw9wIQ,1675
+watson_cors-1.0.0.dist-info/DESCRIPTION.rst,sha256=hl9Vl_xKqH61n_7N8flrsFzqB_npb3UjatmnuTgOs7U,3073
+watson_cors-1.0.0.dist-info/METADATA,sha256=hkmymW8WkXn5BKhm661usMIuJWdqyKRx-AZsb-3pweI,3390
+watson_cors-1.0.0.dist-info/RECORD,,
+watson_cors-1.0.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+watson_cors-1.0.0.dist-info/metadata.json,sha256=0lbRBeDPk5QcQazD8_kkm6pw5oNZP_XuTBRpbt6EhSc,557
+watson_cors-1.0.0.dist-info/top_level.txt,sha256=QQZdZ6AxPCQ1a1p0y2MpAF1x2wkCHy_btt5UXoEjT34,7
