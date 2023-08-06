@@ -1,0 +1,7 @@
+Flask==0.11.1
+invenio-accounts==1.0.0b5
+invenio-db==1.0.0b7
+invenio-files-rest==1.0.0a18
+invenio-jsonschemas==1.0.0a4
+invenio-pidstore==1.0.0b1
+jsonschema==2.6.0
