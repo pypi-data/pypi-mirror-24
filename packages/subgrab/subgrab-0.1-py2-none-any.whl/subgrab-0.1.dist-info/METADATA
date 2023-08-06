@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: subgrab
+Version: 0.1
+Summary: A python script for automating subtitles downloading.
+Home-page: https://github.com/RafayGhafoor/sub-grab
+Author: Rafay Ghafoor
+Author-email: rafayghafoor@protonmail.com
+License: GPL
+Keywords: subtitle automation subscene opensubtitles media
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: bs4
+Requires-Dist: lxml
+Requires-Dist: requests
+
+UNKNOWN
+
+
