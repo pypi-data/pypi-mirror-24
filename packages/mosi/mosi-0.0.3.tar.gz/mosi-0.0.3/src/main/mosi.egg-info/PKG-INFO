@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: mosi
+Version: 0.0.3
+Summary: Modelling & Optimization Solver Interface (MOSI).
+Home-page: https://github.com/alexbahnisch/mosi.py
+Author: Alex Bahnisch
+Author-email: alexbahnisch@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: optimization
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
