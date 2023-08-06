@@ -1,0 +1,17 @@
+jaraco.pmxbot-3.16-py3.6-nspkg.pth,sha256=Tr3Ap28XLzXVIejA1-jRQg4hHIGiCuCk-3j9JZMkTZA,539
+jaraco/pmxbot/__init__.py,sha256=Xff_yBRyP-r0_Jd7exyM4XbU_9ZafGi4izb0nUljaWc,171
+jaraco/pmxbot/bookmarklet-min.js,sha256=WWYdfS9nX-lgBsyNlmji0yWJI0hHwWAULqoJ3Zg-YlI,2990
+jaraco/pmxbot/bookmarklet.js,sha256=XiOvsAXl4ySp9lzNu7qmwBoFbsfb3D5yDW3vighINR0,4773
+jaraco/pmxbot/http.py,sha256=Xe78fNZEbod7BXrHOh7qa9-HPM-rTIg4Bn6a9GdL0v0,12253
+jaraco/pmxbot/notification.py,sha256=8RTs_dtloSOyC-uCfs0dTIk6NEidtbJe8Lylhn8FXUY,1019
+jaraco/pmxbot/test-server.py,sha256=hP0U4ytxelmq--a-skB02A4WmFGqk5i4fSu-s1pWazw,357
+jaraco.pmxbot-3.16.dist-info/DESCRIPTION.rst,sha256=jraJDP_6UYtAJObd_LWUXSZ8ycBzCIRQQ3wvXhe7AkM,1224
+jaraco.pmxbot-3.16.dist-info/METADATA,sha256=jD4aVXpnnyDinujcxjZHaDWsJVTD_l34YbpnrgWOtcQ,2177
+jaraco.pmxbot-3.16.dist-info/RECORD,,
+jaraco.pmxbot-3.16.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+jaraco.pmxbot-3.16.dist-info/entry_points.txt,sha256=7OcuBWYewn05XfdcD-s8UTZ97OGaMguNMFpNgM30OLc,121
+jaraco.pmxbot-3.16.dist-info/metadata.json,sha256=GOZzRTgSzXGNGjlh8zf-fCwf4SKmiXy571QJouCtDVo,1084
+jaraco.pmxbot-3.16.dist-info/namespace_packages.txt,sha256=0JnN3LfXH4LIRfXL-QFOGCJzQWZO3ELx4R1d_louoQM,7
+jaraco.pmxbot-3.16.dist-info/top_level.txt,sha256=fEaqiBN_pusE4WSnMG01FE7SgMQ9hMFil1owm6gKSWc,13
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_http.py,sha256=sO4R3jUAeemosv6PCJ_BuJQsZnwBlqbJFeFmJHyUIKQ,6974
