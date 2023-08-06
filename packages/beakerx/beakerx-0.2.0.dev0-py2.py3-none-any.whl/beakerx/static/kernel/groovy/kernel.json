@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "java", "-cp", "/Users/scottdraves/src/beakerx/beakerx/beakerx/static/kernel/base/lib/*:/Users/scottdraves/src/beakerx/beakerx/beakerx/static/kernel/groovy/lib/*", "com.twosigma.beakerx.groovy.kernel.Groovy",  "{connection_file}"
+  ],
+  "display_name": "Groovy",
+  "language": "groovy",
+  "env": {
+    "PS1": "groovy>"
+  }
+}
