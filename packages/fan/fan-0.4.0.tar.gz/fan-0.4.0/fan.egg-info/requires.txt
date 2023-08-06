@@ -1,0 +1,6 @@
+opentracing
+basictracer
+requests
+kazoo
+tipsi_tools
+py_zipkin
