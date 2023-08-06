@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: django-rest-framework-keycloak
+Version: 0.2.0
+Summary: django-rest-framework-keycloak package provides Keycloak support.
+Home-page: https://bitbucket.org/agriness/django-rest-framework-keycloak
+Author: Marcos Pereira
+Author-email: marcospereira.mpj@gmail.com
+License: GNU General Public License - V3
+Description: UNKNOWN
+Keywords: django rest framework keycloak openid
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Utilities
