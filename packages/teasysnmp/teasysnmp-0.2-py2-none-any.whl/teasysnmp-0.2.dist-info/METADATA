@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: teasysnmp
+Version: 0.2
+Summary: Extended easysnmp with helpers to work with snmp tables
+Home-page: https://github.com/thebinary/teasysnmp
+Author: The Binary
+Author-email: binary4bytes@gmail.com
+License: MIT
+Keywords: system,networking,snmp,helpers,teasysnmp
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Networking :: Monitoring
+Requires-Dist: easysnmp
+
+UNKNOWN
+
+
