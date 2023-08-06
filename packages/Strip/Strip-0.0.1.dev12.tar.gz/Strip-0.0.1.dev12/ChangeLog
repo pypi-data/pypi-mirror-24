@@ -1,0 +1,15 @@
+CHANGES
+=======
+
+* Fixing README
+* Adding removed files back in
+* Fixing init
+* Fixing setup.py
+* Adding pbr
+* Pypi files
+* License
+* Renaming some things
+* Removing pyc files
+* Strip first commit
+* Strip first commit
+* Initial commit
