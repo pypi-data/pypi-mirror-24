@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+catalog.py
+setup.py
+pycatalog.egg-info/PKG-INFO
+pycatalog.egg-info/SOURCES.txt
+pycatalog.egg-info/dependency_links.txt
+pycatalog.egg-info/requires.txt
+pycatalog.egg-info/top_level.txt
+test/test_catalog.py
