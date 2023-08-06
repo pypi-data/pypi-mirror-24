@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: dnutils
+Version: 0.1.3
+Summary: A collection of convenience tools for everyday Python programming
+Home-page: https://spritinio.de/dnutils
+Author: Daniel Nyga
+Author-email: daniel.nyga@t-online.de
+License: UNKNOWN
+Download-URL: https://github.com/danielnyga/dnutils/archive/0.1.3.tar.gz
+Description: UNKNOWN
+Keywords: testing,logging,threading,multithreading,debugging,tools
+Platform: UNKNOWN
