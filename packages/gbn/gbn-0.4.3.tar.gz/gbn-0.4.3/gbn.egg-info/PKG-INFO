@@ -1,0 +1,54 @@
+Metadata-Version: 1.1
+Name: gbn
+Version: 0.4.3
+Summary: Greenlet BottleNeck profiler.
+Home-page: https://github.com/denis-ryzhkov/gbn
+Author: Denis Ryzhkov
+Author-email: denisr@denisr.com
+License: MIT
+Description: 
+        Greenlet BottleNeck profiler.
+        
+        Measures time precisely using "greenlet.settrace" to pause/continue counting time on switch from/to original greenlet.
+        
+        May count wall-clock time too. Also counts step calls and context switches.
+        
+        Usage::
+        
+            gbn_attach()
+        
+            gbn('step1')
+            step1()
+        
+            gbn('step2')
+            step2()
+        
+            wall = gbn('step3')
+            step3()
+        
+            wall = gbn('step4', wall=wall)
+            step4()
+        
+            gbn('step5', wall=wall)
+            step5()
+        
+            gbn()
+            does_not_count_this()
+        
+            log.info(gbn_report_and_reset())
+            # OR
+            spawn(gbn_report_and_reset, each=60, log=log.info)
+        
+        See `help(gbn) <https://github.com/denis-ryzhkov/gbn/blob/master/gbn.py#L152>`_ for detailed docs.
+        
+        Additional tools:
+        
+        * `gxray <https://github.com/denis-ryzhkov/gbn/blob/master/gxray.py>`_ - Heavy profiler when you don't know where to profile.
+        * `gswitched <https://github.com/denis-ryzhkov/gbn/blob/master/gswitched.py>`_ - Checks if greenlet switched.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
