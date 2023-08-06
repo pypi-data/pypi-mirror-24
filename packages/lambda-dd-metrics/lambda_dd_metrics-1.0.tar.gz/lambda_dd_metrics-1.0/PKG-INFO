@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: lambda_dd_metrics
+Version: 1.0
+Summary: Wrapper around reporting metrics to DataDog from AWS Lambda python functions
+Home-page: http://github.com/500px/lambda_dd_metrics
+Author: 500px Platform Team
+Author-email: platform@500px.com
+License: Apache
+Description: UNKNOWN
+Platform: UNKNOWN
