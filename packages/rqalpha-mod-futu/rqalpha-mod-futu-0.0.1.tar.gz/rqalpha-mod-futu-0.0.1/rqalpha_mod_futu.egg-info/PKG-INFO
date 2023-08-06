@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: rqalpha-mod-futu
+Version: 0.0.1
+Summary: A mod for RQAlpha to connect with futuquant to implement US/HK stock quant trading
+Home-page: https://github.com/FutunnOpen/rqalpha-mod-futu
+Author: Futu Securities
+Author-email: ftdev@futunn.com
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: RQAlpha Back-testing futuquant Futu HK/US Stock Quant Trading API Mod
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
