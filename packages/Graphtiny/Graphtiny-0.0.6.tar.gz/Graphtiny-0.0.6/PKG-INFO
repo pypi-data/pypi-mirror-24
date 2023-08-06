@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: Graphtiny
+Version: 0.0.6
+Summary: A Python library that lets you display graph in streaming, simply and easily. Especially suitable for scientific use. It Is an abstraction layer for the PyQtGraph library
+Home-page: https://github.com/canicio/graphtiny
+Author: Carlos Canicio
+Author-email: canicio@lcc.uma.es
+License: MIT (Massachusetts Institute of Technology)
+Download-URL: https://github.com/canicio/graphtiny/archive/0.0.6.tar.gz
+Description: UNKNOWN
+Keywords: graph,ui,chart,plot
+Platform: UNKNOWN
