@@ -1,0 +1,7 @@
+setup.py
+freetile/__init__.py
+freetile.egg-info/PKG-INFO
+freetile.egg-info/SOURCES.txt
+freetile.egg-info/dependency_links.txt
+freetile.egg-info/not-zip-safe
+freetile.egg-info/top_level.txt
