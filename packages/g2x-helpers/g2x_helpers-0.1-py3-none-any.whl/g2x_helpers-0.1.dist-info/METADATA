@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: g2x-helpers
+Version: 0.1
+Summary: Helper Functions used across different packages
+Home-page: https://github.com/spitfiredd/g2x_helpers
+Author: Daniel Donovan
+Author-email: spitfiredd@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
