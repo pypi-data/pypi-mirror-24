@@ -1,0 +1,16 @@
+specdal/__init__.py,sha256=vnRKsKWgw3De9tTHFZeyCnziPZOtXQbDXqXvJL2VT4I,141
+specdal/collection.py,sha256=H7t_L69npoqT7eTdB1UunVQHu_cptYLBb2NNlKrF3qk,7080
+specdal/operator.py,sha256=R40aYpIcLhr6aBVOkwN08KfGDu1OB_LlV-gAN_wjWYs,2966
+specdal/reader.py,sha256=dq4wI5WC9JgpY_vMR0e_fuEF1Hi1FOkSXMNZAxMCGmg,7411
+specdal/spectrum.py,sha256=_ur2Jg2NTE8Hfwe1HwFzRhZYkzr6mZSyE2tG2r71NVo,3265
+specdal/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+specdal/utils/misc.py,sha256=MoAObVoJWx45Qe1z80J4MSbAsQny6OJpbhMwLfq7Qwg,1492
+specdal/utils/reader_utils.py,sha256=BlLIihu9gHry1pmAF7FpCFubG0lw5N5pGBvIV4GlH-g,1248
+specdal-0.1.4.data/scripts/specdal_info,sha256=avKon_ph9NSR4EvFB_-drIz5SXHJTO4xuhWe6UawUuU,3755
+specdal-0.1.4.data/scripts/specdal_pipeline,sha256=rZ_ZJ6bdm1k_NA5UsvMnVCYoCUwDe3zIg75I2NBTV00,7164
+specdal-0.1.4.dist-info/DESCRIPTION.rst,sha256=_cdenMJVY1gp1MMhcQW9VROg-mpgjB7_ET0TUxqpHKg,2063
+specdal-0.1.4.dist-info/METADATA,sha256=QENy4Ux-rchvG0S86Dqx2AA8X7CyjndLYlibnJA01Q4,2611
+specdal-0.1.4.dist-info/RECORD,,
+specdal-0.1.4.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+specdal-0.1.4.dist-info/metadata.json,sha256=ZwDrg0TCmUugohTBszwDPKlIl7Bv9CrsR3JO7A9cOE0,720
+specdal-0.1.4.dist-info/top_level.txt,sha256=4kjn0cNQsBgruu-6WkaGFL0jK29pGEvpXlii3zir62k,8
