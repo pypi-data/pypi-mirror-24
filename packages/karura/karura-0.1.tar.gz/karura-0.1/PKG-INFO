@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: karura
+Version: 0.1
+Summary: karura enables you to use machine learning automatically & interactively
+Home-page: https://github.com/chakki-works/karura
+Author: icoxfog417
+Author-email: icoxfog417@yahoo.co.jp
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: machine-learning kintone slackbot
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
