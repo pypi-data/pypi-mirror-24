@@ -1,0 +1,10 @@
+pyecharts_snapshot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyecharts_snapshot/main.py,sha256=D4c_SarKC7axTGhwlqADe2wBk94kJb--4tfleVgLM-I,2209
+pyecharts_snapshot/phantomjs/snapshot.js,sha256=Jrv2z0EpBixIo7GNz2rVIQPpHB9LC7HnjL90z2QQarQ,431
+pyecharts_snapshot-0.0.2.dist-info/DESCRIPTION.rst,sha256=A7Yn_i7if_dlPcPBeyb0aRAb74bHYDpE7XL-Y8MEqy0,5661
+pyecharts_snapshot-0.0.2.dist-info/METADATA,sha256=auPu0hSimZJnfUJPqR3weapWtLehwhXhes7v62-B7_8,6561
+pyecharts_snapshot-0.0.2.dist-info/RECORD,,
+pyecharts_snapshot-0.0.2.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+pyecharts_snapshot-0.0.2.dist-info/entry_points.txt,sha256=TaHRtvMQtIHDjVn3h0dlmhHjUDxW-hSXFUDN5b892pg,59
+pyecharts_snapshot-0.0.2.dist-info/metadata.json,sha256=CFFFHMo5n1JpN73ZLVWs5O2PXOrPoiNQY_pgEH8xYS0,1281
+pyecharts_snapshot-0.0.2.dist-info/top_level.txt,sha256=rZTSDmuqoOa2_c6yOTmG7cfRWdwvo6mdyoPYkrprvFU,19
