@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: python-smartqq-client
+Version: 0.2.4
+Summary: A simple smartqq client implemented with python to be used as component in other projects
+Home-page: UNKNOWN
+Author: Extremezhazha
+Author-email: extremezhazha@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: python smartqq
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
