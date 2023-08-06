@@ -1,0 +1,16 @@
+cloud_volume-0.0.1.dev24.dist-info/DESCRIPTION.rst,sha256=-dLJfVCyn3xpsJvuRIrEWtbF4aUa0Q_qA_l9jVJXTG8,1838
+cloud_volume-0.0.1.dev24.dist-info/METADATA,sha256=LK8iAKXclKalOFmr3zzq1tDgju1EeT98D0gaNcsvdmE,2957
+cloud_volume-0.0.1.dev24.dist-info/RECORD,,
+cloud_volume-0.0.1.dev24.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+cloud_volume-0.0.1.dev24.dist-info/metadata.json,sha256=LGa1KJoANxAJ_VyZffbSfWmNArpldW-DVQ9CaRF5Zxs,1127
+cloud_volume-0.0.1.dev24.dist-info/pbr.json,sha256=Y7qPtaPRWF98aZSC8EhAE1f3BvYDFh3fwmYm6n7oIFE,47
+cloud_volume-0.0.1.dev24.dist-info/top_level.txt,sha256=UJyICpzdF7UM-T3kXMUb-PURmg6zcpFYNl2LnJIdscE,12
+cloudvolume/__init__.py,sha256=MytJM9tbzJQVhM5cpOnF_CXjZ4wrWXdLAixI410jANk,65
+cloudvolume/chunks.py,sha256=C6RIpsNL22if1tPEjY5CUCPiiZxBDeJQ0SJONe53mEU,3295
+cloudvolume/cloudvolume.py,sha256=h_T0tT1uIbUH6HP-_34fnK2XWTedd0H-evi2_wfaHyU,27768
+cloudvolume/connectionpools.py,sha256=5ZWX8ZQerJq8L5aXy2Yzfl5bfEVeDy11nYQ-he87rOQ,2823
+cloudvolume/lib.py,sha256=osrckr1c0h5TPTSTh_7McdRjw8EJp_-jagX9YL56oSo,10530
+cloudvolume/mesh2obj.py,sha256=L1VIFD6jIPTKYIyE_vxkJ5W68pWgxJLlenB-W2Kc9oo,2609
+cloudvolume/secrets.py,sha256=fG40FH14rrBKHZiDcpG_iQcqEC7Kg2oCAV-Wmbz2Agc,1119
+cloudvolume/storage.py,sha256=1TVmxjE9yqyLSH5dkyxDsenAayecvxyfz9HdjXO-PE4,15964
+cloudvolume/threaded_queue.py,sha256=EzQFE60HJCaIJjIZvng95cOqEr8eybZ4R2ykksSccjs,6014
