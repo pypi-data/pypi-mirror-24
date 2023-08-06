@@ -1,0 +1,14 @@
+
+[aiohttp]
+aiohttp
+
+[install]
+
+[setup]
+
+[sync]
+requests
+websocket-client
+
+[tests]
+flake8

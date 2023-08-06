@@ -1,0 +1,36 @@
+Metadata-Version: 1.1
+Name: slack-sansio
+Version: 0.1.0
+Summary: (a)sync Slack API library
+Home-page: https://github.com/pyslackers/slack-sansio
+Author: Ovv
+Author-email: contact@ovv.wtf
+License: MIT
+Description: slack-sansio
+        ============
+        
+        Python (a)sync `Slack API <https://api.slack.com/>`_ library
+        
+        Installation
+        ------------
+        
+        Slack-sansio is `available on PyPI <https://pypi.org/project/slack-sansio/>`_.
+        
+            $ pip3 install slack-sansio
+        
+        Changelog
+        ---------
+        
+        0.0.1 (10/08/2017)
+        ``````````````````
+        
+        Initial release
+        
+Keywords: bot,slack,api,sans-io,async
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
