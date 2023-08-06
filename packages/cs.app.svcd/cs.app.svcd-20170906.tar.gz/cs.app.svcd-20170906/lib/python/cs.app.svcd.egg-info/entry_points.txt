@@ -1,0 +1,3 @@
+[console_scripts]
+svcd = cs.app.main:main
+
