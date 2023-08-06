@@ -1,0 +1,36 @@
+.. title:: Gif toedienende artsen de cel in !!
+
+.. image:: jpg/doodskop.jpg
+
+
+Geachte Rechter,
+
+| Er is bewijs dat antipsychotica gif zijn:
+
+1) haloperiodol (haldol) - https://echa.europa.eu/substance-information/-/substanceinfo/100.000.142
+2) clozapine (leponex) - https://echa.europa.eu/substance-information/-/substanceinfo/100.024.831
+3) olanzapine (zyprexa) - https://echa.europa.eu/substance-information/-/substanceinfo/100.125.320
+4) aripriprazole (abilify) https://echa.europa.eu/substance-information/-/substanceinfo/100.112.532
+
+Omdat het hier gif betreft, wil ik u verzoeken de Staat der Nederlanden direct opdracht te geven tot:
+
+1) Het van de medicijnen markt nemen van deze stoffen.
+2) Medische begeleiding geven aan patienten die van de ene of de andere dag hun medicijnen moeten missen.
+3) Vervolging van mishandeling gepleegd door toediening van voor het leven of de gezondheid schadelijke stoffen ter hand te laten nemen.
+
+Ik neem aan dat u het met mij eens bent en de Staat der Nederlanden direct hiertoe opdracht zult geven.
+
+Hoogachtend,
+
+.. raw:: html
+
+    <br>
+
+Bart Thate
+
+.. toctree::
+    :glob:
+    :hidden:
+
+    LICENSE
+    txt/*
