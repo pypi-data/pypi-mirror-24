@@ -1,0 +1,7 @@
+-r requirements.txt
+pytest
+pytest-cov
+pytest-ordering
+flake8
+pep8-naming
+gpg==1.8.0
