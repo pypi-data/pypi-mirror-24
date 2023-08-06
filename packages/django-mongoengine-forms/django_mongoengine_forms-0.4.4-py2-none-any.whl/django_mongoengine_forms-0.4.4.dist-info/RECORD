@@ -1,0 +1,17 @@
+django_mongoengine_forms-0.4.4.dist-info/DESCRIPTION.rst,sha256=iwIFW1aTf-Apvn5hx8q1iHlZXbhGVEWpTIAt976MUKo,5067
+django_mongoengine_forms-0.4.4.dist-info/METADATA,sha256=dT7i9GQm6hWU25M81lp5tjrNv2ZJty47CtXWCbkNqE8,5809
+django_mongoengine_forms-0.4.4.dist-info/RECORD,,
+django_mongoengine_forms-0.4.4.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+django_mongoengine_forms-0.4.4.dist-info/metadata.json,sha256=8igDUiV7gOypUX48oHPXcOBwi3jeBh1Q-ALfTidyD9w,952
+django_mongoengine_forms-0.4.4.dist-info/top_level.txt,sha256=qD0DKc5Pf7DQRVQVcS7WJwaz6KfL0F9Mhx6lm0zR0rk,19
+mongodbforms/__init__.py,sha256=_4VKX6Q1aK2ZcS1zUH5y46_qwtqOiVhxSK6k7rNwUg0,124
+mongodbforms/documentoptions.py,sha256=1nwKP5V5A6pHJGqersTN7x6MEBtlHBIFl2FWf4RMlPU,12932
+mongodbforms/documents.py,sha256=Iahgf236Ipm9IyfNWt6Druxt4831MVUQ0RDKclq06gk,39315
+mongodbforms/fieldgenerator.py,sha256=s6799qXGfaCkwkjk9hQVgYVE_fQJPOElGenq5Y-JSvU,16665
+mongodbforms/fields.py,sha256=bIo0XpO1VwKknJXNo557E3hkNPgGkamYVUD0anmolJc,13522
+mongodbforms/util.py,sha256=DxQBNPrTusSJ1lsWcdtgJvlq7Eq9ozIC6vsiv_17MEU,3183
+mongodbforms/widgets.py,sha256=_fhniMTJved_TQQ7YEcNEj63qxelUk-iWaGTbGLQSm8,6400
+tests/__init__.py,sha256=ZIiOVaTH7oayacv7JxTRAh54hQmB3eB7-NX0VLbcU5Q,322
+tests/test_document.py,sha256=Q5RuO0Ye59cnfiXQLVU_AcfSq9SZ2CjIedfOrru_OKQ,806
+tests/test_lazywrapper.py,sha256=Ljz7emvQEAWtsKVr5KzmHQnMzXYeQy4s6XVkzU68DeM,833
+tests/test_recursive_reference.py,sha256=7kB3nqMaKO6NoBiU0hgyBmMYXCPPW2vOIl36a1ZrBAo,456
