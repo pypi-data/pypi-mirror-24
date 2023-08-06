@@ -1,0 +1,5 @@
+numpy>=1.12
+pandas>=0.20
+tqdm>=4.11
+python-libsbml>=5.13
+six>=1.10
