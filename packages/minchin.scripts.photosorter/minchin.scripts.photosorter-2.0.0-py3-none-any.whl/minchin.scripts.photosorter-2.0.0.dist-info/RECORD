@@ -1,0 +1,20 @@
+minchin.scripts.photosorter-2.0.0-py3.6-nspkg.pth,sha256=z5Gg9OEp-EnScOnDW_zBZIh06YwBMF9Ex6SKNLfNKus,1729
+minchin/scripts/photosorter/__init__.py,sha256=pMqVfa5HV8GZvUpfZiHH53XpYJHQ18VU7E2wHSZE4v4,13835
+minchin/scripts/photosorter/test_sorter.py,sha256=6opKNW-SbkNiyogfQlk8irA1GmZVE09oc8r_DGa8eFk,8417
+minchin/scripts/photosorter/test/test_sorter.py,sha256=6opKNW-SbkNiyogfQlk8irA1GmZVE09oc8r_DGa8eFk,8417
+minchin/scripts/photosorter/test/test_examples/2004-05-07 20.16.31.jpg,sha256=omSIn1CxXQyDgfUntnf7cHDaFY7ayqSQzEsK6nca8bc,550947
+minchin/scripts/photosorter/test/test_examples/2006-09-09 07.00.24-alt.jpg,sha256=HaDutXtpjjbVdkT_lCphvsU6XdIF-93qRKNT9nE6cbg,547967
+minchin/scripts/photosorter/test/test_examples/2006-09-09 07.00.24.jpg,sha256=ODkf7CwPb5EQQGy_5Pss2qvgXg43SsBIRsgF2vh_jiM,550029
+minchin/scripts/photosorter/test/test_examples/2014-02-06 09.15.17.jpg,sha256=sB-8CATo4wNzE4WEf34goLmoGA-_lPewJ2kSiNe82jw,2567134
+minchin/scripts/photosorter/test/test_examples/no-exif.jpg,sha256=HaDutXtpjjbVdkT_lCphvsU6XdIF-93qRKNT9nE6cbg,547967
+minchin/scripts/photosorter/test/test_examples/test.png,sha256=Hj8IrrKMAaDzuv_D2YAV2hlNKPSM-STpX3ufw0WAkKQ,30681
+minchin/scripts/photosorter/test/test_examples/root/2006/2006-09/2006-09-09 07.00.24-1.jpg,sha256=ODkf7CwPb5EQQGy_5Pss2qvgXg43SsBIRsgF2vh_jiM,550029
+minchin/scripts/photosorter/test/test_examples/root/2006/2006-09/2006-09-09 07.00.24.jpg,sha256=ODkf7CwPb5EQQGy_5Pss2qvgXg43SsBIRsgF2vh_jiM,550029
+minchin.scripts.photosorter-2.0.0.dist-info/DESCRIPTION.rst,sha256=nhfqAgEkSKsIIHwmqTn3tGVncplkoUQ7pCYaUCQiAT0,3767
+minchin.scripts.photosorter-2.0.0.dist-info/METADATA,sha256=WZPm7KjMTi8tBJ4C3axW2N-H1ig8OM0y3zR5e3rg1xU,5481
+minchin.scripts.photosorter-2.0.0.dist-info/RECORD,,
+minchin.scripts.photosorter-2.0.0.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+minchin.scripts.photosorter-2.0.0.dist-info/entry_points.txt,sha256=8x6O0WzzWzqDc0Tzhz_y8Nbr-SLa_gMjxKz00Tz6lE4,66
+minchin.scripts.photosorter-2.0.0.dist-info/metadata.json,sha256=oNwtwSx1yCBpchApYzj2XeiRY9E41fEq4ISmTxC0YP8,1610
+minchin.scripts.photosorter-2.0.0.dist-info/namespace_packages.txt,sha256=mv7CxZFM1in0GBzhFH0SoQCTlU4xjtUm1pa8OO5TECE,24
+minchin.scripts.photosorter-2.0.0.dist-info/top_level.txt,sha256=UfZcij00rJG77eOQBb7_ze25M4GNX6IZ7pbW2toN94c,8
