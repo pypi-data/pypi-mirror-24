@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+osuex/__init__.py
+osuex/osuex.py
+osuex.egg-info/PKG-INFO
+osuex.egg-info/SOURCES.txt
+osuex.egg-info/dependency_links.txt
+osuex.egg-info/entry_points.txt
+osuex.egg-info/requires.txt
+osuex.egg-info/top_level.txt
