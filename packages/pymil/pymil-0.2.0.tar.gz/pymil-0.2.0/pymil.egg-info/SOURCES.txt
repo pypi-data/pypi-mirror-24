@@ -1,0 +1,8 @@
+README.rst
+pymil.py
+setup.py
+pymil.egg-info/PKG-INFO
+pymil.egg-info/SOURCES.txt
+pymil.egg-info/dependency_links.txt
+pymil.egg-info/entry_points.txt
+pymil.egg-info/top_level.txt
