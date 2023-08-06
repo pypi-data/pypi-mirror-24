@@ -1,0 +1,12 @@
+pyfomod/__init__.py,sha256=ZtBn7sX1Ovtem-KWJc0iI3J0mWhYxFVANoIZYum95Ic,598
+pyfomod/conf.xsd,sha256=n-GpOQw1vFB7pr43dOYUCSUtRW8wHK455xQnszSNFF8,33739
+pyfomod/info.xsd,sha256=f5eB5PYM1GEVNCO4alx95EK9mvKvmHuQ9nynQWh1b0g,1421
+pyfomod/io.py,sha256=xhduP3ekPpcXv__gN2xEeHwaB89eapC4b9r2g5cmtTc,2647
+pyfomod/parser.py,sha256=DYuy4nTh57XLqZbn8gT2uNKiCXhDUKqf-Jcts5Op_gI,23274
+pyfomod/validation.py,sha256=RdlC92iNt8NrCK2KxB2VVwTk1EIIszrZPimQw0ITJck,12076
+pyfomod-0.1.dist-info/DESCRIPTION.rst,sha256=RRioNRcMc5DrF6oFqFMj9sTInlg4xbZ-FuB9duXQc6o,1000
+pyfomod-0.1.dist-info/METADATA,sha256=phT4sJx_Z1382k4VRluWdnAKP2-Jb_LkWENPT6wb8yw,2111
+pyfomod-0.1.dist-info/RECORD,,
+pyfomod-0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pyfomod-0.1.dist-info/metadata.json,sha256=kXAgsS32OZXR15UVT45gtqoi4ZUfXhGQEkt3WIYZpUU,1219
+pyfomod-0.1.dist-info/top_level.txt,sha256=ijhs7dT3aYJgL8D3nNqmKayeAup2jeWSnk4m_m5OT-M,8
