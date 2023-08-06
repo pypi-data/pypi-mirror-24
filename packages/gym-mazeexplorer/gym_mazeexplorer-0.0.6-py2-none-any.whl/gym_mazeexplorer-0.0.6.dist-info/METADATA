@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: gym-mazeexplorer
+Version: 0.0.6
+Summary: A maze exploration environment for openai/gym
+Home-page: https://github.com/mryellow/gym-mazeexplorer
+Author: Mr-Yellow
+Author-email: mr-yellow@mr-yellow.com
+License: MIT
+Keywords: maze,game,maze-explorer,openaigym,openai-gym
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: gym
+Requires-Dist: mazeexp
+
+UNKNOWN
+
+
