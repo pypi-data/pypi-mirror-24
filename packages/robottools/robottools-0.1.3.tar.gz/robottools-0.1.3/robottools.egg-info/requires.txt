@@ -1,0 +1,5 @@
+robotframework>=3.0.2
+
+[test]
+flake8
+pytest>=2.9.0
