@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+automation/__init__.py
+automation/utils.py
+flask_automation.egg-info/PKG-INFO
+flask_automation.egg-info/SOURCES.txt
+flask_automation.egg-info/dependency_links.txt
+flask_automation.egg-info/requires.txt
+flask_automation.egg-info/top_level.txt
