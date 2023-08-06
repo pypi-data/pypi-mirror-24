@@ -1,0 +1,8 @@
+hack.py
+setup.py
+claire.egg-info/PKG-INFO
+claire.egg-info/SOURCES.txt
+claire.egg-info/dependency_links.txt
+claire.egg-info/entry_points.txt
+claire.egg-info/requires.txt
+claire.egg-info/top_level.txt
