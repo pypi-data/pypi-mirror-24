@@ -1,0 +1,12 @@
+README
+setup.py
+logscli/__init__.py
+logscli/__main__.py
+logscli/formatter.py
+logscli/processor.py
+logscli.egg-info/PKG-INFO
+logscli.egg-info/SOURCES.txt
+logscli.egg-info/dependency_links.txt
+logscli.egg-info/entry_points.txt
+logscli.egg-info/requires.txt
+logscli.egg-info/top_level.txt
