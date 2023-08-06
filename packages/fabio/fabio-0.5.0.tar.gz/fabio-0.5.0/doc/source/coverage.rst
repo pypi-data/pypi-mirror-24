@@ -1,0 +1,56 @@
+Test coverage report for fabio
+==============================
+
+Measured on *fabio* version 0.5.0, 29/08/2017
+
+.. csv-table:: Test suite coverage
+   :header: "Name", "Stmts", "Exec", "Cover"
+   :widths: 35, 8, 8, 8
+
+   "GEimage.py", "103", "58", "56.3 %"
+   "HiPiCimage.py", "62", "12", "19.4 %"
+   "OXDimage.py", "355", "328", "92.4 %"
+   "TiffIO.py", "816", "574", "70.3 %"
+   "__init__.py", "33", "25", "75.8 %"
+   "_version.py", "34", "32", "94.1 %"
+   "adscimage.py", "78", "49", "62.8 %"
+   "binaryimage.py", "56", "20", "35.7 %"
+   "bruker100image.py", "243", "164", "67.5 %"
+   "brukerimage.py", "204", "171", "83.8 %"
+   "cbfimage.py", "522", "223", "42.7 %"
+   "compression.py", "250", "189", "75.6 %"
+   "converters.py", "18", "15", "83.3 %"
+   "directories.py", "23", "18", "78.3 %"
+   "dm3image.py", "138", "20", "14.5 %"
+   "edfimage.py", "591", "391", "66.2 %"
+   "eigerimage.py", "103", "56", "54.4 %"
+   "fabioformats.py", "79", "61", "77.2 %"
+   "fabioimage.py", "314", "241", "76.8 %"
+   "fabioutils.py", "362", "286", "79.0 %"
+   "file_series.py", "143", "63", "44.1 %"
+   "fit2dimage.py", "92", "77", "83.7 %"
+   "fit2dmaskimage.py", "77", "74", "96.1 %"
+   "fit2dspreadsheetimage.py", "42", "10", "23.8 %"
+   "hdf5image.py", "88", "49", "55.7 %"
+   "jpeg2kimage.py", "81", "28", "34.6 %"
+   "jpegimage.py", "47", "45", "95.7 %"
+   "kcdimage.py", "110", "83", "75.5 %"
+   "mar345image.py", "270", "248", "91.9 %"
+   "marccdimage.py", "67", "60", "89.6 %"
+   "mpaimage.py", "55", "50", "90.9 %"
+   "nexus.py", "190", "96", "50.5 %"
+   "numpyimage.py", "65", "52", "80.0 %"
+   "openimage.py", "89", "57", "64.0 %"
+   "pilatusimage.py", "38", "33", "86.8 %"
+   "pixiimage.py", "98", "27", "27.6 %"
+   "pnmimage.py", "135", "86", "63.7 %"
+   "raxisimage.py", "103", "93", "90.3 %"
+   "speimage.py", "163", "158", "96.9 %"
+   "tifimage.py", "166", "64", "38.6 %"
+   "xsdimage.py", "98", "72", "73.5 %"
+   "convert.py", "213", "30", "14.1 %"
+   "mathutils.py", "11", "6", "54.5 %"
+   "pilutils.py", "46", "30", "65.2 %"
+
+   "fabio total", "6871", "4524", "65.8 %"
+

@@ -1,0 +1,22 @@
+include README.rst
+include MANIFEST.in
+include version.py
+include run_tests.py
+include copyright
+exclude MANIFEST
+include stdeb.cfg
+recursive-include fabio/ext *.c *.h *.pyx
+recursive-include pylint *
+recursive-include scripts *
+recursive-exclude build *
+recursive-exclude dist *
+recursive-exclude test/tiftest *
+recursive-exclude test/testimages *
+recursive-exclude testimages *
+recursive-exclude fabio.egg-info *
+
+
+#Include doc without checkpoints
+recursive-include doc *
+recursive-exclude doc .ipynb_checkpoints/*.ipynb
+
