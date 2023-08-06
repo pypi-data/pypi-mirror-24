@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+src/main/mosi/__init__.py
+src/main/mosi.egg-info/PKG-INFO
+src/main/mosi.egg-info/SOURCES.txt
+src/main/mosi.egg-info/dependency_links.txt
+src/main/mosi.egg-info/requires.txt
+src/main/mosi.egg-info/top_level.txt
