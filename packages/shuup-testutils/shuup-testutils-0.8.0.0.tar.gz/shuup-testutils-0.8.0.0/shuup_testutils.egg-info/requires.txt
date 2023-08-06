@@ -1,0 +1,7 @@
+shuup<2,>=1.1
+shuup-utils<0.5,>=0.4
+beautifulsoup4<4.6,>=4.5.3
+
+[dev]
+wheel>=0.29.0
+twine<2,>=1.8.1
