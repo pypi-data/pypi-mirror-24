@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+blackmagic/__init__.py
+blackmagic/cout.py
+blackmagic/dbgprint.py
+blackmagic/meta.py
+blackmagic.egg-info/PKG-INFO
+blackmagic.egg-info/SOURCES.txt
+blackmagic.egg-info/dependency_links.txt
+blackmagic.egg-info/top_level.txt
