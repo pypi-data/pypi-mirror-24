@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: Optimisation
+Version: 1.0
+Summary: Cellular Optimisation Functions
+Home-page: UNKNOWN
+Author: Joshin Smith
+Author-email: joshins@pepkor.co.za
+License: MIT
+Description: Set of functions built for foundations of Cellular Optimisation algorithm building and model builing and prediction
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Manufacturing
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Other/Nonlisted Topic
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
