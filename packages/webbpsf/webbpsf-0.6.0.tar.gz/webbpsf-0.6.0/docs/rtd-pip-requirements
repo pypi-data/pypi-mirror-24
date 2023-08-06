@@ -1,0 +1,6 @@
+numpy
+matplotlib
+Cython
+astropy-helpers
+astropy
+-e git+https://github.com/mperrin/poppy.git#egg=poppy
