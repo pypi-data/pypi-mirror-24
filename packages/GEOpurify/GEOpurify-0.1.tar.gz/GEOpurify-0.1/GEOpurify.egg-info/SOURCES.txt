@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.org
+setup.cfg
+setup.py
+GEOpurify/GEOpurify.py
+GEOpurify/__init__.py
+GEOpurify.egg-info/PKG-INFO
+GEOpurify.egg-info/SOURCES.txt
+GEOpurify.egg-info/dependency_links.txt
+GEOpurify.egg-info/requires.txt
+GEOpurify.egg-info/top_level.txt
