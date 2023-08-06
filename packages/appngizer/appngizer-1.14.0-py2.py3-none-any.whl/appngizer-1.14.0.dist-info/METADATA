@@ -1,0 +1,34 @@
+Metadata-Version: 2.0
+Name: appngizer
+Version: 1.14.0
+Summary: Python library for appNGizer webapplication
+Home-page: https://www.appng.org
+Author: aiticon GmbH
+Author-email: info@aiticon.de
+License: apache
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: bcrypt
+Requires-Dist: lxml
+Requires-Dist: requests
+
+================
+python-appngizer
+================
+
+Python library for appNGizer webapplication
+
+
+Description
+===========
+
+You can read about the appNGizer API at https://www.appng.org
+
+
+
