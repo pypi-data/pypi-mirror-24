@@ -1,0 +1,31 @@
+CHANGES
+LICENSE
+MANIFEST.in
+README.rst
+debug.py
+setup.py
+happycowler/__init__.py
+happycowler/file_io.py
+happycowler/happycowler.py
+happycowler.egg-info/PKG-INFO
+happycowler.egg-info/SOURCES.txt
+happycowler.egg-info/dependency_links.txt
+happycowler.egg-info/requires.txt
+happycowler.egg-info/top_level.txt
+happycowler/__pycache__/__init__.cpython-35.pyc
+happycowler/__pycache__/__init__.cpython-36.pyc
+happycowler/__pycache__/file_io.cpython-35.pyc
+happycowler/__pycache__/file_io.cpython-36.pyc
+happycowler/__pycache__/happycowler.cpython-35.pyc
+happycowler/__pycache__/happycowler.cpython-36.pyc
+scripts/happycowl
+tests/__init__.py
+tests/__init__.pyc
+tests/test_happycowler.py
+tests/test_happycowler.pyc
+tests/__pycache__/__init__.cpython-35.pyc
+tests/__pycache__/__init__.cpython-36.pyc
+tests/__pycache__/test_happycowler.cpython-35.pyc
+tests/__pycache__/test_happycowler.cpython-36.pyc
+tests/test_pages/BarCeloneta Sangria Bar - Barcelona : Vegan Restaurant Reviews and Ratings - HappyCow.htm
+tests/test_pages/Vegan & Vegetarian Restaurants in Worms, Germany.htm

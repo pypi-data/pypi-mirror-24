@@ -1,0 +1,29 @@
+Version 0.2.4: 2017-08-25
+  - New: Functions as a module.
+  - New: Unit tests added.
+  - Changed: `happycowl` is now the name of the executable.
+  - Changed: Updated to latest changes in HappyCow.
+  - Fixed: Percentage shown correctly in Python 2.
+
+Version 0.2.3: 2016-09-17
+
+  - New: Progress bar showing current entry processed and a percentage.
+  - Fixed: Cities with multiple-page results are crawled correctly.
+
+Version 0.2.2: 2016-08-07
+
+  - Fixed: Python 2 compatibility restored.
+
+Version 0.2.1: 2016-08-06
+
+  - New: Different restaurant types get different colours.
+  - Fixed: Single-page results are now correctly parsed.
+
+Version 0.2: 2016-08-06
+
+  - New: It can generate a GPX file for using it with Osmand.
+  - New: It works with Python 3.
+
+Version 0.1: 2014-09-12
+
+  - Initial release.
