@@ -1,0 +1,10 @@
+Marshmallow_Peewee-1.2.0.dist-info/DESCRIPTION.rst,sha256=x7ZYyB1m06Pb0pMBku2vQakVq7P6_7jV_N3onN_hZV8,3601
+Marshmallow_Peewee-1.2.0.dist-info/METADATA,sha256=U0VKJoe6RMFhYc93ODyDJBlIT48SSHn83IotelDq_pI,4534
+Marshmallow_Peewee-1.2.0.dist-info/RECORD,,
+Marshmallow_Peewee-1.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Marshmallow_Peewee-1.2.0.dist-info/metadata.json,sha256=9NBf8J1c3_cbpAAlRboyayXAh0D-KvIqGtz0nC5pzV8,1085
+Marshmallow_Peewee-1.2.0.dist-info/top_level.txt,sha256=CCtv5VpDliEbmQGufbKoifzbo23GynwHnFL-XtE7lr8,19
+marshmallow_peewee/__init__.py,sha256=EUXAYM4fsLvb4QLXwg0MWUtQpIM_sIIDnOzJngwM4rE,195
+marshmallow_peewee/convert.py,sha256=ax1dC3nWT_sbtxCqW4q0vOkq8y9GIqKcrqeqe3WQ5Qo,3815
+marshmallow_peewee/fields.py,sha256=Hs0Qpgkn0iEGeQAr7CMV1sYG7yy-p-9zXXJBzlG9zhE,1068
+marshmallow_peewee/schema.py,sha256=Xkbfwv23rGX7oFZhP9tTHcAoHsbbmD_hYi-sfLa1sJk,2724
