@@ -1,0 +1,7 @@
+-r requirements.txt
+
+beautifulsoup4==4.5.3
+docformatter==0.8
+requests==2.13.0
+stringcase==1.0.6
+yapf==0.16.3
