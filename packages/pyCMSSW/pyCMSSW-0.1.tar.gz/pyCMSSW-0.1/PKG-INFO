@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: pyCMSSW
+Version: 0.1
+Summary: CMSSW metapackage. Install all the CMSSW python components in one go.
+Home-page: http://github.com/cms-sw/cmssw
+Author: CMSSW Release Team
+Author-email: david.lange@cern.ch
+License: BSD
+Description: Install the CMSSW python system.
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
