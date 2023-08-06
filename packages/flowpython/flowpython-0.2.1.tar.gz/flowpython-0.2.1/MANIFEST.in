@@ -1,0 +1,3 @@
+include ReadMe.md
+recursive-include flowpython *.dll *.exe *.py *.pyc *.rst *.md python
+include origin_py 
