@@ -1,0 +1,3 @@
+include LISENSE
+include README.rst
+recursive-include /file *
