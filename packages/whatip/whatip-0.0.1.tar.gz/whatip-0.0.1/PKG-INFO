@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: whatip
+Version: 0.0.1
+Summary: Console script to find your IP
+Home-page: https://github.com/lorien/whatip
+Author: Gregory Petukhov
+Author-email: lorien@lorien.name
+License: MIT License
+Download-URL: http://pypi.python.org/pypi/whatip
+Description: Whatip
+        ======
+        
+        Whatip is a simple script that shows your IP. It queries well known online
+        IP-detection web services for that information.
+        
+        
+        Installation
+        ============
+        
+        .. code:: shell
+        
+            python -m pip install whatip
+        
+        Also you can just copy whatip.py file and place it into $PATH. Do
+        not forget to set executable flag.
+        
+        
+        Feedback
+        ========
+        
+        Email: lorien@lorien.name
+        
+Keywords: ip internet
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,8 @@
+README.rst
+setup.py
+whatip.py
+whatip.egg-info/PKG-INFO
+whatip.egg-info/SOURCES.txt
+whatip.egg-info/dependency_links.txt
+whatip.egg-info/entry_points.txt
+whatip.egg-info/top_level.txt
