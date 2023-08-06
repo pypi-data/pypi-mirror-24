@@ -1,0 +1,10 @@
+snap_diamond/__init__.py,sha256=VB-s0oq0HvpPjc07EaX3D5fYPPc5wkEWeUYaTHy_NxE,8529
+snap_diamond/_version.py,sha256=s6JqGWdC_Bal-68iFcMIg_5n3fHqopIaOkwJ-t1BraM,18453
+snap_diamond/plugin.py,sha256=tkEX_SXuXnv-VWhjz4wjRhLvdTzMhYMDN9_fr7Qu558,1594
+snap_plugin_collector_diamond-2.dist-info/DESCRIPTION.rst,sha256=67MsZfcuWbRNpCFpy4rMydz7HHjm218tUs8onhs0FII,351
+snap_plugin_collector_diamond-2.dist-info/METADATA,sha256=kvmzGqm2O1TdlvW-PD5svhmbn9tlKvx9z2i5ovigCcY,850
+snap_plugin_collector_diamond-2.dist-info/RECORD,,
+snap_plugin_collector_diamond-2.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+snap_plugin_collector_diamond-2.dist-info/entry_points.txt,sha256=WNeThknoA2ljXZmyKzUdDxtCTw2ytiquYqHVGN9EFuc,75
+snap_plugin_collector_diamond-2.dist-info/metadata.json,sha256=9VrjmTxyrZ2mg36d1BmEXX45ik7VQ-R4sJwjPGOkDpk,919
+snap_plugin_collector_diamond-2.dist-info/top_level.txt,sha256=k1SnuOA3tRG_qmqXj34q__t2BqdugX8SJR3xQFnuvjE,13
