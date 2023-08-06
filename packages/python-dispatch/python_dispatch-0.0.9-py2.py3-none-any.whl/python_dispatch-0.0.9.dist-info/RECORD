@@ -1,0 +1,11 @@
+pydispatch/__init__.py,sha256=Tmva9k-OBYBgSU7XeokLfN_R9Eq4PJGUFp3OFZtcRu0,239
+pydispatch/aioutils.py,sha256=LDUJUzFBUHCxeXNLL421XxvMaDcfhhIVGYgVJv7UklQ,427
+pydispatch/dispatch.py,sha256=QvOIwmH-EDnEETfnx-pmocqU2QVK7HCeZgJhwfRTonA,7465
+pydispatch/properties.py,sha256=fUWqXiULT-Y5vQq7jrnbS9NnZ4GUA2ALME_cOKmg3rA,13253
+pydispatch/utils.py,sha256=P-Mp1h9A_o_ZROyXn26dRSb-JzP8pH5H5nPVBZtXElw,3031
+python_dispatch-0.0.9.dist-info/DESCRIPTION.rst,sha256=NiTb3SpiQ6pqePLcPe-moxE5e5DJo-ep5p18gC4t6lM,3172
+python_dispatch-0.0.9.dist-info/METADATA,sha256=ZWP3dM_o680Hqb8L_y0vHFqIcjxGFA5WcDQo3cacc4M,3965
+python_dispatch-0.0.9.dist-info/RECORD,,
+python_dispatch-0.0.9.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+python_dispatch-0.0.9.dist-info/metadata.json,sha256=-wTJSa09xz8MRfUtUG4riyuPs9f2oWk1J0dq_lWrB6A,933
+python_dispatch-0.0.9.dist-info/top_level.txt,sha256=BW69gM2IyIPfFk8J13eRwxzVlic046roE3WH5bya5BI,11
