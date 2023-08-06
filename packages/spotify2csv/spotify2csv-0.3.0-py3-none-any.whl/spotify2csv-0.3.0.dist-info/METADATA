@@ -1,0 +1,46 @@
+Metadata-Version: 2.0
+Name: spotify2csv
+Version: 0.3.0
+Summary: Convert Spotify URLs to tracks info in CSV format
+Home-page: https://github.com/arthurwhite/spotify2csv
+Author: Arthur White
+Author-email: arthur@white.li
+License: MIT
+Keywords: convert spotify csv
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+Requires-Dist: beautifulsoup4
+Requires-Dist: progress
+Requires-Dist: requests
+
+Spotify2CSV
+===========
+
+Convert Spotify URLs to tracks info in CSV format.
+
+Install
+-------
+
+.. code:: bash
+
+    pip3 install spotify2csv
+
+Usage
+-----
+
+::
+
+    spotify2csv input output
+
+    positional arguments:
+      input   the Spotify URLs list (one per line) file
+      output  the filename for saving the CSV data
+
+
