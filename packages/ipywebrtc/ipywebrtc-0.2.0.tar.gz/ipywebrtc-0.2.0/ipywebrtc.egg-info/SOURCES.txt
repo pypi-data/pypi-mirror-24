@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.cfg
+setup.py
+ipywebrtc/__init__.py
+ipywebrtc/_version.py
+ipywebrtc/webrtc.py
+ipywebrtc.egg-info/PKG-INFO
+ipywebrtc.egg-info/SOURCES.txt
+ipywebrtc.egg-info/dependency_links.txt
+ipywebrtc.egg-info/not-zip-safe
+ipywebrtc.egg-info/requires.txt
+ipywebrtc.egg-info/top_level.txt
+ipywebrtc/static/extension.js
+ipywebrtc/static/index.js
+ipywebrtc/static/index.js.map
