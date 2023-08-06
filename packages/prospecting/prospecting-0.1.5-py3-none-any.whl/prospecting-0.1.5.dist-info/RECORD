@@ -1,0 +1,13 @@
+prospecting/__init__.py,sha256=VzyTf_x2y776ge3yz4bAZbYwYRv1Asa75N3sJqFhAQo,647
+prospecting/api.py,sha256=_2SlGy0cD29f3GHgdPYBFJsKdpE722weFRLfhnbCevg,25790
+prospecting/api_wip.py,sha256=edRr9ULFnpnAo5BIRFhAHYqHqPmSxA_syrhxanyMGrs,27004
+prospecting/env.py,sha256=X0XbwPbML97IWQwkiv51II0WJbuqRVB_7UV19Tdo6ac,1423
+prospecting/errors.py,sha256=u89iDJ82ejj9n-QypMnzV9QClgZodU0enj_lYQdM7nE,1172
+prospecting/utils.py,sha256=J4OBW2iOoWSOmfVk_JuZxbNBdHl7JbVX6fGsOSYHD6U,5611
+prospecting/version.py,sha256=ZO5YMhbkaYGJbx9xHdb1fQZWYdbYNsBiDYxYuv9khQ0,49
+prospecting-0.1.5.dist-info/DESCRIPTION.rst,sha256=08214plRPIYClYySBqYlmT8n5dm8n0iD7DRsOFIYPy0,3372
+prospecting-0.1.5.dist-info/METADATA,sha256=99dkCrtvLt2CvoB77Sp7k9_CeoYpoUatWMz2zYPQ52c,4139
+prospecting-0.1.5.dist-info/RECORD,,
+prospecting-0.1.5.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+prospecting-0.1.5.dist-info/metadata.json,sha256=wt3LAJA3o95wTf2KIqtnmzS2VhNMiG9zfLWws0SW0-E,929
+prospecting-0.1.5.dist-info/top_level.txt,sha256=69UvvKFOknkHP5SbpqiMNtFhPxg2Mrw4owFP1CQtlWM,12
