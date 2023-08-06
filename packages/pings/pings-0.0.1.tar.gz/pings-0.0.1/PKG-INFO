@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pings
+Version: 0.0.1
+Summary: Simple ping client in Python 3 by using icmp packet via low level socket.
+Home-page: https://github.com/satoshi03/pings
+Author: satoshi03
+Author-email: innamisatoshi@gmail.com
+License: GPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
