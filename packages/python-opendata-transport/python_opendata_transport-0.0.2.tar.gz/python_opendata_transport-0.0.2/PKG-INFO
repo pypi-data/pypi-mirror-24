@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: python_opendata_transport
+Version: 0.0.2
+Summary: Python API for interacting with transport.opendata.ch.
+Home-page: https://github.com/fabaff/python-opendata-transport
+Author: Fabian Affolter
+Author-email: fabian@affolter-engineering.ch
+License: MIT
+Download-URL: https://github.com/fabaff/python-opendata-transport/releases
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Utilities
