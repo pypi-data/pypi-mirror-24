@@ -1,0 +1,14 @@
+numpy
+quantities
+neo<0.5,>=0.4
+scipy
+matplotlib
+sqlalchemy
+sqlalchemy-migrate
+pyqtgraph
+guidata
+joblib
+tables
+pywavelets
+scikit-learn
+blosc
