@@ -1,0 +1,15 @@
+bluefang/__init__.py,sha256=98rX_8pfVA3diWMAvN9FCjVGrU2pp3zssg80FltRK08,7490
+bluefang/agents.py,sha256=Gn0iEgPKymB3AxFdrXltgF6ju-pMAkCgH4zoQdS7joI,5347
+bluefang/commands.py,sha256=8Q5-0b0X_uxOKk2GrMMzT07ppZKF4fWtq3k-r4hdon4,275
+bluefang/connection.py,sha256=_1WZljAnavCpCVptmnhtaP__CDkxelF_88phECDlbWU,2431
+bluefang/constants.py,sha256=ir3WX5deHK3ot4nSBVXaex_0d8a2kGWavElzojvHUsA,444
+bluefang/l2cap.py,sha256=uICLESUXHPr4HVmsQTqzCjeM0VWeDk99N6DbVIhnLS0,5160
+bluefang/profile.py,sha256=obeCFiVNR0faZMoLfsN_rXVTPMM4LH0Vp2tAD2E5o4s,1413
+bluefang/servicerecords.py,sha256=ATNHlxD4EoOMVp3aE3J2IYnb5SAZ3spsifSB0hRYR1w,3940
+bluefang-0.1.6.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+bluefang-0.1.6.dist-info/METADATA,sha256=kRgHnXs2Z1ePyMx014tTkU74b2rqPhvYQN-F_eJ5wiU,430
+bluefang-0.1.6.dist-info/RECORD,,
+bluefang-0.1.6.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+bluefang-0.1.6.dist-info/metadata.json,sha256=e8l_9OsQB2uaEDmqpuWBmFflnMLh-21mo07FOIEV7lQ,623
+bluefang-0.1.6.dist-info/pbr.json,sha256=SRbGTKV7d3PNwotbWQTeqson61PPcgwJwv_AxIbqvys,47
+bluefang-0.1.6.dist-info/top_level.txt,sha256=0dzVo29wS0bEviLwtKHItsRvISYWV-DXkS-zYl2ZUKg,9
