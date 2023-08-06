@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+bin/gooh
+gooh.egg-info/PKG-INFO
+gooh.egg-info/SOURCES.txt
+gooh.egg-info/dependency_links.txt
+gooh.egg-info/not-zip-safe
+gooh.egg-info/requires.txt
+gooh.egg-info/top_level.txt
