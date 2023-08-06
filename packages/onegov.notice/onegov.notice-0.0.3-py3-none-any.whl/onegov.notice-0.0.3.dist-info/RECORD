@@ -1,0 +1,17 @@
+onegov.notice-0.0.3-py3.4-nspkg.pth,sha256=B6z8DOZWSD0HlMt99AdOR-ylxuNVNkeobkZr2RiNU5k,305
+onegov/notice/__init__.py,sha256=SIUNAheEzl1-YqX2Om4tI1bdIZxGPkO6Yc-K07xBr70,181
+onegov/notice/collections.py,sha256=7a_X_f9yn8cZ-SrRc-um5W2xMbUXJHkHYmzWp0rUf_Y,3347
+onegov/notice/models.py,sha256=8N-WkepyJu1QGWeQXMw1m5lSdMg1e_zUfkMrdhASzdw,2266
+onegov/notice/upgrade.py,sha256=YuTdYdJsqGHO0qjv57V70x9euT-PAZeFXpz4FpjpN1o,947
+onegov/notice/.gitignore,sha256=IDKwAhPyBaqv1HYUcWpb-g7kE04Fv0AoDw375XgN7uw,675
+onegov/notice/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onegov/notice/tests/test_collections.py,sha256=dGyPe-eFQzd4xDHtv6k39loPN4i1y9ATf6vrol__z-E,4834
+onegov/notice/tests/test_models.py,sha256=sUJnfbzXqyd64vYgls4f_vmFI9vNFqB8YNEmeY-Y4IQ,3022
+onegov.notice-0.0.3.dist-info/namespace_packages.txt,sha256=jgdvRSw9EnHQZ3lUFqBiKCu_WBL-6hlsuREzMWiTRxk,7
+onegov.notice-0.0.3.dist-info/entry_points.txt,sha256=3wqW55tNLIjyoAVr8DUrtk0HJ1-wdxJLQ_qpiKmWEBY,60
+onegov.notice-0.0.3.dist-info/top_level.txt,sha256=jgdvRSw9EnHQZ3lUFqBiKCu_WBL-6hlsuREzMWiTRxk,7
+onegov.notice-0.0.3.dist-info/METADATA,sha256=ZIliVtrDsB86y08oJr7B7RQrZI3MunF5lVXkfF4i_1o,2157
+onegov.notice-0.0.3.dist-info/DESCRIPTION.rst,sha256=JeZ-rcDPtNVyvxSZ2h_UlNy60RAM1CjeoQ7egqw4A8w,1357
+onegov.notice-0.0.3.dist-info/metadata.json,sha256=csxXq6pQiBTCmbiN8WAfAHX46aJ0ur6M5BkfCQ1hUQU,983
+onegov.notice-0.0.3.dist-info/WHEEL,sha256=-aSo8rHuuPDEFzkcqqQ55pDyCjy25bYMLxSiHWKAOTc,92
+onegov.notice-0.0.3.dist-info/RECORD,,
