@@ -1,0 +1,69 @@
+Metadata-Version: 2.0
+Name: certbot-pinned
+Version: 0.17.0
+Summary: certbot metapackage with pinned dependency versions
+Home-page: https://github.com/pombredanne/certbot-pinned
+Author: Philippe Ombredanne for nexB Inc.
+Author-email: pom@nexb.com
+License: Public Domain
+Keywords: cerbot pip dependencies
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Public Domain
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Dist: argparse (==1.4.0)
+Requires-Dist: pycparser (==2.14)
+Requires-Dist: asn1crypto (==0.22.0)
+Requires-Dist: cffi (==1.10.0)
+Requires-Dist: ConfigArgParse (==0.10.0)
+Requires-Dist: configobj (==5.0.6)
+Requires-Dist: cryptography (==2.0.2)
+Requires-Dist: enum34 (==1.1.2)
+Requires-Dist: funcsigs (==1.0.2)
+Requires-Dist: idna (==2.5)
+Requires-Dist: ipaddress (==1.0.16)
+Requires-Dist: linecache2 (==1.0.0)
+Requires-Dist: ordereddict (==1.1)
+Requires-Dist: packaging (==16.8)
+Requires-Dist: parsedatetime (==2.1)
+Requires-Dist: pbr (==1.8.1)
+Requires-Dist: pyOpenSSL (==16.2.0)
+Requires-Dist: pyparsing (==2.1.8)
+Requires-Dist: pyRFC3339 (==1.0)
+Requires-Dist: python-augeas (==0.5.0)
+Requires-Dist: pytz (==2015.7)
+Requires-Dist: requests (==2.12.1)
+Requires-Dist: six (==1.10.0)
+Requires-Dist: traceback2 (==1.4.0)
+Requires-Dist: unittest2 (==1.1.0)
+Requires-Dist: zope.component (==4.2.2)
+Requires-Dist: zope.event (==4.1.0)
+Requires-Dist: zope.interface (==4.1.3)
+Requires-Dist: mock (==2.0.0)
+Requires-Dist: letsencrypt (==0.7.0)
+Requires-Dist: certbot (==0.17.0)
+Requires-Dist: acme (==0.17.0)
+Requires-Dist: certbot-apache (==0.17.0)
+Requires-Dist: certbot-nginx (==0.17.0)
+
+certbot-pinned is a "metapackage" (that contains no code but only dependencies)
+that provides a version of cerbot with all its pinned dependencies as they would be installed by certbot-auto
+
