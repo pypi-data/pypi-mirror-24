@@ -1,0 +1,2 @@
+azure-mgmt-network>=1.0.0
+azure-mgmt-storage
