@@ -1,0 +1,9 @@
+docopt
+numpy
+geopy
+
+[qcviz]
+matplotlib
+
+[tests]
+nose
