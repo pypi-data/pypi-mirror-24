@@ -1,0 +1,13 @@
+atx_uiautomator-0.3.3.dist-info/DESCRIPTION.rst,sha256=yzSWfCTX6KaKT9lJNZRmgYjV_q9QMP3qYZ1X-B9zIXo,69
+atx_uiautomator-0.3.3.dist-info/METADATA,sha256=pSliLxWoMhlGSVBz-sCDxS4ye6WzUcSymymkW3Ic4zo,882
+atx_uiautomator-0.3.3.dist-info/RECORD,,
+atx_uiautomator-0.3.3.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+atx_uiautomator-0.3.3.dist-info/metadata.json,sha256=yzTo4gylvgIY5Qob5jWqUbbbezUhz75oPxucrTkJj8M,932
+atx_uiautomator-0.3.3.dist-info/pbr.json,sha256=rb4W5uKHpinzbWjO3XQ_o0OR1WpoF3uI7uWVoSdHlRM,47
+atx_uiautomator-0.3.3.dist-info/top_level.txt,sha256=UqUulC5mTfx01V7llVPR-EtpuJl5-QnGplTT81Vf3ZU,12
+uiautomator/__init__.py,sha256=94n5q0T86cAlfC8YsCN0BhNtQp6OTb8gODdEdDqLP-4,47017
+uiautomator/adb.py,sha256=cM8lrdUhkdbDeAOl64F8JuifQdQYu3JnYimCC2eqaUs,6106
+uiautomator/libs/app-uiautomator-test.apk,sha256=QsG_n5gbpEb-5DE-4O4HKULxJMnAc2vzzgruJUTvncs,994127
+uiautomator/libs/app-uiautomator.apk,sha256=oq_6fOWbhcZnySR4CGvWVsknkt3ke6N2m5vait_gpdg,1391369
+uiautomator/libs/bundle.jar,sha256=WOI7-OlsbesvBcKtXNwOCNoQ09UJjSWO23aeCdC5u2k,461493
+uiautomator/libs/uiautomator-stub.jar,sha256=WVSUHWDkm8jg-oBz9BQmbjPiBgSvpKw_bO3QI8XPEqQ,34104
