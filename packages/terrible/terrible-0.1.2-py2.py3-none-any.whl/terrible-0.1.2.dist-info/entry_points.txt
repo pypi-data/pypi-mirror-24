@@ -1,0 +1,3 @@
+[console_scripts]
+terrible = terrible.cli:main
+
