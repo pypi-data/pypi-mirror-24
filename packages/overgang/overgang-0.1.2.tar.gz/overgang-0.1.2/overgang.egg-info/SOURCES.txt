@@ -1,0 +1,14 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+overgang/__init__.py
+overgang/durationmethod.py
+overgang.egg-info/PKG-INFO
+overgang.egg-info/SOURCES.txt
+overgang.egg-info/dependency_links.txt
+overgang.egg-info/not-zip-safe
+overgang.egg-info/requires.txt
+overgang.egg-info/top_level.txt
