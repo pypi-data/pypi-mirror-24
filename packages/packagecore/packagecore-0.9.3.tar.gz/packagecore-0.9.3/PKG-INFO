@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: packagecore
+Version: 0.9.3
+Summary: Utility for building Linux packages for multiple distributions.
+Home-page: https://github.com/bytepackager/packagecore
+Author: Dominique LaSalle
+Author-email: dominique@bytepackager.com
+License: GPL2
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.0
