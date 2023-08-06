@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+ftio/__init__.py
+ftio/__main__.py
+ftio/wiki.py
+ftio.egg-info/PKG-INFO
+ftio.egg-info/SOURCES.txt
+ftio.egg-info/dependency_links.txt
+ftio.egg-info/top_level.txt
