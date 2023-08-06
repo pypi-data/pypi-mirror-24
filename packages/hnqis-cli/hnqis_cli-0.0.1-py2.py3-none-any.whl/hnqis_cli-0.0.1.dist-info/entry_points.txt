@@ -1,0 +1,4 @@
+[console_scripts]
+hnqis-attribute-setting = src.attribute_setting:main
+hnqis-program-orgunit = src.program_orgunit_assigner:main
+
