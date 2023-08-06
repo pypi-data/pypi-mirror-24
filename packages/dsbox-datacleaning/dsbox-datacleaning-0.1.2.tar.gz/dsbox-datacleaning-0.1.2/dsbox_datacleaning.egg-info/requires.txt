@@ -1,0 +1,9 @@
+numpy
+pandas
+langdetect
+scipy
+scikit-learn
+python-dateutil
+six
+fancyimpute
+dsbox-dataprofiling
