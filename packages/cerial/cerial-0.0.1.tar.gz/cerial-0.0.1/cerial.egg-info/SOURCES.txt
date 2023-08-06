@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+cerial/__init__.py
+cerial/struct.cpp
+cerial/struct.cpython-36m-x86_64-linux-gnu.so
+cerial/struct.pyx
+cerial.egg-info/PKG-INFO
+cerial.egg-info/SOURCES.txt
+cerial.egg-info/dependency_links.txt
+cerial.egg-info/top_level.txt
