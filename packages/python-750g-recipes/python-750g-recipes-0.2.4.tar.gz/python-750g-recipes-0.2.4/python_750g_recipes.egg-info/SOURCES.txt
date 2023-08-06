@@ -1,0 +1,8 @@
+setup.py
+python_750g_recipes.egg-info/PKG-INFO
+python_750g_recipes.egg-info/SOURCES.txt
+python_750g_recipes.egg-info/dependency_links.txt
+python_750g_recipes.egg-info/not-zip-safe
+python_750g_recipes.egg-info/requires.txt
+python_750g_recipes.egg-info/top_level.txt
+septcentcinquanteg_recipes/__init__.py
