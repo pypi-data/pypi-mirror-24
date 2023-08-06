@@ -1,0 +1,11 @@
+README.txt
+setup.py
+document_recognitions.egg-info/PKG-INFO
+document_recognitions.egg-info/SOURCES.txt
+document_recognitions.egg-info/dependency_links.txt
+document_recognitions.egg-info/requires.txt
+document_recognitions.egg-info/top_level.txt
+recognitions/__init__.py
+recognitions/base.py
+recognitions/parser.py
+recognitions/tesseract.py
