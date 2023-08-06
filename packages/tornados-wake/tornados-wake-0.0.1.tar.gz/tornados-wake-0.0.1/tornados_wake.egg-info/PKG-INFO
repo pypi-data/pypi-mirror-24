@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: tornados-wake
+Version: 0.0.1
+Summary: Tornado's Wake: Handler and tools for inspecting routes of a tornado server
+Home-page: https://github.com/jonmcoe/tornados-wake
+Author: Jon Coe
+Author-email: jonmcoe@gmail.com
+License: UNKNOWN
+Description: 
+        `GitHub <https://github.com/jonmcoe/tornados-wake>`_.
+        
+Keywords: tornado tornadoweb routes handlers index
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
