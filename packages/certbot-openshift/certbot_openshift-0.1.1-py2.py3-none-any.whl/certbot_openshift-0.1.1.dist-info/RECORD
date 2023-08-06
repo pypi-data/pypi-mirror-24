@@ -1,0 +1,11 @@
+certbot_openshift/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_openshift/installer.py,sha256=LyZoPSV2D_w_deADAq7nK0xmRJglxb2raO8CL2P7TOI,6889
+certbot_openshift/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_openshift/tests/test_installer.py,sha256=M0-L3XGiarI3lYoOxIjVYFoyoidV5NX6qYOAxQ5s_zw,1206
+certbot_openshift-0.1.1.dist-info/DESCRIPTION.rst,sha256=UD5zDVgypFR1vs8YV1NK0thPMwA0SA6YyC29coinB4k,910
+certbot_openshift-0.1.1.dist-info/METADATA,sha256=iDuHQOMP1Av3jCLkKQ537kayEs_y9sJ5tboZ03hckkU,2425
+certbot_openshift-0.1.1.dist-info/RECORD,,
+certbot_openshift-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+certbot_openshift-0.1.1.dist-info/entry_points.txt,sha256=bdCYxvs4J284danlKFZeUmMRhrNQzg88F8o_ppQj7Ss,69
+certbot_openshift-0.1.1.dist-info/metadata.json,sha256=CG66WrFfBuCdOtKWCVNmQzN8xE0enCAYF_F3cfBBQXc,1523
+certbot_openshift-0.1.1.dist-info/top_level.txt,sha256=CNPlDmfNxpJYjMU3nfxw2Puj-FAXqb8skaDzmrQyMjA,18
