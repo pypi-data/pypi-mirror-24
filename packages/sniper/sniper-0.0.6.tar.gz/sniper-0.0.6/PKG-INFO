@@ -1,0 +1,67 @@
+Metadata-Version: 1.1
+Name: sniper
+Version: 0.0.6
+Summary: an asynchronous restful web framework base on asyncio
+Home-page: https://github.com/lexdene/py-sniper
+Author: Elephant Liu
+Author-email: lexdene@gmail.com
+License: GPLv3
+Description: sniper
+        ======
+        
+        |travis-status| |docs|
+        
+        sniper is a Python asynchronous restful web framework base on asyncio.
+        
+        Advantage
+        ---------
+        
+        * It is a very small framework
+        * It supports non-blocking, asynchronous web application development (thanks to Python's asyncio library) which has better performance in high concurrency situation
+        * It has no dependencies except Python itself
+        
+        Hello world
+        -----------
+        
+        Here is a simple "Hello world" example web app for sniper:
+        
+        .. code-block:: python
+        
+            from sniper.app import Application
+            from sniper.responses import Response
+            from sniper.url import url
+        
+            def hello_world(request):
+                return Response('Hello world!\n')
+        
+            if __name__ == '__main__':
+                app = Application(
+                    urls=[
+                        url(r'^/$', hello_world),
+                    ]
+                )
+                app.run(8888)
+        
+        Documentation
+        -------------
+        
+        see `docs <http://py-sniper.readthedocs.io>`_
+        
+        .. |travis-status| image:: https://travis-ci.org/lexdene/py-sniper.svg?branch=master
+            :alt: travis status
+            :target: https://travis-ci.org/lexdene/py-sniper
+        
+        .. |docs| image:: https://readthedocs.org/projects/py-sniper/badge/?version=master
+            :target: http://py-sniper.readthedocs.io/en/master/?badge=master
+            :alt: Documentation Status
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
