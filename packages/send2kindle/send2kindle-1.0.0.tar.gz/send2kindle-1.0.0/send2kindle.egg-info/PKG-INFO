@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: send2kindle
+Version: 1.0.0
+Summary: CLI tool for sending files via email to your Kindle device
+Home-page: https://github.com/wixb50/send2kindle
+Author: wixb50
+Author-email: wixb50@gmail.com
+License: GNU Affero GPL v3+
+Download-URL: https://github.com/wixb50/send2kindle
+Description: Configure your email and then send any files provided as program arguments as email attachments to your Kindle device.
+Keywords: commandline Kindle email
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Utilities

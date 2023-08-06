@@ -1,0 +1,3 @@
+[console_scripts]
+send2kindle = send2kindle.__main__:main
+

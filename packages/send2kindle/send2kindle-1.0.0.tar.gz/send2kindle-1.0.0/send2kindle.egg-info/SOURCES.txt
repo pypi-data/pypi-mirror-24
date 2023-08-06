@@ -1,0 +1,9 @@
+setup.py
+send2kindle/__init__.py
+send2kindle/__main__.py
+send2kindle/send_kindle.py
+send2kindle.egg-info/PKG-INFO
+send2kindle.egg-info/SOURCES.txt
+send2kindle.egg-info/dependency_links.txt
+send2kindle.egg-info/entry_points.txt
+send2kindle.egg-info/top_level.txt
