@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+p4/__init__.py
+p4/__main__.py
+p4/p4.py
+p4.egg-info/PKG-INFO
+p4.egg-info/SOURCES.txt
+p4.egg-info/dependency_links.txt
+p4.egg-info/top_level.txt
