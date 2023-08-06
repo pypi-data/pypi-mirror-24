@@ -1,0 +1,8 @@
+setup.py
+dojo_ftp/__init__.py
+dojo_ftp/source.py
+dojo_ftp.egg-info/PKG-INFO
+dojo_ftp.egg-info/SOURCES.txt
+dojo_ftp.egg-info/dependency_links.txt
+dojo_ftp.egg-info/requires.txt
+dojo_ftp.egg-info/top_level.txt
