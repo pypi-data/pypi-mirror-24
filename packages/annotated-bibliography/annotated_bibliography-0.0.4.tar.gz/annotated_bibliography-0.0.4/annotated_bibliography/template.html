@@ -1,0 +1,152 @@
+<div id="papers">
+
+    <hr>
+
+    <!-- *************** -->
+    <!-- Search and tags -->
+    <!-- *************** -->
+
+    <ul>
+        <li style="display: inline"><em>Search:</em></li>
+        <li style="display: inline"><input class="search" placeholder="Search"/></li>
+    </ul>
+
+    <ul>
+        <li style="display: inline"><em>Tags:</em></li>
+        <li class="button-all" style="display: inline;">
+            <button onClick="filtering('all')" style="background-color:#FFFFFF">All</button>
+        </li>
+
+        <!--tags_helper = {tag: (color, tag_hash) ...}-->
+        {% for tag in tags_helper.keys() %}
+        <li class="button-{{tags_helper[tag][1]}};" style="display: inline;">
+            <button onClick="filtering('{{tags_helper[tag][1]}}')"
+                    style="background-color:{{tags_helper[tag][0]}}">{{tag}}
+            </button>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        <li style="display: inline"><em>Type:</em></li>
+        <li class="button-all" style="display: inline;">
+            <button onClick="filtering('all')" style="background-color:#FFFFFF">All</button>
+        </li>
+
+        <!--type_helper = {tag: (color, type_hash) ...}-->
+        {% for type in type_helper.keys() %}
+        <li class="button-{{type_helper[type][1]}};" style="display: inline;">
+            <button onClick="filtering('{{type_helper[type][1]}}')"
+                    style="background-color:{{type_helper[type][0]}}">{{type}}
+            </button>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        <li style="display: inline">
+            <sup style="text-align: center">Make your own annotated bibliography <a href="https://github.com/manoelhortaribeiro/annotated_bibliography">here</a></sup>
+        </li>
+    </ul>
+
+    <hr>
+
+    <!-- *************** -->
+    <!-- Searchable List -->
+    <!-- *************** -->
+
+    <ul class="list">
+        {% for n in html_helper['range'] %}
+        <li style="margin: 4px; border: 6px">
+            <h3 class="titles" style="margin: 2px; padding: 0px">{{html_helper['titles'][n]}}</h3>
+            <p class="authors" style="margin: 2px; padding: 0px">{{html_helper['authors'][n]}}</p>
+            <p class="venues" style="margin: 2px; padding: 0px">{{html_helper['venues'][n]}}</p>
+            <div class="annotation">{{html_helper['annotations'][n]}}</div>
+            <p class='year' style="display: none">{{html_helper['year'][n]}}</p>
+
+            <ul style="margin: 0px; padding: 0px; border: 0px">
+                <li style="display: inline"><em>Tags:</em></li>
+
+                {% for tag in html_helper['tags'][n] %}
+                <li class="button-{{tags_helper[tag][1]}};" style="display: inline;">
+                    <button onClick="filtering('{{tags_helper[tag][1]}}')"
+                            style="background-color:{{tags_helper[tag][0]}}">{{tag}}
+                    </button>
+                </li>
+                {% endfor %}
+            </ul>
+
+            {% for tag in tags_helper.keys() %}
+            <p class='{{tags_helper[tag][1]}}' style="display: none">{% if tag in
+                html_helper['tags'][n] %}True{% else %}False{% endif %}</p>
+            {% endfor %}
+
+
+            <ul style="margin: 0px; padding: 0px; border: 0px">
+                <li style="display: inline"><em>Types:</em></li>
+
+                {% for type in html_helper['entry_type'][n] %}
+                <li class="button-{{type_helper[type][1]}};" style="display: inline;">
+                    <button onClick="filtering('{{type_helper[type][1]}}')"
+                            style="background-color:{{type_helper[type][0]}}">{{type}}
+                    </button>
+                </li>
+                {% endfor %}
+            </ul>
+
+            {% for type in type_helper.keys() %}
+            <p class='{{type_helper[type][1]}}' style="display: none">{% if type in
+                html_helper['entry_type'][n] %}True{% else %}False{% endif %}</p>
+            {% endfor %}
+
+            <hr>
+
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+<!-- *************** -->
+<!-- .js and Scripts -->
+<!-- *************** -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+<script>
+
+    var options = {
+            valueNames: [
+            {% for tag in tags_helper.keys() %}'{{tags_helper[tag][1]}}',{% endfor %}
+            {% for type in type_helper.keys() %}'{{type_helper[type][1]}}',{% endfor %}
+            'titles',
+            'authors',
+            'venues',
+            'year'
+            ]};
+
+    var paperList = new List('papers', options);
+
+    function filtering(name) {
+
+        if (name == "all") {
+            paperList.filter();
+            return
+        }
+
+        else {
+            paperList.filter();
+            paperList.filter(function (item) { return item.values()[name] === "True" });
+        }
+    }
+
+</script>
+
