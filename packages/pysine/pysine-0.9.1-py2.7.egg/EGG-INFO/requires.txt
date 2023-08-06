@@ -1,0 +1,4 @@
+pyaudio
+numpy
+nose>=1.0
+mock

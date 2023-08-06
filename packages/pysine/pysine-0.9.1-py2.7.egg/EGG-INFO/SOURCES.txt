@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+pysine/__init__.py
+pysine/__main__.py
+pysine/_version.py
+pysine/pysine.py
+pysine.egg-info/PKG-INFO
+pysine.egg-info/SOURCES.txt
+pysine.egg-info/dependency_links.txt
+pysine.egg-info/requires.txt
+pysine.egg-info/top_level.txt
