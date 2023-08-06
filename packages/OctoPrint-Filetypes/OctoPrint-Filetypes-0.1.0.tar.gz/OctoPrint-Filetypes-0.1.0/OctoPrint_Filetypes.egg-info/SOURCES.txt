@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+OctoPrint_Filetypes.egg-info/PKG-INFO
+OctoPrint_Filetypes.egg-info/SOURCES.txt
+OctoPrint_Filetypes.egg-info/dependency_links.txt
+OctoPrint_Filetypes.egg-info/entry_points.txt
+OctoPrint_Filetypes.egg-info/not-zip-safe
+OctoPrint_Filetypes.egg-info/requires.txt
+OctoPrint_Filetypes.egg-info/top_level.txt
+octoprint_filetypes/__init__.py
+octoprint_filetypes/static/js/filetypes.js
+octoprint_filetypes/templates/filetypes_settings.jinja2

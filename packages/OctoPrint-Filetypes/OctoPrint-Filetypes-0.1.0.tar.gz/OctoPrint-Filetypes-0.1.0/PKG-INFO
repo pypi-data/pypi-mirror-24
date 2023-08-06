@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: OctoPrint-Filetypes
+Version: 0.1.0
+Summary: Allows to select what file types visible in upload dialog
+Home-page: https://github.com/TheLongRunSmoke/OctoPrint-Filetypes
+Author: thelongrunsmoke
+Author-email: thelongrunsmoke@gmail.com
+License: AGPLv3
+Description: UNKNOWN
+Platform: UNKNOWN

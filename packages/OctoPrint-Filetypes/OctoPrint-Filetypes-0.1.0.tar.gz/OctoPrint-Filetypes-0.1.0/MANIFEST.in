@@ -1,0 +1,3 @@
+include README.md
+recursive-include octoprint_filetypes/templates *
+recursive-include octoprint_filetypes/static *
