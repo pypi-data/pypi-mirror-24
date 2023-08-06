@@ -1,0 +1,9 @@
+CHANGES
+=======
+
+1.0.22
+------
+
+* numpy requirement for test
+* Travis tools
+* Try tools
