@@ -1,0 +1,57 @@
+Metadata-Version: 1.1
+Name: medialog.markdown
+Version: 0.1
+Summary: markdown for Plone
+Home-page: http://github.com/espenmn/medialog.markdown
+Author: Espen Moe-Nilssen
+Author-email: espen@medialog.no
+License: GPL
+Description: Introduction
+        ============
+        
+        An markdown editor for Plone 
+        
+        
+        Installation
+        ============
+        Add it in the add-ons control panel
+        
+         
+        Markdown Behavior
+        --------
+        In the dexterity control panel: add 'markdown behavior'
+        
+        Control Panle
+        ---------
+        In the control panel ( Add-on control panel):
+        Add your (extra) buttons
+         
+        
+        Markdown Tile
+        --------
+        In mosaic you can add Markdown tile 
+        
+        
+        To do
+        ------
+        Make tile searchable
+        
+        
+        
+        Author:
+        -------
+        Espen Moe-Nilssen
+        
+        Changelog
+        =========
+        
+        
+        0.1dev (22 june 2017)
+        ————————————————————	
+        
+        - Initial release [espenmn]
+        
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
