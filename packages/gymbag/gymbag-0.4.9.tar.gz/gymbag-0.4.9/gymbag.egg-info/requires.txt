@@ -1,0 +1,12 @@
+numpy
+gym
+tables
+typing
+
+[dev]
+scandir
+mypy
+pylint
+sphinx
+sphinx_rtd_theme
+twine

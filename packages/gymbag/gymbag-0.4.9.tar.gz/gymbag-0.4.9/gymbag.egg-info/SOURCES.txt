@@ -1,0 +1,10 @@
+README.rst
+setup.py
+gymbag/__init__.py
+gymbag/core.py
+gymbag/hdf5.py
+gymbag.egg-info/PKG-INFO
+gymbag.egg-info/SOURCES.txt
+gymbag.egg-info/dependency_links.txt
+gymbag.egg-info/requires.txt
+gymbag.egg-info/top_level.txt

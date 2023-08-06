@@ -1,0 +1,103 @@
+Gymbag
+======
+
+Gymbag is a Python 3 library for easy, efficient, single-file storage of `OpenAI Gym <https://gym.openai.com/>`__
+reinforcement learning environment data. It stores observations, actions, and rewards in portable, compressed
+`HDF5 <https://en.wikipedia.org/wiki/Hierarchical_Data_Format>`__ files.  You can easily playback
+the data for training or testing, or read it in for analysis.
+
+Gymbag automatically appends to existing files, so you can easily accumulate all your training data in one place.
+You can also store multiple data sets from separate experiments or environments in the same file, along with
+descriptions to keep them straight.  You can store arbitrary metadata with each step (in the `info` dict).
+Gymbag does not store rendered output (movies).  It's also easy to add other storage formats.
+
+.. image:: https://gitlab.com/doctorj/gymbag/badges/master/build.svg
+    :target: https://gitlab.com/doctorj/gymbag/
+
+
+Recording
+---------
+.. code-block:: python
+
+    # Wrap env with HDF5 recorder, specifying filename
+    env = record_hdf5(gym.make('CartPole-v0'), 'cartpole.h5')
+    for episode in range(2):
+        env.reset()
+        done = False
+        while not done:
+            obs, reward, done, info = env.step(env.action_space.sample())
+
+
+Reading
+-------
+Reading the data back is just as easy:
+
+.. code-block:: python
+
+    for episode in HDF5Reader('cartpole.h5'):
+        for time, obs, action, reward, done, info in episode:
+            print(time, obs, action, reward, done, info)
+
+.. code-block:: console
+
+    1500617412.784789 [ 0.03698143  0.01418633  0.01207788  0.00391994] 0.0 nan False None
+    1500617412.78494 [ 0.03726516 -0.18110673  0.01215627  0.30038899] 0.0 1.0 False None
+    1500617412.784968 [ 0.03364302  0.01383986  0.01816405  0.01156456] 1.0 1.0 False None
+    1500617412.784994 [ 0.03391982  0.20869666  0.01839535 -0.27533251] 1.0 1.0 False None
+    1500617412.785022 [ 0.03809375  0.01331716  0.0128887   0.02309511] 0.0 1.0 False None
+    ...
+
+Playback
+--------
+.. code-block:: python
+
+    env = PlaybackEnv(HDF5Reader('cartpole.h5'))
+
+    while not env.played_out:
+        env.reset()
+        done = False
+        while not done:
+            obs, reward, done, info = env.step(env.action_space.sample())
+            print(obs, reward, done, info)
+
+
+Performance
+-----------
+
+Typically wrapping an environment with Gymbag results in less than a 2X slowdown.
+Here is a comparison to `gym_recording <https://github.com/openai/gym-recording>`__ (which dumps data as uncompressed binary blobs):
+
+=========== ========= ============= =========== ============= ===========
+Environment              Time (s)                  Space (MB)
+----------- ----------------------------------- -------------------------
+..          unwrapped gym_recording gymbag.hdf5 gym_recording gymbag.hdf5
+=========== ========= ============= =========== ============= ===========
+Cartpole-v0 0.38 (1X) 0.63  (1.7X)  0.64 (1.7X) 1.6  (3.2X)   0.5  (1X)
+Breakout-v0 1.72 (1X) 2.20  (1.3X)  3.34 (1.9X) 223  (74X)    3  (1X)
+=========== ========= ============= =========== ============= ===========
+
+
+Extras
+------
+Also comes with tools for recording to memory, generating test data, comparing data between runs, converting saved data formats, and more.
+
+
+Documentation
+-------------
+
+.. GitLab README doesn't render TOC (where would it link anyway) or sphinx roles, so we have to put in normal links.
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    Home <self>
+    examples
+    api
+
+* `GitLab Repo <https://gitlab.com/doctorj/gymbag/>`__
+* `Documentation <https://doctorj.gitlab.io/gymbag/>`__:
+  `Examples <https://doctorj.gitlab.io/gymbag/examples.html>`__ |
+  `API <https://doctorj.gitlab.io/gymbag/api.html>`__
+
+Gymbag is open-source licensed under the LGPL 3.0.
