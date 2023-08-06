@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: CigarIterator
+Version: 1.0.3
+Summary: Iterates pysam AlignedSegments, managing the different coordinate spaces of the cigar, sequence, MD, and reference.
+Home-page: https://github.com/innovate-invent/CigarIterator
+Author: Nolan
+Author-email: innovate.invent@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+# CigarIterator
+Iterates pysam AlignedSegments, managing the different coordinate spaces of the cigar, sequence, MD, and reference.
+
+
