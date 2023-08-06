@@ -1,0 +1,24 @@
+mozzarilla/LICENSE.TXT,sha256=b7IRwYdnDCK-beCDRTjNpM68GVYXhSCfeYfSQqoyjHs,1064
+mozzarilla/README.MD,sha256=j29eC38VmfmXJkD_rd89jXBNKlU2rNr_3eD2b17-9_w,3226
+mozzarilla/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mozzarilla/app_window.py,sha256=18eNwPNjXW4-OhLiQwWh8G8iGe790UZI21PNJVn4PBs,28427
+mozzarilla/config_def.py,sha256=9C6JQ46X4kc9sLL-GtfFP_F6d1XzdzPtdJIhqSsTzw4,6029
+mozzarilla/field_widgets.py,sha256=EMW_mdoC9yjYqLoWT8g2f77t1gZ8HfNSlFrR10RhO-k,34546
+mozzarilla/run.pyw,sha256=0PMnbCT7JLT3GuGDW1nOTLFtoyaWiJ31kfjk6LCwvHo,931
+mozzarilla/tag_window.py,sha256=QcZkOZah73X6cCSiEO3JEfCwhJhInW16NyTFq4Cox58,1512
+mozzarilla/widget_picker.py,sha256=HtCa4K0bG8AUozhAYX55Y1LSyru94sjUWiH6QPbgPGc,2060
+mozzarilla/styles/dark red.sty,sha256=AJrsiwpe5e9UUIVTJdo-utfln5rhSIbXXgbRMV985Yg,445
+mozzarilla/styles/guerilla.sty,sha256=YcqaLk_INW5YqujbaYGQMos5oVIIT3vTo-p3zdH4_lM,445
+mozzarilla/styles/light.sty,sha256=DrLSNX_XAgA7wP00jJMWxJl3Vj48-y_7yuq9CmsfsRg,445
+mozzarilla/tools/__init__.py,sha256=I83PFxcDLqWV7xM6TX_1GKrWtTfVGG25Lc5yTKy16J4,533
+mozzarilla/tools/create_bitmap.py,sha256=LbFlsOVXFlcbJM71JwCq7Dje7dmnG4cCiSL-70UUvyo,10832
+mozzarilla/tools/dependency_window.py,sha256=AB6w5kXX-56HV8QkLXeqi6AAEUkYkHK-mChLSxwcXS8,9914
+mozzarilla/tools/search_and_replace_window.py,sha256=d-L3cZ7-HFouhRj_nFJbOWza1yjTDQHMDjkmNAxzH9E,7173
+mozzarilla/tools/shared_widgets.py,sha256=mBaCl8g3f2uJB73j1-7vELD9zGnNvlZ3MtLGLCkjkXI,13853
+mozzarilla/tools/tag_scanner_window.py,sha256=Fkn7x95_bg4AiDvTj3yGrliQ_0EIGE8QW5FUOTD2RA4,13429
+mozzarilla-1.0.2.dist-info/DESCRIPTION.rst,sha256=sNJPxpMShIl15n9uwqOYOutUXlt-ergjEoN-PDC72vY,3172
+mozzarilla-1.0.2.dist-info/METADATA,sha256=QfFKvn0-CPPBJH3tZUd80ldW59WCT2kHQsTX0cUF0fk,3869
+mozzarilla-1.0.2.dist-info/RECORD,,
+mozzarilla-1.0.2.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+mozzarilla-1.0.2.dist-info/metadata.json,sha256=3Hi3OYxp4bdMmRNaSNXnapoLp15EaDd0NOqI3-jgwuU,892
+mozzarilla-1.0.2.dist-info/top_level.txt,sha256=zTMN8KN9CxDSU4G0rUaeuWDg0Nu-EyQXJ2A7-WPsNmI,11
