@@ -1,0 +1,6 @@
+[console_scripts]
+cued_datalogger_dbg = cued_datalogger.__main__:run_full
+
+[gui_scripts]
+cued_datalogger_run = cued_datalogger.__main__:run_full
+
