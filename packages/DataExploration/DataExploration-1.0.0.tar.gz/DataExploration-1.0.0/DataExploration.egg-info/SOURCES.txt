@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+DataExploration/__init__.py
+DataExploration/data_exploration.py
+DataExploration.egg-info/PKG-INFO
+DataExploration.egg-info/SOURCES.txt
+DataExploration.egg-info/dependency_links.txt
+DataExploration.egg-info/requires.txt
+DataExploration.egg-info/top_level.txt
+DataExploration/test/__init__.py

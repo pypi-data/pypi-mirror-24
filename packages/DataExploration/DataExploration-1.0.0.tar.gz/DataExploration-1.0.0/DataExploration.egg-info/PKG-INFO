@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: DataExploration
+Version: 1.0.0
+Summary: Utility for exploring the dataset
+Home-page: https://github.com/pypa/dataexploration
+Author: Nitin Vijay
+Author-email: nitinvijay23@gmail.com
+License: MIT
+Description: Utility for exploring the dataset that includes filling the missing values, finding correlation, various statistical tests among variables, etc. It extensively uses pandas and numpy
+Keywords: dataset pandas numpy scipy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
