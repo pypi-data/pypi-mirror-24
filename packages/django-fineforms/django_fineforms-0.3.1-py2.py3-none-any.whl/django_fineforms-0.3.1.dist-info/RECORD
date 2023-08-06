@@ -1,0 +1,15 @@
+django_fineforms-0.3.1.dist-info/DESCRIPTION.rst,sha256=V2GLnGSvr5Viev7qZPePwjcsQHXNSop9y3e9g0fhcWg,3898
+django_fineforms-0.3.1.dist-info/METADATA,sha256=KDNXwAJIClAkD0Q75w_L4G_HS1zmZaZOMWGV9Ai0Mfs,4646
+django_fineforms-0.3.1.dist-info/RECORD,,
+django_fineforms-0.3.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_fineforms-0.3.1.dist-info/metadata.json,sha256=EvFs4YdymanzctFRc9ALDrkJLY6wbVHlECPcN8v0D7c,884
+django_fineforms-0.3.1.dist-info/top_level.txt,sha256=sEsYLxAzSOQh-hTa4epMKmrKO2KsY5YlxqXoHlK0QF8,10
+fineforms/__init__.py,sha256=UDufrCZCObnNBq7EsfAm7rCY3n2IM0yEjP1yK0gQLtA,62
+fineforms/locale/de/LC_MESSAGES/django.mo,sha256=Cf8g8diqmdt08OpQQACnlDwobXY8dalSwr7oi3NzWWk,525
+fineforms/locale/de/LC_MESSAGES/django.po,sha256=8Cw9GRpq_Zk57klXHcvETs9lrTQqMu9ktp_uZCisylM,855
+fineforms/templates/fineforms/errors.html,sha256=JQfUe79c89EyO-L8Cn7oQErsQBK0wFp9lhIsDLW_5xI,386
+fineforms/templates/fineforms/field-plain.html,sha256=Y5EWHz1kJZVxyscAjme8wZQi4hw3S1YLIhkV0JqHfB0,55
+fineforms/templates/fineforms/field.html,sha256=ToqdOxPf2hNiL1x8QNs6Mq3rFjObse-tr5Wy4XGpafs,665
+fineforms/templates/fineforms/fields.html,sha256=3wYlrcsu1A2tYzdlGzi0FJGRz7II8WMUWQqHRkgqDfU,62
+fineforms/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fineforms/templatetags/fineforms.py,sha256=SL-245_HIxSnRoT7fdkK9cUZpSbCfZxOjbKYEQ4TABQ,4685
