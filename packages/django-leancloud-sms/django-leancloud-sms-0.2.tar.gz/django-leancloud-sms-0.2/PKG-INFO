@@ -1,0 +1,73 @@
+Metadata-Version: 1.1
+Name: django-leancloud-sms
+Version: 0.2
+Summary: A simple Django app use leancloud sms api
+Home-page: https://github.com/edison7500/django-leancloud-sms
+Author: jiaxin
+Author-email: edison7500@gmail.com
+License: BSD License
+Download-URL: https://github.com/edison7500/django-leancloud-sms/archive/v0.2-alpha.tar.gz
+Description: # Django Leancloud SMS
+        [![Build Status](https://travis-ci.org/edison7500/django-leancloud-sms.svg?branch=master)](https://travis-ci.org/edison7500/django-leancloud-sms)
+        
+        ## 安装
+        ```bash
+        pip install requests # requests be must >= 2.1
+        
+        git clone https://github.com/edison7500/django-leancloud-sms.git
+        cd django-leancloud-sms
+        python setup.py install
+         
+        ```
+        
+        ## 使用方法
+        1. 在 django settings.py 设置以下配置
+        ```python
+        
+        LEANCLOUD_HEADERS = {
+            "X-LC-Id": "<replace your x-lc-id>",
+            "X-LC-Key": "<replace your x-lc-key>",
+            "Content-Type": "application/json"
+        }
+        
+        LEANCLOUD_SMS_NAME = "<replace your name>"
+        
+        ```
+        2. 在 Django View 中使用
+        ```python
+        '''
+        DJANGO Views.py
+        '''
+        from django.http import JsonResponse
+        from leancloud.sms import LeanCloudSMS
+        
+        
+        def send_sms_view(request):
+            phone_num = request.GET.get('num')
+            sms = LeanCloudSMS()
+            data, msg = sms.send_sms(phone_number=phone_num) # 发送验证码
+            return JsonResponse(status=200, data={
+                                                'status':data,
+                                                'msg':msg
+                                            })
+        
+        def verify_phone_code(request):
+            phone_num = request.GET.get('num')
+            v_code = request.GET.get('vcode')
+            sms = LeanCloudSMS()
+            data, msg = sms.verify_phone_code(phone_number=phone_num, verify_code=v_code) # 验证手机验证码
+            return JsonResponse(status=200, data={
+                                                'status':data,
+                                                'msg':msg
+                                            })
+        ```
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
