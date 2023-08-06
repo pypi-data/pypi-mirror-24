@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+vecshare/__init__.py
+vecshare/indexer.py
+vecshare/info.py
+vecshare/poll.py
+vecshare/signatures.py
+vecshare/sim_benchmark.py
+vecshare/vecshare.py
+vecshare.egg-info/PKG-INFO
+vecshare.egg-info/SOURCES.txt
+vecshare.egg-info/dependency_links.txt
+vecshare.egg-info/requires.txt
+vecshare.egg-info/top_level.txt

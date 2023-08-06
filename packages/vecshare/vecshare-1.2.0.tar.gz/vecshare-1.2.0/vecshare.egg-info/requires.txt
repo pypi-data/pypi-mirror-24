@@ -1,0 +1,12 @@
+pandas
+numpy
+nltk
+scipy
+datadotworld
+bs4
+selenium
+progressbar2
+tabulate
+pytz
+pyvirtualdisplay
+sklearn
