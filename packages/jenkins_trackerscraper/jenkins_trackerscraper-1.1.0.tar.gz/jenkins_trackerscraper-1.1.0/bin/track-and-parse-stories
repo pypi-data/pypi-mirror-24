@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+import sys
+import PivotalTrackerScraper
+
+#Allows program to be run from command line with keyword track-and-parse-stories
+cmd_arguments = sys.argv
+token = cmd_arguments [1] #Parameter for PivotalTrackerAPI Token
+workspace = cmd_arguments [2] #Parameter for path to workspace
+project_id = cmd_arguments [3] #Parameter for PivotalTracker Project ID
+repos = cmd_arguments[4:] #Parameter(s) for date and repos
+
+PivotalTrackerScraper.run(token, workspace, project_id, repos)
