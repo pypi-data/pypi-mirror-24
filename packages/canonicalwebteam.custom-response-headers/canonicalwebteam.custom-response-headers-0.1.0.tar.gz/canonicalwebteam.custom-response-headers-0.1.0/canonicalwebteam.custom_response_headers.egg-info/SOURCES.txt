@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+canonicalwebteam/__init__.py
+canonicalwebteam.custom_response_headers.egg-info/PKG-INFO
+canonicalwebteam.custom_response_headers.egg-info/SOURCES.txt
+canonicalwebteam.custom_response_headers.egg-info/dependency_links.txt
+canonicalwebteam.custom_response_headers.egg-info/requires.txt
+canonicalwebteam.custom_response_headers.egg-info/top_level.txt
+canonicalwebteam/custom_response_headers/__init__.py
