@@ -1,0 +1,141 @@
+#!/usr/bin/env python3
+# system modules
+import argparse
+import textwrap
+import logging
+import os
+import json
+import sys
+
+# internal modules
+import patatmo
+from patatmo.utils import *
+from patatmo.api.client import NetatmoClient
+from patatmo.api.authentication import Authentication
+
+# external modules
+
+# Options
+parser = argparse.ArgumentParser( 
+    description = textwrap.dedent("""
+        Issue a Getpublicdata request to the Netatmo server and write the
+        results to file.
+        """)
+    )
+parser.add_argument("-p","--password", 
+    help = "Netatmo developer account password. " 
+        "Takes precedence over NETATMO_PASSWORD environment variable", 
+    required = False)
+parser.add_argument("-u","--user", 
+    help = "Netatmo developer account username. "
+        "Takes precedence over NETATMO_USERNAME environment variable", 
+    required = False)
+parser.add_argument("-i","--id", 
+    help = "Netatmo app client id. "
+        "Takes precedence over NETATMO_CLIENT_ID environment variable", 
+    required = False)
+parser.add_argument("-s","--secret", 
+    help = "Netatmo app client secret. "
+        "Takes precedence over NETATMO_CLIENT_SECRET environment variable", 
+    required = False)
+parser.add_argument("-o","--output", 
+    help = "output file. Defaults to '-' which means STDOUT.", default = "-")
+parser.add_argument("-f","--tmpfile", help = "temporary authentication file",
+    required = False)
+parser.add_argument("-v","--verbose", help = "verbose output",
+    action="store_true", default = False)
+
+# Getpublicdata arguments
+parser.add_argument("--lat_ne", required = True,
+    help = "North-east latitude in degrees [-85;85]")
+parser.add_argument("--lon_ne", required = True,
+    help = "North-east longitude [-180;180]")
+parser.add_argument("--lat_sw", required = True,
+    help = "South-west latitude [-85;85]")
+parser.add_argument("--lon_sw", required = True,
+    help = "South-west longitude [-180;180]")
+parser.add_argument("--required_data", help = "Some kind of data filter...", 
+    default = None)
+parser.add_argument("--filter", help = "exclude stations with unusual data? " 
+    "Defaults to False.", default = False)
+parser.add_argument("-r","--raw", help = "Return the raw API output.", 
+    action="store_true", default = False)
+
+args = parser.parse_args()
+
+if not args.user: # no user given via command-line
+    NETATMO_USERNAME = os.environ.get("NETATMO_USERNAME")
+    assert NETATMO_USERNAME, ("Specify Netatmo developer account username " 
+        "via --user argument or NETATMO_USERNAME environment variable.")
+else:
+    NETATMO_USERNAME = args.user
+if not args.password: # no password given via command-line
+    NETATMO_PASSWORD = os.environ.get("NETATMO_PASSWORD")
+    assert NETATMO_PASSWORD, ("Specify Netatmo developer account password " 
+        "via --password argument or NETATMO_PASSWORD environment variable.")
+else:
+    NETATMO_PASSWORD = args.password
+if not args.id: # no id given via command-line
+    NETATMO_CLIENT_ID = os.environ.get("NETATMO_CLIENT_ID")
+    assert NETATMO_CLIENT_ID, ("Specify Netatmo app client id " 
+        "via --id argument or NETATMO_CLIENT_ID environment variable.")
+else:
+    NETATMO_CLIENT_ID = args.id
+if not args.secret: # no user given via command-line
+    NETATMO_CLIENT_SECRET = os.environ.get("NETATMO_CLIENT_SECRET")
+    assert NETATMO_CLIENT_SECRET, ("Specify Netatmo app client secret " 
+        "via --secret argument or NETATMO_CLIENT_SECRET environment variable.")
+else:
+    NETATMO_CLIENT_SECRET = args.secret
+
+if args.output == "-" or not args.output:
+    OUTPUT_FILE = sys.stdout
+else:
+    OUTPUT_FILE = open(args.output,"w")
+
+if args.verbose:
+    logging.basicConfig(level = logging.DEBUG)
+else:
+    logging.basicConfig(level = logging.WARNING)
+
+# read credentials
+CREDENTIALS = {
+    "username":NETATMO_USERNAME,
+    "password":NETATMO_PASSWORD,
+    "client_id":NETATMO_CLIENT_ID,
+    "client_secret":NETATMO_CLIENT_SECRET,
+    }
+
+# set up a client
+client = NetatmoClient(
+    authentication = Authentication(
+        credentials = CREDENTIALS,
+        tmpfile = args.tmpfile,
+        ),
+    )
+
+# issue the Getpublicdata request
+logging.info("Issuing Getpublicdata request...")
+response = client.Getpublicdata( 
+    region = {key:float(getattr(args,key)) \
+        for key in ["lat_ne","lon_ne","lat_sw","lon_sw"]},
+    required_data = args.required_data,
+    filter = args.filter,
+    )
+logging.info("Getpublicdata request completed!")
+
+if args.raw:
+    logging.info("Using raw API response as output")
+    OUTPUT_STRING = json.dumps(response.response,sort_keys=True,indent=4)
+else:
+    # convert response
+    logging.info("Converting Getpublicdata response...")
+    dataframe = response.dataframe()
+    logging.info("Getpublicdata response converted!")
+
+    OUTPUT_STRING = dataframe.to_csv()
+
+# output
+logging.info("Writing to output file '{}'...".format(OUTPUT_FILE.name))
+OUTPUT_FILE.write(OUTPUT_STRING)
+logging.info("Written to output file!")
