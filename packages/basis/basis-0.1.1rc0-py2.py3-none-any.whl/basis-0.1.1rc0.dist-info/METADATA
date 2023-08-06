@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: basis
+Version: 0.1.1rc0
+Summary: Seamless construction of NLP pipelines involving word vectors. Builds consistent mappings between words, integers, and vectors, allowing you to focus on building models.
+Home-page: https://github.com/vaitech/basis
+Author: Luke de Oliveira
+Author-email: lukedeo@vaitech.io
+License: Apache 2.0
+Download-URL: https://github.com/vaitech/basis/archive/0.1.1-rc0.tar.gz
+Keywords: Machine-Learning TensorFlow Deployment Versioning Keras AWS Deep Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: h5py
+Requires-Dist: scikit-learn
+Requires-Dist: six
+Requires-Dist: spacy
+
+UNKNOWN
+
+
