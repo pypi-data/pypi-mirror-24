@@ -1,0 +1,10 @@
+example2/__init__.py,sha256=8LbERQT_6lGu9LANM20N_8HQtgEoE4wkJw5h322CAkU,32
+example2/example_aspp.py,sha256=qVs5t9Uc18NcUGa7qCRObTR4zlmzRzx5JVizpPxSuw8,53
+example2-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+example2-0.1.dist-info/METADATA,sha256=WB7EdVXFjoHAXh0ODiRFzHygysc09nXD0hb8W-BSeX8,236
+example2-0.1.dist-info/RECORD,,
+example2-0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+example2-0.1.dist-info/metadata.json,sha256=kthXAuSFaSb212e7p6zkWzHobf8t_LW89SpfQohSDiA,412
+example2-0.1.dist-info/top_level.txt,sha256=OL8T75mFAmo_tx_qmulYJs-NhLAvMA1IG6kKYfNVBKY,9
+example2_module/__init__.py,sha256=8LbERQT_6lGu9LANM20N_8HQtgEoE4wkJw5h322CAkU,32
+example2_module/example_aspp.py,sha256=qVs5t9Uc18NcUGa7qCRObTR4zlmzRzx5JVizpPxSuw8,53
