@@ -1,0 +1,7 @@
+numpy
+scipy
+emcee
+six
+uncertainties
+pandas
+numdifftools
