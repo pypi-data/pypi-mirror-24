@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: easy-push
+Version: 0.1
+Summary: Python library for sending push notification to Android and iOS
+Home-page: https://github.com/atomAltera/easy_push
+Author: Konstantin Alikhanov
+Author-email: atomAltera@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pyfcm
+
+UNKNOWN
+
+
