@@ -1,0 +1,94 @@
+exguard - Guard code against exceptions, e.g. for running untrusted module code in a framework
+==============================================================================================
+
+Description
+-----------
+
+exgurd provides a decorator to guard a function or method against
+exceptions. This is useful in situations where untrusted code is
+executed, e.g. when executing a third-party module in a framework.
+
+In comparison to the `suppress` context manager from Python 3, exguard
+provides more means to control exception handling:
+
+- filter on modules and namespaces to define which exceptions to catch
+  and leave exceptions in other code untouched
+- execute a callback function once an exception was caught
+- execute a callback function in the `finally` block
+
+For example, an API method in a web application that calls through to
+code in third-party modules can be guarded against exceptions in this
+modules only, while having exceptions in the framework itself be raised
+verbatim::
+
+    from exguard import guard, traceback_str
+
+    def throw_to_client(exception, module):
+        tb = traceback_str(exception)
+
+        # Do something to pass a traceback to the browser, disable the plugin,…
+        pass
+
+    # All third-party modules are under one namespace
+    @guard(modules=["myframework.plugins"], submodules=True, fullstack=True, cb_except=throw_to_client)
+    def call_plugin_api():
+        # An exception inside this will be caught
+        myframework.plugins.evil.crash()
+
+        # This will still raise an exception like normal
+        x = 17 / 0
+
+
+Authors
+-------
+
+exguard has been started as a part of `Veripeditus
+<https://edugit.org/Veripeditus/veripeditus-server>`_, mainly by
+Eike Tim Jesinghaus <eike@naturalnet.de>.
+
+Licence and copyright
+---------------------
+
+::
+
+    exguard - Guard code against exceptions, e.g. for running untrusted module code in a framework
+    Copyright (C) 2017  Eike Tim Jesinghaus <eike@naturalnet.de>
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+Changelog
+---------
+
+0.2.1
+~~~~~
+
+- Guard against <string> or other non-module frames.
+
+0.2
+~~~
+
+- Add utility function to get full traceback as string.
+- Re-licence under MIT.
+- Minor documentation updates.
+
+0.1
+~~~
+
+- First release.
+
