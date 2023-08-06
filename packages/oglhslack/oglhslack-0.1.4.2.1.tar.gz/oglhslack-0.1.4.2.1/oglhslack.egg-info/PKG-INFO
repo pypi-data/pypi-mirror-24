@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: oglhslack
+Version: 0.1.4.2.1
+Summary: A Slack bot client for Lighthouse API
+Home-page: https://github.com/thiagolcmelo/oglhslack
+Author: Lighthouse Team
+Author-email: engineering@opengear.com
+License: UNKNOWN
+Download-URL: https://github.com/thiagolcmelo/oglhslack/archive/0.1.4.2.1.tar.gz
+Description: UNKNOWN
+Keywords: api,opengear,lighthouse,slackbot
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
