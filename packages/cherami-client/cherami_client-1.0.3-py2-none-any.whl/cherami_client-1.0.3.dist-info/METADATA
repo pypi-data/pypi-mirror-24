@@ -1,0 +1,89 @@
+Metadata-Version: 2.0
+Name: cherami-client
+Version: 1.0.3
+Summary: Cherami Python Client Library
+Home-page: https://github.com/uber/cherami-client-python
+Author: Wei Han
+Author-email: weihan@uber.com
+License: MIT
+Keywords: cherami python client
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: PyYAML
+Requires-Dist: clay-flask
+Requires-Dist: crcmod
+Requires-Dist: tchannel (>=1.0.1)
+Requires-Dist: zest.releaser (>=6.0,<7.0)
+Provides-Extra: tests
+Requires-Dist: coverage (==4.0.3); extra == 'tests'
+Requires-Dist: flake8 (==2.5.4); extra == 'tests'
+Requires-Dist: funcsigs (==1.0.2); extra == 'tests'
+Requires-Dist: mccabe (==0.4.0); extra == 'tests'
+Requires-Dist: mock (==2.0.0); extra == 'tests'
+Requires-Dist: pbr (==1.9.1); extra == 'tests'
+Requires-Dist: pep8 (==1.7.0); extra == 'tests'
+Requires-Dist: py (==1.4.31); extra == 'tests'
+Requires-Dist: pyflakes (==1.0.0); extra == 'tests'
+Requires-Dist: pytest (==2.8.7); extra == 'tests'
+Requires-Dist: pytest-cov; extra == 'tests'
+Requires-Dist: pytest-ipdb (==0.1-prerelease2); extra == 'tests'
+Requires-Dist: pytest-tornado; extra == 'tests'
+Requires-Dist: six (==1.10.0); extra == 'tests'
+
+.. image:: https://travis-ci.org/uber/cherami-client-python.svg?branch=master
+    :target: https://travis-ci.org/uber/cherami-client-python
+
+.. image:: https://coveralls.io/repos/github/uber/cherami-client-python/badge.svg?branch=master
+    :target: https://coveralls.io/github/uber/cherami-client-python?branch=master
+
+.. image:: https://badge.fury.io/py/cherami-client.svg
+    :target: https://badge.fury.io/py/cherami-client
+
+===============================
+Cherami Client For Python
+===============================
+
+Python client library for publishing/consuming messages to/from `Cherami <https://github.com/uber/cherami-server>`_.
+
+Installation
+------------
+
+``pip install cherami-client``
+
+Usage
+-----
+
+Create and edit the ``.yaml`` file under ``./config``
+
+See Example:
+::
+        cat ./config/test.yaml
+
+Set the clay environment variable:
+::
+        export CLAY_CONFIG=./config/test.yaml
+
+Run the example client:
+::
+        python ./demo/example_publisher.py
+        python ./demo/example_consumer.py
+
+Contributing
+------------
+We'd love your help in making Cherami great. If you find a bug or need a new feature, open an issue and we will respond as fast as we can.
+If you want to implement new feature(s) and/or fix bug(s) yourself, open a pull request with the appropriate unit tests and we will merge it after review.
+
+Note: All contributors also need to fill out the `Uber Contributor License Agreement <http://t.uber.com/cla>`_ before we can merge in any of your changes.
+
+Documentation
+-------------
+Interested in learning more about Cherami? Read the blog post: `eng.uber.com/cherami <https://eng.uber.com/cherami/>`_
+
+License
+-------
+MIT License, please see `LICENSE <https://github.com/uber/cherami-client-python/blob/master/LICENSE>`_ for details.
+
