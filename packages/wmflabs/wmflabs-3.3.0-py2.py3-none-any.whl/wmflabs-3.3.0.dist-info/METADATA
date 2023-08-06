@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: wmflabs
+Version: 3.3.0
+Summary: DEPRECATED: Use "toolforge" package instead
+Home-page: https://wikitech.wikimedia.org/wiki/User:Legoktm/wmflib
+Author: Kunal Mehta
+Author-email: legoktm@member.fsf.org
+License: GPL-3.0+
+Platform: UNKNOWN
+Requires-Dist: toolforge
+
+UNKNOWN
+
+
