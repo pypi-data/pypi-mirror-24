@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: lsdeflate
+Version: 0.2
+Summary: Compress ls output by gathering numeric ranges into brace expansions
+Home-page: https://github.com/exteris/mypackage
+Author: Daan van Vugt
+Author-email: daanvanvugt@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/exteris/lsdeflate/archive/0.2.tar.gz
+Description: UNKNOWN
+Keywords: unix,ls,directory,clean
+Platform: UNKNOWN
