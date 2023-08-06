@@ -1,0 +1,6 @@
+argparse
+autopep8
+icdiff
+jsbeautifier
+six
+termcolor
