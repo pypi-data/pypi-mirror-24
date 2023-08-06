@@ -1,0 +1,12 @@
+omdb/__init__.py,sha256=dTJwy-XncgWinn6LxzLk-cXoPQ-x5tHfy_y0ic_Oa9I,327
+omdb/__meta__.py,sha256=FmfSsUPouRCkijdR3Ad7lx2E16sMC80jwcnDuvXcKaE,330
+omdb/_compat.py,sha256=8FFXhFxn9YMYpejlDB5aBn6WCooRjv2FNZFMrmw65uI,641
+omdb/api.py,sha256=M9kChlMuyo55YIZTYx1CIBT7eGzpDkwPPvV_ul22Yf0,1242
+omdb/client.py,sha256=tURKFe6EcxqpyDmnpwW6CAGzEfEPakvMp05Je0QtcIU,3210
+omdb/models.py,sha256=Vm4Sgqvd5fqF6ak3oX06hHqq4zLi1S1RMX2mt6yTwKA,3087
+omdb-0.8.1.dist-info/DESCRIPTION.rst,sha256=t6GGsetQI67YqwPbAJxU0aQ56ohsbFJ7Htr--bxL3Dg,12531
+omdb-0.8.1.dist-info/METADATA,sha256=xmUhmexcWd04m9hjo1vM2I5tkpq0dA1mpTsLRxVP_JI,13456
+omdb-0.8.1.dist-info/RECORD,,
+omdb-0.8.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+omdb-0.8.1.dist-info/metadata.json,sha256=r2IUuvQEvXvX8vPvmoBZAcZ4nfqtmr9DRc55M58qoxA,1102
+omdb-0.8.1.dist-info/top_level.txt,sha256=5ToHaezojhdIJuiVVdlfBOVF8LnJDLnerkPJ9oSArps,5
