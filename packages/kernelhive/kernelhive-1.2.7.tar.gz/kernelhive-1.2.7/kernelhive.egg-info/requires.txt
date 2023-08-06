@@ -1,0 +1,3 @@
+paramiko
+werkzeug
+json-rpc

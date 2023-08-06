@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: kernelhive
+Version: 1.2.7
+Summary: Python libraries of KernelHive - an environment for executing, designing and tuning parallel applications in multi-level heterogeneous HPC systems
+Home-page: https://github.com/roscisz/KernelHive
+Author: Pawel Rosciszewski
+Author-email: pawel.rosciszewski@pg.edu.pl
+License: UNKNOWN
+Download-URL: https://github.com/roscisz/KernelHive/archive/1.2.7.tar.gz
+Description: UNKNOWN
+Keywords: parallel cluster monitoring resource management
+Platform: UNKNOWN
