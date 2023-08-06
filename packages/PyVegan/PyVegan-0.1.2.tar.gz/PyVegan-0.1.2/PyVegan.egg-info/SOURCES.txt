@@ -1,0 +1,12 @@
+README.rst
+setup.py
+PyVegan.egg-info/PKG-INFO
+PyVegan.egg-info/SOURCES.txt
+PyVegan.egg-info/dependency_links.txt
+PyVegan.egg-info/entry_points.txt
+PyVegan.egg-info/requires.txt
+PyVegan.egg-info/top_level.txt
+pyvegan/__init__.py
+pyvegan/__main__.py
+pyvegan/pyvegan.py
+pyvegan/utils.py
