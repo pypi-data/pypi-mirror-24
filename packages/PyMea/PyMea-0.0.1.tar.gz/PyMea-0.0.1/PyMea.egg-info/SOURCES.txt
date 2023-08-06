@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+PyMea/__init__.py
+PyMea/helloworld.py
+PyMea.egg-info/PKG-INFO
+PyMea.egg-info/SOURCES.txt
+PyMea.egg-info/dependency_links.txt
+PyMea.egg-info/top_level.txt
