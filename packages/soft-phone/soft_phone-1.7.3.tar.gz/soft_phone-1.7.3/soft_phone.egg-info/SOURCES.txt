@@ -1,0 +1,12 @@
+README.rst
+setup.py
+soft_phone/__init__.py
+soft_phone/callbacks.py
+soft_phone/exceptions.py
+soft_phone/manage_pjsip.py
+soft_phone/soft_phone.py
+soft_phone.egg-info/PKG-INFO
+soft_phone.egg-info/SOURCES.txt
+soft_phone.egg-info/dependency_links.txt
+soft_phone.egg-info/not-zip-safe
+soft_phone.egg-info/top_level.txt
