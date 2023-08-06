@@ -1,0 +1,13 @@
+miyadaiku/themes/bootstrap4/__init__.py,sha256=4xTjEDY8metZ237xNYVrBw1YlT2BYyYFXCbsrDbgOPY,873
+miyadaiku/themes/bootstrap4/config.yml,sha256=r9XQrKq6OG-7690LvXytzQWasUSaPjCXH7T-j_hXvO8,92
+miyadaiku/themes/bootstrap4/externals/css/bootstrap.css,sha256=fDZ6wHbmob72H9d6oq3P6_F3Hc-wHBjdi6FTsUvvQjs,191738
+miyadaiku/themes/bootstrap4/externals/css/bootstrap.min.css,sha256=rr9hHBQ43H7HSOmmNkxzQGazS_Khx-L8ZRHteEY1tQ4,150996
+miyadaiku/themes/bootstrap4/externals/js/bootstrap.js,sha256=O80B9-k8kADyLffStFEQZnTxAU91ZryGbUeKwxO0t3M,99753
+miyadaiku/themes/bootstrap4/externals/js/bootstrap.min.js,sha256=-kIbbrvS-0dNOjhmQJzmwe_RILR_8lb_-4-PUNVW09k,46653
+miyadaiku/themes/bootstrap4/templates/macros.html,sha256=KA1FRzHH89WXa3lWnSljt9sqjV1E_dPJZNHxeq9hCEE,239
+miyadaiku.themes.bootstrap4-0.0.7.dist-info/DESCRIPTION.rst,sha256=G8MsB7kZw9v5oyZsCxFFeO6dM1abvMcY54jBY8zMAzA,1016
+miyadaiku.themes.bootstrap4-0.0.7.dist-info/METADATA,sha256=FH0qGtWgj4May8CBbONOWTa_d6TNYmyI-_ntWmOvtQc,1447
+miyadaiku.themes.bootstrap4-0.0.7.dist-info/RECORD,,
+miyadaiku.themes.bootstrap4-0.0.7.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+miyadaiku.themes.bootstrap4-0.0.7.dist-info/metadata.json,sha256=6K_B0RKlvWxfRCs-Hzx5HA3kNeTMMqjXHrPP94wld1c,571
+miyadaiku.themes.bootstrap4-0.0.7.dist-info/top_level.txt,sha256=_ii-Cp6tDAKPblD5puJV733aX-h3Rdk0vC1yNm7OjTU,10
