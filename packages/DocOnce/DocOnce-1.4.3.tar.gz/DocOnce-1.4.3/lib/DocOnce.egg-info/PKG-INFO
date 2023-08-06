@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: DocOnce
+Version: 1.4.3
+Summary: 
+Usage of this setup.py script:
+
+python setup.py install [, --prefix=$PREFIX]
+
+
+Home-page: https://github.com/hplgit/doconce
+Author: Kristian Gregorius Hustad
+Author-email: krihus@ifi.uio.no
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN

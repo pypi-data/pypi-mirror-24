@@ -1,0 +1,199 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+
+<title></title>
+
+
+<style type="text/css">
+/* blueish style */
+
+/* Color definitions:  http://www.december.com/html/spec/color0.html
+   CSS examples:       http://www.w3schools.com/css/css_examples.asp */
+
+body {
+  margin-top: 1.0em;
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, FreeSans, san-serif;
+  color: #000000;
+}
+h1 { font-size: 1.8em; color: #1e36ce; }
+h2 { font-size: 1.6em; color: #1e36ce; }
+h3 { font-size: 1.4em; color: #1e36ce; }
+a { color: #1e36ce; text-decoration:none; }
+tt { font-family: "Courier New", Courier; }
+/* pre style removed because it will interfer with pygments */
+p { text-indent: 0px; }
+hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+p.caption { width: 80%; font-style: normal; text-align: left; }
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+
+div { text-align: justify; text-justify: inter-word; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 0,
+ 'sections': [('Automatic execution of code blocks', 0, None, '___sec0'),
+              ('Plotting', 1, None, '___sec1'),
+              ('Ignore output', 1, None, '___sec2'),
+              ('Not executed', 1, None, '___sec3'),
+              ('Code with errors', 1, None, '___sec4'),
+              ('Opening files', 1, None, '___sec5')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "AMS"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+    
+<!-- ------------------- main content ---------------------- -->
+
+
+<center><h1 id="___sec0">Automatic execution of code blocks </h1></center> <hr>
+
+<p>
+Compile this document with
+
+<p>
+
+<!-- code=bash (!bc sh) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>doconce format execute.do.txt --execute
+</pre></div>
+<p>
+Hidden execution cells can be used to perform operations that need to be done
+before the following cells are executed:
+
+<p>
+
+<!-- code=text (!bc pycod-e) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>import os
+os.listdir(&quot;.&quot;)
+a = 1
+e = 0
+f = 3
+</pre></div>
+<p>
+This is a cell that should execute automatically:
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>b <span style="color: #666666">=</span> <span style="color: #666666">2</span>
+c <span style="color: #666666">=</span> a <span style="color: #666666">+</span> b
+<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;The result is {}&quot;</span><span style="color: #666666">.</span>format(c))
+c
+</pre></div>
+
+<h1 id="___sec1">Plotting </h1>
+
+<p>
+This is a cell that should plot and output:
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">pylab</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #666666">*</span>
+x <span style="color: #666666">=</span> linspace(<span style="color: #666666">0</span>, <span style="color: #666666">10</span>, <span style="color: #666666">100</span>)
+plot(x, x<span style="color: #666666">*</span>x)
+show()
+</pre></div>
+<p>
+To improve quality when exporting to LaTeX, the following code has automatically
+been run to enable PDF export in notebooks.
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">IPython.display</span> <span style="color: #008000; font-weight: bold">import</span> set_matplotlib_formats
+set_matplotlib_formats(<span style="color: #BA2121">&#39;png&#39;</span>, <span style="color: #BA2121">&#39;pdf&#39;</span>)
+</pre></div>
+
+<h1 id="___sec2">Ignore output </h1>
+
+<p>
+Predefined output can be omitted by passing <code>--ignore_output</code> to DocOnce.
+This will remove all environments ending with <code>out</code>.
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>a <span style="color: #666666">=</span> <span style="color: #666666">2</span>
+<span style="color: #008000; font-weight: bold">print</span>(a)
+</pre></div>
+<p>
+
+<!-- code=text (!bc pyout) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>2
+</pre></div>
+
+<h1 id="___sec3">Not executed </h1>
+
+<p>
+This is a code block that should not be executed:
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">while</span> <span style="color: #008000">True</span>:
+    i <span style="color: #666666">=</span> <span style="color: #666666">2</span>
+</pre></div>
+<p>
+This is some <em>formatted</em> stuff, which is <b>underlined</b> and stuff and maybe even
+contains \( a + 2b \).
+
+<h1 id="___sec4">Code with errors </h1>
+
+<p>
+If code contains errors, it will still be run and the exception shown as part
+of the output:
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">for</span> a <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">10</span>)
+    <span style="color: #008000; font-weight: bold">print</span>(a)
+</pre></div>
+
+<h1 id="___sec5">Opening files </h1>
+
+<p>
+The working directory is the same as the .do.txt file.
+You may want to use <code>os.chdir</code> to change the directory.
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">with</span> <span style="color: #008000">open</span>(<span style="color: #BA2121">&quot;../LICENSE&quot;</span>) <span style="color: #008000; font-weight: bold">as</span> f:
+    <span style="color: #008000; font-weight: bold">print</span>(f<span style="color: #666666">.</span>read())
+</pre></div>
+<p>
+
+<!-- ------------------- end of main content --------------- -->
+
+
+</body>
+</html>
+    
+

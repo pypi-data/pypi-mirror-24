@@ -1,0 +1,118 @@
+======= Solutions =======
+label{sec:solutions}
+
+
+
+# --- begin exercise --- solution
+
+===== Solution to Example 1: Examples can be typeset as exercises =====
+# Solution to Exercise ref{Example}
+
+
+__a)__
+
+The answer to this subproblem can be written here.
+
+__b)__
+
+The answer to this other subproblem goes here,
+maybe over multiple doconce input lines.
+
+# --- end exercise --- solution
+
+
+
+
+# --- begin exercise --- solution
+
+===== Solution to Problem 2: Flip a Coin =====
+# Solution to Exercise ref{demo:ex:1}
+
+
+__a)__
+
+# --- begin answer of exercise ---
+__Answer.__
+If the `random.random()` function returns a number $<1/2$, let it be
+head, otherwise tail. Repeat this $N$ number of times.
+
+# --- end answer of exercise ---
+
+29 <<<!!CODE_BLOCK  pycod
+
+# --- begin answer of exercise ---
+__Answer.__
+`np.sum(np.where(r <= 0.5, 1, 0))` or `np.sum(r <= 0.5)`.
+
+# --- end answer of exercise ---
+
+# --- end exercise --- solution
+
+
+
+
+
+
+# --- begin exercise --- solution
+
+===== Solution to Project 5: Explore Distributions of Random Circles =====
+# Solution to Exercise ref{proj:circle1}
+
+
+__a)__
+
+# --- begin answer of exercise ---
+__Answer.__
+Here goes the short answer to part a).
+
+# --- end answer of exercise ---
+
+Here goes a full solution to part a).
+
+# --- end exercise --- solution
+
+
+
+
+# --- begin exercise --- solution
+
+===== Solution to Exercise 6: Determine some Distance =====
+# Solution to Exercise ref{exer:dist}
+
+
+# --- begin answer of exercise ---
+__Answer.__
+Short answer to subexercise a).
+With math in answer: $a=b$.
+
+# --- end answer of exercise ---
+
+__b)__
+
+Here goes the solution of this subexercise.
+
+Here goes a full solution of the whole exercise.
+With some math $a=b$ in this solution:
+15 <<<!!MATH_BLOCK
+And code `a=b` in this solution:
+32 <<<!!CODE_BLOCK 
+End of solution is here.
+
+# --- end exercise --- solution
+
+
+
+
+
+
+# --- begin exercise --- solution
+
+===== Solution to Example 9: Just an example =====
+
+__Answer.__
+Oslo.
+
+# --- end exercise --- solution
+
+
+

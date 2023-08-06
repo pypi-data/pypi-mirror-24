@@ -1,0 +1,845 @@
+running preprocess -DFORMAT=html -DDEVICE=screen  testdoc.do.txt > tmp_preprocess__testdoc.do.txt
+running mako on tmp_preprocess__testdoc.do.txt to make tmp_mako__testdoc.do.txt
+translating doconce text in tmp_mako__testdoc.do.txt to html
+
+*** warning: found multi-line caption for ../doc/src/manual/fig/wave1D.png
+
+ A long
+caption spanning
+several lines and containing verbatim words like `my_file_v1` and `my_file_v2`
+as well as math with subscript as in $t_{i+1}$. label{myfig}
+
+    fix: collected this text to one single line (right?)
+
+*** warning: the total of 1 fixes above should be manually edited in the file!
+    (also note: some of these automatic fixes may not be what you want)
+
+*** running OS command python -c 'print "Testing\noutput\nfrom\nPython."'
+-------- terminal output ----------
+Testing
+output
+from
+Python.
+-----------------------------------
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f, lines 3-16 (format: fcod)
+copying after regex "a comment" until "^C\s+END1"
+     file: ../doc/src/manual/__testcode.f, lines 2-11 (format: fcod)
+copy complete file ../doc/src/manual/__testcode.f (format: ccq)
+*** replacing \bm{...} by \boldsymbol{...} (\bm is not supported by MathJax)
+
+*** Problem: Flip a Coin
+    label{demo:ex:1}
+    should be Exercise since it has refs to other parts (?) of the document:
+    sec1
+
+*** Exercise: Test of plain text exercise
+    label{my:exer1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Determine some Distance
+    label{exer:dist}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Some exercise without the "Exercise:" prefix
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Solution of differential equation
+    label{sec:this:exer:de}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Project: References in a headings do not work well in html
+    label{exer:you}
+    should be Exercise since it has refs to other parts (?) of the document:
+    exer:some:formula, demo:ex:2, proj:circle1
+found info about 11 exercises
+... checking existence of https://raw.github.com/hplgit/doconce/master/test/../doc/src/manual/fig/wave1D.html ...
+    not found!
+... checking existence of https://raw.github.com/hplgit/doconce/master/test/../doc/src/manual/fig/wave1D.png ...
+    found!
+figure file https://raw.github.com/hplgit/doconce/master/test/../doc/src/manual/fig/wave1D:
+    can use https://raw.github.com/hplgit/doconce/master/test/../doc/src/manual/fig/wave1D.png for format html
+... checking existence of https://raw.github.com/hplgit/doconce/master/doc/src/blog/f_plot.png ...
+    found!
+... checking existence of https://raw.github.com/hplgit/doconce/master/test/../doc/src/manual/fig/wave1D.png ...
+    found!
+... checking existence of http://openclipart.org/people/jpneok/junebug.svg ...
+    found!
+... checking existence of https://raw.github.com/hplgit/doconce/master/test/bokeh_test.html ...
+    found!
+figure file https://raw.github.com/hplgit/doconce/master/test/bokeh_test:
+    can use https://raw.github.com/hplgit/doconce/master/test/bokeh_test.html for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+*** warning: !bc do used for DocOnce code, but
+    not supported for syntax highlighting!
+    install:
+    sudo pip install -e git+https://github.com/hplgit/pygments-doconce#egg=pygments-doconce
+
+    or manually:
+    git clone https://github.com/hplgit/pygments-doconce.git; cd pygments-doconce; sudo python setup.py install
+no lexer for alias 'doconce' found
+output in testdoc.html
+running preprocess -DFORMAT=html -DDEVICE=screen -DSOMEVAR testdoc.do.txt > tmp_preprocess__testdoc.do.txt
+running mako on tmp_preprocess__testdoc.do.txt to make tmp_mako__testdoc.do.txt
+mako variables: {'DEVICE': 'screen', 'SOMEVAR': True, 'FORMAT': 'html'}
+translating doconce text in tmp_mako__testdoc.do.txt to html
+
+*** warning: found multi-line caption for ../doc/src/manual/fig/wave1D.png
+
+ A long
+caption spanning
+several lines and containing verbatim words like `my_file_v1` and `my_file_v2`
+as well as math with subscript as in $t_{i+1}$. label{myfig}
+
+    fix: collected this text to one single line (right?)
+
+*** warning: the total of 1 fixes above should be manually edited in the file!
+    (also note: some of these automatic fixes may not be what you want)
+
+*** running OS command python -c 'print "Testing\noutput\nfrom\nPython."'
+-------- terminal output ----------
+Testing
+output
+from
+Python.
+-----------------------------------
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f, lines 3-16 (format: fcod)
+copying after regex "a comment" until "^C\s+END1"
+     file: ../doc/src/manual/__testcode.f, lines 2-11 (format: fcod)
+copy complete file ../doc/src/manual/__testcode.f (format: ccq)
+*** replacing \bm{...} by \boldsymbol{...} (\bm is not supported by MathJax)
+
+*** Problem: Flip a Coin
+    label{demo:ex:1}
+    should be Exercise since it has refs to other parts (?) of the document:
+    sec1
+
+*** Exercise: Test of plain text exercise
+    label{my:exer1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Determine some Distance
+    label{exer:dist}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Some exercise without the "Exercise:" prefix
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Solution of differential equation
+    label{sec:this:exer:de}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Project: References in a headings do not work well in html
+    label{exer:you}
+    should be Exercise since it has refs to other parts (?) of the document:
+    exer:some:formula, demo:ex:2, proj:circle1
+found info about 11 exercises
+... checking existence of https://raw.github.com/hplgit/doconce/master/doc/src/blog/f_plot.png ...
+    found!
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.png for format html
+... checking existence of http://openclipart.org/people/jpneok/junebug.svg ...
+    found!
+figure file bokeh_test:
+    can use bokeh_test.html for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+*** warning: !bc do used for DocOnce code, but
+    not supported for syntax highlighting!
+    install:
+    sudo pip install -e git+https://github.com/hplgit/pygments-doconce#egg=pygments-doconce
+
+    or manually:
+    git clone https://github.com/hplgit/pygments-doconce.git; cd pygments-doconce; sudo python setup.py install
+no lexer for alias 'doconce' found
+*** warning: inline math in HTML must have space around <:
+    <1/2  ->  < 1/2
+*** warning: inline math in HTML must have space around <:
+    <1/2  ->  < 1/2
+*** warning: quiz explanation contains block (fig/code/math)
+    and is therefore skipped
+Ooops, forgot a minus: <code>exp(-x)</code>, otherwise this Python code
+must be considered as a good answer. It is more natural,
+though, to write the solution to the problem
+in mathematical notation:
+
+$$ y(x) = e^{-y}.$$
+
+output in testdoc.html
+running preprocess -DFORMAT=html -DDEVICE=screen  testdoc.do.txt > tmp_preprocess__testdoc.do.txt
+running mako on tmp_preprocess__testdoc.do.txt to make tmp_mako__testdoc.do.txt
+translating doconce text in tmp_mako__testdoc.do.txt to html
+
+*** warning: found multi-line caption for ../doc/src/manual/fig/wave1D.png
+
+ A long
+caption spanning
+several lines and containing verbatim words like `my_file_v1` and `my_file_v2`
+as well as math with subscript as in $t_{i+1}$. label{myfig}
+
+    fix: collected this text to one single line (right?)
+
+*** warning: the total of 1 fixes above should be manually edited in the file!
+    (also note: some of these automatic fixes may not be what you want)
+
+*** running OS command python -c 'print "Testing\noutput\nfrom\nPython."'
+-------- terminal output ----------
+Testing
+output
+from
+Python.
+-----------------------------------
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f, lines 3-16 (format: fcod)
+copying after regex "a comment" until "^C\s+END1"
+     file: ../doc/src/manual/__testcode.f, lines 2-11 (format: fcod)
+copy complete file ../doc/src/manual/__testcode.f (format: ccq)
+*** replacing \bm{...} by \boldsymbol{...} (\bm is not supported by MathJax)
+
+*** Problem: Flip a Coin
+    label{demo:ex:1}
+    should be Exercise since it has refs to other parts (?) of the document:
+    sec1
+
+*** Exercise: Test of plain text exercise
+    label{my:exer1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Determine some Distance
+    label{exer:dist}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Some exercise without the "Exercise:" prefix
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Solution of differential equation
+    label{sec:this:exer:de}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Project: References in a headings do not work well in html
+    label{exer:you}
+    should be Exercise since it has refs to other parts (?) of the document:
+    exer:some:formula, demo:ex:2, proj:circle1
+found info about 11 exercises
+... checking existence of https://raw.github.com/hplgit/doconce/master/doc/src/blog/f_plot.png ...
+    found!
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.png for format html
+... checking existence of http://openclipart.org/people/jpneok/junebug.svg ...
+    found!
+figure file bokeh_test:
+    can use bokeh_test.html for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+*** warning: !bc do used for DocOnce code, but
+    not supported for syntax highlighting!
+    install:
+    sudo pip install -e git+https://github.com/hplgit/pygments-doconce#egg=pygments-doconce
+
+    or manually:
+    git clone https://github.com/hplgit/pygments-doconce.git; cd pygments-doconce; sudo python setup.py install
+no lexer for alias 'doconce' found
+*** warning: inline math in HTML must have space around <:
+    <1/2  ->  < 1/2
+*** warning: quiz explanation contains block (fig/code/math)
+    and is therefore skipped
+Ooops, forgot a minus: <code>exp(-x)</code>, otherwise this Python code
+must be considered as a good answer. It is more natural,
+though, to write the solution to the problem
+in mathematical notation:
+
+$$ y(x) = e^{-y}.$$
+
+output in testdoc.html
+running preprocess -DFORMAT=latex -DDEVICE=screen -DSOMEVAR testdoc.do.txt > tmp_preprocess__testdoc.do.txt
+running mako on tmp_preprocess__testdoc.do.txt to make tmp_mako__testdoc.do.txt
+mako variables: {'DEVICE': 'screen', 'SOMEVAR': True, 'FORMAT': 'latex'}
+translating doconce text in tmp_mako__testdoc.do.txt to latex
+
+*** warning: found multi-line caption for ../doc/src/manual/fig/wave1D.png
+
+ A long
+caption spanning
+several lines and containing verbatim words like `my_file_v1` and `my_file_v2`
+as well as math with subscript as in $t_{i+1}$. label{myfig}
+
+    fix: collected this text to one single line (right?)
+
+*** warning: the total of 1 fixes above should be manually edited in the file!
+    (also note: some of these automatic fixes may not be what you want)
+
+*** running OS command python -c 'print "Testing\noutput\nfrom\nPython."'
+-------- terminal output ----------
+Testing
+output
+from
+Python.
+-----------------------------------
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f, lines 3-16 (format: fcod)
+copying after regex "a comment" until "^C\s+END1"
+     file: ../doc/src/manual/__testcode.f, lines 2-11 (format: fcod)
+copy complete file ../doc/src/manual/__testcode.f (format: ccq)
+transforming sections: subsection to subsubsection...
+transforming sections: section to subsection...
+transforming sections: chapter to section...
+
+*** Problem: Flip a Coin
+    label{demo:ex:1}
+    should be Exercise since it has refs to other parts (?) of the document:
+    sec1
+
+*** Exercise: Test of plain text exercise
+    label{my:exer1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Determine some Distance
+    label{exer:dist}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Some exercise without the "Exercise:" prefix
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Solution of differential equation
+    label{sec:this:exer:de}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Project: References to Project ref{demo:ex:2} in a heading works for latex
+    label{exer:you}
+    should be Exercise since it has refs to other parts (?) of the document:
+    demo:ex:2, exer:some:formula, demo:ex:2, proj:circle1
+found info about 11 exercises
+... checking existence of https://raw.github.com/hplgit/doconce/master/doc/src/blog/f_plot.png ...
+    found!
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.eps for format latex
+
+exporting publish database papers.pub to papers.bib:
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+*** warning: !bc do used for DocOnce code, but
+    not supported for syntax highlighting!
+    install:
+    sudo pip install -e git+https://github.com/hplgit/pygments-doconce#egg=pygments-doconce
+
+    or manually:
+    git clone https://github.com/hplgit/pygments-doconce.git; cd pygments-doconce; sudo python setup.py install
+no lexer for alias 'doconce' found
+*** made directory latex_figs for admon figures
+output in testdoc.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  testdoc.do.txt > tmp_preprocess__testdoc.do.txt
+running mako on tmp_preprocess__testdoc.do.txt to make tmp_mako__testdoc.do.txt
+translating doconce text in tmp_mako__testdoc.do.txt to html
+
+*** warning: found multi-line caption for ../doc/src/manual/fig/wave1D.png
+
+ A long
+caption spanning
+several lines and containing verbatim words like `my_file_v1` and `my_file_v2`
+as well as math with subscript as in $t_{i+1}$. label{myfig}
+
+    fix: collected this text to one single line (right?)
+
+*** warning: the total of 1 fixes above should be manually edited in the file!
+    (also note: some of these automatic fixes may not be what you want)
+
+*** running OS command python -c 'print "Testing\noutput\nfrom\nPython."'
+-------- terminal output ----------
+Testing
+output
+from
+Python.
+-----------------------------------
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f, lines 3-16 (format: fcod)
+copying after regex "a comment" until "^C\s+END1"
+     file: ../doc/src/manual/__testcode.f, lines 2-11 (format: fcod)
+copy complete file ../doc/src/manual/__testcode.f (format: ccq)
+*** replacing \bm{...} by \boldsymbol{...} (\bm is not supported by MathJax)
+
+*** Problem: Flip a Coin
+    label{demo:ex:1}
+    should be Exercise since it has refs to other parts (?) of the document:
+    sec1
+
+*** Exercise: Test of plain text exercise
+    label{my:exer1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Determine some Distance
+    label{exer:dist}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Some exercise without the "Exercise:" prefix
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Solution of differential equation
+    label{sec:this:exer:de}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Project: References in a headings do not work well in html
+    label{exer:you}
+    should be Exercise since it has refs to other parts (?) of the document:
+    exer:some:formula, demo:ex:2, proj:circle1
+found info about 11 exercises
+... checking existence of https://raw.github.com/hplgit/doconce/master/doc/src/blog/f_plot.png ...
+    found!
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.png for format html
+... checking existence of http://openclipart.org/people/jpneok/junebug.svg ...
+    found!
+figure file bokeh_test:
+    can use bokeh_test.html for format html
+*** warning: found link tag "...": "..." in footnote, which was removed
+    from tooltip (since it does not work with bootstrap tooltips)
+URL: "google.com" is perhaps the most famous web site today.
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+*** warning: !bc do used for DocOnce code, but
+    not supported for syntax highlighting!
+    install:
+    sudo pip install -e git+https://github.com/hplgit/pygments-doconce#egg=pygments-doconce
+
+    or manually:
+    git clone https://github.com/hplgit/pygments-doconce.git; cd pygments-doconce; sudo python setup.py install
+no lexer for alias 'doconce' found
+*** warning: inline math in HTML must have space around <:
+    <1/2  ->  < 1/2
+*** warning: TITLE may look strange with a template -
+             it is recommended to comment out the title: #TITLE:
+*** warning: AUTHOR may look strange with a template -
+             it is recommended to comment out all authors: #AUTHOR.
+             Usually better to hardcode authors in a footer in the template.
+output in testdoc.html
+running preprocess -DFORMAT=html -DDEVICE=screen  testdoc.do.txt > tmp_preprocess__testdoc.do.txt
+running mako on tmp_preprocess__testdoc.do.txt to make tmp_mako__testdoc.do.txt
+translating doconce text in tmp_mako__testdoc.do.txt to html
+
+*** warning: found multi-line caption for ../doc/src/manual/fig/wave1D.png
+
+ A long
+caption spanning
+several lines and containing verbatim words like `my_file_v1` and `my_file_v2`
+as well as math with subscript as in $t_{i+1}$. label{myfig}
+
+    fix: collected this text to one single line (right?)
+
+*** warning: the total of 1 fixes above should be manually edited in the file!
+    (also note: some of these automatic fixes may not be what you want)
+
+*** running OS command python -c 'print "Testing\noutput\nfrom\nPython."'
+-------- terminal output ----------
+Testing
+output
+from
+Python.
+-----------------------------------
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f, lines 3-16 (format: fcod)
+copying after regex "a comment" until "^C\s+END1"
+     file: ../doc/src/manual/__testcode.f, lines 2-11 (format: fcod)
+copy complete file ../doc/src/manual/__testcode.f (format: ccq)
+*** replacing \bm{...} by \boldsymbol{...} (\bm is not supported by MathJax)
+
+*** Problem: Flip a Coin
+    label{demo:ex:1}
+    should be Exercise since it has refs to other parts (?) of the document:
+    sec1
+
+*** Exercise: Test of plain text exercise
+    label{my:exer1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Determine some Distance
+    label{exer:dist}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Some exercise without the "Exercise:" prefix
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Solution of differential equation
+    label{sec:this:exer:de}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Project: References in a headings do not work well in html
+    label{exer:you}
+    should be Exercise since it has refs to other parts (?) of the document:
+    exer:some:formula, demo:ex:2, proj:circle1
+found info about 11 exercises
+... checking existence of https://raw.github.com/hplgit/doconce/master/doc/src/blog/f_plot.png ...
+    found!
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.png for format html
+... checking existence of http://openclipart.org/people/jpneok/junebug.svg ...
+    found!
+figure file bokeh_test:
+    can use bokeh_test.html for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+*** warning: !bc do used for DocOnce code, but
+    not supported for syntax highlighting!
+    install:
+    sudo pip install -e git+https://github.com/hplgit/pygments-doconce#egg=pygments-doconce
+
+    or manually:
+    git clone https://github.com/hplgit/pygments-doconce.git; cd pygments-doconce; sudo python setup.py install
+no lexer for alias 'doconce' found
+*** warning: --pygm_style=emacs is not recommended when --html_style=solarized
+    automatically changed to --html_style=perldoc
+*** warning: inline math in HTML must have space around <:
+    <1/2  ->  < 1/2
+*** warning: quiz explanation contains block (fig/code/math)
+    and is therefore skipped
+Ooops, forgot a minus: <code>exp(-x)</code>, otherwise this Python code
+must be considered as a good answer. It is more natural,
+though, to write the solution to the problem
+in mathematical notation:
+
+$$ y(x) = e^{-y}.$$
+
+output in testdoc.html
+running preprocess -DFORMAT=html -DDEVICE=screen  testdoc.do.txt > tmp_preprocess__testdoc.do.txt
+running mako on tmp_preprocess__testdoc.do.txt to make tmp_mako__testdoc.do.txt
+translating doconce text in tmp_mako__testdoc.do.txt to html
+
+*** warning: found multi-line caption for ../doc/src/manual/fig/wave1D.png
+
+ A long
+caption spanning
+several lines and containing verbatim words like `my_file_v1` and `my_file_v2`
+as well as math with subscript as in $t_{i+1}$. label{myfig}
+
+    fix: collected this text to one single line (right?)
+
+*** warning: the total of 1 fixes above should be manually edited in the file!
+    (also note: some of these automatic fixes may not be what you want)
+
+*** running OS command python -c 'print "Testing\noutput\nfrom\nPython."'
+-------- terminal output ----------
+Testing
+output
+from
+Python.
+-----------------------------------
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f, lines 3-16 (format: fcod)
+copying after regex "a comment" until "^C\s+END1"
+     file: ../doc/src/manual/__testcode.f, lines 2-11 (format: fcod)
+copy complete file ../doc/src/manual/__testcode.f (format: ccq)
+*** replacing \bm{...} by \boldsymbol{...} (\bm is not supported by MathJax)
+
+*** Problem: Flip a Coin
+    label{demo:ex:1}
+    should be Exercise since it has refs to other parts (?) of the document:
+    sec1
+
+*** Exercise: Test of plain text exercise
+    label{my:exer1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Determine some Distance
+    label{exer:dist}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Some exercise without the "Exercise:" prefix
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Solution of differential equation
+    label{sec:this:exer:de}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Project: References in a headings do not work well in html
+    label{exer:you}
+    should be Exercise since it has refs to other parts (?) of the document:
+    exer:some:formula, demo:ex:2, proj:circle1
+found info about 11 exercises
+... checking existence of https://raw.github.com/hplgit/doconce/master/doc/src/blog/f_plot.png ...
+    found!
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.png for format html
+... checking existence of http://openclipart.org/people/jpneok/junebug.svg ...
+    found!
+figure file bokeh_test:
+    can use bokeh_test.html for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+*** warning: !bc do used for DocOnce code, but
+    not supported for syntax highlighting!
+    install:
+    sudo pip install -e git+https://github.com/hplgit/pygments-doconce#egg=pygments-doconce
+
+    or manually:
+    git clone https://github.com/hplgit/pygments-doconce.git; cd pygments-doconce; sudo python setup.py install
+no lexer for alias 'doconce' found
+*** warning: --pygm_style=emacs is not recommended when --html_style=solarized
+    automatically changed to --html_style=perldoc
+*** warning: inline math in HTML must have space around <:
+    <1/2  ->  < 1/2
+*** warning: quiz explanation contains block (fig/code/math)
+    and is therefore skipped
+Ooops, forgot a minus: <code>exp(-x)</code>, otherwise this Python code
+must be considered as a good answer. It is more natural,
+though, to write the solution to the problem
+in mathematical notation:
+
+$$ y(x) = e^{-y}.$$
+
+output in demo_testdoc.html
+running preprocess -DFORMAT=latex -DDEVICE=screen -DSOMEVAR testdoc.do.txt > tmp_preprocess__testdoc.do.txt
+running mako on tmp_preprocess__testdoc.do.txt to make tmp_mako__testdoc.do.txt
+mako variables: {'DEVICE': 'screen', 'SOMEVAR': True, 'FORMAT': 'latex'}
+translating doconce text in tmp_mako__testdoc.do.txt to latex
+
+*** warning: found multi-line caption for ../doc/src/manual/fig/wave1D.png
+
+ A long
+caption spanning
+several lines and containing verbatim words like `my_file_v1` and `my_file_v2`
+as well as math with subscript as in $t_{i+1}$. label{myfig}
+
+    fix: collected this text to one single line (right?)
+
+*** warning: the total of 1 fixes above should be manually edited in the file!
+    (also note: some of these automatic fixes may not be what you want)
+
+*** running OS command python -c 'print "Testing\noutput\nfrom\nPython."'
+-------- terminal output ----------
+Testing
+output
+from
+Python.
+-----------------------------------
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f, lines 3-16 (format: fcod)
+copying after regex "a comment" until "^C\s+END1"
+     file: ../doc/src/manual/__testcode.f, lines 2-11 (format: fcod)
+copy complete file ../doc/src/manual/__testcode.f (format: ccq)
+
+*** Problem: Flip a Coin
+    label{demo:ex:1}
+    should be Exercise since it has refs to other parts (?) of the document:
+    sec1
+
+*** Exercise: Test of plain text exercise
+    label{my:exer1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Determine some Distance
+    label{exer:dist}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Some exercise without the "Exercise:" prefix
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Solution of differential equation
+    label{sec:this:exer:de}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Project: References to Project ref{demo:ex:2} in a heading works for latex
+    label{exer:you}
+    should be Exercise since it has refs to other parts (?) of the document:
+    demo:ex:2, exer:some:formula, demo:ex:2, proj:circle1
+found info about 11 exercises
+... checking existence of https://raw.github.com/hplgit/doconce/master/doc/src/blog/f_plot.png ...
+    found!
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.eps for format latex
+
+exporting publish database papers.pub to papers.bib:
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+*** warning: !bc do used for DocOnce code, but
+    not supported for syntax highlighting!
+    install:
+    sudo pip install -e git+https://github.com/hplgit/pygments-doconce#egg=pygments-doconce
+
+    or manually:
+    git clone https://github.com/hplgit/pygments-doconce.git; cd pygments-doconce; sudo python setup.py install
+no lexer for alias 'doconce' found
+output in testdoc.p.tex
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen  testdoc.do.txt > tmp_preprocess__testdoc.do.txt
+running mako on tmp_preprocess__testdoc.do.txt to make tmp_mako__testdoc.do.txt
+translating doconce text in tmp_mako__testdoc.do.txt to pdflatex
+
+*** warning: found multi-line caption for ../doc/src/manual/fig/wave1D.png
+
+ A long
+caption spanning
+several lines and containing verbatim words like `my_file_v1` and `my_file_v2`
+as well as math with subscript as in $t_{i+1}$. label{myfig}
+
+    fix: collected this text to one single line (right?)
+
+*** warning: the total of 1 fixes above should be manually edited in the file!
+    (also note: some of these automatic fixes may not be what you want)
+
+*** running OS command python -c 'print "Testing\noutput\nfrom\nPython."'
+-------- terminal output ----------
+Testing
+output
+from
+Python.
+-----------------------------------
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f, lines 3-16 (format: fcod)
+copying after regex "a comment" until "^C\s+END1"
+     file: ../doc/src/manual/__testcode.f, lines 2-11 (format: fcod)
+copy complete file ../doc/src/manual/__testcode.f (format: ccq)
+
+*** Problem: Flip a Coin
+    label{demo:ex:1}
+    should be Exercise since it has refs to other parts (?) of the document:
+    sec1
+
+*** Exercise: Test of plain text exercise
+    label{my:exer1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Determine some Distance
+    label{exer:dist}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Some exercise without the "Exercise:" prefix
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Solution of differential equation
+    label{sec:this:exer:de}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Project: References to Project ref{demo:ex:2} in a heading works for pdflatex
+    label{exer:you}
+    should be Exercise since it has refs to other parts (?) of the document:
+    demo:ex:2, exer:some:formula, demo:ex:2, proj:circle1
+found info about 11 exercises
+... checking existence of https://raw.github.com/hplgit/doconce/master/doc/src/blog/f_plot.png ...
+    found!
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.pdf for format pdflatex
+
+exporting publish database papers.pub to papers.bib:
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+*** warning: !bc do used for DocOnce code, but
+    not supported for syntax highlighting!
+    install:
+    sudo pip install -e git+https://github.com/hplgit/pygments-doconce#egg=pygments-doconce
+
+    or manually:
+    git clone https://github.com/hplgit/pygments-doconce.git; cd pygments-doconce; sudo python setup.py install
+no lexer for alias 'doconce' found
+output in testdoc.tex
+running preprocess -DFORMAT=pdflatex -DDEVICE=paper  testdoc.do.txt > tmp_preprocess__testdoc.do.txt
+running mako on tmp_preprocess__testdoc.do.txt to make tmp_mako__testdoc.do.txt
+translating doconce text in tmp_mako__testdoc.do.txt to pdflatex
+
+*** warning: found multi-line caption for ../doc/src/manual/fig/wave1D.png
+
+ A long
+caption spanning
+several lines and containing verbatim words like `my_file_v1` and `my_file_v2`
+as well as math with subscript as in $t_{i+1}$. label{myfig}
+
+    fix: collected this text to one single line (right?)
+
+*** warning: the total of 1 fixes above should be manually edited in the file!
+    (also note: some of these automatic fixes may not be what you want)
+
+*** running OS command python -c 'print "Testing\noutput\nfrom\nPython."'
+-------- terminal output ----------
+Testing
+output
+from
+Python.
+-----------------------------------
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f, lines 3-16 (format: fcod)
+copying after regex "a comment" until "^C\s+END1"
+     file: ../doc/src/manual/__testcode.f, lines 2-11 (format: fcod)
+copy complete file ../doc/src/manual/__testcode.f (format: ccq)
+
+*** Problem: Flip a Coin
+    label{demo:ex:1}
+    should be Exercise since it has refs to other parts (?) of the document:
+    sec1
+
+*** Exercise: Test of plain text exercise
+    label{my:exer1}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Determine some Distance
+    label{exer:dist}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Some exercise without the "Exercise:" prefix
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Solution of differential equation
+    label{sec:this:exer:de}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Project: References to Project ref{demo:ex:2} in a heading works for pdflatex
+    label{exer:you}
+    should be Exercise since it has refs to other parts (?) of the document:
+    demo:ex:2, exer:some:formula, demo:ex:2, proj:circle1
+found info about 11 exercises
+... checking existence of https://raw.github.com/hplgit/doconce/master/doc/src/blog/f_plot.png ...
+    found!
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.pdf for format pdflatex
+
+exporting publish database papers.pub to papers.bib:
+*** warning: --latex_double_hyphen may lead to unwanted edits.
+             search for all -- in the .p.tex file and check.
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+*** warning: !bc do used for DocOnce code, but
+    not supported for syntax highlighting!
+    install:
+    sudo pip install -e git+https://github.com/hplgit/pygments-doconce#egg=pygments-doconce
+
+    or manually:
+    git clone https://github.com/hplgit/pygments-doconce.git; cd pygments-doconce; sudo python setup.py install
+no lexer for alias 'doconce' found
+output in testdoc.p.tex

@@ -1,0 +1,414 @@
+<html>
+<head>
+<!-- Bootstrap style: vagrant 1.0 web pages -->
+
+<!--
+This style is adopted from the (now old) vagrant 1.0 web pages.
+
+This style file should be copied and the following elements edited:
+
+Logo heading:
+
+ LogoWord
+ withSubWord
+
+Navigation links at the top:
+
+ GO TO 1
+ GO TO 2
+
+Footer at the end
+-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Doconce: http://code.google.com/p/doconce/" />
+
+<title>A Document for Testing DocOnce</title>
+
+<!-- If you copy the css subdirectory (and, e.g., make optional edits):
+<link rel="stylesheet" href="css/twitter_bootstrap.css">
+<link rel="stylesheet" href="css/vagrant.css">
+Otherwise, rely on the URLs below (vagrant.css adapted to Doconce layout)
+-->
+
+<link rel="stylesheet" href="https://raw.githubusercontent.com/hplgit/doconce/master/bundled/html_styles/style_vagrant/css/twitter_bootstrap.css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/hplgit/doconce/master/bundled/html_styles/style_vagrant/css/vagrant.css">
+
+<!-- Define color of headings here (last definition counts) -->
+<style type="text/css">
+h1, h2, h3, h4, h5, h6 {
+  color: #000;     /* black */
+  color: #999;     /* gray */
+  color: #005580;  /* dark blue */
+  color: #08c;     /* characteristic blue */
+</style>
+
+<!-- Tools for embedded Bokeh plots -->
+<link rel="stylesheet"
+      href="http://cdn.pydata.org/bokeh/release/bokeh-0.9.0.min.css"
+      type="text/css" />
+<script type="text/javascript"
+	src="http://cdn.pydata.org/bokeh/release/bokeh-0.9.0.min.js">
+</script>
+<script type="text/javascript">
+  Bokeh.set_log_level("info");
+</script>
+
+
+</head>
+<body>
+
+<div class="container">
+ <div class="row Header with-border">
+  <div class="span3 Module logo">
+   <h1><a href="/">LogoWord<span class="subtitle">withSubWord</span></a></h1>
+  </div>
+  <div class="span9">
+   <div class="Module navigation">
+   <!-- Navigation at the top of the page -->
+    <ul>
+     <li> <a href="">GO TO 1</a></li>
+     <li> <a href="">GO TO 2</a></li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>
+
+
+<!-- Here goes the table of contents in the sidebar
+     <li class="active"> means dark blue background for current section
+-->
+<div class="row">
+ <div class="span3 Module sidebar">
+  <div class="well" style="padding: 8px 0px;">
+   <ul class="nav nav-list">
+     <!-- navigation toc: --> <li><a href="#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#sec1" style="font-size: 80%;"><b>Section 1</b></a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#subsec1" style="font-size: 80%;">Subsection 1</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#subsec:ex" style="font-size: 80%;">Subsection 2: Testing figures</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#decay:sec:theta" style="font-size: 80%;">The \( \theta \) parameter (not \( \nabla \)?)</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec10" style="font-size: 80%;">Custom Environments</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#subsec:table" style="font-size: 80%;">Tables</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec12" style="font-size: 80%;">A test of verbatim words in heading with subscript \( a_i \): <code>my_file_v1</code> and <code>my_file_v2</code></a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec13" style="font-size: 80%;"><b>Just bold</b></a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec14" style="font-size: 80%;"><em>Just emphasize</em></a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec15" style="font-size: 80%;"><code>Just verbatim</code></a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec16" style="font-size: 80%;"><b>Bold</b> beginning</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec17" style="font-size: 80%;"><em>Emphasize</em> beginning</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec18" style="font-size: 80%;"><code>Verbatim</code> beginning</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec19" style="font-size: 80%;">Maybe <b>bold end</b></a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec20" style="font-size: 80%;">Maybe <em>emphasize end</em></a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec21" style="font-size: 80%;">Maybe <code>verbatim end</code></a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec22" style="font-size: 80%;">The middle has <b>bold</b> word</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec23" style="font-size: 80%;">The middle has <em>emphasize</em> word</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec24" style="font-size: 80%;">The middle has <code>verbatim</code> word</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec25" style="font-size: 80%;">Bibliography test</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#Example" style="font-size: 80%;">Example 1: Examples can be typeset as exercises</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#___sec27" style="font-size: 80%;">User-defined environments</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#ex:test:1p1" style="font-size: 80%;">Example 1: A test function</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#ex:math:1p1" style="font-size: 80%;">Example 2: Addition</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant001.html#subsubsec:ex" style="font-size: 80%;">URLs</a></li>
+     </ul>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#___sec31" style="font-size: 80%;"><b>LaTeX Mathematics</b></a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#___sec32" style="font-size: 80%;"><b>Exercises</b></a></li>
+     <ul class="nav">
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#demo:ex:1" style="font-size: 80%;">Problem 2: Flip a Coin</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#___sec36" style="font-size: 80%;">Not an exercise</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#my:exer1" style="font-size: 80%;">Exercise 3: Test of plain text exercise</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#demo:ex:2" style="font-size: 80%;">Project 4: Compute a Probability</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#proj:circle1" style="font-size: 80%;">Project 5: Explore Distributions of Random Circles</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#exer:dist" style="font-size: 80%;">Exercise 6: Determine some Distance</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#___sec43" style="font-size: 80%;">Some exercise without the "Exercise:" prefix</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#sec:this:exer:de" style="font-size: 80%;">Exercise 8: Solution of differential equation</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#___sec45" style="font-size: 80%;">Example 9: Just an example</a></li>
+     </ul>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#___sec46" style="font-size: 80%;"><b>Here goes another section</b></a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#___sec47" style="font-size: 80%;"><b>More Exercises</b></a></li>
+     <ul class="nav">
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#exer:some:formula" style="font-size: 80%;">Exercise 10: Make references to projects and problems</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#exer:you" style="font-size: 80%;">Project 11: References in a headings do not work well in html</a></li>
+     </ul>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#___sec50" style="font-size: 80%;"><b>References</b></a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#app1" style="font-size: 80%;"><b>Appendix: Just for testing; part I</b></a></li>
+     <ul class="nav">
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#___sec52" style="font-size: 80%;">A subsection within an appendix</a></li>
+     </ul>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#app2" style="font-size: 80%;"><b>Appendix: Just for testing; part II</b></a></li>
+     <ul class="nav">
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#___sec54" style="font-size: 80%;">Appendix: Testing identical titles</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#test:title:id1" style="font-size: 80%;">Appendix: Testing identical titles</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant002.html#test:title:id2" style="font-size: 80%;">Appendix: Testing identical titles</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant003.html#___sec57" style="font-size: 80%;">Appendix: Testing identical titles</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant003.html#___sec58" style="font-size: 80%;">Appendix: Testing inline comments</a></li>
+     <!-- navigation toc: --> <li><a href="._testdoc_vagrant003.html#___sec59" style="font-size: 80%;">Appendix: Testing headings ending with <code>verbatim inline</code></a></li>
+
+   </ul>
+  </div>
+ </div>
+
+ <div class="span9">
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              (u'Section 1', 1, u'sec1', u'sec1'),
+              (u'Here is a list with subsubsection heading',
+               3,
+               None,
+               '___sec1'),
+              (u'Subsection 1', 2, u'subsec1', u'subsec1'),
+              (u'Test Section reference at beginning of line and after a sentence',
+               3,
+               None,
+               '___sec3'),
+              (u'Computer code', 3, None, '___sec4'),
+              (u'Subsubsection heading before code', 3, None, '___sec5'),
+              (u'Running OS commands', 3, None, '___sec6'),
+              (u'Footnotes', 3, None, '___sec7'),
+              (u'Subsection 2: Testing figures',
+               2,
+               u'subsec:ex',
+               u'subsec:ex'),
+              (u'The $\\theta$ parameter (not $\\nabla$?)',
+               2,
+               u'decay:sec:theta',
+               u'decay:sec:theta'),
+              (u'Custom Environments', 2, None, '___sec10'),
+              (u'Tables', 2, u'subsec:table', u'subsec:table'),
+              (u'A test of verbatim words in heading with subscript $a_i$: `my_file_v1` and `my_file_v2`',
+               2,
+               None,
+               '___sec12'),
+              (u'_Just bold_', 2, None, '___sec13'),
+              (u'*Just emphasize*', 2, None, '___sec14'),
+              (u'`Just verbatim`', 2, None, '___sec15'),
+              (u'_Bold_ beginning', 2, None, '___sec16'),
+              (u'*Emphasize* beginning', 2, None, '___sec17'),
+              (u'`Verbatim` beginning', 2, None, '___sec18'),
+              (u'Maybe _bold end_', 2, None, '___sec19'),
+              (u'Maybe *emphasize end*', 2, None, '___sec20'),
+              (u'Maybe `verbatim end`', 2, None, '___sec21'),
+              (u'The middle has _bold_ word', 2, None, '___sec22'),
+              (u'The middle has *emphasize* word', 2, None, '___sec23'),
+              (u'The middle has `verbatim` word', 2, None, '___sec24'),
+              (u'Bibliography test', 2, None, '___sec25'),
+              (u'Example 1: Examples can be typeset as exercises',
+               2,
+               u'Example',
+               u'Example'),
+              (u'User-defined environments', 2, None, '___sec27'),
+              (u'Example 1: A test function',
+               2,
+               u'ex:test:1p1',
+               u'ex:test:1p1'),
+              (u'Example 2: Addition', 2, u'ex:math:1p1', u'ex:math:1p1'),
+              (u'URLs', 2, u'subsubsec:ex', u'subsubsec:ex'),
+              (u'LaTeX Mathematics', 1, None, '___sec31'),
+              (u'Exercises', 1, None, '___sec32'),
+              (u'Problem 2: Flip a Coin', 2, u'demo:ex:1', u'demo:ex:1'),
+              (u'My remarks', 3, None, '___sec34'),
+              (u'Remarks', 3, None, '___sec35'),
+              (u'Not an exercise', 2, None, '___sec36'),
+              (u'Exercise 3: Test of plain text exercise',
+               2,
+               u'my:exer1',
+               u'my:exer1'),
+              (u'Project 4: Compute a Probability',
+               2,
+               u'demo:ex:2',
+               u'demo:ex:2'),
+              (u'Project 5: Explore Distributions of Random Circles',
+               2,
+               u'proj:circle1',
+               u'proj:circle1'),
+              (u'Remarks', 3, None, '___sec40'),
+              (u'Exercise 6: Determine some Distance',
+               2,
+               u'exer:dist',
+               u'exer:dist'),
+              (u'Remarks', 3, None, '___sec42'),
+              (u'Some exercise without the "Exercise:" prefix',
+               2,
+               None,
+               '___sec43'),
+              (u'Exercise 8: Solution of differential equation',
+               2,
+               u'sec:this:exer:de',
+               u'sec:this:exer:de'),
+              (u'Example 9: Just an example', 2, None, '___sec45'),
+              (u'Here goes another section', 1, None, '___sec46'),
+              (u'More Exercises', 1, None, '___sec47'),
+              (u'Exercise 10: Make references to projects and problems',
+               2,
+               u'exer:some:formula',
+               u'exer:some:formula'),
+              (u'Project 11: References in a headings do not work well in html',
+               2,
+               u'exer:you',
+               u'exer:you'),
+              (u'References', 1, None, '___sec50'),
+              (u'Appendix: Just for testing; part I', 1, u'app1', u'app1'),
+              (u'A subsection within an appendix', 2, None, '___sec52'),
+              (u'Appendix: Just for testing; part II', 1, u'app2', u'app2'),
+              (u'Appendix: Testing identical titles', 2, None, '___sec54'),
+              (u'Appendix: Testing identical titles',
+               2,
+               u'test:title:id1',
+               u'test:title:id1'),
+              (u'Appendix: Testing identical titles',
+               2,
+               u'test:title:id2',
+               u'test:title:id2'),
+              (u'Appendix: Testing identical titles', 2, None, '___sec57'),
+              (u'Appendix: Testing inline comments', 2, None, '___sec58'),
+              (u'Appendix: Testing headings ending with `verbatim inline`',
+               2,
+               None,
+               '___sec59')]}
+end of tocinfo -->
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<a name="part0000"></a>
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<div class="jumbotron">
+<center><h1>A Document for Testing DocOnce</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): Hans Petter Langtangen, Kaare Dump, A. Dummy Author, I. S. Overworked and Outburned, and J. Doe -->
+
+<center>
+<b>Hans Petter Langtangen</b> [1, 2] (<tt>hpl at simula.no</tt>)
+</center>
+
+<center>
+<b>Kaare Dump</b> [3]
+</center>
+
+<center>
+<b>A. Dummy Author</b> 
+</center>
+
+<center>
+<b>I. S. Overworked and Outburned</b> [4, 5, 6, 7]
+</center>
+
+<center>
+<b>J. Doe</b>  (<tt>j_doe at cyberspace.com</tt>)
+</center>
+
+<p>
+<!-- institution(s) -->
+
+<center>[1] <b>Center for Biomedical Computing, Simula Research Laboratory</b></center>
+<center>[2] <b>Department of Informatics, University of Oslo</b></center>
+<center>[3] <b>Segfault, Cyberspace</b></center>
+<center>[4] <b>Inst1</b></center>
+<center>[5] <b>Inst2, Somewhere</b></center>
+<center>[6] <b>Third Inst, Elsewhere</b></center>
+<center>[7] <b>Fourth Inst</b></center>
+<br>
+<p>
+
+<br>
+<p>
+</div> <!-- end jumbotron -->
+
+<h1 id="table_of_contents">Table of contents</h2>
+
+<p>
+<a href="._testdoc_vagrant001.html#sec1"> Section 1 </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#subsec1"> Subsection 1 </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#subsec:ex"> Subsection 2: Testing figures </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#decay:sec:theta"> The \( \theta \) parameter (not \( \nabla \)?) </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec10"> Custom Environments </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#subsec:table"> Tables </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec12"> A test of verbatim words in heading with subscript \( a_i \): <code>my_file_v1</code> and <code>my_file_v2</code> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec13"> <b>Just bold</b> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec14"> <em>Just emphasize</em> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec15"> <code>Just verbatim</code> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec16"> <b>Bold</b> beginning </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec17"> <em>Emphasize</em> beginning </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec18"> <code>Verbatim</code> beginning </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec19"> Maybe <b>bold end</b> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec20"> Maybe <em>emphasize end</em> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec21"> Maybe <code>verbatim end</code> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec22"> The middle has <b>bold</b> word </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec23"> The middle has <em>emphasize</em> word </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec24"> The middle has <code>verbatim</code> word </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec25"> Bibliography test </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#Example"> Example 1: Examples can be typeset as exercises </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#___sec27"> User-defined environments </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#ex:test:1p1"> Example 1: A test function </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#ex:math:1p1"> Example 2: Addition </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant001.html#subsubsec:ex"> URLs </a><br>
+<a href="._testdoc_vagrant002.html#___sec31"> LaTeX Mathematics </a><br>
+<a href="._testdoc_vagrant002.html#___sec32"> Exercises </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#demo:ex:1"> Problem 2: Flip a Coin </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#___sec36"> Not an exercise </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#my:exer1"> Exercise 3: Test of plain text exercise </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#demo:ex:2"> Project 4: Compute a Probability </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#proj:circle1"> Project 5: Explore Distributions of Random Circles </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#exer:dist"> Exercise 6: Determine some Distance </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#___sec43"> Some exercise without the "Exercise:" prefix </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#sec:this:exer:de"> Exercise 8: Solution of differential equation </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#___sec45"> Example 9: Just an example </a><br>
+<a href="._testdoc_vagrant002.html#___sec46"> Here goes another section </a><br>
+<a href="._testdoc_vagrant002.html#___sec47"> More Exercises </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#exer:some:formula"> Exercise 10: Make references to projects and problems </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#exer:you"> Project 11: References in a headings do not work well in html </a><br>
+<a href="._testdoc_vagrant002.html#___sec50"> References </a><br>
+<a href="._testdoc_vagrant002.html#app1"> Appendix: Just for testing; part I </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#___sec52"> A subsection within an appendix </a><br>
+<a href="._testdoc_vagrant002.html#app2"> Appendix: Just for testing; part II </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#___sec54"> Appendix: Testing identical titles </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#test:title:id1"> Appendix: Testing identical titles </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant002.html#test:title:id2"> Appendix: Testing identical titles </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant003.html#___sec57"> Appendix: Testing identical titles </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant003.html#___sec58"> Appendix: Testing inline comments </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._testdoc_vagrant003.html#___sec59"> Appendix: Testing headings ending with <code>verbatim inline</code> </a><br>
+</p>
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pager">
+\
+  <li class="next">
+    <a href="._testdoc_vagrant001.html">Next &rarr;</a>
+  </li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+ </div>
+
+ <div class="row Footer">
+  <div class="span12">
+  <!-- footer --> Here goes a footer, if desired, maybe with author(s) and a copyright &copy;
+  </div>
+ </div>
+</div>
+</body>
+</html>
