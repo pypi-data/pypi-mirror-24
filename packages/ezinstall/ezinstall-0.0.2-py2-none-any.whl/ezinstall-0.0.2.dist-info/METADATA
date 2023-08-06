@@ -1,0 +1,66 @@
+Metadata-Version: 2.0
+Name: ezinstall
+Version: 0.0.2
+Summary: Instantly install your package to site-packages.
+Home-page: https://github.com/MacHu-GWU/
+Author: Sanhe Hu
+Author-email: husanhe@me.com
+License: MIT
+Download-URL: https://github.com/MacHu-GWU//tarball/2017-08-29
+Platform: Windows
+Platform: MacOS
+Platform: Unix
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+.. image:: https://travis-ci.org/MacHu-GWU/ezinstall-project.svg?branch=master
+
+.. image:: https://img.shields.io/pypi/v/ezinstall.svg
+
+.. image:: https://img.shields.io/pypi/l/ezinstall.svg
+
+.. image:: https://img.shields.io/pypi/pyversions/ezinstall.svg
+
+
+Welcome to ezinstall Documentation
+===========================================
+This is just a example project for demonstration purpose.
+
+
+**Quick Links**
+---------------
+- `GitHub Homepage <https://github.com/MacHu-GWU/ezinstall-project>`_
+- `Online Documentation <http://www.wbh-doc.com.s3.amazonaws.com/ezinstall/index.html>`_
+- `PyPI download <https://pypi.python.org/pypi/ezinstall>`_
+- `Install <install_>`_
+- `Issue submit and feature request <https://github.com/MacHu-GWU/ezinstall-project/issues>`_
+- `API reference and source code <http://www.wbh-doc.com.s3.amazonaws.com/ezinstall/py-modindex.html>`_
+
+
+.. _install:
+
+Install
+-------
+
+``ezinstall`` is released on PyPI, so all you need is:
+
+.. code-block:: console
+
+	$ pip install ezinstall
+
+To upgrade to latest version:
+
+.. code-block:: console
+
+	$ pip install --upgrade ezinstall
+
