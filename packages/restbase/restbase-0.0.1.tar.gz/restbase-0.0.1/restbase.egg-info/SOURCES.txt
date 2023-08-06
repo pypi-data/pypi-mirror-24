@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+restbase/__init__.py
+restbase/base.py
+restbase.egg-info/PKG-INFO
+restbase.egg-info/SOURCES.txt
+restbase.egg-info/dependency_links.txt
+restbase.egg-info/requires.txt
+restbase.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: restbase
+Version: 0.0.1
+Summary: Library for building API clients for communicating with REST APIs.
+Home-page: https://github.com/sweetpay/restbase
+Author: David Buresund
+Author-email: david.buresund@gmail.com
+License: Apache 2
+Download-URL: https://github.com/sweetpay/restbase/tarball/0.0.1
+Description: UNKNOWN
+Keywords: api,apiclient,rest
+Platform: UNKNOWN
