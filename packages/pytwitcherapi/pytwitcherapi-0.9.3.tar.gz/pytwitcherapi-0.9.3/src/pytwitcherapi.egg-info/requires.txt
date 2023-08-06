@@ -1,0 +1,5 @@
+requests
+requests-oauthlib
+oauthlib
+m3u8
+irc>=15

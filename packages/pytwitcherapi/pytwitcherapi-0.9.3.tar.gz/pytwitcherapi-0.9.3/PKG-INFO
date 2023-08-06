@@ -1,0 +1,176 @@
+Metadata-Version: 1.1
+Name: pytwitcherapi
+Version: 0.9.3
+Summary: Python API for interacting with twitch.tv
+Home-page: https://github.com/Pytwitcher/pytwitcherapi
+Author: David Zuber
+Author-email: zuber.david@gmx.de
+License: BSD
+Description: =========================================================
+        pytwitcherapi
+        =========================================================
+        
+        .. image:: http://img.shields.io/pypi/v/pytwitcherapi.png?style=flat
+            :target: https://pypi.python.org/pypi/pytwitcherapi
+            :alt: PyPI version
+        
+        .. image::  https://img.shields.io/travis/Pytwitcher/pytwitcherapi/master.png?style=flat
+            :target: https://travis-ci.org/Pytwitcher/pytwitcherapi
+            :alt: Build Status
+        
+        .. image:: http://img.shields.io/pypi/dm/pytwitcherapi.png?style=flat
+            :target: https://pypi.python.org/pypi/pytwitcherapi
+            :alt: Downloads per month
+        
+        .. image:: https://img.shields.io/coveralls/Pytwitcher/pytwitcherapi/master.png?style=flat
+            :target: https://coveralls.io/r/Pytwitcher/pytwitcherapi
+            :alt: Coverage
+        
+        .. image:: http://img.shields.io/pypi/l/pytwitcherapi.png?style=flat
+            :target: https://pypi.python.org/pypi/pytwitcherapi
+            :alt: License
+        
+        .. image:: https://readthedocs.org/projects/pytwitcherapi/badge/?version=latest&style=flat
+            :target: http://pytwitcherapi.readthedocs.org/en/latest/
+            :alt: Documentation
+        
+        **This project is not developed anymore!**
+        
+        Twitch is a trademark or registered trademark of Twitch Interactive, Inc. in the U.S. and/or other countries. "pytwitcher" and "pytwitcherapi" is not operated by, sponsored by, or affiliated with Twitch Interactive, Inc. in any way.
+        
+        Python API for interacting with `twitch.tv  <https://github.com/justintv/Twitch-API>`_.
+        
+        
+        Features
+        --------
+        
+        * Easy-to-use object oriented high-level API
+        * Search and query information about games, channels, streams and users
+        * Get the livestream playlist
+        * OAauth Authentication. Can retrieve followed streams and more...
+        * Good documentation and test coverage
+        * IRC client for the chat (with IRC v3 tag support)
+        
+        
+        .. :changelog:
+        
+        History
+        -------
+        
+        0.1.1 (2015-03-15)
+        +++++++++++++++++++++++++++++++++++++++
+        
+        * First release on PyPI.
+        * Pulled pytwitcherapi out of main project pytwitcher
+        
+        0.1.2 (2015-03-15)
+        +++++++++++++++++++++++++++++++++++++++
+        
+        * Fix wrapping search stream results due to incomplete channel json
+        
+        0.1.3 (2015-03-23)
+        +++++++++++++++++++++++++++++++++++++++
+        
+        * Refactor twitch module into models and session module
+        
+        0.1.4 (2015-03-23)
+        +++++++++++++++++++++++++++++++++++++++
+        
+        * Fix wrap json using actual class instead of cls
+        
+        0.2.0 (2015-04-12)
+        +++++++++++++++++++++++++++++++++++++++
+        
+        * Authentication: User can login and TwitchSession can retrieve followed streams.
+        
+        0.3.0 (2015-05-08)
+        +++++++++++++++++++++++++++++++++++++++
+        
+        * Easier imports. Only import the package for most of the cases.
+        * Added logging. Configure your logger and pytwitcher will show debug messages.
+        
+        0.3.1 (2015-05-09)
+        +++++++++++++++++++++++++++++++++++++++
+        
+        * Fix login server shutdown by correctly closing the socket
+        
+        0.4.0 (2015-05-12)
+        +++++++++++++++++++++++++++++++++++++++
+        
+        * IRC client for twitch chat
+        
+        0.5.0 (2015-05-13)
+        ++++++++++++++++++++++++++++++++++++++++
+        
+        * IRC v3 Tags for messages
+        
+        0.5.1 (2015-05-13)
+        ++++++++++++++++++++++++++++++++++++++++
+        
+        * Fix coverage reports via travis
+        
+        0.6.0 (2015-05-16)
+        ++++++++++++++++++++++++++++++++++++++++
+        
+        * Add limit for sending messages
+        
+        0.7.0 (2015-05-16)
+        ++++++++++++++++++++++++++++++++++++++++
+        
+        * IRCCLient manages two connections. Receives own messages from the server (with tags).
+        * Improved test thread saftey
+        
+        0.7.1 (2015-05-22)
+        ++++++++++++++++++++++++++++++++++++++++
+        
+        * IRCClient shutdown is now thread-safe through events
+        
+        0.7.2 (2015-05-30)
+        +++++++++++++++++++++++++++++++++++++++++
+        
+        * Add TwitchSession.get_emote_picture(emote, size).
+        * Capabilities for chat: twitch.tv/membership, twitch.tv/commands, twitch.tv/tags
+        
+        0.8.0 (2015-05-31)
+        +++++++++++++++++++++++++++++++++++++++++
+        
+        * Replace context managers for apis with dedicated methods. The context managers
+          made it difficult to use a session thread-safe because they relied (more heavily)
+          on the state of the session.
+        
+        0.9.0 (2016-09-16)
+        +++++++++++++++++++++++++++++++++++++++++
+        
+        * Remove ``on_schedule`` argument for irc client. ``irc >=15.0`` required.
+        * `#17 <https://github.com/Pytwitcher/pytwitcherapi/pull/17>`_: Always submit a client id in the headers. Credits to `Coriou <https://github.com/Coriou>`_.
+        * Client ID can be provided via environment variable ``PYTWITCHER_CLIENT_ID``.
+        
+        0.9.1 (2016-09-18)
+        +++++++++++++++++++++++++++++++++++++++++
+        
+        * Make example chat client python 3 compatible
+        * `#16 <https://github.com/Pytwitcher/pytwitcherapi/issues/16>`_: Ignore unknown arguments from twitchstatus
+        * Use Client ID for old api requests as well
+        
+        0.9.2 (2017-08-27)
+        +++++++++++++++++++++++++++++++++++++++++
+        
+        * Fix compatibility to ``irc>=16.0``. Thanks to `crey4fun <https://github.com/crey4fun>`_.
+        
+        0.9.3 (2017-08-27)
+        +++++++++++++++++++++++++++++++++++++++++
+        
+        * Re-release of ``0.9.2``
+        
+Keywords: pytwitcherapi
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Operating System :: OS Independent
