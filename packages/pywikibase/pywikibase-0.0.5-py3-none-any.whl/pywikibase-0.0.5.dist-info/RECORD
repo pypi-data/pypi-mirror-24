@@ -1,0 +1,17 @@
+pywikibase/__init__.py,sha256=zqp_qEwWyOf2nFNRzq4WuEUd60KAvt3B33-uQRmSqMg,784
+pywikibase/about.py,sha256=g3riSQSBLNjw7-zvdA1B4lKvGQHuY28KgQBA8SqOvcU,400
+pywikibase/claim.py,sha256=LJ4a2_bVNpwhB_g-GqqNWkdfUWtHQa1QDWJqIGUMQX8,14171
+pywikibase/coordinate.py,sha256=4OOkq2WxP44zos9jI5PGgK0CBEr1nRsvzlKE1XgfI3o,4379
+pywikibase/exceptions.py,sha256=ZTB2aM9OFf2JxWWcjtiX6pjywGa1QiUZwAGqJp5BDB0,509
+pywikibase/itempage.py,sha256=OngGE_gevJfY1SFnwMKW9S-xKcKdmjMRg-4JvUKMr90,3260
+pywikibase/propertypage.py,sha256=6rnn4RzTPXMj6HmvgqRNE1LfMosgcCnks_5-h932fWY,1354
+pywikibase/wbproperty.py,sha256=qrvKSVJ7A_lLQO0qadtlVfAueq5S0iPz0Y_aDVNhZZU,2173
+pywikibase/wbquantity.py,sha256=bSuZMjKZxEAasrawAaiQhAo_JFuMTiyHRw9YWYLlEKI,3952
+pywikibase/wbtime.py,sha256=qqjqUUH8rvKtD-VMPJa7yUXH276FwvyGiOEmyValYSQ,4708
+pywikibase/wikibasepage.py,sha256=R2z9tZBkyYCcABHkKAH-mu5Fns4oW2gJO1jX2-O3iWE,7050
+pywikibase-0.0.5.dist-info/DESCRIPTION.rst,sha256=XRqeU_eIDask-z96YMLT_E3e8D02OFaaDaynRUc5660,963
+pywikibase-0.0.5.dist-info/METADATA,sha256=CATeIaS1i1PVc8YaEyNItWcVX6Ot4d7AL35c4ddaK_o,1554
+pywikibase-0.0.5.dist-info/RECORD,,
+pywikibase-0.0.5.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pywikibase-0.0.5.dist-info/metadata.json,sha256=vnpyqilYg5V7DSEOKwx_wFmpn4zBVpxdRCM3mR-2fQU,731
+pywikibase-0.0.5.dist-info/top_level.txt,sha256=v9gdUYMXui_L0C3r3Rda2ZZOU33zQKd3umdC00I6zJc,11
