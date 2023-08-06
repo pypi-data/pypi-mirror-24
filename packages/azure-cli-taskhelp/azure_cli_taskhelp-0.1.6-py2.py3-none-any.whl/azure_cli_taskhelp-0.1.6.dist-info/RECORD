@@ -1,0 +1,10 @@
+azure/cli/command_modules/taskhelp/__init__.py,sha256=xuV769oV_YJdaMUNT6OmOk0dcIYtevp5aaew9TOCXtA,594
+azure/cli/command_modules/taskhelp/_help.py,sha256=OcbQyMNhVfnXxiHAPXgNhMBlFT3LFHk2Gptgrf_-TZE,617
+azure/cli/command_modules/taskhelp/commands.py,sha256=DXl8uCnZK5mAQdfng_ONZUrVUxEhzJiVyBZl3xdJ_eY,680
+azure/cli/command_modules/taskhelp/custom.py,sha256=YVNpBf94FRgvUX-_tHMC3Y56iP4wVo3M9J66VV4CAlY,737
+azure_cli_taskhelp-0.1.6.dist-info/DESCRIPTION.rst,sha256=20XqtWrPyVrn9NGVdcuTego-V7SqvXxA828NxyJeEpQ,866
+azure_cli_taskhelp-0.1.6.dist-info/METADATA,sha256=56-6WRcQ_1gSvpd269Mw6PjY_FryZR1zVye6MkAeEs8,1759
+azure_cli_taskhelp-0.1.6.dist-info/RECORD,,
+azure_cli_taskhelp-0.1.6.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+azure_cli_taskhelp-0.1.6.dist-info/metadata.json,sha256=qdLJGyUn9yx1tFbpwNdQlFrw_vdI6pq0rjdqq_PaFhg,1021
+azure_cli_taskhelp-0.1.6.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
