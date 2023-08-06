@@ -1,0 +1,14 @@
+odoo10_addon_project_task_report-10.0.1.0.0-py2.7-nspkg.pth,sha256=BRP8mvEvEhIFmA57wbSTfAVbaAesjZh6WbtWMKUVv1c,1118
+odoo/addons/project_task_report/README.rst,sha256=bjc49Shs6Cb3oZ7rZpVCtqM4TWUEZLVZ-10ZfavVONY,1691
+odoo/addons/project_task_report/__init__.py,sha256=MXvuPBk-a2_KrK70d7uKaJxbOxWE4RV_RHJFFNlsR0w,189
+odoo/addons/project_task_report/__manifest__.py,sha256=e5Pf16_kO-ilSoKT0n7mbDWo3KfY6Ry-CWC9ibYI888,696
+odoo/addons/project_task_report/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/project_task_report/views/project_task_chatter_report.xml,sha256=zkomcO89ls516fPu6P97jxo_Xf2zBaBcQu-vbixvncg,4448
+odoo/addons/project_task_report/views/project_task_report.xml,sha256=g0IBFssy-R5DmROdSP-I2F4wmcgkESv6ftKa8mr1Hkg,2771
+odoo10_addon_project_task_report-10.0.1.0.0.dist-info/DESCRIPTION.rst,sha256=d8xv-rYi7NgOTEHNTpwRa6JoC2M0v8Jkmxs3n9WCvv8,1693
+odoo10_addon_project_task_report-10.0.1.0.0.dist-info/METADATA,sha256=PDUb6Fk7ANFimTgYWL1uL5zyIfx2VsfAi9jJ9Qq_EvY,2187
+odoo10_addon_project_task_report-10.0.1.0.0.dist-info/RECORD,,
+odoo10_addon_project_task_report-10.0.1.0.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+odoo10_addon_project_task_report-10.0.1.0.0.dist-info/metadata.json,sha256=ms7GdA4oyZ2FUqOmvzr1vwZdjcGCMh92kqYUQf74JSc,706
+odoo10_addon_project_task_report-10.0.1.0.0.dist-info/namespace_packages.txt,sha256=igDP6S4ywc6jzcMqzrKZpRtAUXrS-iYaA_Hu1EtlI48,17
+odoo10_addon_project_task_report-10.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
