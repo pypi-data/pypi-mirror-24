@@ -1,0 +1,3 @@
+[console_scripts]
+openvpn-reconnect = openvpn_reconnect.__main__:main
+
