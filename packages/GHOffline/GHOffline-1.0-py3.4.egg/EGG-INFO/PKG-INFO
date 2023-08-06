@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: GHOffline
+Version: 1.0
+Summary: Share files Fast and Easy, on your local network!
+Home-page: https://TiagoDanin.github.io/ghoffline/
+Author: Tiago Danin
+Author-email: TiagoDanin@outlook.com
+License: GPLv3
+Description: 
+        	FileXShared
+        	===========
+        	Share files Fast and Easy, on your local network!
+        
+        	Run in Terminal
+        	===============
+        	$> FileXShared
+        	
+Keywords: file x shared share fast easy local network web net webapp
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
