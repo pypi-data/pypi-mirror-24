@@ -1,0 +1,13 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/whooshstore_test.py,sha256=aVXrYtqIKJ4TxDn5kz0Qj5ArkBdai1NYgF0kc_8wq5w,2677
+whooshstore/__init__.py,sha256=Uy88HhG6z1-6FRf8IAlVvbnaiXoLmj3wCxeHHRUFWIA,3949
+whooshstore/util.py,sha256=5xcD0mUtlScjvhrkAsOetJ33Y3-Y5rwg5_cGB9qSI-8,549
+whooshstore/version.py,sha256=KahmdrfVWXB4PHFRLjUHT5xfdIbd7dIOkfMQ8slVxVE,70
+whooshstore-0.1.data/scripts/ws,sha256=yXTyqcUiFqjTDwrZYoDIRvD9CQGm-trfiQG-V71sNKI,2602
+whooshstore-0.1.data/scripts/ws-update,sha256=mMBJG7a0CIjOEwfJSu-mKar5s5rBBxUJRCwLVPP4c0I,3669
+whooshstore-0.1.dist-info/DESCRIPTION.rst,sha256=pjJ970jxcrmZDeyRIbHNXzRCEh4OmoaAEii-ytzPli8,202
+whooshstore-0.1.dist-info/METADATA,sha256=cF54_EWVum03J9lRG3JxPDuoOtMseiVKsNFDQtVhjNw,834
+whooshstore-0.1.dist-info/RECORD,,
+whooshstore-0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+whooshstore-0.1.dist-info/metadata.json,sha256=aIm4GpW8ZPY6PTsUcHuY4dEt4JBnnqhuZTh8LVI5oK4,839
+whooshstore-0.1.dist-info/top_level.txt,sha256=BRWNkWJP3wHpcCOVJLiUsdMPDtBphgEzwHaOw-VsAOU,18

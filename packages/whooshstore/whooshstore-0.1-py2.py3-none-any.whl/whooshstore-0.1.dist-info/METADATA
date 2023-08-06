@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: whooshstore
+Version: 0.1
+Summary: Whoosh based file indexer and search
+Home-page: http://github.com/knipknap/whooshstore
+Author: Samuel Abels
+Author-email: knipknap@gmail.com
+License: MIT
+Keywords: index search whoosh grep id-utils fulltext
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Whoosh
+
+Whooshstore is a simple Python module for indexing and searching files
+on your local hard drive. It supports incremental indexing, pagination,
+and provides a Python API as well as a command line tool.
+
