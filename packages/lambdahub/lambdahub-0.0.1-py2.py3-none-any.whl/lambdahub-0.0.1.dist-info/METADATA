@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: lambdahub
+Version: 0.0.1
+Summary: Client library for LambdaHub
+Home-page: https://lambdahub.com
+Author: LambdaHub
+Author-email: andrew@lambdahub.com
+License: MIT
+Keywords: lambdahub client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Provides-Extra: dev
+Provides-Extra: test
+
+UNKNOWN
+
+
