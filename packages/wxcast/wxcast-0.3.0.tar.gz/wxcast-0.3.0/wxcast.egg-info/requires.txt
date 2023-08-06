@@ -1,0 +1,3 @@
+certifi
+Click>=6.0
+requests
