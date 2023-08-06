@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README
+setup.py
+chatbase/__init__.py
+chatbase/base_message.py
+chatbase/facebook_agent_message.py
+chatbase/facebook_chatbase_fields.py
+chatbase/facebook_user_message.py
+chatbase.egg-info/PKG-INFO
+chatbase.egg-info/SOURCES.txt
+chatbase.egg-info/dependency_links.txt
+chatbase.egg-info/not-zip-safe
+chatbase.egg-info/requires.txt
+chatbase.egg-info/top_level.txt
