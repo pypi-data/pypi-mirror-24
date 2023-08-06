@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: git-lambda
+Version: 1.1.1
+Summary: A compiled binary of git for use in AWS Lambda
+Home-page: https://github.com/bcongdon/git_lambda
+Author: Benjamin Congdon
+Author-email: me@bcon.gdn
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
