@@ -1,0 +1,10 @@
+setup.py
+PS_TIFF_Reader1/PS_data.py
+PS_TIFF_Reader1/PS_package.py
+PS_TIFF_Reader1/PS_tiff.py
+PS_TIFF_Reader1/__init__.py
+PS_TIFF_Reader1.egg-info/PKG-INFO
+PS_TIFF_Reader1.egg-info/SOURCES.txt
+PS_TIFF_Reader1.egg-info/dependency_links.txt
+PS_TIFF_Reader1.egg-info/not-zip-safe
+PS_TIFF_Reader1.egg-info/top_level.txt
