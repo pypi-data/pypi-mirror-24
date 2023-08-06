@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: admanagerplusclient
+Version: 0.0.7
+Summary: A client for interacting with the Ad Manager Plus Platform.
+Home-page: http://pypi.python.org/pypi/admanagerplusclient/
+Author: Jim Barcelona
+Author-email: barce@me.com
+License: LICENSE
+Description: UNKNOWN
+Platform: UNKNOWN
