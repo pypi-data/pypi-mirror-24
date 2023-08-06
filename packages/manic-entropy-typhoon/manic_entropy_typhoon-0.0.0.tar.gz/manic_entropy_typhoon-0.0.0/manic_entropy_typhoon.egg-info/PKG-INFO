@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: manic-entropy-typhoon
+Version: 0.0.0
+Summary: Test of the pbr packaging system using cookiecutter
+Home-page: http://www.openstack.org/
+Author: OpenStack
+Author-email: openstack-dev@lists.openstack.org
+License: UNKNOWN
+Description: ===============================
+        manic_entropy_typhoon
+        ===============================
+        
+        Test of the pbr packaging system using cookiecutter
+        
+        * Free software: Apache license
+        * Documentation: http://docs.openstack.org/developer/manic_entropy_typhoon
+        
+        Features
+        --------
+        
+        * TODO
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
