@@ -1,0 +1,14 @@
+.DS_Store,sha256=sCA5aRZ28hjWBPA-4aqvIMnaeSRaTqctOhIKMpJdv_c,6148
+jugg/__init__.py,sha256=DCbT0jCjhRZmansawWpziJo49p9chKMiHfsTrAvQRjs,474
+jugg/client.py,sha256=aF3h9I5q41buD1Jq8UwS3UwvxfogJnOZsB_rJjsbyg4,2962
+jugg/constants.py,sha256=FpwaTjbchPgME5IOodE2YGsWWs7Yn7gB61f2449cXyg,757
+jugg/core.py,sha256=8_3nXKt1g_jhb5eHFq0MqvamL_UprV86h1ftqGhCbL0,5613
+jugg/security.py,sha256=2clu8mlf1ZVyEeHIrx3G8b4lKIf0bBhMGeV5bBtAD5Y,5168
+jugg/server.py,sha256=QEJXBPpAabvZZ4LLbDSTbtwhLEjK6O2KYsW1CaalFNU,4540
+jugg/utils.py,sha256=toUJ0Bje7R-82DbYk_vEV-aAcgr-x1rzm4nDMI1UwYY,565
+jugg-1.0.6.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+jugg-1.0.6.dist-info/METADATA,sha256=p3Q-0_EQqxS8-D4X4yk6jgURStdEEWOQjuQawp5E4_Y,577
+jugg-1.0.6.dist-info/RECORD,,
+jugg-1.0.6.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+jugg-1.0.6.dist-info/metadata.json,sha256=L4DFghizjTpvHrpH5F862FDSxodMSPaI2genlP_d1YE,752
+jugg-1.0.6.dist-info/top_level.txt,sha256=s8NdHiGeX_gdmpwQTMiJl1s73QiBOkAFeYKWsvBz-yM,5
