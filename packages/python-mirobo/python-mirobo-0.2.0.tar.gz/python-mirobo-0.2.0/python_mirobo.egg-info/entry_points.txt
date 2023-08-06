@@ -1,0 +1,6 @@
+[console_scripts]
+miceil = mirobo.ceil_cli:cli
+mieye = mirobo.philips_eyecare_cli:cli
+miplug = mirobo.plug_cli:cli
+mirobo = mirobo.vacuum_cli:cli
+
