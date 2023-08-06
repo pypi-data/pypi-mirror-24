@@ -1,0 +1,3 @@
+[console_scripts]
+multi_rise = multi_rise:main
+
