@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+wolfram_alpha_api.egg-info/PKG-INFO
+wolfram_alpha_api.egg-info/SOURCES.txt
+wolfram_alpha_api.egg-info/dependency_links.txt
+wolfram_alpha_api.egg-info/requires.txt
+wolfram_alpha_api.egg-info/top_level.txt
