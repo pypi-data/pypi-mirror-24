@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+django_notify_signup/__init__.py
+django_notify_signup/apps.py
+django_notify_signup/notify.py
+django_notify_signup/signals.py
+django_notify_signup/tests.py
+django_notify_signup.egg-info/PKG-INFO
+django_notify_signup.egg-info/SOURCES.txt
+django_notify_signup.egg-info/dependency_links.txt
+django_notify_signup.egg-info/pbr.json
+django_notify_signup.egg-info/requires.txt
+django_notify_signup.egg-info/top_level.txt

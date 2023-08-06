@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: django-notify-signup
+Version: 0.0.2
+Summary: Receive a notification for all user registrations.
+Home-page: https://github.com/nickromano/django-notify-signup
+Author: Nick Romano
+Author-email: nick.r.romano@gmail.com
+License: MIT
+Description: Receive a notification for all user registrations.
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
