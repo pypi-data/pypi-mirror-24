@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: repograph
+Version: 0.1
+Summary: Visualize GitHub submodule dependencies.
+Home-page: https://github.com/ssanderson/repograph
+Author: Scott Sanderson
+Author-email: scott.b.sanderson90@gmail.com
+License: Apache 2.0
+Description: Visualize GitHub submodule dependencies.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
