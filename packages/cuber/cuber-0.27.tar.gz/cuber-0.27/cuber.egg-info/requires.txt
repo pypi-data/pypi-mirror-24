@@ -1,0 +1,5 @@
+click
+numpy
+configparser
+GPy
+GPyOpt
