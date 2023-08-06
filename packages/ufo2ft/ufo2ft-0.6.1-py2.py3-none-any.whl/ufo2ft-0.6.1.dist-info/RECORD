@@ -1,0 +1,15 @@
+ufo2ft/__init__.py,sha256=D0fzrM3wbsLVxKU0a8Ry9q6BWQbLt4OHFTWQSuVrKyM,3991
+ufo2ft/featureCompiler.py,sha256=8mq9T-nWSsJe358DMH7yan7EHMMLKSW6c_lsyjajrIY,5714
+ufo2ft/fontInfoData.py,sha256=Rvmmt0fYWNyMy5eW-ijGnL51v5hYyi9kssrxGfynWzs,14870
+ufo2ft/kernFeatureWriter.py,sha256=7TeXbt0CSUnp9V9jOe9RKZKJzTnEMQQRRSPF1ArP__Q,16879
+ufo2ft/markFeatureWriter.py,sha256=hjOvUMwsBZOpZ263895BCSDSteWrXe_hzO8Etlp1k7Y,8250
+ufo2ft/maxContextCalc.py,sha256=OqeMhF9pRBdSlrNEPWvZZldxjSZn4ku9-yZC5BfFpz0,3320
+ufo2ft/outlineCompiler.py,sha256=ayV05Rqz9rPja8MzANhrj88cnEVIcJg2KDwk7lcTBTc,47125
+ufo2ft/postProcessor.py,sha256=6DhtYYEz8AsJXUouTPUOxdpBTEJRxg2JRTvjz0cgEJQ,3114
+ufo2ft-0.6.1.dist-info/DESCRIPTION.rst,sha256=PxKXrlKYZaySVafgcqinmET61ps2ROekGwUyH1u5DSk,4088
+ufo2ft-0.6.1.dist-info/LICENSE.txt,sha256=fFBLaGbUyjJ_33gyL6QSNkHm56AsOdQJ59wLes0WGxM,1075
+ufo2ft-0.6.1.dist-info/METADATA,sha256=XwwGM9VNt0GAOOq1La8_sEpEWDAu17d-QMhVb6q_7YA,5243
+ufo2ft-0.6.1.dist-info/RECORD,,
+ufo2ft-0.6.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+ufo2ft-0.6.1.dist-info/metadata.json,sha256=7q1p0ctbz33Dr3ysm3BJqrdssUQEi8vQj2c3gINtqEk,1290
+ufo2ft-0.6.1.dist-info/top_level.txt,sha256=U83_psS9V5h6qHZbN0yC2El8JHqp_JfOb_6gr9M5iHI,7
