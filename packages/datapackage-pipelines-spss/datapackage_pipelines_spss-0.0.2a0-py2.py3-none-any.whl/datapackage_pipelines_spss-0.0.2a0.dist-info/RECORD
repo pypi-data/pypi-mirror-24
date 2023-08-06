@@ -1,0 +1,10 @@
+datapackage_pipelines_spss/VERSION,sha256=ruWcBFwEb6RzycV7vhz7fX-X0B0tQzaNMUyr632kkaU,12
+datapackage_pipelines_spss/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datapackage_pipelines_spss/processors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datapackage_pipelines_spss/processors/add_spss.py,sha256=TY-FScpfWJ525XbQHson1PHn2yLv9x2aCo0X1nO6p_8,709
+datapackage_pipelines_spss-0.0.2a0.dist-info/DESCRIPTION.rst,sha256=B3gUB_Kjg4f8-44MucuG_a-jPBfilSguLaAFjvRlATY,1668
+datapackage_pipelines_spss-0.0.2a0.dist-info/METADATA,sha256=vuS_vzJvowAOSdrC16hELFSQS7D_EePUS_rGz-ZNz6M,2544
+datapackage_pipelines_spss-0.0.2a0.dist-info/RECORD,,
+datapackage_pipelines_spss-0.0.2a0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+datapackage_pipelines_spss-0.0.2a0.dist-info/metadata.json,sha256=BvKsc1PvX9qXcGNCCiwspFB-gzyYtmG3dtwVD_HYALc,1027
+datapackage_pipelines_spss-0.0.2a0.dist-info/top_level.txt,sha256=I5F_dpsV3GKHPbOsjLoBa74QvuvhRl4l1keMMrBk0zI,27
