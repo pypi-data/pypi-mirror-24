@@ -1,0 +1,63 @@
+Metadata-Version: 1.1
+Name: logstash-easy
+Version: 1.0
+Summary: Very easy to use Logstash logging handler
+Home-page: https://github.com/Fatal1ty/logstash-easy
+Author: Alexander Tikhonov
+Author-email: random.gauss@gmail.com
+License: MIT
+Description: logstash-easy
+        =============
+        
+        .. image:: https://img.shields.io/pypi/v/logstash-easy.svg
+           :target: https://pypi.python.org/pypi/logstash-easy
+        
+        .. image:: https://img.shields.io/pypi/pyversions/logstash-easy.svg
+           :target: https://pypi.python.org/pypi/logstash-easy
+        
+        .. image:: https://img.shields.io/badge/license-MIT-blue.svg
+           :target: https://raw.githubusercontent.com/Fatal1ty/logstash_easy/master/LICENSE
+        
+        Very easy to use Logstash logging handler.
+        
+        Installation
+        ============
+        
+        Install via pip:
+        
+        ::
+        
+                pip install logstash-easy
+        
+        Usage
+        =====
+        
+        Just write one line of code and enjoy:
+        
+        .. code:: python
+        
+                import logstash_easy
+        
+        By default logging messages will be sent to ``localhost:5000`` but you
+        can set environment variables ``LOGSTASH_HOST``, ``LOGSTASH_PORT`` and
+        ``LOGSTASH_TAG`` for tagging your application.  If you define
+        ``LOGSTASH_APP_NAME`` variable then ``app_name`` field will be added
+        to all logging messages (it can be used for creating Elasticsearch
+        indices per application).
+Platform: all
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System
+Classifier: Topic :: System :: Software Distribution

@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+logstash_easy.py
+setup.py
+logstash_easy.egg-info/PKG-INFO
+logstash_easy.egg-info/SOURCES.txt
+logstash_easy.egg-info/dependency_links.txt
+logstash_easy.egg-info/requires.txt
+logstash_easy.egg-info/top_level.txt
