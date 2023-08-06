@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: azure-ansible-base
+Version: 0.1.2
+Summary: Azure SDK dependencies for Ansible Azure modules
+Home-page: https://github.com/tstringer/azure-ansible-base
+Author: Thomas Stringer
+Author-email: me@trstringer.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: azure
+Platform: UNKNOWN
