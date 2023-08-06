@@ -1,0 +1,12 @@
+instagram/__init__.py,sha256=YFJschbqGxoy2tUaVJ26_knZ0ca-_qfl1TbFqOQcrE0,1467
+instagram/base.py,sha256=Rz59r8oF79Z7TmWhyj5vbW76ltMr6EfcZ08V-TiVcj0,4077
+instagram/media.py,sha256=gxnAxXvk2NJikJD8i3IGX-WBgJ9BWti_NjhNdGFU174,1463
+instagram/subscription.py,sha256=fj-fr5R1LRvGioBX4Vxf9a0guiSuxllolxpuyP9yM7I,2322
+instagram/tag.py,sha256=oQdh1ZWm0vhr_10Tj-KyoBRGXbxcys0OJ3FBvu3cwtI,1475
+instagram/user.py,sha256=ivdXZcgIezPsJnAZi0Jfg06qrSN8720Le01VOth_LZM,1543
+instagram_api-0.1.4.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+instagram_api-0.1.4.dist-info/METADATA,sha256=PP43LNTd1NWZBy-OdRB3W6Cj903AeVU0LWIRWP-3QKU,975
+instagram_api-0.1.4.dist-info/RECORD,,
+instagram_api-0.1.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+instagram_api-0.1.4.dist-info/metadata.json,sha256=dHFhltWKIjmTSF7rXdLho9LaVfB_IvONzADTOU81HTs,1088
+instagram_api-0.1.4.dist-info/top_level.txt,sha256=BMCvEl1tQ_hqYawWyQhcfxAOrEDA-u_NQW5ZmerlWRY,10
