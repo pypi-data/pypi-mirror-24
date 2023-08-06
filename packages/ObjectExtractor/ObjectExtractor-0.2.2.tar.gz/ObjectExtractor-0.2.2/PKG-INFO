@@ -1,0 +1,34 @@
+Metadata-Version: 1.0
+Name: ObjectExtractor
+Version: 0.2.2
+Summary: Extract objects from images with OpenCV
+Home-page: https://github.com/ducthienbui97/ObjectExtractor
+Author: Thien Bui
+Author-email: thienbui797@gmail.com
+License: BSD-3-Clause
+Description: ObjectExtractor
+        ------------------
+        
+        .. image:: lena_extraction.png
+        
+        ObjectExtractor provide easy to use api to extract faces/objects from images using OpenCV.
+        
+        Install
+        ===============
+        .. code::
+           
+           pip install ObjectExtractor
+        
+        
+        Usage
+        ===============
+        .. code:: python
+        
+           from object_extractor import Extractor
+           Extractor.extract(imagePath)
+        
+        Sample
+        ===============
+        Sample codes can be found `here
+        <https://github.com/ducthienbui97/ObjectExtractor/tree/master/sample>`_.
+Platform: UNKNOWN
