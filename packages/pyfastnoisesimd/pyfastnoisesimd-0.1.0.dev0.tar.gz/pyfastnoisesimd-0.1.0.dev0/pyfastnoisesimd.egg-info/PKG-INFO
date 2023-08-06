@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: pyfastnoisesimd
+Version: 0.1.0.dev0
+Summary: FastNoiseSIMD
+Home-page: http://github.com/robbmcleod/pyfastnoisesimd
+Author: Robert A. McLeod
+Author-email: robbmcleod@gmail.com
+License: https://opensource.org/licenses/BSD-3-Clause
+Description: 
+        FastNoise SIMD is the SIMD implementation of my noise library FastNoise. It aims
+        to provide faster performance through the use of intrinsic(SIMD) CPU functions. 
+        Vectorisation of the code allows noise functions to process data in sets of 
+        4/8/16 increasing performance by 700% in some cases (Simplex).
+        
+        
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
