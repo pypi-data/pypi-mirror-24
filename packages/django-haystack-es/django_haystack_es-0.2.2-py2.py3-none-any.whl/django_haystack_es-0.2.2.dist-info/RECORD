@@ -1,0 +1,13 @@
+django_haystack_es-0.2.2.dist-info/DESCRIPTION.rst,sha256=DWMwCcQIsqXiP6bOl2CZ1ZdyCF3pPLG_st-KBSpzDv4,2283
+django_haystack_es-0.2.2.dist-info/METADATA,sha256=hg1zIteHHDUaNOjiw9jcniSk05IVcUaEO45Di5kotaA,3309
+django_haystack_es-0.2.2.dist-info/RECORD,,
+django_haystack_es-0.2.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_haystack_es-0.2.2.dist-info/metadata.json,sha256=ZWH5qVnEjOm8QQLHuvRyPlxHzTElokRICHTi_CgK7Ts,1125
+django_haystack_es-0.2.2.dist-info/top_level.txt,sha256=xQBRp9pJmKAtu5gF3kPDjYJlVjT_i5n1v0kLNzRg1VY,12
+haystack_es/__init__.py,sha256=QQ0yjZQnvXM7JeLLZEZWX6NmVUPu1lSROWOXF49_gug,22
+haystack_es/apps.py,sha256=wsJsU3uNgbmWixssaCyWHrD16MNolR5ALwxxqF03-uM,116
+haystack_es/backends.py,sha256=miBgdMM4aEyxx1pAp5Ru0fx0biG_Wk35h7nnAj-uKqM,23267
+haystack_es/fields.py,sha256=JizSWxKEqucwiQHyxgBxs2RFxV8mC6Fj1PVIVxvAEYI,1601
+haystack_es/indexes.py,sha256=6ElAabcjmAG0Ylz1HVpaD_fvfUNgxtw3s16nRoo0ld8,2757
+haystack_es/models.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+haystack_es/query.py,sha256=Sksxp2WNGB5z4GzjtdC0IqzOTL_hIGjGE9K7mbMSbFo,270
