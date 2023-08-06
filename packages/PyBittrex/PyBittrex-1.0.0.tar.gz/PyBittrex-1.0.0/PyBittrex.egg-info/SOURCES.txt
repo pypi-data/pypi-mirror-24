@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+PyBittrex.egg-info/PKG-INFO
+PyBittrex.egg-info/SOURCES.txt
+PyBittrex.egg-info/dependency_links.txt
+PyBittrex.egg-info/requires.txt
+PyBittrex.egg-info/top_level.txt
+pybittrex/__init__.py
+pybittrex/auth.py
+pybittrex/client.py
