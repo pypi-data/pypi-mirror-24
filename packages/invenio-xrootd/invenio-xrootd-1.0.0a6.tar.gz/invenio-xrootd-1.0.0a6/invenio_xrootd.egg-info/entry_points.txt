@@ -1,0 +1,6 @@
+[invenio_base.api_apps]
+invenio_xrootd = invenio_xrootd.ext:InvenioXRootD
+
+[invenio_base.apps]
+invenio_xrootd = invenio_xrootd.ext:InvenioXRootD
+
