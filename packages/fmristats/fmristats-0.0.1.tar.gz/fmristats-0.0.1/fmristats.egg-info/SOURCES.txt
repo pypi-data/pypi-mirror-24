@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+fmristats/__init__.py
+fmristats.egg-info/PKG-INFO
+fmristats.egg-info/SOURCES.txt
+fmristats.egg-info/dependency_links.txt
+fmristats.egg-info/requires.txt
+fmristats.egg-info/top_level.txt
+fmristats/miscellaneous/__init__.py
+fmristats/miscellaneous/epilog.py
+fmristats/miscellaneous/tau.py
