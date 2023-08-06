@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: ristretto
+Version: 0.1.2
+Summary: ristretto: Randomized Dimension Reduction Library
+Home-page: https://github.com/Benli11/ristretto
+Author: N. Benjamin Erichson
+Author-email: erichson@uw.edu
+License: GNU
+Description: UNKNOWN
+Keywords: randomized algorithms,dimension reduction,singular value decomposition,matrix approximations
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
