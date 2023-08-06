@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: joseph-http-test
+Version: 0.1.1
+Summary: A basic HTTP handler for Joseph.
+Home-page: https://github.com/NiekKeijzer/HTTPTest
+Author: Niek Keijzer
+Author-email: info@niekkeijzer.com
+License: UNKNOWN
+Download-URL: https://github.com/NiekKeijzer/HTTPTest/archive/0.1.1.tar.gaz
+Description: UNKNOWN
+Keywords: http,joseph
+Platform: UNKNOWN
