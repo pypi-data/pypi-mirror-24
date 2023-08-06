@@ -1,0 +1,33 @@
+Metadata-Version: 2.0
+Name: shcli
+Version: 0.1.3
+Summary: Python client for Socialhome.
+Home-page: https://github.com/jaywink/shcli
+Author: Jason Robinson
+Author-email: mail@jasonrobinson.me
+License: MIT
+Download-URL: https://github.com/jaywink/shcli/releases
+Keywords: socialhome federation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.4
+Requires-Dist: click (<7,>=6)
+Requires-Dist: requests (<3,>=2.8.0)
+
+Python client for Socialhome.
+
+
