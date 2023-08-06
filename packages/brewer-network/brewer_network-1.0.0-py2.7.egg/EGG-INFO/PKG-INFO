@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: brewer-network
+Version: 1.0.0
+Summary: The network portion of brewer
+Home-page: UNKNOWN
+Author: Luke Sweeney
+Author-email: luke@thesweeneys.org
+License: UNKNOWN
+Description: ============
+        brewer_network
+        ============
+        
+        The network portion of brewer
+        
+        Installation
+        ------------
+        Installation notes go here.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers

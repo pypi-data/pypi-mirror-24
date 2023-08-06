@@ -1,0 +1,8 @@
+MANIFEST.in
+README.txt
+requirements.txt
+setup.py
+brewer_network.egg-info/PKG-INFO
+brewer_network.egg-info/SOURCES.txt
+brewer_network.egg-info/dependency_links.txt
+brewer_network.egg-info/top_level.txt
