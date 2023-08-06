@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: sanic-mongo
+Version: 1.6.0
+Summary: a simple sanic extension for using motor
+Home-page: https://sanic-extensions.github.io/sanic-mongo/
+Author: Huang Sizhe
+Author-email: hsz1273327@gmail.com
+License: Apache License 2.0
+Requires-Dist: motor (>=1.1)
+Requires-Dist: pymongo (>=3.4.0)
+Requires-Dist: sanic (>=0.4.1)
+Requires-Dist: user-agents (>=1.1.0)
+
+sanic-mongo
+
+
