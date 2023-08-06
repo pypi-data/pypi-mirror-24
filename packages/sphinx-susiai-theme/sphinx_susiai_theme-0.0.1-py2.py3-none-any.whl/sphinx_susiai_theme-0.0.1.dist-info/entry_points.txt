@@ -1,0 +1,6 @@
+[sphinx.html_themes]
+sphinx_susiai_theme = sphinx_susiai_theme
+
+[sphinx_themes]
+path = sphinx_susiai_theme:get_html_theme_path
+

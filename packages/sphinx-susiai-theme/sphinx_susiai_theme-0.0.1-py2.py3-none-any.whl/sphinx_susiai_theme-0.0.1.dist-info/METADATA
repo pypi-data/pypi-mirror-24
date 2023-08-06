@@ -1,0 +1,41 @@
+Metadata-Version: 2.0
+Name: sphinx-susiai-theme
+Version: 0.0.1
+Summary: A Sphinx theme specific to SUSI AI's Projects
+Home-page: https://github.com/fossasia/sphinx_susiai_theme
+Author: Balaji R
+Author-email: rbalajis25@gmail.com
+License: GNU
+Platform: any
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Framework :: Sphinx :: Theme
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development :: Documentation
+Requires-Dist: sphinx (>=1.3)
+
+sphinx_susiai_theme
+=====================
+
+.. image:: https://travis-ci.org/fossasia/sphinx_susai_theme.svg?branch=master
+    :target: https://travis-ci.org/fossasia/sphinx_susai_theme
+
+Official material design based Sphinx theme for SUSI AI
+
+Installation
+------------
+
+Download the package or add it to your `requirements.txt`
+
+::
+
+    pip install sphinx_susai_theme
+
+In your conf.py file:
+
+::
+
+    html_theme = "sphinx_susiai_theme"
+
+
