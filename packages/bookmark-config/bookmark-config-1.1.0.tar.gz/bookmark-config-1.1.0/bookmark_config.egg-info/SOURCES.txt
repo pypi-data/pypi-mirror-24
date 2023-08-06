@@ -1,0 +1,7 @@
+setup.py
+bookmark_config/__init__.py
+bookmark_config.egg-info/PKG-INFO
+bookmark_config.egg-info/SOURCES.txt
+bookmark_config.egg-info/dependency_links.txt
+bookmark_config.egg-info/requires.txt
+bookmark_config.egg-info/top_level.txt
