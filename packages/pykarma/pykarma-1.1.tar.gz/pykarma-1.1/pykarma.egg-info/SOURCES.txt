@@ -1,0 +1,7 @@
+setup.py
+pykarma/__init__.py
+pykarma.egg-info/PKG-INFO
+pykarma.egg-info/SOURCES.txt
+pykarma.egg-info/dependency_links.txt
+pykarma.egg-info/requires.txt
+pykarma.egg-info/top_level.txt
