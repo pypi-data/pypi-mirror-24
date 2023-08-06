@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: Geocoding
+Version: 1.2.2
+Summary: geocoding is an address search engine for France
+Home-page: https://github.com/DeVilhena-Paulo/Geocoding
+Author: Paulo Emilio de Vilhena
+Author-email: pevilhena2@gmail.com
+License: Apache Software License
+Requires-Dist: KdQuery
+Requires-Dist: Unidecode
+Requires-Dist: numpy
+
+=========
+
+
