@@ -1,0 +1,15 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+nullauthenticator.py
+setup.py
+examples/token-only/README.md
+examples/token-only/jupyterhub_config.py
+examples/token-only/login-service.py
+examples/token-only/login.html
+nullauthenticator.egg-info/PKG-INFO
+nullauthenticator.egg-info/SOURCES.txt
+nullauthenticator.egg-info/dependency_links.txt
+nullauthenticator.egg-info/requires.txt
+nullauthenticator.egg-info/top_level.txt

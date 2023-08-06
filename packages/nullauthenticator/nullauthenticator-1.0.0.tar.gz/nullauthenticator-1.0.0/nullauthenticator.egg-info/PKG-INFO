@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: nullauthenticator
+Version: 1.0.0
+Summary: JupyterHub: A multi-user server for Jupyter notebooks
+Home-page: https://github.com/jupyterhub/nullauthenticator
+Author: Jupyter Development Team
+Author-email: jupyter@googlegroups.com
+License: BSD
+Description: See https://jupyterhub.readthedocs.io for more info.
+Keywords: Interactive,Jupyter,JupyterHub,Authentication
+Platform: Linux
+Platform: Mac OS X
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.4
