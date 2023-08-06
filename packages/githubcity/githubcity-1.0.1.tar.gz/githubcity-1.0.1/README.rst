@@ -1,0 +1,116 @@
+GitHubCity
+==========
+
+|Build Status| |GitHub license|\ |Coverage Status|
+
+What is this?
+-------------
+
+This is a small library which gets all GitHub users given a city.
+Original idea is `Top-GitHub-Users-Data`_ by
+[@JJ](https://github.com/JJ), an adaptation of `top-github-users`_ from
+[@paulmillr](https://github.com/paulmillr/).
+
+What I can do with this?
+------------------------
+
+Now, you only can get all user names from a city (with a city in the
+location field). In future, this will be an amazing library.
+
+What I need to run this?
+------------------------
+
+You will need to install Python 3. Python 2 is not supported. I
+recommend you `install Anaconda`_.
+
+In addition, you will need to get ID and Secret from a GitHub
+application. `You can register your own application here!`_.
+
+Dependences
+^^^^^^^^^^^
+
+You have a ``requeriments.txt`` file. Install all dependences with
+``pip install -r requeriments.txt``.
+
+Getting started
+---------------
+
+Basic example
+^^^^^^^^^^^^^
+
+.. code:: python
+
+    idGH = os.environ.get('GH_ID')
+    secretGH = os.environ.get('GH_SECRET')
+    configuration = {
+       "excludedLocations": [],
+       "excludedUsers": [],
+       "intervals": [
+           [
+               "2008-01-01",
+               "2015-12-30"
+           ]
+       ],
+       "last_date": "2015-12-30",
+       "locations": [
+           "Ceuta"
+           ],
+       "name": "Ceuta"
+           }
+    ciudad = GitHubCity(idGH, secretGH, configuration)
+    ciudad.calculateBestIntervals()
+    ciudad.addFilter("repos", ">1")
+    ciudad.addFilter("followers", ">1")
+    ciudad.getCityUsers()
+
+Excluding users
+^^^^^^^^^^^^^^^
+
+You can generate a JSON file like this (each element is an user and this
+properties are name -login name of the user- and reason -why this user
+has been banned-):
+
+.. code:: json
+
+    [
+      {
+        "name": "asdpokjdf",
+        "reason": "It is only a test"
+      },
+      {
+        "name": "asdfasdf",
+        "reason": "It is only a test"
+      },
+      {
+        "name": "asdfasdfadf",
+        "reason": "It is only a test"
+      }
+    ]
+
+The MIT License (MIT)
+~~~~~~~~~~~~~~~~~~~~~
+
+::
+
+    Copyright (c) 2015-2017 Israel Blancas @iblancasa (http://iblancasa.com/)
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+    and associated documentation files (the “Software”), to deal in the Software without
+    restriction, including without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom
+    the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or
+    su
+
+.. _Top-GitHub-Users-Data: https://github.com/JJ/top-github-users-data
+.. _top-github-users: https://github.com/paulmillr/top-github-users
+.. _install Anaconda: https://www.continuum.io/
+.. _You can register your own application here!: https://github.com/settings/applications/new
+
+.. |Build Status| image:: https://travis-ci.org/iblancasa/GitHubCity.svg?branch=master
+   :target: https://travis-ci.org/iblancasa/GitHubCity
+.. |GitHub license| image:: https://img.shields.io/github/license/iblancasa/GitHubCity.svg
+   :target: https://github.com/iblancasa/GitHubCity
+.. |Coverage Status| image:: https://coveralls.io/repos/iblancasa/GitHubCity/badge.svg?branch=master&service=github
+   :target: https://coveralls.io/github/iblancasa/GitHubCity?branch=master
