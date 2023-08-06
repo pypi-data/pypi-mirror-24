@@ -1,0 +1,15 @@
+COPYING
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+imdbpie_async/__init__.py
+imdbpie_async/constants.py
+imdbpie_async/imdbpie.py
+imdbpie_async/objects.py
+imdbpie_async.egg-info/PKG-INFO
+imdbpie_async.egg-info/SOURCES.txt
+imdbpie_async.egg-info/dependency_links.txt
+imdbpie_async.egg-info/requires.txt
+imdbpie_async.egg-info/top_level.txt
