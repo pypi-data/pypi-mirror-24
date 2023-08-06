@@ -1,0 +1,11 @@
+porthos/__init__.py,sha256=x7kLg0G1ui2BJnSQR8qryAujL9wZbmT_lkpcYtbvw6U,96
+porthos/status.py,sha256=O7XfNHb_qcJMYr0RVD_68Nw-pEbLb5KcJSjVJShVI0k,1111
+porthos/client/__init__.py,sha256=D2-UWE9Vkycf2fkzMv9Q84Eqq9-4QefMDIgqTnPLS2Q,2327
+porthos/client/call.py,sha256=_Lxp3lGVv_0TvWOakX9VzfdCTQm73CvPxDCoOgATgwI,2515
+porthos/client/response.py,sha256=rbGAuj9IwbTx00DSY2MsP-8ctlu0aXLzO1r7ez6APtg,849
+porthos_python-0.0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+porthos_python-0.0.3.dist-info/METADATA,sha256=V_Sz3BTRERYKbom8-voYYZ2tp_J5AX9lsgrGkDLqYhs,892
+porthos_python-0.0.3.dist-info/RECORD,,
+porthos_python-0.0.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+porthos_python-0.0.3.dist-info/metadata.json,sha256=z60nRFjdT8HIPKlgTOp62qEa5phuyrPBIJwHTndICs8,1043
+porthos_python-0.0.3.dist-info/top_level.txt,sha256=c7gDjuLise0nVa6A0uivJ8Bn35gAx5ze604GHzPOBNU,8
