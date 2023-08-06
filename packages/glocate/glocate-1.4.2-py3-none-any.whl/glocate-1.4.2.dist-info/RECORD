@@ -1,0 +1,17 @@
+glocate-1.4.2.dist-info/metadata.json,sha256=p2g4uu2un4t1luvGb3QwhjJ_phhx9u3E0V2kM6PFS7E,1562
+glocate-1.4.2.dist-info/entry_points.txt,sha256=juo1eAG0tKsIzstRvHRSolZ8mbzO8cV6aQxuIwUi9QQ,54
+glocate-1.4.2.dist-info/DESCRIPTION.rst,sha256=Vzr3Kga09kGgYBZgFq41-KWhYDYz4ihpvCS1vkY1Wzc,585
+glocate-1.4.2.dist-info/METADATA,sha256=E0zbE4DlAdQhoGqPIUqNrAimFfTZgxXweszYi7mg-uE,1921
+glocate-1.4.2.dist-info/WHEEL,sha256=-aSo8rHuuPDEFzkcqqQ55pDyCjy25bYMLxSiHWKAOTc,92
+glocate-1.4.2.dist-info/RECORD,,
+glocate-1.4.2.dist-info/top_level.txt,sha256=6lRBRmKWv7O3dJDCNhq5PTFTaknWSzlntLqfi4w5FxQ,10
+geolocate/__main__.py,sha256=81Ovy9xuzu9SpcPUIMdqVVBkFMBvFzedUle6i-8VBKM,217
+geolocate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geolocate/glocate.py,sha256=-2npDMPXRfNgGpxYW7q4ZybmssT16tDTfQMAMxmhRbQ,1886
+geolocate/classes/system.py,sha256=nb_r5xS3SRSAn_Bbg_T4XGDN6BjUJ9tWevVisqYykgs,1096
+geolocate/classes/parser.py,sha256=xaUnZnZFOeWjoxmMF8aQ1M_8p6o1Yr0dgsP79zXNI40,8006
+geolocate/classes/geowrapper.py,sha256=TgME1BU14sfJGqtleK2QRvZoDYY8LsUxm4Z72k_Gtxo,14122
+geolocate/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geolocate/classes/arguments.py,sha256=ntdPwS16w0MqAR7V9RB_AV2cBR9i9AM-uOLGpQ-0Kd0,11765
+geolocate/classes/exceptions.py,sha256=pMF_oT4xzqcMbJ2mILmrfdpbtPx967IXSftdQzUZ8jo,901
+geolocate/classes/config.py,sha256=-QqGSQSIb_mc177hCwRVMINAg000fxtCq5HUpod-RoA,19292
