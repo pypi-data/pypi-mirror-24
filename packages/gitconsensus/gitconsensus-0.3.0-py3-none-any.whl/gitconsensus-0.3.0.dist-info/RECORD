@@ -1,0 +1,11 @@
+gitconsensus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitconsensus/config.py,sha256=1UGZdlRS35XsS5oA6Cu5jNi-qSUtqnUKs1ZJNskGWec,595
+gitconsensus/gitconsensus.py,sha256=qCEOkR1i2Khi_-63CRqILFJvsxJM15Y1dSOc5LnqLVA,3770
+gitconsensus/repository.py,sha256=kLTSrwSvjut4GfvEtE6kicDnOW9uNI0-XN72hmK3mP8,9969
+gitconsensus-0.3.0.dist-info/DESCRIPTION.rst,sha256=XVTpNXsSSrOJ70sr0FhFq3xDdbddHZbr3BOUv1aMS60,3075
+gitconsensus-0.3.0.dist-info/METADATA,sha256=fUZA8eMIZDvUdmea8FmaXWOavTEx9jLuqI9X0MQWy88,4089
+gitconsensus-0.3.0.dist-info/RECORD,,
+gitconsensus-0.3.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+gitconsensus-0.3.0.dist-info/entry_points.txt,sha256=2y1_hUhVRU1aetmPuRonBh3-YZlho5DSV4HK4mjCV4w,64
+gitconsensus-0.3.0.dist-info/metadata.json,sha256=onKHqZzvuosiA67C0EOr-3af3fr_gacQPmRstROvlLE,1269
+gitconsensus-0.3.0.dist-info/top_level.txt,sha256=xo3pylD1x8j3TdG3_uQucuGciNXMKJV9RrVPWUnJdUw,13
