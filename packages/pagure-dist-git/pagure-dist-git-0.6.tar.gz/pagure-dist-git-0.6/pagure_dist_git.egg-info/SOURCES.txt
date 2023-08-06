@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+dist_git_auth.py
+dist_git_auth_tests.py
+setup.py
+pagure_dist_git.egg-info/PKG-INFO
+pagure_dist_git.egg-info/SOURCES.txt
+pagure_dist_git.egg-info/dependency_links.txt
+pagure_dist_git.egg-info/entry_points.txt
+pagure_dist_git.egg-info/not-zip-safe
+pagure_dist_git.egg-info/requires.txt
+pagure_dist_git.egg-info/top_level.txt
+static/pagure-logo.png
+template/index.html
+template/index_auth.html
+template/repo_info.html

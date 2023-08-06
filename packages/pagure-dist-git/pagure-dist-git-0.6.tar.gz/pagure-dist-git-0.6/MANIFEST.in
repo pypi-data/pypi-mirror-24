@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+include dist_git_auth.py
+include dist_git_auth_tests.py
+recursive-include template *
+recursive-include static *

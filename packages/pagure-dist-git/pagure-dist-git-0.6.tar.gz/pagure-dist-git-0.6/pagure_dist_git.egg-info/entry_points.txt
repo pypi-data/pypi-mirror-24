@@ -1,0 +1,4 @@
+
+    [pagure.git_auth.helpers]
+    distgit = dist_git_auth:DistGitoliteAuth
+    

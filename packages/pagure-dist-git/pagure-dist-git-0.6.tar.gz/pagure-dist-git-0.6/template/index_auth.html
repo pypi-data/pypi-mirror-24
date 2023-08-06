@@ -1,0 +1,196 @@
+{% extends "master.html" %}
+
+{% block title %}Home{% endblock %}
+{% set tag = "projects" %}
+{% from "_browseheader.html" import browse_header %}
+
+
+{% block header %}
+  <link rel="stylesheet" type="text/css" media="screen"
+      href="{{ url_for('static', filename='toggle.css') }}"/>
+{% endblock %}
+
+
+{% from "_render_repo.html" import render_repos_as_card, render_activity_graph %}
+
+{% block content %}
+<div class="p-t-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+
+          {{ render_activity_graph(username) }}
+
+        <div class="card">
+          <div class="card-header">
+            My Projects <span class="label label-default">{{repos | count}}</span>
+            {% if config.get('ENABLE_NEW_PROJECTS', True) and repos %}
+            <span class="pull-xs-right">
+              <a class="btn btn-secondary btn-sm" href="{{ url_for('new_project') }}">
+                <span class="oi" data-glyph="plus" data-toggle="tooltip"
+                    title="Create New Project" aria-hidden="true">
+                </span>
+              </a>
+            </span>
+          {% endif %}
+          </div>
+          {% if repos %}
+            <div class="list-group list-group-flush">
+            {% for repo in repos %}
+              <div class="list-group-item">
+                {% set url = url_for(
+                    'view_repo',
+                    repo=repo.name,
+                    username=repo.user.username if repo.is_fork else None,
+                    namespace=repo.namespace) %}
+                <a href="{{ url }}">
+                  {% if repo.avatar_email %}
+                    <img class="projecticon pull-xs-left" src="{{ repo.avatar_email | avatar_url }}" width=20 height=20 />&nbsp;
+                  {% else %}
+                    <span class="oi text-muted" data-glyph="document"></span>
+                  {% endif %}
+                  <strong>{{ repo.namespace + '/' if repo.namespace }}{{ repo.name }}</strong>
+                </a>
+              </div>
+            {% endfor %}
+            </div>
+        {% else %}
+          <div class="card-block">
+            <div class="text-xs-center">You have no projects</div>
+            <div class="text-xs-center m-t-1">
+              {% if config.get('ENABLE_NEW_PROJECTS', True) %}
+              <a class="btn btn-success" href="{{ url_for('new_project') }}">
+                <span class="oi" data-glyph="plus" data-toggle="tooltip"
+                    title="Create New Project" aria-hidden="true">
+                </span> Create a Project
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            My Forks <span class="label label-default">{{forks | count}}</span>
+          </div>
+          {% if forks %}
+            <div class="list-group list-group-flush">
+            {% for fork in forks %}
+              <div class="list-group-item">
+                {% set url = url_for(
+                    'view_repo',
+                    repo=fork.name,
+                    username=fork.user.username if fork.is_fork else None,
+                    namespace=fork.namespace) %}
+
+                <a href="{{ url }}">
+                  <span class="oi text-muted" data-glyph="fork"></span>
+                  <strong>{{fork.user.username}}/{{ fork.namespace + '/' if fork.namespace }}{{ fork.name }}</strong>
+                </a>
+                  <div class="pull-xs-right">
+                  <span class="text-muted">forked from</span>
+                  <a href="{{ url_for(
+                    'view_repo', repo=fork.parent.name,
+                    namespace=fork.parent.namespace) }}">
+                    {{ fork.parent.namespace + '/' if fork.parent.namespace
+                    }}{{fork.parent.name}}
+                  </a>
+
+                  </div>
+              </div>
+            {% endfor %}
+            </div>
+        {% else %}
+          <div class="card-block">
+            <p>You have no forks</p>
+          </div>
+        {% endif %}
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="card" id="group_list">
+            <div class="card-header">
+                My Groups <span class="label label-default">{{ user.groups | length }}</span>
+                <span class="pull-xs-right">
+                  {% if config.get('ENABLE_GROUP_MNGT') %}
+                    <a class="btn btn-secondary btn-sm" href="{{ url_for('add_group') }}">
+                      <span class="oi" data-glyph="plus" data-toggle="tooltip"
+                        title="Create New Group" aria-hidden="true">
+                      </span>
+                    </a>
+                  {% endif %}
+                </span>
+            </div>
+            {% for group in user.groups %}
+              <div class="list-group">
+                <a class="list-group-item" href="{{ url_for(
+                    'view_group', group=group)}}">
+                  <div class=""><strong><span class="oi" data-glyph="people">
+                    </span> &nbsp;{{ group }}</strong>
+                  </div>
+                </a>
+              </div>
+            {% else %}
+            <div class="card-block">
+                <p>No group found</p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="card" id="watch_list">
+            <div class="card-header">
+                My Watch List <span class="label label-default">{{ watch_list | count }}</span>
+            </div>
+            {% for repo in watch_list %}
+              <div class="list-group">
+                {% if repo.is_fork %}
+                  <a class="list-group-item" href="{{ url_for(
+                    'view_repo',
+                    repo=repo.name,
+                    username=repo.user.username,
+                    namespace=repo.namespace) }}">
+                    <div class="">
+                      <strong>
+                        <span class="oi" data-glyph="fork"></span>
+                        &nbsp;{{ repo.user.username }}/{{
+                          repo.namespace + '/' if repo.namespace
+                              }}{{ repo.name }}
+                      </strong>
+                    </div>
+                  </a>
+                {% else %}
+                  <a class="list-group-item" href="{{ url_for(
+                    'view_repo', repo=repo.name, namespace=repo.namespace) }}">
+                    <div class="">
+                      <strong>
+                        <span class="oi" data-glyph="document"></span>
+                        &nbsp;{{ repo.namespace + '/' if repo.namespace
+                              }}{{ repo.name }}
+                      </strong>
+                    </div>
+                  </a>
+                {% endif %}
+              </div>
+            {% else %}
+            <div class="card-block">
+                <p>No project in watch list</p>
+            </div>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block jscripts %}
+    {{ super() }}
+    <script type="text/javascript">
+      $(function(){
+        $('.show_parts input[type="checkbox"]').change(function(){
+          $('#' + $(this).attr('name')).toggle();
+        });
+      });
+    </script>
+{% endblock %}
