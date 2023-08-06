@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>austria1.png</file>
+    <file>expresshead.png</file>
+    <file>expressvpn3.png</file>
+    <file>germany1.png</file>
+    <file>novpn1.png</file>
+    <file>usa.png</file>
+    <file>uk.png</file>
+    <file>thailand1.png</file>
+    <file>switzerland1.png</file>
+  </qresource>
+</RCC>
