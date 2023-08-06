@@ -1,0 +1,7 @@
+include README.rst
+include Example.ipynb
+include requirements.txt
+include LICENSE.md
+include post_truth_checker/badsites.csv
+include post_truth_checker/baits.csv
+include post_truth_checker/opinionwords.csv
