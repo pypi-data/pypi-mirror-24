@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+code_comment/__init__.py
+code_comment/errors.py
+code_comment/lib.py
+code_comment/models.py
+code_comment.egg-info/PKG-INFO
+code_comment.egg-info/SOURCES.txt
+code_comment.egg-info/dependency_links.txt
+code_comment.egg-info/not-zip-safe
+code_comment.egg-info/requires.txt
+code_comment.egg-info/top_level.txt
+tests/__init__.py
+tests/test_lib.py
+tests/test_models.py

@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: code_comment
+Version: 0.1.0
+Summary: extracts code comments from source codes
+Home-page: https://github.com/kelvintaywl/code_comment
+Author: Kelvin Tay
+Author-email: kelvintay@gmail.com
+License: MIT
+Download-URL: https://github.com/kelvintaywl/code_comment/tarball/0.1.0
+Description: UNKNOWN
+Keywords: comment,extract
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
