@@ -1,0 +1,11 @@
+freshbook/__init__.py,sha256=x1zvCDm_mGmwYLZlo8ty81sTEGNlCO6I5WqYObtU1VI,142
+freshbook/cli.py,sha256=lMBRnjTCSLGYWoRNTVukKlBRXlpT06uK3tfoN8-fXxc,2178
+freshbook/freshbook.py,sha256=1p3ABTMPK1lOoCFdpKMIu2DT4mnRLkmNLoTw7Pu2yDg,1525
+freshbook/utils.py,sha256=w1GuSkH9pmfkElE-rsHhXVrTn-E-6wuLXgwj_3-2MFw,2101
+freshbook-0.1.4.dist-info/DESCRIPTION.rst,sha256=pJma2MXb0ZA55ALINouWli_Js4AYzV4hhmZRROZW5wQ,1369
+freshbook-0.1.4.dist-info/METADATA,sha256=XOTWuXq0LfmAkSghSgcFK-aFYHAFvO9AO8Rn0eVpP2c,2246
+freshbook-0.1.4.dist-info/RECORD,,
+freshbook-0.1.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+freshbook-0.1.4.dist-info/entry_points.txt,sha256=U_3erenF2GHyo-jNrvdM7F09wOuROvpYTIeJAin2g4w,50
+freshbook-0.1.4.dist-info/metadata.json,sha256=dzGcX4GSyo4B46EUL6n8mRW7X_8ISLZYlm1C8uwYHvQ,1175
+freshbook-0.1.4.dist-info/top_level.txt,sha256=KMBuXyjhjltN15d9wfJ5lLkuGitk48npF4kb4akrSDM,10
