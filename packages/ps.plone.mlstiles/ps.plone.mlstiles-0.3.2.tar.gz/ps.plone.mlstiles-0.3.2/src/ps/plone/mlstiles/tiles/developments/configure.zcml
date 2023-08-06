@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="ps.plone.mlstiles">
+
+  <!-- MLS Development Collection .-->
+  <plone:tile
+      name="ps.plone.mlstiles.developments.collection"
+      title="MLS: Development Collection"
+      description="A tile that shows a list of MLS developments."
+      icon="++resource++ps.plone.mlstiles/tile-collection.png"
+      add_permission="cmf.ModifyPortalContent"
+      schema=".collection.IDevelopmentCollectionTile"
+      class=".collection.DevelopmentCollectionTile"
+      permission="zope2.View"
+      for="*"
+      />
+
+</configure>
