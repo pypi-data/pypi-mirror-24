@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: stormcloud
+Version: 0.0.1
+Summary: Make testing downtime of third-party services easier.
+Home-page: https://github.com/adamfast/stormcloud
+Author: Adam Fast
+Author-email: adamfast@gmail.com
+License: BSD
+Description: The goal of this project is to make testing for downtime against third-party services easier by providing somewhere to point those libraries in order to test your own application's behavior when some action times out, or receives an error.
+Keywords: testing development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7

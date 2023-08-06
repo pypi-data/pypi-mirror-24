@@ -1,0 +1,1 @@
+The goal of this project is to make testing for downtime against third-party services easier by providing somewhere to point those libraries in order to test your own application's behavior when some action times out, or receives an error.
