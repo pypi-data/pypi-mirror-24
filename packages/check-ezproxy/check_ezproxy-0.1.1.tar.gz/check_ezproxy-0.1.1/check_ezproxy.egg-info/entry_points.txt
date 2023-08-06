@@ -1,0 +1,3 @@
+[console_scripts]
+check_ezproxy = check_ezproxy.check_ezproxy:main
+
