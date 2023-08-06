@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: floppy
+Version: 0.0.1a1
+Summary: Python Powered Static Site Generation Tool
+Home-page: http://github.com/vndmtrx/floppy/
+Author: Eduardo Rolim
+Author-email: vndmtrx@gmail.com
+License: Apache License 2.0
+Description: # floppy
+        :black_nib: Floppy - Python Powered Static Site Generation Tool
+        
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Build Tools

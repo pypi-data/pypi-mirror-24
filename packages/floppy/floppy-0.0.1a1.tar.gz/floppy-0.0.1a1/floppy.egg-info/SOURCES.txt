@@ -1,0 +1,7 @@
+README.rst
+setup.py
+floppy/__init__.py
+floppy.egg-info/PKG-INFO
+floppy.egg-info/SOURCES.txt
+floppy.egg-info/dependency_links.txt
+floppy.egg-info/top_level.txt
