@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: euroscipy2017
+Version: 0.2
+Summary: Sample package for demonstrating flit & flonda.
+Home-page: https://github.com/takluyver/euroscipy-2017-packaging
+Author: Thomas Kluyver
+Author-email: thomas@kluyver.me.uk
