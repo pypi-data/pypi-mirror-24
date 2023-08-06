@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: pyvap
+Version: 0.0.2
+Summary: Kinetic model of particle evaporation
+Home-page: https://github.com/awbirdsall/pyvap
+Author: Adam Birdsall
+Author-email: abirdsall@gmail.com
+License: MIT
+Requires-Dist: matplotlib (>=1.5)
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+pyvap: kinetic model of particle evaporation
+
+
