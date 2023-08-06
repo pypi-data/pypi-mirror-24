@@ -1,0 +1,27 @@
+AQUAMI
+======
+An open source package and GUI for automatic analysis of micrographs containing morphologically complex multiphase materials.  Designed especially for analysis of nanoporous metals and bicontinuous composites. Automatically returns quantitative mean and distribution measurements of microstructural features such as ligament/pore diameter, node-to-node length, particle/pore area, and area fraction.  Measurements and summaries can be conveniently output into excel and pdf files.
+
+For more information, see `this paper <https://google.com>`_.
+
+Installing
+~~~~~~~~~~
+
+A standalone version that does not require Python can be found `here <https://doi.org/10.1016/j.commatsci.2017.08.012>`_.
+
+The easiest way to install the Python version is with pip.  In the command prompt type:
+
+.. code:: python
+
+    pip install aquami
+
+Running the program
+~~~~~~~~~~~~~~~~~~~
+Type the following in the command prompt pressing the <enter> key between lines:
+
+.. code:: python
+
+	python
+	from aquami import gui
+	gui.run()
+
