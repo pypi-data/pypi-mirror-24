@@ -1,0 +1,2 @@
+git+https://github.com/jantman/ofxclient.git@vanguard-fix#egg=ofxclient
+git+https://github.com/jseutter/ofxparse.git@19c04b40e2c7c3cb2943344f6108bcaf3d968725#egg=ofxparse
