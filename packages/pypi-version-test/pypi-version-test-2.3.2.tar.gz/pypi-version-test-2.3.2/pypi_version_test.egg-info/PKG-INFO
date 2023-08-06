@@ -1,0 +1,31 @@
+Metadata-Version: 1.2
+Name: pypi-version-test
+Version: 2.3.2
+Summary: test case for pypi version.
+Home-page: http://www.gaort.com
+Author: gaort
+Author-email: me@gaort.com
+License: Apache
+Description: 
+        
+        This module works on Python versions:
+        
+           * 3.0.0 and greater
+        
+        
+        Documentation:
+        
+        Please visit http://www.gaort.com
+Keywords: gaort,test,pypi
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Requires-Python: >=3
