@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: python-notifyAll
+Version: 0.4
+Summary: A library which you can use for all types of notifications like SMS, Mail, Push.
+Home-page: https://github.com/inforian/python-notifyAll
+Author: Neeraj Dhiman
+Author-email: ndhiman08@gmail.com
+License: GPL
+Download-URL: https://github.com/inforian/python-notifyAll/archive/v0.4.tar.gz
+Description: UNKNOWN
+Keywords: notification,notify,sms,email,push
+Platform: UNKNOWN
