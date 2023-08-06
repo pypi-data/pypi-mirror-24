@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+py8051/__init__.py
+py8051.egg-info/PKG-INFO
+py8051.egg-info/SOURCES.txt
+py8051.egg-info/dependency_links.txt
+py8051.egg-info/requires.txt
+py8051.egg-info/top_level.txt

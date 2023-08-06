@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: py8051
+Version: 0.1.1
+Summary: A Python interface to an 8051 disassembler.
+Home-page: https://github.com/grant-h/py8051
+Author: Grant Hernandez
+Author-email: grant.h.hernandez@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/grant-h/py8051/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: disassembler,8051
+Platform: UNKNOWN
