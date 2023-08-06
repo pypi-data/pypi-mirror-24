@@ -1,0 +1,39 @@
+Metadata-Version: 1.2
+Name: fiveleds
+Version: 0.1.0
+Summary: Control a LED display
+Home-page: UNKNOWN
+Author: dococassi
+Author-email: dococassi@boukom.com
+License: BY-NA-SA
+Description: fiveleds - LED Display Library
+        ==============================
+        
+        A library to control the LED display in the 57North Hackerpspace
+        
+        ----
+        
+        This ws made for the Maplin N00GA - using the AM004 - 03128/03127 LED Display communication board.
+        
+        This fiveleds object will hold an array of display lines and pages, and an array of Schedules which can be pushed to the device.
+        
+        An on disk backup will be loaded at creation and stored after every change, 
+        
+        Functionality
+        =============
+        
+        Each line setup by the display can have multiple pages controlled buy the fiveleds.updateline Function.
+        
+        Each active Schedule will used the cycle the display on each line.
+        
+Keywords: LED Display Control
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Graphics :: Presentation
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3

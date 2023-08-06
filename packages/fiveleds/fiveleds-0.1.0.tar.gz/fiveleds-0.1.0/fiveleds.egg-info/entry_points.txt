@@ -1,0 +1,3 @@
+[console_scripts]
+fiveleds = fiveleds:main
+
