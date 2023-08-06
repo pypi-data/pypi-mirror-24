@@ -1,0 +1,69 @@
+Metadata-Version: 2.0
+Name: automan
+Version: 0.2
+Summary: A simple Python-based automation framework.
+Home-page: https://github.com/pypr/automan
+Author: Prabhu Ramachandran
+Author-email: prabhu@aero.iitb.ac.in
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Dist: execnet
+Requires-Dist: mock
+Requires-Dist: psutil
+
+automan: a simple automation framework
+--------------------------------------
+
+|Travis Status|  |Appveyor Status|  |Coverage Status|
+
+.. |Travis Status| image:: https://travis-ci.org/pypr/automan.svg?branch=master
+    :target: https://travis-ci.org/pypr/automan
+
+.. |Appveyor Status| image:: https://ci.appveyor.com/api/projects/status/82mxewh71wodobdf
+    :target: https://ci.appveyor.com/project/prabhuramachandran/automan
+
+.. |Coverage Status| image:: https://codecov.io/gh/pypr/automan/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/pypr/automan
+
+
+This framework allows you to automate your computational pipelines.
+
+More details will be made available soon. To see a fully working example of a
+research publication using this framework see
+https://gitlab.com/prabhu/edac_sph
+
+Features
+--------
+
+For a set of numerical simulations with a Python script one can:
+
+- run all simulations and produce all figures with one command.
+- distribute the simulations on a collection of idle computers.
+
+
+The package name
+----------------
+
+The name automan comes from an old serial with the same name.  Most
+other names were taken on pypi.
+
+

@@ -1,0 +1,16 @@
+automan/__init__.py,sha256=-cHO5oOHPuBCll4Noe1fIVjbMIhK_d1gaJJcPlbSlt4,20
+automan/api.py,sha256=TT1-VXo_w8tOUKTrgqu6ZwBV9hWsWAEoUxEqeJlaj5s,369
+automan/automation.py,sha256=coXFhBKKMCoMF8qyTx2MitfUVQBmyHnlj-ivQr9mKuw,29128
+automan/cluster_manager.py,sha256=Mm7gl5XRYH6KHXJdsMF7ExEn6iZEDsECj3li1OsUb4w,12068
+automan/jobs.py,sha256=WXZ1QX8Bad_-fDcdPWjQdXZ24pS1hM89X86cj2vIitk,15057
+automan/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automan/tests/example.py,sha256=mee0OSqrJBNHCryboQl19CPTJl589gA3i-uPsBhez8U,992
+automan/tests/test_automation.py,sha256=7y7bAQRxukeuUmjYDfedkVbzITSvtYHNWId3MZEufxU,12008
+automan/tests/test_cluster_manager.py,sha256=Whx9hy4Ja1j5nfY6WpmR1c6Ad6mmqDe9bTOKephkA3w,3144
+automan/tests/test_jobs.py,sha256=2UgTZ4YYmDPRuiNmAPA1oWC17eWmfATtkmCb52pYZbc,13186
+automan-0.2.dist-info/DESCRIPTION.rst,sha256=jjLOYH7PQwrgrZV2i8Nm8QPfKw4eEEskyQrcgkOo_P0,1149
+automan-0.2.dist-info/METADATA,sha256=CEG2SQdwWK09cvH0nRs236lfrGLnX6x6zyOQV8HwAGI,2332
+automan-0.2.dist-info/RECORD,,
+automan-0.2.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+automan-0.2.dist-info/metadata.json,sha256=93TEHWaECePtIFHE_vsbTkwnTKLbQjzstUETu1OOkLU,1280
+automan-0.2.dist-info/top_level.txt,sha256=dlvzKJyg2RfHI9mwOmezN9E7nBAskicItqKBzGggeAQ,8
