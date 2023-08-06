@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+dockerfile2json/__init__.py
+dockerfile2json/__main__.py
+dockerfile2json/cli.py
+dockerfile2json/converter.py
+dockerfile2json.egg-info/PKG-INFO
+dockerfile2json.egg-info/SOURCES.txt
+dockerfile2json.egg-info/dependency_links.txt
+dockerfile2json.egg-info/entry_points.txt
+dockerfile2json.egg-info/requires.txt
+dockerfile2json.egg-info/top_level.txt
