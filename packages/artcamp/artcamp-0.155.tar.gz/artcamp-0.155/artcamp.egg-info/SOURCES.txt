@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+artcamp/__init__.py
+artcamp.egg-info/PKG-INFO
+artcamp.egg-info/SOURCES.txt
+artcamp.egg-info/dependency_links.txt
+artcamp.egg-info/not-zip-safe
+artcamp.egg-info/requires.txt
+artcamp.egg-info/top_level.txt
