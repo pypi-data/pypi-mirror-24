@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: keras_pickle_wrapper
+Version: 1.0.0
+Summary: A small library that wraps Keras models to pickle them.
+Home-page: https://github.com/wwoods/keras_pickle_wrapper
+Author: Walt Woods
+Author-email: woodswalben@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: keras,pickle
+Platform: UNKNOWN
