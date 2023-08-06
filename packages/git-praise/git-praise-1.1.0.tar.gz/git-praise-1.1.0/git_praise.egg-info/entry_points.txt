@@ -1,0 +1,3 @@
+[console_scripts]
+praise = praise.main:praise_command
+

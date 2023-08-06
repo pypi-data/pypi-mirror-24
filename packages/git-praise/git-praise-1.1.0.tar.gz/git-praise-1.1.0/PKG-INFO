@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: git-praise
+Version: 1.1.0
+Summary: A nicer git blame.
+Home-page: https://github.com/sigvef/git-praise
+Author: Sigve Sebastian Farstad
+Author-email: sigvefarstad@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
