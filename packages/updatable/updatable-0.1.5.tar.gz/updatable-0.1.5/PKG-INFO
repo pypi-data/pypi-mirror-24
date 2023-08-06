@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: updatable
+Version: 0.1.5
+Summary: Finds packages that require updates on a python environment.
+Home-page: https://github.com/nezhar/updatable
+Author: Harald Nezbeda
+Author-email: hn@nezhar.com
+License: MIT
+Description: 
+        Updatable
+        =========
+        
+        Finds packages that require updates on a python environment
+        
+        Installation
+        ~~~~~~~~~~~~
+        
+        The latest release of updatable can be installed via PyPI:
+        
+        ::
+        
+            pip install -U updatable
+        
+        
+        Usage
+        ~~~~~
+        
+        The package can be used as a command line tool, so you can get a list of all
+        packages that require updates from your current environment. You may also use
+        the package inside of your python application, to list the packages over a REST
+        endpoint, forward them by mail or other purpose.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Topic :: Utilities
