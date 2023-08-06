@@ -1,0 +1,39 @@
+Kickstart `Alexa Voice Service <https://developer.amazon.com/alexa-voice-service>`__ on ``Raspberry Pi``
+========================================================================================================
+
+.. figure:: ./docs/images/setup.jpg
+   :alt: setup
+
+   setup
+
+Motivation
+----------
+
+`Alexa team <https://github.com/alexa>`__ have put together a
+step-by-step guide to build `Alexa Voice Service
+(AVS) <https://developer.amazon.com/alexa-voice-service>`__ on a
+``Raspberry Pi``
+`here <https://github.com/alexa/alexa-avs-sample-app/wiki/Raspberry-Pi>`__.
+Although the `automated install
+script <https://github.com/alexa/alexa-avs-sample-app/blob/master/automated_install.sh>`__
+builds the sample apps for enabling `Alexa Voice Service
+(AVS) <https://developer.amazon.com/alexa-voice-service>`__, there are
+two things that you have to do manually in order to get a full
+experience of owning an Amazon Alexa product (Echo, Dot, Look, etc):
+
+-  `run your web service, sample app and wake word
+   engine <https://github.com/alexa/alexa-avs-sample-app/wiki/Raspberry-Pi#step-7-run-your-web-service-sample-app-and-wake-word-engine>`__
+-  Enable the above apps on startup
+
+About
+-----
+
+A simple package that launches Alexa Voice Service without you manually
+opening three consoles. Can be launched with a simple ``shell`` command
+that can be added to startup on a ``Raspberry Pi``.
+
+References
+----------
+
+-  https://python-packaging.readthedocs.io/en/latest/minimal.html#picking-a-name
+-  https://github.com/tony/libtmux

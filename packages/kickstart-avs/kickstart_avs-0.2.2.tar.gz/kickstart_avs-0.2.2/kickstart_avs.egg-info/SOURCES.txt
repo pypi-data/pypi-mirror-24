@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+bin/kickstart_avs
+docs/images/setup.jpg
+kickstart_avs/__init__.py
+kickstart_avs/launch.py
+kickstart_avs.egg-info/PKG-INFO
+kickstart_avs.egg-info/SOURCES.txt
+kickstart_avs.egg-info/dependency_links.txt
+kickstart_avs.egg-info/not-zip-safe
+kickstart_avs.egg-info/requires.txt
+kickstart_avs.egg-info/top_level.txt
