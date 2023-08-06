@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: packemo
+Version: 0.1.2
+Summary: UNKNOWN
+Home-page: https://pypi.python.org/pypi/packemo/
+Author: psrit
+Author-email: xiaojx13@outlook.com
+License: UNKNOWN
+Description: Description
+        ===========
+        
+        This is the description of the **packemo** package.
+        
+        "packemo" means package demo, which is a tiny Python package
+        containing some rather simple modules and a ``setup.py`` file.
+        
+        This package tries to give a simple demonstration of how Python
+        packages are organized and how to write a ``setup.py``.
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
