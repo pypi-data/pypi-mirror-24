@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+
+% Graphics, plotting, images:
+\usepackage{graphicx}
+
+% Tweaking text borders:
+\usepackage[top=3cm, bottom=3cm, left=1.7cm, right=2cm]{geometry}
+
+% Making hyperlinks:
+\usepackage{hyperref}
+
+% Making headers/footers:
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=35mm]{{#LOGO#}}}
+
+\usepackage{caption}
+
+% Make only a subset of pages in landscape mode
+\usepackage{pdflscape}
+
+% tables spanning multiple pages
+\usepackage{longtable}
+
+\usepackage{array}
+\newcolumntype{L}{>{\centering\arraybackslash}m{2.3cm}}
+
+\usepackage{booktabs}
+
+\begin{document}
+
+\section*{{#SAMPLE_NAME#}}
+
+\noindent
+{\Large {#PANEL#}} \\
+
+\noindent
+{\large Sample analysis report} \\
+\noindent \today
+
+\section{QC information}
+
+\subsection*{Amplicon performance}
+
+Total reads: \textbf{{#TOTAL_READS#}} \\
+Aligned reads: \textbf{{#ALIGNED_READS#}} \textbf{({#PCT_ALIGNED_READS#} \%)} \\
+Aligned bases (on target): \textbf{{#ALIGN_BASES_ONTARGET#} \%} \\
+Mean coverage: \textbf{{#COV_MEAN#}} \\
+Mean coverage (20 \% of Mean) : \textbf{{#COV_20#}} \\
+Coverage uniformity (\% bases covered above 20 \% of Mean): \textbf{{#COV_UNI#}} \%  \\
+
+
+\subsection*{Per amplicon coverage}
+Number of amplicons: \textbf{{{#ALL_AMPLICONS#}}} \\
+Number of amplicons with 100 \% coverage: \textbf{{#COVERED_AMPLICONS#} ({#PCT_COV#} \%)} \\
+
+{#BAD_AMPLICON_TABLE#}
+
+\newpage
+
+\subsection*{Per amplicon average coverage}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.99\textwidth]{{#IMAGE2#}}
+    \caption{Average coverage (average number of sequencing reads
+    covering amplicon bases) is plotted for
+    each of the tested amplicons. Coverage at the 5 \%, 10 \%, 20 \% and 5x of the mean sample coverage
+    is marked with the horizontal lines.}
+\end{figure}
+
+\newpage
+
+\begin{landscape}
+    \section{Annotated variants}
+    \footnotesize
+    {#VCF_TABLES#}
+\end{landscape}
+
+
+\end{document}
