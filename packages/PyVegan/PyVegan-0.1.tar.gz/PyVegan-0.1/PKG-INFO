@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: PyVegan
+Version: 0.1
+Summary: PyVegan is a simple Python CLI to browse vegan recipes
+Home-page: https://github.com/mazulo/pyvegan
+Author: Patrick Mazulo
+Author-email: pmazulo@gmail.com
+License: MIT
+Download-URL: https://github.com/mazulo/pyvegan/archive/master.zip
+Description: =======
+        PyVegan
+        =======
+        
+        A Python CLI to search for vegan receipts.
+        
+        Work in progress. Stay tunned.
+        ------------------------------
+        
+Keywords: pyvegan cli shell vegan
+Platform: windows linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Shells
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
