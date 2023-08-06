@@ -1,0 +1,5 @@
+jupyterhub
+pyYAML
+kubernetes==3.*
+escapism
+jupyter
