@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        feed_media_backup=feed_media_backup:main
+    
