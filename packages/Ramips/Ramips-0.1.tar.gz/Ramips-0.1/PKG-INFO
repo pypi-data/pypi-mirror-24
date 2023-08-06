@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: Ramips
+Version: 0.1
+Summary: Simple and opiniated way to build APIs in Python
+Home-page: https://github.com/chowdaryidavalapati/Ram
+Author: RamIdavalapati
+Author-email: ramidavalapati4568@gmail.com
+License: MIT License
+Download-URL: https://github.com/chowdaryidavalapati/Ram/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: Ramips
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
