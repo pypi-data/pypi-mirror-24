@@ -1,0 +1,7 @@
+termcolor==1.1.0
+click==6.7
+socketIO-client
+matplotlib
+requests
+termcolor
+argparse
