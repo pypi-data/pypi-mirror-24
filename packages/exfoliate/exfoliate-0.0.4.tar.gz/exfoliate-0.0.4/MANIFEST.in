@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include exfoliate/VERSION.txt
+include DESCRIPTION.rst
+include benchmark.py
+include tests.py

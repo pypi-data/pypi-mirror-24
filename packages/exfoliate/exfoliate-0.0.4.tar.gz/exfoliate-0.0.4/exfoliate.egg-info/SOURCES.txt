@@ -1,0 +1,15 @@
+DESCRIPTION.rst
+LICENSE
+MANIFEST.in
+README.md
+benchmark.py
+setup.py
+tests.py
+exfoliate/VERSION.txt
+exfoliate/__init__.py
+exfoliate/exfoliate.py
+exfoliate.egg-info/PKG-INFO
+exfoliate.egg-info/SOURCES.txt
+exfoliate.egg-info/dependency_links.txt
+exfoliate.egg-info/requires.txt
+exfoliate.egg-info/top_level.txt

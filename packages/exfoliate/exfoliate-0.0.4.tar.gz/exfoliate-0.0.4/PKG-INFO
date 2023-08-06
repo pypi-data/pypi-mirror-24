@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: exfoliate
+Version: 0.0.4
+Summary: The asynchronous Python HTTP client for developers who prefer synchronous Python.
+Home-page: https://github.com/brianjpetersen/exfoliate
+Author: Brian J Petersen
+Author-email: brianjpetersen@gmail.com
+License: MIT
+Description: exfoliate
+        =========
+        
+        Exfoliate is the asynchronous HTTP client for developers who prefer synchronous Python.  Enjoy the benefits of a scalable, asynchronous HTTP client without worrying about coroutines or event loops.
+        
+        Exfoliate is the gentler, more Pythonic way to scrape the web.
+        
+        For more information, check out the `Github repository <https://github.com/brianjpetersen/exfoliate>`_.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
