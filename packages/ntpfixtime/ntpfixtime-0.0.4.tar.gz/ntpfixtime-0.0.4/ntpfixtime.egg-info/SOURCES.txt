@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+ntpfixtime/__init__.py
+ntpfixtime/api.py
+ntpfixtime.egg-info/PKG-INFO
+ntpfixtime.egg-info/SOURCES.txt
+ntpfixtime.egg-info/dependency_links.txt
+ntpfixtime.egg-info/requires.txt
+ntpfixtime.egg-info/top_level.txt
