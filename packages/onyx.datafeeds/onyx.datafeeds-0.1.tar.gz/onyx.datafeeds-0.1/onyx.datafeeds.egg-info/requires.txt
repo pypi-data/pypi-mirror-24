@@ -1,0 +1,9 @@
+onyx.core
+argh
+tornado
+asyncmc
+
+[win32]
+blpapi
+comtypes
+pywin32
