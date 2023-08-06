@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: OptimisationFunctions
+Version: 2.1.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Joshin Smith
+Author-email: joshins@pepkor.co.za
+License: MIT
+Description: Series of Functions Designed for Cellular Optimisation 
+        							model building and prediction
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
