@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tooling &mdash; sdx-common 0.7.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="sdx-common 0.7.1 documentation" href="index.html"/>
+        <link rel="prev" title="Formatters" href="formats.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> sdx-common
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.7.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="log_levels.html">Setting Log Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="survey.html">Survey accessors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="processor.html">Processing functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transformers.html">Transformers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formats.html">Formatters</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tooling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#boilerplate">Boilerplate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-sdx.common.cli">Command Line Interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Positional Arguments">Positional Arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Named Arguments">Named Arguments</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sdx-common</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Tooling</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/cli.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tooling">
+<span id="commands"></span><h1>Tooling<a class="headerlink" href="#tooling" title="Permalink to this headline">¶</a></h1>
+<p>Transformers can be called from the command line for testing or remediation purposes.</p>
+<p>Under these conditions, certain parameters need to be supplied by the user. To facilitate
+that, there are some helper functions you can use to parse the command line for those values.</p>
+<div class="section" id="boilerplate">
+<h2>Boilerplate<a class="headerlink" href="#boilerplate" title="Permalink to this headline">¶</a></h2>
+<p>Here is an example of code which turns a Transformer module into a CLI utility:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="c1">#  coding: UTF-8</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">namedtuple</span>
+<span class="kn">import</span> <span class="nn">itertools</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="kn">import</span> <span class="nn">sdx.common.cli</span>
+
+<span class="vm">__doc__</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Module documentation&quot;&quot;&quot;</span>
+
+<span class="k">class</span> <span class="nc">MyTransformer</span><span class="p">(</span><span class="n">Transformer</span><span class="p">):</span>
+
+    <span class="o">&lt;</span><span class="k">class</span> <span class="nc">definition</span> <span class="n">goes</span> <span class="n">here</span><span class="o">&gt;</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="n">Settings</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span>
+        <span class="s2">&quot;Settings&quot;</span><span class="p">,</span>
+        <span class="p">[</span>
+            <span class="s2">&quot;FTP_HOST&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;SDX_FTP_IMAGE_PATH&quot;</span><span class="p">,</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+
+    <span class="n">reply</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">input</span><span class="p">)</span>
+    <span class="n">tfr</span> <span class="o">=</span> <span class="n">MyTransformer</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="n">seq_nr</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">seq_nr</span><span class="p">)</span>
+    <span class="n">zipfile</span> <span class="o">=</span> <span class="n">tfr</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span>
+        <span class="n">settings</span><span class="o">=</span><span class="n">Settings</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">),</span>
+        <span class="n">img_seq</span><span class="o">=</span><span class="n">itertools</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">img_nr</span><span class="p">),</span>
+        <span class="n">tmp</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">work</span>
+    <span class="p">)</span>
+    <span class="n">args</span><span class="o">.</span><span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">zipfile</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+
+<span class="k">def</span> <span class="nf">run</span><span class="p">():</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">sdx</span><span class="o">.</span><span class="n">common</span><span class="o">.</span><span class="n">cli</span><span class="o">.</span><span class="n">transformer_cli</span><span class="p">(</span><span class="vm">__doc__</span><span class="p">)</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+    <span class="n">rv</span> <span class="o">=</span> <span class="n">main</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">rv</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="module-sdx.common.cli">
+<span id="command-line-interface"></span><h2>Command Line Interface<a class="headerlink" href="#module-sdx.common.cli" title="Permalink to this headline">¶</a></h2>
+<p>Defines a common CLI for SDX tooling.</p>
+<p>Operation via CLI requires a set of common options.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">SDX</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">version</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">v</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">work</span> <span class="n">WORK</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">img_nr</span> <span class="n">IMG_NR</span><span class="p">]</span>
+           <span class="p">[</span><span class="o">--</span><span class="n">seq_nr</span> <span class="n">SEQ_NR</span><span class="p">]</span>
+           <span class="p">[</span><span class="nb">input</span><span class="p">]</span> <span class="p">[</span><span class="n">output</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="Positional Arguments">
+<h3>Positional Arguments<a class="headerlink" href="#Positional Arguments" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd>input</kbd></td>
+<td>Specify survey data.</td></tr>
+<tr><td class="option-group">
+<kbd>output</kbd></td>
+<td>Specify output file.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="Named Arguments">
+<h3>Named Arguments<a class="headerlink" href="#Named Arguments" title="Permalink to this headline">¶</a></h3>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd>--version</kbd></td>
+<td>Print the current version number</td></tr>
+<tr><td class="option-group">
+<kbd>-v, --verbose</kbd></td>
+<td>Increase the verbosity of output</td></tr>
+<tr><td class="option-group">
+<kbd>--work</kbd></td>
+<td>Set a path to the working directory.</td></tr>
+<tr><td class="option-group">
+<kbd>--img_nr</kbd></td>
+<td>Set a starting number for the image sequence.</td></tr>
+<tr><td class="option-group">
+<kbd>--seq_nr</kbd></td>
+<td>Set a sequence number for the data output.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="formats.html" class="btn btn-neutral" title="Formatters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ONS.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.7.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
