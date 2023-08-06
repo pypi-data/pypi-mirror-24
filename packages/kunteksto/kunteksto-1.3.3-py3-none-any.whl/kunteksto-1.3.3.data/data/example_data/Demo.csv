@@ -1,0 +1,6 @@
+Record_ID,Column_1,Column_2,Column_3,Column_4,Column_5
+1,Test One,100,100,100.01,1965-12-15
+2,Test Two,101,101,101.333,1966-10-15
+3,Test Three,102,102,102.5,1975-01-11
+4,Test Four,5000000,NaN,5000.09,1968-08-15
+5,Test Five,54321,543,54321.7654,2001-01-01
