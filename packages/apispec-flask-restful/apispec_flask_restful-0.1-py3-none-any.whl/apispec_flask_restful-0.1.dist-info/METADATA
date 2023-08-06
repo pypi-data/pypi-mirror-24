@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: apispec-flask-restful
+Version: 0.1
+Summary: Flask-RESTful plugin for apispec
+Home-page: https://github.com/theirix/apispec-flask-restful
+Author: theirix
+Author-email: theirix@gmail.com
+License: MIT
+Keywords: apispec swagger openapi specification documentation spec rest api
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: Flask-RESTful
+Requires-Dist: apispec
+
+UNKNOWN
+
+
