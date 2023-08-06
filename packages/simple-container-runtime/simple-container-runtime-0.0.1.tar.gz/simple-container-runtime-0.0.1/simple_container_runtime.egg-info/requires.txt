@@ -1,0 +1,5 @@
+PyYAML
+boto3
+click
+requests
+sh
