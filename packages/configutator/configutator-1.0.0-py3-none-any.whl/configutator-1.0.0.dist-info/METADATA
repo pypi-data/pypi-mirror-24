@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: configutator
+Version: 1.0.0
+Summary: Maps yaml nodes and command line arguments to python function parameters.
+Home-page: https://github.com/innovate-invent/configutator
+Author: Nolan
+Author-email: innovate.invent@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: asciimatics
+Requires-Dist: jmespath
+Requires-Dist: ruamel.yaml
+
+configutator
+------------
+
+Maps yaml nodes and command line arguments to python function parameters.
+
+
