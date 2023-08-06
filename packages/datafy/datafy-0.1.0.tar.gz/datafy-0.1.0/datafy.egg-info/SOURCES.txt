@@ -1,0 +1,8 @@
+setup.py
+datafy/__init__.py
+datafy/datafy.py
+datafy.egg-info/PKG-INFO
+datafy.egg-info/SOURCES.txt
+datafy.egg-info/dependency_links.txt
+datafy.egg-info/requires.txt
+datafy.egg-info/top_level.txt
