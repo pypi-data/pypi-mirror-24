@@ -1,0 +1,13 @@
+i2p/__init__.py,sha256=8D5a8oKgqd6WA1RUkiKCn4l_PVemtyuckxQut0vDHXM,20
+i2p/__version__.py,sha256=tW_zJLH-WuomjlFDy2QDGMcUrES3oZvw64vlcEPuKvQ,311
+i2p/core.py,sha256=fxJwHrmmwkGEIQB4pfyRo04sSeMzvvrfArc7n6E2Vw4,248
+i2p/main.py,sha256=fxJwHrmmwkGEIQB4pfyRo04sSeMzvvrfArc7n6E2Vw4,248
+idea2production/__init__.py,sha256=8D5a8oKgqd6WA1RUkiKCn4l_PVemtyuckxQut0vDHXM,20
+idea2production/__version__.py,sha256=84kAh8NHCfuQVMCMjWYIl9dcL2pZt8XP6ZOufgl019E,1507
+idea2production/main.py,sha256=fxJwHrmmwkGEIQB4pfyRo04sSeMzvvrfArc7n6E2Vw4,248
+idea2production-2017.0.1b1.dist-info/DESCRIPTION.rst,sha256=KqkzcxVjZPnlPSW2nSJMnzKk3_QxqK_DsYkrrJNGL-0,1417
+idea2production-2017.0.1b1.dist-info/METADATA,sha256=C86Jq-JEJ6hQhYEEnq5ccDHKw9R6t2pbrs__iNBR-K0,2036
+idea2production-2017.0.1b1.dist-info/RECORD,,
+idea2production-2017.0.1b1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+idea2production-2017.0.1b1.dist-info/metadata.json,sha256=wjYO-Pr9x7jr1vxDZziLnSKwnnw2Wou3bhhqIUky6V0,789
+idea2production-2017.0.1b1.dist-info/top_level.txt,sha256=nUXzYdhxUb2AIv8qvOxpPPdXxQXgkdpFhwh_FMmbXB8,16
