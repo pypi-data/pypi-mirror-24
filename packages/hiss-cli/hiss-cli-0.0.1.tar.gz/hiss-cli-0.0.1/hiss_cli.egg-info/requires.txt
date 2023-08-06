@@ -1,0 +1,8 @@
+SQLAlchemy
+
+[dev]
+check-manifest
+
+[test]
+pytest
+coverage

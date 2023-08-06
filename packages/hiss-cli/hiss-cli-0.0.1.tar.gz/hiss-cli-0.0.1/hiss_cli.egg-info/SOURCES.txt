@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+hiss/__init__.py
+hiss/hiss.py
+hiss_cli.egg-info/PKG-INFO
+hiss_cli.egg-info/SOURCES.txt
+hiss_cli.egg-info/dependency_links.txt
+hiss_cli.egg-info/requires.txt
+hiss_cli.egg-info/top_level.txt
