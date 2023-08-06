@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+pytfa.egg-info/PKG-INFO
+pytfa.egg-info/SOURCES.txt
+pytfa.egg-info/dependency_links.txt
+pytfa.egg-info/requires.txt
+pytfa.egg-info/top_level.txt
