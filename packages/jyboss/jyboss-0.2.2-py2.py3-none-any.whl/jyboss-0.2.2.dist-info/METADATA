@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: jyboss
+Version: 0.2.2
+Summary: A Jython CLI for JBoss Application Server
+Home-page: https://github.com/fareliner/jyboss-cli
+Author: Niels Bertram
+Author-email: nielsbne@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Requires: simplejson
+Requires: PyYAML
+
+UNKNOWN
+
+
