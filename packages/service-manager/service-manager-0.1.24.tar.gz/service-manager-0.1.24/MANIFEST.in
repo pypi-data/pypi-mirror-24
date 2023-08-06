@@ -1,0 +1,1 @@
+include service_manager/service_initializer/creators/builtin_service_templates.json
