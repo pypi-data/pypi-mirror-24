@@ -1,0 +1,11 @@
+axelrod_dojo/__init__.py,sha256=ZMMxRty1kZFUGlVfUENA3Qq_ZQCHnk3GrFkr8E3gmuI,266
+axelrod_dojo/utils.py,sha256=Kg0Jvsdg5yBLBYyLtBiqqFLt3r8NcqLqmorfCR8ApH8,10584
+axelrod_dojo/version.py,sha256=eB5tEg_BNHHsJgQexgmpZJr4c2VbfooQZMXAWuDHoIg,22
+axelrod_dojo/archetypes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+axelrod_dojo/archetypes/fsm.py,sha256=bmZnjdBCrlmqDkOX3nxvBOk5TdJ4M-Zo07Lt47WTDt0,4497
+axelrod_dojo-0.0.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+axelrod_dojo-0.0.5.dist-info/METADATA,sha256=fviRlT0Nax8mo-WihXA8aS2OF_Zus_jXjl6sENozNoQ,545
+axelrod_dojo-0.0.5.dist-info/RECORD,,
+axelrod_dojo-0.0.5.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+axelrod_dojo-0.0.5.dist-info/metadata.json,sha256=2vFi5fCgdFa2jBZNmYH9bFZQxSEu9JkvP0p4LOJcwGA,683
+axelrod_dojo-0.0.5.dist-info/top_level.txt,sha256=LMLqG39InNG6pEOFfpT7mN5qkUb_Ll00XaOPuoSgP8M,13
