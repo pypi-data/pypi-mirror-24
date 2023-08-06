@@ -1,0 +1,3 @@
+[console_scripts]
+logscli = logscli.__main__:main
+

@@ -1,0 +1,35 @@
+### Example run
+
+```
+logscli --format json --logs-path tmp/ --out-path out/ --config-path config.yml
+```
+
+Will take all gziped logs from *tmp/* path relative to current directory and output them into *out/* in *json* format.
+
+### Install
+
+```
+pip3 install .
+```
+
+or
+
+```
+pip3 install logscli
+```
+
+### Running
+
+```
+Usage: logscli [OPTIONS]
+
+Options:
+  -f, --format [json|csv]
+  -l, --logs-path TEXT     [required]
+  -o, --out-path TEXT      [required]
+  -c, --config_path TEXT   [required]
+```
+
+### Requirements
+
+* Python 3
