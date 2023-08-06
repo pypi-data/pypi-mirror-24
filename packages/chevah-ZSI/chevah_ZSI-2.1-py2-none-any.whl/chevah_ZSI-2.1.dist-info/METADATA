@@ -1,0 +1,13 @@
+Metadata-Version: 2.0
+Name: chevah-ZSI
+Version: 2.1
+Summary: Chevah fork of Zolera SOAP Infrastructure
+Home-page: http://pywebsvcs.sf.net/
+Author: Rich Salz, et al
+Author-email: pywebsvcs-talk@lists.sf.net
+License: Python
+Platform: UNKNOWN
+
+For additional information, please see http://pywebsvcs.sf.net/
+
+
