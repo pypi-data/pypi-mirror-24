@@ -1,0 +1,119 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+bin/ml
+bin/mollib
+dist/temp/mollib-1.0.6/mollib/core/geometry.c
+dist/temp/mollib-1.0.6/mollib/core/geometry_box.c
+mollib/__init__.py
+mollib/__main__.py
+mollib/__version__.py
+mollib.egg-info/PKG-INFO
+mollib.egg-info/SOURCES.txt
+mollib.egg-info/dependency_links.txt
+mollib.egg-info/entry_points.txt
+mollib.egg-info/not-zip-safe
+mollib.egg-info/requires.txt
+mollib.egg-info/top_level.txt
+mollib/core/__init__.py
+mollib/core/atom.py
+mollib/core/chain.py
+mollib/core/geometry.c
+mollib/core/geometry.pyx
+mollib/core/geometry_box.c
+mollib/core/geometry_box.pxd
+mollib/core/geometry_box.pyx
+mollib/core/molecule.py
+mollib/core/primitives.py
+mollib/core/residue.py
+mollib/core/settings.py
+mollib/core/settings_manager.py
+mollib/core/topology.py
+mollib/core/utils.py
+mollib/core/plugins/__init__.py
+mollib/core/plugins/measure.py
+mollib/core/plugins/process.py
+mollib/core/readers/__init__.py
+mollib/core/readers/base.py
+mollib/core/readers/pdb.py
+mollib/data/high_res.txt
+mollib/data/high_res_short.txt
+mollib/data/hbondstatistics/bb-bb amide__310-helix.npz
+mollib/data/hbondstatistics/bb-bb amide__alpha-helix.npz
+mollib/data/hbondstatistics/bb-bb amide__isolated.npz
+mollib/data/hbondstatistics/bb-bb amide__pi-helix.npz
+mollib/data/hbondstatistics/bb-bb amide__sheet.npz
+mollib/data/hbondstatistics/bb-bb amide__type I turn.npz
+mollib/data/hbondstatistics/bb-bb amide__type I' turn.npz
+mollib/data/hbondstatistics/bb-bb amide__type II turn.npz
+mollib/data/hbondstatistics/bb-bb amide__type II' turn.npz
+mollib/data/hbondstatistics/bb-sc amide__isolated.npz
+mollib/data/hbondstatistics/isolated.npz
+mollib/data/hbondstatistics/sc-bb amide__isolated.npz
+mollib/data/hbondstatistics/sc-bb hydroxyl__isolated.npz
+mollib/data/hbondstatistics/sc-sc amide__isolated.npz
+mollib/data/hbondstatistics/sc-sc hydroxyl__isolated.npz
+mollib/data/ramachandranstatistics/310-helix.npz
+mollib/data/ramachandranstatistics/Gly.npz
+mollib/data/ramachandranstatistics/No classification.npz
+mollib/data/ramachandranstatistics/alpha-helix.npz
+mollib/data/ramachandranstatistics/alpha-helix__C-term.npz
+mollib/data/ramachandranstatistics/alpha-helix__N-term.npz
+mollib/data/ramachandranstatistics/pi-helix.npz
+mollib/data/ramachandranstatistics/sheet.npz
+mollib/data/ramachandranstatistics/sheet__C-term.npz
+mollib/data/ramachandranstatistics/sheet__N-term.npz
+mollib/data/ramachandranstatistics/type I turn.npz
+mollib/data/ramachandranstatistics/type I' turn.npz
+mollib/data/ramachandranstatistics/type II turn.npz
+mollib/data/ramachandranstatistics/type II' turn.npz
+mollib/hbonds/__init__.py
+mollib/hbonds/classify_hbonds.py
+mollib/hbonds/classify_secondary_structure.py
+mollib/hbonds/hbond_table.py
+mollib/hbonds/hbonds.py
+mollib/hbonds/plugin.py
+mollib/hbonds/rama_table.py
+mollib/hbonds/settings.py
+mollib/hydrogens/__init__.py
+mollib/hydrogens/hydrogenate.py
+mollib/hydrogens/plugin.py
+mollib/hydrogens/settings.py
+mollib/pa/__init__.py
+mollib/pa/analysis.py
+mollib/pa/data_readers.py
+mollib/pa/data_types.py
+mollib/pa/fixers.py
+mollib/pa/logs.py
+mollib/pa/plugin.py
+mollib/pa/process_molecule.py
+mollib/pa/reports.py
+mollib/pa/settings.py
+mollib/pa/svd.py
+mollib/pa/utils.py
+mollib/plugins/__init__.py
+mollib/plugins/base.py
+mollib/plugins/utils.py
+mollib/statistics/__init__.py
+mollib/statistics/hbond_statistics.py
+mollib/statistics/ramachandran_statistics.py
+mollib/statistics/settings.py
+mollib/statistics/statistics.py
+mollib/utils/__init__.py
+mollib/utils/checks.py
+mollib/utils/data_types.py
+mollib/utils/exceptions.py
+mollib/utils/files.py
+mollib/utils/formatted_str.py
+mollib/utils/interactions.py
+mollib/utils/iteration.py
+mollib/utils/markdown.py
+mollib/utils/net.py
+mollib/utils/numbers.py
+mollib/utils/ordered_set.py
+mollib/utils/rotations.py
+mollib/utils/settings.py
+mollib/utils/tensors.py
+mollib/utils/term.py
+mollib/utils/text.py
