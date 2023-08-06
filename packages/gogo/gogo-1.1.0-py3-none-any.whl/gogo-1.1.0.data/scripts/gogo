@@ -1,0 +1,63 @@
+import argparse
+import os
+import sys
+
+
+def _get_path(path, src, full=False):
+    out = path if full else os.path.relpath(path, src)
+    return out if full else '"{0}"'.format(out)
+
+
+def _get_dirs(directory):
+    '''Generate full path to each subdir in directory'''
+    for f in os.listdir(directory):
+        p = os.path.join(directory, f)
+        if os.path.isdir(p):
+            yield p
+
+
+def find_import_path(src, pkg, full=False):
+    for sitepath in _get_dirs(src):
+        for path in _get_dirs(sitepath):
+            # case like gopkg.in/yaml.v2
+            if '.git' in os.listdir(path):
+                if pkg == os.path.basename(path):
+                    return _get_path(path, src, full)
+
+            # case like github.com/hvnsweeting/gogo
+            for f in os.listdir(path):
+                import_path = os.path.join(path, f)
+                if os.path.isdir(import_path):
+                    if pkg == f:
+                        return _get_path(import_path, src, full)
+
+
+def main():
+    argp = argparse.ArgumentParser()
+    argp.add_argument('package')
+    argp.add_argument('-i', '--import-path', help='print out import path',
+                      action='store_false')
+    args = argp.parse_args()
+
+    GO_17_PLUS_DEFAULT = os.path.expanduser("~/go")
+    GOPATH = os.environ.get('GOPATH', GO_17_PLUS_DEFAULT)
+
+    if not GOPATH:
+        sys.exit("Environment variable GOPATH is not set, and default ~/go "
+                 " does not exist. It is required.")
+
+    gopaths = GOPATH.split(':')
+
+    for gopath in gopaths:
+        found = find_import_path(os.path.join(gopath, 'src'),
+                                 args.package, args.import_path)
+        if found:
+            print(found)
+            return
+        else:
+            continue
+        raise Exception('Go package not found')
+
+
+if __name__ == "__main__":
+    main()
