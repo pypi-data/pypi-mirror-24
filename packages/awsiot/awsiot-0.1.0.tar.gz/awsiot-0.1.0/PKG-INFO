@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: awsiot
+Version: 0.1.0
+Summary: Command Line utility to easily provision IoT things in AWS
+Home-page: UNKNOWN
+Author: Adamson dela Cruz
+Author-email: adamson.delacruz@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: aws iot
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
