@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: Pygroove
+Version: 1.0.1
+Summary: A python wrapper for Microsoft Groove Music API
+Home-page: https://github.com/rednithin/Pygroove
+Author: P G Nithin Reddy
+Author-email: reddy.nithinpg@live.com
+License: MIT
+Description: UNKNOWN
+Keywords: Groove Music,Groove,API
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
