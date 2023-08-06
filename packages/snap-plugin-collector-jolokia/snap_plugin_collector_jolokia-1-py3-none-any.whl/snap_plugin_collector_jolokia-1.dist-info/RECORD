@@ -1,0 +1,10 @@
+snap_jolokia/__init__.py,sha256=LY5I-x7EsA0Ld1LaD5usXXC3LJPfjwPyOrGpo7c6m_A,3568
+snap_jolokia/_version.py,sha256=D8uuXV7qNT7awU0KSR8DeUYjgbC9TrFgU7Ys7TCPJ2U,18453
+snap_jolokia/plugin.py,sha256=ST35MG2HuVI7CrgDLDREYBs3ITvDPLcP-hLsgMZbwIg,1415
+snap_plugin_collector_jolokia-1.dist-info/DESCRIPTION.rst,sha256=28cAh0-G7-fd7Jss9Ofxqg-3NPYXYxDzbnSQFa8t3lM,351
+snap_plugin_collector_jolokia-1.dist-info/METADATA,sha256=DE5sxh6xmmaAog8Hfd-FzhNhWjGe1x_oc8RYx7KOY_E,791
+snap_plugin_collector_jolokia-1.dist-info/RECORD,,
+snap_plugin_collector_jolokia-1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+snap_plugin_collector_jolokia-1.dist-info/entry_points.txt,sha256=AMwrOH4Xi1qZA539ysxyl37RcJgOfa3IpsNYZAEULOg,75
+snap_plugin_collector_jolokia-1.dist-info/metadata.json,sha256=KimtITJWOTaqFD5uCXluvuIX14aS0ma0Gs8wt10hJQA,884
+snap_plugin_collector_jolokia-1.dist-info/top_level.txt,sha256=c4sfOG89Ppd_4gvWY0npFTLciVqNh4KnetcO8byWpMQ,13

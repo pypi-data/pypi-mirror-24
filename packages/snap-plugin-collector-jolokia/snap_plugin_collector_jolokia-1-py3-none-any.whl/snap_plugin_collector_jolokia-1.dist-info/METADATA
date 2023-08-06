@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: snap-plugin-collector-jolokia
+Version: 1
+Summary: This is a plugin for the Snap telemetry framework providing metrics from Jolokia
+Home-page: http://github.com/intelsdi-x/snap-plugin-collector-jolokia
+Author: Aleksander Kantak
+Author-email: aleksander.kantak@intel.com
+License: Apache 2.0
+Keywords: snap telemetry plugin plugins metrics jolokia
+Platform: UNKNOWN
+Requires-Dist: snap-plugin-lib-py (<2,>=1.0.10)
+
+Snap Plugin Collector Jolokia
+=============================
+
+This is plugin for `Snap telemetry framework <http://snap-telemetry.io/>`_.
+For overview of Snap checkout its GitHub repo `here <https://github.com/intelsdi-x/snap>`_.
+
+For more information about this plugin visit its `repo <http://github.com/intelsdi-x/snap-plugin-collector-jolokia>`_.
+
+

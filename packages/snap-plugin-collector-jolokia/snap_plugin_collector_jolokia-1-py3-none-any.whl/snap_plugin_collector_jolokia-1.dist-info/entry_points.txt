@@ -1,0 +1,3 @@
+[console_scripts]
+snap-plugin-collector-jolokia = snap_jolokia.plugin:run
+
