@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: venorm
+Version: 0.1.0
+Summary: Coverage optimised de novo assembly of viral populations
+Home-page: https://github.com/bede/venorm
+Author: Bede Constantinides
+Author-email: bedeabc@gmail.com
+License: LICENSE
+Platform: UNKNOWN
+Requires-Dist: argh (==0.26.2)
+Requires-Dist: biopython (==1.70)
+Requires-Dist: khmer (==2.1.1)
+Requires-Dist: numpy (==1.13.1)
+Requires-Dist: pandas (==0.20.3)
+Requires-Dist: plotly (==2.0.14)
+Requires-Dist: requests (==2.18.4)
+
+UNKNOWN
+
+
