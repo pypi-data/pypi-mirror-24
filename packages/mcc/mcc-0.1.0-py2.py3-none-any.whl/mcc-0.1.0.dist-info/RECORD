@@ -1,0 +1,16 @@
+mcc/__init__.py,sha256=EqPsl9f7ARD0gYlRx_COJBMVLEhsHVC18Rp6csLmzOE,934
+mcc/__main__.py,sha256=OsU4RK9bffrVKfuIzTgpAT7tUolTk1gm-dlAzbzCRp8,1002
+mcc/cldcnct.py,sha256=VvksyPC7KZh-ZKw0si-KEleKP3FTtrl19SHbTymXp_M,9100
+mcc/colors.py,sha256=QZ0hZNWm69Zkouh94hi4Rc3uWcJ2nqQ2heQsJrNqzqo,2581
+mcc/confdir.py,sha256=3SJH48znHzcd3kB1q3JwB5Z30DGSVTdQ6_kd7AyKNzQ,1176
+mcc/config.ini,sha256=89mgmP_nL5ZAAuG_TvCWx2dbcFipls9R4R_dDA1-WtM,3544
+mcc/core.py,sha256=aikWRV5uuGj3jLIz3jRGXKdFg4nKt2bVXRibcs7GaC0,5100
+mcc/tables.py,sha256=WjfGXR8I7tLYYIu4Pzre4RWlXUnYSFBwHUu7BZrTZYM,2188
+mcc/uimode.py,sha256=tiwp5uxqRXbLGZjEb5mGYVq2hkc5jxG2Y3CnlIOLkr4,12214
+mcc-0.1.0.dist-info/DESCRIPTION.rst,sha256=lIWS02a43Ovr1SUZn88Vd6U2x7MFv04hjr8lwXOL_zo,3845
+mcc-0.1.0.dist-info/METADATA,sha256=6cjEVmnzD-eCk3BvtDRQvn0asZY5Rh5a9TJ9cC8Ueys,6042
+mcc-0.1.0.dist-info/RECORD,,
+mcc-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+mcc-0.1.0.dist-info/entry_points.txt,sha256=ajya6JWQ0-jiHv-431qdERAOG6JDWaYyKyqE0gGr7pw,65
+mcc-0.1.0.dist-info/metadata.json,sha256=ID496Q2meU4eqVcZEHBGTIMqkjWISzGLhuIh-NQ_FaU,2169
+mcc-0.1.0.dist-info/top_level.txt,sha256=x9fpmuvTXJMVF7AzFLjIcn8dHy9oN9J5ZcRf_ZVahZg,4
