@@ -1,0 +1,14 @@
+opentimestamps_client-0.5.0.dist-info/WHEEL,sha256=-aSo8rHuuPDEFzkcqqQ55pDyCjy25bYMLxSiHWKAOTc,92
+opentimestamps_client-0.5.0.dist-info/metadata.json,sha256=xojPqQQZAnyATtMtIGvxOgKMGfcKS03QLUvOtI8rgwQ,1208
+opentimestamps_client-0.5.0.dist-info/METADATA,sha256=ZtzdXKK7Ff0iOiECk4VE36t9rD10HADl9Etk_NnAewc,8623
+opentimestamps_client-0.5.0.dist-info/top_level.txt,sha256=B0XlgNSbQaUc4ocJNHzetjFCR1bksC1mO6JnddEq51Y,10
+opentimestamps_client-0.5.0.dist-info/RECORD,,
+opentimestamps_client-0.5.0.dist-info/entry_points.txt,sha256=TB4zMui2GNTOUfB-mVd4m0r4UVeR6W7B1mCmD-w1COs,97
+opentimestamps_client-0.5.0.dist-info/DESCRIPTION.rst,sha256=R6PVg0gxriuIBaxoDyU9wwWdlz8Q4j7nG5WwbkwvB-4,7841
+otsclient/git.py,sha256=X06esLNPDPeOKhx8ZOorqfH9vVuC__vuMm21vxfLFro,3511
+otsclient/git_gpg_wrapper.py,sha256=zQu-tRNHgDSQr2b8pze01Eh7-Lm4pirm58806UCCc54,7008
+otsclient/args.py,sha256=F8B9ReQ4nkCayXFhVQIgBPNOwxDsDHO4UVwwNgAwikM,11142
+otsclient/__init__.py,sha256=q-DxZP4rLy_KweP0OI320GwYjPj9hSxMC7ebngbWmHQ,426
+otsclient/cmds.py,sha256=NCflXhRroeyaaAU08TSHI4T6a2f1chnaxVvg808QgkY,23557
+otsclient/cache.py,sha256=SlAE_SY8qQMqqKHt1yWdHeMwMrowe77JlP1vpT2DAAY,3111
+otsclient/ots.py,sha256=N5Zv3YStsB7tVHwNZH7DGV912T-hWpRV23n4eaS-mes,1015
