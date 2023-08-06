@@ -1,0 +1,90 @@
+Metadata-Version: 1.0
+Name: pgpipeline
+Version: 0.3.0
+Summary: Pgpipeline: An automatic postgres item pipeline for Scrapy
+Home-page: https://github.com/jondot/pgpipeline
+Author: Dotan Nahum
+Author-email: jondotan@gmail.com
+License: Copyright (c) 2012, Dotan Nahum
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Description: # Pgpipeline: automatic postgres pipeline for Scrapy
+        
+        A Scrapy pipeline module to persist items to a postgres table automatically.
+        
+        
+        ## Quick Start
+        
+        Here's an example showing automatic item pipeline, with a custom `JSONB` field.
+        
+        ```python
+        # settings.py
+        from sqlalchemy.dialects.postgresql import JSONB
+        
+        ITEM_PIPELINES = {
+            'pgpipeline.PgPipeline': 300,
+        }
+        
+        PG_PIPELINE = {
+            'connection': 'postgresql://localhost:5432/scrapy_db',
+            'table_name': 'demo_items',
+            'pkey': 'item_id',
+            'ignore_identical': ['item_id', 'job_id'],
+            'types': {
+                'some_data': JSONB
+            }
+        }
+        ```
+        
+        All columns, tables, and indices are automatically created.
+        
+        * `pkey`: a primary key for this item (other than database-generated `id`)
+        * `ignore_identical`: these are a set of fields by which we identify duplicates and skip insert.
+        * `types`: keys specified here will be using the type given, otherwise types are guessed.
+        
+        ## Developers
+        
+        Set up a development environment
+        ```
+        $ pip install -r requirements.txt
+        ```
+        
+        ### Development
+        
+        * Dependencies: list them in `requirements.txt`
+        
+        ### Release
+        
+        * Dependencies: list them in `setup.py` under `install_requires`:
+        
+        ```python
+        install_requires=['peppercorn'],
+        ```
+        
+        Then:
+        
+        ```
+        $ make dist && make release
+        ```
+        
+        # Contributing
+        
+        Fork, implement, add tests, pull request, get my everlasting thanks and a respectable place here :).
+        
+        
+        ### Thanks:
+        
+        To all [Contributors](https://github.com/jondot/pgpipeline/graphs/contributors) - you make this happen, thanks!
+        
+        
+        # Copyright
+        
+        Copyright (c) 2017 [Dotan Nahum](http://gplus.to/dotan) [@jondot](http://twitter.com/jondot). See [LICENSE](LICENSE.txt) for further details.
+        
+Platform: UNKNOWN
