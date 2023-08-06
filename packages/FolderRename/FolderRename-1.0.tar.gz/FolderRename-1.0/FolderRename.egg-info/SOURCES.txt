@@ -1,0 +1,8 @@
+README.rst
+folder_rename.py
+setup.py
+FolderRename.egg-info/PKG-INFO
+FolderRename.egg-info/SOURCES.txt
+FolderRename.egg-info/dependency_links.txt
+FolderRename.egg-info/entry_points.txt
+FolderRename.egg-info/top_level.txt
