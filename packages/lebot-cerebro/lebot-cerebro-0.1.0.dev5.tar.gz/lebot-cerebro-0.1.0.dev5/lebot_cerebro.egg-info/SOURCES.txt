@@ -1,0 +1,10 @@
+README.rst
+setup.py
+cerebro/__init__.py
+cerebro/cerebro.py
+lebot_cerebro.egg-info/PKG-INFO
+lebot_cerebro.egg-info/SOURCES.txt
+lebot_cerebro.egg-info/dependency_links.txt
+lebot_cerebro.egg-info/not-zip-safe
+lebot_cerebro.egg-info/requires.txt
+lebot_cerebro.egg-info/top_level.txt
