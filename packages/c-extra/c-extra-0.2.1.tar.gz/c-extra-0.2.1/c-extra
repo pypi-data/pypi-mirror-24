@@ -1,0 +1,214 @@
+#! /usr/bin/python3
+
+import os
+import os.path
+import argparse
+import sys
+from http.cookiejar import MozillaCookieJar
+from pathlib import Path
+import shutil
+import configparser
+
+import requests
+from tabulate import tabulate
+
+version = "0.2.1"
+
+def xdg_config_dir():
+    config_home = Path(os.getenv("XDG_CONFIG_HOME",
+                            os.path.expanduser("~/.config/")))
+    dir = config_home / "c-extra"
+    return dir
+
+def xdg_cache_dir():
+    config_home = Path(os.getenv("XDG_CACHE_HOME",
+                            os.path.expanduser("~/.cache/")))
+    dir = config_home / "c-extra"
+    return dir
+
+class LoginFailure(Exception):
+    pass
+class LoginTwoFactor(LoginFailure):
+    pass
+class LoginTwoFactorFailed(LoginFailure):
+    pass
+class LoginCaptcha(LoginFailure):
+    pass
+class LoginPasswordFailure(LoginFailure):
+    pass
+class LoginUsernameUnknown(LoginFailure):
+    pass
+class LoginUsernameInvalid(LoginFailure):
+    pass
+
+class CryptoExtranet:
+    _endpoint      = "https://{syndic}.crypto-extranet.com"
+    _login_url     = "https://{syndic}.crypto-extranet.com/authenticate"
+    _url_documents = "https://{syndic}.crypto-extranet.com/extranet/coproprietaire/documents/classeur/{id}?itemCountPerPage=100&currentPageNumber={page}"
+    _url_account   = "https://{syndic}.crypto-extranet.com/extranet"
+    _url_download  = "https://{syndic}.crypto-extranet.com/extranet/documents/download/{id}"
+    _url_money     = "https://{syndic}.crypto-extranet.com/extranet/coproprietaire/situation-comptable/"
+
+    def __init__(self, account_id, syndic, path_cookies):
+        self._syndic  = syndic
+        self.endpoint = self._endpoint.format(syndic=syndic)
+
+        self._session  = requests.Session()
+        self._session.cookies = MozillaCookieJar(str(path_cookies / (account_id + ".txt")))
+
+        try:
+            self._session.cookies.load(ignore_discard=True)
+        except FileNotFoundError:
+            pass
+
+    def login_start(self, username, password):
+        data = {
+            "login": username,
+            "password": password,
+            "message": "",
+            "showCaptcha": "",
+            "authFailed": "",
+            "captchaValue": ""
+        }
+        r = self._session.post(self._login_url.format(syndic=self._syndic), data)
+
+        if "Mon espace copropriétaire" not in r.text:
+            raise LoginFailure(r.text)
+
+    def login_twofactor(self, code):
+        raise NotImplementedError
+
+    def login_end(self):
+        self._session.cookies.save(ignore_discard=True)
+
+    def is_logged(self):
+        r = self._session.get(self._url_account.format(syndic=self._syndic), allow_redirects=False)
+        return "Mon espace copropriétaire" in r.text
+
+    def documents(self):
+        def documents_rec(parents, id):
+            def get(page):
+                r = self._session.get(self._url_documents.format(syndic=self._syndic, id=id, page=page))
+                data = r.json()
+                pageCount = data["pages"]["pageCount"] + 1
+                classeurs = data["data"]["Classeurs"]
+                documents = data["data"]["Documents"]
+                return pageCount, classeurs, documents
+
+            pageCount, classeurs, documents = get(1)
+            for page in range(2, pageCount): # XXX cannot test for now
+                _, new_classeurs, new_documents = get(page)
+                classeurs += new_classeurs
+                documents += new_documents
+            for cla in classeurs:
+                for doc in documents_rec(parents / Path(cla["nom"]), cla["id"]):
+                    yield doc
+            for doc in documents:
+                filename = parents / (doc["name"] + doc["file_name"])
+                url      = self._url_download.format(syndic=self._syndic, id=doc["id"])
+                yield filename, url
+
+        return documents_rec(Path(), "")
+
+    def download(self, document):
+        path, url = document
+        path.parent.mkdir(parents=True, exist_ok=True)
+
+        res = self._session.get(url, stream=True)
+        with path.open("wb") as out:
+            res.raw.decode_content = True
+            shutil.copyfileobj(res.raw, out)
+
+    def account(self):
+        r = self._session.get(self._url_money.format(syndic=self._syndic))
+        data = r.json()
+        for line in data['SituationComptable']['ecritures']:
+            date   = line['date_ecriture']
+            titre  = line['libelle']
+            debit  = float(line['debit'])
+            credit = float(line['credit'])
+            solde  = - float(line['solde']) # It seems that the value stores is minus the amount
+            yield (date, titre, debit, credit, solde)
+
+def login(account, config, args, website):
+    if website.is_logged():
+        print("Already logged in", website.endpoint, "for", account)
+    else:
+        website.login_start(config["login"], config["password"])
+        website.login_end()
+
+def documents(account, config, args, website):
+    if not website.is_logged():
+        print("Not logged in", website.endpoint, "for", account)
+        return
+
+    for filename, url in website.documents():
+        print(account + ":" + str(filename))
+
+def download(account, config, args, website):
+    if not website.is_logged():
+        print("Not logged in", website.endpoint, "for", account)
+        return
+
+    for filename, url in website.documents():
+        if "exclude" in config and filename.match(config["exclude"]):
+            continue
+
+        if "directory" in config:
+            target_filename = Path(config["directory"]).expanduser() / filename
+        else:
+            target_filename = Path(account) / filename
+
+        if target_filename.exists():
+            continue
+
+        website.download((target_filename, url))
+        print(account + ":" + str(filename))
+
+def account(account, config, args, website):
+    if not website.is_logged():
+        print("Not logged in", website.endpoint, "for", account)
+        return
+
+    print(tabulate(website.account(), headers=["Date","Titre", "Crédit", "Débit", "Solde"]))
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Crypto Extranet -- Non official client for the syndic management system')
+    parser.add_argument('--version', action='version', version='%(prog)s ' + version)
+    parser.add_argument("-c", "--config",
+                        dest="config",
+                        default=xdg_config_dir() / "config",
+                        help="Configuration file")
+    subparsers = parser.add_subparsers()
+
+    parser_login = subparsers.add_parser('login', help="Log into the configured accounts")
+    parser_login.add_argument('accounts', metavar="ACCOUNT", nargs='*', help="Only for the specified accounts")
+    parser_login.set_defaults(func=login)
+    parser_documents = subparsers.add_parser('documents', help="List available documents")
+    parser_documents.add_argument('accounts', nargs='*', help="Only for the specified accounts")
+    parser_documents.set_defaults(func=documents)
+    parser_download = subparsers.add_parser('download', help='Download available documents')
+    parser_download.add_argument('accounts', nargs='*', help="Only for the specified accounts")
+    parser_download.set_defaults(func=download)
+    parser_account = subparsers.add_parser('account', help='Display account history')
+    parser_account.add_argument('accounts', nargs='*', help="Only for the specified accounts")
+    parser_account.set_defaults(func=account)
+
+    args = parser.parse_args()
+
+    config = configparser.ConfigParser()
+    config.read(str(args.config))
+
+    cache = xdg_cache_dir()
+    cache.mkdir(parents=True, exist_ok=True)
+
+    for account in config:
+        if account == "DEFAULT":
+            continue
+        if len(args.accounts) > 0 and account not in args.accounts:
+            continue
+        if config[account].get("disabled", False) and account not in args.accounts:
+            continue
+        website = CryptoExtranet(account, config[account]["syndic"], cache)
+        args.func(account, config[account], args, website)
+
