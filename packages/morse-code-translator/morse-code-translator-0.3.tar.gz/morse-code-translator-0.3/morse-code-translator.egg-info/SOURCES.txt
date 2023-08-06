@@ -1,0 +1,5 @@
+setup.py
+morse-code-translator.egg-info/PKG-INFO
+morse-code-translator.egg-info/SOURCES.txt
+morse-code-translator.egg-info/dependency_links.txt
+morse-code-translator.egg-info/top_level.txt
