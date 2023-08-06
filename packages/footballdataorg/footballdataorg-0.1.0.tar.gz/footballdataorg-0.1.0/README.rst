@@ -1,0 +1,36 @@
+footballdata
+============
+
+.. image:: https://img.shields.io/pypi/v/footballdataorg.svg
+    :target: https://pypi.python.org/pypi/footballdataorg
+    :alt: Latest PyPI version
+
+.. image:: https://travis-ci.org/hhllcks/footballdata.png
+   :target: https://travis-ci.org/hhllcks/footballdata
+   :alt: Latest Travis CI build status
+
+A wrapper for the football-data.org api
+
+Usage
+-----
+
+Installation
+------------
+
+Requirements
+^^^^^^^^^^^^
+You have to request an API key over at http://api.football-data.org/client/register.
+
+Compatibility
+-------------
+
+Licence
+-------
+GNU General Public License v3.0
+
+Authors
+-------
+
+`footballdataorg` was written by `Hendrik Hilleckes <hhllcks@gmail.com>`_.
+
+`football-data.org` is a service created by `Daniel Freitag <daniel@football-data.org>`_.
