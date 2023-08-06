@@ -1,0 +1,15 @@
+AUTHORS
+ChangeLog
+INSTALL
+LICENSE
+MANIFEST.in
+README.rst
+TODO
+setup.cfg
+setup.py
+keyutils/__init__.py
+keyutils/_keyutils.c
+keyutils.egg-info/PKG-INFO
+keyutils.egg-info/SOURCES.txt
+keyutils.egg-info/dependency_links.txt
+keyutils.egg-info/top_level.txt
