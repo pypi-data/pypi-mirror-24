@@ -1,0 +1,56 @@
+Metadata-Version: 2.0
+Name: cooked-input
+Version: 0.1.7
+Summary: Toolkit for getting input from the keyboard.
+Home-page: https://github.com/lwanger/cooked_input
+Author: Len Wanger
+Author-email: len_wanger@hotmail.com
+License: MIT
+Download-URL: https://github.com/lwanger/cooked_input/archive/V0.1.1.tar.gz
+Description: 
+Requires-Dist: setuptools-git
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+
+        Cooked Input Project
+
+        ====================
+
+        
+
+        This is a Python package for getting keyboard input from the command line. If 
+
+        you think of input (or raw_input in legacy Python) as raw input, then this is 
+
+        cooked input.
+
+        
+
+        github archive: https://github.com/lwanger/cooked_input
+
+        
+
+        for the latest documentation, see: https://readthedocs.org/projects/cooked-input/
+
+        
+
+        see TODO.md for list of TODO items
+
+        
+Keywords: command line tool development input raw_input
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
