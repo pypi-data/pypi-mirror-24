@@ -1,0 +1,10 @@
+TracNewsFlash-1.0.3.dist-info/DESCRIPTION.rst,sha256=jw8w1XvVZpuB78DfD3Ejc4EMZ0Znm8opt65AX6oocDM,363
+TracNewsFlash-1.0.3.dist-info/METADATA,sha256=pdtG--BJx-bNPyVsjH5y7ea0IxNboVfsCUmwzJGKmMA,978
+TracNewsFlash-1.0.3.dist-info/RECORD,,
+TracNewsFlash-1.0.3.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+TracNewsFlash-1.0.3.dist-info/entry_points.txt,sha256=lxHi-ZywzLLyRyZQ1-sH_WLvIvglaBuIi582fP1VD8I,50
+TracNewsFlash-1.0.3.dist-info/metadata.json,sha256=YPzzxk6czOXG3qtwGjVPvKjXo8UFaJZQZhNCDy6C6W8,886
+TracNewsFlash-1.0.3.dist-info/top_level.txt,sha256=XwvKYN0z4hV550Fa8EimyYTyWdTU_TnkLZXRST_pKvo,10
+newsflash/__init__.py,sha256=THkDC-HQ1QTV5V6D8YdPv63HExWhsKah-Z6WsEI-Nmo,59
+newsflash/macro.py,sha256=-0sLfvIrSCaT_vPuynw-cXi3oo_PhDUsp-FXxXYmtFE,1309
+newsflash/htdocs/css/newsflash.css,sha256=0h7qqeZar6M_XeL8jE_BuKeIByCf5CvqSViAiFkWALQ,303
