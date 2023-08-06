@@ -1,0 +1,9 @@
+README.txt
+setup.cfg
+setup.py
+pymusiccast/__init__.py
+pymusiccast.egg-info/PKG-INFO
+pymusiccast.egg-info/SOURCES.txt
+pymusiccast.egg-info/dependency_links.txt
+pymusiccast.egg-info/requires.txt
+pymusiccast.egg-info/top_level.txt
