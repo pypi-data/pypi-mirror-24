@@ -1,0 +1,8 @@
+MANIFEST.in
+README.rst
+aio_pipe.c
+setup.py
+aio_pipe.egg-info/PKG-INFO
+aio_pipe.egg-info/SOURCES.txt
+aio_pipe.egg-info/dependency_links.txt
+aio_pipe.egg-info/top_level.txt
