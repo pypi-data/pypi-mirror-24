@@ -1,0 +1,3 @@
+[console_scripts]
+arxivdf = arxivdf.adf:main
+
