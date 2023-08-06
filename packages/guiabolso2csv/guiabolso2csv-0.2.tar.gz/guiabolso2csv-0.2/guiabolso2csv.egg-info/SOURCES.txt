@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+guiabolso2csv/__init__.py
+guiabolso2csv/__main__.py
+guiabolso2csv/guia_bolso.py
+guiabolso2csv.egg-info/PKG-INFO
+guiabolso2csv.egg-info/SOURCES.txt
+guiabolso2csv.egg-info/dependency_links.txt
+guiabolso2csv.egg-info/entry_points.txt
+guiabolso2csv.egg-info/requires.txt
+guiabolso2csv.egg-info/top_level.txt
