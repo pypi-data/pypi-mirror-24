@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+gtmanipulator/__init__.py
+gtmanipulator/gtmanipulator.py
+gtmanipulator.egg-info/PKG-INFO
+gtmanipulator.egg-info/SOURCES.txt
+gtmanipulator.egg-info/dependency_links.txt
+gtmanipulator.egg-info/requires.txt
+gtmanipulator.egg-info/top_level.txt

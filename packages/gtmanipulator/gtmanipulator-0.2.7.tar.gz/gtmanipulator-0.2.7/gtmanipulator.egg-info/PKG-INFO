@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: gtmanipulator
+Version: 0.2.7
+Summary: Manipulates GenomeStudio processed Illumina iScan microarray data.
+Home-page: https://github.com/TravisCouture/gtmanipulator
+Author: Travis Couture
+Author-email: travis.m.couture@gmail.com
+License: MIT
+Description: This module contains classes and methods intended foruse on Illumina iScan microarray data post GenomeStudio processing. Additionally, a GUI implementation of the gtmanipulator module is also available.
+Keywords: alleles illumina Illumina iScan microarray data
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
