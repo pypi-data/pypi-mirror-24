@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: mg-thumbor
+Version: 0.1.0
+Summary: Extra filters and optimizers for thumbor by MindGeek
+Home-page: https://github.com/MindGeekOSS/mg_thumbor
+Author: Fabrice Baumann
+Author-email: fabrice.baumann@mindgeek.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: thumbor
+
+UNKNOWN
+
+
