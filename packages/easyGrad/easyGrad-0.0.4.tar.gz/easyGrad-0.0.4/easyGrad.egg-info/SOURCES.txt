@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+easyGrad/__init__.py
+easyGrad.egg-info/PKG-INFO
+easyGrad.egg-info/SOURCES.txt
+easyGrad.egg-info/dependency_links.txt
+easyGrad.egg-info/requires.txt
+easyGrad.egg-info/top_level.txt
+easyGrad/collisions/__init__.py
+easyGrad/collisions/function.py
+easyGrad/particles/__init__.py
+easyGrad/particles/dataTypes.py
+easyGrad/particles/dynamics.py
+easyGrad/particles/ops.py
