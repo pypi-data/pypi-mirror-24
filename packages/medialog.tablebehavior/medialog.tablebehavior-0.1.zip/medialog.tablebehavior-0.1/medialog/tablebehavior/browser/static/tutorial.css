@@ -1,0 +1,92 @@
+﻿@font-face {
+  font-family: Menlo;
+  src: url(../Fonts/Menlo-Regular.ttf);
+}
+
+.demo h3 {
+  border-top: 1px solid #497981;
+  padding-top: 0.9em;
+}
+
+.monoSpace {
+  font-family: Menlo, monospace;
+  font-size: 1.0em;
+  color: #800000;
+}
+
+.pluginProperty {
+  border-bottom: 1px dashed #497981;
+  padding: 0.416em 0 0.416em 0;
+}
+.pluginProperty:last-child {
+  border-bottom: none;
+}
+.pluginProperty::after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+.pluginProperty .parameter {
+  float: left;
+  width: 200px;
+  color: #497981;
+  font-family: Menlo, monospace;
+}
+.pluginProperty .description {
+  margin-left: 220px;
+}
+.pluginProperty .description .parmType,
+.pluginProperty .description .parmDefault,
+.pluginProperty .description .methodSignature,
+.pluginProperty .description .methodParm {
+  margin-bottom: 0.4166em;
+}
+.pluginProperty .description .parmType span,
+.pluginProperty .description .parmDefault span,
+.pluginProperty .description .methodSignature span,
+.pluginProperty .description .methodParm span {
+  font-family: Menlo, monospace;
+  color: #800000;
+}
+
+.formattedCode {
+  display: block;
+  padding: 0.416em;
+  margin: 0.8333em 0 1.666em 0;
+  font-family: Menlo, monospace;
+  font-size: 0.9em;
+  white-space: pre;
+  line-height: 1.3em;
+  overflow: auto;
+  width: auto;
+  max-height: 600px;
+  background: #fcf9e5;
+  -ms-word-wrap: normal;
+  word-wrap: normal;
+  border: 1px solid #cdc36a;
+}
+
+.tag,
+.str {
+  color: #800000;
+}
+.pln {
+  color: #000;
+}
+.atn {
+  color: #f00;
+}
+.pun {
+  color: #000;
+}
+.atv {
+  color: #00f;
+}
+.com {
+  color: #808080;
+}
+.kwd {
+  color: #00008b;
+}
+
+

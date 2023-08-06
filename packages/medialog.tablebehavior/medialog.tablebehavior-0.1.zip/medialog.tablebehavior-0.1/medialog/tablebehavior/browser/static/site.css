@@ -1,0 +1,631 @@
+﻿/***********************************************************
+* Basic styles
+***********************************************************/
+html {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #252525;
+  font-size: 16px;
+  font-family: 'Arimo', sans-serif;
+  background: #f4f4f2;
+  background: #fff;
+}
+
+p {
+  margin: 0 0 0.4em 0;
+  letter-spacing: 1.0px;
+  line-height: 1.2em;
+}
+
+  p.spaceBefore {
+    margin-top: 0.4em;
+  }
+
+h1 {
+  font-size: 2.0em;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  text-align: left;
+  color: #252525;
+  margin: 0.5em 0 1.1em 0;
+  margin: 0.3em 0 0.6em 0;
+}
+
+h2 {
+  font-size: 1.4em;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  text-align: left;
+  color: #252525;
+  margin: 1.3em 0 0.8em 0;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  text-align: left;
+  color: #000000;
+  margin: 0.8em 0 0.8em 0;
+}
+
+h4 {
+  font-size: 1.0em;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: left;
+  color: #252525;
+  margin: 1.4em 0 0.8em 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  font-family: "Ubuntu";
+  color: #497981;
+  cursor: pointer;
+}
+
+  a:hover {
+    text-decoration: none;
+    color: #74c1cd;
+  }
+
+ul {
+  margin: 0.4em 0 0.4em 0;
+  padding-left: 18px;
+}
+
+  ul ul {
+    margin-top: 0.3em;
+  }
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/***********************************************************
+* General classes
+***********************************************************/
+
+.pageWrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.hide {
+  display: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.mono {
+  font-family: 'PT Mono';
+}
+
+a.commandButton {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  font-size: 1.0em;
+  padding: 5px 5px 5px 5px;
+  color: #333;
+  font-weight: bold;
+  border: 2px solid #666;
+  font-family: 'Ubuntu', sans-serif;
+}
+  a.commandButton:hover {
+    color: #000;
+    border: 2px solid #111;
+    text-decoration: none;
+  }
+
+a.imageButton {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  padding: 0;
+  color: #fff;
+  background-color: #A20906;
+  border: 1px solid #8A0100;
+}
+  a.imageButton:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ae2826;
+  }
+
+  a.imageButton div:first-child {
+    display: block;
+    display: -webkit-box;
+    margin: 4px 4px 8px 4px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.0em;
+  }
+  a.imageButton img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+a.jumpanchor {
+  display: block;
+  position: relative;
+  top: -1.2em;
+  visibility: hidden;
+}
+
+.closeButton {
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+  .closeButton span {
+    display: block;
+    cursor: pointer;
+    font-size: 1.0em;
+    padding: 10px 15px 10px 15px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #db4d4d;
+  }
+
+    .closeButton span:hover {
+      color: #efefef;
+      background-color: #eb5d5d;
+    }
+
+.tile {
+  margin: 0;
+  padding-left: 0.8333rem;
+  padding-right: 0.8333rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.9em;
+  color: #ffffff;
+  height: 47px;
+  line-height: 47px;
+  background: #497981;
+}
+
+  .tile span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
+.button {
+  display: inline-block;
+  padding: 0.8em 0.8333em 1.0em 0.8333em;
+  font-size: 1.0em;
+  line-height: 1.1em;
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+  background: #497981;
+  margin: 0 0.8333rem 1.2em 0;
+  vertical-align: top;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+  .button:last-child {
+    margin-right: 0;
+  }
+
+  .tile:hover,
+  .button:hover {
+    color: #ffffff;
+    background: #6999a1;
+    font-weight: normal;
+  }
+
+.buttonAdjTextCmd {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 1.0em;
+}
+
+/*
+.imgResponsive {
+  max-width: 100%;
+  height: auto;
+}
+*/
+
+.blockEllipsis-2 {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  font-size: 1.0em;
+  line-height: 1;
+  height: 2.10em; /* 2 lines of text */
+  margin: 0 auto;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.blockEllipsis {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  font-size: 1.0em;
+  line-height: 1;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.blockHeight-2 {
+  -webkit-line-clamp: 2;
+  height: 2.10em; /* 2 lines of text */
+}
+
+/*********************************************************************************************
+  S:
+  Smallest screens and all screen size independent dimensions
+*********************************************************************************************/
+@media only screen {
+
+  .rmlPopupPanel h3 {
+    background: #497981;
+  }
+  .rmlpopupmenuButtonText:hover,
+  .rmlpopupmenuButtonText.touchStart
+  {
+    background: #497981;
+  }
+
+  #siteHeader {
+    background: #b2cacd;
+    height: 56px;
+  }
+
+  .siteImage {
+    display: block;
+    float: left;
+    margin-top: 2px;
+    width: 51px;
+    height: 51px;
+    background: url(../Images/logo-simple.png) 0 0 no-repeat;
+    background-size: 51px 51px;
+  }
+
+  .siteName {
+    display: none;
+    margin-top: 1.43em;
+    margin-left: 1.666em;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2em;
+    color: #497981;
+  }
+
+  #contentWrapper {
+    padding-bottom: 398px;
+  }
+  #tutorialContentWrapper {
+    padding-bottom: 228px;
+  }
+
+  #footerWrapper,
+  #tutorialFooterWrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  #footerWrapper {
+    height: 398px;
+  }
+  #tutorialFooterWrapper {
+    height: 228px;
+  }
+
+  .content {
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+
+  .bio {
+    background: #fff;
+    height: 170px;
+  }
+  .bioPanel {
+    float: left;
+  }
+  .bioBox {
+    padding-left: 110px;
+    background: url(../Images/jos.jpg) 0 0 no-repeat;
+    background-size: 100px 100px;
+    min-height: 105px;
+  }
+  .bioBox p {
+    font-size: 0.85em;
+  }
+
+  .footer {
+    width: 100%;
+    background: #494949;
+    font-size: 0.9em;
+    color: #fff;
+    padding-top: 0.5em;
+    padding-bottom: 1.0em;
+  }
+    .footer p {
+      margin: 0;
+    }
+    .footer h3 {
+      margin-top: 0.45em;
+      font-size: 1.3em;
+      color: #ffffff;
+    }
+    .footer h4 {
+      text-transform: uppercase;
+      font-size: 1.0em;
+      color: #ffffff;
+    }
+    .footer a {
+      color: #fff;
+      font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      color: #579eb8;
+      text-decoration: none;
+    }
+    .poweredByUmbraco {
+      height: 20px;
+      padding-top: 0.25em;
+    }
+    .poweredByUmbraco a.text {
+      display: inline-block;
+      padding-top: 1px;
+      vertical-align: top;
+    }
+
+    .poweredByUmbraco .umbracoIcon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url(../Images/umbraco.png) 0 0;
+      background-size: 20px 20px;
+    }
+
+  .abstract {
+    margin-top: 0.8em;
+    font-size: 1.6em;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .componentListEntry {
+    /*
+    display: table;
+    clear: both;
+      */
+    background: #f3f6f7;
+    background: #eff4f5;
+    padding: 0.3em 0.2em 0.3em 0.2em;
+    border-bottom: solid 1px #e3e6e7;
+    color: #252525;
+    font-size: 0.95em;
+    /*
+    cursor: pointer;
+      */
+  }
+  /*
+  .componentListEntry:hover {
+    color: #252525;
+  }
+    */
+  /*
+  .componentListEntry img {
+    display: table-cell;
+    max-width: 320px;
+  }
+  .componentListEntry > div {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 0.8333em;
+  }
+  */
+  .componentListEntry h3 {
+    margin-top: 0;
+    color: #183034;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  /*
+  .componentListEntry:hover h3 {
+    color: #cb3d3d;
+  }
+    */
+  .componentListEntry p,
+  .componentListEntry li {
+    font-family: 'Arimo', sans-serif;
+  }
+  .componentListEntry .property {
+    font-size: 0.85em;
+  }
+  .componentListEntry .property .name {
+    display: inline-block;
+    width: 10em;
+  }
+  .componentListEntry .property .value {
+    display: inline-block;
+  }
+
+  .tutorialName {
+    font-weight: bold;
+    color: #497981;
+  }
+
+  .publishDate {
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+  }
+
+  .commentsSeperator {
+    border-top: 2px solid #ccc;
+    margin: 1.666em 0 0.8333em 0;
+  }
+}
+
+/*********************************************************************************************
+  S1:
+  Width: 365px and more
+*********************************************************************************************/
+@media only screen and (min-width: 22.8em) {
+}
+
+/*********************************************************************************************
+  S2:
+  Width: 440px and more
+*********************************************************************************************/
+@media only screen and (min-width: 27.5em) {
+  .bioPanel {
+    float: left;
+    width: 430px;
+  }
+
+  .siteImage {
+    width: 228px;
+    background: url(../Images/logo.png) 0 0 no-repeat;
+    background-size: 228px 51px;
+  }
+
+  .componentListEntry .leftCol-s2 {
+    width: 190px;
+  }
+
+}
+
+/*********************************************************************************************
+  S3:
+  Width: 600px and more
+*********************************************************************************************/
+@media only screen and (min-width: 37.0em) {
+}
+
+
+/*********************************************************************************************
+  S, S1, S2, S3
+  Width: till 647px
+*********************************************************************************************/
+@media only screen and (max-width: 40.43em) {
+  .s_topline {
+    border-top: 1px dotted rgba(255, 255, 255, 0.2);
+    margin-top: 0.9em;
+  }
+
+  .s_topline_content {
+    border-top: 1px dotted rgba(64, 64, 64, 0.4);
+    margin-top: 0.9em;
+  }
+}
+
+/*********************************************************************************************
+  M:
+  Width: 648px and more
+*********************************************************************************************/
+@media only screen and (min-width: 40.5em) {
+
+  #contentWrapper {
+    padding-bottom: 263px;
+  }
+  #tutorialContentWrapper {
+    padding-bottom: 99px;
+  }
+  #footerWrapper {
+    height: 263px;
+  }
+  #tutorialFooterWrapper {
+    height: 99px;
+  }
+
+  .componentListEntry .leftCol-m {
+    width: 320px;
+  }
+}
+
+/*********************************************************************************************
+  M2:
+  Width: 712px and more
+*********************************************************************************************/
+@media only screen and (min-width: 44.5em) {
+}
+
+/*********************************************************************************************
+  L:
+  Width: 1024px and more
+*********************************************************************************************/
+@media only screen and (min-width: 64.0em) {
+
+  .siteName {
+    display: inline-block;
+    float: left;
+    margin-top: 1.43em;
+    margin-left: 1.666em;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2em;
+    color: #497981;
+  }
+
+}
+
+/*********************************************************************************************
+  XL:
+  Width: 1440px and more
+ ********************************************************************************************/
+@media only screen and (min-width: 90.0em) {
+}
+
+/*********************************************************************************************
+  XL:
+  Width: 1440px and more
+ ********************************************************************************************/
+@media only screen and (min-width: 90.0em) {
+}
+
+/*********************************************************************************************
+  XXL:
+  Width: 1920px and more
+ ********************************************************************************************/
+@media only screen and (min-width: 120.0em) {
+}
+
+/***********************************************************
+* Adjustments for high density screens
+***********************************************************/
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi) {
+  body {
+    font-size: 14px;
+  }
+
+  p {
+    letter-spacing: normal;
+  }
+}

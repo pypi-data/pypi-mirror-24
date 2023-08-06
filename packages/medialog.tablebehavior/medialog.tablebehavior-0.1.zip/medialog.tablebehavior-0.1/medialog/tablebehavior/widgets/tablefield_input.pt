@@ -1,0 +1,64 @@
+ <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      tal:omit-tag="">
+	<link rel="stylesheet" href="++resource++medialog-tablebehavior/service.flextabledit.jquery.css" />
+    <div id="mytable" />
+    <input id="" name="" class="" title="" lang="" disabled=""
+           readonly="" alt="" tabindex="" accesskey="" size="" maxlength=""
+           style="" value="" type="hidden"
+           tal:attributes="id view/id;
+                           name view/name;
+                           class view/klass;
+                           style view/style;
+                           title view/title;
+                           lang view/lang;
+                           onclick view/onclick;
+                           ondblclick view/ondblclick;
+                           onmousedown view/onmousedown;
+                           onmouseup view/onmouseup;
+                           onmouseover view/onmouseover;
+                           onmousemove view/onmousemove;
+                           onmouseout view/onmouseout;
+                           onkeypress view/onkeypress;
+                           onkeydown view/onkeydown;
+                           onkeyup view/onkeyup;
+                           value view/value;
+                           disabled view/disabled;
+                           tabindex view/tabindex;
+                           onfocus view/onfocus;
+                           onblur view/onblur;
+                           onchange view/onchange;
+                           readonly view/readonly;
+                           alt view/alt;
+                           accesskey view/accesskey;
+                           onselect view/onselect;
+                           size view/size;
+                           maxlength view/maxlength" />
+
+<script type="text/javascript" src="++resource++medialog-tablebehavior/jquery.flextableedit.js">
+<script type="text/javascript" src="++resource++medialog-tablebehavior/service_002.js"></script>
+<script type="text/javascript" src="++resource++medialog-tablebehavior/service_003.js"></script>
+<script type="text/javascript" src="++resource++medialog-tablebehavior/service_004.js"></script>
+
+</script>
+<script type="text/javascript">
+var contentArray = ${view/value};
+$(function () {
+    $('#mytable').flextabledit({
+      content: contentArray,
+    });
+});
+
+$("#mytable").focusout(function(){
+    var contentArray = $('#mytable').flextabledit('getData');
+  	if (contentArray.length != 0) {
+    	var jsonContent = JSON.stringify(contentArray);
+    	// Save content
+    	$('#form-widgets-ITableBehavior-table, #form-widgets-IPieBehavior-table').val( jsonContent );
+  	}
+});
+</script>
+
+</html>
+
+ 

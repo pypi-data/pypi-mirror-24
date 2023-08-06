@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
+	i18n_domain="medialog.tablebehavior">
+	
+  <class class=".widget.TableWidget">
+    <require
+        permission="zope.Public"
+        interface=".widget.ITableWidget"
+        />
+  </class>
+
+  <!-- this widget is not configured for any field by default -->
+  <z3c:widgetTemplate
+      mode="display"
+      widget=".widget.ITableWidget"
+      layer="z3c.form.interfaces.IFormLayer"
+      template="tablefield_display.pt" />
+
+  <z3c:widgetTemplate
+      mode="input"
+      widget=".widget.ITableWidget"
+      layer="z3c.form.interfaces.IFormLayer"
+      template="tablefield_input.pt" />
+
+</configure>
+
+

@@ -1,0 +1,12 @@
+<configure 
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
+    i18n_domain="medialog.tablebehavior">
+
+  <browser:resourceDirectory
+      name="medialog-tablebehavior"
+      directory="static"
+      />
+        
+</configure>

@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      tal:omit-tag="">
+ 
+    <div id="mytable"><tal:block condition="view/value" content="view/value"/></div>
+
+	<!--script type="text/javascript">
+	var contentArray = ${view/value};
+	$(function () {
+		$('#mytable').DataTable({
+		  data: contentArray,
+		});
+	});
+	</script-->
+
+</html>

@@ -1,0 +1,3 @@
+plone.app.dexterity
+plone.behavior
+plone.directives.form
