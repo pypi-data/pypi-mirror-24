@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+aiohttp_wrapper/__init__.py
+aiohttp_wrapper/errors.py
+aiohttp_wrapper/session_manager.py
+aiohttp_wrapper.egg-info/PKG-INFO
+aiohttp_wrapper.egg-info/SOURCES.txt
+aiohttp_wrapper.egg-info/dependency_links.txt
+aiohttp_wrapper.egg-info/requires.txt
+aiohttp_wrapper.egg-info/top_level.txt
