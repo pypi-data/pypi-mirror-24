@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: cs5-trial-extender
+Version: 0.0.1
+Summary: Extend trial date of Photoshop CS5
+Home-page: https://github.com/FRReinert/cs5_trialextender
+Author: Fabricio Roberto reinert
+Author-email: fabricio.reinert@live.com
+License: MIT license
+Keywords: trial,extender,python,xml
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+
+## Usage
+* This module was intended to be for educational purpose, do not use it to cheat.
+
+## Warranty
+There is no warranty of this script. For more information, read the MIT Licence
+
+# How to Use it
+1. Install using ``pip install cs5_trial_extender``
+
+2. Run the following command to get the options: ``python -m cs5_trialextender.run``
+
+
