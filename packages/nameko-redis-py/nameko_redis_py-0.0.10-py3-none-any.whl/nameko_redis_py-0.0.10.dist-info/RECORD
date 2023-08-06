@@ -1,0 +1,9 @@
+nameko_redis/__init__.py,sha256=NSPx9jhPN6n_MERrx95or0nJmV73f817kDgV05ds9X4,73
+nameko_redis/client_providers.py,sha256=au3-e7p4o_ESE3XzFHGns-tyS7QWP95AvSBOlrRKSQY,1378
+nameko_redis/pubsub_response_listener.py,sha256=MqIN3awL8VrkJTjwxaU29hNWuyJHAn8OqHQ-Cmscl5A,6476
+nameko_redis_py-0.0.10.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+nameko_redis_py-0.0.10.dist-info/METADATA,sha256=yAJWx7oqUWFSAfMZ5zBeTG-SRpjXEZPnhQ_zFp4es78,787
+nameko_redis_py-0.0.10.dist-info/RECORD,,
+nameko_redis_py-0.0.10.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+nameko_redis_py-0.0.10.dist-info/metadata.json,sha256=npk6z5OP5tr5t4TeWrYIma7qdWNjjA_rYdTmlfx-o3U,902
+nameko_redis_py-0.0.10.dist-info/top_level.txt,sha256=2s6FjMITsbTHAe48HcSS_kyexm7O1oVTCbUqoS5DzCc,13
