@@ -1,0 +1,10 @@
+dojo_mysql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dojo_mysql/source.py,sha256=3zM-JnQXrdMqFZBkdEh0EJlab5yJ5Tg1xwT62ohDfTs,1583
+dojo_mysql/beam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dojo_mysql/beam/source.py,sha256=kHOTxlcbdkKWxSDG3KrTLtPjDvkL-y5AcqQ8aYEDDA8,2974
+dojo_mysql-0.0.29.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+dojo_mysql-0.0.29.dist-info/METADATA,sha256=ZUYLOF-vI2JT4209oeWjMQBaMG1IZbsq55UTb7Uaexk,286
+dojo_mysql-0.0.29.dist-info/RECORD,,
+dojo_mysql-0.0.29.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+dojo_mysql-0.0.29.dist-info/metadata.json,sha256=uq4we2HRxSIYfcqActEsxpkiC7KS45XiTQryh64PcMg,464
+dojo_mysql-0.0.29.dist-info/top_level.txt,sha256=u4i_WUbCK_feClm0zggd2IOhdxy_XJ1aa58JkcAP_Qk,11
