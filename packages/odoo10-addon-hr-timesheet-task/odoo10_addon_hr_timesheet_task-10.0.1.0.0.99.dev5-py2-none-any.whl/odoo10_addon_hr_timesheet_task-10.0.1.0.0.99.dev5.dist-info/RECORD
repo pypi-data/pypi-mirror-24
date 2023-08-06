@@ -1,0 +1,17 @@
+odoo10_addon_hr_timesheet_task-10.0.1.0.0.99.dev5-py2.7-nspkg.pth,sha256=BRP8mvEvEhIFmA57wbSTfAVbaAesjZh6WbtWMKUVv1c,1118
+odoo/addons/hr_timesheet_task/README.rst,sha256=Kt-qKiY8Numi7vM5frfbsjg2evZMkc7dfmtD76w0F3I,1626
+odoo/addons/hr_timesheet_task/__init__.py,sha256=CTsRQz0yOOOrrztko-wVaALC7lAidD32Ttdf_8ptqmY,139
+odoo/addons/hr_timesheet_task/__manifest__.py,sha256=BaczcBm4sZpwqyi7OBP3N9Vbxf0DvoBiRtL9rTtcC-c,700
+odoo/addons/hr_timesheet_task/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/hr_timesheet_task/static/src/css/timesheet.css,sha256=sRcis237sttBTdxqYzz9WLNnNjddZGBAO3EKS36t8RU,118
+odoo/addons/hr_timesheet_task/static/src/js/timesheet.js,sha256=vuQqS1xuh3kg4o2AtCgYUjRMbA0oFmswGsjLLUZhrSY,10381
+odoo/addons/hr_timesheet_task/static/src/xml/timesheet.xml,sha256=p5FXCzMW8uG8bZsLZfrCXql3dVX2hQvjIksgO7nc5o8,1757
+odoo/addons/hr_timesheet_task/views/hr_timesheet_assets.xml,sha256=QBbStnNpMgyrhMq-uduf06zJPXluqdd3T5fJnUflbTA,464
+odoo/addons/hr_timesheet_task/views/hr_timesheet_view.xml,sha256=kJzFKAq06CGdV5_9D-mgKRLnJ7wsmJ87Rj22f6JgyUU,870
+odoo10_addon_hr_timesheet_task-10.0.1.0.0.99.dev5.dist-info/DESCRIPTION.rst,sha256=V5J9ERGqRx-S2cJKJOLefCs5DcED2xJQOh0f9G3_TIM,1628
+odoo10_addon_hr_timesheet_task-10.0.1.0.0.99.dev5.dist-info/METADATA,sha256=Zxbduv2Knq-iNfTWaXnCdeu4N1La7zRCnp_X0WaZpOo,2149
+odoo10_addon_hr_timesheet_task-10.0.1.0.0.99.dev5.dist-info/RECORD,,
+odoo10_addon_hr_timesheet_task-10.0.1.0.0.99.dev5.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+odoo10_addon_hr_timesheet_task-10.0.1.0.0.99.dev5.dist-info/metadata.json,sha256=nE2ngO4M7-DOXSr34Wq0BJoom-9b5s8Dndm8vX1KkOw,733
+odoo10_addon_hr_timesheet_task-10.0.1.0.0.99.dev5.dist-info/namespace_packages.txt,sha256=igDP6S4ywc6jzcMqzrKZpRtAUXrS-iYaA_Hu1EtlI48,17
+odoo10_addon_hr_timesheet_task-10.0.1.0.0.99.dev5.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
