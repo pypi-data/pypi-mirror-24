@@ -1,0 +1,26 @@
+2017 Aug 22 Sergey Satskiy <sergey.satskiy@gmail.com>
+
+* Release 2.0.0.
+* Python 3 support (3.5/3.6)
+* pip installable
+
+2016 Jul 11  Sergey Satskiy <sergey.satskiy@gmail.com>
+
+* Changes in the package building procedure. Release 1.0.1
+
+
+2016 Jun 14  Sergey Satskiy <sergey.satskiy@gmail.com>
+
+* First public release 1.0.0
+
+
+2015 Nov 02  Sergey Satskiy <sergey.satskiy@gmail.com>
+
+* Moving from the 'codimension' repository to the separate 'cdm-flowparser'
+  repository
+
+
+2014 May 14  Sergey Satskiy <sergey.satskiy@gmail.com>
+
+* Development started using the pycxx library
+
