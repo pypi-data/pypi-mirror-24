@@ -1,0 +1,10 @@
+MANIFEST.in
+pyshoco.c
+setup.py
+shoco.c
+shoco.h
+shoco_model.h
+pyshoco.egg-info/PKG-INFO
+pyshoco.egg-info/SOURCES.txt
+pyshoco.egg-info/dependency_links.txt
+pyshoco.egg-info/top_level.txt
