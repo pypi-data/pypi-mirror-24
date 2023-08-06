@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+clowder.py
+setup.py
+clowder.egg-info/PKG-INFO
+clowder.egg-info/SOURCES.txt
+clowder.egg-info/dependency_links.txt
+clowder.egg-info/not-zip-safe
+clowder.egg-info/top_level.txt
