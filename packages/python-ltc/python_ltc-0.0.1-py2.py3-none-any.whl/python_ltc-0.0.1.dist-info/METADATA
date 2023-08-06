@@ -1,0 +1,36 @@
+Metadata-Version: 2.0
+Name: python-ltc
+Version: 0.0.1
+Summary: Tools for working with LTC (Linear Timecode)
+Home-page: https://github.com/nocarryr/python-ltc
+Author: Matthew Reid
+Author-email: matt@nomadic-recording.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: MIDI
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Multimedia :: Video :: Non-Linear Editor
+Requires-Dist: JACK-Client
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+python-ltc
+==========
+
+Tools to generate `Linear
+Timecode <https://en.wikipedia.org/wiki/Linear_timecode>`__
+
+
