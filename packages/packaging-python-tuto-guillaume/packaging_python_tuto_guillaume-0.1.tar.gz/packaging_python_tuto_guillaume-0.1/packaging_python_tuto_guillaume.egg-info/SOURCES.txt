@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+packaging_python_tuto_guillaume/__init_.py
+packaging_python_tuto_guillaume.egg-info/PKG-INFO
+packaging_python_tuto_guillaume.egg-info/SOURCES.txt
+packaging_python_tuto_guillaume.egg-info/dependency_links.txt
+packaging_python_tuto_guillaume.egg-info/not-zip-safe
+packaging_python_tuto_guillaume.egg-info/top_level.txt
