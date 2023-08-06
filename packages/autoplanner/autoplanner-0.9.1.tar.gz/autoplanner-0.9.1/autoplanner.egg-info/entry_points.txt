@@ -1,0 +1,5 @@
+[console_scripts]
+autoplanner-celery = djangofloor.scripts:celery
+autoplanner-manage = djangofloor.scripts:django
+autoplanner-web = djangofloor.scripts:aiohttp
+
