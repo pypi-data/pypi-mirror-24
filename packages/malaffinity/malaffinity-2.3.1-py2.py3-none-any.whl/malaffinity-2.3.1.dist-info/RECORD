@@ -1,0 +1,13 @@
+malaffinity/__about__.py,sha256=rppDLUc9rBNI7X-S-HRJK3HdBVvlkbtMwlAfFgEifJ4,477
+malaffinity/__init__.py,sha256=o8gqw-KIUu46pmpRwlKrA_E5TZjxsdBaJHWRMn3n-NA,805
+malaffinity/calcs.py,sha256=QiEN7fRgGOiLN-8AizSbzO6-zdqtC_Qa8ySvocmtrEI,1148
+malaffinity/const.py,sha256=RIX-__l_k_yg2JifOWw2w05M1ApWrH3i37EWa41TCJ8,119
+malaffinity/endpoints.py,sha256=PAZcyOfnsNLYFan8V5wAhoL33LyfjsWrGnW8CGgAbYY,2194
+malaffinity/exceptions.py,sha256=ce3D-y4jgv8o-owRiDwXDOqIOOHF_tugelYXJQVKST4,782
+malaffinity/malaffinity.py,sha256=U-4-2PVUr11utHZVUexRWbdE77gscXnRUhAAd7-XD3s,5990
+malaffinity-2.3.1.dist-info/DESCRIPTION.rst,sha256=rALvUpEvZaZXvSd-Iq0puS2pUgPPohMWDUg7eJX6mVU,2079
+malaffinity-2.3.1.dist-info/METADATA,sha256=eNJ6WlDJlqDFoHZJquckNjTtf_4yZMDyAl68EszSyws,3345
+malaffinity-2.3.1.dist-info/RECORD,,
+malaffinity-2.3.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+malaffinity-2.3.1.dist-info/metadata.json,sha256=NAoTmxzD3FHdqzXRPk8CXFQBlbun_IODlpakC8HabOM,1375
+malaffinity-2.3.1.dist-info/top_level.txt,sha256=6dC0cDy3KKO3NHdZ__OOPy_tHbkK4c1O2xJYqQd0yoM,12
