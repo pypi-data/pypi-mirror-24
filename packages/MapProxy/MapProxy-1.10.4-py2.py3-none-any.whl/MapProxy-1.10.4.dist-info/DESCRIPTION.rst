@@ -1,0 +1,135 @@
+MapProxy is an open source proxy for geospatial data. It caches, accelerates and transforms data from existing map services and serves any desktop or web GIS client.
+
+.. image:: https://mapproxy.org/mapproxy.png
+
+MapProxy is a tile cache, but also offers many new and innovative features like full support for WMS clients.
+
+MapProxy is actively developed and supported by `Omniscale <https://omniscale.com>`_, it is released under the Apache Software License 2.0, runs on Unix/Linux and Windows and is easy to install and to configure.
+
+Go to https://mapproxy.org/ for more information.
+
+The documentation is available at: https://mapproxy.org/docs/latest/
+
+Changes
+-------
+1.10.4 2017-08-17
+~~~~~~~~~~~~~~~~~
+
+Fixes:
+
+- Fix Cross Site Scripting (XSS) issue in demo service (#322).
+  A targeted attack could be used for information disclosure. For
+  example: Session cookies of a third party application running on
+  the same domain.
+
+
+1.10.3 2017-07-07
+~~~~~~~~~~~~~~~~~
+
+Fixes:
+
+- Fix crash during clipping
+- Fix bilinear/bicubic resampling from cropped source
+- Fix loading empty coverages
+
+1.10.2 2017-06-21
+~~~~~~~~~~~~~~~~~
+
+Fixes:
+
+- Fix coverage clipping for caches with a single source
+
+1.10.1 2017-06-06
+~~~~~~~~~~~~~~~~~
+
+Fixes:
+
+- Fix mapproxy-util serve-develop for Python 3.6 on Windows
+- Fix OGR coverages on Windows with Python 3 and official OGR Python bindings
+- Fix --repeat option of mapproxy-util scales
+
+1.10.0 2017-05-18
+~~~~~~~~~~~~~~~~~
+
+Improvements:
+
+- Support for S3 cache.
+- Support for the ArcGIS Compact Cache format version 1.
+- Support for GeoPackage files.
+- Support for Redis cache.
+- Support meta_tiles for tiles sources with bulk_meta_tiles option.
+- mbtiles/sqlite cache: Store multiple tiles in one transaction.
+- mbtiles/sqlite cache: Make timeout and WAL configurable.
+- ArcGIS REST source: Improve handling for ImageServer endpoints.
+- ArcGIS REST source: Support FeatureInfo requests.
+- ArcGIS REST source: Support min_res and max_res.
+- Support merging of RGB images with fixed transparency.
+- Coverages: Clip source requests at coverage boundaries.
+- Coverages: Build the difference, union or intersection of multiple coverages.
+- Coverages: Create coverages from webmercator tile coordinates like 05/182/123
+  with expire tiles files.
+- Coverages: Add native support for GeoJSON (no OGR/GDAL required).
+- mapproxy-seed: Add --duration, -reseed-file and -reseed-interval options.
+
+Fixes:
+
+- Fix level selection for grids with small res_factor.
+- mapproxy-util scales: Fix for Python 3.
+- WMS: Fix FeatureInfo precision for transformed requests.
+- Auth-API: Fix FeatureInfo for layers with limitto.
+- Fixes subpixel transformation deviations with Pillow 3.4 or higher.
+- mapproxy-seed: Reduce log output, especially in --quiet mode.
+- mapproxy-seed: Improve tile counter for tile grids with custom resolutions.
+- mapproxy-seed: Improve saving of the seed progress for --continue.
+- Fix band-merging when not all sources return an image.
+
+Other:
+
+- Python 2.6 is no longer supported.
+
+
+1.9.1 2017-01-18
+~~~~~~~~~~~~~~~~
+
+Fixes:
+
+- serve-develop: fixed reloader for Windows installations made
+  with recent pip version (#279)
+
+1.9.0 2016-07-22
+~~~~~~~~~~~~~~~~
+
+Improvements:
+
+- New band merge feature. Allows to create false-color or grayscale
+  images on the fly.
+- Support for ArcGIS REST sources.
+- Support multiple tilesets for each WMTS layer with the new
+  tile_sources option.
+- Allow to build WMS images from SQLite cache with more then 330 tiles.
+- New `arcgis` cache layout. Compatible to ArcGIS exploded caches.
+- New `mp` cache layout. Reduces number of nested directories.
+- Prevent unneeded quantizing/re-encoding of images.
+- Demo client: Support custom tile_size.
+
+Fixes:
+
+- Fix quantization error for some image modes
+  (e.g. grayscale image with transparency)
+- Support custom Proj4/EPSG files in mapproxy-util grid.
+- Convert paletted images to RGB(A) to avoid NEAREST resampling.
+- Fix quantizing with FASTOCTREE for paletted images with alpha channel.
+- Keep configured layer order in WMTS capabilities.
+- Fix coverage loading with Python 3.
+
+Other:
+
+- Make the output of various utils more clear.
+- wms.md.title is no longer required, default to "MapProxy WMS".
+
+
+Older changes
+-------------
+See https://raw.github.com/mapproxy/mapproxy/master/CHANGES.txt
+
+
