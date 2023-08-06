@@ -1,0 +1,5 @@
+numpy
+scipy
+six
+statsmodels
+mock
