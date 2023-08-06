@@ -1,0 +1,13 @@
+logfit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logfit/client.py,sha256=5iGKko8vGWSEaHlQvLr8wKX1VlCYKBXfi4267qhIpII,2014
+logfit/config.py,sha256=BeGtq-2YccWU1istZaQbqZoFCpnOwKVog3JATMkdLBc,674
+logfit/daemon.py,sha256=6QQVrV0gN5ZMkCwnNkGFU5vC15zn-n4IUe9yZTpl8bw,7443
+logfit/main.py,sha256=znKQuKnWpJBG-GRbW3WuFyBY0cc53vpQNosHTlfoBcA,922
+logfit/tail.py,sha256=o6ZGUoWzjXyCnTe_CGJVSsd3yJl3_QTttb8HC4ocW2o,1635
+logfit-0.0.3.dist-info/DESCRIPTION.rst,sha256=j2aierkx-R22HuwzMgzKulCxuZTVTGbN3as_ui62fzY,1284
+logfit-0.0.3.dist-info/METADATA,sha256=tpaxk83xWrUjhAYgVqh4Bv3ZjdwrG90xl9bsoxL_pKw,2214
+logfit-0.0.3.dist-info/RECORD,,
+logfit-0.0.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+logfit-0.0.3.dist-info/entry_points.txt,sha256=XiE-KXSkIz50RI_C49MYUeBCNuND36jao_4pyutEzPM,47
+logfit-0.0.3.dist-info/metadata.json,sha256=n9_7Z3Q8tLP4VOgiyKiao_9PpOPFfgQCvn3exm_Uy8g,1184
+logfit-0.0.3.dist-info/top_level.txt,sha256=kfOb0yt8cqAnuWKuTovsXFM8Jz9Yl1wWLm7utQwlUAw,7
