@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: canonicalwebteam.custom-response-headers
+Version: 0.2.0
+Summary: Django middleware for setting custom HTTP hadersto be included in every HTTP response.
+Home-page: https://github.com/canonical-webteam/custom-response-headers
+Author: Canonical Webteam
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
