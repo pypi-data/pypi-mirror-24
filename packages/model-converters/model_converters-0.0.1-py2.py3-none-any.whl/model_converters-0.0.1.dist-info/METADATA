@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: model-converters
+Version: 0.0.1
+Summary: Tools for converting Keras models for use with other ML frameworks.
+Home-page: https://www.triage.com/
+Author: Triage Technologies Inc.
+Author-email: ai@triage.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: h5py
+Requires-Dist: keras
+Requires-Dist: ml-tools (>=0.0.6)
+Requires-Dist: pillow
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-serving-client (>=0.0.5)
+
+UNKNOWN
+
+
