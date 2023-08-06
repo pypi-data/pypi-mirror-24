@@ -1,0 +1,7 @@
+setup.py
+s3df/__init__.py
+s3df.egg-info/PKG-INFO
+s3df.egg-info/SOURCES.txt
+s3df.egg-info/dependency_links.txt
+s3df.egg-info/requires.txt
+s3df.egg-info/top_level.txt

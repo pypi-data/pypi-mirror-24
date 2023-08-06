@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: s3df
+Version: 0.0.1
+Summary: Pandas DataFrame wrapper to create DataFrame from file on S3
+Home-page: https://github.com/JunyaKaneko/pys3df
+Author: Junya Kaneko
+Author-email: jyuneko@hotmail.com
+License: MIT
+Download-URL: https://github.com/JunyaKaneko/pys3df.git
+Description: UNKNOWN
+Keywords: s3
+Platform: UNKNOWN
