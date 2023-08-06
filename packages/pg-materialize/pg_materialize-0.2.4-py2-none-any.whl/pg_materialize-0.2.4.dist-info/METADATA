@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: pg-materialize
+Version: 0.2.4
+Summary: Postgres Materialized View Dependency Manager
+Home-page: http://github.com/aanari/pg-materialize
+Author: Ali Anari
+Author-email: ali@anari.io
+License: MIT
+Keywords: pg postgres psql pgsql postgresql materialized view dependency dependencies tool
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Database
+Classifier: Topic :: Utilities
+Requires-Dist: Pygments
+Requires-Dist: click
+Requires-Dist: psqlparse (==1.0rc5)
+Requires-Dist: pypandoc
+Requires-Dist: six
+Requires-Dist: toolz
+Requires-Dist: toposort
+
+pg-materialize
+==============
+
+Postgres Materialized View Dependency Manager
+
+
