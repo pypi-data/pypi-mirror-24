@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+etsy_py/__init__.py
+etsy_py/api.py
+etsy_py/exceptions.py
+etsy_py.egg-info/PKG-INFO
+etsy_py.egg-info/SOURCES.txt
+etsy_py.egg-info/dependency_links.txt
+etsy_py.egg-info/requires.txt
+etsy_py.egg-info/top_level.txt
