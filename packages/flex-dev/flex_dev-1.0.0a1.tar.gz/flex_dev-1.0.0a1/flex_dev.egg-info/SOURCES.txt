@@ -1,0 +1,7 @@
+README.rst
+flex-dev.py
+setup.py
+flex_dev.egg-info/PKG-INFO
+flex_dev.egg-info/SOURCES.txt
+flex_dev.egg-info/dependency_links.txt
+flex_dev.egg-info/top_level.txt

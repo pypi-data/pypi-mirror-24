@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: flex_dev
+Version: 1.0.0a1
+Summary: This just might be what it is.
+Home-page: https://google.com
+Author: The Developer Authority
+Author-email: vishnu@flexport.com
+License: MIT
+Description: A Dev Env Project
+        =======================
+        
+        This package is very powerful in the hands of a pantomath.
+        
+        ----
+        
+        This package is very powerful in the hands of a pantomath.
+        
+Keywords: development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
