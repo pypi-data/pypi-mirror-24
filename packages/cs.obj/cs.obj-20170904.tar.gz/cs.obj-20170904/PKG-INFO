@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: cs.obj
+Version: 20170904
+Summary: Convenience facilities for objects.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: Presents:
+        * flavour, for deciding whether an object resembles a mapping or sequence.
+        
+        * O, an object subclass with a nice __str__ and convenient __init__.
+        
+        * Some O_* functions for working with objects, particularly O subclasses.
+        
+        * Proxy, a very simple minded object proxy intened to aid debugging.
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
