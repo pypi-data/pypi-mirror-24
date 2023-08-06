@@ -1,0 +1,17 @@
+clearblade/ClearBladeCore.py,sha256=7b00ObO3a1tBrbm6e1vhHgw0KLQvVBBUOfMA1xpvBmA,4004
+clearblade/Code.py,sha256=LWGM5LN0ATvLeZExfx59AnHzrEXILFBNLeAv-iVvFcM,520
+clearblade/Collections.py,sha256=3uwOYYTcc2wvAGRJtdjQOwiT63q8JQMPRSK6n5QuUS0,2460
+clearblade/Developers.py,sha256=7PbWe3xbpPq2Byf9dnhubHEH5TRJtRAvDeb27cakcgM,2974
+clearblade/Devices.py,sha256=TyHBVt9-nRgpZeEtr6kkZH0CMRMlex_F_wxa0v0yQkY,3972
+clearblade/Messaging.py,sha256=6PzTuidzyo-gqmxV0qndL7-Spfu9L2pywUhp3hvc2Ng,5222
+clearblade/Users.py,sha256=gH_KwuPJVszLlVsMGPvbF0aa5XYcaIi32jz_aDY3tRw,2652
+clearblade/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clearblade/cbLogs.py,sha256=u0l1FZMA3LLAL8MozUDBPt4c9z4k1Qv1El93179a1D8,1452
+clearblade/restcall.py,sha256=OOnihX9k74wjHTROtv2l8RAl8Wr_3P3OttFl5isJDic,3993
+clearblade/test.py,sha256=Ig2UggyVDkvQWvQTYy9S0q3nA0o1C5rGnDpfIwZ9j2Y,3486
+clearblade-2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+clearblade-2.0.dist-info/METADATA,sha256=IUwC9HOakiHn-cLYNA2RTnlcBxfmXewQmsRbSXDYtXU,460
+clearblade-2.0.dist-info/RECORD,,
+clearblade-2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+clearblade-2.0.dist-info/metadata.json,sha256=dYTozTZz9Hv6H-0YZDCqQr1MNuJ-An_zq3HO-GJGwG0,656
+clearblade-2.0.dist-info/top_level.txt,sha256=XE2iZvPIF7mBw0szJsIzwrc0zsBDexdY3Vu43pa9QWo,11
