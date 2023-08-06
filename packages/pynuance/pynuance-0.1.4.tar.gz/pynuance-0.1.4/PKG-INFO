@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pynuance
+Version: 0.1.4
+Summary: Python wrapper for Nuance Communications services
+Home-page: https://github.org/titilambert/pynuance
+Author: Thibault Cohen
+Author-email: titilambert@gmail.com
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
