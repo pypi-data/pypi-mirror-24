@@ -1,0 +1,6 @@
+recursive-include WiringPi *.h
+include README.md
+include LICENSE.txt
+include bindings.i
+include constants.py
+include wiringpi-class.py
