@@ -1,0 +1,8 @@
+setup.py
+iterm2_dwim/__init__.py
+iterm2_dwim.egg-info/PKG-INFO
+iterm2_dwim.egg-info/SOURCES.txt
+iterm2_dwim.egg-info/dependency_links.txt
+iterm2_dwim.egg-info/entry_points.txt
+iterm2_dwim.egg-info/not-zip-safe
+iterm2_dwim.egg-info/top_level.txt
