@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+sepa/__init__.py
+sepa/builder.py
+sepa/core.py
+sepa/definitions.py
+sepa_generator.egg-info/PKG-INFO
+sepa_generator.egg-info/SOURCES.txt
+sepa_generator.egg-info/dependency_links.txt
+sepa_generator.egg-info/requires.txt
+sepa_generator.egg-info/top_level.txt
