@@ -1,0 +1,12 @@
+ipywidgets>=7.0.0b12
+numpy
+
+[docs]
+sphinx
+recommonmark
+sphinx_rtd_theme
+
+[test]
+pytest
+pytest-cov
+nbval
