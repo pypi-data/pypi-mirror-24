@@ -1,0 +1,16 @@
+paysage/__init__.py,sha256=hfCFRpS6i2auxeO05Q1S4nDqiH_LwKsLXL_bk5n2pP4,175
+paysage/batch.py,sha256=Pwx0cey9m7eLFpISen_nVFY59vkG8Nb2dE5NnEoRReg,11238
+paysage/constraints.py,sha256=K999p2Smtt7gaY0j5ljmLX-76CqwejbykXXGQvbVQ1M,188
+paysage/fit.py,sha256=t5AiMYs4jPunbNiExPKfszMi2dG_aao0RIQ3uWtjjiU,24568
+paysage/math_utils.py,sha256=gfgLJcBWiGxBPyxq7AjjR-Q64O3TvacSpPu0q_vUVfQ,6328
+paysage/metrics.py,sha256=CINSXXh6VaMBY4k3TqLp3YreOVPInLBOZ6RIOoNvLlo,11935
+paysage/optimizers.py,sha256=FgvH0rakuJri7mGV2MZlPzY-CtT6iltBL1uQc473dP0,12730
+paysage/penalties.py,sha256=RqD-RNqSzKUMuD6W__e2cUVVW4EU-gxVVLH6TR2gG0Q,2098
+paysage/preprocess.py,sha256=BBw2QbrlCZFR6pSpT1q5_uplASBXO1uZQZgFlYsTBdA,2122
+paysage/schedules.py,sha256=uawd-P0Ngmep-i64tvfBNPoZFthaXuWBafVykIwByAo,2566
+paysage-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+paysage-0.1.dist-info/METADATA,sha256=irSGKUVE_u8zh97ykD6FEp3x0X-UGJy_dbcjyMUO4bQ,529
+paysage-0.1.dist-info/RECORD,,
+paysage-0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+paysage-0.1.dist-info/metadata.json,sha256=dSaF920tdAWHMemI-0g9jwy-zM8LC-cnWHQ0NTQq2PM,671
+paysage-0.1.dist-info/top_level.txt,sha256=VaVzz0E169UvSmI36UyEYM9xzkIljFnR-2vNF1-i4DM,8
