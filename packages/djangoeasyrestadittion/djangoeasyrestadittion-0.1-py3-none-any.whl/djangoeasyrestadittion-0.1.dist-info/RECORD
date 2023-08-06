@@ -1,0 +1,14 @@
+djangoeasyrestadittion-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+djangoeasyrestadittion-0.1.dist-info/METADATA,sha256=NalB_WxfsnFTfFtUGsBmbKyZ4vPtl1NtcY_-vszsfs4,841
+djangoeasyrestadittion-0.1.dist-info/RECORD,,
+djangoeasyrestadittion-0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+djangoeasyrestadittion-0.1.dist-info/metadata.json,sha256=guCS3p2q5C-zcAMO8PF6o04aD6vyZD9UMjvIXIJSNhw,971
+djangoeasyrestadittion-0.1.dist-info/top_level.txt,sha256=xblealjqEivt7fht7MWvY909mZV6dF1TaUJXKh4ZriQ,10
+easy_rest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easy_rest/apps.py,sha256=pPo6CSGKgdAhqsdkz_t8CK0uF-3PbixeBD2UiDefd1U,98
+easy_rest/mixins.py,sha256=lOdp4wnaJ9p-RDzin1q4xh9zbWakci12tc1SNr7gIeA,15360
+easy_rest/serializers.py,sha256=a4gM88d0ENEjJVwW4HHF2Z95CcDOC_tPcFdPRk5XL_s,403
+easy_rest/urls.py,sha256=UFgKgBsyq94AYyr3ktT9OeznE_GnJFEGd-4xEt0xxqo,848
+easy_rest/views.py,sha256=ArTeMGI_P86T77RjXsIY2apjQwT7I3u35E-cPwTJQlk,7267
+easy_rest/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easy_rest/utils/search_model.py,sha256=n88gn0ru7CfF7KLj3z81YhobCSOSaEPvfGfuDFFaXGk,586
