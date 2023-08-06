@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: diva
+Version: 0.1.0
+Summary: Analytics dashboards made simple
+Home-page: https://github.com/mgriley/diva
+Author: Matthew Riley
+Author-email: mgriley97@gmail.com
+License: MIT
+Description: create a simple web analytics dashboard
+Keywords: dashboard analytics plotting
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
