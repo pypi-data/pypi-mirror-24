@@ -1,0 +1,11 @@
+README.txt
+setup.py
+OpenOPC_Python3x.egg-info/PKG-INFO
+OpenOPC_Python3x.egg-info/SOURCES.txt
+OpenOPC_Python3x.egg-info/dependency_links.txt
+OpenOPC_Python3x.egg-info/requires.txt
+OpenOPC_Python3x.egg-info/top_level.txt
+src/OpenOPC.py
+src/OpenOPCService.py
+src/SystemHealth.py
+src/opc.py
