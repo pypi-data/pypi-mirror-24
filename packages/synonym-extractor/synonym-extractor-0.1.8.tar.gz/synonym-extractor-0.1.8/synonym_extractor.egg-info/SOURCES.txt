@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+synonym/__init__.py
+synonym/extractor.py
+synonym_extractor.egg-info/PKG-INFO
+synonym_extractor.egg-info/SOURCES.txt
+synonym_extractor.egg-info/dependency_links.txt
+synonym_extractor.egg-info/top_level.txt
+test/test_extractor.py
