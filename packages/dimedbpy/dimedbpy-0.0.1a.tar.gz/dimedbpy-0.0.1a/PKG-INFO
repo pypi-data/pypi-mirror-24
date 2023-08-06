@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dimedbpy
+Version: 0.0.1a
+Summary: Python wrapper for DIMEdb's REST API
+Home-page: https://www.github.com/KeironO/dimedbpy
+Author: Keiron OShea
+Author-email: keo7@aber.ac.uk
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
