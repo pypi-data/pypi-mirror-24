@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: flask-with-glasses
+Version: 0.1.5
+Summary: Enhanced flask app with livereload and webassets. More suitable for front end development
+Home-page: https://github.com/wewearglasses/flask-with-glasses
+Author: Shang Liang
+Author-email: shang@wewearglasses.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha

@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+flask_with_glasses/__init__.py
+flask_with_glasses/core.py
+flask_with_glasses/utils.py
+flask_with_glasses.egg-info/PKG-INFO
+flask_with_glasses.egg-info/SOURCES.txt
+flask_with_glasses.egg-info/dependency_links.txt
+flask_with_glasses.egg-info/not-zip-safe
+flask_with_glasses.egg-info/requires.txt
+flask_with_glasses.egg-info/top_level.txt
+flask_with_glasses/templates/ea-base.html
