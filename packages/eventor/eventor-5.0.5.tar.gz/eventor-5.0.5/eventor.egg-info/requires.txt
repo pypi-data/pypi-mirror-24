@@ -1,0 +1,11 @@
+SQLAlchemy>=1.1.5
+acris>=2.0.2
+acrilog
+setproctitle>=1.1
+pyyaml>=3.12
+namedlist>=1.7
+PyYAML>=3.12
+
+[dev]
+
+[test]
