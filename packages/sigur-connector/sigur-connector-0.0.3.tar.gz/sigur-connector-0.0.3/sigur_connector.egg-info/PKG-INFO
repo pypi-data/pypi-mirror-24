@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: sigur-connector
+Version: 0.0.3
+Summary: Sigur TCP wrapper
+Home-page: https://bitbucket.org/wintersilent/sigur_connector
+Author: GlebZaytsev
+Author-email: winter1silent@gmail.com
+License: MIT
+Download-URL: https://bitbucket.org/wintersilent/sigur_connector/get/master.zip
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
