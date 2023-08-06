@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: fracmat
+Version: 0.1
+Summary: Fractional matrices
+Home-page: https://github.com/Wikunia/fracmat
+Author: Ole Kröger
+Author-email: o.kroeger@wikunia.de
+License: UNKNOWN
+Download-URL: https://github.com/Wikunia/fracmat/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: matrix,fractional,numpy
+Platform: UNKNOWN
