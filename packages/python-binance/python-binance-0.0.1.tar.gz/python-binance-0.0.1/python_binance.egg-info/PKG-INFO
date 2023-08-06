@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: python-binance
+Version: 0.0.1
+Summary: Binance API python implementation
+Home-page: https://github.com/sammchardy/python-binance
+Author: Sam McHardy
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: binance exchange bitcoin ethereum btc eth neo
+Platform: UNKNOWN
