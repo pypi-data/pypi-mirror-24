@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: s3ninja
+Version: 0.0.1
+Summary: compress & upload files to s3 reliably
+Home-page: https://pip.pypa.io/
+Author: Padmakar Ojha
+Author-email: padmakarojha@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: s3 upload compress
+Platform: UNKNOWN
