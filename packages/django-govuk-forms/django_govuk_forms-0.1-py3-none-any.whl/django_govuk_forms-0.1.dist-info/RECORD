@@ -1,0 +1,11 @@
+django_govuk_forms-0.1.dist-info/DESCRIPTION.rst,sha256=b5gwxbPmyd4xQUB9ytzhA-WMBUBkTf6UPxftF7qC_Lo,1372
+django_govuk_forms-0.1.dist-info/METADATA,sha256=YITAI9dOlXt9R_ghzM_pgFBNk6msJ-P0cDXuneKRnvM,2138
+django_govuk_forms-0.1.dist-info/RECORD,,
+django_govuk_forms-0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_govuk_forms-0.1.dist-info/metadata.json,sha256=Bai33svMB4ZuPJ9SoOSP4Ketu4ZgvP_Kndb8bhZexMQ,983
+django_govuk_forms-0.1.dist-info/top_level.txt,sha256=3IKWaf__BXLw9OK9Va-G98ihzezFk8GqJYwDVhAR9HM,12
+govuk_forms/__init__.py,sha256=XQOJ1P50QpGu6bTl9T3jeiCJe4FZcHSsWT1EbmhyS00,150
+govuk_forms/apps.py,sha256=rDu--mTjtCEg1PEH7e_QWL1_2pgAskhmptQE794pu7s,186
+govuk_forms/fields.py,sha256=AkOUgWqiRX_c6DONbec0CMriKb4KZ4rzK9WepnMZhj4,2974
+govuk_forms/forms.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+govuk_forms/widgets.py,sha256=1uPUgNAnM9DsV57wxKxDwbCLEuOmiekA_hV1GftBRO0,635
