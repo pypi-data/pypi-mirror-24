@@ -1,0 +1,15 @@
+b_labs_models/__init__.py,sha256=Lnu1ITyirzI6RbX-xhA6f3kdlAIM0Tq5scG8qwG36Q4,108
+b_labs_models/segmentation.py,sha256=123VXOptdRgNiuWnZrYKPbLmNGPI922eK2y2y1yKo2w,4952
+b_labs_models/settings.py,sha256=Nafq29qUoRlBzM1KX9ZY0sMQo0csVLu5zKl8xlHpHIc,314
+b_labs_models/tokenization.py,sha256=bf07GWZwx_XM0VnSfTzsldcY7g63XkhvqQ3RbTp0GgA,4195
+b_labs_models/data/sentence-segmentation-model.crfsuite,sha256=m_RSOcoW9dAt1kmPHgPgXPfbk-JwWdkL1ZmG997WFho,58820
+b_labs_models/data/tokenization-model.crfsuite,sha256=-lj3oV8oO8hQqN0kGSttYTXicz6nabOiVYm8fTWwFRE,74872
+b_labs_models/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b_labs_models/tests/test_segmentation.py,sha256=vH4JBblthciRT1d-YGouu3jttgXl5kmjQiWhT99jFNk,2350
+b_labs_models/tests/test_tokenizer.py,sha256=RXK5MHpi26TImC3WTjhR72VPC5Kenpfu_yDSaaHpmZE,496
+b_labs_models-2017.8.19.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+b_labs_models-2017.8.19.dist-info/METADATA,sha256=ZBug80F5PZj2-iCUw-XRQAHibaz5OizZu-4lGLY0Q-A,972
+b_labs_models-2017.8.19.dist-info/RECORD,,
+b_labs_models-2017.8.19.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+b_labs_models-2017.8.19.dist-info/metadata.json,sha256=iyZgXL8R1vdOhuvWkuevbOiBT2E9w9KRO6AvqUm9i08,998
+b_labs_models-2017.8.19.dist-info/top_level.txt,sha256=AOrNhPL0GoJ9lYEjCNlNsH6bDReX3x2INjNyv_8SHh0,14
