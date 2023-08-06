@@ -1,0 +1,3 @@
+[console_scripts]
+Hjun2 = Hjun2.hj:hjun_call
+
