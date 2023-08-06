@@ -1,0 +1,16 @@
+scrapy_rediscluster/__init__.py,sha256=sPqP1f2fC6QiFOR1GrYF8KzAAne6PT3l2vsBBCrDK2g,198
+scrapy_rediscluster/connection.py,sha256=vdcShBOvQygQaNPVCetnCxFgqe5qe7j2p6udGKiM_-s,3205
+scrapy_rediscluster/defaults.py,sha256=ezRbTUbsVRg4a30cFxVdK1yCSLPO33vY25PhMzbBJh8,1252
+scrapy_rediscluster/dupefilter.py,sha256=pGfaR_VibSrkZJblivru5NXddIzdNoFOrFERW21RHGU,3992
+scrapy_rediscluster/picklecompat.py,sha256=yny-2gjbzFyU8O2g4yVQ1_NP9kRP_2DZ2tdfWJcgi30,242
+scrapy_rediscluster/pipelines.py,sha256=feyTU15Xm1Y5QYvyaAIEcdu2OBNvwRfB9A9ZKZu9wOI,2083
+scrapy_rediscluster/queue.py,sha256=XJEFCEpNNjOQF4uuWeRGSluK9JD-bJWGtNUK4QVpqyE,4419
+scrapy_rediscluster/scheduler.py,sha256=QjXiOPF73mzK0uy0r7W5hoT7-8JJCFgCgJqKWXycAS8,6109
+scrapy_rediscluster/spiders.py,sha256=64Qtpvya5bVRl9kVv-50zMpF1YyuvZTBWapL7ll_htM,6778
+scrapy_rediscluster/utils.py,sha256=VilhHKbMSn3c7ZO429NlnvMKN_aefK84ooG84f5BA8U,192
+scrapy_rediscluster-1.0.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+scrapy_rediscluster-1.0.2.dist-info/METADATA,sha256=s4n5mjXs9gYO80gkYGxIUP89xyRvWtuEA38LW6XjleE,209
+scrapy_rediscluster-1.0.2.dist-info/RECORD,,
+scrapy_rediscluster-1.0.2.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+scrapy_rediscluster-1.0.2.dist-info/metadata.json,sha256=hC9_xeUerWULJhhEfxsYssAoONKjUiL_KdeSeOcbFXE,313
+scrapy_rediscluster-1.0.2.dist-info/top_level.txt,sha256=zENtZ9fN7hpCglIshQVYBUBKt1CFMRl_PooinXthjhM,20
