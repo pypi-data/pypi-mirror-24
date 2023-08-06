@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: recast-control-center-prototype
+Version: 0.1.0
+Summary: prototype web frontend for RECAST project at CERN
+Home-page: http://github.com/recast-hep/recast-frontend-prototype
+Author: Lukas Heinrich
+Author-email: lukas.heinrich@cern.ch
+License: UNKNOWN
+Description: prototype web frontend for RECAST project at CERN. Provides users with options to request new RECAST requests, process them using a backend, and display results.
+Platform: UNKNOWN

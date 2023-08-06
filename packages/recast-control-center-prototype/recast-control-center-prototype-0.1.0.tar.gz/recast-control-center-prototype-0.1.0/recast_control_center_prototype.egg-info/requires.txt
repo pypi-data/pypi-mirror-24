@@ -1,0 +1,14 @@
+celery
+redis
+gevent
+gevent-websocket
+python-socketio
+recast-api
+recast-backend
+recast-resultblueprints
+recast-database
+Flask
+Flask-OAuth
+Click
+IPython
+pyyaml

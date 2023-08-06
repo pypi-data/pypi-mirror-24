@@ -1,0 +1,8 @@
+blueprintconfig:
+  - prefix: yadageresult
+    blueprint: recastresultblueprints.yadage_result.blueprint:blueprint
+defaultviews:
+  - plugin: yadageworkflow
+    blueprint: recastresultblueprints.yadage_result.blueprint:blueprint
+  - plugin: yadagecombo
+    blueprint: recastresultblueprints.yadage_result.blueprint:blueprint

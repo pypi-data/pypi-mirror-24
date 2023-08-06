@@ -1,0 +1,4 @@
+[console_scripts]
+recast-control-center = recastcontrolcenter.servercli:servercli
+recast-control-center-admin = recastcontrolcenter.admin.recastadmin:recastadmin
+

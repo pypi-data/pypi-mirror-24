@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block prebody %}
+<script type="text/javascript">
+$(document).ready(function(){
+
+    var socket = io.connect(location.origin+'/monitor');
+    socket.emit('helloServer')
+    socket.on('plainEmit',function(data){
+      console.log('got stuff from socket')
+      console.log(data)
+    })
+
+});
+</script>
+
+{% endblock %}
+
+{% block container%}
+<div class="page-header">
+    <h1>Recast Control Center <small>An Analysis Reinterpretation Framework</small></h1>
+</div>
+
+<div class="row">
+    <div class="col-md-9">
+        <h2>Introduction</h2>
+        <p>
+            This is an early prototype for the RECAST control center. It allows persons associated to a particular HEP experiment to fulfill reqeusts for reintrepretation of previously published analyses.
+        </p>
+        <p>It supports CERN SSO authentication which will allow for fine-grained control over which users are able to launch the reinterpretation jobs and/or upload the results to the front-end. This web application provides a plugin model for analyses. Currently, we have a template plugin for Rivet analyses that runs quickly. We are working with CERN IT's analysis preservation product to provide a template plugin for reinterpretation based on the full simulation, reconstruction, and event selection.
+        </p>
+</p>
+        <h2>Instructions</h2>
+        <p>
+            <ol>
+            <li>Alternatively you can also create a request on the <a href="http://recast.perimeterinstitute.ca/dev">RECAST front-end</a> (currently the development instance)</li>
+            <li>Once you have chosen the analysis you want to recast, create a new request by clicking the <strong>New RECAST Request</strong> button and fill out the form. After you created the request you can click through to the page describing your new request</li>
+            <li>On the request page you can now upload simulated events for specific parameter points in the Les Houches format. To do that click the <strong>Add Parameter Point</strong> button, describe the parameter point and select the necessary event files (you don't need to worry about the cross-section and number of events for now. Dummy values are OK.)</li>
+            <li>Now that you have created a parameter point, you can process the request by hitting the <strong>Process</strong> button. Once the results become available you can view the results for the parameter point (you will need to reload the page at the moment).
+            <li>Once the results have arrived, you can upload the response to the RECAST frontend by clicking the <strong>Upload to RECAST</strong> button</li>
+        </ol>
+
+        <h2>Links and Related Projects</h2>
+        <ul>
+            <li><a href="http://arxiv.org/abs/1010.2506">Original white paper</a> by Cranmer and Yavin</li>
+            <li><a href="https://twiki.cern.ch/twiki/pub/AtlasPublic/AtlasPolicyDocuments/A78_ATLAS_Data_Access_Policy.pdf">ATLAS Data Access Policy </a></li>
+            <li><a href="http://arxiv.org/pdf/1205.4667.pdf">DPHEP Status Report</a></li>
+            <li><a href="https://daspos.crc.nd.edu">DASPOS</a></lie>
+            <li><a href="http://data-demo.cern.ch">CERN Analysis Preservation Demo </a></lie>
+        </ul>
+
+
+        <h2>Contact</h2>
+        For suggestions and feedback please contact:
+        <ul>
+            <li>Lukas Heinrich: lukas.heinrich@cern.ch</li>
+            <li>Kyle Cranmer: kyle.cranmer@cern.ch</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,378 @@
+{% extends "base.html" %}
+
+{% block prebody %}
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vega-tooltip/0.3.3/vega-tooltip.min.js"></script>
+<script src="https://vega.github.io/vega/vega.min.js"></script>
+<script src="https://www.promisejs.org/polyfills/promise-done-7.0.4.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vega-tooltip/0.3.3/vega-tooltip.min.css">
+
+
+<script type="text/javascript">
+
+
+  var view = undefined;
+  function runview2d(abcissa,ordinate,data){
+    data.signals[0].value = abcissa
+    data.signals[1].value = ordinate
+    view = new vega.View(vega.parse(data))
+      .renderer('canvas')  // set renderer (canvas or svg)
+      .initialize('#view') // initialize view within parent DOM container
+      .hover()             // enable hover encode set processing
+      .run();              // run the dataflow and render the view  )
+
+    vegaTooltip.vega(view);
+
+    view.addSignalListener('abcissa', function(name,value){
+      runview2d(view.signal('abcissa'), view.signal('ordinate'), data)
+    }) 
+    view.addSignalListener('ordinate', function(name,value){
+      runview2d(view.signal('abcissa'), view.signal('ordinate'), data)
+    }) 
+  }
+
+
+  function runview1d(abcissa,data){
+    data.signals[0].value = abcissa
+    view = new vega.View(vega.parse(data))
+      .renderer('canvas')  // set renderer (canvas or svg)
+      .initialize('#view') // initialize view within parent DOM container
+      .hover()             // enable hover encode set processing
+      .run();              // run the dataflow and render the view  )
+
+    vegaTooltip.vega(view);
+    view.addSignalListener('abcissa', function(name,value){
+      runview1d(view.signal('abcissa'),data)
+    }) 
+  }
+
+
+var vega_req_data = {{visdata|tojson|safe}}
+
+if(vega_req_data.pars.length > 1){
+  $.get('/static/vegavistemplate2d.json',function(visdata){
+    visdata.data = vega_req_data.data
+    visdata.signals[0].bind.options = vega_req_data.pars
+    visdata.signals[1].bind.options = vega_req_data.pars
+    runview2d(vega_req_data.pars[0],vega_req_data.pars[1],visdata)
+  })
+}
+else{
+  $.get('/static/vegavistemplate1d.json',function(visdata){
+    visdata.data = vega_req_data.data
+    visdata.signals[0].bind.options = vega_req_data.pars
+    runview1d(vega_req_data.pars[0],visdata)
+  })
+
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.process-all-btn').click(function(){
+        var button = $(this);
+        wflowconfig = button.attr('data-wflowconfig')
+
+        console.log('processing all basic requests with config X')
+    })
+
+    $('.process-btn').click(function(){
+        var button = $(this);
+        basicreqid = button.attr('data-basic-req-id')
+        wflowconfig = button.attr('data-wflowconfig')
+
+        url = location.origin+'/recast/processBasicRequest?'+$.param({
+          analysisid: {{request_info['analysis_id']}},
+          wflowconfig: button.attr('data-wflowconfig'),
+          basicreqid: basicreqid
+        })
+
+
+        $.ajax(url,{
+            complete: function(data){
+                var jobguid = data['responseJSON']['jobguid']
+                console.log(data['responseJSON'])
+                console.log('got jobguid: '+jobguid)
+                window.location.assign(location.origin+'/monitor/' + jobguid)
+            }
+        })
+    })
+
+    Promise.all($('.result-btn').map(function(){
+        var result_button = $(this)
+
+
+
+        var basicReqId = result_button.attr('data-basic-req-id')
+        var wflowconfig = result_button.attr('data-wflowconfig')
+        var resultsAvailable = false
+
+
+        var upload_botton = $('.upload-response-btn[data-basic-req-id='+basicReqId+'][data-wflowconfig='+wflowconfig+']');
+
+
+        var url = location.origin+'/status/'+basicReqId
+        $.ajax(url,{
+            async: false,
+            complete: function(data){
+                console.log(data['responseJSON'])
+                console.log(data['responseJSON']['ready_wflowconfigs'])
+                console.log(wflowconfig)
+                resultsAvailable = $.inArray(wflowconfig,data['responseJSON']['ready_wflowconfigs']) >= 0
+                console.log('results are available: '+ resultsAvailable)
+                if(!resultsAvailable){
+                  console.log('disabling button')
+                  result_button.addClass('disabled')
+                  upload_botton.addClass('disabled')
+                }
+                return true
+            }
+        })
+    })).then(function(res){
+      console.log('ok...')
+      $('.results-group').each(function(){
+
+          var basicreqid = $(this).attr('data-basic-req-id')
+
+          console.log($(this))
+          console.log($('.upload-group[data-basic-req-id='+basicreqid+']'))
+
+          var configswithresults = $(this).children().filter('ul').children().filter(function(){
+                  return !$(this).children().hasClass('disabled')
+
+          }).length
+
+          console.log('configs with results for ' + basicreqid + ': ' + configswithresults)
+
+          if(!configswithresults){
+            console.log('basiq: ' + basicreqid)
+
+            console.log($('.upload-group[data-basic-req-id='+basicreqid+']'))
+
+            $(this).children().filter('button').addClass('disabled')
+            $('.upload-group[data-basic-req-id='+basicreqid+']').children().filter('button').addClass('disabled')
+
+          }
+      })
+    })
+
+
+
+
+    //disabled process button if we're not logged in
+    {% if not session.has_key('user') or not wflow_configs.keys() %}
+       $('.process-group button').addClass('disabled')
+    {% endif %}
+
+
+    $('.upload-response-btn').click(function(){
+      var button = $(this)
+      $.ajax(location.origin+'/recast/uploadPointResponse?'+$.param({
+        scanreqid: {{request_info['id']}},
+        basicreqid: button.attr('data-basic-req-id'),
+        pointreqid: button.attr('data-point-req-id'),
+        wflowconfig: button.attr('data-wflowconfig')
+      }),{
+          async: false,
+          complete: function(data){
+              console.log(data)
+              $('#upload-modal').modal()
+          }
+      })
+    })
+});
+
+function togglejobs(basicreqid){
+  $('#basicreq_jobs_'+basicreqid).toggleClass('hidden')
+  if ($('#basicreq_jobs_'+basicreqid).hasClass('hidden')){
+    $('#jobslabel_'+basicreqid).html('Show Processings')
+  }
+  else{
+    $('#jobslabel_'+basicreqid).html('Hide Processings')
+  }
+}
+</script>
+
+{% endblock %}
+
+{% block container%}
+<div class="page-header">
+    <h1>Recast Scan Request <small>{{request_info['title']}}</small></h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h3 class="panel-title">Request Details</h3>
+            </div>
+            <div class="panel-body">
+                  <span class="label label-default"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{request_info['post_date']}}</span>
+                  <h6>Analysis {{analysis_info['id']}}</h6>
+                  <p>
+                    {{analysis_info['title']}}
+                  </p>
+                  <h6>Reason:</h6>
+                  <p>{{request_info['reason_for_request']}}</p>
+                  <h6>Additional Info:</h6>
+                  <p>{{request_info['additional_information']}}</p>
+            </div>
+        </div>
+    </div> <!-- col -->
+    <div class="col-md-5">
+      <div id="view"></div>
+    </div>
+</div> <!-- row -->
+
+
+<div class="row">
+</div>
+<div class="btn-group process-all-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    Process All <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+  </ul>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h3>Requested Parameter Points</h3>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+      {% for i,pp in parpoints %}
+
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading_{{loop.index}}">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_{{loop.index}}" aria-expanded="true" aria-controls="collapse_{{loop.index}}">
+              Parameter Point {{loop.index}} 
+            </a>
+          </h4>
+          <span class="label label-default">{{basic_req_data.get(pp['id'],[])|length}} Basic Requests</span>
+          {% for k,v in point_coordinates[pp['id']].iteritems() %}
+          <span class="label label-default">{{k}}: {{v}}</span>
+          {% endfor %}
+        </div>
+        <div id="collapse_{{loop.index}}" class="panel-collapse collapse {{'%s' % 'in' if loop.index == 1}}" role="tabpanel" aria-labelledby="heading_{{loop.index}}">
+          <div class="panel-body">
+            {% if basic_req_data[pp['id']] %}
+            <ul class="list-group">
+              {% for br in basic_req_data[pp['id']] %}
+                <li class="list-group-item">
+                    <strong>Basic Request {{loop.index}}: </strong
+                    ><span class="label label-default">Format: {{br['request_format']}}</span>
+
+
+                    <!-- The UI buttons -->
+                    <span>
+                    <!-- Single button -->
+                    <div class="btn-group process-group">
+                      <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Process <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                      {% for wc,wc_details in wflow_configs.iteritems() %}
+                        {% if wc_details['request_format'] ==  br['request_format'] %}
+                        <li><a href="#" class="btn btn-xs process-btn" data-basic-req-id="{{br['id']}}" data-wflowconfig="{{wc}}">{{wc}} ({{wc_details['request_format']}})</a></li>
+                        {% else %}
+                        <li><a href="#" class="btn btn-xs disabled" data-basic-req-id="{{br['id']}}" data-wflowconfig="{{wc}}">{{wc}} ({{wc_details['request_format']}})</a></li>
+                        {% endif %}
+                      {% endfor %}
+                      </ul>
+                    </div>
+                    <button id="show-jobs-btn"type="button" class="btn btn-primary btn-xs" aria-label="Left Align" onclick="togglejobs({{br['id']}})">
+                      <span class="glyphicon glyphicon-tasks" aria-hidden="true" style="margin-right:1em"></span><span id="jobslabel_{{br['id']}}">Show Processings</span>
+                    </button>
+                    <!-- Single button -->
+                    <div class="btn-group results-group" data-basic-req-id="{{br['id']}}">
+                      <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Results <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                      {% for wc in wflow_configs.keys() %}
+                        <li><a href="/resultview/{{request_info['analysis_id']}}/{{wc}}/{{br['id']}}" class="btn btn-xs result-btn" data-basic-req-id="{{br['id']}}" data-wflowconfig="{{wc}}">{{wc}}</a></li>
+                      {% endfor %}
+                      </ul>
+                    </div>
+
+
+                    <!-- Single button -->
+                    <div class="btn-group upload-group" data-basic-req-id="{{br['id']}}">
+                      <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="glyphicon glyphicon-upload" aria-hidden="true" style="margin-right:1em"></span> <span>Upload to RECAST</span> <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                      {% for wc in wflow_configs.keys() %}
+                        <li><a class="btn btn-xs upload-response-btn"
+                              data-point-req-id="{{pp['id']}}"
+                              data-basic-req-id="{{br['id']}}"
+                              data-wflowconfig="{{wc}}">{{wc}}</a>
+                        </li>
+                      {% endfor %}
+                      </ul>
+                    </div>
+
+                  </span>
+                  <div id="basicreq_jobs_{{br['id']}}" class="hidden">
+                    <h6>Backend Information:</h6>
+
+                    {%
+                      set state_map = {'SUCCESS':['ok','success'],'FAILURE':['remove','danger'],'PENDING':['hourglass','warning'],'STARTED':['cog','info']}
+                    %}
+
+                    {% for jobdata in processing_info[br['id']] %}
+                      <div>
+                        <span style="font-family:monospace;">{{jobdata['job']}}</a></span>
+                        <span class="label label-{{state_map[jobdata['status']][1]}}"><span class="glyphicon glyphicon-{{state_map[jobdata['status']][0]}}" aria-hidden="true"></span></span>
+                        <a href="/monitor/{{jobdata['job']}}"><span class="label label-default"><span class="glyphicon glyphicon-console" aria-hidden="true"></span> Logs</a></span></a>
+                      </div>
+                    {% endfor %}
+
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+
+
+  <div class="col-md-12">
+    <ul class="list-group">
+    {% for i,pp in parpoints %}
+        <li class="list-group-item">
+          <h6>Parameter Point {{pp['id']}}</h6>
+        </li>
+    {% endfor %}
+  </ul>
+  </div>
+</div>
+
+
+
+<div id="upload-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+           <h4 class="modal-title">Success</h4>
+      </div>
+      <div class="modal-body">
+          Uploaded latest result file to RECAST server.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+{% endblock %}
