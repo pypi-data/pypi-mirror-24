@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+git_lambda/.DS_Store
+git_lambda/__init__.py
+git_lambda/git-2.14.0.tar.gz
+git_lambda.egg-info/PKG-INFO
+git_lambda.egg-info/SOURCES.txt
+git_lambda.egg-info/dependency_links.txt
+git_lambda.egg-info/top_level.txt
