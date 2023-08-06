@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: nexradaws
+Version: 1.0
+Summary: Query and download NEXRAD data from AWS S3 storage.
+Home-page: https://github.com/aarande/nexradaws
+Author: Aaron Anderson
+Author-email: aaron.anderson74@yahoo.com
+License: MIT
+Download-URL: https://github.com/aarande/nexradaws/archive/1.0.tar.gz
+Description: This module is designed to allow you to query and download Nexrad
+        radar files from Amazon Web Services S3 Storage. The real-time feed and full historical archive of original
+        resolution (Level II) NEXRAD data, from June 1991 to present, is now freely available on Amazon S3 for anyone to use.
+        More information can be found here https://aws.amazon.com/public-datasets/nexrad/.
+        
+        If pyart is installed nexradaws allows you to quickly get pyart objects of downloaded files.
+        
+        nexradaws supports Python 2.7 and Python 3.6.
+        
+        Github - https://github.com/aarande/nexradaws
+        
+        PyPi - https://pypi.python.org/pypi/nexradaws
+        
+        Docs - http://nexradaws.readthedocs.io/en/latest/
+        
+        **Required dependencies**
+        
+        * boto3
+        * pytz
+        * six
+        
+        **Optional dependencies**
+        
+        * pyart
+        
+        **Install with pip**::
+        
+            pip install nexradaws
+Keywords: weather,radar,nexrad,aws,amazon
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
