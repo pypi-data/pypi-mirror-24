@@ -1,0 +1,2 @@
+ipyxact>=0.2.3
+simplesat>=0.8.0
