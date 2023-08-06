@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+shcli/__init__.py
+shcli/api.py
+shcli/cli.py
+shcli.egg-info/PKG-INFO
+shcli.egg-info/SOURCES.txt
+shcli.egg-info/dependency_links.txt
+shcli.egg-info/entry_points.txt
+shcli.egg-info/requires.txt
+shcli.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/api/__init__.py
+tests/api/test_create.py
+tests/cli/__init__.py
+tests/cli/test_create.py
