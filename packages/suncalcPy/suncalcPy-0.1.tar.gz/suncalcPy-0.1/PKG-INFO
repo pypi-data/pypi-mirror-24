@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: suncalcPy
+Version: 0.1
+Summary: A python library for calculating sun position, sunlight phases, moon position and lunar phases for a given location and time.
+Home-page: https://github.com/broham/suncalcpy
+Author: Abe Miessler
+Author-email: abemiesler@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/broham/suncalcpy/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: sun,moon,phases,position,time,location
+Platform: UNKNOWN
