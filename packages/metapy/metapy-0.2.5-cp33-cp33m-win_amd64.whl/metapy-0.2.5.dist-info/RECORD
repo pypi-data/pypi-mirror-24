@@ -1,0 +1,13 @@
+metapy/__init__.py,sha256=B2eG72PukWQMsS8RR09JhEgiuXn3aXPNMI5GYM5lmHo,46
+metapy/libgcc_s_seh-1.dll,sha256=ylClh5Th_32SlOnQn1YFqlCcTVuVrI4Uf2G0ZM4SkFw,83150
+metapy/libmetapy.dll.a,sha256=AAgZA4A7lUXd79YB9PBExdoF5T2kB7zNURMVJ4HpiHI,1420
+metapy/libstdc++-6.dll,sha256=RBKVAj2vM6L48AVvp-cGSRMmDENx2KkQI5QvqgBE-VI,1434761
+metapy/libwinpthread-1.dll,sha256=1G60I0n3PTVVWtvF42r0j3rtK0BUcWevuNOzXoQJnq8,56978
+metapy/metapy.pyd,sha256=-zf2sOVX8PNribVHUddtR9XylC10P9_ZBNtkYxPMcVs,37706101
+metapy/zlib1.dll,sha256=TneWElPPGuCYHX8zhPUnjad8r6PXdlUNgQwcQ_c7ztQ,93830
+metapy-0.2.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+metapy-0.2.5.dist-info/METADATA,sha256=5slTEXTRJGgEnJ4HFFdo4-o0Rxw5xbOsV6LRJ_-gYrI,1257
+metapy-0.2.5.dist-info/RECORD,,
+metapy-0.2.5.dist-info/WHEEL,sha256=i1flLVXjD3-osCxVhRTT_0ATQQwEMYVIc5-9r4Sisck,106
+metapy-0.2.5.dist-info/metadata.json,sha256=PdedboDqoQ8zLsRgfj4P8Qe2zTDG1Hah7gxXMJZcpr0,1373
+metapy-0.2.5.dist-info/top_level.txt,sha256=KeC1Xz4OuuhJyV7rbsDdGjm5ALud0tvZPCQLAzi_z_0,7
