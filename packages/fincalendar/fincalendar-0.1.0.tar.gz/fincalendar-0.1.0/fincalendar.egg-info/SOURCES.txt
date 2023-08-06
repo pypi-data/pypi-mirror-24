@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+fincalendar.egg-info/PKG-INFO
+fincalendar.egg-info/SOURCES.txt
+fincalendar.egg-info/dependency_links.txt
+fincalendar.egg-info/requires.txt
+fincalendar.egg-info/top_level.txt
