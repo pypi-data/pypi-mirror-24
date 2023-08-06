@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: orderedobject
+Version: 0.0.1
+Summary: An orderedobject unreferences its attributes with a deterministic order
+Home-page: UNKNOWN
+Author: Yu Feng
+Author-email: UNKNOWN
+License: BSD-2-Clause
+Description: UNKNOWN
+Platform: UNKNOWN
