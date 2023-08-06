@@ -1,0 +1,14 @@
+ccxt/__init__.py,sha256=zY7XBLaG2LykZi6eeF6s3GDmgZ4qR6hJXYOO8hVr3Mw,2176
+ccxt/errors.py,sha256=_7kkM2llkF1dsY3ZM0TCA4uMLdZopGqNWLOhakXyP3E,1959
+ccxt/exchange.py,sha256=L7TD1BL1NnUOw6TL4OU8asMEvxeiYJ4H4IhSnloTzvk,24295
+ccxt/exchanges.py,sha256=lGlUfCsF7E-gz4vCOElhdW_L4ykAgZSmGCH_di278Aw,576361
+ccxt/version.py,sha256=47rHIpYOTM0gbAKM5p8lfY16rN-LjwyOlp17EOBzdb4,1287
+ccxt/async/__init__.py,sha256=X0vYKmWsJCA4N0sXfCm4tQfOiIpRFpockDWhQtLfLhY,2221
+ccxt/async/exchange.py,sha256=Z9Ni-JQ4yL9r5tuLfAhFQKq947qDvYG6ZTr3nF-uUlU,8548
+ccxt/async/exchanges.py,sha256=cqZC4bL035cBEcDKdzot0mpGHU1PFvWKEmEu2dpMlhc,582895
+ccxt-1.6.1.dist-info/DESCRIPTION.rst,sha256=4EZ7H19W-OaY604Vst3nGr-6ksHggi51jeN0uUX-S8w,50168
+ccxt-1.6.1.dist-info/METADATA,sha256=EKoC5s2ap0OBxU__xtm_o-j5CSmjts_hG4r_pQmTNfY,53267
+ccxt-1.6.1.dist-info/RECORD,,
+ccxt-1.6.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+ccxt-1.6.1.dist-info/metadata.json,sha256=_S1BEQfTMCNgchJV4VzQlse4uI9Os_n16GT0p9NpGik,3686
+ccxt-1.6.1.dist-info/top_level.txt,sha256=CkQDuCTDKNcImPV60t36G6MdYfxsAPNiSaEwifVoVMo,5
