@@ -1,0 +1,6 @@
+requests
+python-magic
+
+[dev]
+
+[test]
