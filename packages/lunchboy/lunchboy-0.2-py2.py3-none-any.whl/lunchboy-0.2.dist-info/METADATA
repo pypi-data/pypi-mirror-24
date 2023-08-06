@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: lunchboy
+Version: 0.2
+Summary: Lunch without #lunch
+Home-page: http://github.com/lisunshiny/lunchboy
+Author: Liann Sun
+Author-email: liann@appboy.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: Scrapy
+
+UNKNOWN
+
+
