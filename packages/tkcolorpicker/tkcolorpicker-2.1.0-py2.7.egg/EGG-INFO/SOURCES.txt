@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+changelog
+setup.py
+tkcolorpicker.egg-info/PKG-INFO
+tkcolorpicker.egg-info/SOURCES.txt
+tkcolorpicker.egg-info/dependency_links.txt
+tkcolorpicker.egg-info/top_level.txt
