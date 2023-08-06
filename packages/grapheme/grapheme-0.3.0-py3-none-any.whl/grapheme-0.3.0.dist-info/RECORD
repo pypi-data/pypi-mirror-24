@@ -1,0 +1,11 @@
+grapheme/__init__.py,sha256=oY0W1Ut20U5mTlIKE9hIpnrEToli7g9VRtkVOGuE1Wc,277
+grapheme/api.py,sha256=1brVKqd00U7eBSOxtjEWsG5Yf1peLCDIIF7rZqb1O6U,6771
+grapheme/finder.py,sha256=_5wtO9iW6cPhxsFNVIk1s9GGugoBBlmtEfkGC1NYBwk,5649
+grapheme/grapheme_property_group.py,sha256=qWqGMkcgAQBy6W-hZ4fAozy0yfb_AvXJYpHXBc1-J2w,3869
+grapheme/data/grapheme_break_property.json,sha256=CT994I6WB0NqIqeOOjzzm88jzgaKW3veqf8BmYytisM,48214
+grapheme-0.3.0.dist-info/DESCRIPTION.rst,sha256=pRowMRqXH5TobQjQrag2F-UlhOV_C-LmVLDVfk25yS4,4815
+grapheme-0.3.0.dist-info/METADATA,sha256=rJs4qjV48vK6Zpck0QjKRXaW3RfpIp3CGft-w7jQIgY,5575
+grapheme-0.3.0.dist-info/RECORD,,
+grapheme-0.3.0.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+grapheme-0.3.0.dist-info/metadata.json,sha256=cEmn_qYwBKOF4i2mmJ9jPozcP0UTwvAes3nPNpcdvvU,857
+grapheme-0.3.0.dist-info/top_level.txt,sha256=aI317Cnll2drrAuBOseMkxl72pcXsw8Vg3CsRz3tO7E,9
