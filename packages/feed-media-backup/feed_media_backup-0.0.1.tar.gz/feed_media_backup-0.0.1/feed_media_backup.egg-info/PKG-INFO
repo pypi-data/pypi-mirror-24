@@ -1,0 +1,60 @@
+Metadata-Version: 1.1
+Name: feed-media-backup
+Version: 0.0.1
+Summary: Backups media from blog RSS feeds.
+Home-page: https://github.com/xsteadfastx/feed_media_backup
+Author: Marvin Steadfast
+Author-email: marvin@xsteadfastx.org
+License: MIT
+Description: feed\_media\_backup
+        ===================
+        
+        |Build Status| |codecov|
+        
+        ``feed_media_backup`` is a simple downloader of feed media. Some weeks
+        ago i browsed my blog and found out that alot of media i linked and
+        shared are no longer available. This is pretty bad for people browsing
+        the blog or even found it through a web search. Its also frustrating if
+        you use the blog as log for things you dont want to forget or
+        appriciate.
+        
+        With this little script you have the chance to backup it at least for
+        yourself. Thanks to `youtube-dl <https://github.com/rg3/youtube-dl>`__.
+        
+        **This is a educational experiment and should never be used to steal
+        anything or violate any copyrights!!1!!!11!**
+        
+        ::
+        
+            Usage: feed_media_backup [OPTIONS] FEED DEST
+        
+              Backups media from blog RSS feeds.
+        
+            Options:
+              -f, --force    No matter if already worked through feed item.
+              -v, --verbose  More verbose.
+              --version      Show the version and exit.
+              --help         Show this message and exit.
+        
+        Install
+        -------
+        
+        **Again... dont violate any copyrights!1!!!1!!**
+        
+        There are a few options to install ``feed_media_backup``:
+        
+        1. ``pip install feed_media_backup``
+        2. ``pip install git+https://github.com/xsteadfastx/feed_media_backup#egg=feed_media_backup``
+        3. ``git clone https://github.com/xsteadfastx/feed_media_backup.git && cd feed_media_backup && pipenv --three && pipenv install && pipenv run pip install -e .``
+        
+        .. |Build Status| image:: https://travis-ci.org/xsteadfastx/feed_media_backup.svg?branch=master
+           :target: https://travis-ci.org/xsteadfastx/feed_media_backup
+        .. |codecov| image:: https://codecov.io/gh/xsteadfastx/feed_media_backup/branch/master/graph/badge.svg
+           :target: https://codecov.io/gh/xsteadfastx/feed_media_backup
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
