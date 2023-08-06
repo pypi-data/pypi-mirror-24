@@ -1,0 +1,11 @@
+requests
+Click
+flake8
+xmltodict
+biopython
+dicttoxml
+codecov
+pytest-cov
+
+[testing]
+pytest
