@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+django_highlander.egg-info/PKG-INFO
+django_highlander.egg-info/SOURCES.txt
+django_highlander.egg-info/dependency_links.txt
+django_highlander.egg-info/not-zip-safe
+django_highlander.egg-info/requires.txt
+django_highlander.egg-info/top_level.txt
+djangohighlander/__init__.py
+djangohighlander/command.py
