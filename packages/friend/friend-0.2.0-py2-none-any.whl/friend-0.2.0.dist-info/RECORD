@@ -1,0 +1,11 @@
+friend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+friend/collections.py,sha256=PPcGq7oqmlMx7071as4NkAmVLiU5qLLwTvA8Qh6E98k,2372
+friend/net.py,sha256=c2P0HZBs8S_lHArqYy2psRiPs4oZwWRHwaBCy9iiG6E,1597
+friend/strings.py,sha256=uWZOXzItn963ArWgcaM9BvReWHFtTMZSdJgQWaCqLlk,12151
+friend/utils.py,sha256=PPLA1M4-K8aVeMttwGk2LKzY7aVdFDmF6njL2lZxQIQ,5579
+friend-0.2.0.dist-info/DESCRIPTION.rst,sha256=h9fvqxDUPMFrtGhXSBCGZhBdS2JJiNnrmqAtkfFHxCU,1588
+friend-0.2.0.dist-info/METADATA,sha256=j5lzJFo8oPNr-V5uu86HUrTpKWgH8L7fIw4GCAyoYsI,1884
+friend-0.2.0.dist-info/RECORD,,
+friend-0.2.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+friend-0.2.0.dist-info/metadata.json,sha256=ndhRBDjLnNFZDMJCd8dBsvHD7_K6q3wgnPxoP72_OmQ,501
+friend-0.2.0.dist-info/top_level.txt,sha256=jotNZPcEx6aqYyp-bCAk5Pn-15yqwxnmu3dU21h-b1g,7
