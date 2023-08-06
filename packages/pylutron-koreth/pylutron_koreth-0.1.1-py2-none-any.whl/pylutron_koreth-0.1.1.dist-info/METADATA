@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: pylutron-koreth
+Version: 0.1.1
+Summary: Python library for Lutron RadioRA 2
+Home-page: http://github.com/koreth/pylutron
+Author: Steven Grimm
+Author-email: koreth@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+UNKNOWN
+
+
