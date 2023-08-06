@@ -1,0 +1,7 @@
+[console_scripts]
+pydpi-gen-mod = pydpi.utils:run_gen_mod
+pydpi-build = pydpi.utils:run_build_bridge
+pydpi-gen-param = pydpi.utils:run_gen_param
+pydpi-gen = pydpi.utils:run_gen
+pydpi-run = pydpi.utils:run_run
+

@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: python-svlog
+Version: 0.1.0
+Summary: Verilog development framework with DPI-python verification utils
+Home-page: https://github.com/hchsiao/python-svlog
+Author: Hsiang-Chih Hsiao
+Author-email: hchsiao@vlsilab.ee.ncku.edu.tw
+License: MIT
+Description: python-svlog
+        =======================
+        
+        Verilog development framework with DPI-python verification utils
+        
+        ----
+        
+        pydpi-gen
+        
+        pydpi-build
+        
+        pydpi-run
+        
+        TODO: 
+        insert file headers
+        
+Keywords: sample setuptools development
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
