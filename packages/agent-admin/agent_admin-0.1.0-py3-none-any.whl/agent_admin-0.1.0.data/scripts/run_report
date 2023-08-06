@@ -1,0 +1,6 @@
+#!python
+
+from admin.event_reporter import EventReporter
+
+if __name__ == "__main__":
+    EventReporter().start()

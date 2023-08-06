@@ -1,0 +1,5 @@
+#!python
+from admin.config_manager import ConfigManager
+
+if __name__ == "__main__":
+    ConfigManager().start()

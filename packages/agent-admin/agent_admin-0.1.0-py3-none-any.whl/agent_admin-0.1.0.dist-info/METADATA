@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: agent-admin
+Version: 0.1.0
+Summary: Agent Admin
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: __license__
+Platform: UNKNOWN
+Requires-Dist: libnacl
+Requires-Dist: base58
+Requires-Dist: requests
+
+Agent Admin
+
+
