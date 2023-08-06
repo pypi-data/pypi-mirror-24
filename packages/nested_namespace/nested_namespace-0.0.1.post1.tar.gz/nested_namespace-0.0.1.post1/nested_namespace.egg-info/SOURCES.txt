@@ -1,0 +1,14 @@
+.gitignore
+.pylintrc
+MANIFEST.in
+Makefile
+README.rst
+setup.py
+nested_namespace/__init__.py
+nested_namespace/namespace.py
+nested_namespace/namespace_test.py
+nested_namespace.egg-info/PKG-INFO
+nested_namespace.egg-info/SOURCES.txt
+nested_namespace.egg-info/dependency_links.txt
+nested_namespace.egg-info/requires.txt
+nested_namespace.egg-info/top_level.txt
