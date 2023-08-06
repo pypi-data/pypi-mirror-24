@@ -1,0 +1,460 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Paasta API",
+    "version": "1.0.0"
+  },
+  "basePath": "/v1",
+  "schemes": ["http"],
+  "consumes": ["application/x-www-form-urlencoded"],
+  "produces": ["application/json"],
+  "tags": [
+    {
+      "name": "service",
+      "description": "information about a paasta service"
+    }
+  ],
+  "paths": {
+    "/version": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Version of paasta_tools package",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "summary": "Version of paasta_tools package",
+        "operationId": "showVersion"
+      }
+    },
+    "/resources/utilization": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Resources in the cluster, filtered and grouped by parameters",
+            "schema": {
+              "$ref":"#/definitions/Resource"
+            }
+          },
+          "400": {
+            "description": "Poorly formated query parameters"
+          }
+        },
+        "summary": "Get resources in the cluster",
+        "operationId": "resources",
+        "tags": ["resources"],
+        "parameters": [
+          {
+            "in": "query",
+            "description": "comma separated list of keys to group by",
+            "name": "groupings",
+            "required": false,
+            "type": "array",
+            "collectionFormat": "csv",
+            "items": {"type": "string"}
+          },
+          {
+            "in": "query",
+            "description": "List of slave filters in format 'filter=attr_name:value1,value2&filter=attr2:value3,value4'. Matches attr_name=(value1 OR value2) AND attr2=(value3 OR value4)",
+            "name": "filter",
+            "required": false,
+            "type": "array",
+            "collectionFormat": "multi",
+            "items": {
+              "type": "string",
+              "pattern": "(.*):(.*,)*(.*)"
+            }
+          }
+        ]
+      }
+    },
+    "/services/{service}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Instances of a service",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "instances": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "summary": "List instances of service_name",
+        "operationId": "list_instances",
+        "tags": ["service"],
+        "parameters": [
+          {
+            "in": "path",
+            "description": "Service name",
+            "name": "service",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/services/{service}/{instance}/status": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Detailed status of an instance",
+            "schema": {
+                "$ref":"#/definitions/InstanceStatus"
+            }
+          },
+          "404": {
+            "description": "Deployment key not found"
+          },
+          "500": {
+            "description": "Instance failure"
+          }
+        },
+        "summary": "Get status of service_name.instance_name",
+        "operationId": "status_instance",
+        "tags": ["service"],
+        "parameters": [
+          {
+            "in": "path",
+            "description": "Service name",
+            "name": "service",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "description": "Instance name",
+            "name": "instance",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/services/{service}/{instance}/tasks": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "List of tasks associated with an instance",
+            "schema": {
+                "$ref":"#/definitions/InstanceTasks"
+            }
+          },
+          "404": {
+            "description": "Deployment key not found"
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "500": {
+            "description": "Instance failure"
+          }
+        },
+        "summary": "Get mesos tasks of service_name.instance_name",
+        "operationId": "tasks_instance",
+        "tags": ["service"],
+        "parameters": [
+          {
+            "in": "path",
+            "description": "Service name",
+            "name": "service",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "description": "Instance name",
+            "name": "instance",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "description": "slave hostname to filter tasks by",
+            "name": "slave_hostname",
+            "required": false,
+            "type": "string"
+	  },
+          {
+            "in": "query",
+            "description": "Return slave and executor for task",
+            "name": "verbose",
+            "required": false,
+            "type": "boolean"
+	  }
+        ]
+      }
+    },
+    "/services/{service}/{instance}/tasks/{task_id}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Task associated with an instance with specified ID",
+            "schema": {
+                "$ref":"#/definitions/InstanceTask"
+            }
+          },
+          "404": {
+            "description": "Task with ID not found"
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "500": {
+            "description": "Instance failure"
+          }
+        },
+        "summary": "Get mesos task of service_name.instance_name by task_id",
+        "operationId": "task_instance",
+        "tags": ["service"],
+        "parameters": [
+          {
+            "in": "path",
+            "description": "Service name",
+            "name": "service",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "description": "Instance name",
+            "name": "instance",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "description": "mesos task id",
+            "name": "task_id",
+            "required": true,
+            "type": "string"
+	  },
+          {
+            "in": "query",
+            "description": "Return slave and executor for task",
+            "name": "verbose",
+            "required": false,
+            "type": "boolean"
+	  }
+        ]
+      }
+    },
+    "/services/{service}/{instance}/autoscaler": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Get desired instance count for a service instance",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "desired_instances": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Deployment key not found"
+          },
+          "500": {
+            "description": "Instance failure"
+          }
+        },
+        "summary": "Get status of service_name.instance_name",
+        "operationId": "get_autoscaler_count",
+        "tags": ["autoscaler"],
+        "parameters": [
+          {
+            "in": "path",
+            "description": "Service name",
+            "name": "service",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "description": "Instance name",
+            "name": "instance",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "202": {
+            "description": "Set desired instance count for a service instance",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "desired_instances": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Deployment key not found"
+          },
+          "500": {
+            "description": "Instance failure"
+          }
+        },
+        "summary": "Get status of service_name.instance_name",
+        "operationId": "update_autoscaler_count",
+        "tags": ["autoscaler"],
+        "parameters": [
+          {
+            "in": "path",
+            "description": "Service name",
+            "name": "service",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "description": "Instance name",
+            "name": "instance",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "json_body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "desired_instances": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "InstanceStatus": {
+      "type": "object",
+      "properties": {
+        "service": {
+          "type": "string",
+          "description": "Service name"
+        },
+        "instance": {
+          "type": "string",
+          "description": "Instance name"
+        },
+        "git_sha": {
+          "type": "string",
+          "description": "Git sha of a service"
+        },
+        "marathon": {
+          "$ref": "#/definitions/InstanceStatusMarathon",
+          "description": "Marathon specific instance status"
+        }
+      }
+    },
+    "InstanceStatusMarathon": {
+      "type": "object",
+      "properties": {
+        "desired_state": {
+          "type": "string",
+          "description": "Desired state of a service, for both Marathon and Chronos",
+          "enum": ["start", "stop"]
+        },
+        "app_count": {
+          "type": "integer",
+          "format": "int32",
+          "description": "The number of different running versions of the same service (0 for stopped, 1 for running and 1+ for bouncing)"
+        },
+        "app_id": {
+          "type": "string",
+          "description": "ID of the desired version of a service instance"
+        },
+        "bounce_method": {
+          "type": "string",
+          "description": "Method to transit between new and old versions of a service",
+          "enum": ["brutal", "upthendown", "downthenup", "crossover"]
+        },
+        "deploy_status": {
+          "type": "string",
+          "description": "Deploy status of a marathon service",
+          "enum": ["Running", "Deploying", "Stopped", "Delayed", "Waiting", "NotRunning"]
+        },
+        "backoff_seconds": {
+          "type": "integer",
+          "format": "int32",
+          "description": "backoff in seconds before launching the next task"
+        },
+        "running_instance_count": {
+          "type": "integer",
+          "format": "int32",
+          "description": "The number of actual running instances of the service"
+        },
+        "expected_instance_count": {
+          "type": "integer",
+          "format": "int32",
+          "description": "The number of desired instances of the service"
+        },
+        "error_message": {
+          "type": "string",
+          "description": "Error message when a marathon job ID cannot be found"
+        }
+      },
+      "required": [
+        "desired_state",
+        "app_count",
+        "bounce_method"
+      ]
+    },
+    "InstanceTasks": {
+      "type": "array",
+      "description": "List of tasks associated with instance",
+      "items": {"$ref": "#/definitions/InstanceTask"}
+    },
+    "InstanceTask": {
+      "type": "object"
+    },
+    "Resource": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/ResourceItem"}
+    },
+    "ResourceItem": {
+      "type": "object",
+      "properties": {
+        "groupings": {
+          "type": "object"
+        },
+        "cpus": {
+          "$ref": "#/definitions/ResourceValue"
+        },
+        "mem": {
+          "$ref": "#/definitions/ResourceValue"
+        },
+        "disk": {
+          "$ref": "#/definitions/ResourceValue"
+        }
+      }
+    },
+    "ResourceValue": {
+      "type": "object",
+      "properties": {
+        "free": {"type": "number"},
+        "used": {"type": "number"},
+        "total": {"type": "number"}
+      }
+    }
+  }
+}
