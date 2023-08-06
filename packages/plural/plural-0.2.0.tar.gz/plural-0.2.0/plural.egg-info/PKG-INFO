@@ -1,0 +1,34 @@
+Metadata-Version: 1.0
+Name: plural
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: https://github.com/gabrielfalcao/plural
+Author: Gabriel Falcao
+Author-email: gabriel@nacaolivre.org
+License: UNKNOWN
+Description: .. image:: https://travis-ci.org/gabrielfalcao/plural.svg?branch=master
+            :target: https://travis-ci.org/gabrielfalcao/plural
+        
+        
+        Plural - A git-backed graph database as a library
+        =================================================
+        
+        .. image:: docs/source/_static/logo.png
+        
+        
+        
+        
+        Instalation
+        -----------
+        
+        .. code:: bash
+        
+            pip install plural
+        
+        
+        Usage
+        -----
+        
+        Available in the `tutorial <docs/source/tutorial.rst>`_.
+        
+Platform: UNKNOWN
