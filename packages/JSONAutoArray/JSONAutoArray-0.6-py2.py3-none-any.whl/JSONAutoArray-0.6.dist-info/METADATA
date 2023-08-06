@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: JSONAutoArray
+Version: 0.6
+Summary: Write self-closing array to JSON file
+Home-page: https://github.com/kphretiq/json-autoarray
+Author: pathetiq kphretiq
+Author-email: kphretiq@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/kphretiq/json-autoarray
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+
+conveniently write json-serializable python objects to an array in a file
+
+
