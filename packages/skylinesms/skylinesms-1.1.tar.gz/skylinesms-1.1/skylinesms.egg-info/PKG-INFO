@@ -1,0 +1,65 @@
+Metadata-Version: 1.1
+Name: skylinesms
+Version: 1.1
+Summary: A module to send sms using the Skyline SMS REST apis, www.skylinesms.com
+Home-page: https://github.com/assekalala/python-skyline-sms.git
+Author: Abdu Ssekalala
+Author-email: assekalala@gmail.com
+License: UNKNOWN
+Description: Python module for sending sms with Skylinesms
+        ----------------------------------------
+        
+        Installation
+        ~~~~~~~~~~~~
+        
+        .. code:: bash
+        
+            pip install skylinesms
+        
+        Usage example
+        ~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+            import time
+            from skylinesms import SkylineSms
+        
+            number = '256700123456'
+            message = 'Hello from Skyline!'
+        
+            client = SkylineSms(your_api_key)
+        
+            print("Sending '%s' to %s" % (message, number))
+            response = client.send_message(number, message)
+            message_id = response['reference']
+        
+            response = client.check_status(message_id)
+            while response['delivery'] != 'Delivered':
+                print(response['status'])
+                time.sleep(1)
+                response = client.check_status(message_id)
+            print(response['status'])
+        
+        .. note::
+        
+            You will need a Skyline sms account for getting your api key and secret. Visit www.skylinesms.com to get started.
+        
+        Using as command line script
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code:: bash
+        
+            ./skylinesms.py
+            usage: skylinesms.py <application key> send <number> <message> <from_number>
+                   skylinesms.py <application key> status <message_id>
+                   skylinesms.py <application key> balance
+Keywords: sms,skyline
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications
+Classifier: Development Status :: 4 - Beta

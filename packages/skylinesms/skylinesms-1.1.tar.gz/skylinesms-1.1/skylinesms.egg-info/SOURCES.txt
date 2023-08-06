@@ -1,0 +1,8 @@
+MANIFEST.in
+README.rst
+setup.py
+skylinesms.py
+skylinesms.egg-info/PKG-INFO
+skylinesms.egg-info/SOURCES.txt
+skylinesms.egg-info/dependency_links.txt
+skylinesms.egg-info/top_level.txt
