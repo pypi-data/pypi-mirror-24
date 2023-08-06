@@ -1,0 +1,88 @@
+Metadata-Version: 2.0
+Name: django-xtc
+Version: 0.1.1
+Summary: eXtra Test Cases for Django
+Home-page: http://github.com/melvyn-sopacua/django_xtc
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: BSD 2-Clause License
+Requires-Dist: Django (>=1.9)
+Provides-Extra: contributor
+Requires-Dist: coverage (>=4.4.1); extra == 'contributor'
+Requires-Dist: sphinx (>=1.6); extra == 'contributor'
+Requires-Dist: twine; extra == 'contributor'
+Provides-Extra: docs
+Requires-Dist: sphinx (>=1.6); extra == 'docs'
+Provides-Extra: rtd
+Requires-Dist: sphinx (>=1.6); extra == 'rtd'
+Requires-Dist: sphinx-rtd-theme; extra == 'rtd'
+
+Copyright (c) 2017, Melvyn Sopacua
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Description: Django eXtra Test Cases
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        
+        Django's test cases focus on test cases for use with a database.
+        
+        This is excellent as it is the hardest thing to do right. Yet, when creating
+        (reusable) apps that do not have any models or testing views that do not use
+        any models, you often find yourself doing the same thing with SimpleTestCase.
+        
+        This issue is the focus of Django XTC.
+        
+        TemplateTestCase
+        ^^^^^^^^^^^^^^^^
+        
+        The core test case for testing templates. Requires a template test directory
+        which can be set on the class level and will fall back to TEMPLATE_TEST_DIR
+        using Django's settings_.
+        
+        Below this directory, at least two subdirectories are used:
+        
+            - ``src``: The template code
+            - ``expect``: The expected output of that template code
+            - ``actual``: (optional) Used if the output is to be saved for post-mortem
+                analysis.
+        
+        At the core is the test method `assertTemplateEqual`, which compares the
+        expected template code with the actual. The template context (the variables)
+        can be manipulated using the `template_context` attribute.
+        
+        .. _settings: https://docs.djangoproject.com/en/1.11/topics/settings/
+        
+Keywords: django unittests
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

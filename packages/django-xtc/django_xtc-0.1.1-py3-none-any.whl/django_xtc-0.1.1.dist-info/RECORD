@@ -1,0 +1,12 @@
+django_xtc-0.1.1.dist-info/DESCRIPTION.rst,sha256=fM7aomFTs0Rk44enUCu1OTNj3klSNiEdEg0_8YGRwZg,3318
+django_xtc-0.1.1.dist-info/METADATA,sha256=pvtNJ-RnE76yddVHmMMfB6CAyT2KSpiDHhUKg5Gr4VU,3930
+django_xtc-0.1.1.dist-info/RECORD,,
+django_xtc-0.1.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_xtc-0.1.1.dist-info/metadata.json,sha256=lDBAkV7Hlh6lxvQKFgoYoxscxuUjiNSlsRbjkJdb1gY,707
+django_xtc-0.1.1.dist-info/top_level.txt,sha256=8ctcrw6lcBszZ2n6yFpwPnIfY0HG09Jkp9yf1n_Ouz8,4
+xtc/__init__.py,sha256=2FlVRmxcxiRbM4s1jmZutBwVhvGamiWvQYBoO85bCv4,11388
+xtc/apps.py,sha256=l1UfJ2alTFdSnI-PmOh5nBqfda1kZa1HEMr6HKmYJgA,81
+xtc/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+xtc/tests.py,sha256=AsoXWynavvWUkz-uaaTTwWJBNXWQUuts0XVsQu53-ag,1751
+xtc/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+xtc/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
