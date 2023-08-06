@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: robotframework-MarcinKoperski
+Version: 0.0.42
+Summary: RobotFramework Marcin Koperski bundle
+Home-page: https://github.com/IlfirinPL/robotframework-MarcinKoperski
+Author: Marcin Koperski
+Author-email: marcin.koperski+github@gmail.com
+License: AGPL
+Download-URL: https://github.com/IlfirinPL/robotframework-MarcinKoperski/archive/master.zip
+Description: UNKNOWN
+Keywords: robotframework,MarcinKoperski
+Platform: UNKNOWN
+Requires-Python: ~=2.7
