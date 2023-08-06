@@ -1,0 +1,15 @@
+LICENSING
+MANIFEST.in
+README.rst
+croaring_build.py
+setup.py
+croaring/__init__.py
+croaring-src/roaring.c
+croaring-src/roaring.h
+croaring.egg-info/PKG-INFO
+croaring.egg-info/SOURCES.txt
+croaring.egg-info/dependency_links.txt
+croaring.egg-info/requires.txt
+croaring.egg-info/top_level.txt
+test/test_croaring.py
+test/test_generative.py
