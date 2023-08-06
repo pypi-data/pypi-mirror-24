@@ -1,0 +1,25 @@
+Metadata-Version: 1.0
+Name: tsahelper
+Version: 0.3.1
+Summary: Useful preprocessing TSA HD-AIT image files.
+Home-page: http://pypi.python.org/pypi/tsahelper/
+Author: Brian Farrar
+Author-email: brian.farrar@mavenwave.com
+License: LICENSE.txt
+Description: ===========
+        TSA Helper
+        ===========
+        
+        TSA Helper provides a number of functions that are useful for preprocessing 
+        HD-AIT images provided by TSA for the Kaggle Passenger Screening Contest.  
+        Typical usage looks like:
+        
+            #!/usr/bin/env python
+        
+            import tsahelper as tsa
+        
+        Detailed example usage is also available at:
+        
+        https://www.kaggle.com/jbfarrar/exploratory-data-analysis-and-example-generation
+        
+Platform: UNKNOWN
