@@ -1,0 +1,41 @@
+Metadata-Version: 2.0
+Name: craftercms-sphinx-theme
+Version: 1.1.0a1
+Summary: CrafterCMS Docs theme for Sphinx
+Home-page: https://github.com/rart/craftercms-sphinx-theme/
+Author: Roy Art
+Author-email: royart@me.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+
+.. _readthedocs.org: http://www.readthedocs.org
+.. _bower: http://www.bower.io
+.. _sphinx: http://www.sphinx-doc.org
+.. _compass: http://www.compass-style.org
+.. _sass: http://www.sass-lang.com
+.. _wyrm: http://www.github.com/snide/wyrm/
+.. _grunt: http://www.gruntjs.com
+.. _node: http://www.nodejs.com
+.. _demo: http://docs.readthedocs.org
+.. _hidden: http://sphinx-doc.org/markup/toctree.html
+
+**************************
+CrafterCMS Sphinx Theme
+**************************
+
+
+
