@@ -1,0 +1,10 @@
+README.rst
+setup.py
+getlyrics/__init__.py
+getlyrics/__main__.py
+lyrics_dl.egg-info/PKG-INFO
+lyrics_dl.egg-info/SOURCES.txt
+lyrics_dl.egg-info/dependency_links.txt
+lyrics_dl.egg-info/entry_points.txt
+lyrics_dl.egg-info/requires.txt
+lyrics_dl.egg-info/top_level.txt
