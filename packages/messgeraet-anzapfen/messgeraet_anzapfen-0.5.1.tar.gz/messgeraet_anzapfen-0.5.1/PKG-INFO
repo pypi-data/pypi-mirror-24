@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: messgeraet_anzapfen
+Version: 0.5.1
+Summary: Anzapfen von Messgeräten und senden der Werte an einen Server
+Home-page: https://gitlab.com/messgeraet/anzapfen
+Author: Sebastian Stigler
+Author-email: sebastian@sebastian-stigler.de
+License: mit
+Description: ==================
+        messgraet_anzapfen
+        ==================
+        
+        
+        Anzapfen von Messgerät + senden an Server
+        
+        
+        Description
+        ===========
+        
+        A longer description of your project goes here...
+        
+        
+        Note
+        ====
+        
+        This project has been set up using PyScaffold 2.5.7. For details and usage
+        information on PyScaffold see http://pyscaffold.readthedocs.org/.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
