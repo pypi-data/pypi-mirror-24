@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+data/data_file
+scanalignment/__init__.py
+scanalignment/myRoll.py
+scanalignment/scanalignment.py
+scanalignment.egg-info/PKG-INFO
+scanalignment.egg-info/SOURCES.txt
+scanalignment.egg-info/dependency_links.txt
+scanalignment.egg-info/entry_points.txt
+scanalignment.egg-info/requires.txt
+scanalignment.egg-info/top_level.txt
