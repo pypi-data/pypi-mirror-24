@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: Flask-Sleuth
+Version: 0.0.6
+Summary: Spring Cloud Sleuth logging implementation for Python 2/3.
+Home-page: https://github.com/davidcarboni/flask_sleuth
+Author: David Carboni
+Author-email: david@carboni.io
+License: MIT
+Description: UNKNOWN
+Keywords: logging,b3,distributed,tracing,spring,boot,cloud,sleuth
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: Internet :: Log Analysis
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
