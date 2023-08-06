@@ -1,0 +1,9 @@
+TracPrivateTickets-2.2.0.dist-info/DESCRIPTION.rst,sha256=olK9aYSWeyRjgjs99bfw8Xcy_mbJ40g6emfRPs_cpFA,2389
+TracPrivateTickets-2.2.0.dist-info/METADATA,sha256=yzpKbwZKwZc-B36dURgXwmZnxCrOkHfkYOF6GJtOgQI,2754
+TracPrivateTickets-2.2.0.dist-info/RECORD,,
+TracPrivateTickets-2.2.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+TracPrivateTickets-2.2.0.dist-info/entry_points.txt,sha256=I4hiAWM71l8tnKNjCG-1pk_7QmfRpQ8uydH5bF-stLE,62
+TracPrivateTickets-2.2.0.dist-info/metadata.json,sha256=htQplGCGYKLpSQlJQ_rKRjerkblRX0nUnY2uIX7QsDQ,702
+TracPrivateTickets-2.2.0.dist-info/top_level.txt,sha256=gcgl-YTbME9WSF3e02ouxpM0NIKyywAGFAvgpz56ar0,15
+privatetickets/__init__.py,sha256=THkDC-HQ1QTV5V6D8YdPv63HExWhsKah-Z6WsEI-Nmo,59
+privatetickets/policy.py,sha256=ZtHyNKxd_pGxTeNmKznABRANUa9VsBocIcOt1c45YtY,4850
