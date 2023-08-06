@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: perseuspy
+Version: 0.1.1
+Summary: Utilities for integrating python scripts into Perseus workflows
+Home-page: http://www.github.com/jdrudolph/perseuspy
+Author: Jan Rudolph
+Author-email: jan.daniel.rudolph@gmail.com
+License: MIT
+Description: README on http://www.github.com/jdrudolph/perseuspy
+Platform: UNKNOWN
