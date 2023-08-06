@@ -1,0 +1,9 @@
+Authors.rst
+LICENSE.txt
+MANIFEST.in
+NEWS
+setup.cfg
+setup.py
+mgatk/__init__.py
+mgatk/cli.py
+mgatk/mgatkHelp.py

@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: mgatk
+Version: 0.2.5
+Summary: Processing and quality control of mitochondrial genome variants.
+Home-page: https://github.com/aryeelab/mgatk
+Author: Caleb Lareau and Jacob Ulirsch
+Author-email: caleblareau@g.harvard.edu
+License: MIT
+Description: 
+        mgatk: a mitochondrial genome analysis toolkit
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
