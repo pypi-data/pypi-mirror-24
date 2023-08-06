@@ -1,0 +1,4 @@
+requests>=2.4.3
+wrapt
+click
+pyyaml
