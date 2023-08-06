@@ -1,0 +1,8 @@
+setup.py
+scrapy_mailgun.egg-info/PKG-INFO
+scrapy_mailgun.egg-info/SOURCES.txt
+scrapy_mailgun.egg-info/dependency_links.txt
+scrapy_mailgun.egg-info/requires.txt
+scrapy_mailgun.egg-info/top_level.txt
+scrapymailgun/__init__.py
+scrapymailgun/extensions.py
