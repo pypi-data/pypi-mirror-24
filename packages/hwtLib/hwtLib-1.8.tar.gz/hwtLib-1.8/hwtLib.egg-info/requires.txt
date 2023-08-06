@@ -1,0 +1,2 @@
+hwt>=1.7
+Pillow
