@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+gt2_test_runner/__init__.py
+gt2_test_runner.egg-info/PKG-INFO
+gt2_test_runner.egg-info/SOURCES.txt
+gt2_test_runner.egg-info/dependency_links.txt
+gt2_test_runner.egg-info/requires.txt
+gt2_test_runner.egg-info/top_level.txt
