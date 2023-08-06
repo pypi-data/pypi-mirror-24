@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: celery-pubsub
+Version: 0.1.6
+Summary: A Publish and Subscribe library for Celery
+Home-page: https://github.com/Mulugruntz/celery-pubsub
+Author: Samuel GIFFARD
+Author-email: mulugruntz@gmail.com
+License: MIT
+Download-URL: https://github.com/Mulugruntz/celery-pubsub/tarball/0.1.6
+Description: UNKNOWN
+Keywords: celery,publish,subscribe,pubsub
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: Utilities
