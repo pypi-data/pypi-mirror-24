@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: threaded
+Version: 0.7.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: six
+Requires-Dist: typing (>=3.6)
+Requires-Dist: futures (>=3.1); python_version == "2.7"
+Requires-Dist: asyncio (>=3.4); python_version == "3.3"
+Provides-Extra: gevent
+Requires-Dist: gevent (>=1.2); extra == 'gevent'
+
+UNKNOWN
+
+
