@@ -1,0 +1,4 @@
+[console_scripts]
+validol = validol.main:main
+validol-conf = validol.migration_scripts.user_structures:main
+
