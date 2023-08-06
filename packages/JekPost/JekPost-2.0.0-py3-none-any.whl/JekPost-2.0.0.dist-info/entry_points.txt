@@ -1,0 +1,3 @@
+[console_scripts]
+jekpost = jekpost.jekpost:main
+
