@@ -1,0 +1,11 @@
+vidme/__init__.py,sha256=sYd2J5o_0xcsriv0XEnyMDpkomuqPI7yiYgL8Dm1ebs,103
+vidme/client.py,sha256=Ak-jVsKYmNRbFYz4Yct3dQfLpe3AE2MotzQ5ocOEsNs,3716
+vidme/gateway.py,sha256=2ia-a95PTXoPtjBBLFQpx2XtW4zrStg5W_VZ-iSTcwE,1735
+vidme/users.py,sha256=AmCVGBy_WyDj0Fn51Gy8eKxh8uBELsLhLVo8Sr20nvw,2936
+vidme/videos.py,sha256=h2LkLku3Gy0vKuIIq3lab4pW07mKHht3Y441Sf73Vjg,39
+vidme.py-0.1.0.dev2.dist-info/DESCRIPTION.rst,sha256=0NUJe-3gn2dcQwhkDKrxBVcCjqkBEbeMqPZx4cY8fA4,65
+vidme.py-0.1.0.dev2.dist-info/METADATA,sha256=W_2XtHw8JE5xbjOkA3bE9u1Yt_UNNBEGGjG9Y0EkFtg,603
+vidme.py-0.1.0.dev2.dist-info/RECORD,,
+vidme.py-0.1.0.dev2.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+vidme.py-0.1.0.dev2.dist-info/metadata.json,sha256=Z-tVh-7j5M6dCi7aWN-UxgCunsKI9_UachdRkrr7u7o,750
+vidme.py-0.1.0.dev2.dist-info/top_level.txt,sha256=3oXFlbHGQlIRIM1p1Bst2k-nu63Gw0OyxiBxEUw4Jho,6
