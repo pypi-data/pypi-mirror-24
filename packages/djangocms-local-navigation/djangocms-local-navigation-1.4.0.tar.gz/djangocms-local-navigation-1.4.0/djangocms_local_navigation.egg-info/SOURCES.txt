@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+djangocms_local_navigation/__init__.py
+djangocms_local_navigation/cms_plugin_processors.py
+djangocms_local_navigation/cms_plugins.py
+djangocms_local_navigation/conf.py
+djangocms_local_navigation/utils.py
+djangocms_local_navigation.egg-info/PKG-INFO
+djangocms_local_navigation.egg-info/SOURCES.txt
+djangocms_local_navigation.egg-info/dependency_links.txt
+djangocms_local_navigation.egg-info/requires.txt
+djangocms_local_navigation.egg-info/top_level.txt
+djangocms_local_navigation/templates/djangocms_local_navigation/menu.html
