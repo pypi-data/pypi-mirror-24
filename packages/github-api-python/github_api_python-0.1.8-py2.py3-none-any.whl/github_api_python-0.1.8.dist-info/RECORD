@@ -1,0 +1,11 @@
+github/__init__.py,sha256=u2moNe-Qz3vdwnmXDg_IGNvDseNJ1NQZ7a9qfycnV_I,1389
+github/base.py,sha256=2NjwTaEFV_0rgYOFfwHihz-dDtvg2iEn_ftOCnOR-B8,5289
+github/orgs.py,sha256=oersXAOzzxYzYq1VEIeltr_5JknOFFilXWxwhUEm7aE,1738
+github/repo.py,sha256=jMTMdhSIAmPRFfqB-PF8GuSXiZJ8gSu5zc-Rhye61-0,3115
+github/user.py,sha256=_UNv1C4E9VjnPAYi5JfA18dmu1v5qkccgNLakUy4JiE,2156
+github_api_python-0.1.8.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+github_api_python-0.1.8.dist-info/METADATA,sha256=ZzPRZeMt6as73zIxFmGCBrT5o9wSWK-U4b7EuGxCdpA,974
+github_api_python-0.1.8.dist-info/RECORD,,
+github_api_python-0.1.8.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+github_api_python-0.1.8.dist-info/metadata.json,sha256=p11xXkcpSU8KqqFubOpFdXhCTqx4Z0qviDIu-_TrFpA,1087
+github_api_python-0.1.8.dist-info/top_level.txt,sha256=X_Dn8Q-zPGudQV37mRBM5uHhwhEsv4x1AeAuB1dfEls,7
