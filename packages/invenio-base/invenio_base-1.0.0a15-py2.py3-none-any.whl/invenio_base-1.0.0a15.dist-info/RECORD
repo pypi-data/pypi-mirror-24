@@ -1,0 +1,21 @@
+invenio_base/__init__.py,sha256=nW1knkdZWj2Z3Y4YmNy7VYlMw3ZTtKpwsogC4Ne5RB4,6556
+invenio_base/__main__.py,sha256=iIrdegrQGxsYPCqQq6fx22ZYfjNk2WdoyTAXmF3dYjk,1199
+invenio_base/app.py,sha256=BIhW7Y9V-jtYxuakFrIOhz2xXjig5FvYB1ymnzdQNNQ,9817
+invenio_base/cli.py,sha256=WIkUB1JHnKe7a5MpKOOF1DH9hya1XDJGew_gshPnIDM,3941
+invenio_base/version.py,sha256=2S8bxqmu3IQr9HShX4gfZDj-j_ZgenjPusKBJCZxdZY,1212
+invenio_base/wsgi.py,sha256=kCauGuejNilDq8xH-sOHnDt4u2TKD9E3LoBtbk7GJhk,2307
+invenio_base/cookiecutter-invenio-base/cookiecutter.json,sha256=qt9uozipq8SPJ9Cp5QcJd4x12ciJRhWkq3K9MsSFuSk,135
+invenio_base/cookiecutter-invenio-base/{{ cookiecutter.site_name }}/setup.py,sha256=j7NlMZKCtl8yRYsk2z-dFFVvfSvkHbnVp97jJDpgKOo,2652
+invenio_base/cookiecutter-invenio-base/{{ cookiecutter.site_name }}/{{ cookiecutter.package_name }}/__init__.py,sha256=FCu-4nv1nQumCxbSDyyXZ19Q-Am4f2TPgSGf9925bX8,179
+invenio_base/cookiecutter-invenio-base/{{ cookiecutter.site_name }}/{{ cookiecutter.package_name }}/celery.py,sha256=wQ8EOroR1D7KLnSkwmzIwnS2kSmu8oD7LZ1KZgukYe8,266
+invenio_base/cookiecutter-invenio-base/{{ cookiecutter.site_name }}/{{ cookiecutter.package_name }}/cli.py,sha256=vAz_n_pWaEmyFeUhA_GNGyQ2rZWTXG7WyHbHdyDL_-o,788
+invenio_base/cookiecutter-invenio-base/{{ cookiecutter.site_name }}/{{ cookiecutter.package_name }}/config.py,sha256=kredP3cnEQXparxJic4YmQQRXE4-D-NeDzgxvoiFqDs,726
+invenio_base/cookiecutter-invenio-base/{{ cookiecutter.site_name }}/{{ cookiecutter.package_name }}/version.py,sha256=D6nVuQZ4VDs9kOeM0D-Qigo52-bquLbax3j5GyzKNuE,214
+invenio_base/cookiecutter-invenio-base/{{ cookiecutter.site_name }}/{{ cookiecutter.package_name }}/wsgi.py,sha256=t8oCKDWRW9LOCBDxgHOSxN83wTbjLETPGzgXirXaEcY,203
+invenio_base-1.0.0a15.dist-info/top_level.txt,sha256=Heu2aFQlswUY1VAvBC7-gcvrNmq0vMUFsvS1ddfYTC0,13
+invenio_base-1.0.0a15.dist-info/entry_points.txt,sha256=GaiaMuBR9chiqfpkh7zM341LvJPSGucn-fZz_p-7kvw,116
+invenio_base-1.0.0a15.dist-info/METADATA,sha256=A3_dyhKSkWKYiJze8MZW2z2CejwunASPXrsRALQ71oQ,7414
+invenio_base-1.0.0a15.dist-info/DESCRIPTION.rst,sha256=K3ymbg9d47HphtPai71aXqqN8UbAOYOyybmAuon7irs,4506
+invenio_base-1.0.0a15.dist-info/metadata.json,sha256=LOPtJM0B3fEAJOwzf_c_Gz6RxhvjY4XAQ4TW7bDiJBU,2639
+invenio_base-1.0.0a15.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
+invenio_base-1.0.0a15.dist-info/RECORD,,
