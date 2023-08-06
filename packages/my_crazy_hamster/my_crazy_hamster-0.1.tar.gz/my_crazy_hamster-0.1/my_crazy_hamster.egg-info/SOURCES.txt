@@ -1,0 +1,9 @@
+setup.py
+my_crazy_hamster/__init__.py
+my_crazy_hamster/my_class.py
+my_crazy_hamster.egg-info/PKG-INFO
+my_crazy_hamster.egg-info/SOURCES.txt
+my_crazy_hamster.egg-info/dependency_links.txt
+my_crazy_hamster.egg-info/not-zip-safe
+my_crazy_hamster.egg-info/requires.txt
+my_crazy_hamster.egg-info/top_level.txt
