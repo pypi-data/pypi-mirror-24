@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: chatbotentities
+Version: 0.0.3
+Summary: Chatbot Entities Extractor.
+Home-page: https://github.com/kverdecia/chatbotentities
+Author: Karel Antonio Verdecia Ortiz
+Author-email: kverdecia@gmail.com
+License: BSD
+Download-URL: https://github.com/kverdecia/chatbotentities/tarball/0.0.3
+Description: Chatbot Entities Extractor
+        ===============================
+        
+        version number: 0.0.1
+        author: Karel Antonio Verdecia Ortiz
+        
+        Overview
+        --------
+        
+        Chatbot Entities Extractor.
+        
+        Installation / Usage
+        --------------------
+        
+        To install use pip:
+        
+            $ pip install chatbotentities
+        
+        
+        Or clone the repo:
+        
+            $ git clone https://github.com/kverdecia/chatbotentities.git
+            $ python setup.py install
+            
+        Contributing
+        ------------
+        
+        TBD
+        
+        Example
+        -------
+        
+        TBD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
