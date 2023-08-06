@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: PyRabin
+Version: 0.6
+Summary: A python for generating rabin fingerprints.
+Home-page: http://github.com/aitjcize/pyrabin
+Author: Wei-Ning Huang (AZ)
+Author-email: aitjcize@gmail.com
+License: GPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
