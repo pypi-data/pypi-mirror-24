@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: model-util
+Version: 0.0.1
+Summary: Model Util
+Home-page: https://github.com/CAIJIAJIA/
+Author: caijiajia
+Author-email: caijiajia@lattebank.com
+License: MIT
+Download-URL: https://github.com/CAIJIAJIA//tarball/2017-09-01
+Description: model_util is a project to demonstrate: tools.
+Platform: Windows
+Platform: MacOS
+Platform: Unix
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

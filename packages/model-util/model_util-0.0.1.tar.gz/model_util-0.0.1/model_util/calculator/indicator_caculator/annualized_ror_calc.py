@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+# encoding: utf-8
+# Author caijiajia.cn
+# @ ALL RIGHTS RESERVED
+
+import decimal
+import logging
+
+import numpy
+
+from caijiajia.model_util.calculator.indicator_caculator.base_calculator import BaseCalculator
+from caijiajia.model_util.constant.indicator_constant import FrequencyDays
+
+decimal.getcontext().prec = 22
+
+class AnnualizedRorCalc(BaseCalculator):
+    """
+    计算区间年化收益率
+    """
+
+    def _calc(self, nav_list, profit_list, risk_free_profit_list, index_nav_list,
+              index_profit_list):
+        return AnnualizedRorCalc.value_calc(profit_list, self.frequency)
+
+    def _check_data(self, nav_list, profit_list, risk_free_profit_list, index_nav_list, index_profit_list):
+        if len(nav_list) == (self.end_date - self.start_date).days + 1 and len(profit_list) > 0:
+            return True
+        logging.warn("Can not calculate the yearly profit ratio! code:%s, start_date:%s, end_date:%s" % (self.code, self.start_date, self.end_date))
+        return False
+
+    @staticmethod
+    def check_data(nav_list, profit_list, from_date, to_date):
+        if len(nav_list) == (to_date - from_date).days + 1 and len(profit_list) > 0:
+            return True
+        # logging.warn("Can not calculate the yearly profit ratio! start_date:%s, end_date:%s" % (from_date, to_date))
+        return False
+
+    @staticmethod
+    def value_calc(profit_list, frequency):
+        res = decimal.Decimal(numpy.mean(profit_list) * FrequencyDays.get_days(frequency)).quantize(
+            decimal.Decimal("0.000000"), rounding=decimal.ROUND_HALF_EVEN)
+        return res
+
