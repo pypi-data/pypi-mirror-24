@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: supvisors
+Version: 0.1.0
+Summary: A Control System for Distributed Applications
+Home-page: https://github.com/julien6387/supvisors
+Author: Julien Le Cléach
+Author-email: julien.6387.dev@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/julien6387/supvisors/archive/0.1.tar.gz
+Description: Supvisors is a control system for distributed applications over multiple Supervisor instances. 
+        
+        
+Platform: CentOS 7.2
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: System :: Boot
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Software Distribution
