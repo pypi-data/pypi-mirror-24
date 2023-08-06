@@ -1,0 +1,11 @@
+cmd2
+requests
+
+[dev]
+pytest
+sphinx
+sphinx-autobuild
+wheel
+setuptools_scm
+setupext_janitor
+twine
