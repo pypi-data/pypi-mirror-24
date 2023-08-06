@@ -1,0 +1,88 @@
+Metadata-Version: 2.0
+Name: configfactory
+Version: 0.35.dev0
+Summary: Distributed configurations manager
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: appdirs (==1.4.3)
+Requires-Dist: apscheduler (==3.3.1)
+Requires-Dist: dj-database-url (==0.4.2)
+Requires-Dist: dj-static (==0.0.6)
+Requires-Dist: django (==1.11.4)
+Requires-Dist: django-autoslug (==1.9.3)
+Requires-Dist: django-guardian (==1.4.9)
+Requires-Dist: django-jinja (==2.3.1)
+Requires-Dist: django-jsonfield (==1.0.1)
+Requires-Dist: gunicorn (==19.7.1)
+Requires-Dist: jsonschema (==2.6.0)
+Requires-Dist: packaging (==16.8)
+Requires-Dist: pytz (==2017.2)
+Requires-Dist: pyyaml (==3.12)
+
+Distributed configurations server
+=================================
+
+
+Next release
+============
+
+v1.18 (2016-10-31)
+==================
+- removed client in favour of am-config
+
+v1.17 (2016-10-12)
+==================
+- added client cache
+
+v1.16 (2016-10-12)
+==================
+- cleanup warning
+
+v1.15 (2016-09-30)
+==================
+- cleanup warning
+
+v1.14 (2016-03-15)
+==================
+- api fixes
+
+v1.13 (2016-02-21)
+==================
+- added client environment property
+- added client not supported environments warning message
+
+v1.12 (2016-02-19)
+==================
+- added global property
+
+v1.11 (2016-02-19)
+==================
+- added update confirmation
+
+v1.10 (2016-02-19)
+==================
+- added timezone support
+
+v1.9 (2016-02-19)
+=================
+- added client default settings
+
+v1.8 (2016-02-19)
+=================
+- added json key sorting
+
+v1.7 (2016-02-19)
+=================
+- added json schema validation
+
+v1.6 (2016-02-18)
+=================
+- fixed backup directory
+

@@ -1,0 +1,17 @@
+{% extends 'layouts/main.html' %}
+{% import 'forms.html' as forms %}
+
+{% block content %}
+    <h3>New Component</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post">
+                {{ forms.input_field(form.name) }}
+                {{ forms.input_field(form.alias) }}
+                {{ forms.checkbox_field(form.require_schema) }}
+                {{ forms.checkbox_field(form.is_global) }}
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
