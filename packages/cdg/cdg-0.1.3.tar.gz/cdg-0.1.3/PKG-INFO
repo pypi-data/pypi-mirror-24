@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: cdg
+Version: 0.1.3
+Summary: Library for working with call- and data-flow graphs
+Home-page: https://github.com/musec/py-cdg
+Author: Jonathan Anderson
+Author-email: jonathan.anderson@mun.ca
+License: UNKNOWN
+Download-URL: https://github.com/musec/py-cdg
+Description: UNKNOWN
+Platform: UNKNOWN

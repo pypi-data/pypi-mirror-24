@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+bin/cdg-dot
+cdg/__init__.py
+cdg/filters.py
+cdg/query.py
+cdg/simplify.py
+cdg.egg-info/PKG-INFO
+cdg.egg-info/SOURCES.txt
+cdg.egg-info/dependency_links.txt
+cdg.egg-info/requires.txt
+cdg.egg-info/top_level.txt
