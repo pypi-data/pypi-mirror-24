@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: pycbox
+Version: 0.0.1
+Summary: Web interface for directory listings and picture gallery
+Home-page: https://github.com/coldfix/pycbox
+Author: Thomas Gläßle
+Author-email: thomas@coldfix.de
+License: Unlicense
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Communications :: File Sharing
