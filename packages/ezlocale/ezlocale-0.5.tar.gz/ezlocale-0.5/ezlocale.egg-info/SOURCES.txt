@@ -1,0 +1,8 @@
+setup.py
+ezlocale/__init__.py
+ezlocale/langs.py
+ezlocale.egg-info/PKG-INFO
+ezlocale.egg-info/SOURCES.txt
+ezlocale.egg-info/dependency_links.txt
+ezlocale.egg-info/requires.txt
+ezlocale.egg-info/top_level.txt
