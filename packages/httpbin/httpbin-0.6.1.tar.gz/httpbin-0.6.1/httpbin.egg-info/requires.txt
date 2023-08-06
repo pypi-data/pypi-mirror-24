@@ -1,0 +1,9 @@
+Flask
+MarkupSafe
+decorator
+itsdangerous
+six
+brotlipy
+raven[flask]
+flask_limiter
+Flask-Common
