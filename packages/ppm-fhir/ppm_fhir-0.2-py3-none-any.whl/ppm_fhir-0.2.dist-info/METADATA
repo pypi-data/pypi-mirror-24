@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: ppm-fhir
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: fhirclient (==3.0.0)
+Requires-Dist: furl
+
+# ppm-fhir
+
+

@@ -1,0 +1,10 @@
+ppm_fhir/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppm_fhir/fhir_resources.py,sha256=FZNWsO8SHl7p88BfSvK6a4AZ5p2fWBKWyFIrckACudA,963
+ppm_fhir/fhir_response_processing.py,sha256=ooyquEyGq0NV-dg0dLojA8oderrWzeo9SnQsz-dj190,12994
+ppm_fhir/fhir_services.py,sha256=v_PNZ2NILECShaCtAu6FJ39QujIqho6xEprGo-IPpFQ,29926
+ppm_fhir-0.2.dist-info/DESCRIPTION.rst,sha256=IEP6ubRZ4o1Ytguf3PFfi7LzWHWH0DOTDl1KPG2XUEU,13
+ppm_fhir-0.2.dist-info/METADATA,sha256=KGgu8oAJeA1-ixQV8VOyYHGv2R8PySsP4-O1PlIdn5A,229
+ppm_fhir-0.2.dist-info/RECORD,,
+ppm_fhir-0.2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+ppm_fhir-0.2.dist-info/metadata.json,sha256=NXwEjt4T2Sbd1_4TMp7_6MOm0cdE55IXywyMBCUvBhI,338
+ppm_fhir-0.2.dist-info/top_level.txt,sha256=QdpTHkinuDfO8Swa9iP2hW4pCfUzPWAoiwCfGDZt500,9
