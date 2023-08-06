@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+docs/Makefile
+docs/conf.py
+docs/index.rst
+jsonext/__init__.py
+jsonext/mixins.py
+jsonext/wrappers.py
+jsonext.egg-info/PKG-INFO
+jsonext.egg-info/SOURCES.txt
+jsonext.egg-info/dependency_links.txt
+jsonext.egg-info/requires.txt
+jsonext.egg-info/top_level.txt
