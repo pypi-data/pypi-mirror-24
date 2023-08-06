@@ -1,0 +1,6 @@
+[console_scripts]
+pfserver = pyfeld.pfserver:run_main
+pyfeld = pyfeld.rfcmd:run_main
+pyfeldmacro = pyfeld.rfmacro:run_main
+pyfeldui = pyfeld.tkui:run_main
+
