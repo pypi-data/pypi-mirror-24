@@ -1,0 +1,8 @@
+include chemspectranslator/data/translator_db.csv
+include chemspectranslator/data/translator_db.README
+exclude chemspectranslator/data/translator_db.csv.cache
+exclude chemspectranslator/google_sheets_api.py
+include CHANGES.rst
+include INSTALL.rst
+include LICENSE.txt
+include README.rst
