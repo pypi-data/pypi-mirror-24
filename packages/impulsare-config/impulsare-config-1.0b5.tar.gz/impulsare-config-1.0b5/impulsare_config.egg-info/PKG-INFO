@@ -1,0 +1,79 @@
+Metadata-Version: 1.1
+Name: impulsare-config
+Version: 1.0b5
+Summary: A config reader (yaml) that validates config files content.
+Home-page: https://github.com/impulsare/config
+Author: Emmanuel Dyan
+Author-email: emmanuel@impulsare.io
+License: AGPLv3
+Download-URL: https://github.com/impulsare/config/tarball/1.0b5
+Description: impulsare/config
+        ==================================
+        
+        .. image:: https://travis-ci.org/impulsare/config.svg?branch=master
+            :target: https://travis-ci.org/impulsare/config
+        
+        .. image:: https://scrutinizer-ci.com/g/impulsare/config/badges/quality-score.png?b=master
+            :target: https://scrutinizer-ci.com/g/impulsare/config/
+        
+        
+        Overview
+        --------------------------
+        A config reader, that validates a YAML config file and add default values if required.
+        
+        Extra values won't be verified, that any component / library defines its own config parameters
+        in a single configuration file without blocking other to do the same.
+        
+        See `tests/static/` for examples.
+        
+        
+        Installation / Usage
+        --------------------------
+        To install use pip:
+        
+        .. code-block:: bash
+        
+            $ pip install --upgrade impulsare-config
+        
+        
+        Example
+        --------------------------
+        
+        .. code-block:: python
+        
+            from impulsare_config import Reader
+        
+            # Main Config File
+            config_file = 'config/app.yml'
+            # File with validation rules based on JSON Schema
+            specs_file = 'config/specs.yml'
+            # Default values
+            default_file = 'config/default.yml'
+        
+            config = Reader().parse(config_file, specs_file, default_file)
+        
+        
+        Development & Tests
+        --------------------------
+        
+        .. code-block:: bash
+        
+            $ pip install -r requirements.txt
+            $ pip install -r requirements-dev.txt
+            $ py.test --cov-report html --cov=impulsare_config tests/
+        
+Keywords: config,python,yaml
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Systems Administration

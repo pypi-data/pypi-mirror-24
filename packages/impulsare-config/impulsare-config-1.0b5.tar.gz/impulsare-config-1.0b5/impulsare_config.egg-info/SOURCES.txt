@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+impulsare_config/__init__.py
+impulsare_config/reader.py
+impulsare_config/utils.py
+impulsare_config.egg-info/PKG-INFO
+impulsare_config.egg-info/SOURCES.txt
+impulsare_config.egg-info/dependency_links.txt
+impulsare_config.egg-info/requires.txt
+impulsare_config.egg-info/top_level.txt
