@@ -1,0 +1,6 @@
+click<7.0,>=5.0
+psqlparse==1.0rc5
+Pygments
+six
+toolz
+toposort
