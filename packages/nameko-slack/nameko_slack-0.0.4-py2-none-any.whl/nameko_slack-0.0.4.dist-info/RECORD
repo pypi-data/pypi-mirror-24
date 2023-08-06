@@ -1,0 +1,11 @@
+nameko_slack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nameko_slack/constants.py,sha256=XgMyYX4eoD0ft4ROBT-3ETy2PUXfea4TCEVblbrOuaY,50
+nameko_slack/rtm.py,sha256=lCZzY4vje4sYqeGdrbIvz1vqVB4ajAqLREoAG4w27WE,4037
+nameko_slack/web.py,sha256=wxaEMVQTH5kjGJ7wmFt7o7CC1_8MlzbDM_OfnALBSDM,1254
+nameko_slack-0.0.4.dist-info/DESCRIPTION.rst,sha256=043jxOaV5b4avRG-pTvasEEt4wqgloANG1eI-u1hkqA,5685
+nameko_slack-0.0.4.dist-info/METADATA,sha256=o-Zj8sok2pbnU8SZ2tCnV69ydqxBoGLnNhtU28qpSHU,6827
+nameko_slack-0.0.4.dist-info/RECORD,,
+nameko_slack-0.0.4.dist-info/WHEEL,sha256=u6Fy2U76CDFJ6q2P27rqtBo3AN6qpylFiMaYzNr2lJg,95
+nameko_slack-0.0.4.dist-info/metadata.json,sha256=r6-OLjYDJZNCxAGVbMB36-dkiJs29BDLR5UyjiTKq3I,1160
+nameko_slack-0.0.4.dist-info/top_level.txt,sha256=zbi7qauD4Y2tVVnvENh0kpsjkOXt6467Afm2vEQOXwQ,13
+nameko_slack-0.0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
