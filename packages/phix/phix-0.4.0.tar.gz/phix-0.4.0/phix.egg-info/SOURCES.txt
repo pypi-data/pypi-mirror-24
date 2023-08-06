@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+phix/__init__.py
+phix.egg-info/PKG-INFO
+phix.egg-info/SOURCES.txt
+phix.egg-info/dependency_links.txt
+phix.egg-info/entry_points.txt
+phix.egg-info/requires.txt
+phix.egg-info/top_level.txt

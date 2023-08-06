@@ -1,0 +1,67 @@
+Metadata-Version: 1.2
+Name: phix
+Version: 0.4.0
+Summary: Make writing your Sphinx docs a little easier.
+Home-page: https://github.com/wlonk/phix
+Author: Kit La Touche
+Author-email: kit@transneptune.net
+License: MIT
+Download-URL: https://github.com/wlonk/phix/tarball/0.4.0
+Description: ====
+        phix
+        ====
+        
+        author: Kit La Touche
+        
+        Overview
+        --------
+        
+        Make writing your Sphinx docs a little easier.
+        
+        This is a command line tool to build and serve your Sphinx docs. Run
+        this from inside the directory where your Sphinx Makefile is, and it
+        will build your docs on any ``*.rst`` change, and serve them at
+        ``http://localhost:8000``.
+        
+        Options:
+        
+        *  ``-t``, ``--type``: the make subcommand to run, and the ``_build``
+           subdirectory to serve. Defaults to ``dirhtml``.
+        *  ``-p``, ``--port``: the port to serve the docs on. Defaults to
+           ``8000``.
+        *  ``--help``: Show the help.
+        *  ``--version``: Show the version.
+        
+        Installation / Usage
+        --------------------
+        
+        To install use pip::
+        
+            $ pip install phix
+        
+        
+        Or clone the repo::
+        
+            $ git clone https://github.com/wlonk/phix.git
+            $ python setup.py install
+        
+        Then run it::
+        
+           $ phix
+        
+        Contributing
+        ------------
+        
+        Fork it, make a PR, and I'll take a look!
+        
+Keywords: Sphinx
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.0
