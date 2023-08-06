@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: clipoverlap
+Version: 1.0.7
+Summary: Clips overlapping regions in read mates of SAM/BAM files.
+Home-page: https://github.com/innovate-invent/clip
+Author: Nolan
+Author-email: innovate.invent@gmail.com
+License: MIT
+Description: clip
+        ----
+        
+        Clips overlapping regions in read mates of SAM/BAM files.
+        
+Platform: UNKNOWN
