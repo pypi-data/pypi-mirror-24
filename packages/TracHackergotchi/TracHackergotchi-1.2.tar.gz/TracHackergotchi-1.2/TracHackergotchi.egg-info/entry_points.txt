@@ -1,0 +1,5 @@
+[trac.plugins]
+hackergotchi.api = hackergotchi.api
+hackergotchi.providers = hackergotchi.providers
+hackergotchi.web_ui = hackergotchi.web_ui
+
