@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cssdbpy
+Version: 0.1.1
+Summary: High performance SSDB client implemented with Cython
+Home-page: https://github.com/cssdbpy
+Author: Yuri Bukatkin
+Author-email: randomazer@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
