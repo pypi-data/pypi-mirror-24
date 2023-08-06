@@ -1,0 +1,12 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+setup.py
+ansicode/__init__.py
+ansicode/color.py
+ansicode/cursor.py
+ansicode.egg-info/PKG-INFO
+ansicode.egg-info/SOURCES.txt
+ansicode.egg-info/dependency_links.txt
+ansicode.egg-info/not-zip-safe
+ansicode.egg-info/top_level.txt
