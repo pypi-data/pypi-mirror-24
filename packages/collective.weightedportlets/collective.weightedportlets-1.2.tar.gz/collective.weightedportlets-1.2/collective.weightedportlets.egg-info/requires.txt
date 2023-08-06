@@ -1,0 +1,6 @@
+setuptools
+plone.app.portlets
+
+[test]
+plone.app.testing
+unittest2
