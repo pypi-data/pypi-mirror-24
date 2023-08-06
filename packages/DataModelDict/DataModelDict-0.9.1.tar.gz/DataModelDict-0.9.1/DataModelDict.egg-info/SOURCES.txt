@@ -1,0 +1,10 @@
+DataModelDict.py
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+DataModelDict.egg-info/PKG-INFO
+DataModelDict.egg-info/SOURCES.txt
+DataModelDict.egg-info/dependency_links.txt
+DataModelDict.egg-info/requires.txt
+DataModelDict.egg-info/top_level.txt
