@@ -1,0 +1,12 @@
+perfume/__init__.py,sha256=1fu2k_z0s-VzZuYv_ra3Z2bzfz6ruwaaOrm7hUO0gns,290
+perfume/_version.py,sha256=F97WFDTu7b6395rDIs5o7P6WYHTrc1s114H7l-PdXiA,18448
+perfume/analyze.py,sha256=ehISX6pv3JNfh_3VA3DL3Zwwgkter8xefODiGYKWYEc,7046
+perfume/colors.py,sha256=BdY2nIDeH_5MCZbMSlynlcjellZL8_7sxIctdFb2Fn0,419
+perfume/perfume.py,sha256=H7SpHxcKOeqWftQupjyBJIShw-QnygJ3lZxxvaLndYQ,9835
+perfume_bench-0.1.0.dist-info/DESCRIPTION.rst,sha256=YWa6uNG6SGb_9c_nTDSjf1KtA0qNudYufMyvrQ7_yU4,2242
+perfume_bench-0.1.0.dist-info/METADATA,sha256=t8rDOBpKwC6xWUcWBwLVlD1HBtbK0vpFRdjL31y8rAg,3230
+perfume_bench-0.1.0.dist-info/RECORD,,
+perfume_bench-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+perfume_bench-0.1.0.dist-info/entry_points.txt,sha256=7yJ--lc7esAqo1sWjcuTnKscMoU-1uFu30ndeXSKypA,46
+perfume_bench-0.1.0.dist-info/metadata.json,sha256=7CmnWuO4nvEVx6gcp2zQErv0lJbv6T_N5HdK_VzNBRk,1277
+perfume_bench-0.1.0.dist-info/top_level.txt,sha256=KSXPufm8gHVSFrra4MtBjYqp-K8Pq6zb9Tv49MUCc1Y,8
