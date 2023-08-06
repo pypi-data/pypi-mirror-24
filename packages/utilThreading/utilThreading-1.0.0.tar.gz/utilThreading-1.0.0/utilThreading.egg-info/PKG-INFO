@@ -1,0 +1,36 @@
+Metadata-Version: 1.0
+Name: utilThreading
+Version: 1.0.0
+Summary: A collection of classes which execute common tasks that require execution on an additional threads.
+Home-page: https://github.com/seanwiseman/util-threading
+Author: Sean Wiseman
+Author-email: seanwiseman2012@gmail.com
+License: MIT
+Description: # util-threading
+        
+        [![Build Status](https://travis-ci.org/seanwiseman/util-threading.svg?branch=master)](https://travis-ci.org/seanwiseman/util-threading) [![Coverage Status](https://coveralls.io/repos/github/seanwiseman/util-threading/badge.svg?branch=master)](https://coveralls.io/github/seanwiseman/util-threading?branch=master)
+        
+        Util Threading is a collection of useful classes which all execute common tasks that require execution on an additional
+        threads.
+        
+        
+        Features:
+        
+        - ManagerThread: A utility Thread wrapper which starts a thread that manages a queue and passes queue entries to be 
+        processed a by user defined function.
+        
+        - SocketClientThread: A utility Thread wrapper which starts 3 threads that manage the listening, data receiving of 
+        socket connections and passes the received data to the user defined function via a queue.
+        
+        
+        
+        
+        
+        ## Installation
+        
+        
+        ## Usage
+        
+        
+        ## Example
+Platform: UNKNOWN

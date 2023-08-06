@@ -1,0 +1,8 @@
+setup.py
+utilThreading/__init__.py
+utilThreading/managerThread.py
+utilThreading/simpleSocketClient.py
+utilThreading.egg-info/PKG-INFO
+utilThreading.egg-info/SOURCES.txt
+utilThreading.egg-info/dependency_links.txt
+utilThreading.egg-info/top_level.txt
