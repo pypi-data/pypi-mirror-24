@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: fb-tribe
+Version: 0.1
+Summary: Facebook group scraper
+Home-page: https://github.com/imaculate/Tribe
+Author: Imaculate Mosha
+Author-email: imaculatemosha@yahoo.com
+License: MIT
+Description: UNKNOWN
+Keywords: facebook group scraper
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Message Boards
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: News/Diary

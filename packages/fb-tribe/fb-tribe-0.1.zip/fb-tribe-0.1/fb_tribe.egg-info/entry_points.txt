@@ -1,0 +1,3 @@
+[console_scripts]
+tribe = tribe.Tribe:get_posts
+
