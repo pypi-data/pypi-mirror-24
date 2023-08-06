@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: cappy
+Version: 1.1
+Summary: A simple file based python poxy
+Home-page: https://github.com/CompileInc/cappy
+Author: Compile Inc
+Author-email: dev@compile.com
+License: MIT
+Download-URL: https://github.com/CompileInc/cappy/archive/v1.1.tar.gz
+Description: CAchingProxyinPython is a file based python proxy based on Sharebear's simple python caching proxy
+Keywords: cappy,proxy,http
+Platform: UNKNOWN

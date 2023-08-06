@@ -1,0 +1,12 @@
+MANIFEST.in
+README.txt
+requirements.txt
+setup.py
+cappy/__init__.py
+cappy/cappy.py
+cappy.egg-info/PKG-INFO
+cappy.egg-info/SOURCES.txt
+cappy.egg-info/dependency_links.txt
+cappy.egg-info/entry_points.txt
+cappy.egg-info/requires.txt
+cappy.egg-info/top_level.txt
