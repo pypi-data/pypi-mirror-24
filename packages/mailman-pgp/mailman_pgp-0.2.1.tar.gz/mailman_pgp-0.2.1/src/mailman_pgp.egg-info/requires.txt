@@ -1,0 +1,7 @@
+mailman>=3.2.0a1
+PGPy>=0.4.2
+atpublic
+flufl.lock
+sqlalchemy
+zope.interface
+zope.event

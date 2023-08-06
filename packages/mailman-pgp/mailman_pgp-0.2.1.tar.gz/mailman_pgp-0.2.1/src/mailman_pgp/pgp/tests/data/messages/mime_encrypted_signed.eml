@@ -1,0 +1,42 @@
+To: nobody@example.org
+From: RSA 1024b example <RSA-1024b@example.org>
+Subject: Some subject.
+Message-ID: <76a591ed-bfc4-d08b-73d3-fc2489148fd7@example.org>
+Date: Wed, 21 Jun 2017 13:50:59 +0200
+User-Agent: Mutt/1.7.2 (2016-11-26)
+MIME-Version: 1.0
+Content-Type: multipart/encrypted; protocol="application/pgp-encrypted";
+ boundary="abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs"
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs
+Content-Type: application/pgp-encrypted
+Content-Description: PGP/MIME version identification
+
+Version: 1
+
+--abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs
+Content-Type: application/octet-stream; name="encrypted.asc"
+Content-Description: OpenPGP encrypted message
+Content-Disposition: inline; filename="encrypted.asc"
+
+-----BEGIN PGP MESSAGE-----
+
+wYwD9aW4UkhFqMoBBACGtNO0KHi7y2RJT8jD8kUCm5ymrb8p4cUzQypm0br8pIKD
+TOzsnR1igG4F3yvPl5ODYhjbkugcFoLU7DGR7EcA08yVXai4Nov6YRpXqzl8LBD4
+NbyLTu242B3Z53j5il72ddc6NKyG2Dg0Kq/iqMKipFa+VGNA0DYV1bIpElyk49LB
+JAGxq7bp5+BEePNrxvHXGyFhPt4GJztp1KIv/pQoMQSeQdmr4Pak4rTfrgEnoomd
+04f8uZV+dh7K9nULzdx1W6yqlDwIOmjtnO/J2Xwmga5C+rkm9p75XKNsscDmDMyM
+0m6DgcTpJbBvAE4wZHNNQuWozQZYQfKJNjnOcyejCi3DfnEmgtpfEmm4TrVWlLXP
+sZvwedS8bpMpgZj5uUa33Zw3V+5KtBBucVmKF7tOB8eN83EA7OGYTHNtllnhFQTD
+K9CnXBWm8j89uhAuxdA6Xu/6uE+6ilNVq7O8pXZaw0WAlJGismYtOkuuOfw8XXgC
+Tfy3XxsTnS7rtfo2seBHhKpY5PsBx29nKD4OBBfKuBvkLRoYj2dsdHoImXbK0kgN
+PNwGkFm01eiOUxbwq7qzEH2kGgVOY7AE75u0lDZ8PPMs6Ni3DIcwrFuqeSodJvGF
+8vqjF1pa/1QqDIWAypMhzTjpxaEFVW5YKgsCAsKOiFVpQjuYpsMm3mi+402lXwhK
+FjaT5Ihi6Dh5nrXlapLva4PcxSlwRMcpI8R4pXiCRsVrpLGNZg5rMhzOAtqCtDem
+ReVTYA1vL4cLCHOvlnAHYc46TapdcymjRyiQioYGlh1ZDhAtqD66iJygRVXjfzak
+dpGNfTc=
+=F4gW
+-----END PGP MESSAGE-----
+
+--abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs--

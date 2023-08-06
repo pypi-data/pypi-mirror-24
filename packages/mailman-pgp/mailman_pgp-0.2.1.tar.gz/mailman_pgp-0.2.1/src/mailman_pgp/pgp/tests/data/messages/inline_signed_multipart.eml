@@ -1,0 +1,31 @@
+To: nobody@example.org
+From: RSA 1024b example <RSA-1024b@example.org>
+Subject: Some subject.
+Message-ID: <76a591ed-bfc4-d08b-73d3-fc2489148fd7@example.org>
+Date: Wed, 21 Jun 2017 13:50:59 +0200
+User-Agent: Mutt/1.7.2 (2016-11-26)
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs"
+
+--abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+-----BEGIN PGP MESSAGE-----
+
+owGbwMvMyMHo/pGHo6JlewTjackShkifww7B+bmpCsWZ6XmpKQolqRUlerxcHadY
+GBk5GEzEFFmurPRo23hKYdoy174YmFZWJpA+MZmi4kRdQwMjkySH1IrE3IKcVL38
+onQGLk4BmEI7fRaGc493KbduNVhXdJ2xkTXCu+Hdj4B495MLzmn5c+6yVl/9Jluw
+ckr44WOlYbsjuj/LtTnpiC54/Pho+a8AFo7YFU/efJp/LqbBc+uFmhUMPdzlv1+U
+F+1/tvH/hrr/8wWPi13qSHkjceh1dT2z8ZWdvmbL5zPeu79flUVWVn+25dGOY8dP
+yzJtAwA=
+=jjlW
+-----END PGP MESSAGE-----
+
+--abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Some cleartext.
+
+--abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs--

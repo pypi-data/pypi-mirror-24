@@ -1,0 +1,30 @@
+To: nobody@example.org
+From: RSA 1024b example <RSA-1024b@example.org>
+Subject: Some subject.
+Message-ID: <76a591ed-bfc4-d08b-73d3-fc2489148fd7@example.org>
+Date: Wed, 21 Jun 2017 13:50:59 +0200
+User-Agent: Mutt/1.7.2 (2016-11-26)
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs"
+
+--abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: This is a revocation certificate
+
+iLYEIAEIACAWIQTUqUiGscoglqZFjlxH8QwIeIS3WAUCWYClvgIdAgAKCRBH8QwI
+eIS3WLpBBADCUtyYmI2Z8DCOnKUW4nRjHc3ZVMoZJlwceJCWhSybBrnjo6LWzvBy
+eKke4qHlh+jmSk3/Qyio6vYzvicOayDwhr0s/1X26MiYorthfiCQOg2WQ0YiRuMC
+/Ml8rukvBTRGvXikcIuBw5MFqCWsWI7ExPKaaresnHaCn37KF0A6hw==
+=4oku
+-----END PGP PUBLIC KEY BLOCK-----
+
+--abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Some cleartext.
+
+--abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs--
