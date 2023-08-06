@@ -1,0 +1,3 @@
+[console_scripts]
+ctln = constellation_pkgtools_cli.cli:main
+
