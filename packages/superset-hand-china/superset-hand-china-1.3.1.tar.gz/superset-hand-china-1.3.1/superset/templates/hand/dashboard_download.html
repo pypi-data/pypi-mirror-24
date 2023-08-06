@@ -1,0 +1,9 @@
+{% extends "superset/basic.html" %}
+
+{% block tail_js %}
+  {{ super() }}
+  {% with filename="dashboard_download" %}
+    {% include "superset/partials/_script_tag.html" %}
+  {% endwith %}
+{% endblock %}
+{% block title %}[download] {{ dashboard_title }}{% endblock %}
