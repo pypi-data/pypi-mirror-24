@@ -1,0 +1,13 @@
+setup.py
+git_praise.egg-info/PKG-INFO
+git_praise.egg-info/SOURCES.txt
+git_praise.egg-info/dependency_links.txt
+git_praise.egg-info/entry_points.txt
+git_praise.egg-info/not-zip-safe
+git_praise.egg-info/requires.txt
+git_praise.egg-info/top_level.txt
+praise/display_entry.py
+praise/formatter.py
+praise/main.py
+praise/praise.py
+praise/utils.py
