@@ -1,0 +1,17 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_dropbox_upload_handler/__init__.py
+django_dropbox_upload_handler/handler.py
+django_dropbox_upload_handler/urls.py
+django_dropbox_upload_handler/views.py
+django_dropbox_upload_handler.egg-info/PKG-INFO
+django_dropbox_upload_handler.egg-info/SOURCES.txt
+django_dropbox_upload_handler.egg-info/dependency_links.txt
+django_dropbox_upload_handler.egg-info/not-zip-safe
+django_dropbox_upload_handler.egg-info/top_level.txt
