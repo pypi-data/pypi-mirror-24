@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: luizalabs-asyncio-toolkit
+Version: 0.1.0
+Summary: The LuizaLabs set of tools to ease asyncio development
+Home-page: https://github.com/luizalabs/asyncio-toolkit
+Author: Luizalabs
+Author-email: pypi@luizalabs.com
+License: UNKNOWN
+Description: # Asyncio-Toolkit
+        
+        A set of tools to ease asyncio development.
+        
+Keywords: asyncio tools utils circuit breaker
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
