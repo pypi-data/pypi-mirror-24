@@ -1,0 +1,48 @@
+Metadata-Version: 2.0
+Name: georssy
+Version: 0.0.2
+Summary: A rough Python GeoRSS decoder
+Home-page: https://github.com/devsf/georssy
+Author: Sergio Ferraresi
+Author-email: dev@sergioferraresi.it
+License: Apache License 2.0
+Download-URL: https://github.com/devsf/georssy/archive/0.0.1.tar.gz
+Keywords: georss gml decoder earthscience
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup :: XML
+
+# georssy
+A rough Python GeoRSS (Geographically Encoded Objects for RSS feeds) decoder.
+
+georssy is a very rough decoder for the GeoRSS GeoRSS (Geographically Encoded Objects for RSS feeds) standard.
+
+For information about GeoRSS: http://www.georss.org/
+
+## How to install georssy
+Currently, the repository it's the only way to use georssy.
+
+## How to use georssy
+from georssy import GeoRssDecoder
+georss_entry = GeoRssDecoder( parent_node = r, polygons_over_boxes = True )
+tmp = georss_entry.polygon_list
+
+## TODO
+- add url and file as decoder inputs
+- Python 3
+- Tests
+- PIP packaging
+
+---
+# georssy is under development! So it's not so stable as you can expect! :)
+---
+
+
