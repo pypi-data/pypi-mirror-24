@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.py
+version.txt
+gtfo.egg-info/PKG-INFO
+gtfo.egg-info/SOURCES.txt
+gtfo.egg-info/dependency_links.txt
+gtfo.egg-info/requires.txt
+gtfo.egg-info/top_level.txt
