@@ -1,0 +1,11 @@
+asynckraken/__init__.py,sha256=K6KsPG_feTNU3nh-PS8bkwnL3Wxxsk-gGTRRTy2nGPs,80
+asynckraken/auth.py,sha256=dEaC1ubVfdN_zsKU25C9KtiqNaEGLFee7hlFcbfdV_c,1425
+asynckraken/client.py,sha256=fsViwd6shA32CJwUl2SE_OpGNO8mXB4JhXMP2hjnSkc,2340
+asynckraken/types.py,sha256=DpaBuPWKUzxYnFXq7zpDbr7CGJAnt4Sq9au5l2kMOxA,179
+asynckraken/version.py,sha256=QF3RN4MGzD7Cer7Hc2hOG6i9EF2ZgwxDBzV23aMlGR4,74
+asynckraken-0.1.3.dist-info/DESCRIPTION.rst,sha256=G9UG_z_hb7ano2l_d-FNtGtDfWSOsTZqrkssEXhaqZc,931
+asynckraken-0.1.3.dist-info/METADATA,sha256=UWjMNz0abux-aNz3N3EDZD6dBUFAcbGhP1-u0PXbxQU,1274
+asynckraken-0.1.3.dist-info/RECORD,,
+asynckraken-0.1.3.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+asynckraken-0.1.3.dist-info/metadata.json,sha256=HFR6hYnLnFLFl_Y4O26wNOcAjC7DE7MoEGullOYxUmk,737
+asynckraken-0.1.3.dist-info/top_level.txt,sha256=8YZGVDiDYsK8ZAuy3MKGJpc2g0WEZKoyjSY_7Y04kNs,12
