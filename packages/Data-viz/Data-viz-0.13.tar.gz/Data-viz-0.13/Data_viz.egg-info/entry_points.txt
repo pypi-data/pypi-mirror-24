@@ -1,0 +1,3 @@
+[console_scripts]
+vizuka = data_viz.launch_viz:main
+

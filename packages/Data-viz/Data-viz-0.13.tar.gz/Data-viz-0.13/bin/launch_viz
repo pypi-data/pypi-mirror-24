@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+
+from data_viz import launch_viz
+run launch_viz

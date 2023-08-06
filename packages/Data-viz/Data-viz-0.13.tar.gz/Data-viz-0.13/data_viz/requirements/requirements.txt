@@ -1,0 +1,8 @@
+numpy
+sklearn
+scipy
+matplotlib
+keras
+ipdb
+seaborn
+pyqt5==5.9
