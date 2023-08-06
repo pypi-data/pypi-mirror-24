@@ -1,0 +1,10 @@
+pytest_logger/__init__.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+pytest_logger/plugin.py,sha256=4kNO0R14X-onBWFWKMXXiqqXTOc4qRenvDIBI0LeaUY,14113
+pytest_logger-0.2.0.dist-info/DESCRIPTION.rst,sha256=rs7QI35MNdsIykJYBQwPhLpVV7BekVmrF4mQr3u4Tpo,3960
+pytest_logger-0.2.0.dist-info/LICENSE.txt,sha256=U-Qa6Y-kBOpvY3GmLPTR1MJMQ64RKjX2_Bt_H0DKcPU,1087
+pytest_logger-0.2.0.dist-info/METADATA,sha256=pp_O6vZz9F76rXGeOobLKQZPPBKH3Fip4B2XdZyZE7s,5088
+pytest_logger-0.2.0.dist-info/RECORD,,
+pytest_logger-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pytest_logger-0.2.0.dist-info/entry_points.txt,sha256=SMBi0qMhJoZvlRWUPiehX9Q1NYYGW6Ugvvmga2A1iRc,42
+pytest_logger-0.2.0.dist-info/metadata.json,sha256=mcvMnUbvYAZJWPRDcFRlopU2SjZ55CwW_KBZS93BqUQ,1327
+pytest_logger-0.2.0.dist-info/top_level.txt,sha256=qvygd699T5F272lLo6clqX9KIWaNc2DtBrziphPgRUM,14
