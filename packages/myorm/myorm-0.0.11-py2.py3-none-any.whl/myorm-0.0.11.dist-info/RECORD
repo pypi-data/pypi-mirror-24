@@ -1,0 +1,13 @@
+myorm/__init__.py,sha256=o2j7QmFiv5fkkLWcarKrJ1Mo7K8lKjWQiarImn2B9Pk,163
+myorm/dbobject.py,sha256=U12WsHDLuaY17VSkDXW23hQUburGgejQC9n958cb61k,3833
+myorm/fields.py,sha256=MgWQNKOHlpilaMNg9ahuCm6RC5dK3HwVPYKLEcp0cug,2008
+myorm/tests.py,sha256=YwG7IWi87GjhviL1rv18tcUwxM69dLt0ksclWNdGWGs,7006
+myorm/adaptors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myorm/adaptors/mysql.py,sha256=ySqXkuIuntzIwPJdcYBLdwLvWdMcfSgwyX9taZwhQAY,7835
+myorm/adaptors/sqlite.py,sha256=uYoiwlANL97mc_rV8i1TcyqyQ28FjXqcGfBOxL1dshw,8162
+myorm-0.0.11.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+myorm-0.0.11.dist-info/METADATA,sha256=YKqOpMb7NIrD9z7BOug88JiNXuglZZ9dcLHvl9sOqGo,268
+myorm-0.0.11.dist-info/RECORD,,
+myorm-0.0.11.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+myorm-0.0.11.dist-info/metadata.json,sha256=EjoHgNacZelkzmmJP9ni4MvQLFtMQk4BmTZbU27iYrc,443
+myorm-0.0.11.dist-info/top_level.txt,sha256=G7w5CLMfZstjF3k6Ho8nE4WmI7SQ30gbkSvAz4VUXDA,6
