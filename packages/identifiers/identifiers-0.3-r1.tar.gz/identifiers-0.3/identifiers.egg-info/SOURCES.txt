@@ -1,0 +1,36 @@
+CHANGES.TXT
+LICENCE.TXT
+README.TXT
+setup.cfg
+setup.py
+tox.ini
+identifiers/GS1 CP Ranges.xml
+identifiers/ISBN Ranges.xml
+identifiers/ISO10383_MIC.csv
+identifiers/__init__.py
+identifiers/banking.py
+identifiers/bookland.py
+identifiers/convert_iban_registry.py
+identifiers/euvatid.py
+identifiers/finance.py
+identifiers/gs1.py
+identifiers/gs1utils.py
+identifiers/ibanregistry.py
+identifiers/ibanutils.py
+identifiers/identifier.py
+identifiers/isbnutils.py
+identifiers/ismnutils.py
+identifiers/luhn.py
+identifiers/micutils.py
+identifiers/swift_standards_ibanregistry.txt
+identifiers.egg-info/PKG-INFO
+identifiers.egg-info/SOURCES.txt
+identifiers.egg-info/dependency_links.txt
+identifiers.egg-info/requires.txt
+identifiers.egg-info/top_level.txt
+identifiers/tests/test_banking.py
+identifiers/tests/test_bookland.py
+identifiers/tests/test_euvatid.py
+identifiers/tests/test_finance.py
+identifiers/tests/test_gs1.py
+identifiers/tests/test_identifier.py
