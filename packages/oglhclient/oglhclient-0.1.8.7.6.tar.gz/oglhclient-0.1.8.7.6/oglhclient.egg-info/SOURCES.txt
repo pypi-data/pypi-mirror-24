@@ -1,0 +1,10 @@
+README.txt
+setup.cfg
+setup.py
+oglhclient/__init__.py
+oglhclient/oglhclient.py
+oglhclient.egg-info/PKG-INFO
+oglhclient.egg-info/SOURCES.txt
+oglhclient.egg-info/dependency_links.txt
+oglhclient.egg-info/requires.txt
+oglhclient.egg-info/top_level.txt
