@@ -1,0 +1,3 @@
+[console_scripts]
+yh-ticker = Yahoo_Finance_Stock_Ticker.main:main
+
