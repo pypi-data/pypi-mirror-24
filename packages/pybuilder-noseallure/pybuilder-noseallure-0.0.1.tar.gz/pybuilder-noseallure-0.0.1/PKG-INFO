@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pybuilder-noseallure
+Version: 0.0.1
+Summary: PyBuilder Nose Plugin
+Home-page: https://github.com/anukuls/pybuilder_noseallure
+Author: Anukul Singhal
+Author-email: anukul.singhal@gmail.com
+License: Apache License, Version 2.0
+Description: Pybuilder plugin to work with Nose and Allure report generation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
