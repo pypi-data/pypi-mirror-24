@@ -1,0 +1,16 @@
+six>=1.10.0,~=1.0
+
+[all]
+pytest>=3.2.0,~=3.0
+pytest-cov>=2.5.1,~=2.0
+pytest-flake8>=0.8.1,~=0.0
+pytest>=3.2.0,~=3.0
+pytest-cov>=2.5.1,~=2.0
+pytest-flake8>=0.8.1,~=0.0
+
+[docs]
+
+[tests]
+pytest>=3.2.0,~=3.0
+pytest-cov>=2.5.1,~=2.0
+pytest-flake8>=0.8.1,~=0.0
