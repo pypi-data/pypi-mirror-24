@@ -1,0 +1,83 @@
+Metadata-Version: 1.2
+Name: slackelot
+Version: 0.0.4
+Summary: A simple wrapper around the Slack web api to post messages
+Home-page: https://github.com/Chris-Graffagnino/slackelot
+Author: Chris Graffagnino
+Author-email: graffwebdev@gmail.com
+License: MIT
+Description: Slackelot
+        =========
+        
+        Simple wrapper around the Slack Web API to post messages.
+        
+        Details
+        -------
+        
+        | Slackelot contains a single function:
+        | ``send_message(message, webhook_url, pretext='', title='', author_name='', color=None)``
+        
+        **webhook\_url** should be in the following format:
+        ``'https://hooks.slack.com/services/TEAM_ID/BOT_OR_CHANNEL_ID/AUTH_TOKEN'``
+        
+        *Example*
+        
+        ::
+        
+            from slackelot import send_message
+        
+        
+            webhook_url = 'https://hooks.slack.com/services/TXXXXXXXX/BXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX'
+            message = 'Who wants to push the pram?\n@lancelot @percival'
+            pretext = 'Knights of the Round Table'
+            title = 'Spamelot'
+            author_name = 'Arthur'
+            color = '#663399'
+        
+            send_message(message, webhook_url, pretext=pretext, title=title, author_name=author_name, color=color)
+        
+        .. figure:: https://github.com/Chris-Graffagnino/slackelot/blob/master/slackelot_example.png
+           :alt: https://github.com/Chris-Graffagnino/slackelot/blob/master/slackelot\_example.png
+        
+           https://github.com/Chris-Graffagnino/slackelot/blob/master/slackelot\_example.png
+        
+        Extra Goodness
+        ~~~~~~~~~~~~~~
+        
+        Paid teams have the option to mention other subteams, (ie. channel). In
+        that case, you might append something like this to your message:
+        
+        ``'\n<!subteam^ID|HANDLE>'`` (replace ``ID`` and ``HANDLE`` with your
+        subteam's id and name, respectively).
+        
+        For more information on message formatting, see the `Slack API
+        docs <https://api.slack.com/docs/message-formatting>`__
+        
+        FAQ
+        ---
+        
+        `Where do I find my Slack team
+        id? <https://api.slack.com/methods/team.info/test>`__
+        
+        `Where do I find my Slack channel
+        ids? <https://api.slack.com/methods/channels.list/test>`__
+        
+        `How do I create the url
+        (webhook)? <https://my.slack.com/services/new/incoming-webhook/>`__
+        
+Keywords: slack
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.7
