@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+launch/__init__.py
+launch/app.py
+launch/cli.py
+launch/testing.py
+launch/version.py
+launch.egg-info/PKG-INFO
+launch.egg-info/SOURCES.txt
+launch.egg-info/dependency_links.txt
+launch.egg-info/entry_points.txt
+launch.egg-info/requires.txt
+launch.egg-info/top_level.txt
