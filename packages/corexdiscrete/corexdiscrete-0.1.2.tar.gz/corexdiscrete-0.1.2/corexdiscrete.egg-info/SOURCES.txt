@@ -1,0 +1,5 @@
+setup.py
+corexdiscrete.egg-info/PKG-INFO
+corexdiscrete.egg-info/SOURCES.txt
+corexdiscrete.egg-info/dependency_links.txt
+corexdiscrete.egg-info/top_level.txt
