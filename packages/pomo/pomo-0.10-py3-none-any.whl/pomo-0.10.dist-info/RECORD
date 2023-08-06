@@ -1,0 +1,13 @@
+pomo/__init__.py,sha256=J02phT48-LfdhClQlEstMY7m08R_EuEa6dDCMpfVEz0,14
+pomo/core.py,sha256=5W079If4j4I_2WoZeWB2ixZkRY0uGpPaAiWn72UkWxA,1773
+pomo/sound.py,sha256=rJHyEIK5pOaAhBqbAms0f2gmRofpyeurBXKp3WxKi2E,656
+pomo/utils.py,sha256=Kkrsd9d40ZVjr7XgufFRjTbRoDGMhOUWRzA3wJFBn7U,441
+pomo-0.10.data/scripts/pomo,sha256=gM6Yg_IDJ6bYs02ka8pilTfl2uWFYqo4K22ByTpc8aY,2301
+pomo-0.10.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pomo-0.10.dist-info/METADATA,sha256=P1BjrVnfnPNLo_fgKqg8cAdL2t8ZEQSmSxDDt1q-kTY,320
+pomo-0.10.dist-info/RECORD,,
+pomo-0.10.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+pomo-0.10.dist-info/metadata.json,sha256=FETPak_3TuaABXrgGQWSOKuNnIuoXWtAa2YiIVihBj0,378
+pomo-0.10.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pomo-0.10.dist-info/top_level.txt,sha256=zrbWcX4Ucpj2b41JmY7qt2fv4XoMX_XQaxqkUxnoOy0,5
+pomo-0.10.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
