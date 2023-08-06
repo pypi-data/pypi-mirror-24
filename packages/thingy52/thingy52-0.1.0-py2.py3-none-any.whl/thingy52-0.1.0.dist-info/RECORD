@@ -1,0 +1,16 @@
+thingy52/__init__.py,sha256=nqwUu1QH9EGALd-nIf9zGdzAB56dAdGtHCFIxqVWcjQ,161
+thingy52/audio.py,sha256=mr2dHS0C4zrRXrzKQVa3FZsyURlw7EGUf5v7diyuOWE,5152
+thingy52/characteristics.py,sha256=cXxT-_ZQZlnmk1Zly7GRgftTyKfzAwA1duVWyR_qdgo,3887
+thingy52/cli.py,sha256=ibadHKp2hNJp4TFlIvOr_c2vgXFJugQ5B0kqFrETdyY,3113
+thingy52/delegates.py,sha256=8eDRh9wa_K5DlPiXC_mNOfWgMc1kb9esMthpC3JAshc,1258
+thingy52/services.py,sha256=XsyTFb2A_PB3pcJ0_075kVl1VsfjlMdpsP4joaCVrtM,3546
+thingy52/sound_audiop.py,sha256=Lde4dh_m9NitxJ5ZukKsKJ0eSMoWtvD-eEzoNimwUnk,819
+thingy52/thingy52.py,sha256=zPZ_roeNwe2PjO5aGjHwlAe_qYDNwo2ve-jWLBSCYFs,1630
+thingy52/uuids.py,sha256=YBZXATZ-OQYXSRkCH3oC_cqWpCXYXNi3UdGkUtTqjZA,1460
+thingy52-0.1.0.dist-info/DESCRIPTION.rst,sha256=Djhm4cP81KOuaGejMT9j-C_hBxjkKW1Bbl8w47np_ic,1116
+thingy52-0.1.0.dist-info/METADATA,sha256=B1T8AFhvdaKYAcpVZm3HJsRspjI1D35xKFqC2m1p7es,1933
+thingy52-0.1.0.dist-info/RECORD,,
+thingy52-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+thingy52-0.1.0.dist-info/entry_points.txt,sha256=hSseUQerFyi1NtU8-GCM-XQJQDHb7OvHrh0xIK_7AaQ,48
+thingy52-0.1.0.dist-info/metadata.json,sha256=cCGHixSemYEWM5rClyXvt7U1Ge1mgJ_ySi_dgipaoeA,1155
+thingy52-0.1.0.dist-info/top_level.txt,sha256=s_ZoUJySaUvUKO52Fu-qzj7dFptvS4t38oUyKpRRrag,9
