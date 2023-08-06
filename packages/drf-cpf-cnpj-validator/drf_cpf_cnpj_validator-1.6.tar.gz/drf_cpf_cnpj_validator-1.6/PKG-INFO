@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: drf_cpf_cnpj_validator
+Version: 1.6
+Summary: A small and quick validation plugin for CPF or CNPJ in django rest framework!
+Home-page: https://github.com/jrsouza95/drf-cpfcnpj-validator
+Author: Júnior Souza
+Author-email: jr.souza9520@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/jrsouza95/drf-cpfcnpj-validator/archive/1.6.tar.gz
+Description: DJANGO REST CNPJ OR CPF VALIDATOR
+        =================================
+        
+        
+        Examples:
+        ^^^^^^^^^
+        
+        .. code:: python
+        
+            from rest_framework import serializers 
+            from drf_cpf_cnpj_validator.validadors import cpf_validator, cnpj_validator
+        
+        
+            class PersonSerializer(serializers.ModelSerializer):
+                cpf = serializers.Charfield(validators=[cpf_validator])
+        
+        
+            class CompanySerializer(serializers.ModelSerializer):
+                cnpj = serializers.Charfield(validators=[cnpj_validator])
+        
+        Translations:
+        ^^^^^^^^^^^^^
+        
+        This plugin translate the messages from your **LANGUAGE\_CODE** ,
+        located in settings.py.
+        
+        -  **Enabled translations:**
+        
+          -  en-US
+          -  pt-BR
+          -  es-ES
+        
+Keywords: django-rest-framework,cpf,cnpj,python,django,validation,validation-library,cpf-validation,cnpj-validation,validação-de-cpf,validação-de-cnpj,drf-validation,validação,django-rest-cpf-validation,django-rest-cnpj-validation,validação-cpf-django-rest-framework,validação-cnpj-django-rest-framework
+Platform: UNKNOWN
