@@ -1,0 +1,15 @@
+docs/Makefile,sha256=VDqFrn0IpjaQ8F_AIhnSouf3TVTkJNj9KXm8xg53sBw,7642
+docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs/conf.py,sha256=ximO-Dm2vNOCTMG8fmyT3Lok7YVMMJNZEnO9uFPfB0g,12073
+docs/index.rst,sha256=JyX2jaK24aGeejJg4RTfNdm88XN_iOZyG3UA1dlHf6s,478
+docs/make.bat,sha256=I_nT6KHDbyCH-ObYCeq3I6bTcrYYh91gFxhjyi0PDg4,7469
+magen_id_client-1.0a1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+magen_id_client-1.0a1.dist-info/METADATA,sha256=UfvttAsljll38FcCeiIieJQYBbz_W3k5qlnZwJuGXNA,803
+magen_id_client-1.0a1.dist-info/RECORD,,
+magen_id_client-1.0a1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+magen_id_client-1.0a1.dist-info/metadata.json,sha256=2Al4sxCm4qpvzJCE1lbOEWlCrO31b1J7QNaFaO-w99I,841
+magen_id_client-1.0a1.dist-info/top_level.txt,sha256=Sgunsp_ckp9o9f_E8GnQCB8Pr4CkTmJtO1D5wtcKb6k,26
+magen_id_client_apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magen_id_client_apis/magen_client.py,sha256=6LE0F4Je6Aveqo6KvK7gWIA4KFHZ8092CdfkpTJB6Fg,1227
+magen_id_client_apis/magen_client_handler.py,sha256=yFyT1qzCZscEWHwpyJd5GjDvJ0q5T07WMGzPxXU4Ws8,8416
+magen_id_client_apis/utilities.py,sha256=YDmT9gXf2OXFBtkAwka4_XylmqKdbgIYT6_pU5LtzMQ,851
