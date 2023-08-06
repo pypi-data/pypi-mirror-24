@@ -1,0 +1,3 @@
+include u2py/config/co.cmd
+include u2py/converters
+include README.rst

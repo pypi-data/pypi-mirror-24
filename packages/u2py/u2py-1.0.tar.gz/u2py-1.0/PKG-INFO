@@ -1,0 +1,67 @@
+Metadata-Version: 1.2
+Name: u2py
+Version: 1.0
+Summary: A utility to convert ui files to python files
+Home-page: https://github.com/dragneelfps/project-u2py
+Author: Sourabh S. Rawat
+Author-email: dragneelfps@gmail.com
+License: GPLv3+
+Description: u2py
+        ####
+        
+        u2py(short form for ui to py) is a command line utility to convert ui files generated using qtdesigner or a text editor to py files which can then be imported in your PyQt project as modules.
+        
+        Installation
+        ############
+        
+        .. code-block:: bash
+        
+            $ pip install u2py
+        
+        Configure
+        #########
+        
+        .. code-block:: bash
+        
+            $ u2py config
+        
+        Usage
+        #####
+        
+        .. code-block:: bash
+        
+            $ u2py <inputfile> [options]
+        
+        Try- Help to know about the options
+        
+        
+        
+        Help
+        ####
+        
+        .. code-block:: bash
+        
+            $ u2py -h
+        
+            $ u2py --help
+        
+        Uninstall
+        #########
+        
+        .. code-block:: bash
+        
+            $ pip uninstall u2py
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3

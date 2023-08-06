@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+u2py/__init__.py
+u2py/__main__.py
+u2py.egg-info/PKG-INFO
+u2py.egg-info/SOURCES.txt
+u2py.egg-info/dependency_links.txt
+u2py.egg-info/entry_points.txt
+u2py.egg-info/top_level.txt
+u2py/config/co.cmd
+u2py/converters/__init__.py
+u2py/converters/u2py.py
+u2py/converters/u2py_legacy.py
