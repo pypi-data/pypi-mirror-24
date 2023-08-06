@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: slack-sansio
+Version: 0.0.1
+Summary: (a)sync Slack API library
+Home-page: https://github.com/pyslackers/slack-sansio
+Author: Ovv
+Author-email: contact@ovv.wtf
+License: MIT
+Description: UNKNOWN
+Keywords: bot,slack,api,sans-io,async
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

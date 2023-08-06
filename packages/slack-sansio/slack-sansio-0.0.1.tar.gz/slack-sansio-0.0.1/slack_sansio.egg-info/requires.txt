@@ -1,0 +1,13 @@
+
+[aiohttp]
+aiohttp
+
+[install]
+
+[setup]
+
+[sync]
+requests
+
+[tests]
+flake8
