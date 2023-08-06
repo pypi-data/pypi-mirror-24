@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pytgress
+Version: 1.0.2
+Summary: Beautiful progress bars for the CLI
+Home-page: https://github.com/sayan98/pytgress
+Author: Sayan Goswami
+Author-email: goswami.sayan47+pygress@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/sayan98/pytgress/archive/v1.0.2.tar.gz
+Description: UNKNOWN
+Keywords: progress,bar,spinner,loader,loading
+Platform: UNKNOWN
