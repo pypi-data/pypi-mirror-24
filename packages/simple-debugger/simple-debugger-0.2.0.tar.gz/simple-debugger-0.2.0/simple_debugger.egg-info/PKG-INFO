@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: simple-debugger
+Version: 0.2.0
+Summary: A simple debugger to watch args/kwargs flowing through your functions
+Home-page: https://bitbucket.org/codyc54321/simple-debugger
+Author: Cody Childers
+Author-email: cchilder@mail.usf.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
