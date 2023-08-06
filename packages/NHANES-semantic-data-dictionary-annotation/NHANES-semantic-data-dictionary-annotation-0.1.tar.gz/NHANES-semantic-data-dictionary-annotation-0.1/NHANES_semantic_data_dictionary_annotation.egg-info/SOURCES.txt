@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+NHANES_extractor_exp.py
+annotation_engine.py
+setup.cfg
+setup.py
+utils.py
+NHANES_semantic_data_dictionary_annotation.egg-info/PKG-INFO
+NHANES_semantic_data_dictionary_annotation.egg-info/SOURCES.txt
+NHANES_semantic_data_dictionary_annotation.egg-info/dependency_links.txt
+NHANES_semantic_data_dictionary_annotation.egg-info/not-zip-safe
+NHANES_semantic_data_dictionary_annotation.egg-info/requires.txt
+NHANES_semantic_data_dictionary_annotation.egg-info/top_level.txt
