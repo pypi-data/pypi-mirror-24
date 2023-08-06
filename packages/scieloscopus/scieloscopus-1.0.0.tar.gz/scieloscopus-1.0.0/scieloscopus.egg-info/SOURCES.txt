@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.cfg
+setup.py
+scieloscopus/__init__.py
+scieloscopus/scopusindicators.py
+scieloscopus.egg-info/PKG-INFO
+scieloscopus.egg-info/SOURCES.txt
+scieloscopus.egg-info/dependency_links.txt
+scieloscopus.egg-info/top_level.txt
+scieloscopus/data/__init__.py
+scieloscopus/data/scielo_scopus_indicators.csv
+tests/__init__.py
+tests/test_scopusindicators.py
