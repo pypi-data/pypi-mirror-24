@@ -1,0 +1,57 @@
+Metadata-Version: 1.1
+Name: pidproxyd
+Version: 0.1.0
+Summary: A pidproxy for supervisord that supports daemonized processes.
+Home-page: https://github.com/ajpen/pidproxyd
+Author: Anfernee Jervis
+Author-email: anferneejervis@gmail.com
+License: UNKNOWN
+Description: pidproxyd
+        =========
+        
+        .. image:: https://img.shields.io/pypi/v/pidproxyd.svg
+            :target: https://pypi.python.org/pypi/pidproxyd
+            :alt: Latest PyPI version
+        
+        .. image:: https://travis-ci.org/ajpen/pidproxyd.png
+           :target: https://travis-ci.org/ajpen/pidproxyd
+           :alt: Latest Travis CI build status
+        
+        A pidproxy for daemonized processes.
+        
+        Usage
+        -----
+        
+        `pidproxyd.py <pidfile name> <command> [<cmdarg1> ...]`
+        
+        There is an included Dockerfile for running the example.
+        
+        Installation
+        ------------
+        
+        `pip install pidproxyd`
+        
+        
+        Compatibility
+        -------------
+        
+        pidproxyd is compatible with python 2.7 and python 3
+        
+        Licence
+        -------
+        
+        MIT
+        
+        Authors
+        -------
+        
+        `pidproxyd` was written by `Anfernee Jervis <anferneejervis@gmail.com>`_.
+        The `daemon.py` script is from https://gist.github.com/marazmiki/3618191
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

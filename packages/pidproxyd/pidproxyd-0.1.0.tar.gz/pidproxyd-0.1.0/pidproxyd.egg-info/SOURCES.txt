@@ -1,0 +1,8 @@
+README.rst
+setup.py
+pidproxyd/__init__.py
+pidproxyd.egg-info/PKG-INFO
+pidproxyd.egg-info/SOURCES.txt
+pidproxyd.egg-info/dependency_links.txt
+pidproxyd.egg-info/entry_points.txt
+pidproxyd.egg-info/top_level.txt
