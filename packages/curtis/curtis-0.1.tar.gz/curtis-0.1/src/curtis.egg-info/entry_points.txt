@@ -1,0 +1,3 @@
+[console_scripts]
+curtis = curtis.__main__:main
+
