@@ -1,0 +1,36 @@
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+
+#
+# This script is executed in the OpenStack CI job that runs DevStack + tempest.
+# It is also used by the rally job. You can find the CI job configuration here:
+#
+# https://git.openstack.org/cgit/openstack-infra/project-config/tree/jenkins/jobs/dragonflow.yaml
+#
+
+export OVERRIDE_ENABLED_SERVICES=key,n-api,n-api-meta,n-cpu,n-cond,n-sch,n-crt,n-cauth,n-obj,g-api,g-reg,rabbit,mysql,dstat,df-controller,df-etcd,etcd3,df-zmq-publisher-service,q-svc,df-metadata,q-qos,placement-api,q-trunk
+export DEVSTACK_LOCAL_CONFIG+=$'\n'"DF_PUB_SUB=True"
+export DEVSTACK_LOCAL_CONFIG+=$'\n'"DF_SELECTIVE_TOPO_DIST=True"
+export DEVSTACK_LOCAL_CONFIG+=$'\n'"ENABLE_ACTIVE_DETECTION=False"
+export DEVSTACK_LOCAL_CONFIG+=$'\n'"DF_RUNNING_IN_GATE=True"
+export DEVSTACK_LOCAL_CONFIG+=$'\n'"EXTERNAL_HOST_IP=172.24.4.100"
+export DEVSTACK_LOCAL_CONFIG+=$'\n'"ENABLE_DF_SFC=True"
+export DEVSTACK_LOCAL_CONFIG+=$'\n'"OVS_INSTALL_FROM_GIT=True"
+export DEVSTACK_LOCAL_CONFIG+=$'\n'"OVS_BRANCH=v2.7.1"
+
+if [ -n "${DEVSTACK_GATE_TEMPEST}" ] && [ ${DEVSTACK_GATE_TEMPEST} -gt 0 ]; then
+    # Only include tempest if this is a tempest job
+    export OVERRIDE_ENABLED_SERVICES=${OVERRIDE_ENABLED_SERVICES},tempest
+    export DEVSTACK_LOCAL_CONFIG+=$'\n'"NEUTRON_CREATE_INITIAL_NETWORKS=True"
+else
+    export DEVSTACK_LOCAL_CONFIG+=$'\n'"NEUTRON_CREATE_INITIAL_NETWORKS=False"
+fi

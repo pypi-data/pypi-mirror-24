@@ -1,0 +1,35 @@
+#!/bin/bash
+#
+#
+# ``plugin.sh`` calls the following methods in the sourced driver:
+#
+# - nb_db_driver_install_server
+# - nb_db_driver_install_client
+# - nb_db_driver_start_server
+# - nb_db_driver_stop_server
+# - nb_db_driver_clean
+# - nb_db_driver_configure
+
+function nb_db_driver_install_server {
+    :
+}
+
+function nb_db_driver_install_client {
+    :
+}
+
+function nb_db_driver_start_server {
+    :
+}
+
+function nb_db_driver_stop_server {
+    :
+}
+
+function nb_db_driver_clean {
+    :
+}
+
+function nb_db_driver_configure {
+    :
+}

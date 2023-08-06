@@ -1,0 +1,1681 @@
+CHANGES
+=======
+
+4.0.0
+-----
+
+* Revisit devstack defaults
+* Disable L3 agents scheduler extension in Tempest
+* Add allowed address pairs to L3 proactive routing
+* Disable Cinder in gate jobs
+* Add fullstack tests for DB API
+* Update DB API documentation
+* DHCP store port rate limiters without lport
+* Add ARP/ICMP responders to DHCP ports
+* L3 router plugin: support agent scheduler conditionally
+* Updated from global requirements
+* Metadata: add iptables rule to open service's port
+* DNAT: use cached floating lport
+* Remove .is\_vm\_port() from LogicalPort
+* Update etcd standalone example local.conf to work out of the box
+* Remove binding on trunk subports
+* Switch etcd base driver to use etcd3gw
+* gate-fix: Do not set ovsdb\_connection as attribute
+* Fix docs warnings in extra\_dhcp\_opts spec
+* Disable Selective-Proactive Distribution by default
+* Disable l3 agent in gate
+* Remove unique\_key field from floating IPs
+* model proxy: Throw custom exception when model not cached
+* Tempest gate: Update apparmor with docker permissions
+* Updated from global requirements
+* gate-hook.sh to take gate environment into account
+* OvsPort to reference lport, not just hold its id
+* Mark objects deleted from db\_store as stale
+* Reset in\_port for provider ingress packets
+* Move FIP status updates to L3 plugin
+* patch port pair creation utility
+* tox: Add rm to whitelist\_externals
+* [05/xx] Move port events handling into standalone app
+* Add bgp, trunk, flow\_classifier, and sfc to supported API extensions
+* Add example SFC Heat template to docs
+* [04/xx] Dispatcher to hold apps by name
+* [03/xx] Remove update\_lport and cache all ports
+* [02/xx] Introduce port locator
+* Remove leftovers of port status notifier
+* [01/xx] Introduce bind/unbind port events
+* Restore QoS fullstack tests
+* BGP service: Construct function name with format
+* BGP service: Register only relevant models
+* Security-groups - support also number as ip-protocol
+* Don't send a value in delete pubsub event
+* add provider\_networks\_app to spec's index.rst
+* Remove ovsdb.objects
+* Add version field when retrieving a QosPolicy from ovsdb
+* Remove custom handling of OvsPorts in controller
+* Provider networks spec
+* DNAT: handle port creation correctly
+* Devstack: fix redis unstack shutdown
+* Move tempest tests filter to a common place
+* the word matche may not correct
+* Classifier: remove access to uninitialized variable
+* Remove OvsdbQos
+* Implement utc\_timeout for PGSQL and MSSQL
+* fix typo in distributed\_snat.rst
+* Updated from global requirements
+* Switch from oslosphinx to openstackdocstheme
+* Trunk: Update subport status
+* Add 'rm -f .testrepository/times.dbm' command in testenv
+* Add support for dnsmsq and dhcpd dhcp-option-names
+* Add fullstack test for snat
+* [05/xx] SFC: move app driver logic into the app
+* Move tunnel creation code to tunneling app
+* Answer to "Parameter Request List" option in DHCP app
+* [04/xx] Introduce SFC forwarding app
+* Fixing typo in documentation
+* DNAT: Reset IN\_PORT so ARPs can be answered
+* Moved snat\_app\_mixin to apps folder
+* Classifier app: Delete flows when ofport changes
+* Remove 'tags' from security group rule
+* Trunk: use classifier app to dispatch packets
+* Trunk: use reg6 for classfication instead of ofport
+* Unload openvswitch kernel module before install OVS
+* Updated from global requirements
+* Classifier: resubmit to table 0 to allow reclassification
+* Classifier: reset in\_port before dispatch
+* Remove special handling of lport in controller code
+* Remove is\_local attribute from LogicalPort
+* Remove ofport attribute from LogicalPort
+* Replace chassis and remote\_vtep with port binding
+* Move add-option part when receiving  DHCP-packet to function
+* Classifier to use OvsPort events
+* Updated from global requirements
+* Trunk driver: consume callbacks from neutron-lib
+* Remove unnecessary constant
+* Replace e.message with str(e)
+* Updated from global requirements
+* Update and optimize documentation links
+* Omit ofport from remote ports
+* Remove unused tunnel\_key attribute in tests
+* Updated from global requirements
+* Tests: convert buf to bytes before passing it to write()
+* Do not subtract tunnel overhead from port mtu in DHCP
+* [03/xx] Introduce SFC flow classifier app
+* [02/xx] Add SFC drivers to Dragonflow
+* Call super() in validate() of QosPolicyRule
+*  Race condition in DHCP app test
+* Create field type of DhcpOptsDictField
+* spec for extra-dhcp-opts
+* Update tox\_install.sh to allow fetching several projects
+* Update URL home-page in documents according to document migration
+* Updated from global requirements
+* Port locality spec
+* Make parameters to RyuBaseApp mandatory
+* Do not use lport.ofport in active port detection app
+* Verify that check\_app\_loaded is called with correct app name
+* Do not use lport.ofport in tunneling app
+* Add log events to each fullstack test
+* Reinitilize ovsdb monitor on controller-switch reconnect
+* L3 app: use port/router keys in PACKET\_IN handler
+* Port security: uninstall DHCPv6 flows
+* Config: change apps\_list option type to list
+* Improve tempest CI job
+* Remove use of fake chassis name
+* [01/xx] Add SFC NB DB models
+* Move apps into a separate path
+* Do not use lport.ofport in trunk app
+* Use stevedore to load apps
+* Remove assertion in controller code
+* send\_arp\_request to egress packets vi port\_key not ofport
+* Move with\_nb and with\_local\_objects to utils module
+* devstackgaterc: Enable n-api-meta
+* Make SNAT independent of DNAT
+* Updated from global requirements
+* DNAT: Use port key in ICMP handling code
+* Move apply\_db\_changes from NbApi to controller
+* Introduce Sync facility
+* Switch from oslosphinx to openstackdocstheme
+* Nits: remove leftover get\_indexes()[...] calls
+* Don't process objects without basic events support
+* Remove duplicated lazy NB API retrieval
+* Devstack: Use tunnel\_types instead of tunnel\_type
+* Add target table/priority overrides to ARP responder
+* Provider app will classify only flows from its patches
+* Enable bridge MAC plugging on provider network
+* Remove leftover code from NB refactor
+* Tests: Remove SG's specific flows tests
+* Support use openstack's base-service etcd
+* Remove unused topology attribute
+* DHCP: add default gateway to classless routes
+* ARP responder will reply in unicast
+* Gate fix: Correct expected revision number
+* Add option to enable/disable aging app in devstack
+* move extra-dhcp-options from list to dictonary
+* Remove DFDaemon utlity class
+* Refactor Aging application
+* Updated from global requirements
+* Gate fixes: Define AGENT\_BINARY to true. Disable horizon in gate
+* Add placement-client to compute node local.conf examples
+* Add VLAN aware VMs support to Dragonflow
+* Add IPv6 support for portsec
+* Updated from global requirements
+* Drop pub-sub functionality from DB API and drivers
+* [03/xx] Drop legacy models
+* [02/xx] Rename DbStore2 to DbStore
+* [01/xx] Drop legacy DbStore module
+* Migrate ActivePort to the new model framework
+* [07/xx] Move Migration code from DF controller to its own app
+* [06/xx] Refactor Migration to be a NB model
+* tests: Support recirc in SimulateAndSendAction
+* Migrate FloatingIp to the new model framework
+* [05/xx] Remove lport.local\_network\_id
+* [04/xx] Remove lport.network\_type
+* [03/xx] Remove lport.segmentation\_id
+* [02/xx] Remove lport.physical\_network
+* Sphinx 1.6.x compatibility
+* Fix wrong use of update\_migration\_flows
+* Updated from global requirements
+* Optimize the link address
+* Migrate OvsPort and remove LocalInterface
+* Move subscriber recv logic outside specific drivers
+* Remove leftover \_\_init\_\_ file
+* Fix gate
+* [01/xx] Move update/create decision logic from lport to df controller
+* Remove stack trace when lport migration is missing
+* Add missing DHCPv6 ports from constants
+* Updated from global requirements
+* use neutron-lib port security api-def
+* Add the option to use multiple networks in Topology (fullstack)
+* Updated from global requirements
+* ARP responder to dispatch packets and not output them
+* Migrate lport in metadata service daemon
+* Updated from global requirements
+* Migrate Listener to the new model framework
+* Check if the object has been deleted
+* Updated from global requirements
+* Move publish logic outside specific drivers
+* [01/xx] Introduce add\_group/del\_group in DFlowApp
+* Migrate lport to NB models
+* Remove priority from DbUpdate
+* Added support for service status reporting
+* Use external config as what neutron does
+* Migrate to new API in OVSDB
+* Replace hardcoded IP version witch neutron\_lib constants
+* Change the logic of updating routers
+* Support copy and deepcopy on proxy objects
+* Use proper nb\_api instance initialization
+* Consider process name as part of publisher uuid
+* Updated from global requirements
+* Migrate Publisher model to the new framework
+* consume neutron-lib callbacks
+* nb\_api.get to deal with proxy models
+* db\_store2 marks stale objects
+* \_is\_physical\_chassis returns False if object not in db\_store2
+* Move ML2 imports to neutron\_lib
+* Remove unnecessary SG code
+* Nit: Rename NeighAdvertisment to NeighborAdvertisment
+* Trivial fix incorrect docstring
+* Clear all bgp peer connection when delete bgp peer
+* Updated from global requirements
+* Remove the usage of tunnel\_type
+* Support VM live migration
+* Nit: simplify local controller initialization
+* Override bgp\_pulse in test to be event-driven
+* Updated from global requirements
+* Allow invoking non-field attributes via proxies
+* Disable df-bgp service in devstack
+* Trivial fix typos in documents
+* Distributed SNAT spec
+* Expire Neutron session in test\_add\_delete\_router\_interface\_revision
+* Update route in bgp speaker when fip udpate
+* Rename port\_status\_notifier to neutron\_notifier
+* Updated from global requirements
+* use neutron-lib constants rather than plugin constants
+* Use wait\_until\_true in UT
+* Move legacy snat out of l3 app
+* Move external\_host\_ip to a common field
+* Move metadata\_interface to df\_metadata config group
+* Updated from global requirements
+* Add bgp driver
+* Add clear\_registered\_callbacks to model framework
+* Avoid using relative path for bin file
+* Support comparison of ModelProxy with None
+* Introduce ListOfField
+* Migrate Security Groups to new model structure
+* Update route in bgp speaker when router port udpate
+* Add bgp service plugin
+* Add BGP db model and service
+* Migrate QoS driver to new driver base
+* Add get\_index() convenience method
+* remove useless args for app
+* Use ovsdbapp as ovsdb's library
+* Use port status notifier to update fip status
+* Fix mech\_driver not found
+* Remove useless parameters for super class of RyuDFAdapter
+* Store external\_host\_ip in chassis in db
+* Ignore non-first-class dependencies when iterating model in order
+* Add RouterExtraAttributes when create router
+* Skip the qos test cases
+* Remove workaround in test\_mech\_driver
+* Remove N531 from pep8 ignore list
+* Updated from global requirements
+* Updated from global requirements
+* Unify the parameters of initializing apps
+* Add devstackrc file for etcd+zmq CI
+* Fix add/delete flow with dif priority in l2
+* Updated from global requirements
+* Optimize the link address
+* Migrate LogicalRouter and LogicalRouterPort to new model framework
+* Change HostRoute to a plain model
+* Remove subunit-trace fork
+* Skip the test case causes zmq binding error
+* Add hierarchical dependency to current model
+* delete useless args for l2 app
+* Fix error priority usage in l2 app
+* Migrate LogicalSwitch and Subnet models to NB model framework
+* Updated from global requirements
+* Fix iteration of first-class only models
+* Revive the skipped test case
+* Index embedded models in DbStore2
+* Move common code from SG app to utils
+* Cleanup publisher in fullstack
+* Remove unused file bloomfilter.py
+* Add reconnection for PUB zmq socket
+* Add option to NbAPI methods to skip publishing event
+* Introduce notion of first class models
+* Disconnect connection to close a redis publisher
+* Add IPv6 support for the Security Groups
+* Remove dragonflow.db.models2
+* Use CONF.set\_override in pubsub fullstack
+* Updated from global requirements
+* Updated from global requirements
+* Specification for BGP dynamic routing
+* Add QoS models to all models module
+* Support equality for model instances
+* Fall back to return all data when topic is None
+* Remove unnecessary setUp function in testcase
+* Remove the unnecessary field in test
+* Fix some format error in docstrings
+* Add clear method to new local cache
+* Move duplicated \_get\_vm\_port method to common location
+* Fail when models receive unexpected arguments
+* Be strict about QoS models construct parameters
+* Use model dependency
+* Migrate QosPolicy to new model structure
+* Support Firewall as a service
+* Fix some reST field lists in docstrings
+* Agent common config move
+* Remove log translations
+* Updated from global requirements
+* Nicer \_\_repr\_\_ for model proxies
+* Add is\_vm\_port method to LogicalPort
+* Fix error in redis unit test
+* Fix models overriding each other when using same class names
+* Introduce a module that imports all shipped models
+* Optimize the link address for fetching git code
+* Remove the event handler for ovs bridge
+* Updated from global requirements
+* Clear db\_store2 when starting an app unit test
+* Spec for VLAN aware VMs
+* Rename deprecated config opt
+* Directly using \_\_name\_\_ attribute for LOG module
+* Disable active-port-detection-app fullstack tests
+* Fix import error in df\_local\_controller
+* [20/xx] DbStore: Support list field indexes
+* Remove leftover code for Chassis model
+* Fix the bug that neutron server fails to startup
+* Refactor code for extra route and add fullstack test
+* Add extra route to l3 app
+* Add uniform log for event
+* Remove support for py34 for dragonflow
+* SNAT application - infra and chassis sNAT strategy
+* [19/xx] Implement indexes by nested values
+* Rename legacy\_models to legacy
+* Rename core\_models to core
+* Move check\_and\_update\_floatingips to dNAT
+* [18/xx] Refactor DB consistent
+* Add DbStore2 member to DFlowApp
+* Add models devref
+* [17/xx] DbConsistent: Adapt to new style ID/Version fields
+* [16/xx] Add dependency detection among models
+* [15/xx] DfBaseApp: Model event registration
+* [14/xx] Add constants module for the models
+* Truncate lock-id when it is not using uuid
+* Fix the regression issues of [1]
+* Have redis db driver find the topic if not provided
+* Add \_\_repr\_\_ to NB models
+* Updated from global requirements
+* Add memoization to create\_model\_proxy
+* Add create\_reference syntactic sugar
+* [13/xx] DfLocalController: Register new models
+* Add some unit test cases for l3 proactive app
+* Make \_get\_topic more robust
+* Add copy and deepcopy functionality to NB models
+* Fix wrong doctree path in doc target
+* [12/xx] ObjectRefresher: adapt to new models and move refreshers out
+* Fix the action error when modify multicast flow
+* Fix typo in provider app
+* fix some typos
+* Fix SQL error in port status notifier
+* Use neutron\_lib for context module in mech driver
+* fix a mismatch directory of dragonflow.ini
+* Updated from global requirements
+* Refactor L3 apps
+* Reduce openflow rules for routing
+* [11/xx] Refactor Chassis model
+* [10/xx] Implement mixin with common fields
+* [09/xx] Introduce models package and move old models inside
+* provider\_networks\_app
+* L3 applications to dispatch packets and not send them
+* DNAT app to use unique\_key for ICMP packets
+* Metadata to use unique\_key rather than in\_port
+* DHCP App to use unique\_key and not ofport
+* Fix filter invalid ofport for topology
+* SG App to match by reg6 instead of in\_port
+* Propose a pub/sub refactor
+* Make NB API queue handling log a debug
+* PortSec App to match by reg6 and not in\_port
+* Use neutron\_server\_config\_add\_new to append server config file
+* [08/xx] Add CRUD methods for new models to NbAPI
+* [07/xx] Replace process\_object with controller.update/delete
+* Fix l3\_proactive\_app call to unknown function
+* [06/xx] Add id and version properties to old style models
+* docs: Fix broken link IPv6 spec
+* docs: Treat warnings as error and always read all source files
+* Fix add flow twice bug for active port
+* Fix 2 intermittent failures of UT
+* Change fullstack cases to use vswitch\_impl
+* remove unnecessary args for NetworkTestObj in fullstack
+* DF L3 service plugin does not need agent RPC
+* redis: Raise DbKeyNotFound when get\_key fails
+* DbStore: remove unused method
+* [05/12] Add custom field types for dragonflow models
+* [04/12] Add model-proxy helpers
+* Use the neutron\_lib import in df l3 service
+* Use IP\_PROTOCOL\_MAP from neutron-lib
+* Add get\_number\_of\_agents\_for\_scheduling to DFL3RouterPlugin
+* Add \_nested\_txn property to DFOvsdbApi
+* Add rate limiter to icmp handler(L3 proactive app)
+* Reduce the number of icmp responder
+* Respond icmp unreachable message with rate limit(L3 app)
+* Add [H203] Use assertIs(Not)None to check for None
+* Refactor port-status-update NB API
+* Remove redundant methods in redis pubsub driver
+* Create an automatic cookie update mechanism
+* Fix fullstack for cirros image not found
+* Get chassis from config file
+* Fix unnecessary sync in db consistent
+* Tunneling application
+* fix typoes in vlan-networking spec
+* Updated from global requirements
+* Clean the exclude list of flake8
+* Add E129 to pep8 check list
+* [03/12] Introduce initial version of the new DbStore
+* add missing requirements
+* logical\_networks infra for network aware applications
+* Fix error method usage in df\_local\_controller
+* Add E128 to pep8 check list
+* Add E265 to the pep8 check list
+* Update reno for new releases
+* Fix could sync version 0 object in redis
+* tunneling app spec
+* Add H904 to pep8 check
+* Add H301 check to pep8
+* Remove  N342 from pep8 ignore list
+* Re-order imports to comply with OpenStack Style Guidelines
+* Add control and data plane config in cassandra
+* Fix typo error in spec doc for df
+* [02/12] Add basic framework for new DF models
+* make gem source configurable
+* Fix the spec format for dragonflow
+* Dragonflow native API
+
+3.0.0
+-----
+
+* classifier application
+* fix some spelling error
+* Add H233 to pep8 check
+* Update the feature list
+* Add TTL invalid handler with rate limit(L3 app)
+* Use buffer to cache original data
+* Modify metadata of packet when route
+* Updated from global requirements
+* Respond udp and tcp to router port with icmp unreachable message
+* updated classification spec
+* Set value for local\_ip
+* Add rate limiter to icmp handler(DNAT)
+* Install default neutron config
+* Fix dragonflow doc format
+* Support reno releasenotes
+* Add unique key to router
+* Change vague HTTP\_PORT to METADATA\_HTTP\_PORT
+* Typo fix: transmited => transmitted
+* Replace six.iteritems/itervalues with dict.items()/values()
+* Typo fix: shoud => should
+* Do revert NAT to ICMP embedded packet
+* Remove the useless flow at L3\_LOOKUP\_TABLE
+* Add cookie infrastructure to Dragonflow
+* Prevent match overlap in L3\_LOOKUP\_TABLE
+* Remove the duplicated flows in table L3\_PROACTIVE\_LOOKUP\_TABLE
+* Handle TTL invalid packets(dnat app)
+* Handle TTL invalid packets(l3 proactive app)
+* Remove unused constant UINT32\_MAX
+* add factory methods for testing
+* [01/12] NbApi: Use SEND\_ALL\_TOPIC when topic is omitted
+* Add placement-api service to gate
+* Spread ids of tables
+* Remove datapath parameters in portsec app
+* Add datapath property and make it optional in mod\_flow et al
+* adding parser and ofproto porprties to df\_base\_app
+* North Bound Code Refactor
+* Typo fix: infomation => information
+* Remove link to modindex
+* Fixes some current typo bugs on dragonflow project
+* Create tunnel port only once
+* Fix some format and words in port-status and allow-address-pair specs
+* Updated from global requirements
+* Configure df controller to accept ttl invalid msg
+* Make py file line endings unix style
+* Remove python-zmq install
+* Traceroute support
+* Elevate the \_send\_packet method
+* Remove checking if datapath is None
+* Use keystoneauth1 to authenticate with nova
+* Use neutron-lib portbindings api-def
+* Rename RyuNeighAdvertisementFilter class
+* Small refactor of dnat app
+* Updated from global requirements
+* Remove test for obsolete l3\_openflow\_app
+* Documentation fixes for DHCP app
+*  classification spec fix
+* Add missing requirements
+* Reset related conntrack entries when the configuration about SG changed
+* Support VM live migration
+* Remove obsolete method \_delete\_remote\_port\_from\_chassis
+* Disable PUB/SUB in metadata service
+* Delete the tap-metadata device when it exists in the system
+* Standardize tox
+* Cassandra Support
+* Use project\_id instead of tenant\_id in qos notification
+* Fix broken gate of py27 and py35
+* Add IPv6 ND Neighbor Advertiser application
+* Fix "create\_nova\_conf\_neutron command not found"
+* Enable coverage report in console output
+* [TrivialFix] Fix dir specs comment typo error
+* remove duplicate args
+* Mock publisher in nb\_api for Test\_API\_NB tests
+* Refactor test case for ml2 mech driver(subnet)
+* Refactor test case for ml2 mech driver(port)
+* Fix the fullstack failure
+* dpdk: could not bind or unbind nic in the latest release
+* fullstack: Unify client creation code
+* Removes unnecessary utf-8 encoding
+* Raise exception when no lock\_id defined for resource
+* Updated from global requirements
+* separate control plane and data plane ip address
+* uniform method for allowed address pair
+* Moved configuration options of dragonflow
+* Spec to support service status reporting
+* refactor db consistent and object refresher(step1)
+* dpdk: could not load igb\_uio.ko when install df
+* Add legacy sNAT rule to l3\_proactive\_app
+* Rename tunnel\_type in Chassis to tunnel\_types
+* check valid resource version for nb\_api
+* neutron-lib: use L3 constant from neutron-lib
+* Add manual deployment guide
+* Tap-as-a-service plugin
+* Use constant as table name
+* Updated from global requirements
+* Fix devstack default
+* Remove DFVersionObjects
+* change router/qos/fip lock range
+* Change "Openstack" to "OpenStack"
+* Turn log info to debug
+* Stop accessing advertise\_mtu option
+* Re-download flows when reconnect to ryu controller
+* Support default route from port extra dhcp options
+* Temp workaround: fix zeromq binding error
+* change network/subnet/port lock range
+* Dynamic register nb db models
+* Remove the legacy tunnel port code
+* Increase the number of retries for db-lock
+* change security group lock based on sg\_id
+* add active detection app for allowed address pairs
+* Apply virtual tunnel port to l2 app
+* Add unit tests to dhcp\_app
+* Nitpicks: Set ryu.lib.packet as variable
+* Change installation instructions to use example files
+* Add Metadata proxy to features list
+* SGApp support allowed address pairs
+* Refactor test case for ml2 mech driver(qos)
+* Apply unique\_key to security group
+* Use same priority for remote port's multicast flow
+* Enable DB 'sync' action when enable\_selective\_topology\_distribution
+* remove unnecessary args from df
+* e125 warning can be resolved
+* move l2-multicast case to ml2\_l2 case
+* Do not use multiproc publishers in fullstack tests
+* Log add/remove network flows when it really happens
+* Revert "Fix the broken gate of fullstack"
+* Fix the broken gate about qos
+* uniform resource method name in df\_local\_controller
+* Fix the broken gate of fullstack
+* [TrivialFix] Fix function document comment typo error
+* Fix lock timeout issue
+* Correction in df-db dump command
+* [TrivialFix]File \*.rst fix typo error
+* Refactor DHCP app for code reusage
+* Add close function on publishers
+* Add support for mocking ipv6 subnet in tests
+* Use common ovs port mock in dnat tests
+* Fix gate failure
+* Updated from global requirements
+* Make ICMPResponder work for all router interfaces
+* Rename l2\_ml2\_app.py to l2\_app.py
+* Classification app spec
+* put duplicated check dhcp flow code into common file
+* Fix invalid dpdk configuration
+* Add port qos code
+* Uniform constants in df
+* Add ARP flows for all the IPs assigned for the VM
+* use shared method when create/update object
+* Use etcd3 stable release
+* Add chassis in db\_store
+* Have ZMQ send values in pub/sub events
+* Delete deprecated Hacking in tox.ini
+* Move test case from test\_local\_controller to test\_df\_local\_controller
+* Remove df core plugin
+* Apply constant table name to db\_store and db\_consistent
+* Unify method to sync from nb db
+* Update logical port when pull tenant topology from db
+* Moved configuration file of common parameters
+* Fix 'Version is None' report for publisher
+* Remove PortStatusTableMonitor
+* uniform meaningless topic judgement
+* Change wait\_until\_true's default exception to subclass Exception
+* Make ml2 as the only option in devstack
+* Use Neutron's entry points to extend OVSDB Connection
+* Use unique\_key for logical\_port in nb db
+* Re-download dhcp flow when enable dhcp of subnet
+* Temporarily disable port-status-notifier
+* Unify core\_plugin getter
+* Use neutron rally job
+* fix problem about subscriber on neutron server when redis failover
+* remove sync method in df local controller
+* Moved config options of Ryu
+* Output format of df-db changed to display output in table
+* Moved config options of dnat app
+* Fix broken fullstack due to tempest
+* Add unit tests to df\_local\_controller
+* refactor redis unit test code
+* Create virtual tunnel port when specified
+* Remove floatingip from DB Store when it is deleted
+* DNAT: Remove from local cache in floatingip delete
+* Service Function Chaining specification
+* Implement db consistency logic in df local controller
+* Show team and repo badges on README
+* Use constant as nb db table name
+* Fix order of arguments in assertEqual
+* Remove unused file
+* Moved config options for dhcp\_app
+* Moved config options for l2\_app
+* Return if lswitch is None for lport process
+* Move setup\_logging to after common\_config.init
+* remove useless code in redis pubsub ut
+* Rename dragonflow/db/db\_models.py
+* Get neutron plugins by using neutron\_lib.plugins.directory
+* Moved config options of metadata\_service\_app
+* Updating imports for agent metadata opts
+* db: use neutron\_lib.db.model\_base
+* Fullstack: close stored objects when setUp fails
+* Fix TAP device leak in fullstack tests
+* Fix old member name for Floatingip
+* Set l3 agent binary name to appear as DragonFlow binary
+* devstack: unify DF configuration
+* Remove del\_network\_id
+* Make py file line endings unix style
+* Spec to support check if chassis is alive
+* Get updated revision\_number from AFTER\_DELETE event
+* Add df-db utility to the troubleshooting and debugging documentation
+* IPv6 Support in Dragonflow specification
+* Change the tunnel\_key in df\_db
+* Support passing credentials via env in fullstack
+* Use devstack-buildin script for install/uninstall pkgs
+* Use devstack-buildin service mgmt script
+* Updated from global requirements
+* Store local network id to nb db
+* Refactor nb db models
+* fix some typo
+* remove useless code
+* Additional fixes
+* Fix the fullstack error in dragonflow plugin
+* Add testing and debugging documentation
+* Updated from global requirements
+* Refactor local\_networks in L2ML2App
+* Use argparse instead of parsing arguments manually
+* Add portstats table to df-db
+* Use router\_id as cache key instead of router object
+* Updated from global requirements
+* Connect nb db in l3 plugin after neutron server fork
+* Remove duplicating log setup
+* Refactor test case for ml2 mech driver(remote port)
+* Propose Cassandra support
+* make mod flow uniform and delete duplicated args
+* Fix remote port tunnel not ready bug
+* Catch and print more exception for cli
+* Use discard to safely remove element of set
+* Nitpicks: Fix invalid attribute access
+* Nitpicks: Fix typo in RedisPortStatusNotifier
+* Nitpicks: Remove redundant pass
+* Fix unable to update subnet when subnet disables dhcp
+* Small refactor of methods in dhcp\_app
+* Updated from global requirements
+* Fix typo in L2ML2App
+* Add license property to setup.cfg
+* Disable q-meta when enable df-metadata
+* Remove setting Q\_L3\_ENABLED
+* Remove df-ext-services
+* Add nb\_db\_driver\_clean support for nb db devstack
+* Refactor test case for ml2 mech driver(port security)
+* Zookeeper Devstack support for Fedora
+* Updated from global requirements
+* remove useless code for nb api
+* Prevent creating port assosiate with sg for IPV6
+* Add QoS North Bound Functionality
+* Fix delete l2 goto l3 flow deleted twice
+* Clean imports in code
+* fix format for devstack/etcd\_driver
+* Disable port status feature in case of non-redis configuration
+* make ipv4\_text\_to\_int more valid
+* Update docs for automated setup with vagrant
+* add publish service to doc
+* remove useless code in df base app
+* Remove useless code
+* Dragonflow install broadcast flows incorrectly
+* Format log external\_dict of logical port
+* Drop MANIFEST.in - it's not needed by pbr
+* Make nb\_api allocate\_unique\_key general
+* devstack fails on compute node
+* Fix logic in \_is\_valid\_version
+* Use the global cookie for ICMPResponder
+* Remove add classifier flow for router interface in l2 app
+* make addresses aggregation in SGApp
+* Start network connections after neutron forks workers
+* Unify timeout of neutron operations in fullstack tests
+* Fix wrong use of update\_key
+* Update .coveragerc after the removal of openstack directory
+* add db store object version compare function
+* Fix etcd driver requirement
+* Remove the global fake of cfg
+* Refactor test case for ml2 mech driver(allow address pair)
+* Prevent creating DHCP port for IPV6
+* Fix typo in NbApi
+* Fix the wrong use of StrOpt
+* Use parse\_mappings from neutron-lib
+* Update tox install to support constraints and branches
+* Move OVS to 2.6 release
+* Fix Redis write failure after HA failover
+* Refactor router's code
+* Don't include openstack/common in flake8 exclude list
+* Fix the intermittent of fullstack failure
+* Use the right wait\_until\_true function from neutron
+* Not create dump file when running dragonflow
+* Use ryu to parse error message
+* port 'up' and 'down' status notification
+* Separate the read/update and the delete of objects
+* Use Ml2PluginV2TestCase to test DFMechDriver
+* Remove netaddr code from sg\_app
+* Add physical\_network support for provider network
+* Implement L2 Communication for flat network
+* Spec for virtual tunnel port implementation
+* fix old comment issues for remote port
+* Uniform the beginning format for dragonflow spec rst
+* Enable release notes translation
+* Refactor redis driver and fix the db interface
+
+2.0.0
+-----
+
+* Fix miss do aging bug when ovsdb reconnect to df
+* remove useless exceptions for dragonflow
+* Fix a typo in documentation
+* Refactor ovsdb\_vswitch\_impl.py
+* Optimize get\_local\_ports\_to\_ofport\_mapping
+* Remove the deprecation warning of neutron.db.l3\_db
+* Use revision\_number instead of DFVersionObjects(port)
+* Use revision\_number(network subnet)
+* Support etcd clustering configuration
+* Make rst file line endings unix style
+* add some router get methods
+* Improve .rst format in port\_qos to display tables
+* Set USE\_ML2\_PLUGIN=True in the compute sample local.conf
+* Implements oslo conf generator
+* Fix typos in allowed\_address\_pairs.rst
+* Check port existence before updating it in NB DB
+* Updated from global requirements
+* Use revision\_number instead of DFVersionObjects(sg)
+* Refactor OvsdbSwitchApi
+* Remove useless parameters and spaces in devstack scripts
+* Using assertIsNone() instead of assertEqual(None)
+* Remove ovsdb\_nb\_impl.py
+* Implement L2 Communication for vlan network
+* Fix dhcp app options
+* Clean imports in code
+* Implement remote port function for dragonflow
+* modify the remote port spec
+* Clean imports in code
+* Fix zookeeper log
+* Use ovs\_port\_updated event to update ofport and mac
+* Remove deprecation warning in mech\_driver
+* delete duplicate fetch args code in app
+* Use ovs.db.idl to monitor ovsdb
+* Remove the obsolete method in dnat\_app
+* Updated from global requirements
+* Make DHCP app use copy of subnet host routes
+* Some typos need to be fixed
+* Optimize the name of the variable in the function
+* Remove vport\_<tunnel\_type> before removing openvswitch
+* Remove deprecation warnings
+* Fix the pep8 issue of import neutron.test
+* Refactor options and add oslo config generator support
+* Add extra routes support for router
+* Downgrade the log level for Unknown port online/offline
+* Clean imports in code
+* remove unused code
+* Fix error in log function
+* Add options to make ml2 be default for devstack
+* Optimize code to handle switch update event
+* Fix load\_module\_if\_not\_loaded not working
+* Clean ovs if it has been installed
+* Add default-subnetpools to DFPlugin
+* Add a base unit test class for df\_app
+* Fix pep8 "Use list comprehension instead of filter"
+* Overwrite metadata interface in df.metadata\_interface
+* Support publishers that set value to None
+* Use NeutronOVSDBTransaction instead of Transaction
+* Enable install redis server with package manger
+* Fix bug that non-admin can't create floatingip
+* Add metadata service to devstack gate
+* Prevent AppDispatcher from interrupting app execution
+* Remove TestDfController in unit test
+* Made router version testing agnostic to first version
+* Remove segmentation\_id in dnat\_app
+* Add port to DBStrore before notify apps
+* Fix UnboundLocalError when neutron fail to create fip
+* Made FIP version testing agnostic to first version
+* Have timeouts in fullstack raise exceptions
+* Verify virtualenv is up-to-date
+* Make py file line endings unix style
+* Correct condition in redis\_driver script
+* Make test\_object\_version.py line endings unix style
+* Register to update security group event
+* Make metadata env. tests parrallel to service
+* Update ICMP pong checksum in tests
+* DB time testing
+* Updated from global requirements
+* Use ovs db notification to update metadata flows
+* port 'up' and 'down' status notification
+* Install necessary packages before compiling ovs
+* Don't install ovs from devstack
+* Correct rst syntax errors in selective topology distribution
+* Correct .rst syntax for security\_groups.rst
+* Updated from global requirements
+* Use revision\_number instead of DFVersionObjects(floatingip)
+* Change 'revision' to 'revision\_number'
+* Fix neutron db failure in update\_port
+* Move crc16 to requirements
+* Explicitly describe python support
+* Use the latest api of NXActionRegLoad
+* Clean imports in code
+* Add df-metadata to sample configuration files
+* Fix db models of security group
+* Use neutron-lib constants in security group application
+* Configure controller listener ip and port
+* Fix confused chassis meaningless value
+* Remove white space between print and () for dragonflow
+* Use uuid to match router port when delete router interface
+* Fix bug with handling of dhcp address
+* Install crc16 when redis is enabled
+* Updated from global requirements
+* Correct dragonflow reraising of exception
+* typo fix
+* TrivialFix: Remove logging import unused
+* Don't calculate redis server twice
+* Remove the router\_interface\_to\_key in db\_store
+* #1616271 FIP ingress should use router interface mac to send packet to vm,not fip'mac Change-Id: Ib3e1f2b30454e2f882230c6fbec586a9eeced8c5 Closes-bug: #1616271
+* Some typos need to be fixed
+* Add port qos spec
+* Remove useless data synchronization code
+* Use revision plugin rather than version\_db for routers
+* Fix rst format for keep\_db\_consistency.rst
+* Add route to instance for metadata service
+* Use bytes to accommodate python3
+* Support DPDK
+* Updated from global requirements
+* Remove reference to neutron.i18n
+* Fix VM deleting error in CI
+* Bypass security group check for metadata packet
+* Clean imports in code
+* Check the validity of arguments
+* Change the method of checking if a lport is configured SG in SGApp
+* Use df\_utils.load\_driver over importutils.import\_class
+* Pack python dict directly without converting it to json before
+* Fix deleting flow bug
+* Delete ip rule when exit metadata proxy
+* Fix lack dirty data clear code in df\_local\_controller
+* Optimize l3\_app/l3\_proactive\_app for ipv4 check
+* Cleanup ovs source package
+* Fix Bug #1602493 to add local port process if port is associated with fip
+* Updated from global requirements
+* establish only one connection with NbApi
+* Do not append the same redis config again and again
+* Prevent from get\_lport in update\_port function
+* Fix library imports in core/l3 plugins
+* Disable creating default network topo in CI
+* Enable DeprecationWarning in test environments
+* Add settings to set OVS bridge protocols
+* Add setting to set OVS manager
+* Initialise vlog infrastructure
+* Use df\_utils.load\_driver rather than import\_class
+* Updated from global requirements
+* devstack cleanup  - use existing devstack function\_exists  - Remove useless PYTHONPATH
+* Fix some spelling mistakes
+* Add redis delete table command
+* Allow External NB database Driver installation
+* Change to private functions
+* update import error
+* modify supported\_extension\_aliases
+* Don't use multicase Mac address as source mac or port mac in fullstack test cases
+* Correct some ML2 L2 errors
+* Use UTC time when update lockedobject timestamp
+* NB DB entry point definition
+* Add Dragonflow metadata service
+* Add Vlan Networking
+* Update the home-page info with the developer documentation
+* Start NB DB driver after OVS starts
+* Removed H305 and H307 from flake8 ignore list
+* Add a command prompt for action bind
+* Extra command line argument is invalid
+* deleting router before deleting lswitch
+* Remove white space between print and ()
+* uniform attribute default values in ML2 mech driver
+* Support L3 plugin
+* Fix DNAT Bug
+* fix redis requirement and import hiredis
+* use setup\_develop devstack function to configure the project
+* Add topic key to subnet
+* Implement L2 Communication for ml2 dragonflow driver
+* Updated from global requirements
+* check if vlaue is none before serializing it into json
+* Set pep8 test N342 to ignore
+* There are some error words
+* Security Groups Design
+* Add support for updating port's subnet attribute
+* Fix RuntimeError while dictionary changed size during iteration
+* Add ICMPResponder to respond ICMP for router interface
+* Modify allowed address pairs spec file
+* Use restart service to start ovs
+* Add return statement
+* Support some binding attributes updating
+* Use AFTER\_INIT in lieu of AFTER\_CREATE
+* One abnormal northbound event will be block the whole event queue
+* fix confused argument in db store
+* Fix dangerous use of optional fields in ML2
+* Support device id updating
+* Updated from global requirements
+* fix fullstack errors in CI
+* Correct naming inconsistency in DBNotifyInterface
+* add segment\_id and network\_type get methods in lswitch
+* Updated from global requirements
+* Fix receving double messages in df-controller
+* Fix duplicated and missed flow in l2 l3 app
+* Change db to redis from etcd at gate testing
+* Not to log warning when an unbinding port is created
+* Do not start multiple table monitors
+* Add missing oslo requirement
+* fix redis GET command
+* Describe the remote device communication for Dragonflow
+* Fix redis installation bug with stack user
+* Support ML2 Plugin
+* add device\_id field into logical port object
+* Add sanity checks for Dragonflow DB selection
+* Do not query all DF ports when deleting a network
+* Updated from global requirements
+* fix a bash syntax error
+* Remove double spaces in strings
+* Implement Guru meditation reports
+* Search in \_get\_ports\_by\_subnet\_and\_owner by multiple subnets and owners
+* Propagate bridge update notification request
+* Minor nits in Pub-Sub spec
+* Fix typo in l3App.packet\_in\_handler
+* Optimize l3App.packet\_in\_handler
+* Fix too many arguments in df-ext-services.sh
+* Create default mtu and default routes for switch and subnet
+* Add allowed address pairs spec
+* Switch to neutron\_lib
+* Re-implement the usage of br-int
+* Updated from global requirements
+* update test-requirement.txt
+* Delete callback function to port status events
+* On update router transfer the router ports info
+* security group update fix
+* Call dissasociate FIP when VM is deleted
+* Fix exception is dissasociate\_floatingip
+* DF allways consider the lroutre as distributed
+* Change the project description to reflect the current status
+* Remove explicit eventlet.monkey\_patch()
+* Fix public gateway mac handling
+* Create Bridge in dnat\_app failed
+* Updated from global requirements
+* add 'host\_routes' feature to dhcp\_app
+* Create FIP port in active state by default
+* Add release notes generation to Dragonflow
+* Modify SG flows which let packets of relative connections pass
+
+1.0.0
+-----
+
+* Install OVS from RPM manually
+* DF does not use the dhcp agent
+* Devstack error on redis installation
+* Fix the wrong topic key in sg rule
+* Add external bridge in devstack when dnat is enabled
+* Add network mtu support
+* Adjust Default configurations of Dragonflow
+* Update ReadMe for database details
+* Limit the frequency of db sync
+* Return directly if lswitch doesn't exist when deleting
+* Fix local conf examples
+* Remove dvr extension
+* Improve l3 agent support
+* Fix the unconsistent security\_groups field value in lport
+* add update method in nb\_api and plugin
+* Add redis HA implement
+* Fix indentation in ARP responder code
+* add data sync mechanism for keep db consistency
+* Add Redis Availability spec
+* Vagrant: Add support for parallels and libvirt
+* Install OVS from packages in ubuntu 16.04
+* enable\_service db-ext-services is a slip of pen? df-ext-services is correct
+* Updated from global requirements
+* DHCP DOS prevention
+* Initialize the tables for DF DB
+* Remove Q\_DF\_CONTROLLER\_IP variable leftovers
+* Clean nosql db only on controller node
+* Use packaged Ovs for fedora 23 and higher
+* uniform all the interface for all objects
+* Updated from global requirements
+* This patch implements port security app
+* Add port security support in DF plugin
+* Updated from global requirements
+* Metadata service agent spec
+* Fix ubuntu 16.04 support for zookeeper installation
+* Add Dragonflow austin talk to docs
+* Fix ubuntu 16.04 support for etcd installation
+* Add version field implement for plugin and all objects
+* Implement lock-free mechanism for db-lock
+* Updated from global requirements
+* Security group app support port update event
+* Take publisher info from distributed DF DB
+* Have ZMQ devstack set multiproc socket via correct config
+* Support specific Open vSwitch branch
+* Add support for register\_listen\_address in the ZMQ driver
+* Updated from global requirements
+* Detect VM deletion in tests by VM ID and not VM MAC
+* Register redis pubsub to topic SEND\_ALL\_TOPIC automatically
+* Change primary key field to id in NbApi.create\_publisher
+* Add a handler to process OFPError messages
+* Fix Bug for #1573912 to change redis cluster creation under stack user. The bug is caused by creating redis cluster under root ,here change it under stack user
+* Implement security group fullstack and ut cases
+* unload openvswitch module before install OVS 2.5
+* add get single router and security group object method in nb\_api
+* check if controller(return from idl query) is empty
+* Enable tempest security group tests
+* Fix lock reset error when the lock is timeout
+* Fix delete port sequence in dragonflow plugin
+* [Trivial] Remove unnecessary executable privilege
+* Fix lswitch object lack get name method bug
+* Fix parameter name in DBClientNotFound to be ip
+* Have redis' get\_all\_keys return stripped key
+* Let connection to FIP obey security group rules
+* Make get\_schema\_helper accessible globally
+* Limit publisher updated event to 1 in 3 minutes
+* Ignore pep8 error: N530: Direct neutron imports not allowed
+* When deleting lport, call app's handler only when ofport is valid
+* Optimize security group fw rules
+* Add TTL for distributed lock
+* This patch implements security group app
+* add ovsdb monitor fullstack test case
+* Add Local Controller Reliability to Mitaka as Experimental
+* allow packet data to be passed as bytearray to applicative tests
+* Enable back pub-sub topic test
+* Updated from global requirements
+* Remove last leftovers of 'update'
+* Fix empty ofport value
+* code for local controller reliability
+* Fix event names of db
+* add check\_controller() and set\_controller\_fail\_mode() to vswitch\_api
+* remove redundant comma(',') from table\_id and cookie
+* Add topic to the list as test and only once
+* Remove unused parameter
+* change dragonflow apps to use mod\_flow instead of ryu's OFPFlowMod
+* Lookup router\_port's network\_id with lswitch's topic
+* Mitaka Version Features Update
+* Fix port update event loss
+* Fix unnecessary IDL run invoke bug
+* Fix UnboundLocalError in create\_subnet and update\_subnet
+* Stale port deletion when transaction failed
+* Fix AttributeError for calling \_register\_as\_publisher
+* Updated from global requirements
+* Add sync\_started and sync\_finished notification events
+* Allow filtering of tables and columns in OVS DB monitor
+* Fix DHCP fullstack tests
+* Send Chassis update on SEND\_ALL topic
+* Enable selective distribution with Pub/Sub
+* Fix typos in Dragonflow files
+* Add publisher's table
+* use IDLs built-in notify for ovsdb monitor
+* Add Redis Devstack
+* The implementation of distributed-DNAT
+* Support devstack configuration of selective topology distribution
+* Run fullstack without concurrency
+* Updated from global requirements
+* Support py34 tests for redis
+* Install OVS as an OS service
+* Fix links in the pluggable\_pubsub doc
+* When adding router port use tenant\_id of the subnet
+* Updated from global requirements
+* Allow port update and reduce double port set
+* Rename anonymous variable \_
+* Add RateLimiter object
+* Fullstack test cases for topology Fix the problem caused by overlaped ip address Change-Id: Ice5993aa3700df98fbff421d4583a6ed963c9aaf
+* Dragonflow L3 Agent for distributed DNAT
+* Remove test that are based on flow diff
+* Do not log error on missing table during pub/sub test
+* Solve the problem that sometimes network can't be recycled due to some ports of that network are used by some vms
+* Fix ovsdb monitor connect ovsdb fail bug
+* Fix typos in Dragonflow files
+* Fix py3 mock cannot be compared to int
+* Fix py3 incompatibility of using dict.itervalues()
+* Add Redis DB Driver and Redis PubSub Driver
+* Delete stale df db objects when neutron db transaction failed
+* Fix openflow dump exception
+* Fix arp responder test not to be realtive
+* Add tests for L3 application
+* Do not add lport to db\_store via topology
+* OVSDB monitor to filter port update events
+* Fix DHCP ip base test to use unique subnet
+* suppress exception on subnet delete not found
+* Add control plane test doc
+* Get server IP from the Nova cilent
+* Fix metadata regular expression in fullstack test
+* Fix exception happening randomly on port deletion
+* Support Apps accessing ovsdb and nb objects
+* Fix fullstack error: TooManyExternalNetworks
+* When deleting a network make sure to remove all linked ports
+* Fix printing of empty tables
+* Fix attribute error happens in \_delete\_old\_security\_group
+* Fix a logic error and add unit tests in retry-wrapper
+* Fix etcd installation
+* Fix RAMCloud installation
+* Revert "Install OVS via the OS and make it an OS service"
+* add local controller reliability spec
+* Update supported API extensions for tempest
+* Print stack trace on exception in run\_db\_poll()
+* Add topic to the router port
+* Install OVS via the OS and make it an OS service
+* Configure git repository
+* Fix some minor bug in VMTestObj
+* Add subnet\_allocation extension to DF plugin
+* Add quota tracking resources
+* Start etcd service only if not already working
+* Add network argument for fullstack.VMTestObj.create()
+* Move to dragonflow base test class
+* Fix df-db clean
+* Fix Topology module exception on VM delete
+* Make sure we convert topic from unicode to ascii for ZMQ
+* Change DbStore to index by topics
+* Add unit tests for DbStore
+* Fix wrong method acsess to LocalInterface
+* Update MTU by the tunnel type
+* Change DbStore API to accept topic
+* Add publish-subscribe abstraction spec
+* Increase etcd read  timeout
+* Code for selective topology distribution
+* Implement DB consistency
+* Add DB Consistency spec
+* Implement ovsdb monitor function for dragonflow
+* Call sync on local cache only on none normal Exception
+* Multiple consumers for PLUGIN topic
+* Add DHCP applicative testing
+* Fix neutron quota limitation
+* Dragonflow db CLI addition
+* Use global wait time when waiting for Neutron commands
+* Add operation retry for zookeeper
+* Add Redis\_driver.rst
+* Minor fixing to applicative testing objects
+* Fix receiving OVS events twice
+* Add extension fields on port create
+* Fix logic of test\_infrastructure
+* Support db clean-up in df-db script and unstack
+* devstack: Don't enable tempest in rally job
+* Fix InvalidTransportURL from neutron.tests.base
+* Common L2 ARP Responder improvement
+* Add document describing Dragonflow supported extensions
+* Add missing table in df\_db
+* Replace use of scapy with ryu
+* Update local.conf examples with ZeroMQ publish-subscribe
+* Update the zookeeper conf to use the ZMQ publisher service
+* On error when handling DB event do a full sync
+* Add topics for all objects
+* Remove table monitor config params
+* Change test to start publisher service from DF\_PUB\_SUB to is\_service\_enabled
+* Fix test\_apps.TestApps.test\_infrastructure in fullstack
+* Create NB\_API after fork
+* Add python-pytun to test-requirements
+* Add topic parameter to notify callback call to avoid exception
+* Add spec: IGMP Application and Multicast Support
+* Add dev-ref for pub/sub service
+* Add l2 multicast test
+* Add option to disable multiproc publish/subscribe
+* Ignore df-ext-services
+* Formalise publisher API and create publisher service
+* Fix wrong format of spec index
+* Get networking information in VMTestObj using neutron API
+* Updated from global requirements
+* Add kazoo requirements for zookeeper
+* Do not fail VMTestObj.create if multiple networks found
+* Add optional closing function to BaseTestCase.store
+* describe ovsdb monitor mechanism for DragonFlow
+* Make L3 Proactive App the default
+* Change info printings for pub-sub to debug
+* Add new Dragonflow logo with banner
+* Change chdir to cd in etcd service conf
+* Send topic for DB get all entries methods
+* Remove leftover from the centralized controller
+* Add topics for security groups
+* Fixed tests to allow to work with q-dhcp service
+* Remove patch file which was used in centralized DF
+* Fix blogs links and add new Neutron DB consistency blog post
+* Add performance testing spec
+* Support Zookeeper multi-node deployment
+* Make pack and unpack message utility methods
+* I/S and example of applicative testing of DF apps
+* Selectively Distribute Topology to Compute Node Change-Id: I32bb8f650ff4bd57f291cf4bb0ba8d6711eb9755
+* Add DF DB monitoring class
+* Remove nanomsg
+* Support distributed DNAT(floating IP) configuration
+* Use compile ovs utility from Neutron tree
+* Add howto steps to enable meta service
+* Add support for DF built-in Pluggable pub/sub
+* Fix all in-one deployment, Multi publisher configuration
+* Add Neutron publisher configuration
+* Add new test objects destructor method
+* Add L3 proactive application
+* Extra check when adding a tunnel to a remote chassis
+* Make ARP responder test more robust
+* Fix DB CLI tool
+* Updated from global requirements
+* Add topics to DB API
+* Move \_send\_port\_desc\_stats\_request to ryu\_base\_app
+* Add tenant\_id as topics for core elements
+* Adds security group app
+* Add wait to DFDaemon class
+* Add a util function load\_driver by name or class
+* Add Port Security protection spec
+* Add Dargonflow DFDaemon base class
+* Configure security data into DF DB and sync it into local cache
+* Allow adding router interface to RouterTestObject
+* Move subnet creation/deletion to external class
+* Add ARP responder option
+* Delete broadcast/multicast classifier flow on network delete
+* Move port creation/deletion testing to its own class
+* Remove the test number of flow
+* Add new OVS test for DHCP application pipeline
+* Prepare alembic scripts for subproject DB module
+* Change i18n to use oslo\_i18n
+* Fix new packet variable name
+* Fix typo in comment
+* Add new class to handle VM creation/destruction during tests
+* Implemet lrouter deleting in the local controller side
+* Add ryu installation to be via pip
+* Fix ValueError in allocate\_unique\_key in Zookeeper
+* Move ARP responder methods to a utility class
+* Have a single ryu app. Have all DF apps be dispatched from there
+* Add to the ovsdb driver get id by name
+* Delete leftovers from Dragonflow centralized version
+* Always update local cache with received port data
+* Fix etcd.conf
+* Fix readme installation link
+* The centralized l3 controller is deprecated from Mitaka
+* Not allow delete subnet gateway port
+* Add Zookeeper driver for DB
+* Updated from global requirements
+* Fix hosts configuration in df\_db.py
+* Resubmit the fix of race which happens in set\_key of etcd
+* Remove nanomsg install from the DF devstack plugin
+* Added zmq to the Dragonflow devstack plugin
+* Add tenant ID to to port object
+* Fix comment spelling
+* Avaliable update external field when net-update
+* Support IPOpt from oslo.config
+* Definitely disable dhcp-agent
+* Refactor fullstack tests
+* Replace deprecated LOG.warn with LOG.warning
+* Support DB clustering configuration
+* Install OVS modules and load modules
+* Use OVS branch-2.5 instead of master
+* Fix unable to create directory for nanomsg
+* Adjust unit tests for Dragonflow
+* Add network/router/subnet/port list API tests. Run tests sequentially
+* Remove duplicated codes in update\_port
+* Add security groups design blog post to documentation
+* Fix log printings for controller
+* Copies etcd in case it not exists an existing etcd folder
+* Vagrant: Use the IP address from eth1
+* Add neutron port creation command test
+* Remove ofport=0 Exception as it handled in the applications
+* README.rst: Change "wiki" to "documentation"
+* Vagrant: Add a second compute node
+* Move Vagrant configuration into a vagrant directory
+* devstack: Fix configure\_df\_plugin to work on compute nodes
+* Remove py34 until OVS pip package support python3
+* Run etcd as a service in fedora (systemd)
+* Correct flows for router\_interface in compute node
+* Remove the dhcp agent from the devstack default configuration
+* devstack: Cleanup inconsistent spacing
+* etcd: Conditionally start/stop etcd server
+* Add and refactor log info in df\_local\_controller
+* Fix Vagrant configuration for Dragonflow
+* Catch DBKeyNotFound for delete\_network
+* Fix etcd urllib3 leak
+* Add OVS parse flows method
+* Add fullstack tests to verify number of OVS flows
+* Fix creation error of existing directory in etcd
+* Use eventlet.queue instead of Python std
+* Revert Commit 84240a37ccb87d02c27a358b0eba49de0daa9aa0
+* Support PortOpt from oslo.cfg
+* Add new test and code refactoring
+* Fixed naming inconsistency in the DF external service Closes-Bug:#1529451
+* Install nanomsg for pub-sub module
+* Fix a potential race when update an existing key in etcd
+* Adding RethinkDB devstack local.conf controller/multinode example
+* Change etcd installation process
+* Fix NoneType error in run\_db\_poll
+* Clean security group code in plugin
+* Add port binding action to df-db CLI
+* Add DragonflowVirtualPort contsant and fix controller code
+* Exclude tests related to DHCP Agent scheduler
+* Remove q-dhcp from gate job tests
+* Fix DHCP port deletion
+* Add DHCP and Router create fullstack tests
+* Refactor fullstack create network test
+* Fix devstck boost lib install for fedora
+* Add version variables(major,minor) for the boost library install
+* Install python-etcd for fullstack tests
+* Configure port binding correctly in plugin
+* Add new test to call neutron API and check results in dragonflow db
+* Add test hook scripts to Dragonflow
+* Add dump all DB to CLI tool
+* Adding RethinkDB devstack local.conf example
+* Add package dependencies for RAMCloud
+* Add Reno release notes to Dragonflow
+* Fix df-ext-services.sh run under devstack
+* Add service start for etcd
+* Added DHCP configuration documentation
+* Add Dragonflow Tokyo summit video to documentation
+* Make sure correct branch of Neutron is pulled on testing
+* Clarify OF\_IN\_PORT
+* Remove an unused constant
+* Fix How-to install link
+* Ignore exception on router interface delete if router deleted
+* Exclude last failing tests
+* Adding RAMCloud driver
+* Add Rally benchmarking hooks to Dragonflow
+* Tests Exclude from Dragonflow
+* Exclude DHCPv6 tests and Adv Ops
+* Exclude tempest test that is failing
+* Seperate unit and fullstack testing in dragonflow
+* Skip tempest tests that are unrelated to Dragonflow
+* Fix port IP update
+* Different ETCD installation
+* Add pipeline diagrams to document
+* Add selective-proactive to documentation
+* Add description for DB driver API
+* Add description for applicative adapter DB layer
+* Add Pluggable DB architecture introduction
+* Add Pipeline images
+* Add Pluggable DB images
+* Fix install guide
+* Add sanity checks for db shell
+* Add 'sync' action to DB callback
+* Add RAMCloud devstack local.conf controller/multinode example
+* Fix links in documentation
+* Send DB updates to Queue
+* Fix readme and add links
+* Fix Distributed DF diagram size
+* Ipv4 DHCP support without running the DHCP agent
+* Add more Dragonflow documentation
+* Change constant names
+* Remove un-needed 'name' method
+* Do not fail on mkdir for etcd  version upgrade
+* Do not add extra network- on onv\_init use the GUID
+* Add pluggable DB section to documentation
+* Add Distributed DHCP documentation
+* Start adding distributed Dragonflow documentation
+* Add Distributed DNAT spec
+* Create a Dragonflow CLI tool for retrieving DB data
+* Add RAMCloud devstack local.conf example
+* Install Guide for the Distributed Dragonflow
+* Install Dragonflow package
+* Moved the centralized DF install guide from the main readme
+* git clone only if the directory does not exist
+* Change ETCD server to newer version (v2.2.2)
+* Call update\_extra\_dhcp\_opts\_on\_port on port update
+* Use the correct param when calling \_set\_network\_name
+* Configure etcd DB location
+* Convert OVSDB APIs to commands
+* Clean all flows on controller restart
+* Source needed OVS common methods from devstack
+* Start etcd and ovs services when doing stack rejoin
+* Add etcd source to Dragonflow lib
+* Add Dragonflow specs directory
+* Fix the get\_network\_id() function to always return a value
+* Add support for unicast DHCP requests
+* Remove OVN leftover from the dragonflow devstack plugin
+* virtual function stubs patch fixes
+* Add Dragonflow logo to documents
+* Updated from global requirements
+* Build Kernel Modules for OVS
+* Wrong secondary DNS address
+* add virtual function stubs for DFlowApp class
+* Revert change to PortOpt
+* Add vagrant directory to .gitignore
+* Prevent DBError caused by wrong param passed to get\_security\_group
+* Handle VM shutdown case
+* Return to publish-subscribe for etcd driver
+* Only log router data when created
+* Support correct lswitch update/add
+* Temporary disable etcd publish-subscribe
+* Use oslo\_config new type PortOpt for port options
+* Change the DHCP methods to accept the instance instead of a list
+* Add the DHCP App to the default loading SDN applications
+* Support RYU versions compatibility in DHCP handling
+* Remove retry decorator as neutron has moved them into api layer
+* Fix chassis printing for multi node
+* Add Vagrant support for Dragonflow deployment
+* Remove patch dir
+* Suppress Exceptions on L3 Packet IN
+* Add cleanup functionality to OVS bridge
+* Fix router port get tunnel\_key method
+* Remove API\_WORKERS=0 from plugin
+* Revert adding DHCP App by default
+* Move NB\_API to plugin init
+* Fix rpc code due to neutron changes
+* Change ignore-errors to ignore\_errors
+* Add the DHCP App to the default loading SDN applications
+* Fix etcd-python client installation
+* Catch DB key not found exceptions on delete
+* Update .gitignore to include eggs/ directory
+* Add Dragonflow exceptions for common DB exceptions
+* Updated from global requirements
+* Fix python-etcd client installation process
+* Remove OVS installation in DF unstack
+* Stop logging deadlock tracebacks
+* Convert chassis value to JSON
+* Add sub transactions for plugin
+* remove ^M
+* Allocate unique port keys from DB
+* Distributed DHCP MTU option support
+* Spell fix and correct method for is dhcp enabled
+* Change the centralized dragonflow index document
+* Fix dragonflow documents
+* Add new documentation to dragonflow
+* Add dragonflow distributed architecture image
+* Activate pep8 check that \_ is imported
+* Add Security group id's to port
+* Add Security group rule create/delete to plugin
+* Security group create/delete to DF plugin
+* Simplify ACK/Offer for DHCP app
+* Add DHCP/DNS configuration to DHCP APP
+* Support subnet updates and add dns\_servers configuration to subnet
+* Stop unneeded cloning of Neutron during CI
+* Change local.conf to enable VNC in compute node the right way
+* Fix device owner setting in plugin
+* Return new router on router interface delete
+* Refactor pluggable DB module
+* Add local flow on switch bootstrap
+* Check that owner is valid
+* Add new ETCD DB driver
+* Add DB API for key-value pluggable drivers
+* Set API\_WORKERS=0 in devstack
+* Add devstack tempest job script
+* Removing unused dependency: discover
+* Add DHCP options and DHCP operation code global definitions
+* Do not pre-config DHCP option\_list length
+* Distributed DHCP SDN app connect the app to DB module
+* Added exception handling for the DHCP packet in handler
+* Spelling fix
+* Support list of dns address for DHCP option 6
+* Rename enable\_dhcp(..) get\_dhcp\_enabled(..) in the etcd impl
+* Updated from global requirements
+* Add port owner to logical port object
+* Add subnets to logical switches and process in controller
+* rename conf files to Centralize versus Local controller
+* Add tunnel\_key to router port and small fixes
+* Fix unknown open flow port case
+* Distributed DHCP SDN app for Dragonflow local controller
+* Add openflow application dispatching abstraction mechanism
+* Make method signature between controller and apps simpler
+* Add debug printings in DF controller
+* Add devstack examples for multi-node setups
+* Use 30 bits available for the tunnel id not just 24
+* Rename the 32 bit mask to match REG\_32BIT\_ON\_MASK to match kilo branch
+* Add RAMCloud DB driver installation
+* Make the dragonflow devstack process pluggable for DB drivers
+* Add configuration file to dragonflow local controller
+* Load maximum unique key identifier from DB
+* Delete DHCP port from DB on network delete
+* Start etcd before Neutron
+* Fix port binding\_profile extraction in plugin
+* Change local.conf example to reflect etcd
+* Adjust DB to publish subscribe
+* Unicast reactive L3 flows to the correct tunnel port
+* Support configuring remote ip to ETCD server
+* Remove references networking-ovn
+* Dragonflow Plugin and etcd implementation
+* Updated from global requirements
+* Decompose the controller code to fit into publish-subscriber model
+* Extract flow priorities to constants
+* Enable logging in df-controller
+* Adjust "Binding" table name change in SB DB
+* Adjust plugin patch with recent changes
+* Updated from global requirements
+* Delete router port with cookie
+* Adjust plugin patch
+* Add IPv6 support to Dragonflow
+* tox.ini: Correct typo in py34 enablement
+* Change to df-controller in devstack plugin
+* Updated from global requirements
+* tox: Add py34 target
+* README: Cleanup and refactor
+* Add ARP responders for router interfaces
+* Flush router interfaces configuration on switch up
+* Extract table names to constants file
+* Add set-controller to dragonflow devstack
+* Add updated schema file for dragonflow
+* Add devstack option to install Dragonflow local controller
+* Initial version of L3 in dragonflow local controller
+* Add local data store across controller and applications
+* Add logical router and logical router ports read API
+* Updated from global requirements
+* Add empty ML2 template for Dragonflow
+* Add ETCD implementation for NB API
+* Add Logical DB Abstraction layer API and OVSDB Implementation
+* Add support for delete port
+* remove unused method add\_flow
+* Add DFlowApp base class for the DF controller APPs
+* Avoid installing duplicate flows
+* Adjust L2 agent imports after decomposition
+* Install ryu by setup\_package instead of setup\_develop
+* Make the connection details and chassis name configurable
+* Remove Local flow install From the L2 Agent to The  SDN app
+* Add resubmit for multicast/broadcast
+* Start to add support for local dragonflow
+* Fix properties naming for the PortData object
+* Remove unused methods and members
+* Refactoring the  port status event handler
+* legacy router port offloaded to the NORMAL path
+* Port Event based Subnet binding and ARP responder install
+* Change the update\_local\_port\_num method to be private method
+* Validate check for zero segmentation id in add\_subnet\_binding
+* Added get\_subnets to the Router PortData Class This will enable to get a list of subnets configured for this port
+* Added more devstack install  parameters to dragonFlow controller options
+* Updated from global requirements
+* Changed update\_local\_port\_num to return the Port Data Object and tenant Object, instead of returning multiple properties
+* Added the get\_routers\_ports\_by\_subnet to the tenant class This will be used to get all the router ports on a subnet for a tenant
+* Update version for Liberty
+* We removed too much in the following patch https://github.com/openstack/dragonflow/commit/3169ff32c7cc8388382e25947d63bfdb2e0006c1 Added self conf attribute back
+* Align the move from stackforge to openstack
+* Update .gitreview file for project rename
+* No need to modify/patch  the RYU project for the  register\_cli\_opts it was all ready fixed in the RYU project itself
+* Add define for the translate table number
+* Remove unused fields from OpenFlowController
+* Do not remove subnet data on router delete, only remove when there are no ports connected to that l2 subnet. Subnet class is needed even when it is not connected to any router in order to install local subnet L3 traffic offloading to Normal rule
+* Connect the delete router event to the SDN controller. Make sure we delete the router instance and remove all its interface ARP responders
+* The Tenant subnet dic and the Routes were pointing to the same Subnet Object, that caused problems and sync issues Modify the subnets dic in the router class to be a list of the subnet ids connected to this router. Accessing the object is from the Tenant main subnets dic
+* subnets data was added to the port object sent on RPC for add\_arp and del\_arp BUT  were not added to the get\_ports\_by\_subnet. So on startup when we actively requested the port in the l3 controller agent we got the port data but with missing inforamtion. Added the same subnets data to the ports object when get is called
+* Remove unused method \_iter\_entities\_by\_segmentation\_id
+* Do not loop on the router class do the loop on the tenant subnet class c for fast access. Separate patch will handle this duplicate data structure, use only net ids in the router object
+* Do not raise an exception, Only LOG. This scenario  is possible that we will get the port status from the OpenFlow switch before we receive the segmentation\_id, when we get the port/router we will update the snat binding will be updated when we get the segmentation info
+*  Neutron main line compatibility patch for liberty.  Neutron introduce a new parameter to the l2 OVS class a dict for bridge  classes  Add this param to the  dragonflow l2 class and created the br\_int move  object with the additional required methods
+* ipv6 compatibility issue, make sure we do not handle in the controller any subnet that is not ipv4, ipv6 is offloaded to the Normal path Add a casting call function for add\_flow\_normal\_local\_subnet and add a inner check for ipv4, this was needed because we access the code before calling the inner func
+* Exception was raised for ipv6 subnet for not having segmentation id, We currently should not handle IPV6 First check if it is an ipv4 subnet if not do no handle
+* Fix readme VLAN bug was fixed remove comment
+* Change fail\_mode setting to API Call
+* Fix README 1) Fix documentation link, move doc title  up 2) Added link to the project blueprints
+* Supress port sync up exception
+* Set int-br fail mode to "standalone"
+* VLAN support fix
+* Fix unit test test\_new\_subnet\_installed\_order\_ports\_router\_dp failure
+* Sync ports on L2 Agent startup
+* Fixes to README
+* Remove local subnet flow when no VMs use it
+* Add type information for delete\_port()
+* Optimized get\_tenant\_by\_id()
+* nits
+* Spererate add and remove functions
+* More fixes for UT
+* Fix in unit test
+* Add Neutron tox rules
+* Use OVS\_LIB set\_connection\_mode method
+* Remove set controller RPC message
+* Send packet out to the destination port and to destination DP (data path element ) The packt out was sent to the source port and the first packet was always lost Note:: Verified on one machine setup need to verify on multi host
+* Fixes to devstack plugin
+* Added Documentation section and new links Fix install guide MInor fix for to devstack conf files
+* Add normal flow even when no router
+* Remove DVR from Dragonflow devstack plugin
+* controller\_plugin: Always notify about VM ports
+* Add unit test for openflow application
+* controller\_plugin: Simplify port finding
+* Simplify condition in ControllerL3ServicePlugin.dvr\_vmarp\_table\_update()
+* Misc nits
+* openflow\_app: Delete E/W flows when removing a router interface
+* Objectify CIDR
+* Support for working with IPV6 1) Offload the Ipv6 tarffic into the NORMAL path 2) Make sure we do not get exception and we know to handle IPV6 subnets
+* Move inter subnet handling to the classifier table
+* Remove unused function for the l3 openflow application
+* Fix DHCP tag of 4095
+* Align Dragonflow L2 Agent with OVS L2 Agent
+* Remove the fix for dvr to send router arp data with every port update We are currently based on the legacy L3 so we will get port update for the router port
+* README.rst: Small cleanups around readability and spelling
+* Neutron initiated port removal
+* Port Removal handling
+* Put cookie when creating flows
+* Create subnet object in sync port
+* Rename context so it doesn't override locals
+* Fix get\_ml2\_port\_bond\_data() return code
+* Move incorrect error printing
+* Add FIP/SNAT using legacy network controller
+* Enable Env for DragonFlow Unit Testing
+* Fix ARP responder
+* Make the L3 VM to VM flows idle/hard timeout configurable
+* Fix L3 flows installation
+* The ARP Spoofing prevention is set to true by default by Neutron Change not the raise an exception only disable the feature Set to false and print error message
+* Taking in account method change name in neutron:
+* It seem that this BUG is related to the change of the router type to DVR in order to support the centralize SNAT We will need to check if this is a bug in neutron or by design but the router port is missing the segmentation id data To overcome this is issue we send additional arp notify for each new port for the router port on the same subnet, this will double the number of arp notify RPC messages to the agent messages but this is the only way to fix it from outside of neutron
+* Fix the way we check is\_router to include the DVR type
+* Add segmentation\_id to router port
+* DataPort.local\_port\_number should not fail
+* Minor nits
+* Simplify install\_l3\_forwarding\_flows() signature
+* Wrong check for is router in port data class  missing the DVR router used the cost
+* Fix in DF L2 Agent
+* Add DVR settings for devstack plugin
+* Fail L2 agent in case arp spoofing prevention is enabled
+* Remove unused functions and var
+* Remove SNAT flows
+* Change the bootstrap flows pipeline to send multicast and broadcast to the Normal Flow directly from the classify table Chnage the ARP match to have higher priorety so it will be sent to the ARP responder table first and not offload th the NORAML path
+* Send between subnets and snat flows only for relevant subnets
+* Make sure that we send arp add rpc call on the correct port It always sent the router port instead of the new port
+* Configure SNAT and Inner subnet flows
+* check if we received the port data to avoid exception and error message on all use cases no dest port , no gateway port and if it is not a router Solving the bug itself will be checked in in a separate patch
+* Spit the private function that install the arp responder into two Casting -- install the flow on all the openflow forwarding elements Base - that only installs on a specific one
+* Simplify packet handling code
+* openflow app: Fix minor issues
+* openflow app: Remove unused code and fix spelling errors
+* The datapath object was not updated when a switch reconnected to the SDN controller When receiving the switch features always update the data path object
+* Connect SNAT updates from L3 Agent to SDN Controller
+* Enable SNAT for Dragonflow
+* Use RYU with openflow 1.3 in place of l3 plugin call
+* Access the new 'subnets' interface property
+* Minor nits and cleanups
+* openflow app: remove duplicate variable in sync\_port
+* controller agent: Fake agent\_mode to pass candidacy check
+* openflow app: Implement router deletion
+* openflow app: Add \_\_repr\_\_() to Subnet() class
+* openflow app: Cleanup TenantTopology handling
+* openflow app: Change comments to docstrings
+* openflow app: Remove mistakenly added keys to subnets in sync\_port
+* Remove interface support
+* Refactor openflow app
+* Minor fixes to improve README visbility
+* Try different syntax for image adding
+* l3 controller agent: Simplify interface iteration
+* Controller Agent: Split up iteration for actual processing
+* Fix README images
+* Fix image links in README
+* Edit the project README page
+* Use standardized group constant instead of listing our own
+* Register to schedule notifications
+* Get segment ID from correct attribute
+* Fix logging format
+* Router delete and unused method
+* Migrate to oslo\_log
+* Reuse base class implementation as much as possible
+* Fix race condition between port data received from OVS and port\_sync
+* LOG fixes
+* Fix match criteria for deleted flow on ARP responder remove Use metadata and not local VLAN
+* Add policy setting for compute node
+* Log messages fixes 1) Use the same log call 2) correct formatting 3) Move messages that are debug to debug level and remove unnecessary logs, insert  critical error  log messages
+* 1) When detecting flow sync issue, when a flow is reached to the controller with no metadata start the bootstrap flow installation. 2) Create a bootstrap flow installation method Closes-Bug: #1429600
+* Set PYTHONPATH in execution command
+* Fix formatting error in OF\_packet\_in\_handler()
+* Fixed formatting error in log
+* Copyright message Fix
+* Installation Documentations
+* Clean up the l3 openflow application 1) Remove unused old code 2) Remove unused dependencies of the old implementation using the metadata table 3) remove unnecessary wait for the metadata table
+* Add ARP RESPONDER for new router interface
+* Changes to devstack plugin: 1) SDN Controller IP is defaulted to the HOST\_IP parameter 2) Add validations for OVS version 2.3.1+
+* Fixes for devstack external plugin
+* Add devstack external plugin files
+* Add L2 Agent to Dragonflow
+* Fix VM deletion scenario
+* Handle case of router with no interfaces
+* rename
+* add l3\_sdn\_agent
+* Changed the read me instructions
+* Set Up the neutron l3 sdn addon using neutron as library L3 service plugin L3 Controller Agent + OpenFlow controller
+*  Added documentation and install guides for the PoC
+* Initial Cookiecutter Commit
+* Added .gitreview
