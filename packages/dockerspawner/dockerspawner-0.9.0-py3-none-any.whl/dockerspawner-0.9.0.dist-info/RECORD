@@ -1,0 +1,11 @@
+dockerspawner/__init__.py,sha256=ITVkEjUFlqAcDmAMKDaPEHccNRnfS_jA0nQ17RYwsFA,189
+dockerspawner/_version.py,sha256=_DlwPNmTZTKflLiAF8YIqSr2ao66CTjj4bQtA6hz0jM,22
+dockerspawner/dockerspawner.py,sha256=FtkU5Ro8hunt-MDOY5qlMtR6roL5Nq1Ac529TXcjjdc,23567
+dockerspawner/systemuserspawner.py,sha256=4GOOeZMLrSxifbN6AoXvQo0Ggc38XON9dmZDmzQDgYY,4575
+dockerspawner/volumenamingstrategy.py,sha256=8AEK0J9Kik2pt5vk6rFlreEXdYQmDxRYK_DRGVbnh14,397
+dockerspawner-0.9.0.dist-info/DESCRIPTION.rst,sha256=5CIPlhBr177sXFo7n5IHW6oFjxCNcp7c4Jqu4Q62pjQ,41
+dockerspawner-0.9.0.dist-info/METADATA,sha256=r_TZQ2--V5V5Ce9q4G4s6nu5IMQGsvmaUYp9uTcj2g8,722
+dockerspawner-0.9.0.dist-info/RECORD,,
+dockerspawner-0.9.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+dockerspawner-0.9.0.dist-info/metadata.json,sha256=N7zX-L9P-YrjqxBa1IrKZUjpasSHrhiyrmLOAn5khrw,862
+dockerspawner-0.9.0.dist-info/top_level.txt,sha256=a3K6au7qOgV_3SaVKDcPRaqDI51h_XTYEc-ndxLZhbs,14
