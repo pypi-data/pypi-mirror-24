@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+SteamQuery.egg-info/PKG-INFO
+SteamQuery.egg-info/SOURCES.txt
+SteamQuery.egg-info/dependency_links.txt
+SteamQuery.egg-info/top_level.txt
+steam/__init__.py
+steam/query.py
