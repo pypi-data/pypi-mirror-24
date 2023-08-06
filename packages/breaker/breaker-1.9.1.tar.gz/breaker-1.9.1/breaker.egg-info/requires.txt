@@ -1,0 +1,17 @@
+pyyaml
+fundamentals
+requests
+numpy
+astropy
+healpy<=1.10.3
+crowdedText
+qub-sherlock
+neddy
+wcsaxes
+docopt
+ligo-gracedb
+HMpTy
+cython
+scipy
+Tornado
+pymysql
