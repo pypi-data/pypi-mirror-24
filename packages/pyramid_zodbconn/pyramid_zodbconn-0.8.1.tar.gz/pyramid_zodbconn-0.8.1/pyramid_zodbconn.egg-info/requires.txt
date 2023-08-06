@@ -1,0 +1,12 @@
+pyramid
+zodburi
+
+[docs]
+Sphinx
+pylons-sphinx-themes
+
+[testing]
+nose
+coverage
+pyramid_tm
+webtest

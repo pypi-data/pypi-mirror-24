@@ -1,0 +1,2 @@
+repoze.sphinx.autointerface
+pylons-sphinx-themes
