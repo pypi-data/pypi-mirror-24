@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+omrdatasettools/__init__.py
+omrdatasettools.egg-info/PKG-INFO
+omrdatasettools.egg-info/SOURCES.txt
+omrdatasettools.egg-info/dependency_links.txt
+omrdatasettools.egg-info/top_level.txt
+omrdatasettools/downloaders/DatasetDownloader.py
+omrdatasettools/downloaders/HomusDatasetDownloader.py
+omrdatasettools/downloaders/__init__.py
+omrdatasettools/tests/DatasetDownloaderTest.py
+omrdatasettools/tests/__init__.py
