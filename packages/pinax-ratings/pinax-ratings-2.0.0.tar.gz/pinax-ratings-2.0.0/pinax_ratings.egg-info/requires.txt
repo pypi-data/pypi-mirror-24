@@ -1,0 +1,2 @@
+django-user-accounts>=2.0.3
+Django>=1.8
