@@ -1,0 +1,5 @@
+recursive-include opensesame_extensions *
+recursive-include qtpip *.ui
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude .DS_Store
