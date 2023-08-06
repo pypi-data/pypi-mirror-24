@@ -1,0 +1,9 @@
+django_querysetsequence-0.8.dist-info/DESCRIPTION.rst,sha256=nwIG0UXpYHqsj7jcxjUwracMVShTPYAr-NR5mO-Vc8I,15301
+django_querysetsequence-0.8.dist-info/METADATA,sha256=T6LZXVIaZyT9OVnMcBa_w27Re0urf-MwK2YD4d7YlEw,16428
+django_querysetsequence-0.8.dist-info/metadata.json,sha256=TnbprkIEueOboLzV4F__1vHuATmFsUze5K4_d1knAks,1281
+django_querysetsequence-0.8.dist-info/RECORD,,
+django_querysetsequence-0.8.dist-info/top_level.txt,sha256=Z2iA_gMwgqZKv34O7DsYJTtu8FS1daP2dqfSLXCggkM,18
+django_querysetsequence-0.8.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
+queryset_sequence/__init__.py,sha256=qtSW2N5FgV-Xcn9kwfhgGhKy9W4lnWpkXSlmugI1iyI,22394
+queryset_sequence/_inheritance.py,sha256=3TcHIm95I2LpcwT7s2yQEsth9YcsbizMESY7XXX6W4U,2985
+queryset_sequence/pagination.py,sha256=6aO09U7xthwzNyNaeFASePgMsc7AQYUviEWguJ4qh_Q,8874
