@@ -1,0 +1,3 @@
+[console_scripts]
+cloudflare = cloudflare_cli.Cloudflare:main
+
