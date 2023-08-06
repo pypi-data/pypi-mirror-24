@@ -1,0 +1,11 @@
+choicesenum/__init__.py,sha256=zFIaDFsgnael8o4qsQbSbJ-Rw9lasflVRr0O_sXVQng,226
+choicesenum/enums.py,sha256=IsyjFA3Fgk6dd6WJ2fT4aKuDK_hVShoRp2CRFV-w9cw,2055
+choicesenum/django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+choicesenum/django/compat.py,sha256=5cn2NyIRPKv4_DwwoRywh2m8gsZUMVfafd_SfP_RhSs,626
+choicesenum/django/fields.py,sha256=l3MxtbK3vHQ9kdDEKL1x-KLyF6INjxYGZ4V_TkGOrbw,4271
+choicesenum-0.1.5.dist-info/DESCRIPTION.rst,sha256=BrgmOP00-oIOPWKRhVRYiG3A65T3IIsUF_zTR-a_uTo,6067
+choicesenum-0.1.5.dist-info/METADATA,sha256=2mj281CfPz9xwEo_q1x4BbH7k0ZjUzT4ltRTE6YD_bs,6882
+choicesenum-0.1.5.dist-info/RECORD,,
+choicesenum-0.1.5.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+choicesenum-0.1.5.dist-info/metadata.json,sha256=5edHL4qJOoTWfDdR4mHXslSq_j4Qsf7l5SmE_e8MMtM,971
+choicesenum-0.1.5.dist-info/top_level.txt,sha256=3bWUOQr2Urv071kim0FPgp0syDLVaiCBhkXVFLCLg9A,12
