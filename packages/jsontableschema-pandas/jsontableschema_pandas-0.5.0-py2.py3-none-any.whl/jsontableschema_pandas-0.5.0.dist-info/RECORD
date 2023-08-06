@@ -1,0 +1,10 @@
+jsontableschema_pandas/VERSION,sha256=oK1QZAE5pST4ZZEVcUW_HUZ06pwGW_6iFVjw97BEMMg,6
+jsontableschema_pandas/__init__.py,sha256=xSKfCdWYJhFcOiOavxHa31gFE5PcDPjvZzVRJT6ahgQ,367
+jsontableschema_pandas/mappers.py,sha256=JZRL5QCrukDr8mBQPJaXN1_yzCJXHEXl1Ac9D92PiyY,4336
+jsontableschema_pandas/storage.py,sha256=oN-9Ie2wPBcqgQNjg7xdvr2KU26r3RLm5PeYCXwUmps,4295
+jsontableschema_pandas-0.5.0.dist-info/DESCRIPTION.rst,sha256=bk1aYEWt4-qscGwY4BXR6udKXFa1s1-HJH4EJ0TTzTE,4161
+jsontableschema_pandas-0.5.0.dist-info/METADATA,sha256=4uVXJm4tkS_mMS2HE6Oms9yijApaMHqTIAQiB1wc4VQ,5467
+jsontableschema_pandas-0.5.0.dist-info/RECORD,,
+jsontableschema_pandas-0.5.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+jsontableschema_pandas-0.5.0.dist-info/metadata.json,sha256=D1UTN_DJyquELHMB25F4R2kYaSpQQ2K56kRDPZoiDCE,1426
+jsontableschema_pandas-0.5.0.dist-info/top_level.txt,sha256=2_12ytiuW8_BSq4Se0i-fOU8-9RQvQ5L4d2XUfyZ2aU,23
