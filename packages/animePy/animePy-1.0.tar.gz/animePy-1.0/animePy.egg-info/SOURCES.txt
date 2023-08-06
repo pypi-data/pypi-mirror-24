@@ -1,0 +1,5 @@
+setup.py
+animePy.egg-info/PKG-INFO
+animePy.egg-info/SOURCES.txt
+animePy.egg-info/dependency_links.txt
+animePy.egg-info/top_level.txt
