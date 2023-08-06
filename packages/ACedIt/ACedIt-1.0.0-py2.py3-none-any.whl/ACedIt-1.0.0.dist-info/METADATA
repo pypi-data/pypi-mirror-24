@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: ACedIt
+Version: 1.0.0
+Summary: Download and test against sample test cases from any competitive programming website
+Home-page: https://github.com/coderick14/ACedIt
+Author: Deep Bhattacharyya
+Author-email: bhattacharyya.rick14@gmail.com
+License: MIT License
+Keywords: sample test cases,downloader,competitive programming
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Education
+Requires-Dist: beautifulsoup4 (==4.6.0)
+Requires-Dist: certifi (==2017.4.17)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: gevent (==1.2.2)
+Requires-Dist: greenlet (==0.4.12)
+Requires-Dist: grequests (==0.3.0)
+Requires-Dist: idna (==2.5)
+Requires-Dist: requests (==2.18.1)
+Requires-Dist: terminaltables (==3.1.0)
+Requires-Dist: urllib3 (==1.21.1)
+
+UNKNOWN
+
+
