@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://nuu.application.i2/"
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://nuu.application.i2/">
+
+	<xs:simpleType name="t_version">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{2}\.[0-9]{2}" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_string6">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="6" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_string10">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="10" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_string36">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="36" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_string50">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="50" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_string100">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="100" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_string255">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="255" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_string500">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="500" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_string512">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="512" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_string1024">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="1024" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_positiveLong">
+		<xs:restriction base="xs:long">
+			<xs:minInclusive value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_code1">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="1" />
+			<xs:pattern value="[a-zA-Z0-9]+" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_code3">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="3" />
+			<xs:pattern value="[a-zA-Z0-9]+" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_code4">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="4" />
+			<xs:pattern value="[a-zA-Z0-9]+" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_code5">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="5" />
+			<xs:pattern value="[a-zA-Z0-9]+" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_code10">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="10" />
+			<xs:pattern value="[a-zA-Z0-9]+" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_numUnique">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="18" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_numGuichet">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="5" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="t_adressemel">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z0-9]{19}@[a-zA-Z0-9]{17}\.[a-zA-Z]{3}" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
