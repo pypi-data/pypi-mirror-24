@@ -1,0 +1,6 @@
+
+[dev]
+
+[test]
+coverage
+codeclimate-test-reporter
