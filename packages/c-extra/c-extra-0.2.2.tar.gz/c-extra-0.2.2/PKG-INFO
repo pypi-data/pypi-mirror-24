@@ -1,0 +1,173 @@
+Metadata-Version: 1.1
+Name: c-extra
+Version: 0.2.2
+Summary: Non official client for Crypto-Extranet
+Home-page: http://chadok.info/c-extra
+Author: Olivier Schwander
+Author-email: olivier.schwander@chadok.info
+License: UNKNOWN
+Download-URL: http://chadok.info/c-extra/c-extra-0.2.2.tar.gz
+Description: C-Extra - Non official client for Crypto-Extranet
+        *************************************************
+        
+        **Notice:** Since most of the potential users of this tool are French
+        speaking, the following document is written in French.
+        
+        Description
+        ===========
+        
+        *C-Extra* est un client non-officiel en ligne de commande pour le système
+        d'extranet Crypto-Extranet, utilisé par certaines sociétés de gestion de
+        syndic. Ce client permet de lister et de télécharger les fichiers mis à
+        disposition dans l'extranet, ainsi que de consulter le solde et
+        l'historique des appels de fonds. Il gère plusieurs comptes, chaque
+        compte pouvant être fourni par un syndic différent.
+        
+        **Ce projet n'est ni supporté ni affilié en aucune façon à la
+        plate-forme Crypto-Extranet, à son éditeur ou à aucun des syndics
+        l'utilisant.**
+        
+        Démarrage
+        ---------
+        
+        Créez un fichier ``~/.config/c-extra/config`` de la façon suivante:
+        
+        .. code-block:: ini
+        
+           [copro1]
+           syndic   = XXX # le XXX dans l'url d'accès https://XXX.crypto-extranet.com
+           login    = LOGIN
+           password = PASSWORD
+        
+        Il faut commencer par se connecter au site, avec la commande
+        
+        .. code-block:: bash
+        
+           $ c-extra login
+        
+        Si la connexion réussi, les commandes suivantes sont disponibles:
+        
+        * Afficher la liste les documents disponbiles
+        
+        .. code-block:: bash
+        
+           $ c-extra documents
+        
+        * Télécharger les documents disponbiles (dans le répertoire courant)
+        
+        .. code-block:: bash
+        
+           $ c-extra download
+        
+        * Afficher le solde et l'historique des appels de fonds
+        
+        .. code-block:: bash
+        
+           $ c-extra account
+        
+        Voir Utilisation_ pour plus de détails.
+        
+        Dépendances
+        ===========
+        
+        Modules Python:
+        
+        * requests
+        * tabulate
+        
+        Installation
+        ============
+        
+        La dernière version publiée peut être installée avec la commande:
+        
+        .. code-block:: bash
+        
+           $ pip3 install c-extra
+        
+        En utilisant une archive des sources, il suffit d'utiliser:
+        
+        .. code-block:: bash
+        
+           $ python setup.py install
+        
+        Utilisation
+        ===========
+        
+        Commandes
+        ---------
+        
+        Toutes les commandes peuvent prendre en argument le nom du compte à
+        utiliser (``copro1`` dans l'exemple plus haut).
+        
+        Par exemple, pour ne lister que les documents du compte ``copro2``
+        
+        .. code-block:: bash
+        
+           $ c-extra documents copro2
+        
+        * ``c-extra documents`` affiche toujours tous les documents disponibles,
+          préfixés par le nom du compte.
+        * ``c-extra download`` n'affiche que les nouveaux documents téléchargés.
+        
+        Configuration
+        -------------
+        
+        Voici un exemple de configuration avec deux comptes:
+        
+        .. code-block:: ini
+        
+           [appartement1]
+           syndic   = XXX
+           login    = LOGIN
+           password = PASSWORD
+           directory = ~/Documents/appartement1
+        
+           [maison]
+           syndic   = YYY
+           login    = LOGIN
+           password = PASSWORD
+           disabled = True
+           exclude  = *SOMETHING*
+        
+        Les documents du compte ``appartement1`` seront téléchargés dans le
+        répertoire indiqué par ``directory``.
+        
+        Le compte ``maison`` est désactivé (``disabled = True``) c'est à dire
+        qu'il ne sera pas pris en compte à moins d'être donné explicitement en
+        argument d'une commande (par exemple ``c-extra download maison``).
+        
+        Pour le compte ``maison``, les fichiers correspondants au motif indiqué
+        par ``exclude`` ne seront pas téléchargés.
+        
+        Téléchargements
+        ===============
+        
+        * Version 0.2.2: http://chadok.info/c-extra/c-extra-0.2.2.tar.gz
+        * Version 0.1.0: http://chadok.info/c-extra/c-extra-0.1.0.tar.gz
+        * Dépôt Git: https://gitlab.com/oschwand/c-extra
+        
+        Bugs et commentaires
+        ====================
+        
+        Les bugs doivent être déposés sur le `système de suivi`_.
+        
+        .. _système de suivi: https://gitlab.com/oschwand/c-extra/issues
+        
+        Licence
+        =======
+        
+        C-Extra is free software, released under the term of the GPLv3+.
+        
+        Copyright 2017 Olivier Schwander <olivier.schwander@chadok.info>
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires: requests
+Requires: tabulate
