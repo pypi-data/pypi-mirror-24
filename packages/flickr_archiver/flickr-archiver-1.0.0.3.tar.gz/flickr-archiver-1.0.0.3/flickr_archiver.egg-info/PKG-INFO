@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: flickr-archiver
+Version: 1.0.0.3
+Summary: Does what it says it does
+Home-page: https://github.com/tahoe/flickr_archiver/
+Author: Dennis Durling
+Author-email: djdtahoe@gmail.com
+License: MIT
+Download-URL: https://github.com/tahoe/flickr_archiver/archive/v1.0.0.3.zip
+Description: UNKNOWN
+Keywords: fun shit
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

@@ -1,0 +1,10 @@
+setup.py
+flickr_archiver/__init__.py
+flickr_archiver/flickr.py
+flickr_archiver.egg-info/PKG-INFO
+flickr_archiver.egg-info/SOURCES.txt
+flickr_archiver.egg-info/dependency_links.txt
+flickr_archiver.egg-info/entry_points.txt
+flickr_archiver.egg-info/not-zip-safe
+flickr_archiver.egg-info/requires.txt
+flickr_archiver.egg-info/top_level.txt
