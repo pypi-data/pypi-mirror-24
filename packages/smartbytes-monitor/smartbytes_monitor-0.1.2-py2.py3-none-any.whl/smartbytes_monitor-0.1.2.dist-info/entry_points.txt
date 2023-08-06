@@ -1,0 +1,3 @@
+[console_scripts]
+smartbytes = smartbytes.smartbytes:command_line
+
