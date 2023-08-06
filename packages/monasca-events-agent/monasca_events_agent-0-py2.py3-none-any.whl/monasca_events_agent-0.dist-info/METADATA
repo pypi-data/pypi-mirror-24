@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: monasca-events-agent
+Version: 0
+Summary: Monitoring agent for gathering events and sending them to the Monasca Events API.
+Home-page: https://github.com/openstack/monasca-events-agent
+Author: monasca
+Author-email: monasca@lists.launchpad.net
+License: Apache-2
+Keywords: openstack
+
+# monasca-events-agent
+
+This agent collects events from OpenStack components (Nova, Glance, ...) 
+and submits them to Monasca Events API
+
+
+
