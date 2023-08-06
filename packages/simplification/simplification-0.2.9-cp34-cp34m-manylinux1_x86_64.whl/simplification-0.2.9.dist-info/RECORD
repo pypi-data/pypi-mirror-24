@@ -1,0 +1,13 @@
+simplification/cutil.c,sha256=yK7Ka9aHdlYiIZ81QOSPXQC8G_R0UmrRM-s3NuRYRYc,702114
+simplification/librdp.so,sha256=E5fM6jT12l1oRsLZiodkujcxHpInO6HI-4tathSrerg,115912
+simplification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplification/cutil.cpython-34m.so,sha256=BFHqGSGV338zo2FyLxIvEiKRExoWNj-e_GKMFK0qGP8,872044
+simplification/util.py,sha256=ohuYXKvfjazvluYrHcVNzpHjMvNlf499ts1CRR_R8KY,4562
+simplification/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplification/test/test.py,sha256=JVcZmOcCYy4Ih4GZNDU0nNDhcpq8thUd6DUIiYUyZAs,2857
+simplification-0.2.9.dist-info/DESCRIPTION.rst,sha256=DTpUoQJeXFxiGgdiaS165TnrRnxg1Jj3TbxaxyI3SkU,1581
+simplification-0.2.9.dist-info/METADATA,sha256=xqEIP8N_r0s0MRfTA0eIpNv5v9aGqu6xpp0PXmF4jSI,2719
+simplification-0.2.9.dist-info/RECORD,,
+simplification-0.2.9.dist-info/WHEEL,sha256=-w08owRQVnrIufLHviE4y_7bILmDe7DWyhErUpfJkB0,109
+simplification-0.2.9.dist-info/metadata.json,sha256=Ewx7t-2HF0vaxEV6gTG5lBkejN9VOLWag_PNP5pduDc,1291
+simplification-0.2.9.dist-info/top_level.txt,sha256=lJID9g5MiPOFux6Cv4ykfEGrZoG7aOrKCU27q-bVaXA,15
