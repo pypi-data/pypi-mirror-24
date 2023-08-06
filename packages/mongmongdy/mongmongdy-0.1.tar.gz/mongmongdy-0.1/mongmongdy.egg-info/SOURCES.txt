@@ -1,0 +1,6 @@
+README.txt
+setup.py
+mongmongdy.egg-info/PKG-INFO
+mongmongdy.egg-info/SOURCES.txt
+mongmongdy.egg-info/dependency_links.txt
+mongmongdy.egg-info/top_level.txt
