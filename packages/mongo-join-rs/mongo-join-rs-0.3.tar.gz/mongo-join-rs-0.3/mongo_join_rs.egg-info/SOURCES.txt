@@ -1,0 +1,8 @@
+setup.py
+mongo_join_rs/application.py
+mongo_join_rs.egg-info/PKG-INFO
+mongo_join_rs.egg-info/SOURCES.txt
+mongo_join_rs.egg-info/dependency_links.txt
+mongo_join_rs.egg-info/entry_points.txt
+mongo_join_rs.egg-info/requires.txt
+mongo_join_rs.egg-info/top_level.txt

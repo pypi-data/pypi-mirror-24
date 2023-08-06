@@ -1,0 +1,3 @@
+[console_scripts]
+mongo_join_rs = mongo_join_rs.application:main
+
