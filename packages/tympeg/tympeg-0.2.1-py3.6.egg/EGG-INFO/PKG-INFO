@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: tympeg
+Version: 0.2.1
+Summary: Yet another scripting solution for ffmpeg operations: Converting, concatanating, saving HLS streams, meta-data analysis
+Home-page: https://github.com/taishengy/tympeg
+Author: TaiSheng Yeager
+Author-email: taishengyeager@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: ffmpeg video audio subtitle HLS stream
+Platform: UNKNOWN
