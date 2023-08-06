@@ -1,0 +1,60 @@
+Metadata-Version: 2.0
+Name: obs-ws-rc
+Version: 2.3.0
+Summary: asyncio-based Python 3.5+ client to obs-websocket plugin for OBS Studio
+Home-page: https://github.com/KirillMysnik/obs-ws-rc
+Author: Kirill Mysnik
+Author-email: kirill@mysnik.com
+License: MIT
+Keywords: obs obs-websocket
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Multimedia :: Video
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.5
+Requires-Dist: websockets
+
+OBS WebSocket RemoteControl
+===========================
+
+What's this?
+------------
+**obs-ws-rc** is a Python 3.5+ library that allows you to establish client
+connections to the `obs-websocket <https://github.com/Palakis/obs-websocket/>`_
+plugin for OBS Studio.
+
+It uses an **asyncio**-based approach which it inherited from the underlying
+WebSocket library - `websockets <https://github.com/aaugustin/websockets/>`_
+
+Installation
+------------
+The library is `available via PyPi <https://pypi.python.org/pypi/obs-ws-rc>`_:
+
+``pip install obs-ws-rc``
+
+Source Code
+-----------
+GitHub repository: `github.com/KirillMysnik/obs-ws-rc/
+<https://github.com/KirillMysnik/obs-ws-rc/>`_
+
+Documentation
+-------------
+The docs are `hosted at Read the Docs <http://obs-ws-rc.readthedocs.io>`_
+
+Examples
+--------
+Sample code is located in the `example folder
+<https://github.com/KirillMysnik/obs-ws-rc/tree/master/examples>`_
+
+License
+-------
+Available via `MIT License
+<https://github.com/KirillMysnik/obs-ws-rc/blob/master/LICENSE>`_
+
+
