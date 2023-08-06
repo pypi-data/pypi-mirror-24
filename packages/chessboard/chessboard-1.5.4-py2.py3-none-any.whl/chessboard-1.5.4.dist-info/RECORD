@@ -1,0 +1,17 @@
+chessboard/__init__.py,sha256=rwzX34Zj6fMPiWGnal_qQKp50R345sS3YwC5FSgNFA0,2357
+chessboard/benchmark.py,sha256=OwTJEZ3aR67J5A6O-08wopc6l36_NkGDpmNRIF66B54,6378
+chessboard/board.py,sha256=uxRYUlWeeWRF91sLQ2pt5mVs-xlNBbZrx790LBKV_Rg,7166
+chessboard/cli.py,sha256=4aUbAYft3xCjBw7dRhwQDFHpBTzotGyVxVSxVoenKm0,5998
+chessboard/pieces.py,sha256=WlnnVB5yWcLlawb47SARVZxHAX29SdVQ7ZGltPpZfZA,9246
+chessboard/solver.py,sha256=PESIiOqbUCOAnYsQThNpam_526i0pUyWbBS2V6Bp-rE,7068
+chessboard/tests/__init__.py,sha256=9y2XbsdOU1dVdBEkljvJMBoeQKLds6T35fyR30IN0m4,859
+chessboard/tests/test_board.py,sha256=iW7kTXJwuqeRcHShJnV9A9FEi7lKa0fnNV0b3TIgI5M,3549
+chessboard/tests/test_pieces.py,sha256=UV4Y_VR2yVa_9jHPGCtz-DtH9tTfGiEXJFYiNJ23mcg,9707
+chessboard/tests/test_solver.py,sha256=L43jUD8iVKi90Suq9MqWd4m_93rMZylb2QKOFoD5w9I,23815
+chessboard-1.5.4.dist-info/DESCRIPTION.rst,sha256=06UzcwWj5jjU8jfQMwOBFOG-MfV1t477GudaK6RSMVc,7219
+chessboard-1.5.4.dist-info/METADATA,sha256=eOEht3cchfTl52W4Lh80HhCShll73t7_lswv5jr95iI,9228
+chessboard-1.5.4.dist-info/RECORD,,
+chessboard-1.5.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+chessboard-1.5.4.dist-info/entry_points.txt,sha256=p8JrC5-pHmELZeYCil5h32JIidun9lrLuisqJThUcw8,51
+chessboard-1.5.4.dist-info/metadata.json,sha256=-Y6UAtTNdpIQOUqc2ypStswXEErZgA0SQXKeg6kQwPs,2090
+chessboard-1.5.4.dist-info/top_level.txt,sha256=S3qNbBjYMnqpKUMDAjX5BsQyNLHdkkJgYySRnCdxcAo,11
