@@ -1,0 +1,7 @@
+include tuv/data/*
+recursive-exclude tuv/data/TUV_grid *
+exclude tuv/db.py
+include CHANGES.rst
+include INSTALL.rst
+include LICENSE.txt
+include README.rst
