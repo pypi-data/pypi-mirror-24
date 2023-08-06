@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: thermoplotting
+Version: 0.1
+Summary: Tools for visualizing data related to cluster expansions and manipulating casm output.
+Home-page: https://github.com/goirijo/thermoplotting
+Author: John Goiri
+Author-email: jg.goiri@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+UNKNOWN
+
+
