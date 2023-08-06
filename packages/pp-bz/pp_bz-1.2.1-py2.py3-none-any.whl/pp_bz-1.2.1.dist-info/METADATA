@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: pp-bz
+Version: 1.2.1
+Summary: use your key and site url create your site unique password
+Home-page: https://github.com/bigzhu/pp
+Author: bigzhu
+Author-email: vermiliondun@gmail.com
+License: MIT
+Keywords: p,a,s,s,w,o,r,d, ,p,r,o,d,u,c,e,r
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+
+UNKNOWN
+
+
