@@ -1,0 +1,64 @@
+Metadata-Version: 1.1
+Name: sphinx-theme-pd
+Version: 0.8.3
+Summary: Material Design theme for Sphinx.
+Home-page: https://github.com/iktakahiro/sphinx_theme_pd
+Author: Takahiro Ikeuchi @iktakahiro
+Author-email: takahiro.ikeuchi@gmail.com
+License: MIT
+Description: Sphinx Theme 'pd'
+        =================
+        
+        Material Design theme for `Sphinx`_
+        
+        Sample
+        ------
+        
+        * https://sphinx-theme-pd.netlify.com/
+        
+        
+        Screen shot
+        -----------
+        
+        .. image:: ./img/sphinx_theme_pd_1.png
+        
+        .. image:: ./img/sphinx_theme_pd_2.png
+        
+        .. image:: ./img/sphinx_theme_pd_3.png
+        
+        .. image:: ./img/sphinx_theme_pd_4.png
+        
+        
+        Installation
+        ------------
+        
+        1. pip install
+        
+        .. code::
+        
+           $ pip install sphinx_theme_pd
+        
+        2. Edit your conf.py
+        
+        .. code::
+        
+           import sphinx_theme_pd
+           html_theme = "sphinx_theme_pd"
+           html_theme_path = [sphinx_theme_pd.get_html_theme_path()]
+        
+        Build
+        -----
+        
+        .. code::
+           $ yarn
+           $ webpack
+        
+        .. _Sphinx: http://sphinx-doc.org
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
