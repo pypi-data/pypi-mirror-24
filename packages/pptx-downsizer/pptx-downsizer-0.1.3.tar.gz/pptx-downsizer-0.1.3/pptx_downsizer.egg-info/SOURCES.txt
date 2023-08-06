@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+pptx_downsizer/__init__.py
+pptx_downsizer/__main__.py
+pptx_downsizer/pptx_downsizer.py
+pptx_downsizer/utils.py
+pptx_downsizer.egg-info/PKG-INFO
+pptx_downsizer.egg-info/SOURCES.txt
+pptx_downsizer.egg-info/dependency_links.txt
+pptx_downsizer.egg-info/entry_points.txt
+pptx_downsizer.egg-info/requires.txt
+pptx_downsizer.egg-info/top_level.txt
