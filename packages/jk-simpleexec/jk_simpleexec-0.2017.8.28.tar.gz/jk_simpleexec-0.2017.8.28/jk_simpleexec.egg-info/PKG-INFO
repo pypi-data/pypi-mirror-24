@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: jk-simpleexec
+Version: 0.2017.8.28
+Summary: Module to run shell programs in a very simple way.
+Home-page: https://github.com/jkpubsrc/python-module-jk-simpleexec
+Author: Jürgen Knauth
+Author-email: pubsrc@binary-overflow.de
+License: Apache 2.0
+Download-URL: https://github.com/jkpubsrc/python-module-jk-simpleexec/tarball/0.2017.8.28
+Description: ﻿jk_simpleexec
+        =============
+        
+        Introduction
+        ------------
+        
+        This python module provides a convenient interface to execute commands and catch their output.
+        
+        Information about this module can be found here:
+        
+        * [github.org](https://github.com/jkpubsrc/python-module-jk-simpleexec)
+        * [pypi.python.org](https://pypi.python.org/pypi/jk_simpleexec)
+        
+        Contact Information
+        -------------------
+        
+        This is Open Source code. That not only gives you the possibility of freely using this code it also
+        allows you to contribute. Feel free to contact the author(s) of this software listed below, either
+        for comments, collaboration requests, suggestions for improvement or reporting bugs:
+        
+        * Jürgen Knauth: jknauth@uni-goettingen.de, pubsrc@binary-overflow.de
+        
+        License
+        -------
+        
+        This software is provided under the following license:
+        
+        * Apache Software License 2.0
+        
+        
+        
+        
+Keywords: exec,command
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: Apache Software License
