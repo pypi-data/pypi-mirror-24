@@ -1,0 +1,14 @@
+pint
+numpy
+scipy
+matplotlib
+IPython
+pyyaml
+declarative
+scikit-umfpack
+
+[fitting]
+casadi
+
+[test]
+pytest

@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: phasor
+Version: 1.0.0.dev3
+Summary: Scientific modeling of linearized optics, electronics, mechanics, and signal flow in the frequency domain
+Home-page: UNKNOWN
+Author: Lee McCuller
+Author-email: Lee.McCuller@gmail.com
+License: Apache v2
+Description: UNKNOWN
+Keywords: Controls Linear Physics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha 
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Physics
