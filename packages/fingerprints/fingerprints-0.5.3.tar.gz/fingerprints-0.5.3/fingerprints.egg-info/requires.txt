@@ -1,0 +1,4 @@
+normality>=0.4.0
+unidecode
+pyyaml
+six
