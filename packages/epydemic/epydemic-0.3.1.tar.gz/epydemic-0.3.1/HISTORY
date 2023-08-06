@@ -1,0 +1,31 @@
+Version 0.3.1 2017-08-16
+
+   - Added a reset() method to compartmented models to allow them to
+     be built repeatedly
+   - Gave StochasticDynamics.eventRateDistribution() a default implemntation
+   - Added CompartmentedModel.build() as an abstract method, just so
+     we could add documentation for it
+   - Fixed a few minor issues
+   
+Version 0.3.0 2017-06-28
+
+   - Refactored synchronous dynamics to be completely independent of models
+   - Added posting events for fixed times
+   - Added fixed-recovery period model variants
+
+Version 0.2.0 2017-06-27
+
+   - New approach for compartmented models and dynamics
+   - Updated documentation
+   - Added "Mathematics of epidemics on networks" book to bibliography
+   - Refactored test suite
+   
+Version 0.1.1 2017-06-15
+
+   - Added more documentation, bibliography, glossary
+   - Started on first explanatory notebook draft
+
+Version 0.1.0 2017-06-12
+
+   - First disentanglement from the book repo
+   
