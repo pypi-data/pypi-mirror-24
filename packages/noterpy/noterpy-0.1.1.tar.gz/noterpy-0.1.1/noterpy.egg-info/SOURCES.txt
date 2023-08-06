@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+noterpy/__init__.py
+noterpy/noter.py
+noterpy.egg-info/PKG-INFO
+noterpy.egg-info/SOURCES.txt
+noterpy.egg-info/dependency_links.txt
+noterpy.egg-info/requires.txt
+noterpy.egg-info/top_level.txt
+tests/__init__.py
+tests/test_noter.py
