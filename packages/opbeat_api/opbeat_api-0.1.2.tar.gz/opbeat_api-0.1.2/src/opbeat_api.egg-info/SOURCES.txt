@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+src/opbeat/__init__.py
+src/opbeat/base.py
+src/opbeat_api.egg-info/PKG-INFO
+src/opbeat_api.egg-info/SOURCES.txt
+src/opbeat_api.egg-info/dependency_links.txt
+src/opbeat_api.egg-info/not-zip-safe
+src/opbeat_api.egg-info/requires.txt
+src/opbeat_api.egg-info/top_level.txt
