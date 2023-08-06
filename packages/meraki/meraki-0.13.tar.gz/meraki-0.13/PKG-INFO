@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: meraki
+Version: 0.13
+Summary: Cisco Meraki Dashboard API Python 3.6 Module
+Home-page: https://github.com/shiyuechengineer/meraki-dashboard
+Author: Shiyue Cheng
+Author-email: shiyue@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/shiyuechengineer/meraki-dashboard/archive/0.11.tar.gz
+Description: UNKNOWN
+Keywords: meraki,dashboard,cisco
+Platform: UNKNOWN
