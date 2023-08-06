@@ -1,0 +1,7 @@
+quarc-gateway.py
+setup.py
+quarc_gateway.egg-info/PKG-INFO
+quarc_gateway.egg-info/SOURCES.txt
+quarc_gateway.egg-info/dependency_links.txt
+quarc_gateway.egg-info/requires.txt
+quarc_gateway.egg-info/top_level.txt
