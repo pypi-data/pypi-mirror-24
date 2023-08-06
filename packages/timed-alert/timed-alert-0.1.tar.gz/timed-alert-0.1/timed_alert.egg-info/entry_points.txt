@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        tal = timed_alert.main:tal
+        timed-alert = timed_alert.main:tal
+    
