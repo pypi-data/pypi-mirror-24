@@ -1,0 +1,16 @@
+setup.py
+pippi/__init__.py
+pippi/benchmarks.py
+pippi/dsp.py
+pippi/graph.py
+pippi/interpolation.c
+pippi/oscs.c
+pippi/rhythm.py
+pippi/sampler.py
+pippi/soundbuffer.c
+pippi/wavetables.c
+pippi.egg-info/PKG-INFO
+pippi.egg-info/SOURCES.txt
+pippi.egg-info/dependency_links.txt
+pippi.egg-info/requires.txt
+pippi.egg-info/top_level.txt
