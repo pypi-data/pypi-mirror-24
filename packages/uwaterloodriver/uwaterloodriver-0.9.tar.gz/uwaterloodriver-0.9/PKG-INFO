@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: uwaterloodriver
+Version: 0.9
+Summary: A simple Python 3 wrapper for University of Waterloo's Open Data API (v2).
+Home-page: https://github.com/a2bondar/UWaterlooDriver
+Author: Anton Bondarenko
+Author-email: a2bondar@edu.uwaterloo.ca
+License: MIT
+Download-URL: https://github.com/a2bondar/UWaterlooDriver/archive/0.9.tar.gz
+Description: UNKNOWN
+Keywords: uwaterloo,uw,api,opendata,uwaterloodriver
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
