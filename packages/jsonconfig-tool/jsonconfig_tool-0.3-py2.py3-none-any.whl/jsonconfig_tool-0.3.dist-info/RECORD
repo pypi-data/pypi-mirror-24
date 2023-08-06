@@ -1,0 +1,16 @@
+jsonconfig/__init__.py,sha256=mIgfhg03YzRm1JPKkqFkkBQiai2wxwScLfczPSdp9Ow,670
+jsonconfig/_compat.py,sha256=DiuT9QLlnFdRN94FeWkt5Wv_PMLNlF9M2hoiqF_3w4Y,714
+jsonconfig/appdir.py,sha256=cDzcDoguZzkfJf9kLdQhNRwqrTn-Shl3xjj8A2H3a-8,496
+jsonconfig/core.py,sha256=760to78gT-Nxvp2vHFjnBF3cKAdDg0RzlDb35uG8VQA,2456
+jsonconfig/env.py,sha256=A2u6higAG8l0xHFuckkqlwtR6asE_HuYWmtHlqNuE04,1561
+jsonconfig/errors.py,sha256=c3RtNdXh1gVqCLvdyxVd96Ma7dlUqkxpBcSV52U_b6E,1317
+jsonconfig/jsonutils.py,sha256=iboZuUwufQtOJIbd8JxkuXH_Xe4Ddmq8tli4EpMT2ZQ,741
+jsonconfig/kwargs.py,sha256=aVucwDVo9b98U8ueHfYQxf5iAGW7GpDOLfz1Pg8RgaM,2064
+jsonconfig/pwd.py,sha256=zfASE78tOrx9bj1YDKwtf1yOX0gt7OCZ7-27fkiihr4,2037
+jsonconfig/shortcuts.py,sha256=mR0bGVZpsodI3ZXHXMrigI_PEuOj1dvja3cJPLuYEGU,465
+jsonconfig_tool-0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+jsonconfig_tool-0.3.dist-info/METADATA,sha256=kPoKsr-HkQHFsdoZpmuCdZ0e5VeEYf1DS4UFZyplZ64,983
+jsonconfig_tool-0.3.dist-info/RECORD,,
+jsonconfig_tool-0.3.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+jsonconfig_tool-0.3.dist-info/metadata.json,sha256=JbmdqTm30ZcnwO_7fksnc8KW5fISzlr9D1WDM4qR_lM,1152
+jsonconfig_tool-0.3.dist-info/top_level.txt,sha256=6WVoKUIQ9MX4wRookQdbJGEv2hQbAOzDc-EetEbk1wY,11
