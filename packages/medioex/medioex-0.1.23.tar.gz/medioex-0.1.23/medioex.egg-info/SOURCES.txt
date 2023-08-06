@@ -1,0 +1,9 @@
+MANIFEST.in
+medioex.c
+pmedex.h
+setup.cfg
+setup.py
+medioex.egg-info/PKG-INFO
+medioex.egg-info/SOURCES.txt
+medioex.egg-info/dependency_links.txt
+medioex.egg-info/top_level.txt
