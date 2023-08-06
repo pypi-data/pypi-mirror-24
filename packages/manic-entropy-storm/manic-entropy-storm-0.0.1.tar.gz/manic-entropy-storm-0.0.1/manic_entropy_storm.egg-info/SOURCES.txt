@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+manic-entropy-storm/__init__.py
+manic-entropy-storm/main.py
+manic_entropy_storm.egg-info/PKG-INFO
+manic_entropy_storm.egg-info/SOURCES.txt
+manic_entropy_storm.egg-info/dependency_links.txt
+manic_entropy_storm.egg-info/requires.txt
+manic_entropy_storm.egg-info/top_level.txt
