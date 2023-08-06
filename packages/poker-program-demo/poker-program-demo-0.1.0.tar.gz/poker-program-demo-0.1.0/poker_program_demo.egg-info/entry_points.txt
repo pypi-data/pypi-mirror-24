@@ -1,0 +1,3 @@
+[console_scripts]
+play-poker = holdem.holdem_game:run_poker_game
+
