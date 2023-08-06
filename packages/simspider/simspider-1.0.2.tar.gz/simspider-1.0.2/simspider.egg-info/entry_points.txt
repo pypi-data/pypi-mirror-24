@@ -1,0 +1,5 @@
+[console_scripts]
+simcode = simspider.simcode:main
+simgo = simspider.simgo:main
+simtest = simspider.simtest:main
+
