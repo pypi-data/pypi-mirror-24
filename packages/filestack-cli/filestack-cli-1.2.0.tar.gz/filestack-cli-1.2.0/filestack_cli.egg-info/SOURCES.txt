@@ -1,0 +1,13 @@
+setup.py
+filestack_cli.egg-info/PKG-INFO
+filestack_cli.egg-info/SOURCES.txt
+filestack_cli.egg-info/dependency_links.txt
+filestack_cli.egg-info/entry_points.txt
+filestack_cli.egg-info/requires.txt
+filestack_cli.egg-info/top_level.txt
+fs_cli/__init__.py
+fs_cli/config.py
+fs_cli/router.py
+fs_cli/version.py
+fs_cli/utils/__init__.py
+fs_cli/utils/management_utils.py

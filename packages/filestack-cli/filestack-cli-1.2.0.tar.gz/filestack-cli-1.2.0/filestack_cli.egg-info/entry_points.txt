@@ -1,0 +1,3 @@
+[console_scripts]
+fs-cli = fs_cli.router:cli
+
