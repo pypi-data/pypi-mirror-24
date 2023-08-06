@@ -1,0 +1,8 @@
+requests
+amazon-kclpy
+boto3
+pygogo
+redis
+sqlalchemy
+psycopg2
+geoalchemy2
