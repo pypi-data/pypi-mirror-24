@@ -1,0 +1,9 @@
+pyyaml
+fundamentals
+requests
+crowdedText
+sherlock
+neddy
+wcsaxes
+docopt
+ligo-gracedb
