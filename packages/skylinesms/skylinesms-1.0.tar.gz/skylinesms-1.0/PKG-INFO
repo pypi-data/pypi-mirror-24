@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: skylinesms
+Version: 1.0
+Summary: A module to send sms using the Skyline SMS REST apis, www.skylinesms.com
+Home-page: https://github.com/assekalala/python-skyline-sms.git
+Author: Abdu Ssekalala
+Author-email: assekalala@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: sms,skyline,skylinesms
+Platform: UNKNOWN
