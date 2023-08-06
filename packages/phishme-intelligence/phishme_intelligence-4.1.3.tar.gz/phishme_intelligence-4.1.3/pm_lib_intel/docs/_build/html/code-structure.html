@@ -1,0 +1,701 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Code Overview &#8212; pm_lib_intel 4.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '4.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Tutorial" href="demo.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="code-overview">
+<h1>Code Overview<a class="headerlink" href="#code-overview" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="phishme-intelligence">
+<h2>PhishMe Intelligence<a class="headerlink" href="#phishme-intelligence" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.intelligence.Malware">
+<em class="property">class </em><code class="descclassname">core.intelligence.</code><code class="descname">Malware</code><span class="sig-paren">(</span><em>malware</em><span class="sig-paren">)</span><a class="headerlink" href="#core.intelligence.Malware" title="Permalink to this definition">¶</a></dt>
+<dd><p>Malware class holds a single PhishMe Intelligence object.</p>
+<dl class="class">
+<dt id="core.intelligence.Malware.BlockSet">
+<em class="property">class </em><code class="descname">BlockSet</code><span class="sig-paren">(</span><em>block_set</em><span class="sig-paren">)</span><a class="headerlink" href="#core.intelligence.Malware.BlockSet" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="core.intelligence.Malware.BlockSet.malware_family">
+<code class="descname">malware_family</code><a class="headerlink" href="#core.intelligence.Malware.BlockSet.malware_family" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>self</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.BlockSet.malware_family_description">
+<code class="descname">malware_family_description</code><a class="headerlink" href="#core.intelligence.Malware.BlockSet.malware_family_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.BlockSet.watchlist_ioc">
+<code class="descname">watchlist_ioc</code><a class="headerlink" href="#core.intelligence.Malware.BlockSet.watchlist_ioc" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.BlockSet.watchlist_ioc_host">
+<code class="descname">watchlist_ioc_host</code><a class="headerlink" href="#core.intelligence.Malware.BlockSet.watchlist_ioc_host" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.BlockSet.watchlist_ioc_path">
+<code class="descname">watchlist_ioc_path</code><a class="headerlink" href="#core.intelligence.Malware.BlockSet.watchlist_ioc_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.intelligence.Malware.DomainSet">
+<em class="property">class </em><code class="descname">DomainSet</code><span class="sig-paren">(</span><em>domain_set</em><span class="sig-paren">)</span><a class="headerlink" href="#core.intelligence.Malware.DomainSet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="core.intelligence.Malware.ExecutableSet">
+<em class="property">class </em><code class="descname">ExecutableSet</code><span class="sig-paren">(</span><em>executable_set</em><span class="sig-paren">)</span><a class="headerlink" href="#core.intelligence.Malware.ExecutableSet" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="core.intelligence.Malware.ExecutableSet.malware_family">
+<code class="descname">malware_family</code><a class="headerlink" href="#core.intelligence.Malware.ExecutableSet.malware_family" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>self</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.ExecutableSet.malware_family_description">
+<code class="descname">malware_family_description</code><a class="headerlink" href="#core.intelligence.Malware.ExecutableSet.malware_family_description" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.ExecutableSet.subtype">
+<code class="descname">subtype</code><a class="headerlink" href="#core.intelligence.Malware.ExecutableSet.subtype" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>self</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.intelligence.Malware.SenderEmailSet">
+<em class="property">class </em><code class="descname">SenderEmailSet</code><span class="sig-paren">(</span><em>sender_email_set</em><span class="sig-paren">)</span><a class="headerlink" href="#core.intelligence.Malware.SenderEmailSet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="core.intelligence.Malware.SenderIPSet">
+<em class="property">class </em><code class="descname">SenderIPSet</code><span class="sig-paren">(</span><em>sender_ip_set</em><span class="sig-paren">)</span><a class="headerlink" href="#core.intelligence.Malware.SenderIPSet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="core.intelligence.Malware.SpamURLSet">
+<em class="property">class </em><code class="descname">SpamURLSet</code><span class="sig-paren">(</span><em>spam_url_set</em><span class="sig-paren">)</span><a class="headerlink" href="#core.intelligence.Malware.SpamURLSet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="core.intelligence.Malware.SubjectSet">
+<em class="property">class </em><code class="descname">SubjectSet</code><span class="sig-paren">(</span><em>subject_set</em><span class="sig-paren">)</span><a class="headerlink" href="#core.intelligence.Malware.SubjectSet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.block_set">
+<code class="descname">block_set</code><a class="headerlink" href="#core.intelligence.Malware.block_set" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.brand">
+<code class="descname">brand</code><a class="headerlink" href="#core.intelligence.Malware.brand" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.domain_set">
+<code class="descname">domain_set</code><a class="headerlink" href="#core.intelligence.Malware.domain_set" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.executable_set">
+<code class="descname">executable_set</code><a class="headerlink" href="#core.intelligence.Malware.executable_set" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.malware_family">
+<code class="descname">malware_family</code><a class="headerlink" href="#core.intelligence.Malware.malware_family" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>self</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.sender_email_set">
+<code class="descname">sender_email_set</code><a class="headerlink" href="#core.intelligence.Malware.sender_email_set" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.sender_ip_set">
+<code class="descname">sender_ip_set</code><a class="headerlink" href="#core.intelligence.Malware.sender_ip_set" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.spam_url_set">
+<code class="descname">spam_url_set</code><a class="headerlink" href="#core.intelligence.Malware.spam_url_set" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.intelligence.Malware.subject_set">
+<code class="descname">subject_set</code><a class="headerlink" href="#core.intelligence.Malware.subject_set" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="phishme-brand-intelligence">
+<h2>PhishMe Brand Intelligence<a class="headerlink" href="#phishme-brand-intelligence" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.brand_intelligence.Phish">
+<em class="property">class </em><code class="descclassname">core.brand_intelligence.</code><code class="descname">Phish</code><span class="sig-paren">(</span><em>phish</em><span class="sig-paren">)</span><a class="headerlink" href="#core.brand_intelligence.Phish" title="Permalink to this definition">¶</a></dt>
+<dd><p>Phish class holds a single PhishMe Brand Intelligence object.</p>
+<dl class="attribute">
+<dt id="core.brand_intelligence.Phish.action_url_list">
+<code class="descname">action_url_list</code><a class="headerlink" href="#core.brand_intelligence.Phish.action_url_list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.brand_intelligence.Phish.brand">
+<code class="descname">brand</code><a class="headerlink" href="#core.brand_intelligence.Phish.brand" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.brand_intelligence.Phish.ip">
+<code class="descname">ip</code><a class="headerlink" href="#core.brand_intelligence.Phish.ip" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.brand_intelligence.Phish.phish_url">
+<code class="descname">phish_url</code><a class="headerlink" href="#core.brand_intelligence.Phish.phish_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.brand_intelligence.Phish.reported_url_list">
+<code class="descname">reported_url_list</code><a class="headerlink" href="#core.brand_intelligence.Phish.reported_url_list" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="core.brand_intelligence.Phish.screenshot_url">
+<code class="descname">screenshot_url</code><a class="headerlink" href="#core.brand_intelligence.Phish.screenshot_url" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.phishme">
+<span id="entry-point-for-using-this-library"></span><h2>Entry point for using this library<a class="headerlink" href="#module-core.phishme" title="Permalink to this headline">¶</a></h2>
+<p>Copyright 2013-2017 PhishMe, Inc.  All rights reserved.</p>
+<p>This software is provided by PhishMe, Inc. (“PhishMe”) on an “as is” basis and any express or implied warranties,
+including but not limited to the implied warranties of merchantability and fitness for a particular purpose, are
+disclaimed in all aspects.  In no event will PhishMe be liable for any direct, indirect, special, incidental or
+consequential damages relating to the use of this software, even if advised of the possibility of such damage. Use of
+this software is pursuant to, and permitted only in accordance with, the agreement between you and PhishMe.</p>
+<p>Support: <a class="reference external" href="mailto:support&#37;&#52;&#48;phishme&#46;com">support<span>&#64;</span>phishme<span>&#46;</span>com</a></p>
+<dl class="class">
+<dt id="core.phishme.PhishMeIntelligence">
+<em class="property">class </em><code class="descclassname">core.phishme.</code><code class="descname">PhishMeIntelligence</code><span class="sig-paren">(</span><em>config</em>, <em>config_file_location</em><span class="sig-paren">)</span><a class="headerlink" href="#core.phishme.PhishMeIntelligence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains helper methods for interacting with PhishMe Intelligence RESTful API, handling lock file to prevent concurrent execution, reading command line arguments, and reading a ConfigParser config file.</p>
+<dl class="method">
+<dt id="core.phishme.PhishMeIntelligence.search">
+<code class="descname">search</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.phishme.PhishMeIntelligence.search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this method to search PhishMe Intelligence for one or more IOCs.
+This method will be implemented at a later date.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">This method will return either <a class="reference internal" href="#core.intelligence.Malware" title="core.intelligence.Malware"><code class="xref py py-class docutils literal"><span class="pre">core.intelligence.Malware</span></code></a> or <a class="reference internal" href="#core.brand_intelligence.Phish" title="core.brand_intelligence.Phish"><code class="xref py py-class docutils literal"><span class="pre">core.brand_intelligence.Phish</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.phishme.PhishMeIntelligence.sync">
+<code class="descname">sync</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.phishme.PhishMeIntelligence.sync" title="Permalink to this definition">¶</a></dt>
+<dd><p>This will contact the PhishMe Intelligence API, retrieve any new or modified threat intelligence since the last successful check-in, process it into the output(s) designated by <em>config.ini</em>, and return.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">This method does not return anything.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="core.phishme.read_args">
+<code class="descclassname">core.phishme.</code><code class="descname">read_args</code><span class="sig-paren">(</span><em>script_description</em><span class="sig-paren">)</span><a class="headerlink" href="#core.phishme.read_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse all input arguments.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>script_description</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="core.phishme.read_config">
+<code class="descclassname">core.phishme.</code><code class="descname">read_config</code><span class="sig-paren">(</span><em>config_file</em><span class="sig-paren">)</span><a class="headerlink" href="#core.phishme.read_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read configuration file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>config_file</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="helpers-for-interacting-with-phishme-intelligence-api">
+<h2>Helpers for interacting with PhishMe Intelligence API<a class="headerlink" href="#helpers-for-interacting-with-phishme-intelligence-api" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="core.config_check.ConfigCheck">
+<em class="property">class </em><code class="descclassname">core.config_check.</code><code class="descname">ConfigCheck</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="headerlink" href="#core.config_check.ConfigCheck" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="core.config_check.ConfigCheck.validate_config">
+<code class="descname">validate_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.config_check.ConfigCheck.validate_config" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.rest_api.RestApi">
+<em class="property">class </em><code class="descclassname">core.rest_api.</code><code class="descname">RestApi</code><span class="sig-paren">(</span><em>config</em>, <em>product</em><span class="sig-paren">)</span><a class="headerlink" href="#core.rest_api.RestApi" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="core.rest_api.RestApi.connect_to_api">
+<code class="descname">connect_to_api</code><span class="sig-paren">(</span><em>verb</em>, <em>url</em>, <em>auth=None</em>, <em>data=None</em>, <em>headers=None</em>, <em>params=None</em>, <em>proxies=None</em><span class="sig-paren">)</span><a class="headerlink" href="#core.rest_api.RestApi.connect_to_api" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>verb</strong> – </li>
+<li><strong>url</strong> – </li>
+<li><strong>auth</strong> – </li>
+<li><strong>data</strong> – </li>
+<li><strong>headers</strong> – </li>
+<li><strong>params</strong> – </li>
+<li><strong>proxies</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.sqlite.SQLite">
+<em class="property">class </em><code class="descclassname">core.sqlite.</code><code class="descname">SQLite</code><span class="sig-paren">(</span><em>location</em>, <em>data_retention_days</em><span class="sig-paren">)</span><a class="headerlink" href="#core.sqlite.SQLite" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="core.sqlite.SQLite.add_threat_id">
+<code class="descname">add_threat_id</code><span class="sig-paren">(</span><em>intel</em><span class="sig-paren">)</span><a class="headerlink" href="#core.sqlite.SQLite.add_threat_id" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>intel</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="core.sqlite.SQLite.get_threats">
+<code class="descname">get_threats</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.sqlite.SQLite.get_threats" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="core.supported_integrations.SupportedIntegration">
+<em class="property">class </em><code class="descclassname">core.supported_integrations.</code><code class="descname">SupportedIntegration</code><span class="sig-paren">(</span><em>config_name</em>, <em>mrti_format</em>, <em>output_product_module</em>, <em>class_name</em><span class="sig-paren">)</span><a class="headerlink" href="#core.supported_integrations.SupportedIntegration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="core.syslog.Syslog">
+<em class="property">class </em><code class="descclassname">core.syslog.</code><code class="descname">Syslog</code><span class="sig-paren">(</span><em>config</em>, <em>product</em><span class="sig-paren">)</span><a class="headerlink" href="#core.syslog.Syslog" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="core.syslog.Syslog.send">
+<code class="descname">send</code><span class="sig-paren">(</span><em>mrti</em><span class="sig-paren">)</span><a class="headerlink" href="#core.syslog.Syslog.send" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send syslog message.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mrti</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="helpers-for-developing-new-integrations">
+<h2>Helpers for developing new integrations.<a class="headerlink" href="#helpers-for-developing-new-integrations" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="output.base_integration.BaseIntegration">
+<em class="property">class </em><code class="descclassname">output.base_integration.</code><code class="descname">BaseIntegration</code><span class="sig-paren">(</span><em>config</em>, <em>product</em><span class="sig-paren">)</span><a class="headerlink" href="#output.base_integration.BaseIntegration" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="output.base_integration.BaseIntegration.post_run">
+<code class="descname">post_run</code><span class="sig-paren">(</span><em>config_file_location</em><span class="sig-paren">)</span><a class="headerlink" href="#output.base_integration.BaseIntegration.post_run" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>config_file_location</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="output.base_integration.BaseIntegration.process">
+<code class="descname">process</code><span class="sig-paren">(</span><em>mrti</em>, <em>threat_id</em><span class="sig-paren">)</span><a class="headerlink" href="#output.base_integration.BaseIntegration.process" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>mrti</strong> – </li>
+<li><strong>threat_id</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Code Overview</a><ul>
+<li><a class="reference internal" href="#phishme-intelligence">PhishMe Intelligence</a></li>
+<li><a class="reference internal" href="#phishme-brand-intelligence">PhishMe Brand Intelligence</a></li>
+<li><a class="reference internal" href="#module-core.phishme">Entry point for using this library</a></li>
+<li><a class="reference internal" href="#helpers-for-interacting-with-phishme-intelligence-api">Helpers for interacting with PhishMe Intelligence API</a></li>
+<li><a class="reference internal" href="#helpers-for-developing-new-integrations">Helpers for developing new integrations.</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="demo.html" title="previous chapter">Tutorial</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/code-structure.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, PhishMe Intelligence.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/code-structure.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

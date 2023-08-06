@@ -1,0 +1,148 @@
+.. _arcsight:
+
+============
+HPE Arcsight
+============
+
+.. note:: This integration is part of the Python standalone integration. Please see :ref:`here <standalone_configuration>`
+          and :ref:`here <general_configuration>` for additional information and email support@phishme.com to request
+          the standalone integration.
+
+.. image:: /standalone_integration_arcsight/arcsight_certified.png
+   :scale: 50%
+
+.. rst-class:: html-toggle
+
+Overview
+--------
+
+As CEF events from PhishMe flow into ArcSight ESM, several Rules place the IOCs and their context and place them into
+multi-mapped ActiveLists. Next, correlation rules attempt to match events within your environment. By leveraging
+extensive local variables, the correlation events are populated with all the context found within PhishMe's
+threathq.com. If desired, a URL is even present to take the analyst directly to that threat within threathq.com for
+additional research. On a regular schedule, Reports are generated showing events within your environment that matched
+IOCs on the ActiveLists. These reports can show all activity matching an IOC on an ActiveList or it can be limited to
+only events occurring prior to the IOC being populated to the ActiveList. This gives you protection looking into the
+past, as well as the future. Finally, a dashboard is provided, to show the most recent types of IOCs have been imported
+from PhishMe with their respective context.
+
+.. rst-class:: html-toggle
+
+Integration Setup Prerequisites
+-------------------------------
+
+    * Access to an HPE ArcSight SmartConnector on UDP port (typically 514).
+    * HPE ArcSight SmartConnector with Enable Name Resolution setting on the Network tab of the SmartConnector set to *No*.
+
+.. rst-class:: html-toggle
+
+Sample config.ini
+-----------------
+
+config.ini example::
+
+    [integration_arcsight]
+    use = False
+    max_eps = 500
+    host_without_protocol = localhost
+    port = 514
+
+
+.. rst-class:: html-toggle
+
+config.ini Descriptions
+-----------------------
+
+.. list-table::
+    :widths:  10, 10, 70, 10
+    :header-rows: 1
+
+    * - Section
+      - Key
+      - Description
+      - Required
+    * - integration_arcsight
+      - use
+      - A Boolean value to control whether the integration outputs to HPE Arcsight
+      - True
+    * - integration_arcsight
+      - max_eps
+      - The maximum number of events per second that should be output. This value acts as a throttle and has no
+        caching feature, so unknown issues may arise if set too low.
+      - False
+    * - integration_arcsight
+      - host_without_protocol
+      - The destination hostname or IPv4 address of the syslog messages.
+      - False
+    * - integration_arcsight
+      - port
+      - The destination port number of the syslog messages.
+      - False
+
+.. rst-class:: html-toggle
+
+Features
+--------
+
+**Active Channels**
+
+are provided to view either base or correlated events associated with PhishMe's MRTI. Appropriate Field Sets are applied
+to each channel to show relevant information without opening individual events.
+
+.. image:: /standalone_integration_arcsight/active_channels_1.jpeg
+   :scale: 10%
+
+.. image:: /standalone_integration_arcsight/active_channels_2.jpeg
+   :scale: 10%
+
+.. image:: /standalone_integration_arcsight/active_channels_3.jpeg
+   :scale: 10%
+
+**Active Lists**
+
+are provided to store all malware and phishing IOCs with all of their context. The Lists are multi-mapped, to allow for
+IOCs related to multiple malware campaigns.
+
+.. image:: /standalone_integration_arcsight/active_lists_1.jpeg
+    :scale: 10%
+
+.. image:: /standalone_integration_arcsight/active_lists_2.jpeg
+    :scale: 10%
+
+**Dashboard**
+
+is provided to show the number of unique IOCs per type currently stored within the ESM and the most recently ingested
+IOCs in each category, along with their context. This dashboard is supported by six Queries and Query Viewers. All the
+Queries are performed against PhishMe's ActiveLists
+
+.. image:: /standalone_integration_arcsight/dashboard_1.jpeg
+   :scale: 10%
+
+**Integration Commands**
+
+Are provided so an Analyst can right-click any base or correlated event associated with PhishMe MRTI and select
+PhishMe's ThreatHQ®.
+
+.. image:: /standalone_integration_arcsight/integration_commands_1.jpeg
+   :scale: 10%
+
+**Reports**
+
+Are provided in the event a malware or phishing event occurred in the customer environment prior to receiving those IOCs
+from PhishMe.
+
+.. image:: /standalone_integration_arcsight/reports_1.jpeg
+   :scale: 10%
+
+**Rules**
+
+are provided for ...
+
+    * Ensuring the feed doesn't go silent by providing an ActiveList that is updated with each new event from PhishMe.
+      To set the duration until notification, simply adjust the TTL of
+      /All Active Lists/ArcSight Foundation/PhishMe/Feed Health.
+    * Populating the ActiveLists where IOCs and their context are stored.
+    * Correlating against raw events in the customer environment. The correlated events generated by these rules use
+      local variables and velocity templates (to deduplicate data from multi-mapped ActiveLists) to retrieve all
+      relevant context and provide it within the correlated event.
+

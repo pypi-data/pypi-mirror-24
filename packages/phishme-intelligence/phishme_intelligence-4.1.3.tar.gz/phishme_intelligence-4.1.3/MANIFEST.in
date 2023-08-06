@@ -1,0 +1,8 @@
+include README LICENSE config.ini
+include phishme_intelligence/output/manifest.ini
+recursive-include pm_lib_intel *
+recursive-exclude Analytics *
+recursive-exclude export *
+recursive-exclude json-schema *
+recursive-exclude qradar *
+recursive-exclude suricata *

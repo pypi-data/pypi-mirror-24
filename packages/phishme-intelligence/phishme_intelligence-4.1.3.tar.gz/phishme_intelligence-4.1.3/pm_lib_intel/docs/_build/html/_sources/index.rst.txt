@@ -1,0 +1,27 @@
+.. pm_lib_intel documentation master file, created by
+   sphinx-quickstart on Mon Jun  5 11:38:45 2017.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+========================================
+Welcome to pm_lib_intel's documentation!
+========================================
+
+Welcome to the library for PhishMe Intelligence. This library is developed and maintained by PhishMe's Solutions Engineering Intelligence team. If you have questions, please contact them at support@phishme.com.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   introduction
+   demo
+   api_reference
+   developer_reference
+   developing_
+
+Indices and tables
+------------------
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

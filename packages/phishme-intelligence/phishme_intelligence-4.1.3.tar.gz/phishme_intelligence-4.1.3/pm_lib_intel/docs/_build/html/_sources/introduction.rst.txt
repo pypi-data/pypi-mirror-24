@@ -1,0 +1,36 @@
+============
+Introduction
+============
+
+This library is intended as an incorporation of best practices for interacting with the PhishMe Intelligence product.
+
+==================================
+Tips, Features, and Best Practices
+==================================
+
+Concurrency
+-----------
+Each time this script is executed, it creates an empty lock file (the location is determined by a path in the config.ini file). On a successful exit, the lock file is removed. Prior to creating the lock file, the script verifies that a lock file does not already exist. If it does, the script immediately exits without performing any additional action. This prevents multiple instances of this script being executed at the same time.
+
+File Location
+-------------
+PhishMe recommends placing the supplied files in a subdirectory under /opt. All the configuration that takes places will be applied to the config.ini file. While you can deploy config.ini in the same directory as the provided python scripts, PhishMe recommends as a best practice that you place this file in your home directory, change the owner and group (chown user:usergroup config.ini), change the permissions to this file to be 600 (chmod 600 config.ini) and pass the full path to the script as an argument to the '-conf' flag. And of course, none of this should be owned or executed as root.
+
+Monitoring
+----------
+Very little, if any, information will be written to standard out. To follow along with the integration script and see what it is doing use the following command. The location of this file can be changed in the config.ini, the example is using the typical default setting and assumes a linux or Mac host. This log file is automatically rolled when it reaches 5MB and only the most recent 10 files are kept.
+tail -f /tmp/phishme.log
+
+Scheduler
+---------
+PhishMe recommends executing this script at 15 minute intervals. An example crontab entry would be::
+
+   */15 * * * * /path/to/python /opt/phishme/intelligence/phishme_to_product.py -conf /home/username/config.ini
+
+If that doesn't work, you may need to change the working directory like so::
+
+   */15 * * * * cd /opt/phishme/intelligence && /path/to/python /opt/phishme/intelligence/phishme_to_product.py -conf /home/username/config.ini
+
+Synchronization
+---------------
+This integration uses a combination of the init_date in the config file and a UUID stored in the position field to know what data to request from PhishMe's Intelligence API. When first executed, the init_date is used to perform a backfill of PhishMe Intelligence from that date to the current time. As the final step of this backfill, the current time is provided to the PhishMe Intelligence API and a UUID is returned. This UUID is written to the config.ini as the position value. During each subsequent request to PhishMe, this UUID will be provided and if new data is returned, a new UUID will also be returned and written to config.ini. Operationally, this means that service interruptions can occur on either the client or the server side for any time duration and synchronization will be achieved after the next successful execution of the PhishMe Intelligence integration script.

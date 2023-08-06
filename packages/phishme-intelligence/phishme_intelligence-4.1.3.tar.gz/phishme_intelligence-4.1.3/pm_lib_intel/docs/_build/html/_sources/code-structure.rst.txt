@@ -1,0 +1,50 @@
+=============
+Code Overview
+=============
+
+PhishMe Intelligence
+-----------------------------------------
+
+.. autoclass:: core.intelligence.Malware
+   :members:
+
+PhishMe Brand Intelligence
+-----------------------------------------
+
+.. autoclass:: core.brand_intelligence.Phish
+   :members:
+
+Entry point for using this library
+----------------------------------
+
+.. automodule:: core.phishme
+   :members:
+   :exclude-members: __doc__
+
+
+Helpers for interacting with PhishMe Intelligence API
+-----------------------------------------------------
+
+.. autoclass:: core.config_check.ConfigCheck
+   :members:
+
+.. autoclass:: core.rest_api.RestApi
+   :members:
+
+.. autoclass:: core.sqlite.SQLite
+   :members:
+
+.. autoclass:: core.supported_integrations.SupportedIntegration
+   :members:
+
+.. autoclass:: core.syslog.Syslog
+   :members:
+
+Helpers for developing new integrations.
+----------------------------------------
+
+.. autoclass:: output.base_integration.BaseIntegration
+   :members:
+
+.. autoclass:: output.generic.generic_integration.GenericIntegration
+   :members:
