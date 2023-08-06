@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: PyMysqlPool
+Version: 0.2
+Summary: python practical mysql pool -motivation from=>[lost connection to MySQL server during query]  base on mysql-connector 
+Home-page: https://codeload.github.com/LuciferJack/python-mysql-pool/zip/master
+Author: Lucifer Jack
+Author-email: lujunxucuc@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/LuciferJack/python-mysql-pool/archive/0.2.tar.gz
+Description: UNKNOWN
+Keywords: mysql pool,queue,support list
+Platform: UNKNOWN
