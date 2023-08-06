@@ -1,0 +1,3 @@
+docs
+magen_statistics_api
+magen_statistics_server
