@@ -1,0 +1,3 @@
+[console_scripts]
+s3ninja = s3ninja.main:main
+
