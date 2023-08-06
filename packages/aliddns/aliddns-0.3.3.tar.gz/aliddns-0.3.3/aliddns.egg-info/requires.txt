@@ -1,0 +1,1 @@
+aliyun-python-sdk-alidns==2.0.6

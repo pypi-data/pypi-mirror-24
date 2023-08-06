@@ -1,0 +1,12 @@
+DESCRIPTION.rst
+MANIFEST.in
+setup.py
+aliddns/__init__.py
+aliddns/config.py
+aliddns/ppp.py
+aliddns.egg-info/PKG-INFO
+aliddns.egg-info/SOURCES.txt
+aliddns.egg-info/dependency_links.txt
+aliddns.egg-info/entry_points.txt
+aliddns.egg-info/requires.txt
+aliddns.egg-info/top_level.txt

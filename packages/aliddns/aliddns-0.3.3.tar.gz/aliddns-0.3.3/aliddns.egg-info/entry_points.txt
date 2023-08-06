@@ -1,0 +1,3 @@
+[console_scripts]
+aliddns-ppp = aliddns.ppp:main_wrapper
+

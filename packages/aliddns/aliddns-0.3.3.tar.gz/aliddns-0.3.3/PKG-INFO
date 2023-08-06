@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: aliddns
+Version: 0.3.3
+Summary: DDNS tool for domains hosted on AliYun
+Home-page: https://github.com/decentfox/aliddns
+Author: DecentFoX Studio
+Author-email: support@decentfox.com
+License: BSD
+Description: UNKNOWN
+Keywords: aliyun ddns
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
