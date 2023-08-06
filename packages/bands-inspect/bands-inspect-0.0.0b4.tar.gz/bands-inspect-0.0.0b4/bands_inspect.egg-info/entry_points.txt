@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        bands_inspect=bands_inspect._cli:cli
+    
