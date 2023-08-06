@@ -1,0 +1,3 @@
+ribosome>=10.3.2
+amino>=10.3.5
+dulwich
