@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyvisage.egg-info/PKG-INFO
+pyvisage.egg-info/SOURCES.txt
+pyvisage.egg-info/dependency_links.txt
+pyvisage.egg-info/requires.txt
+pyvisage.egg-info/top_level.txt
+visage/__init__.py
+visage/apply_makeup.py
+visage/detect_features.py
+visage/haarcascade_frontalface_default.xml
