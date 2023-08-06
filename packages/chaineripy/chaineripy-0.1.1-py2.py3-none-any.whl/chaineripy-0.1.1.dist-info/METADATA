@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: chaineripy
+Version: 0.1.1
+Summary: IPython integration of Chainer
+Home-page: https://github.com/grafi-tt/chaineripy
+Author: Shunsuke Shimizu
+Author-email: grafi@grafi.jp
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: chainer (>=1.11)
+Requires-Dist: ipython (>=4)
+Requires-Dist: ipywidgets
+Requires-Dist: pandas
+
+UNKNOWN
+
+
