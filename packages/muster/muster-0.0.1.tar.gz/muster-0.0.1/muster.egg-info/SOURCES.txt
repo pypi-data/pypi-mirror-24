@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+muster/__init__.py
+muster/member.py
+muster/servant.py
+muster/version.py
+muster.egg-info/PKG-INFO
+muster.egg-info/SOURCES.txt
+muster.egg-info/dependency_links.txt
+muster.egg-info/top_level.txt
+muster/utils/__init__.py
+muster/utils/compat.py
