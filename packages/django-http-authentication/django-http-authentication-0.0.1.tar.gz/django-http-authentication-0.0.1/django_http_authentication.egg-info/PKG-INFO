@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: django-http-authentication
+Version: 0.0.1
+Summary: A django application that adds decorators to allow authentication via HTTP_AUTHORIZATION.
+Home-page: https://github.com/chwick/django-http-authorization
+Author: Christoph Wick
+Author-email: wick.chr.info@gmail.com
+License: MIT
+Description: # django-http-authorization
+        
+        This django app adds decorators that fall back to a HTTP_AUTHORIAZATION instead of a django login form.
+        This can be used for programs that want to interact with your web page but require login.
+        E. g. to download a password protected file via wget or access an internal icalendar.
+        
+        The HTTP_AUTHORIZATION relys on `django.contrib.auth.authenticate`.
+        
+        ## Usage
+        
+        Import the decorators
+        ```
+        from http_authentication.decorators import http_authorization_staff_member_required, http_authorization_login_required
+        ```
+        and add it to the view functions
+        ```
+        @http_authorization_staff_member_required
+        def protected_view(request):
+            return HttpResponse("This page can also be accessed via HTTP_AUTHORIZATION")
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.7
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

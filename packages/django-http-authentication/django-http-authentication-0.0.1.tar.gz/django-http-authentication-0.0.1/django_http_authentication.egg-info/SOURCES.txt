@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+django_http_authentication.egg-info/PKG-INFO
+django_http_authentication.egg-info/SOURCES.txt
+django_http_authentication.egg-info/dependency_links.txt
+django_http_authentication.egg-info/not-zip-safe
+django_http_authentication.egg-info/requires.txt
+django_http_authentication.egg-info/top_level.txt
+http_authentication/__init__.py
+http_authentication/admin.py
+http_authentication/apps.py
+http_authentication/decorators.py
+http_authentication/models.py
