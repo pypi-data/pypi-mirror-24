@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: amaasutils
+Version: 1.2.0
+Summary: Asset Management as a Service - Utils
+Home-page: https://github.com/amaas-fintech/amaas-utils-python
+Author: AMaaS
+Author-email: tech@amaas.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: python-dateutil
+
+UNKNOWN
+
+
