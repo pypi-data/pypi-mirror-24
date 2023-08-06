@@ -1,0 +1,3 @@
+[console_scripts]
+propriecle = propriecle.cli:main
+
