@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+annotated_bibliography/__init__.py
+annotated_bibliography/helpers.py
+annotated_bibliography/make_ann_bib.py
+annotated_bibliography.egg-info/PKG-INFO
+annotated_bibliography.egg-info/SOURCES.txt
+annotated_bibliography.egg-info/dependency_links.txt
+annotated_bibliography.egg-info/entry_points.txt
+annotated_bibliography.egg-info/not-zip-safe
+annotated_bibliography.egg-info/requires.txt
+annotated_bibliography.egg-info/top_level.txt
