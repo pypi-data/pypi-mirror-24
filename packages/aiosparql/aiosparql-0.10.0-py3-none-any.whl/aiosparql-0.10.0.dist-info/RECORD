@@ -1,0 +1,11 @@
+aiosparql/__init__.py,sha256=RYs3cR49NZ5Zwt0avo2mYyRcdWjLbrKBCHRHpqCJx24,23
+aiosparql/client.py,sha256=IPCYphI8uq1HAMRElujEq2zzWsfCtzcSALsl0mNUcxo,9036
+aiosparql/escape.py,sha256=FtgQvLvB4lTyX31m1Zyns4lfxMSxa94412FuTwnuolg,2224
+aiosparql/syntax.py,sha256=YDM_030jDCFg2jzd9_BQpjj1-Muoq-rKYevWdurjcvg,8031
+aiosparql/test_utils.py,sha256=15drBUnBDv5vWbkOaYqM1PoKSKbJMePVD_rt1BC5Doc,2949
+aiosparql-0.10.0.dist-info/DESCRIPTION.rst,sha256=CAjhUge0D1SeH9EnMwE0W-9qUv4l2Mm2_JhUdnx2jX4,2465
+aiosparql-0.10.0.dist-info/METADATA,sha256=406-FDUFMYZ1k8gBaAv5ot5e-G3tUVN7J7-TmzTMogY,3252
+aiosparql-0.10.0.dist-info/RECORD,,
+aiosparql-0.10.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+aiosparql-0.10.0.dist-info/metadata.json,sha256=YmzqGrk40FrV6xVEQyh4nFE1vbibDjOypTrUbGHjXFI,1042
+aiosparql-0.10.0.dist-info/top_level.txt,sha256=qqhqWcyxh5bM_G8Ek8gwa8opVX6BC-svKLV-RZaIADc,10
