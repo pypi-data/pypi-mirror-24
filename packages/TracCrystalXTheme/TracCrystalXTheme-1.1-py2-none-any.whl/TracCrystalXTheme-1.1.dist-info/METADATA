@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: TracCrystalXTheme
+Version: 1.1
+Summary: A theme for Trac based on http://www.oswd.org/design/information/id/3465.
+Home-page: http://trac-hacks.org/wiki/CrystalXTheme
+Author: Noah Kantrowitz
+Author-email: noah@coderanger.net
+License: BSD
+Keywords: trac plugin theme
+Platform: UNKNOWN
+Classifier: Framework :: Trac
+Requires-Dist: Trac
+Requires-Dist: TracThemeEngine (>=2.0)
+
+UNKNOWN
+
+
