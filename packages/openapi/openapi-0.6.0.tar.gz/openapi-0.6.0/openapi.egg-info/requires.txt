@@ -1,0 +1,6 @@
+inflection>=0.3.1
+jsonschema>=2.5.1
+six
+
+[yaml]
+PyYAML>=3.11
