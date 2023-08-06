@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: iqtk
+Version: 0.0.3
+Summary: Reproducible biological data science.
+Home-page: http://iqtk.io
+Author: University of California
+Author-email: inquiryproject@lists.lbl.gov
+License: BSD-3
+Description: The Inquiry Toolkit is a full stack of open-source data infrastructure components for reproducible scientific research.
+Keywords: inquiry genom proteom metabolom transcriptom
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis

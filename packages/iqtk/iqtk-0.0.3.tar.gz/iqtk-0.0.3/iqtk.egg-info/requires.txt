@@ -1,0 +1,11 @@
+google-cloud-pubsub
+google-cloud-dataflow
+protobuf
+google-cloud-bigquery
+docker
+subprocess32
+uritemplate
+coloredlogs
+google-api-python-client
+click
+flask
