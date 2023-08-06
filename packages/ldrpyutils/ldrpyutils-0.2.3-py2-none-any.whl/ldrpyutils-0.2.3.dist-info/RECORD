@@ -1,0 +1,10 @@
+ldrpyutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ldrpyutils/core.py,sha256=D7ntHit2H_BUEawTtojYQrYuoogKhCu7saOiyspJIlM,13472
+ldrpyutils/data/prefixes.ttl,sha256=ewczQC4B2_XekrXDbomOR1uw4rqO_Rm4OTZvozrZ7fY,1966
+ldrpyutils-0.2.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+ldrpyutils-0.2.3.dist-info/METADATA,sha256=W2UaqpmwRxkaf16V98HWhsmV7w7U4fdbvqoNqezM-Xc,588
+ldrpyutils-0.2.3.dist-info/RECORD,,
+ldrpyutils-0.2.3.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+ldrpyutils-0.2.3.dist-info/entry_points.txt,sha256=yfYCP9hglw5lpJHBxEHcGexbru_oAhwiP7O2Od015N0,57
+ldrpyutils-0.2.3.dist-info/metadata.json,sha256=xEq9LnDnQLvFtUw1sbGJUPzAm33FoGwy9fNafOr28fo,940
+ldrpyutils-0.2.3.dist-info/top_level.txt,sha256=NwaO8Q-J34A-5CO7UlUn3ZuIWHW8cjGvzTpaLtq3MrQ,11
