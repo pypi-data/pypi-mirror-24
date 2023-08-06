@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: mn_udea
+Version: 1.2
+Summary: numerical methods
+Home-page: UNKNOWN
+Author: ['icemerman', 'JF_paniagua']
+Author-email: paniagua1995@hotmail.com
+License: GNU GPL V3
+Description: Module for the course of numeric methods in the University of Antioquia.
+        
+        Authors:
+        	- Created by Juan Esteban Sierra Aguilar, Electrical engineering student.
+        	- Created by Juan Fernando Paniagua Osorio, Electrical engineering student.
+        	- Advised by Jaime Alejandro Valencia Velazquez, Electrical engineering.
+        	
+        Index:
+        	- M1: Models and computational error.
+        	- M2: Linear ecuactions.
+        	- M3: Non linear ecuactions.
+        		- Optimization.
+        	- M4: Curve fit & interpolation.
+        	- M5: numeric integration and derivation.
+        	- M6: Ordinary diferencial ecuactions.
+        	- M7: Parcial diferencial ecuactions.
+        
+        Module index:
+        	- error
+        	- linear
+        	- nonlinear
+        		- optimize
+        	- curve
+        		- fit
+        		- interpolation
+        	- diff
+        		- derivation
+        		- integration
+        	- ode
+        	- pde
+        	
+        Example: metnumudea.curve.fit.somefunction(some_args)
+        
+        TODO:
+        	- Py2to3
+        
+        References:
+        	- https://python-packaging.readthedocs.io/en/latest/minimal.html
+Keywords: sample setuptools development
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
