@@ -1,0 +1,4 @@
+include annotated_bibliography/example/*.html
+include annotated_bibliography/example/*.md
+include annotated_bibliography/example/*.bib
+include annotated_bibliography/template.html
