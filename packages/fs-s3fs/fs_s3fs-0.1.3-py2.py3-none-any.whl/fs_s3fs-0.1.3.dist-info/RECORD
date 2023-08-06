@@ -1,0 +1,11 @@
+fs_s3fs/__init__.py,sha256=tCADfiFuRDmCbzJkC3WIZf6eXvimLVBLEASdwOWD4Ik,58
+fs_s3fs/_s3fs.py,sha256=G9ugQutrWVABrTITCZiR8oFQ_WAGCnz-HDf7Y4pYXY8,22745
+fs_s3fs/_version.py,sha256=XEqb2aiIn8fzGE68Mph4ck1FtQqsR_am0wRWvrYPffQ,22
+fs_s3fs/opener.py,sha256=7ams75ON9By4wXTAVmzp7ZBOGzsQexZuLCbZyk0rIr8,852
+fs_s3fs-0.1.3.dist-info/DESCRIPTION.rst,sha256=8jRdE6XTRklCEvI5l6MznLbpFYupFW8JRwTC2v7jS-E,1875
+fs_s3fs-0.1.3.dist-info/METADATA,sha256=CnWJtE4ehvf2fWSnNzD8bI_O5Qo5IAclOvNS6rbl8KM,2750
+fs_s3fs-0.1.3.dist-info/RECORD,,
+fs_s3fs-0.1.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+fs_s3fs-0.1.3.dist-info/entry_points.txt,sha256=hODf2HY4Vo06Y2Lr2qoi4pkH7HEsniR4SUL9PpRvSSw,44
+fs_s3fs-0.1.3.dist-info/metadata.json,sha256=cOTDqmEqr6y9IinznV3eaiPb5owlZ5oDPeq_KoHgd4A,1097
+fs_s3fs-0.1.3.dist-info/top_level.txt,sha256=kGwF-vxPlBgt58CHpQ3fjkJLEzUL9RO6MAReTiVJ0wk,8
