@@ -1,0 +1,4 @@
+include LICENSE
+include autodocumenter/templates/*
+include templates/*
+include README.md
