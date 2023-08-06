@@ -1,0 +1,6 @@
+[joseph.actions]
+say_hello = hello_world.hello:say_hello
+
+[joseph.plugins]
+hello = hello_world.hello
+
