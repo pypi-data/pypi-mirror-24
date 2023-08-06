@@ -1,0 +1,7 @@
+setup.py
+rnaseq_lib.egg-info/PKG-INFO
+rnaseq_lib.egg-info/SOURCES.txt
+rnaseq_lib.egg-info/dependency_links.txt
+rnaseq_lib.egg-info/requires.txt
+rnaseq_lib.egg-info/top_level.txt
+utils/__init__.py
