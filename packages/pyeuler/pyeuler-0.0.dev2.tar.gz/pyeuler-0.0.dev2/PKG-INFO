@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pyeuler
+Version: 0.0.dev2
+Summary: Python Math and Number Theory Library Inspired by Project Euler
+Home-page: https://github.com/schang1146/pyeuler
+Author: team.pyeuler
+Author-email: team.pyeuler@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: project euler math algorithms number theory
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: Python :: 3

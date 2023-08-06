@@ -1,0 +1,8 @@
+setup.py
+pyeuler/__init__.py
+pyeuler/factor.py
+pyeuler.egg-info/PKG-INFO
+pyeuler.egg-info/SOURCES.txt
+pyeuler.egg-info/dependency_links.txt
+pyeuler.egg-info/not-zip-safe
+pyeuler.egg-info/top_level.txt
