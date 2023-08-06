@@ -1,0 +1,27 @@
+Metadata-Version: 2.0
+Name: python-udemy
+Version: 0.0.1
+Summary: My short description for my project. 
+Home-page: https://github.com/udemy-course/udemy
+Author: penxiao
+Author-email: xiaoquwl@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: requests
+
+Udemy
+=====
+
+A sample python package for teaching purpose http://udemy.readthedocs.io/en/latest/
+
+
