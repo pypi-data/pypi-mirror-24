@@ -1,0 +1,14 @@
+arxiv_decent_feeds-0.0.2.dist-info/DESCRIPTION.rst,sha256=62lOE91MUXhw9gUqF2DqqH3NW1NT6LqrylaPCmns_c4,1228
+arxiv_decent_feeds-0.0.2.dist-info/METADATA,sha256=kjWrqVKx45pShQUjT9CWzSPZM26hb6w1KbykW9aO-Vs,1769
+arxiv_decent_feeds-0.0.2.dist-info/RECORD,,
+arxiv_decent_feeds-0.0.2.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+arxiv_decent_feeds-0.0.2.dist-info/entry_points.txt,sha256=5oVa5m3N1Nf8DxP6S11Tpe4N8xiUnNDBesEjQSx8oNU,46
+arxiv_decent_feeds-0.0.2.dist-info/metadata.json,sha256=H2KOa9YwxsaIs_mxwX3WZCtwbLEnAqV4KmTjUsNo0Ao,845
+arxiv_decent_feeds-0.0.2.dist-info/top_level.txt,sha256=SND9Q1Fzobmi2gR8LWinR2qcxTXgR3JcBVkyywA05UY,8
+arxivdf/__init__.py,sha256=sgeaNAfEQJDQPbsZ3TgjQ3TV0LxFgYM4RxCUZKntNzo,69
+arxivdf/adf.py,sha256=Oe3khKtbRVuZcF9u1_oRSpFKT9wQ52Lvucwz1TsZAk8,4132
+arxivdf/arxivdf.py,sha256=6_tKFbj1TMEwhBARgxtyBg36-Ir72gQDtCKZn6joWNs,114
+arxivdf/arxivreader.py,sha256=q8fdB5PuihQZMhURgoZxsEWz7XP4sTUf4WMs98SP2bs,2351
+arxivdf/database.py,sha256=i250Kvesn5PFsOAhrC04VqVcj94BScDkPqwQRuUQxIE,573
+arxivdf/feedwriter.py,sha256=mr2NP_h6IrcpQGzLxiAl1Ujvs6WxyAtT5RsmXAawse4,1208
+arxivdf/model.py,sha256=WMA99BnaTNSz82_CseTrFW4tzMyRFsTXRh9P7dRcIUY,2556
