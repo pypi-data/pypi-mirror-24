@@ -1,0 +1,12 @@
+optimize_later/__init__.py,sha256=Kfe8FOYsTp8eJh9EAiHukwH-dW9GV04naJxgL8ypy7Y,347
+optimize_later/apps.py,sha256=3-uhasDaCXQdHx7BO1Yae_n6tm3sNzHbBv_s8NQrIM4,972
+optimize_later/config.py,sha256=aWsgwuWw6hNiMKFth0Pr2O2Q_yAwvFWhqpbkUnVdWME,1884
+optimize_later/core.py,sha256=k8iwrQKosKz-aw8bFdUrwsJ_qA1msze5eacl8y57pu4,4602
+optimize_later/tests.py,sha256=0BwlW4oNW89bfr25DTRpPtP5qq14einQjrtzbPpNSw0,6955
+optimize_later/utils.py,sha256=I4DHYvU4GnowToFhVEwsaRGcEbcJvUAnOOs1lZHGryw,776
+optimize_later-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+optimize_later-0.1.dist-info/METADATA,sha256=rB1xIOulHf_wonUjAGkreKyJu9kG5bRpHTcjaEEzoBc,865
+optimize_later-0.1.dist-info/RECORD,,
+optimize_later-0.1.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+optimize_later-0.1.dist-info/metadata.json,sha256=XctWIAka0qjIUChH4l-xHpsJ4jkazH1FnlTW8WVkFC8,972
+optimize_later-0.1.dist-info/top_level.txt,sha256=rEwaGrLFbAn8XaXNjbpIX8BnUdwbqR4Uz69lIfEWl8A,15
