@@ -1,0 +1,7 @@
+README.txt
+setup.py
+pymago/cli.py
+pymago.egg-info/PKG-INFO
+pymago.egg-info/SOURCES.txt
+pymago.egg-info/dependency_links.txt
+pymago.egg-info/top_level.txt
