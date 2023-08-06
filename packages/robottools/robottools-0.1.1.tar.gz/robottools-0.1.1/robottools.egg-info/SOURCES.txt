@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+robottools/__init__.py
+robottools/rename.py
+robottools.egg-info/PKG-INFO
+robottools.egg-info/SOURCES.txt
+robottools.egg-info/dependency_links.txt
+robottools.egg-info/requires.txt
+robottools.egg-info/top_level.txt
