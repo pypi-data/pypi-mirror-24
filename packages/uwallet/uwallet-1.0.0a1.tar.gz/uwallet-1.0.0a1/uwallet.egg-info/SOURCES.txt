@@ -1,0 +1,6 @@
+setup.py
+uwallet/__init__.py
+uwallet.egg-info/PKG-INFO
+uwallet.egg-info/SOURCES.txt
+uwallet.egg-info/dependency_links.txt
+uwallet.egg-info/top_level.txt
