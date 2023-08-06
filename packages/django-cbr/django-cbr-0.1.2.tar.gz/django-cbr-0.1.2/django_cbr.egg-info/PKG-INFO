@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: django-cbr
+Version: 0.1.2
+Summary: Load currencies rate from CBR site to Django model
+Home-page: https://github.com/slavama/django-cbr
+Author: Slava M
+Author-email: master@neucom.ru
+License: MIT License
+Description: Simply load currencies from Central Bank of Russia site (http://www.cbr.ru/scripts/XML_daily.asp) to Django model
+Keywords: currency rate cbrf load
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Requires: python (>= 2.7)
+Requires: django (>= 1.8)

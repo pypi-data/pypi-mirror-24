@@ -1,0 +1,5 @@
+recursive-include cbr/templates *
+recursive-include cbr/locale *
+recursive-include cbr/management *
+recursive-include cbr/migrations *
+recursive-include cbr/templatetags *
