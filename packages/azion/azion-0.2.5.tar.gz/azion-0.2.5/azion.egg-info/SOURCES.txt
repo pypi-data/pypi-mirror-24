@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+azion/__init__.py
+azion/sample.py
+azion/service_api.py
+azion/service_azion.py
+azion/version.py
+azion.egg-info/PKG-INFO
+azion.egg-info/SOURCES.txt
+azion.egg-info/dependency_links.txt
+azion.egg-info/requires.txt
+azion.egg-info/top_level.txt
