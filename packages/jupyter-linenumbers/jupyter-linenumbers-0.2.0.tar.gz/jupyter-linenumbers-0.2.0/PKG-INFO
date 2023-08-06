@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: jupyter-linenumbers
+Version: 0.2.0
+Summary: Continuous line numbers for Jupyter Notebooks
+Home-page: https://github.com/leukeleu/jupyter-linenumbers/
+Author: Wouter de Vries
+Author-email: wdevries@leukeleu.nl
+License: UNKNOWN
+Description: This is a Jupyter extension that adds continuous line numbering to code cells in a Jupyter Notebook.
+        
+        ![Usage gif](https://github.com/leukeleu/jupyter-linenumbers/raw/master/docs/linenumbers.gif)
+Platform: UNKNOWN
