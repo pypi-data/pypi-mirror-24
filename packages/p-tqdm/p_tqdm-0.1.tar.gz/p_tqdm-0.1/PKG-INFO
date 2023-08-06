@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: p_tqdm
+Version: 0.1
+Summary: Parallel processing with progress bars
+Home-page: https://github.com/swansonk14/p_tqdm
+Author: Kyle Swanson
+Author-email: swansonk.14@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/swansonk14/p_tqdm/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: tqdm,progress bar,parallel
+Platform: UNKNOWN
