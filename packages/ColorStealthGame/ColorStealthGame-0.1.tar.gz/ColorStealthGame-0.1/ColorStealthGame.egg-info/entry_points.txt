@@ -1,0 +1,3 @@
+[console_scripts]
+colorgame = colorgame.app:main
+

@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: ColorStealthGame
+Version: 0.1
+Summary: Abstract Pygame made for mini game jam around the theme "invisibilitity".  Two Players have to find themselves in a chaotic sea, then find each other!
+Home-page: https://www.github.com/neuroneuro15/ColorStealthGame
+Author: Nicholas A. Del Grosso and Anna Durbanova
+Author-email: delgrosso.nick@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment :: Arcade
+Classifier: Natural Language :: English

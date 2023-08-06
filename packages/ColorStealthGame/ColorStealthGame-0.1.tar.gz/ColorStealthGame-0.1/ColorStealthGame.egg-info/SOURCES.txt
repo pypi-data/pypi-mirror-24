@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+ColorStealthGame.egg-info/PKG-INFO
+ColorStealthGame.egg-info/SOURCES.txt
+ColorStealthGame.egg-info/dependency_links.txt
+ColorStealthGame.egg-info/entry_points.txt
+ColorStealthGame.egg-info/requires.txt
+ColorStealthGame.egg-info/top_level.txt
+colorgame/__init__.py
+colorgame/app.py
+colorgame/cfg.py
