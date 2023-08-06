@@ -1,0 +1,4 @@
+texteditpad
+pygments
+future
+sh
