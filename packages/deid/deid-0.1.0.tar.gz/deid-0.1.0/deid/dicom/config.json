@@ -1,0 +1,21 @@
+{
+   "get": { 
+
+         
+         "skip": ["PixelData"],
+         "ids":{
+            "entity":"PatientID",
+            "item":"AccessionNumber"
+         }
+
+   },
+
+   "put":{
+
+          "actions":[
+ 
+              {"action":"ADD" ,"field":"PatientIdentityRemoved","value": "Yes"},
+              {"action":"KEEP","field":"PixelData"}
+      ]
+   }
+}
