@@ -1,0 +1,15 @@
+SQLAlchemy
+psycopg2
+future
+gmalthgtparser
+
+[build]
+wheel
+
+[test]
+pytest
+flake8
+mock
+
+[tools]
+lxml
