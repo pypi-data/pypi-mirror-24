@@ -1,0 +1,98 @@
+{
+  "tablespoon": {
+    "cup": 16,
+    "teaspoon": 3.03,
+    "clove": 3.03,
+    "pinch": 0,
+    "liter": 67.627,
+    "milliliter": 0.067627
+  },
+  "teaspoon": {
+    "cup": 48,
+    "tablespoon": 3,
+    "pinch": 0,
+    "liter": 202.881,
+    "milliliter": 0.202881,
+    "clove": 1
+  },
+  "cup": {
+    "teaspoon": 0.0208,
+    "clove": 0.0208,
+    "tablespoon": 0.0625,
+    "pinch": 0
+  },
+  "fluid_ounce": {
+    "cup": 8,
+    "pint": 8,
+    "quart": 32,
+    "gallon": 128,
+    "liter": 34,
+    "milliliter": 3.4
+  },
+  "ounce": {
+    "grams": 0.03571428571,
+    "pound": 16
+  },
+  "pint": {
+    "liter": 2.11416490486,
+    "quart": 2,
+    "gallon": 0.125,
+    "ounce": 0.0625,
+    "teaspoon": 111.73184357542,
+    "tablespoon": 32.05128205128,
+    "cup": 0.5
+  },
+  "quart": {
+    "liter": 1.06,
+    "pint": 0.5,
+    "gallon": 4,
+    "ounce": 0.03125,
+    "teaspoon": 192.307,
+    "tablespoon": 32.05128205128,
+    "cup": 0.5
+  },
+  "gallon": {
+    "liter": 0.263157894,
+    "pint": 0.125,
+    "quart": 0.25,
+    "ounce": 0.00781,
+    "teaspoon": 0.0013021,
+    "tablespoon": 0.00390631,
+    "cup": 0.0634013
+  },
+  "liter": {
+    "gallon": 3.78541,
+    "pint": 0.473176,
+    "quart": 0.946353,
+    "ounce": 0.029574,
+    "teaspoon": 0.004929,
+    "tablespoon": 0.014787,
+    "cup": 0.24
+  },
+  "gram": {
+    "kilogram": 0.001,
+    "pound": 453.592
+  },
+  "pound": {
+    "kilogram": 2.20462,
+    "gram": 0.00220462
+  },
+  "kilogram": {
+    "pound": 0.4535924,
+    "gram": 0.001
+  },
+  "pinch": {
+    "cup": 0.00130211,
+    "teaspoon": 0.0625,
+    "tablespoon": 0.0208333,
+    "dash": 2,
+    "clove": 0
+  },
+  "dash": {
+    "cup": 0.00260421,
+    "teaspoon": 0.125,
+    "tablespoon": 0.0416667,
+    "pinch": 0.5,
+    "clove": 0
+  }
+}
