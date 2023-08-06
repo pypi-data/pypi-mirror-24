@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: smasherstats
+Version: 2.0.0
+Summary: Library for stats gathering on smash players using web scrapers
+Home-page: https://github.com/PolarBearITS/smasherstats-v2.0
+Author: Michael Krasnitski
+Author-email: michael.krasnitski@gmail.com
+License: MIT
+Download-URL: https://github.com/PolarBearITS/smasherstats-v2.0/tarball/2.0.0
+Description: UNKNOWN
+Platform: UNKNOWN
