@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="DemandeLogementService" targetNamespace="http://ws.metier.nuu.application.i2/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.metier.nuu.application.i2/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.metier.nuu.application.i2/" xmlns="http://ws.metier.nuu.application.i2/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+			<xsd:include schemaLocation="xmlmime.xsd"/>
+
+			<xs:element name="numUniqueParametres">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nomFichierDemande" type="xs:string"/>
+						<xs:element name="fichierDemande" type="tns:base64Binary"/>
+						<xs:element name="nomCertificat" type="xs:string"/>
+						<xs:element name="certificat" type="tns:base64Binary"/>
+						<xs:element minOccurs="0" name="complet" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="numUniqueReponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nomFichierDemande" type="xs:string"/>
+						<xs:element name="fichierDemande" type="tns:base64Binary"/>
+						<xs:element minOccurs="0" name="nomAttestation" type="xs:string"/>
+						<xs:element minOccurs="0" name="attestation" type="tns:base64Binary"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="demandeLogementParametres">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="numUnique" type="xs:string"/>
+						<xs:element name="nomCertificat" type="xs:string"/>
+						<xs:element name="certificat" type="tns:base64Binary"/>
+						<xs:element minOccurs="0" name="complet" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="demandeLogementReponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nomFichierDemande" type="xs:string"/>
+						<xs:element name="fichierDemande" type="tns:base64Binary"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="rechercheDoublonsParametres">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nomFichierDemande" type="xs:string"/>
+						<xs:element name="fichierDemande" type="tns:base64Binary"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="rechercheDoublonsReponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="nomFichierDoublons" type="xs:string"/>
+						<xs:element minOccurs="0" name="listeDoublons" type="tns:base64Binary"/>
+						<xs:element minOccurs="0" name="nomFichierDemande" type="xs:string"/>
+						<xs:element minOccurs="0" name="fichierDemande" type="tns:base64Binary"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			
+			<xs:element name="declarationNouveauDaloParametres">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nomFichierDalo" type="xs:string"/>
+						<xs:element name="fichierDalo" type="tns:base64Binary"/>
+						<xs:element name="nomCertificat" type="xs:string"/>
+						<xs:element name="certificat" type="tns:base64Binary"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="declarationNouveauDaloReponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nomFichierDalo" type="xs:string"/>
+						<xs:element name="fichierDalo" type="tns:base64Binary"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="demandesRadieesDepuisLeParametres">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="dateRadiationDepuisLe" type="xs:dateTime"/>
+						<xs:element minOccurs="0" name="motifRadiation" type="tns:codeElement"/>
+						<xs:element minOccurs="0" name="statutDalo" type="tns:codeElement"/>
+						<xs:element minOccurs="0" name="typeReservataire" type="tns:codeElement"/>
+						<xs:element name="nomCertificat" type="xs:string"/>
+						<xs:element name="certificat" type="tns:base64Binary"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="demandesRadieesDepuisLeReponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="nomFichierDemandesRadiees" type="xs:string"/>
+						<xs:element minOccurs="0" name="fichierDemandesRadiees" type="tns:base64Binary"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="nouveauxDaloDepuisLeParametres">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="dateNouveauDaloDepuisLe" type="xs:dateTime"/>
+						<xs:element name="nomCertificat" type="xs:string"/>
+						<xs:element name="certificat" type="tns:base64Binary"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="nouveauxDaloDepuisLeReponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="nomFichierNouveauxDalo" type="xs:string"/>
+						<xs:element minOccurs="0" name="fichierNouveauxDalo" type="tns:base64Binary"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+
+			<xs:element name="demandeLogementException">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="message" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+
+		</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="nouveauxDaloDepuisLeRequest">
+    <wsdl:part name="parameters" element="tns:nouveauxDaloDepuisLeParametres">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="rechercheDoublonsResponse">
+    <wsdl:part name="return" element="tns:rechercheDoublonsReponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="demandeLogementRequest">
+    <wsdl:part name="parameters" element="tns:demandeLogementParametres">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="demandesRadieesDepuisLeResponse">
+    <wsdl:part name="return" element="tns:demandesRadieesDepuisLeReponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="demandesRadieesDepuisLeRequest">
+    <wsdl:part name="parameters" element="tns:demandesRadieesDepuisLeParametres">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="numUniqueRequest">
+    <wsdl:part name="parameters" element="tns:numUniqueParametres">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="declarationNouveauDaloRequest">
+    <wsdl:part name="parameters" element="tns:declarationNouveauDaloParametres">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="nouveauxDaloDepuisLeResponse">
+    <wsdl:part name="return" element="tns:nouveauxDaloDepuisLeReponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="demandeLogementResponse">
+    <wsdl:part name="return" element="tns:demandeLogementReponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="rechercheDoublonsRequest">
+    <wsdl:part name="parameters" element="tns:rechercheDoublonsParametres">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="numUniqueResponse">
+    <wsdl:part name="return" element="tns:numUniqueReponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="demandeLogementException">
+    <wsdl:part name="parameters" element="tns:demandeLogementException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="declarationNouveauDaloResponse">
+    <wsdl:part name="return" element="tns:declarationNouveauDaloReponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="DemandeLogementPortType">
+    <wsdl:operation name="getNumUnique">
+      <wsdl:input message="tns:numUniqueRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:numUniqueResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDemandeLogement">
+      <wsdl:input message="tns:demandeLogementRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:demandeLogementResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDoublons">
+      <wsdl:input message="tns:rechercheDoublonsRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:rechercheDoublonsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDeclarationNouveauDalo">
+      <wsdl:input message="tns:declarationNouveauDaloRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:declarationNouveauDaloResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDemandesRadieesDepuisLe">
+      <wsdl:input message="tns:demandesRadieesDepuisLeRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:demandesRadieesDepuisLeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNouveauxDaloDepuisLe">
+      <wsdl:input message="tns:nouveauxDaloDepuisLeRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:nouveauxDaloDepuisLeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DemandeLogementImplServiceSoapBinding" type="tns:DemandeLogementPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getNumUnique">
+      <soap:operation soapAction="http://ws.metier.nuu.application.i2/getNumUnique"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDemandeLogement">
+      <soap:operation soapAction="http://ws.metier.nuu.application.i2/getDemandeLogement"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDoublons">
+      <soap:operation soapAction="http://ws.metier.nuu.application.i2/getDoublons"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDeclarationNouveauDalo">
+      <soap:operation soapAction="http://ws.metier.nuu.application.i2/getDeclarationNouveauDalo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDemandesRadieesDepuisLe">
+      <soap:operation soapAction="http://ws.metier.nuu.application.i2/getDemandesRadieesDepuisLe"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNouveauxDaloDepuisLe">
+      <soap:operation soapAction="http://ws.metier.nuu.application.i2/getNouveauxDaloDepuisLe"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DemandeLogementImplService">
+    <wsdl:port name="DemandeLogementImplPort" binding="tns:DemandeLogementImplServiceSoapBinding">
+      <soap:address location="http://localhost:8080/nuu/services/DemandeLogement/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
