@@ -1,0 +1,10 @@
+README.rst
+setup.py
+translatify/__init__.py
+translatify/translatify.py
+translatify.egg-info/PKG-INFO
+translatify.egg-info/SOURCES.txt
+translatify.egg-info/dependency_links.txt
+translatify.egg-info/entry_points.txt
+translatify.egg-info/requires.txt
+translatify.egg-info/top_level.txt

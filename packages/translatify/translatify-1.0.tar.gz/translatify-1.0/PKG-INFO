@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: translatify
+Version: 1.0
+Summary: A fun tool to convert text into different languages using Google Translate
+Home-page: https://github.com/Encrylize/translatify
+Author: Encrylize
+Author-email: encrylize@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: translatify,google-translate,translate
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Classifier: Topic :: Games/Entertainment
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Other Audience
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Natural Language :: English
