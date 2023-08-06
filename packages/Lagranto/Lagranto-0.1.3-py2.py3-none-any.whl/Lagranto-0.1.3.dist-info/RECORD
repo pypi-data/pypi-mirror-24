@@ -1,0 +1,12 @@
+Lagranto-0.1.3.data/scripts/quickview.py,sha256=iofsv3bpRL8siuC0wQHDH3mbokfkSCuyKsngHTW8EBY,3361
+Lagranto-0.1.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+Lagranto-0.1.3.dist-info/METADATA,sha256=6xbffDIbPNjPUpgG96XrB71xhXxug63IztooDNrhBPc,1164
+Lagranto-0.1.3.dist-info/RECORD,,
+Lagranto-0.1.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Lagranto-0.1.3.dist-info/metadata.json,sha256=EAcm4N1ZhBUx3hb6rXE23RNoKoGmpcZMLwqz5zIhIz0,1298
+Lagranto-0.1.3.dist-info/top_level.txt,sha256=WgJN9u3spwbeE7IsrXJ9xlGbVGpYRiWlmbhtdCz7O_w,9
+lagranto/__init__.py,sha256=qsOs6XIILaqQpNexj_EfESSAskJEnA7yq86vvWw3fX8,70
+lagranto/formats.py,sha256=XxBfn5ljyyMM24yjT4sXc_wcMEObzsK8dww9hBqpCOw,14197
+lagranto/lagranto.py,sha256=aOUgwfBC5f-RKjX9M0OOeOdmLA2_Jw3-nNHlt6mrOnw,26954
+lagranto/plotting.py,sha256=XVZfl3lOm8b3YiS1VONwTuxFh7PKdGyt3LF6RiAxQFU,4349
+lagranto/tools.py,sha256=GoKZ6IC1nHDca_bqlCeZiuBR8gP55azvOZjoox2tH28,2230
