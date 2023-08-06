@@ -1,0 +1,3 @@
+[console_scripts]
+etude = docker_etude.main:etude
+

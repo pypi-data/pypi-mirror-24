@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: docker-etude
+Version: 0.2.0
+Summary: Build Docker Compositions, Especially For Local Development
+Home-page: https://github.com/globality-corp/docker-etude
+Author: Globality Engineering
+Author-email: engineering@globality.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: docker
+Platform: UNKNOWN
