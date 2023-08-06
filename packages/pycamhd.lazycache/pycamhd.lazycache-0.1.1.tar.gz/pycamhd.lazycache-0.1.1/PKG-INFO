@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pycamhd.lazycache
+Version: 0.1.1
+Summary: Module for retrieving CamHD data through a LazyCache server
+Home-page: https://github.com/CamHD-Analysis/pycamhd-lazycache
+Author: Aaron Marburg
+Author-email: amarburg@apl.washington.edu
+License: MIT
+Description: README.rst
+Platform: UNKNOWN
+Requires-Python: >=3
