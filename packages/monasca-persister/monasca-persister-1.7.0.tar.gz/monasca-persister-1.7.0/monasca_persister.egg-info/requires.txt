@@ -1,0 +1,10 @@
+oslo.config!=4.3.0,!=4.4.0,>=4.0.0
+oslo.log>=3.22.0
+six>=1.9.0
+monasca-common>=1.4.0
+
+[cassandra]
+cassandra-driver!=3.6.0,>=2.1.4
+
+[influxdb]
+influxdb>=2.9.2
