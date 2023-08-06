@@ -1,0 +1,68 @@
+Metadata-Version: 1.1
+Name: flask-bluestatic
+Version: 0.1.0
+Summary: Flask BlueStatic module
+Home-page: https://github.com/fraoustin/flask-bluestatic.git
+Author: Frédéric Aoustin
+Author-email: fraoustin@gmail.com
+License: UNKNOWN
+Description: Flask-bluestatic
+        =================
+        
+        Flask-logsocketio generate on socketio "log"  log of your application
+        
+        It use flask-bluestatic module
+        
+        Installation
+        ------------
+        
+        ::
+        
+            pip install flask-bluestatic
+                
+        Or
+        
+        ::
+        
+            git clone https://github.com/fraoustin/bluestatic.git
+            cd bluestatic
+            python setup.py install
+        
+        Usage
+        -----
+        
+        ::
+            
+            from flask import Flask
+            from flask_bluestatic import BlueStatic
+        
+            app = Flask(__name__)
+            app.register_blueprint(BlueStatic(path='./html'))
+        
+            if __name__ == "__main__":
+                app.run(port=8080)
+        
+        
+        Feature
+        =======
+        
+        V. 0.1.0
+        ========
+        
+        - init
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Environment :: Web Environment
