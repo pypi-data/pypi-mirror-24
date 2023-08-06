@@ -1,0 +1,36 @@
+{
+"job": [
+    {%for account in appinfo.accounts %}
+    {
+        "type":"createApplication",
+        "account":"{{ account.name }}",
+        "application":{
+            "cloudProviders":"aws",
+            "name": "{{ appinfo.app }}",
+            "email": "{{ appinfo.email }}",
+            "repoType": "github",
+            "repoProjectKey": "{{ appinfo.project }}",
+            "repoSlug": "{{ appinfo.repo }}",
+            "platformHealthOnlyShowOverride": true,
+            "chaosMonkey": {
+                "enabled": {{ pipeline_configs.chaos_monkey.enabled | tojson }},
+                "meanTimeBetweenKillsInWorkDays": {{ pipeline_configs.chaos_monkey.mean_time }},
+                "minTimeBetweenKillsInWorkDays": {{ pipeline_configs.chaos_monkey.minimum_time }},
+                "grouping": "cluster",
+                "regionsAreIndependent": true,
+                "exceptions":
+                [{% for exception in pipeline_configs.chaos_monkey.exceptions %}
+                {"account": {{ exception | tojson }}, "region": "*", "stack": "*" }
+                {% if not loop.last %},{% endif %}
+                {% endfor %}
+                ]
+
+            }
+        },
+        "user":"foremast" 
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+"application": "{{ appinfo.app }}",
+"description": "Created application {{ appinfo.app }}"
+}
