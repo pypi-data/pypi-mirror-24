@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+chubby/__init__.py
+chubby/argparser.py
+chubby/chubby.py
+chubby/config.py
+chubby.egg-info/PKG-INFO
+chubby.egg-info/SOURCES.txt
+chubby.egg-info/dependency_links.txt
+chubby.egg-info/entry_points.txt
+chubby.egg-info/requires.txt
+chubby.egg-info/top_level.txt
