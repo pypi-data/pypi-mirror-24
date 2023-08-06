@@ -1,0 +1,3 @@
+redis
+flask>=0.12
+six
