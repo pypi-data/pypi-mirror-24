@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: unisonctl
+Version: 0.1
+Summary: A frontend for unison allowing it to handle some read-only large datasets more efficently.
+Home-page: https://github.com/benyanke/unisonctl
+Author: Ben Yanke
+Author-email: peterldowns@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/benyanke/unisonctl/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: unsion,synchronization,sync,bigdata,large,dataset,replication,dataset,file
+Platform: UNKNOWN
