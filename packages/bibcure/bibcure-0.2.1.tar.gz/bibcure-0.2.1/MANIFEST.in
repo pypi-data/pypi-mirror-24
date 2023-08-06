@@ -1,0 +1,6 @@
+
+
+include bibcure/data/db_abbrev.json
+
+
+include bibcure README.md
