@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: precommit-hook
+Version: 0.1.7
+Summary: Auto check quality of python code before shipping
+Home-page: https://github.com/collin5/precommit-hook
+Author: Collins Abitekaniza
+Author-email: abtcolns@gmail.com
+License: MIT
+Description: Auto check quality of python code before shipping
+Platform: UNKNOWN

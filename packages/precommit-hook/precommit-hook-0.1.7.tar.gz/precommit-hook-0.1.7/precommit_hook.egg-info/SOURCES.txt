@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+app/__init__.py
+app/extras.py
+app/precommit.hook
+app/scripts.py
+precommit_hook.egg-info/PKG-INFO
+precommit_hook.egg-info/SOURCES.txt
+precommit_hook.egg-info/dependency_links.txt
+precommit_hook.egg-info/requires.txt
+precommit_hook.egg-info/top_level.txt
