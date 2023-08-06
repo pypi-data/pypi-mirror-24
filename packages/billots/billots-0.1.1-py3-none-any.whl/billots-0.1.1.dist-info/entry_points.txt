@@ -1,0 +1,6 @@
+[console_scripts]
+bserver = billots.src.controller.start:main
+bwallet = billots.src.controller.wallet:main
+mock_bservers = billots.src.mock.launch_servers:main
+mock_disputed = billots.src.mock.disputed_example:main
+
