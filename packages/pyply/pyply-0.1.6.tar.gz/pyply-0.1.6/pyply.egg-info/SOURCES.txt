@@ -1,0 +1,8 @@
+setup.py
+pyply/__init__.py
+pyply/pyply.py
+pyply.egg-info/PKG-INFO
+pyply.egg-info/SOURCES.txt
+pyply.egg-info/dependency_links.txt
+pyply.egg-info/not-zip-safe
+pyply.egg-info/top_level.txt
