@@ -1,0 +1,46 @@
+[[translating]]
+== Translating
+:plurals: http://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/Plural-forms.html
+:usual-lang-codes: http://www.gnu.org/software/gettext/manual/html_node/Usual-Language-Codes.html#Usual-Language-Codes
+:rare-lang-codes: http://www.gnu.org/software/gettext/manual/html_node/Rare-Language-Codes.html#Rare-Language-Codes
+
+=== Preparing environment
+
+To generate `.pot` file which contains all translatable strings, call:
+
+----
+$ python3 setup.py extract_messages
+----
+
+=== Creating a new translation
+
+If you'd like to add a new translation, you have to create `.po` file for your
+language before you can edit it. Suppose that you'd like to translate
+Subconvert to German:
+
+----
+$ python3 setup.py init_catalog --locale de
+----
+
+This will create `src/subconvert/locale/de/LC_MESSAGES/subconvert.po` file which
+you can edit (see below). Try to avoid creating `.po` files by hand (e.g. by
+renaming `subconvert.pot`). Above approach has several advantages like
+generating correct link:{plurals}[Plural-Forms] entries for most of languages.
+
+For a list of language codes, please refer to gettext's manual:
+
+* link:{usual-lang-codes}[List of usual language codes]
+* link:{rare-lang-codes}[List of rare language codes]
+
+=== Updating existing translations
+
+Suppose you want update German translation:
+
+----
+$ python setup.py update_catalog --locale de
+----
+
+You'll end up with `de/LC_MESSAGES/subconvert.po` updated with the latest
+translatable strings.
+
+// vim: set tw=80 colorcolumn=81 ft=asciidoc :

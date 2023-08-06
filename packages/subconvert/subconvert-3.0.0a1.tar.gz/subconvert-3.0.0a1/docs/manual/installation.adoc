@@ -1,0 +1,85 @@
+[[installation]]
+== Installation
+
+=== Install from PYPI
+
+----
+$ pip3 install --user subconvert
+----
+
+=== Install with tox
+
+If you cloned a git repository, you can install Subconvert with help of tox.
+
+WARNING: If your system has Python version lower than 3.5, you'll need to
+manually install PyQt as it's not available via PYPI.
+
+----
+$ cd subconvert
+$ tox -e venv
+$ ln -s {.venv,$HOME/.local}/bin/subconvert
+$ ln -s {.venv,$HOME/.local}/share/applications/subconvert.desktop
+----
+
+
+=== Install with setup.py
+
+WARNING: these methods are not recommended for ordinary users as they don't
+manage some dependencies automatically. Installation methods from PYPI or with
+tox are preferable.
+
+You can alternatively create a Python distribution (like bdist_wheel) and
+install it:
+
+----
+$ cd subconvert
+$ python3 setup.py bdist_wheel
+$ pip3 install dist/\*.whl
+----
+
+Or install it directly:
+
+----
+$ cd subconvert
+$ python3 setup.py install
+----
+
+
+== Removing
+
+If you installed Subconvert with pip, uninstalling it is simply calling
+uninstall:
+
+----
+$ pip3 uninstall subconvert
+----
+
+Otherwise you'll have to manually remove all subconvert files, i.e.:
+
+* `$prefix/lib/python*/site-packages/subconvert`
+* `$prefix/bin/subconvert`
+* `$prefix/share/applications/subconvert.desktop`
+* `$prefix/share/icons/hicolor/*/apps/aubconvert.{svg,png}`
+
+== Dependencies
+
+=== Runtime dependencies
+
+* `Python 3.4+`
+* `python3-pyqt5`
+* `python3-chardet`
+* `MPlayer`
+
+=== Build dependencies
+
+NOTE: These dependencies are only needed when you intend to create Python dist packages
+manually.
+
+* `setuptools`
+* `pyrcc5` (comes with `pyqt5-dev-tools`)
+
+=== Documentation
+
+* `asciidoctor` (`asciidoc` works too)
+
+// vim: set tw=80 colorcolumn=81 ft=asciidoc :

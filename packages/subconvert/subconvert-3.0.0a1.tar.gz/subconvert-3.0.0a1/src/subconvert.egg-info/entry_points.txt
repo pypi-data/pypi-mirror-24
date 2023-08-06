@@ -1,0 +1,3 @@
+[console_scripts]
+subconvert = subconvert.apprunner:main
+

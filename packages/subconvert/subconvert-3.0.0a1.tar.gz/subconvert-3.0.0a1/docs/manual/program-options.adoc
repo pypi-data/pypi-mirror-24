@@ -1,0 +1,231 @@
+[[prog-opts]]
+== Program Options
+
+The most simple Subconvert call contains only list of files to be opened:
+
+----
+$ subconvert [FILE [FILE ...]]
+----
+
+Above call is the most complex call that starts <<gui>> (although it also can be
+started without specifying any files).  If you'd like to perform a quick
+converting task however, you have to add `-c` switch:
+
+----
+$ subconvert -c FILE [FILE ...]
+----
+
+Now there are some additional options available.
+
+=== Specify output files
+
+----
+-o FILE, --output-file FILE
+----
+
+By default Subconvert tries to overwrite subtitle files. You can change all your
+work to a different (or completely new) file by specifying it with `-o` option,
+followed by so-called <<faq-output-syntax,output file syntax>>. It can be as
+simple as a single file name, but in that case Subconvert will try to write each
+file to a given output file.
+
+If output file already exists (and unless `-f` option is on), Subconvert will
+fall back to interactive mode and ask you what to do next (overwrite, backup,
+skip that file or cancel all operations).
+
+Examples:
+
+----
+$ subconvert -c sub.srt -o sub.txt                        # results with sub.txt
+$ subconvert -c sub1.srt sub2.txt -o prefix_%f.%e_suffix  # results with prefix_sub1.srt_suffix
+----
+
+=== Change subtitles format
+
+----
+-t FMT, --format FMT
+----
+
+Probably the most important Subconvert feature (the one it got its name from) is
+*converting* from one type of subtitles to the other one (like from Subrip to
+Micro DVD). While input file format is automatically detected, to change it you
+have to name it.  All newly created files will be saved in a specified format.
+If this option is not used, subtitles format won't be changed from the original
+one.
+
+For a list of available subtitle formats, see <<formats>> page.
+
+There are several available subtitle formats. Each of them has a specific code
+that can be used. For a list consult the <<formats>> page.
+
+Examples:
+
+----
+$ subconvert -c sub.srt -t subviewer
+----
+
+=== Specify or change file encoding
+
+----
+-e IN_ENC, --encoding IN_ENC
+-E OUT_ENC, --reencode OUT_ENC
+----
+
+By default Subconvert will try to automatically detect subtitle encodings and
+keep it for output files. But detecting file encodings is quite hard (really, it
+is!), so it might detect it incorrectly or not detect it at all and fall back to
+the default one. If you'd like to force input file encoding, you can use `-e`
+option.
+
+On the other hand, you might want to change the output file encoding. To do
+that, use `-E` option (capital "E").
+
+Note that those two options are independent, so you can auto detect input
+encoding and change it to desired one. Just remember that it might be impossible
+to convert one encoding to another one (like Japanese to Latin), so use these
+options with caution.
+
+If you are unsure about encodings you'd like to use, it's probably the best to
+run graphical interface and experiment with encodings to find a correct one
+(i.e. the one without silly characters in your subtitles).
+
+See also: <<encodings>>
+
+Examples:
+
+----
+$ subconvert -c -e windows-1250 -E iso-885902 sub.srt
+----
+
+=== Use Property File
+
+----
+-p PFILE, --property-file PFILE
+----
+
+Property Files is a nice feature that allows you to easily use frequently used
+options. Say, most of time you convert subtitles to a one specific encoding and
+format. It means that each time you'd have to type those options by hand (or
+create an alias). With Property Files you don't have to do that because you can
+group these options in a single file and ask Subconvert to use it instead. For
+more informations see <<property-files>> page.
+
+Examples:
+
+----
+$ subconvert -c -p my_properties.spf subtitles.txt
+----
+
+=== Specify number of frames
+
+----
+--fps NO
+-v VIDEO, --video VIDEO
+----
+
+Without FPS value converting between time-based and frame-based subtitles (e.g.
+Subrip -> Micro DVD) is impossible. That's why Subconvert employs several
+methods of obtaining this crucial value from a movie associated with subtitles.
+
+If you wish to manually pass video framerate to Subconvert, you'll can use
+`--fps` switch. Let's say that you'd like to use '23.976' as your FPS value:
+
+----
+$ alias subconvert="subconvert -t microdvd" # assume for all examples
+                                            # in this section that we'd like
+                                            # to convert from subrip to microdvd
+
+$ subconvert -c --fps 23.976 subtitles.srt
+----
+By default Subconvert will try to find and use framerate of the movie with a
+similar file name to subtitles'. If video file name doesn't match subtitles'
+one, you can specify a movie file for each of your subtitles. What is more, you
+can use similar syntax to the <<faq-output-syntax,output file syntax>>: `%f`
+will be replaced with a subtitle file name and `%e` with extension (although
+using %e is not very useful):
+
+----
+$ subconvert -c -v "%f.avi" sub1.srt sub2.srt  # will search for
+                                               # sub1.avi and sub2.avi
+
+# subconvert -c -v common_video.avi sub1.srt sub2.srt  # for both subtitles
+                                                       # FPS of common_video.avi
+                                                       # will be used
+----
+
+
+=== Synchronize subtitles
+
+----
+--sync SPEC
+----
+
+If subtitles are out of sync, you can synchronize them either by telling
+Subconvert the offset by which it should change all subtitles or by giving one
+or more synchronization points to which it should adjust subtitles.
+
+==== Offset
+
+To set offset simply say by how much subtitles should be changed.
+
+----
+--sync "+15s"
+--sync "-2s"
+--sync "+1h 2m 10s 3ms"
+----
+
+NOTE: Quotes around `SPEC` in above examples prevent problems with parsing time
+specification by shells.
+
+Time specification is composed of number of hours, minutes, seconds and
+milliseconds, each of them is optional unless there's at least one of them. It
+can be also negative or positive. When positive, specified time will be added to
+each of subtitles and when negative -- subtracted.
+
+==== Synchronization
+
+`SPEC` for synchronization is very similar to the above one. It is composed of
+comma-separated list of subtitle numbers and their times (which can be either
+relative -- it's indicated by a plus or minus sign -- or absolute). Subtitle
+numbering starts from 1 and can be negative. Negative subtitles are counted from
+the end (so -1 is last subtitle, -2 is second to last and so on). At least one
+subtitle number is required.
+
+Other subtitles will be synchronized to the ones given in `SPEC`. Their times
+will be computed to smoothly match the observed difference between subs and
+video.
+
+For example, below `SPEC` means that the first subtitle is 2 seconds too early
+(so we want to add 2 seconds to it) and the last subtitle is 3 seconds too late
+(so we want to subtract 3 seconds from it).
+
+----
+--sync "1:+2s, -1:-3s"
+----
+
+Below example adds few milliseconds to the first and second subtitles and sets
+the last one to the fixed time of 1 hour 15 minutes and 4 seconds:
+
+----
+--sync "1: +2ms, 2: +3ms, -1: 1h15m4s"
+----
+
+=== Other options:
+
+----
+-f, --force  assume 'yes' when Subconvert would normally ask for your
+             permission (e.g. whether to overwrite existing file or not)
+
+--debug      show some debug prints. Useful for developer or when issuing a
+             bug.
+
+--quiet      the opposite of '--debug'. Subconvert will print only when 
+             there's a critical error of some kind.
+
+--help       displays a built-in help with a summary of all Subconvert
+             options.
+
+--version    displays used version of Subconvert
+----
+
+// vim: set tw=80 colorcolumn=81 ft=asciidoc :
