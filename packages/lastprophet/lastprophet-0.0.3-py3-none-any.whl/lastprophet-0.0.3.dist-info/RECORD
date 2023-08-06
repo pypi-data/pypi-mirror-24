@@ -1,0 +1,12 @@
+lastprophet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lastprophet/aggHier.py,sha256=dbdytZRucUtxpVf8nLsk4auCYcEjZkfA8KKqo3Fq9j8,11850
+lastprophet/fitProphet.py,sha256=L1t8KX9wNiuUEBTv1nLDWbovr-8x7yuMZYIzS0Adyew,3224
+lastprophet/last.py,sha256=A1TyudcbDvjaG8CbDuxO6utxBDcnYPMMZFk-d3NHkJA,6282
+lastprophet/plotTemporal.py,sha256=xMbRPsmCRRiarvawPMdvF7gYjLy69NGW3Jm81tpgueg,2366
+lastprophet/reconcile.py,sha256=FxVraPGAnzuFtO8FgyNlwdtuYFz6obG3VOXuBwY-xds,7586
+lastprophet-0.0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+lastprophet-0.0.3.dist-info/METADATA,sha256=tW9ePbSjHMUDiTXJ-EN5lTlidpWoIRNBUlm7DDdx6YA,476
+lastprophet-0.0.3.dist-info/RECORD,,
+lastprophet-0.0.3.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+lastprophet-0.0.3.dist-info/metadata.json,sha256=8_cKdAwbUjL1SlG9w011EC-AfTbEosB3sl00zpK3BvI,726
+lastprophet-0.0.3.dist-info/top_level.txt,sha256=5AgrE3IoFSXWHsjx1XvczBmsgEOi1N0EeKQLe1e2ACM,12
