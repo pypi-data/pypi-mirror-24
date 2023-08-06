@@ -1,0 +1,14 @@
+annotated_bibliography/__init__.py,sha256=TdE69ZAqLh7l8-Bc_c5kllOcQjsHlzV9gy4TTvL4DV0,36
+annotated_bibliography/helpers.py,sha256=K39DENFJ27PU6IIodj7UCGxTR2ELhlWja8tbX1Xscgw,2534
+annotated_bibliography/make_ann_bib.py,sha256=jQkyzUiG0fNu9tMtnaEE5FymwJZgVnGaILnDE3hJpU8,2662
+annotated_bibliography/template.html,sha256=7lvisUBoL7w9ds97n9IyHL71y7KmHtQfiJ4Q38KW6jo,5144
+annotated_bibliography/example/bibtex.bib,sha256=phJhq5TJ9XzTuqg7gJROmr0nMNIVxccvdqOMJGviZqk,607
+annotated_bibliography/example/markdown.md,sha256=6BSYbcVQmF-vyliQ5BfBYCZ2E4MO4x3-paSbkE1PfAg,481
+annotated_bibliography/example/output.html,sha256=8PwXiaePInmJvmLtFoUXSfeJIEHzSOmxdTTeIajEwjs,40360
+annotated_bibliography-0.0.4.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+annotated_bibliography-0.0.4.dist-info/METADATA,sha256=RZIIWZrG3QjVsfFfgRX1YV765pWU8kpdKWoP9x7u0ZE,573
+annotated_bibliography-0.0.4.dist-info/RECORD,,
+annotated_bibliography-0.0.4.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+annotated_bibliography-0.0.4.dist-info/entry_points.txt,sha256=FwFE8_hvBSxhg-fBDdYEB8EW2brhFiUhqrzzkT4BpkM,80
+annotated_bibliography-0.0.4.dist-info/metadata.json,sha256=rZxEui4oqYrQhWGp7zUcWYpgaREYg8ckmXkHwP-IVdg,965
+annotated_bibliography-0.0.4.dist-info/top_level.txt,sha256=7QKcKy748hlyusudDT9kZSX_Wt86VfIUVgZADfS-9cY,23
