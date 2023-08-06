@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block page_title %}Login{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+    <style>
+    .login-wrapper {
+        margin-top: 80px;
+        margin-bottom 80px;
+    }
+    .login-wrapper form {
+        max-width: 400px;
+        padding: 15px 35px 45px;
+        margin: 0 auto;
+        background-color: #beeee8;
+        border-radius: 5px;
+        border: 1px solid silver;
+    }
+    </style>
+{% endblock %}
+
+{% block page %}
+    <div class="login-wrapper">
+        {{ wtf.quick_form(form, button_map={'submit':'primary'}) }}
+    </div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block page_header %}Edit Lesson{% endblock %}
+
+{% set active_page = 'lectures' -%}
+
+{% block page %}
+<h1 class="page-header">{% if form.id.data %}Edit {{ form.name.data }}{% else %}Add Lesson{% endif %} </h1>
+{{ wtf.quick_form(form) }}
+{% endblock %}

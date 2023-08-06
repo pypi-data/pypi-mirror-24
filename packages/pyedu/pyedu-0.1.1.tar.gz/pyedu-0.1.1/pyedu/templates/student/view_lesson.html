@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+{% block page_title %}Lesson{% endblock %}
+
+{% set active_page = 'lectures' -%}
+
+{% if not tasks %}
+    {% set tasks = lesson.tasks|default(None) -%}
+{% endif %}
+
+{% block page %}
+    <h1 class="page-header">{{ lesson.name }}</h1>
+    <p class="pull-right">
+        {% if current_user.has_level(g.Level.TEACHER) %}
+            <a class="btn btn-success btn-sm" href="{{ url_for('teach.lesson_edit', lesson_id=lesson.id) }}"><span class="glyphicon glyphicon-edit"></span> edit</a>
+            &nbsp;
+        {% endif %}
+        <a class="btn btn-info btn-sm" href="{{ url_for('stud.lecture_view', lecture_id=lesson.lecture_id) }}"><span class="glyphicon glyphicon-chevron-up"></span> Lecture: {{ lesson.lecture.name }}</a>
+        &nbsp;|&nbsp;
+        <span class="label label-info">created: {{ moment(lesson.created).fromNow() }}</span>&nbsp;
+        <span class="label label-info">last edited: {{ moment(lesson.edited).fromNow() }}</span>
+    </p>
+
+    <h3 style="margin-top: 50px;">Tasks</h3>
+    {% if current_user.has_level(g.Level.TEACHER) %}
+    <a class="btn btn-success btn-lg" href="{{ url_for('teach.task_edit', lesson_id=lesson.id) }}"><span class="glyphicon glyphicon-plus"></span> - add Task</a>
+    {% endif %}
+    {% include 'student/_task_table.html' %}
+{% endblock %}

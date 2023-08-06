@@ -1,0 +1,90 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% set navigation_pages = [
+    (url_for('main.index'), 'index', '<span class="glyphicon glyphicon-home"></span> Home'),
+    (url_for('stud.lecture_view_all'), 'lectures', '<span class="glyphicon glyphicon-education"></span> Lectures'),
+] -%}
+
+{% if current_user.is_authenticated %}
+    {% if current_user.has_level(g.Level.TEACHER) %}
+        {% do navigation_pages.append( ('#', 'report', '<span class="glyphicon glyphicon-tasks"></span> Reports') ) %}
+    {% else %}
+        {% do navigation_pages.append( (url_for('stud.report', student_id=current_user.id), 'report', '<span class="glyphicon glyphicon-tasks"></span> Reports') ) %}
+    {% endif %}
+{% endif %}
+
+{% set active_page = active_page|default('index') -%}
+
+{% block title %}{% block page_title %}{% endblock %} - PyEdu{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#mainnav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand">PyEdu</div>
+    </div>
+    <div class="navbar-collapse collapse" id="mainnav">
+        <ul class="nav navbar-nav">
+            {% for href, page, caption in navigation_pages %}
+                <li {% if active_page==page %}class="active"{% endif %}><a href="{{ href }}">{{ caption|safe }}</a></li>
+            {% endfor %}
+        </ul>
+
+        {% if current_user.is_authenticated %}
+        <ul class="nav navbar-nav navbar-right" style="margin-right:25px;">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    logged in as: {{ current_user.username }}:&nbsp;{% if session.get('login_at') %}{{ moment(session.get('login_at')).fromNow(refresh=True) }}{% endif %} <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{ url_for('main.settings') }}"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="{{ url_for('main.logout') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        {% else %}
+        <ul class="nav navbar-nav navbar-right" style="margin-right:25px;">
+                <li><a href="{{ url_for('main.login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        {% endif %}
+
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% for category, message in get_flashed_messages(with_categories=True) %}
+        <div class="alert alert-{{ category }}">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            {{ message|safe }}
+        </div>
+    {% endfor %}
+
+    {% block page %}
+    {% endblock %}
+</div>
+
+{% block mn_page %}
+{% endblock %}
+
+<div class="container">
+{% block page_2 %}
+{% endblock %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="{{ url_for('static', filename="jquery-3.2.1.min.js") }}"></script>
+{{ moment.include_moment() }}
+{% endblock %}

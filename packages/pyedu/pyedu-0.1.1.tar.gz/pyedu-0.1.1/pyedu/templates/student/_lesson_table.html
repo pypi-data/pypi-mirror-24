@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead class="thead thead-inverse">
+        <tr><th>ID</th><th>Lesson Name</th><th>Progress</th><th>Actions</th></tr>
+    </thead>
+    {% if not lessons %}
+        <tr class="table-warning"><td colspan="4" class="text-center"><strong>No lessons found</strong></td></tr>
+    {% else %}
+    {% for lesson in lessons %}
+        <tr><td>{{ lesson.id }}</td>
+            <td>{{ lesson.name }}</td>
+            <td>
+                {% if current_user.has_role('student') %}
+                    {{ lesson.progress(current_user) }} / {{ lesson.task_count }}
+                {% else %}
+                    <i>not a student</i>
+                {% endif %}
+            </td>
+            <td>
+                <a href="{{ url_for('stud.lesson_view', lesson_id=lesson.id) }}" title="view Lesson"><span class="glyphicon glyphicon-chevron-right text-success"></span></a>
+                <a href="{{ url_for('stud.lecture_view', lecture_id=lesson.lecture_id) }}" title="view parent Lecture"><span class="glyphicon glyphicon-chevron-up text-success"></span></a>
+                {% if current_user.has_level(g.Level.TEACHER) %}<a href="{{ url_for('teach.lesson_edit', lesson_id=lesson.id) }}"><span class="glyphicon glyphicon-edit text-primary"></span></a>{% endif %}
+            </td>
+        </tr>
+    {% endfor %}
+    {% endif %}
+
+</table>

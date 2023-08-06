@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block page_title %}Lectures{% endblock %}
+
+{% set active_page = 'lectures' -%}
+
+{% block page %}
+    <h1 class="page-header">Lectures</h1>
+    {% include 'student/_lecture_table.html' %}
+    {% if current_user.has_level(g.Level.TEACHER) %}
+        <a class="btn btn-success" href="{{ url_for('teach.lecture_edit') }}">Add Lecture</a>
+    {% endif %}
+{% endblock %}

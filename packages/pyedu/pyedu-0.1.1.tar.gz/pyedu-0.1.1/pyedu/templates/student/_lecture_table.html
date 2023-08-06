@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead class="thead-inverse">
+        <tr><th>ID</th><th>Name</th><th>created</th><th>last edited</th><th>action</th></tr>
+    </thead>
+    {% if not lectures %}
+        <tr class="table-warning"><td colspan="5" class="text-center"><strong>No lectures found</strong></td></tr>
+    {% else %}
+    {% for lecture in lectures %}
+        <tr><td>{{ lecture.id }}</td>
+            <td>{{ lecture.name }}</td>
+            <td>{{ moment(lecture.created).fromNow(refresh=True) }}</td>
+            <td>{{ moment(lecture.edited).fromNow(refresh=True) }}</td>
+            <td>
+                <a href="{{ url_for('stud.lecture_view', lecture_id=lecture.id) }}"><span class="glyphicon glyphicon-link text-success"></span></a>
+                {% if current_user.has_level(g.Level.TEACHER) %}<a href="{{ url_for('teach.lecture_edit', lecture_id=lecture.id) }}"><span class="glyphicon glyphicon-edit text-primary"></span></a>{% endif %}
+            </td>
+        </tr>
+    {% endfor %}
+    {% endif %}
+</table>

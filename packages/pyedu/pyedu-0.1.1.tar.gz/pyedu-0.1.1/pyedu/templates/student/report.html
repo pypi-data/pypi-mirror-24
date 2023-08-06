@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+
+{% block page_title %}Lectures{% endblock %}
+
+{% set active_page = 'report' -%}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename="morris.css") }}">
+{% endblock %}
+
+{% block page %}
+    <h1 class="page-header">Report: {{ current_user.full_name }}</h1>
+
+<div class="row">
+    <div class="col col-md-4">
+        <div id="totals"></div>
+    </div>
+    <div class="col col-md-4">
+        <div id="share"></div>
+    </div>
+    <div class="col col-md-4">
+        <div id="timeline"></div>
+    </div>
+</div>
+
+
+    <div class="well">
+    Tasks: {{ userreport.progress }} / {{ userreport.total_tasks }}
+    </div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="{{ url_for('static', filename="raphael.min.js") }}"></script>
+<script src="{{ url_for('static', filename="morris.min.js") }}"></script>
+<script>
+// total chart
+var chart_totals = new Morris.Donut({
+    element: 'totals',
+    data: [
+        {label: "solved",   value: {{ userreport.progress }} },
+        {label: "unsolved", value: {{ userreport.total_tasks - userreport.progress }} }
+    ],
+    colors: ['rgba(241, 40, 40, .9)', 'rgba(0,0,0,.1)']
+});
+
+// lecture share
+var chart_share = new Morris.Donut({
+    element: 'share',
+    data: [
+    {% for lecture in current_user.enrolled %}
+        {label: "{{ lecture.name }}" , value: {{ userreport.lecture_progress(lecture) }} },
+    {% endfor %}
+    ]
+});
+</script>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block page_header %}Settings{% endblock %}
+
+{% set active_page = 'home' -%}
+
+{% block page %}
+<h3 class="page-header">Change your password</h3>
+{{ wtf.quick_form(pwform) }}
+
+
+{% endblock %}
