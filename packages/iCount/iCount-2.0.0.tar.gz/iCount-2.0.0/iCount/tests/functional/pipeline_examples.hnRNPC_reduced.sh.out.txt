@@ -1,0 +1,658 @@
+
+##############################
+# create "common" folders
+genome_dir="genomes"
++ genome_dir=genomes
+mkdir -p ${genome_dir}
++ mkdir -p genomes
+
+# create analysis output folder
+analysis_dir="hnRNPCred"
++ analysis_dir=hnRNPCred
+mkdir -p ${analysis_dir}
++ mkdir -p hnRNPCred
+
+
+##############################
+# ## general steps
+# step 1: download genome sequence
+# if parameter --release is omitted, the newest supported release is used
+genome="hs84red.fa.gz"
++ genome=hs84red.fa.gz
+if [ ! -f "${genome_dir}/${genome}" ];
+then
+iCount sequence homo_sapiens --release 84 --chromosomes 21, MT \
+    --target_dir ${genome_dir} --target_fname ${genome}
+fi
++ '[' '!' -f genomes/hs84red.fa.gz ']'
++ iCount sequence homo_sapiens --release 84 --chromosomes 21, MT --target_dir genomes --target_fname hs84red.fa.gz
+Executing the following command: iCount sequence homo_sapiens --release 84 --chromosomes 21, MT --target_dir genomes --target_fname hs84red.fa.gz
+Input parameters for function 'sequence' in /home/icuser/iCount_src/iCount/genomes/ensembl.py
+    species: homo_sapiens
+    release: 84
+    target_dir: genomes
+    target_fname: hs84red.fa.gz
+    tempdir: None
+    chromosomes: ['21', 'MT']
+Downloading FASTA file into: /tmp/iCount/tests/functional/pipeline/examples/genomes/hs84red.fa.gz
+Input parameters for function 'chrom_length' in /home/icuser/iCount_src/iCount/genomes/ensembl.py
+    fasta_in: /tmp/iCount/tests/functional/pipeline/examples/genomes/hs84red.fa.gz
+Fai file just saved to : /tmp/iCount/tests/functional/pipeline/examples/genomes/hs84red.fa.gz.fai
+Done.
+genome="${genome_dir}/${genome}"
++ genome=genomes/hs84red.fa.gz
+
+
+# step 2: download annotation
+# if parameter --release is omitted, the newest supported release is used
+annotation="hs84.gtf.gz"
++ annotation=hs84.gtf.gz
+if [ ! -f "${genome_dir}/${annotation}" ];
+then
+    iCount annotation homo_sapiens --release 84 --target_dir ${genome_dir} \
+        --target_fname ${annotation}
+fi
++ '[' '!' -f genomes/hs84.gtf.gz ']'
++ iCount annotation homo_sapiens --release 84 --target_dir genomes --target_fname hs84.gtf.gz
+Executing the following command: iCount annotation homo_sapiens --release 84 --target_dir genomes --target_fname hs84.gtf.gz
+Input parameters for function 'annotation' in /home/icuser/iCount_src/iCount/genomes/ensembl.py
+    species: homo_sapiens
+    release: 84
+    target_dir: genomes
+    target_fname: hs84.gtf.gz
+Downloading annotation to: genomes/hs84.gtf.gz
+Done.
+annotation="${genome_dir}/${annotation}"
++ annotation=genomes/hs84.gtf.gz
+
+genes_annotation="${genome_dir}/hs84.genes.gtf.gz"
++ genes_annotation=genomes/hs84.genes.gtf.gz
+if [ ! -f "${genes_annotation}" ];
+then
+    iCount genes ${annotation} ${genes_annotation}
+fi
++ '[' '!' -f genomes/hs84.genes.gtf.gz ']'
++ iCount genes genomes/hs84.gtf.gz genomes/hs84.genes.gtf.gz
+Executing the following command: iCount genes genomes/hs84.gtf.gz genomes/hs84.genes.gtf.gz
+Input parameters for function 'get_genes' in /home/icuser/iCount_src/iCount/genomes/genes.py
+    gtf_in: genomes/hs84.gtf.gz
+    gtf_out: genomes/hs84.genes.gtf.gz
+    fai_file: None
+    name: gene
+    attribute: gene_id
+Reading fai file...
+Reading GTF input file...
+Writing data to output GTF file...
+Results saved to /tmp/iCount/tests/functional/pipeline/examples/genomes/hs84.genes.gtf.gz.
+
+
+# step 3: index genome
+genome_index="star_index/hg19red"
++ genome_index=star_index/hg19red
+if [ ! -d ${genome_index} ];
+then
+    mkdir -p ${genome_index}
+    overhang="100"
+    iCount indexstar ${genome} ${genome_index} --annotation ${annotation} \
+        --overhang ${overhang} --threads 1
+fi
++ '[' '!' -d star_index/hg19red ']'
++ mkdir -p star_index/hg19red
++ overhang=100
++ iCount indexstar genomes/hs84red.fa.gz star_index/hg19red --annotation genomes/hs84.gtf.gz --overhang 100 --threads 1
+Executing the following command: iCount indexstar genomes/hs84red.fa.gz star_index/hg19red --annotation genomes/hs84.gtf.gz --overhang 100 --threads 1
+Input parameters for function 'build_index' in /home/icuser/iCount_src/iCount/externals/star.py
+    genome_fname: genomes/hs84red.fa.gz
+    outdir: star_index/hg19red
+    annotation: genomes/hs84.gtf.gz
+    overhang: 100
+    overhang_min: 8
+    threads: 1
+    logfile_path: ./
+Building genome index with STAR for genome genomes/hs84red.fa.gz
+Nov 01 20:28:28 ..... Started STAR run
+Nov 01 20:28:28 ... Starting to generate Genome files
+Nov 01 20:28:28 ... starting to sort  Suffix Array. This may take a long time...
+Nov 01 20:28:29 ... sorting Suffix Array chunks and saving them to disk...
+Nov 01 20:29:01 ... loading chunks from disk, packing SA...
+Nov 01 20:29:02 ... Finished generating suffix array
+Nov 01 20:29:02 ... starting to generate Suffix Array index...
+Nov 01 20:29:18 ..... Processing annotations GTF
+Nov 01 20:29:27 ..... Inserting junctions into the genome indices
+Nov 01 20:29:46 ... writing Genome to disk ...
+Nov 01 20:29:46 ... writing Suffix Array to disk ...
+Nov 01 20:29:46 ... writing SAindex to disk
+Nov 01 20:29:57 ..... Finished successfully
+Done.
+
+
+##############################
+### analysis-specific steps
+pushd ${analysis_dir}
++ pushd hnRNPCred
+/tmp/iCount/tests/functional/pipeline/examples/hnRNPCred /tmp/iCount/tests/functional/pipeline/examples
+
+# step 4: download FASTQ file of a hnRNPC iCLIP library
+fastq="hnRNPC.fq.gz"
++ fastq=hnRNPC.fq.gz
+if [ ! -f ${fastq} ];
+then
+    url="http://icount.fri.uni-lj.si/data/20101116_LUjh03/SLX-2605\
+.CRIRUN_501.s_4.sequence.reduced.txt.gz"
+    wget --no-verbose -O ${fastq} ${url}
+fi
++ '[' '!' -f hnRNPC.fq.gz ']'
++ url=http://icount.fri.uni-lj.si/data/20101116_LUjh03/SLX-2605.CRIRUN_501.s_4.sequence.reduced.txt.gz
++ wget --no-verbose -O hnRNPC.fq.gz http://icount.fri.uni-lj.si/data/20101116_LUjh03/SLX-2605.CRIRUN_501.s_4.sequence.reduced.txt.gz
+2016-11-01 20:30:44 URL:http://icount.fri.uni-lj.si/data/20101116_LUjh03/SLX-2605.CRIRUN_501.s_4.sequence.reduced.txt.gz [23819202/23819202] -> "hnRNPC.fq.gz" [1]
+
+
+# step 5: demultiplex
+barcodes="NNNGGTTNN, NNNTTGTNN, NNNCAATNN, NNNACCTNN, NNNGGCGNN"
++ barcodes='NNNGGTTNN, NNNTTGTNN, NNNCAATNN, NNNACCTNN, NNNGGCGNN'
+adapter="AGATCGGAAGAGCGGTTCAG"
++ adapter=AGATCGGAAGAGCGGTTCAG
+mm="1"  # number of mismatches allowed in sample barcode
++ mm=1
+ext_pref="exp"
++ ext_pref=exp
+ext_dir="extracted"
++ ext_dir=extracted
+mkdir -p ${ext_dir}
++ mkdir -p extracted
+iCount demultiplex ${fastq} ${adapter} ${mm} ${barcodes} --prefix ${ext_pref} \
+    --outdir ${ext_dir}
++ iCount demultiplex hnRNPC.fq.gz AGATCGGAAGAGCGGTTCAG 1 NNNGGTTNN, NNNTTGTNN, NNNCAATNN, NNNACCTNN, NNNGGCGNN --prefix exp --outdir extracted
+Executing the following command: iCount demultiplex hnRNPC.fq.gz AGATCGGAAGAGCGGTTCAG 1 NNNGGTTNN, NNNTTGTNN, NNNCAATNN, NNNACCTNN, NNNGGCGNN --prefix exp --outdir extracted
+Input parameters for function 'run' in /home/icuser/iCount_src/iCount/demultiplex.py
+    fastq_fn: hnRNPC.fq.gz
+    adapter: AGATCGGAAGAGCGGTTCAG
+    mismatches: 1
+    barcodes: ['NNNGGTTNN', 'NNNTTGTNN', 'NNNCAATNN', 'NNNACCTNN', 'NNNGGCGNN']
+    minimum_length: 15
+    prefix: exp
+    outdir: extracted
+Allowing max 1 mismatches in barcodes.
+Demultiplexing file: hnRNPC.fq.gz
+Saving results to:
+    extracted/exp_nomatch_raw.fastq.gz
+    extracted/exp_NNNGGTTNN_raw.fastq.gz
+    extracted/exp_NNNTTGTNN_raw.fastq.gz
+    extracted/exp_NNNCAATNN_raw.fastq.gz
+    extracted/exp_NNNACCTNN_raw.fastq.gz
+    extracted/exp_NNNGGCGNN_raw.fastq.gz
+Trimming adapters (discarding shorter than 15)...
+
+
+# step 6: map reads to genome reference
+multimax="50"
++ multimax=50
+mismatches="2"
++ mismatches=2
+
+for barcode in ${barcodes//,/ }; do
+    sequences="${ext_dir}/${ext_pref}_${barcode}.fastq.gz"
+
+    map_dir="mappings/${ext_pref}_${barcode}"
+    rm -Rf ${map_dir}
+    mkdir -p ${map_dir}
+
+    iCount mapstar ${sequences} "../${genome_index}" ${map_dir} --threads 1 \
+        --multimax ${multimax} --mismatches ${mismatches} \
+        --annotation "../${annotation}"
+done
++ for barcode in '${barcodes//,/ }'
++ sequences=extracted/exp_NNNGGTTNN.fastq.gz
++ map_dir=mappings/exp_NNNGGTTNN
++ rm -Rf mappings/exp_NNNGGTTNN
++ mkdir -p mappings/exp_NNNGGTTNN
++ iCount mapstar extracted/exp_NNNGGTTNN.fastq.gz ../star_index/hg19red mappings/exp_NNNGGTTNN --threads 1 --multimax 50 --mismatches 2 --annotation ../genomes/hs84.gtf.gz
+Executing the following command: iCount mapstar extracted/exp_NNNGGTTNN.fastq.gz ../star_index/hg19red mappings/exp_NNNGGTTNN --threads 1 --multimax 50 --mismatches 2 --annotation ../genomes/hs84.gtf.gz
+Input parameters for function 'map_reads' in /home/icuser/iCount_src/iCount/externals/star.py
+    sequences_fname: extracted/exp_NNNGGTTNN.fastq.gz
+    genomedir: ../star_index/hg19red
+    outdir: mappings/exp_NNNGGTTNN
+    annotation: ../genomes/hs84.gtf.gz
+    multimax: 50
+    mismatches: 2
+    threads: 1
+Mapping reads from extracted/exp_NNNGGTTNN.fastq.gz
+Nov 01 20:31:25 ..... Started STAR run
+Nov 01 20:31:25 ..... Loading genome
+Nov 01 20:31:30 ..... Processing annotations GTF
+Nov 01 20:31:39 ..... Inserting junctions into the genome indices
+Nov 01 20:31:45 ..... Started mapping
+Nov 01 20:31:55 ..... Started sorting BAM
+Nov 01 20:31:55 ..... Finished successfully
+Done.
++ for barcode in '${barcodes//,/ }'
++ sequences=extracted/exp_NNNTTGTNN.fastq.gz
++ map_dir=mappings/exp_NNNTTGTNN
++ rm -Rf mappings/exp_NNNTTGTNN
++ mkdir -p mappings/exp_NNNTTGTNN
++ iCount mapstar extracted/exp_NNNTTGTNN.fastq.gz ../star_index/hg19red mappings/exp_NNNTTGTNN --threads 1 --multimax 50 --mismatches 2 --annotation ../genomes/hs84.gtf.gz
+Executing the following command: iCount mapstar extracted/exp_NNNTTGTNN.fastq.gz ../star_index/hg19red mappings/exp_NNNTTGTNN --threads 1 --multimax 50 --mismatches 2 --annotation ../genomes/hs84.gtf.gz
+Input parameters for function 'map_reads' in /home/icuser/iCount_src/iCount/externals/star.py
+    sequences_fname: extracted/exp_NNNTTGTNN.fastq.gz
+    genomedir: ../star_index/hg19red
+    outdir: mappings/exp_NNNTTGTNN
+    annotation: ../genomes/hs84.gtf.gz
+    multimax: 50
+    mismatches: 2
+    threads: 1
+Mapping reads from extracted/exp_NNNTTGTNN.fastq.gz
+Nov 01 20:32:03 ..... Started STAR run
+Nov 01 20:32:03 ..... Loading genome
+Nov 01 20:32:10 ..... Processing annotations GTF
+Nov 01 20:32:17 ..... Inserting junctions into the genome indices
+Nov 01 20:32:28 ..... Started mapping
+Nov 01 20:33:50 ..... Started sorting BAM
+Nov 01 20:33:51 ..... Finished successfully
+Done.
++ for barcode in '${barcodes//,/ }'
++ sequences=extracted/exp_NNNCAATNN.fastq.gz
++ map_dir=mappings/exp_NNNCAATNN
++ rm -Rf mappings/exp_NNNCAATNN
++ mkdir -p mappings/exp_NNNCAATNN
++ iCount mapstar extracted/exp_NNNCAATNN.fastq.gz ../star_index/hg19red mappings/exp_NNNCAATNN --threads 1 --multimax 50 --mismatches 2 --annotation ../genomes/hs84.gtf.gz
+Executing the following command: iCount mapstar extracted/exp_NNNCAATNN.fastq.gz ../star_index/hg19red mappings/exp_NNNCAATNN --threads 1 --multimax 50 --mismatches 2 --annotation ../genomes/hs84.gtf.gz
+Input parameters for function 'map_reads' in /home/icuser/iCount_src/iCount/externals/star.py
+    sequences_fname: extracted/exp_NNNCAATNN.fastq.gz
+    genomedir: ../star_index/hg19red
+    outdir: mappings/exp_NNNCAATNN
+    annotation: ../genomes/hs84.gtf.gz
+    multimax: 50
+    mismatches: 2
+    threads: 1
+Mapping reads from extracted/exp_NNNCAATNN.fastq.gz
+Nov 01 20:33:58 ..... Started STAR run
+Nov 01 20:33:58 ..... Loading genome
+Nov 01 20:34:05 ..... Processing annotations GTF
+Nov 01 20:34:12 ..... Inserting junctions into the genome indices
+Nov 01 20:34:18 ..... Started mapping
+Nov 01 20:35:07 ..... Started sorting BAM
+Nov 01 20:35:08 ..... Finished successfully
+Done.
++ for barcode in '${barcodes//,/ }'
++ sequences=extracted/exp_NNNACCTNN.fastq.gz
++ map_dir=mappings/exp_NNNACCTNN
++ rm -Rf mappings/exp_NNNACCTNN
++ mkdir -p mappings/exp_NNNACCTNN
++ iCount mapstar extracted/exp_NNNACCTNN.fastq.gz ../star_index/hg19red mappings/exp_NNNACCTNN --threads 1 --multimax 50 --mismatches 2 --annotation ../genomes/hs84.gtf.gz
+Executing the following command: iCount mapstar extracted/exp_NNNACCTNN.fastq.gz ../star_index/hg19red mappings/exp_NNNACCTNN --threads 1 --multimax 50 --mismatches 2 --annotation ../genomes/hs84.gtf.gz
+Input parameters for function 'map_reads' in /home/icuser/iCount_src/iCount/externals/star.py
+    sequences_fname: extracted/exp_NNNACCTNN.fastq.gz
+    genomedir: ../star_index/hg19red
+    outdir: mappings/exp_NNNACCTNN
+    annotation: ../genomes/hs84.gtf.gz
+    multimax: 50
+    mismatches: 2
+    threads: 1
+Mapping reads from extracted/exp_NNNACCTNN.fastq.gz
+Nov 01 20:35:14 ..... Started STAR run
+Nov 01 20:35:14 ..... Loading genome
+Nov 01 20:35:17 ..... Processing annotations GTF
+Nov 01 20:35:28 ..... Inserting junctions into the genome indices
+Nov 01 20:35:36 ..... Started mapping
+Nov 01 20:35:49 ..... Started sorting BAM
+Nov 01 20:35:49 ..... Finished successfully
+Done.
++ for barcode in '${barcodes//,/ }'
++ sequences=extracted/exp_NNNGGCGNN.fastq.gz
++ map_dir=mappings/exp_NNNGGCGNN
++ rm -Rf mappings/exp_NNNGGCGNN
++ mkdir -p mappings/exp_NNNGGCGNN
++ iCount mapstar extracted/exp_NNNGGCGNN.fastq.gz ../star_index/hg19red mappings/exp_NNNGGCGNN --threads 1 --multimax 50 --mismatches 2 --annotation ../genomes/hs84.gtf.gz
+Executing the following command: iCount mapstar extracted/exp_NNNGGCGNN.fastq.gz ../star_index/hg19red mappings/exp_NNNGGCGNN --threads 1 --multimax 50 --mismatches 2 --annotation ../genomes/hs84.gtf.gz
+Input parameters for function 'map_reads' in /home/icuser/iCount_src/iCount/externals/star.py
+    sequences_fname: extracted/exp_NNNGGCGNN.fastq.gz
+    genomedir: ../star_index/hg19red
+    outdir: mappings/exp_NNNGGCGNN
+    annotation: ../genomes/hs84.gtf.gz
+    multimax: 50
+    mismatches: 2
+    threads: 1
+Mapping reads from extracted/exp_NNNGGCGNN.fastq.gz
+Nov 01 20:35:56 ..... Started STAR run
+Nov 01 20:35:56 ..... Loading genome
+Nov 01 20:35:59 ..... Processing annotations GTF
+Nov 01 20:36:11 ..... Inserting junctions into the genome indices
+Nov 01 20:36:17 ..... Started mapping
+Nov 01 20:38:25 ..... Started sorting BAM
+Nov 01 20:38:27 ..... Finished successfully
+Done.
+
+
+# step 7: identify and quantify cross-linked sites
+groupby="start"
++ groupby=start
+quant="cDNA"
++ quant=cDNA
+mismatches="2"
++ mismatches=2
+
+bed_dir="beds"
++ bed_dir=beds
+rm -Rf ${bed_dir}
++ rm -Rf beds
+mkdir -p ${bed_dir}
++ mkdir -p beds
+
+peaks_dir="peaks"
++ peaks_dir=peaks
+rm -Rf ${peaks_dir}
++ rm -Rf peaks
+mkdir -p ${peaks_dir}
++ mkdir -p peaks
+
+for barcode in ${barcodes//,/ }; do
+    map_dir="mappings/${ext_pref}_${barcode}"
+    bam="${map_dir}/Aligned.sortedByCoord.out.bam"
+
+    bed="${bed_dir}/hits_${barcode}_${groupby}_${quant}_unique.bed"
+    bedm="${bed_dir}/hits_${barcode}_${groupby}_${quant}_multi.bed"
+
+    iCount xlsites ${bam} ${bed} ${bedm} --mismatches ${mismatches} \
+        --group_by ${groupby} --quant ${quant}
+
+
+    # step 8: perform peaks analysis
+    peaks="${peaks_dir}/peaks_${barcode}_${groupby}_${quant}_unique.bed"
+    scores="${peaks_dir}/peaks_${barcode}_${groupby}_${quant}_unique.tab"
+    iCount peaks "../${genes_annotation}" ${bed} ${peaks}
+        --fout_scores ${scores}
+done
++ for barcode in '${barcodes//,/ }'
++ map_dir=mappings/exp_NNNGGTTNN
++ bam=mappings/exp_NNNGGTTNN/Aligned.sortedByCoord.out.bam
++ bed=beds/hits_NNNGGTTNN_start_cDNA_unique.bed
++ bedm=beds/hits_NNNGGTTNN_start_cDNA_multi.bed
++ iCount xlsites mappings/exp_NNNGGTTNN/Aligned.sortedByCoord.out.bam beds/hits_NNNGGTTNN_start_cDNA_unique.bed beds/hits_NNNGGTTNN_start_cDNA_multi.bed --mismatches 2 --group_by start --quant cDNA
+Executing the following command: iCount xlsites mappings/exp_NNNGGTTNN/Aligned.sortedByCoord.out.bam beds/hits_NNNGGTTNN_start_cDNA_unique.bed beds/hits_NNNGGTTNN_start_cDNA_multi.bed --mismatches 2 --group_by start --quant cDNA
+Input parameters for function 'run' in /home/icuser/iCount_src/iCount/mapping/xlsites.py
+    bam_fname: mappings/exp_NNNGGTTNN/Aligned.sortedByCoord.out.bam
+    unique_fname: beds/hits_NNNGGTTNN_start_cDNA_unique.bed
+    multi_fname: beds/hits_NNNGGTTNN_start_cDNA_multi.bed
+    group_by: start
+    quant: cDNA
+    mismatches: 2
+    mapq_th: 0
+    multimax: 50
+All records in BAM file: 21502
+Reads not mapped: 8733
+Mapped reads records (hits): 12769
+Hits ignored because of low MAPQ: 0
+Records used for quantification: 12769
+Records with invalid randomer info in header: 0
+Records with no randomer info: 0
+Ten most frequent randomers:
+    TGTCT: 305
+    AGTCT: 269
+    AGTTT: 197
+    TGATT: 180
+    TGTTT: 175
+    AGCCT: 157
+    AGTGT: 142
+    AGCTT: 135
+    AGGTT: 129
+    TGACT: 118
+Saved to BED file (uniquely mapped reads): beds/hits_NNNGGTTNN_start_cDNA_unique.bed
+Saved to BED file (multi-mapped reads): beds/hits_NNNGGTTNN_start_cDNA_multi.bed
++ peaks=peaks/peaks_NNNGGTTNN_start_cDNA_unique.bed
++ scores=peaks/peaks_NNNGGTTNN_start_cDNA_unique.tab
++ iCount peaks ../genomes/hs84.genes.gtf.gz beds/hits_NNNGGTTNN_start_cDNA_unique.bed peaks/peaks_NNNGGTTNN_start_cDNA_unique.bed
+Executing the following command: iCount peaks ../genomes/hs84.genes.gtf.gz beds/hits_NNNGGTTNN_start_cDNA_unique.bed peaks/peaks_NNNGGTTNN_start_cDNA_unique.bed
+Input parameters for function 'run' in /home/icuser/iCount_src/iCount/analysis/peaks.py
+    fin_annotation: ../genomes/hs84.genes.gtf.gz
+    fin_sites: beds/hits_NNNGGTTNN_start_cDNA_unique.bed
+    fout_peaks: peaks/peaks_NNNGGTTNN_start_cDNA_unique.bed
+    fout_scores: None
+    hw: 3
+    fdr: 0.05
+    perms: 100
+    rnd_seed: 42
+    features: ['gene']
+    report_progress: False
+    group_by: gene_id
+Calculating intersection between annotation and cross-link file...
+Processing overlaps
+Bed file with significant peaks saved to <_io.TextIOWrapper name='peaks/peaks_NNNGGTTNN_start_cDNA_unique.bed' mode='wt' encoding='ANSI_X3.4-1968'>
+Done.
++ --fout_scores peaks/peaks_NNNGGTTNN_start_cDNA_unique.tab
+./hnRNPC_reduced.sh: line 123: --fout_scores: command not found
++ for barcode in '${barcodes//,/ }'
++ map_dir=mappings/exp_NNNTTGTNN
++ bam=mappings/exp_NNNTTGTNN/Aligned.sortedByCoord.out.bam
++ bed=beds/hits_NNNTTGTNN_start_cDNA_unique.bed
++ bedm=beds/hits_NNNTTGTNN_start_cDNA_multi.bed
++ iCount xlsites mappings/exp_NNNTTGTNN/Aligned.sortedByCoord.out.bam beds/hits_NNNTTGTNN_start_cDNA_unique.bed beds/hits_NNNTTGTNN_start_cDNA_multi.bed --mismatches 2 --group_by start --quant cDNA
+Executing the following command: iCount xlsites mappings/exp_NNNTTGTNN/Aligned.sortedByCoord.out.bam beds/hits_NNNTTGTNN_start_cDNA_unique.bed beds/hits_NNNTTGTNN_start_cDNA_multi.bed --mismatches 2 --group_by start --quant cDNA
+Input parameters for function 'run' in /home/icuser/iCount_src/iCount/mapping/xlsites.py
+    bam_fname: mappings/exp_NNNTTGTNN/Aligned.sortedByCoord.out.bam
+    unique_fname: beds/hits_NNNTTGTNN_start_cDNA_unique.bed
+    multi_fname: beds/hits_NNNTTGTNN_start_cDNA_multi.bed
+    group_by: start
+    quant: cDNA
+    mismatches: 2
+    mapq_th: 0
+    multimax: 50
+All records in BAM file: 242590
+Reads not mapped: 108773
+Mapped reads records (hits): 133817
+Hits ignored because of low MAPQ: 0
+Records used for quantification: 133817
+Records with invalid randomer info in header: 0
+Records with no randomer info: 0
+Ten most frequent randomers:
+    ACGTC: 1881
+    CTGTC: 1411
+    CCGTC: 1266
+    TTGTC: 1163
+    ATGTC: 1117
+    TCGTC: 931
+    GCGTC: 871
+    TCATC: 864
+    CAGTC: 748
+    ACGCC: 683
+Saved to BED file (uniquely mapped reads): beds/hits_NNNTTGTNN_start_cDNA_unique.bed
+Saved to BED file (multi-mapped reads): beds/hits_NNNTTGTNN_start_cDNA_multi.bed
++ peaks=peaks/peaks_NNNTTGTNN_start_cDNA_unique.bed
++ scores=peaks/peaks_NNNTTGTNN_start_cDNA_unique.tab
++ iCount peaks ../genomes/hs84.genes.gtf.gz beds/hits_NNNTTGTNN_start_cDNA_unique.bed peaks/peaks_NNNTTGTNN_start_cDNA_unique.bed
+Executing the following command: iCount peaks ../genomes/hs84.genes.gtf.gz beds/hits_NNNTTGTNN_start_cDNA_unique.bed peaks/peaks_NNNTTGTNN_start_cDNA_unique.bed
+Input parameters for function 'run' in /home/icuser/iCount_src/iCount/analysis/peaks.py
+    fin_annotation: ../genomes/hs84.genes.gtf.gz
+    fin_sites: beds/hits_NNNTTGTNN_start_cDNA_unique.bed
+    fout_peaks: peaks/peaks_NNNTTGTNN_start_cDNA_unique.bed
+    fout_scores: None
+    hw: 3
+    fdr: 0.05
+    perms: 100
+    rnd_seed: 42
+    features: ['gene']
+    report_progress: False
+    group_by: gene_id
+Calculating intersection between annotation and cross-link file...
+Processing overlaps
+Bed file with significant peaks saved to <_io.TextIOWrapper name='peaks/peaks_NNNTTGTNN_start_cDNA_unique.bed' mode='wt' encoding='ANSI_X3.4-1968'>
+Done.
++ --fout_scores peaks/peaks_NNNTTGTNN_start_cDNA_unique.tab
+./hnRNPC_reduced.sh: line 123: --fout_scores: command not found
++ for barcode in '${barcodes//,/ }'
++ map_dir=mappings/exp_NNNCAATNN
++ bam=mappings/exp_NNNCAATNN/Aligned.sortedByCoord.out.bam
++ bed=beds/hits_NNNCAATNN_start_cDNA_unique.bed
++ bedm=beds/hits_NNNCAATNN_start_cDNA_multi.bed
++ iCount xlsites mappings/exp_NNNCAATNN/Aligned.sortedByCoord.out.bam beds/hits_NNNCAATNN_start_cDNA_unique.bed beds/hits_NNNCAATNN_start_cDNA_multi.bed --mismatches 2 --group_by start --quant cDNA
+Executing the following command: iCount xlsites mappings/exp_NNNCAATNN/Aligned.sortedByCoord.out.bam beds/hits_NNNCAATNN_start_cDNA_unique.bed beds/hits_NNNCAATNN_start_cDNA_multi.bed --mismatches 2 --group_by start --quant cDNA
+Input parameters for function 'run' in /home/icuser/iCount_src/iCount/mapping/xlsites.py
+    bam_fname: mappings/exp_NNNCAATNN/Aligned.sortedByCoord.out.bam
+    unique_fname: beds/hits_NNNCAATNN_start_cDNA_unique.bed
+    multi_fname: beds/hits_NNNCAATNN_start_cDNA_multi.bed
+    group_by: start
+    quant: cDNA
+    mismatches: 2
+    mapq_th: 0
+    multimax: 50
+All records in BAM file: 145665
+Reads not mapped: 64031
+Mapped reads records (hits): 81634
+Hits ignored because of low MAPQ: 0
+Records used for quantification: 81634
+Records with invalid randomer info in header: 0
+Records with no randomer info: 0
+Ten most frequent randomers:
+    TGTCC: 932
+    TGTCT: 853
+    TGTCA: 768
+    TCGTC: 762
+    CCTCC: 752
+    CAGCC: 732
+    AGTCC: 684
+    TCGCA: 654
+    TCGCT: 634
+    ACGCC: 633
+Saved to BED file (uniquely mapped reads): beds/hits_NNNCAATNN_start_cDNA_unique.bed
+Saved to BED file (multi-mapped reads): beds/hits_NNNCAATNN_start_cDNA_multi.bed
++ peaks=peaks/peaks_NNNCAATNN_start_cDNA_unique.bed
++ scores=peaks/peaks_NNNCAATNN_start_cDNA_unique.tab
++ iCount peaks ../genomes/hs84.genes.gtf.gz beds/hits_NNNCAATNN_start_cDNA_unique.bed peaks/peaks_NNNCAATNN_start_cDNA_unique.bed
+Executing the following command: iCount peaks ../genomes/hs84.genes.gtf.gz beds/hits_NNNCAATNN_start_cDNA_unique.bed peaks/peaks_NNNCAATNN_start_cDNA_unique.bed
+Input parameters for function 'run' in /home/icuser/iCount_src/iCount/analysis/peaks.py
+    fin_annotation: ../genomes/hs84.genes.gtf.gz
+    fin_sites: beds/hits_NNNCAATNN_start_cDNA_unique.bed
+    fout_peaks: peaks/peaks_NNNCAATNN_start_cDNA_unique.bed
+    fout_scores: None
+    hw: 3
+    fdr: 0.05
+    perms: 100
+    rnd_seed: 42
+    features: ['gene']
+    report_progress: False
+    group_by: gene_id
+Calculating intersection between annotation and cross-link file...
+Processing overlaps
+Bed file with significant peaks saved to <_io.TextIOWrapper name='peaks/peaks_NNNCAATNN_start_cDNA_unique.bed' mode='wt' encoding='ANSI_X3.4-1968'>
+Done.
++ --fout_scores peaks/peaks_NNNCAATNN_start_cDNA_unique.tab
+./hnRNPC_reduced.sh: line 123: --fout_scores: command not found
++ for barcode in '${barcodes//,/ }'
++ map_dir=mappings/exp_NNNACCTNN
++ bam=mappings/exp_NNNACCTNN/Aligned.sortedByCoord.out.bam
++ bed=beds/hits_NNNACCTNN_start_cDNA_unique.bed
++ bedm=beds/hits_NNNACCTNN_start_cDNA_multi.bed
++ iCount xlsites mappings/exp_NNNACCTNN/Aligned.sortedByCoord.out.bam beds/hits_NNNACCTNN_start_cDNA_unique.bed beds/hits_NNNACCTNN_start_cDNA_multi.bed --mismatches 2 --group_by start --quant cDNA
+Executing the following command: iCount xlsites mappings/exp_NNNACCTNN/Aligned.sortedByCoord.out.bam beds/hits_NNNACCTNN_start_cDNA_unique.bed beds/hits_NNNACCTNN_start_cDNA_multi.bed --mismatches 2 --group_by start --quant cDNA
+Input parameters for function 'run' in /home/icuser/iCount_src/iCount/mapping/xlsites.py
+    bam_fname: mappings/exp_NNNACCTNN/Aligned.sortedByCoord.out.bam
+    unique_fname: beds/hits_NNNACCTNN_start_cDNA_unique.bed
+    multi_fname: beds/hits_NNNACCTNN_start_cDNA_multi.bed
+    group_by: start
+    quant: cDNA
+    mismatches: 2
+    mapq_th: 0
+    multimax: 50
+All records in BAM file: 40983
+Reads not mapped: 16573
+Mapped reads records (hits): 24410
+Hits ignored because of low MAPQ: 0
+Records used for quantification: 24410
+Records with invalid randomer info in header: 0
+Records with no randomer info: 0
+Ten most frequent randomers:
+    TCTCC: 492
+    AGTCC: 474
+    TGTCC: 291
+    ACTCC: 270
+    CGTCT: 269
+    CGTCC: 264
+    CGTCA: 251
+    CGTCG: 226
+    AGTCG: 221
+    AGGTT: 189
+Saved to BED file (uniquely mapped reads): beds/hits_NNNACCTNN_start_cDNA_unique.bed
+Saved to BED file (multi-mapped reads): beds/hits_NNNACCTNN_start_cDNA_multi.bed
++ peaks=peaks/peaks_NNNACCTNN_start_cDNA_unique.bed
++ scores=peaks/peaks_NNNACCTNN_start_cDNA_unique.tab
++ iCount peaks ../genomes/hs84.genes.gtf.gz beds/hits_NNNACCTNN_start_cDNA_unique.bed peaks/peaks_NNNACCTNN_start_cDNA_unique.bed
+Executing the following command: iCount peaks ../genomes/hs84.genes.gtf.gz beds/hits_NNNACCTNN_start_cDNA_unique.bed peaks/peaks_NNNACCTNN_start_cDNA_unique.bed
+Input parameters for function 'run' in /home/icuser/iCount_src/iCount/analysis/peaks.py
+    fin_annotation: ../genomes/hs84.genes.gtf.gz
+    fin_sites: beds/hits_NNNACCTNN_start_cDNA_unique.bed
+    fout_peaks: peaks/peaks_NNNACCTNN_start_cDNA_unique.bed
+    fout_scores: None
+    hw: 3
+    fdr: 0.05
+    perms: 100
+    rnd_seed: 42
+    features: ['gene']
+    report_progress: False
+    group_by: gene_id
+Calculating intersection between annotation and cross-link file...
+Processing overlaps
+Bed file with significant peaks saved to <_io.TextIOWrapper name='peaks/peaks_NNNACCTNN_start_cDNA_unique.bed' mode='wt' encoding='ANSI_X3.4-1968'>
+Done.
++ --fout_scores peaks/peaks_NNNACCTNN_start_cDNA_unique.tab
+./hnRNPC_reduced.sh: line 123: --fout_scores: command not found
++ for barcode in '${barcodes//,/ }'
++ map_dir=mappings/exp_NNNGGCGNN
++ bam=mappings/exp_NNNGGCGNN/Aligned.sortedByCoord.out.bam
++ bed=beds/hits_NNNGGCGNN_start_cDNA_unique.bed
++ bedm=beds/hits_NNNGGCGNN_start_cDNA_multi.bed
++ iCount xlsites mappings/exp_NNNGGCGNN/Aligned.sortedByCoord.out.bam beds/hits_NNNGGCGNN_start_cDNA_unique.bed beds/hits_NNNGGCGNN_start_cDNA_multi.bed --mismatches 2 --group_by start --quant cDNA
+Executing the following command: iCount xlsites mappings/exp_NNNGGCGNN/Aligned.sortedByCoord.out.bam beds/hits_NNNGGCGNN_start_cDNA_unique.bed beds/hits_NNNGGCGNN_start_cDNA_multi.bed --mismatches 2 --group_by start --quant cDNA
+Input parameters for function 'run' in /home/icuser/iCount_src/iCount/mapping/xlsites.py
+    bam_fname: mappings/exp_NNNGGCGNN/Aligned.sortedByCoord.out.bam
+    unique_fname: beds/hits_NNNGGCGNN_start_cDNA_unique.bed
+    multi_fname: beds/hits_NNNGGCGNN_start_cDNA_multi.bed
+    group_by: start
+    quant: cDNA
+    mismatches: 2
+    mapq_th: 0
+    multimax: 50
+All records in BAM file: 397336
+Reads not mapped: 176657
+Mapped reads records (hits): 220679
+Hits ignored because of low MAPQ: 0
+Records used for quantification: 220679
+Records with invalid randomer info in header: 0
+Records with no randomer info: 0
+Ten most frequent randomers:
+    TGTTC: 12324
+    AGTTC: 8754
+    CGTTC: 5533
+    TGTCC: 5491
+    AGTCC: 4231
+    AGTAC: 3210
+    TGTAC: 3028
+    CATTC: 2341
+    TGTCT: 2166
+    AGTCT: 2163
+Saved to BED file (uniquely mapped reads): beds/hits_NNNGGCGNN_start_cDNA_unique.bed
+Saved to BED file (multi-mapped reads): beds/hits_NNNGGCGNN_start_cDNA_multi.bed
++ peaks=peaks/peaks_NNNGGCGNN_start_cDNA_unique.bed
++ scores=peaks/peaks_NNNGGCGNN_start_cDNA_unique.tab
++ iCount peaks ../genomes/hs84.genes.gtf.gz beds/hits_NNNGGCGNN_start_cDNA_unique.bed peaks/peaks_NNNGGCGNN_start_cDNA_unique.bed
+Executing the following command: iCount peaks ../genomes/hs84.genes.gtf.gz beds/hits_NNNGGCGNN_start_cDNA_unique.bed peaks/peaks_NNNGGCGNN_start_cDNA_unique.bed
+Input parameters for function 'run' in /home/icuser/iCount_src/iCount/analysis/peaks.py
+    fin_annotation: ../genomes/hs84.genes.gtf.gz
+    fin_sites: beds/hits_NNNGGCGNN_start_cDNA_unique.bed
+    fout_peaks: peaks/peaks_NNNGGCGNN_start_cDNA_unique.bed
+    fout_scores: None
+    hw: 3
+    fdr: 0.05
+    perms: 100
+    rnd_seed: 42
+    features: ['gene']
+    report_progress: False
+    group_by: gene_id
+Calculating intersection between annotation and cross-link file...
+Processing overlaps
+Bed file with significant peaks saved to <_io.TextIOWrapper name='peaks/peaks_NNNGGCGNN_start_cDNA_unique.bed' mode='wt' encoding='ANSI_X3.4-1968'>
+Done.
++ --fout_scores peaks/peaks_NNNGGCGNN_start_cDNA_unique.tab
+./hnRNPC_reduced.sh: line 123: --fout_scores: command not found
+
+popd
++ popd
+/tmp/iCount/tests/functional/pipeline/examples
