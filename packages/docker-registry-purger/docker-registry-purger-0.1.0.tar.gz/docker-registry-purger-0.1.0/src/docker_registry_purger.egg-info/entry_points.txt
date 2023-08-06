@@ -1,0 +1,3 @@
+[console_scripts]
+docker-registry-purger = docker_registry_purger.__init__:main
+

@@ -1,0 +1,13 @@
+ChangeLog.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+src/docker_registry_purger/__init__.py
+src/docker_registry_purger.egg-info/PKG-INFO
+src/docker_registry_purger.egg-info/SOURCES.txt
+src/docker_registry_purger.egg-info/dependency_links.txt
+src/docker_registry_purger.egg-info/entry_points.txt
+src/docker_registry_purger.egg-info/not-zip-safe
+src/docker_registry_purger.egg-info/requires.txt
+src/docker_registry_purger.egg-info/top_level.txt
