@@ -1,0 +1,27 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* release note for first release
+* accept the first match as the result
+* fix default tox environments
+* force python3 for venv environment for tox
+* update documentation URL
+* update documentation
+* fix tests for python 2.7 support
+* track untested rules
+* have the app process the rules
+* add match() method to ruleset
+* start RuleSet class
+* add support for redirectmatch rules
+* add support for redirect rules
+* turn on code coverage for test runs
+* add parser
+* fix pep8 error with app
+* remove unused stub file
+* stub in command line app
+* fix python 3 trove classifier
+* update README
+* Initial Cookiecutter Commit
