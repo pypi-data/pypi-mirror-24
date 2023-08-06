@@ -1,0 +1,3 @@
+[console_scripts]
+wfs-downloader = wfs_downloader.download:main
+

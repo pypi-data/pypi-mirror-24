@@ -1,0 +1,9 @@
+setup.py
+wfs_downloader/__init__.py
+wfs_downloader/download.py
+wfs_downloader.egg-info/PKG-INFO
+wfs_downloader.egg-info/SOURCES.txt
+wfs_downloader.egg-info/dependency_links.txt
+wfs_downloader.egg-info/entry_points.txt
+wfs_downloader.egg-info/requires.txt
+wfs_downloader.egg-info/top_level.txt

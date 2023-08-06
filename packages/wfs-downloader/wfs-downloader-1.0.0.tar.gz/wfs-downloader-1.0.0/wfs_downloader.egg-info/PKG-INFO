@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: wfs-downloader
+Version: 1.0.0
+Summary: Downloads GML files from a WFS service in a pseudo-paginated way using bounding boxes and combine them again to one file.
+Home-page: https://github.com/codeforberlin/wfs-downloader
+Author: Jochen Klar
+Author-email: jochenklar@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
