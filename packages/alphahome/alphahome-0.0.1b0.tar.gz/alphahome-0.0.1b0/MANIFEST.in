@@ -1,0 +1,2 @@
+include REAdME.rst
+recursive-include alphahome/templates *
