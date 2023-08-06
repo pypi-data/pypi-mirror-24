@@ -1,0 +1,10 @@
+pg_materialize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pg_materialize/pg_materialize.py,sha256=bYjAwZYqEpTc3pyRiR7BrsIcRyvyjzaj4hcZXe1JZcs,5714
+pg_materialize-0.4.0.dist-info/DESCRIPTION.rst,sha256=PHNqV5kQfGGwA1qU0DCUJFFFccdZeqV2B438unBA_6w,5044
+pg_materialize-0.4.0.dist-info/METADATA,sha256=8zPGYHGoeGmV3kmoYKEZ9f1OHH7T1XSyA17Ud9IHdqw,5447
+pg_materialize-0.4.0.dist-info/RECORD,,
+pg_materialize-0.4.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pg_materialize-0.4.0.dist-info/entry_points.txt,sha256=br8dq_7f9jGadS2JiVhZtqXX4aBiO9-FQPtnSOUN7oU,70
+pg_materialize-0.4.0.dist-info/metadata.json,sha256=2U_5w98Q2UydlOuD-Oy24nxRxBjitzfgawnjYbYs3D4,877
+pg_materialize-0.4.0.dist-info/pbr.json,sha256=h_RXTyf2VNQGoB8j-xkuIELEpeAWRALQrhpHYjwvAxQ,47
+pg_materialize-0.4.0.dist-info/top_level.txt,sha256=R0bz0ow75jOKIXx3mvRq_axik9IHnqpix6GXqWEsOJg,15
