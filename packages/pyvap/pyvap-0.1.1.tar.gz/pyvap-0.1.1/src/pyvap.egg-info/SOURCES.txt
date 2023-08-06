@@ -1,0 +1,11 @@
+MANIFEST.in
+readme.rst
+setup.py
+src/pyvap/__init__.py
+src/pyvap/main.py
+src/pyvap/version.py
+src/pyvap.egg-info/PKG-INFO
+src/pyvap.egg-info/SOURCES.txt
+src/pyvap.egg-info/dependency_links.txt
+src/pyvap.egg-info/requires.txt
+src/pyvap.egg-info/top_level.txt
