@@ -1,0 +1,3 @@
+[console_scripts]
+recast-createscan = recastapi.apicli:createscan
+

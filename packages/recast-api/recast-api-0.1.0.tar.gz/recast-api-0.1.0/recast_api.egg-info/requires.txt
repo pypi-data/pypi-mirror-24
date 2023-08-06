@@ -1,0 +1,8 @@
+requests
+click
+pyyaml
+termcolor
+urllib3
+pyopenssl
+ndg-httpsclient
+pyasn1
