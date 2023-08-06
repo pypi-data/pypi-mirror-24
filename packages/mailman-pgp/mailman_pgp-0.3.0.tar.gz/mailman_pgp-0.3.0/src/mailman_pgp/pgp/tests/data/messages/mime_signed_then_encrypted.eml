@@ -1,0 +1,48 @@
+To: nobody@example.org
+From: RSA 1024b example <RSA-1024b@example.org>
+Subject: Some subject.
+Message-ID: <76a591ed-bfc4-d08b-73d3-fc2489148fd7@example.org>
+Date: Wed, 21 Jun 2017 13:50:59 +0200
+User-Agent: Mutt/1.7.2 (2016-11-26)
+MIME-Version: 1.0
+Content-Type: multipart/encrypted; protocol="application/pgp-encrypted";
+ boundary="abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs"
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs
+Content-Type: application/pgp-encrypted
+Content-Description: PGP/MIME version identification
+
+Version: 1
+
+--abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs
+Content-Type: application/octet-stream; name="encrypted.asc"
+Content-Description: OpenPGP encrypted message
+Content-Disposition: inline; filename="encrypted.asc"
+
+-----BEGIN PGP MESSAGE-----
+
+wYwD9aW4UkhFqMoBA/9B7YJGpP+NMchcJ10APkW/6LSlSRvHmCUhacrq3tLmb2cJ
+Whtz+hfbS6LVutIXCo5uD+aqHO0tS2V3wt4BkjVPE4PJtU/di6D9U+qe0UXK6M2w
+5D2ITNxGutqhTmTDotV1reIryZm+qkccw8Ld6kLbQETN9jZe5M2MoOLcfns89NLC
+TQHtGJgOGRUHv1vXLPOJe22S9R/q4yblz89uHBPcsn/aQmEuVHqgINh4M406bs8R
+2vbdNK5hpYFl6bHmy332Bcn2WuzbbI+6Dw37rDTtVZhAXsSx6dOTPFHanVy/Srh/
+VKquHUbS3I2RLWeGHSIizSB0/EgwGYVVsyGl3sa5bTXHQ2voLqv1Sl/hmTc/zB3w
+7LdvgP9HVlXJ5mQD68vEKhxLh5s1p5TFrwuFJnjrkQ0Ev7C/wUnmD/AtsOyVZwBq
+YYjgpa7LAjZsEB8uxPtuvRAo5IgchUML+5pLRdVblWQCQOsjOy4XgFOgH+3K9Xyt
+ZujUjAXDxqT2T/Cuj+He0/Hp59bper09KV1kJK3ONH6xAGIevve7myEkH903I6rZ
+Bkd/ohFqvnCfQ+DCDvj4ZJKVdk8DEC+Mx15cem4ZYz7xAkNUcKhAEDvWlUlPHEyW
+sQc6hHsTHSsy9KBQ5CvgxidK4l04cVpV9kqvp6U1ymjEDBg7oskUiNB3AovisB4a
+ENjwYWy2TEZPYntGRszWjCRaWIDeTXDzSM+XYUBA0gnnMGhTRDAJXzY4Z7LYpmwt
+CBd+5pqkiLpa39uwTQuxNbJCJxVKAsNAw/fllZZbADjiyjL2yGfBXgFa9LeTK+le
+Oa3G8j9d3lIaxqAq397Ph29iIAhQ5DgVIzXYKgcRN81mx8MP2fHhzJDeY/gJow3X
+dmguGewXAtV+nJUKPeiugJfqnXH17GEe8WcRarQAXGgxcArV0LXZ2Z6PVGItvxcS
+jywgDpJ0hb/7PHmfheJafDe4C3CNeiE+A2EO9CjMQPuw09B4iN0pctKZfQNLkX23
+8ZnEivfzJ5j6Cgr6W/4sYP7T1bUtDh/oOFLkmbLDPEZxp0hOXv5kL+x26M3OMfgf
+MFdHP+gPNZPprbqJN0hBoC7Ifh3uGzapxi1F1dGws2UwrLWFRS8viWNWj0Q+Sdcx
+y9vBsoJcbDOFb9ZKSJ0zcKgvb2uhY+iti3L8LOJKKN3M7kACDaQRrDDThe6WqjKV
+I95LzwvJpBuqa41Sjo4=
+=ly+t
+-----END PGP MESSAGE-----
+
+--abjqkjsfwqsfa546qw2wfq6sdq2sqwr56qqs--

@@ -1,0 +1,2 @@
+https://github.com/J08nY/PGPy/archive/dev.zip#egg=PGPy-0.4.2
+https://gitlab.com/J08nY/mailman/repository/archive.tar.gz?ref=plugin#egg=mailman-3.2.0a1

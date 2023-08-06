@@ -1,0 +1,45 @@
+To: nobody@example.org
+From: RSA 1024b example <RSA-1024b@example.org>
+Subject: Some subject.
+Message-ID: <76a591ed-bfc4-d08b-73d3-fc2489148fd7@example.org>
+Date: Wed, 21 Jun 2017 13:50:59 +0200
+User-Agent: Mutt/1.7.2 (2016-11-26)
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha256;
+ protocol="application/pgp-signature";
+ boundary="haWP9JQ7TiajUxWjooGlinHgq3IhJGnaj"
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--haWP9JQ7TiajUxWjooGlinHgq3IhJGnaj
+Content-Type: multipart/mixed; boundary="A8WMQ249PdQmpiQhW1ELOnL2UctI16T1g";
+ protected-headers="v1"
+From: RSA 1024b example <RSA-1024b@example.org>
+To: nobody@example.org
+Message-ID: <76a591ed-bfc4-d08b-73d3-fc2489148fd7@example.org>
+Subject: Some subject.
+
+--A8WMQ249PdQmpiQhW1ELOnL2UctI16T1g
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Some signed text.
+
+
+--A8WMQ249PdQmpiQhW1ELOnL2UctI16T1g--
+
+--haWP9JQ7TiajUxWjooGlinHgq3IhJGnaj
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iMoEAQEIADQWIQTUqUiGscoglqZFjlxH8QwIeIS3WAUCWUpjIBYccnNhLTEwMjRi
+QGV4YW1wbGUub3JnAAoJEEfxDAh4hLdYb8wD/0AlaGxAhVGQqrXBuVXSDm4c49VI
+6+DG8cMOCZEin6P96hrLbs4SAm61xivJHPueIRRQ1PfWTcElPn97WuQ48e+/5hhw
+CZevF5CmyODGfriC78LwLRRvq2nF5n9iRww0lINPDyqrBr3mdY8QG+s8qBkTi7IG
+dBBQH0jA6p2OJV72
+=1tln
+-----END PGP SIGNATURE-----
+
+--haWP9JQ7TiajUxWjooGlinHgq3IhJGnaj--

@@ -1,0 +1,46 @@
+To: nobody@example.org
+From: RSA 1024b example <RSA-1024b@example.org>
+Subject: Some subject.
+Message-ID: <76a591ed-bfc4-d08b-73d3-fc2489148fd7@example.org>
+Date: Wed, 21 Jun 2017 13:50:59 +0200
+User-Agent: Mutt/1.7.2 (2016-11-26)
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="------------A851F166D50529639139DD0B"
+
+This is a multi-part message in MIME format.
+--------------A851F166D50529639139DD0B
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Some other text.
+
+--------------A851F166D50529639139DD0B
+Content-Type: application/pgp-keys;
+ name="0x7884B758.asc"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment;
+ filename="0x7884B758.asc"
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mI0EWUpapAEEANjx0Ii5vrHi1wVLdKZZbWvly3CV0WLGQvPwukF2Clz7O3uJZkhe
+9VYf0ZiBPOAT6oQBUly9AMbv9xfrNOimSQYRSafAGAQWlzteLQP78ZgLbdeV5CQg
+X9HYx/QBbcUHH9TErSQiRh9N6WS5kGtqDzeIuHfIpeRwubVPTXR4ZtNZABEBAAG0
+KVJTQSAxMDI0YiBleGFtcGxlIDxSU0EtMTAyNGJAZXhhbXBsZS5vcmc+iM4EEwEI
+ADgWIQTUqUiGscoglqZFjlxH8QwIeIS3WAUCWUpapAIbAwULCQgHAgYVCAkKCwIE
+FgIDAQIeAQIXgAAKCRBH8QwIeIS3WG0CBACwcCVMZARiWJT+ZDmWAIEB8Ovq8CIH
+VwKD5JXcHBj4b5QRKHEWMfuSlGK8e1t+dnb/gIMUmefdCS+yRr1iQ7zMaGRgiYkb
+ye/lXpbikR9eu8E/B+IcX7QSas6K01OHsj8xvGxZ3rmoOXcPvNQ3Z4F41kQqKxBx
+HWkI3LH71RJp4biNBFlKWqQBBADXLjeg+K0ZAuchhNkvMnfb8TlKoc1t1lH94uno
+qoj3L5Srf3XSo1fmuEBNr1nc5BLyH0tPDJZyuVCypfY4en9uaGvWO0U4t/OUiIWq
+PjBmXbjZWDdGKksb0cQNy13cvE57EmirbuVcXCE0OdU8lcbopN2wnecKOxLKK9Pa
+LBZ69wARAQABiLYEGAEIACAWIQTUqUiGscoglqZFjlxH8QwIeIS3WAUCWUpapAIb
+DAAKCRBH8QwIeIS3WA7BA/sG7Ifagq5Y8BdxWsl2Xc/d8iq+bgnMpGNcJUD2PlA5
+2KEfVbmtkULHcn5tS8prVAnU24ehT2Bi9HY0+z4KkyVMnbCDuSyC112UL2WxWLWK
+O+MkK6C94GFr8JAm3sKXq4OSJ8+wPmTHJRN5yadV9hkHoVv+etnEnkJvV0o8aLEO
+nA==
+=4olM
+-----END PGP PUBLIC KEY BLOCK-----
+
+--------------A851F166D50529639139DD0B--

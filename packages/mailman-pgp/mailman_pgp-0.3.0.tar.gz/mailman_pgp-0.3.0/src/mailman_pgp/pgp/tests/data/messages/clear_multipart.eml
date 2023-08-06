@@ -1,0 +1,30 @@
+To: nobody@example.org
+From: RSA 1024b example <RSA-1024b@example.org>
+Subject: Some subject.
+Message-ID: <76a591ed-bfc4-d08b-73d3-fc2489148fd7@example.org>
+Date: Wed, 21 Jun 2017 13:50:59 +0200
+User-Agent: Mutt/1.7.2 (2016-11-26)
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="------------8C227B46966E9FEACCAF3A2A"
+
+This is a multi-part message in MIME format.
+--------------8C227B46966E9FEACCAF3A2A
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Some text.
+
+--------------8C227B46966E9FEACCAF3A2A
+Content-Type: text/plain; charset=UTF-8;
+ name="unittest.cfg"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename="unittest.cfg"
+
+W3VuaXR0ZXN0XQp2ZXJib3NlID0gMgpwbHVnaW5zID0gbm9zZTIucGx1Z2lucy5sYXllcnMK
+ICAgICAgICAgIGZsdWZsLnRlc3Rpbmcubm9zZQoKW2xvZy1jYXB0dXJlXQphbHdheXMtb24g
+PSBGYWxzZQoKW2xheWVyLXJlcG9ydGVyXQphbHdheXMtb24gPSBUcnVlCmNvbG9ycyA9IFRy
+dWUKCltmbHVmbC50ZXN0aW5nXQphbHdheXMtb24gPSBUcnVlCnBhY2thZ2UgPSBtYWlsbWFu
+X3BncApzdGFydF9ydW4gPSBtYWlsbWFuX3BncC50ZXN0aW5nLnN0YXJ0LnN0YXJ0X3J1bgo=
+--------------8C227B46966E9FEACCAF3A2A--

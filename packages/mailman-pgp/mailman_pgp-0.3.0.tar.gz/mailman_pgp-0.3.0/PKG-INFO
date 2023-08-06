@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: mailman_pgp
+Version: 0.3.0
+Summary: A PGP plugin for the GNU Mailman mailing list manager
+Home-page: https://gitlab.com/J08nY/mailman-pgp
+Author: Jan Jancar
+Author-email: johny@neuromancer.sk
+License: GPLv3
+Description: A plugin for GNU Mailman that adds encrypted mailing lists via PGP/MIME.
+Keywords: email pgp
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Communications :: Email :: Mailing List Servers
+Requires-Python: >=3.5

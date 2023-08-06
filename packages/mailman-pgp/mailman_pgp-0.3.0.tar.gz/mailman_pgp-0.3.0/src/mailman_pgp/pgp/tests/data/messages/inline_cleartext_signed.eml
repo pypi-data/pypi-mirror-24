@@ -1,0 +1,24 @@
+To: nobody@example.org
+From: RSA 1024b example <RSA-1024b@example.org>
+Subject: Some subject.
+Message-ID: <76a591ed-bfc4-d08b-73d3-fc2489148fd7@example.org>
+Date: Wed, 21 Jun 2017 13:50:59 +0200
+User-Agent: Mutt/1.7.2 (2016-11-26)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Some signed text.
+
+-----BEGIN PGP SIGNATURE-----
+
+iMoEAQEIADQWIQTUqUiGscoglqZFjlxH8QwIeIS3WAUCWUqdqRYccnNhLTEwMjRi
+QGV4YW1wbGUub3JnAAoJEEfxDAh4hLdYyRsEANGjr5E3Th1n6EUQEye4YBjlOFq6
+aiiSu+4K4O08yHQ5h1vqBkT2gCmcPpQOThNBRazdSYRvIPNLTyMy6ChhaeWzsmR0
+CIN/YYUC9mAh5XOF+tjaJTSlmBBhuJmayW1D8qysZVg3TmD+fXw+JImrhZW/g0Fi
+4B1oU+uBh6VAZZjJ
+=QecT
+-----END PGP SIGNATURE-----
