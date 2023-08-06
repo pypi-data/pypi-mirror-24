@@ -1,0 +1,68 @@
+multiplications: !!omap
+  - preset: "mental calculation"
+  - title: "Mental calculation: multiplications"
+  - exercise: !!omap
+    - questions: multi direct -> intpairs_2to9 (20)
+
+positional_notation: !!omap
+  - preset: "mental calculation"
+  - title: "Mental calculation: positional notation"
+  - exercise: !!omap
+    - questions: rank direct -> rank_words (10)
+                 rank reversed -> rank_words (10)
+
+exam: !!omap
+  - preset: "mental calculation"
+  - title: "Mental calculation: final test for white belt, first stripe"
+  - exercise: !!omap
+    - questions: multi direct -> intpairs_2to9 (10)
+                 rank direct -> rank_words (5)
+                 rank reversed -> rank_words (5)
+
+W01a: !!omap
+  - preset: "mental calculation slideshow"
+  - exercise: !!omap
+    - questions: multi direct -> intpairs_2to5 (5)
+
+W01b: !!omap
+  - preset: "mental calculation slideshow"
+  - exercise: !!omap
+    - questions: multi direct -> intpairs_3to7 (5)
+
+W01c: !!omap
+  - preset: "mental calculation slideshow"
+  - exercise: !!omap
+    - questions: multi direct -> intpairs_4to9 (5)
+
+W01d: !!omap
+  - preset: "mental calculation slideshow"
+  - exercise: !!omap
+    - questions: multi direct -> intpairs_4to9 (5)
+
+W02a: !!omap
+  - preset: "mental calculation slideshow"
+  - exercise: !!omap
+    - questions: multi direct -> intpairs_6to9 (2)
+                 [3][rank direct -> rank_words (2)
+                     rank reversed -> rank_words (2)]
+
+W02b: !!omap
+  - preset: "mental calculation slideshow"
+  - exercise: !!omap
+    - questions: multi direct -> intpairs_3to9 (3)
+                 rank direct -> rank_words (1)
+                 rank reversed -> rank_words (1)
+
+W02c: !!omap
+  - preset: "mental calculation slideshow"
+  - exercise: !!omap
+    - questions: multi direct -> intpairs_6to9 (2)
+                 [3][rank direct -> rank_words (2)
+                     rank reversed -> rank_words (2)]
+
+W02d: !!omap
+  - preset: "mental calculation slideshow"
+  - exercise: !!omap
+    - questions: multi direct -> intpairs_3to9 (3)
+                 rank direct -> rank_words (1)
+                 rank reversed -> rank_words (1)
