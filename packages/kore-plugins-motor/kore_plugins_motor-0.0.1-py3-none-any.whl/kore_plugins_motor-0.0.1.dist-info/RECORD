@@ -1,0 +1,11 @@
+kore_plugins_motor/__init__.py,sha256=S2Y-2NK1rdWhDmAMT7u-r6Rkd38AiwQoHROQTY1pqVw,151
+kore_plugins_motor/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kore_plugins_motor/plugins/asyncio.py,sha256=psdygGvpZrkTbM69oAnOSq_PkwOoR9n2VqAv1ZKTWQk,571
+kore_plugins_motor/plugins/config.py,sha256=DZV_Kyyd_l4c4rpDL3r0qc0mgENdjCxQDgm6QiNQjjk,367
+kore_plugins_motor-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+kore_plugins_motor-0.0.1.dist-info/METADATA,sha256=LtHzoYgXx-B7N8lOa6OQZMv5O9_Bk3oG9gV7laagI-A,486
+kore_plugins_motor-0.0.1.dist-info/RECORD,,
+kore_plugins_motor-0.0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+kore_plugins_motor-0.0.1.dist-info/entry_points.txt,sha256=4ftuLCDhmkaW-eLHelTPS73WrRhQ3-3BVf6jJuU3Bp4,198
+kore_plugins_motor-0.0.1.dist-info/metadata.json,sha256=TkWvdnIK9vBb-yZC8yi6Wd6PIbxiEEHUPJy1Md4jTso,988
+kore_plugins_motor-0.0.1.dist-info/top_level.txt,sha256=MRO3Fq8iT62u_Mn2o0Hc9_MYlQI0EhAPNt5BtdJlDXY,19

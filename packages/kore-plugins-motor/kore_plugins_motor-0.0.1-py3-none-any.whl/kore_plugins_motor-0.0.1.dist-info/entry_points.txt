@@ -1,0 +1,3 @@
+[kore.components]
+kore.components.motor =    kore_plugins_motor.plugins.config:MotorPluginComponent
+kore.components.motor.asyncio =    kore_plugins_motor.plugins.asyncio:AsyncioMotorPluginComponent
