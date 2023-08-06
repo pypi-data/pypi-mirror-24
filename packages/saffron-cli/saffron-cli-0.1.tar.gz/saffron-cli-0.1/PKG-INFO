@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: saffron-cli
+Version: 0.1
+Summary: blockchain artifact development tools
+Home-page: https://github.com/Lamden/saffron
+Author: Lamden
+Author-email: james@lamden.io
+License: UNKNOWN
+Download-URL: https://github.com/Lamden/saffron/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: testing,logging,cryptocurrency,smartcontracts,ethereum,dashboards
+Platform: UNKNOWN
