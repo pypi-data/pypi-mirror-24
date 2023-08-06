@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: watson_tts_py
+Version: 0.2.3
+Summary: A really simple wrapper for the Watson TTS API that doesn't require the watson_developer_cloud module and has more tools.
+Home-page: https://github.com/DizAzTor/Watson-TTS-py
+Author: DizAzTor
+Author-email: dizaztor@protonmail.com
+License: UNKNOWN
+Download-URL: https://github.com/DizAzTor/Watson-TTS-py/archive/v2.0.tar.gz
+Description: UNKNOWN
+Keywords: ibm watson tts api simple wrapper
+Platform: UNKNOWN
