@@ -1,0 +1,8 @@
+setup.py
+aide_tutorial/__init__.py
+aide_tutorial/encouragements.py
+aide_tutorial/utils.py
+aide_tutorial.egg-info/PKG-INFO
+aide_tutorial.egg-info/SOURCES.txt
+aide_tutorial.egg-info/dependency_links.txt
+aide_tutorial.egg-info/top_level.txt
