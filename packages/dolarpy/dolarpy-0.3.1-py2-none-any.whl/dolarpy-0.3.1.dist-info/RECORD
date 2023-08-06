@@ -1,0 +1,10 @@
+dolarpy/__init__.py,sha256=D1QG0C4iJijnuD7vGLBEv5ojTQ48bC1ZwXjje0D6SdU,82
+dolarpy/dolarpy.py,sha256=DZuvXX2vygJ6RPm4oYC-mAr1z86cloVUoifY8qz3200,3040
+dolarpy/exchange.py,sha256=H5RRqjCzPFac9IpQ1K_oD8_-UyWy4_q4-S1fI5XHGdc,497
+dolarpy/settings.py,sha256=dyPNRLjRp4fKxRsvZAF5MXlmfBQKK5yyXiqKmj3EtgY,132
+dolarpy-0.3.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+dolarpy-0.3.1.dist-info/METADATA,sha256=fyhaoQZusl5LlUXUFC4-XB_SNQBqTtAqFZxJM5NV7MQ,789
+dolarpy-0.3.1.dist-info/RECORD,,
+dolarpy-0.3.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+dolarpy-0.3.1.dist-info/metadata.json,sha256=hNAI4cc60dEE6PifmG3YXu_NZ2_k96tFK-KCXBFPVsA,941
+dolarpy-0.3.1.dist-info/top_level.txt,sha256=dzCf1_kXwfCml5p6efHS7k_2rEWsESqaSeIy7_1k79A,8
