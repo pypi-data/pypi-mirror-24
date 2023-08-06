@@ -1,0 +1,7 @@
+setup.py
+jinbotron/__init__.py
+jinbotron.egg-info/PKG-INFO
+jinbotron.egg-info/SOURCES.txt
+jinbotron.egg-info/dependency_links.txt
+jinbotron.egg-info/not-zip-safe
+jinbotron.egg-info/top_level.txt
