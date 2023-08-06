@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: hellocivis
+Version: 1.0.2
+Summary: A demo of CICD pipeline for Civis Analytics
+Home-page: https://galenballew.github.io/
+Author: Galen Ballew
+Author-email: galen.ballew@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+CICD with Ansible, Jenkins, Docker, and AWS Lambda
+=======================
+Let's rock and roll folks!
+
+
