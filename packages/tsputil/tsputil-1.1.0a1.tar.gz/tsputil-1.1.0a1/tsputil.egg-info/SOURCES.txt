@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+tsputil/__init__.py
+tsputil/tsputil.py
+tsputil.egg-info/PKG-INFO
+tsputil.egg-info/SOURCES.txt
+tsputil.egg-info/dependency_links.txt
+tsputil.egg-info/not-zip-safe
+tsputil.egg-info/top_level.txt
