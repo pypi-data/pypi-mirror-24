@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pluggable
+Version: 0.0.1
+Summary: Dynamically load classes in some plugin directories.
+Home-page: https://github.com/JunyaKaneko/pypluggable
+Author: Junya Kaneko
+Author-email: jyuneko@hotmail.com
+License: MIT
+Download-URL: https://github.com/JunyaKaneko/pypluggable.git
+Description: UNKNOWN
+Keywords: plugin
+Platform: UNKNOWN
