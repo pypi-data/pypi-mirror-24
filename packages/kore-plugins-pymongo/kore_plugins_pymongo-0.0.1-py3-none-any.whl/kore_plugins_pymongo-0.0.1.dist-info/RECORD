@@ -1,0 +1,10 @@
+kore_plugins_pymongo/__init__.py,sha256=wNP8o98retoIIKTfuIJhh5XMAbyTSmGitGp7TExHJWE,152
+kore_plugins_pymongo/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kore_plugins_pymongo/plugins/pymongo.py,sha256=KwTuZmD7T6Uz2plXatsHr-WU3ZtL7pGTZGwc3f1bB3k,519
+kore_plugins_pymongo-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+kore_plugins_pymongo-0.0.1.dist-info/METADATA,sha256=Vj_u8Kmt6PMuF09DSy-8Ei7AVpUoKCWc_mFyhjEAPdk,542
+kore_plugins_pymongo-0.0.1.dist-info/RECORD,,
+kore_plugins_pymongo-0.0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+kore_plugins_pymongo-0.0.1.dist-info/entry_points.txt,sha256=0nK-nlY-5INrCYt1ewX5CD1KSEPPlxerlaVw2aDAjn8,95
+kore_plugins_pymongo-0.0.1.dist-info/metadata.json,sha256=6l2iU-8EmpIFU5BR58vV-LSRMrPPvl6iYZU7sYhF3ww,929
+kore_plugins_pymongo-0.0.1.dist-info/top_level.txt,sha256=Iu3LnnR_FmOXGrOX4dAv03IZIY7WGA1diaK7Y-GIIDo,21
