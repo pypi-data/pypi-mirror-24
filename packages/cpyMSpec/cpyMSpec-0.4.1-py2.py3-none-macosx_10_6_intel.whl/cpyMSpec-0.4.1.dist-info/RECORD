@@ -1,0 +1,14 @@
+cpyMSpec/__init__.py,sha256=-unlZVkIQM6KWGFXm3fs5p9GFmZObTYsj44EQIdD0dw,24
+cpyMSpec/ims.h,sha256=n6RQvK5aiq_RWymvtwMBdzF1gdAme9ykay4cdRStfnw,3214
+cpyMSpec/legacy_interface.py,sha256=farMJiuaF3bzjAQdWau5Tsgc1ONecPrNa6JsqhMlBVw,1211
+cpyMSpec/libms_cffi.dylib,sha256=WPzCoywjYdoKaoRmRqXCWwhkhN8K1ZQb1IeIjBYyg2M,822480
+cpyMSpec/spectrum.py,sha256=h7J70Cjl-hyCdb3HxkoXUJ7qaNoLmGhoD5L8S_7fp-c,10375
+cpyMSpec/utils.py,sha256=aH0u_tL4FNq4WluAK9WEU1ME7fpzTvQcAGyIlD8P4ls,499
+cpyMSpec/.dylibs/libgcc_s.1.dylib,sha256=PhwtSHbvKvMefy-RVhrJG0ON22-dib66l2TrRUdz6CM,255704
+cpyMSpec/.dylibs/libstdc++.6.dylib,sha256=gu7FrbhLatvfyvLMOsF1x8zmiEXqCKxQ4-oUHP_fNEQ,2661108
+cpyMSpec-0.4.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+cpyMSpec-0.4.1.dist-info/METADATA,sha256=aP5lMxGvO0J65wldV3UwPpZkOvOU1zxrXiVBHRweZ1E,529
+cpyMSpec-0.4.1.dist-info/metadata.json,sha256=zXglO3Rs5XHKzEYhCx87RWEqMw3g3XqqURS_JMShJ58,722
+cpyMSpec-0.4.1.dist-info/RECORD,,
+cpyMSpec-0.4.1.dist-info/top_level.txt,sha256=5fEIx2EilNYEuPgwqomux-3DNjWtK_e6JjPNPXbqTw0,9
+cpyMSpec-0.4.1.dist-info/WHEEL,sha256=4wGjhrzziNgphDvZKz-OXjtHj4-3pQAgfcwVm66TTmI,138
