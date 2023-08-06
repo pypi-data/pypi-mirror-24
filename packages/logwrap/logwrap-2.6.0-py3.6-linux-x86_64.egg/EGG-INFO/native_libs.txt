@@ -1,0 +1,5 @@
+logwrap/_class_decorator.cpython-36m-x86_64-linux-gnu.so
+logwrap/_log_wrap_shared.cpython-36m-x86_64-linux-gnu.so
+logwrap/_log_wrap3.cpython-36m-x86_64-linux-gnu.so
+logwrap/_repr_utils.cpython-36m-x86_64-linux-gnu.so
+logwrap/_formatters.cpython-36m-x86_64-linux-gnu.so
