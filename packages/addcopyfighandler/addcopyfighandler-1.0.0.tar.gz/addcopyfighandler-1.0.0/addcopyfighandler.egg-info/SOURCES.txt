@@ -1,0 +1,8 @@
+MANIFEST.in
+README.rst
+addcopyfighandler.py
+setup.py
+addcopyfighandler.egg-info/PKG-INFO
+addcopyfighandler.egg-info/SOURCES.txt
+addcopyfighandler.egg-info/dependency_links.txt
+addcopyfighandler.egg-info/top_level.txt
