@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: webdriver-chauffeur
+Version: 0.3.0
+Summary: A helpful wrapper around the formerly annoying stuff of using Selenium Webdriver
+Home-page: https://github.com/codyc4321/webdriver_chauffeur
+Author: Cody Childers
+Author-email: cchilder@mail.usf.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
