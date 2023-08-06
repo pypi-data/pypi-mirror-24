@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pre-ml
+Version: 1.0.1
+Summary: pre-ml an optimization tool for machine learning!
+Home-page: https://github.com/5amron/pre-ml
+Author: Saman Sadeghyan
+Author-email: s.sadeghy325@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: machine learning data science feature selection extraction ant colony optimization dimensionality reduction
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
