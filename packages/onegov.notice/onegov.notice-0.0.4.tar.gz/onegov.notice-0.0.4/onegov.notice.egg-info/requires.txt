@@ -1,0 +1,8 @@
+onegov.core
+onegov.user
+sedate
+
+[test]
+coverage
+onegov_testing
+pytest
