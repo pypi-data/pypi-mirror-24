@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+iloveig/__init__.py
+iloveig/__init__.pyc
+iloveig/iloveig.py
+iloveig/iloveig.pyc
+iloveig.egg-info/PKG-INFO
+iloveig.egg-info/SOURCES.txt
+iloveig.egg-info/dependency_links.txt
+iloveig.egg-info/entry_points.txt
+iloveig.egg-info/requires.txt
+iloveig.egg-info/top_level.txt
