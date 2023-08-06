@@ -1,0 +1,10 @@
+PyBittrex-1.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+PyBittrex-1.0.0.dist-info/METADATA,sha256=791kADExufZfDjOsJaZ_ZEDVMgwX2w-bBYRrQR7ioNs,982
+PyBittrex-1.0.0.dist-info/RECORD,,
+PyBittrex-1.0.0.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+PyBittrex-1.0.0.dist-info/metadata.json,sha256=KRi__8579t1dgqKA-3BHmrnWRK9qtJiJwqvxyP2ATqw,1116
+PyBittrex-1.0.0.dist-info/top_level.txt,sha256=9sDl4pi94uNDvM1t7fgITkk5t653mIH7gD6VR-aRypk,10
+pybittrex/__init__.py,sha256=hJAY-tsiHNH_-c7hBrPqRGiyr-U8p-WmOIEuLcOFh3o,38
+pybittrex/auth.py,sha256=2OmWXZGemf372GnHQ_wMU6ya_mPoXuYuCZu28Ep57PI,557
+pybittrex/client.py,sha256=OqAJK_uYf43OsWp7Q44HYVNIf0TnP_DjfQaXKuKr5Kw,6851
+pybittrex/setup.py,sha256=Ku4QNjiNs0XX32OdQbO3QNlwAR-L7qOOP-vSe5zLhPE,1167
