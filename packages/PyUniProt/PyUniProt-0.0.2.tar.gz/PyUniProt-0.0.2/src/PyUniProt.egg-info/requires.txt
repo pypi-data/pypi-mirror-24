@@ -1,0 +1,10 @@
+sqlalchemy
+pandas
+pymysql
+requests
+click
+tqdm
+flasgger
+passlib
+wtforms
+configparser
