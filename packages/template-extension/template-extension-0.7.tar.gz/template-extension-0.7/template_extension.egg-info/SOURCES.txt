@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+freecad/__init__.py
+freecad/template_extension/__init__.py
+freecad/template_extension/init_gui.py
+freecad/template_extension/my_numpy_function.py
+freecad/template_extension/resources/template_resource.svg
+template_extension.egg-info/PKG-INFO
+template_extension.egg-info/SOURCES.txt
+template_extension.egg-info/dependency_links.txt
+template_extension.egg-info/requires.txt
+template_extension.egg-info/top_level.txt
