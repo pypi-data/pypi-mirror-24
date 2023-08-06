@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: kfront
+Version: 0.0.2
+Summary: A library for using the Knowledge Front monitoring REST API
+Home-page: https://github.com/Stealthii/python-kfront
+Author: Dan Porter
+Author-email: dpreid@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: knowledgefront,mailive,monitoring
+Platform: UNKNOWN
