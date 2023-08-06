@@ -1,0 +1,11 @@
+README.rst
+setup.py
+drf_requests_jwt/__init__.py
+drf_requests_jwt/deserializers.py
+drf_requests_jwt/services.py
+drf_requests_jwt/settings.py
+drf_requests_jwt.egg-info/PKG-INFO
+drf_requests_jwt.egg-info/SOURCES.txt
+drf_requests_jwt.egg-info/dependency_links.txt
+drf_requests_jwt.egg-info/not-zip-safe
+drf_requests_jwt.egg-info/top_level.txt
