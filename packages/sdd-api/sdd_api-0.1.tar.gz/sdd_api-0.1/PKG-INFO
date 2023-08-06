@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: sdd_api
+Version: 0.1
+Summary: Python API for Sports Data Direct
+Home-page: https://github.com/peterldowns/mypackage
+Author: Sports Data Direct
+Author-email: peterldowns@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/peterldowns/mypackage/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: sports,api,sports data direct,sdd
+Platform: UNKNOWN
