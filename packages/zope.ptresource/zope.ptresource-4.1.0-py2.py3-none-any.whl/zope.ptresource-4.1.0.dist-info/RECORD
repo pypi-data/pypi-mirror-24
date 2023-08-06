@@ -1,0 +1,12 @@
+zope.ptresource-4.1.0-py2.7-nspkg.pth,sha256=SWEVH-jEWsKYrL0qoC6GBJaStx_iKxGoAY9PQycFVC4,529
+zope/ptresource/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zope/ptresource/configure.zcml,sha256=3QSl6ycri8ZscPKxHNlz8Vqi2a8R-g74o41rmJwzq50,872
+zope/ptresource/ptresource.py,sha256=9tm-4OnNMDqL1L1qnIrgNhY4qRuJ-nTZLPV3U1Jyirs,3226
+zope/ptresource/tests.py,sha256=51EIAAor4hra3VXIlpdaMx_9YqKK6zbe7GZzXjuTI6I,3664
+zope.ptresource-4.1.0.dist-info/DESCRIPTION.rst,sha256=-tZZHIn1pskx8DJNFWamRUifB6MCdONvXA2gcLcjLIE,2483
+zope.ptresource-4.1.0.dist-info/METADATA,sha256=4QWn5FKuddIzHhSsZdwVH4gwqdLMp2KewUkdN-Is5M0,3821
+zope.ptresource-4.1.0.dist-info/RECORD,,
+zope.ptresource-4.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+zope.ptresource-4.1.0.dist-info/metadata.json,sha256=z1ajSBPiGTuy3mdtYQDHs33t7Fv4uYaoz0Xb6OE8yC8,1412
+zope.ptresource-4.1.0.dist-info/namespace_packages.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.ptresource-4.1.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
