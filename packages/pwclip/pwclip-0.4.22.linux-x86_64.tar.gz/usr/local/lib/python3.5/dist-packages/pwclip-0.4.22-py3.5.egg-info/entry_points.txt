@@ -1,0 +1,3 @@
+[console_scripts]
+pwclip = pwclip.__init__:__pwclip__
+
