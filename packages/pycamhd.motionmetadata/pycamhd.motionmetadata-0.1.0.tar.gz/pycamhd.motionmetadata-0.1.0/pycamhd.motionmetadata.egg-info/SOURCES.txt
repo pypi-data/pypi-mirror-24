@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+pycamhd.motionmetadata.egg-info/PKG-INFO
+pycamhd.motionmetadata.egg-info/SOURCES.txt
+pycamhd.motionmetadata.egg-info/dependency_links.txt
+pycamhd.motionmetadata.egg-info/requires.txt
+pycamhd.motionmetadata.egg-info/top_level.txt
+pycamhd/motionmetadata/__init__.py
+pycamhd/motionmetadata/git_utils.py
+pycamhd/motionmetadata/optical_flow_file.py
+pycamhd/motionmetadata/region_file.py
+test/test_region_file.py

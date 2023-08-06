@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pycamhd.motionmetadata
+Version: 0.1.0
+Summary: Module for parsing CamHD Motion Metadata files
+Home-page: https://github.com/CamHD-Analysis/pycamhd-motion-metadata
+Author: Aaron Marburg
+Author-email: amarburg@apl.washington.edu
+License: MIT
+Description: README.md
+Platform: UNKNOWN
+Requires-Python: >=3
