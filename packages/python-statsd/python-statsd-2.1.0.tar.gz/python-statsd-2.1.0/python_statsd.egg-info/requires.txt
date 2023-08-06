@@ -1,0 +1,9 @@
+
+[docs]
+changelog
+sphinx>=1.5.0
+
+[tests]
+nose
+coverage
+mock
