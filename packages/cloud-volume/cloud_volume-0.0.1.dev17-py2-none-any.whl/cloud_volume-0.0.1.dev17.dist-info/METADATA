@@ -1,0 +1,87 @@
+Metadata-Version: 2.0
+Name: cloud-volume
+Version: 0.0.1.dev17
+Summary: Read and write neuroglancer Precomputed formats to cloud storage
+Home-page: https://github.com/seung-lab/cloud-volume/
+Author: Ignacio Tartavull, William Silversmith, and others
+Author-email: ws9@princeton.edu
+License: BSD
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Utilities
+Requires-Dist: Pillow (==3.2.0)
+Requires-Dist: backports-abc (==0.5)
+Requires-Dist: backports.tempfile (==1.0rc1)
+Requires-Dist: boto (==2.39.0)
+Requires-Dist: google-cloud (==0.27)
+Requires-Dist: numpy (==1.11.1)
+Requires-Dist: pytest (==3.0.7)
+Requires-Dist: requests (==2.13.0)
+Requires-Dist: scipy (==0.18.1)
+Requires-Dist: tqdm (==4.7.6)
+Requires-Dist: urllib3[secure]
+
+[![Build Status](https://travis-ci.org/seung-lab/cloud-volume.svg?branch=master)](https://travis-ci.org/seung-lab/cloud-volume)
+
+# cloud-volume
+
+Python client for reading and writing to Neuroglancer Precomputed volumes on cloud services. (https://github.com/google/neuroglancer/tree/master/src/neuroglancer/datasource/precomputed)
+
+When working with a particular dataset, say an EM scan of a mouse, fish, or fly brain, you'll typically store that as a grayscale data layer accessible to neuroglanger. You may store additional labellings and processing results as other layers.
+
+
+## Usage
+
+Supports reading and writing to neuroglancer data layers on Amazon S3, Google Storage, and the local file system.
+
+Supported URLs are of the forms:
+
+$PROTOCOL://$BUCKET/$DATASET/$LAYER  
+
+Supported Protocols:  
+	- gs:   Google Storage
+	- s3:   Amazon S3
+	- file: Local File System (absolute path)
+
+
+```
+vol = CloudVolume('gs://mybucket/retina/image') # Basic Example
+image = vol[:,:,:] # Download the entire image stack into a numpy array
+vol[64:128, 64:128, 64:128] = image # Write a 64^3 image to the volume
+```
+
+## Setup
+
+You'll need to set up your cloud credentials as well as the main install.
+
+### Credentials
+
+```
+mkdir -p ~/.neuroglancer/secrets/
+echo $GOOGLE_STORAGE_PROJECT > ~/.neuroglancer/project_name # needed for Google
+mv aws-secret.json ~/.neuroglancer/secrets/ # needed for Google
+mv google-secret.json ~/.neuroglancer/secrets/ # needed for Amazon
+```
+
+### pip
+
+```
+pip install cloud-volume
+```
+
+### Manual
+```
+git clone git@github.com:seung-lab/cloud-volume.git
+cd cloud-volume
+virtualenv venv
+source venv/bin/activate
+pip install -e .
+```
+
+
+
