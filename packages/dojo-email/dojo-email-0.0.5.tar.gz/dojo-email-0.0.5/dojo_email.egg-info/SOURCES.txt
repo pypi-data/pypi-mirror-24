@@ -1,0 +1,8 @@
+setup.py
+dojo_email/__init__.py
+dojo_email/source.py
+dojo_email.egg-info/PKG-INFO
+dojo_email.egg-info/SOURCES.txt
+dojo_email.egg-info/dependency_links.txt
+dojo_email.egg-info/requires.txt
+dojo_email.egg-info/top_level.txt
