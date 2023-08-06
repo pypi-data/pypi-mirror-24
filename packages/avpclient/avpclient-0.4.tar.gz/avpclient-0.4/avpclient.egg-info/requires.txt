@@ -1,0 +1,7 @@
+aiohttp
+asyncio
+async_timeout
+pandas
+uvloop
+numpy
+requests
