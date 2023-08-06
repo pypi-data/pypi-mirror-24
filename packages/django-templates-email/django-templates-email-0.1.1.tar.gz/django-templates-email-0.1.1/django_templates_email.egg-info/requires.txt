@@ -1,0 +1,6 @@
+Django>=1.7
+structlog
+typing
+django-render-block
+premailer
+lxml
