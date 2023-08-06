@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: radiodelay
+Version: 0.1.0
+Summary: Tool for delaying radio to sync to television broadcast.
+Home-page: https://github.com/stevenryoung/RadioDelay
+Author: Steven R. Young
+Author-email: UNKNOWN
+License: GPLv3
+Platform: UNKNOWN
+Requires-Dist: pyaudio (>=0.2.9)
+Requires-Dist: python-gflags (>=2.0.0)
+Requires-Dist: six
+
+UNKNOWN
+
+
