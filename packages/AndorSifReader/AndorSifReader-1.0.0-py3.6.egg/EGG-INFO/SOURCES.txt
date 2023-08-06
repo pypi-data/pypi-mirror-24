@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+AndorSifReader/_AndorSifReader.py
+AndorSifReader/__init__.py
+AndorSifReader.egg-info/PKG-INFO
+AndorSifReader.egg-info/SOURCES.txt
+AndorSifReader.egg-info/dependency_links.txt
+AndorSifReader.egg-info/requires.txt
+AndorSifReader.egg-info/top_level.txt
+Examples/Example.py
+Examples/led spectrum.sif
