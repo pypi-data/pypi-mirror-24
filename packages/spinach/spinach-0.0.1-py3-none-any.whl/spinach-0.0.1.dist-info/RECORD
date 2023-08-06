@@ -1,0 +1,13 @@
+spinach/__init__.py,sha256=o2B5HgfwzLV8kECMRZNMHioDxAcelEKfwhXTKfEcDg4,192
+spinach/const.py,sha256=A5OontG5S0fJ-BhljPoI4HnzTrqTJKuRyzRqYaQ-GjU,179
+spinach/job.py,sha256=H6EjQINcCAHfefsqFJF0UNTf7LsxTZyyYqsueZY0h1Y,2497
+spinach/spinach.py,sha256=UqqfkvZUhg9Osr5nFCTIWekxYHgl-NzWsJ3wE5sO7T8,4007
+spinach/task.py,sha256=pGnEKUBm6aZORBJhtKa-W6q3zBwEuDGLttwuWvauuRU,1866
+spinach/utils.py,sha256=yhZ1CMZhQC-s5_B0yytZrH9wm7h4en0FJzt5gDjq7T4,314
+spinach/worker.py,sha256=ly1pRzbKqTJdCjulKktXw3evQwIFf-5q5wHf9EiIJLU,3670
+spinach-0.0.1.dist-info/DESCRIPTION.rst,sha256=-9pgZR4N8TPEwU-TGC6j3KKuyBEorIXvRY5GX0gwdBw,3119
+spinach-0.0.1.dist-info/METADATA,sha256=WhRbGyrfidWRAGRrmS50XRQ59_e6-X540j9HXFln7Pk,4088
+spinach-0.0.1.dist-info/RECORD,,
+spinach-0.0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+spinach-0.0.1.dist-info/metadata.json,sha256=EU6bCjso4Wv6RkpA9L1kPmfJJQlDkDsbUUSUCbcPBso,1068
+spinach-0.0.1.dist-info/top_level.txt,sha256=I8_AzxcwIhMRbGQ3yuqqEQnOvrxjaliKeuKMaaDcSVg,8
