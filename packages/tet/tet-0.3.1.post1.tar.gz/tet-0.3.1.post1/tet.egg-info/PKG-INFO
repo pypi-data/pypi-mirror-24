@@ -1,0 +1,58 @@
+Metadata-Version: 1.1
+Name: tet
+Version: 0.3.1.post1
+Summary: Unearthly intelligent batteries-included application framework built on Pyramid
+Home-page: http://www.anttipatterns.com
+Author: Antti Haapala
+Author-email: antti.haapala@anttipatterns.com
+License: UNKNOWN
+Description: tet
+        ===
+        
+        Unearthly intelligent batteries-included application framework built on Pyramid
+        
+        
+        How to install
+        --------------
+        
+            git clone https://github.com/ztane/tet.git
+            cd tet
+            python setup.py develop
+        
+        
+        What do you get out of the box
+        ------------------------------
+        
+        1. Awesome scaffold(s):
+        
+                pcreate -s basictet MyProject
+                cd MyProject
+                python setup.py develop
+                initialize_myproject_db development.ini
+                # go to http://localhost://6543 and feel awesome
+        
+        
+        2016-08-19  Antti Haapala  <antti.haapala@anttipatterns.com>
+        
+            * SQLAlchemy root factory now gives NotFound on DataError; made into a implicit-namespace package;
+              fixed backports.typing to greater than or equal to 1.1.
+        
+        2013-09-07  Antti Haapala  <antti@haapala.name>
+        
+            * renamed the package to `tet`
+        
+        
+Keywords: web wsgi bfg pylons pyramid
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pyramid
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
