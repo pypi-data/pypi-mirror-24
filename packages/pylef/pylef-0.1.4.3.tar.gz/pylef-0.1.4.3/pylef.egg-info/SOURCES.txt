@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pylef/__init__.py
+pylef/generator.py
+pylef/methods.py
+pylef/scope.py
+pylef.egg-info/PKG-INFO
+pylef.egg-info/SOURCES.txt
+pylef.egg-info/dependency_links.txt
+pylef.egg-info/not-zip-safe
+pylef.egg-info/requires.txt
+pylef.egg-info/top_level.txt
