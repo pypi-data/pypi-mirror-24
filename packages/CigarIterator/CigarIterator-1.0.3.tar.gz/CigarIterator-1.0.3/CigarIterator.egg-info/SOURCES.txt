@@ -1,0 +1,8 @@
+MANIFEST.in
+README.rst
+setup.py
+CigarIterator/__init__.py
+CigarIterator.egg-info/PKG-INFO
+CigarIterator.egg-info/SOURCES.txt
+CigarIterator.egg-info/dependency_links.txt
+CigarIterator.egg-info/top_level.txt
