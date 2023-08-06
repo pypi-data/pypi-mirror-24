@@ -1,0 +1,31 @@
+Changes in 1.0.10
+================
+
+- Fix remaining Python 3 compatibility issues.
+- Fix some cosmetic issues in the code.
+
+Changes in 1.0.9
+================
+
+- Make it compatible with Python 2.6.
+
+Changes in 1.0.7
+================
+
+- Do not search alternatives if a match was found in backtrace.
+
+Changes in 1.0.4
+================
+
+- Add PyPy support.
+
+Changes in 1.0.3
+================
+
+- Better README file.
+- Included LICENSE file.
+- Included CHANGES file.
+- Use spaces instead of tabs.
+- Use single quotes instead of double quotes.
+- Limit line lengths to 79 characters.
+
