@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: autoscrub
+Version: 0.2.1
+Summary: UNKNOWN
+Home-page: https://bitbucket.org/philipstarkey/autoscrub
+Author: Russell Anderson, Philip Starkey
+Author-email: UNKNOWN
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Requires-Python: >=2.7, <3.0
