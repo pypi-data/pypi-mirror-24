@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: dj-vault
+Version: 0.1.6
+Summary: Django Vault
+Home-page: https://github.com/dangerfarms/django-vault
+Author: Lewis Taylor
+Author-email: developers@dangerfarms.com
+License: MIT
+Description: # django-vault
+        Vault wrapper for use with django
+        
+        # Requires the following settings in python settings file
+        
+        1. `VAULT_HOSTNAME`
+        2. `VAULT_NAMESPACE`
+        3. `VAULT_TOKEN`
+        
+Keywords: vault django secrets config
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
