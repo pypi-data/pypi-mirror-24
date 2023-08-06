@@ -1,0 +1,11 @@
+$def with(users)
+<h3>
+    <a href="/users"><span class="glyphicon glyphicon-file"></span> Users</a>
+</h3>
+username: $users.username <br>
+$if users.privilege == 0:
+    privilege: Admin<br>
+$else:
+    privilege: Guess<br>
+<br>
+<br>
