@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+glovepy/__init__.py
+glovepy/corpus.py
+glovepy/corpus_cython.cpp
+glovepy/corpus_cython.pyx
+glovepy/glove_inner.c
+glovepy/glove_inner.pyx
+glovepy/glovepy.py
+glovepy.egg-info/PKG-INFO
+glovepy.egg-info/SOURCES.txt
+glovepy.egg-info/dependency_links.txt
+glovepy.egg-info/not-zip-safe
+glovepy.egg-info/requires.txt
+glovepy.egg-info/top_level.txt
