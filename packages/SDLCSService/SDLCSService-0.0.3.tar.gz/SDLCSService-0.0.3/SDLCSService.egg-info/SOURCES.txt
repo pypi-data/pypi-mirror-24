@@ -1,0 +1,8 @@
+README.rst
+setup.py
+SDLCSService/Main.py
+SDLCSService.egg-info/PKG-INFO
+SDLCSService.egg-info/SOURCES.txt
+SDLCSService.egg-info/dependency_links.txt
+SDLCSService.egg-info/requires.txt
+SDLCSService.egg-info/top_level.txt
