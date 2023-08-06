@@ -1,0 +1,13 @@
+sxs/__init__.py,sha256=Wqgi6rEoLnrNS1-KEMi8F6sL7KWWU4KJ_9M-uC7g8sw,205
+sxs/_version.py,sha256=y7GHs1EDnAD4YlQb83vQIWxPRywS_PUTK_UlOTp4Mw4,47
+sxs/metadata/__init__.py,sha256=icaKVdLBnbich83bnGpAwLLMYvuLnDrqHvOmLNdSuEs,15724
+sxs/metadata/_version.py,sha256=y7GHs1EDnAD4YlQb83vQIWxPRywS_PUTK_UlOTp4Mw4,47
+sxs/metadata/catalog.py,sha256=HtvI-UO2GUmphVORgu7qasTScQ9t0ivFhH1ThtzD3ac,16443
+sxs/metadata/field_mapping.py,sha256=pLCno1U5730kkgEISQv3R3rzrCFn1oVpagWe8d5fTjY,4634
+sxs/metadata/web.py,sha256=1C6WQpGXBhFWrKfhh1Xhc842L-SQWeWhWE3VzC5rc9o,5340
+sxs-2017.8.28.12.3.20.dev42824729.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+sxs-2017.8.28.12.3.20.dev42824729.dist-info/METADATA,sha256=AfefnSJMN7v7DcGeO9-B63v9FKSSnGpf2a3X6tQkrDE,290
+sxs-2017.8.28.12.3.20.dev42824729.dist-info/RECORD,,
+sxs-2017.8.28.12.3.20.dev42824729.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+sxs-2017.8.28.12.3.20.dev42824729.dist-info/metadata.json,sha256=chKQwLa0gr5zE_B_VsywoveNpAPO25-ZrdyGzmMeDz4,444
+sxs-2017.8.28.12.3.20.dev42824729.dist-info/top_level.txt,sha256=D8ut2acV4k_6R_AdSV75unGONPgX---LdQ2Qdl6IS3o,4
