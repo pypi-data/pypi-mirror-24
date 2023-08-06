@@ -1,0 +1,13 @@
+dumpsig.py
+setup.cfg
+setup.py
+nampa/__init__.py
+nampa/binrw.py
+nampa/crc.py
+nampa/flirt.py
+nampa.egg-info/PKG-INFO
+nampa.egg-info/SOURCES.txt
+nampa.egg-info/dependency_links.txt
+nampa.egg-info/not-zip-safe
+nampa.egg-info/requires.txt
+nampa.egg-info/top_level.txt
