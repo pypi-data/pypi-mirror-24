@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: imhotep-bandit
+Version: 0.1.1
+Summary: An imhotep plugin for bandit
+Home-page: https://github.com/danpalmer/imhotep-bandit
+Author: Dan Palmer
+Author-email: dan@danpalmer.me
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: bandit (>=1.1.0)
+Requires-Dist: imhotep (>=1.0.1)
+
+UNKNOWN
+
+
