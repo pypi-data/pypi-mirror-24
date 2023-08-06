@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: openssl-sign-certs
+Version: 1.0.0
+Summary: Herramienta para firmar rápidamente certificados X.509 con nuestra Autoridad de Certificación.
+Home-page: https://linuxdevtips.blogspot.com/
+Author: Fernando Enzo Guarini
+Author-email: fernandoenzo@gmail.com
+License: GPLv3+
+Download-URL: https://bitbucket.org/fernandoenzo/openssl-sign-certificates
+Keywords: openssl sign certificates
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: Spanish
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: System :: Installation/Setup
+
+Herramienta que facilita la firma de certificados X.509 con nuestra Autoridad de Certificación haciendo una llamada a OpenSSL pero facilitando los datos de entrada y la gestión interna de los archivos necesarios para su correcto funcionamiento.
+
+
