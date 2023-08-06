@@ -1,0 +1,11 @@
+richclub/__init__.py,sha256=9ncs4aKZhBqfoUtrVwl79Y8nzY233lnMnpBP90IEvzc,434
+richclub/rich_club_coefficient_degree.py,sha256=uV0LnJpgXPhzfvnfJG6x0zGuRxYxyksf3bdGCZ6Kjyo,777
+richclub/rich_club_coefficient_rank.py,sha256=FFPtS_rzch9GfKARGuWIKaJlDIP8CnkKQe2NI0LezCg,649
+richclub/secord_order_average_degree.py,sha256=3qPx3HtJx0N6OPOQ5JidYQLLLAfHTAcDhP8H15rR77Y,1240
+richclub/secord_order_largest_degree.py,sha256=DNR9BDzfHEB05y3bLId4KYvtjt9WZq4jtcc2B0SmaSU,1191
+richclubv4-1.0.3.dev1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+richclubv4-1.0.3.dev1.dist-info/METADATA,sha256=FKQy4aHoXG98gRpjP1nH9EetBUZYb0KDGFXSBhCL9gY,271
+richclubv4-1.0.3.dev1.dist-info/RECORD,,
+richclubv4-1.0.3.dev1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+richclubv4-1.0.3.dev1.dist-info/metadata.json,sha256=zVDchQvCK_Uu_TFXWJy4_xBRW6HM5gkM7opo5mFHDhA,425
+richclubv4-1.0.3.dev1.dist-info/top_level.txt,sha256=uXcvuDKc9P4k6_2rvU9uhNyl3RpOqJcEOXNkJvlwCCE,9
