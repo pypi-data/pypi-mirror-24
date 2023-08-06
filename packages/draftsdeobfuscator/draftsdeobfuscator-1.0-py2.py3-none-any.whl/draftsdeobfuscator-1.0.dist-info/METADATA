@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: draftsdeobfuscator
+Version: 1.0
+Summary: drafts deobfuscator
+Home-page: https://github.com/williamberman/draftsdeobfuscator
+Author: William Berman
+Author-email: wlbberman@gmail.com
+License: MIT
+Keywords: aws
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development 
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: argparse
+Requires-Dist: boto3
+Requires-Dist: draftsutils
+Requires-Dist: requests
+
+draftsdeobfuscator
+=================
+
+A script run server side on http://predictspotprice.cs.ucsb.edu/
+to update a user's az mapping
+
+
