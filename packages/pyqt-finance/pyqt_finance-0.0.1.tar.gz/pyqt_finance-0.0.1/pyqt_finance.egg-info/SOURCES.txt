@@ -1,0 +1,9 @@
+README
+setup.py
+pyqt_finance/__init__.py
+pyqt_finance/widget.py
+pyqt_finance.egg-info/PKG-INFO
+pyqt_finance.egg-info/SOURCES.txt
+pyqt_finance.egg-info/dependency_links.txt
+pyqt_finance.egg-info/requires.txt
+pyqt_finance.egg-info/top_level.txt

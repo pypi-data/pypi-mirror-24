@@ -1,0 +1,5 @@
+setuptools
+pandas
+requests
+yahoo-historical
+matplotlib
