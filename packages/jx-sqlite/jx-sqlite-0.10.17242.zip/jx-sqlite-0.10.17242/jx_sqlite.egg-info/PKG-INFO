@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: jx-sqlite
+Version: 0.10.17242
+Summary: JSON query expressions using SQLite
+Home-page: https://github.com/mozilla/jx-sqlite
+Author: Rohit Kumar, Kyle Lahnakoski
+Author-email: rohitkumar.a255@gmail.com, kyle@lahnakoski.com
+License: MPL 2.0
+Description: <Missing README.txt>
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
