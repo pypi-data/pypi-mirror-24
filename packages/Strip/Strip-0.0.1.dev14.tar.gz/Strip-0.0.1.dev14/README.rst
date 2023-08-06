@@ -1,0 +1,3 @@
+Strip
+~~~~~~
+Automated powerstrip management
