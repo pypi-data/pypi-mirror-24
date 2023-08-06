@@ -1,0 +1,16 @@
+PyInstaller
+packaging
+pipdeptree
+pyspin
+deepmerge
+PyRTF3>=0.47.3
+
+[:python_version < "3.4"]
+pathlib
+contextlib2
+
+[:python_version < "3.5"]
+glob2
+
+[:sys_platform == "win32"]
+pywix>=0.2
