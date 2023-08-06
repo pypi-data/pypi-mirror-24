@@ -1,0 +1,17 @@
+simplification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplification/cutil.c,sha256=crhfICZnlTr_hmaHNQ_svONdhA4hB7lLrchETPdT_Hg,776878
+simplification/cutil.cp35-win_amd64.pyd,sha256=-9tqMJYB1bjP6XW9lgwc90cYU07P4pUdMud8Mq7VXuU,140288
+simplification/cutil.pyx,sha256=HvHh53DVDZn3F9LfN4_c4LA-fAU_nDqmUzp8gkF9mvw,3561
+simplification/header.h,sha256=xGqAAGR2wwfaA2Hdza8xfvqltDYPAVfEAQyfyqL9lZw,2105
+simplification/rdp.dll,sha256=kIXQ1eGm5gd92ZwppUnNe8X4TpXuNlNdaZs5jUlH45g,212480
+simplification/rdp_p.pxd,sha256=gWADSHAtWx5_tNfb7JBt0WPVk_x2aeouwVBZQYqNUbA,252
+simplification/stdbool.h,sha256=Kh3yV7KFb1KFWAI41x-ekYZe4tLiQruhr5YP5jmmBEU,68
+simplification/util.py,sha256=UXp2Hrrr1-oUOJvUa-KJDLVdR7DxfWk1a86ol42WJkc,4563
+simplification/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplification/test/test.py,sha256=YX3HgJ_jWGE_f5mP_JW8Wva99wfF-1TwWQQLg7CzSVM,3139
+simplification-0.2.11.dist-info/DESCRIPTION.rst,sha256=7Av9N7JO_74a5-New7sbXpTFq0NJ1aO0SR0NflvJJEU,2502
+simplification-0.2.11.dist-info/METADATA,sha256=aQ5NPCLHaWE0MUFoSL4wJE6A_uQudzxSbhmrkpO1WJM,3642
+simplification-0.2.11.dist-info/RECORD,,
+simplification-0.2.11.dist-info/WHEEL,sha256=SUgfiiDWQYcL1n6t2OS_7aUz1Z2lCAWOT6Rx0MQyQko,106
+simplification-0.2.11.dist-info/metadata.json,sha256=uowAw-w7HdJbjr6LE9VgSG8cJXH5dHq6Atw9yNFTXyI,1293
+simplification-0.2.11.dist-info/top_level.txt,sha256=lJID9g5MiPOFux6Cv4ykfEGrZoG7aOrKCU27q-bVaXA,15
