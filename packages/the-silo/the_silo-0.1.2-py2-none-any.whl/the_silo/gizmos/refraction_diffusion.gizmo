@@ -1,0 +1,317 @@
+#! C:/Program Files/Nuke9.0v7/nuke-9.0.7.dll -nx
+version 9.0 v7
+add_layer {VRayRefraction VRayRefraction.red VRayRefraction.green VRayRefraction.blue}
+add_layer {RefractionVector10 RefractionVector10.X RefractionVector10.Y RefractionVector10.Z}
+add_layer {RefractionVector15 RefractionVector15.X RefractionVector15.Y RefractionVector15.Z}
+Gizmo {
+ addUserKnob {20 settings l Settings}
+ addUserKnob {26 channels l Channels}
+ addUserKnob {41 in l "Refraction RGB" T REFRACTION_TO_RGB.in}
+ addUserKnob {41 in_1 l "Low IOR" T LOW_IOR.in}
+ addUserKnob {41 in_2 l "High IOR" T HIGH_IOR.in}
+ addUserKnob {26 ior_mask l "IOR Mask"}
+ addUserKnob {6 mask_preview l "Preview Mask" +STARTLINE}
+ addUserKnob {41 white l Gain T IOR_MASK_GRADE.white}
+ addUserKnob {41 gamma l Gamma T IOR_MASK_GRADE.gamma}
+ addUserKnob {41 size l Blur T IOR_MASK_BLUR.size}
+ addUserKnob {26 diffusion l Diffusion}
+ addUserKnob {6 diffusion_preview l "Preview Effect" +STARTLINE}
+ addUserKnob {7 amount l Amount R 0.9 1.1}
+ amount 1
+ addUserKnob {7 diffusion_blur l Blur R 0 100}
+ diffusion_blur 5
+ addUserKnob {41 white_1 l Gain T GRADE_DIFFUSION.white}
+ addUserKnob {41 gamma_1 l Gamma T GRADE_DIFFUSION.gamma}
+ addUserKnob {41 saturation l Saturation T SATURATION_DIFFUSION.saturation}
+ addUserKnob {41 mix l Mix T MERGE_DIFFUSION.mix}
+ addUserKnob {20 advanced l Advanced n 1}
+ advanced 0
+ addUserKnob {26 blur_weights l "Blur Weights"}
+ addUserKnob {7 blur_r l R R 1 5}
+ blur_r 1
+ addUserKnob {7 blur_g l G R 1 5}
+ blur_g 2
+ addUserKnob {7 blur_b l B R 1 5}
+ blur_b 3
+ addUserKnob {26 diffusion_weights l "Diffusion Weights"}
+ addUserKnob {7 diffusion_r l R R 1 3}
+ diffusion_r 1.25
+ addUserKnob {7 diffusion_g l G R 1 3}
+ diffusion_g 1
+ addUserKnob {7 diffusion_b l B R 1 3}
+ diffusion_b 1.5
+ addUserKnob {20 endGroup n -1}
+}
+ Input {
+  inputs 0
+  name In
+  xpos -920
+  ypos -514
+ }
+ Dot {
+  name Dot4
+  xpos -886
+  ypos -414
+ }
+set N8abac800 [stack 0]
+ Dot {
+  name Dot2
+  xpos -1106
+  ypos -414
+ }
+set N8abac400 [stack 0]
+ Dot {
+  name Dot1
+  xpos -1326
+  ypos -414
+ }
+set N8abac000 [stack 0]
+ Shuffle {
+  in RefractionVector10
+  alpha black
+  name LOW_IOR
+  xpos -1360
+  ypos -346
+ }
+push $N8abac400
+ Shuffle {
+  in RefractionVector15
+  alpha black
+  name HIGH_IOR
+  xpos -1140
+  ypos -346
+ }
+ MergeExpression {
+  inputs 2
+  expr0 "B.red - A.red"
+  expr1 "B.green - A.green"
+  expr2 "B.blue - A.blue"
+  name IOR_MASK
+  xpos -1250
+  ypos -274
+ }
+ Expression {
+  expr3 "(0.299*abs(r) + 0.587*abs(g) + 0.114*abs(b))"
+  name IOR_MASK_LUMINANCE
+  xpos -1250
+  ypos -202
+ }
+ Grade {
+  channels alpha
+  white 1.8
+  gamma 0.35
+  name IOR_MASK_GRADE
+  xpos -1250
+  ypos -136
+ }
+set Na5cfe400 [stack 0]
+ Blur {
+  size 2.5
+  name IOR_MASK_BLUR
+  xpos -1250
+  ypos -40
+ }
+ Shuffle {
+  red alpha
+  green alpha
+  blue alpha
+  name IOR_MASK_ALPHA_TO_RGBA
+  xpos -1250
+  ypos 110
+ }
+set N6cefd400 [stack 0]
+push $Na5cfe400
+push $N8abac000
+ Dot {
+  name Dot8
+  xpos -1656
+  ypos -414
+ }
+ Shuffle {
+  in VRayRefraction
+  alpha black
+  name REFRACTION_TO_RGB
+  xpos -1690
+  ypos -346
+ }
+ ShuffleCopy {
+  inputs 2
+  name REFRACTION_ALPHA_SUB
+  xpos -1690
+  ypos -130
+ }
+ Premult {
+  name REFRACTION_CUTOUT
+  xpos -1690
+  ypos -34
+ }
+ Dot {
+  name Dot5
+  xpos -1656
+  ypos 66
+ }
+set Na9c6ec00 [stack 0]
+ Dot {
+  name Dot7
+  xpos -1546
+  ypos 66
+ }
+ Shuffle {
+  red black
+  green black
+  alpha black
+  name REFRACTION_BLUE
+  xpos -1580
+  ypos 110
+ }
+ Blur {
+  size {{"diffusion_blur * blur_b"}}
+  name BLUE_BLUR
+  xpos -1580
+  ypos 152
+ }
+ Transform {
+  scale {{"amount + (0.02 * diffusion_b)"}}
+  center {{root.format.r/2} {root.format.t/2}}
+  name SCALE_BLUE
+  xpos -1580
+  ypos 206
+ }
+ Dot {
+  name Dot11
+  xpos -1546
+  ypos 258
+ }
+push 0
+push $Na9c6ec00
+ Dot {
+  name Dot6
+  xpos -1766
+  ypos 66
+ }
+ Shuffle {
+  green black
+  blue black
+  alpha black
+  name REFRACTION_RED
+  xpos -1800
+  ypos 110
+ }
+ Blur {
+  size {{"diffusion_blur * blur_r"}}
+  name RED_BLUR
+  xpos -1800
+  ypos 152
+ }
+ Transform {
+  scale {{"amount + (0.02 * diffusion_r)"}}
+  center {{root.format.r/2} {root.format.t/2}}
+  name SCALE_RED
+  xpos -1800
+  ypos 206
+ }
+ Dot {
+  name Dot12
+  xpos -1766
+  ypos 258
+ }
+push $Na9c6ec00
+ Shuffle {
+  red black
+  blue black
+  alpha black
+  name REFRACTION_GREEN
+  xpos -1690
+  ypos 110
+ }
+ Blur {
+  size {{"diffusion_blur * blur_g"}}
+  name GREEN_BLUR
+  xpos -1690
+  ypos 152
+ }
+ Transform {
+  scale {{"amount + (0.02 * diffusion_g)"}}
+  center {{root.format.r/2} {root.format.t/2}}
+  name SCALE_GREEN
+  xpos -1690
+  ypos 206
+ }
+ Merge2 {
+  inputs 3+1
+  operation plus
+  name MERGE_DIFFUSION_RGB
+  xpos -1690
+  ypos 254
+ }
+ Grade {
+  white 0.5
+  gamma 1.5
+  name GRADE_DIFFUSION
+  xpos -1690
+  ypos 350
+ }
+ Saturation {
+  saturation 2
+  name SATURATION_DIFFUSION
+  xpos -1690
+  ypos 446
+ }
+ Dot {
+  name Dot3
+  xpos -1656
+  ypos 546
+ }
+ ShuffleCopy {
+  inputs 2
+  name DIFFUSION_ALPHA_SUB
+  xpos -1250
+  ypos 542
+ }
+ Premult {
+  name DIFFUSION_CUTOUT
+  xpos -1140
+  ypos 542
+ }
+set N803ea800 [stack 0]
+ Dot {
+  name Dot13
+  xpos -1106
+  ypos 666
+ }
+push $N6cefd400
+ Dot {
+  name Dot9
+  xpos -666
+  ypos 114
+ }
+ Dot {
+  name Dot10
+  xpos -666
+  ypos 666
+ }
+push $N803ea800
+push $N8abac800
+ MergeExpression {
+  inputs 2
+  expr0 "A.r + B.r"
+  expr1 "A.g + B.g"
+  expr2 "A.b + B.b"
+  name MERGE_DIFFUSION
+  xpos -920
+  ypos 542
+ }
+ Switch {
+  inputs 3
+  which {{"diffusion_preview ? 2 : mask_preview ? 1 : 0"}}
+  name PREVIEW
+  selected true
+  xpos -920
+  ypos 662
+ }
+ Output {
+  name Out
+  xpos -920
+  ypos 758
+ }
+end_group
