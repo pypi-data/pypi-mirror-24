@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: cobrascraper
+Version: 0.0.2
+Summary: Dymanic & scalable web scraping system
+Home-page: https://github.com/xtream1101/cobra
+Author: Eddy Hintze
+Author-email: eddy@hintze.co
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities

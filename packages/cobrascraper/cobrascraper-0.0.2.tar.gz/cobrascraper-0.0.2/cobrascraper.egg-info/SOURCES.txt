@@ -1,0 +1,7 @@
+setup.py
+cobrascraper/__init__.py
+cobrascraper.egg-info/PKG-INFO
+cobrascraper.egg-info/SOURCES.txt
+cobrascraper.egg-info/dependency_links.txt
+cobrascraper.egg-info/requires.txt
+cobrascraper.egg-info/top_level.txt
