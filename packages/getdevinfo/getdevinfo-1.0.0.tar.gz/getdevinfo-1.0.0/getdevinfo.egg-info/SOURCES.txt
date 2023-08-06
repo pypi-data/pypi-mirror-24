@@ -1,0 +1,10 @@
+setup.py
+getdevinfo/__init__.py
+getdevinfo/getdevinfo.py
+getdevinfo/linux.py
+getdevinfo/macos.py
+getdevinfo.egg-info/PKG-INFO
+getdevinfo.egg-info/SOURCES.txt
+getdevinfo.egg-info/dependency_links.txt
+getdevinfo.egg-info/requires.txt
+getdevinfo.egg-info/top_level.txt
