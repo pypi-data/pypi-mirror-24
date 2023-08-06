@@ -1,0 +1,4 @@
+[console_scripts]
+patchwork = patchwork.patchwork:main
+patchwork-config = patchwork.config:main
+
