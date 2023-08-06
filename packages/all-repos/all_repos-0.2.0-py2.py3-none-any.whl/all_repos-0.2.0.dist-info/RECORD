@@ -1,0 +1,15 @@
+all_repos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+all_repos/cli.py,sha256=E7ODTdznl9po4iSWubQCBoxo_HeRHJZQGup2KoH9caw,354
+all_repos/clone.py,sha256=zRObOsx9qfHYcMIXq8Ph8hbOu91xXFUy8kZQeMqAlak,3473
+all_repos/config.py,sha256=Oi84mdVBWEvcm3bzWikX8gLrt1fVqmkJpg5zfKc-d5I,1239
+all_repos/grep.py,sha256=8vI-f5GSiyO7pnaePZZAJ4dcsmrdM-uVL7DxE6nb_jQ,2017
+all_repos/sources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+all_repos/sources/github.py,sha256=4CCm5eUiIVZRRic2_QAhcYWbrixahBkAxBj94soQHOg,1353
+all_repos/sources/json_file.py,sha256=rmFoewXaVQ4tjLHUGJLjzeZQiMpXtIvMomGvWzFL2uk,241
+all_repos-0.2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+all_repos-0.2.0.dist-info/METADATA,sha256=lA-l-pZ2S7mLxt-7KsuomrYblr76L1En89xzWAVagks,443
+all_repos-0.2.0.dist-info/RECORD,,
+all_repos-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+all_repos-0.2.0.dist-info/entry_points.txt,sha256=faijiS_px4qi9iyxE31L1ZUzoIed91wv1Oer7NxEuTc,95
+all_repos-0.2.0.dist-info/metadata.json,sha256=e2pjVOzdrTDROijQ6DriJCJqz_nJ1DTpUPH7f2H66EE,871
+all_repos-0.2.0.dist-info/top_level.txt,sha256=FCHbd5DEszFWVPHxBOfx7GpOP4crVYHgNzUBLtSJUIs,10
