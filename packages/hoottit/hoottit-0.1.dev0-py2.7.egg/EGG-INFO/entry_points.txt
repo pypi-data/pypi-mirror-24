@@ -1,0 +1,3 @@
+[console_scripts]
+hoottit = hoottit.__main__:main
+
