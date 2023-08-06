@@ -1,0 +1,10 @@
+git_annex_adapter/__init__.py,sha256=SdXTe8705u4mj2l2C7cujrHfYnenUQGhIkeVAt4N5pg,1896
+git_annex_adapter/exceptions.py,sha256=Jn4mIqo2xML9uCrLhTpwFlipXp4t8HmJ6ZtIFCPUi1Y,901
+git_annex_adapter/process.py,sha256=GaV49JvSqwOKs2r5ilaOO1jr42WExhFUSif-MUDiBOs,20055
+git_annex_adapter/repo.py,sha256=XCHjFF5WDsV32dEbVM1qoX7xXULFuJ3jvDyrr_IuGM8,9429
+git_annex_adapter-0.2.0.dist-info/DESCRIPTION.rst,sha256=0Cu29sOycYDShRyHOOc5HUZML5eehmsHw5FmKBGnEaM,3750
+git_annex_adapter-0.2.0.dist-info/METADATA,sha256=WPXdIjVDOjgQ3qpWpSuZNIpS5PihXWxmSdrpZVUJMC0,4392
+git_annex_adapter-0.2.0.dist-info/RECORD,,
+git_annex_adapter-0.2.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+git_annex_adapter-0.2.0.dist-info/metadata.json,sha256=6feu_X6-iL3vUU5PPkspNvUPzIJRsOnrByG6rGxzFt4,837
+git_annex_adapter-0.2.0.dist-info/top_level.txt,sha256=Ms6Q2tt-avkUUK3ou1w_S7E97vaMdIVW8x1Uoyn1JeA,18
