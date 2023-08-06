@@ -1,0 +1,12 @@
+djangocms_local_navigation/__init__.py,sha256=SXIEy_nR3f1xtRN3G4gFH0A_oXX5hvyyLZE1e4nEnYQ,88
+djangocms_local_navigation/cms_plugin_processors.py,sha256=eKkXOYyNzIGEi66k2VDuWZGBGeyvooW5Oiy2aNSkvng,2609
+djangocms_local_navigation/cms_plugins.py,sha256=Ay-vFmNfkXYqXEm-k7IMQmQFbt47N-oMY1xVac3SY-o,1697
+djangocms_local_navigation/conf.py,sha256=9ZLXe4v4xq98uP0TrroTwWa1CVuX2lWREsVv31uZb2o,1121
+djangocms_local_navigation/utils.py,sha256=qgQ9RvtxB12SePGZ0mov3wuvL5fNNzHpDQbyUfmvXQg,472
+djangocms_local_navigation/templates/djangocms_local_navigation/menu.html,sha256=3GbzugZ6ODuWu57S4trGTEX3CSM66X1fuHcBHgxIz0c,213
+djangocms_local_navigation-1.4.0.dist-info/DESCRIPTION.rst,sha256=RfSJ6oUD_WpY9dgoN9P0dLh0AOuij6C-16shyney9QY,1604
+djangocms_local_navigation-1.4.0.dist-info/METADATA,sha256=p7v0B6AistAgrI3TpbpjA0vhBp9Tll7epQYoVMbihyo,2298
+djangocms_local_navigation-1.4.0.dist-info/RECORD,,
+djangocms_local_navigation-1.4.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+djangocms_local_navigation-1.4.0.dist-info/metadata.json,sha256=c5lCJfqNHy8jTS71xbBYmnrcmbSHKQwe3UBX0GrfdJU,920
+djangocms_local_navigation-1.4.0.dist-info/top_level.txt,sha256=Pg9zOK_LWXuTfUhf214kc4JtRpMrlRJFZE_urIp5WWg,27
