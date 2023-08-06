@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pydeepl
+Version: 0.5
+Summary: A python API wrapper for deepl.com translating service.
+Home-page: https://github.com/EmilioK97/pydeepl
+Author: Emilio Carrión Peñalba
+Author-email: emiliok1997@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: translate,translation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
