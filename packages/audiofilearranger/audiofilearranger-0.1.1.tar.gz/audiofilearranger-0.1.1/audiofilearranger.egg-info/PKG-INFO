@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: audiofilearranger
+Version: 0.1.1
+Summary: Audio file arranger
+Home-page: https://github.com/Raja27/Audio-File-arranger.git
+Author: MRP DevShort
+Author-email: mrppythondev@gmail.com
+License: MIT
+Description: Audio File Arranger
+        -------------------
+        
+        This will help to categorise mp3 file based on
+        Album, Artist and Album Artist.
+        
+        All the unorganized mp3 file in the source path
+        will get organized based on album, artist or album artist
+        in destination path.
+        
+        Requirement
+        -----------
+        
+        eyeD3
+        
+        
+        Installation
+        ------------
+        
+        pip install eyeD3
+        
+Keywords: mp3,audio
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
