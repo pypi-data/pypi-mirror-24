@@ -1,0 +1,7 @@
+click
+psqlparse==1.0rc5
+pypandoc
+Pygments
+six
+toolz
+toposort
