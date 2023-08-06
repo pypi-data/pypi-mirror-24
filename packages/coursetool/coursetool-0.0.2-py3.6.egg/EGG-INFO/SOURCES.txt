@@ -1,0 +1,9 @@
+setup.py
+coursetool/__init__.py
+coursetool/course.py
+coursetool.egg-info/PKG-INFO
+coursetool.egg-info/SOURCES.txt
+coursetool.egg-info/dependency_links.txt
+coursetool.egg-info/entry_points.txt
+coursetool.egg-info/requires.txt
+coursetool.egg-info/top_level.txt
