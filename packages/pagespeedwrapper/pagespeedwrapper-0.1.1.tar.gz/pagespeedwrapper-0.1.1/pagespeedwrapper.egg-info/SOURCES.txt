@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+pagespeedwrapper/__init__.py
+pagespeedwrapper.egg-info/PKG-INFO
+pagespeedwrapper.egg-info/SOURCES.txt
+pagespeedwrapper.egg-info/dependency_links.txt
+pagespeedwrapper.egg-info/not-zip-safe
+pagespeedwrapper.egg-info/requires.txt
+pagespeedwrapper.egg-info/top_level.txt
