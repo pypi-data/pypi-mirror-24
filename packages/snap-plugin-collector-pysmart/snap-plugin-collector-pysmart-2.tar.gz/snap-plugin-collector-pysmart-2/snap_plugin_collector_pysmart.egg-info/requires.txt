@@ -1,0 +1,3 @@
+snap-plugin-lib-py>=1.0.10,<2
+pySMART.smartx>=0.3.6
+shutilwhich>=1.1.0

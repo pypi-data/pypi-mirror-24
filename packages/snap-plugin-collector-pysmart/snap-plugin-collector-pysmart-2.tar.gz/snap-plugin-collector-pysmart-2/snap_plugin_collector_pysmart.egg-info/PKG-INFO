@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: snap-plugin-collector-pysmart
+Version: 2
+Summary: This is a plugin for the Snap telemetry framework providingstorage related metrics through smartmontools
+Home-page: http://github.com/intelsdi-x/snap-plugin-collector-pysmart
+Author: Joel Cooklin
+Author-email: joel.cooklin@gmail.com
+License: Apache 2.0
+Description: Snap Plugin Collector Pysmart
+        =============================
+        
+        This is plugin for `Snap telemetry framework <http://snap-telemetry.io/>`_.
+        For overview of Snap checkout its GitHub repo `here <https://github.com/intelsdi-x/snap>`_.
+        
+        For more information about this plugin visit its `repo <http://github.com/intelsdi-x/snap-plugin-collector-pysmart>`_.
+        
+Keywords: snap telemetry plugin plugins metrics smartmon smartmontools
+Platform: UNKNOWN
