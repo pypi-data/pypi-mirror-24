@@ -1,0 +1,13 @@
+name: pyrcel
+dependencies:
+    - python=2.7
+    - cython
+    - future
+    - pandas
+    - pyyaml
+    - scipy
+    - numpy
+    - xarray
+    - numpydoc
+    - ipython
+    - sphinx
