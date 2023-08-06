@@ -1,0 +1,11 @@
+attrs
+colored_traceback
+colorama
+path.py
+pyparsing
+requests
+ruamel.yaml
+schema
+tabulate
+unidecode
+xdg
