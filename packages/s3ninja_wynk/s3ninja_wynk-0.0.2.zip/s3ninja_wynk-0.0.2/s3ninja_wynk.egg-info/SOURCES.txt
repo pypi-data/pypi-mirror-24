@@ -1,0 +1,10 @@
+setup.py
+s3ninja/__init__.py
+s3ninja/main.py
+s3ninja_wynk.egg-info/PKG-INFO
+s3ninja_wynk.egg-info/SOURCES.txt
+s3ninja_wynk.egg-info/dependency_links.txt
+s3ninja_wynk.egg-info/entry_points.txt
+s3ninja_wynk.egg-info/not-zip-safe
+s3ninja_wynk.egg-info/requires.txt
+s3ninja_wynk.egg-info/top_level.txt
