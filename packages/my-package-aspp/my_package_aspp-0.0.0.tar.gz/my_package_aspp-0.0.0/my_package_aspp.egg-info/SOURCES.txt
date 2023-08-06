@@ -1,0 +1,7 @@
+setup.py
+my_package/__init__.py
+my_package/my_function.py
+my_package_aspp.egg-info/PKG-INFO
+my_package_aspp.egg-info/SOURCES.txt
+my_package_aspp.egg-info/dependency_links.txt
+my_package_aspp.egg-info/top_level.txt
