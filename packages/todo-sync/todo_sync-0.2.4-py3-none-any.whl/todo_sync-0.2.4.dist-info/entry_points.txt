@@ -1,0 +1,3 @@
+[console_scripts]
+todo-sync = todo_sync.command_line:main
+
