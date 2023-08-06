@@ -1,0 +1,17 @@
+openvpn_reconnect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openvpn_reconnect/__main__.py,sha256=FoQOt3feSve-MpAqKsq2tJsgFznlSf0__HMuGJ2cd4E,771
+openvpn_reconnect/daemon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openvpn_reconnect/daemon/daemon.py,sha256=P8KObfhrVQwaHMweD0CJHVxvJaPBOMzWw7daQOKlM04,3474
+openvpn_reconnect/daemon/daemon_reconnect.py,sha256=W2wMSTqwXgUijNcx6DYSjNTgcOAZFq_0QMSFrzpbRcw,457
+openvpn_reconnect/program/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openvpn_reconnect/program/parser.py,sha256=JTLQsZpqUEanqXOqwH7X19Wzm4VjI__1uLoqKj_IiHg,2557
+openvpn_reconnect/program/reconnect.py,sha256=uKF1p2Z1jHAe2tYtgKlaT9qtGAupnyghfhf6B9HrBFw,1091
+openvpn_reconnect/program/statics.py,sha256=1uNCqRLAVihK9CumPNYJezl-26LupmY9U0ibbVmYzug,235
+openvpn_reconnect-1.0.0.post2.dist-info/DESCRIPTION.rst,sha256=Jj8IW3dKGoegk4TKrm6-gtfucOZKmID62GJvxtHrlMk,147
+openvpn_reconnect-1.0.0.post2.dist-info/METADATA,sha256=ae2FPrMaRVnRJ1djzBnj7PCAsguVibAFsHI2sHOHvQk,990
+openvpn_reconnect-1.0.0.post2.dist-info/RECORD,,
+openvpn_reconnect-1.0.0.post2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+openvpn_reconnect-1.0.0.post2.dist-info/entry_points.txt,sha256=4IGHuK14OUMHugzswIefN1gy0dbOUkLhQodvxJJUyTg,71
+openvpn_reconnect-1.0.0.post2.dist-info/metadata.json,sha256=_djoOXOUye05jIbLRnhyZwB6QMKfFD_Rbv-Q2FoZQ90,1195
+openvpn_reconnect-1.0.0.post2.dist-info/top_level.txt,sha256=w8GvgKtzX_gI6qdLq2fzPd0gl3yNbLTGspvDbT389bc,18
+openvpn_reconnect-1.0.0.post2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
