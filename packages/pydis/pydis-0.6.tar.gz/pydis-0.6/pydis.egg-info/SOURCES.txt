@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+pydis/__init__.py
+pydis/redis_dict.py
+pydis/redis_list.py
+pydis/redis_object.py
+pydis/redis_set.py
+pydis/redis_settings.py
+pydis/redis_sortedset.py
+pydis.egg-info/PKG-INFO
+pydis.egg-info/SOURCES.txt
+pydis.egg-info/dependency_links.txt
+pydis.egg-info/not-zip-safe
+pydis.egg-info/requires.txt
+pydis.egg-info/top_level.txt
