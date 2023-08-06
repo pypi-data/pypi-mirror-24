@@ -1,0 +1,4 @@
+[console_scripts]
+zeppelin-convert = zeppelin.cli.convert:main
+zeppelin-execute = zeppelin.cli.execute:main
+
