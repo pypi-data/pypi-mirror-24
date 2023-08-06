@@ -1,0 +1,15 @@
+nd2reader/__init__.py,sha256=bGT96vLTuKkLW9PWoinSUaj3IeoTegzl5CmeTpo4BVA,95
+nd2reader/artificial.py,sha256=qPoFy4KSi-9IqRM9aSYKGSNSRcr9E-I-MGWQ4--O170,10210
+nd2reader/common.py,sha256=D0mRPt0K3PDvsl63e6Gtr1pwbbpoQNAAhXEnnxjWp7M,9196
+nd2reader/exceptions.py,sha256=A-nfUpVWoxL0McUoN-usILuSyRzdNH1JZLh8Xb5Htj0,589
+nd2reader/label_map.py,sha256=bebbM-ee9ScgLvwes5YP1s0pyTkpn0gECRHvnFdnFnk,6949
+nd2reader/legacy.py,sha256=7-EVpfHqlz5NBAmBfF6Iadg0A8TuraVP0UtAyXcUQSY,4510
+nd2reader/parser.py,sha256=bqi0Yp4Ad5NjZoF2b1JDpO8PW0ZuQ-zKZdABIG24WT0,11395
+nd2reader/raw_metadata.py,sha256=XhxLgAOHms38OD346JL6RkltV00y93xUu2kOgH_Lu6w,19794
+nd2reader/reader.py,sha256=xsnIEgC5s385xBJyqJLrYAxZ_zPjVvsuyGfynLrtuxU,5652
+nd2reader-3.0.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+nd2reader-3.0.5.dist-info/METADATA,sha256=PPWv2SWShxgVBJS4WfoM8rKTFFpaSUaGWcnAbzkgjQw,934
+nd2reader-3.0.5.dist-info/RECORD,,
+nd2reader-3.0.5.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+nd2reader-3.0.5.dist-info/metadata.json,sha256=Zho34nWvuHMaor339tOi_Ovb8HnsJo90a_VDN4UHeYI,1057
+nd2reader-3.0.5.dist-info/top_level.txt,sha256=mNpyPS2mvfWjkplDzAzM9CMn6YTje2bMX1xnncehPtk,10
