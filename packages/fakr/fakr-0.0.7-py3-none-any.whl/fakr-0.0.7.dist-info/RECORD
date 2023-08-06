@@ -1,0 +1,14 @@
+fakr/Cli.py,sha256=pArDK0QW0nc9r1wRTqT98src9-MoLNKPAfvJGNuiSI8,4226
+fakr/CompoundMappingSequence.py,sha256=tTz8LwsURr1kQs4XmzCh37RAzL_-dY3-6Fo1xdsjad0,1650
+fakr/Jinja2Renderer.py,sha256=bBVuIAclbdiSJMWtGj5usfaiBptks_QahdurBkAIFqQ,1218
+fakr/TemplatedMapping.py,sha256=N_yYnOEW3fXExRcXgxrZmQqdGBl8Jig1zGHR3wyQRjk,557
+fakr/__init__.py,sha256=KmjZ-sBwxJXZmCV1unR0VOOtML-4ma92GsMgSDU4Hp4,204
+fakr/jinja.py,sha256=aQcbMMELiL__rhci7HFrGgKvR5Y24GYAMFYl__AVmNE,877
+fakr/vocabularies/us_top1000.json,sha256=JKb6Rkp-n62sASBwCDV6CDcl0Kd3INTyBcm4q_qycV0,643390
+fakr-0.0.7.dist-info/DESCRIPTION.rst,sha256=Gsmiaq_x7l2rM5uRbdBbsBzrrFAaSBUIOOPJcNMIR8c,2735
+fakr-0.0.7.dist-info/METADATA,sha256=zrqzgQf-eKOjIepxZnncQJNXOAFbRfp_SmC4EoNfHLo,3609
+fakr-0.0.7.dist-info/RECORD,,
+fakr-0.0.7.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+fakr-0.0.7.dist-info/entry_points.txt,sha256=2wo67Yu4j1VLTf_ZNlcRaHHr9kTpNLr0LLOwYg4r9x0,44
+fakr-0.0.7.dist-info/metadata.json,sha256=DF8ZOf9Ernu-LAINJsCNxr69OSZs_T_FsNaiB53EUbI,1238
+fakr-0.0.7.dist-info/top_level.txt,sha256=OXRwdja6eUxoJxCQbCDdxJ0rEKHo8LD2bEO2f_Q7lqg,5
