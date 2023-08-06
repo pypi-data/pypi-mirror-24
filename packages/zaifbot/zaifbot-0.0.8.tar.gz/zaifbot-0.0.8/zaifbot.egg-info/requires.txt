@@ -1,0 +1,10 @@
+SQLAlchemy
+slackclient
+slack_logger
+zaifapi
+numpy
+pandas
+Flask
+
+[ta-lib]
+TA-Lib
