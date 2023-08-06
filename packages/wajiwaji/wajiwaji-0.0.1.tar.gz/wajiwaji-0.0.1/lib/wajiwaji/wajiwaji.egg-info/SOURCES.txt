@@ -1,0 +1,12 @@
+MANIFEST.in
+info.py
+requirements.txt
+setup.py
+version.py
+lib/wajiwaji/bin/wajiwaji
+lib/wajiwaji/wajiwaji/__init__.py
+lib/wajiwaji/wajiwaji/hello.py
+lib/wajiwaji/wajiwaji.egg-info/PKG-INFO
+lib/wajiwaji/wajiwaji.egg-info/SOURCES.txt
+lib/wajiwaji/wajiwaji.egg-info/dependency_links.txt
+lib/wajiwaji/wajiwaji.egg-info/top_level.txt
