@@ -1,0 +1,11 @@
+argcomplete
+colored
+flask
+inotify
+jinja2
+pdfminer.six
+prompt_toolkit
+python-dateutil
+requests
+unidecode
+whoosh
