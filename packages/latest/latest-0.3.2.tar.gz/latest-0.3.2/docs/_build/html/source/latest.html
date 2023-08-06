@@ -1,0 +1,385 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>latest package &#8212; latest 0.3.1 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="API reference" href="modules.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-latest">
+<span id="latest-package"></span><h1>latest package<a class="headerlink" href="#module-latest" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> is a LaTeX-oriented template engine.</p>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-latest.config">
+<span id="latest-config-module"></span><h2>latest.config module<a class="headerlink" href="#module-latest.config" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal"><span class="pre">config</span></code> module contains configuration functions and classes for <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> package.</p>
+<p><a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> is configurable both programmatically and through a configuration file.</p>
+<p>Configurations are contained in a <code class="xref py py-class docutils literal"><span class="pre">_Config</span></code> object. Constructor (<code class="code docutils literal"><span class="pre">__init__</span></code> method) of this class
+accepts the optional keyword argument <code class="code docutils literal"><span class="pre">config_file</span></code> to specify the location of the configuration file.
+If no configuration file is specified, defaults are set in code.
+A default configuration object (<code class="code docutils literal"><span class="pre">config</span></code>) is defined in this module and can be imported to be used elsewhere.
+I suggest an import statement like</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">latest.config</span> <span class="k">import</span> <span class="n">config</span> <span class="k">as</span> <span class="n">Config</span>
+</pre></div>
+</div>
+<p>so that you can think of it as a class with many static attributes and methods.
+To create an alternate configuration object you can use the public function <code class="code docutils literal"><span class="pre">create_config(config_file=None)</span></code>.</p>
+<p>Configuration file is found by default (<code class="code docutils literal"><span class="pre">config</span></code> looks for this location)
+in <code class="code docutils literal"><span class="pre">~/.latest/latest.cfg</span></code> but one can use his own configuration files.
+The formatting of a configuration file must be <code class="code docutils literal"><span class="pre">ini</span></code> format.</p>
+<p>Useful sections of a configuration file are:</p>
+<blockquote>
+<div><ul class="simple">
+<li>general</li>
+<li>lang</li>
+</ul>
+</div></blockquote>
+<p>The section <em>lang</em> of a configuration file is where one can define its own syntax.
+Available options in <cite>lang</cite> section are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>pyexpr_entry</cite>: the regex indicating the start of a python expression block.</li>
+<li><cite>pyexpr_exit</cite>: the regex indicating the end of a python expression block.</li>
+<li><cite>env_entry</cite>: the regex indicating the start of a <cite>latest</cite> environment.</li>
+<li><cite>env_exit</cite>: the regex indicating the end of a <cite>latest</cite> environment.</li>
+</ul>
+</div></blockquote>
+<dl class="function">
+<dt id="latest.config.create_config">
+<code class="descclassname">latest.config.</code><code class="descname">create_config</code><span class="sig-paren">(</span><em>config_file=None</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.config.create_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-latest.core">
+<span id="latest-core-module"></span><h2>latest.core module<a class="headerlink" href="#module-latest.core" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal"><span class="pre">core</span></code> contains core functions for templating.</p>
+<dl class="class">
+<dt id="latest.core.Context">
+<em class="property">class </em><code class="descclassname">latest.core.</code><code class="descname">Context</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.Context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">dict</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="latest.core.contextify">
+<code class="descclassname">latest.core.</code><code class="descname">contextify</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.contextify" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.core.listify">
+<code class="descclassname">latest.core.</code><code class="descname">listify</code><span class="sig-paren">(</span><em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.listify" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="latest.core.ParserHandler">
+<em class="property">class </em><code class="descclassname">latest.core.</code><code class="descname">ParserHandler</code><span class="sig-paren">(</span><em>toks</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.ParserHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="latest.core.GrammarHandler">
+<em class="property">class </em><code class="descclassname">latest.core.</code><code class="descname">GrammarHandler</code><span class="sig-paren">(</span><em>toks</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.GrammarHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#latest.core.ParserHandler" title="latest.core.ParserHandler"><code class="xref py py-class docutils literal"><span class="pre">latest.core.ParserHandler</span></code></a></p>
+<dl class="method">
+<dt id="latest.core.GrammarHandler.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>context</em>, <em>config=&lt;latest.config._Config object&gt;</em>, <em>**options</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.GrammarHandler.eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="latest.core.PyExprHandler">
+<em class="property">class </em><code class="descclassname">latest.core.</code><code class="descname">PyExprHandler</code><span class="sig-paren">(</span><em>toks</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.PyExprHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#latest.core.ParserHandler" title="latest.core.ParserHandler"><code class="xref py py-class docutils literal"><span class="pre">latest.core.ParserHandler</span></code></a></p>
+<dl class="method">
+<dt id="latest.core.PyExprHandler.initialize">
+<code class="descname">initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.PyExprHandler.initialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="latest.core.PyExprHandler.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.PyExprHandler.eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="latest.core.StrPyExprHandler">
+<em class="property">class </em><code class="descclassname">latest.core.</code><code class="descname">StrPyExprHandler</code><span class="sig-paren">(</span><em>toks</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.StrPyExprHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#latest.core.ParserHandler" title="latest.core.ParserHandler"><code class="xref py py-class docutils literal"><span class="pre">latest.core.ParserHandler</span></code></a></p>
+<dl class="method">
+<dt id="latest.core.StrPyExprHandler.initialize">
+<code class="descname">initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.StrPyExprHandler.initialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="latest.core.StrPyExprHandler.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.StrPyExprHandler.eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="latest.core.OptHandler">
+<em class="property">class </em><code class="descclassname">latest.core.</code><code class="descname">OptHandler</code><span class="sig-paren">(</span><em>toks</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.OptHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#latest.core.ParserHandler" title="latest.core.ParserHandler"><code class="xref py py-class docutils literal"><span class="pre">latest.core.ParserHandler</span></code></a></p>
+<dl class="method">
+<dt id="latest.core.OptHandler.initialize">
+<code class="descname">initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.OptHandler.initialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="latest.core.OptHandler.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.OptHandler.eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="latest.core.OptsHandler">
+<em class="property">class </em><code class="descclassname">latest.core.</code><code class="descname">OptsHandler</code><span class="sig-paren">(</span><em>toks</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.OptsHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#latest.core.ParserHandler" title="latest.core.ParserHandler"><code class="xref py py-class docutils literal"><span class="pre">latest.core.ParserHandler</span></code></a></p>
+<dl class="method">
+<dt id="latest.core.OptsHandler.initialize">
+<code class="descname">initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.OptsHandler.initialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="latest.core.OptsHandler.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.OptsHandler.eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="latest.core.EnvHandler">
+<em class="property">class </em><code class="descclassname">latest.core.</code><code class="descname">EnvHandler</code><span class="sig-paren">(</span><em>toks</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.EnvHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#latest.core.ParserHandler" title="latest.core.ParserHandler"><code class="xref py py-class docutils literal"><span class="pre">latest.core.ParserHandler</span></code></a></p>
+<dl class="method">
+<dt id="latest.core.EnvHandler.initialize">
+<code class="descname">initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.EnvHandler.initialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="latest.core.EnvHandler.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.EnvHandler.eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="latest.core.TxtHandler">
+<em class="property">class </em><code class="descclassname">latest.core.</code><code class="descname">TxtHandler</code><span class="sig-paren">(</span><em>toks</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.TxtHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#latest.core.ParserHandler" title="latest.core.ParserHandler"><code class="xref py py-class docutils literal"><span class="pre">latest.core.ParserHandler</span></code></a></p>
+<dl class="method">
+<dt id="latest.core.TxtHandler.initialize">
+<code class="descname">initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.TxtHandler.initialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="latest.core.TxtHandler.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.TxtHandler.eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="latest.core.Grammar">
+<em class="property">class </em><code class="descclassname">latest.core.</code><code class="descname">Grammar</code><span class="sig-paren">(</span><em>config=&lt;latest.config._Config object&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.Grammar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="latest.core.Grammar.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>template</em>, <em>context</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.core.Grammar.eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-latest.exceptions">
+<span id="latest-exceptions-module"></span><h2>latest.exceptions module<a class="headerlink" href="#module-latest.exceptions" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal"><span class="pre">exceptions</span></code> module contains exceptions classes defined for <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> package.</p>
+<dl class="exception">
+<dt id="latest.exceptions.LatestError">
+<em class="property">exception </em><code class="descclassname">latest.exceptions.</code><code class="descname">LatestError</code><a class="headerlink" href="#latest.exceptions.LatestError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">Exception</span></code></p>
+<p>Base class for all <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> exceptions.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="latest.exceptions.PyExprSyntaxError">
+<em class="property">exception </em><code class="descclassname">latest.exceptions.</code><code class="descname">PyExprSyntaxError</code><a class="headerlink" href="#latest.exceptions.PyExprSyntaxError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#latest.exceptions.LatestError" title="latest.exceptions.LatestError"><code class="xref py py-class docutils literal"><span class="pre">latest.exceptions.LatestError</span></code></a></p>
+<p>Exception raised when bad syntax code is parsed in a template.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="latest.exceptions.ContextError">
+<em class="property">exception </em><code class="descclassname">latest.exceptions.</code><code class="descname">ContextError</code><a class="headerlink" href="#latest.exceptions.ContextError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#latest.exceptions.LatestError" title="latest.exceptions.LatestError"><code class="xref py py-class docutils literal"><span class="pre">latest.exceptions.LatestError</span></code></a></p>
+<p>Exception raised when context dictionary doesn’t match names required by a template.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-latest.shortcuts">
+<span id="latest-shortcuts-module"></span><h2>latest.shortcuts module<a class="headerlink" href="#module-latest.shortcuts" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal"><span class="pre">shortcuts</span></code> module contains shortcut functions built upon core functionality of <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> package.</p>
+<dl class="function">
+<dt id="latest.shortcuts.render">
+<code class="descclassname">latest.shortcuts.</code><code class="descname">render</code><span class="sig-paren">(</span><em>template_filename</em>, <em>data_filename</em>, <em>config=&lt;latest.config._Config object&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.shortcuts.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render a template in a file within a context defined by a <em>json</em> or <em>yaml</em> formatted data file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>template_filename</strong> (<em>str</em>) – the path of the template file.</li>
+<li><strong>data_filename</strong> (<em>str</em>) – the path of the <em>json</em> or <em>yaml</em> data file.</li>
+<li><strong>config</strong> (<em>config._Config</em>) – configuration object.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the output of the evaluation process as defined by <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> core functions.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-latest.util">
+<span id="latest-util-module"></span><h2>latest.util module<a class="headerlink" href="#module-latest.util" title="Permalink to this headline">¶</a></h2>
+<p><code class="xref py py-mod docutils literal"><span class="pre">util</span></code> module contains utility functions and classes for <a class="reference internal" href="#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> package.</p>
+<dl class="function">
+<dt id="latest.util.is_scalar">
+<code class="descclassname">latest.util.</code><code class="descname">is_scalar</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.is_scalar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.is_vector">
+<code class="descclassname">latest.util.</code><code class="descname">is_vector</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.is_vector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.is_tensor">
+<code class="descclassname">latest.util.</code><code class="descname">is_tensor</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.is_tensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.path">
+<code class="descclassname">latest.util.</code><code class="descname">path</code><span class="sig-paren">(</span><em>location</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="latest.util.getopt">
+<code class="descclassname">latest.util.</code><code class="descname">getopt</code><span class="sig-paren">(</span><em>parser</em>, <em>section</em>, <em>key</em>, <em>default</em><span class="sig-paren">)</span><a class="headerlink" href="#latest.util.getopt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">latest</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">latest package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">API reference</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">API reference</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Flavio Grandin.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/source/latest.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
