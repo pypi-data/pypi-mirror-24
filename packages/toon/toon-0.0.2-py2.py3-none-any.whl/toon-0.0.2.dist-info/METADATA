@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: toon
+Version: 0.0.2
+Summary: Tools for neuroscience experiments
+Home-page: https://github.com/aforren1/toon
+Author: Alexander Forrence
+Author-email: aforren1@jhu.edu
+License: GPL3
+Requires-Dist: hidapi
+Requires-Dist: numpy
+
+toon: tools for neuroscience
+
+
