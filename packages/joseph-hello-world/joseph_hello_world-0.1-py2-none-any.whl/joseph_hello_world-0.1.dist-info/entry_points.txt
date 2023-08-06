@@ -1,0 +1,3 @@
+[joseph.plugins]
+hello = src:hello
+
