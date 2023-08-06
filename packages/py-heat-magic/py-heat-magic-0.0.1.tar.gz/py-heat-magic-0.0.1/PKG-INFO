@@ -1,0 +1,86 @@
+Metadata-Version: 1.1
+Name: py-heat-magic
+Version: 0.0.1
+Summary: py-heat as IPython magic
+Home-page: https://github.com/csurfer/pyheatmagic
+Author: Vishwas B Sharma
+Author-email: sharma.vishwas88@gmail.com
+License: MIT
+Description: heat
+        ====
+        
+        |pypiv| |pyv| |Licence|
+        
+        IPython magic command to profile and view your python code as a heat map
+        using `py-heat`_.
+        
+        |Demo|
+        
+        What is the magic command?
+        --------------------------
+        
+        .. code:: python
+        
+            %%heat
+        
+        Setup
+        -----
+        
+        Using pip
+        ~~~~~~~~~
+        
+        .. code:: bash
+        
+            pip install py-heat-magic
+        
+        Directly from the repository
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code:: bash
+        
+            git clone https://github.com/csurfer/pyheatmagic.git
+            python pyheatmagic/setup.py install
+        
+        Load Extension in IPython
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+            %load_ext heat
+        
+        Usage
+        -----
+        
+        .. code:: python
+        
+            # To view the heatmap
+            %%heat
+        
+            # To save the heatmap as a file
+            %%heat -o file.png
+        
+        .. _py-heat: https://github.com/csurfer/pyheat
+        
+        .. |Demo| image:: http://i.imgur.com/IUtasPH.gif
+        
+        .. |Licence| image:: https://img.shields.io/badge/license-MIT-blue.svg
+           :target: https://raw.githubusercontent.com/csurfer/pyheatmagic/master/LICENSE
+        
+        .. |pypiv| image:: https://img.shields.io/pypi/v/py-heat-magic.svg
+           :target: https://pypi.python.org/pypi/py-heat-magic
+        
+        .. |pyv| image:: https://img.shields.io/pypi/pyversions/py-heat-magic.svg
+           :target: https://pypi.python.org/pypi/py-heat-magic
+Keywords: heatmap matplotlib profiling python IPython
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
