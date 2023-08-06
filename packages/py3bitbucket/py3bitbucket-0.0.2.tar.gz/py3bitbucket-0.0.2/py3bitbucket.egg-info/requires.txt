@@ -1,0 +1,7 @@
+requests
+oauthlib
+requests_oauthlib
+click
+PyYAML
+pprint
+tabulate
