@@ -1,0 +1,8 @@
+ply2atti.py
+setup.py
+ply2atti.egg-info/PKG-INFO
+ply2atti.egg-info/SOURCES.txt
+ply2atti.egg-info/dependency_links.txt
+ply2atti.egg-info/entry_points.txt
+ply2atti.egg-info/requires.txt
+ply2atti.egg-info/top_level.txt
