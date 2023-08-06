@@ -1,0 +1,11 @@
+basicauth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basicauth/basicauthutils.py,sha256=IpGe-mcWIqGBt8gzKlowBa_y9Uvc6n4yysZKEjaGHPo,1471
+basicauth/decorators.py,sha256=Zk1XcSNBGV0jTPxELqDJ0LfpfK_KZAVa3WvvswO4TZc,369
+basicauth/middleware.py,sha256=Pp6x5g3_TYLGcssqi6KajR3vy-G_Luo0RfI_GJ-2G9Y,269
+basicauth/response.py,sha256=ZzGUMN066iflyb2hFzmDkJkLbDvX79aJ9L9UUSkMmd4,511
+django_basicauth-0.3.dist-info/DESCRIPTION.rst,sha256=MZzqvHyxpYUxEw20lY3yS92JRkjWKFWMALeFmEAWDX8,1272
+django_basicauth-0.3.dist-info/METADATA,sha256=5JMsRodA3zdCRPqU_u0wV-OE1B-u47AqngUvqbmC_ro,1553
+django_basicauth-0.3.dist-info/RECORD,,
+django_basicauth-0.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_basicauth-0.3.dist-info/metadata.json,sha256=rnhktC5imspxqwf896tY8l9fGdq1t673ID0BT619u0U,503
+django_basicauth-0.3.dist-info/top_level.txt,sha256=VjCHrft3mChFO_OXEW3m0GlkteavF0mtBZgyiD0XPjs,10
