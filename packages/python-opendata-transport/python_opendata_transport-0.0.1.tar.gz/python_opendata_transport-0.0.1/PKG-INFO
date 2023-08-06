@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: python_opendata_transport
+Version: 0.0.1
+Summary: Python API for interacting with transport.opendata.ch.
+Home-page: https://github.com/fabaff/python-opendata-transport
+Author: Fabian Affolter
+Author-email: fabian@affolter-engineering.ch
+License: MIT
+Download-URL: https://github.com/fabaff/python-opendata-transport/releases
+Description: UNKNOWN
+Platform: UNKNOWN
