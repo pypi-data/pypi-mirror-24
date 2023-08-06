@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+configutator/__init__.py
+configutator/extraTypes.py
+configutator/tator.py
+configutator/valitator.py
+configutator.egg-info/PKG-INFO
+configutator.egg-info/SOURCES.txt
+configutator.egg-info/dependency_links.txt
+configutator.egg-info/requires.txt
+configutator.egg-info/top_level.txt
