@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+kfront/__init__.py
+kfront.egg-info/PKG-INFO
+kfront.egg-info/SOURCES.txt
+kfront.egg-info/dependency_links.txt
+kfront.egg-info/requires.txt
+kfront.egg-info/top_level.txt
