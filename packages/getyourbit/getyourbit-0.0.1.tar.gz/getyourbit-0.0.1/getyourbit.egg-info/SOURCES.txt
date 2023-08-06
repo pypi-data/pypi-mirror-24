@@ -1,0 +1,8 @@
+setup.py
+getyourbit/__init__.py
+getyourbit/api.py
+getyourbit.egg-info/PKG-INFO
+getyourbit.egg-info/SOURCES.txt
+getyourbit.egg-info/dependency_links.txt
+getyourbit.egg-info/requires.txt
+getyourbit.egg-info/top_level.txt
