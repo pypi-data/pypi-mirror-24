@@ -1,0 +1,9 @@
+gap_stat-1.0.dist-info/DESCRIPTION.rst,sha256=tPtK1qxPwMawQESy1NzAKdOp63gEYoBt0fMunhqr82g,86
+gap_stat-1.0.dist-info/METADATA,sha256=p88-kmCggNOBtV4yEflLgKOxBC2fOUFpoloZYkotqL0,562
+gap_stat-1.0.dist-info/RECORD,,
+gap_stat-1.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+gap_stat-1.0.dist-info/metadata.json,sha256=85HKlRgTKFdINC1757-FMh4SOmOshCuw9WyfIJVEXHg,737
+gap_stat-1.0.dist-info/top_level.txt,sha256=vyzCrgnXjw3vE2IEDCQyUd6_0lvz8V5kEfPnvncNv24,14
+gap_stat-1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+gap_statistic/__init__.py,sha256=66zstEZvhOgysnwwIhZjUP7_HiUI6m8Baj9sBhb98qE,45
+gap_statistic/optimalK.py,sha256=L24DOBnsQZFBpNAruM2g-uEqOj7qX3ZxZSwWfWRt75Q,7699
