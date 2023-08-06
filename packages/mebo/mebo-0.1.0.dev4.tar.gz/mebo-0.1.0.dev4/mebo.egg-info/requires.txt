@@ -1,0 +1,11 @@
+requests
+
+[development]
+ipython
+ipdb
+
+[testing]
+pytest
+pytest-cov
+coverage
+python-coveralls
