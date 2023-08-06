@@ -1,0 +1,12 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+midware/__init__.py
+midware/core.py
+midware.egg-info/PKG-INFO
+midware.egg-info/SOURCES.txt
+midware.egg-info/dependency_links.txt
+midware.egg-info/top_level.txt
