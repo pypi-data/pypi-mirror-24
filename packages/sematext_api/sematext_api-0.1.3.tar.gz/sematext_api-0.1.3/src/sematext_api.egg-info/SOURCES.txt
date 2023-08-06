@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+src/sematext/__init__.py
+src/sematext/base.py
+src/sematext_api.egg-info/PKG-INFO
+src/sematext_api.egg-info/SOURCES.txt
+src/sematext_api.egg-info/dependency_links.txt
+src/sematext_api.egg-info/not-zip-safe
+src/sematext_api.egg-info/requires.txt
+src/sematext_api.egg-info/top_level.txt
