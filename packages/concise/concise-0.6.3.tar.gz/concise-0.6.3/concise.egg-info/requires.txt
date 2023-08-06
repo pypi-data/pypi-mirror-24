@@ -1,0 +1,10 @@
+numpy
+pandas
+scipy
+scikit-learn>=0.18
+matplotlib
+tensorflow
+keras>=2.0.4
+hyperopt
+descartes
+shapely
