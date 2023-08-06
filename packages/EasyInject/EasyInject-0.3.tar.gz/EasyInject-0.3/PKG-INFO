@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: EasyInject
+Version: 0.3
+Summary: A pythonic, reflection driven, dependency injection container
+Home-page: https://github.com/delvelabs/easyinject
+Author: Delve Labs inc.
+Author-email: info@delvelabs.ca
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
