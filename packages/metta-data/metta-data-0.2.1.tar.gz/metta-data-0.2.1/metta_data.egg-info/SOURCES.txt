@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+metta/__init__.py
+metta/datafiles.py
+metta/metta_io.py
+metta/upload_s3.py
+metta_data.egg-info/PKG-INFO
+metta_data.egg-info/SOURCES.txt
+metta_data.egg-info/dependency_links.txt
+metta_data.egg-info/not-zip-safe
+metta_data.egg-info/requires.txt
+metta_data.egg-info/top_level.txt
