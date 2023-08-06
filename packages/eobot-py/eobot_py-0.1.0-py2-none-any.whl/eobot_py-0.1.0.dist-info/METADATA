@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: eobot-py
+Version: 0.1.0
+Summary: Eobot API wrapper
+Home-page: http://github.com/rickdenhaan/eobot-py
+Author: Rick den Haan
+Author-email: rick@capirussa.nl
+License: Freeware
+Keywords: eobot eobot.com api
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Freeware
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: requests
+
+This module allows you to easily access the Eobot API
+
+
