@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: duckhunt
+Version: 0.1
+Summary: Library to  frozen class attribute and check types
+Home-page: https://vinmar@bitbucket.org/vinmar/duckhunt.git
+Author: Vincenzo Marafioti
+Author-email: enzo.mar@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: bom,class,setter,getter
+Platform: UNKNOWN
