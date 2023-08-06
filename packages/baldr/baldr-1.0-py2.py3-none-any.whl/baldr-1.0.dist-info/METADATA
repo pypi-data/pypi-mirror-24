@@ -1,0 +1,72 @@
+Metadata-Version: 2.0
+Name: baldr
+Version: 1.0
+Summary: Odin integration to Django
+Home-page: https://github.com/python-odin/baldr
+Author: Tim Savage
+Author-email: tim@savage.company
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: six
+Requires-Dist: odin (>=1.0)
+Requires-Dist: django (>=1.8)
+
+############################
+Odin integration with Django
+############################
+
+Includes mapping of Django Models to Odin resources, and RESTful API implementation for Django using Odin resources.
+
+.. image:: https://pypip.in/license/baldr/badge.png
+    :target: https://pypi.python.org/pypi/baldr/
+    :alt: License
+
+.. image:: https://pypip.in/v/baldr/badge.png
+    :target: https://pypi.python.org/pypi/baldr/
+
+.. image:: https://travis-ci.org/python-odin/baldr.png?branch=master
+    :target: https://travis-ci.org/python-odin/baldr
+    :alt: Travis CI Status
+
+.. image:: https://coveralls.io/repos/python-odin/baldr/badge.png?branch=master
+    :target: https://coveralls.io/github/python-odin/baldr?branch=master
+    :alt: Coveralls
+
+.. image:: https://requires.io/github/timsavage/baldr/requirements.png?branch=master
+    :target: https://requires.io/github/timsavage/baldr/requirements/?branch=master
+    :alt: Requirements Status
+
+
+Quick links
+*********** 
+
+* `Documentation <https://odin.readthedocs.org/en/development/integration/django>`_
+* `Project home <https://github.com/python-odin/baldr>`_
+* `Issue tracker <https://github.com/python-odin/baldr/issues>`_
+
+
+Requires
+********
+
+* six
+* odin >= 1.0+
+* django >= 1.8+
+
+
+
