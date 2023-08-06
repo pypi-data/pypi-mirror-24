@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: gurka-toolkits
+Version: 0.1
+Summary: Contains a set of helper kits that can help you for development.
+Home-page: http://github.com/yanwarsolah/gurka_toolkits
+Author: Yanwar Solahudin
+Author-email: yanwarsolah@gmail.com
+License: MIT
+Description: Gurka Toolkits
+        --------------
+        
+        To use (with caution), simply do::
+        
+            >>> from gurka import toolkits
+            >>>
+            >>> # Example rupiah formating
+            >>> money_idn = 45000
+            >>> toolkits.to_rupiah(money_idn)
+            'Rp. 45,000.00'
+            >>>
+            >>> # Example using autonumber
+            >>> toolkits.DEFAULT_PREFIX = "PRD" # PRD is a prefix code for product. 
+            >>> toolkits.DEFAULT_OVERFLOW = 3 # Total digit autonumber
+            >>> 
+            >>> toolkits.autonumber()
+            'PRD001'
+            >>>
+            >>> toolkits.autonumber(data=_)
+            'PRD002'
+            >>> toolkits.autonumber(data=_)
+            'PRD003'
+            >>> toolkits.autonumber(data=_)
+            'PRD004'
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries

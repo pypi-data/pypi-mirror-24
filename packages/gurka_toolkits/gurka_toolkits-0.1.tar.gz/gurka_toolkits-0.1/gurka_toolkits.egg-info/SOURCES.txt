@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+gurka/__init__.py
+gurka/toolkits.py
+gurka_toolkits.egg-info/PKG-INFO
+gurka_toolkits.egg-info/SOURCES.txt
+gurka_toolkits.egg-info/dependency_links.txt
+gurka_toolkits.egg-info/not-zip-safe
+gurka_toolkits.egg-info/top_level.txt
