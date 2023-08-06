@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: python-zeppelin
+Version: 1.5.1
+Summary: Converts Zeppelin JSON files to Markdown. Executes Zeppelin notebooks in command line.
+Home-page: https://github.com/comloo/python-zeppelin
+Author: Wendy Fu
+Author-email: wfu@mozilla.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: zeppelin notebook converter markdown executor api
+Platform: UNKNOWN
