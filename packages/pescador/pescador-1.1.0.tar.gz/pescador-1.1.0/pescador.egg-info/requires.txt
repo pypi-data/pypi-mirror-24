@@ -1,0 +1,12 @@
+joblib>=0.9
+six
+pyzmq
+numpy
+decorator
+
+[docs]
+numpydoc
+sphinx-gallery
+
+[tests]
+pytest-timeout
