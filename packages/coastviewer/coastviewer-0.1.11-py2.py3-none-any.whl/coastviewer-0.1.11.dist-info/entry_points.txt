@@ -1,0 +1,3 @@
+[console_scripts]
+coastviewer = coastviewer.cli:main
+
