@@ -1,0 +1,9 @@
+arrow>=0.7.0
+Flask>=0.11
+invenio-files-rest>=1.0.0a16
+invenio-queues>=1.0.0a1
+invenio-records-ui>=1.0.0a9
+invenio-search>=1.0.0a10
+maxminddb-geolite2>=2017.0404
+python-geoip>=1.2
+robot-detection>=0.3
