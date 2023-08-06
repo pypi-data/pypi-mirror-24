@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+audiofilearranger/__init__.py
+audiofilearranger/audiofilearranger.py
+audiofilearranger.egg-info/PKG-INFO
+audiofilearranger.egg-info/SOURCES.txt
+audiofilearranger.egg-info/dependency_links.txt
+audiofilearranger.egg-info/entry_points.txt
+audiofilearranger.egg-info/requires.txt
+audiofilearranger.egg-info/top_level.txt
