@@ -1,0 +1,11 @@
+salesforce_bulk/__init__.py,sha256=LZXuIJzUthlA9q76j1Q9H4q9kPIZHt7Ol-63bIQ5sVc,179
+salesforce_bulk/bulk_states.py,sha256=Q4vyFHxSkuf1K63WTnuxM4QphT5US6wr2M0yj6A1H0k,158
+salesforce_bulk/csv_adapter.py,sha256=J39aKIBGyMnhQ_yYlcgiLayVedGrWYzHW0S_ozd-BgM,1240
+salesforce_bulk/salesforce_bulk.py,sha256=YBtCOA6wOLak-vWhNnU-8Dixrm2J3u_s5Qm0qlbiJ0Q,17280
+salesforce_bulk/util.py,sha256=ynj_v6Vity5j3urnbfYwYJw5PPU9whg1vl_fjlQlC8g,323
+salesforce_bulk-2.0.0.dev6.dist-info/DESCRIPTION.rst,sha256=IeMb50ZjIxCQdHoD8qoDnbRQDEA9x9CGSv8ZfhywgFY,6093
+salesforce_bulk-2.0.0.dev6.dist-info/METADATA,sha256=cQ8v-Q2ycmI0qTZ7TAMuLRCa3aTI9rwvnY2cxeKoL9w,6501
+salesforce_bulk-2.0.0.dev6.dist-info/metadata.json,sha256=yvrhXDfuZhJ-0Fp3i8ka2ew3-S3Lph-GS_FWda65CGo,612
+salesforce_bulk-2.0.0.dev6.dist-info/RECORD,,
+salesforce_bulk-2.0.0.dev6.dist-info/top_level.txt,sha256=DHeIVNKxIXzibVIrYbrh_ZQJJVhKyanAFJeaClMSVU8,16
+salesforce_bulk-2.0.0.dev6.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
