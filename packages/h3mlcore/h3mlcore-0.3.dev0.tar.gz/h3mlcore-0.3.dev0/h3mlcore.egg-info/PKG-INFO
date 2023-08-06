@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: h3mlcore
+Version: 0.3.dev0
+Summary: UNKNOWN
+Home-page: https://github.com/CognutSecurity/h3mlcore
+Author: Huang Xiao
+Author-email: xh0217@gmail.com
+License: Creative Commons license
+Description: # H3 Machine Learning Core Library
+        
+        ## Introduction 
+        
+        ## Dependencies 
+        
+        ## How to Install 
+        
+        ## Hello World Tutorial
+        
+        ## Authors and Copyright
+        
+        ## Acknowledge
+        
+        
+        
+Keywords: machine learning data mining
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
