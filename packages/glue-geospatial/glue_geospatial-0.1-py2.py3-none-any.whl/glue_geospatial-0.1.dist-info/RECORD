@@ -1,0 +1,13 @@
+glue_geospatial/__init__.py,sha256=vu6noOuh1gKMQYhfxiwzCO02TKLNez1s6QnwT8F3y5M,60
+glue_geospatial/coordinates.py,sha256=mEe-OhmuKxjDygArNq2eEtgk4Dsc3sLoLoSZVJVFIrE,5181
+glue_geospatial/data_factory.py,sha256=MKLwEcOlNlk7J_hlHN_3p09nLR8tGpU5-7j-DrjcOIY,1995
+glue_geospatial/version.py,sha256=Lgf9keBX7aG_JEFt6UYSyiFKcm-BYGtmk9ohpQhYpyk,20
+glue_geospatial/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glue_geospatial/tests/test_coordinates.py,sha256=RhZVbZilbsR8IBqrUIj_RBAZrCiPaZq1myU6_qEbcrY,941
+glue_geospatial-0.1.dist-info/DESCRIPTION.rst,sha256=QRib7HZWyPjzR4fsUOADcJ7L0wfHySBnLtDVzvZAFhY,1616
+glue_geospatial-0.1.dist-info/METADATA,sha256=GuWVTsEjcbDOj1WcsXCxK6Yq3Aqmd1DoypAxrfuqMVM,1960
+glue_geospatial-0.1.dist-info/RECORD,,
+glue_geospatial-0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+glue_geospatial-0.1.dist-info/entry_points.txt,sha256=a9TiJgFggqHK732d8I0rmYE2WK2KkgDaUZu_PnliqAM,54
+glue_geospatial-0.1.dist-info/metadata.json,sha256=8mcnaec6e5-_Xa2RRRrqzkvKQ-2_cMX9wmLMPJGanec,602
+glue_geospatial-0.1.dist-info/top_level.txt,sha256=XXk-LhftgniGDvi7S5pk9kFVbs63Wd1F7YJ67ByyFcg,16
