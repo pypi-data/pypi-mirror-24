@@ -1,0 +1,16 @@
+freshdesk/__init__.py,sha256=3KXfAcA5rzzQXMtfwpHphgbJNZdA0XWaW96kdWVSZJw,22
+freshdesk/api.py,sha256=RXpYDhpFjkUbRiEXYvh7Ds3QGRQ-BpGF8QHCOT18pHY,746
+freshdesk/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freshdesk/v1/api.py,sha256=AybNVbpkRXKJ-SGrA7pO2tDhWQ7cyPnHIv6IcDz0U5M,4668
+freshdesk/v1/models.py,sha256=SB2HiPU9RHKZ_zkDEIzop3IYOu8kV-p5-AkY7ts6YJM,2239
+freshdesk/v1/test.py,sha256=IvRwAeng-VJC2ChWiUwsJNUuGx5sOtr2ejoOLQX9-dQ,9720
+freshdesk/v2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freshdesk/v2/api.py,sha256=b47ahG1KP8AWus2CwvZj79-l5JT41J5IQJ18m8scmKI,7029
+freshdesk/v2/models.py,sha256=x0U_Byv2FUoCu8gvk194erw1UM8DSMw96P7VXg-M6qk,2540
+freshdesk/v2/test.py,sha256=GEpTlOhEhQ7JJXdVXNQF-MnA2akAHhHvAI2f74lD23k,13147
+python_freshdesk-1.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+python_freshdesk-1.0.1.dist-info/METADATA,sha256=WQGleknsqk_5UWwwXXGUOGfo22ntK0YJw1sLOJcPntw,307
+python_freshdesk-1.0.1.dist-info/RECORD,,
+python_freshdesk-1.0.1.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+python_freshdesk-1.0.1.dist-info/metadata.json,sha256=HxBixOHPRh7hkszLadFvb8QMI0aNxtk24kq0Gf7neX4,510
+python_freshdesk-1.0.1.dist-info/top_level.txt,sha256=Tx3RCVSDl1JAPbgYhhttla3Hmf_sU7rVRfMHIIvDWRk,10
