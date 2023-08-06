@@ -1,0 +1,8 @@
+setup.py
+friend/__init__.py
+friend/strings.py
+friend/utils.py
+friend.egg-info/PKG-INFO
+friend.egg-info/SOURCES.txt
+friend.egg-info/dependency_links.txt
+friend.egg-info/top_level.txt
