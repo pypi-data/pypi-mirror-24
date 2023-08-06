@@ -1,0 +1,12 @@
+example/__init__.py,sha256=Z2SbImNyv_c2GTyOgXUAHb9LUybu3UreCRZ1s3nWenE,563
+roll/__init__.py,sha256=qcO1QPxDTH5lORsF3cClC7rK5aBy1CgjN5880_ie0kk,8266
+roll/extensions.py,sha256=q4i9qog4A9GZBOqET8tfOcNR19wTXm8Q8wNZRxj2ylU,2181
+roll/testing.py,sha256=76l0NUkYwc5q1OJIULyWcn2tfs6jlunhVjkMT08bgk0,2620
+roll/worker.py,sha256=sDC_iykqy1MboV8JiFiwvAAqnm0jeNpk-LthmPUXoYc,1711
+roll-0.1.1.dist-info/DESCRIPTION.rst,sha256=u6Je-0lRlzTCezUkJglPv1RewGWYJcBvQKu89YSes9U,1033
+roll-0.1.1.dist-info/METADATA,sha256=oNy_21XnsEYxwXn3fIkbtk_OffPU0lgIStxGhwFN-0U,1806
+roll-0.1.1.dist-info/RECORD,,
+roll-0.1.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+roll-0.1.1.dist-info/entry_points.txt,sha256=jDvgkw1AEdV2Pijcl4UhXqZ1Cw3HGEsIH6aIIyrXDFQ,32
+roll-0.1.1.dist-info/metadata.json,sha256=3e8KTvvJFpkiAwyNR0-Eo6PeYBa7-rHhU0y4Gu3JQ1E,988
+roll-0.1.1.dist-info/top_level.txt,sha256=8DwtxsRPx1zBWDtCm9ostg6dT2yMEziLTAnFjb_ey1c,13
