@@ -1,0 +1,66 @@
+Metadata-Version: 2.0
+Name: s1acker
+Version: 0.1.1
+Summary: Search and download images from stage1st
+Home-page: https://github.com/quinoa42/s1acker
+Author: quinoa42
+Author-email: UNKNOWN
+License: MIT
+Keywords: crawler stage1st
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Requires-Dist: beautifulsoup4 (==4.6.0)
+Requires-Dist: lxml (==3.8.0)
+Requires-Dist: requests (==2.18.3)
+
+s1acker
+=======
+
+Search and download images from stage1st.
+
+example
+-------
+
+.. code:: bash
+
+    s1acker "喵片" -o "temp"
+
+Usage
+-----
+
+.. code:: bash
+
+    s1acker [-h] [-n UNAME] [-d] [-o DIR] [-v | -q] [--version]
+            SRCHTXT [SRCHTXT ...]
+
+See ``s1acker --help`` for details.
+
+Requirements
+------------
+
+``s1acker`` only support ``python3``, and is only tested under
+``python3.6``.
+
+Installation
+------------
+
+.. code:: bash
+
+    pip install s1acker
+
+Note that ``s1acker`` is not available on pypi yet.
+
+Or, for development,
+
+.. code:: bash
+
+    git clone https://github.com/quinoa42/s1acker.git
+    cd s1acker
+    pip install -e .
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+s1acker = s1acker.cli:main
+
