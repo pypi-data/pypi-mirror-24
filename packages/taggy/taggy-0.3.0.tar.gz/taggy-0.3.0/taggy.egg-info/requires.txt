@@ -1,0 +1,12 @@
+crayons
+
+[dev]
+flake8
+isort
+mypy
+pytest
+pytest-cov
+
+[test]
+pytest
+pytest-cov

@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+taggy/__init__.py
+taggy/cli.py
+taggy/prompts.py
+taggy/semver.py
+taggy.egg-info/PKG-INFO
+taggy.egg-info/SOURCES.txt
+taggy.egg-info/dependency_links.txt
+taggy.egg-info/entry_points.txt
+taggy.egg-info/requires.txt
+taggy.egg-info/top_level.txt

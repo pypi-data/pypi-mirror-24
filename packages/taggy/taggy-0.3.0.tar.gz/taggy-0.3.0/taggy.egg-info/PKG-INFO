@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: taggy
+Version: 0.3.0
+Summary: Command line utility to help create SemVer tags.
+Home-page: https://github.com/Jackevansevo/taggy
+Author: Jack Evans
+Author-email: jack@evans.gb.net
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.4
