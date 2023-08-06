@@ -1,0 +1,11 @@
+README.rst
+setup.py
+tests/__init__.py
+uber/__init__.py
+uber/__main__.py
+uber/cli.py
+uber.egg-info/PKG-INFO
+uber.egg-info/SOURCES.txt
+uber.egg-info/dependency_links.txt
+uber.egg-info/entry_points.txt
+uber.egg-info/top_level.txt
