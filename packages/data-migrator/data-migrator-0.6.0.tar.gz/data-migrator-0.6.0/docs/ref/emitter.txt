@@ -1,0 +1,25 @@
+=======================
+Emitter class reference
+=======================
+
+.. currentmodule:: data_migrator.emitters
+
+.. automodule::  data_migrator.emitters
+
+
+MySQLEmitter
+============
+.. autoclass::  data_migrator.emitters.mysql.MySQLEmitter
+  :members:
+
+
+CSVEmitter
+==========
+.. autoclass::  data_migrator.emitters.csv.CSVEmitter
+  :members:
+
+
+BaseEmitter
+===========
+.. autoclass::  data_migrator.emitters.base.BaseEmitter
+   :members:
