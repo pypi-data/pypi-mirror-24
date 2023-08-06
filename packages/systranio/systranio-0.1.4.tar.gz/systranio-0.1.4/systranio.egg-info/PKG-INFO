@@ -1,0 +1,126 @@
+Metadata-Version: 1.1
+Name: systranio
+Version: 0.1.4
+Summary: A simple REST API client for Systran.io
+Home-page: https://github.com/canarduck/systran-translation-client
+Author: Canarduck
+Author-email: renaud@canarduck.com
+License: UNKNOWN
+Description: Systran Translation Client
+        ==========================
+        
+        |pipeline status| |coverage report|
+        
+        An unofficial python client to Systran.io APIs, `official
+        libraries <https://github.com/SYSTRAN/translation-api-python-client>`__
+        are also available. I am *not* affiliated with Systran *at all*.
+        
+        Setup & Installation
+        --------------------
+        
+        *TODO*
+        
+        ::
+        
+            pip install systranio
+        
+        Register & get an API key on
+        `systran.io <https://platform.systran.net>`__
+        
+        APIs
+        ----
+        
+        Translation
+        ~~~~~~~~~~~
+        
+        *Status* : WIP *Reference* : `Translation
+        API <https://platform.systran.net/reference/translation>`__ *Calls* :
+        
+        -  [x] Translate text
+        -  [ ] Translate file
+        -  [ ] Get translation status
+        -  [ ] Cancel translation
+        -  [ ] Get translation result
+        -  [ ] Create batch
+        -  [ ] Get batch status
+        -  [ ] Cancel batch
+        -  [ ] Close batch
+        -  [x] Supported languages
+        -  [ ] Supported formats
+        -  [x] Get API version
+        -  [x] List profiles
+        
+        *Usage* :
+        
+        ::
+        
+            import systranio
+        
+            translation = systranio.Translation(API_KEY)
+            options = {'source': 'en' } 
+            result = translation.text('translation', 'fr', **options)
+            print(result)  # traduction
+        
+        Natural Language Processing
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        Status : *not implemented*
+        
+        Ressource Management
+        ~~~~~~~~~~~~~~~~~~~~
+        
+        Status : *not implemented*
+        
+        Multimodal Text Extraction
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        Status : *not implemented*
+        
+        Development
+        -----------
+        
+        Requirements
+        ~~~~~~~~~~~~
+        
+        ::
+        
+            pip install -r requirements.txt
+            pip install -r dev-requirements.txt
+        
+        Workflow
+        ~~~~~~~~
+        
+        `post-commit <post-commit>`__ & `pre-commit <pre-commit>`__ hooks are
+        available to automate an update of the `CHANGELOG.md <CHANGELOG.md>`__
+        after a commit. ``cp *-commit .git/hooks/`` to activate them.
+        
+        `bumpversion <https://github.com/peritus/bumpversion>`__ automates the
+        version number update in `setup.py <setup.py>`__ and a git tag creation
+        Usage : ``bumpversion major|minor|patch`` (respectively increments
+        version number x.y.z)
+        
+        Tests are launched on a ``git push`` by gitlab-ci (see
+        `.gitlab-ci.yml <.gitlab-ci.yml>`__), an environnemental variable called
+        ``SYSTRANIO_KEY`` containing your API key is required.
+        
+        Successful tag builds are uploaded to
+        `pypi <https://pypi.python.org/pypi/systranio>`__ by gitlab-ci, 2
+        environnemental variables are required ``PYPI_USER`` & ``PYPI_PASSWORD``
+        
+        TODO: \* automate docs generation after a successful build
+        
+        .. |pipeline status| image:: https://gitlab.com/canarduck/systranio/badges/master/pipeline.svg
+           :target: https://gitlab.com/canarduck/systranio/commits/master
+        .. |coverage report| image:: https://gitlab.com/canarduck/systranio/badges/master/coverage.svg
+           :target: https://gitlab.com/canarduck/systranio/commits/master
+        
+Keywords: Systran,Rest Translation API
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
