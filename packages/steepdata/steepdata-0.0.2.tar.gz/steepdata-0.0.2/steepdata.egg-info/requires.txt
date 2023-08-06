@@ -1,0 +1,13 @@
+steep-steem
+pymongo
+python-dateutil
+requests
+funcy
+werkzeug
+toolz
+
+[dev]
+check-manifest
+
+[test]
+coverage
