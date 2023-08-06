@@ -1,0 +1,12 @@
+MANIFEST.in
+README
+setup.cfg
+setup.py
+sci2pdf/__init__.py
+sci2pdf/libgen.py
+sci2pdf.egg-info/PKG-INFO
+sci2pdf.egg-info/SOURCES.txt
+sci2pdf.egg-info/dependency_links.txt
+sci2pdf.egg-info/requires.txt
+sci2pdf.egg-info/top_level.txt
+sci2pdf/bin/sci2pdf
