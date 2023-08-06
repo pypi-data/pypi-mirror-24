@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+kb_transaction/__init__.py
+kb_transaction/crawler.py
+kb_transaction.egg-info/PKG-INFO
+kb_transaction.egg-info/SOURCES.txt
+kb_transaction.egg-info/dependency_links.txt
+kb_transaction.egg-info/not-zip-safe
+kb_transaction.egg-info/top_level.txt
