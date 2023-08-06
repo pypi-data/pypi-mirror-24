@@ -1,0 +1,8 @@
+setup.py
+mg_thumbor.egg-info/PKG-INFO
+mg_thumbor.egg-info/SOURCES.txt
+mg_thumbor.egg-info/dependency_links.txt
+mg_thumbor.egg-info/not-zip-safe
+mg_thumbor.egg-info/requires.txt
+mg_thumbor.egg-info/top_level.txt
+mg_thumbor/filters/clip.py
