@@ -1,0 +1,13 @@
+LICENCE
+MANIFEST.in
+README.rst
+setup.py
+django_jsonlistedit/__init__.py
+django_jsonlistedit.egg-info/PKG-INFO
+django_jsonlistedit.egg-info/SOURCES.txt
+django_jsonlistedit.egg-info/dependency_links.txt
+django_jsonlistedit.egg-info/requires.txt
+django_jsonlistedit.egg-info/top_level.txt
+django_jsonlistedit/static/jsonlistedit/jsonlistedit.css
+django_jsonlistedit/static/jsonlistedit/jsonlistedit.js
+django_jsonlistedit/templates/jsonlisteditwidget.html
