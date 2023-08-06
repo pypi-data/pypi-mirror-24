@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+flask_dynamo_session/__init__.py
+flask_dynamo_session/__version__.py
+flask_dynamo_session.egg-info/PKG-INFO
+flask_dynamo_session.egg-info/SOURCES.txt
+flask_dynamo_session.egg-info/dependency_links.txt
+flask_dynamo_session.egg-info/top_level.txt
