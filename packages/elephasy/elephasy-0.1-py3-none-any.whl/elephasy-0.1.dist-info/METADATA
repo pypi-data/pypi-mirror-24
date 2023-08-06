@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: elephasy
+Version: 0.1
+Summary: Deep learning on Spark with Keras
+Home-page: http://github.com/rsrpsinr/elephasy
+Author: Rsrp Sinr
+Author-email: rsrp.sinr@googlemail.com
+License: MIT
+Download-URL: https://github.com/rsrpsinr/elephasy/tarball/0.1
+Platform: UNKNOWN
+Requires-Dist: flask
+Requires-Dist: hyperas
+Requires-Dist: keras
+
+UNKNOWN
+
+
