@@ -1,0 +1,44 @@
+Metadata-Version: 1.1
+Name: flake8-class-newline
+Version: 1.2.0
+Summary: Flake8 lint for newline after class definitions.
+Home-page: UNKNOWN
+Author: Alexander van Eck
+Author-email: alex@x-all.nl
+License: MIT
+Description: Flake8 Extension to lint for a newline after a Class definition
+        ===========================================
+        
+        .. image:: https://travis-ci.org/AlexvEck/flake8-class-newline.svg?branch=master
+            :target: https://travis-ci.org/AlexvEck/flake8-class-newline
+           :alt: Build Status
+        
+        Usage
+        -----
+        
+        If you are using flake8, you can install this package through pip.
+        
+        .. code:: shell
+        
+            pip install flake8-class-newline
+        
+        
+        Special Notice
+        -----
+        
+        This package was inspired by flake8-quotes created by @zheller.
+        Thanks for the inspiration!
+Keywords: flake8 lint class new line
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
