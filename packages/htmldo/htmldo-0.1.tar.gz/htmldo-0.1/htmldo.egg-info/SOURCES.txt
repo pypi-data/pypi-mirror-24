@@ -1,0 +1,8 @@
+htmldo
+setup.cfg
+setup.py
+htmldo.egg-info/PKG-INFO
+htmldo.egg-info/SOURCES.txt
+htmldo.egg-info/dependency_links.txt
+htmldo.egg-info/requires.txt
+htmldo.egg-info/top_level.txt
