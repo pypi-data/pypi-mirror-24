@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+poynt.egg-info/PKG-INFO
+poynt.egg-info/SOURCES.txt
+poynt.egg-info/dependency_links.txt
+poynt.egg-info/requires.txt
+poynt.egg-info/top_level.txt
