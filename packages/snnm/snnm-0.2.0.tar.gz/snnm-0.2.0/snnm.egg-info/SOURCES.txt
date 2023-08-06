@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+snnm.egg-info/PKG-INFO
+snnm.egg-info/SOURCES.txt
+snnm.egg-info/dependency_links.txt
+snnm.egg-info/entry_points.txt
+snnm.egg-info/top_level.txt
