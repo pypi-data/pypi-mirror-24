@@ -1,0 +1,45 @@
+from __future__ import unicode_literals
+
+import logging
+import requests
+from requests_toolbelt.adapters import appengine
+
+from drf_otp_permissions.headers import add_otp
+
+
+logger = logging.getLogger(__name__)
+
+appengine.monkeypatch()
+
+
+def get(url, headers, key_location):
+    headers_with_otp = add_otp({}, key_location, headers)
+
+    response = requests.put(url=url, headers=headers_with_otp)
+
+    logger.info(response.status_code)
+    logger.info(response.text)
+
+    return response
+
+
+def put(url, headers, key_location, data):
+    headers_with_otp = add_otp(data, key_location, headers)
+
+    response = requests.put(url=url, headers=headers_with_otp, data=data)
+
+    logger.info(response.status_code)
+    logger.info(response.text)
+
+    return response
+
+
+def post(url, headers, key_location, data):
+    headers_with_otp = add_otp(data, key_location, headers)
+
+    response = requests.post(url=url, headers=headers_with_otp, data=data)
+
+    logger.info(response.status_code)
+    logger.info(response.text)
+
+    return response
