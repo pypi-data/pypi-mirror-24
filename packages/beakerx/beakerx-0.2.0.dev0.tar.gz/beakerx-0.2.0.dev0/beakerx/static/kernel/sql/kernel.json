@@ -1,0 +1,8 @@
+{
+  "argv": [
+    "java", "-cp", "/Users/scottdraves/src/beakerx/beakerx/beakerx/static/kernel/base/lib/*:/Users/scottdraves/src/beakerx/beakerx/beakerx/static/kernel/sql/lib/*", "com.twosigma.beakerx.sql.kernel.SQL",  "{connection_file}"
+  ],
+  "display_name": "SQL",
+  "language": "SQL",
+  "env": { "PS1":"SQL>"}
+}
