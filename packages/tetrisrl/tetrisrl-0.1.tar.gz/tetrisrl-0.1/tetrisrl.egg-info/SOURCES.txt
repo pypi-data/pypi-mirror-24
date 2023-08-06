@@ -1,0 +1,6 @@
+setup.py
+tetrisrl.egg-info/PKG-INFO
+tetrisrl.egg-info/SOURCES.txt
+tetrisrl.egg-info/dependency_links.txt
+tetrisrl.egg-info/requires.txt
+tetrisrl.egg-info/top_level.txt
