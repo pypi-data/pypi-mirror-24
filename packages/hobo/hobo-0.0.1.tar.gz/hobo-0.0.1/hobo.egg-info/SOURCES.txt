@@ -1,0 +1,9 @@
+LICENSE.md
+MANIFEST.in
+README.txt
+hobo.py
+setup.py
+hobo.egg-info/PKG-INFO
+hobo.egg-info/SOURCES.txt
+hobo.egg-info/dependency_links.txt
+hobo.egg-info/top_level.txt
