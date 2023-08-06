@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: impulsare-config
+Version: 1.0b4
+Summary: A config reader (yaml) that validates config files content.
+Home-page: https://github.com/impulsare/config
+Author: Emmanuel Dyan
+Author-email: emmanuel@impulsare.io
+License: AGPLv3
+Download-URL: https://github.com/impulsare/config/tarball/1.0b4
+Description: A config reader, that validates a YAML config file and add default values if required.
+        
+        Extra values won't be verified, that any component / library defines its own config parameters
+        in a single configuration file without blocking other to do the same.
+Keywords: config,python,yaml
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
