@@ -1,0 +1,10 @@
+README.rst
+pyriform.py
+setup.cfg
+setup.py
+pyriform.egg-info/PKG-INFO
+pyriform.egg-info/SOURCES.txt
+pyriform.egg-info/dependency_links.txt
+pyriform.egg-info/namespace_packages.txt
+pyriform.egg-info/requires.txt
+pyriform.egg-info/top_level.txt
