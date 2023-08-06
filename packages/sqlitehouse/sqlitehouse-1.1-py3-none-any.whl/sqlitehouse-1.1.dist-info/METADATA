@@ -1,0 +1,13 @@
+Metadata-Version: 2.0
+Name: sqlitehouse
+Version: 1.1
+Summary: Simple library for reading/writing records in a SQLite database.
+Home-page: https://github.com/Tumthe3/SQLitehouse
+Author: Tumthe3
+Author-email: tumthe3@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+
+
