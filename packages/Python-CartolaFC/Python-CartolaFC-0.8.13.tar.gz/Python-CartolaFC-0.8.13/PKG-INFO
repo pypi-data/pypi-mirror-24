@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: Python-CartolaFC
+Version: 0.8.13
+Summary: Uma interface em Python para a API Rest do Cartola FC
+Home-page: https://github.com/vicenteneto/python-cartolafc
+Author: Vicente Neto
+Author-email: sneto.vicente@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: python,cartolafc,api
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
