@@ -1,0 +1,3 @@
+recursive-include canvas_science *.py
+include README.md
+include setup.cfg
