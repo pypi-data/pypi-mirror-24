@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: wlcg
+Version: 0.0.1
+Summary: TODO.
+Home-page: https://github.com/riga/wlcg
+Author: Marcel Rieger
+Author-email: python-wlcg@googlegroups.com
+License: MIT
+Description: Todo.
+        
+Keywords: WLCG,grid,LHC,job,submission
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology

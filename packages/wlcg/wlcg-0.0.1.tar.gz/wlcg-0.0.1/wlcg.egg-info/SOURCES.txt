@@ -1,0 +1,7 @@
+setup.py
+wlcg/__init__.py
+wlcg.egg-info/PKG-INFO
+wlcg.egg-info/SOURCES.txt
+wlcg.egg-info/dependency_links.txt
+wlcg.egg-info/not-zip-safe
+wlcg.egg-info/top_level.txt
