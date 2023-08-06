@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: hispadocs
+Version: 0.1.1
+Summary: Package description
+
+Home-page: https://github.com/Hispasec/hispadocs
+Author: Nekmo
+Author-email: joyague@hispasec.com
+License: UNKNOWN
+Download-URL: https://github.com/Hispasec/hispadocs/archive/master.zip
+Description: UNKNOWN
+Keywords: odt,docs,join,merge,template
+Platform: linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 2 :: Only
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Provides: hispadocs

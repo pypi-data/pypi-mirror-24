@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+hispadocs/__init__.py
+hispadocs/config.py
+hispadocs/management.py
+hispadocs/odt.py
+hispadocs/parser.py
+hispadocs/template.py
+hispadocs.egg-info/PKG-INFO
+hispadocs.egg-info/SOURCES.txt
+hispadocs.egg-info/dependency_links.txt
+hispadocs.egg-info/not-zip-safe
+hispadocs.egg-info/requires.txt
+hispadocs.egg-info/top_level.txt
+scripts/hispadocs
