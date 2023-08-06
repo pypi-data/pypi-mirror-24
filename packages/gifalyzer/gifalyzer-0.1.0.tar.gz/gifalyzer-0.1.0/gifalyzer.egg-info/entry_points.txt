@@ -1,0 +1,3 @@
+[console_scripts]
+gifalyzer = gifalyzer.__main__:main
+

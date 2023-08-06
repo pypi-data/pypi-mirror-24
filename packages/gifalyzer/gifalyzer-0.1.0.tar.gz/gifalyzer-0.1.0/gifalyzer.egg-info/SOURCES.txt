@@ -1,0 +1,13 @@
+README.md
+setup.py
+gifalyzer/__init__.py
+gifalyzer/__main__.py
+gifalyzer/_version.py
+gifalyzer/gif.py
+gifalyzer/util.py
+gifalyzer.egg-info/PKG-INFO
+gifalyzer.egg-info/SOURCES.txt
+gifalyzer.egg-info/dependency_links.txt
+gifalyzer.egg-info/entry_points.txt
+gifalyzer.egg-info/requires.txt
+gifalyzer.egg-info/top_level.txt

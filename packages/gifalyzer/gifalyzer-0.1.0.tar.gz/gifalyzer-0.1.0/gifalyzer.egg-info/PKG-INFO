@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: gifalyzer
+Version: 0.1.0
+Summary: GIF analysis tool
+Home-page: https://github.com/megacool/gifalyzer
+Author: Tarjei Husøy
+Author-email: git@thusoy.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Multimedia :: Graphics
