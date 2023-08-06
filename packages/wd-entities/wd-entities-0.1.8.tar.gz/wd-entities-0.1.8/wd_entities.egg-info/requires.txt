@@ -1,0 +1,6 @@
+flask
+Flask-Cache
+requests
+urllib3
+gunicorn
+futures
