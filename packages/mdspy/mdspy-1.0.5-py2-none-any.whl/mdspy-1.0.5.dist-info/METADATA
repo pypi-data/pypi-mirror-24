@@ -1,0 +1,34 @@
+Metadata-Version: 2.0
+Name: mdspy
+Version: 1.0.5
+Summary: Mnubo Data Science Library
+Home-page: UNKNOWN
+Author: mnubo, inc.
+Author-email: support@mnubo.com
+License: UNKNOWN
+Keywords: mnubo,iot,smartobjects
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Dist: matplotlib
+Requires-Dist: nose
+Requires-Dist: numpy (==1.13.1)
+Requires-Dist: numpydoc
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: setuptools
+Requires-Dist: smartobjects
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: statsmodels (==0.8.0)
+Requires-Dist: unittest2
+
+Mnubo Data Science Library
+==========================
+
+mnubo Python data-science library.
+
+
+
