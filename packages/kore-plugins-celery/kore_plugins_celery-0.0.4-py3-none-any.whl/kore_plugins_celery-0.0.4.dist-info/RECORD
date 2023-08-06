@@ -1,0 +1,10 @@
+kore_plugins_celery/__init__.py,sha256=Mr788uPjuwnGQXAn1cAUGpbtdqDFv6JgOnEZeLyX1HU,1374
+kore_plugins_celery/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kore_plugins_celery/plugins/celery.py,sha256=7uLTfj6CThwz0l9MyC6yVz65iiXu2hcQZONbJctpvMo,1744
+kore_plugins_celery-0.0.4.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+kore_plugins_celery-0.0.4.dist-info/METADATA,sha256=AyEBFyhGcJDS5H0-D7OssfszMeryZcPZqKrhZO8ZFJk,585
+kore_plugins_celery-0.0.4.dist-info/RECORD,,
+kore_plugins_celery-0.0.4.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+kore_plugins_celery-0.0.4.dist-info/entry_points.txt,sha256=ZpzGbx_bUdBMMqco4oV9IBHHthvbtYZqUlF7Hg04RHs,103
+kore_plugins_celery-0.0.4.dist-info/metadata.json,sha256=AJN0FYI1jcnNUBajtWFZ6KfIft6D39KUa87aofOEdlk,952
+kore_plugins_celery-0.0.4.dist-info/top_level.txt,sha256=nItvde2FMxkMb1LrLnh9qIKlsx5go-mMRWLD24RpqEA,20
