@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        get-checklist=ebird.pages.scripts.get_checklist:cli
+    

@@ -1,0 +1,3 @@
+include *.md *.txt *.py *.cfg
+recursive-include ebird *.py
+recursive-include tests *.py *.sh
