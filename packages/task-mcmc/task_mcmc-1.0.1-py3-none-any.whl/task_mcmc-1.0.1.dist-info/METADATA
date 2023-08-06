@@ -1,0 +1,27 @@
+Metadata-Version: 2.0
+Name: task-mcmc
+Version: 1.0.1
+Summary: Set of scripts for running pCN algorithm to solve a bayesian inverse problem using
+    the graph laplacian in place of the traditional sphereical laplacian
+Home-page: https://github.com/zkaplan15/trillos_alonso_mcmc
+Author: Zachary Kaplan, Brown Division of Applied Mathematics
+Author-email: zachary_kaplan@brown.edu
+License: MIT
+Keywords: MCMC graph laplacian pCN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Python: >=3
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: plotly
+Requires-Dist: scipy
+
+Set of scripts for running pCN algorithm to solve a bayesian inverse problem using
+the graph laplacian in place of the traditional sphereical laplacian
+

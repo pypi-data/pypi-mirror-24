@@ -1,0 +1,10 @@
+task_mcmc/__init__.py,sha256=LTpNLM4URnhK33TPa19vEtMPW2YTJ4tKendysqxBTUQ,62
+task_mcmc/runMCMC.py,sha256=OPhU1OBl51uHKuZNDXBU1U0SDLxy0cuRUMXtzSviPJw,2921
+task_mcmc/thabo_and_zach_work.py,sha256=CPGPckpcJQNM1qlMGGR2Nz8ACUPpdPZcIe2Yr4qruzU,16329
+task_mcmc-1.0.1.dist-info/DESCRIPTION.rst,sha256=b-kZle01sHyhsQFJJx5Qbiv4Vbz-9AJgeALFTE81dNo,153
+task_mcmc-1.0.1.dist-info/METADATA,sha256=NRXfwXY6WQF2SPGJR3U27u8eONTIETkzAARS4DRdG7Q,1027
+task_mcmc-1.0.1.dist-info/RECORD,,
+task_mcmc-1.0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+task_mcmc-1.0.1.dist-info/entry_points.txt,sha256=lexK7RzT1xMyCvalZCkEXUV_pXjWKxyNU2NGRfSYmuo,40
+task_mcmc-1.0.1.dist-info/metadata.json,sha256=d3t0IO0QkPWaundCaka8xevljs7SRS61WBl6WU3OpXg,1163
+task_mcmc-1.0.1.dist-info/top_level.txt,sha256=I2kRmTqDoI5z3IsgoUr8tFxJPeVaWcJCL1_juXjBqpg,10
