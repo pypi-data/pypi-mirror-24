@@ -1,0 +1,256 @@
+---
+swagger: "2.0"
+info:
+  description: "API for management logger by Flask"
+  version: "1.0.0"
+  title: "Management Logger for Flask"
+  contact:
+    name: "fraoustin@gmail.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "$host$"
+basePath: "$path$"
+schemes:
+- "http"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /login:
+    put:
+      tags:
+        - "authentification"
+      summary: "authentification user by  id/password"
+      description: "Return User if authentification"
+      operationId: "login"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "Authentification element id and password"
+          required: true
+          schema:
+            $ref: "#/definitions/authentification"
+      responses:
+        200:
+          description: "authentification valid"
+          schema:
+            $ref: "#/definitions/user"
+        401:
+          description: "authentification invalid"
+          schema:
+            $ref: '#/definitions/errorModel'
+  /logout:
+    get:
+      tags:
+        - "authentification"
+      summary: "logout user logged"
+      description: "logout if authentification"
+      operationId: "logout"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "logout valid"
+          schema:
+            $ref: "#/definitions/user"
+        401:
+          description: "authentification invalid"
+          schema:
+            $ref: '#/definitions/errorModel'
+  /current:
+    get:
+      tags:
+        - "user"
+      summary: "current user logged"
+      description: "get current user if authentification"
+      operationId: "current"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "get current user"
+          schema:
+            $ref: "#/definitions/user"
+        401:
+          description: "authentification invalid"
+          schema:
+            $ref: '#/definitions/errorModel'
+  /user:
+    put:
+      tags:
+        - "user"
+      summary: "add user"
+      description: "Returns a user"
+      operationId: "add_user"
+      produces:
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "user object that needs to be created"
+          required: true
+          schema:
+            $ref: "#/definitions/newuser"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/user"
+        400:
+          description: "Invalid ID supplied"
+          schema:
+            $ref: '#/definitions/errorModel'
+        401:
+          description: "authentification invalid"
+          schema:
+            $ref: '#/definitions/errorModel'
+  /user/{userId}:
+    get:
+      tags:
+        - "user"
+      summary: "Find user by ID"
+      description: "Returns a user"
+      operationId: "get_user"
+      produces:
+        - "application/json"
+      parameters:
+        - name: "userId"
+          in: "path"
+          description: "ID of user that needs to be fetched"
+          required: true
+          type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/user"
+        400:
+          description: "Invalid ID supplied"
+          schema:
+            $ref: '#/definitions/errorModel'
+        401:
+          description: "authentification invalid"
+          schema:
+            $ref: '#/definitions/errorModel'
+    put:
+      tags:
+        - "user"
+      summary: "update user"
+      description: "Returns a user"
+      operationId: "set_user"
+      produces:
+        - "application/json"
+      parameters:
+        - name: "userId"
+          in: "path"
+          description: "ID of user that needs to be fetched"
+          required: true
+          type: "string"
+        - in: "body"
+          name: "body"
+          description: "user object that needs to be updated"
+          required: true
+          schema:
+            $ref: "#/definitions/user"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/user"
+        400:
+          description: "Invalid ID supplied"
+          schema:
+            $ref: '#/definitions/errorModel'
+        401:
+          description: "authentification invalid"
+          schema:
+            $ref: '#/definitions/errorModel'
+        405:
+          description: "invalid input"
+          schema:
+            $ref: '#/definitions/errorModel'
+
+
+definitions:
+  group:
+    properties:
+      lib:
+        type: "string"
+  property:
+    properties:
+      id:
+        type: "string"
+      lib:
+        type: "string"
+  authentification:
+    type: object
+    required:
+      - id
+      - password
+    properties:
+      id:
+        type: "string"
+        description: "id of user"
+      password:
+        type: "string"
+        description: "password of logger"
+  user:
+    type: object
+    required:
+      - id
+    properties:
+      id:
+        type: "string"
+        description: "id of user"
+      active:
+        type: "boolean"
+        description: "state of user"
+      groups:
+        type: "array"
+        items:
+          $ref: '#/definitions/group'
+      propertys:
+        type: "array"
+        items:
+          $ref: '#/definitions/property'
+  newuser:
+    type: object
+    required:
+      - id
+      - password
+    properties:
+      id:
+        type: "string"
+        description: "id of user"
+      password:
+        type: "string"
+        description: "password of user"
+      active:
+        type: "boolean"
+        description: "state of user"
+      groups:
+        type: "array"
+        items:
+          $ref: '#/definitions/group'
+      propertys:
+        type: "array"
+        items:
+          $ref: '#/definitions/property'
+  errorModel:
+    type: object
+    properties:
+      status:
+        type: integer
+        format: int32
+      type:
+        type: string
+      title:
+        type: string
+      detail:
+        type: string
+      instance:
+        type: string       
