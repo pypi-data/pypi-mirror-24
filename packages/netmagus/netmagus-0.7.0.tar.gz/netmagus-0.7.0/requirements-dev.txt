@@ -1,0 +1,5 @@
+setuptools==34.3.3 # pyup: ignore
+pytest==3.2.1
+future==0.16.0
+autobahn-sync==0.3.2
+tox==2.7.0

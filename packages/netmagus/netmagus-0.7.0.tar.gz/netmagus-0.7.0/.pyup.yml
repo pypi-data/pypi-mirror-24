@@ -1,0 +1,6 @@
+update: insecure
+branch: develop
+assignees: rbcollins123
+requirements:
+  - requirements-dev.txt:
+      update: False
