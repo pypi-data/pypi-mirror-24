@@ -1,0 +1,12 @@
+include LICENSE
+include requirements.txt
+include README.rst
+include VERSION
+include pyedu/templates/*
+include pydeu/templates/admin/*
+include pyedu/templates/teacher/*
+include pyedu/templates/student/*
+include pyedu/static
+include migrations
+include supplementary
+include enc/*.enc

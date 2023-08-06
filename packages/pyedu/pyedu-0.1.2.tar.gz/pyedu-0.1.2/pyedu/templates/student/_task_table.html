@@ -1,0 +1,28 @@
+<table class="table table-striped">
+    <thead class="thead thead-inverse">
+        <tr><th>#</th><th>Task Name</th><th>Required</th><th>Is solved</th><th>Actions</th></tr>
+    </thead>
+    {% if not tasks %}
+        <tr class="table-warning"><td colspan="5" class="text-center"><strong>No tasks found</strong></td></tr>
+    {% else %}
+    {% for task in tasks %}
+        <tr>
+        <td>{{ task.seq }}</td>
+        <td>{{ task.name }}</td>
+        <td><span class="glyphicon glyphicon-{% if task.required %}ok{% else %}remove{% endif %}"></span></td>
+        {% if current_user.has_role('student') %}
+            {% if task.has_solved(current_user) %}{% set status = 'ok' %}<td class="table-success">{% else %}{% set status = 'remove' %}<td class="table-danger">{% endif %}
+            <span class="glyphicon glyphicon-{{ status }}"></span>
+            </td>
+        {% else %}
+            <td><i>no student</i></td>
+        {% endif %}
+        <td>
+            <a href="{{ url_for('stud.task_view', task_id=task.id) }}" title="view Task"><span class="glyphicon glyphicon-chevron-right text-success"></span></a>
+            {% if current_user.has_level(g.Level.TEACHER) %}<a href="{{ url_for('teach.task_edit', task_id=task.id) }}"><span class="glyphicon glyphicon-edit text-primary"></span></a>{% endif %}
+        </td>
+        </tr>
+    {% endfor %}
+    {% endif %}
+
+</table>

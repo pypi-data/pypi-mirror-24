@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block page_title %}Lessons{% endblock %}
+
+{% set active_page = 'lectures' -%}
+
+{% block page %}
+    <h1 class="page-header">Lessons</h1>
+    {% include 'students/_lesson_table.html' %}
+
+{% endblock %}

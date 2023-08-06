@@ -1,0 +1,86 @@
+{% extends 'index.html' %}
+
+{% block page_title %}{{ task.name }}{% endblock %}
+
+{% set active_page = 'lectures' -%}
+{% set previous_task = task.previous -%}
+{% set next_task = task.next -%}
+
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='codemirror/codemirror.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='view_task.css') }}">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+{% endblock %}
+
+{% block page %}
+    <h1 class="page-header">{{ task.name }}</h1>
+    <p class="pull-right">
+        {% if current_user.has_level(g.Level.TEACHER) %}
+            <a class="btn btn-success btn-sm" href="{{ url_for('teach.task_edit', task_id=task.id) }}"><span class="glyphicon glyphicon-edit"></span> edit</a>
+            &nbsp;
+        {% endif %}
+        <a class="btn btn-info btn-sm" href="{{ url_for('stud.lesson_view', lesson_id=task.lesson_id) }}"><span class="glyphicon glyphicon-chevron-up"></span> Lesson: {{ task.lesson.name }}</a>
+        &nbsp;|&nbsp;
+        <span class="label label-info">created: {{ moment(task.created).fromNow() }}</span>&nbsp;
+        <span class="label label-info">last edited: {{ moment(task.edited).fromNow() }}</span>
+    </p>
+
+{% endblock %}
+
+{% block mn_page %}
+    <form method="post" action="">
+    {{ form.hidden_tag() }}
+    {{ form.id() }}
+    <div class="row" id="header">
+        <div class="col col-md-7">
+            <h2 class="page-header">Your Solution</h2>
+        </div>
+        <div class="col col-md-4">
+            <h2 class="page-header">Description</h2>
+        </div>
+    </div>
+
+    <div class="row" id="main-editor">
+        <div class="col col-md-7" id="code">
+            {{ form.body(id='editor') }}
+        </div>
+        <div class="col col-md-4" id="description">
+            {{ task.description|safe }}
+        </div>
+    </div>
+    <div class="bottom-rule">
+    <p class="text-center">
+    {% if previous_task %}
+        <a class="btn btn-primary pull-left" href="{{ url_for('stud.task_view', task_id=previous_task.id) }}"><span class="glyphicon glyphicon-chevron-left"></span> Previous: {{ previous_task.name }}</a>
+    {% endif %}
+    {{ form.submit(class="btn btn-success btn-lg") }}
+    {% if next_task %}
+        <a class="btn btn-primary pull-right" href="{{ url_for('stud.task_view', task_id=next_task.id) }}"><span class="glyphicon glyphicon-chevron-right"></span> Next: {{ next_task.name }}</a>
+    {% endif %}
+    </p>
+    </div>
+    </form>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="{{ url_for('static', filename='codemirror/codemirror.min.js') }}"></script>
+<script src="{{ url_for('static', filename='codemirror/python.min.js') }}"></script>
+<script>
+$(document).ready(function(){
+    myCodeMirror = CodeMirror.fromTextArea(document.getElementById('editor'), {
+        'mode':'python',
+        'lineNumbers': true
+    });
+})
+</script>
+{% endblock %}

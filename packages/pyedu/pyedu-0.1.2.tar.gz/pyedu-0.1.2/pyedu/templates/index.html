@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block page_title %}Home{% endblock %}
+
+{% block page %}
+<div class="jumbotron">
+    <h1><strong>Py</strong>thon <strong>Edu</strong>cational Suite</h1>
+    <p class="text-justify">Welcome to PyEdu. You can use this application to solve the exercises of the Python 1 and 2
+        lectures hold by the chair of remote sensing and landscape informations systems at the Albert-Ludwigs University
+        of Freiburg.
+        In case there are any questions about this application, ask Mirko Mälicke, in case you have any questions
+        concerning the content, contact the instructors Joao Paulo Pereira or Mirko Mälicke.</p>
+    <p>
+    {% if not current_user.is_authenticated %}
+    <a class="btn btn-success btn-lg" role="button" href="{{ url_for('main.login') }}">Login</a>
+    {% endif %}
+    </p>
+    {% if continue_task %}
+    <a class="btn btn-primary btn-lg" role="button" href="{{ url_for('stud.task_view', task_id=continue_task.id) }}">Continue: {{ continue_task.name }}</a>
+    {% endif %}
+</div>
+
+<div class="alert alert-info">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    This application is still under active development. Please report any issue or bug you find on the project
+    <a href="https://github.com/mmaelicke/pyedu/issues" target="_blank">github issue page </a>. In urgent cases contact one of the
+    lecture instructors additionally.
+</div>
+
+
+<div class="row">
+        <div class="col col-md-8">
+            <h1 class="page-header">{% if current_user.is_authenticated %}<a href="{{ url_for('stud.lecture_view_all') }}">Lectures</a>{% else %}Lectures{% endif %}</h1>
+            {% include 'student/_lecture_table.html' %}
+        </div>
+        <div class="col col-md-4">
+            <h1 class="page-header">Environment</h1>
+            <div class="thumbnail">
+            <table class="table table-responsive table-striped">
+                <tr><th>Package</th><th>Required</th><th>Installed</th><th></th></tr>
+                {% for name, info in sysinfo.items() %}
+                <tr>
+                    <td>{{ name }}</td>
+                    <td>{{ info[1] }}</td>
+                    <td>{{ info[0] }}</td>
+                    <td><span class="glyphicon glyphicon-{{ info[2] }}"></span></td>
+                </tr>
+                {% endfor %}
+            </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

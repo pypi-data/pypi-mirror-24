@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+
+{% block page_title %}Lecture{% endblock %}
+
+{% set active_page = 'lectures' -%}
+
+{% if not lessons %}
+    {% set lessons = lecture.lessons|default(None) -%}
+{% endif %}
+
+{% block page %}
+    <div class="jumbotron">
+        <h1>{{ lecture.name }}</h1>
+        <p class="text-justify">{{ lecture.description }}</p>
+        <p class="pull-right">
+            {% if current_user.has_level(g.Level.TEACHER) %}
+            <a class="btn btn-success btn-sm" href="{{ url_for('teach.lecture_edit', lecture_id=lecture.id) }}"><span class="glyphicon glyphicon-edit"></span> edit</a>
+            <a class="btn btn-success btn-sm" href="{{ url_for('teach.lesson_edit', lecture_id=lecture.id) }}"><span class="glyphicon glyphicon-plus"></span> add Lesson</a>
+            {% endif %}
+            {% if not current_user.is_enrolled(lecture) %}
+            <a class="btn btn-success btn-sm" href="{{ url_for('stud.enroll', student_id=current_user.id, lecture_id=lecture.id) }}"><span class="glyphicon glyphicon-ok-circle"></span> enroll</a>
+            {% endif %}
+                &nbsp;|&nbsp;
+            <span class="label label-success"><span class="badge">{{ lecture.enrollments }}</span> enrollments</span>
+            <span class="label label-info">created: {{ moment(lecture.created).fromNow() }}</span>&nbsp;
+            <span class="label label-info">last edited: {{ moment(lecture.edited).fromNow() }}</span>
+        </p>
+    </div>
+    <h1 class="page-header">Lessons</h1>
+    {% include 'student/_lesson_table.html' %}
+{% endblock %}

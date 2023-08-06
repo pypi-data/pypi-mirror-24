@@ -1,0 +1,10 @@
+flask>=0.11
+flask-moment
+flask-bootstrap
+flask-script
+flask-wtf
+flask-login
+flask-migrate
+pycrypto
+dill>=0.2
+pandas

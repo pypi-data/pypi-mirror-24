@@ -1,0 +1,95 @@
+{% extends 'index.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block page_header %}Edit Task{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='codemirror/codemirror.min.css') }}">
+    <style>
+    .row {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .row textarea, .row .CodeMirror {
+        height: 350px;
+    }
+    .CodeMirror {
+        background-color: #f3feb5;
+    }
+
+
+    </style>
+{% endblock %}
+
+{% block page %}
+<h1 class="page-header">{% if form.id.data %}Edit {{ form.name.data }}{% else %}Add Task{% endif %} </h1>
+{% endblock %}
+
+
+{% block mn_page %}
+<form action="" method="POST" class="form" role="form">
+{{ form.id() }}
+{{ form.lesson_id() }}
+{{ form.hidden_tag() }}
+<div class="form-group container">
+    {{ form.name.label }}
+    {{ form.name(class='form-control') }}
+</div>
+<div class="form-group container">
+    {{ form.seq.label }}
+    {{ form.seq(class='form-control') }}
+</div>
+<div class="container form-check-inline">
+    {{ form.required.label }}:{{ form.required(class='form-control') }}
+</div>
+
+<div class="row">
+    <div class="col col-md-12 col-lg-4">
+        <div class="form-group">
+            {{ form.description.label }}
+            {{ form.description(class='form-control') }}
+        </div>
+    </div>
+    <div class="col col-md-6 col-lg-4">
+        <div class="form-group">
+            {{ form.body.label }}
+            {{ form.body(class='editor form-control', id='code') }}
+        </div>
+    </div>
+    <div class="col col-md-6 col-lg-4">
+        <div class="form-group">
+            {{ form.solution.label }}
+            {{ form.solution(class='editor form-control', id='solution') }}
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="text-center">
+    {{ form.submit(class='btn btn-success btn-lg') }}
+    <a class="btn btn-danger btn-lg" href="{{ url_for('stud.lesson_view', lesson_id=lesson_id) }}" style="margin-left: 20px;">abort</a>
+    </div>
+
+</div>
+</form>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.27.2/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.27.2/mode/python/python.min.js"></script>
+<script>
+$(document).ready(function(){
+    codeCodeMirror = CodeMirror.fromTextArea(document.getElementById('code'), {
+        'mode':'python',
+        'lineNumbers': true
+    });
+
+    solutionCodeMirror = CodeMirror.fromTextArea(document.getElementById('solution'), {
+        'mode': 'python',
+        'lineNumbers': true
+    });
+})
+</script>
+{% endblock %}
