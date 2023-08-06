@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: esst
+Version: 0.1.23
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: blinker
+Requires-Dist: certifi
+Requires-Dist: click
+Requires-Dist: discord.py
+Requires-Dist: emft (==0.5.1)
+Requires-Dist: everett
+Requires-Dist: github3.py (==1.0.0a4)
+Requires-Dist: humanize
+Requires-Dist: jinja2
+Requires-Dist: path.py
+Requires-Dist: pefile
+Requires-Dist: psutil
+Requires-Dist: pywinauto
+
+UNKNOWN
+
+
