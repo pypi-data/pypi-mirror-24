@@ -1,0 +1,6 @@
+setup.py
+hiq.egg-info/PKG-INFO
+hiq.egg-info/SOURCES.txt
+hiq.egg-info/dependency_links.txt
+hiq.egg-info/not-zip-safe
+hiq.egg-info/top_level.txt
