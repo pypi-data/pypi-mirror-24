@@ -1,0 +1,16 @@
+xaml/CHANGES,sha256=qVp5nwycIjpRZ4n6puRf0lH0pjyChgBFataI_iiHQVY,3350
+xaml/LICENSE,sha256=w4w68Tw-HOZud1-7GagG455sZHjwjcgW1IkkyFzO5dY,1362
+xaml/__init__.py,sha256=nVKLW8YMhynqAKJbyNS9XduXeSQgkPBsCW3Xtkz1eas,56751
+xaml/__main__.py,sha256=VoKxQvEUOZiRmUi-nOPQFiduXpKmia852XdxMrpTSu4,4991
+xaml/vim/synmenu.vim,sha256=kBkILAZistRTGc9b5y0kT89gnOlJBVEgNvRZagefjls,56
+xaml/vim/colors/desertleaf.vim,sha256=eRD5aAurPnWflv9FLDsTTeXTEiF4fAn2WdwXBOQ9P1w,3469
+xaml/vim/ftplugin/xaml.vim,sha256=XL7u_p_aCzQ0lfOVO3xlWQsglLlpXse6Mfhfy82H_Mo,1883
+xaml/vim/indent/xaml.vim,sha256=WlmIx3E_uR78_e36ApCuad9faafEdC2g5vU4wOa_2As,2196
+xaml/vim/syntax/xaml.vim,sha256=LEjlkIwGzlsl0nBBdpA7lAFbS4wJS-P8TkSsXAvYB90,6096
+xaml-0.6.1.dist-info/DESCRIPTION.rst,sha256=0jMBkt3H8kw47A2yYNjfYUNLezfI6Ga_ay7HkqbQMQc,1658
+xaml-0.6.1.dist-info/METADATA,sha256=KINwYIt5ATcNXY-no4o_TecWUDo4-a0jnOX3SZ6ziEE,2472
+xaml-0.6.1.dist-info/RECORD,,
+xaml-0.6.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+xaml-0.6.1.dist-info/entry_points.txt,sha256=_xKZ5qCxmmGmIgwCYPqjPTg6Z_VJlrYEM1wa5eIduFE,45
+xaml-0.6.1.dist-info/metadata.json,sha256=QHEbNcjWW-aS0w25ONOw_Yj0AmOR9-Aq5eKa9nniUvQ,1082
+xaml-0.6.1.dist-info/top_level.txt,sha256=ENWxwN9J-__wPW1JLtc0QDYod19qeiAUK0_XdbRvXXg,5
