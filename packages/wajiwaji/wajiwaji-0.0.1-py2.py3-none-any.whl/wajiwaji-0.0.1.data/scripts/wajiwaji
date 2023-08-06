@@ -1,0 +1,13 @@
+#!python
+# -*- coding:utf-8 -*-
+
+from wajiwaji import Hello
+
+
+def main():
+    waji = Hello()
+    waji.hello()
+
+
+if __name__ == '__main__':
+    main()
