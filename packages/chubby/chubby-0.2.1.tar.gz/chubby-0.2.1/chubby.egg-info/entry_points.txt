@@ -1,0 +1,3 @@
+[console_scripts]
+chubby = chubby.chubby:main
+
