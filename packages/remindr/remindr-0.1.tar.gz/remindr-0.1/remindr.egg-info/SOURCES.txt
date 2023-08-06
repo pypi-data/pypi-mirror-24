@@ -1,0 +1,16 @@
+setup.py
+remindr/__init__.py
+remindr/cfgparse.py
+remindr/cliparse.py
+remindr/formatnextmessage.py
+remindr/getlastblogentry.py
+remindr/main.py
+remindr/tootpost.py
+remindr/tweetpost.py
+remindr.egg-info/PKG-INFO
+remindr.egg-info/SOURCES.txt
+remindr.egg-info/dependency_links.txt
+remindr.egg-info/requires.txt
+remindr.egg-info/top_level.txt
+scripts/register_remindr_app
+scripts/remindr

@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: remindr
+Version: 0.1
+Summary: Automatically send toots/tweets to remind people about the last blog entries on social networks
+Home-page: https://gitlab.com/chaica/remindr
+Author: Carl Chenet
+Author-email: chaica@ohmytux.com
+License: GNU GPL v3
+Download-URL: https://gitlab.com/chaica/remindr
+Description: Automatically get data from a list and send messages to social networks to remind people about the most interesting blog posts you wrote
+Platform: UNKNOWN
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
