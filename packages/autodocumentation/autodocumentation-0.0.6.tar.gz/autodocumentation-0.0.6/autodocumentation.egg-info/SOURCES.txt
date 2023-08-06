@@ -1,0 +1,14 @@
+setup.py
+autodocumentation/__init__.py
+autodocumentation/compat.py
+autodocumentation/decorator.py
+autodocumentation/django_writer.py
+autodocumentation/doc_builder.py
+autodocumentation/flask_writer.py
+autodocumentation/function_writer.py
+autodocumentation/util.py
+autodocumentation.egg-info/PKG-INFO
+autodocumentation.egg-info/SOURCES.txt
+autodocumentation.egg-info/dependency_links.txt
+autodocumentation.egg-info/requires.txt
+autodocumentation.egg-info/top_level.txt
