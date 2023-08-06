@@ -1,0 +1,10 @@
+botocore
+cachetools
+elasticsearch
+elasticsearch-dsl
+futures
+json_lines
+requests
+scrapy
+six
+tqdm
