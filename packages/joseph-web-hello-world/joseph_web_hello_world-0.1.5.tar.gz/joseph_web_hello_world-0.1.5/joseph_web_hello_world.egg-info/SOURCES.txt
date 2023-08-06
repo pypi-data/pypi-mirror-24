@@ -1,0 +1,8 @@
+setup.py
+joseph_web/__init__.py
+joseph_web/handlers.py
+joseph_web_hello_world.egg-info/PKG-INFO
+joseph_web_hello_world.egg-info/SOURCES.txt
+joseph_web_hello_world.egg-info/dependency_links.txt
+joseph_web_hello_world.egg-info/entry_points.txt
+joseph_web_hello_world.egg-info/top_level.txt
