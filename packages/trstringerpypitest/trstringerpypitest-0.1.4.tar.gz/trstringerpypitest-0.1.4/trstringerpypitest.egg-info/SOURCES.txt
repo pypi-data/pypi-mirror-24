@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+trstringerpypitest/__init__.py
+trstringerpypitest/hello.py
+trstringerpypitest.egg-info/PKG-INFO
+trstringerpypitest.egg-info/SOURCES.txt
+trstringerpypitest.egg-info/dependency_links.txt
+trstringerpypitest.egg-info/requires.txt
+trstringerpypitest.egg-info/top_level.txt
