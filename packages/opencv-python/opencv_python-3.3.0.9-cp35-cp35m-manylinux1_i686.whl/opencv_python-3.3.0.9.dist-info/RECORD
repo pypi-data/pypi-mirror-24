@@ -1,0 +1,11 @@
+cv2/LICENSE-3RD-PARTY.txt,sha256=nAncv3-gHSJHBjj0S5kL3xC5dQFu0poeEz-RcKgH5cs,29080
+cv2/LICENSE.txt,sha256=2AAnmHOj6pwqmykleRELyYqrtsQP09y3HEpkKwuiyN8,1092
+cv2/cv2.cpython-35m-i386-linux-gnu.so,sha256=2LWcF0-wyYuPIKZf20S3jVmD7V1BjZ1JA8q4RNSCxQo,22099612
+cv2/__init__.py,sha256=rIlcsTAoP1DCaPI8-RlPAw7cH57aPK4Xj-XN3thPhJg,411
+cv2/.libs/libz-83853723.so.1.2.3,sha256=RXg6ZNFYfXk1W4MF8PFDsOI7JPjgObAM5e99g2BilFo,75576
+opencv_python-3.3.0.9.dist-info/DESCRIPTION.rst,sha256=uOzeX_JrFti7MLGJLtD1rxzdDrW4_UisvDoyOhB4odY,8585
+opencv_python-3.3.0.9.dist-info/METADATA,sha256=oipE0WTQkiEhb3QGGDfoTCxg7RC-fGUNwwHVSehNg8w,9669
+opencv_python-3.3.0.9.dist-info/RECORD,,
+opencv_python-3.3.0.9.dist-info/WHEEL,sha256=patwyJiHN5F9ug9T_xdCVSy3xi0JhuXnET_4ZqfZJXE,107
+opencv_python-3.3.0.9.dist-info/metadata.json,sha256=ofK8YuabbuWzHrY8yINulmnKz_cS39sDgDqi-5Gscos,1150
+opencv_python-3.3.0.9.dist-info/top_level.txt,sha256=SY8vrf_sYOg99OP9euhz7q36pPy_2VK5vbeEWXwwSoc,4
