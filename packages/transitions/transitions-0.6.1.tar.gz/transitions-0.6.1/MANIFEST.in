@@ -1,0 +1,11 @@
+include *.md
+include *.txt
+include .coveragerc
+include .pylintrc
+include .scrutinizer.yml
+include LICENSE
+include MANIFEST
+include tox.ini
+
+recursive-include examples *.ipynb
+recursive-include tests *.py
