@@ -1,0 +1,4 @@
+requests
+Willow
+reportlab
+svglib
