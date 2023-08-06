@@ -1,0 +1,2 @@
+exclude Makefile Makefile.in .hgignore _cgracio.so integracio.kdev4
+prune tests
