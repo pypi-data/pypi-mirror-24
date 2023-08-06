@@ -1,0 +1,36 @@
+Metadata-Version: 2.0
+Name: syntaxmaker
+Version: 1.0.3
+Summary: An NLG tool for Finnish
+Home-page: https://mikakalevi.com/nlp/syntax-maker/
+Author: Mika Hämäläinen, Dept. of  Modern Languages, University of Helsinki
+Author-email: mika.hamalainen@cs.helsinki.fi
+License: Apache License, Version 2.0
+Keywords: NLG Finnish
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing
+Classifier: Natural Language :: Finnish
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: hfst
+
+An NLG tool for Finnish
+=======================
+
+syntax_maker is a tool that creates syntactically correct Finnish sentences based on a hand written grammar and automatically learned information about the language.
+
+**NOTE 1:** This tool requires Omorfi, you can download the correct binary version from http://mikakalevi.com/omorfi
+
+**NOTE 2:** If you have any issues with installing HFST, see `an HSFT tutorial
+<https://mikalikes.men/using-hfst-on-python/>`_.
+
+===========================
+How to use
+===========================
+
+Start of by following this tutorial: https://github.com/DiscoveryGroup/syntaxmaker/wiki/Creating-a-sentence,-the-basics
+
+
