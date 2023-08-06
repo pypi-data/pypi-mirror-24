@@ -1,0 +1,11 @@
+setup.py
+dillinger/__init__.py
+dillinger/bandits.py
+dillinger/gaussian_process.py
+dillinger/kernel_functions.py
+dillinger/reward_generator.py
+dillinger.egg-info/PKG-INFO
+dillinger.egg-info/SOURCES.txt
+dillinger.egg-info/dependency_links.txt
+dillinger.egg-info/requires.txt
+dillinger.egg-info/top_level.txt
