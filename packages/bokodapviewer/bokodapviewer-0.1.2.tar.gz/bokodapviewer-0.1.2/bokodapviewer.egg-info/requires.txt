@@ -1,0 +1,5 @@
+numpy >= 1.13
+tornado == 4.5
+bokeh >= 0.12.6
+sodapclient >= 0.1.0
+bokcolmaps >= 0.3.0
