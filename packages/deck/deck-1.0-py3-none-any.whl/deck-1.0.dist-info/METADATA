@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: deck
+Version: 1.0
+Summary: Implementation of the deck collection type.
+Home-page: http://github.com/zooba/deck
+License: UNKNOWN
+Author: Steve Dower
+Author-email: steve.dower@python.org
+Requires-Python: >=3.6
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
