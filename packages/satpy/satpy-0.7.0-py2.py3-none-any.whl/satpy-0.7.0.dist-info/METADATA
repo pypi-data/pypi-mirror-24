@@ -1,0 +1,45 @@
+Metadata-Version: 2.0
+Name: satpy
+Version: 0.7.0
+Summary: Meteorological post processing package
+Home-page: https://github.com/pytroll/satpy
+Author: The Pytroll Team
+Author-email: pytroll@googlegroups.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: numpy (>=1.4.1)
+Requires-Dist: pillow
+Requires-Dist: pykdtree
+Requires-Dist: pyresample (>=1.4.0)
+Requires-Dist: pyyaml
+Requires-Dist: six
+Requires-Dist: trollimage
+Requires-Dist: trollsift
+Provides-Extra: hdf_eos
+Requires-Dist: python-pyhdf; extra == 'hdf_eos'
+Provides-Extra: hrpt
+Requires-Dist: pygac; extra == 'hrpt'
+Requires-Dist: pyorbital; extra == 'hrpt'
+Requires-Dist: python-geotiepoints; extra == 'hrpt'
+Provides-Extra: nc
+Requires-Dist: netCDF4 (>=1.1.8); extra == 'nc'
+Provides-Extra: proj
+Requires-Dist: pyresample; extra == 'proj'
+Provides-Extra: pyorbital
+Requires-Dist: pyorbital (>=v0.2.3); extra == 'pyorbital'
+Provides-Extra: pyspectral
+Requires-Dist: pyspectral; extra == 'pyspectral'
+Provides-Extra: viirs
+Requires-Dist: h5py (>=2.7.0); extra == 'viirs'
+Provides-Extra: xRIT
+Requires-Dist: mipp (>=0.6.0); extra == 'xRIT'
+
+UNKNOWN
+
+
