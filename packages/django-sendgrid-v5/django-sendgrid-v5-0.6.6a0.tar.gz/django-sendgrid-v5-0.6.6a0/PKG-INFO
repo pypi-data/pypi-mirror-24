@@ -1,0 +1,39 @@
+Metadata-Version: 1.1
+Name: django-sendgrid-v5
+Version: 0.6.6a0
+Summary: An implementation of Django's EmailBackend compatible with sendgrid-python v5+
+Home-page: https://github.com/sklarsa/django-sendgrid-v5
+Author: Steven Sklar
+Author-email: sklarsa@gmail.com
+License: MIT
+Description: .. |travis| image:: https://travis-ci.org/sklarsa/django-sendgrid-v4.svg
+                     :alt: Travis Build Status
+                     :target: https://travis-ci.org/sklarsa/django-sendgrid-v4
+        .. |pypi| image:: https://img.shields.io/pypi/v/django-sendgrid-v4.svg
+                   :alt: Latest Release
+                   :target: https://pypi.python.org/pypi/django-sendgrid-v4/
+        
+        
+        django-sendgrid-v4
+        ==================
+        |pypi| |travis|
+        
+        How to Install
+        --------------
+        
+        1. `pip install django-sendgrid-v4`
+        2. In your project's `settings.py` script:
+        
+            a. Set `EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"`
+            b. Add `SENDGRID_API_KEY = os.environ["SENDGRID_API_KEY"]`
+        
+Keywords: django email sendgrid backend
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
