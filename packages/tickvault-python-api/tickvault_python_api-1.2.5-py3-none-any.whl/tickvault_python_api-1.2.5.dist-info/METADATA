@@ -1,0 +1,59 @@
+Metadata-Version: 2.0
+Name: tickvault-python-api
+Version: 1.2.5
+Summary: TickVault Python Query API
+Home-page: https://github.com/ticksmith/tickvault-python-api
+Author: TickSmith Corp.
+Author-email: support@ticksmith.com
+License: MIT
+Keywords: tickvault python api client
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyparsing
+Requires-Dist: requests
+Requires-Dist: ujson
+
+# TickVault Python Query API
+
+Python API that provides programmatic access to micro and nanosecond-scale trading data on a TickVault platform from TickSmith. Portals with accessible data include [Thomson Reuters Tick History](https://trdata.tickvault.com) and [Nasdaq-CX](https://nasdaq-cx.ticksmith.com).
+
+## Installation
+
+Using pip:
+```bash
+pip install tickvault-python-api
+```
+
+## Example Usage
+
+Get the bid/ask spread of TD on CHIX on May 4th, 2017 
+```python
+from tickvaultpythonapi.nasdaqcxclient import NasdaqCxClient
+
+nasdaq = NasdaqCxClient(user_name=<USER_NAME>, secret_key=<API_KEY>)
+
+result = nasdaq.query_hits(source="CHIX", tickers="td",
+                           fields="ts,askprice,bidprice",
+                           start_time=20170504093000, end_time=20170504160000,
+                           predicates="ask_size > 10 and bid_size > 10 and line_type like Q",
+                           limit=1000000)
+
+df = nasdaq.as_dataframe(result)
+
+df.plot()
+```
+
