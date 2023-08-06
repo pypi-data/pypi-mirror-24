@@ -1,0 +1,6 @@
+include LICENSE
+include autodocumenter/templates/template.css
+include autodocumenter/templates/template.html
+include templates/template.css
+include templates/template.html
+include README.md
