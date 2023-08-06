@@ -1,0 +1,13 @@
+azure/cli/command_modules/cdn/__init__.py,sha256=fvhaJKz8Qh5QO_Pi11_KKXhEpisR-Ubum4Pg0yS8gMo,678
+azure/cli/command_modules/cdn/_client_factory.py,sha256=isHjH6zBHMtO7_Pzq18nHgWmUrdbQGv5GROgLs7lY4o,548
+azure/cli/command_modules/cdn/_help.py,sha256=nEHHCuz9PdfyH4puGQIHgcRY4Om2YgQSehv08jXyleQ,6635
+azure/cli/command_modules/cdn/_params.py,sha256=ok3wElhLiCF7G0VPTn0t9fihZ8H1k36RQlZ-LSKzYs8,5537
+azure/cli/command_modules/cdn/_validators.py,sha256=Vs4K0isxFoiuZ8eUZfCA-6EjTRggvAV__ZHx7dX4b6g,958
+azure/cli/command_modules/cdn/commands.py,sha256=m_awYGlIHxXlpA5-Q_F2TOQoTwu5RIi3BnulKI2r4CY,4849
+azure/cli/command_modules/cdn/custom.py,sha256=_z71cWbyxToFlWA68kLksbOxKggJpg6T7sDW3E6e91E,5242
+azure_cli_cdn-0.0.7.dist-info/DESCRIPTION.rst,sha256=w3jR1TTyzUqpo1upaj_z3LXu6tOeyCfMAW7Gx63aywM,783
+azure_cli_cdn-0.0.7.dist-info/METADATA,sha256=adZMNJF7oN6l7LJXKLccgqFbsCCHG_NZIUv4R5FjDaU,1734
+azure_cli_cdn-0.0.7.dist-info/RECORD,,
+azure_cli_cdn-0.0.7.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+azure_cli_cdn-0.0.7.dist-info/metadata.json,sha256=PcAI21Y4kK4DM5F6t8FmBSMJ1xvceNmVW-Y6bA0tpvY,1067
+azure_cli_cdn-0.0.7.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
