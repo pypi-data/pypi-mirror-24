@@ -1,0 +1,4 @@
+[console_scripts]
+addRecord = eudat.accounting.client.__main__:main
+iRODScollector = eudat.accounting.client.iRODScollector:main
+

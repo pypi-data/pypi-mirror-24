@@ -1,0 +1,6 @@
+include *.py
+include irodscollector.ini
+include LICENSE
+include README.rst
+include CHANGES.rst
+prune tests
