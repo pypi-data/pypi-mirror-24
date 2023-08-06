@@ -1,0 +1,6 @@
+setuptools
+gdata>=2.0.18
+plone.api
+
+[test]
+plone.app.testing
