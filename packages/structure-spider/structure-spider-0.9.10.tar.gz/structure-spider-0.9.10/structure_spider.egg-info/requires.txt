@@ -1,0 +1,7 @@
+parsel>=1.2.0
+scrapy>=1.4.0
+psutil
+python-json-logger>=0.1.2
+redis
+jinja2
+custom-redis>=3.1.2
