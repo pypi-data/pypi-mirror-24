@@ -1,0 +1,19 @@
+{% extends "django_pgpmailman/base.html" %}
+{% load i18n %}
+{% load bootstrap_tags %}
+{% block head_title %}
+    {% trans 'PGP List' %} - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    {% include 'django_pgpmailman/list/nav.html' with nav_tab='key_management' nav_title='List key management' %}
+
+    <p>Fingerprint: {{ pgp_list.key.fingerprint }}</p>
+    Download the list <a href="{% url 'pgp_list_privkey' pgp_list.list_id %}">private key</a>.
+    <form action="{% url 'pgp_list_key_management' pgp_list.list_id %}"
+          method="post"
+          class="form-horizontal"
+          enctype="multipart/form-data">
+        {% bootstrap_form_horizontal form 3 8 'Save changes' %}
+    </form>
+{% endblock content %}

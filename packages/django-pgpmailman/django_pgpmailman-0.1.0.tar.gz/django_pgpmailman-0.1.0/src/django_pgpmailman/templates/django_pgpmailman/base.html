@@ -1,0 +1,90 @@
+{% load i18n %}
+{% load staticfiles %}
+{% load gravatar %}
+{% load chunks %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block head_title %}{{ site_name|title }}{% endblock %}</title>
+    <link rel="shortcut icon" href="{% static 'django-pgpmailman/img/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'django-pgpmailman/libs/bootstrap/css/bootstrap-old.min.css' %}">
+    <link rel="stylesheet" href="{% static 'django-mailman3/css/main.css' %}">
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'pgp_list_index' %}"><span><img src="{% static 'django-pgpmailman/img/mailman_logo_small_trans.png' %}" /> PGPMailman</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="header-nav">
+                <ul class="nav navbar-nav">
+                    {% app_chunk 'navbar' %}
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    {% if user.is_authenticated %}
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                               role="button" aria-haspopup="true" aria-expanded="false">
+                                {% gravatar user.email 20 %}
+                                {{ user.username|truncatechars:"35" }}
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'mm_user_profile' %}">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    {% trans 'Account' %}
+                                </a></li>
+                                {% app_chunk 'menu-large' %}
+                                <li role="separator" class="divider"></li>
+                                <li><a href="{% url LOGOUT_URL %}?next={% url 'pgp_list_index' %}">
+                                    <span class="glyphicon glyphicon-log-out"></span>
+                                    {% trans 'Logout' %}
+                                </a></li>
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li><a href="{% url LOGIN_URL %}?next={{ next|default:request.path|urlencode }}">
+                            <span class="glyphicon glyphicon-log-in"></span>
+                            {% trans 'Login' %}
+                        </a></li>
+                        <li><a href="{% url 'account_signup' %}?next={{next|default:request.path|urlencode}}">
+                            <span class="glyphicon glyphicon-plus-sign"></span>
+                            {% trans 'Sign Up' %}
+                        </a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+        {% endfor %}
+        {% block content %}{% endblock content %}
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">
+                <a href="http://list.org">GNU Mailman</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="{% static 'django-pgpmailman/libs/jquery/js/jquery-old.min.js' %}"></script>
+    <script src="{% static 'django-pgpmailman/libs/bootstrap/js/bootstrap-old.min.js' %}"></script>
+    <script src="{% static 'django-mailman3/js/main.js' %}"></script>
+    {% block additionaljs %}{% endblock %}
+</body>
+</html>

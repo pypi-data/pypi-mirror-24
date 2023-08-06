@@ -1,0 +1,8 @@
+include *.py
+include COPYING MANIFEST.in
+recursive-include src *.py *.html *.css *.js *.rst *.txt
+global-include *.cfg *.
+recursive-include single_project *.py
+recursive-include suite_project *.py
+prune .tox
+prune dist

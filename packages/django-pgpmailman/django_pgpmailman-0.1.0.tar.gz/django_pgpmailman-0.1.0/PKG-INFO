@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: django_pgpmailman
+Version: 0.1.0
+Summary: A web interface for the GNU Mailman PGP plugin.
+Home-page: UNKNOWN
+Author: Jan Jancar
+Author-email: johny@neuromancer.sk
+License: GPLv3
+Description: A web interface for the Mailman PGP plugin.
+Keywords: email mailman django pgp
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2
+Classifier: Topic :: Communications :: Email :: Mailing List Servers

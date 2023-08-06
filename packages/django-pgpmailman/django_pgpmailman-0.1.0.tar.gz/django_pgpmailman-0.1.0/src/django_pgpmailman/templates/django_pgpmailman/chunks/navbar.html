@@ -1,0 +1,14 @@
+{% load i18n %}
+<li>
+    {% if mlist %}
+        <a href="{% url 'pgp_list_summary' list_id=mlist.list_id %}">
+            <span class="glyphicon glyphicon-lock"></span>
+            {% trans 'Manage PGP' %}
+        </a>
+    {% else %}
+        <a href="{% url 'pgp_list_index' %}">
+            <span class="glyphicon glyphicon-lock"></span>
+            {% trans 'Manage PGP lists' %}
+        </a>
+    {% endif %}
+</li>

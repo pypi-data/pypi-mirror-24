@@ -1,0 +1,17 @@
+{% extends "django_pgpmailman/base.html" %}
+{% load i18n %}
+
+{% block head_title %}
+    {% trans 'PGP List' %} - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    {% with mlist=pgp_list.mlist %}
+        {% include 'django_pgpmailman/list/nav.html' with nav_tab='info' %}
+
+        <p>{{ mlist.settings.description }}</p>
+        {% if mlist.settings.info %}
+            <p>{{ mlist.settings.info }}</p>
+        {% endif %}
+    {% endwith %}
+{% endblock content %}

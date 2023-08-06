@@ -1,0 +1,37 @@
+{% load i18n %}
+{% if user.is_authenticated %}
+    <ul class="nav nav-pills">
+        <li role="presentation"
+            class="{% if nav_tab == 'info' %}active{% endif %}">
+            <a href="{% url 'pgp_list_summary' mlist.list_id %}">{% trans 'Info' %}</a>
+        </li>
+        <li role="presentation"
+            class="{% if nav_tab == 'key_management' %}active{% endif %}">
+            <a href="{% url 'pgp_list_key_management' mlist.list_id %}">{% trans 'Key management' %}</a>
+        </li>
+        <li role="presentation"
+            class="{% if nav_tab == 'encryption_settings' %}active{% endif %}">
+            <a href="{% url 'pgp_list_encryption_settings' mlist.list_id %}">{% trans 'Encryption settings' %}</a>
+        </li>
+        <li role="presentation"
+            class="{% if nav_tab == 'signature_settings' %}active{% endif %}">
+            <a href="{% url 'pgp_list_signature_settings' mlist.list_id %}">{% trans 'Signature settings' %}</a>
+        </li>
+        <li role="presentation"
+            class="{% if nav_tab == 'misc_settings' %}active{% endif %}">
+            <a href="{% url 'pgp_list_misc_settings' mlist.list_id %}">{% trans 'Miscellaneous settings' %}</a>
+        </li>
+    </ul>
+{% else %}
+
+{% endif %}
+<div class="page-header">
+    {% if nav_tab == 'info' %}
+        <h1>{{ mlist.display_name }}
+            <small>{{ mlist.fqdn_listname }}</small>
+        </h1>
+    {% else %}
+        <h3>{{ nav_title }} {% if nav_subtitle %}
+            <small>{{ nav_subtitle }}</small>{% endif %}</h3>
+    {% endif %}
+</div>

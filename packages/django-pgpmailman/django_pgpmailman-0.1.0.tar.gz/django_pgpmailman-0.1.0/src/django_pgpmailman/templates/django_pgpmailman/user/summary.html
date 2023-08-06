@@ -1,0 +1,33 @@
+{% extends "django_pgpmailman/base.html" %}
+{% load i18n %}
+
+{% block head_title %}
+    {% trans 'PGP User settings' %} - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    {% if addresses|length > 0 %}
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>{% trans 'Email' %}</th>
+                    <th>{% trans 'Key fingerprint' %}</th>
+                    <th>{% trans 'Key confirmed' %}</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for address in addresses %}
+                    <tr>
+                        <td>{{ address.email }}</td>
+                        <td>{{ address.key_fingerprint }}</td>
+                        <td>{{ address.key_confirmed }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <p>{% trans "You currently don't have any PGP enabled addresses. Subscribe to a PGP enabled list to setup one." %}</p>
+    {% endif %}
+{% endblock %}

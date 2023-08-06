@@ -1,0 +1,63 @@
+{% extends "django_pgpmailman/base.html" %}
+{% load i18n %}
+{% load pagination %}
+
+{% block head_title %}
+    {% trans 'PGP List Index' %} - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="page-header">
+        <h1>{% trans 'PGP enabled Mailing Lists' %}</h1>
+    </div>
+
+    {% if user.is_superuser %}
+        <a class="btn btn-success" href="{% url 'pgp_list_create' %}">Create
+            new list</a>
+    {% endif %}
+    {% if lists|length > 0 %}
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>{% trans 'List name' %}</th>
+                    <th>{% trans 'Post address' %}</th>
+                    <th>{% trans 'Key fingerprint' %}</th>
+                    <th>{% trans 'Description' %}</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for pgp_list in lists %}
+                    {% with mlist=pgp_list.mlist %}
+                        {% if user.is_superuser or mlist.settings.advertised %}
+                            <tr>
+                                <td>
+                                    <a href="{% url 'pgp_list_summary' list_id=pgp_list.list_id %}">{{ mlist.display_name }}</a>
+                                    {% if user.is_superuser and not mlist.settings.advertised %}
+                                        ({% trans 'unadvertised' %}
+                                        *){% endif %}
+                                </td>
+                                <td>{{ mlist.fqdn_listname }}</td>
+                                <td>
+                                    <a href="{% url 'pgp_list_pubkey' list_id=pgp_list.list_id %}">{{ pgp_list.pubkey.fingerprint }}</a>
+                                </td>
+                                <td>{{ mlist.settings.description }}</td>
+                            </tr>
+                        {% endif %}
+                    {% endwith %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% if user.is_superuser %}
+            <small>
+                * {% trans 'Only admins see unadvertised lists in the list index.' %}</small>
+        {% endif %}
+        {% paginator lists %}
+    {% else %}
+        <p>{% trans 'There are currently no PGP enabled mailing lists.' %}</p>
+    {% endif %}
+
+
+{% endblock content %}

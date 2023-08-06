@@ -1,0 +1,16 @@
+{% extends "django_pgpmailman/base.html" %}
+{% load i18n %}
+{% load bootstrap_tags %}
+
+{% block head_title %}
+    {% trans 'PGP List' %} - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    {% include 'django_pgpmailman/list/nav.html' with nav_tab='signature_settings' nav_title='Signature settings' %}
+    <form action="{% url 'pgp_list_signature_settings' pgp_list.list_id %}"
+          method="post"
+          class="form-horizontal">
+        {% bootstrap_form_horizontal form 3 8 'Save changes' %}
+    </form>
+{% endblock content %}
