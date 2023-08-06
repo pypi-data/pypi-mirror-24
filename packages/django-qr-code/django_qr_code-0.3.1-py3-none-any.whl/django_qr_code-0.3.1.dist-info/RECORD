@@ -1,0 +1,14 @@
+django_qr_code-0.3.1.dist-info/DESCRIPTION.rst,sha256=PdIdFe47bf_o_Rcy0rijY8gdvg1sNMIGf3pcJg232e4,598
+django_qr_code-0.3.1.dist-info/METADATA,sha256=DWFC5uPteGyZ_lRsN65AvmrHDcp9BnO26TYAkVqjUvA,1442
+django_qr_code-0.3.1.dist-info/RECORD,,
+django_qr_code-0.3.1.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+django_qr_code-0.3.1.dist-info/metadata.json,sha256=-qkwCGjAhPgKap7yf7BX8acyy7iiTHaDV2gdXAgdEf8,1011
+django_qr_code-0.3.1.dist-info/top_level.txt,sha256=wW-S-6zA1r9PmLlZPfoNMkhOSPVeDQVRRgLbU1zA58g,8
+qr_code/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qr_code/apps.py,sha256=7N9eEXynegSnSFmzP6cmVxZiA-be4f0IVO-dNxu3rFs,124
+qr_code/qr_code.py,sha256=LUY54_cifLfNBqBfqUOPj8K9x4udBC00p2kJWVXTP3I,8451
+qr_code/tests.py,sha256=ojfNVaKgkEOhpmPDKlg9HOgnpFnRYUR2FCr6xdzcrcg,144708
+qr_code/urls.py,sha256=bjV2cQVeuQzwkKLLQGkNMoS7Oo7mb0zbh0y8otlmVNg,176
+qr_code/views.py,sha256=zIj61mrB4p3NvjtfLXGdaw26GAJAJ91xnK_63xZfFGI,4561
+qr_code/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qr_code/templatetags/qr_code.py,sha256=o5gnrQFm3kACXUKsvXSUXNyPTGAQ_8amQxo0nUOGhWQ,1041
