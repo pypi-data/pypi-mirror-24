@@ -1,0 +1,13 @@
+sxs/__init__.py,sha256=Wqgi6rEoLnrNS1-KEMi8F6sL7KWWU4KJ_9M-uC7g8sw,205
+sxs/_version.py,sha256=N6lVysQ01IZ0pSlnfs00IGtx4IMgVfOM5ZYdhaMYBsY,47
+sxs/metadata/__init__.py,sha256=icaKVdLBnbich83bnGpAwLLMYvuLnDrqHvOmLNdSuEs,15724
+sxs/metadata/_version.py,sha256=N6lVysQ01IZ0pSlnfs00IGtx4IMgVfOM5ZYdhaMYBsY,47
+sxs/metadata/catalog.py,sha256=HtvI-UO2GUmphVORgu7qasTScQ9t0ivFhH1ThtzD3ac,16443
+sxs/metadata/field_mapping.py,sha256=pLCno1U5730kkgEISQv3R3rzrCFn1oVpagWe8d5fTjY,4634
+sxs/metadata/web.py,sha256=nJR1Xdpc-vZ-bICb9k2zZWAzp9Ultx9XebLvb89L3-Q,5721
+sxs-2017.8.29.14.37.28.dev13472634.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+sxs-2017.8.29.14.37.28.dev13472634.dist-info/METADATA,sha256=MpKSFExXMe7wL9VQUWleRIo4oIk2TAKSzrcavya4ap0,291
+sxs-2017.8.29.14.37.28.dev13472634.dist-info/RECORD,,
+sxs-2017.8.29.14.37.28.dev13472634.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+sxs-2017.8.29.14.37.28.dev13472634.dist-info/metadata.json,sha256=VoR16eekbZq6sHmI8YodvaOUWikP2zDINgdjUhW6-c0,445
+sxs-2017.8.29.14.37.28.dev13472634.dist-info/top_level.txt,sha256=D8ut2acV4k_6R_AdSV75unGONPgX---LdQ2Qdl6IS3o,4
