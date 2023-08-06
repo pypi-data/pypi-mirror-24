@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: hart-amsaf
+Version: 0.0.2
+Summary: The HART Lab Automated MRI Segmentation and Analysis Framework
+Home-page: https://github.com/iancmcdonald/AMSAF
+Author: Ian McDonald and Daniel Ho
+Author-email: ian.c.mcdonald@berkeley.edu
+License: MIT
+Description: UNKNOWN
+Keywords: hart,hart-amsaf,HartAmsaf,amsaf,segmentation,mri,medical
+Platform: UNKNOWN
