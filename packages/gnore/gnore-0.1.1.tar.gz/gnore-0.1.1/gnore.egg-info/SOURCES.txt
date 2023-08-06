@@ -1,0 +1,17 @@
+README.rst
+setup.cfg
+setup.py
+gnore/__init__.py
+gnore/__main__.py
+gnore/config.py
+gnore.egg-info/PKG-INFO
+gnore.egg-info/SOURCES.txt
+gnore.egg-info/dependency_links.txt
+gnore.egg-info/entry_points.txt
+gnore.egg-info/requires.txt
+gnore.egg-info/top_level.txt
+gnore/controllers/__init__.py
+gnore/controllers/base_controller.py
+gnore/controllers/clean_controller.py
+gnore/services/__init__.py
+gnore/services/gnore_service.py
