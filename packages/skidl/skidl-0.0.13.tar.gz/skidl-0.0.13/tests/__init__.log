@@ -1,0 +1,4 @@
+WARNING: Unable to open SKiDL Schematic Library File libs.opto_sklib.py.
+
+ERROR: Unable to find part LDR03 in library libs.opto_sklib.py.
+ERROR: Unable to find part ^LDR03$ in library libs.opto_sklib.py.
