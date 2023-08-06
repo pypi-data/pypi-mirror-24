@@ -1,0 +1,14 @@
+sxs/__init__.py,sha256=Wqgi6rEoLnrNS1-KEMi8F6sL7KWWU4KJ_9M-uC7g8sw,205
+sxs/_version.py,sha256=b9Ah5D6bJHifdn2hvd6n8d2D7m9f-cZkxIJOCSsgHL0,48
+sxs/metadata/__init__.py,sha256=BYuwOgkLe1Ihf0BNCJmW5AYrM8HAZvQ-tRn49ydQAnA,15772
+sxs/metadata/_version.py,sha256=b9Ah5D6bJHifdn2hvd6n8d2D7m9f-cZkxIJOCSsgHL0,48
+sxs/metadata/catalog.py,sha256=HtvI-UO2GUmphVORgu7qasTScQ9t0ivFhH1ThtzD3ac,16443
+sxs/metadata/field_mapping.py,sha256=pLCno1U5730kkgEISQv3R3rzrCFn1oVpagWe8d5fTjY,4634
+sxs/metadata/fields.py,sha256=KzzutpaozpVeWAqJINIWbsW9FYbbQlHby02ZuXFdz3g,17832
+sxs/metadata/web.py,sha256=Pe8k6vcB9UYH1LD0DyzUdq6BXD2F9X9BoEFfU-R_YE4,7243
+sxs-2017.8.30.9.34.37.dev215748509.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+sxs-2017.8.30.9.34.37.dev215748509.dist-info/METADATA,sha256=Gk5m0QjLSFVCe3kz2LcvgupDJJQB3WGFSHU7nK8NTXw,291
+sxs-2017.8.30.9.34.37.dev215748509.dist-info/RECORD,,
+sxs-2017.8.30.9.34.37.dev215748509.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+sxs-2017.8.30.9.34.37.dev215748509.dist-info/metadata.json,sha256=ZTZQepEQ-7ZR-6--lbkhHiszHAfatyLdCQjLKSthVEs,445
+sxs-2017.8.30.9.34.37.dev215748509.dist-info/top_level.txt,sha256=D8ut2acV4k_6R_AdSV75unGONPgX---LdQ2Qdl6IS3o,4
