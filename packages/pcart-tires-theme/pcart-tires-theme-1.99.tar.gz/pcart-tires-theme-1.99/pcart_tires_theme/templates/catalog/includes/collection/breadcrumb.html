@@ -1,0 +1,29 @@
+{% load i18n %}
+<div class="breadcrumb_wrap">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="/" class="homepage-link" title="Back to the frontpage">{% trans "Home" %}</a></li>
+            <li><a href="{% url 'pcart_collection:all-collections' %}">{% trans "Collections" %}</a></li>
+            {% if not collection.is_root_node %}
+            {% for parent in collection.get_ancestors %}<li><a href="{{parent.get_absolute_url}}">{{parent}}</a></li>{% endfor %}
+            {% endif %}
+            {% if filtered %}
+                <li><a href="{{collection.get_absolute_url}}">{{collection}}</a></li>
+                {% for tag in vendor_tags %}
+                    {% if tag.selected %}
+                    <li><a href="{{tag.url}}">{{tag.label}} <i class="fa fa-times" aria-hidden="true"></i></a></li>
+                    {% endif %}
+                {% endfor %}
+                {% for tag_group in all_tags %}
+                    {% for tag in tag_group.tags %}
+                        {% if tag.selected %}
+                            <li><a href="{{tag.url}}">{{tag_group.group_label}}: {{tag.label}} <i class="fa fa-times" aria-hidden="true"></i></a></li>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            {% else %}
+                <li><span class="active">{{collection}}</span></li>
+            {% endif %}
+        </ul>
+    </div>
+</div>

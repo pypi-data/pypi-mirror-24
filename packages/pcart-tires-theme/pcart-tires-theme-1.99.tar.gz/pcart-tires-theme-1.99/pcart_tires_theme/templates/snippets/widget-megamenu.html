@@ -1,0 +1,150 @@
+{% load i18n pcart_core theme_tags thumbnail %}
+<div id="megamenu">
+<div class="container">
+    <ul class="sf-menu megamenu_desktop visible-md visible-lg">
+        <li class="megamenu_item_1">
+            <a href="{{ settings.megamenu1_link }}">{{ settings.megamenu1_text }}{% if settings.megamenu1_badge and settings.megamenu1_badge != '' %}<span class="menu_badge">{{ settings.megamenu1_badge }}</span>{% endif %}</a>
+            {% if settings.megamenu1_sub_toggle %}
+            <ul>
+                <li>
+                    <div class="submenu submenu_1">
+                        <div class="row">
+                            {% for i in "1,4"|range %}
+                                {% capture as collection_iteration silent %}megamenu1_sub_col__{{ i }}{% endcapture %}
+                                {% capture as collection_name silent %}{{ settings|element:collection_iteration }}{% endcapture %}
+
+                                <div class="col-sm-3">
+                                    <h4><a href="{{ all_collections|element:collection_name|element:'url' }}">{{ all_collections|element:collection_name|element:'title' }}</a></h4>
+                                    <ul>
+                                        {% for product in all_collections|element:collection_name|element:'products'|limit:7 %}
+                                            <li><a href="{# product.get_absolute_url | within: collection #}">{{ product.title|truncatechars:30 }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endfor %}
+                        </div>
+
+                        <a class="btn" href="/collections/">{% trans "View all collections" %}</a>
+                    </div>
+                </li>
+            </ul>
+            {% endif %}
+        </li>
+
+        <li class="megamenu_item_2">
+            <a href="{{ blogs|element:settings.megamenu2_blog_select|element:'url' }}">{{ settings.megamenu2_text }}{% if settings.megamenu2_badge and settings.megamenu2_badge != '' %}<span class="menu_badge">{{ settings.megamenu2_badge }}</span>{% endif %}</a>
+            {% if settings.megamenu2_sub_toggle %}
+            <ul>
+            <li>
+                <div class="submenu submenu_2">
+                <div class="row">
+                    {% for article in blogs|element:settings.megamenu2_blog_select|element:'articles'|limit:3 %}
+                    <div class="col-sm-4">
+                        <span class="blog_date">{{ article.pub_date|date:'%A, %B %d, %Y' }}</span>
+                        <h3 class="blog_title"><a href="{{ article.url }}">{{ article.title|truncatechars:25 }}</a></h3>
+                        <div class="blog_content">{{ article.lead_in|safe }}</div>
+                        <a class="btn" href="{{ article.get_absolute_url }}">Read more</a>
+                    </div>
+                    {% endfor %}
+                </div>
+                </div>
+            </li>
+            </ul>
+            {% endif %}
+        </li>
+
+        <li class="megamenu_item_3">
+            <a href="{{ all_collections|element:settings.megamenu3_sub_collection|element:'url' }}">{{ settings.megamenu3_text }}{% if settings.megamenu3_badge and settings.megamenu3_badge != '' %}<span class="menu_badge">{{ settings.megamenu3_badge }}</span>{% endif %}</a>
+            {% if settings.megamenu3_sub_toggle %}
+            <ul>
+            <li>
+                <div class="submenu submenu_3">
+                <div class="row">
+                    {% for product in all_collections|element:settings.megamenu3_sub_collection|element:'products'|limit:4 %}
+                    <div class="col-sm-3">
+                        <div class="product_img">
+                            <a href="{# product.url | within: collection #}">
+                                <img src="{{ product.featured_image.src|thumbnail_url:'product_large' }}" alt="{{ product.title }}" />
+                            </a>
+                        </div>
+
+                        <div class="product_name">
+                            <a href="{# product.url | within: collection #}">{{ product.title|truncatechars:50 }}</a>
+                        </div>
+
+                        <div class="product_price">
+                            {% if product.price_varies %}From{% endif %}
+                            <span class="money">{{ product.price|money }}</span>
+                            {% if product.compare_at_price and product.compare_at_price > product.price %}
+                            <span class="money compare-at-price">{{ product.compare_at_price|money }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                </div>
+            </li>
+            </ul>
+            {% endif %}
+        </li>
+
+        <li class="megamenu_item_4">
+            <a href="{{ settings.megamenu4_link }}">{{ settings.megamenu4_text }}{% if settings.megamenu4_badge and settings.megamenu4_badge != '' %}<span class="menu_badge">{{ settings.megamenu4_badge }}</span>{% endif %}</a>
+        </li>
+
+        <li class="megamenu_item_5">
+            <a href="{{ settings.megamenu5_link }}">{{ settings.megamenu5_text }}{% if settings.megamenu5_badge and settings.megamenu5_badge != '' %}<span class="menu_badge">{{ settings.megamenu5_badge }}</span>{% endif %}</a>
+        </li>
+    </ul>
+
+    <div class="megamenu_mobile visible-xs visible-sm">
+        <h2>{{ page_title }}<i></i></h2>
+        <ul class="level_1">
+            <li>
+                <a href="{{ settings.megamenu1_link }}">{{ settings.megamenu1_text }}<i class="level_1_trigger"></i></a>
+                {% if settings.megamenu1_sub_toggle %}
+                <ul class="level_2">
+                    {% for i in "1,4"|range %}
+                        {% capture as collection_iteration silent %}megamenu1_sub_col__{{ i }}{% endcapture %}
+                        {% capture as collection_name silent %}{{ settings|element:collection_iteration }}{% endcapture %}
+
+                        <li>
+                            <a href="{{ all_collections|element:collection_name|element:'url' }}">{{ all_collections|element:collection_name|element:'title' }}<i class="level_2_trigger"></i></a>
+                            <ul class="level_3">
+                                {% for product in all_collections|element:collection_name|element:'products'|limit:7 %}
+                                    <li><a href="{# product.url | within: collection #}">{{ product.title|truncatechars:25 }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+
+            <li>
+                <a href="{{ blogs|element:settings.megamenu2_blog_select|element:'url' }}">{{ settings.megamenu2_text }}</a>
+            </li>
+
+            <li>
+                <a href="{{ all_collections|element:settings.megamenu3_sub_collection|element:'url' }}">{{ settings.megamenu3_text }}</a>
+            </li>
+
+            <li>
+                <a href="{{ settings.megamenu4_link }}">{{ settings.megamenu4_text }}</a>
+            </li>
+
+            <li>
+                <a href="{{ settings.megamenu5_link }}">{{ settings.megamenu5_text }}</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- HEADER SEARCH -->
+    <div class="header_search">
+        <form action="{% optional_url 'pcart_search:search' %}" method="get" class="search-form" role="search">
+            <input id="search-field" name="query" type="text" placeholder="{% trans 'Search store...' %}" class="hint" />
+            <button id="search-submit" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</div>
+</div>

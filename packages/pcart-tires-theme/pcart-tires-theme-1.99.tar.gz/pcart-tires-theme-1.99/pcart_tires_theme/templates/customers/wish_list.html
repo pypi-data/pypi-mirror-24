@@ -1,0 +1,24 @@
+{% extends CMS_TEMPLATE %}
+{% load i18n cms_tags %}
+
+{% block sidebar %}{% include "customers/includes/profile_menu.html" %}{% endblock %}
+
+{% block content %}
+<form method="post">
+{% csrf_token %}
+<h1 class="page_heading">{% trans "Wish list" %}</h1>
+{% for item in items %}
+    <div>
+    {% if item.variant %}
+        <h3><a href="{{item.variant.get_absolute_url}}">{{item.variant.title}}</a></h3>
+    {% else %}
+        <h3><a href="{{item.product.get_absolute_url}}">{{item.product.title}}</a></h3>
+    {% endif %}
+        <button type="submit"
+                name="item-remove-{{item.id}}" class="btn btn-link">{% trans "Remove" %}</button>
+    </div>
+{% empty %}
+    <div class="alert alert-info">{% trans "The wish list is empty." %}</div>
+{% endfor %}
+</form>
+{% endblock %}

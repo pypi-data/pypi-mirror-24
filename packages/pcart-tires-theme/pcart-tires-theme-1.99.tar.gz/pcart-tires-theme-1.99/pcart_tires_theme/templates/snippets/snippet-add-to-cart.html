@@ -1,0 +1,25 @@
+{% load i18n pcart_catalog %}
+<form method="post" action="{% add_to_cart_url %}">
+    <!-- We can leave this in, since the select comes later,
+        so it will override if user picks something different. -->
+    {% comment %}
+        {% for variant in product.variants limit:1 %}
+            <input type="hidden" name="id" value="{{ variant.id }}" />
+        {% endfor %}
+
+        <!-- If you don't want the variants dropdown, just comment this out. -->
+        {% if  product.variants.size > 1 %}
+        <select name="id" id="id">{% for variant in product.variants %}{% if variant.available %}
+            <option value="{{ variant.id }}">{{ variant.title | escape }} ({{ variant.price | money }})</option>{% else %}
+            <option value="{{ variant.id }}" disabled="disabled">{{ variant.title | escape }} ({{ variant.price | money }}) - SOLD OUT</option>{% endif %}{% endfor %}
+        </select>
+        {% endif %}
+        <!-- end variants dropdown -->
+    {% endcomment %}
+
+    {% if product.available %}
+        <button class="btn btn-cart" type="submit"><i class="fa fa-shopping-cart"></i><span>{% trans "Add to cart" %}</span></button>
+    {% else %}
+        <b>{{product.status}}</b>
+    {% endif %}
+</form>

@@ -1,0 +1,15 @@
+{% load i18n %}
+<div class="breadcrumb_wrap">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="/" class="homepage-link" title="Back to the frontpage">{% trans "Home" %}</a></li>
+            <li><a href="{% url 'pcart_collection:all-collections' %}">{% trans "Collections" %}</a></li>
+            <li>
+                {% for collection in product.collections.all %}
+                    {% if collection.published %}<a href="{{collection.get_absolute_url}}">{{collection}}</a>{% if not forloop.last %}, {% endif %}{% endif %}
+                {% endfor %}
+            </li>
+            <li><span class="active">{{product}}</span></li>
+        </ul>
+    </div>
+</div>

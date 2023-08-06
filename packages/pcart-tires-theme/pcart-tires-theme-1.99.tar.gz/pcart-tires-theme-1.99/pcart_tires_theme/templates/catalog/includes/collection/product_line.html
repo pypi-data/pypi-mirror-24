@@ -1,0 +1,54 @@
+{% load i18n pcart_core theme_tags thumbnail staticfiles%}
+
+{% comment %}Is this product on sale?{% endcomment %}
+{% save False as on_sale %}
+{% if product.compare_at_price > product.price %}
+  {% save True as on_sale %}
+{% endif %}
+
+{% comment %}Is this product new?{% endcomment %}
+{% timezone_now as today %}
+{% save today|minus:product.added|attr:"days" as dates_diff %}
+{% save 3 as new_products_period %}
+
+<div class="wow product {% if template == 'index' %}col-sm-3 product_homepage item_{{ forloop.index }}{% else %}col-sm-4 product_collection {% cycle 'step3' 'item3_1' 'item3_2' 'item3_3' %}{% endif %}">
+<div class="product_wrapper">
+    <div class="product_img">
+        <a href="{{ product.get_absolute_url }}">
+            {% with im=product.images.first %}
+            <img src="{{im.image|thumbnail_url:'collection_small'}}" alt="{{im}}" />
+            {% endwith %}
+
+            {% if on_sale %}<span class="product_badge sale">–{{product.compare_at_price|minus:product.price|times:100.0|divided_by:product.compare_at_price|money:'without_currency'|times:100|remove:'.0'}}%</span>{% endif %}
+            {% if dates_diff <= new_products_period %}<span class="product_badge new">{% trans "New" %}</span>{% endif %}
+        </a>
+
+        <div class="product_img_hover">
+            {% include "snippets/snippet-add-to-cart.html" %}
+        </div>
+    </div>
+
+    <div class="product_info">
+        <div class="product_name">
+            <a href="{{ product.get_absolute_url }}">{{ product.title|truncatechars:75 }}</a>
+        </div>
+
+        {% if template != 'index' %}
+            <div class="product_desc">{{ product.description|striptags|truncatechars:300 }}</div>
+        {% endif %}
+
+        <div class="product_price {% if on_sale %}product_price_sale{% endif %}">
+            <span class="money">{% if product.price_varies %}From{% endif %} {{ product.price|money }}</span>
+            {% if on_sale %}
+            <span class="money compare-at-price">{{ product.compare_at_price|money }}</span>
+            {% endif %}
+        </div>
+
+        <div class="product_links">
+            {% include "snippets/snippet-add-to-cart.html" %}
+            <a class="btn btn-alt" href="#" title="{% trans 'Compare' %}"><i class="fa fa-balance-scale"></i></a>
+            <a class="btn btn-alt" href="#" title="{% trans 'Add to wishlist' %}"><i class="fa fa-heart"></i></a>
+        </div>
+    </div>
+</div>
+</div>

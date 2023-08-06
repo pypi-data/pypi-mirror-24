@@ -1,0 +1,17 @@
+{% extends CMS_TEMPLATE %}
+{% load i18n cms_tags %}
+
+{% block main_content_classes %}col-sm-12{% endblock %}
+{% block sidebar_container %}{% endblock %}
+
+{% block content %}
+<h1 class="page_heading">{% trans "Collections" %}</h1>
+
+{% if collections %}
+    {% for collection in collections %}
+        <div><a href="{{collection.get_absolute_url}}">{{collection.title}}</a></div>
+    {% endfor %}
+{% else %}
+    <div class="alert alert-info">{% trans "There are no collections yet." %}</div>
+{% endif %}
+{% endblock %}
