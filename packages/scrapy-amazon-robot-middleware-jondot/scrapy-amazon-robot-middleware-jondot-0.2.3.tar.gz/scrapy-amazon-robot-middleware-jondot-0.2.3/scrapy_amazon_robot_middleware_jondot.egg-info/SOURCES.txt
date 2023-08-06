@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+captchabuster/__init__.py
+scrapy_amazon_robot_middleware_jondot.egg-info/PKG-INFO
+scrapy_amazon_robot_middleware_jondot.egg-info/SOURCES.txt
+scrapy_amazon_robot_middleware_jondot.egg-info/dependency_links.txt
+scrapy_amazon_robot_middleware_jondot.egg-info/requires.txt
+scrapy_amazon_robot_middleware_jondot.egg-info/top_level.txt
