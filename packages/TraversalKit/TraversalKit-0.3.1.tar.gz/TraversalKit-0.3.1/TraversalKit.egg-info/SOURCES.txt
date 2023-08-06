@@ -1,0 +1,17 @@
+CHANGES.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+TraversalKit.egg-info/PKG-INFO
+TraversalKit.egg-info/SOURCES.txt
+TraversalKit.egg-info/dependency_links.txt
+TraversalKit.egg-info/requires.txt
+TraversalKit.egg-info/top_level.txt
+TraversalKit.egg-info/zip-safe
+traversalkit/__init__.py
+traversalkit/cache.py
+traversalkit/condition.py
+traversalkit/ids.py
+traversalkit/resource.py
+traversalkit/route.py
