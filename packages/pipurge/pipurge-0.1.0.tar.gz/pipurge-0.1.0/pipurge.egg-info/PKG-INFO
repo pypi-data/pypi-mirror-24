@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: pipurge
+Version: 0.1.0
+Summary: PiPurge
+=======
+
+PiPurge is a tool to uninstall all packages installed, whether system-level or virtual-env
+
+``$ pipurge --help``
+
+Home-page: UNKNOWN
+Author: Patrick Dill
+Author-email: jamespatrickdill@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Systems Administration
