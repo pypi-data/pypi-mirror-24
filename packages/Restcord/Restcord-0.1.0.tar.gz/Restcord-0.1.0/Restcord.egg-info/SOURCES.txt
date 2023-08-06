@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Restcord.egg-info/PKG-INFO
+Restcord.egg-info/SOURCES.txt
+Restcord.egg-info/dependency_links.txt
+Restcord.egg-info/requires.txt
+Restcord.egg-info/top_level.txt
+restcord/__init__.py
