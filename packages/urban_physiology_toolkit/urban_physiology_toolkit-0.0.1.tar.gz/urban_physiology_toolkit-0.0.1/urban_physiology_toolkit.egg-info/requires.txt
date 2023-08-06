@@ -1,0 +1,11 @@
+numpy
+pandas
+requests
+pysocrata
+bs4
+requests-file
+selenium
+tqdm
+python-magic
+airscooter
+nbformat
