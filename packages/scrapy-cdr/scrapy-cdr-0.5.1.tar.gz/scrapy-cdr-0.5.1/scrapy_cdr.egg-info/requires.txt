@@ -1,0 +1,7 @@
+botocore
+cachetools
+json_lines
+requests
+scrapy
+six
+tqdm
