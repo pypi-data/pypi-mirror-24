@@ -1,0 +1,9 @@
+README.rst
+setup.py
+lyric/__init__.py
+lyric/utils.py
+python_lyric.egg-info/PKG-INFO
+python_lyric.egg-info/SOURCES.txt
+python_lyric.egg-info/dependency_links.txt
+python_lyric.egg-info/requires.txt
+python_lyric.egg-info/top_level.txt
