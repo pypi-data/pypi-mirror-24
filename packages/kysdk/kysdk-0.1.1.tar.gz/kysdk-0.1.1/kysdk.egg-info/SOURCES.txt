@@ -1,0 +1,8 @@
+README
+setup.py
+kyd/__init__.py
+kyd/api.py
+kysdk.egg-info/PKG-INFO
+kysdk.egg-info/SOURCES.txt
+kysdk.egg-info/dependency_links.txt
+kysdk.egg-info/top_level.txt
