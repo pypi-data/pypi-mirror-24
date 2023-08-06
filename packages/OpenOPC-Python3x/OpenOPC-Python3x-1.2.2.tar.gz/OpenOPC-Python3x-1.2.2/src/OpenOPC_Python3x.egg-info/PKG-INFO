@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: OpenOPC-Python3x
+Version: 1.2.2
+Summary:  OPC (OLE for Process Control) toolkit for Python 3.x
+Home-page: https://github.com/mkwiatkowski/openopc
+Author: Michal Kwiatkowski
+Author-email: michal@trivas.pl
+License: GPLv2
+Description: UNKNOWN
+Keywords: python,opc,openopc
+Platform: UNKNOWN
