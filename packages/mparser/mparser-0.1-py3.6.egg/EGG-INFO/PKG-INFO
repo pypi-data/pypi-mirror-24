@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: mparser
+Version: 0.1
+Summary: Yet, just another markdown parser written by python.
+Home-page: http://mikecoder.cn
+Author: MikeCoder
+Author-email: mike@mikecoder.cn
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python

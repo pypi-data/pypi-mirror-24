@@ -1,0 +1,11 @@
+setup.py
+mparser/__init__.py
+mparser/block.py
+mparser/code.py
+mparser/main.py
+mparser/parser.py
+mparser.egg-info/PKG-INFO
+mparser.egg-info/SOURCES.txt
+mparser.egg-info/dependency_links.txt
+mparser.egg-info/not-zip-safe
+mparser.egg-info/top_level.txt
