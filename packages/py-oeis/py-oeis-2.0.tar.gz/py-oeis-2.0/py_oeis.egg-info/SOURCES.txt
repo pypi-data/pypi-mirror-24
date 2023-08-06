@@ -1,0 +1,8 @@
+oeis.py
+setup.cfg
+setup.py
+py_oeis.egg-info/PKG-INFO
+py_oeis.egg-info/SOURCES.txt
+py_oeis.egg-info/dependency_links.txt
+py_oeis.egg-info/requires.txt
+py_oeis.egg-info/top_level.txt

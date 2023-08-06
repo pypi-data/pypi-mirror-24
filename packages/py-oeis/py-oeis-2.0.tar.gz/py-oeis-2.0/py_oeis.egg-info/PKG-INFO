@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: py-oeis
+Version: 2.0
+Summary: # py-oeis
+
+A Python 3 library to access the
+[OEIS (Online Encyclopedia of Integer Sequences)](https://oeis.org).
+
+Depends on [`pendulum`](https://github.com/sdispater/pendulum) and
+[`requests`](https://github.com/requests/requests).
+
+Home-page: https://github.com/totallyhuman/py-oeis
+Author: Sumant Bhaskaruni
+Author-email: bsumantb@gmail.com
+License: MIT
+Download-URL: https://github.com/totallyhuman/py-oeis/archive/v2.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
