@@ -1,0 +1,16 @@
+psforms/__init__.py,sha256=s_ZdwWgku0mr3x9ROVZ49IojWmz418fszOuIKBD5irU,500
+psforms/controls.py,sha256=pnCwEWXAf7aJ8fisAWhTLySIZjcTECFq9tbFaW7DBWY,18013
+psforms/exc.py,sha256=Je5jHt1Rl7116Q_Jb8t3t_eI9k6DlouidHUfUeEBEIc,237
+psforms/fields.py,sha256=P8ccOTSWpdK0vg7YbpLU6zMOVSfZzOo9MvUGJmNMEXk,6036
+psforms/form.py,sha256=4nkHSr_XtKzOg6rN2QjrqdCsr-7b-HS05Eq_A5CwE40,5384
+psforms/resource.py,sha256=hJyhjJT2lsPp8wDKwuuTIMbpptqtMe3_BwESiw4-PZE,1014312
+psforms/style.css,sha256=T4edfZ8dWut3901GR0R2pd-OT-1J5av7fnqWdSDmahw,10355
+psforms/utils.py,sha256=0EmCPGpIDUph_6TF9ph07WtImEauxs1RxMjbelT3-uE,520
+psforms/validators.py,sha256=ZBgrHXqWkvMU76bahI__chaAOtFmAoPPRypRiZAOxzU,1225
+psforms/widgets.py,sha256=IqfCuRw_2YA6-9zRyhE2R5fQsCAh4zjO3FLxojqx2_k,12247
+psforms-0.5.1.dist-info/DESCRIPTION.rst,sha256=GloBkslHawoxVIFGNFIhbNZOlVoA8bb8s__g8nkmrhc,1405
+psforms-0.5.1.dist-info/METADATA,sha256=Sqw9IxaGS6-IZRgXNkMEGI3h8bKAy244GH-s3r89Q7A,2053
+psforms-0.5.1.dist-info/RECORD,,
+psforms-0.5.1.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+psforms-0.5.1.dist-info/metadata.json,sha256=6g8NkRdGG4nW5-I-xrBCTJu4HlRksct-_lBhf7k8dq0,742
+psforms-0.5.1.dist-info/top_level.txt,sha256=bD7UtdDpDsvvG02eEsbUToue9VRWyjMmqB6vj3iQKfA,8
