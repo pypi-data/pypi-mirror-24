@@ -1,0 +1,62 @@
+Metadata-Version: 1.1
+Name: django-dpa-chile
+Version: 1.0.2b1
+Summary: Political-Administrative Division of Chile
+Home-page: https://github.com/jupitercl/django-dpa-chile
+Author: Francisco Jordan
+Author-email: franciscojordan@live.com
+License: MIT
+Description: # django-dpa-chile
+        
+        <!-- [![Build Status][travis-image]][travis-url]
+        [![Coverage percentage][coveralls-image]][coveralls-url]
+        [![PyPI status][pypi-image]][pypi-url] -->
+        
+        > Political-Administrative Division of Chile
+        
+        ## Installation
+        
+        install `django-dpa-chile` using `pip`
+        
+        ```sh
+        pip install -U django-dpa-chile
+        ```
+        
+        add `django_dpa_chile` to INSTALLED_APPS
+        
+        __settings.py__
+        
+        ```python
+        # ...
+        
+        INSTALLED_APPS =[
+          ...
+          'django_dpa_chile'
+          ]
+        
+        # ...
+        ```
+        
+        ## [License](LICENSE)
+        
+        Francisco Jordan &lt;franciscojordan@live.com&gt;
+        
+        <!-- [travis-image]: https://travis-ci.org/jupitercl/django-dpa-chile.svg?branch=master
+        [travis-url]: https://travis-ci.org/jupitercl/django-dpa-chile
+        [coveralls-image]: https://coveralls.io/repos/jupitercl/django-dpa-chile/badge.svg
+        [coveralls-url]: https://coveralls.io/r/jupitercl/django-dpa-chile
+        [pypi-image]: https://img.shields.io/pypi/v/django-dpa-chile.svg -->
+        [pypi-url]: https://pypi.python.org/pypi/django-dpa-chile/
+        
+Keywords: django chile comunas regiones provincias
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Spanish
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
