@@ -1,0 +1,12 @@
+osmcha/__init__.py,sha256=5uJhD5y6YNZVcVvXRvOJSKHfk_CiPExdPtIIU4HLY-M,31
+osmcha/changeset.py,sha256=qmuXmjDSZzzOUvBtpBXzv1t7XrKBi7i4FLKtKpYtDRE,13200
+osmcha/suspect_words.yaml,sha256=e8aZ2cXjH1RMA-EOEvV6l7jNPZmlrXizOj-7ny4IR0Q,488
+osmcha/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osmcha/scripts/cli.py,sha256=kz-deYg7-fWT-PfMuqZr2AZfGmTtP5tUheogir5dt34,609
+osmcha-0.4.1.dist-info/DESCRIPTION.rst,sha256=3UfmKxTa7lT2Rg4NsFYdoRnxd72D3GU9w5l3Z273Nzg,4582
+osmcha-0.4.1.dist-info/METADATA,sha256=0PmYrV-I1ljaqyQL1Fc_0kthgD0PyujRAugXvywLp7M,5387
+osmcha-0.4.1.dist-info/RECORD,,
+osmcha-0.4.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+osmcha-0.4.1.dist-info/entry_points.txt,sha256=04XmlYXvsdYxNPHo3PmO4WMCn8aw-2IHYQPiY9b1Imw,67
+osmcha-0.4.1.dist-info/metadata.json,sha256=xTagwqjFco-RPTHJb7uxP3B1x63JA5Hf5e-P9REqhvA,1087
+osmcha-0.4.1.dist-info/top_level.txt,sha256=4MCTUOALtUFx1E9wM0NSBWsANb1l5Iy2TToqCZWTvcY,7
