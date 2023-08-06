@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: redash_client
+Version: 0.1.1
+Summary: A client for the re:dash API for stmo (https://sql.telemetry.mozilla.org)
+Home-page: https://github.com/mozilla/redash_client
+Author: Marina Samuel
+Author-email: msamuel@mozilla.com
+License: UNKNOWN
+Download-URL: https://github.com/emtwo/redash_client/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: redash,experiments,a/b tests
+Platform: UNKNOWN
