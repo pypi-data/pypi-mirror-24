@@ -1,0 +1,10 @@
+idf_tags-0.1.0a1.dist-info/DESCRIPTION.rst,sha256=R7g3RksDQoomH1yHsITRrUjPtvnzopoHG_PVsX83jFQ,2424
+idf_tags-0.1.0a1.dist-info/METADATA,sha256=aUZGaNY6NWvF3wxG_4nWLykosqYbFF9WSuGDlXYNMpo,3534
+idf_tags-0.1.0a1.dist-info/RECORD,,
+idf_tags-0.1.0a1.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+idf_tags-0.1.0a1.dist-info/entry_points.txt,sha256=4FhVuCT8fokwbHseKz8u0cOXCZuNYX42O7Ojq78hRlI,47
+idf_tags-0.1.0a1.dist-info/metadata.json,sha256=GWJCiE7TDBi112kPXSY8tpg1j5YScqccxn6iCtrxbeg,1280
+idf_tags-0.1.0a1.dist-info/top_level.txt,sha256=W6k4WtdlF1nmy2OgDM9gsW3NZ_8g5EQ7li5oZNWgCm8,8
+idftags/__init__.py,sha256=oklfaV_M5bvHU9tWlv1O9c7sfWaYAf07dMBUHZ3wLHs,24
+idftags/cli.py,sha256=rV9zoI77cHgJNOB4nw_wSi9f2oKLVIs4RKJ-OT7RxRQ,988
+idftags/idf_tag.py,sha256=lc293tNjGFHorNEsyA7x5gH7H_tlun-qMsBcVODjEWE,25232
