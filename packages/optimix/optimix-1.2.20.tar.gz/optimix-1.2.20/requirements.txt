@@ -1,0 +1,5 @@
+numpy
+scipy
+ndarray-listener>=1.0.25
+brent-search
+tqdm
