@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+Zomatopy/__init__.py
+Zomatopy/zomatopy.py
+Zomatopy.egg-info/PKG-INFO
+Zomatopy.egg-info/SOURCES.txt
+Zomatopy.egg-info/dependency_links.txt
+Zomatopy.egg-info/requires.txt
+Zomatopy.egg-info/top_level.txt
