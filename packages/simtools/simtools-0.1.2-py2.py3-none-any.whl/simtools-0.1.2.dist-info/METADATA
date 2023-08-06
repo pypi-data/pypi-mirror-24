@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: simtools
+Version: 0.1.2
+Summary: A set of MapReduce programs to process brain images
+Home-page: http://github.com/big-data-lab-team/sim
+Author: Tristan Glatard, Valerie Hayot-Sasson, Lalet Scaria
+Author-email: tristan.glatard@concordia.ca
+License: GPL3.0
+Platform: UNKNOWN
+Requires-Dist: boutiques
+Requires-Dist: pybids
+Requires-Dist: pyspark
+
+UNKNOWN
+
+
