@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: wpdb2dict
+Version: 1.0.0
+Summary: Converts a WordPress database to a Python dictionary, using WP-CLI's "wp db query" command.
+Home-page: https://github.com/diggy/wpdb2dict
+Author: Peter J. Herrel
+Author-email: peterherrel@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/diggy/wpdb2dict/archive/1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: wordpress,database,python
+Platform: UNKNOWN
