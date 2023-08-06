@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: cs.upd
+Version: 20170903
+Summary: Single line status updates with minimal update sequences.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: * Upd: a class accepting update strings which emits minimal text to update a progress line.
+        
+        -- out(s): update the line to show the string ``s``
+        
+        -- nl(s): flush the output line, write ``s`` with a newline, restore the status line
+        
+        -- without(func,...): flush the output line, call func, restore the status line
+        
+        This is available as an output mode in cs.logutils.
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
