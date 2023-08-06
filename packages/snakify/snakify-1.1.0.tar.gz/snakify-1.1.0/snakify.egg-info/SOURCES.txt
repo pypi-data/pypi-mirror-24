@@ -1,0 +1,9 @@
+setup.py
+snakify/__init__.py
+snakify/snakify.py
+snakify/tests.py
+snakify.egg-info/PKG-INFO
+snakify.egg-info/SOURCES.txt
+snakify.egg-info/dependency_links.txt
+snakify.egg-info/requires.txt
+snakify.egg-info/top_level.txt
