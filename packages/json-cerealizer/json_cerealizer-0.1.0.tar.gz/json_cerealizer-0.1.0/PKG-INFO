@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: json_cerealizer
+Version: 0.1.0
+Summary: A tiny library to make json encoding non-serializable objects easier.
+Home-page: https://github.com/bplower/json-cerealizer
+Author: Brahm Lower
+Author-email: bplower@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

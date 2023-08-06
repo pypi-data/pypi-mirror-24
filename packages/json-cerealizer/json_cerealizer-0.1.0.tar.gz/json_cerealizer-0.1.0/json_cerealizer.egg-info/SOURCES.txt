@@ -1,0 +1,7 @@
+json_cerealizer.py
+setup.cfg
+setup.py
+json_cerealizer.egg-info/PKG-INFO
+json_cerealizer.egg-info/SOURCES.txt
+json_cerealizer.egg-info/dependency_links.txt
+json_cerealizer.egg-info/top_level.txt
