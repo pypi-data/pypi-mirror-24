@@ -1,0 +1,17 @@
+spyder_reports/__init__.py,sha256=TRcoQOhqZQTqmTE8S4XVyckc2rfPa-kUzEfwl64gB-M,565
+spyder_reports/_version.py,sha256=_oQBJZcNNXmd-Jqu3aTeT3m02nf5gpsUCxKnlLQseos,423
+spyder_reports/reportsplugin.py,sha256=ZyqnJuuZeFabKNYiHMW4aUeDINF0p-9T_Vue509qj8E,12283
+spyder_reports/tests/__init__.py,sha256=arxbWe7u_BqgR5nXcjKl1EriJdDCz_lpf-H7I638yqA,333
+spyder_reports/tests/test_plugin.py,sha256=hz5qMsrrgNISsml-YIVENS2qDTrIj2F8-HPWL1ZCB4Q,10331
+spyder_reports/utils/__init__.py,sha256=PHkA-W9WBOt9Va7g_QifJuzVrCMVjMuenKsUKz5OK6Q,433
+spyder_reports/utils/templates/welcome.md,sha256=htvOju3OAO2GQ8RLGSM0hr3I0Dzjjs4sHDcXWtCfeFY,480
+spyder_reports/widgets/__init__.py,sha256=q6DuDYrqh7S4zv05eM-2LoLJlHG8ahSbGuyqfV07MgI,338
+spyder_reports/widgets/reportsgui.py,sha256=y2e_8T1ih3Olebp9L2Hhrtl8CprthLVTz-x1O3xXEo4,6957
+spyder_reports/widgets/tests/__init__.py,sha256=GsID4zyCHE9J__PNFuQCGe8Z19Cue61IwzkuX232Ajk,321
+spyder_reports/widgets/tests/test_report_widget.py,sha256=KttGSQo5FKRPeSVqxP13X_F7z3s2sV5-y77WutrQZRU,5848
+spyder_reports-0.1.0.dist-info/DESCRIPTION.rst,sha256=1YdmCgXQ4RX_8qfKRrNXzUvqXfEuRfNGzAtM8d4w2MM,1654
+spyder_reports-0.1.0.dist-info/METADATA,sha256=rh2mPaipV4reo9eGaYcPOZ3rXoyTMKcUbSjKKc-qbow,2433
+spyder_reports-0.1.0.dist-info/RECORD,,
+spyder_reports-0.1.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+spyder_reports-0.1.0.dist-info/metadata.json,sha256=WmYaGZSLbIqEnvWzlWiLnrt4_Pe5rGMxMSsZXkxqayc,935
+spyder_reports-0.1.0.dist-info/top_level.txt,sha256=tEPgyxc-BvL8_UFIgXk8ue5cNBPGjMZh9GJi3HV41GA,15
