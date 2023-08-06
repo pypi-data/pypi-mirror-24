@@ -1,0 +1,39 @@
+Metadata-Version: 1.1
+Name: cs.excutils
+Version: 20170904
+Summary: Convenience facilities for managing exceptions.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: Presents:
+        
+        * return_exc_info: call supplied function with arguments, return either (function_result, None) or (None, exc_info) if an exception was raised.
+        
+        * @returns_exc_info, a decorator for a function which wraps in it return_exc_info.
+        
+        * @noexc, a decorator for a function whose exceptions should never escape; instead they are logged. The initial use case was inside logging functions, where I have had a failed logging action abort a program. Obviously this is a decorator which should see very little use.
+        
+        * @noexc_gen, a decorator for generators with similar effect to @noexc for ordinary functions.
+        
+        * NoExceptions, a context manager to intercept most exceptions
+        
+        * LogExceptions, a context manager to log exceptions
+        
+        * @logexc, a decorator to make a function log exceptions it raises
+        
+        * @transmute, a decorator to transmute an inner exception to another exception type
+        
+        * @unattributable, a decorator to transmute inner AttributeError into a RuntimeError
+        
+        * @unimplemented, a decorator to make a method raise NotImplementedError
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
