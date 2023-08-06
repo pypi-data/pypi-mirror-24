@@ -1,0 +1,12 @@
+wasmfun\README.md,sha256=axxRqGQ2ZSQGTtV2nhq0_E09_erIgJFwhML7CmnZuo0,65
+wasmfun\__init__.py,sha256=b5S_Gdcr9f13tK8sKHm86obo5sbrhnOkrpdN0ALComc,167
+wasmfun\_opcodes.py,sha256=gEsIYokuExxDMuLHfLhz77W-jkevJQW2KRulfee1ZsM,4508
+wasmfun\components.py,sha256=xHUdXWHyUeyVmd8-lSH_GxwaSPuBkbnttZNIWYWifEk,24206
+wasmfun\generate_docs.py,sha256=IHrwxBCQjzXa7BvFSsASdY3qbK5T3gLZEfjsiDFS9Bs,2327
+wasmfun\template.html,sha256=4yEaR66eRbQ3H00pNLbCF4oheKHUcYs8tILExE7n268,363
+wasmfun\template.js,sha256=Y9aQ6ErQdgIdPYQU3OhwpfvGXx7D_bqx1q1YVvMTBbY,1581
+wasmfun\util.py,sha256=3dCxR8HjaBxl2ji_rJXSwmoVhc5vWj-TfGNCk2kr3WM,5596
+wasmfun-0.1.dist-info/LICENSE,sha256=iJo_kVOxq76pYGU8SlLqCyNC9WOdiWOfZxye1giuHLQ,1316
+wasmfun-0.1.dist-info/WHEEL,sha256=ZHNfI2weNuB0ftjlSd6FN0i71FnGMh4oUCobNq2loDE,82
+wasmfun-0.1.dist-info/METADATA,sha256=JGwG9YAe_X_9ADiKU2AJEN-vS_tctN_bU-8p8Fktz3Q,261
+wasmfun-0.1.dist-info/RECORD,,
