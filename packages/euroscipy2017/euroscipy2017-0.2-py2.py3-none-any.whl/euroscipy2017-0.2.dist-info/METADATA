@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: euroscipy2017
+Version: 0.2
+Summary: Sample package for demonstrating flit & flonda.
+Home-page: https://github.com/takluyver/euroscipy-2017-packaging
+License: UNKNOWN
+Author: Thomas Kluyver
+Author-email: thomas@kluyver.me.uk
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: numpy
+Requires-Dist: matplotlib
