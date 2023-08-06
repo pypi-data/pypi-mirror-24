@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: citrination
+Version: 1.1.1
+Summary: Command line interface for interacting with Citrination sites
+Home-page: http://github.com/CitrineInformatics/python-citrination-cli
+Author: Kyle Michel
+Author-email: kyle@citrine.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
