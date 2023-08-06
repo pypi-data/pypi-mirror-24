@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: seroba
+Version: 0.1.5
+Summary: SEROBA: Serotyping for illumina reads
+Home-page: https://github.com/sanger-pathogens/seroba
+Author: Lennard Epping
+Author-email: path-help@sanger.ac.uk
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
