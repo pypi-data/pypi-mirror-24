@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: bootstraps
+Version: 0.8
+Summary: A library to handle user related tasks in Flask
+Home-page: https://github.com/pgallen90/bootstraps
+Author: Patrick Allen
+Author-email: patrickgallen@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/pgallen90/bootstraps/archive/0.8.tar.gz
+Description: UNKNOWN
+Keywords: bootstrap,flask,forms
+Platform: UNKNOWN
