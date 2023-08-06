@@ -1,0 +1,41 @@
+import ast
+
+try:
+    # Python 3
+    import builtins
+except ImportError:
+    # Python 2
+    import __builtin__ as builtins
+
+def condition_is_unsatisfiable(condition):
+    safe_builtins = dict((key, value) for key, value in vars(builtins).items()
+                         if not (key.startswith('__') and key.endswith('__'))
+                         and key not in set(['input', 'raw_input']))
+    safe_builtins = {}
+    if not isinstance(condition, ast.Expression):
+        condition = ast.Expression(condition)
+    #test = compile(condition, filename="<string>", mode='eval')
+    #print(eval(test, {'__builtins__': safe_builtins}, {}))
+    print(ast.literal_eval(condition))
+
+CODE = [
+    "False or foo",
+    "locals()",
+    "globals().keys()",
+    "__builtins__.keys()",
+    "__import__",
+    "[t for t in ().__class__.__bases__[0].__subclasses__() if 'warning' in t.__name__][0]()._module.__builtins__",
+    "False",
+    "False and True",
+    "0",
+    "1 - 1",
+]
+
+for code in CODE:
+    print(code)
+    node = ast.parse(code, mode='eval')
+    try:
+        condition_is_unsatisfiable(node)
+    except Exception as err:
+        print(err)
+    print("*" * 80)
