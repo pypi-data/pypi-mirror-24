@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: PushRadar
+Version: 1.0.0
+Summary: PushRadar's official Python library, wrapping the PushRadar API.
+Home-page: https://github.com/pushradar/pushradar-python
+Author: PushRadar
+Author-email: contact@pushradar.com
+License: MIT
+Download-URL: https://github.com/pushradar/pushradar-python/archive/v1.0.0-beta.tar.gz
+Description: UNKNOWN
+Keywords: pushradar realtime push notifications api development websockets
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
