@@ -1,0 +1,15 @@
+PyDrive>=1.2.1
+docopt
+seqdiag
+colorama
+PyYAML
+
+[a2m]
+apidoc2markdown
+
+[all]
+swagger2markdown>=0.1.9
+apidoc2markdown
+
+[s2m]
+swagger2markdown>=0.1.9
