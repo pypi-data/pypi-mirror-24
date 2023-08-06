@@ -1,0 +1,6 @@
+[sphinx.html_themes]
+murray = murray
+
+[sphinx_themes]
+path = murray:get_html_theme_path
+
