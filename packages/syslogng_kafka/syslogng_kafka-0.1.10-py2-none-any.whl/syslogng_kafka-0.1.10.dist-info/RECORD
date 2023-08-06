@@ -1,0 +1,10 @@
+syslogng_kafka/__init__.py,sha256=Z20Ml08DxX0qeBVe0hTvZLybjWxV2z9uPodvHrRvVLc,113
+syslogng_kafka/kafkadriver.py,sha256=PK58FypiTxDf9MW3ZfBBQYO7sX0S8wIIiWVjVka-r9c,9774
+syslogng_kafka/log.py,sha256=vr966nlysTnrzGFun-P87vu49xJoFdttm8z2yNCuryA,409
+syslogng_kafka/util.py,sha256=Ls4uaq69Mkfmqdi9NdIe0ZhCgOWuZzcCJnGu5KpaMTU,5101
+syslogng_kafka-0.1.10.dist-info/DESCRIPTION.rst,sha256=ikZx4dAM4kC5QqhXMKwouMI7sqRBGdu0p7GIpNXTZJc,3095
+syslogng_kafka-0.1.10.dist-info/METADATA,sha256=fXJOflz29UbZh178UDNUgKkfuuHjH_NnkK2wkbgAcHE,3829
+syslogng_kafka-0.1.10.dist-info/RECORD,,
+syslogng_kafka-0.1.10.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+syslogng_kafka-0.1.10.dist-info/metadata.json,sha256=4F8XvGGyUVJ8bjAlxdod1PVvR4xMeLQ_SrFZPqNFi9U,1152
+syslogng_kafka-0.1.10.dist-info/top_level.txt,sha256=UuJ153cKJ22Kgr2ZmtpJg4If8-ZorPG8Iy_B5xtRFhk,15

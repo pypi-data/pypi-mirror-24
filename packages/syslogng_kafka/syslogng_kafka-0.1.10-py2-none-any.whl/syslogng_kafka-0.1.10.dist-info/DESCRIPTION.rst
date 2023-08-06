@@ -1,0 +1,109 @@
+**syslog-ng Apache Kafka destination**
+
+.. image:: https://img.shields.io/pypi/v/syslogng_kafka.svg
+    :target: https://pypi.python.org/pypi/syslogng_kafka
+
+.. image:: https://travis-ci.org/ilanddev/syslogng_kafka.svg?branch=master
+    :target: https://travis-ci.org/ilanddev/syslogng_kafka
+
+.. image:: https://readthedocs.org/projects/syslogng_kafka/badge/?version=latest
+    :target: https://syslogng_kafka.readthedocs.org/en/latest/
+    :alt: Documentation Status
+
+.. image:: https://requires.io/github/ilanddev/syslogng_kafka/requirements.svg?branch=master
+    :target: https://requires.io/github/ilanddev/syslogng_kafka/requirements/?branch=master
+    :alt: Requirements Status
+
+- Free software: Apache Software License 2.0
+- Documentation: https://syslogng-kafka.readthedocs.io.
+
+============
+Introduction
+============
+
+**syslogng_kafka** provides a `Python`_ module for `syslog-ng`_ 3.7 allowing one
+to filter and forward syslog messages to `Apache Kafka`_ brokers.
+
+The implementation leverages `confluent-kafka`_ which uses the awesome `librdkafka`_
+library providing reliability and high performance.
+
+**Please read the** `doc`_ **as in most cases a `pip install` won't work as they are particular requirements that are currently not met by mainstream Linux distributions.**
+
+.. _Python: https://www.python.org/
+.. _syslog-ng: https://github.com/balabit/syslog-ng
+.. _Apache Kafka: http://kafka.apache.org/
+.. _doc: https://syslogng-kafka.readthedocs.io
+.. _confluent-kafka: https://github.com/confluentinc/confluent-kafka-python
+.. _librdkafka: https://github.com/edenhill/librdkafka
+
+
+
+
+=======
+History
+=======
+
+0.1.10 (2017-08-09)
+-------------------
+
+* `nat` program pre-processing
+
+0.1.9 (2017-07-28)
+------------------
+
+* Handle `LogMessage` vs syslog-ng `values-pair` because it badly leaks if one do...
+* Make 3.7.x the supported version for now because of `LogMessage` issues.
+
+0.1.8 (2017-07-28)
+------------------
+
+* Delivery and stats callback refactoring.
+
+0.1.7 (2017-07-27)
+------------------
+
+* Update confluent-kafka dependency to version 0.11.0: https://github.com/confluentinc/confluent-kafka-python/releases/tag/v0.11.0
+
+0.1.6 (2017-07-04)
+------------------
+
+* Disable `delivery.report.ony.error` on callbacks because of a bug in
+`confluent-kafka`: https://github.com/confluentinc/confluent-kafka-python/issues/84
+Let's revisit when 0.11 is released.
+
+0.1.5 (2017-07-03)
+------------------
+
+* provide a global `on_delivery` callback in the `Producer()` config
+dict better for memory consumptions vs per message callback.
+
+0.1.4 (2017-06-30)
+------------------
+
+* make `send` more robust
+
+0.1.3 (2017-06-30)
+------------------
+
+* catch `UnicodeEncodeError` in `send()`
+
+0.1.2 (2017-06-29)
+------------------
+
+* catch `UnicodeDecodeError` in delivery callback as it can be thrown by
+  `err.str()`
+
+0.1.1 (2017-06-29)
+------------------
+
+* add util to produce syslog messages in `tools` sub-folder
+* remove useless `KeyboardInterrupt`
+* reduce timeout of `flush()` from 30 to 5 seconds
+* more tests
+
+0.1.0 (2017-06-28)
+------------------
+
+* First release on PyPI.
+
+
