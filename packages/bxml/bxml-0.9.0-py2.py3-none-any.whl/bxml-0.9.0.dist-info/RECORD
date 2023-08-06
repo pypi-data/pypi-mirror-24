@@ -1,0 +1,15 @@
+bxml/__init__.py,sha256=jeJt56HAXZJPMpLsMlrlHwZeUrMriUc1ZjII9QIF2Ao,247
+bxml/builder.py,sha256=bwpJ9-hQ937fhXZHKgd6DT0MDmO6LJkmXgdWRR354Tk,1045
+bxml/docx.py,sha256=x6A8QEjLlZEF44AkX1applCZMMP99V5EHCXT47JoWFA,18933
+bxml/element_maker.py,sha256=Q-JS65hDIiCm0DXCprKhCkSeCzI-n8CIG5p-3nf9YN8,584
+bxml/schema.py,sha256=1ZoFRDXdAAG-k3__sFAiz8Sua2wBu4gE94TOBCimmpM,2305
+bxml/xlsx.py,sha256=PBq4ryP4g1pzhvInY5mmfSbrc7u82B6ZajZ3ReCeXRk,3795
+bxml/xml.py,sha256=bbRcFtAlgvu29Gp8oRx1-fIms47sToRTF6zrixzO-6Q,22428
+bxml/xslt.py,sha256=UBMAqHYFfnxcFCMYkrxqpNPlZ98jxVjGoiZA_gPWzj8,8075
+bxml/xt.py,sha256=xlih3kCUX1XTrSG9BnQU5CQD8zEFZffRlVamXTuH53U,2663
+bxml-0.9.0.dist-info/DESCRIPTION.rst,sha256=c9uQMyEgIoiV2XGtn7-hyVR8L8QUnlE77eoyfptNpV4,61
+bxml-0.9.0.dist-info/METADATA,sha256=OqhkZLQgqyZS8jPAj5xrjBJtHX86fI0X0Ui8oHR7cvQ,596
+bxml-0.9.0.dist-info/RECORD,,
+bxml-0.9.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+bxml-0.9.0.dist-info/metadata.json,sha256=c3ha4ypoKC_nN30D7Ly8wfeQIDvp8w6T7pgv-iaunNs,686
+bxml-0.9.0.dist-info/top_level.txt,sha256=gH1-jGghd0POw9w4bqAhd8lSMehqGlZKJD3dawIDGtc,5
