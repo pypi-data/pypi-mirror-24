@@ -1,0 +1,2 @@
+glovepy/glove_inner.cpython-35m-x86_64-linux-gnu.so
+glovepy/corpus_cython.cpython-35m-x86_64-linux-gnu.so
