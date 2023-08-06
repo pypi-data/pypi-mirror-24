@@ -1,0 +1,5 @@
+logwrap/_class_decorator.cpython-34m.so
+logwrap/_log_wrap_shared.cpython-34m.so
+logwrap/_log_wrap3.cpython-34m.so
+logwrap/_repr_utils.cpython-34m.so
+logwrap/_formatters.cpython-34m.so
