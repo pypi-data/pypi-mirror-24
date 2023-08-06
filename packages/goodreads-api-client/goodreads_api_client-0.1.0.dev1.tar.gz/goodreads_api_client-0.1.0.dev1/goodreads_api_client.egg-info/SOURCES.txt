@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+goodreads_api_client/__init__.py
+goodreads_api_client/client.py
+goodreads_api_client/exceptions.py
+goodreads_api_client/transport.py
+goodreads_api_client.egg-info/PKG-INFO
+goodreads_api_client.egg-info/SOURCES.txt
+goodreads_api_client.egg-info/dependency_links.txt
+goodreads_api_client.egg-info/not-zip-safe
+goodreads_api_client.egg-info/requires.txt
+goodreads_api_client.egg-info/top_level.txt
