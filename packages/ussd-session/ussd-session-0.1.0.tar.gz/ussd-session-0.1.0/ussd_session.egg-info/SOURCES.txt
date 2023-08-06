@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+ussd_session.egg-info/PKG-INFO
+ussd_session.egg-info/SOURCES.txt
+ussd_session.egg-info/dependency_links.txt
+ussd_session.egg-info/requires.txt
+ussd_session.egg-info/top_level.txt
