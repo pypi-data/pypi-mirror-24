@@ -1,0 +1,6 @@
+cssselect
+enum34
+
+[test]
+lxml
+pytest
