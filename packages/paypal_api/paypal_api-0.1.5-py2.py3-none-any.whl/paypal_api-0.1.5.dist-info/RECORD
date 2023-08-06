@@ -1,0 +1,10 @@
+paypal/__init__.py,sha256=QzRWU7tPfKe6DlIcJTSDIX7nWj2BixtnPYRr0GS3Nm8,1391
+paypal/base.py,sha256=iZcIsy5j1mJNoGKn1BCdd7jZlM2GcYr9q3au7CwLS5Q,4092
+paypal/payment.py,sha256=av-QP-uRU1-P58LbfM7qRDRlP2c4kWw69ZwgGowRk40,2144
+paypal/webhook.py,sha256=jvnBHHo8WPWXxZKGrNdfPGW0m5Zi1gkKXxQ72dCcILs,1448
+paypal_api-0.1.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+paypal_api-0.1.5.dist-info/METADATA,sha256=KFlj7zsxfPXDFk5PvnMG-lowt-ht7Zrc4vec97_clFE,967
+paypal_api-0.1.5.dist-info/RECORD,,
+paypal_api-0.1.5.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+paypal_api-0.1.5.dist-info/metadata.json,sha256=1Eg4lFuDk9Qw2_RtUpi_h9SFGnRet2m_4gJT6yhsRLg,1080
+paypal_api-0.1.5.dist-info/top_level.txt,sha256=jpP33FPB25mEIc9rECsUCZycjFPbZcPKWVyHmMMevt4,7
