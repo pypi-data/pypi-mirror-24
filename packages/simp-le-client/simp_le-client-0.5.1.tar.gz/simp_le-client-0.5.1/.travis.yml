@@ -1,0 +1,38 @@
+# configuration for https://travis-ci.org
+language: python
+python:
+  - "2.6"
+  - "2.7"
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+env:
+  - TEST_SUITE=simp_le_suite
+matrix:
+  include:
+  - python: "2.7"
+    env: TEST_SUITE=lint_suite
+
+services:
+  - docker
+addons:
+  hosts:
+    - le.wtf
+    - le2.wtf
+    - boulder
+    - boulder-mysql
+    - boulder-rabbitmq
+
+install:
+  - pip install -e .
+  - ./tests/install.sh $TEST_SUITE
+script:
+  - ./tests/test-suite.sh $TEST_SUITE
+
+notifications:
+  irc:
+    channels:
+      - "irc.freenode.org#simp_le"
+    use_notice: true
+    skip_join: true

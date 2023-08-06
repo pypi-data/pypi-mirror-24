@@ -1,0 +1,10 @@
+acme<0.18,>=0.17
+requests
+cryptography
+pyOpenSSL
+pytz
+mock
+
+[tests]
+pep8
+pylint
