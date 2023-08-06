@@ -1,0 +1,6 @@
+#!python
+
+from admin.sign_msg import SignMsg
+
+if __name__ == "__main__":
+    SignMsg().start()

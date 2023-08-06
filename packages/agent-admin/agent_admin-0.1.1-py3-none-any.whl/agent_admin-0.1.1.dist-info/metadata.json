@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"document_names": {"description": "DESCRIPTION.rst"}}}, "extras": [], "generator": "bdist_wheel (0.30.0.a0)", "license": "__license__", "metadata_version": "2.0", "name": "agent-admin", "run_requires": [{"requires": ["base58", "libnacl", "requests"]}], "summary": "Agent Admin", "version": "0.1.1"}
