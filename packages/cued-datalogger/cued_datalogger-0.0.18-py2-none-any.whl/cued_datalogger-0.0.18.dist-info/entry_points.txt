@@ -1,0 +1,6 @@
+[console_scripts]
+DataLogger_dbg = datalogger.__main__:run_datalogger_full
+
+[gui_scripts]
+DataLogger = datalogger.__main__:run_datalogger_full
+
