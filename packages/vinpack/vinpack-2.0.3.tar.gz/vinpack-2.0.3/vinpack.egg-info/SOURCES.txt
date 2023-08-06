@@ -1,0 +1,7 @@
+setup.py
+./vinpack/__init__.py
+./vinpack/dateutils.py
+vinpack.egg-info/PKG-INFO
+vinpack.egg-info/SOURCES.txt
+vinpack.egg-info/dependency_links.txt
+vinpack.egg-info/top_level.txt

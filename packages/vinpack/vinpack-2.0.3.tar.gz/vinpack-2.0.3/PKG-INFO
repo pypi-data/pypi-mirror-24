@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: vinpack
+Version: 2.0.3
+Summary: The module vinpack.dateutils has a print_cal() function along with few other.
+Home-page: http://vinod.co
+Author: Vinod
+Author-email: vinod@vinod.co
+License: MIT
+Description: The package vinpack has only one module 'dateutils' with the following members:
+        
+        is_leap(year)
+        	-> returns True/False for a leap year/ non-leap year
+        
+        max_days(month, year)
+        	-> returns the maximum number of days in the given month of the year
+        
+        printcal(month=None, year=None)
+        	-> prints the calendar for the given month and year
+        	-> prints the calendar for current month/year if not specified
+Platform: UNKNOWN
