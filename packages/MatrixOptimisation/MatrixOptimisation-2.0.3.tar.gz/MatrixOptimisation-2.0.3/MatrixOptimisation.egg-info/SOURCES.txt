@@ -1,0 +1,9 @@
+setup.py
+MatrixOptimisation/__init__.py
+MatrixOptimisation/churns.py
+MatrixOptimisation/data_functions.py
+MatrixOptimisation.egg-info/PKG-INFO
+MatrixOptimisation.egg-info/SOURCES.txt
+MatrixOptimisation.egg-info/dependency_links.txt
+MatrixOptimisation.egg-info/requires.txt
+MatrixOptimisation.egg-info/top_level.txt
