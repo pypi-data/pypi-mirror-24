@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: SteamAuthPy
+Version: 1.0
+Summary: Authenticate on Steam easily with Python 2.x
+Home-page: https://github.com/ShellRox/SteamLoginPy
+Author: ShellRox
+Author-email: Shellrox@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/ShellRox/SteamLoginPy/archive/master.zip
+Description: UNKNOWN
+Keywords: authentication,steam,simple
+Platform: UNKNOWN
