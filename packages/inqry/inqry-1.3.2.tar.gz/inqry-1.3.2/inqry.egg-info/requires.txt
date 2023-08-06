@@ -1,0 +1,8 @@
+Pillow
+pytest
+PyYAML
+qrcode
+
+[:platform_system == "Windows"]
+wmi
+pypiwin32
