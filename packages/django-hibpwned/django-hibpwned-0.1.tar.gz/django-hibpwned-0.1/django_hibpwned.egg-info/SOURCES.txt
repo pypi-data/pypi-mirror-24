@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+django_hibpwned.egg-info/PKG-INFO
+django_hibpwned.egg-info/SOURCES.txt
+django_hibpwned.egg-info/dependency_links.txt
+django_hibpwned.egg-info/not-zip-safe
+django_hibpwned.egg-info/requires.txt
+django_hibpwned.egg-info/top_level.txt
+haveibeenpwned/__init__.py
+haveibeenpwned/validators.py

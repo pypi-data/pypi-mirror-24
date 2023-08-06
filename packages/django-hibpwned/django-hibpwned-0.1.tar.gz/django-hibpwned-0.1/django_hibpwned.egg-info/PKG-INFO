@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: django-hibpwned
+Version: 0.1
+Summary: Django password validator based on haveibeenpwned.com API
+Home-page: https://github.com/tombiasz/django-hibpwned
+Author: tombiasz
+Author-email: tomasz.m.nowacki@gmail.com
+License: MIT
+Download-URL: https://github.com/tombiasz/django-hibpwned/archive/v0.1.zip
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3 :: Only
