@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: gap-stat
+Version: 1.0.1
+Summary: Python implementation of the gap statistic.
+Home-page: https://github.com/milesgranger/gap_statistic
+Author: Miles Granger
+Author-email: miles.granger@outlook.com
+License: BSD
+Description: Uses the gap statistic method by Tibshirani, Walther, Hastie to suggest n_clusters.
+Keywords: kmeans unsupervised learning machine-learning clustering
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
