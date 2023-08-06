@@ -1,0 +1,10 @@
+nexmo/__init__.py,sha256=7v5-7TmpTcCmzrf7sXdZRgZ0lx_ZeSG7fqvek9gcTIc,1335
+nexmo/account.py,sha256=sZgSZrJV_bqTFLTlB_iKcNa1Jg-tc_ZPLQeqeJuJFmo,1442
+nexmo/base.py,sha256=E-7WeomSsk8O1GgHlVzloXpYQIdClYICz8TCbMypJEA,2341
+nexmo/sms.py,sha256=0EvUrFk2eAiWlrLaoQqrgjwyAhX-5k7wdAyDFbJULAc,1604
+nexmo_api-0.1.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+nexmo_api-0.1.2.dist-info/METADATA,sha256=gszhHMAPUpB4gmt89jnRhJYl1m_RJu5ke7oJ1qZaqZ4,963
+nexmo_api-0.1.2.dist-info/RECORD,,
+nexmo_api-0.1.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+nexmo_api-0.1.2.dist-info/metadata.json,sha256=aO-VCtPctOYuReYCNCQm-irku-Lec2AbjTo-5VmT-Vg,1076
+nexmo_api-0.1.2.dist-info/top_level.txt,sha256=3L1VQbUkzw6Y5OpW3F0cBMabIWZLj3ni-toowPaDIX8,6
