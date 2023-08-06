@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: scrapy-redis-bloomfilter
+Version: 0.6.8
+Summary: Scrapy Redis BloomFilter
+Home-page: UNKNOWN
+Author: Germey
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: scrapy,redis,bloomfilter
+Platform: UNKNOWN
