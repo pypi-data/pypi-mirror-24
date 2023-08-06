@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+ananas.py
+mastodon_patch.py
+readme.rst
+run.py
+setup.py
+ananas.egg-info/PKG-INFO
+ananas.egg-info/SOURCES.txt
+ananas.egg-info/dependency_links.txt
+ananas.egg-info/entry_points.txt
+ananas.egg-info/requires.txt
+ananas.egg-info/top_level.txt
+default/__init__.py
+default/roll.py
+default/tracery.py
