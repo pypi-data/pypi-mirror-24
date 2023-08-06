@@ -1,0 +1,3 @@
+[nodeconductor_extensions]
+nodeconductor_azure = nodeconductor_azure.extension:AzureExtension
+
