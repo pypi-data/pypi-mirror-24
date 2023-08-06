@@ -1,0 +1,11 @@
+soft_phone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soft_phone/callbacks.py,sha256=G5eCPsAIYfMiVQq2PfjeOfPKpUTbOCEpGdjyondnM-k,2693
+soft_phone/exceptions.py,sha256=QcZ3a43Tb326lXEH8Gx3H46Ql5IHLVGlYg4vr5V5v68,148
+soft_phone/manage_pjsip.py,sha256=DblMuuXunD8NZlHvhS02use_qCYES1_lNaUMF_vvqNA,1154
+soft_phone/soft_phone.py,sha256=-7R-AvAx3G-zigvYJF7-hWxUL0c0Dmoi_q0RkQ5Y1QM,14973
+soft_phone-1.7.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+soft_phone-1.7.dist-info/METADATA,sha256=u42sM2ei9Gtcv4Fff55lMfHUkSss6osXB4nlLuLaOOI,584
+soft_phone-1.7.dist-info/RECORD,,
+soft_phone-1.7.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+soft_phone-1.7.dist-info/metadata.json,sha256=e_VUOUXCT7FDX2jPkMShl18hqimRDCA0AqZi73O1Dzo,756
+soft_phone-1.7.dist-info/top_level.txt,sha256=NQttAazRi8qLQ0k96lg3jdzAqj8h3Xb_FrgRIvStweg,11
