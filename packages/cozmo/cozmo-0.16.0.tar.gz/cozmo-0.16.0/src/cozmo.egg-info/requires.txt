@@ -1,0 +1,9 @@
+cozmoclad==1.7.1
+
+[camera]
+Pillow>=3.3
+numpy>=1.11
+
+[test]
+tox
+pytest
