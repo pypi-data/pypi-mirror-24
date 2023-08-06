@@ -1,0 +1,9 @@
+[console_scripts]
+cluster_v = pines.daskworker:new_worker_with_egnyte
+pines_cluster_worker_v = pines.daskworker:new_worker
+pines_config = pines.configure:print_config
+
+[gui_scripts]
+cluster_q = pines.daskworker:new_worker_with_egnyte
+pines_cluster_worker = pines.daskworker:new_worker
+
