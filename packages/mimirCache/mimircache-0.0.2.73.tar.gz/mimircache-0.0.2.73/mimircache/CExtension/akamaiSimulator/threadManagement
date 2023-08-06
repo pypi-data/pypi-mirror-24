@@ -1,0 +1,10 @@
+1. maintain a req priorityQueue with timestamp at cacheLayer 
+2. maintain a req priorityQueue at each server of layer (more queues, huge mem) 
+3. maintain a req queue at each cacheLayer and runs periodically 
+4. 
+
+
+where to Block 
+1. block at each layer_cache at cacheServer 
+2. block at each layer 
+3. block at each cacheServer 
