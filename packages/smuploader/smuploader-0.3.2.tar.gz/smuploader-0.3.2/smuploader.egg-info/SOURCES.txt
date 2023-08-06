@@ -1,0 +1,13 @@
+README
+setup.py
+bin/smdownloader
+bin/smregister
+bin/smregtest
+bin/smuploader
+smuploader/__init__.py
+smuploader/smugmug.py
+smuploader.egg-info/PKG-INFO
+smuploader.egg-info/SOURCES.txt
+smuploader.egg-info/dependency_links.txt
+smuploader.egg-info/not-zip-safe
+smuploader.egg-info/top_level.txt
