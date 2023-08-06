@@ -1,0 +1,10 @@
+pathgather/__init__.py,sha256=jRHZCrhwOjOuX9a1Vd0FMoHrsHOw51ZBZf_m7yHnVm0,941
+pathgather/client.py,sha256=k9hUVC7MyXMKPpnGltc-AEWUGfdc9vqt2tC4Tj8X2j4,3010
+pathgather/exceptions.py,sha256=sDhgXauhObuvS_4plWFYg8t1GmYUH7zZnw3pTKp3nrs,1014
+pathgather/users.py,sha256=8Qu8rHLDZL52OYT8Dzmw9QPCvEiSyMhRH7WVsUOkpNQ,2768
+pathgather-0.1.0.dist-info/DESCRIPTION.rst,sha256=_xM15UZcNs5UVdesAQg2JnFzRQ61w0KIvSt_hUD7SiE,1010
+pathgather-0.1.0.dist-info/METADATA,sha256=WKLb7QCwNGwQxlOW6CEWY3zA64kKXFhOlR_UrZ1eYco,1800
+pathgather-0.1.0.dist-info/RECORD,,
+pathgather-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pathgather-0.1.0.dist-info/metadata.json,sha256=B8jELsIlcknc05LdSHurOdpBnt66S2J8MsBTz7Sl9zg,938
+pathgather-0.1.0.dist-info/top_level.txt,sha256=jDC-Wdwkg3Pf5YVzmaH4xEXymQM3jVq0JdIlQvzNV1E,11
