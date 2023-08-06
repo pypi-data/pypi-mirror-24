@@ -1,0 +1,114 @@
+CHANGES
+=======
+
+1.1.0
+-----
+
+* Updated Gluon Documentation for Pike Release
+* Replace http with https for doc links in gluon
+* Modify proton.cof and move files around
+* Add version number into URL
+* Policies in yaml
+* Function delete\_port() takes exactly 3 arguments (4 given) in handle\_port\_delete()
+* Gluon object-level authorization
+* Resolve warnings in Sphinx documentation
+* The para into "add\_model()“ should be changed to model in function ”build\_api()“
+
+1.0.5
+-----
+
+* Improve README
+* Stop using deprecated CORS.set\_latent()
+* Set environment variables for protonclient
+* Add configuration option for policy.json file path For user authorizations, oslo\_policy need to load the rules and policies defined in the policy.json file. When the oslo\_policy enforcer is initializing it will look for the path of this file in cfg.CONF. Gluon needs to add this configuration option to its configuration
+* Update the documentation link for doc migration
+* Rule to code
+* Update formatting in Contrail docs
+* Update documentation for Contrail installation
+* Fix incorrect commands adding Gluon service to Keystone
+* Moving hardcoded constants to config file
+* Fix doc gate failure
+* Proton Version Management
+* Remove sqlite\_db parameter from set\_defaults
+* Adding initial version of the SFC to Gluon
+* Proton Version Management
+* Replace six.iteritems() with .items()
+* Update to use os-testr to get better report
+* Extending L3VPN model to configure BGP peerings
+* Support all API YAML Models by default
+* Base URI return values
+* Remove translation of log messages from gluon
+* Refined installation instructions
+* Fixing broken import statement
+* Fixing DB test after sqlite\_db config option was removed
+* Remove unused import statements
+
+1.0.1
+-----
+
+* Update Gluon Installation Instruction
+* Fix the module-name typos
+* Bug fix: Update the descripton of Base URL Access
+* Update reno for stable/ocata
+* Remove unused logging import
+
+1.0.0
+-----
+
+* Gluon Documentation Update
+* Updating the ODL shim layer to port binding model
+* Using config option to bind to etcd server
+* Contrail ML2 mechanism driver info
+
+1.0.0.0rc2
+----------
+
+* Updated Requirements and py35 Support
+* Gluon Access Control Blueprint - updates
+* Sample policy.json and proton.conf files
+* Return the correct verion in RootController's get method
+* Test case for api.baseObject module
+* Test case for DataBaseModelGenerator
+* Update code to comply with Gluon API Spec
+* Remove execute permission bits from API spec doc
+* Remove white space between print ()
+* Unit testing for db.sqlalchemy.api.py
+* Support keystone authentication on cli
+* Gluon RBAC using keystone and oslo.policy
+* Config option for model handlers and backends
+* Catch the right type of exceptions
+* Add entry point to our Neutron plugin
+* Test case for particleGenerator.generator
+* Adding ODL backend to generic shim layer framework
+* cli test cases
+* Gluon API Specification
+* [WIP]Test Case Proposal
+* Fix unhandled etcd read exception
+* Remove two pep8 ignores and fix corresponding bugs
+* Gluon RBAC using keystone and oslo.policy
+* Fix function return none
+* Fix Exception.message deprecated error
+* First draft of Gluon access control blueprint
+* Add/Update documentation for Gluon Developers
+* Test Case for particleGenerator.ApiGenerator
+* Port and Service Binding Model for Gluon
+* Proton server to support multiple API models
+* fix py34 not supporting unicode issue
+* Enable pep8
+* Example Shim Server Improvements
+* trivial fix
+* Synchronize Port Bind Operation
+* Fix undefined variable new\_controller
+* Enable release notes translation
+* Nitpicking Cleanup to initial Gluon code
+* Updated from global requirements
+* Gluon Plugin Wrapper Design
+* Update flake8 ignore list
+* Initial Gluon Code
+* Database Migration Strategy
+* Task list
+* cleanup tox.ini, enable constraints
+* First draft of High Level Design document
+* Document proposed repo structure Implements: blueprint repo-structure Change-Id: If52f6f328e39491e9757ae5bd75d31fd7636f5c4
+* Initial repo from cookiecutter
+* Added .gitreview
