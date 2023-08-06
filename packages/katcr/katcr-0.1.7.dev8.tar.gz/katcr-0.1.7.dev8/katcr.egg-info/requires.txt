@@ -1,0 +1,6 @@
+docopt
+tabulate
+inquirer
+telepot
+robobrowser
+torrentmirror
