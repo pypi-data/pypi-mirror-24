@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: alhambra
+Version: 0.4.0
+Summary: DX Tile Set Designer
+Home-page: UNKNOWN
+Author: Constantine Evans
+Author-email: cgevans@evans.foundation
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: lxml
+Requires-Dist: numpy
+Requires-Dist: peppercompiler
+Requires-Dist: ruamel.yaml
+Requires-Dist: shutilwhich
+Requires-Dist: stickydesign (>=0.5.0)
+Requires-Dist: svgwrite
+
+UNKNOWN
+
+
