@@ -1,0 +1,7 @@
+jupyter
+
+[test]
+pytest
+pytest-cov
+codecov
+mock
