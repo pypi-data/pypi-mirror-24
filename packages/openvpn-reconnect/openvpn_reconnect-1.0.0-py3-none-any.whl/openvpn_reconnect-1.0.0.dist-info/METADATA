@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: openvpn-reconnect
+Version: 1.0.0
+Summary: Daemon para mentener el programa OpenVPN siempre funcionando
+Home-page: https://linuxdevtips.blogspot.com/
+Author: Fernando Enzo Guarini
+Author-email: fernandoenzo@gmail.com
+License: GPLv3+
+Download-URL: https://bitbucket.org/fernandoenzo/openvpn-reconnect/
+Keywords: openvpn reconnect
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: Spanish
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: System :: Installation/Setup
+
+Programa que hace un chequeo constante de conectividad a la red OpenVPN que le indiquemos y, si no es capaz de conectarse, reinicia el servicio.
+
+
