@@ -1,0 +1,11 @@
+README.rst
+setup.py
+scrapy_kafka_export/__init__.py
+scrapy_kafka_export/extensions.py
+scrapy_kafka_export/utils.py
+scrapy_kafka_export/writer.py
+scrapy_kafka_export.egg-info/PKG-INFO
+scrapy_kafka_export.egg-info/SOURCES.txt
+scrapy_kafka_export.egg-info/dependency_links.txt
+scrapy_kafka_export.egg-info/requires.txt
+scrapy_kafka_export.egg-info/top_level.txt
