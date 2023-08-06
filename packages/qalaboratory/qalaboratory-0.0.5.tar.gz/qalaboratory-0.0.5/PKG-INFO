@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: qalaboratory
+Version: 0.0.5
+Summary: QALAB, proyect manager for QA open source proyects
+Home-page: https://github.com/netzulo/qalab
+Author: Netzulo Open Source
+Author-email: netzuleando@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/netzulo/qalab/tarball/v0.0.5
+Description: UNKNOWN
+Keywords: testing,logging,functional,selenium,test,installer,hub,node
+Platform: UNKNOWN
