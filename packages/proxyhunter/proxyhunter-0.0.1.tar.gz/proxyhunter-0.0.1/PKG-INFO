@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: proxyhunter
+Version: 0.0.1
+Summary: free available http proxy from web
+Home-page: https://eclipsesv.com
+Author: wangmengcn
+Author-email: eclipse_sv@163.com
+License: MIT Licence
+Description: proxy hunter
+Keywords: pip,http,http proxy
+Platform: any
