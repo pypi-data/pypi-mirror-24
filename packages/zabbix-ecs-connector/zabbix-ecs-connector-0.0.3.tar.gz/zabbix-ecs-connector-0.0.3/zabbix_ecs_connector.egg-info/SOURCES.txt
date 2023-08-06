@@ -1,0 +1,13 @@
+MANIFEST.in
+config.json.example
+setup.cfg
+setup.py
+zabbixECSConnectord
+ZabbixECSConnector/__init__.py
+ZabbixECSConnector/awsecs.py
+ZabbixECSConnector/zabbix.py
+zabbix_ecs_connector.egg-info/PKG-INFO
+zabbix_ecs_connector.egg-info/SOURCES.txt
+zabbix_ecs_connector.egg-info/dependency_links.txt
+zabbix_ecs_connector.egg-info/requires.txt
+zabbix_ecs_connector.egg-info/top_level.txt

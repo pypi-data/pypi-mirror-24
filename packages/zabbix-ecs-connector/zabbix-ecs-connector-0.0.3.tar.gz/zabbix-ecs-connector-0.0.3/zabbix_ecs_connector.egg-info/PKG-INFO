@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: zabbix-ecs-connector
+Version: 0.0.3
+Summary: Implementation of Zabbix AWS ECS connector
+Home-page: https://github.com/akomic/zabbix-ecs-connector
+Author: Alen Komic
+Author-email: akomic@gmail.com
+License: UNKNOWN
+Description: This module implements AWS ECS connector.
+        
+Keywords: monitoring,zabbix,AWS,ECS
+Platform: UNKNOWN
