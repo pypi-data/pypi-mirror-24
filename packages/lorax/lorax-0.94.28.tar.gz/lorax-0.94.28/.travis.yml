@@ -1,0 +1,30 @@
+language: python
+python:
+   - "3.5"
+before_install:
+   - curl -L -o get_build_scripts.sh https://raw.githubusercontent.com/LegumeFederation/lorax/master/build_scripts/get_build_scripts.sh
+   - bash get_build_scripts.sh
+   - ./lorax_build.sh init
+   - export root_dir=`python -c 'import sys;print(sys.prefix)'`
+   - ./lorax_build.sh set root_dir $root_dir
+   - ./lorax_build.sh set var_dir ${root_dir}/var
+   - ./lorax_build.sh set tmp_dir ${root_dir}/var/tmp
+   - ./lorax_build.sh set log_dir ${root_dir}/var/log
+   - ./lorax_build.sh set all
+   - ./lorax_build.sh make_dirs
+   - ./lorax_build.sh install hmmer
+   - ./lorax_build.sh install nginx
+install:
+   - pip install -U setuptools
+   - pip install -e 'git+https://github.com/LegumeFederation/supervisor.git@4.0.0#egg=supervisor==4.0.0'
+   - pip install .
+before_script:
+   - lorax_env lorax create_instance
+   - lorax_env lorax create_test_files
+script:
+   - lorax_env supervisord
+   - sleep 10
+   - sleep 10
+   - lorax_env supervisorctl status
+   - ./lorax_test.sh
+   - echo "done"
