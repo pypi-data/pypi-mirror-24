@@ -1,0 +1,5 @@
+google-cloud-core<0.28dev,>=0.27.0
+grpcio<2.0dev,>=1.2.0
+gapic-google-cloud-spanner-v1<0.16dev,>=0.15.0
+gapic-google-cloud-spanner-admin-database-v1<0.16dev,>=0.15.0
+gapic-google-cloud-spanner-admin-instance-v1<0.16dev,>=0.15.0
