@@ -1,0 +1,39 @@
+Metadata-Version: 2.0
+Name: xRBM
+Version: 0.1.1
+Summary: Tensorflow implementations of the Restricted Boltzmann Machine family of models
+Home-page: https://omid.al/projects/xRBM.html
+Author: Omid Alemi
+Author-email: omid.alemi@gmail.com
+License: MIT
+Keywords: machine learning restricted boltzmann machines tensorflow library
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: matplotlib
+Requires-Dist: np
+Requires-Dist: tensorflow (>=1.0)
+
+# xRBM Library
+Implementation of Restricted Boltzmann Machine (RBM) and its variants in Tensorflow
+
+**Note**: xRBM is not released yet. Use at your own risk!
+
+## Feedback, Bugs, and Questions
+For any questions, feedback, and bug reports, please use the [Github Issues](https://github.com/omimo/xRBM/issues).
+
+## Credits
+Created by [Omid Alemi](https://omid.al/projects/)
+
+
+## License
+This code is available under the [MIT license](http://opensource.org/licenses/MIT).
+
