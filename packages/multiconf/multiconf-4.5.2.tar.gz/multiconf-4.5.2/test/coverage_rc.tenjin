@@ -1,0 +1,52 @@
+[run]
+branch = True
+
+
+[report]
+fail_under = 99
+precision = 3
+exclude_lines =
+    # Have to re-enable the standard pragma
+    pragma: no cover
+
+    # Don't complain if tests don't hit defensive assertion code:
+    raise .*Internal error.*
+    raise .*AbstractNotImplemented.*
+
+    if _debug_exc:
+    def debug\(
+    long = int
+    <?py if major_version == 2: ?>
+    _py3 import
+    long = int
+    <?py else: ?>
+    _py2 import
+    if major_version < 3:
+    if major_version < 3 and isinstance\(obj, types.InstanceType\):
+    <?py #endif ?>
+
+
+partial_branches =
+    # Have to re-enable the standard pragma
+    pragma: no branch
+
+    <?py if major_version == 2: ?>
+    if major_version < 3:
+    if major_version < 3 and isinstance\(obj, types.InstanceType\):
+    <?py #endif ?>
+
+    # We always have base classes, so these loops will alvays be entered
+    for cls in get_bases
+
+    # Get the first item to use for error message
+
+omit =
+    test/*
+    setup.py
+    .eggs/*
+    *.egg/*
+    <?py if major_version == 2: ?>
+    *_py3.py
+    <?py else: ?>
+    *_py2.py
+    <?py #endif ?>
