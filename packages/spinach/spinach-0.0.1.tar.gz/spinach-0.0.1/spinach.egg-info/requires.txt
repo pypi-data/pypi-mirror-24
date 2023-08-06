@@ -1,0 +1,6 @@
+redis
+
+[tests]
+pytest
+pytest-cov
+pep8
