@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: blobstash-filetree
+Version: 0.0.2
+Summary: BlobStash FileTree client
+Home-page: https://github.com/tsileo/blobstash-python-filetree
+Author: Thomas Sileo
+Author-email: t@a4.io
+License: MIT
+Description: # BlobStash Python FileTree
+        
+        [![Travis](https://img.shields.io/travis/tsileo/blobstash-python-filetree.svg?maxAge=2592000)](https://travis-ci.org/tsileo/blobstash-python-filetree)
+        &nbsp; &nbsp; [![PyPI](https://img.shields.io/pypi/v/blobstash-filetree.svg)](https://pypi.python.org/pypi/blobstash-filetree)
+        &nbsp; &nbsp; [![PyPI](https://img.shields.io/pypi/pyversions/blobstash-filetree.svg)](https://pypi.python.org/pypi/blobstash-filetree)
+        &nbsp; &nbsp;[![License](http://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://raw.githubusercontent.com/tsileo/blobstash-python-filetree/master/LICENSE)
+        
+        Client for [BlobStash](https://github.com/tsileo/blobstash) FileTree API.
+        
+        ## LICENSE
+        
+        MIT
+        
+Keywords: blobstash FileTree client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
