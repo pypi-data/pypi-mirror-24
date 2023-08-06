@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: drf_requests_jwt
+Version: 0.2
+Summary: Django Rest Framework Requests with JWT support
+Home-page: https://github.com/sensidev/drf-requests-jwt
+Author: Sensidev
+Author-email: lucian.corduneanu@sensidev.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
