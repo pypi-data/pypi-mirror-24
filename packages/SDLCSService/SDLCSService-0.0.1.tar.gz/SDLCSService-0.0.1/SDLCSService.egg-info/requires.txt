@@ -1,0 +1,4 @@
+requests
+fdfs-client-py
+psycopg2
+SQLAlchemy
