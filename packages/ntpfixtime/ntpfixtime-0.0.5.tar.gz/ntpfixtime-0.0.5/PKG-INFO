@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ntpfixtime
+Version: 0.0.5
+Summary: Fix your localtime to use the right ntp time
+Home-page: https://github.com/sumoners/ntpfixtime
+Author: Jaison Erick
+Author-email: jaisonreis@mail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.3
