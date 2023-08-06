@@ -1,0 +1,8 @@
+README.rst
+setup.py
+mturk_crowd_beta_client/__init__.py
+mturk_crowd_beta_client.egg-info/PKG-INFO
+mturk_crowd_beta_client.egg-info/SOURCES.txt
+mturk_crowd_beta_client.egg-info/dependency_links.txt
+mturk_crowd_beta_client.egg-info/requires.txt
+mturk_crowd_beta_client.egg-info/top_level.txt
