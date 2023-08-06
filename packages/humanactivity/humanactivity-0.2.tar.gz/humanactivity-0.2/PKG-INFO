@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: humanactivity
+Version: 0.2
+Summary: Human activity recognizer based on keras and thensorflow
+Home-page: http://github.com/XEOBO/HumanActivity
+Author: Vladimir Zbiljic
+Author-email: vladimir.zbiljic@gmail.com
+License: MIT
+Description: Human activity recognizer detects wheader human is 
+        sitting, jogging, walking, going up, going down or standing.
+        For recognizing user should feed algorithm with acceleromether data from 
+        sensor located in users pocket.
+Platform: UNKNOWN
