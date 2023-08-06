@@ -1,0 +1,12 @@
+setup.py
+jupyterhack/Help.py
+jupyterhack/MyFunctions.py
+jupyterhack/MyGraph.py
+jupyterhack/MyTree.py
+jupyterhack/MyView.py
+jupyterhack/__init__.py
+jupyterhack.egg-info/PKG-INFO
+jupyterhack.egg-info/SOURCES.txt
+jupyterhack.egg-info/dependency_links.txt
+jupyterhack.egg-info/requires.txt
+jupyterhack.egg-info/top_level.txt
