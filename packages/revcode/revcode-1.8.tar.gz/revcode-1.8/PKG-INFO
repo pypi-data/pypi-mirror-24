@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: revcode
+Version: 1.8
+Summary: A Roman encoding module for Indian languages
+Home-page: https://github.com/reverieinc/RevCode.git
+Author: Reverie Language Technologies
+Author-email: rajat.prakash@reverieinc.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Roman Encoding,revcode,Indic languages,Indian languages
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2.7
