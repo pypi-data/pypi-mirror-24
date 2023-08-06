@@ -1,0 +1,10 @@
+armor/__init__.py,sha256=6uvmF9KDIIWD_W7KdOon5Q-6NCyRhFiZFlQvZL9WeY8,1315
+armor/base.py,sha256=UzynwWHydcLlteJ1FOn0wsPIzNlIAjG6gFVvBwe7eZo,3676
+armor/domain.py,sha256=sa_mqx0fBh6ISZ3vQ5xaiyHLUxnhHSTgZT2Vqzx9zpQ,1600
+armor/node.py,sha256=3oJOGYSgl4fR2ixDKKFWRmumoMoL5ZPDQCzt6wL763U,1590
+armor_api-0.1.4.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+armor_api-0.1.4.dist-info/METADATA,sha256=ZZOXkOmAsDr5lJxvUjZ0pfzQVTqM7ZLdnZEZJso2EtM,963
+armor_api-0.1.4.dist-info/RECORD,,
+armor_api-0.1.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+armor_api-0.1.4.dist-info/metadata.json,sha256=is2lFb8V0B63d4QOFeoRTN6D3ltYeSkx4BDmhXXoS8Q,1076
+armor_api-0.1.4.dist-info/top_level.txt,sha256=Sw-DEFwfrq6hRijsP5AwcI3r9RTq0CILeKkilDohyg4,6
