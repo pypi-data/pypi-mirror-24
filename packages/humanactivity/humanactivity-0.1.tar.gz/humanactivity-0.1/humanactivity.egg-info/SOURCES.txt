@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+humanactivity/__init__.py
+humanactivity/har_model_json
+humanactivity/har_model_save
+humanactivity/har_scale_parameters.csv
+humanactivity/humanActivity.py
+humanactivity.egg-info/PKG-INFO
+humanactivity.egg-info/SOURCES.txt
+humanactivity.egg-info/dependency_links.txt
+humanactivity.egg-info/not-zip-safe
+humanactivity.egg-info/requires.txt
+humanactivity.egg-info/top_level.txt
