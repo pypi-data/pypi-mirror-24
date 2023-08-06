@@ -1,0 +1,4 @@
+Flask Coralillo
+===============
+
+Integrates the Coralillo Redis ORM into flask
