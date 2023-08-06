@@ -1,0 +1,8 @@
+README.rst
+setup.py
+hawkcatcher/__init__.py
+hawkcatcher.egg-info/PKG-INFO
+hawkcatcher.egg-info/SOURCES.txt
+hawkcatcher.egg-info/dependency_links.txt
+hawkcatcher.egg-info/requires.txt
+hawkcatcher.egg-info/top_level.txt
