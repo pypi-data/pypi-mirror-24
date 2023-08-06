@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+packages/caviar/__init__.py
+packages/caviar.egg-info/PKG-INFO
+packages/caviar.egg-info/SOURCES.txt
+packages/caviar.egg-info/dependency_links.txt
+packages/caviar.egg-info/namespace_packages.txt
+packages/caviar.egg-info/top_level.txt
