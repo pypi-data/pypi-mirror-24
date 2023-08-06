@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pyconrad
+Version: 0.0.2
+Summary: A Python wrapper for the CONRAD framework (https://www5.cs.fau.de/conrad/)
+Home-page: https://git5.cs.fau.de/PyConrad/pyCONRAD/
+Author: Andreas Maier
+Author-email: andreas.maier@fau.de
+License: GPL 3.0
+Download-URL: https://git5.cs.fau.de/PyConrad/pyCONRAD/repository/archive.tar.gz?ref=0.0.1
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
