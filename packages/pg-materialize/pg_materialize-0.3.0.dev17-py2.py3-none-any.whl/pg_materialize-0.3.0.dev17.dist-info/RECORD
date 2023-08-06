@@ -1,0 +1,10 @@
+pg_materialize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pg_materialize/pg_materialize.py,sha256=bYjAwZYqEpTc3pyRiR7BrsIcRyvyjzaj4hcZXe1JZcs,5714
+pg_materialize-0.3.0.dev17.dist-info/DESCRIPTION.rst,sha256=PHNqV5kQfGGwA1qU0DCUJFFFccdZeqV2B438unBA_6w,5044
+pg_materialize-0.3.0.dev17.dist-info/METADATA,sha256=XA5mSoL6LMjpvl052krM0HorjxghHe6HkgDudXyJBW0,5453
+pg_materialize-0.3.0.dev17.dist-info/RECORD,,
+pg_materialize-0.3.0.dev17.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pg_materialize-0.3.0.dev17.dist-info/entry_points.txt,sha256=br8dq_7f9jGadS2JiVhZtqXX4aBiO9-FQPtnSOUN7oU,70
+pg_materialize-0.3.0.dev17.dist-info/metadata.json,sha256=dv9COygkfzWqZ2dK5uleYvY1wU8ut3G59EjriAZSNnM,883
+pg_materialize-0.3.0.dev17.dist-info/pbr.json,sha256=LHliFEH-GnYNo_XwHsy5ZUktFLJOQCE8j1L2ooi2RAg,47
+pg_materialize-0.3.0.dev17.dist-info/top_level.txt,sha256=R0bz0ow75jOKIXx3mvRq_axik9IHnqpix6GXqWEsOJg,15
