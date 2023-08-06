@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+#
+# Usage: $0 [-d] [-r] [-f <filetype>] [<visidata options>] [<input_source> ...]
+
+__version__ = 'saul.pw/VisiData v0.96'
+
+import os
+from visidata import *
+
+
+def eval_vd(logpath, *args, **kwargs):
+    'Instantiate logpath with args/kwargs replaced and replay all commands.'
+    log = logpath.read_text().format(*args, **kwargs)
+    src = PathFd(logpath.fqpn, io.StringIO(log))
+    vs = openSource(src)
+    vd().editlog.openHook(vs, src)
+    vd().push(vs)
+    vd().status = print
+    vs.vd = vd()
+    vs.replay()
+
+def main():
+    'Open the given sources using the VisiData interface.'
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+
+    parser.add_argument('inputs', nargs='*', help='initial sources')
+    parser.add_argument('-d', dest='debug', action='store_true', default=False, help='abort on error')
+    parser.add_argument('-r', dest='readonly', action='store_true', default=False, help='disable editing')
+    parser.add_argument('-f', dest='filetype', default='', help='specify file type')
+    parser.add_argument('--play', dest='play', default=None, help='.vd file to replay')
+
+    for optname, v in vdtui.baseOptions.items():
+        name, optval, defaultval, helpstr = v
+        action = 'store_true' if optval is False else 'store'
+        parser.add_argument('--' + optname.replace('_', '-'), action=action, dest=optname, default=optval, help=helpstr)
+
+    args = parser.parse_args()
+
+    # user customisations in config file in standard location
+    for fnrc in ('.visidatarc', '$XDG_CONFIG_HOME/visidata/config', '~/.visidatarc'):
+        p = Path(fnrc)
+        if p.exists():
+            exec(open(p.resolve()).read())
+            break
+
+    # command-line overrides
+    for optname, optval in vars(args).items():
+        if optname not in ['inputs', 'play']:
+            vdtui.options[optname] = optval
+
+    inputs = list(args.inputs)
+
+    if not sys.stdin.isatty():
+        # duplicate stdin for input and reopen tty as stdin
+        src = PathFd('stdin', open(os.dup(0)))
+        inputs.append(src)
+        f = open('/dev/tty')
+        os.dup2(f.fileno(), 0)
+
+    if not args.play:
+        if not inputs:
+            inputs = ['.']
+
+        sources = []
+        for src in inputs:
+            vs = openSource(src)
+            vdtui.vd().editlog.openHook(vs, src)
+            sources.append(vs)
+
+        vdtui.run(sources)
+        return
+
+    # replay mode, gather additional args
+    fmtargs = []
+    fmtkwargs = {}
+
+    args = parser.parse_args()
+    i=0
+    while i < len(args.inputs):
+        arg = args.inputs[i]
+
+        # parse either '--key value' or '--key=value'
+        if arg.startswith('-'):
+            arg = arg.lstrip('-')
+        else:
+            fmtargs.append(arg)
+            # goes into args
+            continue
+
+        if '=' in arg:
+            k, v = arg.split('=')
+            fmtkwargs[k] = v
+        else:  # either goes into args or key+nextarg
+            i += 1
+            fmtkwargs[arg] = args.inputs[i]
+
+        i += 1
+
+    if args.play == '-':
+        vdfile = inputs[0]
+        assert isinstance(vdfile, PathFd)
+        vdfile.name = 'stdin.vd'
+    else:
+        vdfile = Path(args.play)
+
+    eval_vd(vdfile, *fmtargs, **fmtkwargs)
+
+if __name__ == '__main__':
+    vdtui.status(__version__)
+    vdtui.addGlobals(globals())
+    main()
+    os._exit(0)  # cleanup can be expensive with large datasets
