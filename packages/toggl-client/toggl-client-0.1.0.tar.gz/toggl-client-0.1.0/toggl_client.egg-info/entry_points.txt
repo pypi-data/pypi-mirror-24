@@ -1,0 +1,3 @@
+[console_scripts]
+tgc = client.main:main
+

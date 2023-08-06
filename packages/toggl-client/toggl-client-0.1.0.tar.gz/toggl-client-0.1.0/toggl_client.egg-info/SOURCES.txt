@@ -1,0 +1,14 @@
+README.rst
+setup.py
+client/__init__.py
+client/configuracoes.py
+client/exceptions.py
+client/main.py
+client/mensagem.py
+client/services.py
+toggl_client.egg-info/PKG-INFO
+toggl_client.egg-info/SOURCES.txt
+toggl_client.egg-info/dependency_links.txt
+toggl_client.egg-info/entry_points.txt
+toggl_client.egg-info/requires.txt
+toggl_client.egg-info/top_level.txt
