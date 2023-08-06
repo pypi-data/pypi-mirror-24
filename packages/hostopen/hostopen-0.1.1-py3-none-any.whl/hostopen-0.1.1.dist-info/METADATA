@@ -1,0 +1,97 @@
+Metadata-Version: 2.0
+Name: hostopen
+Version: 0.1.1
+Summary: Open files/directories in a vagrant synced folder on the host
+Home-page: https://github.com/jaketreacher/hostopen
+Author: Jake Treacher
+Author-email: git@jaketreacher.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+
+Host Open v0.1.1
+================
+
+Synopsis
+--------
+
+When connected to a vagrant machine via ssh, this allows the user to open files and directories on the host machine without tunnelling.
+
+This functionality is restricted to only files/directories in synced folders.
+
+Requirements
+------------
+- python3
+- vagrant
+
+Setup
+-----
+
+Installation
+~~~~~~~~~~~~
+You can install ``hostopen`` with ``pip``
+
+::
+
+    pip3 install hostopen
+
+
+This will give the commands: ``hostopen`` and ``hostopen-server``  
+
+Vagrantfile configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~
+The virtual machine needs access to the ``synced_folders`` file for this program to work. This file is located in the ``.vagrant`` directory in the same root as the Vagrantfile.  
+
+Add a similiar line to the Vagrantfile:  
+::
+
+    config.vm.synced_folder ".vagrant/machines/default/virtualbox", "/.vagrant_info"
+
+*This assumes the machine is named 'default' and you are using 'virtualbox'. Change where appropriate.*
+
+SSH
+~~~
+::
+
+    vagrant ssh -- -R 12355:localhost:12355
+
+*The arbitrarily chosen default port of 12355 can be changed.*
+
+
+Usage Examples
+--------------
+You can use ``hostopen --help`` and ``hostopen-server --help`` for usage information.
+
+Client
+~~~~~~
+::
+
+    hostopen file.py directory
+
+Will make the server open ``file.py`` and ``directory`` if they are inside of a synced folder.
+
+Server
+~~~~~~
+::
+
+    hostopen-server subl
+
+Filepaths received will be opened with sublime. ``subl`` can be substitued for a different program.
+
+
+License
+-------
+| Copyright (c) Jake Treacher. All rights reserved.  
+| Licensed under the `MIT`_ License.
+
+.. _MIT: https://github.com/jaketreacher/hostopen/blob/master/LICENSE.txt
+

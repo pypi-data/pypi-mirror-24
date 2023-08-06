@@ -1,0 +1,12 @@
+hostopen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hostopen/arg_handler.py,sha256=WphPdhDTgvXnOmt5ndCUucNONuej8NdieBWVD3fZTlA,2139
+hostopen/client.py,sha256=B_mz4EhOS7MDp9W__jFbm86l2bqENvmF13c5xAXG8xQ,3593
+hostopen/server.py,sha256=yet34LePpRXH0p6QR2Zw-GCPAyymfmxi1n4jMVnFy7A,1707
+hostopen/utils.py,sha256=LEALeloP3vjKMNr3UHs5oyKp_ixXGJBZtYGUjvqII8w,324
+hostopen-0.1.1.dist-info/DESCRIPTION.rst,sha256=e3uXV42r7d-KO3xE_a1yWZl07h6kFREVCAxlEKcnHhE,1684
+hostopen-0.1.1.dist-info/METADATA,sha256=lFfa0EwtgPACoF1ibJ3SZZSFJ5_4BJA6qAEdMNBjx8E,2378
+hostopen-0.1.1.dist-info/RECORD,,
+hostopen-0.1.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+hostopen-0.1.1.dist-info/entry_points.txt,sha256=RjzARSwLEOsyah1UUy56ERIj3KMdM6nbecWGKoTFlxQ,90
+hostopen-0.1.1.dist-info/metadata.json,sha256=x-DaQOupqJo80X82-J4BMpTMmAdEZeOv0QBdG9fEIds,1059
+hostopen-0.1.1.dist-info/top_level.txt,sha256=vg2ZBwhiOk0vAmL7X1nNSTw428ZNEWmCsstDmBNW9pc,9

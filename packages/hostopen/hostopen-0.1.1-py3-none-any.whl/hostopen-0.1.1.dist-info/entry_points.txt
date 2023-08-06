@@ -1,0 +1,4 @@
+[console_scripts]
+hostopen = hostopen.client:main
+hostopen-server = hostopen.server:main
+
