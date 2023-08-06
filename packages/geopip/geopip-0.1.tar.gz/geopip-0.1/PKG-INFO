@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: geopip
+Version: 0.1
+Summary: Reverse geocode a lng/lat coordinate within a geojson FeatureCollection.
+Home-page: https://github.com/tammoippen/geopip
+Author: Tammo Ippen
+Author-email: tammo.ippen@posteo.de
+License: UNKNOWN
+Download-URL: https://github.com/tammoippen/geopip/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: geojson,point in polygon,reverse geocode,countries
+Platform: UNKNOWN
