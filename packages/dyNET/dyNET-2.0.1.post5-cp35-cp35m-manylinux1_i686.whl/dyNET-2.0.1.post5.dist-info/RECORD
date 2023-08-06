@@ -1,0 +1,11 @@
+dynet_viz.py,sha256=BPrts76QTRjlWjfjAkT1khC1jbnQy7QAcc_WmyslGvM,39058
+dynet_config.py,sha256=C1Coh3-EjRm7LlFeUTEKh0ekcUNkKzqKwt2sfRc945o,2247
+dynet.py,sha256=-WWb3zxi-gVKbK3M9ZrzbvcEIwJhZpu2PQaewuLsjaY,902
+_dynet.cpython-35m-i386-linux-gnu.so,sha256=GlHUGJmxOky5obS5O0Y18aV0EtGbBk16qjDNExwujww,5494496
+.libs_dynet/libdynet-125d065b.so,sha256=3xbQpUqUu8mCIECAAJbjTOpf9HQhJN_5vdtk2OT5ld0,114169248
+dyNET-2.0.1.post5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+dyNET-2.0.1.post5.dist-info/METADATA,sha256=ArU-hb51PgQytPNLbgykUWEx15GOh4CeuRCpsfVn2gw,1508
+dyNET-2.0.1.post5.dist-info/RECORD,,
+dyNET-2.0.1.post5.dist-info/WHEEL,sha256=patwyJiHN5F9ug9T_xdCVSy3xi0JhuXnET_4ZqfZJXE,107
+dyNET-2.0.1.post5.dist-info/metadata.json,sha256=Tm7HwJtZYYDNoCA1zR6WE8_n-Ht9gSubnRck5FwoxEU,1514
+dyNET-2.0.1.post5.dist-info/top_level.txt,sha256=qzwV1OnBtJvZ8TkaGZ24zFfXU8Sjkwmt1xe7jqpxDpw,36
