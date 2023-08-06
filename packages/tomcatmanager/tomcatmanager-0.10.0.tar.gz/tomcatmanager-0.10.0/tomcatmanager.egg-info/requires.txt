@@ -1,0 +1,14 @@
+cmd2
+requests
+appdirs
+
+[dev]
+pytest
+tox
+codecov
+sphinx
+sphinx-autobuild
+wheel
+setuptools_scm
+setupext_janitor
+twine
