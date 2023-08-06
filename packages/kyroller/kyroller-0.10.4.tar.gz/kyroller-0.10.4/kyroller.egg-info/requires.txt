@@ -1,0 +1,1 @@
+termcolor==1.1.0click==6.7socketIO-clientmatplotlibrequeststermcolorargparse
