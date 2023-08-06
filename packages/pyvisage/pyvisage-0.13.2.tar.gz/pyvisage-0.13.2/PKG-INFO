@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pyvisage
+Version: 0.13.2
+Summary: Add virtual makeup to an image of a face.
+Home-page: https://github.com/hriddhidey/visage.git
+Author: Hriddhi Dey
+Author-email: hriddhidey@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/hriddhidey/visage/archive/0.13.2.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: image,processing,virtual,makeup,face,detection,opencv
+Platform: UNKNOWN
