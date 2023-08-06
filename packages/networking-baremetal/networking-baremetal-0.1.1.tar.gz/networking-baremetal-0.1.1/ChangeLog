@@ -1,0 +1,19 @@
+CHANGES
+=======
+
+0.1.1
+-----
+
+* Update UPPER\_CONSTRAINTS\_FILE for stable/pike
+* Update .gitreview for stable/pike
+
+0.1.0
+-----
+
+* Add initial release note
+* Add installation documentation
+* Add devstack plugin to install networking\_baremetal
+* Add baremetal ML2 driver
+* Add .gitignore
+* Initial commit from cookiecutter
+* Added .gitreview
