@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+hiss/__init__.py
+hiss/__main__.py
+hiss/config.py
+hiss/hiss_cli.py
+hiss/parser.py
+hiss/parsers/__init__.py
+hiss/parsers/init.py
+hiss/utils/__init__.py
+hiss/utils/exceptions.py
+hiss/utils/tools.py
