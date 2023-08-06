@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: py-instrumenting-zipkin
+Version: 1.0.0
+Summary: Zipkin based python instrumenting library to sends data using sync/async trasnporters.
+Home-page: https://github.com/harkishan81001/py-instrumenting
+Author: Hari Kishan
+Author-email: hari.kishan81001@gmail.com
+License: Apache License 2.0
+Description: # Python Instrumentation::ZipKin
+        Zipkin based python instrumenting library to sends data using sync/async trasnporters.
+        
+Keywords: Django Zipkin Instrumentation
+Platform: UNKNOWN
