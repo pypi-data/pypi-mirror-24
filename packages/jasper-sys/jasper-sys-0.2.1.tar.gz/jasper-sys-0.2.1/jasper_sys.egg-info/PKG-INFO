@@ -1,0 +1,96 @@
+Metadata-Version: 1.1
+Name: jasper-sys
+Version: 0.2.1
+Summary: JASPER SYS
+Home-page: https://github.com/fabiocody/jasper.git
+Author: Fabio Codiglioni
+Author-email: fabiocody@icloud.com
+License: MIT
+Description: # jasper-sys [![Build Status](https://travis-ci.org/fabiocody/jasper-sys.svg?branch=master)](https://travis-ci.org/fabiocody/jasper-sys)
+        
+        
+        ## Overview
+        
+        Jasper is a system designed to supervise your programs that need to be kept running.
+        For example, let's say you have a set of scripts for your smart home system. Of course you don't want these scripts to stop working, otherwise your smart home system would act weirdly, or not work at all. Jasper can help you keep the scripts running and you can also set up some custom actions to be executed when the state of a process changes (e.g. for notification or logging).
+        
+        
+        ## Installation
+        
+        Execute this in a terminal window. Since Jasper is written to work only with Python 3.4+, you have to use the right version of `pip` (normally `pip3` should work).
+        ```
+        sudo pip3 install jasper-sys
+        ```
+        
+        
+        ## Get started
+        
+        Every program that has to be controlled by Jasper is called __module__. To get started, you have to create a JSON file to store all of your modules information. Since you're going to pass the file path to the program, you can name it whatever you want, and place it wherever you like.
+        Here's an example of what it should look like
+        
+        ```json
+        {
+        	"module_name": {
+        		"command": "/path/to/executable arg1 arg2",
+        		"start_on_boot": true,
+        		"restart_on_crash": true
+        	}
+        }
+        ```
+        
+        In the `command` field you have to enter the complete call to your program, as if you were calling it from a terminal window (full paths are highly recommended). The `start_on_boot` and `restart_on_crash` fields indicate respectively if you want your program to be started as soon as Jasper starts, and if you want your program to be restarted when it crashes.
+        
+        Next, you're going to create a script to get everything up and tuned the way you want.
+        Here's an example
+        
+        ```python
+        from jaspercore import JasperCore
+        from datetime import datetime
+        
+        def log_restart(module):
+        	'''Log a message when a module restarts'''
+        	with open('/path/to/logfile', 'a') as f:
+        		f.write('{0} - {1} restarted.'.format(datetime.now(), module))
+        
+        def log_start_failure(module):
+        	'''Log a message when a module fails to start'''
+        	with open('/path/to/logfile', 'a') as f:
+        		f.write('{0} - {1} failed to start.'.format(datetime.now(), module))
+        
+        callback_table = {
+        	'restart': log_restart,
+        	'exec_fail': log_start_failure
+        }
+        
+        JasperCore('/path/to/modules.json', callback_table=callback_table, start_all=True)
+        ```
+        
+        The `JasperCore` class is the main interface to Jasper system. All you need to do to start the system is calling it. The class takes 4 arguments:
+        - `modules_file <str>`: the path to the JSON file;
+        - `callback_table <dict> (optional)`: dictionary of type {str: function} (see below for more information);
+        - `start_all <bool> (optional, default=False)`: flag to indicate if you want all your enabled modules to be started when the system starts;
+        - `restarts_no <int> (optional, default=-1)`: maximum number of restarts for each module (-1 = inf).
+        
+        
+        ### Callback table
+        
+        You can provide some callbacks to be executed at certain points of a module's lifecycle. Every callback needs to be a function taking only one argument, i.e. the module name.
+        The available callback entries are:
+        - `start`: executed when a module starts;
+        - `restart`: executed when a module restarts;
+        - `stop_restart`: executed when you reach the maximum number of restarts;
+        - `exec_fail`: executed when the module fails to start.
+        
+        You don't have to create a callback for every available entry, just the ones you need. The listed entries must be used as the keys of the dictionary you're going to provide to the `JasperCore` class.
+        
+        
+        ## jasperctl
+        
+        `jasperctl` is a remote interface to the 
+        
+Keywords: jasper,system,process monitor
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 4 - Beta
