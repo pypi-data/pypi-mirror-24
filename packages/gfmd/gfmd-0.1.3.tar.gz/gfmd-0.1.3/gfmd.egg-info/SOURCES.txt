@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+gfmd.py
+setup.py
+gfmd.egg-info/PKG-INFO
+gfmd.egg-info/SOURCES.txt
+gfmd.egg-info/dependency_links.txt
+gfmd.egg-info/requires.txt
+gfmd.egg-info/top_level.txt
