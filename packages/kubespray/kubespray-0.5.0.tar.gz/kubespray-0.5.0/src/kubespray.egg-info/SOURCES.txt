@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+bin/kubespray
+src/kubespray/__init__.py
+src/kubespray/cloud.py
+src/kubespray/common.py
+src/kubespray/configure.py
+src/kubespray/deploy.py
+src/kubespray/inventory.py
+src/kubespray.egg-info/PKG-INFO
+src/kubespray.egg-info/SOURCES.txt
+src/kubespray.egg-info/dependency_links.txt
+src/kubespray.egg-info/not-zip-safe
+src/kubespray.egg-info/requires.txt
+src/kubespray.egg-info/top_level.txt
+src/kubespray/files/.kubespray.yml
+src/kubespray/files/kubespray.yml
