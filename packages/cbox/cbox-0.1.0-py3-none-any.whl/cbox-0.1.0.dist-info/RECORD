@@ -1,0 +1,12 @@
+cbox/__init__.py,sha256=PzP93hkdUhsrIaSJK9fduZDms6K9WqednOxCCppuU5E,275
+cbox/cli.py,sha256=e6QpogDvLOEKhurgZyMEJZrjZeZaSLcEcjVTJpGKMtg,3730
+cbox/cliparser.py,sha256=hQuYwDQK29XuXoMiV-06apZj7y8s7kwwZfuQjLG7psk,3241
+cbox/concurrency.py,sha256=y7GogwfZ7VWLVsGg8rhfZF4u1oNJhC-LBTVieq2YuyU,1292
+cbox/executors.py,sha256=n-NaeGamwbkRyb9RSVG8lbG4-czVfYYjI5ln5pEB8oc,1026
+cbox/streams.py,sha256=gK65XmFZ295i9aJmo7Obmy3Hky_fmHWg31m9D8QMUuE,1195
+cbox-0.1.0.dist-info/DESCRIPTION.rst,sha256=m4oZfQp5CN-7916jEva6aWxtXixYzJlabnXc42gqHDo,3608
+cbox-0.1.0.dist-info/METADATA,sha256=FyNFmvTwD5Z49qaoQd25mKX0xFBQLlOgk_IETAjQ1NE,4425
+cbox-0.1.0.dist-info/RECORD,,
+cbox-0.1.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+cbox-0.1.0.dist-info/metadata.json,sha256=Z7uyNG-cGY7OTDxKwArTMXg1b47xouBQEJBwx4FI2kk,917
+cbox-0.1.0.dist-info/top_level.txt,sha256=0vMVm-gWqp1d2FCR8tK4yvx61cqX_upbxL19K2GXHP4,5
