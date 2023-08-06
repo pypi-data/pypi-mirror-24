@@ -1,0 +1,9 @@
+setup.py
+intellimatch/__init__.py
+intellimatch/match_datetimes.py
+intellimatch/match_text.py
+intellimatch.egg-info/PKG-INFO
+intellimatch.egg-info/SOURCES.txt
+intellimatch.egg-info/dependency_links.txt
+intellimatch.egg-info/not-zip-safe
+intellimatch.egg-info/top_level.txt
