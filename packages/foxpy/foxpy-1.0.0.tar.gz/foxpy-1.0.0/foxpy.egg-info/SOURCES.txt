@@ -1,0 +1,13 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+foxpy/__init__.py
+foxpy/fox.py
+foxpy/utils.py
+foxpy.egg-info/PKG-INFO
+foxpy.egg-info/SOURCES.txt
+foxpy.egg-info/dependency_links.txt
+foxpy.egg-info/requires.txt
+foxpy.egg-info/top_level.txt
