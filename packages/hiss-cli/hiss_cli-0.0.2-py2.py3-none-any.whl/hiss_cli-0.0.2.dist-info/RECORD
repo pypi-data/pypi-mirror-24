@@ -1,0 +1,13 @@
+hiss/__init__.py,sha256=64nb_AhczUSIysnr7vkm_OCFLFOwx64zR1oEyVbOQ2Y,316
+hiss/config.py,sha256=8bHHoWaH_JgJ-n3RDMDy-c09E1-uu9_c0livusqy_OA,299
+hiss/hiss.py,sha256=MdP64T8hj4gup7oi6ERyv-ZWOiBpBunsIffA1oiAGNk,1302
+hiss/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hiss/cli/exceptions.py,sha256=rzdGNH9yszF44pAXwT2ECgrQBliyDs0gyunDwQZfZ-I,730
+hiss/cli/tools.py,sha256=Y2iTeSx2zij6aAiFcYk-bllfpEc9sPthZFhV4t8GP5I,431
+hiss_cli-0.0.2.dist-info/DESCRIPTION.rst,sha256=mF9PZiYgDMTDX5VLdmQo1Pc5r3AfbgFwy3e7rg8R1f4,3071
+hiss_cli-0.0.2.dist-info/METADATA,sha256=7aUgTymz0xVYWg1PpSEq4mK3S4QvqsD9bQTgy-mrsR4,4113
+hiss_cli-0.0.2.dist-info/RECORD,,
+hiss_cli-0.0.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+hiss_cli-0.0.2.dist-info/entry_points.txt,sha256=4wAAtS1eRqJIH0I1D-fjoDstbOVNOZgRzPljZud5_LM,36
+hiss_cli-0.0.2.dist-info/metadata.json,sha256=Nt96YW4B8vllp_t5tvosl-ew6kuQcicVg7jyqz5-iIU,1277
+hiss_cli-0.0.2.dist-info/top_level.txt,sha256=riPoVAYV02hNd6lknNZhNGSXndmCwuyYDDqYvBP_-1A,5
