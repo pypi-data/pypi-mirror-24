@@ -1,0 +1,15 @@
+jsonmodels/__init__.py,sha256=By4x4HaooBC6KvbQ7apXoknESEnTeCGWSlLc7NB-Wis,111
+jsonmodels/builders.py,sha256=NvbjF2UeXnmmhVt24sGXkg02d_dZrrvyzFFE42P8u-c,5699
+jsonmodels/collections.py,sha256=OJwmkkHu4fEB726sjgFnjkaWR5zwpXmDzbAsL2sFX8E,552
+jsonmodels/errors.py,sha256=qo7pXGXLwYM7TWTyhQH0AjFbnzqqGQqrt2MVayp8dp4,145
+jsonmodels/fields.py,sha256=tjFqZ1jBfeYgFKkIuXlVU2iQgDU5KdFDiD7CADHNqu0,12350
+jsonmodels/models.py,sha256=VwVRnhyiAnsY0QJXGYJfXt3bAjekBSOOazI13fL9_TQ,3231
+jsonmodels/parsers.py,sha256=XIJkJNzIDkX_OmHlVMF5py9NWbtT43DKnR2BxpkfUX0,2805
+jsonmodels/utilities.py,sha256=M5zCndp6wnPjMHzGtWslb2jCEq5eG9fUB6aBPkoYfzA,3958
+jsonmodels/validators.py,sha256=C2JyTXuOO7D1erqCLcHNsKgZG3rlJXAB-HJkXu4UTCI,5870
+jsonmodels-2.2.dist-info/DESCRIPTION.rst,sha256=UBwBuACmRRYBKlg7WqTt9a2xvTzXRszqZM49iq9EA-0,12632
+jsonmodels-2.2.dist-info/METADATA,sha256=0J47u8oLpfqI2Hog_tCjBg914d4cgGUdIUnmgo3-z1s,13482
+jsonmodels-2.2.dist-info/RECORD,,
+jsonmodels-2.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+jsonmodels-2.2.dist-info/metadata.json,sha256=eMfumElAAunTvzL3Jwer_L6yLrJpJ22gScDEe26rnXo,998
+jsonmodels-2.2.dist-info/top_level.txt,sha256=ZqIJm_wETiokz9fwBu9v3B4H0nRvLQVBzBrdLvudKnQ,11
