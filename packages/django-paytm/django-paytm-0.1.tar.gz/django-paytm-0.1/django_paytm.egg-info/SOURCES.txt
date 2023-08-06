@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+django_paytm.egg-info/PKG-INFO
+django_paytm.egg-info/SOURCES.txt
+django_paytm.egg-info/dependency_links.txt
+django_paytm.egg-info/requires.txt
+django_paytm.egg-info/top_level.txt
