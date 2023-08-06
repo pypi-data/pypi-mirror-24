@@ -1,0 +1,1 @@
+snap-plugin-lib-py<2,>=1.0.10

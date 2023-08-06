@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+snap_jolokia/__init__.py
+snap_jolokia/_version.py
+snap_jolokia/plugin.py
+snap_plugin_collector_jolokia.egg-info/PKG-INFO
+snap_plugin_collector_jolokia.egg-info/SOURCES.txt
+snap_plugin_collector_jolokia.egg-info/dependency_links.txt
+snap_plugin_collector_jolokia.egg-info/entry_points.txt
+snap_plugin_collector_jolokia.egg-info/requires.txt
+snap_plugin_collector_jolokia.egg-info/top_level.txt
