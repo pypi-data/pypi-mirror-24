@@ -1,0 +1,11 @@
+
+graft docs
+prune multiMachineProcessing
+prune paper
+prune tVarying 
+include *.py
+include mimircache/conf
+
+
+
+
