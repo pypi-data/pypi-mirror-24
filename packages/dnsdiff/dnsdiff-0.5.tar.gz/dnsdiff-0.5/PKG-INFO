@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: dnsdiff
+Version: 0.5
+Summary: Utility to quickly suss out discrepancies between nameservers
+Home-page: https://github.com/gawkermedia/dnsdiff
+Author: M Anzuoni
+Author-email: me.anzuoni@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/gawkermedia/dnsdiff/archive/0.5.tar.gz
+Description: UNKNOWN
+Keywords: testing,dns
+Platform: UNKNOWN
