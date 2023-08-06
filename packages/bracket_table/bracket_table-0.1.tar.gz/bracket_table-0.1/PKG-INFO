@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: bracket_table
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/parryc/bracket_table
+Author: parryc
+Author-email: parry@parryc.com
+License: MIT
+Description: UNKNOWN
+Keywords: interlinear leipzig glossing gloss markdown
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: Markup :: HTML

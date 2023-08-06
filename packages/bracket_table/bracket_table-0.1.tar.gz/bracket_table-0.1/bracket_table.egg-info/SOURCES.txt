@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+bracket_table/__init__.py
+bracket_table/bracket_table.py
+bracket_table.egg-info/PKG-INFO
+bracket_table.egg-info/SOURCES.txt
+bracket_table.egg-info/dependency_links.txt
+bracket_table.egg-info/requires.txt
+bracket_table.egg-info/top_level.txt
