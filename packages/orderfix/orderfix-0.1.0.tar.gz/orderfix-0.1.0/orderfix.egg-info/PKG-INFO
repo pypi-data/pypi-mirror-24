@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: orderfix
+Version: 0.1.0
+Summary: reorder solutions of parametric studies to make continuous curves
+Home-page: https://github.com/Technologicat/orderfix
+Author: Juha Jeronen
+Author-email: juha.jeronen@jyu.fi
+License: BSD
+Description: Reorder solutions of parametric studies (assumed to be in random order) to make continuous curves.
+        
+        The common use case is postprocessing of numerically computed eigenvalues from parametric studies of linear PDE boundary-value problems.
+        The ordering of the numerically computed eigenvalues may suddenly change, as the problem parameter sweeps through the range of interest.
+        
+        The reordering allows the plotting of continuous curves, which are much more readable visually than scatterplots of disconnected points.
+        
+        Supports Python 2.7 and 3.4.
+        
+Platform: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides: orderfix
