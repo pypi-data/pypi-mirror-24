@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+edith.py
+setup.py
+edith.egg-info/PKG-INFO
+edith.egg-info/SOURCES.txt
+edith.egg-info/dependency_links.txt
+edith.egg-info/top_level.txt

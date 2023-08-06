@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: edith
+Version: 0.1.0a1
+Summary: Edit-distance implementation with edit-path retrieval
+Home-page: https://github.com/tenuki/edith
+Author: david weil (tenuki)
+Author-email: tenuki@gmail.com
+License: GNU General Public License v3.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
