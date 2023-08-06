@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        rqpop=rqpop.cli:rqpop
+        
