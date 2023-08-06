@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/psd2svg/__init__.py
+src/psd2svg/__main__.py
+src/psd2svg/convert.py
+src/psd2svg/storage.py
+src/psd2svg/version.py
+src/psd2svg.egg-info/PKG-INFO
+src/psd2svg.egg-info/SOURCES.txt
+src/psd2svg.egg-info/dependency_links.txt
+src/psd2svg.egg-info/entry_points.txt
+src/psd2svg.egg-info/requires.txt
+src/psd2svg.egg-info/top_level.txt
