@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: yadage-fork
+Version: 0.10.8
+Summary: yadage - YAML based adage
+Home-page: UNKNOWN
+Author: Lukas Heinrich
+Author-email: lukas.heinrich@cern.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: adage
+Requires-Dist: checksumdir
+Requires-Dist: click
+Requires-Dist: functools32
+Requires-Dist: glob2
+Requires-Dist: jq
+Requires-Dist: jsonpath-rw
+Requires-Dist: jsonpointer (>=1.10)
+Requires-Dist: jsonref
+Requires-Dist: jsonschema
+Requires-Dist: packtivity
+Requires-Dist: psutil
+Requires-Dist: pyyaml
+Requires-Dist: requests[security] (>=2.9)
+Requires-Dist: yadage-schemas
+Provides-Extra: celery
+Requires-Dist: celery; extra == 'celery'
+Requires-Dist: redis; extra == 'celery'
+
+UNKNOWN
+
+
