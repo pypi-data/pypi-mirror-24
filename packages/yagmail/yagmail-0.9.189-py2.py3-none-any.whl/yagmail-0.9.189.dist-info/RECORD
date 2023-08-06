@@ -1,0 +1,17 @@
+yagmail/__init__.py,sha256=fkQ0BJsxwHMrJaCmBj31Z9S8r9IeLbwZ17NjxP3jT8Y,307
+yagmail/__main__.py,sha256=QI7nwqz_SnbvkXCTzEskAyoC23QPRpkudpy99GhopUY,1190
+yagmail/error.py,sha256=HgYn4Ac808g9jKdtcgw-g86F_MABKFr8oUs6WwvKv6g,1173
+yagmail/image.py,sha256=vkVOSn8Azaa0aVVLOSP_YI5YR-twb4yw52MD4uAv37g,1170
+yagmail/log.py,sha256=eciZDyzVMJo-6q-HwOsNzYvcx7XotBB8Nc3ePf6hBIo,1115
+yagmail/oauth2.py,sha256=snDRv_8rjUYJccmtR6XC2ErQ5RKFH-T2lL3YSds_IFs,4482
+yagmail/sender.py,sha256=gF_0aVeT4KidZ9Eg4lywohKC1AYtMUQgzh0pI8ChLDk,18068
+yagmail/utils.py,sha256=aXHsIvfe-jIyqZZyP-NL1mQT08CgUc4XfC1A94p7sbw,269
+yagmail/utils_flymake.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yagmail/validate.py,sha256=We1AL-koAYjSuAWzhzuK3HGWMeXm7XLp5HLCkZkNK1g,5157
+yagmail-0.9.189.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+yagmail-0.9.189.dist-info/METADATA,sha256=I0SjRYBvyOp4qxSu3EG_2iCkmk-T7UIO9Xl9QcMMmVY,1588
+yagmail-0.9.189.dist-info/RECORD,,
+yagmail-0.9.189.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+yagmail-0.9.189.dist-info/entry_points.txt,sha256=zjN042xMm026U32N8mvRjxOivYruqqGBgmvG0YKgFJo,51
+yagmail-0.9.189.dist-info/metadata.json,sha256=PHeFKZYAkWhRwdt7pSTwaqdUCOYLPpJipXU9S89ugOI,1771
+yagmail-0.9.189.dist-info/top_level.txt,sha256=3oGxokwhynhAXvUJjqpElaP9uNLfzNZWpMbg5X7PxnQ,8
