@@ -1,0 +1,12 @@
+django_js_error_hook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_js_error_hook/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_js_error_hook/tests.py,sha256=8yMEXXffQKBcFtKxFMdCwGIr6LVcUtOq-9kiCF-xeV8,593
+django_js_error_hook/urls.py,sha256=Oi9YE-YiyeX7SXeS9ozZd6GCzOU_lx1DTy8AQrCSfkk,212
+django_js_error_hook/views.py,sha256=_fKWFk-bCwGB94OAtcF9LcmuRAoAlwlp-oR-KeK1yJI,2073
+django_js_error_hook/templates/django_js_error_hook/utils.js,sha256=WvGqIdh-vUgTn679Wjr5drrIOf4K-5QDnuN3KXr2ok4,1171
+django_js_error_hook-0.5.dist-info/DESCRIPTION.rst,sha256=bZ24hq3HB5s1rKeHcJIu1UJBCxoE7c38Ae3vTEEJd1c,2779
+django_js_error_hook-0.5.dist-info/METADATA,sha256=Dkr6tbe38hAZlhO5ue5_7td05ZnqaABeZHrE-Gdcz3E,3382
+django_js_error_hook-0.5.dist-info/RECORD,,
+django_js_error_hook-0.5.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_js_error_hook-0.5.dist-info/metadata.json,sha256=ePKHSvyMPR3th1iV2My3dMppnw8xtEct8Gxk5FI0yyI,822
+django_js_error_hook-0.5.dist-info/top_level.txt,sha256=cWnMs2eJAoft21V2Ih-c6Fidsq-Gh18uQuoqUGPqrD4,21
