@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: datamodule
+Version: 0.1.post0
+Summary: Package for obtain data from my dataportal
+Home-page: http://neuron4web.palermo.enea.it/data/index.html
+Author: iMuttley
+Author-email: tommaso.nicosia@enea.it
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=2.7, <3
+
+A portal for work with Audio samples from hydrophones under the sea.
+Data is stored on a sshed machine, and a specific format.
+The system pretend to translate to a common .wav file, catalog, offer an user and machine friendly accessibility, for Terabyte of data.
+
