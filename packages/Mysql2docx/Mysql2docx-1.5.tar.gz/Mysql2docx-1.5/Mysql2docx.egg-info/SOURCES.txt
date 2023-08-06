@@ -1,0 +1,10 @@
+setup.py
+Mysql2docx/Column.py
+Mysql2docx/Mysql2docx.py
+Mysql2docx/Table.py
+Mysql2docx/__init__.py
+Mysql2docx.egg-info/PKG-INFO
+Mysql2docx.egg-info/SOURCES.txt
+Mysql2docx.egg-info/dependency_links.txt
+Mysql2docx.egg-info/requires.txt
+Mysql2docx.egg-info/top_level.txt

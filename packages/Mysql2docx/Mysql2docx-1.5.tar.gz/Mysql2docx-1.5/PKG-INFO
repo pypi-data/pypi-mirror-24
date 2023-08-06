@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Mysql2docx
+Version: 1.5
+Summary: mysql自动生成数据库设计文档
+Home-page: https://github.com/icecooly/Mysql2docx
+Author: skydu
+Author-email: icecooly.du@qq.com
+License: MIT
+Description: 自动生成数据库设计文档
+Keywords: 自动数据库设计文档
+Platform: UNKNOWN
