@@ -1,0 +1,10 @@
+torch2coreml/__init__.py,sha256=zKiMi6tVgVU557Kl1dxR8aI2WkZ3ErAmQ2D14TIfY6s,62
+torch2coreml/_layers.py,sha256=O_fSSbyZ4M6DFmD-6ir2Qqq7q2_jT-tkNAr_g0b1vKE,12552
+torch2coreml/_torch_converter.py,sha256=FwnaYNzlbwIixcj5Rvcc_Q_JK_k-GA8pyMLNMOPcfcA,9502
+torch2coreml/_utils.py,sha256=lWy5m7fF-C7YJ3uXgokBn4HO1TIkri7Qc_6P22WgHfc,1977
+torch2coreml-0.2.0.dist-info/DESCRIPTION.rst,sha256=UZRrD31jn_JnMKhSezxxkkasZFkOrjCUZkjp4HtDHP0,4206
+torch2coreml-0.2.0.dist-info/METADATA,sha256=oi2ZN-1WbZOFe_6hI1moRDO7RvkChONNEVOTIQGMzdo,4989
+torch2coreml-0.2.0.dist-info/RECORD,,
+torch2coreml-0.2.0.dist-info/WHEEL,sha256=HHw7l2GEyQI6e5Ar0WnCdPPZXiF-ZmAHNXicMFeV7xM,108
+torch2coreml-0.2.0.dist-info/metadata.json,sha256=yyW9XOKHJVTYIzMCsFnil0rYUZaQyPjB4n-bUbYBIgA,968
+torch2coreml-0.2.0.dist-info/top_level.txt,sha256=V-ogDJ3AeuTTMC8ejPTn5KAsMpw4KJUYFgaG7KWgElU,13
