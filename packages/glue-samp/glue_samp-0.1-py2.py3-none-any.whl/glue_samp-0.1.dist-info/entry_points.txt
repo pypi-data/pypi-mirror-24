@@ -1,0 +1,3 @@
+
+[glue.plugins]
+samp=glue_samp:setup

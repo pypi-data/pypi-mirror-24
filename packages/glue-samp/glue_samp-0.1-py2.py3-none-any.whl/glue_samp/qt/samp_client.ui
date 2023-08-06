@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>432</width>
+    <height>271</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SAMP Plugin</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item colspan="2" column="0" row="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>To use the SAMP plugin, you need to start SAMP below, which will either connect to an existing hub if present, or start a new hub and connect to it. Glue will then receive SAMP messages related to loading data or creating subsets. If a subset is selected when a SAMP message to create a subset is received, the subset will be updated, otherwise a new one will be created. To send a dataset or subset to other SAMP clients, control click on a dataset or individual subset and go to the SAMP contextual menu.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item column="0" row="1">
+    <widget class="QPushButton" name="button_start_samp">
+     <property name="text">
+      <string>Start SAMP</string>
+     </property>
+    </widget>
+   </item>
+   <item column="1" row="1">
+    <widget class="QPushButton" name="button_stop_samp">
+     <property name="text">
+      <string>Stop SAMP</string>
+     </property>
+    </widget>
+   </item>
+   <item colspan="2" column="0" row="2">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Status:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="text_status">
+       <property name="text">
+        <string>&lt;current status&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item colspan="2" column="0" row="3">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>SAMP supports messages that indicate if a row is highlighted in another application. By default this is not treated as a selection in glue, but you can change this behavior with the checkbox below: </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  <item colspan="2" column="0" row="4">
+    <widget class="QCheckBox" name="bool_highlight_is_selection">
+     <property name="text">
+      <string>Treat row highlighting in other applications as a selection</string>
+     </property>
+    </widget>
+   </item>
+   </layout>
+ </widget>
+ <resources />
+ <connections />
+</ui>
