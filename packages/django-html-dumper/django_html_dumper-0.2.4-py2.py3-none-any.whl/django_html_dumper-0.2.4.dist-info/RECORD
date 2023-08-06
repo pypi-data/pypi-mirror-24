@@ -1,0 +1,16 @@
+django_html_dumper-0.2.4.dist-info/DESCRIPTION.rst,sha256=1kWtlhNA8UdidYk3_WmhRF8LWDPL8x2CFhRteZKFt3Q,1942
+django_html_dumper-0.2.4.dist-info/METADATA,sha256=KlwepKuietxgzb3LCyP6EFFgKfYnC1fnFR_yTwaEUr4,2752
+django_html_dumper-0.2.4.dist-info/RECORD,,
+django_html_dumper-0.2.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+django_html_dumper-0.2.4.dist-info/metadata.json,sha256=bPtOY2oQeZBmcJtoNXK56rFHAna8_7o3JOw08WLQtJc,921
+django_html_dumper-0.2.4.dist-info/top_level.txt,sha256=hbAOUsOWGGXWnXypahoAl7w_IeigJKdzlGvQp7WiM4k,12
+html_dumper/__init__.py,sha256=N5-p8dQB8uwuCMpS1ADLf_E6rvWovtRRp3vY9Cq2gw4,22
+html_dumper/apps.py,sha256=7tEAGLZDuoAv3vAJnvMSquRp4WH4MUeZaVug-OufllM,116
+html_dumper/models.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+html_dumper/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+html_dumper/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+html_dumper/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+html_dumper/management/commands/dump_html.py,sha256=AvT7T4nr6dEDOGqTpFdjM4pi-3VXVdYqeMMY3nYMotw,2652
+html_dumper/static/css/html_dumper.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+html_dumper/static/js/html_dumper.js,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+html_dumper/templates/html_dumper/base.html,sha256=zzaUPjEgvwxg-Gn2rZ6gIMWphucmEGvAU_skUXJIcDA,661
