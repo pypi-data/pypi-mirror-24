@@ -1,0 +1,16 @@
+pozetron_cli-0.2.0.data/scripts/poze.py,sha256=hNHpdIpLbQfbqiZa7b2ZEdy7xP-aB22Vvkd9eh_VxUc,117
+pozetron_cli-0.2.0.dist-info/DESCRIPTION.rst,sha256=Qk8ExHkYWmnW2g7l98pCgZXPegtsn5mvXOrPcb1l120,548
+pozetron_cli-0.2.0.dist-info/METADATA,sha256=kOCHJptUR8g9caAMmxPfGERm9iTmDsUIcDRzXDcqZZs,940
+pozetron_cli-0.2.0.dist-info/RECORD,,
+pozetron_cli-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+pozetron_cli-0.2.0.dist-info/metadata.json,sha256=DYkazc70YEJA77tdHAkjrQFeoqA0cxpggwtmUplAYCo,868
+pozetron_cli-0.2.0.dist-info/top_level.txt,sha256=b5OUHETJZV2grWCT3JkxsixjbUSu24WEwAjrDrPPrTo,12
+pozetron_cli-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pozetroncli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pozetroncli/commands.py,sha256=R_UKt2GxsQAQT01jahmWkDysT7wBiTJs0RmfNoteOyk,18213
+pozetroncli/conf.py,sha256=DhLvWDDw7OzGQf5B4o3MP17TRAtCErAf1WajFV4Bq7A,1483
+pozetroncli/error.py,sha256=rv86V5kPPAnacNrZqfDY0MIxTbnJR1wkCSJvbXJP3jM,395
+pozetroncli/log.py,sha256=LAMO8ftrGHdY9RTW59IFOyqLVaDu-wwbNb_JD37cT8A,1532
+pozetroncli/main.py,sha256=oaaogShuC7P2xoHqLc7ODeGSEybBpEVvu57Na80OfUk,13466
+pozetroncli/tags.py,sha256=OdItZIayfPcrqiRb8S93IZ1URtpdBrfffpL38tDrwZA,3999
+pozetroncli/utils.py,sha256=RLYnFoiI1gtsLf42N5M1Oy80AGzk1ulBIixdiZnX1eU,2000

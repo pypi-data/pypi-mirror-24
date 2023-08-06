@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: pozetron-cli
+Version: 0.2.0
+Summary: Pozetron command-line interface. The developer interface for the Pozetron IoT Cloud. 
+Requires-Dist: httpsig (==1.1.2)
+Requires-Dist: pyOpenSSL (==17.2.0)
+Requires-Dist: pydicti (==0.0.6)
+Requires-Dist: python-dateutil (>=2.6.0)
+Requires-Dist: pytz (==2016.10)
+Requires-Dist: requests (==2.11.1)
+Requires-Dist: six (==1.10.0)
+
+Register for an account at https://registration.apps.pozetron.com/registration
+Home-page: https://www.pozetron.com
+Author: Pozetron Inc
+Author-email: hello@pozetroninc.com
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: pozetron,IoT,MicroPython
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
