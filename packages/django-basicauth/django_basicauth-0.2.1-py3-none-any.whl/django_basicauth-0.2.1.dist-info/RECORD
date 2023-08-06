@@ -1,0 +1,11 @@
+basicauth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basicauth/basicauthutils.py,sha256=-BknUacC6c6ogpbonyZHc2AgTyJLNtveGtn5TVRmo8Q,1300
+basicauth/decorators.py,sha256=7SxMdqddvbSfWSgqvzqcJdNflxdOqnCjrmNHAwuR8AA,500
+basicauth/middleware.py,sha256=WKpk4kTirh2E2DRHAW---2Gmoi9XQ8K06PbfPWyRVUI,400
+basicauth/response.py,sha256=ZzGUMN066iflyb2hFzmDkJkLbDvX79aJ9L9UUSkMmd4,511
+django_basicauth-0.2.1.dist-info/DESCRIPTION.rst,sha256=y48ldWMarlIke0k2XKXTXPv6rBDLTNMinrPE58yvQyE,918
+django_basicauth-0.2.1.dist-info/METADATA,sha256=J3Bt2tqf7SPo00D9XafBF4BnoFEOXi50gmLyIMyhJ2M,1201
+django_basicauth-0.2.1.dist-info/RECORD,,
+django_basicauth-0.2.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_basicauth-0.2.1.dist-info/metadata.json,sha256=xmK4L2aki94VfOnQES_fMIDvy22vcV7HDmHAmcwNk2U,505
+django_basicauth-0.2.1.dist-info/top_level.txt,sha256=VjCHrft3mChFO_OXEW3m0GlkteavF0mtBZgyiD0XPjs,10
