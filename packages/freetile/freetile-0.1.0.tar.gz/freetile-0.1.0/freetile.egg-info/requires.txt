@@ -1,0 +1,4 @@
+docopt
+ewmh
+xcffib
+python-xlib
