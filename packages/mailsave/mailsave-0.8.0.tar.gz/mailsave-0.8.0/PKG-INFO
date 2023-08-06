@@ -1,0 +1,108 @@
+Metadata-Version: 1.1
+Name: mailsave
+Version: 0.8.0
+Summary: Dump emails to a file. It can be used as a remplacement for sendmail or an SMTP server.
+Home-page: https://gitlab.com/Jenselme/mailsave
+Author: Julien Enselme
+Author-email: julien.enselme@centrale-marseille.fr
+License: MIT
+Description: =========
+        Mail Save
+        =========
+        
+        Save emails to a file. It can be used as a replacement for sendmail or a SMTP server.
+        
+        You can install it with ``pip install mailsave`` or ``pip install --user mailsave``
+        
+        You can also use the single `file version <https://framagit.org/Jenselme/mailsave/tree/master/dist/mailsave.py>`__. Since mailsave only needs the standard library, you don't have anything to install.
+        
+        It is different from other tools like `maildump <https://pypi.org/project/maildump/>`__ because:
+        
+        - It is very minimalist: no Web or GUI interface, just files.
+        - It can be used instead of sendmail.
+        
+        To use in place of sendmail, just put the path to the ``mailsave`` executable instead of the sendmail one. For instance, in a ``php.ini`` file:
+        
+        ::
+        
+            sendmail_path = /home/jenselme/.virtualenvs/test/bin/mailsave --dir mails
+        
+        To use as an SMTP server, launch it like this:
+        
+        ::
+        
+            mailsave --server --dir mails
+        
+        Then you can send it emails with the SMTP protocol:
+        
+        ::
+        
+            swaks --to user@example.com --server localhost --port 2525 --add-header "X-Custom-Header: Swaks-Tested"
+        
+        To view the full help, use:
+        
+        ::
+        
+            mailsave --help
+        
+        
+        Written for Python 3.5+.
+        
+        
+        =======
+        History
+        =======
+        
+        0.8.0 (2017-09-01)
+        ------------------
+        
+        * Move project to gitlab
+        * Add support for emails with payload encoded in base64
+        * Improve handling of email with special characters sent from stdin
+        * Normalize file names before save
+        * Can use subject in file name
+        * Can choose not to save the file
+        * Can extract HTML from the mail
+        * Add support for ``-t`` option. This is useful if the dots of the mail are escaped before being sent to the script, ie a dot (``.``) at the start of a line is replaced by two dots (``..``).
+        
+        0.5.0 (2017-07-26)
+        ------------------
+        
+        * Add an option to print the version
+        * Don't print traceback when quitting the "readline" version with CTRL-C
+        * Can use a template for the file
+        
+        
+        0.4.0 (2017-07-10)
+        ------------------
+        
+        * Can choose the name of the file in which to save.
+        
+        
+        0.3.0 (2017-07-06)
+        ------------------
+        
+        * Don't fail if script receive undefined option. It is important to act as a
+          replacement for sendmail. Some program will try to call it with custom options.
+        * Include LICENSE and HISTORY.rst in release made to pypi.
+        * Add a single file version so users don't have to install mailsave with pip.
+        
+        
+        0.2.0 (2017-07-05)
+        ------------------
+        
+        * Can read mail from SMTP.
+        
+        
+        0.1.0 (2017-07-05)
+        ------------------
+        
+        * Can act as a replacement of sendmail.
+        
+Keywords: mail
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Communications :: Email

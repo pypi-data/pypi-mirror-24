@@ -1,0 +1,14 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+mailsave/__init__.py
+mailsave/cli.py
+mailsave/smtp.py
+mailsave.egg-info/PKG-INFO
+mailsave.egg-info/SOURCES.txt
+mailsave.egg-info/dependency_links.txt
+mailsave.egg-info/entry_points.txt
+mailsave.egg-info/not-zip-safe
+mailsave.egg-info/top_level.txt
