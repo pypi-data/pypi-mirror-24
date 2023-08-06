@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: prtp
+Version: 1.0
+Summary: A simple module for printing files to printer using Tkinter and PyWin32
+Home-page: https://github.com/jestoy0514/prtp
+Author: Jesus Vedasto Olazo
+Author-email: jessie@jestoy.frihost.net
+License: UNKNOWN
+Download-URL: https://github.com/jestoy0514/prtp/archive/v1.0.tar.gz
+Description: UNKNOWN
+Keywords: gui,print,example
+Platform: UNKNOWN
