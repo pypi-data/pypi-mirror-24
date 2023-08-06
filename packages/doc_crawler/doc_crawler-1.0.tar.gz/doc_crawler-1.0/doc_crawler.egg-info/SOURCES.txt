@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+doc_crawler/__init__.py
+doc_crawler/__main__.py
+doc_crawler/doc_crawler.py
+doc_crawler.egg-info/PKG-INFO
+doc_crawler.egg-info/SOURCES.txt
+doc_crawler.egg-info/dependency_links.txt
+doc_crawler.egg-info/top_level.txt
