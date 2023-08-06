@@ -1,0 +1,15 @@
+utbone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utbone/utbone.py,sha256=FWiFfR0JiQK0bpb4L1z2PCyO2p9vtl5bn9Af-9AgENM,2256
+utbone/bones/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utbone/bones/django-toppings.py,sha256=WlYueYcpqUhWNS9QIs3gq0QPCiNcv68xm_lEBDmPlCE,675
+utbone/bones/django.py,sha256=1tkq_bmBUzR0O1td_R8gTkOuRYrMGlM-AhHJpO-TJps,459
+utbone/bones/unit-toppings.py,sha256=LhwkM9YkhYw3yH9PR5Zbo5cZJoauLUOPuI_BAbBlBto,637
+utbone/bones/unit.py,sha256=SH79nQnn2vv5Cmob_ANM4vmOR5fMwSZH5523nz7qx8k,422
+utbone/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utbone-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+utbone-0.1.0.dist-info/METADATA,sha256=yg45T3Vv9P77wKH1Y-FBgagpgpcrZrC1Q6NVAzj8KrI,520
+utbone-0.1.0.dist-info/RECORD,,
+utbone-0.1.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+utbone-0.1.0.dist-info/entry_points.txt,sha256=iKPcUDG5AS1CjR-Q0p3HGxtOgpTZQ8sUDcA4CjEiehY,49
+utbone-0.1.0.dist-info/metadata.json,sha256=aT41F-tNpaVa5CWPLVe49qGC9-urlvzsrOL62NEnoAU,733
+utbone-0.1.0.dist-info/top_level.txt,sha256=M1hmSRHBVQhhZ_KR73hKP2i8EeiQH5Tkz3hs0Sm_QUA,7

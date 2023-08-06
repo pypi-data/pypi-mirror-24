@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: utbone
+Version: 0.1.0
+Summary: Bones for faster unit testing.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: pyCLI (>=2.0.3)
+
+UNKNOWN
+
+
