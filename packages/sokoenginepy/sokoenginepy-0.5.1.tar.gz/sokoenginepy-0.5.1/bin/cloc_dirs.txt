@@ -1,0 +1,5 @@
+src/
+tests
+setup.py
+bin
+lib/libsokoengine
