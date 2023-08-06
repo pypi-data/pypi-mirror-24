@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: pydotnet
+Version: 0.9.2
+Summary:  Low-level interface to .NET VM.  Can create .NET object, call methods, get or set properties, call static functions, etc.
+Home-page: https://github.com/tr8dr/.Net-Bridge/tree/master/src/Python/pyDotNet
+Author: Jonathan Shore
+Author-email: jonathan.shore@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: .NET,interop
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Object Brokering
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
