@@ -1,0 +1,5 @@
+{{ description }}<br>
+{% for choice in choices %}
+<!--use form id as the name so that no interferences with other radio button groups in the same form-->
+<input type="radio" name="{{formid}}" value="{{choice}}" {% if choice == defaultChoice %} checked {% endif %}> {{choice}}<br>
+{% endfor %}
