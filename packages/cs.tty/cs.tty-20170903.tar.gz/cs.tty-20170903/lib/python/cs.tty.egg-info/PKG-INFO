@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: cs.tty
+Version: 20170903
+Summary: Functions related to terminals.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: ``ttysize(fd)``
+          return a namedtuple (rows, columns) with the current terminal size;
+          UNIX only (uses the stty command)
+        ``statusline(text,...)``
+          update the terminal status line with ``text``
+        ``statusline_bs(text,...)``
+          return a byte string to update the terminal status line with ``text``
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Terminals
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
