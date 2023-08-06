@@ -1,0 +1,13 @@
+sanic_mongo/__init__.py,sha256=AqCoCCW6mA4bKhfxjYT1ZQANOxk2mCZxMUz2e5JEYKk,386
+sanic_mongo/gridfs.py,sha256=7Wzq9fvCy6lfvn1Otk3iVuShOIs2P1ELa_eVjeyUEm8,2063
+sanic_mongo/mongo.py,sha256=fsZcAFzuWruP4PBrzytgzQMNRPJ16o5MUeGoU7rMqFA,1945
+sanic_mongo/standalone/__init__.py,sha256=o_BJnPQbRDfwggRukhXYEWfdeD5PAC13tSLH9MLaBrg,133
+sanic_mongo/standalone/mongo_GridFs.py,sha256=yCrdf826Qcg1wpoSDhAAVGZHBT3WNI_T-X6geY7OClM,537
+sanic_mongo/standalone/mongo_connection.py,sha256=khq9Elt3USYK8FJaljhtbJmEsfJD0oQD_0deCf6DKPc,1190
+sanic_mongo-1.7.1.data/data/requirements/requirements.txt,sha256=bgWb0czA79HOXoVWzhcCtZzBYmdhQ6yH4V_KEJQUybk,62
+sanic_mongo-1.7.1.dist-info/DESCRIPTION.rst,sha256=nNJvyX-NzzaYLCxOwXUgB96ecvM8NB9cKkeA44PbD-E,14
+sanic_mongo-1.7.1.dist-info/METADATA,sha256=U5TJ4kKHsqT-r4shFT2NSCIyoxgYd6bEesHZZNCh2VI,392
+sanic_mongo-1.7.1.dist-info/RECORD,,
+sanic_mongo-1.7.1.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+sanic_mongo-1.7.1.dist-info/metadata.json,sha256=RFeLUAHoHPadUvkfn3j6eQVQQggte3rqlD-sVf1gnc0,582
+sanic_mongo-1.7.1.dist-info/top_level.txt,sha256=S-BPEsfE0DnnIoBOvbTUhngHOWkjk-DzI4v-f6RIszg,12
