@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>hssadmin.admincore &mdash; hssadmin  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="hssadmin  documentation" href="../../index.html"/>
+        <link rel="up" title="Module code" href="../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> hssadmin
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hssadmin.html">hssadmin package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">hssadmin</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>hssadmin.admincore</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for hssadmin.admincore</h1><div class="highlight"><pre>
+<div class="viewcode-block" id="APIParameters"><a class="viewcode-back" href="../../hssadmin.html#hssadmin.admincore.APIParameters">[docs]</a><span></span><span class="k">class</span> <span class="nc">APIParameters</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    This module defines a number of parameters that are used to judge the mandatory or optional argument for *Cloudian HyperStore(R)* **Admin APIs**.</span>
+<span class="sd">    </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">p_user_info</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;userType&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;fullName&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;emailAddr&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;address1&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;address2&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;zip&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;phone&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;website&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;active&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;canonicalUserId&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_userpasswd_set</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_user_delete</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_users_list</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;userType&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;userStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;limit&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_user_list</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_storpols_list</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_storpol_list</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;policyId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_storpol_status_change</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;policyId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_s3creds_list</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_s3cred_imp</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;accessKey&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;secretKey&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_s3cred_add</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_accesskey_status</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;accessKey&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;isActive&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_secretkey_list</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;accessKey&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_user_ratingplan_info</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_user_ratingplanid_info</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;ratingPlanId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_group_info</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupName&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;ldapGroup&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;active&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_group_ratingplan_info</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_group_ratingplanid_info</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;ratingPlanId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_qos_set</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;storageQuotaKBytes&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;storageQuotaCount&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;wlRequestRate&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hlRequestRate&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;wlDataKBytesIn&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hlDataKBytesIn&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;wlDataKBytesOut&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hlDataKBytesOut&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_qos_info</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_usagereport_info</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;operation&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;startTime&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;endTime&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;granularity&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;reversed&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;limit&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;pageSize&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;regionOffset&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span>
+    <span class="p">}</span>
+    <span class="n">p_billingreport_info</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="s2">&quot;optional&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupId&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;billingPeriod&quot;</span><span class="p">:</span> <span class="s2">&quot;mandatory&quot;</span>
+    <span class="p">}</span></div>
+</pre></div>
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

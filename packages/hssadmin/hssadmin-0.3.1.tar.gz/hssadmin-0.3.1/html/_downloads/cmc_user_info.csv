@@ -1,0 +1,22 @@
+userId,userType,fullName,emailAddr,address1,address2,city,state,zip,country,phone,groupId,website,active,canonicalUserId,password
+gzadmin,GroupAdmin,GROUP-Z Admin,gzadmin@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,P@ssw0rd123
+gzuser1,User,GROUP-Z User1,gzuser1@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,P@ssw0rd123
+gzuser2,User,GROUP-Z User2,gzuser2@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
+gzuser3,User,GROUP-Z User3,gzuser3@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,P@ssw0rd123
+gzuser4,User,GROUP-Z User4,gzuser4@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
+gzuser5,User,GROUP-Z User5,gzuser5@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
+gzuser6,User,GROUP-Z User6,gzuser6@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
+gzuser7,User,GROUP-Z User7,gzuser7@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
+gzuser8,User,GROUP-Z User8,gzuser8@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
+gzuser9,User,GROUP-Z User9,gzuser9@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,P@ssw0rd123
+gzuser10,User,GROUP-Z User10,gzuser10@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,P@ssw0rd123
+gzuser11,User,GROUP-Z User11,gzuser11@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
+gzuser12,User,GROUP-Z User12,gzuser12@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
+gzuser13,User,GROUP-Z User13,gzuser13@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
+gzuser14,User,GROUP-Z User14,gzuser14@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
+gzuser15,User,GROUP-Z User15,gzuser15@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
+gzuser16,User,GROUP-Z User16,gzuser16@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,P@ssw0rd123
+gzuser17,User,GROUP-Z User17,gzuser17@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
+gzuser18,User,GROUP-Z User18,gzuser18@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,P@ssw0rd123
+gzuser19,User,GROUP-Z User19,gzuser19@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,P@ssw0rd123
+gzuser20,User,GROUP-Z User20,gzuser20@cloudian.com,2-11-6 Shibuya,,Shibuya,Tokyo,150-0002,Japan,03-6418-6466,GROUP-Z,http://www.cloudian.jp,TRUE,,
