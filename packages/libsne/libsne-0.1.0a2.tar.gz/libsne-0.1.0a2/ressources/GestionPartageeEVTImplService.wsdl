@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="GestionPartageeEVTService" targetNamespace="http://ws.metier.nuu.application.i2/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.metier.nuu.application.i2/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.metier.nuu.application.i2/" xmlns="http://ws.metier.nuu.application.i2/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+			<xsd:include schemaLocation="xmlmime.xsd"/>
+
+			<xs:element name="fichierXmlParametres">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nomFichier" type="xs:string"/>
+						<xs:element name="fichierXml" type="tns:base64Binary"/>
+						<xs:element name="nomCertificat" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="fichierXmlReponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nomFichierXmlRetour" type="xs:string"/>
+						<xs:element name="fichierXmlRetour" type="tns:base64Binary"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+		</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="listerTypesEvenementsNationauxRequest">
+    <wsdl:part name="parameters" element="tns:fichierXmlParametres">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listerTypesEvenementsNationauxResponse">
+    <wsdl:part name="return" element="tns:fichierXmlReponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listerTypesEvenementsTerritoriauxRequest">
+    <wsdl:part name="parameters" element="tns:fichierXmlParametres">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listerTypesEvenementsTerritoriauxResponse">
+    <wsdl:part name="return" element="tns:fichierXmlReponse">
+    </wsdl:part>
+  </wsdl:message>
+   <wsdl:message name="listerEvenementsDemandeRequest">
+    <wsdl:part name="parameters" element="tns:fichierXmlParametres">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listerEvenementsDemandeResponse">
+    <wsdl:part name="return" element="tns:fichierXmlReponse">
+    </wsdl:part>
+  </wsdl:message>
+   <wsdl:message name="ajouterEvenementDemandeRequest">
+    <wsdl:part name="parameters" element="tns:fichierXmlParametres">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ajouterEvenementDemandeResponse">
+    <wsdl:part name="return" element="tns:fichierXmlReponse">
+    </wsdl:part>
+  </wsdl:message>
+   <wsdl:message name="modifierEvenementDemandeRequest">
+    <wsdl:part name="parameters" element="tns:fichierXmlParametres">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modifierEvenementDemandeResponse">
+    <wsdl:part name="return" element="tns:fichierXmlReponse">
+    </wsdl:part>
+  </wsdl:message>
+   <wsdl:message name="supprimerEvenementDemandeRequest">
+    <wsdl:part name="parameters" element="tns:fichierXmlParametres">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="supprimerEvenementDemandeResponse">
+    <wsdl:part name="return" element="tns:fichierXmlReponse">
+    </wsdl:part>
+  </wsdl:message>
+  
+  <wsdl:portType name="GestionPartageeEVTPortType">
+    <wsdl:operation name="listerTypesEvenementsNationaux">
+      <wsdl:input message="tns:listerTypesEvenementsNationauxRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:listerTypesEvenementsNationauxResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listerTypesEvenementsTerritoriaux">
+      <wsdl:input message="tns:listerTypesEvenementsTerritoriauxRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:listerTypesEvenementsTerritoriauxResponse">
+    </wsdl:output>
+    </wsdl:operation>
+     <wsdl:operation name="listerEvenementsDemande">
+      <wsdl:input message="tns:listerEvenementsDemandeRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:listerEvenementsDemandeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+     <wsdl:operation name="ajouterEvenementDemande">
+      <wsdl:input message="tns:ajouterEvenementDemandeRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:ajouterEvenementDemandeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+       <wsdl:operation name="modifierEvenementDemande">
+      <wsdl:input message="tns:modifierEvenementDemandeRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:modifierEvenementDemandeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+       <wsdl:operation name="supprimerEvenementDemande">
+      <wsdl:input message="tns:supprimerEvenementDemandeRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:supprimerEvenementDemandeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GestionPartageeEVTImplServiceSoapBinding" type="tns:GestionPartageeEVTPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="listerTypesEvenementsNationaux">
+      <soap:operation soapAction="http://ws.metier.nuu.application.i2/listerTypesEvenementsNationaux"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listerTypesEvenementsTerritoriaux">
+      <soap:operation soapAction="http://ws.metier.nuu.application.i2/listerTypesEvenementsTerritoriaux"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+      <wsdl:operation name="listerEvenementsDemande">
+      <soap:operation soapAction="http://ws.metier.nuu.application.i2/listerEvenementsDemande"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+       <wsdl:operation name="ajouterEvenementDemande">
+      <soap:operation soapAction="http://ws.metier.nuu.application.i2/ajouterEvenementDemande"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+       <wsdl:operation name="modifierEvenementDemande">
+      <soap:operation soapAction="http://ws.metier.nuu.application.i2/modifierEvenementDemande"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+       <wsdl:operation name="supprimerEvenementDemande">
+      <soap:operation soapAction="http://ws.metier.nuu.application.i2/supprimerEvenementDemande"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+
+  </wsdl:binding>
+  <wsdl:service name="GestionPartageeEVTImplService">
+    <wsdl:port name="GestionPartageeEVTImplPort" binding="tns:GestionPartageeEVTImplServiceSoapBinding">
+      <soap:address location="http://localhost:8080/nuu-ws/services/GestionPartageeEVTImplService/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
