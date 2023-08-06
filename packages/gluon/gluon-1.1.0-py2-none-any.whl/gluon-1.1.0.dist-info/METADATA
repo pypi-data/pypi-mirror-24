@@ -1,0 +1,65 @@
+Metadata-Version: 2.0
+Name: gluon
+Version: 1.1.0
+Summary: OpenStack Gluon acts as a port arbiter between Nova and port-provider such as neutron
+Home-page: https://www.openstack.org/
+Author: OpenStack
+Author-email: openstack-dev@lists.openstack.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: Babel (!=2.3.0,!=2.3.3,>=1.3,!=2.3.1,!=2.3.2)
+Requires-Dist: PyYAML (>=3.1.0)
+Requires-Dist: SQLAlchemy (<1.1.0,>=1.0.10)
+Requires-Dist: WSME (>=0.8)
+Requires-Dist: click (>=6.6)
+Requires-Dist: keystoneauth1 (>=2.18.0)
+Requires-Dist: keystonemiddleware (>=4.12.0)
+Requires-Dist: oslo.config (>=3.14.0,!=3.18.0)
+Requires-Dist: oslo.db (>=4.15.0)
+Requires-Dist: oslo.i18n (>=2.1.0)
+Requires-Dist: oslo.log (>=3.11.0)
+Requires-Dist: oslo.middleware (>=3.0.0)
+Requires-Dist: oslo.policy (>=1.17.0)
+Requires-Dist: oslo.utils (>=3.18.0)
+Requires-Dist: oslo.versionedobjects (>=1.17.0)
+Requires-Dist: pbr (>=1.8)
+Requires-Dist: pecan (!=1.0.3,!=1.0.4,!=1.0.2,>=1.0.0,!=1.2)
+Requires-Dist: python-etcd (>=0.4.3)
+Requires-Dist: pytz (>=2013.6)
+Requires-Dist: requests (>=2.10.0,!=2.12.2)
+Requires-Dist: rfc3986 (>=0.3.1)
+Requires-Dist: six (>=1.9.0)
+
+=====
+Gluon
+=====
+
+A Model-Driven, Extensible Framework for Networking APIs
+Gluon provides a framework for specifying, using a model file,
+APIs for network forwarding.  It is intended to offer developers
+the possibility of quickly prototyping any networking forwarding
+system that describes how a packet moves from port to port or
+port to the outside world.
+
+* Free software: Apache license
+* Wiki: https://wiki.openstack.org/wiki/Gluon
+* Source: http://git.openstack.org/cgit/openstack/gluon
+* Bugs: https://bugs.launchpad.net/python-gluon
+* Documentation: doc/source/index
+
+  * Installation: doc/source/installation
+  * User Guide: doc/source/usage
+  * Developers: doc/source/devref/index
+
+
+
