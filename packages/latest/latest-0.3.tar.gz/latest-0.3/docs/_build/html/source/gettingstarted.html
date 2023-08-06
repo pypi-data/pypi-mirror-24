@@ -1,0 +1,259 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Getting Started &#8212; latest 0.3.1 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.3.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Help" href="help.html" />
+    <link rel="prev" title="Install" href="install.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="basic-syntax">
+<h2>Basic Syntax<a class="headerlink" href="#basic-syntax" title="Permalink to this headline">¶</a></h2>
+<p>With <span class="math">\(\LaTeX\)</span> syntax in mind, <a class="reference internal" href="latest.html#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> defines a <strong>command</strong> and an <strong>environment</strong>.
+But, first of all, let’s see how to leverage all the power of python in a template.</p>
+<div class="section" id="python-expressions">
+<h3>Python expressions<a class="headerlink" href="#python-expressions" title="Permalink to this headline">¶</a></h3>
+<p>You can include a python expression within a template. By default, the syntax is:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>{$ python expression $}
+</pre></div>
+</div>
+<p>A python expression returns a python object, so if you want a string instead, you can use the <a class="reference internal" href="latest.html#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> <strong>command</strong>.
+For more complex tasks involving some logic like <em>for loops</em> or <em>conditionals</em> you can refer to
+<a class="reference internal" href="latest.html#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> <strong>environment</strong>.</p>
+</div>
+<div class="section" id="contexts">
+<h3>Contexts<a class="headerlink" href="#contexts" title="Permalink to this headline">¶</a></h3>
+<p>An expression needs a context (like a python dictionary) to be evaluated. A context is generally provided globally
+for a template. This context object is passed to every python expression, command or environment in the template.
+However, commands and environments can modify the context to work with in their content.</p>
+</div>
+<div class="section" id="commands">
+<h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference internal" href="latest.html#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> command let you automatically convert to a string the output of a python expression.
+By default, the syntax is:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>\latest[options]{$ python expression $}
+</pre></div>
+</div>
+<p>For example, the expression:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>If a = \latest{$ a $} and b = \latest{$ b $}, then a + b = \latest{$ a+b $}
+</pre></div>
+</div>
+<p>with a data context <code class="code docutils literal"><span class="pre">{'a':</span> <span class="pre">1,</span> <span class="pre">'b':</span> <span class="pre">2}</span></code> evaluates to:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">If</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">then</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="environments">
+<h3>Environments<a class="headerlink" href="#environments" title="Permalink to this headline">¶</a></h3>
+<p>A <a class="reference internal" href="latest.html#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> environment allow us to change the globally defined context. This can be useful for many purposes
+depending on the context provided:</p>
+<ul class="simple">
+<li><code class="code docutils literal"><span class="pre">dict</span></code> context: to ease the access to names in the context for the python expressions, commands, or enviroments nested inside the
+environment</li>
+<li><code class="code docutils literal"><span class="pre">boolean</span></code> context: to provide a conditional functionality</li>
+<li><code class="code docutils literal"><span class="pre">list</span></code> context: to provide a loop functionality</li>
+</ul>
+<p>By default, the syntax is:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>\begin{latest}{$ context $}[options]
+     content...
+\end{latest}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="creating-a-template">
+<h2>Creating a template<a class="headerlink" href="#creating-a-template" title="Permalink to this headline">¶</a></h2>
+<p>A template file can be of any type but <a class="reference internal" href="latest.html#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> searches in it for mod:<cite>latest</cite> <strong>commands</strong> and <strong>enviroments</strong>.</p>
+</div>
+<div class="section" id="creating-a-data-file">
+<h2>Creating a data file<a class="headerlink" href="#creating-a-data-file" title="Permalink to this headline">¶</a></h2>
+<p>Data formats supported by <a class="reference internal" href="latest.html#module-latest" title="latest"><code class="xref py py-mod docutils literal"><span class="pre">latest</span></code></a> are</p>
+<ul class="simple">
+<li>json</li>
+<li>yaml</li>
+</ul>
+</div>
+<div class="section" id="the-latest-cli">
+<h2>The latest cli<a class="headerlink" href="#the-latest-cli" title="Permalink to this headline">¶</a></h2>
+<p>Run mod:<cite>latest</cite> script from the command line:: bash</p>
+<blockquote>
+<div>$ latest template data</div></blockquote>
+<p>where</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>template</strong> is the path to a template file</li>
+<li><strong>data</strong> is the path to a <em>json</em> or <em>yaml</em> formatted data file.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>An example template file can be something like</p>
+<div class="highlight-latex"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span><span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> meta </span><span class="s">$</span><span class="nb">}}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>latest<span class="nb">}{</span><span class="s">$</span><span class="nb"> False </span><span class="s">$</span><span class="nb">}</span>It doesn&#39;t exist<span class="k">\end</span><span class="nb">{</span>latest<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>latest<span class="nb">}{</span><span class="s">$</span><span class="nb"> data </span><span class="s">$</span><span class="nb">}</span>
+x = <span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> scalar </span><span class="s">$</span><span class="nb">}</span> so that <span class="s">$</span><span class="nb">x^</span><span class="m">2</span><span class="s">$</span> = <span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> scalar</span><span class="o">**</span><span class="m">2</span><span class="nb"> </span><span class="s">$</span><span class="nb">}</span>.
+<span class="k">\end</span><span class="nb">{</span>latest<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>latest<span class="nb">}{</span><span class="s">$</span><span class="nb"> </span><span class="o">[</span><span class="nb">{&#39;i&#39;: i, &#39;v&#39;: v} for i, v in enumerate</span><span class="o">(</span><span class="nb">data.vector</span><span class="o">)]</span><span class="nb"> </span><span class="s">$</span><span class="nb">}</span>[join=<span class="nb">{</span><span class="s">$</span><span class="nb"> &#39;</span><span class="nv">\n</span><span class="nb">&#39; </span><span class="s">$</span><span class="nb">}</span>]
+<span class="k">\item</span> index = <span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> i </span><span class="s">$</span><span class="nb">}</span>, value = <span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> v </span><span class="s">$</span><span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>latest<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>latest<span class="nb">}{</span><span class="s">$</span><span class="nb"> data.tensor </span><span class="s">$</span><span class="nb">}</span>[join=<span class="nb">{</span><span class="s">$</span><span class="nb"> &#39;</span><span class="nv">\n</span><span class="nb">&#39; </span><span class="s">$</span><span class="nb">}</span>]
+true = <span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> true </span><span class="s">$</span><span class="nb">}</span> and false = <span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> false </span><span class="s">$</span><span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>latest<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>latest<span class="nb">}{</span><span class="s">$</span><span class="nb"> data </span><span class="s">$</span><span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>latest<span class="nb">}{</span><span class="s">$</span><span class="nb"> tensor </span><span class="s">$</span><span class="nb">}</span>
+Testing nested structures:
+true = <span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> true </span><span class="s">$</span><span class="nb">}</span> and false = <span class="k">\latest</span><span class="nb">{</span><span class="s">$</span><span class="nb"> false </span><span class="s">$</span><span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>latest<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>latest<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<p>while the data file can be something like (<em>yaml</em>)</p>
+<div class="highlight-yaml"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">meta</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Testing latest...</span>
+<span class="l l-Scalar l-Scalar-Plain">data</span><span class="p p-Indicator">:</span>
+  <span class="l l-Scalar l-Scalar-Plain">scalar</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
+  <span class="l l-Scalar l-Scalar-Plain">vector</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
+  <span class="l l-Scalar l-Scalar-Plain">tensor</span><span class="p p-Indicator">:</span>
+    <span class="s">&#39;true&#39;</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="s">&#39;false&#39;</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+</pre></div>
+</div>
+<p>The expected output is</p>
+<div class="highlight-latex"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>Testing latest...<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+x = 3 so that <span class="s">$</span><span class="nb">x^</span><span class="m">2</span><span class="s">$</span> = 9.
+<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\item</span> index = 0, value = 1
+<span class="k">\item</span> index = 1, value = 2
+<span class="k">\item</span> index = 2, value = 3
+true = 1 and false = 0
+Testing nested structures:
+true = 1 and false = 0
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">latest</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-syntax">Basic Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-template">Creating a template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-data-file">Creating a data file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-latest-cli">The latest cli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">API reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="install.html" title="previous chapter">Install</a></li>
+      <li>Next: <a href="help.html" title="next chapter">Help</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Flavio Grandin.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/source/gettingstarted.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
