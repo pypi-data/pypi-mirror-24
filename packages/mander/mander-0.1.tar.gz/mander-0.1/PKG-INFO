@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mander
+Version: 0.1
+Summary: Python package to calculate compactness metrics for district shapes.
+Home-page: http://github.com/gerrymandr/python-mander
+Author: Geometry of Redistricting Workshop
+Author-email: gerrymandr@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
