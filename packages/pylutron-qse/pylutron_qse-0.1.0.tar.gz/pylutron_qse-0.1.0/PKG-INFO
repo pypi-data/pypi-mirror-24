@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pylutron_qse
+Version: 0.1.0
+Summary: API for Lutron QSE network interface (QSE-CI-NWK-E)
+Home-page: http://github.com/deustis/pylutron-qse
+Author: David Eustis
+Author-email: david.eustis@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
