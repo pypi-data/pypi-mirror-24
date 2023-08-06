@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"contacts": [{"email": "msocek@gmail.com", "name": "Dominik \"Socek\" D\u0142ugajczy", "role": "author"}], "document_names": {"description": "DESCRIPTION.rst"}}}, "generator": "bdist_wheel (0.29.0)", "metadata_version": "2.0", "name": "MorfDict", "summary": "MorfDict is a dict like object, which convers data on the fly.", "version": "0.4.7"}
