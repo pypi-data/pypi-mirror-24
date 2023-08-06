@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+HTTPSServer/HTTPSServer.py
+HTTPSServer/__init__.py
+HTTPSServer/__main__.py
+HTTPSServer.egg-info/PKG-INFO
+HTTPSServer.egg-info/SOURCES.txt
+HTTPSServer.egg-info/dependency_links.txt
+HTTPSServer.egg-info/not-zip-safe
+HTTPSServer.egg-info/top_level.txt

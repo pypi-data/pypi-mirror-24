@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: HTTPSServer
+Version: 0.1
+Summary: Simple HTTPS Server
+Home-page: https://github.com/yeger00/HTTPSServer
+Author: Avi Yeger
+Author-email: yeger00@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: https,server
+Platform: UNKNOWN
