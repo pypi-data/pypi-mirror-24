@@ -1,0 +1,11 @@
+tunic-1.3.0.dist-info/METADATA,sha256=h2XuXtcujP5yt5SRkwNWvKaSqyJXgR-73fruNKv8rG0,2234
+tunic-1.3.0.dist-info/RECORD,,
+tunic-1.3.0.dist-info/WHEEL,sha256=54bVun1KfEBTJ68SHUmbxNPj80VxlQ0sHi4gZdGZXEY,92
+tunic-1.3.0.dist-info/metadata.json,sha256=o_RpDoSVsJj9V6Vb2WUe_9a8kZwGJ-lBoXHPl5uigF8,758
+tunic-1.3.0.dist-info/DESCRIPTION.rst,sha256=iX5ed0hNRmyPGGMV_B16hBwiczRlvx98lp9WgorzXA4,1652
+tunic-1.3.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tunic-1.3.0.dist-info/top_level.txt,sha256=4-GGsng2mzbqIuL3Lw5fJfQREXUqLcIpbRETAijIaqg,6
+tunic/__init__.py,sha256=Ll0qMYROFUeODqAns9uyyrtnB0CykewhCfGOpcOUB9g,236
+tunic/api.py,sha256=M_ebWxcMoqmfkHzeknFw9BOqiyszRa-LEwrSP-wq2t8,789
+tunic/core.py,sha256=pLqSdS9bVKCNe89GvTn-XWsclAg-MMT0ob-Qzk4fbKc,17526
+tunic/install.py,sha256=Q0ptEAyCxDE3tUsLb_I-C7cAfA8l4FXApNeiKCfR4RA,23842
