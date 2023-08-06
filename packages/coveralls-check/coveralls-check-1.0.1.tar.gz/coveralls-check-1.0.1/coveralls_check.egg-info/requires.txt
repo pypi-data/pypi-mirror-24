@@ -1,0 +1,12 @@
+requests
+
+[build]
+setuptools-git
+twine
+wheel
+
+[test]
+pytest
+testfixtures
+responses
+coveralls
