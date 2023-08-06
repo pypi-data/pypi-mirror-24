@@ -1,0 +1,16 @@
+esig/__init__.py,sha256=6uv-Nf4zk5v6cPYESDqBq5NaverLOebbPhublb6Ti04,1642
+esig/tosig.cpython-36m-x86_64-linux-gnu.so,sha256=_IqBBP2APrttOEwWpXbqTxd7xAu-uytsXG60mMLdiKU,43563184
+esig/setuptools_helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+esig/setuptools_helpers/configuration.py,sha256=5ulyAyX66nSHOFXwiX_oJoPm3vDKDYAuhRDDmiB5B0g,5671
+esig/setuptools_helpers/distribution.py,sha256=Ed9-ASyTOs8FBwCyZWaruJuJ-ICgNCUNM0U3EYyFhpA,126
+esig/setuptools_helpers/extensions.py,sha256=HOqqiVvCLzpAByyH9wJQh2c9JY-apBnU7Udxisfh00k,838
+esig/tests/__init__.py,sha256=HOr3o0Ku6EHG0AZ6LyWZPOFD6HNQ4uQIuYHPFazFVC4,1491
+esig/tests/auxiliaryfunct.py,sha256=3aU4n3KprKUoodYj6nlMhSrcl6VMZQbZf10apNSl3d8,17223
+esig/tests/esigtests.py,sha256=XwegmyAlWiYM7P0-IN56rkVW_CeRc45IouTsWaincgc,9690
+esig/tests/test_package.py,sha256=h31w_MQitCx1jnRfywQV0sQiluuZ-UTV3M2yPsblyyY,3557
+esig-0.6.7.dist-info/DESCRIPTION.rst,sha256=YfzKY7Tw_Ku7xrEzVQ8uJnQcePDjdR4vb5YVb36BwRE,222
+esig-0.6.7.dist-info/METADATA,sha256=roXyLbUmdaYBuotrguy-zJ6QMP8N_p10HkabnJqQCQk,910
+esig-0.6.7.dist-info/RECORD,,
+esig-0.6.7.dist-info/WHEEL,sha256=eLnmevQHpRJB2D5amvQXLJk8sVHtrot0xAEnYEBfQYM,104
+esig-0.6.7.dist-info/metadata.json,sha256=EkO74aZoxBu4upQnWdO02ADsW1cNanenlGrRj6li90o,940
+esig-0.6.7.dist-info/top_level.txt,sha256=F1eEcl8RqWaqM2uiFckw6psL2BknGzFQS44-WMtHetA,5
