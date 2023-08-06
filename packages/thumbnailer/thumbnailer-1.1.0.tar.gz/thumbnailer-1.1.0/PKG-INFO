@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: thumbnailer
+Version: 1.1.0
+Summary: Module to turn images into thumbnails.
+Home-page: https://github.com/ekkkkkknoes/thumbnailer
+Author: Sönke Lambert
+Author-email: soelam@live.de
+License: BSD-2-Clause
+Description: ===========
+        thumbnailer
+        ===========
+        Python module to turn images into 120x180 JPEG thumbnails.
+        
+        Installation
+        ============
+        Make sure you have Python 3 installed. Then::
+        
+            pip install thumbnailer
+        
+        Usage
+        =====
+        thumbnailer can either be used in your code::
+        
+            import thumbnailer
+        
+            thumbnailer.thumbnail("MyCoolPic.png")
+        
+        It will then create a 120x180 JPEG version of your picture. If it already was a JPEG, thumbnailer will overwrite it.
+        
+        Alternatively, you can use thumbnailer from the console::
+        
+            python3 -m thumbnailer [path to image here]
+        
+        or::
+        
+            thumbnailer [path to image here]
+        
+Keywords: images tools
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
