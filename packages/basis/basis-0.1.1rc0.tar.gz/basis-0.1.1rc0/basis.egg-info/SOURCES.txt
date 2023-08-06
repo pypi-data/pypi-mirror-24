@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+basis/__init__.py
+basis/character_container.py
+basis/token_container.py
+basis/utils.py
+basis/word_container.py
+basis.egg-info/PKG-INFO
+basis.egg-info/SOURCES.txt
+basis.egg-info/dependency_links.txt
+basis.egg-info/requires.txt
+basis.egg-info/top_level.txt
+test/test_filesystem.py
+test/test_object.py
+test/test_wrappers.py
