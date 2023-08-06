@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+translations/__init__.py
+translations/apps.py
+translations/models.py
+translations.egg-info/PKG-INFO
+translations.egg-info/SOURCES.txt
+translations.egg-info/dependency_links.txt
+translations.egg-info/top_level.txt
+translations/templatetags/__init.py__
+translations/templatetags/translate.py
