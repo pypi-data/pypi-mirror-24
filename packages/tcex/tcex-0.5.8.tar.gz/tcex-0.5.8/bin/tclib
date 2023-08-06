@@ -1,0 +1,151 @@
+#!/usr/bin/env python
+
+""" standard """
+import argparse
+import colorama as c
+import json
+import os
+import pip
+import shutil
+import subprocess
+import sys
+import traceback
+from setuptools.command import easy_install
+""" third-party """
+""" custom """
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    '--app_name', help='Fully qualified path of App.', required=False)
+parser.add_argument(
+    '--app_path', help='Fully qualified path of App.', required=False)
+parser.add_argument(
+    '--config', help='Configuration file for gen lib.', required=False)
+#     '--config', default="tcex.json", help='Configuration file for gen lib.', required=False)
+args, extra_args = parser.parse_known_args()
+
+
+# TODO: Clean this up when time allows
+class TcLib(object):
+    def __init__(self, args):
+        """ """
+        self._args = args
+        self.app_path = os.getcwd()
+        self.exit_code = 0
+
+        # initialize colorama
+        c.init(autoreset=True, strip=False)
+
+    def install_libs(self, data=None):
+        """Install Requred Libraries using easy install."""
+        # maybe call subprocess for multiple python versions?
+        if self._args.config is not None:
+            self.install_libs_multiple()
+        else:
+            self.install_libs_single()
+
+    def install_libs_multiple(self):
+        """ """
+        file_path = os.path.join(self.app_path, self._args.config)
+        if os.path.isfile(file_path):
+            with open(file_path, 'r') as fh:
+                data = json.load(fh)
+            # os.environ['HOME']
+            for data in data.get('lib_versions', []):
+                print('Building Lib Dir: {}{}{}'.format(
+                    c.Style.BRIGHT, c.Fore.CYAN, data.get('lib_dir')))
+                exe_command = [
+                    os.path.expanduser(data.get('python_executable')),
+                    '-m',
+                    'pip',
+                    'install',
+                    '-r',
+                    'requirements.txt',
+                    '--ignore-installed',
+                    '--quiet',
+                    '--target',
+                    os.path.join(self.app_path, data.get('lib_dir'))
+                ]
+                print('Running: {}{}{}'.format(c.Style.BRIGHT, c.Fore.GREEN, ' '.join(exe_command)))
+                p = subprocess.Popen(
+                    exe_command, shell=False, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE)
+                out, err = p.communicate()
+
+                if p.returncode != 0:
+                    print('{}{}FAIL'.format(c.Style.BRIGHT, c.Fore.RED))
+
+    ## def _easy_install(self, app_path, app_name, lib_path):
+    ##     """ """
+    ##     # install dependencies
+    ##     stdout = sys.stdout
+    ##     stderr = sys.stderr
+    ##     try:
+    ##         with open(os.path.join(app_path, '{}-libs.log'.format(app_name)), 'w') as log:
+    ##             sys.stdout = log
+    ##             sys.stderr = log
+    ##             easy_install.main(['-axZ', '-d', lib_path, str(app_path)])
+    ##     except SystemExit as e:
+    ##         raise Exception(str(e))
+    ##     finally:
+    ##         sys.stdout = stdout
+    ##         sys.stderr = stderr
+
+    def _pip_install(self, app_path, app_name, lib_path):
+        """ """
+        args = [
+            'install',
+            '-r',
+            'requirements.txt',
+            '--ignore-installed',
+            '--quiet',
+            '--target',
+            lib_path
+        ]
+        command = '{} {}'.format('pip', ' '.join(args))
+        print('Running: {}{}{}'.format(c.Style.BRIGHT, c.Fore.GREEN, command))
+        pip.main(args)
+
+    def _make_lib_dir(self, directory):
+        """ """
+        if not os.path.isdir(directory):
+            os.mkdir(directory)
+
+    def install_libs_single(self):
+        """ """
+        lib_directory = 'lib_{}.{}.{}'.format(
+            sys.version_info.major, sys.version_info.minor, sys.version_info.micro)
+        print('Creating Lib Direcotry: {}{}{}'.format(c.Style.BRIGHT, c.Fore.CYAN, lib_directory))
+
+        # set defaults if no user provide values
+        app_path = args.app_path
+        if app_path is None:
+            app_path = os.getcwd()
+        app_name = args.app_name
+        if app_name is None:
+            app_name = os.path.basename(app_path)
+
+        # build lib path and create if it doesn't exist
+        lib_path = os.path.join(app_path, lib_directory)
+        self._make_lib_dir(lib_path)
+
+        # update environment for new path
+        os.environ['PYTHONPATH'] = '{0}'.format(lib_path)
+        # self._easy_install(app_path, app_name, lib_path)
+        self._pip_install(app_path, app_name, lib_path)
+
+        if not os.listdir(lib_path):
+            err = 'Encountered error running easy_install for {}.  Check log file for details.'
+            err = err.format(app_name)
+            raise Exception(err)
+
+
+if __name__ == '__main__':
+    try:
+        tcl = TcLib(args)
+        tcl.install_libs()
+        sys.exit(tcl.exit_code)
+    except Exception as e:
+        # TODO: Update this, possibly raise
+        print('{}{}{}'.format(c.Style.BRIGHT, c.Fore.RED, traceback.format_exc()))
+        sys.exit(1)
