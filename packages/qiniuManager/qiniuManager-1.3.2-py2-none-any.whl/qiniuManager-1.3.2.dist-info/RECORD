@@ -1,0 +1,13 @@
+qiniuManager/__init__.py,sha256=NMuq-B-YK572nEpFuAxi_ICvxhRiRlBrKvBk6sgnmBU,25
+qiniuManager/http.py,sha256=zkYvvEvsncT-9E4rt_9zejeTCIWK5tfFE4M6xI6zyq4,6735
+qiniuManager/manager.py,sha256=P0TXjRWy_o1eTar2F9lnkTQ_Q071-t18Q6yn3SluVzU,17893
+qiniuManager/progress.py,sha256=IkvmiKnWppJBOnxWcvUAt_s6OFS3pBp1d7FXYYZoTIc,2302
+qiniuManager/run.py,sha256=FjRr56z382-fplDHFKJSW7bR2q_mB8e1p0-B8aY-giA,9554
+qiniuManager/utils.py,sha256=VX2RXr9mdr5rQhv_Q2w53qStqWZ_RHx0r0i3utwVV80,5259
+qiniuManager-1.3.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+qiniuManager-1.3.2.dist-info/METADATA,sha256=CCDRdYFa51SDdGzS1H2QHbUwP1TySmkO4rXQSZoJNKw,684
+qiniuManager-1.3.2.dist-info/RECORD,,
+qiniuManager-1.3.2.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+qiniuManager-1.3.2.dist-info/entry_points.txt,sha256=X7k4p4wQ3A3nmAu3si89sz8EhztmXLD2F5DyYzvbDzA,49
+qiniuManager-1.3.2.dist-info/metadata.json,sha256=5QyPQF-uQXKSDwG85fsYCSpn7n2rmo4CL_30MBGx9yw,1007
+qiniuManager-1.3.2.dist-info/top_level.txt,sha256=_gUNmStrwRsz-t4I9c0mM8_aJW0jpydfnlP17h-eBAY,13
