@@ -1,0 +1,3 @@
+boto3
+addict==1.0.0
+six
