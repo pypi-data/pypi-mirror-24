@@ -1,0 +1,5 @@
+include README.rst
+include Example.ipynb
+include post_truth_checker/badsites.csv
+include post_truth_checker/baits.csv
+include post_truth_checker/opinionwords.csv
