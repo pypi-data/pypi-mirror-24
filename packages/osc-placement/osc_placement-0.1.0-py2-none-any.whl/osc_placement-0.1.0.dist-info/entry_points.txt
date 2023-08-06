@@ -1,0 +1,3 @@
+[openstack.cli.extension]
+placement = osc_placement.plugin
+
