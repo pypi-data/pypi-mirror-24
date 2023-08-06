@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: PyAndroid
+Version: 1.1.3
+Summary: Android information in python code
+Home-page: https://pyandroid.000webhostapp.com/
+Author: olokelo
+Author-email: olokelo@gmail.com
+License: MIT
+Description: Module for android python users
+        PyAndroid is a module for ex. get android version of device.
+        Module was created for qpython3 or kivy on android.
+        Documentation https://pyandroid.000webhostapp.com/docs.html
+        
+Keywords: PyAndroid,AndroPy,olokelo,olokel0,python_android,android
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
