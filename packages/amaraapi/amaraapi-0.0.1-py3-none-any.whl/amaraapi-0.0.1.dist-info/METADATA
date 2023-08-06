@@ -1,0 +1,35 @@
+Metadata-Version: 2.0
+Name: amaraapi
+Version: 0.0.1
+Summary: Python Amara API Wrapper
+Home-page: https://github.com/diegoami/amaraapi/
+Author: Diego Amicabile
+Author-email: diego.amicabile@gmail.com
+License: BSD License
+Keywords: amara api wrapper
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Requires-Dist: requests
+
+# DESCRIPTION
+
+A wrapper around amara api
+
+# REQUIREMENTS
+
+Methods accept a headers dictionaries
+
+```
+amara = Amara({'X-api-username': '<your username>','X-api-key': '<your-api-kei>'})
+```
+
+
+
