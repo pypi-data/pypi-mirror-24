@@ -1,0 +1,92 @@
+Metadata-Version: 2.0
+Name: clicking
+Version: 0.1.1
+Summary: Convenience function for Click
+Home-page: https://gitlab.com/web-novel/syosetsu
+Author: Andy Yulius
+Author-email: andy.julot@gmail.com
+License: MIT
+Keywords: click echo console message
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Requires-Dist: click
+Requires-Dist: colorama
+
+########
+Clicking
+########
+
+Convenience function for `Click <http://click.pocoo.org>`__.
+
+
+Installation
+============
+
+.. code-block:: bat
+
+  (.venv) > pip install clicking
+
+
+Usage
+=====
+
+Echo
+----
+
+Convenience functions for ``click.echo`` because it's a pain to remember the
+color and naming convention I myself use before.
+
+info
+  Print message in bold white.
+
+progress
+  Print message in bold blue.
+
+working
+  Print message in bold cyan.
+
+success
+  Print message in bold green.
+
+warning
+  Print message in bold yellow.
+
+fail
+  Print message in bold red.
+
+
+Exception
+---------
+
+Error
+  Print message in bold red.
+
+
+Changes
+=======
+
+0.1.1
+-----
+
+* Add exception that print message in bold red when raised.
+
+
+0.1.0
+-----
+
+* First public release.
+
+
