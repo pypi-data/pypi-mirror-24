@@ -1,0 +1,16 @@
+baka_model/__init__.py,sha256=k1u33LLGJw1FtC4x5-PwBc6e0xfTHRExaEZsG-h1dCU,3180
+baka_model/service.py,sha256=aIGUfcyLtiHABoW75UqYNw_1ALdrQ--MZghGU9JF5ys,5150
+baka_model/model/__init__.py,sha256=s178PpczdZtPCyO09B5xTWhx6wRUl6QaPbQWTt8-Bcc,899
+baka_model/model/helper.py,sha256=ipVpyTEByf0Fofs1Vfb1OqGKfIHQlafQULFtS3g_H2s,2772
+baka_model/model/pubid.py,sha256=LwVw1bbdhTISHVctXtRa3bIw951bDcvjKmqIuo7yYhg,1427
+baka_model/model/meta/__init__.py,sha256=VJqh9AmRBMWZpq1aYU2ihexklHUX6tL1lmO--BGJjSg,819
+baka_model/model/meta/base.py,sha256=0EATMTchUHinQfUl7TrrayDX95D8cv8F8ulkGjByJok,3497
+baka_model/model/meta/orm.py,sha256=WZvE0KJfNY9HkwvWKawh7AaIlNz1jFdmKBvOKNVtDI4,2887
+baka_model/model/meta/schema.py,sha256=nI_NIMgVXCbHOueuCPLVEDwQmWk-U_bO0Sb2HxL6LjE,7473
+baka_model/model/meta/type.py,sha256=5v3zrS2a4fG7WbVCmL4MSt0khz5qMQ0vfkIm6pr-dQs,5914
+baka_model-0.18.1.dist-info/DESCRIPTION.rst,sha256=2SEy7q3-DpH3UWR7JxD3TLLJnIcapJ8nKy4RCvpSjiQ,1454
+baka_model-0.18.1.dist-info/METADATA,sha256=Dt5l8STY7hYhpYj8nJJyzP264EAu4u_pjyNQ9SpYU7o,2845
+baka_model-0.18.1.dist-info/RECORD,,
+baka_model-0.18.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+baka_model-0.18.1.dist-info/metadata.json,sha256=zpQv0e485muEITb0ipPwStuaR3pWCp5oD4Ks4RKUZSA,1390
+baka_model-0.18.1.dist-info/top_level.txt,sha256=rWPRmB_GmfLG8UmVyDT3zVcR87dU0QgVE-ujBcC51f8,11
