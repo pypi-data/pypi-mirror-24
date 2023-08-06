@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: serverless_secrets
+Version: 0.2.4
+Summary: A library for accessing secrets for use in serverless applications
+Home-page: https://github.com/trek10inc/serverless-secrets-python
+Author: Trek10, Inc
+Author-email: package-management@trek10.com
+License: UNKNOWN
+Download-URL: https://github.com/trek10inc/serverless-secrets-python/archive/0.2.4.tar.gz
+Description: UNKNOWN
+Keywords: serverless,secrets
+Platform: UNKNOWN
