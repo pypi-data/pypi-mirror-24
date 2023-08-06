@@ -1,0 +1,8 @@
+[console_scripts]
+caucase = caucase.cli:main
+caucase-key-id = caucase.cli:key_id
+caucase-monitor = caucase.cli:monitor
+caucase-probe = caucase.cli:probe
+caucase-rerequest = caucase.cli:rerequest
+caucased = caucase.http:main
+
