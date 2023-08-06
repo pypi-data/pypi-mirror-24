@@ -1,0 +1,7 @@
+PyQt5
+ipdb
+keras
+matplotlib
+numpy
+seaborn
+sklearn
