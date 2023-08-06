@@ -1,0 +1,4 @@
+Orange3>=3.4.1
+setuptools
+future
+LTTL>=2.0.5
