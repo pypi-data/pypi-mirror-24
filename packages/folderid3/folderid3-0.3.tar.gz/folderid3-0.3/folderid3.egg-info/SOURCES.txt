@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+folderid3/__init__.py
+folderid3/__main__.py
+folderid3.egg-info/PKG-INFO
+folderid3.egg-info/SOURCES.txt
+folderid3.egg-info/dependency_links.txt
+folderid3.egg-info/top_level.txt
