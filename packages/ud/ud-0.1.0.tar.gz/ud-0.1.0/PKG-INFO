@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ud
+Version: 0.1.0
+Summary: A simple Urban Dictionary wrapper.
+Home-page: https://github.com/DizAzTor/UD-py
+Author: DizAzTor
+Author-email: dizaztor@protonmail.com
+License: UNKNOWN
+Download-URL: https://github.com/DizAzTor/UD-py/archive/v1.0.tar.gz
+Description: UNKNOWN
+Keywords: urban dictionary api simple wrapper define words
+Platform: UNKNOWN
