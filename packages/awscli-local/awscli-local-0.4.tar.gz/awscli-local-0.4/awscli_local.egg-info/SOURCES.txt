@@ -1,0 +1,7 @@
+setup.py
+awscli_local.egg-info/PKG-INFO
+awscli_local.egg-info/SOURCES.txt
+awscli_local.egg-info/dependency_links.txt
+awscli_local.egg-info/requires.txt
+awscli_local.egg-info/top_level.txt
+bin/awslocal
