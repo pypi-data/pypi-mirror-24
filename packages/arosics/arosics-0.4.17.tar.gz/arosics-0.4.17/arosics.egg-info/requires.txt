@@ -1,0 +1,10 @@
+numpy
+gdal
+shapely
+scikit-image
+matplotlib
+geopandas
+spectral
+geoarray
+py_tools_ds
+plotly
