@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+emailx/__init__.py
+emailx/emailer.py
+emailx/unicode.py
+emailx.egg-info/PKG-INFO
+emailx.egg-info/SOURCES.txt
+emailx.egg-info/dependency_links.txt
+emailx.egg-info/not-zip-safe
+emailx.egg-info/requires.txt
+emailx.egg-info/top_level.txt
+tests/__init__.py
+tests/test_all.py
