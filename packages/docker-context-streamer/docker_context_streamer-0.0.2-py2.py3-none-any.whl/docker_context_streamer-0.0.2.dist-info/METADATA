@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: docker-context-streamer
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/hassio-addons/docker-context-streamer
+Author: Franck Nijhof
+Author-email: frenck@geekchimp.com
+License: GPLv3
+Download-URL: https://github.com/hassio-addons/docker-context-streamer/archive/0.0.2.tar.gz
+Keywords: docker,dockerfile,stream
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: System
+Classifier: Topic :: Utilities
+Requires: six
+Requires-Dist: six (>=1.10)
+
+Docker Context Streamer.
+
+This little tool allows you to add file context to Dockerfiles fed to
+Docker using STDIN by creating a tar file stream.
+
+
