@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: tickle
+Version: 0.1.0
+Summary: Advanced serialization library for Python 2.7+.
+Home-page: https://bitbucket.org/overridelogic/tickle
+Author: Francis Lacroix
+Author-email: f@overridelogic.com
+License: MIT
+Description: Advanced serialization library for Python 2.7+.
+        
+        This library allows one to serialize more advanced types, such as lambdas, modules
+        and builtins. It mirrors the `pickle` module with more advanced features.
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Provides: tickle
+Requires-Python: >=2.7
