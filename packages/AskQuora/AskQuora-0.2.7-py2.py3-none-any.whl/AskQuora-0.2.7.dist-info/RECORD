@@ -1,0 +1,9 @@
+AskQuora-0.2.7.dist-info/DESCRIPTION.rst,sha256=RzrQiTNp5uhoP1jmrcK6pcNJ55nGn3sFJPWV2fNSD-U,1112
+AskQuora-0.2.7.dist-info/METADATA,sha256=zt4wgEGr91YbQBPuseDk58-JsCmo8OBrWnQkYVKMJPE,1592
+AskQuora-0.2.7.dist-info/RECORD,,
+AskQuora-0.2.7.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+AskQuora-0.2.7.dist-info/entry_points.txt,sha256=Zcvs7M78QIO0M00nEOFhiUFebMtoMd9wtcsh9zAJXEc,61
+AskQuora-0.2.7.dist-info/metadata.json,sha256=TEi__rAp3hZSLmCvx5tTNMHODm7AqhpfDGFUjyk55hE,862
+AskQuora-0.2.7.dist-info/top_level.txt,sha256=3iQMDZjLrM9FtSQhOUf9aTVBLeS_-tx5_aqrDRUIoiE,9
+askquora/__init__.py,sha256=XHypfHSPdgXFKmOdoewn7czU670gt8InhHhzlP5j_aA,22
+askquora/askquora.py,sha256=xVq65xBEaoz4oSjiNBKZJ1LmZAVfe-7OwYRcoh5Pteo,6457
