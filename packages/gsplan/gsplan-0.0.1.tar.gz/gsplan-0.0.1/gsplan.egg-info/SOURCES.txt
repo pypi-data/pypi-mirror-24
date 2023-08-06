@@ -1,0 +1,7 @@
+setup.py
+gsplan/__init__.py
+gsplan.egg-info/PKG-INFO
+gsplan.egg-info/SOURCES.txt
+gsplan.egg-info/dependency_links.txt
+gsplan.egg-info/requires.txt
+gsplan.egg-info/top_level.txt

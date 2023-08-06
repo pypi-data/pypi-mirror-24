@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: gsplan
+Version: 0.0.1
+Summary: Creating Grid Search Plan based on a recipe.
+Home-page: https://github.com/JunyaKaneko/pygsplan
+Author: Junya Kaneko
+Author-email: jyuneko@hotmail.com
+License: MIT
+Download-URL: https://github.com/JunyaKaneko/pygsplan.git
+Description: UNKNOWN
+Keywords: Machine Learning,Grid Search
+Platform: UNKNOWN
