@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+<title>Accessibility Report</title>
+
+<div class="container-fluid">
+  <div class="row text-center">
+    <h3 class="text-center">Found {{ violations|length }} Accessibility Violations</h3>
+  </div><!-- .row -->
+    <table class="table table-striped table-hover col-xs-10">
+      <thead class="thead-inverse">
+        <tr class="row m-0">
+          <th class="col-3">Rule ID</th>
+          <th class="col-6">Description</th>
+          <th class="col-3">URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for rule in violations %}
+        <tr class="row m-0">
+          <td class="col-3">{{ rule['id'] }}</td>
+          <td class="col-6">{{ rule['help'] }}</td>
+          <td class="col-3"><a href="{{ rule['helpUrl'] }}">Details</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+
+</div><!-- .container-fluid -->
+
+
+
+<!--
+string += 'Found ' + str(len(violations)) + ' accessibility violations:'
+for rule in violations:
+    string += '\n\n\nRule Violated:\n' + rule['id'] + ' - ' + rule['description'] + \
+        '\n\tURL: ' + rule['helpUrl'] + \
+        '\n\tImpact Level: ' + rule['impact'] + \
+        '\n\tTags:'
+    for tag in rule['tags']:
+        string += ' ' + tag
+    string += '\n\tElements Affected:'
+    i = 1
+    for node in rule['nodes']:
+        for target in node['target']:
+            string += '\n\t' + str(i) + ') Target: ' + target
+            i += 1
+        for item in node['all']:
+            string += '\n\t\t' + item['message']
+        for item in node['any']:
+            string += '\n\t\t' + item['message']
+        for item in node['none']:
+            string += '\n\t\t' + item['message']
+    string += '\n\n\n'
+-->
