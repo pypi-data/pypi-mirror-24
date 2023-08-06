@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+dcs/__init__.py
+dcs/__main__.py
+dcs/cli.py
+dcs/streamer.py
+docker_context_streamer.egg-info/PKG-INFO
+docker_context_streamer.egg-info/SOURCES.txt
+docker_context_streamer.egg-info/dependency_links.txt
+docker_context_streamer.egg-info/entry_points.txt
+docker_context_streamer.egg-info/requires.txt
+docker_context_streamer.egg-info/top_level.txt
