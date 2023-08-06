@@ -1,0 +1,7 @@
+django-jenkins
+django<1.12
+python-social-auth
+social-auth-app-django
+django-errors
+easy_thumbnails
+django-image-cropping
