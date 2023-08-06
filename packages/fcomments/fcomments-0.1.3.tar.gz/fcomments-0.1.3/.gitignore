@@ -1,0 +1,6 @@
+__pycache__
+dist
+htmlcov
+.coverage
+readme_main.md
+ex_file.orig
