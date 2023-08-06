@@ -1,0 +1,16 @@
+storagelayer/__init__.py,sha256=lKleBc5wRln7lGZ1jy2qtu1Xth0hJ7mSQ73hefxXkiA,830
+storagelayer/archive.py,sha256=HTgcrYAxGCJXsL7mkN_Tn3fnInRvUx4nk_RGF4kg9Yg,830
+storagelayer/file.py,sha256=FHMC2SlAseRXt1SzWT5vLGtRLKvcOQLDe_S7TyVQ1Lc,1490
+storagelayer/s3.py,sha256=wg0yPshTpUCiDWk8KS2zkQDtVjw7jnmLfrrAAZOBsyo,4214
+storagelayer/util.py,sha256=MJuKn0I52QrODL8XwxRDEr0j8yJpZIOKfbgDE4_DKaY,1342
+storagelayer-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+storagelayer-0.1.0.dist-info/METADATA,sha256=9bhe9OKlnx2s6GKy3cozwhcFvJFFQpSDLjmIP7HUWV4,817
+storagelayer-0.1.0.dist-info/RECORD,,
+storagelayer-0.1.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+storagelayer-0.1.0.dist-info/metadata.json,sha256=MMqsNMqh7OE5ztk_ojqFU6jIixYHRvjUlkHRiMvQFyI,1009
+storagelayer-0.1.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+storagelayer-0.1.0.dist-info/top_level.txt,sha256=NirKGIk1ia8bi6JkpCimhJrZx-kyI0KO0AtJa1gAJrI,19
+storagelayer-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_file.py,sha256=7sKjis5QNaZFLueEgSLb8BM4RSyCWl9JioAukoYWS7Y,1564
+tests/test_s3.py,sha256=ydM7-BDJ7Lpjgc9cq5Zc9md3FqSMvT0k-aEhtIauIQk,1532
