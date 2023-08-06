@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mredu
+Version: 0.4.1
+Summary: A simple simulator of a system which implements map/reduce paradigm.
+Home-page: http://github.com/ramonpin/mredu
+Author: ramonpin
+Author-email: ramon.pin@gmail.com
+License: Apache-2
+Description: UNKNOWN
+Platform: UNKNOWN
