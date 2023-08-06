@@ -1,0 +1,4 @@
+
+      [console_scripts]
+      cf-upgrade = cf_upgrade:cli
+      

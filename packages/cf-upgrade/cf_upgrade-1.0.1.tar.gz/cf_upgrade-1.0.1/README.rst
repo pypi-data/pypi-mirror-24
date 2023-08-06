@@ -1,0 +1,75 @@
+cf-upgrade
+==========
+
+This package contains a simple strict to update an existing CloudFormation
+stack. It is intended to be used as part of a CI/CD flow to update a
+deployment.
+
+Usage is simple, since there are only two commands. First you can list
+all CloudFormation stacks using the `list` command:
+
+.. code-block:: shell
+
+    $ cf-upgrade list
+    Stack             Status
+    ----------------  ---------------
+    my-example-stack  UPDATE_COMPLETE
+
+To update a stack use the `upgrade` command. In its simplest version you can
+pass a version number which will be used for a `Version` parameter:
+
+.. code-block:: shell
+
+    $ cf-upgrade my-example-stack 1.2.0
+    Stack updating, waiting to complete... done
+
+If you want to modify another parameter, or a different one you can also
+provide one or more key=value options:
+
+.. code-block:: shell
+
+    $ cf-upgrade my-example-stack ApiVersion=1.1.0 Nginx=1.13.4
+    Stack updating, waiting to complete... done
+
+Credentials
+-----------
+
+This command assumes you have `AWS CLI credentials configured <http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html>`_.
+You can use the `--profile` and `--region` options to indicate which AWS profile
+and region to use.
+
+Permissions
+-----------
+
+In order to operate this your will need to use an AWS user with permissions to
+find our existing stack template and update it. In addition you must grant any
+permissions necessary to update your resources.
+
+Here is a sample policy document to allow updating of ECS services:
+
+.. code-block:: json
+
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "cloudformation:DescribeStacks",
+                    "cloudformation:ListStacks",
+                    "cloudformation:GetTemplate",
+                    "cloudformation:GetTemplateSummary",
+                    "cloudformation:UpdateStack",
+
+                    "iam:GetRole",
+                    "iam:PassRole",
+
+                    "ecs:UpdateService",
+                    "ecs:DeregisterTaskDefinition",
+                    "ecs:DescribeServices",
+                    "ecs:RegisterTaskDefinition"
+                ],
+                "Resource": "*"
+            }
+        ]
+}

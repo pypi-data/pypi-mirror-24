@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/cf_upgrade.py
+src/cf_upgrade.egg-info/PKG-INFO
+src/cf_upgrade.egg-info/SOURCES.txt
+src/cf_upgrade.egg-info/dependency_links.txt
+src/cf_upgrade.egg-info/entry_points.txt
+src/cf_upgrade.egg-info/requires.txt
+src/cf_upgrade.egg-info/top_level.txt
