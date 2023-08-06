@@ -1,0 +1,7 @@
+attrs
+schematics>=2.0.0
+six
+swagger-schema>=0.4.0
+pyyaml
+cattrs>=0.4.0
+jsonschema-extractor
