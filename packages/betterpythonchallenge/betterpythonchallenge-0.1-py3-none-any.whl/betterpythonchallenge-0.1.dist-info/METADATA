@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: betterpythonchallenge
+Version: 0.1
+Summary: BD Python challenge
+Home-page: https://github.com/nanaky92/Python-Challenge
+Author: Inaki Crespo
+Author-email: i.crespomdo@gmail.com
+License: Apache2
+Download-URL: https://github.com/nanaky92/Python-Challenge
+Platform: UNKNOWN
+Requires-Dist: jupyter
+Requires-Dist: pandas
+
+UNKNOWN
+
+
