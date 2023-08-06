@@ -1,0 +1,78 @@
+Metadata-Version: 1.1
+Name: league.py
+Version: 0.1.0b1
+Summary: League.py
+---------
+
+|Documentation Status| |PyPI| |PyPI|
+
+An Asyncio league of legends API wrapper made for python 3.4.2+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Built for Riot's new **V3** endpoints.
+
+Requirements
+============
+
+-  Python 3.4.2+
+-  ``aiohttp`` library
+
+Installation
+============
+
+::
+
+    python3 -m pip install -U git+https://github.com/datmellow/League.py
+
+Example
+=======
+
+.. code:: python
+
+    import league
+    import asyncio
+
+    # Python 3.4
+    @asyncio.coroutine
+    def test_method():
+        client = league.Client(api_key="Token")
+        yield from client.cache_setup() # Optional
+        summoner = yield from client.get_summoner(summoner_name="RiotPhreak")
+        print(summoner)
+
+    # Python 3.5+
+    async def test_method():
+        client = league.Client(api_key="Token")
+        await client.cache_setup() # Optional
+        summoner = await client.get_summoner(summoner_name="RiotPhreak")
+        print(summoner)
+
+
+    if __name__ == '__main__':
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(test_method())
+
+.. |Documentation Status| image:: https://readthedocs.org/projects/leaguepy/badge/?version=latest
+   :target: http://leaguepy.readthedocs.io/en/latest/?badge=latest
+.. |PyPI| image:: https://img.shields.io/pypi/v/league.py.svg
+   :target: https://pypi.python.org/pypi/league.py/
+.. |PyPI| image:: https://img.shields.io/pypi/pyversions/league.py.svg
+   :target: https://pypi.python.org/pypi/league.py/
+
+Home-page: https://github.com/datmellow/League.py
+Author: datmellow
+Author-email: lucas@iceteacity.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
