@@ -1,0 +1,14 @@
+{%- if not skip_orator -%}
+git+https://github.com/shanbay/orator.git@master#egg=orator
+mysqlclient
+{% endif -%}
+{%- if not skip_cache -%}
+redis
+{% endif -%}
+{%- if not skip_consul -%}
+python-consul
+{% endif -%}
+{%- if not skip_celery -%}
+celery
+{% endif -%}
+pytest
