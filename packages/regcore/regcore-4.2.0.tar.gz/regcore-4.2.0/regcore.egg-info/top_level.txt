@@ -1,0 +1,4 @@
+regcore
+regcore_pgsql
+regcore_read
+regcore_write
