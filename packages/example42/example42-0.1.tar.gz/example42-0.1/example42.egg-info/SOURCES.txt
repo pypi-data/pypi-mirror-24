@@ -1,0 +1,7 @@
+setup.py
+example42/__init__.py
+example42.egg-info/PKG-INFO
+example42.egg-info/SOURCES.txt
+example42.egg-info/dependency_links.txt
+example42.egg-info/not-zip-safe
+example42.egg-info/top_level.txt
