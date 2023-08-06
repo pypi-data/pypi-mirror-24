@@ -1,0 +1,8 @@
+requests
+pypandoc
+
+[dev]
+ipython
+
+[test]
+nose
