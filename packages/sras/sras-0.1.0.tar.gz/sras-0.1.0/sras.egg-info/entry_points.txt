@@ -1,0 +1,3 @@
+[console_scripts]
+sras = sras.cli:main
+
