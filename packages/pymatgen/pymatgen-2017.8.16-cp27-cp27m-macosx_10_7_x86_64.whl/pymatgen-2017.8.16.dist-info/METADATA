@@ -1,0 +1,77 @@
+Metadata-Version: 2.0
+Name: pymatgen
+Version: 2017.8.16
+Summary: Python Materials Genomics is a robust materials analysis code that defines core object representations for structures and molecules with support for many electronic structure codes. It is currently the core analysis code powering the Materials Project (https://www.materialsproject.org).
+Home-page: http://www.pymatgen.org
+Author: Shyue Ping Ong
+Author-email: ongsp@eng.ucsd.edu
+License: MIT
+Keywords: VASP,gaussian,ABINIT,nwchem,materials,project,electronic,structure,analysis,phase,diagrams
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: matplotlib (>=1.5)
+Requires-Dist: monty (>=0.9.6)
+Requires-Dist: numpy (>=1.9)
+Requires-Dist: palettable (>=2.1.1)
+Requires-Dist: pydispatcher (>=2.0.5)
+Requires-Dist: requests
+Requires-Dist: ruamel.yaml (>=0.15.6)
+Requires-Dist: scipy (>=0.14)
+Requires-Dist: six
+Requires-Dist: spglib (>=1.9.9.44)
+Requires-Dist: sympy
+Requires-Dist: tabulate
+Requires-Dist: enum34; python_version == "2.7"
+Provides-Extra: abinit
+Requires-Dist: apscheduler (==2.1.0); extra == 'abinit'
+Requires-Dist: pydispatcher (>=2.0.5); extra == 'abinit'
+Provides-Extra: ase_adaptor
+Requires-Dist: ase (>=3.3); extra == 'ase_adaptor'
+Provides-Extra: matproj.snl
+Requires-Dist: pybtex; extra == 'matproj.snl'
+Provides-Extra: pourbaix diagrams, bandstructure
+Requires-Dist: pyhull (>=1.5.3); extra == 'pourbaix diagrams, bandstructure'
+Provides-Extra: vis
+Requires-Dist: vtk (>=6.0.0); extra == 'vis'
+
+.. image:: https://circleci.com/gh/materialsproject/pymatgen.svg?style=shield&circle-token=:circle-token
+
+.. image:: https://ci.appveyor.com/api/projects/status/akdyke5jxg6gps45?svg=true
+
+.. image:: https://anaconda.org/matsci/pymatgen/badges/downloads.svg
+
+.. image:: https://coveralls.io/repos/github/materialsproject/pymatgen/badge.svg?branch=master
+
+Pymatgen (Python Materials Genomics) is a robust, open-source Python library
+for materials analysis. These are some of the main features:
+
+1. Highly flexible classes for the representation of Element, Site, Molecule,
+   Structure objects.
+2. Extensive input/output support, including support for VASP
+   (http://cms.mpi.univie.ac.at/vasp/), ABINIT (http://www.abinit.org/), CIF,
+   Gaussian, XYZ, and many other file formats.
+3. Powerful analysis tools, including generation of phase diagrams, Pourbaix
+   diagrams, diffusion analyses, reactions, etc.
+4. Electronic structure analyses, such as density of states and band structure.
+5. Integration with the Materials Project REST API.
+
+Pymatgen is free to use. However, we also welcome your help to improve this
+library by making your own contributions.  These contributions can be in the
+form of additional tools or modules you develop, or feature requests and bug
+reports. Please report any bugs and issues at pymatgen's `Github page
+<https://github.com/materialsproject/pymatgen>`_. If you wish to be notified
+of pymatgen releases, you may become a member of `pymatgen's Google Groups page
+<https://groups.google.com/forum/?fromgroups#!forum/pymatgen/>`_.
+
