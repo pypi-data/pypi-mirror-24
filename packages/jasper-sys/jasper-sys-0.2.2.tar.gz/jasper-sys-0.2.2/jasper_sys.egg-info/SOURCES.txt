@@ -1,0 +1,10 @@
+jaspercore.py
+jasperctl.py
+setup.cfg
+setup.py
+jasper_sys.egg-info/PKG-INFO
+jasper_sys.egg-info/SOURCES.txt
+jasper_sys.egg-info/dependency_links.txt
+jasper_sys.egg-info/entry_points.txt
+jasper_sys.egg-info/requires.txt
+jasper_sys.egg-info/top_level.txt
