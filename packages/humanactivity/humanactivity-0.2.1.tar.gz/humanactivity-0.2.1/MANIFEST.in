@@ -1,0 +1,4 @@
+include README.rst
+include humanactivity/har_model_json
+include humanactivity/har_model_save
+include humanactivity/har_scale_parameters.csv
