@@ -1,0 +1,14 @@
+jpyreport/__init__.py,sha256=4h5wUT7hlaA78bZvz9AUh9DmAKiEvvF4K-KpCfTGSwI,42
+jpyreport/junit_parser.py,sha256=HqbodUssUI36MDbwj-Vk5u-cvsMYQHuez6qNdzCzlAA,6602
+jpyreport/report.js,sha256=iSFpLJ6yy3Ll3zKtTti5HINqmEW707DQHVLl4hLwI9c,1926
+jpyreport/report_items.py,sha256=U6G90Hd3JlaFP1sP5480LZeZPeMi_5VL1tMq3HAodKQ,5801
+jpyreport/runner.py,sha256=3TWtnZyTuTZQ1O29EGqwA1LuNFoow63alysNfZqWu-k,2476
+jpyreport/style.css,sha256=RARVx7MrvJLpjbXoyiiY5tVO2JOwp-qjUgJSF1YHnIg,1917
+jpyreport-1.0.0.post1.dist-info/DESCRIPTION.rst,sha256=_rLU3EOgMK2e6y6rG7n0siorKiJ8mTleHZLtC481SlY,53
+jpyreport-1.0.0.post1.dist-info/METADATA,sha256=F4JGRZ0l4JohVJCOepGkYlkibz-OOweMyUg0z064YgI,708
+jpyreport-1.0.0.post1.dist-info/RECORD,,
+jpyreport-1.0.0.post1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+jpyreport-1.0.0.post1.dist-info/entry_points.txt,sha256=5oHtQBOTq8XpCdG9CtD5--azTaHjoBtK0rdSoQJkIU0,46
+jpyreport-1.0.0.post1.dist-info/metadata.json,sha256=cQ0cWjvl7p__XABxxkWqUUdae5AG5oNmkC37uiw_FZ8,1030
+jpyreport-1.0.0.post1.dist-info/pbr.json,sha256=yE2h5mtgM9Mj80w60ZNXbDezXM5jukIfb2jKVS5lsQQ,47
+jpyreport-1.0.0.post1.dist-info/top_level.txt,sha256=EqLXAoARE8wD4k1O1l7CuypkwHqQrNRpXhG_0YpO1MA,10

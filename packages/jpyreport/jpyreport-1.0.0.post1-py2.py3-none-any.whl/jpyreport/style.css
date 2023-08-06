@@ -1,0 +1,144 @@
+body {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 80%;
+}
+
+h1 {
+    font-size: 16pt;
+    color: gray;
+}
+
+.summary {
+    margin-top: 0;
+    margin-bottom: 1ex;
+}
+
+.summary .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.show-details-line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+
+tr.suitcase {
+    cursor: pointer;
+}
+
+.col-test-group {
+    width: 50%;
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    background-color: #f6f6f6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 90%;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: normal;
+}
+
+/* ---------------  table ------------------------ */
+table {
+    font-size: 100%;
+    width: 80%;
+    min-width: 700px;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+
+table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+
+.header {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.passed, .pass {
+    background-color: #6c6;
+    color:  #6c6;
+}
+
+.failed, .fail {
+    background-color: #c60;
+    color: #c60;
+}
+
+.error, .errors {
+    background-color: #c00;
+    color: #c00;
+}
+
+.skipped, .skip {
+    background-color: #888;
+    color: #888;
+}
+
+.default, .testsuit {
+    color: #000;
+}
+
+.summary {
+    background: white;
+}
+
+.testcase {
+    font-weight: bold;
+    background: white;
+}
+
+.testcase.default{
+    font-weight: normal;
+}
+
+.testcase_name {
+    margin-left: 2em;
+}
+
+.testcase.skipped {
+    background: #ddd;
+    color: #000;
+    font-weight: normal;
+}
+
+.testcase a {
+    font-weight: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+.status_link {
+    text-decoration: none;
+}
+
+.status_link.active {
+    font-weight: bold;
+}
+
+.status_link:hover {
+    text-decoration: underline;
+}
+
+
