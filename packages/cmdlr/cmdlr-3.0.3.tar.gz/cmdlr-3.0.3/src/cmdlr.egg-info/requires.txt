@@ -1,0 +1,7 @@
+pyyaml >=3, <4
+aiohttp >=2, <3
+voluptuous
+wcwidth
+lxml >=3.8, <4
+beautifulsoup4
+pyexecjs >=1.4.0, <2
