@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: caviar
+Version: 0.1.1
+Summary: Easy to use tools for advanced GlassFish management.
+Home-page: https://pypi.python.org/pypi/caviar
+Author: Miquel A. Ferran Gonzalez
+Author-email: miquel.ferran.gonzalez@gmail.com
+License: LICENSE.txt
+Description: Documentation
+        -------------
+        
+        Available [here](http://miquelo.github.io/caviar/).
+        
+Platform: UNKNOWN
