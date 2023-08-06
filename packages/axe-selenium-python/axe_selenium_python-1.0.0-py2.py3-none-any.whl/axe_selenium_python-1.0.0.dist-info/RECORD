@@ -1,0 +1,13 @@
+axe_selenium_python/__init__.py,sha256=z_HPpab0jnSoHKYPxplbw2og0W93HpFqqJ7z2K2lBq8,235
+axe_selenium_python/axe.py,sha256=Mb2EzVoxJAt0s6_IXiOVbsoKwCw6eAjNtBwJFD__bgE,4454
+axe_selenium_python/test_accessibility.py,sha256=A0Z2rvIDm5NqJGs4Jdna18175BzEGJqCPMA86__BLL4,2791
+axe_selenium_python/src/axe.min.js,sha256=BGAllCBTUJjJXw3yOPMVai2Bj-1PVaEhK2na699nI_o,193747
+axe_selenium_python/tests/__init__.py,sha256=R2GxiX4GPcWrum-c-WlQjnJ6y2cUFsGSu_B5cmU_Ix4,199
+axe_selenium_python/tests/conftest.py,sha256=QUurrdUO0RqPTzutosDix7JKLOYh-RmKFMLnv8Ch_Kg,1294
+axe_selenium_python/tests/test_axe.py,sha256=sTXOmndCbvnr432Q1pwuNg-rJnuZHw_OvZ6Uwt1rHgo,2030
+axe_selenium_python-1.0.0.dist-info/DESCRIPTION.rst,sha256=_OLQ4RZFZVUPJfCcQyuZpg1TXJgRoYlFamnb0sQlR_U,3771
+axe_selenium_python-1.0.0.dist-info/METADATA,sha256=3ghtlsbZiRSGX7AUo4S2yP0w4U8k0EZKm99Leb9769Q,4280
+axe_selenium_python-1.0.0.dist-info/RECORD,,
+axe_selenium_python-1.0.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+axe_selenium_python-1.0.0.dist-info/metadata.json,sha256=64M0qNKyXxlTezkxy7o5cjJiXbR5HwCgch6LLzoxoz4,741
+axe_selenium_python-1.0.0.dist-info/top_level.txt,sha256=QTzF9Gg2Gmtq2KA9N69JkHfOsXXXusfZJHOfv6CGbiI,20
