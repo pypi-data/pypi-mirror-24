@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.py
+version.txt
+gtfo/__init__.py
+gtfo/_cli.py
+gtfo/_version.py
+gtfo/core.py
+gtfo.egg-info/PKG-INFO
+gtfo.egg-info/SOURCES.txt
+gtfo.egg-info/dependency_links.txt
+gtfo.egg-info/entry_points.txt
+gtfo.egg-info/requires.txt
+gtfo.egg-info/top_level.txt
+gtfo/tests/__init__.py
+gtfo/tests/test_core.py

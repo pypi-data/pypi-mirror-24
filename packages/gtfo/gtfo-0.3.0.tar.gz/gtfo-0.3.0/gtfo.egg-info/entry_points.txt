@@ -1,0 +1,3 @@
+[console_scripts]
+gtfo = gtfo._cli:main
+
