@@ -1,0 +1,10 @@
+setup.py
+freemobilesms/__init__.py
+freemobilesms/cli.py
+freemobilesms/sms.py
+freemobilesms.egg-info/PKG-INFO
+freemobilesms.egg-info/SOURCES.txt
+freemobilesms.egg-info/dependency_links.txt
+freemobilesms.egg-info/entry_points.txt
+freemobilesms.egg-info/requires.txt
+freemobilesms.egg-info/top_level.txt

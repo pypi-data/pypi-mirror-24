@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: freemobilesms
+Version: 0.1.5
+Summary: Free Mobile SMS Service
+Home-page: https://github.com/hug33k/FreeMobileSMS
+Author: Hugo SCHOCH
+Author-email: schoch.hugo@gmail.com
+License: Apache2
+Download-URL: https://github.com/hug33k/FreeMobileSMS/archive/0.1.5.tar.gz
+Description: Library to use Free Mobile SMS service with Python
+Keywords: free mobile,freemobile,free,sms
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
