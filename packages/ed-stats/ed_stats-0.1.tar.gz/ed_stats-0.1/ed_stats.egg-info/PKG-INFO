@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: ed-stats
+Version: 0.1
+Summary: Collection of my augmented pandas classes, implementing ANOVA and machine learning methods
+Home-page: https://github.com/EdMan1022/ed_stats.git
+Author: EdMan1022
+Author-email: EdMan1022@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3

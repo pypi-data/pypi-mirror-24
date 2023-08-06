@@ -1,0 +1,10 @@
+setup.py
+ed_stats/__init__.py
+ed_stats/anova.py
+ed_stats/timer.py
+ed_stats.egg-info/PKG-INFO
+ed_stats.egg-info/SOURCES.txt
+ed_stats.egg-info/dependency_links.txt
+ed_stats.egg-info/not-zip-safe
+ed_stats.egg-info/requires.txt
+ed_stats.egg-info/top_level.txt
