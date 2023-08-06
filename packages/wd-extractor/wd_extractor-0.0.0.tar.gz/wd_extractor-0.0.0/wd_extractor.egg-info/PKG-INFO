@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: wd-extractor
+Version: 0.0.0
+Summary: extractor for whosisdumping
+Home-page: http://www.openstack.org/
+Author: OpenStack
+Author-email: openstack-dev@lists.openstack.org
+License: UNKNOWN
+Description: ===============================
+        wd_extractor
+        ===============================
+        
+        extractor for whosisdumping
+        
+        * Free software: Apache license
+        * Documentation: http://docs.openstack.org/developer/wd_extractor
+        
+        Features
+        --------
+        
+        * TODO
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
