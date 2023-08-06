@@ -1,0 +1,13 @@
+budou/__init__.py,sha256=9BySHIFzpjpc0nNPBow4DHjIUhExNxK-VdlCCByTjmo,931
+budou/api.py,sha256=bDnq87ftaQAl0_A9rHBrWq_hczRtZGA3fvTfPj2qRW0,1284
+budou/budou.py,sha256=6A76AM_L_Q6gwn8PGLxLQQLyRZy9OG9hPQsAnKtGhsc,16310
+budou/cachefactory.py,sha256=RUmXs5VksW6Sng_ed5kw9kuP_LBbMlK8SEo9gvNjEwc,2425
+budou/config.py,sha256=nMiM0HxaZEAiHiRH1m0tO1i7krQ47C_D8lzhrtRYzd4,73
+budou/main.py,sha256=omvpaMv_CR-yPPVf9rRwXkqTmgeu5xqjpaV81GUAJ2Q,939
+budou-0.3.2.data/scripts/budou.py,sha256=6A76AM_L_Q6gwn8PGLxLQQLyRZy9OG9hPQsAnKtGhsc,16310
+budou-0.3.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+budou-0.3.2.dist-info/METADATA,sha256=G4Jg-hq4t7Qq6qKgOC8ZR21vE_54sZAEP2w_wY55EEI,616
+budou-0.3.2.dist-info/RECORD,,
+budou-0.3.2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+budou-0.3.2.dist-info/metadata.json,sha256=fJ1CP54xdJdV_EzVGrIobq2aDPasa9_KwPCM6M1Ct3o,807
+budou-0.3.2.dist-info/top_level.txt,sha256=B6uYekL-KDA4h2aSiqiFbGeYXgmLDJ5nif7IazatjS8,6
