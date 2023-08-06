@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+keycloak/__init__.py
+keycloak/connection.py
+keycloak/exceptions.py
+keycloak/urls_patterns.py
+python_keycloak.egg-info/PKG-INFO
+python_keycloak.egg-info/SOURCES.txt
+python_keycloak.egg-info/dependency_links.txt
+python_keycloak.egg-info/requires.txt
+python_keycloak.egg-info/top_level.txt
