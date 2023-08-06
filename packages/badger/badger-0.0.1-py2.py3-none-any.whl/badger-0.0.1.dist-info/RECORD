@@ -1,0 +1,11 @@
+badger/__init__.py,sha256=CGY1i47DNxsbpuWfz0zi35E7bV2rm46kHeTt6_nmy2M,3849
+badger/__main__.py,sha256=SZsYlh3FcHj2LRAEuiNeTBjZsVFwtNnUpFp25StnmZI,2225
+badger/templates/flat.svg,sha256=uGjmuJmDRmvXJyZiWobAUVZngdx5hRXC5ZtwrfN2jMc,1058
+badger-0.0.1.dist-info/DESCRIPTION.rst,sha256=0wzudzkWc0gXhuWAEnhPZ7QdK_9HdEtqD-bI3-4E3aA,1966
+badger-0.0.1.dist-info/METADATA,sha256=b-DfsgqRhWy7RuP4RuzLYKFcbvwWRwMY5HyMiYPoDCg,2209
+badger-0.0.1.dist-info/RECORD,,
+badger-0.0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+badger-0.0.1.dist-info/entry_points.txt,sha256=svpqq1EBAxF9nLIsQhErvYN2Ey7vhT0eIBf-TdmSld4,49
+badger-0.0.1.dist-info/metadata.json,sha256=LPQffUgf-iNxy3_l6EJtW2iLGtEx3P3tfyu-Q3oGmZc,654
+badger-0.0.1.dist-info/top_level.txt,sha256=udUqcuCXi0mdre2iHDtUzhhgSNjheS9ogDYwGirU6GY,7
+badger-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
