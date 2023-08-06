@@ -1,0 +1,15 @@
+README.rst
+setup.py
+CUriTools.egg-info/PKG-INFO
+CUriTools.egg-info/SOURCES.txt
+CUriTools.egg-info/dependency_links.txt
+CUriTools.egg-info/entry_points.txt
+CUriTools.egg-info/requires.txt
+CUriTools.egg-info/top_level.txt
+curitools/__init__.py
+curitools/chromedriver
+curitools/pages.py
+curitools/phantomjs
+curitools/settings.py
+curitools/status.py
+curitools/uritools.py

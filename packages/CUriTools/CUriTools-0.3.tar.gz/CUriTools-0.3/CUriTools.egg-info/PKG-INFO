@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: CUriTools
+Version: 0.3
+Summary: UNKNOWN
+Home-page: https://github.com/gutorc92/uritools
+Author: Gustavo Coelho
+Author-email: gutorc@hotmail.com
+License: Creative Commons Attribution-Noncommercial-Share Alike license
+Description: URITools
+        
+        Uma pequena ferrramente de linha de comando para integrar com 
+        a plataforma Uri(https://www.urionlinejudge.com.br).
+        
+Platform: UNKNOWN
