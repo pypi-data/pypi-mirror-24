@@ -1,0 +1,11 @@
+setup.py
+yadi/__init__.py
+yadi/binary.py
+yadi/main.py
+yadi/version.py
+yadi/vendor/readme.txt
+yadi_py.egg-info/PKG-INFO
+yadi_py.egg-info/SOURCES.txt
+yadi_py.egg-info/dependency_links.txt
+yadi_py.egg-info/entry_points.txt
+yadi_py.egg-info/top_level.txt
