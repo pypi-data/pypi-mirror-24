@@ -1,0 +1,14 @@
+beautifulsoup4
+requests
+
+[dev]
+wheel
+sphinx
+tox
+zest.releaser[recommended]
+prospector[with_pyroma]
+
+[tests]
+pytest
+pytest-cov
+pytest-mock
