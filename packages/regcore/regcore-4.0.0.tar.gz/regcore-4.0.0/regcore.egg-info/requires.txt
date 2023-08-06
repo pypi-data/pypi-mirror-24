@@ -1,0 +1,16 @@
+cached_property
+django>=1.8,<1.12
+django-mptt
+jsonschema
+six
+webargs
+
+[backend-elastic]
+pyelasticsearch
+
+[backend-haystack]
+django-haystack
+
+[backend-pgsql]
+django>=1.10
+psycopg2
