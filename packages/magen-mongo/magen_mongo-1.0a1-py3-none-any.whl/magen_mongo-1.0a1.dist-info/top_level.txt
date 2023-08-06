@@ -1,0 +1,2 @@
+docs
+magen_mongo_apis
