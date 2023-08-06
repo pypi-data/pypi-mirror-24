@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: CarRegistration
+Version: 0.3.1
+Summary: Get Vehicle information from its number plate, Account required from VehicleRegistrationApi.com
+Home-page: http://www.VehicleRegistrationApi.com
+Author: Infinite Loop Development Ltd
+Author-email: info@infiniteloop.ie
+License: UNKNOWN
+Download-URL: https://github.com/infiniteloopltd/PyCarRegistrationAPI/archive/0.3.tar.gz
+Description: UNKNOWN
+Keywords: Car,Vehicle,Registration
+Platform: UNKNOWN
