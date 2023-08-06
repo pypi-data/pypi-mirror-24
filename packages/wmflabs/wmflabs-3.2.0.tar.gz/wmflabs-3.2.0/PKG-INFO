@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: wmflabs
+Version: 3.2.0
+Summary: Small library for common tasks on Wikimedia Labs
+Home-page: https://wikitech.wikimedia.org/wiki/User:Legoktm/wmflib
+Author: Kunal Mehta
+Author-email: legoktm@member.fsf.org
+License: GPL-3.0+
+Description: UNKNOWN
+Platform: UNKNOWN
