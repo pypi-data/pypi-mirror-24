@@ -1,0 +1,51 @@
+Metadata-Version: 2.0
+Name: codeplug
+Version: 0.1.0
+Summary: codeplug decoder and builder for Motorola radios
+Home-page: https://github.com/george-hopkins/codeplug
+Author: George Hopkins
+Author-email: george-hopkins@null.net
+License: MIT
+Keywords: motorola mototrbo cps ctb codeplug dmr
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Topic :: Communications :: Ham Radio
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: cryptography (>=1.6)
+Requires-Dist: lxml (>=3)
+Provides-Extra: dev
+Provides-Extra: test
+
+codeplug
+========
+
+.. image:: https://img.shields.io/pypi/v/codeplug.svg
+  :target: https://pypi.python.org/pypi/codeplug/
+  :alt: Latest Version
+
+Read and write Motorola Codeplugs (.ctb) from the commandline.
+
+
+Getting Started
+---------------
+
+::
+
+  pip install codeplug
+  export CTB_KEY='...'
+  export CTB_IV='...'
+  codeplug decode yourfile.ctb
+  # modify yourfile.ctb.xml
+  codeplug build yourfile.ctb.xml yourprivkey.pem
+
+**Note:** If you own a copy of MOTOTRBO CPS, you can use codeplug-prepare_ to extract the keys.
+
+.. _codeplug-prepare: https://github.com/george-hopkins/codeplug-prepare
+
+
