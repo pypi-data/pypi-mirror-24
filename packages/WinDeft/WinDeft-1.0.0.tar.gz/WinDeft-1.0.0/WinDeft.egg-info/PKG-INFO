@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: WinDeft
+Version: 1.0.0
+Summary: Windows Defender Tester.
+Home-page: https://github.com/hadi16/windeft
+Author: Alex Hadi
+Author-email: UNKNOWN
+License: Apache License, Version 2.0
+Description: 
+            WinDeft is a simple command line tester built on Python 2.7.
+            WinDeft uses Click for command line functionality.
+            WinDeft allows the user to determine whether a given Windows file or folder succeeds or fails a Windows Defender scan.
+            
+Platform: UNKNOWN
+Requires-Python: ==2.7.*

@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        windeft=windeft:cli
+    

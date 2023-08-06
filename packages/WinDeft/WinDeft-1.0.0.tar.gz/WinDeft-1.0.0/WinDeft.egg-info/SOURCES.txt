@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+WinDeft.egg-info/PKG-INFO
+WinDeft.egg-info/SOURCES.txt
+WinDeft.egg-info/dependency_links.txt
+WinDeft.egg-info/entry_points.txt
+WinDeft.egg-info/requires.txt
+WinDeft.egg-info/top_level.txt
+windeft/__init__.py
