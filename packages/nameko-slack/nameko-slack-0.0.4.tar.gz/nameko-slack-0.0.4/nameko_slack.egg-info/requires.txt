@@ -1,0 +1,8 @@
+nameko>=2.2.0
+slackclient>=1.0.4
+
+[dev]
+coverage
+flake8
+pylint
+pytest
