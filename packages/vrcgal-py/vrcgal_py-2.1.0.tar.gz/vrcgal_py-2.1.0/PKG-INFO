@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: vrcgal_py
+Version: 2.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/vrcgal/vrcgal_py
+Author: Ben Long
+Author-email: 14benj@gmail.com
+License: MIT
+Description: 
+        Python utilities for Virtual Reality and Clinical Gait Analysis Laboratory, High Point University.
+        
+        
+        Please include these citations
+        ---------------------
+        
+        > Duarte, M. (2015) Notes on Scientific Computing for Biomechanics and Motor Control. GitHub repository, https://github.com/demotu/BMC.
+        
+        
+        > Long, B., Gosselin, D. (2017) Python utilities for Virtual Reality and Clinical Gait Analysis. GitHub repository, https://github.com/vrcgal/vrcgal_py.
+        
+Platform: UNKNOWN
