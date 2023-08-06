@@ -1,0 +1,11 @@
+bson
+flask
+foolbox
+numpy
+pillow
+requests
+setuptools
+
+[testing]
+pytest
+pytest-cov
