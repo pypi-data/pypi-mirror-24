@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: plain_obj
+Version: 0.1.0
+Summary: A faster alternative to namedtuple.
+Home-page: https://github.com/suzaku/plain_obj
+Author: Satoru Logic
+Author-email: satorulogic@gmail.com
+License: MIT
+Description: plain_obj
+        ##########
+        
+        .. image:: https://travis-ci.org/suzaku/plain_obj.svg?branch=master
+            :target: https://travis-ci.org/suzaku/plain_obj
+        .. image:: https://img.shields.io/pypi/v/plain_obj.svg
+            :target: https://pypi.python.org/pypi/plain_obj
+        
+        A faster alternative to namedtuple.
+        
+        .. image:: https://app.codesponsor.io/embed/MY7qFCdB7bDgiBqdjtV9ASYi/suzaku/plain_obj.svg
+            :width: 888px
+            :height: 68px
+            :alt: Sponsor
+            :target: https://app.codesponsor.io/link/MY7qFCdB7bDgiBqdjtV9ASYi/suzaku/plain_obj
+        
+        
+        
+        
+Keywords: tuple
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
