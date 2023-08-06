@@ -1,0 +1,4 @@
+[console_scripts]
+d = django_shts3:main
+django = django_shts3:main
+
