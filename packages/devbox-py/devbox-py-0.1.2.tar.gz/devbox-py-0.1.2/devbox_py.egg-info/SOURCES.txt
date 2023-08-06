@@ -1,0 +1,9 @@
+setup.py
+devbox/__init__.py
+devbox/devbox.py
+devbox/storage.py
+devbox/terminal.py
+devbox_py.egg-info/PKG-INFO
+devbox_py.egg-info/SOURCES.txt
+devbox_py.egg-info/dependency_links.txt
+devbox_py.egg-info/top_level.txt
