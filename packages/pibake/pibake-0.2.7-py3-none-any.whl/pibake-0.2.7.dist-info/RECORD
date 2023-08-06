@@ -1,0 +1,12 @@
+pibake/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pibake/cli.py,sha256=A5dZFP7AXc0NInU6TRDLp400zathqlgGSr7G-u9L42Y,3410
+pibake/disks.py,sha256=c4TGR7lWe1Px_niVc0BooG66yjrZ6VuVXVby-Ny7LDc,666
+pibake/settings.py,sha256=EqD4cfqyYpaw3RbvC7JV0U-0M_I7ZJSzqAMfcr5fZl0,590
+pibake/utils.py,sha256=rOFmxQiBNBp0qKWdRjsjVdctWdkGAegwnWwphzPIByQ,1653
+pibake-0.2.7.dist-info/DESCRIPTION.rst,sha256=bgHvyeBuUyRirAzIyMzHPCYEtvrUx01xbpVr058Z2A8,4895
+pibake-0.2.7.dist-info/METADATA,sha256=f0to_YZEZJnPdYiNp14kR5VLdiT626QJVkt2Bgyjems,5685
+pibake-0.2.7.dist-info/RECORD,,
+pibake-0.2.7.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+pibake-0.2.7.dist-info/entry_points.txt,sha256=-rVu7RQ2kWpTsEOZMS5fgJHUHwnq92GK9C0vUoWp7c0,43
+pibake-0.2.7.dist-info/metadata.json,sha256=C9eg5HQIPB00Bs9eQTlv_Sn_Bqi-KUlOKwXXpoPB-YY,1063
+pibake-0.2.7.dist-info/top_level.txt,sha256=nSmurK1g5PPWLQeLpgRzeR3sRCdOXshUtTj5UfGLSeU,7
