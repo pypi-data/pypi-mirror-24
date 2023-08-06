@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ftio
+Version: 0.5
+Summary: Python tools for working with fastText, an open-source library from the Facebook AI Research lab
+Home-page: https://github.com/signaln/ftio
+Author: Signal N
+Author-email: ftio@signaln.com
+License: UNKNOWN
+Download-URL: https://github.com/signaln/ftio/archive/0.5.tar.gz
+Description: UNKNOWN
+Keywords: fastText,word2vec,word embeddings,natural language processing,text
+Platform: UNKNOWN
