@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: bblfsh
+Version: 0.0.5
+Summary: Fetches Universal Abstract Syntax Trees from Babelfish.
+Home-page: https://github.com/bblfsh/client-python
+Author: Vadim Markovtsev
+Author-email: vadim@sourced.tech
+License: Apache 2.0
+Download-URL: https://github.com/bblfsh/client-python
+Description: UNKNOWN
+Keywords: babelfish,uast
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
