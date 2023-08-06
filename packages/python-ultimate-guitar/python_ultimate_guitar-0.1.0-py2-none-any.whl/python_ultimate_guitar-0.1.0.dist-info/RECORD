@@ -1,0 +1,12 @@
+python_ultimate_guitar-0.1.0.dist-info/DESCRIPTION.rst,sha256=7qi6ty9Ju8GAVMn_2nSesqvePWnugaMS7lID-hXiCiM,2611
+python_ultimate_guitar-0.1.0.dist-info/METADATA,sha256=odidIIzH6DOH81QpH_SGT_td4mY_nnqeNeHqeoRyv34,3919
+python_ultimate_guitar-0.1.0.dist-info/RECORD,,
+python_ultimate_guitar-0.1.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+python_ultimate_guitar-0.1.0.dist-info/metadata.json,sha256=JmL4gyPfV-H1Wtz8I_HqbW2Kx5lm4eJH0UF5murCGc8,1212
+python_ultimate_guitar-0.1.0.dist-info/top_level.txt,sha256=pUOP0TewsJfQoFK8Vo34fc7RrRr5mROs-Cwge5HIOkY,16
+ultimate_guitar/__init__.py,sha256=qQCJlrD6HaFUEfdtoaXAH5SL-oTKrZCfqNgBEiZr6gA,194
+ultimate_guitar/client.py,sha256=LKRa7pCISgMy9eiC1PdJQh7JTE38s_VqyIjbVtcVXf4,3741
+ultimate_guitar/command_line.py,sha256=TvbyOgNPggMQwCI7ZViN1xXXj4OkLsSI602lRXXK-zk,2259
+ultimate_guitar/constants.py,sha256=GqnPi73NIRrI-J0J0SDKOGNXvA2TmhUJCXdcPfXvaqQ,478
+ultimate_guitar/models.py,sha256=BmhIz6msHyo9_0o6kKDQ1WLyBEJ8l7fwCm4OfKcdY3Q,4657
+ultimate_guitar/utils.py,sha256=SBOY-0DpFw0Wz5OwoT2hKQhuCgLXuS0pR6MBgYfs90I,737

@@ -1,0 +1,91 @@
+Metadata-Version: 2.0
+Name: python-ultimate-guitar
+Version: 0.1.0
+Summary: Search ultimate-guitar.com and download the results from the command line.
+Home-page: https://github.com/victorfontes/python-ultimate-guitar
+Author: Victor Costa
+Author-email: contato@victorfontes.com
+License: Copyright (c) 2017, Victor Fontes Costa
+Requires-Dist: Babel (==2.5.0)
+Requires-Dist: Jinja2 (==2.9.6)
+Requires-Dist: MarkupSafe (==1.0)
+Requires-Dist: Pygments (==2.2.0)
+Requires-Dist: alabaster (==0.7.10)
+Requires-Dist: beautifulsoup4 (==4.6.0)
+Requires-Dist: blessings (==1.6)
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: certifi (==2017.7.27.1)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: click (==6.7)
+Requires-Dist: curtsies (==0.2.11)
+Requires-Dist: docutils (==0.14)
+Requires-Dist: dotmap (==1.2.19)
+Requires-Dist: greenlet (==0.4.12)
+Requires-Dist: idna (==2.6)
+Requires-Dist: imagesize (==0.7.1)
+Requires-Dist: lxml (==3.8.0)
+Requires-Dist: python-ultimate-guitar (==0.1.0)
+Requires-Dist: pytz (==2017.2)
+Requires-Dist: requests (==2.18.4)
+Requires-Dist: rows (==0.3.1)
+Requires-Dist: six (==1.10.0)
+Requires-Dist: snowballstemmer (==1.2.1)
+Requires-Dist: tabulate (==0.7.7)
+Requires-Dist: typing (==3.6.2)
+Requires-Dist: unicodecsv (==0.14.1)
+Requires-Dist: urllib3 (==1.22)
+Requires-Dist: wcwidth (==0.1.7)
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Description: python-ultimate-guitar
+        ==============
+        
+        python bindings for ultimate-guitar.com
+        
+        Supports:
+        ----------
+        - search with type filtering (pro, tab, chords, etc)
+        - dowload tabs and guitar pro files
+        
+        
+        Using from command line
+        -----------------------------------
+        ```bash
+        ultimate-guitar search -q "paranoid android" -t guitar_pro --limit 10 --download 
+        
+        Usage: ultimate-guitar search [OPTIONS]
+        
+        Options:
+          -q, --query TEXT            The person to greet.
+          -t, --filter-type TEXT      Filter results by type
+          -l, --limit INTEGER         Limit first N results
+          -p, --path TEXT             Path to downloaded files
+          --download / --no-download
+          --help       
+        
+        ```
+        
+        
+        
+        Using as lib
+        ----------------------------
+        ```python
+        from ultimate_guitar import UltimateGuitarScraper
+        ug = UltimateGuitarScraper()
+        ug.search('paranoid android')
+        >>> <ResultSet: paranoid android returned 28 results>
+        
+        ug.search('paranoid android', filter_type='guitar_pro')
+        <ResultSet: paranoid android returned 9 results>
+        
+        ```
+        
+        
+Platform: UNKNOWN
