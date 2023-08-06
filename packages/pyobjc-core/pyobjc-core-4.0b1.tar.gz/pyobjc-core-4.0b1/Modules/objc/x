@@ -1,0 +1,27 @@
+int PyObjC_SetStructField(PyObject* self, Py_ssize_t offset, PyObject* newVal)
+{
+    return PySequence_SetItem(self, offset, newVal);
+#if 0
+    Py_ssize_t len;
+    PyMemberDef* member;
+
+    if (newVal == NULL) {
+        PyErr_Format(PyExc_TypeError,
+            "Cannot delete item '%"PY_FORMAT_SIZE_T"d' in a %s instance",
+            offset, Py_TYPE(self)->tp_name);
+        return -1;
+    }
+
+    len = STRUCT_LENGTH(self);
+
+    if ((offset < 0) || (offset >= len)) {
+        PyErr_Format(PyExc_IndexError,
+                "%s index out of range",
+                Py_TYPE(self)->tp_name);
+        return -1;
+    }
+    member = Py_TYPE(self)->tp_members + offset;
+    SET_STRUCT_FIELD(self, member, newVal);
+    return 0;
+#endif
+}
