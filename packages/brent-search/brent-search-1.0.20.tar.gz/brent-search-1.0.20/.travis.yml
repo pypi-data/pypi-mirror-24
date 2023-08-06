@@ -1,0 +1,52 @@
+language: python
+sudo: required
+dist: trusty
+services: docker
+git:
+  depth: 5
+cache:
+  pip: true
+  directories:
+  - "$HOME/bin"
+  - "$HOME/.download"
+matrix:
+  include:
+  - python: 2.7
+  - python: 3.5
+  - python: 3.6
+  - env: DOCKER_IMAGE=quay.io/pypa/manylinux1_x86_64
+  - os: osx
+    language: generic
+    env: PYENV=py27
+  - os: osx
+    language: generic
+    env: PYENV=py35
+  - os: osx
+    language: generic
+    env: PYENV=py36
+before_install:
+- travis_retry bash <(curl -s https://raw.githubusercontent.com/limix/travis-tools/master/get-travis-tools.sh)
+- travis_retry travis/before-install.sh
+script:
+- travis_retry travis/script.sh
+after_success:
+- travis_retry travis/after-success.sh
+notifications:
+  email:
+    recipients:
+      - danilo.horta@gmail.com
+    on_success: change
+    on_failure: always
+deploy:
+  provider: pypi
+  user: dhorta
+  password:
+    secure: UX3Ak7fCQRLZMppAEdL9pCVBQj3q2r971388s5+m0bt4lIrBBDGDV7F2Wrzu9hNcHS8GPqFhXTliAdKJqWNex97FcYhNW6GK3UXfAMRBJu4UtLUWqf1Twa6tqAneJfs/xKWcm8pELx/P2xkTKaZieylZ+hdFXYF0TITbsOtRDGIL6IEhTicxhMjOgQNxK4c4u0eLxQY3HX3f90Jn2WXpDAuijObnTUYdeKbjytdv9He079Kz/Y0tCCqzny5E686q2vSU96MU/R5gABuBak+peN63Xx04W6e9wmhkWZ0dvP6raxdueipQouadbOTuIdvhJh5/71Ojzx5V9p2761eRs8isd9a86zv7ghfMzk0eYiBc6qa4VpLqDDZolOaZfuy/S2PIJcSB1R8+BAx29fYAoqFUUhVt4uzEk9HHB5cz1HzEeZrqTEZGWAHHvm+hjH8cTnRo5LV1uMUL7rbM6X93bVY+C+4btc4xVJDgKJLoUC0XTwz36TclhI/EmwxPoYUAZb/92KjQun/f4QyO82dEVNqI/NCfTjAv88nwePeHL8zZR50T8HhuHA4rWUnMcA4zbu66WEd0UScmIyqrVwiw/uFK/zwZZZRPO/KdQgyLYKNha5WFTkC23GnklAvq2A9fvlpHjkdUbOh9mmc64Dzv+fR2w2igTOYHZHgfXTY9iGk=
+  on:
+    tags: true
+    repo: limix/brent-search
+    branch: master
+env:
+  global:
+  - PKG_NAME=brent_search
+  - secure: BaXTGtr+QsBdtiqaGGTaw55HOqSzRbbCrrkqa0hpvevpq7y7PIy3xZW0Gx/X26Jdqd7J8KGtu3+17hzFUTsptu5rDQrudT0cbmrlJZiKFb/XbvM9JhHGn5V+k1V8l/INmPwU54s+gh9vgmERsSSFK75dPdTwJCDowvu88Cdug5M46Y+ySYQOB3eUY0585u37C5FkPpMoGvSWVEYn58S8lqycC/jeBQx+8HS8WJVUGBW1hLfcrIKM5vu3QV/+ar2DLtgku/sEcmM5fZUrjgxVaQw9l01TgZ5c0kUP1bA7xZnpKj9hH3mSiNenCfesspjUoZoQx0CYioWh9C/ktRulRGkgz3fJS3j4sVt5AMK4nDzg0bYakEXZiFeg1LocXBowz2yPkDDVhKONvA+HkixAVe0vxs8g3/trUC7l0xr2Y3L4uBOPWA4mGgOVMXlDiER5nDsxnOv8uRXJOnKAtMGi0MqrCBDeq+jptHM4aVboKQQTyV2TZ5dPPT9vYhx7wDIKbvf7GJr0SHth5alMAD+Ayq6WGYXu3OL0pute1gSfR7Pp8O073CMXqbxdAhY7JX5QA0EGc78G/QXgNstMktKbwxfTxuq6BZNNQrzv+ugEWOuYa//C0wnf1CGO4gCv5FuwjO+zkLxi+k3mzIPMqCQEh4GRkUQcB3XIMvb/qAt/MFo=
