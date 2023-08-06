@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: zomatopy
+Version: 1.0.6
+Summary: A simple python wrapper for the Zomato API
+Home-page: https://github.com/sharadbhat/Zomatopy
+Author: Sharad Bhat
+Author-email: UNKNOWN
+License: MIT
+Description: ========
+        Zomatopy
+        ========
+        **A Python wrapper for the Zomato API v2.1**
+        
+        Installation
+        ************
+        
+        .. code-block:: python
+        
+         pip install zomatopy
+        
+        Getting Started
+        ***************
+        
+        This wrapper was written for Python 3 and might not work well with Python 2.
+        
+        
+        Adding zomatopy to your application
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        
+        .. code-block:: python
+        
+         import zomatopy
+        
+         config={
+            "user_key"="ZOMATO_API_KEY"
+         }
+        
+         zomato = zomatopy.initialize_app(config)
+        
+        For more information
+        ^^^^^^^^^^^^^^^^^^^^
+        
+        Please see the `official documentation <https://github.com/sharadbhat/Zomatopy>`_
+        .
+Keywords: Zomato
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
