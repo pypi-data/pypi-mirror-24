@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: billomapy
+Version: 2.4
+Summary: A Python library for http://www.billomat.com/
+Home-page: https://github.com/bykof/billomapy
+Author: Michael Bykovski
+Author-email: mbykovski@seibert-media.net
+License: Apache License 2.0
+Platform: UNKNOWN
+Requires-Dist: requests (==2.7.0)
+Requires-Dist: tornado (==4.2)
+
+UNKNOWN
+
+
