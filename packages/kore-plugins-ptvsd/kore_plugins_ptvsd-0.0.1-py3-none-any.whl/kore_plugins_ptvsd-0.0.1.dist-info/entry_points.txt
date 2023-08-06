@@ -1,0 +1,2 @@
+[kore.components]
+kore.components.ptvsd = kore_plugins_ptvsd.plugins.ptvsd:PtvsdPlugin
