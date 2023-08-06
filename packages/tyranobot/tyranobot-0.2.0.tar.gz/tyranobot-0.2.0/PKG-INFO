@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: tyranobot
+Version: 0.2.0
+Summary: Easily customizable Slackbot
+Home-page: https://github.com/jperezlatimes/tyranobot
+Author: James Perez
+Author-email: james.perez@tronc.com
+License: GNU GENERAL PUBLIC LICENSE
+Description: An easily customizable Slackbot built on the SlackClient python library
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Communications :: Chat

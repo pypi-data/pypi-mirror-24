@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+tyranobot/__init__.py
+tyranobot/tyranobot.py
+tyranobot.egg-info/PKG-INFO
+tyranobot.egg-info/SOURCES.txt
+tyranobot.egg-info/dependency_links.txt
+tyranobot.egg-info/top_level.txt
