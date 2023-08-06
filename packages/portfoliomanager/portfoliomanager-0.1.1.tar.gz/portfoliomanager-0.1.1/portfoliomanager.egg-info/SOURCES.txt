@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+portfoliomanager/__init__.py
+portfoliomanager/portfoliomanager.py
+portfoliomanager.egg-info/PKG-INFO
+portfoliomanager.egg-info/SOURCES.txt
+portfoliomanager.egg-info/dependency_links.txt
+portfoliomanager.egg-info/requires.txt
+portfoliomanager.egg-info/top_level.txt
