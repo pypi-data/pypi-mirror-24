@@ -1,0 +1,8 @@
+include bash-completion/blackhole-completion.bash
+include example.conf
+include CHANGELOG.rst
+include CONTRIBUTORS.rst
+include LICENSE
+include README.rst
+include THANKS.rst
+include TODO.rst
