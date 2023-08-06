@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: mobility
+Version: 0.1
+Summary: Translation framework.
+Home-page: https://www.example.com/
+Author: Chris Salzberg
+Author-email: chris@dejimata.com
+License: BSD License
+Description: Mobility
+        ========
+        
+        Mobility is a gem for storing and retrieving translations as attributes on a
+        class. These translations could be the content of blog posts, captions on
+        images, tags on bookmarks, or anything else you might want to store in
+        different languages.
+        
+        Storage of translations is handled by customizable "backends" which encapsulate
+        different storage strategies. The default, preferred way to store translations
+        is to put them all in a set of two shared tables, but many alternatives are
+        also supported, including [translatable
+        columns](http://dejimata.com/2017/3/3/translating-with-mobility#strategy-1) and
+        [model translation
+        tables](http://dejimata.com/2017/3/3/translating-with-mobility#strategy-2), as
+        well as database-specific storage solutions such as
+        [jsonb](https://www.postgresql.org/docs/current/static/datatype-json.html ) and
+        [Hstore](https://www.postgresql.org/docs/current/static/hstore.html) (for
+        PostgreSQL).
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
