@@ -1,0 +1,5 @@
+setup.py
+htmlpeeker.egg-info/PKG-INFO
+htmlpeeker.egg-info/SOURCES.txt
+htmlpeeker.egg-info/dependency_links.txt
+htmlpeeker.egg-info/top_level.txt
