@@ -1,0 +1,9 @@
+setup.py
+pelicantool/__init__.py
+pelicantool/pelicantool.py
+pelicantool/utils.py
+pelicantool.egg-info/PKG-INFO
+pelicantool.egg-info/SOURCES.txt
+pelicantool.egg-info/dependency_links.txt
+pelicantool.egg-info/entry_points.txt
+pelicantool.egg-info/top_level.txt
