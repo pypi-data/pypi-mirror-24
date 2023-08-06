@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: zomato-sdk
+Version: 0.1.0
+Summary: A software development kit for Zomato API
+Home-page: https://github.com/slapbot/zomato-sdk
+Author: Ujjwal Gupta
+Author-email: ugupta41@gmail.com
+License: MIT
+Description: # Zomato SDK
+Keywords: zomato restaurants food zomato-python python-zomato restaurant sdk
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
