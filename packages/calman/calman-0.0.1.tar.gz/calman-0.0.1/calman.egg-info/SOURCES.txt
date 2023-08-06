@@ -1,0 +1,8 @@
+setup.py
+calman/__init__.py
+calman/kalman.py
+calman.egg-info/PKG-INFO
+calman.egg-info/SOURCES.txt
+calman.egg-info/dependency_links.txt
+calman.egg-info/not-zip-safe
+calman.egg-info/top_level.txt
