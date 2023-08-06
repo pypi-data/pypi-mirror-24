@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: sphinxcontrib-exampleblock
+Version: 0.0.1
+Summary: Sphinx "exampleblock" extension
+Home-page: https://github.com/testthedocs/sphinxcontrib-exampleblock
+Author: Sven Strack
+Author-email: info@testthedocs.org
+License: BSD
+Download-URL: http://pypi.python.org/pypi/sphinxcontrib-exampleblock
+Description: 
+        This package contains the exampleblock Sphinx extension.
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3

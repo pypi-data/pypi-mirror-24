@@ -1,0 +1,7 @@
+include README.*
+include LICENSE
+include CHANGES.*
+include tox.ini
+global-include *.js *.css
+prune demo-docs
+prune .tox
