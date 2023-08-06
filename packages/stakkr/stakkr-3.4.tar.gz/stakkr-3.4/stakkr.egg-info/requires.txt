@@ -1,0 +1,7 @@
+clint
+click
+click-plugins
+docker
+docker-compose
+configobj
+requests<2.12,>=2.11.0
