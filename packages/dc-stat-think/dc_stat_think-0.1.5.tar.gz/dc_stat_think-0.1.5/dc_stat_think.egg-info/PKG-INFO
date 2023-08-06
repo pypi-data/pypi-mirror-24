@@ -1,0 +1,51 @@
+Metadata-Version: 1.1
+Name: dc-stat-think
+Version: 0.1.5
+Summary: Utility functions used in the DataCamp Statistical Thinking courses.
+Home-page: https://github.com/justinbois/dc_stat_think
+Author: Justin Bois
+Author-email: bois@caltech.edu
+License: MIT license
+Description: # DataCamp Statistical Thinking utilities
+        
+        [![version](https://img.shields.io/pypi/v/dc_stat_think.svg)](https://pypi.python.org/pypi/dc_stat_think) [![build status](https://img.shields.io/travis/justinbois/dc_stat_think.svg)](https://travis-ci.org/justinbois/dc_stat_think) 
+        
+        Utility functions used in the DataCamp Statistical Thinking courses.
+        - [Statistical Thinking in Python Part I](https://www.datacamp.com/courses/statistical-thinking-in-python-part-1/)
+        - [Statistical Thinking in Python Part II](https://www.datacamp.com/courses/statistical-thinking-in-python-part-2/)
+        - [Case Studies in Statistical Thinking](https://www.datacamp.com/courses/case-studies-in-statistical-thinking/)
+        
+        
+        ## Installation
+        dc_stat_think may be installed by running the following command.
+        ```
+        pip install dc_stat_think
+        ```
+        
+        
+        ## Credits
+        This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template and then modified.
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2017-07-20)
+        0.1.1 (2017-07-20)
+        0.1.2 (2017-07-24)
+        0.1.4 (2017-07-26)
+        0.1.5 (2017-08-17)
+        ------------------
+        
+Keywords: dc_stat_think
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
