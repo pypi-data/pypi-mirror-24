@@ -1,0 +1,900 @@
+'\" t
+.\"     Title: subconvert
+.\"    Author: Michał Góral
+.\" Generator: Asciidoctor 1.5.4
+.\"      Date: 2017-08-23
+.\"    Manual: Subconvert Manual
+.\"    Source: Subconvert 3.0.0a4
+.\"  Language: English
+.\"
+.TH "SUBCONVERT" "1" "2017-08-23" "Subconvert 3.0.0a4" "Subconvert Manual"
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.ss \n[.ss] 0
+.nh
+.ad l
+.de URL
+\\$2 \(laURL: \\$1 \(ra\\$3
+..
+.if \n[.g] .mso www.tmac
+.LINKSTYLE blue R < >
+.SH "NAME"
+subconvert \- video subtitle converter and editor.
+.SH "SYNOPSIS"
+.sp
+\fBsubconvert\fP [\-c] [options] [FILE...]
+.SH "USAGE"
+.if n \{\
+.sp
+.\}
+.RS 4
+.it 1 an-trap
+.nr an-no-space-flag 1
+.nr an-break-flag 1
+.br
+.ps +1
+.B Tip
+.ps -1
+.br
+.sp
+You can always get a brief, up\-to\-date explanation of all Subconvert
+options by calling \f[CR]subconvert \-\-help\fP.
+.sp .5v
+.RE
+.SS "Starting Subconvert"
+.sp
+You can use Subconvert both as a console or a graphical application. By
+default Subconvert is started in a graphical mode. It installs itself
+into most menus under \fBAudio/Video\fP category. Program launchers like Gnome\-Do,
+Kupfer or rofi should recognize it as well. If your File Manager supports such
+behaviour, you can right\-click on subtitle file, select \fBOpen With...\fP (or a
+similar option) and choose Subconvert as your desired editor for subtitle files.
+.sp
+To start it from command line, simply call:
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+$ subconvert [options] [subtitles]
+.fi
+.if n \{\
+.RE
+.\}
+.sp
+If you wish to run Subconvert as a console script, add \f[CR]\-c\fP option. In CLI mode
+Subconvert will perform a requested job and quit.
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+$ subconvert \-c [options] subtitles
+.fi
+.if n \{\
+.RE
+.\}
+.SH "PROGRAM OPTIONS"
+.sp
+The most simple Subconvert call contains only list of files to be opened:
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+$ subconvert [FILE [FILE ...]]
+.fi
+.if n \{\
+.RE
+.\}
+.sp
+Above call is the most complex one that starts [gui] (although it also can be
+started without giving any initial files). If you\(cqd like to perform a quick
+converting task however, you have to add \fB\-c\fP switch:
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+$ subconvert \-c FILE [FILE ...]
+.fi
+.if n \{\
+.RE
+.\}
+.sp
+After running this command Subconvert will convert requested files according to
+any given options. In CLI mode converted subtitles are outputted to stdout
+(terminal) by default.
+.sp
+Now there are some additional options available.
+.SS "Processing subtitles"
+.sp
+\fB\-o, \-\-output\-file\fP=\fIFILE\fP
+.RS 4
+By default Subconvert prints converted subtitles to stdout. You can instead
+request writing them to file(s) by passing \fB\-o\fP option followed by so\-called
+output file syntax. It can be as simple as a single file
+name, but it isn\(cqt very useful if you\(cqre converting more than one subtitles file
+at once (as it would write all subtitles to that single file, effectively
+rewriting it). You\(cqll probably want to at least use \f[CR]%f\fP specifier and maybe
+\f[CR]%e\fP, which stand for "original filename" and "original extension":
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+$ subconvert \-c sub1.txt sub2.txt \-t srt \-o \(aq%f.srt\(aq
+.fi
+.if n \{\
+.RE
+.\}
+.sp
+If output file already exists (and unless \fB\-f\fP option is enabled), Subconvert
+will fall back to interactive mode and ask you what to do next (overwrite,
+backup, skip that file or cancel all operations).
+.sp
+Examples:
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+$ subconvert \-c sub.srt \-o sub.txt                        # results with sub.txt
+$ subconvert \-c sub1.srt sub2.txt \-o prefix_%f.%e_suffix  # results with prefix_sub1.srt_suffix
+.fi
+.if n \{\
+.RE
+.\}
+.RE
+.sp
+\fB\-t, \-\-format\fP=\fIFMT\fP
+.RS 4
+Probably the most important Subconvert feature (the one it got its name from) is
+\fBconverting\fP from one type of subtitles to another one (like from Subrip to
+Micro DVD). That\(cqs what this option does: changes format of all newly created
+files.
+.sp
+If this option is not used, format of original subtitles will be preserved.
+.sp
+For a list of available formats see Available Formats page.
+.sp
+Examples:
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+$ subconvert \-c sub.srt \-t subviewer
+.fi
+.if n \{\
+.RE
+.\}
+.RE
+.sp
+\fB\-e, \-\-encoding\fP=\fIIN_ENC\fP, \fB\-E, \-\-reencode\fP=\fIOUT_ENC\fP
+.RS 4
+By default Subconvert will try to automatically detect subtitle encodings and
+keep it for output files. But detecting file encodings is quite hard (really, it
+is!), so it might detect it incorrectly or not detect it at all and fall back to
+the default one, which doesn\(cqt have to be correct. If you\(cqd like to force input
+file encoding, you can use \fB\-e\fP option.
+.sp
+On the other hand, for some reasons (say, your player only only handles one
+encoding) you might want to change the output file encoding. To do that, use
+\fB\-E\fP option (capital "E").
+.sp
+When writing to a terminal, Subconvert doesn\(cqt automatically convert subtitles
+to terminal\(cqs encoding, but preserves the meaning of \fB\-e\fP and \fB\-E\fP options as
+described above. If input file\(cqs encoding is different than the terminal\(cqs one,
+this might end up with displaying some meaningless characters. To avoid that you
+can pass your terminal\(cqs encoding via \fB\-E\fP option or you can pipe Subconvert\(cqs
+output e.g. to \f[CR]enconv\fP (available on virtually all distributions as a part of
+\f[CR]enca\fP package):
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+$ subconvert \-c \-e windows\-1250 sub.srt | enconv
+.fi
+.if n \{\
+.RE
+.\}
+.sp
+Note that those two options are independent, so you can auto detect input
+encoding and change it to desired one. Just remember that it might be impossible
+to convert one encoding to another one (like Japanese to Latin), so use these
+options with caution.
+.sp
+If you are unsure about encodings you\(cqd like to use, it\(cqs probably the best to
+run a graphical interface and experiment with encodings to find a correct one
+(i.e. the one without silly characters in your subtitles).
+.sp
+See also: Available Encodings
+.sp
+Examples:
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+$ subconvert \-c \-e windows\-1250 \-E iso\-885902 sub.srt
+.fi
+.if n \{\
+.RE
+.\}
+.RE
+.sp
+\fB\-p PFILE, \-\-property\-file\fP=\fIPFILE\fP
+.RS 4
+Property Files are a nice feature that allows you to easily use frequently used
+options. Say, you mostly convert subtitles to a specific encoding and format. It
+means that each time you\(cqd have to type those options by hand (or create an
+alias, which is fine too). With Property Files you don\(cqt have to do that because
+you can group these options in a single file and ask Subconvert to use it
+instead. For more informations see [property\-files] page.
+.sp
+Examples:
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+$ subconvert \-c \-p my_properties.spf subtitles.txt
+.fi
+.if n \{\
+.RE
+.\}
+.RE
+.sp
+\fB\-\-sync\fP=\fISPEC\fP
+.RS 4
+If subtitles are out of sync, you can synchronize them either by telling
+Subconvert the offset by which it should change all subtitles or by giving one
+or more synchronization points to which it should adjust subtitles.
+.sp
+To offset subtitles, simply tell by what time subtitles should be changed.
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+\-\-sync "+15s"
+\-\-sync "\-2s"
+\-\-sync "+1h 2m 10s 3ms"
+.fi
+.if n \{\
+.RE
+.\}
+.if n \{\
+.sp
+.\}
+.RS 4
+.it 1 an-trap
+.nr an-no-space-flag 1
+.nr an-break-flag 1
+.br
+.ps +1
+.B Note
+.ps -1
+.br
+.sp
+Quotes around \fISPEC\fP in above examples prevent problems with parsing time
+specification by shells.
+.sp .5v
+.RE
+.sp
+Time specification is composed of number of hours, minutes, seconds and
+milliseconds, each of them is optional as long as there\(cqs at least one of them.
+Time specification can be also negative \(em; in that case it will be subtracted
+from each sutitle.
+.sp
+\fISPEC\fP for synchronization is very similar to the above one. It is composed of
+comma\-separated list of subtitle numbers and their times (which can be either
+relative \(em; it\(cqs indicated by a plus or minus sign \(em; or absolute). Subtitle
+numbering starts from 1 and can be negative. Negative subtitles are counted from
+the end (so \-1 is last subtitle, \-2 is second to last and so on). At least one
+subtitle number is required.
+.sp
+Other subtitles will be synchronized to the ones given in \fISPEC\fP. Their times
+will be computed to smoothly match requested synchronization points.
+.sp
+For example, below \fISPEC\fP means that the first subtitle is 2 seconds too early
+(so we want to add 2 seconds to it) and the last subtitle is 3 seconds too late
+(so we want to subtract 3 seconds from it).
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+\-\-sync "1:+2s, \-1:\-3s"
+.fi
+.if n \{\
+.RE
+.\}
+.sp
+Below example adds few milliseconds to the first and second subtitles and sets
+the last one to the fixed time of 1 hour 15 minutes and 4 seconds:
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+\-\-sync "1: +2ms, 2: +3ms, \-1: 1h15m4s"
+.fi
+.if n \{\
+.RE
+.\}
+.RE
+.SS "Processing videos"
+.sp
+\fB\-\-fps NUMBER\fP, \fB\-v VIDEO, \-\-video VIDEO\fP
+.RS 4
+Without FPS value converting between time\-based and frame\-based subtitles (e.g.
+Subrip \(-> Micro DVD) is impossible. That\(cqs why Subconvert employs several
+methods of obtaining this crucial value from a movie associated with subtitles.
+.sp
+If you wish to manually pass video framerate to Subconvert, you\(cqll can use
+\fB\-\-fps\fP switch. Let\(cqs say that you\(cqd like to use \(aq23.976\(aq as your FPS value:
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+$ alias subconvert="subconvert \-t microdvd" # assume for all examples
+                                            # in this section that we\(aqd like
+                                            # to convert from subrip to microdvd
+
+$ subconvert \-c \-\-fps 23.976 subtitles.srt
+.fi
+.if n \{\
+.RE
+.\}
+.sp
+By default Subconvert will try to find and use framerate of a movie with similar
+file name to the one of subtitles. If video file name doesn\(cqt match subtitles\(aq
+one, you can hard set a \fIVIDEO\fP file for each of your subtitles. What is more,
+you can use similar syntax to the output file syntax: \f[CR]%f\fP
+will be replaced with a subtitle file name and \f[CR]%e\fP with extension (although
+using %e is not very useful):
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+$ subconvert \-c \-v "%f.avi" sub1.srt sub2.srt  # will search for
+                                               # sub1.avi and sub2.avi
+
+# subconvert \-c \-v common_video.avi sub1.srt sub2.srt  # for both subtitles
+                                                       # FPS of common_video.avi
+                                                       # will be used
+.fi
+.if n \{\
+.RE
+.\}
+.RE
+.SS "Other options"
+.sp
+\fB\-f, \-\-force\fP
+.RS 4
+assume \(aqyes\(aq when Subconvert would normally ask for your permission (e.g.
+whether to overwrite existing file or not)
+.RE
+.sp
+\fB\-\-debug\fP
+.RS 4
+show some debug prints. Useful for developers or when reporting a bug.
+.RE
+.sp
+\fB\-\-quiet\fP
+.RS 4
+the opposite of \fB\-\-debug\fP. Subconvert will print only when there\(cqs a critical
+error of some kind.
+.RE
+.sp
+\fB\-\-help\fP
+.RS 4
+displays a built\-in help with a summary of all Subconvert options.
+.RE
+.sp
+\fB\-\-version\fP
+.RS 4
+displays used version of Subconvert
+.RE
+.SH "AVAILABLE FORMATS"
+.sp
+Subconvert will automatically detect a subtitle format. When you want to
+specify the output format, you have to use \fB\-t\fP or \fB\-\-format\fP switch, followed
+by a proper format name (case insensitive). For example: \f[CR]subconvert \-t mpl2
+SubRipSubtitles.srt\fP will produce MPL2 output subtitles.
+.SS "Subrip"
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+0
+00:00:00,000 \-\-> 00:00:00,850
+This is first subtitle.
+
+1
+00:00:01,000 \-\-> 00:00:03,549
+This is a simple Sub Rip file
+which has more than one line.
+.fi
+.if n \{\
+.RE
+.\}
+.sp
+Subtitle blocks are separated by an empty line (\f[CR]\(rsn\fP, \f[CR]\(rsr\(rsn\fP or \f[CR]\(rsr\fP, depending
+on a platform). There is also a second type of SubRip notation available (which
+is much less frequently met):
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+0 00:00:00,000 \-\-> 00:00:00,850
+This is first subtitle.
+
+1 00:00:01,000 \-\-> 00:00:03,549
+This is a simple Sub Rip file
+which has more than one line.
+.fi
+.if n \{\
+.RE
+.\}
+.SS "Microdvd"
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+{0}{21}This is first subtitle.
+{25}{89}This is a simple subtitle|which has more than one line.
+{100}{125}{y:i}{y:b}{y:u}This is formatted text|and it\(aqs second line|{y:i}{y:b}{y:u}and the third one
+.fi
+.if n \{\
+.RE
+.\}
+.SS "MPL2"
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+[0][8]This is first subtitle.
+[10][35]This is a simple subtitle|which has more than one line.
+[40][50]/This is formatted text|and it\(aqs second line|/and the third one
+.fi
+.if n \{\
+.RE
+.\}
+.SS "Subviewer"
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+[INFORMATION]
+[TITLE]A typical subtitle
+[AUTHOR]
+[SOURCE]
+[PRG]SubConvert
+[FILEPATH]napis.sub
+[DELAY]0
+[CD TRACK]0
+[COMMENT]Converted to subviewer format with SubConvert
+[END INFORMATION]
+[SUBTITLE]
+[COLF]&amp;HFFFFFF,[STYLE]no,[SIZE]24,[FONT]Tahoma
+00:00:00.00,00:00:00.85
+This is first subtitle.
+
+00:00:01.00,00:00:03.55
+This is a simple subtitle
+which has more than one line.
+.fi
+.if n \{\
+.RE
+.\}
+.SS "TMP"
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+00:00:00:This is first subtitle.
+00:00:01:This is a simple subtitle|which has more than one line.
+.fi
+.if n \{\
+.RE
+.\}
+.SS "Features Summary"
+.TS
+allbox tab(:);
+lt lt lt lt lt.
+T{
+.sp
+Format
+T}:T{
+.sp
+option name
+T}:T{
+.sp
+file extension
+T}:T{
+.sp
+format type
+T}:T{
+.sp
+text formatting
+T}
+T{
+.sp
+Subrip
+T}:T{
+.sp
+\fB<BOUNDARY>subrip</BOUNDARY>\fP
+T}:T{
+.sp
+srt
+T}:T{
+.sp
+time (ms precision)
+T}:T{
+.sp
+yes, limited HTML: \f[CR]<BOUNDARY>&lt;i&gt;Italics&lt;/i&gt;</BOUNDARY>\fP, \f[CR]<BOUNDARY>&lt;b&gt;Bold&lt;/b&gt;</BOUNDARY>\fP, \f[CR]<BOUNDARY>&lt;u&gt;Underscore&lt;/u&gt;</BOUNDARY>\fP
+T}
+T{
+.sp
+Microdvd
+T}:T{
+.sp
+\fB<BOUNDARY>microdvd</BOUNDARY>\fP
+T}:T{
+.sp
+sub
+T}:T{
+.sp
+frame
+T}:T{
+.sp
+yes, markers for whole line: \f[CR]<BOUNDARY>{y:i}</BOUNDARY>\fP, \f[CR]<BOUNDARY>{y:b}</BOUNDARY>\fP and \f[CR]<BOUNDARY>{y:u}</BOUNDARY>\fP for italics, bold
+  and underscore. They can be combined.
+T}
+T{
+.sp
+MPL2
+T}:T{
+.sp
+\fB<BOUNDARY>mpl2</BOUNDARY>\fP
+T}:T{
+.sp
+txt
+T}:T{
+.sp
+time (decisecond precision)
+T}:T{
+.sp
+partial. Only italics text is supported by placing a slash (\f[CR]<BOUNDARY>/</BOUNDARY>\fP) at line
+  beginning
+T}
+T{
+.sp
+Subviewer
+T}:T{
+.sp
+\fB<BOUNDARY>subviewer</BOUNDARY>\fP
+T}:T{
+.sp
+sub
+T}:T{
+.sp
+time (centisecond precision)
+T}:T{
+.sp
+information in header which applies to the whole file
+T}
+T{
+.sp
+TMP
+T}:T{
+.sp
+\fB<BOUNDARY>tmp</BOUNDARY>\fP
+T}:T{
+.sp
+txt
+T}:T{
+.sp
+time (second precision)
+T}:T{
+.sp
+no
+T}
+.TE
+.sp
+.SH "AVAILABLE ENCODINGS"
+.sp
+Available file encodings are (in alphabetical order):
+.TS
+allbox tab(:);
+lt lt lt lt lt lt.
+T{
+.sp
+ascii
+T}:T{
+.sp
+big5
+T}:T{
+.sp
+big5hkscs
+T}:T{
+.sp
+charmap
+T}:T{
+.sp
+cp037
+T}:T{
+.sp
+cp1006
+T}
+T{
+.sp
+cp1026
+T}:T{
+.sp
+cp1140
+T}:T{
+.sp
+cp424
+T}:T{
+.sp
+cp437
+T}:T{
+.sp
+cp500
+T}:T{
+.sp
+cp720
+T}
+T{
+.sp
+cp737
+T}:T{
+.sp
+cp775
+T}:T{
+.sp
+cp850
+T}:T{
+.sp
+cp852
+T}:T{
+.sp
+cp855
+T}:T{
+.sp
+cp856
+T}
+T{
+.sp
+cp857
+T}:T{
+.sp
+cp858
+T}:T{
+.sp
+cp860
+T}:T{
+.sp
+cp861
+T}:T{
+.sp
+cp862
+T}:T{
+.sp
+cp863
+T}
+T{
+.sp
+cp864
+T}:T{
+.sp
+cp865
+T}:T{
+.sp
+cp866
+T}:T{
+.sp
+cp869
+T}:T{
+.sp
+cp874
+T}:T{
+.sp
+cp875
+T}
+T{
+.sp
+cp932
+T}:T{
+.sp
+cp949
+T}:T{
+.sp
+cp950
+T}:T{
+.sp
+euc-jp
+T}:T{
+.sp
+euc-kr
+T}:T{
+.sp
+gbk
+T}
+T{
+.sp
+hz
+T}:T{
+.sp
+iso-2022-jp
+T}:T{
+.sp
+iso-2022-kr
+T}:T{
+.sp
+iso-8859-1
+T}:T{
+.sp
+iso-8859-2
+T}:T{
+.sp
+iso-8859-3
+T}
+T{
+.sp
+iso-8859-4
+T}:T{
+.sp
+iso-8859-5
+T}:T{
+.sp
+iso-8859-6
+T}:T{
+.sp
+iso-8859-7
+T}:T{
+.sp
+iso-8859-8
+T}:T{
+.sp
+iso-8859-9
+T}
+T{
+.sp
+iso-8859-10
+T}:T{
+.sp
+iso-8859-13
+T}:T{
+.sp
+iso-8859-14
+T}:T{
+.sp
+iso-8859-15
+T}:T{
+.sp
+iso-8859-16
+T}:T{
+.sp
+johab
+T}
+T{
+.sp
+koi8-r
+T}:T{
+.sp
+koi8-u
+T}:T{
+.sp
+macarabic
+T}:T{
+.sp
+maccenteuro
+T}:T{
+.sp
+maccroatian
+T}:T{
+.sp
+maccyrillic
+T}
+T{
+.sp
+macfarsi
+T}:T{
+.sp
+macgreek
+T}:T{
+.sp
+maciceland
+T}:T{
+.sp
+maclatin2
+T}:T{
+.sp
+macroman
+T}:T{
+.sp
+macromanian
+T}
+T{
+.sp
+macturkish
+T}:T{
+.sp
+ptcp154
+T}:T{
+.sp
+shift_jis
+T}:T{
+.sp
+tis-620
+T}:T{
+.sp
+utf-16
+T}:T{
+.sp
+utf-16be
+T}
+T{
+.sp
+utf-16le
+T}:T{
+.sp
+utf-32
+T}:T{
+.sp
+utf-32be
+T}:T{
+.sp
+utf-32le
+T}:T{
+.sp
+utf-7
+T}:T{
+.sp
+utf-8
+T}
+T{
+.sp
+windows-1250
+T}:T{
+.sp
+windows-1251
+T}:T{
+.sp
+windows-1252
+T}:T{
+.sp
+windows-1253
+T}:T{
+.sp
+windows-1254
+T}:T{
+.sp
+windows-1255
+T}
+.TE
+.sp
+.SH "ISSUES"
+.sp
+Please report any bugs, issues and suggestions to Subconvert\(cqs bugtracker:
+.URL "https://gitlab.com/mgoral/subconvert/issues" "" ""
+.SH "AUTHOR(S)"
+.sp
+\fBMichał Góral\fP
+.RS 4
+Author(s).
+.RE
