@@ -1,0 +1,21 @@
+image: python:2.7
+
+stages:
+  - test
+  - deploy
+
+unit_test:
+  stage: test
+  script:
+    - pip install -r test-requirements.txt
+    - tox -e flake8
+    - pip install .
+    - vca --version
+    - vcd version
+
+deploy:
+  stage: deploy
+  script:
+    - ./.upload-to-pip.sh
+  dependencies:
+    - unit_test
