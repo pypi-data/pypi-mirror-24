@@ -1,0 +1,8 @@
+{
+  "Content-Length": "6425", 
+  "Server": "nginx/1.12.0", 
+  "Connection": "keep-alive", 
+  "Link": "<https://webmention.rocks/test/10/webmention>; rel=\"webmention somethingelse\"", 
+  "Date": "Sat, 02 Sep 2017 21:36:24 GMT", 
+  "Content-Type": "text/html; charset=UTF-8"
+}
