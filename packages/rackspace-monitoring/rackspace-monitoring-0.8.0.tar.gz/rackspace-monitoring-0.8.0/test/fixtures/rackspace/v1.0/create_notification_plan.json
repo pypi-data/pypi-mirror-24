@@ -1,0 +1,16 @@
+{
+    "id": "npIXxOAn5",
+    "label": "test-notification-plan",
+    "critical_state": [
+        "ntvJMd0gcG"
+    ],
+    "warning_state": [
+        "ntvJMd0gcG"
+    ],
+    "ok_state": [
+        "ntvJMd0gcG"
+    ],
+    "metadata": {
+        "cli": "rackmoncli"
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "values": [
+        {
+            "id": "en8B9YwUn6",
+            "label": "bar",
+            "ip_addresses": {
+                "1": "127.0.0.1"
+            },
+            "uri": "http://ffo.com/uri/bar/12312",
+            "metadata": {},
+            "active_suppressions": [],
+            "scheduled_suppressions": []
+        },
+        {
+            "id": "en8Xmk5lv1",
+            "label": "foooo",
+            "ip_addresses": {},
+            "uri": null,
+            "metadata": {},
+            "active_suppressions": [],
+            "scheduled_suppressions": []
+        },
+        {
+            "id": "enBq9glhau",
+            "label": "foooo",
+            "ip_addresses": {},
+            "uri": null,
+            "metadata": {},
+            "active_suppressions": [],
+            "scheduled_suppressions": []
+        },
+        {
+            "id": "enQJCKqUZ9",
+            "label": "foooo",
+            "ip_addresses": {},
+            "metadata": {},
+            "active_suppressions": [],
+            "scheduled_suppressions": []
+        },
+        {
+            "id": "endYGlC6Gt",
+            "label": "server",
+            "ip_addresses": {
+                "default": "86.58.76.208"
+            },
+            "uri": null,
+            "metadata": null,
+            "active_suppressions": [],
+            "scheduled_suppressions": []
+        },
+        {
+            "id": "enjoLD0Al3",
+            "label": "foooo",
+            "ip_addresses": {},
+            "uri": null,
+            "metadata": {},
+            "active_suppressions": [],
+            "scheduled_suppressions": []
+        }
+    ],
+    "metadata": {
+        "count": 6,
+        "limit": 100,
+        "marker": null,
+        "next_href": null
+    }
+}

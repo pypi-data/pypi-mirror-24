@@ -1,0 +1,11 @@
+{
+    "id": "ntQVm5IyiR",
+    "label": "maaaaaaaaaaa",
+    "type": "webhook",
+    "details": {
+        "url": "http://www.foo.bar.com"
+    },
+    "metadata": {
+        "cli": "rackmoncli"
+    }
+}
