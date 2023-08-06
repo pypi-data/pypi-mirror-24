@@ -1,0 +1,69 @@
+Metadata-Version: 1.1
+Name: storageprovider-client
+Version: 2.2.0
+Summary: storageprovider client
+Home-page: http://www.onroerenderfgoed.be
+Author: Flanders Heritage Agency
+Author-email: ict@onroerenderfgoed.be
+License: MIT
+Description: storageprovider-client
+        ======================
+        
+        
+        .. image:: https://travis-ci.org/OnroerendErfgoed/storageprovider-client.svg
+            :target: https://travis-ci.org/OnroerendErfgoed/storageprovider-client
+        
+        
+        Storageprovider-client is a library that provides methods to communicate with a Storageprovider instance.
+        
+        2.2.0 (22/08/2017)
+        ==================
+        
+        * Update to `Augeias 0.3.0 <https://github.com/OnroerendErfgoed/augeias/releases/tag/0.3.0>`_.
+        * Add update_object_and_key method to store an object and create a key
+        * Add copy_object_and_create_key to copy an object to a new create key in the same storage provider
+        * Add copy_object to copy an object to a specific key in the same storage provider
+        
+        2.1.0 (03/11/2015)
+        ==================
+        
+        * add get_object_metadata method to retrieve an objects metadata headers
+        
+        2.0.0 (16/10/2015)
+        ==================
+        
+        This release follows the structure outlined by `Augeias 0.1.0
+        <https://github.com/OnroerendErfgoed/augeias/releases/tag/0.1.0>`_.
+        
+        Previous versions of storageprovider-client were written to communicate with a
+        pre-release version of Augeias.
+        
+        1.1.0 (18/03/2015)
+        ==================
+        
+        * Python 3.3 compatible
+        * User can choose header
+        
+        1.0.2 (24/10/2014)
+        ==================
+        
+        * Chunked transfer encoding not supported by WSGI, so it was removed.
+        
+        1.0.1 (1/10/2014)
+        =================
+        
+        * Fix missing content-type header
+        * Add oauth system token option for security
+        * Improve error handling
+        * Support chunked data transfer
+        
+        
+        1.0 (22/07/2014)
+        ================
+        
+        Initial release of storageprovider-client.
+        
+Keywords: storageprovider client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
