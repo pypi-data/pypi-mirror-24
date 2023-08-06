@@ -1,0 +1,66 @@
+
+<html>
+
+<head>
+    {% load static %}
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="http://www.fabgrad.com/static/new/images/edu_gsLogo.ico">
+    <title>Django Assistant in progress</title>  
+
+<!--
+    <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+-->
+    <link href="/static/django_assistant/style/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <link href="{% static 'django_assistant/style/bootstrap-theme.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static 'django_assistant/style/bootstrap.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'django_assistant/style/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'django_assistant/style/code-base.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static 'django_assistant/style/jquery-ui.css' %}" rel="stylesheet" type="text/css">
+    
+    <link href="{% static 'django_assistant/style/bootstrap-select.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static 'django_assistant/style/animate/animate.css' %}" rel="stylesheet" type="text/css">
+    
+    <link href="{% static 'django_assistant/style/chosen/chosen.css' %}" rel="stylesheet" type="text/css">
+    
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Open+Sans:600,700,100|Merriweather+Sans:400,700|Roboto:400,100,300|Lato:400,400i,700,700i,900,900i' rel='stylesheet' type='text/css'>
+
+    
+    <script type="text/javascript" src="{% static 'django_assistant/js/jquery-1.7.2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'django_assistant/js/jquery-ui.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'django_assistant/js/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'django_assistant/js/bootstrap-select.js' %}"></script>
+    <script src="{% static 'django_assistant/js/notify/bootstrap-notify.js' %}"></script>
+    
+    <script type="text/javascript" src="{% static 'django_assistant/js/chosen/chosen.jquery.js' %}"></script>
+    
+    <script  src="{% static 'django_assistant/index.js' %}" ></script>
+    
+    <style>
+	.api_result{
+	    white-space: pre;
+	}
+    </style>
+</head>
+<body>
+<div class="container-fluid container_assistant">
+    <div class="assistant_tabs">
+	<a href="/django_assistant/">
+	    <button style="background:none; border:none; text-decoration:underline; outline:none; color:blue;">APi collector</button>
+	</a>
+	<a href="/django_assistant/codebase">
+	    <button style="background:none; border:none; text-decoration:underline; outline:none; color:blue;">Code Base</button>
+	</a>
+    </div>
+{% block content %} 
+
+{% endblock %}
+</div>
+</body>
+</html>
