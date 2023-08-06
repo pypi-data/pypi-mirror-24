@@ -1,0 +1,11 @@
+emailx/__init__.py,sha256=Asglp2xhcD_gTktSW0e-YzcAlk4sKYCAXDQPC_VtTMU,107
+emailx/emailer.py,sha256=ODcXNRU-3C-M1FvHL3c60Qw_KK-Cm8GOI1bzWafws7Q,6193
+emailx/unicode.py,sha256=aqzbM2qgwqIqpnl_47R-CPB6EHp8uq9pJgmu4MZenLo,830
+emailx-0.1.1504076508.dist-info/DESCRIPTION.rst,sha256=oQSCxaZxdmvbOpzHSkV21Yza4p4-n7kmwDAIljWTzdM,694
+emailx-0.1.1504076508.dist-info/METADATA,sha256=MhAF5RFhTyb5viQwI2bLSKFtxuNb_-5V-IzCcpXi-kE,1351
+emailx-0.1.1504076508.dist-info/RECORD,,
+emailx-0.1.1504076508.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+emailx-0.1.1504076508.dist-info/metadata.json,sha256=1PfgKCWnVPqlEr9Cmb9tg8VGlA6BnNOedFWskBqXqH4,802
+emailx-0.1.1504076508.dist-info/top_level.txt,sha256=hRlUPevg9-IhJVJoPCqWl610SUyc163njVaKc7KYTMA,13
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_all.py,sha256=Id7dmpXjgIfiZ_Aud50PGktiBdt-64H2vTNIC_n3I34,2895
