@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: iplookup
+Version: 1.0.5
+Summary: Module for looking up IPs from Domain Names
+Home-page: https://github.com/dalgibbard/iplookup
+Author: Darren Gibbard
+Author-email: dalgibbard@gmail.com
+License: BSD
+Download-URL: https://github.com/dalgibbard/iplookup/archive/1.0.5.tar.gz
+Description: 
+        iplookup
+        ========
+        A small python module which accepts a single domain as a string, or multiple domains as a list, and returns a list of associated IPs (from both A record and CNAMEs).
+        
+        * For domains with multiple A records (RRDNS), all A record IPs are returned
+        * IPv6 AAAA records are currently _NOT_ returned.
+        * For domains which are CNAMEs, the IP of the CNAME is returned
+        * If you give it an IP, it will return the IP back (so mixed lists are OK too)
+        
+        Install::
+          pip install iplookup
+        
+        Usage::
+          from iplookup import iplookup
+        
+          ip = iplookup.iplookup
+        
+          print(ip(["google.com", "example.com"]))
+        
+          print(ip("yahoo.com"))
+        
+        
+Keywords: dns ip lookup iplookup
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
