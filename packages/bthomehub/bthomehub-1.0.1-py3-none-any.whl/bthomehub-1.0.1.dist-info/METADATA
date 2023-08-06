@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: bthomehub
+Version: 1.0.1
+Summary: A Python client that can interact with BT Home Hub routers.
+Home-page: https://github.com/onegambler/bthomehub_client
+Author: Roberto Magale
+Author-email: onegambler@outlook.com
+License: UNLICENSE
+Download-URL: https://github.com/onegambler/bthomehub_client/archive/1.0.tar.gz
+Keywords: bt home hub,devices list
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
