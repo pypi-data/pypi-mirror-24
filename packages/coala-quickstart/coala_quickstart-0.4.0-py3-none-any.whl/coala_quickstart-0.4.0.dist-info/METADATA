@@ -1,0 +1,33 @@
+Metadata-Version: 2.0
+Name: coala-quickstart
+Version: 0.4.0
+Summary: A quickstart tool for for coala (Code Analysis Application)
+Home-page: https://github.com/coala/coala-quickstart
+Author: Satwik Kansal, Adrian Zatreanu, Alexandros Dimos, Adhityaa Chandrasekar
+Author-email: satwikkansal@gmail.com, adrianzatreanu1@gmail.com, alexandros.dimos.95@gmail.com, c.adhityaa@gmail.com
+License: AGPL-3.0
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: coala-bears (~=0.12.0.dev20170722110839)
+Requires-Dist: coala-utils (~=0.6.6)
+Requires-Dist: gemfileparser (~=0.6.2)
+Requires-Dist: lxml (==3.6.0)
+Requires-Dist: pyjsparser (~=2.4.5)
+
+coala-quickstart is a tool to help you quickly and easily get started with coala - the COde AnaLysis Application.
+
+
