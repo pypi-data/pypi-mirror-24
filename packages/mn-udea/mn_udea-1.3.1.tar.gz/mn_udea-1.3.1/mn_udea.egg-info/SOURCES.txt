@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+mn_udea/__init__.py
+mn_udea/derivation.py
+mn_udea/fit.py
+mn_udea/integration.py
+mn_udea/interpolation.py
+mn_udea/linear.py
+mn_udea.egg-info/PKG-INFO
+mn_udea.egg-info/SOURCES.txt
+mn_udea.egg-info/dependency_links.txt
+mn_udea.egg-info/requires.txt
+mn_udea.egg-info/top_level.txt
