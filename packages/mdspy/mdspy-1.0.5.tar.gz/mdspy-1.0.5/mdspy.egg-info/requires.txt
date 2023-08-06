@@ -1,0 +1,14 @@
+nose
+sphinx
+numpy==1.13.1
+scipy
+pandas
+scikit-learn
+setuptools
+matplotlib
+seaborn
+statsmodels==0.8.0
+smartobjects
+sphinx_rtd_theme
+numpydoc
+unittest2
