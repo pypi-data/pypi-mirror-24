@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: wms-downloader
+Version: 1.0.0
+Summary: Downloads large geo TIFF files from a WMS service.
+Home-page: https://github.com/jochenklar/wms-downloader
+Author: Jochen Klar
+Author-email: jochenklar@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
