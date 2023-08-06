@@ -1,0 +1,4 @@
+satori-rtm-sdk >=1.4.0
+docopt
+toml
+xdg
