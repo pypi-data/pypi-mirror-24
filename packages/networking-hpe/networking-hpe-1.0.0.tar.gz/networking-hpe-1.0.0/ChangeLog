@@ -1,0 +1,15 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* Use upper constraints file for tox
+* Fix failures in test\_ext\_cmd\_loaded unit tests
+* Initial submit of the networking\_hpe files
+* Update .gitignore
+* Cleanup tox.ini: Remove obsolete constraints
+* Nit Copyright
+* Formatting README.rst file
+* Cookiecutter setup files for networking-hpe
+* Added .gitreview
