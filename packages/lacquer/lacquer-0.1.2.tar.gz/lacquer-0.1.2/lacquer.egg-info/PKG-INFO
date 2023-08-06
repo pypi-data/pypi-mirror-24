@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: lacquer
+Version: 0.1.2
+Summary: A SQL Parser based on the parser in the presto project
+Home-page: http://github.com/slaclab/lacquer
+Author: Brian Van Klaveren
+Author-email: bvan@slac.stanford.edu
+License: Apache License 2.0
+Description: 
+        lacquer
+        -------
+        
+        lacquer is a python port of Presto's SQL Parser.
+        
+        Currently, it doesn't support all the same features as Presto's parser,
+        but it can parse most SELECT queries and produce the python-equivalent
+        syntax tree, as well as write the tree back out to SQL.
+        
+        It was written for the `LSST project <http://lsst.org>`_ to enable
+        support for the Astronomical Data Query Language.
+        
+        It has two dependencies, PLY and future.
+        
+        It is tested with 2.7 and 3.5.
+        
+        Links
+        `````
+        * `GitHub <http://github.com/slaclab/lacquer/>`_
+        * `development version
+          <https://github.com/slaclab/lacquer/zipball/master#egg=lacquer-dev>`_
+        
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Software Development :: Compilers
