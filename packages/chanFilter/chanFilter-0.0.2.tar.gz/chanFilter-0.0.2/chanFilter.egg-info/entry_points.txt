@@ -1,0 +1,3 @@
+[console_scripts]
+chanFilter = chanFilter.chanFilter:filter
+

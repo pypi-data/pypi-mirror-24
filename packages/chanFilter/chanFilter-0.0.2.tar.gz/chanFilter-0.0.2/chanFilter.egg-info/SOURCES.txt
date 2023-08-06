@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+chanFilter/__init__.py
+chanFilter/chanFilter.py
+chanFilter.egg-info/PKG-INFO
+chanFilter.egg-info/SOURCES.txt
+chanFilter.egg-info/dependency_links.txt
+chanFilter.egg-info/entry_points.txt
+chanFilter.egg-info/requires.txt
+chanFilter.egg-info/top_level.txt
