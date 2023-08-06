@@ -1,0 +1,10 @@
+esm_full_backup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+esm_full_backup/console.py,sha256=c87XEpyOlgTAKjMyC1UWqTNPeN9F91r8AdQVIiEKYrU,1583
+esm_full_backup/esm_full_backup.py,sha256=52ohTjacQ_voCXvcbsZs31CPgAIa3iwo6dRP6ayJzEo,10057
+esm_full_backup-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+esm_full_backup-0.0.1.dist-info/METADATA,sha256=eDvdhohpiOa5P2qT-kG15UTC1lyOJnT3ihcSDnWXX8A,847
+esm_full_backup-0.0.1.dist-info/RECORD,,
+esm_full_backup-0.0.1.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+esm_full_backup-0.0.1.dist-info/entry_points.txt,sha256=pQlw_zSye3pIUpW16yL2yqfLEW44HVy_6vWKnPULaqs,66
+esm_full_backup-0.0.1.dist-info/metadata.json,sha256=4mfu8eEYMAL2l0FjgHAM29VGD-QSO10QEl8G3EAjYXw,1171
+esm_full_backup-0.0.1.dist-info/top_level.txt,sha256=ELBN0KaXNGrp55gTz-yHfA-2SGwHDcRwgA9DreOtVEE,16
