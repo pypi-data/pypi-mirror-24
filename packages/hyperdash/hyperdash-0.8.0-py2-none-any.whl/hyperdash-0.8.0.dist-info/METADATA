@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: hyperdash
+Version: 0.8.0
+Summary: Hyperdash.io CLI and SDK
+Home-page: https://hyperdash.io
+Author: Hyperdash
+Author-email: support@hyperdash.io
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: six (>=1.10.0)
+Requires-Dist: python-slugify
+
+UNKNOWN
+
+
