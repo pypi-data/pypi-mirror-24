@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+bsym/__init__.py
+bsym/bsym.py
+bsym/configuration.py
+bsym/configuration_space.py
+bsym/coordinate_config_space.py
+bsym/permutations.py
+bsym/point_group.py
+bsym/space_group.py
+bsym/symmetry_group.py
+bsym/symmetry_operation.py
+bsym.egg-info/PKG-INFO
+bsym.egg-info/SOURCES.txt
+bsym.egg-info/dependency_links.txt
+bsym.egg-info/requires.txt
+bsym.egg-info/top_level.txt
