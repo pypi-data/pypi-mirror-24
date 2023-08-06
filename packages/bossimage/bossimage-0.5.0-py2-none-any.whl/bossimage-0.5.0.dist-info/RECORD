@@ -1,0 +1,11 @@
+bossimage/__init__.py,sha256=Ue486q5-CWe3G0UiikHWgspNEM8sett1bl3jI7fYjAo,94
+bossimage/cli.py,sha256=POkQI4uq8c-ROvSX11s50TBFCei6AME-UdNQVcwMHXg,5045
+bossimage/core.py,sha256=BEq7WxL0jsgCubuhpUJqcNR6_jI1DKt3nc8k4N8HbtI,25500
+bossimage/win-userdata.txt,sha256=JgMvakRkf53OgQjI59EKrm3md82POoofzFizwIXOl8w,328
+bossimage-0.5.0.dist-info/DESCRIPTION.rst,sha256=MXc9NUCRUwvf4jumQ8H7XWaHNUz_vtn-EoO63K0uitA,22920
+bossimage-0.5.0.dist-info/METADATA,sha256=8zMY9tQrAjrRy1aobDfV23MeYq9_LE5ju_KIwtWkyv0,23321
+bossimage-0.5.0.dist-info/RECORD,,
+bossimage-0.5.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+bossimage-0.5.0.dist-info/entry_points.txt,sha256=BA0KGNvl8oJxOsgwitZF8C4_UvDbGO2TzlSpYlkiVKQ,43
+bossimage-0.5.0.dist-info/metadata.json,sha256=zdIlP2YdwOn495uVabYfNZsmGTTS-aIG2mnQNo-VovE,694
+bossimage-0.5.0.dist-info/top_level.txt,sha256=wefYSrGseUB0DYrIraP9JSPqU-CyPthlQrrKF85irj8,10
