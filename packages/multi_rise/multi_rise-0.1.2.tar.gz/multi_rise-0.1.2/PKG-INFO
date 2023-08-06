@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: multi_rise
+Version: 0.1.2
+Summary: This is a quick shortcut to combine Jupyter notebooks into a single rise
+Home-page: https://github.com/mpacer/multi_rise
+Author: M Pacer
+Author-email: mpacer@berkeley.edu
