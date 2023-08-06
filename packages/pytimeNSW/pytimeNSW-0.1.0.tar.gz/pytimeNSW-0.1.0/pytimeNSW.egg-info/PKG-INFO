@@ -1,0 +1,74 @@
+Metadata-Version: 1.1
+Name: pytimeNSW
+Version: 0.1.0
+Summary: PyTime fork for NSW, Australia
+Home-page: https://github.com/MatthewBurke1995/PyTimeNSW
+Author: Matthew Burke
+Author-email: mperoburke@gmail.com
+License: MIT
+Description: PyTimeNSW
+        =========
+        
+        PyTimeNSW is a fork of `PyTime <https://github.com/shnode/PyTime>`__
+        with additional days added for NSW public holidays.
+        
+        Installation (not yet complete)
+        -------------------------------
+        
+        .. code:: python
+        
+            pip install pytimeNSW
+        
+        Basic Usage
+        -----------
+        
+        .. code:: python
+        
+            >>>from pytimeNSW import pytimeNSW
+            >>>
+            >>>queen = pytimeNSW.queen()           # Queen's Birthday
+            >>>print(queen)
+            datetime.date(2017, 6, 12)
+            >>>
+            >>>pytimeNSW.public(easter)             # Easter Public Holidays
+            [datetime.date(2017, 3, 30),
+             datetime.date(2017, 3, 31),
+             datetime.date(2017, 4, 1),
+             datetime.date(2017, 4, 2)]
+            >>>
+            >>> labour = pytimeNSW.labour(2019)      # 2019 Labour Day
+            >>>print(labour)
+            datetime.date(2019, 10, 7)
+        
+        Other public holidays
+        
+        .. code:: python
+        
+            >>>pytimeNSW.boxing()                      # Boxing Day
+            datetime.date(2015, 12, 26)
+            >>>
+            >>>pytimekr.anzac()                    # Anzac Day
+            datetime.date(2017, 4, 25)
+            >>>
+            >>>pytimekr.australia()                # Australia Day
+            datetime.date(2017, 1, 26)
+        
+        License
+        -------
+        
+        MIT
+        
+Keywords: datetime time datetime timeparser Australia NSW holiday
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
