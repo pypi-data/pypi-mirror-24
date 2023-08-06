@@ -1,0 +1,12 @@
+zalando_kubectl/__init__.py,sha256=OHp_RjZnz18_a8-j40NuYrgoampn4Bv4zi9EHu0ELbE,73
+zalando_kubectl/__main__.py,sha256=Lh886FA-d29sy6KAlpDrcB31SxWKYtxRezs-tEzlgi8,77
+zalando_kubectl/kube_config.py,sha256=mZCUyAmhwg76xoqDAwqK85Af5B5RwbvnNd40dneBI_I,1737
+zalando_kubectl/main.py,sha256=rB3GEculzvOu5pgrGQjd3OHI7CktbP2cxJF3yEoHQRo,11727
+zalando_kubectl/templating.py,sha256=s-QRLUC2LY2PY_xvofxQqH7usygOKpmLLu7H9MZ1os8,4221
+zalando_kubectl-1.7.3.dist-info/DESCRIPTION.rst,sha256=V6uApdqL3o3tDzMSdc4l9OWCDD7MwqyTyiYJdFoGNIQ,2611
+zalando_kubectl-1.7.3.dist-info/METADATA,sha256=DvPcHxnTbCwnvC_VvotVJB2uGz-mp1oXxatkFpXqB_8,3576
+zalando_kubectl-1.7.3.dist-info/RECORD,,
+zalando_kubectl-1.7.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+zalando_kubectl-1.7.3.dist-info/entry_points.txt,sha256=lq1vx6je9uJfnLBVcYWtQKZ8yEZImbqCZ7gSpagWkS8,56
+zalando_kubectl-1.7.3.dist-info/metadata.json,sha256=Bt0Yt0kpoNCA5suSRU_YcRYgkwGdFPkzkS3CRJRqsI0,1294
+zalando_kubectl-1.7.3.dist-info/top_level.txt,sha256=BOXkNQloKWVsPdEkoSHmLTJiV8cD3yVePhnEFhJcNWA,16
