@@ -1,0 +1,3 @@
+[console_scripts]
+evalidate = evalidator.evalidator:command_line
+
