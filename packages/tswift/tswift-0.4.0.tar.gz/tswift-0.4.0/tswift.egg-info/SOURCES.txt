@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+tswift.py
+tswift.egg-info/PKG-INFO
+tswift.egg-info/SOURCES.txt
+tswift.egg-info/dependency_links.txt
+tswift.egg-info/entry_points.txt
+tswift.egg-info/requires.txt
+tswift.egg-info/top_level.txt
