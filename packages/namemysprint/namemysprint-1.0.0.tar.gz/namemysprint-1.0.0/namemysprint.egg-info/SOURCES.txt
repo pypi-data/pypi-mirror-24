@@ -1,0 +1,9 @@
+README.rst
+namemysprint.py
+setup.py
+namemysprint.egg-info/PKG-INFO
+namemysprint.egg-info/SOURCES.txt
+namemysprint.egg-info/dependency_links.txt
+namemysprint.egg-info/entry_points.txt
+namemysprint.egg-info/not-zip-safe
+namemysprint.egg-info/top_level.txt
