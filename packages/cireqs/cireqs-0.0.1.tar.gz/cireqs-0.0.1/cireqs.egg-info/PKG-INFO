@@ -1,0 +1,78 @@
+Metadata-Version: 1.1
+Name: cireqs
+Version: 0.0.1
+Summary: cli tool to verify and update requirements files
+Home-page: https://github.com/trustpilot/python-cireqs
+Author: jgv
+Author-email: jgv@trustpilot.com
+License: UNKNOWN
+Description: cireqs
+        ======
+        
+        Tool to expand and pin requirements files and verify that they are
+        complete.
+        
+        install
+        -------
+        
+        Install from pypi.
+        
+        ``pip install cireqs``
+        
+        usage
+        -----
+        
+        Cireqs uses overridable defaults:
+        
+        -  **dirpath:** set to PWD
+        -  **pythonversion:** set to ``3.5.2``
+        -  **output\_requirements\_filename:** set to ``requirements.txt``
+        -  **input\_requirements\_filename:** set to:
+        -  
+        
+           -  ``requirements.txt`` in ``verify_requirements``
+        
+        -  
+        
+           -  ``requirements_to_expand.txt`` in ``expand_requirements``
+        
+        .. code:: bash
+        
+            cireqs --dirpath /tmp expand_requirements input_requirements_filename output_requirements_filename
+        
+            cireqs verify_requirements input_requirements
+        
+        Use it in your **CI** of choice!!!
+        
+        **travis**
+        
+        .. code:: yaml
+        
+            services:
+              - docker
+        
+            before_script:
+              - pip install cireqs
+        
+            script:
+              - cireqs verify_requirements
+        
+        
+        =======
+        History
+        =======
+        
+        0.0.1 (2017-08-09)
+        ------------------
+        
+        * git init
+        
+Keywords: cireqs requirements ci
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
