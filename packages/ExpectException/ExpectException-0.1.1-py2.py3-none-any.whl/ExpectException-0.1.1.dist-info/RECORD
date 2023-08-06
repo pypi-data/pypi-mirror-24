@@ -1,0 +1,8 @@
+ExpectException-0.1.1.dist-info/DESCRIPTION.rst,sha256=2CaT_kbj0f51LirWQhplP57GoR8Twt4h1IhkBfot75o,84
+ExpectException-0.1.1.dist-info/METADATA,sha256=aXKGPS0Z0hGcqLPbWTe2py6U0htaQ98-mEJtd46s8dc,748
+ExpectException-0.1.1.dist-info/RECORD,,
+ExpectException-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+ExpectException-0.1.1.dist-info/metadata.json,sha256=EOrrLgsgKJnhcFQeUpNHKes_aIY_3tMRIEICkRvtBrk,786
+ExpectException-0.1.1.dist-info/top_level.txt,sha256=NWoGBcxW9EEEnhU8N77l5aRjke75p1B0C6pCyzEC4Rw,16
+expectexception/__init__.py,sha256=gI8XBADogDgBMdVk58cjBQpPjTE7icQ-C1h6cKGSM-M,118
+expectexception/excpectexceptionmagic.py,sha256=8a3Mb58UEHeent0R9zP_gI01nG97o-giTPvmY7c9s-k,1796
