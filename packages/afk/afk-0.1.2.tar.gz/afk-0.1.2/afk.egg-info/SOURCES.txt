@@ -1,0 +1,8 @@
+afk.py
+setup.cfg
+setup.py
+afk.egg-info/PKG-INFO
+afk.egg-info/SOURCES.txt
+afk.egg-info/dependency_links.txt
+afk.egg-info/requires.txt
+afk.egg-info/top_level.txt

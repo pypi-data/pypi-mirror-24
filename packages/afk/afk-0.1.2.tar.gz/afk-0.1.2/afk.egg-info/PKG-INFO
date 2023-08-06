@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: afk
+Version: 0.1.2
+Summary: A command-line tool called afk which gives you a simple reminder when you get back.
+Home-page: UNKNOWN
+Author: Alex Myasoedov
+Author-email: msoedov@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
