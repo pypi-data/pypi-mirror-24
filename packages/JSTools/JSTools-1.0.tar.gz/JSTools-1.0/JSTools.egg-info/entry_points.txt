@@ -1,0 +1,22 @@
+[console_scripts]
+jsbuild = jstools.build:build
+jsmin = jstools.jsmin:minify
+jst = jstools.jst:run
+
+[jstools.compressor]
+default = jstools.jsmin:compressor_plugin
+yui = jstools.yuicompressor:compress [yuicompressor]
+
+[jstools.docs]
+default = jstools.jst [sphinx]
+
+[jstools.jsbuild_command]
+default = jstools.build:default_merge
+
+[paste.app_factory]
+main = jstools.proxy:make_proxy [proxy]
+
+[zc.buildout]
+buildjs = jstools.bo:BuildJS
+default = jstools.bo:BuildJS
+

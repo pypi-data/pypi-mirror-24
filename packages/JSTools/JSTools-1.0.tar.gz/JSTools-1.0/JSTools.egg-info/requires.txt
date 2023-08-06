@@ -1,0 +1,9 @@
+
+[proxy]
+WSGIProxy
+
+[sphinx]
+Jinja2
+
+[yuicompressor]
+Paver
