@@ -1,0 +1,102 @@
+#!python
+
+import random
+import unittest, os, mimetypes, urllib, time
+from smuploader import SmugMug
+
+class TestSmugMug(unittest.TestCase):
+
+    def test_album_creation(self):
+        smugmug = SmugMug(verbose=True)
+
+        albums = smugmug.get_album_names()
+
+        # Let's create a name that doesn't exist yet
+        album_name = 'SmugMug Test Album '
+        index = 1
+        while (album_name + str(index)) in albums:
+            index += 1
+        album_name += str(index)
+
+        # Selecting the last folder
+        folder_name = None
+        folder_names = smugmug.get_folder_names()
+        for folder in folder_names:
+            folder_name = folder
+        self.assertTrue(folder_name != None or len(folder_names) == 0)
+
+        # getting folder id
+        if folder_name != None:
+            folder_id = smugmug.get_folder_id(folder_name)
+            self.assertTrue(folder_id != None)
+
+        # Selecting the last template
+        template_name = None
+        template_names = smugmug.get_template_names()
+        for template in template_names:
+            template_name = template
+        self.assertTrue(template_name != None or len(template_names) == 0)
+
+        # Getting template id
+        template_id = smugmug.get_template_id(template_name)
+        self.assertTrue(template_name == None or template_id != None)
+
+        # Setting a password
+        password = 'TestAlbumPassword'
+
+        # Creating a new album
+        smugmug.create_album(album_name, folder_id=folder_id, template_id=template_id, password=password)
+
+        # Checking that the album was created
+        album_names = smugmug.get_album_names()
+        self.assertTrue(album_name in album_names)
+
+        # Getting the id of the new album
+        album_id = smugmug.get_album_id(album_name)
+        self.assertTrue(album_id != None)
+
+        # Checking album properties
+        album_info = smugmug.get_album_info(album_id)
+        self.assertTrue(album_info['Name'] == album_name)
+        self.assertTrue(album_info['AlbumKey'] == album_id)
+        self.assertTrue(album_info['ImageCount'] == 0)
+        if folder_name != None:
+            self.assertTrue(album_info['UrlPath'].split("/")[1] == folder_id)
+
+        # Let's load the sample image
+        image_path = 'sampleimage.jpg'
+        try:
+            image_data = open(image_path, 'rb').read()
+        except IOError as e:
+            print("I/O error({0}): {1}".format(e.errno, e.strerror))
+            raise
+
+        image_name = os.path.basename(image_path)
+        image_type = mimetypes.guess_type(image_path)[0]
+        smugmug.upload_image(image_data=image_data, image_name=image_name, image_type=image_type, album_id=album_id)
+
+        # Now let's check that the image is in the album
+        album_image_names = smugmug.get_album_image_names(album_id)
+        self.assertTrue(len(album_image_names) == 1)
+        self.assertTrue(image_name in album_image_names)
+
+        album_images = smugmug.get_album_images(album_id)
+        self.assertTrue(len(album_images) == 1)
+
+        # Have to wait a bit
+        time.sleep(20)
+
+        # Dowloading the image
+        image_path2 = 'sampleimage2.jpg'
+        smugmug.download_image(image_info = album_images[0], image_path = image_path2)
+
+        # Checking that the new image is same as the old one
+        try:
+            image_data2 = open(image_path2, 'rb').read()
+        except IOError as e:
+            raise "I/O error({0}): {1}".format(e.errno, e.strerror)
+        self.assertTrue(image_data == image_data2)
+
+
+if __name__ == '__main__':
+    unittest.main()
