@@ -1,0 +1,6 @@
+numpy >= 1.7
+matplotlib
+seaborn
+future
+scipy
+colorama
