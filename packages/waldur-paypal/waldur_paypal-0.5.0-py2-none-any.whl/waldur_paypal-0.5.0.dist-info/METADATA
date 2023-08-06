@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: waldur-paypal
+Version: 0.5.0
+Summary: Waldur PayPal allows to make payments via PayPal
+Home-page: http://waldur.com
+Author: OpenNode Team
+Author-email: info@opennodecloud.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: nodeconductor (>=0.146.2)
+Requires-Dist: paypalrestsdk (>=1.10.0,<2.0)
+Provides-Extra: dev
+Requires-Dist: Sphinx (==1.2.2); extra == 'dev'
+
+Waldur PayPal
+=============
+
+Waldur PayPal allows to make payments via PayPal.
+
+
+
