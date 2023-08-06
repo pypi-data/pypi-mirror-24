@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: pytest-subunit
+Version: 0.0.10
+Summary: pytest-subunit is a plugin for py.test which outputs testsresult in subunit format.
+Home-page: https://github.com/loles/pytest-subunit
+Author: Łukasz Oleś
+Author-email: loles@mirantis.com
+License: Apache 2
+Description: UNKNOWN
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
