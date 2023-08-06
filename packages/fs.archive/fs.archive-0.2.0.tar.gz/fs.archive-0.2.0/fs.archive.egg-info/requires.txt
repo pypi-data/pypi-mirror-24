@@ -1,0 +1,23 @@
+fs~=2.0.7
+six
+fs.proxy
+
+[all]
+pycdlib~=1.2.0
+
+[all:python_version < "3"]
+backports.lzma
+
+[iso]
+pycdlib~=1.2.0
+
+[tar.xz]
+
+[tar.xz:python_version < "3"]
+backports.lzma
+
+[tests]
+coverage
+
+[tests:python_version < "3.4"]
+mock
