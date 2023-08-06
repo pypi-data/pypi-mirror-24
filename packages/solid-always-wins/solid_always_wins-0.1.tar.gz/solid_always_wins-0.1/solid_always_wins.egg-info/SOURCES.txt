@@ -1,0 +1,8 @@
+setup.py
+solid/__init__.py
+solid/octo_functions.py
+solid_always_wins.egg-info/PKG-INFO
+solid_always_wins.egg-info/SOURCES.txt
+solid_always_wins.egg-info/dependency_links.txt
+solid_always_wins.egg-info/not-zip-safe
+solid_always_wins.egg-info/top_level.txt
