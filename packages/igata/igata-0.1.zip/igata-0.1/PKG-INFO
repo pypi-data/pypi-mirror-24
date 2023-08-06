@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: igata
+Version: 0.1
+Summary: JEE Domain Tool and DSL
+Home-page: https://github.com/katthjul/igata
+Author: Jon-Erik Johnzon
+Author-email: jone@torrentkatten.se
+License: MIT
+Description: Java EE domain generation tool with nifty DSL
+Platform: UNKNOWN
