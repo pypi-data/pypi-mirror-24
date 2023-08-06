@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: gfiberspeedtest
+Version: 1.0.0
+Summary: Run a Google Fiber speedtest via cli
+Home-page: https://github.com/johnfrancisgit/gfiberspeedtest_cli
+Author: John Francis
+Author-email: jfswitz@gmail.com
+License: MIT
+Description: Google Fiber Speedtest cli
+        ==========================
+        
+        A simple python module to perform a google fiber speedtest, either by running
+        from the terminal or importing the module into your python project.
+        This module uses a high-level solution, in which the google fiber speedtest
+        webpage is loaded and manipulated with selenium. After the speedtest has 
+        been completed, the results will be scraped and returned.
+        
+        
+Keywords: googlefiber,speedtest
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: Log Analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

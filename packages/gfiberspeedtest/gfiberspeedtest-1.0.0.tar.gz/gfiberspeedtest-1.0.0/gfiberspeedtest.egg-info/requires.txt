@@ -1,0 +1,9 @@
+chromedriver>=2.24.1
+PyVirtualDisplay==0.2.1
+selenium==3.5.0
+
+[dev]
+check-manifest
+
+[test]
+coverage
