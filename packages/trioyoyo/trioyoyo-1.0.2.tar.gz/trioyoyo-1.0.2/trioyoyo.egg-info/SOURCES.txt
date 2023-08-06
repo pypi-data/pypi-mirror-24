@@ -1,0 +1,16 @@
+setup.py
+trioyoyo/__init__.py
+trioyoyo/client.py
+trioyoyo/cmdhandler.py
+trioyoyo/helpers.py
+trioyoyo.egg-info/PKG-INFO
+trioyoyo.egg-info/SOURCES.txt
+trioyoyo.egg-info/dependency_links.txt
+trioyoyo.egg-info/top_level.txt
+trioyoyo/oyoyo/__init__.py
+trioyoyo/oyoyo/client.py
+trioyoyo/oyoyo/cmdhandler.py
+trioyoyo/oyoyo/helpers.py
+trioyoyo/oyoyo/ircevents.py
+trioyoyo/oyoyo/parse.py
+trioyoyo/oyoyo/services.py
