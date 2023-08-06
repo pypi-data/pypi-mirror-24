@@ -1,0 +1,6 @@
+README.rst
+setup.py
+sh_copy.egg-info/PKG-INFO
+sh_copy.egg-info/SOURCES.txt
+sh_copy.egg-info/dependency_links.txt
+sh_copy.egg-info/top_level.txt
