@@ -1,0 +1,6 @@
+[console_scripts]
+torrentmirror = torrentmirror:main
+
+[pbr.config.drivers]
+plain = pbr.cfg.driver:Plain
+
