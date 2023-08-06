@@ -1,0 +1,7 @@
+setup.py
+howto_pypi/__init__.py
+howto_pypi/display.py
+howto_pypi.egg-info/PKG-INFO
+howto_pypi.egg-info/SOURCES.txt
+howto_pypi.egg-info/dependency_links.txt
+howto_pypi.egg-info/top_level.txt
