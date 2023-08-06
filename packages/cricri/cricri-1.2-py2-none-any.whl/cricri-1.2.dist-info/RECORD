@@ -1,0 +1,13 @@
+cricri/__init__.py,sha256=TtYXd39TStMnKuAxtRTOWYy6OvyUAUjipZU7Bzsd3B0,182
+cricri/__version__.py,sha256=lm2iiJshcVLgQqAlV-PmYiDXcDE8pHuSI4xexJVMXi0,45
+cricri/algo.py,sha256=3VvUYuGWUFjC950AObDxuRuSs5y2QQdZpjw_IS6KazA,2997
+cricri/condition.py,sha256=OzMVdizyKiZfhPb_BKX7zzEMHCZjdAgktjpu-eY7Pxc,3489
+cricri/cricri.py,sha256=Ef9w_sbLCoR_HF_ddiedFXYMwZkokuOQwM1cfRdXYgE,22458
+cricri/http_client.py,sha256=eTKzxyAdo7SoDa9OG-uqp4WeXv3lsQDz2uRUn5QPgs0,9203
+cricri/tcp_client.py,sha256=5NYZk7Efol1AFBdUuzqQgek7Cr-LLaiTP_fXiS8tFY4,2298
+cricri-1.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+cricri-1.2.dist-info/METADATA,sha256=iXAPzDaQaZiWh7VuL8yNMbhRionymTk9tcK1EKaQ_EI,690
+cricri-1.2.dist-info/RECORD,,
+cricri-1.2.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+cricri-1.2.dist-info/metadata.json,sha256=Mgk6zylTwJrm069V-alCR4EXRAyB8--dP8GjGhE_KUY,875
+cricri-1.2.dist-info/top_level.txt,sha256=DomyeXKVw-8ZnJ6M54oyveHb1eTFR6oDfl-3oisTqYs,7
