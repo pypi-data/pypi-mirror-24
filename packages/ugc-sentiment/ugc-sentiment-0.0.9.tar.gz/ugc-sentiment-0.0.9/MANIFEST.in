@@ -1,0 +1,4 @@
+include README.md
+
+recursive-include ugc_sentiment/utils *.yaml
+recursive-include ugc_sentiment/docs/model *

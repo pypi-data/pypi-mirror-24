@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ugc-sentiment
+Version: 0.0.9
+Summary: sentiment classifier for ugc comment trained by LSTM with attention machanism.
+Home-page: https://github.com/KillersDeath/ugc-sentiment
+Author: Liujie zhang
+Author-email: liujiezhangbupt@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: sentiment,LSTM,ugc,attention
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
