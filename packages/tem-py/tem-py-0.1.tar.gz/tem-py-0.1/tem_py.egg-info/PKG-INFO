@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: tem-py
+Version: 0.1
+Summary: Python OOP Templating System
+Home-page: https://hrabal.github.io/TemPy/
+Author: Federico Cerchiari
+Author-email: federicocerchiari@gmail.com
+License: LICENSE
+Download-URL: https://github.com/Hrabal/TemPy/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: python3,templating,html,web
+Platform: UNKNOWN
