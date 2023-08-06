@@ -1,0 +1,3 @@
+include autocomplete_widget/static/django-autocomplete-widget.css
+include autocomplete_widget/static/django-widgets.js
+include autocomplete_widget/templates/autocomplete_widget/widget.html
