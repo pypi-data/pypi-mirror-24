@@ -1,0 +1,49 @@
+Metadata-Version: 1.2
+Name: genbox
+Version: 0.1.0
+Summary: input data generator for ``boxmox``
+Home-page: https://boxmodeling.meteo.physik.uni-muenchen.de
+Author: Christoph Knote
+Author-email: christoph.knote@physik.uni-muenchen.de
+License: GPLv3
+Description: =======
+        genbox
+        =======
+        
+        `` genbox`` is the input data generator for ``boxmox``
+        
+        Documentation
+        =============
+        
+        maintained at https://boxmodeling.meteo.physik.uni-muenchen.de/documentation
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install genbox
+        
+        
+        Changelog
+        =========
+        
+        0.1.0 (2017-08-12)
+        ------------------
+        
+        - Initial release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2 :: Only
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Requires-Python: <3
