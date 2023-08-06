@@ -1,0 +1,16 @@
+msrest/__init__.py,sha256=ZfffpxRqPds-4N7QDdqa2QYmyW_r0NyuF193wzBMxWY,1606
+msrest/authentication.py,sha256=5FMTiCBG_Qd-dDfTdVU4ofYyQZbF-Q9dFyFDXY9ZZVQ,4108
+msrest/configuration.py,sha256=gSoQXT68LAiehlkPZTEv5eDrf5Jv_a7zyT9mrwdE4ug,6694
+msrest/exceptions.py,sha256=xrtFKiZG6h9qBFmT1OS3xI5Lff7QtA0A8qIhX18CM7c,5794
+msrest/http_logger.py,sha256=oQgzPZaQ2UXLXk7Jdgth53Y9W5jtoZ__s5aM657UYNs,3846
+msrest/paging.py,sha256=lS6EBAGFZRujT-dArdbCEjTx_lVtWfTOKUD8TaMVRDE,4116
+msrest/pipeline.py,sha256=moX7qgQZ1GQ0PzjjZAOn6XS4kF4gTUsguF3eOlbfYXo,8494
+msrest/serialization.py,sha256=lArnu60Ex9dE3xW2mM80FyJN8nfqSYZX7FqsDWjaU6U,51128
+msrest/service_client.py,sha256=8T7GMo9BziVVz0DlGsEHsuTEmrTIVXtS4whNo1a0w3U,12624
+msrest/version.py,sha256=FjBzHTHRyH_-cCG4vmG_jH-VIFwyEvkkD-daBV9DdoQ,1334
+msrest-0.4.12.dist-info/DESCRIPTION.rst,sha256=AObEPGsO57TS7oMEiAglczaNSQILhL2a2SIr1Tj5XAA,5983
+msrest-0.4.12.dist-info/METADATA,sha256=91k6-ILOv6Q4QG_6hd4J7lOsjOW-ymoLKeZQGQiQLKA,6964
+msrest-0.4.12.dist-info/RECORD,,
+msrest-0.4.12.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+msrest-0.4.12.dist-info/metadata.json,sha256=3MQX1oJE48acyKD-QY8azl6azeLxUJUJi8o__NkpxjE,1086
+msrest-0.4.12.dist-info/top_level.txt,sha256=fTM0WfmxiY5eFZgIwGfhfCMBAq84y9Uw6zfp_Ctbr0s,7
