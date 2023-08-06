@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: todo2
+Version: 1.0.0
+Summary: A python todo generator.
+Home-page: https://github.com/thee-engineer/todo
+Author: Alexandru-Paul Copil (thee-engineer)
+Author-email: alexandru.p.copil@gmail.com
+License: BEERWARE
+Description: justdoit
+        ========
+        ###### Simple TODO list generator
+        
+Keywords: todo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: Freely Distributable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
