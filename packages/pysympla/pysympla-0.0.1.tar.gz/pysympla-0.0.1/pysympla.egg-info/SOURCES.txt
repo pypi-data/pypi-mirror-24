@@ -1,0 +1,9 @@
+setup.py
+pysympla/__init__.py
+pysympla/event.py
+pysympla/sympla.py
+pysympla.egg-info/PKG-INFO
+pysympla.egg-info/SOURCES.txt
+pysympla.egg-info/dependency_links.txt
+pysympla.egg-info/requires.txt
+pysympla.egg-info/top_level.txt
