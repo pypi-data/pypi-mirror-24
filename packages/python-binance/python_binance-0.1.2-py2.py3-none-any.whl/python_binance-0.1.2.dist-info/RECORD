@@ -1,0 +1,12 @@
+binance/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+binance/client.py,sha256=vPNB0AA4ngd7Ni_vT93coby2NHR9WlhwJgyvVanvcNA,10919
+binance/enums.py,sha256=UtX0rDu6zC74PItpHTnqslLqSSeZi91RaSNGpfFYhh4,951
+binance/exceptions.py,sha256=SSlLtqduhc8s5jT_CsCOrKpDN6HFHAF-nmFKMHbG3bc,1872
+binance/validation.py,sha256=ryQ668DXsKfYHBTgL2gMTLKZ6LkbEtyQL5RvkqAjQBo,1507
+binance/websockets.py,sha256=NTZuAyI6Zya-iWPUBXu9pISXxdRw8Bk-t_PwxaBWXps,3320
+python_binance-0.1.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+python_binance-0.1.2.dist-info/METADATA,sha256=5yDnuiO4vsGzeJZYBZd4JqGTQ7Y_PEe0TU69BK0BqKQ,1048
+python_binance-0.1.2.dist-info/RECORD,,
+python_binance-0.1.2.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+python_binance-0.1.2.dist-info/metadata.json,sha256=UBhdBw-msd3Oin5q08fWiOkBCEgXySvp-QrIxHv2EyA,1117
+python_binance-0.1.2.dist-info/top_level.txt,sha256=xMXwvXpjhx_3huR75xLUk8CBjUv0g4S8-TM8cROS1HA,8
