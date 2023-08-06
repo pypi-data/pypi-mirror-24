@@ -1,0 +1,7 @@
+setup.py
+pyshort/__init__.py
+pyshort.egg-info/PKG-INFO
+pyshort.egg-info/SOURCES.txt
+pyshort.egg-info/dependency_links.txt
+pyshort.egg-info/not-zip-safe
+pyshort.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: pyshort
+Version: 1.0
+Summary: A simple python package to generate short code via predefined code and size , also you can add extra strings .
+Home-page: https://github.com/nishowsan/pyshort/
+Author: Adib Mohsin
+Author-email: md.nishow@gmail.com
+License: MIT
+Description: 
+        This is a beta project . 
+        So don't be mean . This is a simple short code generator like !@asd for my Django project . 
+        I just uploaded for you guys so just go easy on this project . 
+        It has no dependency and uses built in modules like random and string .
+        
+Platform: UNKNOWN
