@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+equityscraper.egg-info/PKG-INFO
+equityscraper.egg-info/SOURCES.txt
+equityscraper.egg-info/dependency_links.txt
+equityscraper.egg-info/requires.txt
+equityscraper.egg-info/top_level.txt
