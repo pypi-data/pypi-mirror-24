@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+algolia/__init__.py
+algolia/hackernews.py
+algolia/settings.py
+algolia/tests/__init__.py
+algolia/tests/test_get_item.py
+algolia/tests/test_get_user.py
+pyhnalgolia.egg-info/PKG-INFO
+pyhnalgolia.egg-info/SOURCES.txt
+pyhnalgolia.egg-info/dependency_links.txt
+pyhnalgolia.egg-info/requires.txt
+pyhnalgolia.egg-info/top_level.txt
