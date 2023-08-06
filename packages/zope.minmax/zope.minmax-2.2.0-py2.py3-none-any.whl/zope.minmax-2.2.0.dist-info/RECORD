@@ -1,0 +1,12 @@
+zope.minmax-2.2.0-py2.7-nspkg.pth,sha256=SWEVH-jEWsKYrL0qoC6GBJaStx_iKxGoAY9PQycFVC4,529
+zope/minmax/__init__.py,sha256=3kUubxOWDgzwruZc73stPzzlZ9E3MorYKW7Hpenumho,49
+zope/minmax/_minmax.py,sha256=j0vGroe-I3j3D08Sr2W4ZUiyiwXwgcDHo9A78Z35ZG0,969
+zope/minmax/interfaces.py,sha256=CoQXa_w-BmeEm2pIKunt62CHIpCUQ6H20cywkMAyKgU,364
+zope/minmax/tests.py,sha256=9m0YTKBZ6HmENwvvGanW-3GYRoM6d-fXG2SmuWdc0MQ,3409
+zope.minmax-2.2.0.dist-info/DESCRIPTION.rst,sha256=IMJ9o8NhjyHxlYyrG0hGX697_gn8ruUMdQjzB164b_Y,2290
+zope.minmax-2.2.0.dist-info/METADATA,sha256=5LdED8yOofku6_mGXrMdALuANuU3SJipm8Ph-_bZWbI,3832
+zope.minmax-2.2.0.dist-info/RECORD,,
+zope.minmax-2.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+zope.minmax-2.2.0.dist-info/metadata.json,sha256=lNshcYzMUy9RmDD4AjtLNlNG5pWb9NePl77XnnsOrRg,1571
+zope.minmax-2.2.0.dist-info/namespace_packages.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.minmax-2.2.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
