@@ -1,0 +1,3 @@
+[console_scripts]
+uber = uber.cli:uber
+
