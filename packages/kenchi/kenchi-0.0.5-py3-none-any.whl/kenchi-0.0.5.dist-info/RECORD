@@ -1,0 +1,15 @@
+kenchi/__init__.py,sha256=EcRbsh7PttXnofwjdZt56Z2wAehFKYdWZe56fFuvuRc,203
+kenchi/base.py,sha256=BPnluOdYgiaQS_PjWmeBPrdbVFJGIihlXsM-AwQL1vs,2395
+kenchi/empirical_distribution.py,sha256=BBGHgBjk-rNmHrdAD1lxCgpUmPWw_xYRuEDAxfZwEjk,2418
+kenchi/gaussian_distribution.py,sha256=-4rNkVkQwBq7ZdTTr_U8oHbxwwRET__I2F686vPSOhA,3913
+kenchi/vmf_distribution.py,sha256=QfIr5hLLrIrcQWsmh8dzPP5iaJd40YuJDvqS_u5Vo-M,2702
+kenchi/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kenchi/tests/test_empirical_distribution.py,sha256=lEVUdJrl8Bf9Clwc4AwktpSwpC0BNGP54CJQfbR5Cbw,1139
+kenchi/tests/test_gaussian_distribution.py,sha256=a44Zfm_RtNPYAB-N2JMQA_9pivv3NPyuwG9p9adAuzA,1295
+kenchi/tests/test_vmf_distribution.py,sha256=pCZr6MFaM9AF00osewL9zIQJBaWpDMltaMCMRqplk3w,1218
+kenchi-0.0.5.dist-info/DESCRIPTION.rst,sha256=OCkvgmi722Xcx1NlsDc_63-x70m3bNDSM3xiSAgrCtU,2142
+kenchi-0.0.5.dist-info/METADATA,sha256=a808CWYom9YQF2kfh_d9IAETha45LkU20Ka6jcGZ0uE,2470
+kenchi-0.0.5.dist-info/RECORD,,
+kenchi-0.0.5.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+kenchi-0.0.5.dist-info/metadata.json,sha256=Gd6Vgxh2ziQmj-0zw2MaD6f8HCgx0HhS8wgUcqXDUj0,526
+kenchi-0.0.5.dist-info/top_level.txt,sha256=3s0BR5ujMJCFOuoZ5UE88c89Xg9TWn4qF_scz2rvwUM,7
