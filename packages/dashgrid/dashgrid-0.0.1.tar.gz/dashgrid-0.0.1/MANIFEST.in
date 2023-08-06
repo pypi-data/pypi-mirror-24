@@ -1,0 +1,5 @@
+include dashgrid/bundle.js
+include dashgrid/bundle.js.map
+include dashgrid/metadata.json
+include README.md
+include LICENSE.md

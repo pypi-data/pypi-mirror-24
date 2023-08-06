@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+dashgrid/__init__.py
+dashgrid/bundle.js
+dashgrid/metadata.json
+dashgrid/version.py
+dashgrid.egg-info/PKG-INFO
+dashgrid.egg-info/SOURCES.txt
+dashgrid.egg-info/dependency_links.txt
+dashgrid.egg-info/top_level.txt

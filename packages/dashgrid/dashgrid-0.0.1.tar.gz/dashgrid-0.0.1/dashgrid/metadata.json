@@ -1,0 +1,172 @@
+{
+  "src/components/GridComponent.react.js": {
+    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
+    "methods": [
+      {
+        "name": "onGridReady",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "autoSize",
+            "type": null
+          },
+          {
+            "name": "params",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this compnent in Dash callbacks"
+      },
+      "autoSizeColumns": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "autosize columns"
+      },
+      "gridWidth": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The Width of the grid container"
+      },
+      "gridHeight": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The Height of the grid container"
+      },
+      "columnDefs": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Array of Column Definitions"
+      },
+      "defaultColDef": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A default column definition"
+      },
+      "defaultColGroupDef": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "enableColResize": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "suppressAutoSize": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "autoSizePadding": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "enableSorting": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "enableFilter": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "pivotMode": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "pivotPanelShow": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "showToolPanel": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "rowModelType": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "rowData": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "animateRows": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "domLayout": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "debug": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "enableStatusBar": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  }
+}
