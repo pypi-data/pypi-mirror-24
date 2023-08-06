@@ -1,0 +1,6 @@
+numpy
+six
+sh
+singleton
+PyYAML
+future
