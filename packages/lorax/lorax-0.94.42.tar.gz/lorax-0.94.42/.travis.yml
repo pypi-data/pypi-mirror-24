@@ -1,0 +1,42 @@
+language: python
+python:
+   - "3.5"
+before_install:
+   - curl -L -o lorax_scripts.sh https://raw.githubusercontent.com/LegumeFederation/lorax/master/build_scripts/lorax_scripts.sh
+   - bash lorax_scripts.sh
+   - ./lorax_build.sh init
+   - export root_dir=`python -c 'import sys;print(sys.prefix)'`
+   - ./lorax_build.sh set root_dir $root_dir
+   - ./lorax_build.sh set var_dir ${root_dir}/var
+   - ./lorax_build.sh set tmp_dir ${root_dir}/var/tmp
+   - ./lorax_build.sh set log_dir ${root_dir}/var/log
+   - ./lorax_build.sh set python system
+   - ./lorax_build.sh set raxml system
+   - ./lorax_build.sh set redis system
+   - ./lorax_build.sh set all
+   - ./lorax_build.sh make_dirs
+   - ./lorax_build.sh install
+install:
+   - pip install -U setuptools
+   - pip install -e 'git+https://github.com/LegumeFederation/supervisor.git@4.0.0#egg=supervisor==4.0.0'
+   - pip install .
+   - pip install coveralls
+before_script:
+   - lorax_env lorax config secret_key
+   - lorax_env lorax config secret_key blah
+   - lorax_env lorax config
+   - lorax_env lorax create_instance
+   - lorax_env lorax create_test_files
+   - lorax_env lorax set_htpasswd
+   - lorax_env lorax test_logging
+script:
+   - export LORAX_COVERAGE=1
+   - lorax_env supervisord
+   - while lorax_env supervisorctl status | grep STARTING >/dev/null; do sleep 5; done
+   - lorax_env supervisorctl status
+   - lorax_env lorax rq info
+   - ./test_targets.sh
+   - lorax_env supervisorctl stop lorax
+   - lorax_env supervisorctl shutdown
+after_success:
+   - coveralls
