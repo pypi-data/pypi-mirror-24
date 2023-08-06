@@ -1,0 +1,3 @@
+[console_scripts]
+slackcat = slackcat.__main__:main
+
