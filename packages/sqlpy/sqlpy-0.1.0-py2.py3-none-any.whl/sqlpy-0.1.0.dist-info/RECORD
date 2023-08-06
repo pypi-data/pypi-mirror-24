@@ -1,0 +1,9 @@
+sqlpy/__init__.py,sha256=fre1k-4Idizpn62D1wB2Q41w5Yh5DdRpaYxDrWGRaTQ,83
+sqlpy/sqlpy.py,sha256=13uy4Al2uk9Ib81Ju_d0Pq615zjodTYh8Dhc01sUTXo,10485
+sqlpy-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+sqlpy-0.1.0.dist-info/METADATA,sha256=xu71rJhy0JqmWEFn0gcGhrW41cZj57KwLzbgnyvPiY4,548
+sqlpy-0.1.0.dist-info/RECORD,,
+sqlpy-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+sqlpy-0.1.0.dist-info/entry_points.txt,sha256=Kf89nY9a2AZ-GvJdFefHWdgK7aDO8_y771SVR0MdRBc,44
+sqlpy-0.1.0.dist-info/metadata.json,sha256=MvNffj-H8M1MLnYE9S-qmP8M0gEis_4xUQHdEHLzjGk,852
+sqlpy-0.1.0.dist-info/top_level.txt,sha256=UIObbJJJ1vPNzxHufl4F33BB5gUqmWBMHAqlC9FWR3s,6
