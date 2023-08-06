@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: django-dyn-reports
+Version: 0.9.1
+Summary: A simple database driven reporting engine
+Home-page: https://github.com/dani0805/django_reports
+Author: Daniele Bernardini
+Author-email: db@intranetstandard.com
+License: BSD-3-Clause
+Description: ==============
+        Django Reports
+        ==============
+        
+        This project aim is to provide a simple database driven reporting engine that output json and highcharts formatted data.
+        
+        ----
+        
+Keywords: report bi chart highcharts
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
