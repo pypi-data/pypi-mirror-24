@@ -1,0 +1,3 @@
+[console_scripts]
+gnore = gnore.__main__:main
+
