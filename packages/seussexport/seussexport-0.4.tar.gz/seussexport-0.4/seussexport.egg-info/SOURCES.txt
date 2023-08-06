@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+seussexport/__init__.py
+seussexport/seussexport.py
+seussexport.egg-info/PKG-INFO
+seussexport.egg-info/SOURCES.txt
+seussexport.egg-info/dependency_links.txt
+seussexport.egg-info/requires.txt
+seussexport.egg-info/top_level.txt
