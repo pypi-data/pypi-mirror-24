@@ -1,0 +1,3 @@
+include graynet/atlases/*
+include README.md
+include example_data/freesurfer/*

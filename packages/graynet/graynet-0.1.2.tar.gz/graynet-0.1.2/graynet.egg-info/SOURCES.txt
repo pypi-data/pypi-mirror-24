@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+example_data/freesurfer/subject_list.txt
+graynet/__init__.py
+graynet/__main__.py
+graynet/freesurfer.py
+graynet/graynet.py
+graynet/parcellate.py
+graynet/test_graynet.py
+graynet.egg-info/PKG-INFO
+graynet.egg-info/SOURCES.txt
+graynet.egg-info/dependency_links.txt
+graynet.egg-info/entry_points.txt
+graynet.egg-info/requires.txt
+graynet.egg-info/top_level.txt
