@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: tsputil
+Version: 1.1.0a1
+Summary: Helper functions to work with .tsp and .sol files in the context of the Traveling Salesperson Problem
+Home-page: https://TimRach@bitbucket.org/TimRach/tsp-python.git
+Author: Tim Rach
+Author-email: tim.rach91@gmail.com
+License: CC BY-SA 3.0
+Keywords: TSP utilities
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.5
+
+UNKNOWN
+
+
