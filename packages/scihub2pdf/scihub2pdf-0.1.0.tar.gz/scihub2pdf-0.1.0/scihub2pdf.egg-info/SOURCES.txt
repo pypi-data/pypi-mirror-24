@@ -1,0 +1,12 @@
+MANIFEST.in
+README
+setup.cfg
+setup.py
+scihub2pdf/__init__.py
+scihub2pdf/scihub.py
+scihub2pdf.egg-info/PKG-INFO
+scihub2pdf.egg-info/SOURCES.txt
+scihub2pdf.egg-info/dependency_links.txt
+scihub2pdf.egg-info/requires.txt
+scihub2pdf.egg-info/top_level.txt
+scihub2pdf/bin/scihub2pdf

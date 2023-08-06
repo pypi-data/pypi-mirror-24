@@ -1,0 +1,6 @@
+bibtexparser
+title2bib
+future
+Pillow
+requests
+lxml
