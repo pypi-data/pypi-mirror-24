@@ -1,0 +1,176 @@
+Metadata-Version: 2.0
+Name: dragonflow
+Version: 4.0.0
+Summary: Distributed SDN solution for OpenStack Neutron
+Home-page: https://docs.openstack.org/dragonflow/latest/
+Author: OpenStack
+Author-email: openstack-dev@lists.openstack.org
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: Babel (>=2.3.4,!=2.4.0)
+Requires-Dist: SQLAlchemy (>=1.0.10,!=1.1.6,!=1.1.5,!=1.1.8,!=1.1.7)
+Requires-Dist: WebOb (>=1.7.1)
+Requires-Dist: alembic (>=0.8.10)
+Requires-Dist: cassandra-driver (>=2.1.4,!=3.6.0)
+Requires-Dist: crc16 (>=0.1.1)
+Requires-Dist: etcd3gw (>=0.1.0)
+Requires-Dist: httplib2 (>=0.7.5)
+Requires-Dist: jsonmodels (>=2.1.3)
+Requires-Dist: kazoo (>=2.2)
+Requires-Dist: netaddr (!=0.7.16,>=0.7.13)
+Requires-Dist: neutron-lib (>=1.9.0)
+Requires-Dist: oslo.config (!=4.4.0,>=4.0.0,!=4.3.0)
+Requires-Dist: oslo.db (>=4.24.0)
+Requires-Dist: oslo.i18n (>=2.1.0,!=3.15.2)
+Requires-Dist: oslo.log (>=3.30.0)
+Requires-Dist: oslo.reports (>=0.6.0)
+Requires-Dist: oslo.serialization (>=1.10.0,!=2.19.1)
+Requires-Dist: ovs (>=2.7.0)
+Requires-Dist: ovsdbapp (>=0.4.0)
+Requires-Dist: pbr (!=2.1.0,>=2.0.0)
+Requires-Dist: pyzmq (>=14.3.1)
+Requires-Dist: ryu (>=4.14)
+Requires-Dist: six (>=1.9.0)
+
+========================
+Team and repository tags
+========================
+
+.. image:: https://governance.openstack.org/badges/dragonflow.svg
+    :target: https://governance.openstack.org/reference/tags/index.html
+
+.. Change things from this point on
+
+Distributed SDN-based Neutron Implementation
+
+* Free software: Apache license
+* Homepage:  https://launchpad.net/dragonflow
+* Source: https://git.openstack.org/cgit/openstack/dragonflow
+* Bugs: https://bugs.launchpad.net/dragonflow
+* Documentation: https://docs.openstack.org/dragonflow/latest/
+
+.. image:: https://raw.githubusercontent.com/openstack/dragonflow/master/doc/images/df_logo.png
+    :alt: Solution Overview
+    :width: 500
+    :height: 350
+    :align: center
+
+Overview
+--------
+
+Dragonflow implements Neutron using a lightweight embedded SDN Controller.
+
+Our project mission is *to Implement advanced networking services in a manner
+that is efficient, elegant and resource-nimble*
+
+Distributed Dragonflow
+======================
+
+Comprehensive agentless implementation of the Neutron APIs and advanced
+network services, such as fully distributed Switching, Routing, DHCP
+and more.
+
+This configuration is the current focus of Dragonflow.
+Overview and details are available in the `Distributed Dragonflow Section`_
+
+.. _Distributed Dragonflow Section: https://docs.openstack.org/dragonflow/latest/distributed_dragonflow.html
+
+.. image:: https://raw.githubusercontent.com/openstack/dragonflow/master/doc/images/dragonflow_distributed_architecture.png
+    :alt: Solution Overview
+    :width: 600
+    :height: 525
+    :align: center
+
+Mitaka Version Features
+=======================
+
+* L2 core API
+
+      IPv4, IPv6
+      GRE/VxLAN/STT/Geneve tunneling protocols
+      L2 Population
+
+* Distributed L3 Virtual Router
+
+* Distributed DHCP
+
+* Distributed DNAT
+
+* Security Groups Using OVS and Connection tracking
+
+* Pluggable Distributed Database
+
+      Supported databases:
+
+      Stable:
+
+          ETCD, RAMCloud, Redis, Zookeeper
+
+      In progress:
+
+            RethinkDB
+
+* Pluggable Publish-Subscribe
+
+         ZeroMQ, Redis
+
+* Selective DB Distribution
+
+    Tenant Based Selective data distribution to the compute nodes
+
+Experimental Mitaka Features
+============================
+
+    * Local Controller Reliability
+
+In progress
+===========
+
+  * IGMP Distributed application
+  * Allowed Address Pairs
+  * Port Security
+  * DHCP DOS protection
+  * Distributed Meta Data Service
+  * Kuryr integration
+  * Local Controller HA
+  * ML2 Driver, hierarchical Port Binding
+  * VLAN L2 Networking support
+  * Smart broadcast/multicast
+
+In planning
+===========
+
+  * Distributed Load Balancing (East/West)
+  * DNS service
+  * Port Fault detection
+  * Dynamic service  chaining (service Injection)
+  * SFC support
+  * Distributed FWaaS
+  * Distributed SNAT
+  * VPNaaS
+
+Configurations
+==============
+
+To generate the sample dragonflow configuration files, run the following
+command from the top level of the dragonflow directory:
+
+tox -e genconfig
+
+If a 'tox' environment is unavailable, then you can run the following script
+instead to generate the configuration files:
+
+./tools/generate_config_file_samples.sh
+
+
+

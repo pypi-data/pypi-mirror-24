@@ -1,0 +1,66 @@
+[console_scripts]
+df-bgp-service = dragonflow.cmd.eventlet.df_bgp_service:main
+df-db = dragonflow.cli.df_db:main
+df-l3-agent = dragonflow.cmd.eventlet.df_l3_agent:main
+df-local-controller = dragonflow.cmd.eventlet.df_local_controller:main
+df-metadata-service = dragonflow.cmd.eventlet.df_metadata_service:main
+df-publisher-service = dragonflow.cmd.eventlet.df_publisher_service:main
+
+[dragonflow.controller.apps]
+active_port_detection = dragonflow.controller.apps.active_port_detection:ActivePortDetectionApp
+aging = dragonflow.controller.apps.aging:AgingApp
+chassis_snat = dragonflow.controller.apps.chassis_snat:ChassisSNATApp
+classifier = dragonflow.controller.apps.classifier:ClassifierApp
+dhcp = dragonflow.controller.apps.dhcp:DHCPApp
+dnat = dragonflow.controller.apps.dnat:DNATApp
+fc = dragonflow.controller.apps.fc:FcApp
+l2 = dragonflow.controller.apps.l2:L2App
+l3_proactive = dragonflow.controller.apps.l3_proactive:L3ProactiveApp
+l3_reactive = dragonflow.controller.apps.l3_reactive:L3ReactiveApp
+legacy_snat = dragonflow.controller.apps.legacy_snat:LegacySNatApp
+metadata_service = dragonflow.controller.apps.metadata_service:MetadataServiceApp
+migration = dragonflow.controller.apps.migration:MigrationApp
+portbinding = dragonflow.controller.apps.portbinding:PortBindingApp
+portqos = dragonflow.controller.apps.portqos:PortQosApp
+portsec = dragonflow.controller.apps.portsec:PortSecApp
+provider = dragonflow.controller.apps.provider:ProviderApp
+sfc = dragonflow.controller.apps.sfc:SfcApp
+sg = dragonflow.controller.apps.sg:SGApp
+trunk = dragonflow.controller.apps.trunk:TrunkApp
+tunneling = dragonflow.controller.apps.tunneling:TunnelingApp
+
+[dragonflow.nb_db_driver]
+cassandra_nb_db_driver = dragonflow.db.drivers.cassandra_db_driver:CassandraDbDriver
+etcd_nb_db_driver = dragonflow.db.drivers.etcd_db_driver:EtcdDbDriver
+ramcloud_nb_db_driver = dragonflow.db.drivers.ramcloud_db_driver:RamCloudDbDriver
+redis_nb_db_driver = dragonflow.db.drivers.redis_db_driver:RedisDbDriver
+zookeeper_nb_db_driver = dragonflow.db.drivers.zookeeper_db_driver:ZookeeperDbDriver
+
+[dragonflow.neutron_notifier_driver]
+nb_api_neutron_notifier_driver = dragonflow.db.pubsub_drivers.nb_api_neutron_notifier:NbApiNeutronNotifier
+
+[dragonflow.pubsub_driver]
+redis_db_pubsub_driver = dragonflow.db.pubsub_drivers.redis_db_pubsub_driver:RedisPubSub
+zmq_pubsub_driver = dragonflow.db.pubsub_drivers.zmq_pubsub_driver:ZMQPubSub
+zmq_pubsub_multiproc_driver = dragonflow.db.pubsub_drivers.zmq_pubsub_driver:ZMQPubSubMultiproc
+
+[networking_sfc.flowclassifier.drivers]
+dragonflow = dragonflow.neutron.services.flowclassifier.driver:DfFlowClassifierDriver
+
+[networking_sfc.sfc.drivers]
+dragonflow = dragonflow.neutron.services.sfc.driver:DfSfcDriver
+
+[neutron.db.alembic_migrations]
+dragonflow = dragonflow.db.neutron.migration:alembic_migrations
+
+[neutron.ml2.mechanism_drivers]
+df = dragonflow.neutron.ml2.mech_driver:DFMechDriver
+
+[neutron.service_plugins]
+df-bgp = dragonflow.neutron.services.bgp.bgp_plugin:DFBgpPlugin
+df-l3 = dragonflow.neutron.services.l3_router_plugin:DFL3RouterPlugin
+df-l3-agentless = dragonflow.neutron.services.l3_router_plugin:DFL3AgentlessRouterPlugin
+
+[oslo.config.opts]
+dragonflow.conf = dragonflow.conf.opts:list_opts
+
