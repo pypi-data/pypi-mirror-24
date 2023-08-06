@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: investmentutility
+Version: 0.1.2
+Summary: Useful functions for building investment applications.
+Home-page: https://github.com/JamesWhiteleyIV/Investment-Utility
+Author: James Whiteley IV
+Author-email: jameswhiteleyiv@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: investment utility pandas
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
