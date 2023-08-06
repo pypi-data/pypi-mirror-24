@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.py
+src/py_blueprints/__init__.py
+src/py_blueprints.egg-info/PKG-INFO
+src/py_blueprints.egg-info/SOURCES.txt
+src/py_blueprints.egg-info/dependency_links.txt
+src/py_blueprints.egg-info/not-zip-safe
+src/py_blueprints.egg-info/requires.txt
+src/py_blueprints.egg-info/top_level.txt
+src/py_blueprints/test_endpoint/__init__.py
+src/py_blueprints/test_endpoint/blueprint.py
