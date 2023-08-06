@@ -1,0 +1,15 @@
+Manage Projects
+******************************************
+
+ Examples:
+
+ $ lt project list
+ $ lt project create -p myProject [--runtime nodejs6.10]
+ $ lt project delete -p myProject
+ $ lt project deploy -p myProject [--rolename arn:xxx:yyyy]
+ $ lt project undeploy -p myProject
+ $ lt project deploy-all [--rolename arn:xxx:yyyy]
+ $ lt project undeploy-all
+ $ lt project import -p myAwsProject
+ $ lt project import-all
+ $ lt project list-aws
