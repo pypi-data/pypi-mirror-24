@@ -1,0 +1,10 @@
+[console_scripts]
+batch_match_pf = tls_occlusion.command_line:batch_match_pf
+batch_pc_correction = tls_occlusion.command_line:batch_pc_correction
+convert_hips = tls_occlusion.command_line:convert_hips
+match_pf = tls_occlusion.command_line:match_pf
+matmap2facets = tls_occlusion.command_line:matmap2facets
+parse_obj_clone = tls_occlusion.command_line:parse_obj_clone
+parse_obj_matmap = tls_occlusion.command_line:parse_obj_matmap
+pc_correction = tls_occlusion.command_line:pc_correction
+
