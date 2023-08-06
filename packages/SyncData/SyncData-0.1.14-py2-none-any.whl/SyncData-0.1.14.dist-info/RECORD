@@ -1,0 +1,12 @@
+SyncData-0.1.14.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+SyncData-0.1.14.dist-info/METADATA,sha256=bp_rr-0zd6UZs7ZMIPvsBV8bUOspnWlXOJNEym8xRI8,312
+SyncData-0.1.14.dist-info/RECORD,,
+SyncData-0.1.14.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+SyncData-0.1.14.dist-info/metadata.json,sha256=SFnxMFJxXMqyGOxYQbXYwtjnre6G3_-BL9Ooj_cKIvE,511
+SyncData-0.1.14.dist-info/top_level.txt,sha256=d7sUmUY9K4UQpdpCSP7_lYVZwlpzNjkK2n6k-inRcSM,9
+syncdata/__init__.py,sha256=T590yLS8aQ_AAcrYIjKXhbFGgrfAFiPYDh0H-_dWzag,174
+syncdata/models.py,sha256=R_mmNj84dZSYFMNo3-VutWHnrWkBziD3FHMRqjEZ3iY,1174
+syncdata/syncdata.py,sha256=CLGFK2-bYrGa-CZC8nfL4Db7wkjYt0B4CMW9sUk7ktk,2827
+syncdata/services/__init__.py,sha256=75bkVBtR0Q1DCf5BskfZMc5KbAyRJ3utjn-3i2mKDf8,225
+syncdata/services/execute_log.py,sha256=8lV9FI7aihHXALbHtb7XBotcT6ciAjjp0-Uh3rLDu74,1280
+syncdata/services/sync_data.py,sha256=I6oVTusGAwyxAiSZG3dHajmg811KYBKC5T1Xf3SLSvc,1574
