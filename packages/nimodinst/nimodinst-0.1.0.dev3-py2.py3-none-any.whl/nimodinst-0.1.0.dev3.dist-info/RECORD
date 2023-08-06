@@ -1,0 +1,13 @@
+nimodinst/__init__.py,sha256=8yaoqK7V9t6ojXiHpeJsFW4gxn5XA2JqMgl2ky8ExKI,207
+nimodinst/ctypes_library.py,sha256=U931MnFMBYGROFsQdKNaOXtKTUeo8TvAvKg8wry175I,4652
+nimodinst/ctypes_types.py,sha256=LY0GmIxcSUle-FRz-hmY4H05wBhXuakUIRNBK06T4c8,1345
+nimodinst/errors.py,sha256=T-pyO24p2VYUc4w8i6TGlttwh0IKEu1ewwfpCjXPEVk,1988
+nimodinst/library.py,sha256=QQPYWN91xC0tdtHckIrmx6wiqV5ZoSsrV6Og9soYZMI,1488
+nimodinst/python_types.py,sha256=1EHNJlmZTdCZ_88wbt_5AuWlumoXvZJ_nfyTZV2xV1I,1471
+nimodinst/session.py,sha256=RW5dDZWd3WBofqQIm8Olnu_TZYYDw3g8oj5VlZ4qNAY,10633
+nimodinst-0.1.0.dev3.dist-info/DESCRIPTION.rst,sha256=jYF9zpAoeQJ-bU3Q9RZEN7HhWD-R-5LWLI3sxf-vLLo,7403
+nimodinst-0.1.0.dev3.dist-info/METADATA,sha256=RCvQk_rDg4Ap8SOZNNZhZ5qsJN62E7uHQMZdOUWf9ro,8524
+nimodinst-0.1.0.dev3.dist-info/RECORD,,
+nimodinst-0.1.0.dev3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+nimodinst-0.1.0.dev3.dist-info/metadata.json,sha256=BiuGfmOpKz7FisxVFEGd1ywB8W7c4JZkMxUcUqFxHXk,1287
+nimodinst-0.1.0.dev3.dist-info/top_level.txt,sha256=sLCEUkb1uYhdgHiaDiCOzW5KI9LaGNIYXzoxD1Ai3Lc,10
