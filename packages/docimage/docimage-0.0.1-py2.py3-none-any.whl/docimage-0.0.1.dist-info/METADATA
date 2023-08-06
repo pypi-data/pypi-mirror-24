@@ -1,0 +1,79 @@
+Metadata-Version: 2.0
+Name: docimage
+Version: 0.0.1
+Summary: .
+Home-page: https://github.com/vedavaapi/docimage
+Author: Sanskrit programmers
+Author-email: sanskrit-programmers@googlegroups.com
+License: MIT
+Keywords: sanskrit schema samskrtam samskritam
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: sanskrit-data
+Requires-Dist: scikit-image
+Requires-Dist: scipy
+Provides-Extra: test
+Requires-Dist: matplotlib; extra == 'test'
+
+Introduction
+============
+
+A library to process document images (with particular focus on Indic
+languages).
+
+Usage
+-----
+
+-  Please see the generated python sphynx docs in one of the following
+   places:
+
+   -  `project
+      page <https://vedavaapi.github.io/docimage/build/html/docimage.html>`__.
+   -  http://docimage.readthedocs.io
+   -  under docs/\_build/html/index.html
+
+-  Design considerations for data containers corresponding to the
+   various submodules (such as books and annotations) are given below -
+   or in the corresponding source files.
+
+For contributors
+================
+
+Contact
+-------
+
+Have a problem or question? Please head to
+`github <https://github.com/vedavaapi/docimage>`__.
+
+Packaging
+---------
+
+-  ~/.pypirc should have your pypi login credentials.
+
+   ::
+
+       python setup.py bdist_wheel
+       twine upload dist/* --skip-existing
+
+Document generation
+-------------------
+
+-  Sphynx html docs can be generated with ``cd docs; make html``
+-  http://docimage.readthedocs.io/en/latest/docimage.html should
+   automatically have good updated documentation - unless there are
+   build errors.
+
+
