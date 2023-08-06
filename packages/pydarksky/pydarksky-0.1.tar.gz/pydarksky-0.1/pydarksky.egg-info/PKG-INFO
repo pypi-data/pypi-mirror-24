@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pydarksky
+Version: 0.1
+Summary: Python wrapper for darksky.net weather service
+Home-page: https://github.com/PvtHaggard/pydarksky
+Author: PvtHaggard
+Author-email: pvthaggard@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
