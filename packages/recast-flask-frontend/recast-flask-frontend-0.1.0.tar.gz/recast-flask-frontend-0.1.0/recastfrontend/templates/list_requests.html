@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block container %}
+
+<div class="container">
+  <h3> Requests </h3>
+
+  {% if requests %}
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead>
+	<tr>
+	  <th>Request Name</th>
+	  <th>Requester</th>
+	  <th>Status</th>
+	</tr>
+      </thead>
+      <tbody>
+	
+	{% for request in requests %}
+	
+	<tr class="active">
+	  <td> <a href="{{ url_for('.request_view', id=request.id) }}">{{ request.title }}</a></td>
+	  <td> {{ request.requester.name }} </td>
+	  <td> {{ request.status }}</td>
+	</tr>
+	
+	{% endfor %}
+      </tbody>
+  </div>
+  {% else %}
+   <p> This analysis has no requests </p>
+  {% endif %}
+  
+</div>
+
+{% endblock %}
+    
+    
+      

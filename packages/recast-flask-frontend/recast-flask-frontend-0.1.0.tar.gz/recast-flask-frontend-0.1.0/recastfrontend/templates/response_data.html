@@ -1,0 +1,26 @@
+<div class="col-md-8">
+  <div class="col-md-12" ng-controller="ParameterViewCtrl as ctrl">
+    <div class="col-md-12">
+  	    <table class="table">
+          <thead>
+            <td>-2σ</td>
+            <td>-1σ</td>
+            <td>CLs exp.</td>
+            <td>+1σ</td>
+            <td>+2σ</td>
+            <td>CLs obs.</td>
+            <td>LogL</td>
+          </thead>
+      		<tbody>
+        			<td>{{ pointresponse.lower_2sig_expected_CLs }}</td>
+        			<td>{{ pointresponse.lower_1sig_expected_CLs }}</td>
+        			<td>{{ pointresponse.expected_CLs }}</td>
+        			<td>{{ pointresponse.upper_1sig_expected_CLs }}</td>
+        			<td>{{ pointresponse.upper_2sig_expected_CLs }}</td>
+        			<td>{{ pointresponse.observed_CLs }}</td>
+        			<td>{{ pointresponse.log_likelihood_at_reference }}</td>
+      		</tbody>
+  	    </table>
+  	</div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+Flask==0.10.1
+Flask-Login
+Flask-SQLAlchemy
+Flask-WTF
+flask-api
+click
+pyyaml
+celery
+redis
+IPython==5.1.0
+recast-database
+requests
+boto3
+elasticsearch
+psycopg2

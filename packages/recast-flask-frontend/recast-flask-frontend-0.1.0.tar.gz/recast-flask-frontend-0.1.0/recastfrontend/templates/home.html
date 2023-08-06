@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RECAST - An Analysis Reinterpretation Framework</title>
+
+
+    <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" type="image/png" href="{{url_for('static',filename='img/recast.ico')}}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/base.css">
+    <link rel="stylesheet" href="../static/home.css">
+
+</head>
+<body>
+
+{% include "nav.html" %}
+
+<div class="clearfix"></div>
+
+
+
+
+<div class="hero-content container-fluid">
+    <div class="row-fluid">
+      {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+          {% for category,message in messages %}
+          <div class="alert alert-{{category}} col-md-6" role="alert">
+            <strong> {{message}} </strong>
+          </div>
+          {% endfor %}
+          {% endif %}
+      {% endwith %}
+
+        <div class="col-md-9 col-sm-9">
+            <h4>A framework for extending the impact of existing
+                analyses performed by high-energy physics experiments.</h4>
+
+            <br/>
+            <a href="/analyses" class="btn btn-md btn-info">View Analyses</a>
+            <span>&nbsp;</span>
+            <a href="/requests" class="btn btn-md btn-info">View Current
+                Requests</a>
+        </div>
+        <div class="col-md-3 col-sm-3 hidden-xs">
+            <img src="../static/img/recast-atom.svg" width="100%">
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+
+
+<div class="container-fluid home-usp">
+    <div class="row-fluid text-center">
+
+        <h3>How it works</h3>
+        <br/>
+
+        <div class="row-fluid usp" id="request">
+
+            <div class="col-md-1 hidden-xs hidden-sm"></div>
+            <div class="col-sm-5 col-md-3 hidden-xs">
+                <img src="../static/img/recast-submit.svg" width="100%">
+            </div>
+            <div class="col-sm-7 col-md-7 text-left usp-text">
+                <h4>Request</h4>
+                <p>Upload alternative signals in the LHE format and request
+                    that
+                    any
+                    given analysis is "recast" for an alternative model.</p>
+
+                <p class="text-muted">Note: this is a request, there is no
+                    obligation
+                    for the experiments to respond.</p>
+            </div>
+            <div class="col-md-1 hidden-xs hidden-sm"></div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row-fluid usp" id="subscribe">
+
+            <div class="col-md-1 hidden-xs hidden-sm"></div>
+            <div class="col-sm-5 col-md-3 hidden-xs">
+                <img src="../static/img/recast-subscribe.svg" width="100%">
+            </div>
+            <div class="col-sm-7 col-md-7 text-left usp-text">
+                <h4>Subscribe</h4>
+                <p>Anyone can subscribe to an analysis to be informed of
+                    activity associated with the analysis</p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row-fluid usp" id="subscribe">
+
+            <div class="col-md-1"></div>
+            <div class="col-sm-5 col-md-3 hidden-xs">
+                <img src="../static/img/recast-review.svg" width="100%">
+            </div>
+            <div class="col-sm-7 col-md-7 text-left usp-text">
+                <h4>Recast</h4>
+                <p>Experimentalists can accept the request, process these
+                    alternative signals with the full simulation,
+                    reconstruction, and analysis selection.</p>
+
+                <p>If authorized by their collaboration, they can respond with
+                    an authoritative result for the selection efficiency and
+                    cross-section limits for the alternative signal.</p>
+
+                <p class="text-muted">Note, anyone can provide a non-authoritative result, for instance one based on a phenomenological recasting tool.</p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<br/>
+{% include "footer.html" %}
+
+</body>
+</html>

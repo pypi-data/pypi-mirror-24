@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	     {% include "head.html" %}
+    </head>
+
+<body ng-app="recastApp">
+
+{% include "nav.html" %}
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+<div class="container">
+  <div class="row col-md-12" style="padding: 0; padding-top: 80px; margin-bottom:-60px;">
+    {% for category,message in messages %}
+    <div class="alert alert-{{category}}" role="alert">
+      <strong> {{message}} </strong>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+</div>
+{% endwith %}
+
+
+<div style="padding: 0; padding-top: 70px;">
+
+    {% block container %}
+    {% endblock %}
+
+</div>
+
+<br><br><br><br>
+
+{% include "footer.html" %}
+
+<script type="text/javascript">
+
+    $('#nav').affix({
+	offset: {
+	    top: $('header').height()
+	}
+    });
+
+</script>
+<script type="text/javascript" src="../static/recast.js"></script>
+</body>
+</html>

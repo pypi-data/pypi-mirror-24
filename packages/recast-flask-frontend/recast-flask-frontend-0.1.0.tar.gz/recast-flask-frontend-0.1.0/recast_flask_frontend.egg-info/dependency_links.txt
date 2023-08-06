@@ -1,0 +1,2 @@
+https://github.com/recast-hep/recast-database/tarball/master#egg=recast-database-0.1.0
+https://github.com/cbora/recast-search/tarball/master#egg=recast-search-0.1.0

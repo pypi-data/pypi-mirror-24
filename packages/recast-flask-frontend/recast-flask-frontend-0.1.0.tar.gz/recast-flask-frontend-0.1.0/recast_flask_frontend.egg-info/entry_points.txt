@@ -1,0 +1,4 @@
+[console_scripts]
+recast-frontend = recastfrontend.frontendcli:frontendcli
+recast-frontend-admin = recastfrontend.admincli:admincli
+
