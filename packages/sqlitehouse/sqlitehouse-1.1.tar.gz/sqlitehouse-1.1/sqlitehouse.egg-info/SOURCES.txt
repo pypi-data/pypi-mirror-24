@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+sqlitehouse.py
+sqlitehouse.egg-info/PKG-INFO
+sqlitehouse.egg-info/SOURCES.txt
+sqlitehouse.egg-info/dependency_links.txt
+sqlitehouse.egg-info/top_level.txt
