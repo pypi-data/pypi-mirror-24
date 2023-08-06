@@ -1,0 +1,6 @@
+keras
+gensim
+spacy
+h5py
+sense2vec
+tensorflow
