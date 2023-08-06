@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: Flask-Settings
+Version: 0.0.1
+Summary: Flask settings extension is similar to Django settings.
+Home-page: https://github.com/left-join/flask-settings
+Author: left-join
+Author-email: left-join@riseup.net
+License: MIT
+Download-URL: https://github.com/left-join/flask-settings.git
+Description: UNKNOWN
+Keywords: flask,settings
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
