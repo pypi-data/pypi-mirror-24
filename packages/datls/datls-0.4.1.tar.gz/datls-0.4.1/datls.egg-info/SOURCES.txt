@@ -1,0 +1,11 @@
+setup.py
+datls/__init__.py
+datls/cli.py
+datls.egg-info/PKG-INFO
+datls.egg-info/SOURCES.txt
+datls.egg-info/dependency_links.txt
+datls.egg-info/namespace_packages.txt
+datls.egg-info/requires.txt
+datls.egg-info/top_level.txt
+datls.egg-info/zip-safe
+scripts/datls
