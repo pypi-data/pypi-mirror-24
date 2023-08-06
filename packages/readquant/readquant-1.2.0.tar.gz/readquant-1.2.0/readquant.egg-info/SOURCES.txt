@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+readquant/__init__.py
+readquant/data.py
+readquant/parse.py
+readquant/utils.py
+readquant.egg-info/PKG-INFO
+readquant.egg-info/SOURCES.txt
+readquant.egg-info/dependency_links.txt
+readquant.egg-info/requires.txt
+readquant.egg-info/top_level.txt
+scripts/fetch_reference.py
+scripts/gather_bio_qc.py
+scripts/gather_expression.py
+scripts/gather_tech_qc.py
