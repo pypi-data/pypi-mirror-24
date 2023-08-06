@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+
+    <link href="/css/front-page.css"
+      rel="stylesheet">
+  </head>
+
+
+
+	<section class="orange-banner tile_features" tal:condition="context/front-page1">
+            <div class="banner-txt txt-align-left">
+              <h1 tal:content="context/front-page1/Title" />
+            <p class="documentDescription" tal:content="context/front-page1/Description" />
+             <p tal:replace="structure context/front-page1/text/output">Tekst goes here.</p>
+              <a data-scroll="" href="contact" 
+                class="btn btn-contact">Kontakt</a> 
+            </div>
+            <div class="banner-txt txt-align-right">    
+         	 <img  tal:define="item_url context/front-page1/absolute_url; 
+					image_url python:item_url + '/@@images/image'"
+					class="img-responsive" alt="image" src=""
+					tal:attributes="src image_url">
+            </div>
+      </section>
+     
+      </section>
+      <section class="tile_features" tal:condition="context/front-page2">
+           <div class="txt-align-right">
+            <h2 tal:content="context/front-page2/Title">Title</h2>
+            <p class="documentDescription" tal:content="context/front-page2/Description" />
+            <p tal:replace="structure context/front-page2/text/output">Tekst goes here.</p>
+          </div>
+          <div class="txt-align-left">
+            <img  tal:define="item_url context/front-page2/absolute_url; 
+					image_url python:item_url + '/@@images/image'"
+					class="img-responsive" alt="image" src=""
+					tal:attributes="src image_url">
+          </div>
+            <div class="clearall" />
+      </section>
+
+      <section class="tile_features gray-background" tal:condition="context/front-page3">
+           <div class="txt-align-left ">
+            <h2 tal:content="context/front-page3/Title">Title</h2>
+            <p class="documentDescription" tal:content="context/front-page3/Description" />
+            <p tal:replace="structure context/front-page3/text/output">Tekst goes here.</p>
+          </div>
+          <div class="txt-align-right">
+            <img  tal:define="item_url context/front-page3/absolute_url; 
+					image_url python:item_url + '/@@images/image'"
+					class="img-responsive" alt="image" src=""
+					tal:attributes="src image_url">
+          </div>
+           <div class="clearall" />
+      </section>
+      
+    <section class="tile_features" tal:condition="front-page4" tal:condition="context/front-page4">
+            <h2 tal:content="context/front-page4/Title">Title</h2>
+             <p class="documentDescription" tal:content="context/front-page4/Description" />
+            <p tal:replace="structure context/front-page4/text/output">Tekst goes here.</p>
+            <img  tal:define="item_url context/front-page4/absolute_url; 
+					image_url python:item_url + '/@@images/image'"
+					class="img-responsive" alt="image" src=""
+					tal:attributes="src image_url">
+     </section>
+
+
+</html>

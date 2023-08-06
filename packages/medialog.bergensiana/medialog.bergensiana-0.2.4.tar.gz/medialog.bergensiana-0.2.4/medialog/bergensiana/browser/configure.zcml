@@ -1,0 +1,58 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="medialog.spacetectheme">
+    
+  <browser:page
+  	for="*"
+  	name="visual_sitemap"
+  	class=".visual_sitemap.VisualSitemapView"
+  	template="visual_sitemap.pt"
+  	permission="zope.Public"
+  	allowed_interface="Products.CMFPlone.browser.interfaces.ISitemapView"
+  	/>
+
+
+  <browser:page
+  	for="*"
+  	name="menu_sitemap"
+  	class=".menu_sitemap.SitemapView"
+  	template="menu_sitemap.pt"
+  	permission="zope.Public"
+  	allowed_interface="Products.CMFPlone.browser.interfaces.ISitemapView"
+  	/>
+
+
+  <browser:page
+  	for="*"
+  	name="mobile_sitemap"
+  	class=".menu_sitemap.SitemapView"
+  	template="mobile_sitemap.pt"
+  	permission="zope.Public"
+  	allowed_interface="Products.CMFPlone.browser.interfaces.ISitemapView"
+  	/>
+
+  <browser:page
+  	for="*"
+  	name="left_sitemap"
+  	class=".left_sitemap.SitemapView"
+  	template="left_sitemap.pt"
+  	permission="zope.Public"
+  	allowed_interface="Products.CMFPlone.browser.interfaces.ISitemapView"
+  	/>
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <!--browser:jbot
+      directory="overrides"
+      layer="medialog.bergensiana.interfaces.IBergensianaLayer"
+      /-->
+
+  <!-- Publish static files -->
+  <!--browser:resourceDirectory
+      name="medialog.spacetectheme"
+      directory="static"
+      /-->
+
+</configure>

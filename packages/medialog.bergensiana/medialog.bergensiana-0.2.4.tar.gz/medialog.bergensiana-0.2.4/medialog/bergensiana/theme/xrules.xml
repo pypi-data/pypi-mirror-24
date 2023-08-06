@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+       
+	   <xi:include href="++theme++barceloneta/rules.xml" />
+       <theme href="++theme++barceloneta/index.html" />
+       <notheme css:if-not-content="#visual-portal-wrapper" />
+          
+       <!-- sitemap for navigation -->
+  		<!--replace css:theme="#mainnavigation"    css:content="#portal-left-sitemap"     href="/@@left_sitemap" /--> 
+  		<!--replace css:theme="#mainnavigation"    css:content="#portal-mobile-sitemap"     href="/@@mobile_sitemap" /--> 
+  		<replace css:theme="#mainnavigation"    css:content="#portal-menu-sitemap"     href="/@@menu_sitemap" /> 
+      	<!--replace css:theme="#mainnavigation"   css:content="#visual-sitemap"     href="/@@visual_sitemap" /--> 
+      		
+      	<!-- david lima suggestion -->
+      	<replace css-content="#content"><xsl:attribute name="class"><xsl:value-of select="."/> mynew classes</xsl:attribute></replace>
+      	
+      	<!-- vicondin suggestion suggestion -->
+      	<xsl:template match="//form//div/@class[contains(.,'field')]">
+ 			<xsl:attribute name="class">
+ 			 <xsl:value-of select="." /> my class
+ 			</xsl:attribute>
+			 </xsl:template>
+			 
+			<!-- dylan jay suggestion: -->
+		 <!-- div[!.//div[@class=...]] type xpath. -->
+
+	<!-- and something else -->
+    <xsl:template match="//dl[contains(@class,'portlet-collection-links')]//a">
+      <a target="_blank"><xsl:apply-templates select="./@*[contains(' href title class rel ', concat(' ', name(), ' '))]"/><xsl:value-of select="." /></a>
+    </xsl:template>
+    
+</rules>

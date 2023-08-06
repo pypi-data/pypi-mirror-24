@@ -1,0 +1,24 @@
+<section id="our-tools"
+		 tal:define="folder_is nocall:context|nothing">
+    <div class="container"  tal:condition="folder_is">
+    		<link rel="stylesheet"  href="../++theme++bergensiana/css/our-tools.css" />
+            <div class="tool-items">
+				<div tal:repeat="item  
+				        context/@@contentlisting"
+                    	class="tool-item">
+					
+					<div class="fa" tal:define="item_url item/getURL|item/absolute_url">
+						<a href="#" tal:attributes="href item_url">
+	 						<i><span  tal:replace="structure item/iconfield/@@iconload" 
+						            tal:condition="exists:item/iconfield" /></i>
+						 	<i class="fa fa-info" 
+								tal:condition="not:exists:item/iconfield" />
+							<h1 class="tool-heading" tal:content="item/Title" />
+                        </a>
+						<p tal:content="item/Description" />
+                    </div>
+                </div>
+            </div>
+    	</div>
+</section>
+

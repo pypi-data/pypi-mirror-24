@@ -1,0 +1,21 @@
+ 
+
+
+
+<model xmlns:form="http://namespaces.plone.org/supermodel/form" 
+xmlns:i18n="http://xml.zope.org/namespaces/i18n" 
+xmlns:lingua="http://namespaces.plone.org/supermodel/lingua" 
+xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" 
+xmlns="http://namespaces.plone.org/supermodel/schema" i18n:domain="plone">
+  <schema>
+    <field name="b_folder" type="z3c.schema.Choice">
+      <description/>
+      <title>folder</title>
+       <source>
+        CatalogSource(portal_type=['Folder',])
+        </source>
+      </value_type>
+    </field>
+ 
+  </schema>
+</model>

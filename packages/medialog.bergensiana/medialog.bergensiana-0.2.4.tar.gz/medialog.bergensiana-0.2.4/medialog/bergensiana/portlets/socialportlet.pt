@@ -1,0 +1,21 @@
+<dl class="portlet portletSocialPortlet social"
+    tal:define="portal_url context/@@plone_portal_state/portal_url;
+        		email python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.email'] or '';
+    			twitter python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.twitter'] or '';
+				facebook python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.facebook'] or '';
+				instagram python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.instagram'] or '';
+				phone python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.phone'] or None"
+				i18n:domain="medialog.spacetectheme">
+
+  <dt class="portletHeader">
+    <span class="portletTopLeft"></span>
+    <span tal:condition="view/data/title" tal:content="view/data/title">
+      Social Portlet
+    </span>
+    <span class="portletTopRight"></span>
+  </dt>
+  <dd tal:condition="facebook" class="portletItem odd"><a target="_blank" href="facebook" tal:attributes="href facebook"><i class="fa fa-facebook"></i> facebook</a></dd>	
+  <dd tal:condition="twitter" class="portletItem even"><a target="_blank" href="twitter"  tal:attributes="href twitter"><i class="fa fa-twitter"></i> twitter</a></dd>
+  <dd tal:condition="instagram"  class="portletItem odd"><a target="_blank" href="instagram" tal:attributes="href instagram"><i class="fa fa-instagram"></i> instagram</a></dd>
+ 
+</dl>

@@ -1,0 +1,38 @@
+<aside class="portlet portletSliderPortlet"
+    tal:define="portal_url context/@@plone_portal_state/portal_url;"
+        		i18n:domain="medialog.spacetectheme"
+        		tal:condition="view/hasImages">
+
+    <header class="portletHeader">
+        <span tal:content="view/data/title" />
+    </header>
+    
+    <div class="portletItem sliderportlet"  
+      tal:define="imagex view/get_image_list">
+      <tal:repeat tal:repeat="obj imagex"> 
+        <div tal:define="title obj/title; 
+            description obj/description;
+            obj_url obj/url;
+            slideimage_url python:obj_url+'/@@images/image/preview'">
+            <h3  tal:content="title" />
+            <img src="" alt=""
+		        class="slider-img img-responsive"
+		        tal:attributes="alt title; src slideimage_url"/>
+            <p  tal:content="description" />
+        </div>
+      </tal:repeat>
+    </div>
+<script>$(function () {
+    $(".sliderportlet").responsiveSlides({
+    maxwidth: 768,
+    nav: true,
+    speed: 5000,
+    pager: false,
+    prevText: "<",  
+    nextText: ">",    
+  
+    });
+});
+
+</script>
+</aside>
