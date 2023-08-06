@@ -1,0 +1,6 @@
+pyyaml
+slackclient
+oglhclient
+requests
+urllib
+future
