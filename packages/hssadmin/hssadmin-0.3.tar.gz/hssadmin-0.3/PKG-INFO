@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: hssadmin
+Version: 0.3
+Summary: Cloudian HyperStore(R) Admin API SDK for Python
+Home-page: https://github.com/ryosuke-mt/hyperstore
+Author: Ryosuke Matsui
+Author-email: rmatsui@cloudian.com
+License: MIT
+Description: This module is a Software Development Kit for Cloudian HyperStore Admin API. Please bear in mind that this module is NOT an official release from Cloudian Inc. and Cloudian K.K.
+Keywords: sample setuptools development
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
