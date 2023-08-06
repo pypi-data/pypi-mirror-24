@@ -1,0 +1,5 @@
+setup.py
+purse.egg-info/PKG-INFO
+purse.egg-info/SOURCES.txt
+purse.egg-info/dependency_links.txt
+purse.egg-info/top_level.txt
