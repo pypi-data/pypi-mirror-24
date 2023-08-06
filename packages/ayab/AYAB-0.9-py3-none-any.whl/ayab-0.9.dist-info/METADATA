@@ -1,0 +1,78 @@
+Metadata-Version: 2.0
+Name: ayab
+Version: 0.9
+Summary: GUI for Machine assisted Knitting. Reference implementation for AYAB.
+Home-page: http://ayab-knitting.com/
+Author: Christian Obersteiner, Andreas Müller, Sebastian Oliva, Christian Gerbrandt
+Author-email: info@ayab-knitting.com
+License: GPLv3+
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Requires-Dist: Pillow (==4.1.0)
+Requires-Dist: Yapsy (==1.11.223)
+Requires-Dist: fysom (==2.1.3)
+Requires-Dist: pyserial (==3.3)
+
+AYAB
+====
+
+All Yarns Are Beautiful
+
+This is the GUI interface for AYAB.
+
+Installation
+------------
+
+Linux
+~~~~~
+
+Prerequisites
+^^^^^^^^^^^^^
+
+You need Python 3.5 and PyQt5 from your package manager's repository.
+
+*For Debian/Ubuntu*
+
+::
+
+    sudo apt-get install python3-pip python3-qt5 python3-dev python3-virtualenv
+
+*For openSUSE*
+
+::
+
+    sudo zypper install python3-pip python3-qt5 python3-virtualenv
+
+*All Distributions*
+
+To be able to communicate with your Arduino, it might be necessary to
+add the rights for USB communication by adding your user to some groups.
+
+::
+
+    sudo usermod -a -G tty [userName]
+    sudo usermod -a -G dialout [userName]
+
+Release Version
+^^^^^^^^^^^^^^^
+
+This will install the latest release version from PyPi
+
+::
+
+    virtualenv -p python3 --system-site-packages venv/
+    source venv/bin/activate
+    pip3 install ayab
+
+Now, you can start the software with
+
+::
+
+    ayab
+
+
