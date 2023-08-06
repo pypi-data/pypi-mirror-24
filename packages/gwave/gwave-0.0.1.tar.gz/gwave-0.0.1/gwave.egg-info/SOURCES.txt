@@ -1,0 +1,6 @@
+setup.py
+gwave.egg-info/PKG-INFO
+gwave.egg-info/SOURCES.txt
+gwave.egg-info/dependency_links.txt
+gwave.egg-info/requires.txt
+gwave.egg-info/top_level.txt

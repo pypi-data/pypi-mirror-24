@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: gwave
+Version: 0.0.1
+Summary: Meta-package for gravitational-wave data analysis
+Home-page: https://ligo-cbc.github.io
+Author: Ligo Virgo Collaboration
+Author-email: alex.nitz@ligo.org
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: ligo,physics,gravity,astronomy,gravitational waves,data analysis,signal processing
+Platform: UNKNOWN
