@@ -1,0 +1,16 @@
+django_ip_restriction-0.9.4.dist-info/DESCRIPTION.rst,sha256=I3TSlfWVxVvkEG_DTqHRNH5DFwfDt8Jx7XB0ViMynlY,4018
+django_ip_restriction-0.9.4.dist-info/METADATA,sha256=w18VgxA9MvThgrmbH00kuTXgAHscnmx5B8270NfRNcw,4929
+django_ip_restriction-0.9.4.dist-info/RECORD,,
+django_ip_restriction-0.9.4.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_ip_restriction-0.9.4.dist-info/metadata.json,sha256=FIwDWTla0ewXbZ6bTx8FUWmJy7mdHQ68sSBeIdI8BKw,988
+django_ip_restriction-0.9.4.dist-info/top_level.txt,sha256=dDgN5R0ICPVjhRInKdASeejK5vGDKMo6aUxcJKXu5ZE,21
+ip_restriction/__init__.py,sha256=aqiYacHkEMX_HxLu4z5Vzn2vah3M4nlVoFcxWBU3Ib8,38
+ip_restriction/middleware.py,sha256=Va1TcwTNLAXYV8pKZF92ncc0Mpu50obLDoHqqUn8hBI,4164
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/admin.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/decorators.py,sha256=ezSQypnb1y8V19CHrgc0qg3KiC2SVIpMpKeJWl_v7Dg,1145
+tests/settings.py,sha256=JZE-Nrk9FYBfS8MOsU95p9na9TNEGgHrGpNRQ7oii3k,1439
+tests/test_config.py,sha256=SHJGSsqOhidnGm80QykwTVi7cCbNWU6CQFM8eum4eVc,2453
+tests/test_middleware.py,sha256=kJsdwzZiPh25HMJqkDH5unw8r4okaPaAnEMahxOeBjA,6667
+tests/urls.py,sha256=ovFCRMB09KDf7PU-oFl7VP0Juqq6P0CqDBCWnZbApik,213
+tests/views.py,sha256=gUNRp-PsGQjcDfhGTllhvde7I2JPHtSg3wbhhgyUzEk,221
