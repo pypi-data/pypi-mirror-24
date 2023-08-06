@@ -1,0 +1,3 @@
+[console_scripts]
+wav-loopy = wav_loopy:main
+

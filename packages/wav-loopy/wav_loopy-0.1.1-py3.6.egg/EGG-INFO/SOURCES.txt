@@ -1,0 +1,9 @@
+README.rst
+setup.py
+wav_loopy.py
+wav_loopy.egg-info/PKG-INFO
+wav_loopy.egg-info/SOURCES.txt
+wav_loopy.egg-info/dependency_links.txt
+wav_loopy.egg-info/entry_points.txt
+wav_loopy.egg-info/requires.txt
+wav_loopy.egg-info/top_level.txt
