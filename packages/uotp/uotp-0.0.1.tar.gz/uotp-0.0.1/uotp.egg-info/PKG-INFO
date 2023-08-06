@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: uotp
+Version: 0.0.1
+Summary: μOTP+: The next generation OTP toolkit
+Home-page: https://github.com/devunt/uotp
+Author: Bae Junehyeon
+Author-email: devunt@gmail.com
+License: Public Domain
+Description: UNKNOWN
+Keywords: otp
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Natural Language :: Korean
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Utilities
