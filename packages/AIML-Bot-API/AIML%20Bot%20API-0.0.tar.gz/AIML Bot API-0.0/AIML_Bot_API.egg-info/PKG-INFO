@@ -1,0 +1,58 @@
+Metadata-Version: 1.1
+Name: AIML-Bot-API
+Version: 0.0
+Summary: GraphQL API to AIML Bot
+Home-page: https://github.com/hosford42/aiml_bot_api
+Author: Aaron Hosford
+Author-email: aaron.hosford@ericsson.com
+License: MIT
+Description: AIML Bot API
+        ============
+        
+        This is a very basic `GraphQL <http://graphql.org/>`__ API for `AIML
+        Bot <https://github.com/hosford42/aiml_bot>`__.
+        
+        **IMPORTANT:** No security measures are implemented. Use this module as
+        a public-facing API at your own risk. Anyone who has access to the API
+        has access to the entire data set.
+        
+        Endpoints
+        ---------
+        
+        The following endpoints are provided:
+        
+        ``/``
+        ~~~~~
+        
+        The GraphQL endpoint is the preferred method for interacting with the
+        system.
+        
+        ``/users``
+        ~~~~~~~~~~
+        
+        A JSON endpoint for listing registered users or adding a new user.
+        
+        ``/users/<user_id>``
+        ~~~~~~~~~~~~~~~~~~~~
+        
+        A JSON endpoint for retrieving information about a specific user.
+        
+        ``/users/<user_id>/messages``
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        A JSON endpoint for listing the messages to/from a user or sending a new
+        message to the bot.
+        
+        ``/users/<user_id>/messages/<message_id>``
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        A JSON endpoint for retrieving information about a specific message.
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
