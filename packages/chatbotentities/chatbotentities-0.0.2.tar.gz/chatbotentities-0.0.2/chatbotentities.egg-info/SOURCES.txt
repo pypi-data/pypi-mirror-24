@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+chatbotentities/__init__.py
+chatbotentities/es.py
+chatbotentities/es_ar.py
+chatbotentities/extractor.py
+chatbotentities.egg-info/PKG-INFO
+chatbotentities.egg-info/SOURCES.txt
+chatbotentities.egg-info/dependency_links.txt
+chatbotentities.egg-info/requires.txt
+chatbotentities.egg-info/top_level.txt
