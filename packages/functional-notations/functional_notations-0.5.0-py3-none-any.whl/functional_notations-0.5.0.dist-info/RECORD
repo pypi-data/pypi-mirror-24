@@ -1,0 +1,12 @@
+at/__init__.py,sha256=rkj4LkwB582AtGkWWtHvPghtRjVi8vvFVZ0dZKnABnw,21
+at/at.py,sha256=biJ9JJ0igmXPKRKV2l580EZaasMqzfYUcTwpr5OvH7k,1140
+at/test_at.py,sha256=MrtC_ZCUIt9iusc57hQB22iB3osl1hWgYNI3OWPZNJk,1263
+functional_notations/__init__.py,sha256=lvxPLHp2kRl12o3Hx4aZshr8mnqCD4tQhwhVxL2bep4,39
+functional_notations/functional_notations.py,sha256=biJ9JJ0igmXPKRKV2l580EZaasMqzfYUcTwpr5OvH7k,1140
+functional_notations/test_functional_notations.py,sha256=p9qsQZJT1qHK-QShAAxMjZeVZW2AIrJaHhv655wOUKg,1281
+functional_notations-0.5.0.dist-info/DESCRIPTION.rst,sha256=a8xH4S4Zb5kKIdrejpCZmADqKOhKX_u8HrqQD9_8GM8,91
+functional_notations-0.5.0.dist-info/METADATA,sha256=2rIas1PXjlBTq_m2aTyTVsUGpmMTpbVuuG8BYvA2ZHY,588
+functional_notations-0.5.0.dist-info/RECORD,,
+functional_notations-0.5.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+functional_notations-0.5.0.dist-info/metadata.json,sha256=FfwcAWf06XQ6qXVNZ8A0p-LwWLrL_SgO88tNOgVHFSU,673
+functional_notations-0.5.0.dist-info/top_level.txt,sha256=zZI-RUIs28hXUmScx6m7sfa8JDVFvAswfGE-uKlCgaU,21
