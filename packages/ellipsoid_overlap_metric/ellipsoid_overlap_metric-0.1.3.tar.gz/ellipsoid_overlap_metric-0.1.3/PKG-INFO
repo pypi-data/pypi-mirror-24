@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ellipsoid_overlap_metric
+Version: 0.1.3
+Summary: Ellipsoid Overlap Metric for a quantitative measure of how visually distinct two clusters are.
+Home-page: https://github.com/eddbrown/ellipsoid-overlap-metric
+Author: Edward Brown
+Author-email: edward.j.e.brown@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
