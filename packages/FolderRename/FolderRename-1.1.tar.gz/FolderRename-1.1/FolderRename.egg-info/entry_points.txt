@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        FolderRename=folder_rename:cli
+    
