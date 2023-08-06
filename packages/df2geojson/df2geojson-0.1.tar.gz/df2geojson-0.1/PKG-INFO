@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: df2geojson
+Version: 0.1
+Summary: A small Python module for converting Pandas Dataframes to geojson format
+Home-page: https://github.com/TPreece101/df2geojson
+Author: Thomas Preece
+Author-email: thomaspreece@hotmail.co.uk
+License: UNKNOWN
+Download-URL: https://github.com/TPreece101/df2geojson/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: dataframe,geojson,convert
+Platform: UNKNOWN
