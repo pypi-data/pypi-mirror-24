@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+sqlblock/__init__.py
+sqlblock/asyncpg.py
+sqlblock/sqltext.py
+sqlblock.egg-info/PKG-INFO
+sqlblock.egg-info/SOURCES.txt
+sqlblock.egg-info/dependency_links.txt
+sqlblock.egg-info/not-zip-safe
+sqlblock.egg-info/requires.txt
+sqlblock.egg-info/top_level.txt
+test/test_sqlblock.py
+test/test_sqltext.py
