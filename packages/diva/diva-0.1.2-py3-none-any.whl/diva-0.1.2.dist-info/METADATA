@@ -1,0 +1,35 @@
+Metadata-Version: 2.0
+Name: diva
+Version: 0.1.2
+Summary: Analytics dashboards made simple
+Home-page: https://github.com/mgriley/diva
+Author: Matthew Riley
+Author-email: mgriley97@gmail.com
+License: MIT
+Keywords: dashboard analytics plotting
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: bokeh
+Requires-Dist: flask
+Requires-Dist: jsonschema
+Requires-Dist: matplotlib
+Requires-Dist: mpld3
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python-dateutil
+Provides-Extra: dev
+Requires-Dist: gunicorn; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: tox; extra == 'dev'
+
+create a simple web analytics dashboard
+
+

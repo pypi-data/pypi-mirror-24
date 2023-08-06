@@ -1,0 +1,109 @@
+$sidebar-color: #333;
+$sidebar-text-color: #ddd;
+$report-background-color: #fff;
+$upper-button-height: 40px;
+
+// bootstrap overloads:
+.btn {
+    border-radius: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: $report-background-color;
+    color: $sidebar-color;
+    //font-family: "Lato", sans-serif;
+    height: 100vh;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sidebar {
+    grid-column: 1;
+    background-color: #eee;
+    height: 100%;
+}
+
+// date pickers
+
+.datepicker {
+}
+
+// reports dropdown menu
+
+.reports-button {
+    width: 100%;
+    border: none;    
+    border-radius: 0;
+    background-color: #aaa;    
+    padding: 0.5em;
+    height: $upper-button-height;
+}
+
+.reports-list {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: calc(100vh - #{$upper-button-height});
+    overflow: auto;
+}
+
+.reports-list li a {
+    white-space: normal;
+}
+
+// tab-specific content
+
+.report-details {
+    height: calc(100vh - #{$upper-button-height});
+    overflow: auto;
+}
+
+.widgetform {
+    padding: 1em;
+}
+
+.report-title {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+// hide all tabbed DOM by default
+.report-tab {
+    display: none;
+}
+
+.report {
+    grid-column: 2;
+    overflow: auto;
+    padding: 1em;
+}
+
+.figure {
+    margin: auto;
+}
+.figure-placeholder {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+}
+
+.widgetcontainer {
+    // spacing b/w adjacent widgets
+    margin-bottom: 0.5em;
+}
+
+.update-buttons {
+    margin-top: 1em;
+}
+
+// Styling for built-in widgets
