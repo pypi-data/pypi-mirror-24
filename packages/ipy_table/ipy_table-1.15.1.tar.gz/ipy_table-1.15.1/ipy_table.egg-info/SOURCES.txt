@@ -1,0 +1,14 @@
+README.rst
+setup.py
+ipy_table/__init__.py
+ipy_table/ipy_table.py
+ipy_table/six.py
+ipy_table/vector_manager.py
+ipy_table/version.py
+ipy_table.egg-info/PKG-INFO
+ipy_table.egg-info/SOURCES.txt
+ipy_table.egg-info/dependency_links.txt
+ipy_table.egg-info/top_level.txt
+ipy_table.egg-info/zip-safe
+test/__init__.py
+test/test_vectors.py

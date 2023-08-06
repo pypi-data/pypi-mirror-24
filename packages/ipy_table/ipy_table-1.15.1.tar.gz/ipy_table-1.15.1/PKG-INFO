@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: ipy_table
+Version: 1.15.1
+Summary: Creates richly formatted tables in a Jypyter Notebook
+Home-page: http://epmoyer.github.com/ipy_table/
+Author: Eric Moyer
+Author-email: eric@lemoncrab.com
+License: Modified BSD
+Description: UNKNOWN
+Keywords: table,ipython,jupyter,notebook
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Scientific/Engineering
