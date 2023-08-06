@@ -1,0 +1,9 @@
+setup.py
+bin/compute_fasta_digest
+fasta_digest/__init__.py
+fasta_digest.egg-info/PKG-INFO
+fasta_digest.egg-info/SOURCES.txt
+fasta_digest.egg-info/dependency_links.txt
+fasta_digest.egg-info/not-zip-safe
+fasta_digest.egg-info/requires.txt
+fasta_digest.egg-info/top_level.txt

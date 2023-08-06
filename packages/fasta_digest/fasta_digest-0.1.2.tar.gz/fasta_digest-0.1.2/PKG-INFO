@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: fasta_digest
+Version: 0.1.2
+Summary: Get the signature of a fasta file
+Home-page: http://github.com/COMBINE-lab/FastaDigest
+Author: Rob Patro
+Author-email: UNKNOWN
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
