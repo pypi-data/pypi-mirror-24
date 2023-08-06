@@ -1,0 +1,55 @@
+Metadata-Version: 2.0
+Name: django-twilio2
+Version: 0.9.0
+Summary: Build Twilio functionality into your Django apps.
+Home-page: http://twilio.com/
+Author: Kyle Mulka
+Author-email: repalviglator@yahoo.com
+License: UNLICENSE
+Keywords: twilio telephony call phone voip sms
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Dist: Django (>=1.8)
+Requires-Dist: django-phonenumber-field (>=0.6)
+Requires-Dist: twilio (>=6.3.0)
+
+=============
+Django-Twilio2
+=============
+
+Integrate Twilio into your Django apps with ease.
+
+This is a fork of the original django-twilio. The original one was not recieving updates on pypi.
+The original can be found here:
+https://github.com/rdegges/django-twilio
+
+Meta
+----
+
+* Maintainer: Kyle Mulka
+* Email: repalviglator@yahoo.com
+
+Twilio makes it easy to send & receive SMS messages, and create & manage voice calls through software.
+
+Django-twilio2 makes it easy to use Twilio in your Django projects.
+
+Documentation
+-------------
+
+The documentation is hosted at ReadTheDocs. You can check out the docs
+here - http://django-twilio.rtfd.org/
+
+
