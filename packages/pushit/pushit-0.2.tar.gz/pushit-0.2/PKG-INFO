@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pushit
+Version: 0.2
+Summary: Push notifications sender for ios and android
+Home-page: https://github.com/dotpot/pushit
+Author: Lukas Šalkauskas
+Author-email: halfas.online@gmail.com
+License: MIT
+Description: Push notifications sender for ios and android
+Keywords: push notifications apple ios android google cloud messaging
+Platform: UNKNOWN
