@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: wasmfun
+Version: 0.1
+Summary: A Python library that provides tools to handle WASM code.
+Home-page: https://github.com/almarklein/wasmfun
+Author: Almar Klein
+Author-email: almar.klein@gmail.com
