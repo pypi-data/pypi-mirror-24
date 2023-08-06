@@ -1,0 +1,111 @@
+
+<link rel="manifest" href="/manifest.json">
+{% for icon in pwa_settings.PWA_ICONS %}
+    <link rel="apple-touch-icon" href="{{ icon.src }}" sizes="{{ icon.sizes }}">
+{% endfor %}
+<meta name="theme-color" content="{{ pwa_settings.PWA_THEME_COLOR }}">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="{{ pwa_settings.PWA_NAME }}">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/serviceworker.js').then(function (registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }).catch(function (err) {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+</script>
+{% if request.user.is_authenticated %}
+  <!-- START FIREBASE INITIALIZATION CODE -->
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-messaging.js"></script>
+  <script type="text/javascript">
+    // Initialize Firebase
+    var config = {
+      apiKey: "{{ pwa_settings.PWA_FCM_API_KEY }}",
+      messagingSenderId: "{{ pwa_settings.PWA_FCM_MSGSENDER_ID }}"
+    };
+    firebase.initializeApp(config);
+    
+    // Get X-CSRFToken
+    function parse_cookies() {
+    var cookies = {};
+    if (document.cookie && document.cookie !== '') {
+        document.cookie.split(';').forEach(function (c) {
+            var m = c.trim().match(/(\w+)=(.*)/);
+            if(m !== undefined) {
+                cookies[m[1]] = decodeURIComponent(m[2]);
+            }
+        });
+    }
+    return cookies;
+    }
+
+    var cookies = parse_cookies();
+
+    // Token magic
+    const messaging = firebase.messaging();
+    navigator.serviceWorker.register('/serviceworker.js')
+      .then((registration) => {
+        console.log(registration);
+        messaging.useServiceWorker(registration);
+
+        messaging.onTokenRefresh(function() {
+         messaging.getToken()
+         .then(function(refreshedToken) {
+           setTokenSentToServer(false);
+           sendTokenToServer(refreshedToken);
+         });
+        });
+
+        function sendTokenToServer(currentToken) {
+          if (!isTokenSentToServer()) {
+            fetch('/notification_devices/', {
+              method: "POST",
+              headers: {
+                  'Content-Type': 'application/json',
+                  'X-CSRFToken': cookies['csrftoken']
+                },
+              body: JSON.stringify({
+                'registration_id': currentToken,
+                'type': 'web',
+              }),
+              credentials: "include",
+            })
+            setTokenSentToServer(true);
+          }
+        }
+
+        function isTokenSentToServer() {
+         return window.localStorage.getItem('sentToServer') == 1;
+        }
+        function setTokenSentToServer(sent) {
+         window.localStorage.setItem('sentToServer', sent ? 1 : 0);
+        }
+
+        function requestPermission() {
+         messaging.requestPermission()
+         .then(function() {
+           messaging.getToken()
+           .then(function(currentToken) {
+             if (currentToken) {
+               sendTokenToServer(currentToken);
+             } else {
+               setTokenSentToServer(false);
+             }
+           })
+           .catch(function(err) {
+             setTokenSentToServer(false);
+           });
+         });
+        }
+
+        requestPermission();
+      });
+  
+  </script>
+  <!-- END FIREBASE INITIALIZATION CODE -->      
+{% endif %}
