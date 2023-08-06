@@ -1,0 +1,14 @@
+azure/cli/command_modules/appservice/__init__.py,sha256=GtrjndnngNU2OZpAVGhnjZtbjSS31WvoNqxabVjgaNw,702
+azure/cli/command_modules/appservice/_client_factory.py,sha256=uX_sPsbfWqBqJmPTVTx_TJ28VPP2tDTT9BfrR-eS52s,1979
+azure/cli/command_modules/appservice/_help.py,sha256=twnibiRTSfk4bPLMTLC2fND0ugSvpQTHYoYLdsboSII,17762
+azure/cli/command_modules/appservice/_params.py,sha256=nZVxpoMmuyGAc_0Yz7i7j3v6N6iPDHr-AS3Ge3c8ruc,21227
+azure/cli/command_modules/appservice/_validators.py,sha256=rnEeauv-d_KU_XnlrSJVm_IH7lKjqSZQf8S9Fqdyc9Y,994
+azure/cli/command_modules/appservice/commands.py,sha256=xG3TZ4c6QTwND4UzkdOyulQPGNIfbHHJ12oPmzTQ0pc,12995
+azure/cli/command_modules/appservice/custom.py,sha256=B_VbK35f0nWMRJMymQ7p3E6vr8HnXIXcTgl0ymXrvN8,64400
+azure/cli/command_modules/appservice/vsts_cd_provider.py,sha256=lPQmPkasjgsYJWuwAH3_Fd3tMZ_qLp_VzTiSMdNilF0,2786
+azure_cli_appservice-0.1.12.dist-info/DESCRIPTION.rst,sha256=7LH2GJvFkcY2tU82yPjjXBY6lgQKMU_MbmFfxyGFEHs,3934
+azure_cli_appservice-0.1.12.dist-info/METADATA,sha256=C0xOepwsiCaNqWp7cHJovHbCEXmG7C2TxYRbSptyUCE,5055
+azure_cli_appservice-0.1.12.dist-info/RECORD,,
+azure_cli_appservice-0.1.12.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+azure_cli_appservice-0.1.12.dist-info/metadata.json,sha256=t9uYPhsj1oJdvv1Jq05Pvx7vIcLP1h3KDyrzCkPBnx4,1177
+azure_cli_appservice-0.1.12.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
