@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: micropython-xmltok
+Version: 0.2
+Summary: xmltok module for MicroPython
+Home-page: https://github.com/micropython/micropython-lib
+Author: MicroPython Developers
+Author-email: micro-python@googlegroups.com
+License: MIT
+Description: Simple XML tokenizer
+Platform: UNKNOWN
