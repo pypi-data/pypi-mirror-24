@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+groundwork_spreadsheets/__init__.py
+groundwork_spreadsheets/version.py
+groundwork_spreadsheets.egg-info/PKG-INFO
+groundwork_spreadsheets.egg-info/SOURCES.txt
+groundwork_spreadsheets.egg-info/dependency_links.txt
+groundwork_spreadsheets.egg-info/requires.txt
+groundwork_spreadsheets.egg-info/top_level.txt
+groundwork_spreadsheets/patterns/__init__.py
+groundwork_spreadsheets/patterns/ExcelValidationPattern/__init__.py
+groundwork_spreadsheets/patterns/ExcelValidationPattern/excel_validation_pattern.py
+groundwork_spreadsheets/patterns/ExcelValidationPattern/assets/excel_config_schema.json
