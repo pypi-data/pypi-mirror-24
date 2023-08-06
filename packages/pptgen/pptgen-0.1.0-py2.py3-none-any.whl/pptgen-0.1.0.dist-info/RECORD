@@ -1,0 +1,16 @@
+pptgen/__init__.py,sha256=5nfUGHqeBIZEMEOhbbhsfpmX1fqBVACHObi5ksPnhng,6775
+pptgen/color.py,sha256=xJ-moP9N55SZNCX4nwJaEtPUbnVB0WIxRhyADaQ6W-4,18881
+pptgen/colors.json,sha256=Y3Vmoy1-bqjOcom6CevRAYm-CAT-pbh7PcWSupADm2g,7779
+pptgen/commands.py,sha256=X2hxloXoVqetChEBDRlaX_H6rJYLpDULEGUpCA_bOfM,45639
+pptgen/fonts.json,sha256=XNEwtUXTsJpo4O3Ho7SsrfMyhX9YQNENTMmPMcRE7eI,6351
+pptgen/fontwidth.py,sha256=hZfZS-9b6Zz6deOzneDdAD0sgBUQ2eHB4YJPbMi41xs,1356
+pptgen/release.json,sha256=dRVI-tAkINTDtVZJVtPXR1HgcR_BLyjv8q4FrNNoivU,823
+pptgen/stats.py,sha256=q8hQjDgOTu0r3I0ll-KzjKjIb_LEjKL5vNtBqMOiA8I,54469
+pptgen/utils.py,sha256=k8ILdoPaSoUkoVn6OJDTFfEGk8gRMeZ35_XClpoH7cQ,6208
+pptgen-0.1.0.dist-info/DESCRIPTION.rst,sha256=21gITeffG4mCeNUhCcxqFpsJGXQZJYZy6fVscuyvDb8,6934
+pptgen-0.1.0.dist-info/METADATA,sha256=oL0DIHio9sP4sEnnzsP9XWjSStYf5tQh1esPpN9nBeM,8235
+pptgen-0.1.0.dist-info/RECORD,,
+pptgen-0.1.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+pptgen-0.1.0.dist-info/entry_points.txt,sha256=ZrQyxDVivPhvbIRpT3j7sqJcfOW7z4orxsLWfouenL8,47
+pptgen-0.1.0.dist-info/metadata.json,sha256=RsQs1dQoIwx2do2q030VHG-P7Zrf2yS2TDHGu-E2tNk,1383
+pptgen-0.1.0.dist-info/top_level.txt,sha256=ePl3O7s2pDFqb07rl40QsgH0feLF9TgucI3FIuiLTbI,7
