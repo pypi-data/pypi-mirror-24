@@ -1,0 +1,11 @@
+vidme/__init__.py,sha256=UUWMGuhW1V7g_j3acWJJUamzuEy9EZ10z6N9z8qnChc,103
+vidme/client.py,sha256=8ISllqkDLFYUg3crqwGmoiW8kwnj4IGR6wUVNS_-28M,3654
+vidme/gateway.py,sha256=nTVtMyKyhqMgeNicprUHNxKrFO6yV9KzjQGUPpIzd0c,1535
+vidme/users.py,sha256=AmCVGBy_WyDj0Fn51Gy8eKxh8uBELsLhLVo8Sr20nvw,2936
+vidme/videos.py,sha256=h2LkLku3Gy0vKuIIq3lab4pW07mKHht3Y441Sf73Vjg,39
+vidme.py-0.1.0.dev1.dist-info/DESCRIPTION.rst,sha256=0NUJe-3gn2dcQwhkDKrxBVcCjqkBEbeMqPZx4cY8fA4,65
+vidme.py-0.1.0.dev1.dist-info/METADATA,sha256=oKfgrX_OYyJrT9WwRG7K088DBqTFmxg-injeJTiU0FE,603
+vidme.py-0.1.0.dev1.dist-info/RECORD,,
+vidme.py-0.1.0.dev1.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+vidme.py-0.1.0.dev1.dist-info/metadata.json,sha256=gKZloXLkS0H-ib3TvJs4VP9uqt_ksIvRFQzepol2fmg,750
+vidme.py-0.1.0.dev1.dist-info/top_level.txt,sha256=3oXFlbHGQlIRIM1p1Bst2k-nu63Gw0OyxiBxEUw4Jho,6
