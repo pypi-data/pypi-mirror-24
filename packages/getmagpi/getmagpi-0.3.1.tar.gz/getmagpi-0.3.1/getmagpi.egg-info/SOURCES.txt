@@ -1,0 +1,14 @@
+.gitignore
+CHANGELOG.md
+LICENSE.txt
+MANIFEST.in
+README.md
+_config.yml
+setup.cfg
+setup.py
+doc/README.rst
+getmagpi.egg-info/PKG-INFO
+getmagpi.egg-info/SOURCES.txt
+getmagpi.egg-info/dependency_links.txt
+getmagpi.egg-info/requires.txt
+getmagpi.egg-info/top_level.txt
