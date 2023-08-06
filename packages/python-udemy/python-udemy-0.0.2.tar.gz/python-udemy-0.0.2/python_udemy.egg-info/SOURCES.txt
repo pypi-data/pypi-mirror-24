@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+python_udemy.egg-info/PKG-INFO
+python_udemy.egg-info/SOURCES.txt
+python_udemy.egg-info/dependency_links.txt
+python_udemy.egg-info/entry_points.txt
+python_udemy.egg-info/requires.txt
+python_udemy.egg-info/top_level.txt
+udemy/__init__.py
+udemy/cli.py
