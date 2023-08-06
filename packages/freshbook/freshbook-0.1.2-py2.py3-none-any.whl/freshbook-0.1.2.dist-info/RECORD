@@ -1,0 +1,11 @@
+freshbook/__init__.py,sha256=yLY-YMjDUXQNi2QqngznApk59MHatOr_SvWQ5tiJRBU,142
+freshbook/cli.py,sha256=oERxUceuhds_fV4ai6IZ3WgUcKI0a676wsnmHC7sFMA,2157
+freshbook/freshbook.py,sha256=jzSKYvUIBryqWlWpzKMvCqXA3yzQPkpIuOwr2QNQ_bo,1423
+freshbook/utils.py,sha256=w1GuSkH9pmfkElE-rsHhXVrTn-E-6wuLXgwj_3-2MFw,2101
+freshbook-0.1.2.dist-info/DESCRIPTION.rst,sha256=pJma2MXb0ZA55ALINouWli_Js4AYzV4hhmZRROZW5wQ,1369
+freshbook-0.1.2.dist-info/METADATA,sha256=xfBsJdwuVkikdhm-CPr_afjEiv4yI8TvqBAgd6_PT1k,2246
+freshbook-0.1.2.dist-info/RECORD,,
+freshbook-0.1.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+freshbook-0.1.2.dist-info/entry_points.txt,sha256=U_3erenF2GHyo-jNrvdM7F09wOuROvpYTIeJAin2g4w,50
+freshbook-0.1.2.dist-info/metadata.json,sha256=IEFtEruX5f__6VIa7PGT5ZOE_LqnVFTbIRyHYikQ7Uo,1175
+freshbook-0.1.2.dist-info/top_level.txt,sha256=KMBuXyjhjltN15d9wfJ5lLkuGitk48npF4kb4akrSDM,10
