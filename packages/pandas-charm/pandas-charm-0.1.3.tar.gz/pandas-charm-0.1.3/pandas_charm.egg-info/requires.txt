@@ -1,0 +1,8 @@
+pandas>=0.16
+numpy
+
+[testing]
+coverage
+pytest
+biopython
+dendropy
