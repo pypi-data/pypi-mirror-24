@@ -1,0 +1,9 @@
+python-daemon
+
+[Blowfish]
+cryptography
+
+[Fernet]
+cryptography
+
+[WebDAV]
