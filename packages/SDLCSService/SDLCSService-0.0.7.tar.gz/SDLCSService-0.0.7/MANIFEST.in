@@ -1,0 +1,4 @@
+include Conf/*.conf
+include *.txt
+recursive-include examples *.txt *.py
+prune examples/sample?/build
