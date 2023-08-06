@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+tox.ini
+dankdungeon/__init__.py
+dankdungeon/dungeon.py
+dankdungeon/monster.py
+dankdungeon.egg-info/PKG-INFO
+dankdungeon.egg-info/SOURCES.txt
+dankdungeon.egg-info/dependency_links.txt
+dankdungeon.egg-info/entry_points.txt
+dankdungeon.egg-info/requires.txt
+dankdungeon.egg-info/top_level.txt
+dankdungeon/.ropeproject/config.py
+dankdungeon/data/monsters.json
