@@ -1,0 +1,2 @@
+num2words>=0.5.4
+unicode-slugify>=0.1.3
