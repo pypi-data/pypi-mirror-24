@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: ciscomultiosinfocoordinate
+Version: 1.3.0
+Summary: This is a library used to normalize data between Cisco OS flavors
+Home-page: https://github.com/btr1975/ciscomultiosinfocoordinate
+Author: Benjamin P. Trachtenberg
+Author-email: e_ben_75-python@yahoo.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: ipv4 ip multicast unicast network engineer cisco nxos ios iosxr
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: ~=3.5
