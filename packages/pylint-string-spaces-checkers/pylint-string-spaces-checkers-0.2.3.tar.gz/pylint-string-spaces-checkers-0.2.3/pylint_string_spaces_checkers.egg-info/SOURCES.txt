@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pylint_string_spaces_checkers.egg-info/PKG-INFO
+pylint_string_spaces_checkers.egg-info/SOURCES.txt
+pylint_string_spaces_checkers.egg-info/dependency_links.txt
+pylint_string_spaces_checkers.egg-info/requires.txt
+pylint_string_spaces_checkers.egg-info/top_level.txt
