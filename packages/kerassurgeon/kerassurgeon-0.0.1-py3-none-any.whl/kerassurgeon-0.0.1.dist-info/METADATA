@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: kerassurgeon
+Version: 0.0.1
+Summary: A library for performing network surgery on trained Keras models.Useful for deep neural network pruning.
+Home-page: https://github.com/BenWhetton/keras-surgeon
+Author: Ben Whetton
+Author-email: Ben.Whetton@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: keras
+Provides-Extra: pd
+Requires-Dist: pandas; extra == 'pd'
+
+UNKNOWN
+
+
