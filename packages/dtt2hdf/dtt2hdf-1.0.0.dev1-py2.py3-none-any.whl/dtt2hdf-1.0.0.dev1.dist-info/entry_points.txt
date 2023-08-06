@@ -1,0 +1,3 @@
+[console_scripts]
+dtt2hdf = dtt2hdf.dtt2hdf:main
+
