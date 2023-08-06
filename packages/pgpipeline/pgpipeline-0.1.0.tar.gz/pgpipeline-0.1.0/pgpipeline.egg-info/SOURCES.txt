@@ -1,0 +1,9 @@
+setup.py
+pgpipeline/__init__.py
+pgpipeline/core.py
+pgpipeline/helpers.py
+pgpipeline.egg-info/PKG-INFO
+pgpipeline.egg-info/SOURCES.txt
+pgpipeline.egg-info/dependency_links.txt
+pgpipeline.egg-info/requires.txt
+pgpipeline.egg-info/top_level.txt
