@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: pytfmpval
+Version: 0.2.0
+Summary: Python bindings for the TFM-Pvalue program.
+Home-page: https://github.com/j-andrews7/pytfmpval
+Author: Jared Andrews
+Author-email: jared.andrews07@gmail.com
+License: GPL-3.0
+Description: UNKNOWN
+Keywords: bioinformatics tfmpvalue motifs transcription factor genomics science
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

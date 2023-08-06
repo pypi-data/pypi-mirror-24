@@ -1,0 +1,95 @@
+Computing rounded matrix with granularity 0.1
+Score range : 836
+Min         : 647
+Max         : 686
+Precision   : 10
+Error max   : 18.2556
+Computing pvalue for requested score 2 667
+Prev. Pvalue  : 0.00119457
+Pvaluex       : 0.000450855
+Comp. score   : 667
+***********************************************
+Computing rounded matrix with granularity 0.01
+Score range : 8311
+Min         : 6493
+Max         : 6526
+Precision   : 100
+Error max   : 15.4161
+Computing pvalue for requested score 2 6510
+Prev. Pvalue  : 0.000846548
+Pvaluex       : 0.000780255
+Comp. score   : 6510
+***********************************************
+Computing rounded matrix with granularity 0.001
+Score range : 83152
+Min         : 65021
+Max         : 65054
+Precision   : 1000
+Error max   : 15.7641
+Computing pvalue for requested score 2 65038
+Prev. Pvalue  : 0.00082759
+Pvaluex       : 0.000820883
+Comp. score   : 65038
+***********************************************
+Computing rounded matrix with granularity 0.0001
+Score range : 831509
+Min         : 650272
+Max         : 650305
+Precision   : 10000
+Error max   : 15.6695
+Computing pvalue for requested score 2 650289
+Prev. Pvalue  : 0.000825455
+Pvaluex       : 0.000824783
+Comp. score   : 650289
+***********************************************
+Computing rounded matrix with granularity 1e-05
+Score range : 8315102
+Min         : 6502779
+Max         : 6502816
+Precision   : 100000
+Error max   : 17.847
+Computing pvalue for requested score 2 6502798
+Prev. Pvalue  : 0.000825278
+Pvaluex       : 0.000825203
+Comp. score   : 6502798
+***********************************************
+Computing rounded matrix with granularity 1e-06
+Score range : 83151008
+Min         : 65027843
+Max         : 65027880
+Precision   : 1e+06
+Error max   : 17.3032
+Computing pvalue for requested score 2 65027862
+Prev. Pvalue  : 0.000825256
+Pvaluex       : 0.000825248
+Comp. score   : 65027862
+***********************************************
+Computing rounded matrix with granularity 1e-07
+Score range : 831510085
+Min         : 650278505
+Max         : 650278538
+Precision   : 1e+07
+Error max   : 15.615
+Computing pvalue for requested score 2 650278522
+Prev. Pvalue  : 0.000825253
+Pvaluex       : 0.000825253
+Comp. score   : 650278522
+***********************************************
+Computing rounded matrix with granularity 1e-08
+Score range : 8315100859
+Min         : 6502785140
+Max         : 6502785173
+Precision   : 1e+08
+Error max   : 15.9615
+Computing pvalue for requested score 2 6502785157
+Prev. Pvalue  : 0.000825253
+Pvaluex       : 0.000825253
+Comp. score   : 6502785157
+***********************************************
+Computing rounded matrix with granularity 1e-09
+Score range : 83151008643
+Min         : 65027851506
+Max         : 65027851539
+Precision   : 1e+09
+Error max   : 15.9005
+Computing pvalue for requested score 2 65027851523
