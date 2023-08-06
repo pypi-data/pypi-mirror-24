@@ -1,0 +1,13 @@
+nameko_extras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nameko_extras/autoreload.py,sha256=9Y1agdwkGy9dOAvNfcgIxFkVMPANbAnnoun8mZ_yqeI,4701
+nameko_extras/cli_commands.py,sha256=NEg90BJFM7gtEjqliZIO_oJSNKEDZxh_kwOtgwfOpS8,1040
+nameko_extras/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nameko_extras/cli/main.py,sha256=n5LciQhyqFlpM5fs7zUQ9ehoVrmQlnfjcfUy5K2RQ2g,702
+nameko_extras/cli/run.py,sha256=z23idb8vqH0A-QD0Id61wWaG-l-cgWCW1lzxe2b4J58,1230
+nameko_extras-0.1.1.dist-info/DESCRIPTION.rst,sha256=NyUYjBb4pswcpc--TiRrigbsIFVFLJqXZ0l9n5-bhQY,51
+nameko_extras-0.1.1.dist-info/METADATA,sha256=UlUVKHDjo3X3olsDIRQ89SZnRR2k5uPk_zBwMeJnxek,879
+nameko_extras-0.1.1.dist-info/RECORD,,
+nameko_extras-0.1.1.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+nameko_extras-0.1.1.dist-info/entry_points.txt,sha256=h3Z1-rD0EMuvXaADveVoCHZPCW0mXH1QdcL6wUFl_kY,63
+nameko_extras-0.1.1.dist-info/metadata.json,sha256=Gcg_DwPeA5vm-KDvubQnW9GZAL2fPH_P3HHtQlHtrzo,1098
+nameko_extras-0.1.1.dist-info/top_level.txt,sha256=GS3ou3e1FIeIfK-HLD-zG7yQq7eMZSNH6zWGYkKT7a0,14
