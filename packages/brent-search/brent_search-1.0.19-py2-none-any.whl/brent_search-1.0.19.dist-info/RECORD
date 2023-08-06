@@ -1,0 +1,13 @@
+brent_search/__init__.py,sha256=o0WKQrmSwYbw79A5RPPMvfesEhYtApH8vjPjv1Jdxa8,801
+brent_search/_bracket.py,sha256=dt-KVW_D88VnaLEjk_O9CoUfgvINO9ufA-TDA_QAw90,4297
+brent_search/_brent.py,sha256=wpDzNb8jbRMs0cBY5-AVRqOIAwbXLLHE7PGufQlcbDw,6450
+brent_search/_optimize.py,sha256=vNExKb4I2mADc3w0kZTueMLU1Tc-OtEAdkXU-Nmvbnw,1588
+brent_search/test/test_brent.py,sha256=WVTpcuGZ1S36P03HtQC8vT_F3imNciOAyF3dzbOkFZ0,3150
+brent_search/test/test_minimize.py,sha256=csZ8czx1v6NvsnkmUeMc44Xhx9eDprt5tRbAffUb2Fc,2325
+brent_search-1.0.19.dist-info/DESCRIPTION.rst,sha256=dvcwSTvDNSkkdfzOXHwn-5h5OkpIC_0R9FcakWTpncM,2253
+brent_search-1.0.19.dist-info/METADATA,sha256=fAeVHz0iyNsTFiipyVQL54vbX2SgLImt0GsUrv-RsN8,2807
+brent_search-1.0.19.dist-info/RECORD,,
+brent_search-1.0.19.dist-info/WHEEL,sha256=u6Fy2U76CDFJ6q2P27rqtBo3AN6qpylFiMaYzNr2lJg,95
+brent_search-1.0.19.dist-info/metadata.json,sha256=dUyt_jZh6IGSiUqag9NapwfTn2h8i4MB_K7dh8UoHZc,751
+brent_search-1.0.19.dist-info/top_level.txt,sha256=gpRTJLl7btQgITcozG4egTj2GdNGpRwZ8Dc5HevggSw,13
+brent_search-1.0.19.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
