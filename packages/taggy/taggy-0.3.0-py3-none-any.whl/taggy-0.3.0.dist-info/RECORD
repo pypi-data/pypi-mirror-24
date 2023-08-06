@@ -1,0 +1,11 @@
+taggy/__init__.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+taggy/cli.py,sha256=9sBJJTp0xZBEULxi_ujoG0bvS6EAl5jhfGXj9mIb_qU,7726
+taggy/prompts.py,sha256=IPhFOs2EEF-yQtc5V53gb3Nzo7LE8rw1JV9IqQtGB_k,1477
+taggy/semver.py,sha256=AWlN84BbrH6ZH8TUyVMaG2aGpaETjM8n_b1HIk1O30Q,1805
+taggy-0.3.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+taggy-0.3.0.dist-info/METADATA,sha256=XJX2pzM_Qa-5uWZHZC5sWASIbuFCX1W6YBOQzD-NWRE,938
+taggy-0.3.0.dist-info/RECORD,,
+taggy-0.3.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+taggy-0.3.0.dist-info/entry_points.txt,sha256=34PZeORhyPEVXpKz0ALC5lbbUk1T3ffgYPU2j_MVwiw,42
+taggy-0.3.0.dist-info/metadata.json,sha256=FTfN5vEDX0iytNCWGZLmhk-DkAtsDlGpU25FJOTOpbo,1141
+taggy-0.3.0.dist-info/top_level.txt,sha256=oQh73VqVBeXBz3YCRU2vyhzSkU1-bfO09st4z_7TmS4,6

@@ -1,0 +1,3 @@
+[console_scripts]
+taggy = taggy.cli:main
+
