@@ -1,0 +1,6 @@
+README.rst
+setup.py
+rpconnect.egg-info/PKG-INFO
+rpconnect.egg-info/SOURCES.txt
+rpconnect.egg-info/dependency_links.txt
+rpconnect.egg-info/top_level.txt
