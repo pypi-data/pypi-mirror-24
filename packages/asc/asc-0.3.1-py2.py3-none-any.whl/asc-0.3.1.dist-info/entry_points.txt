@@ -1,0 +1,3 @@
+[console_scripts]
+asc = asc.cli:main
+
