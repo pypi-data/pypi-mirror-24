@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+autodocumenter/__init__.py
+autodocumenter/autodocumenter.py
+autodocumenter.egg-info/PKG-INFO
+autodocumenter.egg-info/SOURCES.txt
+autodocumenter.egg-info/dependency_links.txt
+autodocumenter.egg-info/top_level.txt
+autodocumenter/templates/template.css
+autodocumenter/templates/template.html
+templates/template.css
+templates/template.html
