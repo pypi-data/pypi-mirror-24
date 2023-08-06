@@ -1,0 +1,14 @@
+conx/__init__.py,sha256=Ztf3t4qPkl7EidlRK5mC6MeytLexYYPtmkHLKEsjvN8,916
+conx/_version.py,sha256=eDpvRU9GkB7_OPxIZjgqURs9Znx1DfRXEVbV-5vhKfQ,836
+conx/dataset.py,sha256=wBqBG7OrPAQX18_PmWLFjqbR7zIZrKOtJnfA3r7q9aM,29889
+conx/graphs.py,sha256=ceVTWtqoldnYk9_tayVNC6Lo8SBe6P0Q45dkF6_pc7I,3322
+conx/layers.py,sha256=Ghh3mqLAIjkyW-yIJm8BkYtRhd4dUyMXiiGgBpI-sSE,16402
+conx/network.py,sha256=_ZicJMfKOKqifFsqtg9ovJEUM5D4zjf8rJfo114ckEE,78672
+conx/utils.py,sha256=p9VBdeNHjHMxyqIQhcys0r1t2NHshlScYumtRROL5WU,5307
+conx/widgets.py,sha256=Iwz1aYRCVpRbFvwqGYVeOOhMwFtZGJlbBUfcgGFYgRM,5520
+conx-3.1.0.dist-info/DESCRIPTION.rst,sha256=T9lRsG3at0fG03D2JyS6mUxqBki2d0p5h0TuskbzuWE,2758
+conx-3.1.0.dist-info/METADATA,sha256=3R0ZwiplmsoT__tcc9NGsdxgWiIq2CkW2KC3Wt5ti1c,3335
+conx-3.1.0.dist-info/RECORD,,
+conx-3.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+conx-3.1.0.dist-info/metadata.json,sha256=9a2Xl3-L7yT_JO4aZt5W6B5MA0bNV2vTIH74swbsrxg,695
+conx-3.1.0.dist-info/top_level.txt,sha256=DqxQxhoknIg1nqMIWx0OtWesjPiAXmBDvi2UPDH1smg,5
