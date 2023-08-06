@@ -1,0 +1,12 @@
+Flask==0.10.1
+werkzeug==0.10.4
+eve-sqlalchemy
+markupsafe==0.23
+celery
+pyyaml
+psycopg2
+click
+boto3
+requests
+recast-database
+eve-swagger
