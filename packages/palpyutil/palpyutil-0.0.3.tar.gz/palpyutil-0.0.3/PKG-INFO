@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: palpyutil
+Version: 0.0.3
+Summary: Shay Palachy's personal common Python 3 utility functions and classes.
+Home-page: https://github.com/shaypal5/palpyutil
+Author: Shay Palachy
+Author-email: shaypal5@gmail.com
+License: MIT
+Description: palpyutil
+        #########
+        
+        Shay Palachy's personal common Python 3 utility functions and classes.
+        
+        .. code-block:: python
+        
+          from palpyutil.decorators import lazy_property
+        
+          @lazy_property
+          def some_big_calc(param_array):
+            sub_res = [big_func(param) for param in param_array]
+            return sum(sub_res)
+        
+        
+        Installation
+        ============
+        
+        Install ``palpyutil`` with:
+        
+        .. code-block:: bash
+        
+          pip install palpyutil
+        
+        
+        Credits
+        =======
+        Created by Shay Palachy  (shay.palachy@gmail.com).
+        
+Keywords: pandas dataframe pipeline data
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
