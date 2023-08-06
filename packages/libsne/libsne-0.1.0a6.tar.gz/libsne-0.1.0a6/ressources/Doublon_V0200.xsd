@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://nuu.application.i2/"
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://nuu.application.i2/">
+	<xs:element name="listeDoublons" type="tns:listeDoublons" />
+
+
+	<xs:complexType name="listeDoublons">
+		<xs:sequence>
+			<xs:element name="doublon" type="tns:doublon" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="doublon">
+		<xs:sequence>
+			<xs:element name="numUnique" type="xs:string" />
+			<xs:element name="demandeur" type="tns:doublon_demandeur" />
+			<xs:element name="listeCotitulaire" type="tns:doublon_listeCotitulaire"
+				minOccurs="0" />
+			<xs:element name="listeLocalisationSouhaitee" type="tns:doublon_listeLocalisationSouhaitee" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="doublon_demandeur">
+		<xs:sequence>
+			<xs:element name="civilite" type="tns:doublon_codeElement" />
+			<xs:element name="nom" type="xs:string" />
+			<xs:element name="nomPatronymique" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="prenom" type="xs:string" />
+			<xs:element name="dateNaissance" type="xs:date" />
+			<xs:element name="adressePostale" type="tns:doublon_adresse" />
+			<xs:element name="adresseLogement" type="tns:doublon_adresse"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="d_codeElement">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="6" />
+			<xs:pattern value="[a-zA-Z0-9]{1,6}" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="doublon_codeElement">
+		<xs:attribute name="code" type="tns:d_codeElement" />
+	</xs:complexType>
+
+	<xs:simpleType name="_codeCommune">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="5" />
+			<xs:pattern value="[a-zA-Z0-9]{1,5}" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="doublon_codeCommune">
+		<xs:attribute name="code" type="tns:_codeCommune" />
+	</xs:complexType>
+
+	<xs:group name="doublon_groupeLocalite">
+		<xs:sequence>
+			<xs:element name="codePostal" type="xs:string" minOccurs="0" />
+			<xs:element name="commune" type="tns:doublon_codeCommune"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="doublon_groupeLocaliteEtranger">
+		<xs:sequence>
+			<xs:element name="codePostalEtranger" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="communeEtranger" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="pays" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:group>
+
+	<xs:complexType name="doublon_adresse">
+		<xs:sequence>
+			<xs:element name="etranger" type="xs:boolean" />
+			<xs:element name="appartement" type="xs:string" minOccurs="0" />
+			<xs:element name="etage" type="xs:string" minOccurs="0" />
+			<xs:element name="escalier" type="xs:string" minOccurs="0" />
+			<xs:element name="batiment" type="xs:string" minOccurs="0" />
+			<xs:element name="compAdresse" type="xs:string" minOccurs="0" />
+			<xs:element name="numero" type="xs:string" minOccurs="0" />
+			<xs:element name="voie" type="xs:string" minOccurs="0" />
+			<xs:element name="lieuDit" type="xs:string" minOccurs="0" />
+			<xs:choice>
+				<xs:group ref="tns:doublon_groupeLocalite" />
+				<xs:group ref="tns:doublon_groupeLocaliteEtranger" />
+			</xs:choice>
+			<xs:element name="nomHebergeant" type="xs:string"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="doublon_listeCotitulaire">
+		<xs:sequence>
+			<xs:element name="cotitulaire" type="tns:doublon_cotitulaire"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="doublon_cotitulaire">
+		<xs:sequence>
+			<xs:element name="civilite" type="tns:doublon_codeElement" />
+			<xs:element name="nom" type="xs:string" />
+			<xs:element name="nomPatronymique" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="prenom" type="xs:string" />
+			<xs:element name="dateNaissance" type="xs:date" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="doublon_listeLocalisationSouhaitee">
+		<xs:sequence>
+			<xs:element name="localisationSouhaitee" type="tns:doublon_localisationSouhaitee"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="doublon_localisationSouhaitee">
+		<xs:sequence>
+			<xs:element name="commune" type="tns:doublon_codeCommune" />
+			<xs:element name="quartier" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,4 @@
+include ressources/*.wsdl
+include ressources/*.xsd
+include README.md
+include CHANGELOG.md
