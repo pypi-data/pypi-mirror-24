@@ -1,0 +1,6 @@
+brow.py
+setup.py
+brow.egg-info/PKG-INFO
+brow.egg-info/SOURCES.txt
+brow.egg-info/dependency_links.txt
+brow.egg-info/top_level.txt
