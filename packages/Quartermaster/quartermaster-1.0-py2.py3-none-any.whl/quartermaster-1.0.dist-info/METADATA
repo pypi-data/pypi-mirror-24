@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: quartermaster
+Version: 1.0
+Summary: Get fiscal quarter
+Home-page: https://github.com/kphretiq/quartermaster
+Author: pathetiq kphretiq
+Author-email: kphretiq@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/kphretiq/quartermaster
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+
+trivial class to get quarter from a user-defined gregorian fiscal year.
+
+
