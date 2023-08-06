@@ -1,0 +1,4 @@
+docopt
+six
+requests
+refreshbooks==2.0
