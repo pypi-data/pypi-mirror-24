@@ -1,0 +1,4 @@
+# Add your requirements here like:
+numpy>=1.9
+jpype1>=0.6
+pathlib>=1.0
