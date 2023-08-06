@@ -1,0 +1,10 @@
+taxii2_client-0.1.0.dist-info/DESCRIPTION.rst,sha256=n2Js8RwNU8CQnoPibSgxlzNTIg6JwQ86WrmqZCjYH3o,6167
+taxii2_client-0.1.0.dist-info/METADATA,sha256=aB1gQlwVvXGjlkqv03_Ju8s0nmlrrO9xlHSb5Y3qVk0,7239
+taxii2_client-0.1.0.dist-info/RECORD,,
+taxii2_client-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+taxii2_client-0.1.0.dist-info/metadata.json,sha256=wzaVv-HCJBqjI59Ga61BnjiQRtQ9LqBxH7zP4xidne8,1101
+taxii2_client-0.1.0.dist-info/top_level.txt,sha256=cryAYAKTEiYJHwfsY5K7OfD2m-ON9ETcUJ_5W9VyqBg,13
+taxii2client/__init__.py,sha256=cdAW_V2-R0QPB3Eb_5eZaXP59MuUZ9RQGn4Djs8RV7A,18587
+taxii2client/version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+taxii2client/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taxii2client/test/test_client.py,sha256=uxeBhnAa_wsIX_QDKMbZUOeb_ce7ZKgtgWZWeLxvwWI,12654
