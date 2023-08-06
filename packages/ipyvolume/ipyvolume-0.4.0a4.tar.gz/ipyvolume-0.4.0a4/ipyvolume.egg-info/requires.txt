@@ -1,0 +1,6 @@
+ipywidgets>=7.0.0
+numpy
+traittypes
+traitlets
+Pillow
+ipywebrtc
