@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: simplebitcoinfuncs
+Version: 0.1.4.7
+Summary: Simple Python 2/3 functions for common Bitcoin operations
+Home-page: https://github.com/maxweisspoker/simplebitcoinfuncs
+Author: Maximilian Weiss
+Author-email: max@maxweiss.io
+License: MIT
+Description: UNKNOWN
+Keywords: bitcoin
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
