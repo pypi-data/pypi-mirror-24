@@ -1,0 +1,63 @@
+Metadata-Version: 1.1
+Name: text-to-mp3
+Version: 0.1.1
+Summary: Converts a text file to mp3
+Home-page: https://github.com/shridarpatil/text_file_to_mp3
+Author: Shridhar Patil
+Author-email: shridharpatil2792@gmail.com
+License: MIT license
+Download-URL: https://github.com/shridarpatil/text_file_to_mp3/archive/0.1.1.tar.gz
+Description: ==================
+        Text File To Audio
+        ==================
+        
+        .. image:: https://img.shields.io/pypi/v/text_to_mp3.svg
+                :target: https://pypi.python.org/pypi/text_to_mp3
+        
+        .. image:: https://travis-ci.org/shridarpatil/text-file-to-mp3.svg?branch=master
+                :target: https://travis-ci.org/shridarpatil/text_file_to_audio
+        
+        Converts a text file to mp3
+        
+        
+        * Free software: MIT license
+        * Documentation: https://text-file-to-mp3.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        ---------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2017-08-15)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: text_to_mp3,text to audio,text to mp3
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
