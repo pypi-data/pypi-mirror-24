@@ -1,0 +1,11 @@
+xfer/__init__.py,sha256=-p_3fwWFof45r-MFVwfCwIq7HzOfZ2xlMscszhfy47Q,107
+xfer/__main__.py,sha256=nJBovCDDYJy8AkSgg-5D1KuJTTvwaUUR_R0obXBTFuU,2591
+xfer/cli.py,sha256=5B5KfnD8rzN58BJeWk6jR3kxVSj6DLvE5OpwRddVOXI,12641
+xfer-0.2.4.data/scripts/git-xfer,sha256=9dViSyhe2mSoBzfy8RQ3-jEIeIyIk6r50x5z8-CiByk,19
+xfer-0.2.4.dist-info/DESCRIPTION.rst,sha256=D4P82DJdeEOT4Y0i-6Fv4N63Ppe2YApwWY_K8z1Fqkc,1833
+xfer-0.2.4.dist-info/METADATA,sha256=g9N4-97D5bAahnpodDUXlF1YtnVqFiBNE3o9V_7qLAk,2702
+xfer-0.2.4.dist-info/RECORD,,
+xfer-0.2.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+xfer-0.2.4.dist-info/entry_points.txt,sha256=XMZHqxkq8hT9TzUZ9xC8p2PyqNyDib5s_gcxJLCITbA,45
+xfer-0.2.4.dist-info/metadata.json,sha256=HG7Gp2cmqe1yZrbQPvq-7nXtGYPqE8njKY_DWYvQa_s,1191
+xfer-0.2.4.dist-info/top_level.txt,sha256=SkqDWAwjk9hYpAIdV6EKZltmGXoVkdxmJgvcBdi0jbE,5
