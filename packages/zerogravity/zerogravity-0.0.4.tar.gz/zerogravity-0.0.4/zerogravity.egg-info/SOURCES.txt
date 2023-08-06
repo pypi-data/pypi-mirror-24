@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+zerogravity.egg-info/PKG-INFO
+zerogravity.egg-info/SOURCES.txt
+zerogravity.egg-info/dependency_links.txt
+zerogravity.egg-info/requires.txt
+zerogravity.egg-info/top_level.txt
