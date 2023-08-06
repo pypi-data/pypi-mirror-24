@@ -1,0 +1,12 @@
+command_lifecycle/__init__.py,sha256=cNls434VHhAx0ARs9y00gGhYoht4GkSdjnbrK5SQ1Lc,59
+command_lifecycle/buffer.py,sha256=f9TAHlKTZ1ZGv7sBdRql9_uDpa0MikDhaKdw2YJZE4E,662
+command_lifecycle/helpers.py,sha256=Pa9PsOfLBABlef7aAEALxBlAcWCdvogmuvI1w-yWvCo,2099
+command_lifecycle/lifecycle.py,sha256=l7mGYiDojqxmizt3Bbb-4YJscjtKyf4-1uCZqa0mKWQ,2156
+command_lifecycle/timeout.py,sha256=LcEsvbb7_SlWO7y3S6H1DpUKc9SmcWxYB1JoMCTYIH4,729
+command_lifecycle/wakeword.py,sha256=-8jLMlh338SJ47Y2rXz-7fWIUutUyaCXACc55kO_pTk,1999
+command_lifecycle-0.4.0.dist-info/DESCRIPTION.rst,sha256=xb1XhPVWSj78Y8WFro7zwCj6_KWV-Qj6T3EUMQ7HISY,8303
+command_lifecycle-0.4.0.dist-info/METADATA,sha256=g7Sa8FsFqpe3PBxTuZO0Slwel437mYJM9nZeMfR657Y,9070
+command_lifecycle-0.4.0.dist-info/RECORD,,
+command_lifecycle-0.4.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+command_lifecycle-0.4.0.dist-info/metadata.json,sha256=pxj_cBbm8Ucb3ny3A-ZyW-jxPPFKsbCcJ38-XlFzKKM,925
+command_lifecycle-0.4.0.dist-info/top_level.txt,sha256=v9zSterSWhzt_MVN3VGTtyClyqL32v815oNBCEFnYbc,18
