@@ -1,0 +1,16 @@
+README.rst
+setup.py
+cosima_cookbook/__init__.py
+cosima_cookbook/netcdf_index.py
+cosima_cookbook.egg-info/PKG-INFO
+cosima_cookbook.egg-info/SOURCES.txt
+cosima_cookbook.egg-info/dependency_links.txt
+cosima_cookbook.egg-info/top_level.txt
+cosima_cookbook/diagnostics/__init__.py
+cosima_cookbook/diagnostics/mean_tau_x.py
+cosima_cookbook/diagnostics/overturning.py
+cosima_cookbook/diagnostics/simple.py
+cosima_cookbook/plots/__init__.py
+cosima_cookbook/plots/lineplots.py
+cosima_cookbook/plots/overturning.py
+cosima_cookbook/plots/scalar.py
