@@ -1,0 +1,6 @@
+pyqt5
+sh
+pymediainfo
+timecode
+pillow
+numpy>=1.13
