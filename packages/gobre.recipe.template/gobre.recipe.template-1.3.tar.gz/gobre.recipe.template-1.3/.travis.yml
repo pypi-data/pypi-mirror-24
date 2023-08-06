@@ -1,0 +1,11 @@
+language: python
+python:
+  - "2.7"
+  - "3.6"
+# command to install dependencies
+before_script:
+  - "cd tests"
+  - "python bootstrap.py"
+  - "python bin/buildout"
+# command to run tests
+script: bin/nosetests
