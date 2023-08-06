@@ -1,0 +1,9 @@
+[flask.commands]
+sse = invenio_sse.cli:sse
+
+[invenio_base.api_apps]
+invenio_sse = invenio_sse:InvenioSSE
+
+[invenio_base.apps]
+invenio_sse = invenio_sse:InvenioSSE
+
