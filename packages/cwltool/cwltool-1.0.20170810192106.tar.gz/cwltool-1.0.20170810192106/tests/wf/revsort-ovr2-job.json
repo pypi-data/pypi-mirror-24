@@ -1,0 +1,15 @@
+{
+  "input": {
+    "class": "File",
+    "location": "whale.txt"
+  },
+    "cwltool:overrides": [
+        {
+            "overrideTarget": "sorttool.cwl",
+            "override": [{
+                "class": "DockerRequirement",
+                "dockerPull": "ubuntu:14.04"
+            }]
+        }
+    ]
+}
