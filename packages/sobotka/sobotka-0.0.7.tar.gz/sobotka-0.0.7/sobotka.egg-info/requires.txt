@@ -1,0 +1,9 @@
+python_hosts
+watchdog
+peewee
+pytz
+boto3
+stormssh
+Fabric
+storm
+PyYAML

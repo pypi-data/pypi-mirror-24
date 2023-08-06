@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sobotka
+Version: 0.0.7
+Summary: Manage development environments on AWS
+Home-page: https://github.com/looneym/sobotka
+Author: Micheal Looney
+Author-email: looneymicheal+sobotka@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: aws ec2 docker docker-compose devtools development environments
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
