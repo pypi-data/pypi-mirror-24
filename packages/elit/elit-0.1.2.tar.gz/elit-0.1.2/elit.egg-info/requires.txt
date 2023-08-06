@@ -1,0 +1,7 @@
+nose
+Cython
+mxnet
+argparse
+gensim
+fasttext
+numpy
