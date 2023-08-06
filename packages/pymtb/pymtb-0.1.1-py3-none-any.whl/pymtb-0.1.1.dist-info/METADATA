@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: pymtb
+Version: 0.1.1
+Summary: Mel Tool Box - Personal Library
+Home-page: UNKNOWN
+Author: Mel Massadian
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: numpy (>=1.13)
+Requires-Dist: pillow
+Requires-Dist: pymediainfo
+Requires-Dist: pyqt5
+Requires-Dist: sh
+Requires-Dist: timecode
+
+mtb
+===
+
+mtb is a growing suite of tools and helpers
+that covers a wide range of usages.
+
+
+
+Install using pip:
+
+    pip install pymtb
+
+Exemple d'usage:
+
+    >>> from mtb
+    >>> proclamer()
+
+
+
