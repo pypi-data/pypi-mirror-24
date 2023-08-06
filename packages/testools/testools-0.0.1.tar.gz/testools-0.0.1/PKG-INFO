@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: testools
+Version: 0.0.1
+Summary: some testing tool like logging decorator.
+Home-page: https://github.com/simadad/myscripttool/tree/master/testools
+Author: simadad
+Author-email: simadad@sina.com
+License: MIT
+Description: 测试小工具
+Keywords: test python decorator
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent

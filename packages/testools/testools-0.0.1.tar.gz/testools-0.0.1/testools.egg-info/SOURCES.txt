@@ -1,0 +1,8 @@
+README.txt
+setup.py
+testools/declog.py
+testools.egg-info/PKG-INFO
+testools.egg-info/SOURCES.txt
+testools.egg-info/dependency_links.txt
+testools.egg-info/top_level.txt
+testools.egg-info/zip-safe
