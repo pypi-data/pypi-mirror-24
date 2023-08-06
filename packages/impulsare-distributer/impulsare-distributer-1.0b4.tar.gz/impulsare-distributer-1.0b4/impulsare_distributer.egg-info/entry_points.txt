@@ -1,0 +1,2 @@
+[console_scripts]
+queue-listener=impulsare_distributer.queue_listener:main
