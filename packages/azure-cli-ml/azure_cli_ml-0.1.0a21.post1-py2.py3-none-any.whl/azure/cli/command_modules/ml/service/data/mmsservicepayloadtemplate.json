@@ -1,0 +1,13 @@
+{
+	"imageId": "",
+	"name": "",
+	"numReplicas": 1,
+	"dataCollection": {
+		"storageEnabled": false,
+		"eventHubEnabled": false
+	},
+	"computeResource": {
+		"id": "",
+		"type": "Cluster"
+	}
+}
