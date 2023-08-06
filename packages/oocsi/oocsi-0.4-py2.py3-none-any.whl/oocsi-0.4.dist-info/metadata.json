@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"contacts": [{"email": "m.funk@tue.nl", "name": "matsfunk", "role": "author"}], "document_names": {"description": "DESCRIPTION.rst"}, "project_urls": {"Home": "https://github.com/iddi/oocsi-python"}}}, "generator": "bdist_wheel (0.29.0)", "metadata_version": "2.0", "name": "oocsi", "summary": "Python Client for OOCSI", "version": "0.4"}
