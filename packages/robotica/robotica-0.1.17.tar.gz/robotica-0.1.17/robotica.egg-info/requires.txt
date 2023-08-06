@@ -1,0 +1,7 @@
+aiohttp
+Click>=6.0
+APScheduler
+click-log
+aiolifxc>=0.5.2
+PyYAML
+python-dateutil
