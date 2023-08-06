@@ -1,0 +1,8 @@
+configparser
+cryptography
+bcrypt
+bitarray
+re
+urllib
+url_normalize
+ipaddress
