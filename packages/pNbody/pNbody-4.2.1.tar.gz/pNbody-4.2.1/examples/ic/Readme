@@ -1,0 +1,65 @@
+Generating spheroids, disks and galaxies models at the Jeans Equilibrium.
+
+
+1) Spheroids
+
+./generate_spherical_model_plummer.py
+./plot_spherical_model_plummer.py stats_plummer.dmp
+
+
+
+
+
+2) Disks
+
+   - Miyamoto-Nagai disk
+   
+  ./generate_cylindrical_model_miyamoto.py
+  ./plot_cylindrical_model_miyamoto.py stats_miyamoto.dmp
+   
+   
+   - Exponnential disk
+
+  ./generate_cylindrical_model_exponnential.py
+  ./plot_cylindrical_model_exponnential.py stats_expd.dmp
+    
+2) Galaxy
+
+  ./generate_galaxy.py
+  ./plot_galaxy_velocities.py   stats_disk.dmp stats_gas.dmp
+  ./plot_galaxy_stability.py    stats_disk.dmp stats_gas.dmp
+  ./plot_galaxy_frequencies.py  stats_disk.dmp stats_gas.dmp
+  
+  ./plot_spherical.py stats_halo.dmp  
+  ./plot_spherical.py stats_bulge.dmp  
+  
+  
+  
+# other spherical models  
+python ./generate_spherical_model_nfw.py
+python ./generate_spherical_model_g2c.py 
+  
+  
+  
+  
+     
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

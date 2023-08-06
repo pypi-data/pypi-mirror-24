@@ -1,0 +1,81 @@
+#!/usr/bin/env python
+
+import os,thread,sys,string,time,glob
+
+from Tkinter import *
+from tkMessageBox import askokcancel
+from tkMessageBox import showerror
+from tkFileDialog import asksaveasfilename 
+from tkFileDialog import askopenfilename
+
+from numpy import *
+
+from pNbody import *
+from pNbody import param
+from pNbody import io
+from pNbody import geometry as geo
+
+import Ptools as pt
+
+try:
+  from optparse import OptionParser
+except ImportError:
+  from optik import OptionParser
+
+
+
+########################################  
+#					  
+# parser				  
+#					  
+######################################## 
+
+
+
+def parse_options():
+
+  usage = "usage: %prog [options] file"
+  parser = OptionParser(usage=usage)
+
+  parser  = pt.add_units_options(parser)
+  parser = pt.add_ftype_options(parser)  
+
+  parser.add_option("--exec",
+		   action="store", 
+		   dest="execline",
+		   type="string",
+		   default = None,		   
+		   help="give command to execute before",	 
+		   metavar=" STRING")   
+		    		    		    
+  (options, args) = parser.parse_args()
+   
+  if len(args) == 0:
+    print "you must specify a filename"
+    sys.exit(0)
+    
+  files = args
+  
+  return files,options
+
+
+
+
+
+
+  
+      
+################################################################################
+#
+#                                    MAIN
+#
+################################################################################
+
+files,options = parse_options()
+execline = options.execline
+
+
+for file in files:
+  nb = Nbody(file,ftype=options.ftype) 
+  if execline != None:
+    exec(execline)

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+GPY=`which gpy`
+ARGS=$*
+
+STR="%run ${GPY} ${ARGS}"
+
+echo running $STR
+
+ipython -i -c "$STR"

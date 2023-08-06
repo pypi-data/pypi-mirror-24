@@ -1,0 +1,74 @@
+
+[![build status](https://gitlab.com/revaz/pNbody/badges/master/build.svg)](https://gitlab.com/revaz/pNbody/commits/master)
+[![coverage report](https://gitlab.com/revaz/pNbody/badges/master/coverage.svg)](https://gitlab.com/revaz/pNbody/commits/master)
+
+note : this README is now obsolete
+
+pNbody python module
+http://obswww.unige.ch/~revaz/pNbody/index.html
+
+Release 4.0 (Feruary, 2008)
+
+
+--------------------------------------------------------------------
+Requirements
+--------------------------------------------------------------------
+  
+  * C compiler
+  * Python 2.5 or higher
+  * numpy (python module)
+  * PIL (the Python Image Library module with python-imaging-tk enabled)
+  
+--------------------------------------------------------------------
+Build instructions for UNIX/LINUX
+--------------------------------------------------------------------
+
+
+1. Unpack the pNbody distribution (the file pNbody-3.0.tgz)
+   in your Python extensions directory (if you have one.  If
+   not, feel free to unpack it in any other suitable directory).
+
+        $ cd Python-2.5/Extensions # example
+        $ tar -xzf pNbody-4.0.tgz
+
+
+2. Using Python 2.3 or later, you can use the setup.py
+   script to build the module.  The following commands should do
+   the trick:
+
+        $ python setup.py build
+        $ python setup.py install
+
+   (depending on how Python has been installed on your machine,
+   you might have to log in as a superuser to run the 'install'
+   command.)
+
+   If the setup.py command finishes without any errors, you're
+   done!
+
+
+	
+--------------------------------------------------------------------
+Build instructions for Windows
+--------------------------------------------------------------------
+
+1. Install Linux on your Windows machine and follow the 
+   instructions for UNIX
+
+
+
+--------------------------------------------------------------------	
+Documentation
+--------------------------------------------------------------------
+	
+   You can find the manual in the file : doc/man.ps	
+	
+--------------------------------------------------------------------	
+Getting Help
+--------------------------------------------------------------------
+
+  If you have questions about python Nbody module, feel free to, write 
+  to the following e-mail:
+
+    yves.revaz@obspm.fr
+
