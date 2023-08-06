@@ -1,0 +1,12 @@
+mxnet_to_coreml-0.1.0.data/purelib/converter/__init__.py,sha256=EWsEJdqMbVZOBLYEvcci5VgvFEul-nubLnmcMn5MJlI,786
+mxnet_to_coreml-0.1.0.data/purelib/converter/_add_pooling.py,sha256=2wyhzbR60jm1uoMqgb50o7QHb7k5S3qJx3Xh17musnE,5499
+mxnet_to_coreml-0.1.0.data/purelib/converter/_layers.py,sha256=5w5ddYvF9mJv0YFKKcg4AqQPae4dZDYwn2iNyihukhU,16133
+mxnet_to_coreml-0.1.0.data/purelib/converter/_mxnet_converter.py,sha256=kPLQxZv_KpuwRO1_gaa8vxhSMoDgNDEVJ-ZVLK02L2E,8850
+mxnet_to_coreml-0.1.0.data/purelib/converter/utils.py,sha256=oa9WWamfXwfNVMcjD0MERh_GeiwFDP9n4gEockPDr7Y,2447
+mxnet_to_coreml-0.1.0.data/scripts/mxnet_coreml_converter.py,sha256=u4qozm95w12YPJrzsn9rhZguFwCdOKCIPrM3ip66CVg,5072
+mxnet_to_coreml-0.1.0.dist-info/DESCRIPTION.rst,sha256=vwtD2PUrdZMxvhw_cUfTfNMPdq10tERY8v-0J4obXGs,3125
+mxnet_to_coreml-0.1.0.dist-info/METADATA,sha256=e2VMyLFd4wuS4cnd1D3bc3YZkjGjjNGGe8UOrZXJ2lo,3904
+mxnet_to_coreml-0.1.0.dist-info/RECORD,,
+mxnet_to_coreml-0.1.0.dist-info/WHEEL,sha256=wVVRbMO_cVv3uQNLxo4S1gsp3mU87Q-7ztdbAsUL4SI,110
+mxnet_to_coreml-0.1.0.dist-info/metadata.json,sha256=XWPuJSedVmPCSKbir52oRt9SUgfLlMo1a0tH6uV8YsE,970
+mxnet_to_coreml-0.1.0.dist-info/top_level.txt,sha256=S1fAf-PtuctgaGFfsn0oaTHY1tVHwOTeNCb8yB7ReqA,10
