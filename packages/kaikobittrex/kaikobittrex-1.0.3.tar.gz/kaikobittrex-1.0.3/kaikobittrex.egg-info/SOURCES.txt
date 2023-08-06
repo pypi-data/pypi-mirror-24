@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+kaikobittrex/__init__.py
+kaikobittrex/kaikobittrex.py
+kaikobittrex.egg-info/PKG-INFO
+kaikobittrex.egg-info/SOURCES.txt
+kaikobittrex.egg-info/dependency_links.txt
+kaikobittrex.egg-info/top_level.txt
