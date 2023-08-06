@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: teamroles
+Version: 0.1.9
+Summary: Implementation of User-Role-Team-Permissions network with Django web framework
+Home-page: https://github.com/mevlanaayas/django-teams.git
+Author: Mevlana Ayas
+Author-email: mevlanaayas@gmail.com
+License: MIT
+Download-URL: https://github.com/mevlanaayas/django-teams/tarball/0.1.9
+Description: UNKNOWN
+Keywords: django,django-teams,django teams,role permissions,roles
+Platform: UNKNOWN
