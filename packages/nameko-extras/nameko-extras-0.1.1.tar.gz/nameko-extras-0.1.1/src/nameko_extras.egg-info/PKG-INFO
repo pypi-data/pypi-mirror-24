@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: nameko-extras
+Version: 0.1.1
+Summary: Nameko run with autoloading, logging file CLI option
+Home-page: UNKNOWN
+Author: Chatbot Developers
+Author-email: chatbot-developers@babylonhealth.com
+License: Apache License 2.0
+Description: https://github.com/Babylonpartners/nameko-extras
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
