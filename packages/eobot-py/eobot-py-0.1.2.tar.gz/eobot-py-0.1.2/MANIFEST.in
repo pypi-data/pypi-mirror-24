@@ -1,0 +1,3 @@
+include README.rst
+recursive-include eobot/lib *.py
+recursive-include eobot/methods *.py
