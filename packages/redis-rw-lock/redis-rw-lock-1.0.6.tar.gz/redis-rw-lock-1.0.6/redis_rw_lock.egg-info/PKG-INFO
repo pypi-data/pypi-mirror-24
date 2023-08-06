@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: redis-rw-lock
+Version: 1.0.6
+Summary: Redis based Reader-Writer lock with Writer's priority.
+Home-page: https://github.com/swapnilsm/redis-rw-lock
+Author: Swapnil S. Mahajan
+Author-email: swapnilsm@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: redis,lock,rwlock
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
