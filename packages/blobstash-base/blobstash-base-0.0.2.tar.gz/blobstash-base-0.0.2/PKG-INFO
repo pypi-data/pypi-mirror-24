@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: blobstash-base
+Version: 0.0.2
+Summary: BlobStash client
+Home-page: https://github.com/tsileo/blobstash-python-base
+Author: Thomas Sileo
+Author-email: t@a4.io
+License: MIT
+Description: # BlobStash Python Base
+        
+        [![PyPI](https://img.shields.io/pypi/v/blobstash-base.svg)](https://pypi.python.org/pypi/blobstash-base)
+        &nbsp; &nbsp; [![PyPI](https://img.shields.io/pypi/pyversions/blobstash-base.svg)](https://pypi.python.org/pypi/blobstash-base)
+        
+        This package contains tools to interact with [BlobStash](https://github.com/tsileo/blobstash).
+        
+        Not useful as is, you should install the package for the API you need:
+        
+         - [blobstash-python-docstore](https://github.com/tsileo/blobstash-python-docstore)
+         - [blobstash-python-filetree](https://github.com/tsileo/blobstash-python-filetree)
+        
+        
+        ## LICENSE
+        
+        MIT
+        
+Keywords: blobstash JSON document store
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
