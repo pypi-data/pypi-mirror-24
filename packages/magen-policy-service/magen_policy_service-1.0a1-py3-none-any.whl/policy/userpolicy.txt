@@ -1,0 +1,4 @@
+Paul Quin engineering: paulq@cisco.com in group engineering can open document secret.doc for 1 day at the office
+Michael Lipman Architecture: mlipman@cisco.com in group DE can open architecture documents for 5 days at starbucks
+Paul Quin Roadmaps: paulq@cisco.com in group DE can open roadmap documents for 2 days on campus
+Michael Lipman Engineering: mlipman@cisco.com in group engineering can open earnings documents for 3 days at sjc10

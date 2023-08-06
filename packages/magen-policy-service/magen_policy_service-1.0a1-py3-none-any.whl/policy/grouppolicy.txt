@@ -1,0 +1,5 @@
+Marketing Plans: marketing users can open document marketingplans.ppt for 30 days on campus
+Finance Earnings: finance user can open earnings documents for 1 day in their office
+Engineering Plans: engineering users can open document engineeringplans.ppt for 30 days on campus
+Architecture Docs: DE user can open architecture documents for 1 day in their office
+Design docs: engineering users can open design documents for 30 days on campus
