@@ -1,0 +1,14 @@
+mander/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mander/districts.py,sha256=vxtzrEDrqX335P8a6RJrasZnrdCRYR_4rp_TA7GTlGc,1065
+mander/metrics.py,sha256=9TqeSqFOIBcyj1XTvFikcmS-ecWu-N-cRtHHpInt0OU,1516
+mander/minBoundingCircle.py,sha256=eQCQlUV-EGhQ9ei2XHJ45OS3n8vRY8XSeX62cr2i4z4,4264
+mander/utils.py,sha256=DUR0rc-Y8C6tcTGYJKhe0cVpdc0geYnz43z_1MUGE1c,1000
+mander-0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+mander-0.3.dist-info/METADATA,sha256=yYhpev8rdCpdCv5H6-FaqAuvYe4-uPStqWgWOfeoQ9o,325
+mander-0.3.dist-info/RECORD,,
+mander-0.3.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+mander-0.3.dist-info/metadata.json,sha256=3ALiqpq4_5gebLJwSBAis8uIU8sP9mqlpe2UFUUsw54,537
+mander-0.3.dist-info/pbr.json,sha256=6lDrhEXobY-EV-diZ91k15uEsRuFbEJK8cgV5c7J1Ik,47
+mander-0.3.dist-info/top_level.txt,sha256=zYqhxYtvEUvZfA2Vu4U6z92EbkiAQSemJfuPH9Ntbok,12
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/metrics.py,sha256=Mmv8HrCwE3cmDRQ8oeFIkJNFMP8IDGAKvvdZWbofAYk,2515
