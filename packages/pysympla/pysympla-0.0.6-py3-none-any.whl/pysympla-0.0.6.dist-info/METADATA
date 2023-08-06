@@ -1,0 +1,48 @@
+Metadata-Version: 2.0
+Name: pysympla
+Version: 0.0.6
+Summary: Scraper para acessar informações dos seus eventos no Sympla.
+Home-page: https://github.com/Lrcezimbra/pysympla
+Author: Lucas Rangel Cezimbra
+Author-email: lucas.cezimbra@gmail.com
+License: MIT License
+Keywords: sympla,scraper,requests,events
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4 (==4.6.0)
+Requires-Dist: html5lib (==0.999999999)
+Requires-Dist: requests (==2.18.4)
+
+pysympla
+============
+.. image:: https://pyup.io/repos/github/Lrcezimbra/pysympla/shield.svg
+     :target: https://pyup.io/repos/github/Lrcezimbra/pysympla/
+     :alt: Updates
+
+
+Instalação
+~~~~~~~~~~~~~
+``pip install pysympla``
+
+Como Usar
+~~~~~~~~~~~~~
+.. code-block:: python
+
+    from pysympla import Sympla
+
+    # Autenticação
+    sympla = Sympla('username', 'password')
+
+    # Retorna evento especifíco
+    event = sympla.get_event('ID')
+    print(event.title, event.confirmed_participants, event.pending_participants)
+
+    # Retorna generator de eventos
+    events = sympla.get_events()
+    for event in events:
+        print(event.title, event.confirmed_participants, event.pending_participants)
+
+Contribuindo
+~~~~~~~~~~~~~
+Contribuições são bem-vindas, sinta-se a vontade para abrir uma Issue ou Pull Request
+
+
