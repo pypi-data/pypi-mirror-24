@@ -1,0 +1,11 @@
+ebird/pages/__init__.py,sha256=C82Ug_cu7wZGDVwWdzK3RhZxZYf6rUSCueG_XscnLho,269
+ebird/pages/checklists.py,sha256=UUib1lIMrYhPA-1LMCJeQW6wCNeVau-tJtdlFb1BO8g,17356
+ebird/pages/utils.py,sha256=q1L7jsQE9fJtBlxB9VQEzblbhwo-2q8afaIhxo8blKw,552
+ebird/pages/version.py,sha256=B5gaXa_iv3KKAmR9gppWSb7F1Iaba-sVO-73URL8e70,20
+ebird_pages-0.1.dist-info/DESCRIPTION.rst,sha256=U70XzPuuO_fbtEwsDQu0Q48ZN1YBNHT836Qk1JrbTpc,1870
+ebird_pages-0.1.dist-info/METADATA,sha256=BQrZlBkjEcgsA_f-eyO63CmZA9MT8s9zLLG12DxDpoU,2933
+ebird_pages-0.1.dist-info/RECORD,,
+ebird_pages-0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+ebird_pages-0.1.dist-info/entry_points.txt,sha256=ZTDE7IpkfW-s2Jf-_F282INemv2hQLSDs4w2jLweDj4,91
+ebird_pages-0.1.dist-info/metadata.json,sha256=n8YNJkDzai23KY2D9ZOOggTNd4fAY2P1jE2vtiHdzWI,1340
+ebird_pages-0.1.dist-info/top_level.txt,sha256=lBp3I23K75tsPJn7Jdz7d4Tk7JeRhbVkcuGthNk7LaM,6
