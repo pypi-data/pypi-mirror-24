@@ -1,0 +1,9 @@
+astroid
+funcparserlib
+hypothesis
+pycodestyle
+pylint
+nose
+colorama
+six
+jinja2
