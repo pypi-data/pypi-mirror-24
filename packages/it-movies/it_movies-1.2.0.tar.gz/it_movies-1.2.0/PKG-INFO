@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: it_movies
+Version: 1.2.0
+Summary: This module provides one function called print_lol() which prints lists that may or may not include nested lists.
+Home-page: UNKNOWN
+Author: Iulian Constantinescu
+Author-email: iulian@jxeelab.ro
+License: Public domain
+Description: UNKNOWN
+Keywords: hello,world
+Platform: UNKNOWN
