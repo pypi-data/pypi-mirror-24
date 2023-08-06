@@ -1,0 +1,13 @@
+hdfs3/__init__.py,sha256=XKTWmQB416zgHuVTP6WKsk57fu45qlQOD-aR8JPnTl8,115
+hdfs3/compatibility.py,sha256=2xXm_26xo6E8uumMBDN59vgvNAzwWNKXBVmpoTxm_M4,483
+hdfs3/conf.py,sha256=qgtNX7aU2hWgMDNd9Itsh2v4QKEn_9-GNmZbaetkAKQ,3368
+hdfs3/core.py,sha256=_vKzKew__PR_0WA0PMCvphvMp45uE5H403NI7sJaM7o,30629
+hdfs3/lib.py,sha256=7RUCBqXb7KXK7IwAwhq5w8mOh_wlH-CJsC7A3Pt4hms,26444
+hdfs3/mapping.py,sha256=wO7_5UZFB5FCj3cCqFAGFg1uUDaQ22lnlPeooR6q0VM,2371
+hdfs3/utils.py,sha256=WYIDrJMsxmnplr2CqN2wLzlGwgiWwyAKSM_f1X5j-pM,4568
+hdfs3-0.2.0.dist-info/DESCRIPTION.rst,sha256=cnREPgGT_7MQjWdR0ywMU-s9vsJEHQJNhlmTluXxdJc,446
+hdfs3-0.2.0.dist-info/METADATA,sha256=09weE56DtKaigoaKhcDNR2jqiMjPH5FGZ8Z83hp6fWM,700
+hdfs3-0.2.0.dist-info/RECORD,,
+hdfs3-0.2.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+hdfs3-0.2.0.dist-info/metadata.json,sha256=rhXi6aaU6S2hfmu9jayItxuyWRVnBUbI19muk7jvgA4,447
+hdfs3-0.2.0.dist-info/top_level.txt,sha256=R4wBVDHvUSzBNi9OvubkHTcOfh28VXxtFukr2RlOq1Y,6
