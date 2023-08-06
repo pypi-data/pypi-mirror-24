@@ -1,0 +1,55 @@
+@@grammar::XSTREAM
+
+
+start
+    =
+    { statement } $
+    ;
+
+
+statement
+    =
+    | item:item
+    | stream:stream
+    ;
+
+item
+    =
+    'item' identifier:  identifier '{' {field+:field ';'} '}'
+    ;
+
+stream
+    =
+    'stream' identifier:identifier '(' arg:arg ')' '->' result_identifier:identifier ';'
+    ;
+
+arg
+    =
+    {@+:field {',' @+:field}*}*
+    ;
+
+field
+    =
+    identifier:identifier ':' type:scalar_type
+    ;
+
+identifier
+    =
+    /[a-zA-Z][a-zA-Z0-9]+/
+    ;
+
+number
+    =
+    /\d+/
+    ;
+
+scalar_type
+    =
+    | 'bool'
+    | 'double'
+    | 'i32'
+    | 'u32'
+    | 'i64'
+    | 'u64'
+    | 'string'
+    ;

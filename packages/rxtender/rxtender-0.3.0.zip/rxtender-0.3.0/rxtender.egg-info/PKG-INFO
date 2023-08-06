@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: rxtender
+Version: 0.3.0
+Summary: Reactive streams IPC and RPC code generator
+Home-page: https://github.com/rxtender/rxtender
+Author: Romain Picard
+Author-email: romain.picard@oakbits.com
+License: MIT
+Description: 
+        # XStreamGen
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Debuggers
