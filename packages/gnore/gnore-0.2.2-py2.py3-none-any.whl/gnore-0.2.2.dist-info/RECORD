@@ -1,0 +1,16 @@
+gnore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gnore/__main__.py,sha256=mCQpRs7jWbx37SwvM0jIxWPphl9I5UVxe-gK4e3LQB4,424
+gnore/config.py,sha256=V_BwBjc7B-dCIMnpjhjzjEwlKPt3TKO5Ty69ZulFwT8,225
+gnore/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gnore/api/controllers/__init__.py,sha256=JsiowPVNypjlu9R7Ckh9vHqpIIVZlOhfQORYeYQV_rU,88
+gnore/api/controllers/base_controller.py,sha256=wHL8u7wYENrFpjIyZtdXeIjVw2OSneMoo6Uo0nea1lo,257
+gnore/api/controllers/clean_controller.py,sha256=Zg3iTFNePaLqIOGQk_QPhdzd_fwz1JVyRrsE7VQSaYw,853
+gnore/api/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gnore/api/services/gnore_service.py,sha256=G_lLOIddDmXCvfCOM6i3zYpWG1oB77e5KsPpHIXSk-c,2059
+gnore-0.2.2.dist-info/DESCRIPTION.rst,sha256=WsiWybKdLfHx-hQeZpFmI5b2-Cd6ozTw6Z3Zxd96HhI,1433
+gnore-0.2.2.dist-info/METADATA,sha256=sTDhFKdfq5AvwgmXgqvV6531l-i1m8e0_HBkbW6UNWU,2200
+gnore-0.2.2.dist-info/RECORD,,
+gnore-0.2.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+gnore-0.2.2.dist-info/entry_points.txt,sha256=8YCETL2-KAM1D8kYV-k7xZhUaSUK8LpQVU90J26Keaw,47
+gnore-0.2.2.dist-info/metadata.json,sha256=vA6dHMxyMyCfLLsZZtQp5eSq5vNUT6PDolI1m-Gctww,1088
+gnore-0.2.2.dist-info/top_level.txt,sha256=gLV2TRFumd5UFcu8UtlE0P_sOywOWjsDK_oK1GqbIYg,6
