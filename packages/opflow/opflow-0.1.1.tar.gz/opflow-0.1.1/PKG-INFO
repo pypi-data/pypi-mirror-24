@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: opflow
+Version: 0.1.1
+Summary: Devebot Opflow for Python
+Home-page: https://github.com/opflow/opflow-python
+Author: Devebot Team
+Author-email: contact@devebot.com
+License: UNKNOWN
+Download-URL: https://github.com/opflow/opflow-python/archive/0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: devebot,opflow,amqplib
+Platform: UNKNOWN
