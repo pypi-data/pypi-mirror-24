@@ -1,0 +1,11 @@
+requests
+pynacl
+requests_oauthlib
+future
+configparser
+
+[nm]
+python-networkmanager
+
+[ui]
+pygobject
