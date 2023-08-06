@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: boutiques
+Version: 0.5
+Summary: Schema for describing bash command-line tools
+Home-page: http://github.com/boutiques/boutiques
+Author: Tristan Glatard, Gregory Kiar
+Author-email: tristan.glatard@gmail.com, gkiar07@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
