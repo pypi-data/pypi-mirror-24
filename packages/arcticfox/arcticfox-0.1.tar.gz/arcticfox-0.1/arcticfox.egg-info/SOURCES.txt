@@ -1,0 +1,8 @@
+setup.py
+arcticfox/__init__.py
+arcticfox/device.py
+arcticfox.egg-info/PKG-INFO
+arcticfox.egg-info/SOURCES.txt
+arcticfox.egg-info/dependency_links.txt
+arcticfox.egg-info/requires.txt
+arcticfox.egg-info/top_level.txt
