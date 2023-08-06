@@ -1,0 +1,92 @@
+Metadata-Version: 1.1
+Name: netpacket
+Version: 0.1.2
+Summary: Network packet-creator and packet-capturer module
+Home-page: https://github.com/Magnus9/netpacket
+Author: Magnus Stieglitz
+Author-email: mstieglitz@protonmail.com
+License: BSD-2-Clause
+Download-URL: https://github.com/Magnus9/netpacket
+Description: netpacket, a Python module written in CPython
+        =============================================
+        
+        |Build Status|
+        
+        netpacket is a packet-creator module that supports ethernet, ARP, IPv4,
+        IPv6, ICMPv4, TCP, UDP and DHCPv4. It also contains a packet-capturer
+        called ppcap (Python pcap). The project contains the raw CPython
+        bindings, and a wrapper library written in Python, which can be found in
+        the directory "netpacket".
+        
+        The module tries to be as user-friendly as it can be, leaving tasks like
+        big-endian and little-endian fields to the module itself, the programmer
+        only has to fill in the fields without concerning himself about it.
+        
+        Note concerning IPv4 and IPv6
+        =============================
+        
+        IPv4 and IPv6 is the same class, but the programmer will be jailed into
+        IPv4 or IPv6 usage based on an argument passed to the IP class or
+        protocol classes above. IPv4: 0x0800, IPv6: 0x86dd. IPv4 is already
+        default, and no argument needs to be passed.
+        
+        Example:
+        
+        .. code:: python
+        
+            obj = _netpacket.udp()
+            print(obj)
+            obj = _netpacket.udp(0x86dd)
+            print(obj)
+        
+        <\_netpacket.udpv4 object at 0x7fbff03e3510> <\_netpacket.udpv6 object
+        at 0x7fbff03e3570>
+        
+        Installation
+        ============
+        
+        ::
+        
+            # Install libpcap dependency (using gentoo@portage-tree)
+            emerge --ask net-libs/libpcap --quiet-build
+            # Install libpcap dependency (using archlinux)
+            pacman --sync core/libpcap
+            # Build
+            python setup.py build
+            # Build and install
+            python setup.py install
+        
+        Examples
+        ========
+        
+        All examples can be found in the directory "examples". Docstrings is
+        also available for very protocol class and the ppcap class.
+        
+        Platforms supported
+        ===================
+        
+        netpacket for now only supports Linux, but will support the Unix
+        variants and Mac OS X once the BPF (Berkeley Packet Filter) device
+        implementation is coded in.
+        
+        Python versions supported
+        =========================
+        
+        netpacket only supports Python3, and will never have any support for
+        Python2.
+        
+        Things that will be present in later stages
+        ===========================================
+        
+        -  IPv4 options.
+        -  IPv6 options.
+        -  TCP options.
+        -  Application-layer classes:
+        
+           -  DNS.
+           -  HTTP.
+        
+        .. |Build Status| image:: https://travis-ci.org/Magnus9/netpacket.svg?branch=master
+           :target: https://travis-ci.org/Magnus9/netpacket
+        
+Platform: Linux
