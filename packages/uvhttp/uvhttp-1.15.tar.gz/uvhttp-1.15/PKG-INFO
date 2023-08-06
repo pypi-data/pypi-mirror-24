@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: uvhttp
+Version: 1.15
+Summary: High performance Python HTTP client
+Home-page: https://github.com/justinbarrick/uvhttp
+Author: Justin Barrick
+Author-email: justin.m.barrick@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
