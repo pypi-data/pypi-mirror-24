@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+impulsare_ruler/__init__.py
+impulsare_ruler/queue.py
+impulsare_ruler.egg-info/PKG-INFO
+impulsare_ruler.egg-info/SOURCES.txt
+impulsare_ruler.egg-info/dependency_links.txt
+impulsare_ruler.egg-info/requires.txt
+impulsare_ruler.egg-info/top_level.txt
+impulsare_ruler/static/default.yml
+impulsare_ruler/static/specs.yml
