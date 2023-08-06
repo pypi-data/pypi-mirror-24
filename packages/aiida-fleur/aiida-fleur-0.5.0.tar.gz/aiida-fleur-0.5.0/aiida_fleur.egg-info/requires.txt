@@ -1,0 +1,6 @@
+aiida-core
+ase
+lxml >= 3.6.4
+
+[graphs]
+matplotlib
