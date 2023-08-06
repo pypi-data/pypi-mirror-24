@@ -1,0 +1,212 @@
+# important: never change version manually
+# it is used by `quokka upgrade` command
+VERSION: 1.0.0
+
+# App reads values provided under `QUOKKA` namespace.
+# settings can be lower or upper case does not matter
+# as internally Dynaconf transform to upper case.
+QUOKKA:
+
+  # Enable login for admin access
+  ADMIN_REQUIRES_LOGIN: false
+
+  # Enable login for website
+  WEBSITE_REQUIRES_LOGIN: false
+
+  # DEBUG Mode
+  DEBUG: true
+  DEBUG_TOOLBAR_ENABLED: true
+  ADMIN_RAISE_ON_VIEW_EXCEPTION: true
+  LOGGER_ENABLED: true
+
+  # Secret Key must be in .secrets.yml or QUOKKA_SECRET_KEY env var.
+  # SECRET_KEY: abcderf
+
+  WTF_CSRF_ENABLED: true
+
+  # be careful touching this list, use EXTRA_EXTENSIONS for custom extensions
+  CORE_EXTENSIONS:
+    # Essential
+    - quokka.core.logger.configure
+    - quokka.core.db.QuokkaDB
+    - quokka.admin.configure_admin
+    - flask_wtf.csrf.CSRFProtect
+    - flask_mistune.Mistune
+    - quokka.core.auth.configure
+    - quokka.core.error_handlers.configure
+    - quokka.core.monitoring.configure
+    - quokka.core.themes.configure
+    - quokka.core.content.configure
+    - quokka.admin.configure_file_admin
+    - quokka.admin.configure_extra_views
+    - quokka.core.auth.configure_user_admin
+
+  # Extensions here can be import path to any callable or class
+  # that callable will receive app as only argument.
+  # example:
+  # def configure_my_extension(app):
+  #    app.db  # <--- db pointer
+  #    app.admin  # <--- admin pointer
+  #    load_extension_here
+  # publish your extension to pypi and install
+  # either with `pip install quokka_extension`
+  # or `python setup.py install`
+  # or (recommended) use flit.ini
+  # take a look at `quokka create_extension --help` command
+  # add to the list below `- quokka_extension.configure`
+  EXTRA_EXTENSIONS:
+    - quokka_module_template.configure
+
+  CONTENT_FORMATS:
+    markdown:
+      choice_text: Markdown
+      help_text: Markdown text editor
+      content_format_class: quokka.core.content.formats.MarkdownFormat
+    html:
+      choice_text: HTML
+      help_text: Rich HTML text editor
+      content_format_class: quokka.core.content.formats.HTMLFormat
+    plaintext:
+      choice_text: Plain Text
+      help_text: Pure plain text in text area
+      content_format_class: quokka.core.content.formats.PlainFormat
+
+  # if true any package named quokka_ will be loaded
+  # http://flask.pocoo.org/docs/0.12/cli/#cli-plugins
+  AUTO_LOAD_EXTENSIONS: true
+  # else provide a list
+  # Plugin settings might be namespaced in dynaconf
+
+  DATABASE:
+    # TinyDB
+    system: tinydb
+    folder: databases
+
+    # Mongo
+    # system: mongo
+    # username: admin
+    # password: secret
+    # host: myhost.com
+    # port: 27017
+
+    # Database name
+    name: quokka_db
+    collections:
+      index: index
+      contents: contents
+      uploads: uploads
+      users: users
+
+  DEFAULT_TEXT_FORMAT: markdown
+
+  ADMIN:
+    name: Quokka NG Admin
+    url: /admin
+
+  # https://bootswatch.com/
+  FLASK_ADMIN_SWATCH: sandstone
+  FLASK_ADMIN_TEMPLATE_MODE: bootstrap3
+
+
+  # ADMIN_ICONS: [
+  #     ['post.create_view', 'pencil', 'Write'],
+  #     ['post.index_view', 'th-list', 'Posts'],
+  #     ['config.index_view', 'cog', 'Config'],
+  #     ['user.index_view', 'user', 'Users'],
+  #     ['image.index_view', 'picture', 'Images'],
+  #     ['image.create_view', 'arrow-up', 'Upload'],
+  #     ['channel.index_view', 'th-list', 'Channels']
+  # ]
+
+  DEFAULT_EDITABLE_EXTENSIONS: &extensions [
+    'html', 'css', 'js', 'py', 'txt', 'md', 'cfg', 'coffee', 'html', 'json',
+    'xml', 'yaml', 'yml', 'HTML', 'CSS', 'JS', 'PY', 'TXT', 'MD', 'CFG',
+    'COFFEE', 'HTML', 'JSON', 'XML', 'YAML', 'YML'
+  ]
+
+  FILE_ADMIN:
+    - name: Themes
+      category: Files
+      path: themes
+      url: /themesfiles/  # create nginx rule
+      endpoint: themes_files
+      editable_extensions: *extensions
+    - name: Uploads
+      category: Files
+      path: uploads
+      url: /uploadsfiles/  # Create nginx rule
+      endpoint: uploads_files
+      editable_extensions: *extensions
+    - name: Databases
+      category: Files
+      path: databases
+      url: /databasesfiles/  # Create nginx rule
+      endpoint: databases_files
+      editable_extensions: *extensions
+
+  # All this languages will be available to translate admin panel
+  # and also as language to post content
+  BABEL_LANGUAGES: &languages [
+      'en', 'cs', 'de', 'es', 'fa', 'fr', 'pt', 'ru', 'pa', 'zh_CN', 'zh_TW'
+  ]
+  # this will be the default language on admin and front end
+  # admin language can also be user based
+  BABEL_DEFAULT_LOCALE: &default_locale pt
+
+  # Home page and categories lists all content on this languages no filter
+  # should be a list e.g: ['en'] to filter only english by default
+  # anyway accessing site.com/LANG/ would filter specific language
+  # static site generation loops on *languages
+  # translations variable list all translations urls in theme
+  FILTER_LANGUAGES: *languages
+
+  LOGGER_LEVEL: DEBUG
+  LOGGER_FORMAT: '%(asctime)s %(name)-12s %(levelname)-8s %(message)s'
+  LOGGER_DATE_FORMAT: '%d.%m %H:%M:%S'
+
+  DEBUG_TB_INTERCEPT_REDIRECTS: false
+  DEBUG_TB_PROFILER_ENABLED: true
+  DEBUG_TB_TEMPLATE_EDITOR_ENABLED: true
+  DEBUG_TB_PANELS:
+    - flask_debugtoolbar.panels.versions.VersionDebugPanel
+    - flask_debugtoolbar.panels.timer.TimerDebugPanel
+    - flask_debugtoolbar.panels.headers.HeaderDebugPanel
+    - flask_debugtoolbar.panels.request_vars.RequestVarsDebugPanel
+    - flask_debugtoolbar.panels.template.TemplateDebugPanel
+    # TODO: Migrate mongoengine panel to tinyDB and Pymongo
+    # - flask_mongoengine.panels.MongoDebugPanel
+    - flask_debugtoolbar.panels.logger.LoggingPanel
+    - flask_debugtoolbar.panels.profiler.ProfilerDebugPanel
+    - flask_debugtoolbar.panels.config_vars.ConfigVarsDebugPanel
+
+  DEFAULT_THEME: Flex
+  # https://github.com/alexandrevicenzi/Flex
+  # https://github.com/alexandrevicenzi/Flex/wiki/Custom-Settings
+  # http://www.pelicanthemes.com/
+  # $ quokka themes install theme-name
+  # $ quokka themes activate theme-name
+  # http://docs.getpelican.com/en/latest/themes.html
+
+  THEME_PATHS: themes
+  # content urls will end with .html
+  CONTENT_EXTENSION: html
+
+  # monitoring
+  # You must install `raven` package to use it
+  SENTRY_ENABLED: false
+  # Sentry DSN Key must be in .secrets.yml or QUOKKA_SENTRY_DSN env var.
+  # SENTRY_DSN: ''
+
+  # https://opbeat.com is application monitoring tool
+  # you can enable it but you need to install opbeat
+  # https://opbeat.com/docs/articles/get-started-with-flask/
+
+  # OPBEAT must be in .secrets.yml or QUOKKA_OPBEAT='@json {..}' env var.
+  # you must install `opbeat` package to use it
+  # OPBEAT:
+  #   ORGANIZATION_ID: '<ORGANIZATION-ID>'
+  #   APP_ID: '<APP-ID>'
+  #   SECRET_TOKEN: '<SECRET-TOKEN>'
+  #   INCLUDE_PATHS: ['quokka']
+  #   DEBUG: true
+  #   LOGGING': False
