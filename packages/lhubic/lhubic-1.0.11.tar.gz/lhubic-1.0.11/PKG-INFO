@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: lhubic
+Version: 1.0.11
+Summary: Python swift client with Hubic authentication library
+Home-page: https://github.com/philippelt/lhubic
+Author: Philippe Larduinat
+Author-email: ph.larduinat@wanadoo.fr
+License: GPL V3
+Download-URL: https://github.com/philippelt/lhubic/tarball/v1.0.11.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
