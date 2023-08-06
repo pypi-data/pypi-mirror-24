@@ -1,0 +1,3 @@
+[console_scripts]
+hocon-validator = hocon_validator.hocon_validator:main
+
