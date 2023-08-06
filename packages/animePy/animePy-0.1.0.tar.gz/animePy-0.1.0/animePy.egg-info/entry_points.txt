@@ -1,0 +1,3 @@
+[console_scripts]
+animePy = animePy.cli:main
+
