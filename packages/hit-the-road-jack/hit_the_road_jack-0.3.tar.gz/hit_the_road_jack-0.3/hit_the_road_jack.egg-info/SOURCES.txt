@@ -1,0 +1,8 @@
+setup.py
+hit_the_road_jack/__init__.py
+hit_the_road_jack.egg-info/PKG-INFO
+hit_the_road_jack.egg-info/SOURCES.txt
+hit_the_road_jack.egg-info/dependency_links.txt
+hit_the_road_jack.egg-info/not-zip-safe
+hit_the_road_jack.egg-info/requires.txt
+hit_the_road_jack.egg-info/top_level.txt
