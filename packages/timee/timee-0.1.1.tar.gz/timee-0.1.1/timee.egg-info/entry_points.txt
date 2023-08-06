@@ -1,0 +1,3 @@
+[console_scripts]
+timee = timee.cli:main
+
