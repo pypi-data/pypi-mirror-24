@@ -1,0 +1,5 @@
+[console_scripts]
+awsprof = samlkeygen:list_profiles
+awsprofs = samlkeygen:select_profile
+samld = samlkeygen:auto_authenticate
+
