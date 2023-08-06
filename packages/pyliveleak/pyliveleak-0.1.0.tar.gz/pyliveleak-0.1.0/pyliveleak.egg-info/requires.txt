@@ -1,0 +1,5 @@
+Click>=6.0
+lxml
+requests<3.0.0
+requests-toolbelt
+PyYAML
