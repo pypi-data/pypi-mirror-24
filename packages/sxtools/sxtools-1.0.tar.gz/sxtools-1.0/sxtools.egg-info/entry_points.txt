@@ -1,0 +1,3 @@
+[console_scripts]
+sxtools = sxtools.cli:cli
+
