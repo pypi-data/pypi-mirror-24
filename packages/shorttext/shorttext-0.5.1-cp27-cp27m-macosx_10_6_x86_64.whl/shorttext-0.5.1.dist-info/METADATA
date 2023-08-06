@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: shorttext
+Version: 0.5.1
+Summary: Short Text Categorization
+Home-page: https://github.com/stephenhky/PyShortTextCategorization
+Author: Kwan-Yuet Ho
+Author-email: stephenhky@yahoo.com.hk
+License: MIT
+Keywords: short text natural language processing text mining
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: gensim (>=2.2.0)
+Requires-Dist: keras (>=2.0.0)
+Requires-Dist: numpy (>=1.11.3)
+Requires-Dist: pandas
+Requires-Dist: pulp
+Requires-Dist: scikit-learn
+Requires-Dist: scipy (>=0.18.1)
+Requires-Dist: spacy (>=1.7.0)
+Requires-Dist: stemming
+
+Supervised learning algorithms for short text categorization using embedded word vectors such as Word2Vec, or immediate feature vectors using topic models
+
+
