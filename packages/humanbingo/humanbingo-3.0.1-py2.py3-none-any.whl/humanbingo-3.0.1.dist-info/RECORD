@@ -1,0 +1,14 @@
+humanbingo/__init__.py,sha256=LI-gIAsE2yA9o3dvNItiGpt5de4lx1pidshEZfuzGJg,159
+humanbingo/application.py,sha256=jFmSDfEX-q8ehcVtOXPox9322LgP_CvCgW3QOjxDqPo,2272
+humanbingo/cli.py,sha256=E-vbWaG5IXc5HeN7fkKWYgJDVVSH-RLifUvvCQpOyYk,1683
+humanbingo/humanbingo.py,sha256=VYoI-gwqwBKPx84cA0KnYDRofrgIXs8xtASD2nu5fE0,44
+humanbingo/models.py,sha256=a9GQp-VK9ld2dxJWvfBVF9m23knRUhHm5k1cZG0Ku20,2502
+humanbingo/parsers.py,sha256=j2-3VATwTg6iaUV2JLcTzsQLb6IwhzqWwro8zVXbsLk,6138
+humanbingo/writers.py,sha256=2EcCsT_4J-j365sqNY6v5VU0duH6e5_o9cDD3RBqOFc,3432
+humanbingo-3.0.1.dist-info/DESCRIPTION.rst,sha256=0IR2y4nF2-fF968PCLFnqj0I5e4kFk_xlHb72RbReUI,5573
+humanbingo-3.0.1.dist-info/METADATA,sha256=Od545_ZTSkegIGRzLVNzgdLaNpDOpw5U4jx0dHpTCmE,6592
+humanbingo-3.0.1.dist-info/RECORD,,
+humanbingo-3.0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+humanbingo-3.0.1.dist-info/entry_points.txt,sha256=Cn7yk5erYkQ7dPacEaQSgFiLh82MA-LvDqZX7uHvb0I,52
+humanbingo-3.0.1.dist-info/metadata.json,sha256=xhAQDJwftM4SgQA1L4cf5QtM69Mr7cS5hysDKYQ5w3o,1311
+humanbingo-3.0.1.dist-info/top_level.txt,sha256=7RGizufG084EwFMUIIKb57PUxJ3ZszW4Be5z2BRs07g,11

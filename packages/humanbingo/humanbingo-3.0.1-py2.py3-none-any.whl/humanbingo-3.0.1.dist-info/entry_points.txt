@@ -1,0 +1,3 @@
+[console_scripts]
+humanbingo = humanbingo.cli:main
+
