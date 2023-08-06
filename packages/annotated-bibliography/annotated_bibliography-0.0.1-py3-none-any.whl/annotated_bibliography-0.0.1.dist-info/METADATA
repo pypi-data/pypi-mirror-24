@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: annotated-bibliography
+Version: 0.0.1
+Summary: Simple annotated bibliography generator
+Home-page: https://github.com/manoelhortaribeiro/annotated_bibliography
+Author: Manoel Horta Ribeiro
+Author-email: manoelhortaribeiro@gmail.com
+License: MIT
+Download-URL: https://github.com/manoelhortaribeiro/annotated_bibliography/dist/annotated_bibliography-0.1.tar.gz
+Keywords: bibliography research annotations
+Platform: UNKNOWN
+Requires-Dist: jinja2
+Requires-Dist: matplotlib
+Requires-Dist: mistune
+Requires-Dist: numpy
+Requires-Dist: pybtex
+
+UNKNOWN
+
+

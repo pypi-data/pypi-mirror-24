@@ -1,0 +1,3 @@
+[console_scripts]
+make_ann_bib = annotated_bibliography.make_ann_bib:make_html
+
