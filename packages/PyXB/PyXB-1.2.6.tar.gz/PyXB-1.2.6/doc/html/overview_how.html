@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>How to use it &#8212; PyXB 1.2.6 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.2.6',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Examples of Supported Schema" href="bundles.html" />
+    <link rel="prev" title="What Is PyXB?" href="overview_what.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="bundles.html" title="Examples of Supported Schema"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="overview_what.html" title="What Is PyXB?"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PyXB 1.2.6 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="overview.html" accesskey="U">Overview</a> &#187;</li>
+    <li style="margin-left: 20px">PyXB hosted on <a href="http://sourceforge.net/projects/pyxb"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=263147&amp;type=9"
+    width="80" height="15" alt="Get PyXB: Python XML Schema Bindings at SourceForge.net. Fast, secure and Free Open Source software downloads"/></a></li>
+     
+
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="how-to-use-it">
+<h1>How to use it<a class="headerlink" href="#how-to-use-it" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>PyXB 1.2.x requires Python version 2.6 or higher (including 3.x as of PyXB
+1.2.4).  Among other things the implementation relies on decorators
+(<span class="target" id="index-0"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0318"><strong>PEP 318</strong></a>) like <code class="docutils literal"><span class="pre">&#64;classref</span></code> that are not present in earlier versions.  The
+distribution is tested with the latest release in the Python version 2.6, 2.7,
+and 3.4 series prior to release.</p>
+<p>PyXB is distributed through <a class="reference external" href="https://sourceforge.net/projects/pyxb/files/">SourceForge</a>.  As of the 1.1.4 release,
+separated <a class="reference internal" href="bundles.html#bundles"><span class="std std-ref">bundles</span></a> are no longer distributed.  The <a class="reference external" href="http://sourceforge.net/projects/pyxb/files/latest/download">source
+distribution</a>
+includes pre-built bindings for the <a class="reference internal" href="bundles.html#bundle-common"><span class="std std-ref">common (core XML)</span></a>,
+<a class="reference internal" href="bundles.html#bundle-wssplat"><span class="std std-ref">WS-* (web services)</span></a>, and <a class="reference internal" href="bundles.html#bundle-saml20"><span class="std std-ref">SAML (Security
+Assertion Markup Languge)</span></a> bundles, as well as the user and
+API documentation.  The <a class="reference internal" href="bundles.html#bundle-opengis"><span class="std std-ref">OpenGIS</span></a> bundle infrastructure
+is present, but due to the size of the bindings and archives is not pre-built.</p>
+<p>Install in the usual manner:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+</pre></div>
+</div>
+<p>You can test the distribution with:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">test</span>
+</pre></div>
+</div>
+<p>which will run all the unit tests.  Some of them will print warnings and
+other noise, but if at the end they all pass, don&#8217;t worry about it.</p>
+<p>If you need more help with installation, see
+<a class="reference external" href="http://docs.python.org/install/index.html">http://docs.python.org/install/index.html</a>.</p>
+</div>
+<div class="section" id="generating-bindings">
+<h2>Generating Bindings<a class="headerlink" href="#generating-bindings" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal"><span class="pre">pyxbgen</span></code> script is used to translate XML schema and WSDL documents into
+Python data bindings.  There are two key components to generating bindings:</p>
+<ul class="simple">
+<li>The URI to the definition of the data structures.  This can be a URL, or a
+path to a local file.</li>
+<li>The module path into which the binding will be installed.  This is the
+path that users of the binding will import.</li>
+</ul>
+<p>There are many additional parameters; see <a class="reference internal" href="userref_pyxbgen.html#pyxbgen"><span class="std std-ref">Generating Binding Classes</span></a> and
+<a class="reference internal" href="pyxbgen_cli.html#pyxbgen-cli"><span class="std std-ref">pyxbgen Command Line Options</span></a>.</p>
+</div>
+<div class="section" id="wsdl-functions">
+<h2>WSDL Functions<a class="headerlink" href="#wsdl-functions" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal"><span class="pre">pyxbwsdl</span></code> script is used to examine and operate on WSDL definition
+documents.  In this release, it retrieves the WSDL document specified by the
+URI passed as an argument, and prints the available services with their
+operations and parameters.  For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>vmfed9[343]$ pyxbwsdl http://api.google.com/GoogleSearch.wsdl
+Need to dynamically create schema
+Importing pyxb.standard.bindings.soap
+Attempting to load a namespace from /home/pab/pyxb/dev/pyxb/standard/bindings/raw/wsdl.wxs
+Attempting to load a namespace from /home/pab/pyxb/dev/pyxb/standard/bindings/raw/soapenc.wxs
+Attempting to load a namespace from /home/pab/pyxb/dev/pyxb/standard/bindings/raw/soap.wxs
+Service: GoogleSearchService
+  Port GoogleSearchPort at http://api.google.com/search/beta2
+    doGetCachedPage (at action=urn:GoogleSearchAction)
+      Input: typens:doGetCachedPage
+      Output: typens:doGetCachedPageResponse
+    doSpellingSuggestion (at action=urn:GoogleSearchAction)
+      Input: typens:doSpellingSuggestion
+      Output: typens:doSpellingSuggestionResponse
+    doGoogleSearch (at action=urn:GoogleSearchAction)
+      Input: typens:doGoogleSearch
+      Output: typens:doGoogleSearchResponse
+</pre></div>
+</div>
+<p>Currently, this is an unmaintained example.  In the future, this script may
+provide a more powerful display of available services, and perhaps support for
+generating functions which interact with the service using the appropriate
+encoding.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">How to use it</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#generating-bindings">Generating Bindings</a></li>
+<li><a class="reference internal" href="#wsdl-functions">WSDL Functions</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="overview_what.html"
+                        title="previous chapter">What Is PyXB?</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="bundles.html"
+                        title="next chapter">Examples of Supported Schema</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/overview_how.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="bundles.html" title="Examples of Supported Schema"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="overview_what.html" title="What Is PyXB?"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PyXB 1.2.6 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="overview.html" >Overview</a> &#187;</li>
+    <li style="margin-left: 20px">PyXB hosted on <a href="http://sourceforge.net/projects/pyxb"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=263147&amp;type=9"
+    width="80" height="15" alt="Get PyXB: Python XML Schema Bindings at SourceForge.net. Fast, secure and Free Open Source software downloads"/></a></li>
+     
+
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2017, Peter A. Bigot.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.5.
+    </div>
+  </body>
+</html>
