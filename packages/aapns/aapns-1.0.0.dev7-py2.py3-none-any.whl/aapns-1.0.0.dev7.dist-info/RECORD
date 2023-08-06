@@ -1,0 +1,14 @@
+aapns/__init__.py,sha256=A1KEU4hvHy18YOr52WYCh2u_S1x_3ruMNwvB5FNsg74,169
+aapns/api.py,sha256=oisVjci2W1P1ydHSLHfuAN_HaVdtzlaifrk2qm-fqgk,5039
+aapns/cli.py,sha256=mwTeXi4eL69RR8EY4WuJQAvoJJ-XmSRUisCqvTE1Vn4,3222
+aapns/config.py,sha256=3yCjzFZtX81RDjzNQ2u3uxkw5-vZq_FU607UXCSrjuM,380
+aapns/connection.py,sha256=5bF_JYJ7fcakKqS0MCe2-bte8CX11BAzujA95eGXSNM,5628
+aapns/errors.py,sha256=0hgDGm_1OZy3JOx7AlIix902JaqglCKgo1lAH-i4Y-0,1978
+aapns/models.py,sha256=utwYg6FCWci9vW3vY9XMpT66tPJt1alhXNv8MT_ffn0,3790
+aapns-1.0.0.dev7.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+aapns-1.0.0.dev7.dist-info/METADATA,sha256=_4yK_bQEyK61-qj0XdDfAg5BLcsMEkCZSY3pSu9Q88o,523
+aapns-1.0.0.dev7.dist-info/RECORD,,
+aapns-1.0.0.dev7.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+aapns-1.0.0.dev7.dist-info/entry_points.txt,sha256=eEsT4jipaBtM29-T6peCQE2Y9CafWyht5uLeudn2lgY,42
+aapns-1.0.0.dev7.dist-info/metadata.json,sha256=k6WerF4TZnDaoVgZ9hMqXDmMX0AmE5OA0k0RBwHvioM,710
+aapns-1.0.0.dev7.dist-info/top_level.txt,sha256=KoffGOiQ1UsEt6AHhgROoXWb4uOiLh9PU4fOwz3Pwrk,6
