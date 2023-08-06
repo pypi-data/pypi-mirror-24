@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: spotify2csv
+Version: 0.1.0
+Summary: Convert Spotify URLs to tracks info in CSV format
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: convert spotify csv
+Platform: UNKNOWN
+Requires-Python: >=3
