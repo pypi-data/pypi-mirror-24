@@ -1,0 +1,15 @@
+zope.login-2.1.0-py2.7-nspkg.pth,sha256=SWEVH-jEWsKYrL0qoC6GBJaStx_iKxGoAY9PQycFVC4,529
+zope/login/__init__.py,sha256=M0NZuQ7-112l8K2h1eayVvSmvQrufrOcD5AYKgIf_Is,1
+zope/login/configure.zcml,sha256=0A1g4R4JMrx-yWgdYxa8B5uWpxV4dcQWBZucYZZV6dA,477
+zope/login/ftp.py,sha256=H3Zys71_qGENnh64ZeinmvdfGe4VdnKnHP6UChx1YfM,1423
+zope/login/http.py,sha256=o_iNdlv_i7UOTMOjnqHv7VrUJY0IRK4Nd0oGt26O4m4,1526
+zope/login/tests/__init__.py,sha256=M0NZuQ7-112l8K2h1eayVvSmvQrufrOcD5AYKgIf_Is,1
+zope/login/tests/test_basicauth.py,sha256=s_2xLd6ZrWrbuEppF8_OcJU158vW0wEAyeHBfkZfMVo,2088
+zope/login/tests/test_ftpauth.py,sha256=aLVvn1Nsx8rVQ5dlWDBLFL0NhIci_BC-dZ-1iS0adyk,2106
+zope.login-2.1.0.dist-info/DESCRIPTION.rst,sha256=jdeN3Y2wqf-h7R9uoE5PANkzUzFzbtLMXTOYd968BNY,1890
+zope.login-2.1.0.dist-info/METADATA,sha256=W3pDZ_rEuc0bww5VP6tho6pfFTHN8XNUDsxraC5XFsk,3381
+zope.login-2.1.0.dist-info/RECORD,,
+zope.login-2.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+zope.login-2.1.0.dist-info/metadata.json,sha256=VEhGSiqLu8-x7ERP9X3cgwllOHmy8ymjQ0D7o4fEucc,1493
+zope.login-2.1.0.dist-info/namespace_packages.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.login-2.1.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
