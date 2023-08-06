@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: robottools
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: https://github.com/Brian-Williams/robottools
+Author: Brian Williams
+Author-email: briancmwilliams@gmail.com
+License: UNKNOWN
+Description: # Helpful robot tools
+        
+        ## rename
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
