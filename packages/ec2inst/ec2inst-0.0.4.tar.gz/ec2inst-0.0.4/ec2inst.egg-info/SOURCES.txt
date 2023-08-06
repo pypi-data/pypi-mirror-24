@@ -1,0 +1,10 @@
+setup.py
+ec2inst/__init__.py
+ec2inst/ec2inst.py
+ec2inst.egg-info/PKG-INFO
+ec2inst.egg-info/SOURCES.txt
+ec2inst.egg-info/dependency_links.txt
+ec2inst.egg-info/entry_points.txt
+ec2inst.egg-info/pbr.json
+ec2inst.egg-info/requires.txt
+ec2inst.egg-info/top_level.txt

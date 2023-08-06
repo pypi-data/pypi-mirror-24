@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: ec2inst
+Version: 0.0.4
+Summary: AWS EC2 instance console for CLI
+Home-page: https://github.com/yagays/ec2inst
+Author: yagays
+Author-email: yanagi.ayase@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: AWS,EC2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

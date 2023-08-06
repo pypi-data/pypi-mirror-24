@@ -1,0 +1,3 @@
+[console_scripts]
+ec2inst = ec2inst.ec2inst:main
+
