@@ -1,0 +1,11 @@
+MANIFEST.in
+requirements.txt
+setup.py
+uvspotify/__init__.py
+uvspotify/utils.py
+uvspotify/uvspotify.py
+uvspotify.egg-info/PKG-INFO
+uvspotify.egg-info/SOURCES.txt
+uvspotify.egg-info/dependency_links.txt
+uvspotify.egg-info/requires.txt
+uvspotify.egg-info/top_level.txt
