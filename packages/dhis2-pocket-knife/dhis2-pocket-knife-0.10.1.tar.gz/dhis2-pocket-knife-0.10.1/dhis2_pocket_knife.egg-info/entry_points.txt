@@ -1,0 +1,9 @@
+[console_scripts]
+dhis2-pk-hnqis-orgunit-productivity = src.scripts.hnqis_ou_productivityvalues:main
+dhis2-pk-hnqis-program-orgunit-assigner = src.scripts.hnqis_program_ou_assigner:main
+dhis2-pk-indicator-definitions = src.scripts.indicator_definitions:main
+dhis2-pk-metadata-dl = src.scripts.metadata_download:main
+dhis2-pk-post-css = src.scripts.post_css:main
+dhis2-pk-share-objects = src.scripts.share_objects:main
+dhis2-pk-userinfo = src.scripts.userinfo:main
+
