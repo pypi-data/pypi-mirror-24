@@ -1,0 +1,71 @@
+Metadata-Version: 2.0
+Name: atomic-hpc
+Version: 0.0.1
+Summary: A package to ease running some MD and DFT codes, particularly on the Imperial HPC.
+Home-page: https://github.com/chrisjsewell/atomic-hpc
+Author: Chris Sewell
+Author-email: chrisj_sewell@hotmail.com
+License: MIT
+Keywords: json,units,parser,python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: jsonextended
+Requires-Dist: jsonschema
+Requires-Dist: ruamel.yaml
+
+atomic-hpc
+============
+
+.. image:: https://travis-ci.org/chrisjsewell/jsonextended.svg?branch=master
+    :target: https://travis-ci.org/chrisjsewell/atomic-hpc
+
+
+.. image:: https://coveralls.io/repos/github/chrisjsewell/jsonextended/badge.svg?branch=master
+   :target: https://coveralls.io/github/chrisjsewell/atomic-hpc?branch=master
+
+
+.. image:: https://api.codacy.com/project/badge/Grade/e0b541be3f834f12b77c712433ee64c9
+   :target: https://www.codacy.com/app/chrisj_sewell/atomic-hpc?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=chrisjsewell/atomic-hpc&amp;utm_campaign=Badge_Grade
+
+
+**Project**: https://github.com/chrisjsewell/atomic-hpc
+
+
+A package to ease running some MD and DFT codes, particularly on the Imperial HPC.
+
+Installation
+------------
+
+As outlined at: https://wiki.imperial.ac.uk/display/HPC/Python
+
+::
+
+    module load anaconda3/personal
+    anaconda-setup
+    pip install atomic-hpc
+
+
+Example Use
+-----------
+
+
+
+
