@@ -1,0 +1,7 @@
+setup.py
+SteamAuthPy/__init__.py
+SteamAuthPy/main.py
+SteamAuthPy.egg-info/PKG-INFO
+SteamAuthPy.egg-info/SOURCES.txt
+SteamAuthPy.egg-info/dependency_links.txt
+SteamAuthPy.egg-info/top_level.txt
