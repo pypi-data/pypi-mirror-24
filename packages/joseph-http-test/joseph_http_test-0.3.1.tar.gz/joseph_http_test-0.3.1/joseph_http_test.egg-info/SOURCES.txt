@@ -1,0 +1,8 @@
+setup.py
+http/__init__.py
+http/handlers.py
+joseph_http_test.egg-info/PKG-INFO
+joseph_http_test.egg-info/SOURCES.txt
+joseph_http_test.egg-info/dependency_links.txt
+joseph_http_test.egg-info/entry_points.txt
+joseph_http_test.egg-info/top_level.txt
