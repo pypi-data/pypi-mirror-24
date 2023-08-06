@@ -1,0 +1,3 @@
+[console_scripts]
+pic2slide = pic2slide.cli:main
+
