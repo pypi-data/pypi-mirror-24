@@ -1,0 +1,5 @@
+
+[test]
+nose
+nose_parameterized
+mock

@@ -1,0 +1,10 @@
+README.rst
+fb_credentials.py
+setup.cfg
+setup.py
+fb_credentials.egg-info/PKG-INFO
+fb_credentials.egg-info/SOURCES.txt
+fb_credentials.egg-info/dependency_links.txt
+fb_credentials.egg-info/requires.txt
+fb_credentials.egg-info/top_level.txt
+test/test_fb_credentials.py
