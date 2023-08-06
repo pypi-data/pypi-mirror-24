@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: flume
+Version: 0.5.0
+Summary: flume (pronounced: floom) is a stream processing framework
+Home-page: UNKNOWN
+Author: Rodney Gomes
+Author-email: rodneygomes@gmail.com
+License: Apache 2.0 License
+Description: README: http://github.com/rlgomes/flume
+Platform: UNKNOWN
