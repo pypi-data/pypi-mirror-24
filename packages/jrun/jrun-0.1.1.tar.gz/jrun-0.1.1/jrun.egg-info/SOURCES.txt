@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+jrun/__init__.py
+jrun/cli.py
+jrun.egg-info/PKG-INFO
+jrun.egg-info/SOURCES.txt
+jrun.egg-info/dependency_links.txt
+jrun.egg-info/entry_points.txt
+jrun.egg-info/top_level.txt
