@@ -1,0 +1,8 @@
+README.rst
+setup.py
+google_place_id.egg-info/PKG-INFO
+google_place_id.egg-info/SOURCES.txt
+google_place_id.egg-info/dependency_links.txt
+google_place_id.egg-info/entry_points.txt
+google_place_id.egg-info/requires.txt
+google_place_id.egg-info/top_level.txt
