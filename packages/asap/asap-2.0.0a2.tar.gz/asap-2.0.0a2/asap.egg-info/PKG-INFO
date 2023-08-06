@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: asap
+Version: 2.0.0a2
+Summary: ASAP Answer Set Application Programming
+Home-page: https://github.com/hexhex/hexlite
+Author: Peter Schuller, Antonius Weinzierl
+Author-email: schueller.p@gmail.com
+License: BSD
+Description: ASAP - Answer Set Application Programming
+        
+        TODO write documentation
+        
+        Citation:
+        
+        Schüller, Peter, and Antonius Weinzierl.
+        "Answer Set Application Programming: a Case Study on Tetris."
+        ICLP (Technical Communications). 2015.
+        http://ceur-ws.org/Vol-1433/tc_17.pdf
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Utilities
