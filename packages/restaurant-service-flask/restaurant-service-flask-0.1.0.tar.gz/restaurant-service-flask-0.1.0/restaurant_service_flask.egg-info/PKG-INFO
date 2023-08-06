@@ -1,0 +1,29 @@
+Metadata-Version: 1.0
+Name: restaurant-service-flask
+Version: 0.1.0
+Summary: Restaurant Service - Flask Version
+Home-page: https://github.com/Kalimaha/restaurant-service-flask
+Author: Guido Barbaglia
+Author-email: guido.barbaglia@gmail.com
+License: LICENSE
+Description: # Restaurant Service - Flask Version
+        Small web-app used to test the [pact-test](https://github.com/Kalimaha/pact-test) library.
+        
+        ## Test
+        
+        ```
+        $ ./bin/test.sh
+        ```
+        
+        ## Run
+        
+        ```
+        $ ./bin/start.sh
+        ```
+        
+        ## Available endpoints
+        
+        * Menu: [http://localhost:8080/](http://localhost:8080/)
+        * Single Menu Item: [http://localhost:8080/42/](http://localhost:8080/42/)
+        
+Platform: UNKNOWN
