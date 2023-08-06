@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: memorydb
+Version: 1.2.1
+Summary: Simple In-Memory Database for Python
+Home-page: https://github.com/davidbetz/pymemorydb
+Author: David Betz
+Author-email: dfb@davidbetz.net
+License: UNKNOWN
+Description: Simple In-Memory Database for Python
+        ====================================
+        
+        **Copyright (C) 2016-2017 David Betz**
+        
+        |Build Status| |npm version|
+        
+        Purpose
+        -------
+        
+        A simple database to stand in for something beefier. Helpful for unit
+        testing.
+        
+        New
+        ---
+        
+        Text index added. View unit tests for samples.
+        
+        Usage
+        -----
+        
+        Just look at the tests.
+        
+        .. |Build Status| image:: https://travis-ci.org/davidbetz/pymemorydb.svg?branch=master
+           :target: https://travis-ci.org/davidbetz/pymemorydb
+        .. |npm version| image:: https://badge.fury.io/py/memorydb.svg
+           :target: https://badge.fury.io/py/memorydb
+        
+Keywords: database,in-memory database
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6

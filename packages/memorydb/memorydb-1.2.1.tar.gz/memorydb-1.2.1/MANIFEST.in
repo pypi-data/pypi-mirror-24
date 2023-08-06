@@ -1,0 +1,6 @@
+include LICENSE
+recursive-include memorydb *
+recursive-exclude memorydb .*
+recursive-exclude memorydb/.vscode *
+recursive-exclude memorydb/.git *
+recursive-exclude memorydb *.pyc
