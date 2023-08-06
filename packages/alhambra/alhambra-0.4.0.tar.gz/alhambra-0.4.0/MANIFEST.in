@@ -1,0 +1,7 @@
+include alhambra/peppercomps/*.comp
+
+include alhambra/seqdiagrambases/*.svg
+
+include alhambra/data/rgb.txt
+
+include alhambra/spuriousSSM
