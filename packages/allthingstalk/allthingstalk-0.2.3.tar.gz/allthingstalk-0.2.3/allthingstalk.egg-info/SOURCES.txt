@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+allthingstalk/__init__.py
+allthingstalk/asset_state.py
+allthingstalk/assets.py
+allthingstalk/clients.py
+allthingstalk/devices.py
+allthingstalk/exceptions.py
+allthingstalk/profiles.py
+allthingstalk.egg-info/PKG-INFO
+allthingstalk.egg-info/SOURCES.txt
+allthingstalk.egg-info/dependency_links.txt
+allthingstalk.egg-info/requires.txt
+allthingstalk.egg-info/top_level.txt
