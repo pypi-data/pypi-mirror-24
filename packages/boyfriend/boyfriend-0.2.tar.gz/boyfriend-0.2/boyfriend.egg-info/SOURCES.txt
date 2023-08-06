@@ -1,0 +1,8 @@
+setup.py
+boyfriend/__init__.py
+boyfriend/boyfriend.py
+boyfriend.egg-info/PKG-INFO
+boyfriend.egg-info/SOURCES.txt
+boyfriend.egg-info/dependency_links.txt
+boyfriend.egg-info/top_level.txt
+boyfriend.egg-info/zip-safe
