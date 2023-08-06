@@ -1,0 +1,6 @@
+detector:
+    groups:
+        - postfix
+    apply_if: "has_package('postfix')"
+    interval: "10s"
+
