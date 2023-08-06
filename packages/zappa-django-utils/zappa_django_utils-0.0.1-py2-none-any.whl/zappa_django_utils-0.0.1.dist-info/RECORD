@@ -1,0 +1,11 @@
+zappa_django_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappa_django_utils/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappa_django_utils/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zappa_django_utils/management/commands/create_admin_user.py,sha256=RC_8s_m5rXP33SnsBs6LvVaMExG55nDmyDqKkIRudYs,734
+zappa_django_utils/management/commands/create_pg_db.py,sha256=Sd1irUnMhLJCJ5NNoad5i0n47trkG-hYxbxZ6xhdsfY,964
+zappa_django_utils-0.0.1.dist-info/DESCRIPTION.rst,sha256=iIQg4Sip0QZwtJw7gvLG0-Ue0WcST63CSporQWHcMWI,936
+zappa_django_utils-0.0.1.dist-info/METADATA,sha256=dBbp8mwLElueK0NYn1TOXQardiuMxNDAaTG81UrIpr4,1615
+zappa_django_utils-0.0.1.dist-info/RECORD,,
+zappa_django_utils-0.0.1.dist-info/WHEEL,sha256=u6Fy2U76CDFJ6q2P27rqtBo3AN6qpylFiMaYzNr2lJg,95
+zappa_django_utils-0.0.1.dist-info/metadata.json,sha256=is0SM26BxkSHhAlZwkPgmaKiqlDaxAgpm8BWTQMy76k,886
+zappa_django_utils-0.0.1.dist-info/top_level.txt,sha256=dOxzb6tSdl-ecsfJjybhWV6VRTlhIeZV1SIS3BQ17Io,19
