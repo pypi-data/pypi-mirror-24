@@ -1,0 +1,11 @@
+zekeconv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zekeconv/io.py,sha256=iyMj_5xWpYe18H2JoDBfUwvHtMVvhsmWYxISU0TqmL8,2327
+zekeconv/utl.py,sha256=XXS-IrNPawUCcGTV-FaYVimV92Vttek32OPwBnsWPYE,4671
+zekeconv/zekeconv.py,sha256=nmXkuZjSqpHeAXOESYQnU-XmIalFjKyu8qW5MUiq-bU,1982
+zekeconv-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+zekeconv-0.1.0.dist-info/METADATA,sha256=UBs04nsI1l3eyifTdnW_GUuu5kHTJWTVY4jvqZFrmzc,262
+zekeconv-0.1.0.dist-info/RECORD,,
+zekeconv-0.1.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+zekeconv-0.1.0.dist-info/entry_points.txt,sha256=J2jTTV8Vfea-DCAn5624Z0Pcwy6Y9U3uAAeKEUeJxk8,53
+zekeconv-0.1.0.dist-info/metadata.json,sha256=8LVRyRhKmDRKpnoLbIu3U4mOJBJP4hNmG3vtfU83_SE,600
+zekeconv-0.1.0.dist-info/top_level.txt,sha256=VZQ5S3vW4YP2B72YSbL2-HsHMS02Wu6roruL2SPAoq0,9
