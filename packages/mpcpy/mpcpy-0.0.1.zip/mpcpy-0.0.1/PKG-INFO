@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: mpcpy
+Version: 0.0.1
+Summary: A package to run mpc simulations in Python with Dymola or other simulation packages
+Home-page: https://github.com/BrechtBa/mpcpy
+Author: Brecht Baeten
+Author-email: brecht.baeten@gmail.com
+License: GNU GENERAL PUBLIC LICENSE
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
