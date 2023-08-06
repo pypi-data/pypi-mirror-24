@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+easyGrad.egg-info/PKG-INFO
+easyGrad.egg-info/SOURCES.txt
+easyGrad.egg-info/dependency_links.txt
+easyGrad.egg-info/requires.txt
+easyGrad.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
