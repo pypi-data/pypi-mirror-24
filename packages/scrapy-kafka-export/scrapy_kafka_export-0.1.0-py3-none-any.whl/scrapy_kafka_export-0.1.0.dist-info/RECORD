@@ -1,0 +1,10 @@
+scrapy_kafka_export/__init__.py,sha256=jn5XIffhs8Fa2qdVLLODqtxLsOKlMNc3QTqS7x6aOqU,50
+scrapy_kafka_export/extensions.py,sha256=Fkf3om860FymkcX5s5btDMGHJTVlJJXdjaMuOTNjBVk,4607
+scrapy_kafka_export/utils.py,sha256=Yp4-1En1MPxcBeQyqYqMZS1hPhgzQgQ3PUXpwTID0GY,519
+scrapy_kafka_export/writer.py,sha256=PSkaLHhWC2tpSFfI3_h-vodCvwcrEpfsn0VRcbHLyI0,3700
+scrapy_kafka_export-0.1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+scrapy_kafka_export-0.1.0.dist-info/METADATA,sha256=mBZBlkq1dx_r-gIelxJrCaBpn0T8tKQafo_tdqKZkOM,861
+scrapy_kafka_export-0.1.0.dist-info/RECORD,,
+scrapy_kafka_export-0.1.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+scrapy_kafka_export-0.1.0.dist-info/metadata.json,sha256=DW_7PH3okmQsRoxyA0IwTJ3VjYmjcYP-dfVe_g53LTg,897
+scrapy_kafka_export-0.1.0.dist-info/top_level.txt,sha256=6sQ-0oZC4BFuOwpbR3-cxj8V8JKb1eYcq3DXvWpNR4g,20
