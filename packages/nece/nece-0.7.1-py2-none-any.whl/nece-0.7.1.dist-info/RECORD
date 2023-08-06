@@ -1,0 +1,11 @@
+nece/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nece/exceptions.py,sha256=_OXiXaYjHHMfdczakBMNEzkB5ymR2eCyIN2uJ9nb-Go,250
+nece/managers.py,sha256=uxr4QLjbVDH-HMDegzQX1nkazJ_Z2SdVaxWN6JwKWL4,4772
+nece/models.py,sha256=xB8NecXmk6-LWwoQLzkfcwWD_B7eLcWStRLeqP9dkRE,4238
+nece/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+nece-0.7.1.dist-info/DESCRIPTION.rst,sha256=jJc-nO_GNVGSskr5B_zcgu15AlcbG73aqMSHU14ewY0,4199
+nece-0.7.1.dist-info/METADATA,sha256=jp08AGvcSoOR04wFp1TF-Rf-uKZfEF7YrTHLHDbImGc,5209
+nece-0.7.1.dist-info/RECORD,,
+nece-0.7.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+nece-0.7.1.dist-info/metadata.json,sha256=51ZpmlyfK-B9jpdtHpawNbZlrI666um_kUKcBwJU934,1163
+nece-0.7.1.dist-info/top_level.txt,sha256=3VxJ3FXHlvYMXgJOphTIk0s1b1EPE6nmgvgIoz3yOrk,5
