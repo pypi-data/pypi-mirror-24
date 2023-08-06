@@ -1,0 +1,33 @@
+Metadata-Version: 2.0
+Name: font-v
+Version: 0.0.1
+Summary: Font version string tool
+Home-page: https://github.com/source-foundry/font-v
+Author: Christopher Simpkins
+Author-email: chris@sourcefoundry.org
+License: MIT license
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: commandlines
+Requires-Dist: gitpython
+
+font-v
+========
+
+A font version string tool.
+
+Source and documentation: https://github.com/source-foundry/font-v
+Issue reporting: https://github.com/source-foundry/font-v/issues
+License: MIT
+
+

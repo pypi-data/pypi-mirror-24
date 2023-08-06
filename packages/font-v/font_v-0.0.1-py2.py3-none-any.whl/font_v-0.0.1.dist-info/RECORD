@@ -1,0 +1,11 @@
+font_v-0.0.1.dist-info/DESCRIPTION.rst,sha256=ATyyxdDLdBTg_ADZwh0X6T4koea9mMyzj5qWydp7ZPs,193
+font_v-0.0.1.dist-info/METADATA,sha256=S0Dj3Ira5guXelAJ03pb3ca8GS-68HAZZJpx5CwgWsA,1005
+font_v-0.0.1.dist-info/RECORD,,
+font_v-0.0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+font_v-0.0.1.dist-info/entry_points.txt,sha256=jReFPiAHP00wlmMp24dgVsb8J0TvDQM4LUShA6pE5pM,43
+font_v-0.0.1.dist-info/metadata.json,sha256=n3frfMDL-JEeAUIGc3k5wDRXZSl5e7IJOcZFyTRq4QQ,1099
+font_v-0.0.1.dist-info/top_level.txt,sha256=9Qw36JmOC5ZVIY3KNBv17_Ruy4XAq24xc4sOOZTzm8Q,6
+fontv/__init__.py,sha256=StAfza8ohuJZl4suxWknWBySer4uppaPeMYJ04YLHjU,47
+fontv/app.py,sha256=J5wTcIjzog7RFvI1_e1tLHF2CtB-8m9S8FQlRueimWk,626
+fontv/exceptions.py,sha256=FZk9hm7vBsK8G16pNugputbrrEciYqJc_XRAhTCcojI,46
+fontv/settings.py,sha256=nWkVUsnRuup1qIggSeB4mBuvh5OwwiKN0eYR-6VJlVQ,1142
