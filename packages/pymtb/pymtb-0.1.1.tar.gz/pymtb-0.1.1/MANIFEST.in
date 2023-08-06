@@ -1,0 +1,8 @@
+include *.md
+
+recursive-include mtb *.qrc
+recursive-include mtb *.css
+recursive-include mtb *.wav
+recursive-include mtb *.cube
+recursive-include mtb *.otf
+recursive-include mtb *.png
