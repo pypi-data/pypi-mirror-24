@@ -1,0 +1,8 @@
+setup.py
+girder_worker_utils/__init__.py
+girder_worker_utils.egg-info/PKG-INFO
+girder_worker_utils.egg-info/SOURCES.txt
+girder_worker_utils.egg-info/dependency_links.txt
+girder_worker_utils.egg-info/not-zip-safe
+girder_worker_utils.egg-info/requires.txt
+girder_worker_utils.egg-info/top_level.txt
