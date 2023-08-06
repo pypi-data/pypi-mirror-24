@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: libiocage
+Version: 0.1.2
+Summary: A Python library to manage jails with iocage
+Home-page: https://github.com/iocage/libiocage
+Author: Stefan Grönke, Brandon Schneider and Peter Toth
+Author-email: stefan@gronke.net
+License: BSD
+Description: UNKNOWN
+Keywords: FreeBSD jail iocage
+Platform: UNKNOWN
+Requires-Python: >=3.6
