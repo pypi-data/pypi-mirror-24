@@ -1,0 +1,7 @@
+setup.py
+mini_redis/__init__.py
+mini_redis.egg-info/PKG-INFO
+mini_redis.egg-info/SOURCES.txt
+mini_redis.egg-info/dependency_links.txt
+mini_redis.egg-info/not-zip-safe
+mini_redis.egg-info/top_level.txt

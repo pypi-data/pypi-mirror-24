@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mini-redis
+Version: 0.1
+Summary: A lib to store structured data in redis using less memory
+Home-page: http://github.com/polvoazul/mini-redis
+Author: Fred Israel
+Author-email: UNKNOWN
+License: unlicense
+Description: UNKNOWN
+Platform: UNKNOWN
