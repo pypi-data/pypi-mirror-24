@@ -1,0 +1,15 @@
+README.rst
+setup.py
+pygiftparser/__init__.py
+pygiftparser/answer.py
+pygiftparser/i18n.py
+pygiftparser/parser.py
+pygiftparser/question.py
+pygiftparser/utils.py
+pygiftparser.egg-info/PKG-INFO
+pygiftparser.egg-info/SOURCES.txt
+pygiftparser.egg-info/dependency_links.txt
+pygiftparser.egg-info/requires.txt
+pygiftparser.egg-info/top_level.txt
+share/locale/fr_FR/LC_MESSAGES/pygiftparser.mo
+test/test_pygiftparser.py
