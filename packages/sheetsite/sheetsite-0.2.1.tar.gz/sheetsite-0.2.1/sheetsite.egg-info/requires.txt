@@ -1,0 +1,15 @@
+daff
+oauth2client>=2.0.0
+openpyxl
+pygsheets
+pyyaml
+requests
+
+[queue]
+celery
+dataset
+jinja2
+premailer
+redis
+six
+yagmail
