@@ -1,0 +1,5 @@
+[console_scripts]
+check = structor:check
+feed = structor:feed
+startproject = structor:start_project
+
