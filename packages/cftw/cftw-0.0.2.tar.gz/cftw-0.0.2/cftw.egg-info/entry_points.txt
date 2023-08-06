@@ -1,0 +1,3 @@
+[console_scripts]
+cftw = cftw.bases.client:main
+

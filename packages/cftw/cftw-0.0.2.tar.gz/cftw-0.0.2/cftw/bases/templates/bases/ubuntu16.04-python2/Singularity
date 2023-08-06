@@ -1,0 +1,59 @@
+Bootstrap: docker
+From: ubuntu:16.04
+
+%labels
+CONTAINERSFTW_TEMPLATE ubuntu16.04-python2
+CONTAINERSFTW_COMPETITION_HOST containersftw
+CONTAINERSFTW_COMPETITION_NAME "{{ COMPETITION_NAME }}"
+
+%environment
+CONTAINERSFTW_DATA=/data/input
+CONTAINERSFTW_RESULT=/code/results/{{ COMPETITION_NAME }}
+CONTAINERSFTW_WORK=/code
+export CONTAINERSFTW_DATA
+export CONTAINERSFTW_RESULT
+export CONTAINERSFTW_WORK
+
+
+%runscript
+
+     # This will generate the scientific result!
+     /usr/bin/python /code/analysis/main.py
+
+
+%setup
+
+     # Data directories
+     mkdir -p $SINGULARITY_ROOTFS/data/input   # data included with container
+     mkdir -p $SINGULARITY_ROOTFS/data/work    # working directory
+     mkdir -p $SINGULARITY_ROOTFS/data/mnt     # mounted datasets
+
+     # Result directories
+     mkdir -p $SINGULARITY_ROOTFS/code/results/{{ COMPETITION_NAME }}/submission
+     mkdir -p $SINGULARITY_ROOTFS/code/results/{{ COMPETITION_NAME }}/web
+     mkdir -p $SINGULARITY_ROOTFS/code/results/{{ COMPETITION_NAME }}/pub
+
+     # Working code directories
+     mkdir -p $SINGULARITY_ROOTFS/code/analysis
+     mkdir -p $SINGULARITY_ROOTFS/code/tests
+
+     cp -R data/input/* /data/input
+
+
+%post
+          
+
+     apt-get update && apt-get install -y python git vim nginx
+     wget https://bootstrap.pypa.io/get-pip.py
+     python get-pip.py && rm get-pip.py
+     pip install -y cftw
+     
+     #########################################################
+     # Install additional software / libraries here
+     #########################################################
+
+
+     #########################################################
+
+     apt-get autoremove -y
+     apt-get clean

@@ -1,0 +1,55 @@
+BootStrap: docker
+From: continuumio/anaconda3
+
+%runscript
+
+     # This will generate the scientific result!
+     /opt/conda/bin/python /code/analysis/main.py
+
+
+%labels
+CONTAINERSFTW_TEMPLATE continuumio-anaconda3
+CONTAINERSFTW_COMPETITION_HOST containersftw
+CONTAINERSFTW_COMPETITION_NAME "{{ COMPETITION_NAME }}"
+
+%environment
+CONTAINERSFTW_DATA=/data/input
+CONTAINERSFTW_RESULT=/code/{{ COMPETITION_NAME }}/results
+CONTAINERSFTW_WORK=/code
+export CONTAINERSFTW_DATA
+export CONTAINERSFTW_RESULT
+export CONTAINERSFTW_WORK
+
+%setup
+
+     # Data directories
+     mkdir -p $SINGULARITY_ROOTFS/data/input   # data included with container
+     mkdir -p $SINGULARITY_ROOTFS/data/work    # working directory
+     mkdir -p $SINGULARITY_ROOTFS/data/mnt     # mounted datasets
+
+     # Result directories
+     mkdir -p $SINGULARITY_ROOTFS/code/results/{{ COMPETITION_NAME }}/submission
+     mkdir -p $SINGULARITY_ROOTFS/code/results/{{ COMPETITION_NAME }}/web
+     mkdir -p $SINGULARITY_ROOTFS/code/results/{{ COMPETITION_NAME }}/pub
+
+     # Working code directories
+     mkdir -p $SINGULARITY_ROOTFS/code/analysis
+     mkdir -p $SINGULARITY_ROOTFS/code/tests
+
+     cp -R data/input/* /data/input
+
+
+%post
+
+     apt-get update && apt-get install -y git vim nginx
+     /opt/conda/bin/conda install -y numpy scikit-learn pandas 
+     
+     #########################################################
+     # Install additional software / libraries here
+     #########################################################
+
+
+     #########################################################
+
+     apt-get autoremove -y
+     apt-get clean
