@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: jinja2-pimport
+Version: 0.1.5
+Summary: Jinja2 Extension for Python Import
+Home-page: https://github.com/starofrainnight/jinja2-pimport
+Author: Hong-She Liang
+Author-email: starofrainnight@gmail.com
+License: MIT
+Description: ===============
+        Jinja2 PImport
+        ===============
+        
+        Jinja2 Extension for Python Import
+        
+        License
+        -------
+        
+        Distributed under the terms of the `MIT`_ license, jinja2-pimport is free and open source software
+        
+        .. image:: https://opensource.org/trademarks/osi-certified/web/osi-certified-120x100.png
+           :align: left
+           :alt: OSI certified
+           :target: https://opensource.org/
+        
+        .. _`MIT`: http://opensource.org/licenses/MIT
+        
+Keywords: jinja2,extension,import
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python
