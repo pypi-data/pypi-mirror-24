@@ -1,0 +1,3 @@
+#!/bin/bash
+export PATH=${PATH#*:}
+ld -g -O0 --coverage $@

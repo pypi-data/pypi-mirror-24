@@ -1,0 +1,4 @@
+paramiko>=2.1
+scp
+colorlog
+subprocess32
