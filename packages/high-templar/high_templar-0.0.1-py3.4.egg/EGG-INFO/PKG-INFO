@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: high-templar
+Version: 0.0.1
+Summary: A server which handles websockets for an existing django-binder instance
+Home-page: https://github.com/CodeYellowBV/high-templar
+Author: Jasper Stam
+Author-email: jasper@codeyellow.nl
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
