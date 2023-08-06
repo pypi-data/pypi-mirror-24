@@ -1,0 +1,11 @@
+django_i18nfield-1.2.1.dist-info/DESCRIPTION.rst,sha256=76sD57KBsE0QIffDJKojNgUhTJZzldgB3RKvtWjXmZ0,2977
+django_i18nfield-1.2.1.dist-info/METADATA,sha256=6QrZzQ8dwXAH81z1lhR31W5938zbwROxmjmEmu08mmY,3675
+django_i18nfield-1.2.1.dist-info/RECORD,,
+django_i18nfield-1.2.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_i18nfield-1.2.1.dist-info/metadata.json,sha256=GMP3i77v9aKQV07DToWaA5HHMMOkYrn9PQSYKPwp884,859
+django_i18nfield-1.2.1.dist-info/top_level.txt,sha256=UTbdDJibWhvSGCP1ILdL-0rcjajoPPTRqK1JCl2jGk4,10
+i18nfield/__init__.py,sha256=8slPKWRB5Nvu-gfn7E8vWqI7KU2ch1TKSMhh9vCU8I4,18
+i18nfield/fields.py,sha256=pwadEVEFqyIUW96Z1MnSR1TA874XQm9EYNp_AKLjMf8,1891
+i18nfield/forms.py,sha256=WPebKOky_CEhOmaGF8XUDJdWFRSsqEjkqRdKZpJu00I,10299
+i18nfield/strings.py,sha256=k-cgFY1bEXPd_AyTgqoKCr_Mkf8W23gCIxCKEkg29cA,4315
+i18nfield/utils.py,sha256=EuohAOp_6dUFULqQ2HScddJdsE7aivIkfcKoEfhR4wU,511
