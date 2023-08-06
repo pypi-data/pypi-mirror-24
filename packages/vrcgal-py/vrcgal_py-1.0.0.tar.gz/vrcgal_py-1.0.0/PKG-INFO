@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: vrcgal_py
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/vrcgal/vrcgal_py
+Author: Ben Long
+Author-email: 14benj@gmail.com
+License: MIT
+Description: # vrcgal_py
+        Python utilities for VRC-GAL
+        
+Platform: UNKNOWN
