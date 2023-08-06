@@ -1,0 +1,8 @@
+flask_smores.py
+setup.py
+Flask_Smores.egg-info/PKG-INFO
+Flask_Smores.egg-info/SOURCES.txt
+Flask_Smores.egg-info/dependency_links.txt
+Flask_Smores.egg-info/not-zip-safe
+Flask_Smores.egg-info/requires.txt
+Flask_Smores.egg-info/top_level.txt
