@@ -1,0 +1,12 @@
+freshnessstatus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freshnessstatus/__main__.py,sha256=V-nmVWLTKZkRvqOwGOZgsNeyiyupqVnP6ubxY0HSV3Q,3783
+freshnessstatus/datafreshnessstatus.py,sha256=pNW_wLCKi0UhKaR2wznB2FEFtp7BX-sbjsvR_HBKQcA,7209
+freshnessstatus/project_configuration.yml,sha256=u0m-1wLvmIHwcE5UNn6ajyAF1Di9oDbYRX7WFf0u_N4,125
+hdx_data_freshness_emailer-0.15.dist-info/DESCRIPTION.rst,sha256=K7UTCf86_1tKgZBOD9r7iTbriTF1VdMpQ84Snnf2iGg,769
+hdx_data_freshness_emailer-0.15.dist-info/LICENSE.txt,sha256=wc-4GpMn-ODs-U_bTe1YCiPVgvcjzrpYOx2wPuyAeII,1079
+hdx_data_freshness_emailer-0.15.dist-info/METADATA,sha256=ufP8N_xB3Hk4TAeURNtl-dyMt1RaYmbb91sc-iMizHk,1547
+hdx_data_freshness_emailer-0.15.dist-info/RECORD,,
+hdx_data_freshness_emailer-0.15.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+hdx_data_freshness_emailer-0.15.dist-info/metadata.json,sha256=bvoX6SO1zmqlnEO7dbb559mGi4TGzfIUr__6d4PYmig,1026
+hdx_data_freshness_emailer-0.15.dist-info/top_level.txt,sha256=3i55AHsXi0yXnZBREKoXIUINbXFl_oUnTEi-gRrny1A,16
+hdx_data_freshness_emailer-0.15.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
