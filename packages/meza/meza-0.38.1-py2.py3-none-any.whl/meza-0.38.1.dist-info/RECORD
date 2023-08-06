@@ -1,0 +1,17 @@
+meza/__init__.py,sha256=3htzKgdbkHmlITuqCd3K2GCk__nQTo4Vx33ob3-jUOM,1001
+meza/compat.py,sha256=OOuys9Ddu00TSGujdn7Gq9QgketllOGg59TZPJ9fGS0,2906
+meza/convert.py,sha256=tUSujd189CIZfEkYzVxshtXKyNnFvQDU58wGmjiquzQ,32024
+meza/dbf.py,sha256=6njhRF1wpefzWPZ82etNgClw4K1zJrhWQbkQiPs4ZgI,2823
+meza/fntools.py,sha256=eT__jds0u7cS6vZKtnYLD2WGBMPlhKKWITMEzO_leSg,34143
+meza/immutabledict.py,sha256=KK3xE9dUmm_ZB0-i18LEMCNpOXAwNSM_cgWroNSN9xk,6507
+meza/io.py,sha256=jiCpp97M3lTUFAaE0zzWGatKysTn7dWPNEkh1bHFnw8,49388
+meza/process.py,sha256=p1T1_LCSa0YGQ9BdsB9mQXB7XS_kFfH-_4deiDm_T9c,34878
+meza/stats.py,sha256=d_o26F-UpeAtbH5yGZ9cCzK79sU546d6oGlTTK_uVeY,423
+meza/typetools.py,sha256=74CKKzk4bYHAMC7tE-_ULdJPw9UuRBzmRWSePMrQiRU,8255
+meza/unicsv.py,sha256=QFNoCjvZAMKHc2AYRZ-Ih91XYqkB4EPOC3GzSoxRRac,6965
+meza-0.38.1.dist-info/DESCRIPTION.rst,sha256=u0q4cNaG9MiHEByamayBpy9zZXXTuYH8amYwo_MIlL8,21716
+meza-0.38.1.dist-info/METADATA,sha256=hqh2r9Z__vsFejSQFM81-PAijUVNK7wezrOJwO1_OLE,23459
+meza-0.38.1.dist-info/RECORD,,
+meza-0.38.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+meza-0.38.1.dist-info/metadata.json,sha256=b5tSZVV6Jl9sq7JmfS9lY-md6R04Pb9koL9HoZ3o3iM,1729
+meza-0.38.1.dist-info/top_level.txt,sha256=aq1C7I8cD4lf1BZAlCd5TmQQy-pwHQk99xlHmM3XftI,5
