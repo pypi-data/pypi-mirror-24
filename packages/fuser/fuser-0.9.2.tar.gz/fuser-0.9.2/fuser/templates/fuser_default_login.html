@@ -1,0 +1,17 @@
+{% extends '_base.html' %}
+
+{% from '_form_macros.html' import form_card,form_printer %}
+
+
+{% block body %}
+	
+<br />
+
+<div class="col-md-6 offset-md-3">
+	{{form_card(form_printer(form, '/login'), title='Login', description='Type your email and password to log into ' + config.APP_NAME, card_footer='')}}
+</div>
+
+
+
+{% endblock %}
+
