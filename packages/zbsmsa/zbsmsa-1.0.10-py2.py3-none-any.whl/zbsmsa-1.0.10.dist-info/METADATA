@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: zbsmsa
+Version: 1.0.10
+Summary: ZimmerBiomet Surgery Management System Automation
+Home-page: https://github.com/IanDoarn/zbsmsa
+Author: Ian Doarn
+Author-email: ian.doarn@zimmerbiomet.com
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: cssselect (>=1.0.1)
+Requires-Dist: psycopg2 (>=2.7.1)
+Requires-Dist: selenium (>=3.3.1)
+
+ZimmerBiomet Surgery Management System Automation
+
+
