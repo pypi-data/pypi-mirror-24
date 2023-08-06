@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+main/__init__.py
+main/cli.py
+main/secret.json
+uestcct.egg-info/PKG-INFO
+uestcct.egg-info/SOURCES.txt
+uestcct.egg-info/dependency_links.txt
+uestcct.egg-info/entry_points.txt
+uestcct.egg-info/requires.txt
+uestcct.egg-info/top_level.txt
