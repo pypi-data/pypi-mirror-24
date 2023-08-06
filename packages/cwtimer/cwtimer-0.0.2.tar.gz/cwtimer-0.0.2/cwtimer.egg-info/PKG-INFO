@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: cwtimer
+Version: 0.0.2
+Summary: Pythonic timing tracker with reporting to Cloudwatch
+Home-page: https://github.com/cxmcc/cwtimer
+Author: Xiuming Chen
+Author-email: cc@cxm.cc
+License: UNKNOWN
+Description: cwtimer
+        =======
+        
+        'cwtimer' does one simple thing, track the timing of a 'with' statement block and report to AWS Cloudwatch.
+        
+        Install
+        -------
+        
+        .. code-block:: shell
+         
+            $ pip install cwtimer
+        
+        Example
+        -------
+        
+        .. code-block:: python
+        
+            from cwtimer import cwtimer
+            import time
+            
+            with cwtimer(namespace='MyNameSpace', metric_name='MyMetric',
+                         dimensions={'MyDimension':'Value'}):
+                time.sleep(1)
+                # 1.0s reported to cloudwatch metric
+        
+Keywords: timer,Cloudwatch
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: System :: Clustering
