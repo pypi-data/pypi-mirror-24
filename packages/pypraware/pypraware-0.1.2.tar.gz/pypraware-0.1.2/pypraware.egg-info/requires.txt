@@ -1,0 +1,4 @@
+configparser
+cryptography
+bcrypt
+bitarray
