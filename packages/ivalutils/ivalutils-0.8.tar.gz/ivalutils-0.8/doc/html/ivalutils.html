@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>1. Interval &#8212; ivalutils 0.8.0 documentation</title>
+    <link rel="stylesheet" href="_static/pydoctheme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.8.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sidebar.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="ivalutils - Basic interval arithmetic, sequences of intervals and mappings on intervals" href="index.html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="shortcut icon" type="image/png" href="_static/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.8">
+    
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="responsive-menu"><a href="#sidebar-anchor" title="Navigation">&#9776;</a></li>
+        <li><a href="index.html">ivalutils 0.8.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-ivalutils.interval">
+<span id="interval"></span><h1>1. Interval<a class="headerlink" href="#module-ivalutils.interval" title="Permalink to this headline">¶</a></h1>
+<p>Basic interval arithmetic.</p>
+<div class="section" id="usage">
+<h2>1.1. Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-intervals">
+<h3>1.1.1. Creating intervals<a class="headerlink" href="#creating-intervals" title="Permalink to this headline">¶</a></h3>
+<p>The class <a class="reference internal" href="#ivalutils.interval.Interval" title="ivalutils.interval.Interval"><code class="xref py py-class docutils literal"><span class="pre">Interval</span></code></a> is used to create intervals, i. e. subsets of a
+set of values, by defining a lower and an upper endpoint.</p>
+<p>The simplest way is calling <a class="reference internal" href="#ivalutils.interval.Interval" title="ivalutils.interval.Interval"><code class="xref py py-class docutils literal"><span class="pre">Interval</span></code></a> without arguments, resulting in
+both endpoints to be infinite:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span>
+<span class="go">Interval()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">str</span><span class="p">(</span><span class="n">ival</span><span class="p">)</span>
+<span class="go">&#39;(-inf .. +inf)&#39;</span>
+</pre></div>
+</div>
+<p>For getting a more useful interval, it’s neccessary to specify atleast one
+endpoint:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">LowerClosedLimit</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span>
+<span class="go">Interval(lower_limit=Limit(True, 0, True))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">str</span><span class="p">(</span><span class="n">ival</span><span class="p">)</span>
+<span class="go">&#39;[0 .. +inf)&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">upper_limit</span><span class="o">=</span><span class="n">UpperClosedLimit</span><span class="p">(</span><span class="mf">100.</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span>
+<span class="go">Interval(upper_limit=Limit(False, 100.0, True))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">str</span><span class="p">(</span><span class="n">ival</span><span class="p">)</span>
+<span class="go">&#39;(-inf .. 100.0]&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">LowerClosedLimit</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">UpperOpenLimit</span><span class="p">(</span><span class="mi">27</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span>
+<span class="go">Interval(lower_limit=Limit(True, 0, True), upper_limit=Limit(False, 27, False))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">str</span><span class="p">(</span><span class="n">ival</span><span class="p">)</span>
+<span class="go">&#39;[0 .. 27)&#39;</span>
+</pre></div>
+</div>
+<p>Any type which defines a total ordering can be used for the limits:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ClosedInterval</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;zzz&#39;</span><span class="p">)</span>
+<span class="go">Interval(lower_limit=Limit(True, &#39;a&#39;, True), upper_limit=Limit(False, &#39;zzz&#39;, True))</span>
+</pre></div>
+</div>
+<p>Several factory functions can be used as shortcut. For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">LowerClosedInterval</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="go">Interval(lower_limit=Limit(True, 30, True))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">UpperOpenInterval</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="go">Interval(upper_limit=Limit(False, 0, False))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ClosedInterval</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="go">Interval(lower_limit=Limit(True, 1, True), upper_limit=Limit(False, 3, True))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ChainableInterval</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="go">Interval(lower_limit=Limit(True, 0, True), upper_limit=Limit(False, 5, False))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="operations-on-intervals">
+<h3>1.1.2. Operations on intervals<a class="headerlink" href="#operations-on-intervals" title="Permalink to this headline">¶</a></h3>
+<p>The limits of an interval can be retrieved via properties:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span> <span class="o">=</span> <span class="n">ClosedInterval</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span><span class="o">.</span><span class="n">lower_limit</span>
+<span class="go">Limit(True, 0, True)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span><span class="o">.</span><span class="n">upper_limit</span>
+<span class="go">Limit(False, 100, True)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span><span class="o">.</span><span class="n">limits</span>
+<span class="go">(Limit(True, 0, True), Limit(False, 100, True))</span>
+</pre></div>
+</div>
+<p>Several methods can be used to test for specifics of an interval. For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span><span class="o">.</span><span class="n">is_bounded</span><span class="p">()</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span><span class="o">.</span><span class="n">is_finite</span><span class="p">()</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span><span class="o">.</span><span class="n">is_left_open</span><span class="p">()</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>Intervals can be tested for including a value:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">74</span> <span class="ow">in</span> <span class="n">ival</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="o">-</span><span class="mi">4</span> <span class="ow">in</span> <span class="n">ival</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>Intervals can be compared:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ival2</span> <span class="o">=</span> <span class="n">LowerOpenInterval</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival3</span> <span class="o">=</span> <span class="n">LowerClosedInterval</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span> <span class="o">&lt;</span> <span class="n">ival2</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span> <span class="o">&lt;</span> <span class="n">ival3</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival2</span> <span class="o">&lt;</span> <span class="n">ival3</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival2</span> <span class="o">==</span> <span class="n">ival3</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival3</span> <span class="o">&lt;</span> <span class="n">ival2</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival2</span><span class="o">.</span><span class="n">is_adjacent</span><span class="p">(</span><span class="n">ival3</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival3</span><span class="o">.</span><span class="n">is_adjacent</span><span class="p">(</span><span class="n">ival2</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival4</span> <span class="o">=</span> <span class="n">UpperClosedInterval</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival4</span><span class="o">.</span><span class="n">is_adjacent</span><span class="p">(</span><span class="n">ival2</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span><span class="o">.</span><span class="n">is_overlapping</span><span class="p">(</span><span class="n">ival3</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ival</span><span class="o">.</span><span class="n">is_subset</span><span class="p">(</span><span class="n">ival4</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="classes">
+<h2>1.2. Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ivalutils.interval.Limit">
+<em class="property">class </em><code class="descclassname">ivalutils.interval.</code><code class="descname">Limit</code><span class="sig-paren">(</span><em>lower</em>, <em>value</em>, <em>closed=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Limit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower / upper limit of an Interval.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lower</strong> (<em>bool</em>) – specifies which endpoint of an interval this limit
+defines: <cite>True</cite> -&gt; lower endpoint, <cite>False</cite> -&gt; upper endpoint</li>
+<li><strong>value</strong> (<em>&lt;total ordering&gt;</em>) – limiting value (can be of any type that
+defines a total ordering)</li>
+<li><strong>closed</strong> (<em>bool</em>) – specifies whether value itself is the endpoint or not:
+<cite>True</cite> -&gt; the interval that has this limit includes value,
+<cite>False</cite> -&gt; the interval that has this limit does not includes
+value</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">instance of <a class="reference internal" href="#ivalutils.interval.Limit" title="ivalutils.interval.Limit"><code class="xref py py-class docutils literal"><span class="pre">Limit</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+<cite>lower</cite> is not instance of <cite>bool</cite></li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+<cite>value</cite> is None</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+<cite>closed</cite> is not instance of <cite>bool</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="ivalutils.interval.Limit.__eq__">
+<code class="descname">__eq__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Limit.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self == other</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Limit.__ge__">
+<code class="descname">__ge__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Limit.__ge__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self &gt;= other</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Limit.__gt__">
+<code class="descname">__gt__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Limit.__gt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self &gt; other</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Limit.__hash__">
+<code class="descname">__hash__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Limit.__hash__" title="Permalink to this definition">¶</a></dt>
+<dd><p>hash(self)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Limit.__le__">
+<code class="descname">__le__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Limit.__le__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self &lt;= other</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Limit.__lt__">
+<code class="descname">__lt__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Limit.__lt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self &lt; other</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Limit.adjacent_limit">
+<code class="descname">adjacent_limit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Limit.adjacent_limit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the limit adjacent to self.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="ivalutils.interval.Interval">
+<em class="property">class </em><code class="descclassname">ivalutils.interval.</code><code class="descname">Interval</code><span class="sig-paren">(</span><em>lower_limit=None</em>, <em>upper_limit=None</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>An Interval defines a subset of a set of values by optionally giving
+a lower and / or an upper limit.</p>
+<p>The base set of values - and therefore the given limits - must have a
+common base type which defines a total order on the values.</p>
+<p>If both limits are given, the interval is said to be <em>bounded</em> or
+<em>finite</em>, if only one or neither of them is given, the interval is said
+to be <em>unbounded</em> or <em>infinite</em>.</p>
+<p>If only the lower limit is given, the interval is called <em>lower bounded</em>
+or <em>left bounded</em> (maybe also <em>upper unbounded</em>, <em>upper infinite</em>,
+<em>right unbounded</em> or <em>right infinite</em>). Correspondingly, if only the
+upper limit is given, the interval is called <em>upper bounded</em>
+or <em>right bounded</em> (maybe also <em>lower unbounded</em>, <em>lower infinite</em>,
+<em>left unbounded</em> or <em>left infinite</em>).</p>
+<p>For both limits (aka endpoints) must be specified whether the given value
+is included in the interval or not. In the first case the limit is called
+<em>closed</em>, otherwise <em>open</em>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>lower_limit</strong> (<a class="reference internal" href="#ivalutils.interval.Limit" title="ivalutils.interval.Limit"><code class="xref py py-class docutils literal"><span class="pre">Limit</span></code></a>) – lower limit (default: None)</li>
+<li><strong>upper_limit</strong> (<a class="reference internal" href="#ivalutils.interval.Limit" title="ivalutils.interval.Limit"><code class="xref py py-class docutils literal"><span class="pre">Limit</span></code></a>) – upper limit (default: None)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">instance of <a class="reference internal" href="#ivalutils.interval.Interval" title="ivalutils.interval.Interval"><code class="xref py py-class docutils literal"><span class="pre">Interval</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>If <cite>None</cite> is given as <cite>lower_limit</cite>, the resulting interval is lower
+infinite. If <cite>None</cite> is given as <cite>upper_limit</cite>, the resulting interval is
+upper infinite.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference internal" href="#ivalutils.interval.InvalidInterval" title="ivalutils.interval.InvalidInterval"><code class="xref py py-exc docutils literal"><span class="pre">InvalidInterval</span></code></a> – 
+<cite>lower_limit</cite> is not a lower limit</li>
+<li><a class="reference internal" href="#ivalutils.interval.InvalidInterval" title="ivalutils.interval.InvalidInterval"><code class="xref py py-exc docutils literal"><span class="pre">InvalidInterval</span></code></a> – 
+<cite>upper_limit</cite> is not a upper limit</li>
+<li><a class="reference internal" href="#ivalutils.interval.InvalidInterval" title="ivalutils.interval.InvalidInterval"><code class="xref py py-exc docutils literal"><span class="pre">InvalidInterval</span></code></a> – 
+<cite>lower_limit</cite> &gt; <cite>upper_limit</cite></li>
+<li><a class="reference internal" href="#ivalutils.interval.IncompatibleLimits" title="ivalutils.interval.IncompatibleLimits"><code class="xref py py-exc docutils literal"><span class="pre">IncompatibleLimits</span></code></a> – 
+values of <cite>lower_limit</cite> and <cite>upper_limit</cite> are not
+comparable</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="ivalutils.interval.Interval.__and__">
+<code class="descname">__and__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.__and__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self &amp; other</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.__contains__">
+<code class="descname">__contains__</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.__contains__" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if value does not exceed the limits of self.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.__copy__">
+<code class="descname">__copy__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.__copy__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self (Interval instances are immutable).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.__eq__">
+<code class="descname">__eq__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self == other.</p>
+<p>True if all elements contained in self are also contained in other
+and all elements contained in other are also contained in self.</p>
+<p>This is exactly the case if self.limits == other.limits.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.__ge__">
+<code class="descname">__ge__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.__ge__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self &gt;= other.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.__gt__">
+<code class="descname">__gt__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.__gt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self &gt; other.</p>
+<p>True if there is an element in self which is greater than all
+elements in other or there is an element in other which is smaller
+than all elements in self.</p>
+<p>This is exactly the case if self.limits &gt; other.limits.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.__hash__">
+<code class="descname">__hash__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.__hash__" title="Permalink to this definition">¶</a></dt>
+<dd><p>hash(self)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.__le__">
+<code class="descname">__le__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.__le__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self &lt;= other.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.__lt__">
+<code class="descname">__lt__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.__lt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self &lt; other.</p>
+<p>True if there is an element in self which is smaller than all
+elements in other or there is an element in other which is greater
+than all elements in self.</p>
+<p>This is exactly the case if self.limits &lt; other.limits.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.__or__">
+<code class="descname">__or__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.__or__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self | other</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.__sub__">
+<code class="descname">__sub__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.__sub__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self - other</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.is_adjacent">
+<code class="descname">is_adjacent</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.is_adjacent" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if self.is_lower_adjacent(other) or
+self.is_upper_adjacent(other).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.is_disjoint">
+<code class="descname">is_disjoint</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.is_disjoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if self contains no elements in common with other.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.is_lower_adjacent">
+<code class="descname">is_lower_adjacent</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.is_lower_adjacent" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if self.upper_limit.is_lower_adjacent(other.lower_limit).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.is_overlapping">
+<code class="descname">is_overlapping</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.is_overlapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if there is a common element in self and other.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.is_subset">
+<code class="descname">is_subset</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.is_subset" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if self defines a proper subset of other, i.e. all elements
+contained in self are also contained in other, but not the other way
+round.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval.Interval.is_upper_adjacent">
+<code class="descname">is_upper_adjacent</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.Interval.is_upper_adjacent" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if self.lower_limit.is_upper_adjacent(other.upper_limit).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ivalutils.interval.Interval.limits">
+<code class="descname">limits</code><a class="headerlink" href="#ivalutils.interval.Interval.limits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower and upper limit as tuple.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ivalutils.interval.Interval.lower_limit">
+<code class="descname">lower_limit</code><a class="headerlink" href="#ivalutils.interval.Interval.lower_limit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lower limit (LowerInfiniteLimit, if no lower limit was given.)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ivalutils.interval.Interval.upper_limit">
+<code class="descname">upper_limit</code><a class="headerlink" href="#ivalutils.interval.Interval.upper_limit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upper limit (UpperInfiniteLimit, if no upper limit was given.)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="factoryfunctions">
+<h2>1.3. Factoryfunctions<a class="headerlink" href="#factoryfunctions" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="ivalutils.interval.LowerLimit">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">LowerLimit</code><span class="sig-paren">(</span><em>value</em>, <em>closed=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.LowerLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a lower limit.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value</strong> (<em>&lt;total ordering&gt;</em>) – limiting value (can be of any type that
+defines a total ordering)</li>
+<li><strong>closed</strong> (<em>bool</em>) – specifies whether value itself is the endpoint or not:
+<cite>True</cite> -&gt; the interval that has this limit includes value,
+<cite>False</cite> -&gt; the interval that has this limit does not includes
+value</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">instance of <a class="reference internal" href="#ivalutils.interval.Limit" title="ivalutils.interval.Limit"><code class="xref py py-class docutils literal"><span class="pre">Limit</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+<cite>value</cite> is None</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+<cite>closed</cite> is not instance of <cite>bool</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.LowerInfiniteLimit">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">LowerInfiniteLimit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.LowerInfiniteLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a lower infinite limit (a singleton).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.UpperLimit">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">UpperLimit</code><span class="sig-paren">(</span><em>value</em>, <em>closed=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.UpperLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an upper limit.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value</strong> (<em>&lt;total ordering&gt;</em>) – limiting value (can be of any type that
+defines a total ordering)</li>
+<li><strong>closed</strong> (<em>bool</em>) – specifies whether value itself is the endpoint or not:
+<cite>True</cite> -&gt; the interval that has this limit includes value,
+<cite>False</cite> -&gt; the interval that has this limit does not includes
+value</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">instance of <a class="reference internal" href="#ivalutils.interval.Limit" title="ivalutils.interval.Limit"><code class="xref py py-class docutils literal"><span class="pre">Limit</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+<cite>value</cite> is None</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+<cite>closed</cite> is not instance of <cite>bool</cite></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.UpperInfiniteLimit">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">UpperInfiniteLimit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.UpperInfiniteLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an upper infinite limit (a singleton).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.LowerClosedLimit">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">LowerClosedLimit</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.LowerClosedLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a lower closed limit.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<em>&lt;total ordering&gt;</em>) – limiting value (can be of any type that
+defines a total ordering)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">instance of <a class="reference internal" href="#ivalutils.interval.Limit" title="ivalutils.interval.Limit"><code class="xref py py-class docutils literal"><span class="pre">Limit</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+<cite>value</cite> is None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.LowerOpenLimit">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">LowerOpenLimit</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.LowerOpenLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a lower open limit.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<em>&lt;total ordering&gt;</em>) – limiting value (can be of any type that
+defines a total ordering)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">instance of <a class="reference internal" href="#ivalutils.interval.Limit" title="ivalutils.interval.Limit"><code class="xref py py-class docutils literal"><span class="pre">Limit</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+<cite>value</cite> is None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.UpperClosedLimit">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">UpperClosedLimit</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.UpperClosedLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an upper closed limit.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<em>&lt;total ordering&gt;</em>) – limiting value (can be of any type that
+defines a total ordering)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">instance of <a class="reference internal" href="#ivalutils.interval.Limit" title="ivalutils.interval.Limit"><code class="xref py py-class docutils literal"><span class="pre">Limit</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+<cite>value</cite> is None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.UpperOpenLimit">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">UpperOpenLimit</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.UpperOpenLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an upper open limit.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<em>&lt;total ordering&gt;</em>) – limiting value (can be of any type that
+defines a total ordering)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">instance of <a class="reference internal" href="#ivalutils.interval.Limit" title="ivalutils.interval.Limit"><code class="xref py py-class docutils literal"><span class="pre">Limit</span></code></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+<cite>value</cite> is None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.ChainableInterval">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">ChainableInterval</code><span class="sig-paren">(</span><em>lower_value</em>, <em>upper_value</em>, <em>lower_closed=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.ChainableInterval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Interval with one closed and one open endpoint.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.ClosedInterval">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">ClosedInterval</code><span class="sig-paren">(</span><em>lower_value</em>, <em>upper_value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.ClosedInterval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Interval with closed endpoints.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.LowerClosedInterval">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">LowerClosedInterval</code><span class="sig-paren">(</span><em>lower_value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.LowerClosedInterval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Interval with closed lower and infinite upper endpoint.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.LowerOpenInterval">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">LowerOpenInterval</code><span class="sig-paren">(</span><em>lower_value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.LowerOpenInterval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Interval with open lower and infinite upper endpoint.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.OpenBoundedInterval">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">OpenBoundedInterval</code><span class="sig-paren">(</span><em>lower_value</em>, <em>upper_value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.OpenBoundedInterval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Interval with open endpoints.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.OpenFiniteInterval">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">OpenFiniteInterval</code><span class="sig-paren">(</span><em>lower_value</em>, <em>upper_value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.OpenFiniteInterval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Interval with open endpoints.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.UpperClosedInterval">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">UpperClosedInterval</code><span class="sig-paren">(</span><em>upper_value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.UpperClosedInterval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Interval with infinite lower and closed upper endpoint.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ivalutils.interval.UpperOpenInterval">
+<code class="descclassname">ivalutils.interval.</code><code class="descname">UpperOpenInterval</code><span class="sig-paren">(</span><em>upper_value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval.UpperOpenInterval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create Interval with infinite lower and open upper endpoint.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="exceptions">
+<h2>1.4. Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ivalutils.interval.IncompatibleLimits">
+<em class="property">class </em><code class="descclassname">ivalutils.interval.</code><code class="descname">IncompatibleLimits</code><a class="headerlink" href="#ivalutils.interval.IncompatibleLimits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised when comparing limits with incompatible types of values.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="ivalutils.interval.InvalidInterval">
+<em class="property">class </em><code class="descclassname">ivalutils.interval.</code><code class="descname">InvalidInterval</code><a class="headerlink" href="#ivalutils.interval.InvalidInterval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised when an invalid Interval would be created.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-ivalutils.interval_chain">
+<span id="intervalchain"></span><h1>2. IntervalChain<a class="headerlink" href="#module-ivalutils.interval_chain" title="Permalink to this headline">¶</a></h1>
+<p>Sequences of adjacent intervals.</p>
+<div class="section" id="id1">
+<h2>2.1. Usage<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-interval-chains">
+<h3>2.1.1. Creating interval chains<a class="headerlink" href="#creating-interval-chains" title="Permalink to this headline">¶</a></h3>
+<p>The class <a class="reference internal" href="#ivalutils.interval_chain.IntervalChain" title="ivalutils.interval_chain.IntervalChain"><code class="xref py py-class docutils literal"><span class="pre">IntervalChain</span></code></a> is used to create sequences of adjacent
+intervals:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ic</span> <span class="o">=</span> <span class="n">IntervalChain</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ic</span>
+<span class="go">IntervalChain((&#39;a&#39;, &#39;d&#39;, &#39;g&#39;, &#39;z&#39;))</span>
+</pre></div>
+</div>
+<p>The default is to create an interval sequence which is lower-bound and
+upper-infinite and containing lower-closed intervals:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">str</span><span class="p">(</span><span class="n">ic</span><span class="p">)</span>
+<span class="go">&quot;[[&#39;a&#39; .. &#39;d&#39;), [&#39;d&#39; .. &#39;g&#39;), [&#39;g&#39; .. &#39;z&#39;), [&#39;z&#39; .. +inf)]&quot;</span>
+</pre></div>
+</div>
+<p>By specifying additional parameters, you can determine which endpoints will be
+closed and whether a lower and / or upper infinite endpoint will be added:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ic</span> <span class="o">=</span> <span class="n">IntervalChain</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">),</span> <span class="n">lower_closed</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">add_lower_inf</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">add_upper_inf</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">str</span><span class="p">(</span><span class="n">ic</span><span class="p">)</span>
+<span class="go">&quot;[(-inf .. &#39;a&#39;], (&#39;a&#39; .. &#39;d&#39;], (&#39;d&#39; .. &#39;g&#39;], (&#39;g&#39; .. &#39;z&#39;]]&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="operations-on-interval-chains">
+<h3>2.1.2. Operations on interval chains<a class="headerlink" href="#operations-on-interval-chains" title="Permalink to this headline">¶</a></h3>
+<p>Interval chains can be indexed and iterated like lists …:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ic</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="go">Interval(lower_limit=Limit(True, &#39;d&#39;, False), upper_limit=Limit(False, &#39;g&#39;, True))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="n">ival</span><span class="o">.</span><span class="n">upper_limit</span><span class="o">.</span><span class="n">value</span> <span class="k">for</span> <span class="n">ival</span> <span class="ow">in</span> <span class="n">ic</span><span class="p">]</span>
+<span class="go">[&#39;a&#39;, &#39;d&#39;, &#39;g&#39;, &#39;z&#39;]</span>
+</pre></div>
+</div>
+<p>… and can be searched for the index of the interval holding a specified
+value:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ic</span><span class="o">.</span><span class="n">map2idx</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ic</span><span class="o">.</span><span class="n">map2idx</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ic</span><span class="o">.</span><span class="n">map2idx</span><span class="p">(</span><span class="s1">&#39;aa&#39;</span><span class="p">)</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>2.2. Classes<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ivalutils.interval_chain.IntervalChain">
+<em class="property">class </em><code class="descclassname">ivalutils.interval_chain.</code><code class="descname">IntervalChain</code><span class="sig-paren">(</span><em>limits</em>, <em>lower_closed=True</em>, <em>add_lower_inf=False</em>, <em>add_upper_inf=True</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain" title="Permalink to this definition">¶</a></dt>
+<dd><p>An IntervalChain is a list of adjacent intervals.</p>
+<p>It is constructed from a list of limiting values.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>limits</strong> (<em>Iterable</em>) – an iterable of the limiting values, must be
+ordered from smallest to greatest</li>
+<li><strong>lower_closed</strong> (<em>boolean</em>) – defines which endpoint of the contained
+intervals will be closed: if <cite>True</cite>, lower endpoint closed, upper
+open (default), if <cite>False</cite>, lower endpoint open, upper closed</li>
+<li><strong>add_lower_inf</strong> (<em>boolean</em>) – defines whether a lower infinite interval
+will be added as first interval: if <cite>True</cite>, infinite interval as
+lowest interval, if <cite>False</cite>, no infinite interval as lowest
+interval (default)</li>
+<li><strong>add_upper_inf</strong> (<em>boolean</em>) – defines whether an upper infinite interval
+will be added as last interval: if <cite>True</cite>, infinite interval as
+last interval (default), if <cite>False</cite>, no infinite interval as last
+interval</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">instance of <a class="reference internal" href="#ivalutils.interval_chain.IntervalChain" title="ivalutils.interval_chain.IntervalChain"><code class="xref py py-class docutils literal"><span class="pre">IntervalChain</span></code></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference internal" href="#ivalutils.interval_chain.EmptyIntervalChain" title="ivalutils.interval_chain.EmptyIntervalChain"><code class="xref py py-exc docutils literal"><span class="pre">EmptyIntervalChain</span></code></a> – 
+given limits do not define any interval</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">InvalidInterval</span></code> – 
+given limits do not define a sequence of adjacent
+intervals</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">IncompatibleLimits</span></code> – 
+given limits are not comparable</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="ivalutils.interval_chain.IntervalChain.__copy__">
+<code class="descname">__copy__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain.__copy__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self (IntervalChain instances are immutable).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_chain.IntervalChain.__eq__">
+<code class="descname">__eq__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self == other</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_chain.IntervalChain.__getitem__">
+<code class="descname">__getitem__</code><span class="sig-paren">(</span><em>idx</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self[idx]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_chain.IntervalChain.__iter__">
+<code class="descname">__iter__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain.__iter__" title="Permalink to this definition">¶</a></dt>
+<dd><p>iter(self)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_chain.IntervalChain.__len__">
+<code class="descname">__len__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain.__len__" title="Permalink to this definition">¶</a></dt>
+<dd><p>len(self)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_chain.IntervalChain.__repr__">
+<code class="descname">__repr__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain.__repr__" title="Permalink to this definition">¶</a></dt>
+<dd><p>repr(self)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_chain.IntervalChain.__str__">
+<code class="descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>str(self)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_chain.IntervalChain.is_lower_infinite">
+<code class="descname">is_lower_infinite</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain.is_lower_infinite" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if first interval is lower infinite.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_chain.IntervalChain.is_upper_infinite">
+<code class="descname">is_upper_infinite</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain.is_upper_infinite" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if last interval is upper infinite.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_chain.IntervalChain.map2idx">
+<code class="descname">map2idx</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain.map2idx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the index of the interval which contains value.</p>
+<p>Raises ValueError if value is not contained in any of the intervals in
+self.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ivalutils.interval_chain.IntervalChain.limits">
+<code class="descname">limits</code><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain.limits" title="Permalink to this definition">¶</a></dt>
+<dd><p>The limiting values.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ivalutils.interval_chain.IntervalChain.total_interval">
+<code class="descname">total_interval</code><a class="headerlink" href="#ivalutils.interval_chain.IntervalChain.total_interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the interval between lower endpoint of first interval in
+self and upper endpoint of last interval in self.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="id3">
+<h2>2.3. Exceptions<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ivalutils.interval_chain.EmptyIntervalChain">
+<em class="property">class </em><code class="descclassname">ivalutils.interval_chain.</code><code class="descname">EmptyIntervalChain</code><a class="headerlink" href="#ivalutils.interval_chain.EmptyIntervalChain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raised when an empty IntervalChain would be created.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-ivalutils.interval_map">
+<span id="intervalmapping"></span><h1>3. IntervalMapping<a class="headerlink" href="#module-ivalutils.interval_map" title="Permalink to this headline">¶</a></h1>
+<p>Mappings on intervals</p>
+<div class="section" id="id4">
+<h2>3.1. Usage<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-interval-mappings">
+<h3>3.1.1. Creating interval mappings<a class="headerlink" href="#creating-interval-mappings" title="Permalink to this headline">¶</a></h3>
+<p>The class <a class="reference internal" href="#ivalutils.interval_map.IntervalMapping" title="ivalutils.interval_map.IntervalMapping"><code class="xref py py-class docutils literal"><span class="pre">IntervalMapping</span></code></a> is used to create a mapping from intervals
+to arbitrary values.</p>
+<p>Instances can be created by giving an IntervalChain and a sequence of
+associated values …:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">im1</span> <span class="o">=</span> <span class="n">IntervalMapping</span><span class="p">(</span><span class="n">IntervalChain</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)),</span> <span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="o">.</span><span class="mi">10</span><span class="p">,</span> <span class="o">.</span><span class="mi">15</span><span class="p">,</span> <span class="o">.</span><span class="mi">20</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>… or a sequence of limiting values and a sequence of associated values …:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">im2</span> <span class="o">=</span> <span class="n">IntervalMapping</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">1000</span><span class="p">),</span> <span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="o">.</span><span class="mi">10</span><span class="p">,</span> <span class="o">.</span><span class="mi">15</span><span class="p">,</span> <span class="o">.</span><span class="mi">20</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>… or a sequence of tuples, each holding a limiting value and an associated
+value:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">im3</span> <span class="o">=</span> <span class="n">IntervalMapping</span><span class="p">(((</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.</span><span class="p">),</span> <span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="o">.</span><span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="o">.</span><span class="mi">15</span><span class="p">),</span> <span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="o">.</span><span class="mi">20</span><span class="p">)))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">im1</span> <span class="o">==</span> <span class="n">im2</span> <span class="o">==</span> <span class="n">im3</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="operations-on-intervalmappings">
+<h3>3.1.2. Operations on IntervalMappings<a class="headerlink" href="#operations-on-intervalmappings" title="Permalink to this headline">¶</a></h3>
+<p>Interval mappings behave like ordinary mappings:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">im3</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="go">[Interval(lower_limit=Limit(True, 0, True), upper_limit=Limit(False, 300, False)),</span>
+<span class="go"> Interval(lower_limit=Limit(True, 300, True), upper_limit=Limit(False, 500, False)),</span>
+<span class="go"> Interval(lower_limit=Limit(True, 500, True), upper_limit=Limit(False, 1000, False)),</span>
+<span class="go"> Interval(lower_limit=Limit(True, 1000, True))]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">im3</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="go">[0.0, 0.1, 0.15, 0.2]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">im3</span><span class="p">[</span><span class="n">Interval</span><span class="p">(</span><span class="n">lower_limit</span><span class="o">=</span><span class="n">Limit</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="n">upper_limit</span><span class="o">=</span><span class="n">Limit</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="kc">False</span><span class="p">))]</span>
+<span class="go">0.1</span>
+</pre></div>
+</div>
+<p>In addition they can be looked-up for the value associated with the interval
+which contains a given value:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">im3</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="mi">583</span><span class="p">)</span>
+<span class="go">0.15</span>
+</pre></div>
+</div>
+<p>As a short-cut, the interval mapping can be used like a function:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">im3</span><span class="p">(</span><span class="mi">412</span><span class="p">)</span>
+<span class="go">0.1</span>
+</pre></div>
+</div>
+<p>Use cases for interval mappings are for example:</p>
+<blockquote>
+<div><ul class="simple">
+<li>determine the discount to be applied depending on an order value,</li>
+<li>rating customers depending on their sales turnover,</li>
+<li>classifying cities based on the number of inhabitants,</li>
+<li>mapping booking dates to accounting periods,</li>
+<li>grouping of measured values in discrete ranges.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>3.2. Classes<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ivalutils.interval_map.IntervalMapping">
+<em class="property">class </em><code class="descclassname">ivalutils.interval_map.</code><code class="descname">IntervalMapping</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_map.IntervalMapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>An IntervalMapping is a container of associated interval / value pairs.</p>
+<dl class="docutils">
+<dt>It is constructed from either</dt>
+<dd><ul class="first last simple">
+<li>an IntervalChain and a sequence of associated values,</li>
+<li>a sequence of limiting values and a sequence of associated values,</li>
+<li>a sequence of tuples, each holding a limiting value and an associated
+value.</li>
+</ul>
+</dd>
+</dl>
+<p><strong>1. Form</strong></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>arg0</strong> (<code class="xref py py-class docutils literal"><span class="pre">IntervalChain</span></code>) – sequence of intervals to be mapped</li>
+<li><strong>arg1</strong> (<cite>Sequence</cite>) – sequence of associated values</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. Form</strong></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>arg0</strong> (<cite>Sequence</cite>) – sequence of values limiting the intervals to be
+mapped</li>
+<li><strong>arg1</strong> (<cite>Sequence</cite>) – sequence of associated values</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. Form</strong></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>arg0</strong> (<cite>Sequence</cite>) – sequence of tuples containing a limiting value and
+an associated value</td>
+</tr>
+</tbody>
+</table>
+<p>If no IntervalChain is given, the given limiting values must be comparable
+and must be given in ascending order.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">instance of <a class="reference internal" href="#ivalutils.interval_map.IntervalMapping" title="ivalutils.interval_map.IntervalMapping"><code class="xref py py-class docutils literal"><span class="pre">IntervalMapping</span></code></a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+given sequences do not have the same length</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">AssertionError</span></code> – 
+given sequences of limiting values is empty</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">InvalidInterval</span></code> – 
+given limits do not define a sequence of adjacent
+intervals</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">IncompatibleLimits</span></code> – 
+given limits are not comparable</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">TypeError</span></code> – 
+given sequence is not a sequence of 2-tuples</li>
+<li><code class="xref py py-exc docutils literal"><span class="pre">TypeError</span></code> – 
+wrong number of arguments</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="ivalutils.interval_map.IntervalMapping.__call__">
+<code class="descname">__call__</code><span class="sig-paren">(</span><em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_map.IntervalMapping.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value associated with interval which contains <cite>val</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_map.IntervalMapping.__copy__">
+<code class="descname">__copy__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_map.IntervalMapping.__copy__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self (IntervalMapping instances are immutable).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_map.IntervalMapping.__eq__">
+<code class="descname">__eq__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_map.IntervalMapping.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self == other</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_map.IntervalMapping.__getitem__">
+<code class="descname">__getitem__</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_map.IntervalMapping.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd><p>self[key]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_map.IntervalMapping.__iter__">
+<code class="descname">__iter__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_map.IntervalMapping.__iter__" title="Permalink to this definition">¶</a></dt>
+<dd><p>iter(self)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_map.IntervalMapping.__len__">
+<code class="descname">__len__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_map.IntervalMapping.__len__" title="Permalink to this definition">¶</a></dt>
+<dd><p>len(self)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ivalutils.interval_map.IntervalMapping.map">
+<code class="descname">map</code><span class="sig-paren">(</span><em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#ivalutils.interval_map.IntervalMapping.map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value associated with interval which contains <cite>val</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <a id="sidebar-anchor"></a>
+    
+
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1. Interval</a><ul>
+<li><a class="reference internal" href="#usage">1.1. Usage</a><ul>
+<li><a class="reference internal" href="#creating-intervals">1.1.1. Creating intervals</a></li>
+<li><a class="reference internal" href="#operations-on-intervals">1.1.2. Operations on intervals</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#classes">1.2. Classes</a></li>
+<li><a class="reference internal" href="#factoryfunctions">1.3. Factoryfunctions</a></li>
+<li><a class="reference internal" href="#exceptions">1.4. Exceptions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-ivalutils.interval_chain">2. IntervalChain</a><ul>
+<li><a class="reference internal" href="#id1">2.1. Usage</a><ul>
+<li><a class="reference internal" href="#creating-interval-chains">2.1.1. Creating interval chains</a></li>
+<li><a class="reference internal" href="#operations-on-interval-chains">2.1.2. Operations on interval chains</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id2">2.2. Classes</a></li>
+<li><a class="reference internal" href="#id3">2.3. Exceptions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-ivalutils.interval_map">3. IntervalMapping</a><ul>
+<li><a class="reference internal" href="#id4">3.1. Usage</a><ul>
+<li><a class="reference internal" href="#creating-interval-mappings">3.1.1. Creating interval mappings</a></li>
+<li><a class="reference internal" href="#operations-on-intervalmappings">3.1.2. Operations on IntervalMappings</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5">3.2. Classes</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">ivalutils - Basic interval arithmetic, sequences of intervals and mappings on intervals</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="ivalutils - Basic interval arithmetic, sequences of intervals and mappings on intervals"
+             accesskey="P">previous</a> |</li>
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016 ff., Michael Amrhein.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>
