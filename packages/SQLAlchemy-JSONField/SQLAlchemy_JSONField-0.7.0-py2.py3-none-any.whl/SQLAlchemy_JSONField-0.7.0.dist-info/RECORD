@@ -1,0 +1,9 @@
+SQLAlchemy_JSONField-0.7.0.dist-info/DESCRIPTION.rst,sha256=OvkX_AwpKd2rj45soQUpOSFvgNWHUtvrNiV0tr9IQTU,4700
+SQLAlchemy_JSONField-0.7.0.dist-info/METADATA,sha256=88sPF59DGAfhpQr9NIDoc_WA7oSg6CxGgIH4DhN1iSY,5848
+SQLAlchemy_JSONField-0.7.0.dist-info/RECORD,,
+SQLAlchemy_JSONField-0.7.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+SQLAlchemy_JSONField-0.7.0.dist-info/metadata.json,sha256=Y0G8ia1oSKqB7QUw3jEMUbqfTJAWJ-MyDmR5x0BXUGI,1294
+SQLAlchemy_JSONField-0.7.0.dist-info/top_level.txt,sha256=NdmVTqdzw1LTTDSmyG9U2ne8IcIJkCM_viIH5mAFz2k,21
+SQLAlchemy_JSONField-0.7.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sqlalchemy_jsonfield/__init__.py,sha256=bD1jJjf_9I3naSxXYiHzBmIj1H8c1GCvpcd2haAMd34,799
+sqlalchemy_jsonfield/jsonfield.py,sha256=NNN9w15jyl3Bqk89vaLoxkS1N0pkDSB-QQqX7oV0-bQ,3899
