@@ -1,0 +1,12 @@
+syncrepl_client/__init__.py,sha256=dosmP0smBr6OwV-DDNDzMTSbPCO7-xwnRfbMHHMkWRo,43968
+syncrepl_client/_version.py,sha256=bPgmAolbQTSGlTc-AJMui85o5cnpIh2NZjEYi52q8_A,795
+syncrepl_client/callbacks.py,sha256=Cl9wRinBv9eyqSQoZtegYD39JcizI2wDS04zyUbGIw0,15379
+syncrepl_client/exceptions.py,sha256=ZO8H5WNsNf1jiaO_CXIWjaEWQwOhgV7OEIG-C-3bamU,2310
+syncrepl_client-0.95.1.data/scripts/syncrepl-client,sha256=OruywWUZNirYItirqpgaYftbdYvWZLqc8p_PY2dJ6gU,5657
+syncrepl_client-0.95.1.dist-info/DESCRIPTION.rst,sha256=rMa0jWMXjqlNRrzsEg90SjwDDMo3-2R9THqQivmoQfQ,7726
+syncrepl_client-0.95.1.dist-info/METADATA,sha256=eZ70hGME5SEdJGXoqPe_5tZp6R6fe7PRDScreCdR_t0,9037
+syncrepl_client-0.95.1.dist-info/RECORD,,
+syncrepl_client-0.95.1.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+syncrepl_client-0.95.1.dist-info/metadata.json,sha256=Q4GvaReoIGga-COyu3x5oXciRUA8RaQJ9yBXPdFlfxg,1492
+syncrepl_client-0.95.1.dist-info/top_level.txt,sha256=-R_qSsWN78Wdn_n3pp1FUfOfV3hvj8tSzJx3sfbr9tE,16
+syncrepl_client-0.95.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
