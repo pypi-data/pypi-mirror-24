@@ -1,0 +1,14 @@
+django_improved_user-0.4.0.dist-info/DESCRIPTION.rst,sha256=Q9bjFYxJG_9co3lQYKpsqKxLXR8gp9G-T3zBr_96Tzg,2277
+django_improved_user-0.4.0.dist-info/METADATA,sha256=iQgN3U7OFOFAR3Ut-52hfYigNEAtTpuYKJQwBGKqHX8,3502
+django_improved_user-0.4.0.dist-info/RECORD,,
+django_improved_user-0.4.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+django_improved_user-0.4.0.dist-info/metadata.json,sha256=_15bwF-UMTAjfoJGqYzTgS0HcH0LBRmCK5V8MWumwVk,1234
+django_improved_user-0.4.0.dist-info/top_level.txt,sha256=bNzKqfViDJlW_AP2J0h7Vf_QHyEUssUTx6LGMrDCXlQ,14
+improved_user/__init__.py,sha256=-nUjvJoPb3ssgveTlCPLrfXAwUTR4au4LOXWCN5UUKw,302
+improved_user/admin.py,sha256=CTtgW0Hn2jQSCrdGodIgt1kK_AAK3jVF27oyo7_kWUU,1160
+improved_user/apps.py,sha256=4hcKMWE4nDWIN-MRugtse_xTPUEBpBnqwNpkIw0Qf2Y,275
+improved_user/factories.py,sha256=d8cpe4MLdFUETHxccwtsWo7V9VE7qXyjRoil2wuYwDs,870
+improved_user/forms.py,sha256=4EVKsyaXsrCAD23iWI6Os3e-sXbHCI7H8TLZr2oI-T0,7735
+improved_user/models.py,sha256=UzSG-VwBelUQWcBiYjZYTWlf_E8t_M_oFxM6ShTztcI,4841
+improved_user/migrations/0001_initial.py,sha256=POoFuUKgTfI15vdCHSV4jzwXmgcjTyOhAGiBB3Q5A0c,2416
+improved_user/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
