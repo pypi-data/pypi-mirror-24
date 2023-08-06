@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyply
+Version: 0.1.5
+Summary: Based largely off functions found in R, pyply provides syntax in a functional programming style to make data manipulation easier.
+                     This is meant especially for those transitioning from R to Python.
+Home-page: https://github.com/atreadw1492/pyply
+Author: Andrew Treadway
+Author-email: opensourcecoder11@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
