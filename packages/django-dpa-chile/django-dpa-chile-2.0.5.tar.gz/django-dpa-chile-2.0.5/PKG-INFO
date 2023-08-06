@@ -1,0 +1,64 @@
+Metadata-Version: 1.1
+Name: django-dpa-chile
+Version: 2.0.5
+Summary: Political-Administrative Division of Chile
+Home-page: https://github.com/jupitercl/django-dpa-chile
+Author: Francisco Jordan
+Author-email: franciscojordan@live.com
+License: MIT
+Description: Django Political-Administrative Division of Chile
+        =================================================
+        
+        ``Regiones - Provincias - Comunas``
+        ===================================
+        
+        Information obtained from the api of Modernization and Digital Government Unit
+        
+        https://apis.digital.gob.cl/dpa
+        
+        Installation
+        ------------
+        
+        install **django-dpa-chile** using **pip**
+        
+        
+            pip install django-dpa-chile
+        
+        add **dpa_chile** to **INSTALLED_APPS**
+        
+        settings.py
+        -----------
+        
+            # ...
+        
+            INSTALLED_APPS =[
+            ...
+            'dpa_chile',
+            ]
+        
+            # ...
+        
+        Populate
+        --------
+        
+            python manage.py migrate django_dpa_chile
+        
+            python manage.py populate_dpa_chile
+        
+        Use
+        ---
+        
+            from django_dpa_chile.models import Region, Provincia, Comuna
+        
+Keywords: django chile comunas regiones provincias
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Spanish
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
