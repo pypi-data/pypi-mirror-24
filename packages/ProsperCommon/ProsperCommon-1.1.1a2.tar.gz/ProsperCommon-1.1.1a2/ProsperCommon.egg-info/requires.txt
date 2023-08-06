@@ -1,0 +1,6 @@
+requests
+semantic_version
+
+[dev]
+sphinx
+sphinxcontrib-napoleon
