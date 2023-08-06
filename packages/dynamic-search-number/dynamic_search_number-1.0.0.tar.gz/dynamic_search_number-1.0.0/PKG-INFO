@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: dynamic_search_number
+Version: 1.0.0
+Summary: A NetworkX package that computes mixed search number and edge search number.
+Home-page: https://github.com/Jabbath/Search-Number-Dynamic
+Author: Anton Afanassiev
+Author-email: antonafana@yahoo.ca
+License: MIT
+Download-URL: https://github.com/Jabbath/Cop-Number/archive/1.0.0.tar.gz
+Description: A Networkx package that can calculate mixed edge search number and edge search number. The implementation uses dynamic programming to solve the related problem of LINEAR WIDTH to compute the search parameters.
+Keywords: graph,theory,search,number,mixed,edge,linear,widthpursuit,evasion
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
