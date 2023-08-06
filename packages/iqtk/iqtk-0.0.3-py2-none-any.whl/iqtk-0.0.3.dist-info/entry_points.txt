@@ -1,0 +1,4 @@
+[console_scripts]
+iq-serv = inquiry.services.run:main
+iqtk = inquiry.framework.cli:main
+
