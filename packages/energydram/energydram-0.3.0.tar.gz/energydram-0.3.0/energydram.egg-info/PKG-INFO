@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: energydram
+Version: 0.3.0
+Summary: DRAM energy calculation.
+Home-page: https://github.com/gaomy3832/energydram
+Author: Mingyu Gao
+Author-email: mgao12@stanford.edu
+License: BSD 3-clause
+Description: .. image:: https://travis-ci.org/gaomy3832/energydram.svg?branch=master
+            :target: https://travis-ci.org/gaomy3832/energydram
+        .. image:: https://coveralls.io/repos/github/gaomy3832/energydram/badge.svg?branch=master
+            :target: https://coveralls.io/github/gaomy3832/energydram?branch=master
+        
+        
+        DRAM Energy
+        ===========
+        
+        DRAM energy calculation.
+        
+        
+        References
+        ----------
+        
+        Micron, Calculating Memory System Power for DDR3, tech note TN-41-01.
+        
+        N. Jouppi, A. B. Kahng, N. Muralimanohar and V. Srinivas, CACTI-IO: CACTI With
+        Off-Chip Power-Area-Timing Models, IEEE Transactions on Very Large Scale
+        Integration (VLSI) Systems 23(7) (2015), pp. 1254-1267.
+        
+        
+Keywords: DRAM energy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: Utilities
