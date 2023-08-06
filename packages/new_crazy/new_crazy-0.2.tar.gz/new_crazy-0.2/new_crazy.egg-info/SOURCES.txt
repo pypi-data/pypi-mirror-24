@@ -1,0 +1,10 @@
+README
+setup.py
+new_crazy/__init__.py
+new_crazy/class.py
+new_crazy.egg-info/PKG-INFO
+new_crazy.egg-info/SOURCES.txt
+new_crazy.egg-info/dependency_links.txt
+new_crazy.egg-info/not-zip-safe
+new_crazy.egg-info/requires.txt
+new_crazy.egg-info/top_level.txt
