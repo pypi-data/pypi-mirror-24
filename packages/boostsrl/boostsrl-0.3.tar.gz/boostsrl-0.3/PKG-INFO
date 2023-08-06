@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: boostsrl
+Version: 0.3
+Summary: Python wrappers for using BoostSRL jar files.
+Home-page: https://github.com/batflyer/boostsrl-python-package
+Author: Alexander L. Hayes (batflyer)
+Author-email: alexander@batflyer.net
+License: GPL-3.0
+Download-URL: https://github.com/batflyer/boostsrl-python-package/archive/0.3.tar.gz
+Description: UNKNOWN
+Keywords: machine-learning-algorithms machine-learning statistical-learning pattern-classification artificial-intelligence
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
