@@ -1,0 +1,15 @@
+ib_insync/__init__.py,sha256=Irnl1XH-VjnAYnfpJbBiAiUnNj9xjrYFxep7C-PLVkE,743
+ib_insync/client.py,sha256=bOmyKSvbxciJFtWrxQOl4K9zHep_XDKhwNOycHrkjWM,16115
+ib_insync/contract.py,sha256=XB7YC2EZ11SDwChUbLfpUPBHBgAj5QQWJXEkk9VAapc,5548
+ib_insync/ib.py,sha256=NGNktsPlGlxKxG8xbyfK6sH_7uDM55y17dArvii9Afc,44778
+ib_insync/objects.py,sha256=A6NGsBBhCIeFpSL1K1xD-JEflhlINstaK_Mi_g4rDx4,9002
+ib_insync/order.py,sha256=7s4KdHv1ykWX66Q4y94bt0F56LoeZOE1dzd0Z3peRdI,1869
+ib_insync/ticker.py,sha256=0_6sgE4zfKSwjWRHLxYpncS2lU35KfT1s-dNXC4MSEA,2952
+ib_insync/util.py,sha256=LuMAOsOJQ3xIN4Ja31BEMQVl8fXxnrQFZSfHxmbiTYI,8650
+ib_insync/wrapper.py,sha256=jxq04ljX3wpJSt-d93sGp8UsLE0A1LgNx1hR5JwuTWY,25739
+ib_insync-0.8.3.dist-info/DESCRIPTION.rst,sha256=skacwLgbXTr1HZgtIuWTfSa4Slg0WHU3pNPx7wSTSEs,4281
+ib_insync-0.8.3.dist-info/METADATA,sha256=gkVuY_RL70U4hJcTOdMcJoAXL8TcNFCoUAktu9Pvcew,4906
+ib_insync-0.8.3.dist-info/RECORD,,
+ib_insync-0.8.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+ib_insync-0.8.3.dist-info/metadata.json,sha256=kr_wDs5YRUT1GrGsjnrrFklrOeKnoYwSFmYUKqu8m5I,796
+ib_insync-0.8.3.dist-info/top_level.txt,sha256=b9ruIFE0O0uehMGcAzo9k5WBt1ZeHmukMQrF_Qaq0J4,10
