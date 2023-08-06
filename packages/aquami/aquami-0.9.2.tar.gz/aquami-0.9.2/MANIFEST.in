@@ -1,0 +1,6 @@
+# Include the license file
+include LICENSE.txt
+include icon.ico
+
+# Include the data files
+recursive-include tpps *
