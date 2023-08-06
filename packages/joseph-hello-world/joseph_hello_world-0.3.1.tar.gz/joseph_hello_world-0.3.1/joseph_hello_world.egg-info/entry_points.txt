@@ -1,0 +1,3 @@
+[joseph.actions]
+say_hello = hello_world.hello:say_hello
+

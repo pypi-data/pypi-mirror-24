@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: joseph-hello-world
+Version: 0.3.1
+Summary: A hello world plugin for Joseph. Write an hello world message to the logs.
+Home-page: https://github.com/NiekKeijzer/HelloWorld
+Author: Niek Keijzer
+Author-email: info@niekkeijzer.com
+License: UNKNOWN
+Download-URL: https://github.com/NiekKeijzer/HelloWorld/archive/0.3.1.tar.gaz
+Description: UNKNOWN
+Keywords: hello world,joseph
+Platform: UNKNOWN
