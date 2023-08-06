@@ -1,0 +1,9 @@
+A python library implementing the Cube 26 cipher
+
+Supports characters A-Z only!
+
+Usage:
+from pycube import Cube
+Cube("KEY").encrypt("TEXT")
+or
+Cube("KEY").decrypt("YTFY")
