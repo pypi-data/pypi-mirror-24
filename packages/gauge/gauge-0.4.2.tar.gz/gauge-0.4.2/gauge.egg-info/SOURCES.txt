@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+gauge/__about__.py
+gauge/__init__.py
+gauge/constants.c
+gauge/core.c
+gauge/deterministic.c
+gauge.egg-info/PKG-INFO
+gauge.egg-info/SOURCES.txt
+gauge.egg-info/dependency_links.txt
+gauge.egg-info/requires.txt
+gauge.egg-info/top_level.txt
