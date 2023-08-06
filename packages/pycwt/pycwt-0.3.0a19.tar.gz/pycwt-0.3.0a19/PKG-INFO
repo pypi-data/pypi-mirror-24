@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: pycwt
+Version: 0.3.0a19
+Summary: Continuous wavelet transform module for Python.
+Home-page: https://github.com/regeirk/pycwt
+Author: Sebastian Krieger, Nabil Freij, Alexey Brazhe, Christopher Torrence, Gilbert P. Compo and contributors
+Author-email: sebastian@nublia.com
+License: BSD
+Description: |ReadTheDocs| |PyPi| |Travis|
+        
+        PyCWT
+        =====
+        
+        A Python module for continuous wavelet spectral analysis. It includes a
+        collection of routines for wavelet transform and statistical analysis via FFT
+        algorithm. In addition, the module also includes cross-wavelet transforms,
+        wavelet coherence tests and sample scripts.
+        
+        Please read the documentation `here <http://pycwt.readthedocs.io/en/latest/>`__\.
+        
+        This module requires ``NumPy``, ``SciPy``, ``tqdm``. In addition, you will 
+        also need ``matplotlib`` to run the examples.
+        
+        The sample scripts (``sample.py``, ``sample_xwt.py``) illustrate the use of
+        the wavelet and inverse wavelet transforms, cross-wavelet transform and
+        wavelet transform coherence. Results are plotted in figures similar to the
+        sample images.
+        
+        
+        .. |ReadTheDocs| image:: https://readthedocs.org/projects/pycwt/badge/?version=latest
+           :target: http://pycwt.readthedocs.io/en/latest/?badge=latest
+        
+        .. |PyPi| image:: https://badge.fury.io/py/pycwt.svg
+           :target: https://badge.fury.io/py/pycwt
+        
+        .. |Travis| image:: https://travis-ci.org/regeirk/pycwt.svg?branch=master
+           :target: https://travis-ci.org/regeirk/pycwt
+        
+Keywords: wavelet,spectral analysis,signal processing,data science,timeseries
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Science/Research
