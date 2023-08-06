@@ -1,0 +1,111 @@
+
+ndarray-listener
+================
+
+|PyPI-Status| |Conda-Forge-Status| |Conda-Downloads|
+
+|Build-Status| |Codacy-Grade| |License-Badge| |Doc-Status|
+
+Implementation of the `Observer pattern`_ for NumPy_ arrays.
+
+Example
+-------
+
+.. code:: python
+
+    from numpy import array
+    from ndarray_listener import ndarray_listener as ndl
+
+    a = ndl(array([-0.5, 0.1, 1.1]))
+
+    class Observer(object):
+      def __init__(self):
+        self.called_me = False
+
+      def __call__(self, _):
+        self.called_me = True
+
+    o = Observer()
+    a.talk_to(o)
+    print(o.called_me)
+    a[0] = 1.2
+    print(o.called_me)
+
+The output should be
+
+.. code:: bash
+
+    False
+    True
+
+Install
+-------
+
+The recommended way of installing it is via conda_
+
+.. code:: bash
+
+    conda install -c conda-forge ndarray-listener
+
+An alternative way would be via pip_
+
+.. code:: bash
+
+    pip install ndarray-listener
+
+Running the tests
+-----------------
+
+After installation, you can test it
+
+.. code:: bash
+
+    python -c "import ndarray_listener; ndarray_listener.test()"
+
+as long as you have pytest_.
+
+Authors
+-------
+
+* `Danilo Horta`_
+
+License
+-------
+
+This project is licensed under the MIT License - see the `License file`_ for
+details.
+
+.. |Build-Status| image:: https://travis-ci.org/limix/ndarray-listener.svg?branch=master
+    :target: https://travis-ci.org/limix/ndarray-listener
+
+.. |Codacy-Grade| image:: https://api.codacy.com/project/badge/Grade/4766ffd4d2db44709e640ce4c0b880e8
+    :target: https://www.codacy.com/app/danilo.horta/ndarray-listener?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=limix/ndarray-listener&amp;utm_campaign=Badge_Grade
+
+.. |PyPI-Status| image:: https://img.shields.io/pypi/v/ndarray-listener.svg
+    :target: https://pypi.python.org/pypi/ndarray-listener
+
+.. |Conda-Forge-Status| image:: https://anaconda.org/conda-forge/ndarray-listener/badges/version.svg
+    :target: https://anaconda.org/conda-forge/ndarray-listener
+
+.. |Conda-Downloads| image:: https://anaconda.org/conda-forge/ndarray-listener/badges/downloads.svg
+    :target: https://anaconda.org/conda-forge/ndarray-listener
+
+.. |License-Badge| image:: https://img.shields.io/pypi/l/ndarray-listener.svg
+    :target: https://raw.githubusercontent.com/limix/ndarray-listener/master/LICENSE.txt
+
+.. |Doc-Status| image:: https://readthedocs.org/projects/ndarray-listener/badge/?style=flat-square&version=stable
+    :target: https://ndarray-listener.readthedocs.io/
+
+.. _License file: https://raw.githubusercontent.com/limix/ndarray-listener/master/LICENSE.txt
+
+.. _Danilo Horta: https://github.com/horta
+
+.. _conda: http://conda.pydata.org/docs/index.html
+
+.. _pip: https://pypi.python.org/pypi/pip
+
+.. _pytest: http://docs.pytest.org/en/latest/
+
+.. _Observer pattern: https://en.wikipedia.org/wiki/Observer_pattern
+
+.. _NumPy: http://www.numpy.org
