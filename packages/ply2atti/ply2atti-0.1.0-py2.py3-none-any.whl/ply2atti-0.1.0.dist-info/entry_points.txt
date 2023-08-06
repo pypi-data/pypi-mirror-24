@@ -1,0 +1,3 @@
+[console_scripts]
+ply2atti = ply2atti:main
+
