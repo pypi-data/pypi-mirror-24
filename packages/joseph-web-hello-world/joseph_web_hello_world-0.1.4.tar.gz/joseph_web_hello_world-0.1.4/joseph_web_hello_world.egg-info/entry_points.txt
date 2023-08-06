@@ -1,0 +1,3 @@
+[joseph.http]
+(GET)/test = web.handlers:index
+
