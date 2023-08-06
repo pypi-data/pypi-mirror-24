@@ -1,0 +1,10 @@
+README.rst
+setup.py
+Struction.egg-info/PKG-INFO
+Struction.egg-info/SOURCES.txt
+Struction.egg-info/dependency_links.txt
+Struction.egg-info/top_level.txt
+struction/__init__.py
+struction/fields.py
+struction/structs.py
+struction/util.py
