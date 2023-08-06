@@ -1,0 +1,79 @@
+#!/usr/bib/env python
+from __future__ import print_function
+import argparse
+import textwrap
+from title2bib.crossref import get_bib_from_title
+
+
+def save_output_bibs(bibs, output_file):
+    with open(output_file, 'w') as bibfile:
+        for bib in bibs:
+            bibfile.write("{}\n".format(bib))
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        prog="title2bib",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        description=textwrap.dedent('''\
+        Convert a list of titles in a bibfile.
+        You also can convert a simple title, like:
+        $ title2bib  On boundary Dirac Equations
+        or use the following command to get the first item and append
+        in your bib file
+        $ title2bib  On boundary Dirac Equations --first >> refs.bib
+
+        -----------------------------------------------------
+
+            @author: Bruno Messias
+            @email: messias.physics@gmail.com
+            @telegram: @brunomessias
+            @github: https://github.com/bibcure/title2bib
+        ''')
+    )
+
+    parser.add_argument(
+        "--input", "-i",
+        type=argparse.FileType("r"),
+        help="input file"
+    )
+    parser.add_argument(
+        "--output", "-o",
+        help="bibtex output file")
+
+    parser.add_argument("--first", "-f",
+                        dest="first",
+                        action="store_true",
+                        help="get the first found"
+                        )
+
+
+    parser.set_defaults(first=False)
+
+    args = parser.parse_known_args()
+
+    inlineTitle = len(args[1]) > 0
+    if inlineTitle:
+        titles = [" ".join(args[1])]
+    else:
+        titles = args[0].input.read()
+        titles = [title for title in titles.split("\n") if title != ""]
+    bibs = []
+    if inlineTitle:
+        get_first = args[0].first
+    for title in titles:
+        found, bib = get_bib_from_title(title, get_first)
+        if found:
+            bibs.append(bib)
+
+    if len(bibs) > 0:
+        if inlineTitle:
+            print("\n")
+            print(bibs[0])
+            print("\n")
+        else:
+            save_output_bibs(bibs, args[0].output)
+
+
+if __name__ == "__main__":
+    main()
