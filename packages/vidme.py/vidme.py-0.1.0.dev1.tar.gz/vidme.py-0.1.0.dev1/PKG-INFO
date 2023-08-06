@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: vidme.py
+Version: 0.1.0.dev1
+Summary: A python wrapper for the Vidme API
+Home-page: https://github.com/Zakru/vidme.py
+Author: Zakru
+Author-email: sakari.leukkunen@gmail.com
+License: MIT
+Description: A python wrapper for the Vidme API
+        
+        Currently at the very start
+Keywords: vidme api wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
