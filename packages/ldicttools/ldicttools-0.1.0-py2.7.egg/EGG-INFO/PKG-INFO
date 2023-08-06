@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: ldicttools
+Version: 0.1.0
+Summary: Tools for searching/indexing dictionaries
+Home-page: https://github.com/MineRobber9000/ldicttools
+Author: Robert Miles
+Author-email: milesrobert374@gmail.com
+License: MIT
+Description: ===
+        dictionary - Interface with system dictionary files
+        ===
+        
+        This is a GNU/Linux only library that uses dictionary files in "/usr/share/dict" to allow searching dictionaries.
+        
+        For example, to get all nouns that start with the letter a in /usr/share/dict/american_english_small::
+        
+        	def a_nouns():
+        		en_us_small = dicttools.getDict("american_english_small")
+        		while not en_us_small.isFinished():
+        			time.sleep(1)
+        		en_us_small = en_us_small.getObject()
+        		for i in en_us_small.wordType('noun',[[dictionary.STARTS_WITH,'a']]):
+        			yield i
+        
+        To get a dictionary, call `dicttools.getDict(file: string)` where `file` is a file in /usr/share/dict. You will recieve a DictionaryThread object.
+        
+Keywords: index search words
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7

@@ -1,0 +1,10 @@
+README.rst
+setup.py
+ldicttools/__init__.py
+ldicttools/implementation.py
+ldicttools.egg-info/PKG-INFO
+ldicttools.egg-info/SOURCES.txt
+ldicttools.egg-info/dependency_links.txt
+ldicttools.egg-info/entry_points.txt
+ldicttools.egg-info/requires.txt
+ldicttools.egg-info/top_level.txt
