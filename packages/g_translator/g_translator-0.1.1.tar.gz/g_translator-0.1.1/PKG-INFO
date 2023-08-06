@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: g_translator
+Version: 0.1.1
+Summary: A simple wrapper to translate messages using Google Cloud Platform.
+Home-page: https://github.com/DizAzTor/G-Translator
+Author: DizAzTor
+Author-email: dizaztor@protonmail.com
+License: UNKNOWN
+Download-URL: https://github.com/DizAzTor/G-Translator/archive/v1.0.tar.gz
+Description: UNKNOWN
+Keywords: google cloud platform translate translation simple wrapper
+Platform: UNKNOWN
