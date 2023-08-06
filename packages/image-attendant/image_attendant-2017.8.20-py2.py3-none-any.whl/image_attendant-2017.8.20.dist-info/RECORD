@@ -1,0 +1,11 @@
+image_attendant/__init__.py,sha256=WEcNbh9Kj5yqA9tI5Tl_EyxBf7eR4bT_9E55ZyaLp8c,299
+image_attendant/compression.py,sha256=D6GRp1ISp4ed_J1q9eiqJJfZOUrgjWyKdcv_StkZHBU,1180
+image_attendant/image_io.py,sha256=18VbjS_dS9ChU86jv0hNHRx97WR1jqdBV-Z8fI_Atgg,1620
+image_attendant/mpl.py,sha256=FWZvfQ_JhZmvrbbIXEL56L5JRs2tkZz1ZcdJtEtbDlU,1701
+image_attendant/utility.py,sha256=u6dwxPqO3gIvo-q9hzmEXJUx9l0bVkQ4OsfPEPDM9Ow,3604
+image_attendant-2017.8.20.dist-info/DESCRIPTION.rst,sha256=g9uqenz-FfUbnJFaKr2aFz8pv6a6kxPnu-XKWXRnylM,351
+image_attendant-2017.8.20.dist-info/METADATA,sha256=yN3rRfHLIisvoS_JIW8etNWe2z3xKsYHhtNZYWcgUQw,822
+image_attendant-2017.8.20.dist-info/RECORD,,
+image_attendant-2017.8.20.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+image_attendant-2017.8.20.dist-info/metadata.json,sha256=jNLLfk13rLSzrBo8wAizdH_z-e9A82X037G3DUn3SfA,659
+image_attendant-2017.8.20.dist-info/top_level.txt,sha256=kQwFGIP7kuQc6WOvumIIJijHAam03dq_21meANbabYo,16
