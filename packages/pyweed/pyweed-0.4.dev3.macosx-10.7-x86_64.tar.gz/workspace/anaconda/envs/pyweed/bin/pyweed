@@ -1,0 +1,12 @@
+#!/workspace/anaconda/envs/pyweed/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'pyweed==0.4.dev3','gui_scripts','pyweed'
+__requires__ = 'pyweed==0.4.dev3'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('pyweed==0.4.dev3', 'gui_scripts', 'pyweed')()
+    )
