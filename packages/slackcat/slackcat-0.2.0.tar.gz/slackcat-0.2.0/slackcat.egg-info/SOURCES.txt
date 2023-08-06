@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+slackcat/__init__.py
+slackcat/__main__.py
+slackcat.egg-info/PKG-INFO
+slackcat.egg-info/SOURCES.txt
+slackcat.egg-info/dependency_links.txt
+slackcat.egg-info/entry_points.txt
+slackcat.egg-info/top_level.txt
+slackcat.egg-info/zip-safe
