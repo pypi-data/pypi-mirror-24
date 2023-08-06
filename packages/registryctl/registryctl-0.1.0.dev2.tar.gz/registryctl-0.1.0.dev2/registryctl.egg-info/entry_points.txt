@@ -1,0 +1,8 @@
+[console_scripts]
+registryctl = registryctl.cli:main
+
+[registryctl.api]
+catalog_delete = registryctl.resources:CatalogDelete
+catalog_list = registryctl.resources:CatalogList
+catalog_show = registryctl.resources:CatalogShow
+
