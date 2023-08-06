@@ -1,0 +1,1 @@
+git+https://git5.cs.fau.de/PyConrad/pyconrad_java.git#egg=pyconrad-java-0.0.1
