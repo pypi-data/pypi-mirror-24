@@ -1,0 +1,4 @@
+include README.rst
+include LICENSE
+include examples/simple_space_heating_mpc.ipynb
+include examples/cplex_api.ipynb
