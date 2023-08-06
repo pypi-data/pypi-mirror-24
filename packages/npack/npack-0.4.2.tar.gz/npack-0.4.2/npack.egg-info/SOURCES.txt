@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+npack/__init__.py
+npack/__main__.py
+npack.egg-info/PKG-INFO
+npack.egg-info/SOURCES.txt
+npack.egg-info/dependency_links.txt
+npack.egg-info/entry_points.txt
+npack.egg-info/top_level.txt
