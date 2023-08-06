@@ -1,0 +1,12 @@
+azure/cli/command_modules/container/__init__.py,sha256=sqUX-dyhw17yrkni1dhhT2iJxqQrxvwfx8dDweuFO2I,698
+azure/cli/command_modules/container/_client_factory.py,sha256=lN4sOi_24w5eAb6Dtps_rHF2xEo1UiqWNt2wbfRnSpY,618
+azure/cli/command_modules/container/_help.py,sha256=oRyUgR-xl6QC-HAHDbw2SRSeEsM3btQd5WvXY1SeEKM,2535
+azure/cli/command_modules/container/_params.py,sha256=EWvUxzEWPwjTz3U7bzLu_FV3GlRHAbkU79kSk_yh0G0,3260
+azure/cli/command_modules/container/commands.py,sha256=GRrDUmLNd4MqByyXmJhyKlRXFT2lM2PvMXh5cUK8Xpo,3670
+azure/cli/command_modules/container/custom.py,sha256=uwhG1WDSbu8eTPdlT2WfO0CqF-_ylU-fmrfDNGu7vP4,5688
+azure_cli_container-0.1.8.dist-info/DESCRIPTION.rst,sha256=xZ2zZq-X3Q9Hpou1V_ycXkQq-Yp0I-KqczyeDFduq9Q,9171
+azure_cli_container-0.1.8.dist-info/METADATA,sha256=pWJPd3lJpxoE_Hw0UOs6-GAZ-baTN189u5TyP9aYSdc,10132
+azure_cli_container-0.1.8.dist-info/RECORD,,
+azure_cli_container-0.1.8.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+azure_cli_container-0.1.8.dist-info/metadata.json,sha256=Jyb4ASSt7MmpnBliGMbbwZjsTDipBWVZEp5T4H4iIr0,1065
+azure_cli_container-0.1.8.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
