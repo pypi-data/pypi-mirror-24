@@ -1,0 +1,53 @@
+Metadata-Version: 2.0
+Name: manic-entropy-storm
+Version: 0.0.1
+Summary: A python package that can be installed with pip.
+Home-page: https://github.com/duanenielsen/manic-entropy-storm
+Author: Duane Nielsen
+Author-email: duane.nielsen.rocks@gmail.com
+License: BSD
+Download-URL: https://github.com/duanenielsen/manic-entropy-storm/tarball/0.0.1
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: coverage
+Requires-Dist: nose
+Requires-Dist: pypi-publisher
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+
+manic-entropy-storm
+===============================
+
+version number: 0.0.1
+author: Duane Nielsen
+
+Overview
+--------
+
+A python package that can be installed with pip.
+
+Installation / Usage
+--------------------
+
+To install use pip:
+
+    $ pip install manic-entropy-storm
+
+
+Or clone the repo:
+
+    $ git clone https://github.com/duanenielsen/manic-entropy-storm.git
+    $ python setup.py install
+
+Contributing
+------------
+
+TBD
+
+Example
+-------
+
+TBD
+
