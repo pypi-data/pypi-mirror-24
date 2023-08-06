@@ -1,0 +1,9 @@
+setup.py
+bin/copypathtoclipboard
+copypathtoclipboard/__init__.py
+copypathtoclipboard.egg-info/PKG-INFO
+copypathtoclipboard.egg-info/SOURCES.txt
+copypathtoclipboard.egg-info/dependency_links.txt
+copypathtoclipboard.egg-info/not-zip-safe
+copypathtoclipboard.egg-info/requires.txt
+copypathtoclipboard.egg-info/top_level.txt
