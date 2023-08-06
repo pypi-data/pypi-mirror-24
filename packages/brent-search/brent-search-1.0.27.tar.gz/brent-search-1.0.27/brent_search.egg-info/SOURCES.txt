@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+brent_search/__init__.py
+brent_search/_test.py
+brent_search/bracket.py
+brent_search/brent.py
+brent_search/optimize.py
+brent_search.egg-info/PKG-INFO
+brent_search.egg-info/SOURCES.txt
+brent_search.egg-info/dependency_links.txt
+brent_search.egg-info/top_level.txt
+brent_search.egg-info/zip-safe
