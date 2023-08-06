@@ -1,0 +1,16 @@
+include LICENSE
+include setup.py
+include setup2.py
+include setup3.py
+include setupcommon.py
+include c.pxd
+include yawinpty.cpp
+include yawinpty.pyx
+include README.rst
+include winpty/LICENSE
+include classifiers
+
+recursive-include winpty/src *.cc
+recursive-include winpty/src *.h
+include winpty/src/shared/GetCommitHash.bat
+include winpty/src/shared/UpdateGenVersion.bat
