@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+changelog.md
+requirements.txt
+setup.py
+bin/ep
+epw/__init__.py
+epw/cmds.py
+epw/displayops.py
+epw/einit.py
+epw/epprocess.py
+essential_pathway.egg-info/PKG-INFO
+essential_pathway.egg-info/SOURCES.txt
+essential_pathway.egg-info/dependency_links.txt
+essential_pathway.egg-info/requires.txt
+essential_pathway.egg-info/top_level.txt

@@ -1,0 +1,62 @@
+#!/usr/bin/env python
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#Essential Pathways v1.0
+#Author:realasking
+#Email:realasking@gmail.com,tomwangsim@163.com
+#Aug-06,2017,in USTB
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+import sys 
+import os 
+import epw 
+
+conf_folder=".ep"
+dbfile="ep.db"
+module_name="epath"
+
+infos=epw.cmds.warnings()
+
+dbp=epw.epprocess.pathwayops(conf_folder,dbfile,module_name)
+dbp.cmodfile()
+
+sysagv=len(sys.argv)
+
+if sysagv==1:
+   infos.Outhelp()
+else:
+   sa1=sys.argv[1]
+   if sysagv==2:
+     if sa1=="l":
+        dbp.path_list()
+     elif sa1=="k":
+        dbp.dbcheck()
+        dbp.path_refresh()
+     elif sa1=="r":
+        dbp.path_refresh()
+     elif sa1=="b":
+        dbp.path_backup()
+     elif sa1=="t":
+        dbp.path_restore()
+     elif sa1=="u":
+        dbp.path_uninstall()
+     else:
+        infos.Inerror()
+   elif sysagv==3:
+     if sa1=="a":
+        pathf=os.popen("pwd").read().splitlines()
+        dbp.path_create(sys.argv[2],pathf[0])
+     elif sa1=="c":
+        dbp.path_comment(sys.argv[2])
+     elif sa1=="d":
+        dbp.path_delete(sys.argv[2])
+     else:
+        infos.Inerror()
+   elif sysagv==4:
+     if sa1=="a":
+        dbp.path_create(sys.argv[2],sys.argv[3])
+     elif sa1=="m":
+        dbp.path_modify(sys.argv[2],sys.argv[3])
+     else:
+        infos.Inerror()
+   else:
+     infos.Inerror()
+
