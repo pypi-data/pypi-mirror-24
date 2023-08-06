@@ -1,0 +1,16 @@
+PySlowLoris/__init__.py,sha256=nVg5DF_b9nwBOEhEKayrdnyU91L1LKLDWYeN-OU-o0Q,2065
+PySlowLoris/__version__.py,sha256=2zSfBMPd6ViylFKwqk7zQc7V2eAje7GfNEVi-ZyS5Mw,1148
+PySlowLoris/cli.py,sha256=j2OAGD4cZqOEuNSg5MlWkcyPq8NoaqZhxp3xW4u08ZY,5087
+PySlowLoris/slowloris/__init__.py,sha256=BzKC3s8HNRDKotj1UloogQdvsoMRaJ8p3KlfArvnvks,1258
+PySlowLoris/slowloris/connection.py,sha256=dZM0b__8AvtuNCSRU-XlwJu2-28C3dOl8iFKD-sDfec,6199
+PySlowLoris/slowloris/pingtest.py,sha256=jltQej5c-ZYLaVe_MOZq8dw5w8ui1n-SDHdaCPJ89qU,2714
+PySlowLoris/slowloris/slowloris.py,sha256=zyCUJgCOGf2m7OOWbzYPMVFfLF7qnUysxEu3lzL0BE4,2530
+PySlowLoris/slowloris/targetinfo.py,sha256=BpDMfKGXKX7HwJ0GGRwTmInvKCjiSIO3_ZP--j20JJs,2584
+PySlowLoris-0.1.30.dist-info/DESCRIPTION.rst,sha256=fxSSrb1yKlOPn1RNxpBcjJMCeKipRVJcRv8wlU5yOFU,4762
+PySlowLoris-0.1.30.dist-info/METADATA,sha256=h11FPJ9Uj0fp3ByS3Tl5Oi_ViJOtIKYMGfrSz_jr2rA,5934
+PySlowLoris-0.1.30.dist-info/RECORD,,
+PySlowLoris-0.1.30.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+PySlowLoris-0.1.30.dist-info/entry_points.txt,sha256=ru5ydEPiGN1OSsKHY5d2E1dDePhak6d1TUuyMfGMzmw,52
+PySlowLoris-0.1.30.dist-info/metadata.json,sha256=EwkXpDtC5cL4tYeQ_LCjYHxkPXQV64T-nogx0CNv2oQ,1458
+PySlowLoris-0.1.30.dist-info/top_level.txt,sha256=MSae0uRM4n-1g1BNs53Lhf_9KflDde8zI5c0gKCWQjY,12
+PySlowLoris-0.1.30.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
