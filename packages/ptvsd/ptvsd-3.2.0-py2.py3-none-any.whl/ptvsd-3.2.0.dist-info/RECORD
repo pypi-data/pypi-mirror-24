@@ -1,0 +1,12 @@
+ptvsd/__init__.py,sha256=tpGVb0iLrmGuAV9J46tnL_4qDxTsveqh9wmAKHYpnbU,5324
+ptvsd/__main__.py,sha256=DfVQy0nybb5ppBOhjArhLSGCuEFVN8gPBfU380lNIuY,2823
+ptvsd/attach_server.py,sha256=oitDStdc0el6yaXt-7f0ZI5VIf-y7HByjoGdWGQ367o,10646
+ptvsd/debugger.py,sha256=Hg0311kvQIBIa0zDC4VxSgBF4jBCTQpb-RezktPQ9Kg,101387
+ptvsd/ipcjson.py,sha256=-CGuedawI17fBLA66hg1CUqzYCDk2AhKFDbxQ8aU6eo,10485
+ptvsd/util.py,sha256=WUr_8WtJYmZBqAeWOb3V6QcqClj76pXjwTGs9eXG-SU,23572
+ptvsd-3.2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+ptvsd-3.2.0.dist-info/METADATA,sha256=j8pO3vMyDXxtBwIPpvPw_7Klfq6zlfUXoBLEWDKahEc,538
+ptvsd-3.2.0.dist-info/RECORD,,
+ptvsd-3.2.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+ptvsd-3.2.0.dist-info/metadata.json,sha256=6c5GMnZ8JZK7X0rBOB9QvFtjyNQzPtnL_ae4MWsIWf0,668
+ptvsd-3.2.0.dist-info/top_level.txt,sha256=y1taMbkTTDbMeGcLzZsLvoj1XomArGgIWniWjXnMTug,6
