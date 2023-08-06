@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: zcrm-python-cl
+Version: 0.0.3
+Summary: Zoho CRM Client Library for Python developers
+Home-page: https://github.com/sumanthchilka/python-client-library
+Author: Sumanth Reddy
+Author-email: UNKNOWN
+License: ZOHO
+Description: Python Client Library
+Keywords: development
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
