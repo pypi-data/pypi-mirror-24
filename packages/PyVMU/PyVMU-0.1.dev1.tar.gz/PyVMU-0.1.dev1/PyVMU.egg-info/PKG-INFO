@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: PyVMU
+Version: 0.1.dev1
+Summary: Python Toolkit for the Variense VMU931.
+Home-page: https://github.com/JosephRedfern/PyVMU
+Author: Joseph Redfern
+Author-email: joseph@redfern.me
+License: MIT
+Description: UNKNOWN
+Platform: any
