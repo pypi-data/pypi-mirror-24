@@ -1,0 +1,39 @@
+Metadata-Version: 2.0
+Name: TUPA
+Version: 1.2.0
+Summary: Transition-based UCCA Parser
+Home-page: https://github.com/huji-nlp/tupa
+Author: Daniel Hershcovich
+Author-email: danielh@cs.huji.ac.il
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: cython (>=0.26.1)
+Requires-Dist: dynet (>=2.0)
+Requires-Dist: nltk (>=3.2.4)
+Requires-Dist: parsimonious (>=0.8.0)
+Requires-Dist: penman (>=0.6.1)
+Requires-Dist: pyspotlight (>=0.7.1)
+Requires-Dist: requests (>=2.8.14)
+Requires-Dist: spacy (>=1.9.0)
+Requires-Dist: ucca (>=1.0.7)
+Requires-Dist: word2number (>=1.1)
+Provides-Extra: server
+Requires-Dist: Flask (>=0.12.2); extra == 'server'
+Requires-Dist: Flask-Assets (>=0.12); extra == 'server'
+Requires-Dist: Flask-Compress (>=1.4.0); extra == 'server'
+Requires-Dist: Jinja2 (>=2.9.6); extra == 'server'
+Requires-Dist: matplotlib (>=2.0.2); extra == 'server'
+Requires-Dist: networkx (>=1.11); extra == 'server'
+Requires-Dist: webassets (>=0.12.1); extra == 'server'
+
+UNKNOWN
+
+
