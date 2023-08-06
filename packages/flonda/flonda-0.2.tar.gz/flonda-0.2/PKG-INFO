@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: flonda
+Version: 0.2
+Summary: Build conda packages using flit
+Home-page: https://www.github.com/takluyver/flonda
+Author: Thomas Kluyver
+Author-email: thomas@kluyver.me.uk
