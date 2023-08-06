@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+adamP_BioTools/__init__.py
+adamP_BioTools/dna_tools.py
+adamP_BioTools/os_handling.py
+adamP_BioTools.egg-info/PKG-INFO
+adamP_BioTools.egg-info/SOURCES.txt
+adamP_BioTools.egg-info/dependency_links.txt
+adamP_BioTools.egg-info/not-zip-safe
+adamP_BioTools.egg-info/top_level.txt
