@@ -1,0 +1,15 @@
+CHANGES
+=======
+
+0.1
+---
+
+* Updated typing, added test case for ModelResource
+* Added ModelResource with some convenience methods to handle mapping
+* Migrated to PBR
+* Added package resources namespace declaration
+* Updated test cases to handle return mappings better
+* Major update to sqlalchemy support to include factorys for creating resources from SQL alchemy definitions
+* Added Field resolver for SQL alchemy
+* Initial commit
+* Fixed spelling in setup.py

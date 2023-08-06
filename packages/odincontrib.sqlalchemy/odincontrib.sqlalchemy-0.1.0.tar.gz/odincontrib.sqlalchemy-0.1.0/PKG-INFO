@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: odincontrib.sqlalchemy
+Version: 0.1.0
+Summary: Integration between odin and SQL Alchemy
+Home-page: https://github.com/python-odin/odincontrib.sqlalchemy
+Author: Tim Savage
+Author-email: tim@savage.company
+License: BSD
+Description: =======================
+        Odin Contrib SQLAlchemy
+        =======================
+        
+        Odin contrib modules for `SQLAlchemy <https://www.sqlalchemy.org/>`_.
+        
+        
+Keywords: database
+orm
+odin
+sqlalchemy
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
