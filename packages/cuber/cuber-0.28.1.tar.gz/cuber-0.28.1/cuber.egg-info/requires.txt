@@ -1,0 +1,6 @@
+click
+numpy
+configparser
+python_telegram_handler
+GPy
+GPyOpt
