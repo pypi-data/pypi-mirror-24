@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+ondemand/__init__.py
+ondemand/ondemand_client.py
+ondemand.egg-info/PKG-INFO
+ondemand.egg-info/SOURCES.txt
+ondemand.egg-info/dependency_links.txt
+ondemand.egg-info/requires.txt
+ondemand.egg-info/top_level.txt

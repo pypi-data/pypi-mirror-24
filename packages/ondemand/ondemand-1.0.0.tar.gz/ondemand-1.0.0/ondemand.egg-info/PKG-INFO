@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ondemand
+Version: 1.0.0
+Summary: Simple client for Barchart OnDemand REST APIs
+Home-page: https://www.barchartondemand.com/api
+Author: Mike Ehrenberg
+Author-email: solutions@barchart.com
+License: LICENSE.txt
+Download-URL: https://github.com/barchart/barchart-ondemand-client-python/archive/1.0.zip
+Description: UNKNOWN
+Keywords: market-data,futures,forex,stock-market,stock-quotes,historical-data,price-data
+Platform: UNKNOWN
