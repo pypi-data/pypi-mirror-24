@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: teasysnmp
+Version: 0.1
+Summary: Extended easysnmp with helpers to work with snmp tables
+Home-page: https://github.com/thebinary/teasysnmp
+Author: The Binary
+Author-email: binary4bytes@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
