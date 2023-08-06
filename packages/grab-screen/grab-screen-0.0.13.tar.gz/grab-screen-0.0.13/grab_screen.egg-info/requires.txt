@@ -1,0 +1,17 @@
+click==6.7
+mss==3.0.1
+pyperclip==1.5.27
+requests==2.18.4
+
+[dev]
+pytest<4
+pytest-mock==1.6.2
+tox<3
+bandit==1.4.0
+flake8==3.4.1
+flake8-colors==0.1.6
+flake8-deprecated==1.2.1
+flake8-import-order==0.13
+flake8-mutable==1.2.0
+flake8-print==2.0.2
+pep8-naming==0.4.1
