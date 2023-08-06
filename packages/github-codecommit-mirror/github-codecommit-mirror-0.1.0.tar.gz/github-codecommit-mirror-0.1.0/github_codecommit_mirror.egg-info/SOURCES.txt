@@ -1,0 +1,10 @@
+setup.py
+gh_cc_mirror/__init__.py
+gh_cc_mirror/main.py
+github_codecommit_mirror.egg-info/PKG-INFO
+github_codecommit_mirror.egg-info/SOURCES.txt
+github_codecommit_mirror.egg-info/dependency_links.txt
+github_codecommit_mirror.egg-info/entry_points.txt
+github_codecommit_mirror.egg-info/not-zip-safe
+github_codecommit_mirror.egg-info/requires.txt
+github_codecommit_mirror.egg-info/top_level.txt

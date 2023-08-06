@@ -1,0 +1,4 @@
+
+            [console_scripts]
+            gh-cc-mirror = gh_cc_mirror.main:main
+    
