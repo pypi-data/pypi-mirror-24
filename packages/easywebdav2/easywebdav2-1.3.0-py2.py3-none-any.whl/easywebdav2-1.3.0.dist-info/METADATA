@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: easywebdav2
+Version: 1.3.0
+Summary: A straight-forward WebDAV client, implemented using Requests
+Home-page: http://github.com/zabuldon/easywebdav
+Author: Amnon Grossman
+Author-email: emesh1@gmail.com
+License: ISC
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.3
+Requires-Dist: requests
+Requires-Dist: six
+
+UNKNOWN
+
+
