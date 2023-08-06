@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+awsiot.egg-info/PKG-INFO
+awsiot.egg-info/SOURCES.txt
+awsiot.egg-info/dependency_links.txt
+awsiot.egg-info/entry_points.txt
+awsiot.egg-info/requires.txt
+awsiot.egg-info/top_level.txt
+commands/__init__.py
+commands/awsiot.py
+factories/__init__.py
+factories/aws/__init__.py
+factories/aws/thing.py
+factories/aws/thingtype.py
