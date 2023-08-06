@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: sports.py
+Version: 1.2
+Summary: A simple Python package to gather live sports scores
+Home-page: https://github.com/evansloan082/sports.py
+Author: Evan Sloan
+Author-email: evansloan082@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/evansloan082/sports.py/archive/v1.2.tar.gz
+Description: UNKNOWN
+Keywords: sports,scores,live scores,hockey,basketball,baseball,football
+Platform: UNKNOWN
