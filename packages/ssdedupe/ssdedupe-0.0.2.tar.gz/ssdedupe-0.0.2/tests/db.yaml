@@ -1,0 +1,5 @@
+user: sa
+password: mini89m@thew
+database: test
+host: localhost
+type: mssql
