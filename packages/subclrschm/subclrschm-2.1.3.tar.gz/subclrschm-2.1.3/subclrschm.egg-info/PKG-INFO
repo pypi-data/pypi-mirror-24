@@ -1,0 +1,39 @@
+Metadata-Version: 1.1
+Name: subclrschm
+Version: 2.1.3
+Summary: GUI for editing Sublime Text color schemes.
+Home-page: https://github.com/facelessuser/subclrschm
+Author: Isaac Muse
+Author-email: Isaac.Muse@gmail.com
+License: MIT License
+Description: 
+        Sublime Color Scheme Editor (subclrschm) is a color scheme editor for Sublime Text 3.
+        
+        It is built with wxPython 4.0.0+ and requires Python 2.7 or 3.4+.
+        You can learn more about using subclrschm by `reading the docs`_.
+        
+        .. _`reading the docs`: http://facelessuser.github.io/subclrschm/
+        
+        Support
+        =======
+        
+        Help and support is available here at the repository's `bug tracker`_.
+        Please read about `support and contributing`_ before creating issues.
+        
+        .. _`bug tracker`: https://github.com/facelessuser/subclrschm/issues
+        .. _`support and contributing`: http://facelessuser.github.io/subclrschm/contributing/
+        
+Keywords: Sublime color scheme
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
