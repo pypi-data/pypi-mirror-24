@@ -1,0 +1,3 @@
+python-smartqq-client
+pymongo
+python-telegram-bot
