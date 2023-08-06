@@ -1,0 +1,27 @@
+language: python
+sudo: required
+
+services:
+  - docker
+
+cache:
+  directories:
+    - ~/.cache/pip
+env:
+  - TARGET: pep8
+  - TARGET: py27
+  - TARGET: py35
+  - TARGET: docs-gnocchi.xyz
+
+before_script:
+  - docker pull gnocchixyz/ci-tools:latest
+script:
+  - docker run -v ~/.cache/pip:/home/tester/.cache/pip -v $(pwd):/home/tester/src gnocchixyz/ci-tools:latest tox -e ${TARGET}
+
+notifications:
+  email: false
+  irc:
+    on_success: change
+    on_failure: always
+    channels:
+      - "irc.freenode.org#gnocchi"
