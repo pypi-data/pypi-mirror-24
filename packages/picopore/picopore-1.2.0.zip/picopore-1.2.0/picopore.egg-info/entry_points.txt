@@ -1,0 +1,6 @@
+[console_scripts]
+picopore = picopore.__main__:main
+picopore-realtime = picopore.realtime:main
+picopore-rename = picopore.rename:main
+picopore-test = picopore.test:main
+
