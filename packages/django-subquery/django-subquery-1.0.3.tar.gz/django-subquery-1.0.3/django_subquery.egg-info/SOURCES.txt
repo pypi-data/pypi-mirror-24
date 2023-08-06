@@ -1,0 +1,7 @@
+setup.py
+django_subquery/__init__.py
+django_subquery/expressions.py
+django_subquery.egg-info/PKG-INFO
+django_subquery.egg-info/SOURCES.txt
+django_subquery.egg-info/dependency_links.txt
+django_subquery.egg-info/top_level.txt
