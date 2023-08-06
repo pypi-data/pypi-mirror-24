@@ -1,0 +1,13 @@
+setup.py
+libpy/durable/__init__.py
+libpy/durable/engine.py
+libpy/durable/interface.py
+libpy/durable/lang.py
+libpy/durable.egg-info/PKG-INFO
+libpy/durable.egg-info/SOURCES.txt
+libpy/durable.egg-info/dependency_links.txt
+libpy/durable.egg-info/requires.txt
+libpy/durable.egg-info/top_level.txt
+libpy/durable/ux/admin.html
+libpy/durable/ux/durableVisual.js
+src/rulespy/rules.c
