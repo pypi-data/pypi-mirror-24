@@ -1,0 +1,4 @@
+django>=1.8,<1.12
+django-ucamlookup>=1.9.2
+requests
+celery<4
