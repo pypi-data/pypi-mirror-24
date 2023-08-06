@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.py
+django_utmcollector.egg-info/PKG-INFO
+django_utmcollector.egg-info/SOURCES.txt
+django_utmcollector.egg-info/dependency_links.txt
+django_utmcollector.egg-info/top_level.txt
+utmcollector/__init__.py
+utmcollector/admin.py
+utmcollector/apps.py
+utmcollector/decorators.py
+utmcollector/models.py
+utmcollector/templatetags.py
+utmcollector/tests.py
+utmcollector/views.py
+utmcollector/migrations/__init__.py
