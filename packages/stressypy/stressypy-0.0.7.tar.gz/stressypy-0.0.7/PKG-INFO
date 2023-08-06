@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: stressypy
+Version: 0.0.7
+Summary: A simple program for calling stress and/or stress-ng from python
+Home-page: https://github.com/salbrandi/stressypy
+Author: Salvador Brandi
+Author-email: salbrandi@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/salbrandi/stressypy/archive/0.1.tar.gz
+Description: A package to stress one or more cores
+        =====================================
+        
+        ``stressypy`` uses the unix package ``stress`` and/or ``stress-ng`` to to stress a certain number of cpus for a certain amount
+        of time.
+        
+        
+        Installation
+        ++++++++++++
+        
+        ``stressypy`` can be installed with ``pip install stressypy``
+        
+        or cloned manually and setup with ``python setup.py install``
+        
+        ``stressypy`` is dependent on the ``stress-ng`` unix package. Make sure you have both installed.
+        
+        +------------------------+-------------------------------------------+
+        | Unix Distro            | Command                                   |
+        +========================+===========================================+
+        | Debian                 | `sudo apt-get install stress-ng`          |
+        +------------------------+-------------------------------------------+
+        | Arch Linux             | `pacman -S stress-ng`                     |
+        +------------------------+-------------------------------------------+
+        
+        
+        Directions
+        ++++++++++
+        
+        ``stressypy`` runs using the command ``stressy stress`` with the number of cpus and time passed as arguments
+        
+        * ``stressy stress 1 1`` stresses 1 core for 1 second
+        * ``stressy stress 7 3`` stresses 7 cores for 3 second
+        
+Keywords: cpu stress cores stress-ng test loads object rq
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
