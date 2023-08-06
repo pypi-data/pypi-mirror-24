@@ -1,0 +1,3 @@
+[console_scripts]
+hdg-from = hdgfrom.cli:main
+
