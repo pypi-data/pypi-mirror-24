@@ -1,0 +1,11 @@
+setup.py
+httprequests/__init__.py
+httprequests/drEsSign.py
+httprequests/httpFunctions.py
+httprequests/librarytester.py
+httprequests/philipsHue.py
+httprequests.egg-info/PKG-INFO
+httprequests.egg-info/SOURCES.txt
+httprequests.egg-info/dependency_links.txt
+httprequests.egg-info/not-zip-safe
+httprequests.egg-info/top_level.txt
