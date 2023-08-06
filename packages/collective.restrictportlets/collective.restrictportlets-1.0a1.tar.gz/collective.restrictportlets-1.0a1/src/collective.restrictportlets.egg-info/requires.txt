@@ -1,0 +1,9 @@
+collective.monkeypatcher
+plone.api
+plone.app.registry
+Products.GenericSetup
+setuptools
+
+[test]
+plone.app.testing
+plone.testing>=5.0.0

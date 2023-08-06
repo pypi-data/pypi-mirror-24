@@ -1,0 +1,5 @@
+====================
+collective.restrictportlets
+====================
+
+User documentation

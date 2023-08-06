@@ -1,0 +1,53 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
+    i18n_domain="collective.restrictportlets">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <includeDependencies package="." />
+
+  <utility
+    component=".interfaces.PortletTypesVocabularyFactory"
+    name="collective.restrictportlets.portlet_types"
+    />
+
+  <monkey:patch
+      description="Restrict addable portlet types"
+      class="plone.portlets.manager.PortletManager"
+      original="getAddablePortletTypes"
+      replacement=".patches.getAddablePortletTypes"
+      preserveOriginal="true"
+      />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.restrictportlets"
+      directory="profiles/default"
+      description="Installs the collective.restrictportlets add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="collective.restrictportlets (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the collective.restrictportlets add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="collective.restrictportlets-hiddenprofiles" />
+
+  <browser:page
+    name="restrict-portlets-controlpanel"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    permission="cmf.ManagePortal"
+    class=".controlpanel.ControlPanelView"
+    />
+
+</configure>

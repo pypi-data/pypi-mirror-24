@@ -1,0 +1,49 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-08-03 15:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.restrictportlets\n"
+
+#: ../configure.zcml:32
+msgid "Installs the collective.restrictportlets add-on."
+msgstr ""
+
+#: ../controlpanel.py:16
+#: ../profiles/default/controlpanel.xml
+#: ../profiles/uninstall/controlpanel.xml
+msgid "Restrict portlets"
+msgstr ""
+
+#: ../interfaces.py:40
+msgid "Restricted portlets"
+msgstr ""
+
+#: ../configure.zcml:40
+msgid "Uninstalls the collective.restrictportlets add-on."
+msgstr ""
+
+#: ../configure.zcml:32
+msgid "collective.restrictportlets"
+msgstr ""
+
+#: ../configure.zcml:40
+msgid "collective.restrictportlets (uninstall)"
+msgstr ""
+
+#. Default: "Select portlets that are hidden from normal users in the manage portlets drop down menu. Restricted portlets are still available for Managers. Please note this is not a security feature, it only unclutters the add portlet menu. No permission checks are done: users who know the exact url to the portlet add form can still add restricted portlets. Normal users can also edit restricted portlets already created in the site."
+#: ../interfaces.py:41
+msgid "description_restricted_portlets"
+msgstr ""
