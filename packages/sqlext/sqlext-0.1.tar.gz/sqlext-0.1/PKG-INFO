@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: sqlext
+Version: 0.1
+Summary: 扩展了SqlAlchemy,支持声明式事务和手写SQL
+Home-page: http://xiangyang.li/project/python-sqlext
+Author: Shawn Li
+Author-email: shawn@xiangyang.li
+License: Apache License
+Description: UNKNOWN
+Keywords: sql,sqlalchemy,transaction,sql ext,render
+Platform: any
