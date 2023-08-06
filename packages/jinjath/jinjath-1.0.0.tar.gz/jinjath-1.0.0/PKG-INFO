@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: jinjath
+Version: 1.0.0
+Summary: Helper classes for working with Jinja templates
+Home-page: https://github.com/wtsi-hgi/jinjath
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: GPL3
+Description: [![PyPI version](https://badge.fury.io/py/jinjath.svg)](https://badge.fury.io/py/jinjath)
+        
+        Jinja Template Helpers
+        ======================
+        Helper classes for working with [Jinja2][jinja2] templates, especially when the template source is provided by the user.
+        
+        [jinja2]: <http://jinja.pocoo.org/>
+        
+Platform: UNKNOWN

@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+jinjath/__init__.py
+jinjath/jinjath.py
+jinjath.egg-info/PKG-INFO
+jinjath.egg-info/SOURCES.txt
+jinjath.egg-info/dependency_links.txt
+jinjath.egg-info/requires.txt
+jinjath.egg-info/top_level.txt
