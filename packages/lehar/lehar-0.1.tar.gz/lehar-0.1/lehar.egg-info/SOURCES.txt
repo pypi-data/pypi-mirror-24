@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+lehar.egg-info/PKG-INFO
+lehar.egg-info/SOURCES.txt
+lehar.egg-info/dependency_links.txt
+lehar.egg-info/entry_points.txt
+lehar.egg-info/requires.txt
+lehar.egg-info/top_level.txt
