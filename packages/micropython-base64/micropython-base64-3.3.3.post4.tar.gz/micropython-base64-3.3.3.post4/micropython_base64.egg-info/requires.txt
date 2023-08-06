@@ -1,0 +1,3 @@
+micropython-binascii
+micropython-re-pcre
+micropython-struct
