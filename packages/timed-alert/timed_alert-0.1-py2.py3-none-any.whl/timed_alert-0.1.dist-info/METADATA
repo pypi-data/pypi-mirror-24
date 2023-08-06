@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: timed-alert
+Version: 0.1
+Summary: Set quick alerts at timed intervals
+Home-page: https://github.com/omar-ozgur/Timed-Alert
+Author: Omar Ozgur
+Author-email: oozgur217@gmail.com
+License: MIT
+Keywords: timed,alert,timed-alert,timer,sound,noise,repeating,intervals,command-line,python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Requires-Python: >= 2.6
+Requires-Dist: Click
+
+Do you ever wish that you could effortlessly set repeating alerts on your computer? The "timed-alert" or "tal" command lets you do just that!
+
+
