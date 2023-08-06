@@ -1,0 +1,4 @@
+[console_scripts]
+patchwork = factual_patchwork.src.patchwork:main
+patchwork-config = factual_patchwork.src.config:main
+
