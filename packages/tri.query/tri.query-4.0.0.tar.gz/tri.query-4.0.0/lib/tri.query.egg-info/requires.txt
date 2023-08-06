@@ -1,0 +1,7 @@
+Django >= 1.7
+tri.declarative >=0.34.0
+tri.named_struct
+tri.struct
+tri.form>=5.0.0,<6.0.0
+pyparsing
+six
