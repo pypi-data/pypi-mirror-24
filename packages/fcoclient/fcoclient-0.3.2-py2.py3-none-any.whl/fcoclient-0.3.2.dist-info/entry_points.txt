@@ -1,0 +1,3 @@
+[console_scripts]
+fco = fcoclient.cli:main
+
