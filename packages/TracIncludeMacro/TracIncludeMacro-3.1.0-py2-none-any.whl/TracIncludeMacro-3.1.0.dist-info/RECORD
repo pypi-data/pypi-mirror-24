@@ -1,0 +1,9 @@
+TracIncludeMacro-3.1.0.dist-info/DESCRIPTION.rst,sha256=V7fMj-wNsv8FVSmMLU_FBAmfaEECFExUcZC4IfHdhJA,1648
+TracIncludeMacro-3.1.0.dist-info/METADATA,sha256=0n-3eIzszH-X6a_XZFzQ73f15-px8KS2R7iBF72onis,2040
+TracIncludeMacro-3.1.0.dist-info/RECORD,,
+TracIncludeMacro-3.1.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+TracIncludeMacro-3.1.0.dist-info/entry_points.txt,sha256=-bCWfHI5w2R6ZocBlKFsiVNnjoOzaDRp5ybbfTcrB5o,58
+TracIncludeMacro-3.1.0.dist-info/metadata.json,sha256=DvggNGlhJVby8v9CPL2A9NNDYcIoBSvWqe8LW9mOLgA,728
+TracIncludeMacro-3.1.0.dist-info/top_level.txt,sha256=1tVxKzIvSo18ZHbJpntAdrEVfZwr3Y2u_Z1YeN9WHuk,13
+includemacro/__init__.py,sha256=Zwlg4r6FZ3NjSlsywpX0PquKo3DTC1P1-DBuSjB9ecs,58
+includemacro/macros.py,sha256=THI48uwedClUFu4OFvLN3YXKG6Eflz5Q6vAoUtitQGk,10941
