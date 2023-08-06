@@ -1,0 +1,29 @@
+Metadata-Version: 1.0
+Name: envipyengine
+Version: 1.0.4
+Summary: ENVI Python Engine
+Home-page: https://github.com/envi-idl/envipyengine
+Author: Exelis Visual Information Solutions, Inc.
+Author-email: UNKNOWN
+License: MIT
+Description: 
+        
+        **************
+        ENVI Py Engine
+        **************
+        
+        Installation
+        ============
+        
+        Install the ENVI Py Engine using pip::
+        
+            pip install envipyengine
+        
+        Documentation
+        =============
+        
+        For the full API documentation visit: http://envi-py-engine.readthedocs.io
+        
+        
+Keywords: envi idl
+Platform: UNKNOWN
