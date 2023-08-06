@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+sei_py/__init__.py
+sei_py/sei.py
+sei_py.egg-info/PKG-INFO
+sei_py.egg-info/SOURCES.txt
+sei_py.egg-info/dependency_links.txt
+sei_py.egg-info/requires.txt
+sei_py.egg-info/top_level.txt
+sei_py/base/__init__.py
+sei_py/base/page.py
+sei_py/base/providers.py
+sei_py/rest/__init__.py
+sei_py/rest/delivery.py
+sei_py/rest/exam.py
+sei_py/rest/item.py
