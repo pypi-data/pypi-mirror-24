@@ -1,0 +1,15 @@
+Microsoft Azure CLI Service Fabric Module
+=========================================
+
+This package is for the `sf` module. It contains commands that can be used
+to manage Service Fabric clusters.
+
+.. :changelog:
+
+Release History
+===============
+0.0.2 (2017-08-28)
+++++++++++++++++++
+
+* Preview release.
+
