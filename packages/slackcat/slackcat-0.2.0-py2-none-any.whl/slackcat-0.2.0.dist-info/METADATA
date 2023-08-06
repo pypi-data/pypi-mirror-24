@@ -1,0 +1,90 @@
+Metadata-Version: 2.0
+Name: slackcat
+Version: 0.2.0
+Summary: Pipe command output to Slack from your terminal!
+Home-page: https://github.com/nficano/slackcat
+Author: Nick Ficano
+Author-email: nficano@gmail.com
+License: Copyright (c) 2017 Nick Ficano
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sub-license, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice, and every other copyright notice found in this
+software, and all the attributions in every file, and this permission notice
+shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Description: Simple SlackCat
+        ===============
+        
+        Pipe command output to Slack from your terminal!
+        
+        Installation
+        ============
+        
+        (This will change once registered w/ pypi).
+        
+        1. Download slackcat to ``/usr/local/bin``
+        3. Make it executable ``chmod +x /usr/local/bin/slackcat``
+        3. add your slack webhook url to your bash profile:
+        
+        ```bash
+        
+        export SLACKCAT_WEBHOOK_URL='https://hooks.slack.com/services/TXXX/BXXXX/ZZZ'
+        ```
+        
+        that's it. (Better docs coming, WIP)
+        
+        Usage
+        =====
+        
+        send to user from target path
+        
+        ```
+        slackcat @nick /path/to/file
+        ```
+        
+        send to user using pipes
+        
+        ```
+        cat /path/to/file | slackcat @nick
+        ```
+        
+        send to a channel
+        
+        ```
+        cat /path/to/file | slackcat "#general"
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
