@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+keras_datasets/__init__.py
+keras_datasets/datasets.py
+keras_datasets/exceptions.py
+keras_datasets/utils.py
+keras_datasets.egg-info/PKG-INFO
+keras_datasets.egg-info/SOURCES.txt
+keras_datasets.egg-info/dependency_links.txt
+keras_datasets.egg-info/top_level.txt
