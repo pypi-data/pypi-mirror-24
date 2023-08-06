@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+FaceExtractor.egg-info/PKG-INFO
+FaceExtractor.egg-info/SOURCES.txt
+FaceExtractor.egg-info/dependency_links.txt
+FaceExtractor.egg-info/requires.txt
+FaceExtractor.egg-info/top_level.txt
+face_extractor/__init__.py
+face_extractor/extractor.py
+face_extractor/data/haarcascade_frontalface_alt.xml
+face_extractor/data/haarcascade_frontalface_alt2.xml
+face_extractor/data/haarcascade_frontalface_alt_tree.xml
+face_extractor/data/haarcascade_frontalface_default.xml
