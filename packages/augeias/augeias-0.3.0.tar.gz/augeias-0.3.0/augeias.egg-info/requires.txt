@@ -1,0 +1,4 @@
+pyramid
+pairtree
+python-magic
+pyramid_rewrite
