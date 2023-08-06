@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: youtube-mp3-downloader
+Version: 1.4
+Summary: Download mp3 from youtube
+Home-page: https://github.com/shubhamaggarwal/youtube-mp3-downloader
+Author: Shubham Aggarwal
+Author-email: aggarwals5411@gmail.com
+License: MIT
+Keywords: Youtube mp3 downloader offline local computer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: PrettyTable
+Requires-Dist: beautifulsoup4 (>=4.6.0)
+Requires-Dist: requests (>=2.18.1)
+
+This python package lets you donwload mp3 from youtube videos to your local machine.
+
+
