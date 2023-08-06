@@ -1,0 +1,9 @@
+pgpipeline/__init__.py,sha256=ulk3LUBR6I2WWJqWBGftopmCH8oNMWf6kmk0BiTYxeI,2085
+pgpipeline/core.py,sha256=6hlIyWGU4x-psfgzuDT_IKHg0G5Y09U9L5DU4d82hNk,202
+pgpipeline/helpers.py,sha256=mqOZRGnOl9QuWUl07BDBWYxCypATJxO8xn0MDXVJLEg,59
+pgpipeline-0.4.0.dist-info/DESCRIPTION.rst,sha256=T2uVmAI8jTI9fHOGPb9f1R8byJw8LXjlaA3_6WwjOI8,3752
+pgpipeline-0.4.0.dist-info/METADATA,sha256=kvC3fbQhA1H8iLGMzrHhnhQWhaIDxtcVCAwfWmGUqi0,4040
+pgpipeline-0.4.0.dist-info/RECORD,,
+pgpipeline-0.4.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+pgpipeline-0.4.0.dist-info/metadata.json,sha256=d4odLvI2RiFpTxZfr2B64Q4caUBEmf3yDEOKafgceMg,528
+pgpipeline-0.4.0.dist-info/top_level.txt,sha256=-KN37ETWYCZNCDVjryY-JG0BJG8MB1HTItqp948jk3A,11
