@@ -1,0 +1,3214 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>hssadmin package &mdash; hssadmin  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="hssadmin  documentation" href="index.html"/>
+        <link rel="prev" title="Welcome to hssadmin’s documentation!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> hssadmin
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">hssadmin package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-hssadmin.adminclient">hssadmin.adminclient module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-hssadmin.admincore">hssadmin.admincore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-hssadmin">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">hssadmin</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>hssadmin package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/hssadmin.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="hssadmin-package">
+<h1>hssadmin package<a class="headerlink" href="#hssadmin-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-hssadmin.adminclient">
+<span id="hssadmin-adminclient-module"></span><h2>hssadmin.adminclient module<a class="headerlink" href="#module-hssadmin.adminclient" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="hssadmin.adminclient.adminClient">
+<em class="property">class </em><code class="descclassname">hssadmin.adminclient.</code><code class="descname">adminClient</code><span class="sig-paren">(</span><em>base_url</em>, <em>enable_auth=True</em>, <em>user='sysadmin'</em>, <em>passwd='public'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>This Class definition is to create a Python object having some methods that <em>Cloudian HyperStore(R)</em> <strong>Admin APIs</strong> are wrapped and properties.
+You need to specify the arguments in the table below to create the object using this class definition.</p>
+<table border="1" class="colwidths-given docutils" id="id1">
+<caption><span class="caption-text">Arguments for initialization of this class definition</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="33%" />
+<col width="20%" />
+<col width="20%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Argument name</th>
+<th class="head">Type</th>
+<th class="head">Mandatory/Optional</th>
+<th class="head">Default value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>base_url</td>
+<td>string</td>
+<td>Mandatory</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>enable_auth</td>
+<td>bool</td>
+<td>Optional</td>
+<td>True</td>
+</tr>
+<tr class="row-even"><td>user</td>
+<td>string</td>
+<td>Optional</td>
+<td>sysadmin</td>
+</tr>
+<tr class="row-odd"><td>passwd</td>
+<td>string</td>
+<td>Optional</td>
+<td>public</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>adminClient</strong> object has the following methods and properties.</p>
+<table border="1" class="colwidths-given docutils" id="id2">
+<caption><span class="caption-text">Methods and Properties</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="15%" />
+<col width="46%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Type</th>
+<th class="head">Name</th>
+<th class="head">Category</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Method</td>
+<td>user_add</td>
+<td>User Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>userpasswd_set</td>
+<td>User Management</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>user_delete</td>
+<td>User Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>user_deactivate</td>
+<td>User Management</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>user_activate</td>
+<td>User Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>user_list</td>
+<td>User Management</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>users_list</td>
+<td>User Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>s3credential_add</td>
+<td>User Management</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>s3credentials_all_list</td>
+<td>User Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>s3credentials_active_list</td>
+<td>User Management</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>s3credential_import</td>
+<td>User Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>accesskey_deactivate</td>
+<td>User Management</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>accesskey_activate</td>
+<td>User Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>secretkey_list</td>
+<td>User Management</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>user_ratingplan_list</td>
+<td>User Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>user_ratingplanid_list</td>
+<td>User Management</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>user_ratingplanid_set</td>
+<td>User Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>group_add</td>
+<td>Group Management</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>group_delete</td>
+<td>Group Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>group_deactivate</td>
+<td>Group Management</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>group_activate</td>
+<td>Group Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>group_list</td>
+<td>Group Management</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>groups_list</td>
+<td>Group Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>group_ratingplanid_list</td>
+<td>Group Management</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>group_ratingplanid_set</td>
+<td>Group Management</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>storpol_list</td>
+<td>Storage Policies</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>storpols_list</td>
+<td>Storage Policies</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>storpolid_list</td>
+<td>Storage Policies</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>storpol_status_change</td>
+<td>Storage Policies</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>storpol_usage</td>
+<td>Storage Policies</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>qos_set</td>
+<td>Quality of Service</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>qos_unset</td>
+<td>Quality of Service</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>qos_list</td>
+<td>Quality of Service</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>usagereport_list</td>
+<td>Usage Reporting</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>hss_info</td>
+<td>System Services</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>license_info</td>
+<td>System Services</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>sys_version</td>
+<td>System Services</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>node_list</td>
+<td>System Monitoring</td>
+</tr>
+<tr class="row-even"><td>Method</td>
+<td>node_monitoring_data</td>
+<td>System Monitoring</td>
+</tr>
+<tr class="row-odd"><td>Method</td>
+<td>region_monitoring_data</td>
+<td>System Monitoring</td>
+</tr>
+<tr class="row-even"><td>Property</td>
+<td>base_url</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Property</td>
+<td>encrypted_passwd</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For detailed usage of each method, refer to the section below corresponding to the method you want to know.</p>
+</div>
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.accesskey_activate">
+<code class="descname">accesskey_activate</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>accessKey=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.accesskey_activate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.accesskey_activate" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Activate an S3 access key</strong></p>
+<p>You can make an S3 access key “active” using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python dictionary to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id3">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>accessKey</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td>isActive</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>accessKey</strong> (<em>string</em>) – S3 access key (default: <code class="docutils literal"><span class="pre">None</span></code>)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Status of the S3 access key activation operation</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">accesskey_activate(accessKey=”2596b3dd92f86a466c3d”)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.accesskey_deactivate">
+<code class="descname">accesskey_deactivate</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>accessKey=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.accesskey_deactivate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.accesskey_deactivate" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Deactivate an S3 access key</strong></p>
+<p>You can make an S3 access key “deactive” using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python dictionary to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id4">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>accessKey</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td>isActive</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>accessKey</strong> (<em>string</em>) – S3 access key</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Status of the S3 access key deactivation operation</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">accesskey_deactivate(accessKey=”2596b3dd92f86a466c3d”)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.adminclient.adminClient.base_url">
+<code class="descname">base_url</code><a class="headerlink" href="#hssadmin.adminclient.adminClient.base_url" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.adminclient.adminClient.encrypted_passwd">
+<code class="descname">encrypted_passwd</code><a class="headerlink" href="#hssadmin.adminclient.adminClient.encrypted_passwd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.group_activate">
+<code class="descname">group_activate</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>groupId=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.group_activate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.group_activate" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Activate a CMC group</strong></p>
+<p>You can make a CMC group’s status “active” using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id5">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td>groupName</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>ldapGroup</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>active</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>groupId</strong> (<em>string</em>) – CMC group ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Status of the CMC group activation operations</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">user_activate(userId=”gzuser5”, groupId=”GROUP-Z”)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.group_add">
+<code class="descname">group_add</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>file=None</em>, <em>groupId=None</em>, <em>groupName=None</em>, <em>ldapGroup=None</em>, <em>active=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.group_add"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.group_add" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Add new CMC groups</strong></p>
+<p>You can add new CMC group(s) using this method.
+If you set the CSV filename described the GroupInfo as the “<code class="docutils literal"><span class="pre">file=</span></code>” argument, you can register many groups in bulk.</p>
+<p><a class="reference download internal" href="_downloads/cmc_group_info.csv" download=""><code class="xref download docutils literal"><span class="pre">Sample</span> <span class="pre">CSV</span> <span class="pre">file</span> <span class="pre">for</span> <span class="pre">group</span> <span class="pre">batch</span> <span class="pre">registration</span></code></a></p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If you set the “file=” argument, all other arguments are ignored.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python dictionary to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id6">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td>groupName</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>ldapGroup</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>active</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file</strong> (<em>string</em>) – CSV file for group batch registration</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+<li><strong>groupName</strong> (<em>string</em>) – CMC group name</li>
+<li><strong>ldapGroup</strong> (<em>string</em>) – LDAP/AD group</li>
+<li><strong>active</strong> (<em>bool</em>) – status of CMC group</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Number of successes and failures of this user add operation</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">group_add(file=’cmc_group_info.csv’)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.group_deactivate">
+<code class="descname">group_deactivate</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>groupId=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.group_deactivate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.group_deactivate" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Deactivate a CMC group</strong></p>
+<p>You can make a CMC group’s status “deactive” using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id7">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td>groupName</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>ldapGroup</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>active</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>groupId</strong> (<em>string</em>) – CMC group ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Status of the CMC group deactivation operations</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">group_deactivate(groupId=”GROUP-Z”)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.group_delete">
+<code class="descname">group_delete</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>file=None</em>, <em>groupId=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.group_delete"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.group_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Delete CMC groups</strong></p>
+<p>You can delete existing CMC group(s) using this method.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If you set the “file=” argument, all other arguments are ignored.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python dictionary to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id8">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file</strong> (<em>string</em>) – CSV file for group batch registration</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Status of CMC group delete operations</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">group_delete(groupId=”GROUP-Z”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.group_list">
+<code class="descname">group_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>groupId=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.group_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.group_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List the specified CMC GroupInfo</strong></p>
+<p>You can list the CMC GroupInfo of a specified group using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id9">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>groupId</strong> (<em>string</em>) – CMC group ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">GroupInfo of a CMC group</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">group_list(groupId=”GROUP-Z”)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.group_ratingplanid_list">
+<code class="descname">group_ratingplanid_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>groupId=None</em>, <em>region=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.group_ratingplanid_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.group_ratingplanid_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List a rating plan ID assigned to a specified CMC group</strong></p>
+<p>You can list the rating plan ID which are assigned to a specified CMC group using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id10">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td>region</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+<li><strong>region</strong> (<em>string</em>) – Region name (optional)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Rating plan ID</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">group_ratingplanid_list({“groupId”: “GROUP-Z”})</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.group_ratingplanid_set">
+<code class="descname">group_ratingplanid_set</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>groupId=None</em>, <em>ratingPlanId=None</em>, <em>region=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.group_ratingplanid_set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.group_ratingplanid_set" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Set a rating plan ID to a specified CMC group</strong></p>
+<p>You can set the rating plan ID to a specified CMC group using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id11">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>ratingPlanId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>region</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+<li><strong>ratingPlanId</strong> (<em>string</em>) – Rating plan ID</li>
+<li><strong>region</strong> (<em>string</em>) – Region name (optional)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Status of the Rating plan ID set operation</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">group_ratingplanid_set(groupId=”GROUP-Z”, ratingPlanId=”API-TEST-RP”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.groups_list">
+<code class="descname">groups_list</code><span class="sig-paren">(</span><em>usr_params={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.groups_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.groups_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List some of the CMC GroupInfo</strong></p>
+<p>You can list the CMC GroupInfo of a specified <strong>group</strong> using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">No needed any parameters in <code class="docutils literal"><span class="pre">usr_params</span></code> for this method.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">GroupInfo of a CMC group</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body">groups_list()</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.hss_info">
+<code class="descname">hss_info</code><span class="sig-paren">(</span><em>usr_params={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.hss_info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.hss_info" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List the your HyperStore node ID(s)</strong></p>
+<p>You can list the your HyperStore node ID(s) using this method.</p>
+<table border="1" class="colwidths-given docutils" id="id12">
+<caption><span class="caption-text">Return values</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="38%" />
+<col width="31%" />
+<col width="31%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Type of Value</th>
+<th class="head">Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>version</td>
+<td>string</td>
+<td>6.2 Compiled: 2017-07-26 15:20</td>
+</tr>
+<tr class="row-odd"><td>nodes</td>
+<td>string</td>
+<td>[‘cloudian-node1’, ‘cloudian-node2’]</td>
+</tr>
+<tr class="row-even"><td>license_expiration</td>
+<td>string</td>
+<td>2027/05/20 10:46:13</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">No needed any parameters in <code class="docutils literal"><span class="pre">usr_params</span></code> for this method.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Version, node ID(s) and license expiration date of your HyperStore system</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">OrderedDict</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body">hss_info()</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.license_info">
+<code class="descname">license_info</code><span class="sig-paren">(</span><em>usr_params={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.license_info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.license_info" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List the license information of your HyperStore system</strong></p>
+<p>You can list the license information of your HyperStore system using this method.
+The following information will be returned as a Python dictionary.</p>
+<table border="1" class="colwidths-given docutils" id="id13">
+<caption><span class="caption-text">Return values</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="45%" />
+<col width="27%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Type of Value</th>
+<th class="head">Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>License Expiration Date</td>
+<td>string</td>
+<td>2027/05/20 10:46:13</td>
+</tr>
+<tr class="row-odd"><td>Warning Period</td>
+<td>int</td>
+<td>8</td>
+</tr>
+<tr class="row-even"><td>Grace Period</td>
+<td>int</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td>Maximum Net Storage</td>
+<td>int</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">No needed any parameters in <code class="docutils literal"><span class="pre">usr_params</span></code> for this method.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">HyperStore System License Information</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body">license_info()</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.node_list">
+<code class="descname">node_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>region=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.node_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.node_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List the your HyperStore node ID(s)</strong></p>
+<p>You can list the your HyperStore node ID(s) using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">No needed any parameters in <code class="docutils literal"><span class="pre">usr_params</span></code> for this method.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>region</strong> (<em>string</em>) – Region name (optional)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Node ID(s) of your HyperStore system</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">node_list()</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.node_monitoring_data">
+<code class="descname">node_monitoring_data</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>nodeId=None</em>, <em>region=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.node_monitoring_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.node_monitoring_data" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List the monitoring data of the HyperStore node you specified</strong></p>
+<p>You can list the monitoring data of the HyperStore node using this method.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The return value of this method is very complex and difficult to understand.
+This return value consists of nested Python lists and directories so I recommend that you should arrange this value using Python Programming Laungage.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id14">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>nodeId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td>region</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>nodeId</strong> (<em>string</em>) – Node ID of your HyperStore system</li>
+<li><strong>region</strong> (<em>string</em>) – Region name (optional)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Too much monitoring data</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">list</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">node_monitoring_data(nodeId=”cloudian-node1”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.qos_list">
+<code class="descname">qos_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em>, <em>region=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.qos_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.qos_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List QoS limits information which is specified</strong></p>
+<p>You can list QoS limits information which are specified by you using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id15">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>region</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+<li><strong>region</strong> (<em>string</em>) – Region name (optional)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Bucket names assigned the storage policy you specify</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">dict</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">qos_list(userId=”gzuser10”, groupId=”GROUP-Z”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.qos_set">
+<code class="descname">qos_set</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>qos_level=None</em>, <em>userId=None</em>, <em>groupId=None</em>, <em>storageQuotaKBytes='-1'</em>, <em>storageQuotaCount='-1'</em>, <em>wlRequestRate='-1'</em>, <em>hlRequestRate='-1'</em>, <em>wlDataKBytesIn='-1'</em>, <em>hlDataKBytesIn='-1'</em>, <em>wlDataKBytesOut='-1'</em>, <em>hlDataKBytesOut='-1'</em>, <em>region=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.qos_set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.qos_set" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Set QoS to user(s)/group(s)</strong></p>
+<p>You can set an existing QoS rule to CMC user(s)/group(s) using this method.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">For the system to actually enforce QoS limits that you have assigned to usersor groups, the QoS feature must be enabled in your system configuration.
+By default it is disabled. To enable it log into the CMC and go toCluster → Cluster Config → Configuration Settings.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Note that you can enable QoS enforcement just for storage utilization limits, or for storage utilization limits and also request traffic limits.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id16">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td><strong>storageQuotaKBytes</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>storageQuotaCount</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td><strong>wlRequestRate</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>hlRequestRate</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td><strong>wlDataKBytesIn</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>hlDataKBytesIn</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td><strong>wlDataKBytesOut</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>hlDataKBytesOut</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>region</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>qos_level</strong> (<em>string</em>) – you can specify QoS level as “<code class="docutils literal"><span class="pre">user</span></code>”, “<code class="docutils literal"><span class="pre">default-user</span></code>”, “<code class="docutils literal"><span class="pre">default-region-user</span></code>”, “<code class="docutils literal"><span class="pre">group</span></code>” and “<code class="docutils literal"><span class="pre">default-group</span></code>”.</li>
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC groupId</li>
+<li><strong>storageQuotaKBytes</strong> (<em>string</em>) – Storage Size Quota (KB)</li>
+<li><strong>storageQuotaCount</strong> (<em>string</em>) – Storage Count Quota (Num. of objects)</li>
+<li><strong>wlRequestRate</strong> (<em>string</em>) – Warning level of number of HTTP requests per minute</li>
+<li><strong>hlRequestRate</strong> (<em>string</em>) – Maximum allowed number of HTTP requests per minute</li>
+<li><strong>wlDataKBytesIn</strong> (<em>string</em>) – Warning level for number of uploaded kilobytes per minute</li>
+<li><strong>hlDataKBytesIn</strong> (<em>string</em>) – Maximum allowed number of uploaded kilobytes per minute</li>
+<li><strong>wlDataKBytesOut</strong> (<em>string</em>) – Warning level for number of downloaded kilobytes per minute</li>
+<li><strong>hlDataKBytesOut</strong> (<em>string</em>) – Maximum allowed number of downloaded kilobytes per minute</li>
+<li><strong>region</strong> (<em>string</em>) – Region name (optional)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Status of the QoS limit set operation</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">qos_set(qos_level=”user”, userId=”gzuser10”, groupId=”GROUP-Z”, storageQuotaKBytes=”1024000000000”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.qos_unset">
+<code class="descname">qos_unset</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em>, <em>region=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.qos_unset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.qos_unset" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Unset QoS to user(s)/group(s)</strong></p>
+<p>You can unset a QoS rule from CMC user(s)/group(s) using this method.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The default QoS will be set to the user(s)/group(s) after you unset the specified custom QoS.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id17">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>region</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC groupId</li>
+<li><strong>region</strong> (<em>string</em>) – Region name (optional)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Status of the QoS limit unset operation</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">qos_unset(userId=”gzuser10”, groupId=”GROUP-Z”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.region_monitoring_data">
+<code class="descname">region_monitoring_data</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>region=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.region_monitoring_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.region_monitoring_data" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List the monitoring and perfomance data within the region you specified</strong></p>
+<p>You can list the monitoring and perfomance data within the region using this method.
+You can see the following data in the return value.</p>
+<table border="1" class="colwidths-given docutils" id="id18">
+<caption><span class="caption-text">Return values</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>status</td>
+<td>High-level service status for the system as a whole</td>
+</tr>
+<tr class="row-odd"><td>s3GetTPS</td>
+<td>Across the whole service region, the number of S3 GET transactions processed per second</td>
+</tr>
+<tr class="row-even"><td>s3PutTPS</td>
+<td>Across the whole service region, the number of S3 PUT transactions processed per second</td>
+</tr>
+<tr class="row-odd"><td>s3GetThruput</td>
+<td>Across the whole service region, the data throughput for S3 GET transactions, expressed as MB per second</td>
+</tr>
+<tr class="row-even"><td>s3PutThruput</td>
+<td>Across the whole service region, the data throughput for S3 PUT transactions, expressed as MB per second</td>
+</tr>
+<tr class="row-odd"><td>s3GetLatency</td>
+<td>Across the whole service region, the average latency for completing S3 GET transactions, in milliseconds</td>
+</tr>
+<tr class="row-even"><td>s3PutLatency</td>
+<td>Across the whole service region, the average latency for completing S3 PUT transactions, in milliseconds</td>
+</tr>
+<tr class="row-odd"><td>diskAvailKb</td>
+<td>Across the whole service region, the total mounted disk space remaining still available for Cassandra data directory or HyperStore data directory storage</td>
+</tr>
+<tr class="row-even"><td>diskTotalKb</td>
+<td>Across the whole service region, the total size of the disks mounted for Cassandra data directories or HyperStore data directories (the HyperStore File System [HSFS] and erasure coding file system)</td>
+</tr>
+<tr class="row-odd"><td>nodeStatuses</td>
+<td>List of NodeStatus objects, one for each node in the service region</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">No needed any parameters in <code class="docutils literal"><span class="pre">usr_params</span></code> for this method.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>region</strong> (<em>string</em>) – Region name (optional)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Monitoring and perfomance data</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">region_monitoring_data()</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.s3credential_add">
+<code class="descname">s3credential_add</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.s3credential_add"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.s3credential_add" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Add a new S3 credential to the specified CMC user</strong></p>
+<p>You can add a new S3 credential to a specified user using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id19">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Status of the S3 credential add operation</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">s3credential_add(userId=”gzuser1”, groupId=”GROUP-Z”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.s3credential_import">
+<code class="descname">s3credential_import</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em>, <em>accessKey=None</em>, <em>secretKey=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.s3credential_import"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.s3credential_import" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>import an S3 credential into the specified CMC user</strong></p>
+<p>You can import an S3 credential into the specified user using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id20">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td><strong>accessKey</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>secretKey</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+<li><strong>accessKey</strong> (<em>string</em>) – S3 access key</li>
+<li><strong>secretKey</strong> (<em>string</em>) – S3 secret Key</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Status of the S3 credential import operation</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">s3credential_import(userId=”gzuser8”, groupId=”GROUP-Z”, accessKey=”2596b3dd92f86a466c3d”, secretKey=”Pmy4HPi9uF5FSlABturX/o6HiB0U5n74Mivy/VFu”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.s3credentials_active_list">
+<code class="descname">s3credentials_active_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.s3credentials_active_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.s3credentials_active_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List active S3 credentials of the specified CMC user</strong></p>
+<p>You can list active S3 credentials of the specified user using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id21">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Only active S3 credentials information of a CMC user</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">list</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">s3credentials_active_list(userId=”gzuser8”, groupId=”GROUP-Z”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.s3credentials_all_list">
+<code class="descname">s3credentials_all_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.s3credentials_all_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.s3credentials_all_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List all S3 credentials of the specified CMC user</strong></p>
+<p>You can list all S3 credentials of the specified user using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id22">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">S3 credentials information of a CMC user</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">list</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">s3credentials_all_list(userId=”gzuser1”, groupId=”GROUP-Z”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.secretkey_list">
+<code class="descname">secretkey_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>accessKey=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.secretkey_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.secretkey_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List a S3 secret key</strong></p>
+<p>You can list the secret key corresponding to the access key you specified using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id23">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id23" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>accessKey</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>accessKey</strong> (<em>string</em>) – S3 access key</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">S3 secret key</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">secretkey_list(accessKey=”2596b3dd92f86a466c3d”)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.storpol_list">
+<code class="descname">storpol_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>policyId=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.storpol_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.storpol_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List storage policy information specified the Policy ID</strong></p>
+<p>You can list the detailed information of a storage policy which is specified the policy ID using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id24">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id24" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>policyId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>policyId</strong> (<em>string</em>) – Storage policy ID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Storage policy information which is specified tht policy ID</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">storpol_list({“policyId”: “0f7a4ca96ee157b6dc8cba7d1308a7bb”})</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.storpol_status_change">
+<code class="descname">storpol_status_change</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>policyName=None</em>, <em>change_to='enable'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.storpol_status_change"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.storpol_status_change" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Change the status of a storage policy</strong></p>
+<p>You can change the status of a storage policy from enable/disable to disable/enable using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id25">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id25" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>policyName</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td>change_to</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>policyName</strong> (<em>string</em>) – Storage policy name</li>
+<li><strong>change_to</strong> (<em>string</em>) – Status to be changed from current status (default: <code class="docutils literal"><span class="pre">enable</span></code>)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Status of the storage policy status change operation</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">storpol_status_change(policyName=”sp-api-test”, change_to=”enable”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.storpol_usage">
+<code class="descname">storpol_usage</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>policyName=None</em>, <em>bucketName=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.storpol_usage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.storpol_usage" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List buckets which are assigned a specified storage policy</strong></p>
+<p>You can list buckets which are assigned a storage policy you specify using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">No needed any parameters in <code class="docutils literal"><span class="pre">usr_params</span></code> for this method.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>policyName</strong> (<em>string</em>) – Storage policy name</li>
+<li><strong>bucketName</strong> (<em>string</em>) – Bucket name if you want to specify a bucket</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Bucket names assigned the storage policy you specify</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">list</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">storpol_usage(policyName=”2replicas”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.storpolid_list">
+<code class="descname">storpolid_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>policyName=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.storpolid_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.storpolid_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List a storage policy ID corresponding to a policy name you specified</strong></p>
+<p>You can list a storage policy ID which is specified by “<code class="docutils literal"><span class="pre">Policy</span> <span class="pre">Name</span></code>” using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id26">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id26" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>policyName</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>policyName</strong> (<em>string</em>) – Storage policy name</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Storage policy ID</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">storpolid_list(policyName=”sp-api-test”)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.storpols_list">
+<code class="descname">storpols_list</code><span class="sig-paren">(</span><em>usr_params={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.storpols_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.storpols_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List all storage policy information</strong></p>
+<p>You can list the detailed information of a storage policy which is specified the policy ID using this method.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There are no mandatory arguments for this method.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id27">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id27" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>region</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>groupId</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>status</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">All storage policy information</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body">storpols_list()</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.sys_version">
+<code class="descname">sys_version</code><span class="sig-paren">(</span><em>usr_params={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.sys_version"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.sys_version" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List the version information of your HyperStore system</strong></p>
+<p>You can list the version information of your HyperStore system using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">No needed any parameters in <code class="docutils literal"><span class="pre">usr_params</span></code> for this method.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">HyperStore Version Information</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body">sys_version()</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.usagereport_list">
+<code class="descname">usagereport_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em>, <em>operation=None</em>, <em>startTime=None</em>, <em>endTime=None</em>, <em>granularity='raw'</em>, <em>reversed=False</em>, <em>limit=100000</em>, <em>pageSize=0</em>, <em>offset=0</em>, <em>region=None</em>, <em>regionOffset=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.usagereport_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.usagereport_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List usage report</strong></p>
+<p>You can list the usage report of the user(s)/group(s) using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id28">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id28" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>id</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>operation</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td><strong>startTime</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>endTime</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td><strong>granularity</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>reversed</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>limit</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>pageSize</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>offset</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>region</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>regionOffset</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC groupId</li>
+<li><strong>operation</strong> (<em>string</em>) – Type of operations (SB/SO/HG/HP/HD)</li>
+<li><strong>startTime</strong> (<em>string</em>) – Start date of usage report (YYYYMMDDhhmm)</li>
+<li><strong>endTime</strong> (<em>string</em>) – End date of usage report (YYYYMMDDhhmm)</li>
+<li><strong>granularity</strong> (<em>string</em>) – raw/hour/day/month (default: <code class="docutils literal"><span class="pre">raw</span></code>)</li>
+<li><strong>reversed</strong> (<em>bool</em>) – (default: <code class="docutils literal"><span class="pre">False</span></code>)</li>
+<li><strong>limit</strong> (<em>string</em>) – Maximum number of results to return (default: <code class="docutils literal"><span class="pre">100000</span></code>)</li>
+<li><strong>pageSize</strong> (<em>string</em>) – (default: <code class="docutils literal"><span class="pre">0</span></code>)</li>
+<li><strong>offset</strong> (<em>string</em>) – (default: <code class="docutils literal"><span class="pre">0</span></code>)</li>
+<li><strong>region</strong> (<em>string</em>) – Region name</li>
+<li><strong>regionOffset</strong> (<em>string</em>) – This argument to specify the region name of your local region</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Usage report</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">dict</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">usagereport_list(usage_report_params)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.user_activate">
+<code class="descname">user_activate</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em>, <em>userType='User'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.user_activate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.user_activate" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Activate a CMC user</strong></p>
+<p>You can make a CMC user’s status “active” using this method.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">By default, you can activate the CMC users with “User” type only.
+If you want to activate different types of user, set the “userType=” argument.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id29">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id29" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>userType</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>fullName</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>emailAddr</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>address1</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>address2</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>city</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>state</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>zip</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>country</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>phone</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>website</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>active</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>canonicalUserId</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+<li><strong>userType</strong> (<em>string</em>) – CMC user type (default: <code class="docutils literal"><span class="pre">User</span></code>)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Status of the CMC user activation operations</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">user_activate(userId=”gzuser5”, groupId=”GROUP-Z”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.user_add">
+<code class="descname">user_add</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>file=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.user_add"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.user_add" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Add new CMC users</strong></p>
+<p>You can add new CMC user(s) using this method.
+If you set the CSV filename described the UserInfo as the “<code class="docutils literal"><span class="pre">file=</span></code>” argument, you can register many users in bulk.</p>
+<p><a class="reference download internal" href="_downloads/cmc_user_info.csv" download=""><code class="xref download docutils literal"><span class="pre">Sample</span> <span class="pre">CSV</span> <span class="pre">file</span> <span class="pre">for</span> <span class="pre">user</span> <span class="pre">batch</span> <span class="pre">registration</span></code></a></p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If you set the “file=” argument, all other arguments are ignored.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python dictionary to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id30">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id30" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>userType</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>fullName</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>emailAddr</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>address1</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>address2</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>city</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>state</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>zip</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>country</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>phone</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>website</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>active</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>canonicalUserId</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file</strong> (<em>string</em>) – CSV file for user batch registration</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Number of successes and failures of this user add operation</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">user_add(file=’cmc_user_info.csv’)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.user_deactivate">
+<code class="descname">user_deactivate</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em>, <em>userType='User'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.user_deactivate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.user_deactivate" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Deactivate a CMC user</strong></p>
+<p>You can make a CMC user’s status “deactive” using this method.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">By default, you can deactivate the CMC users with “User” type only.
+If you want to deactivate different types of user, set the “userType=” argument.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id31">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id31" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>userType</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>fullName</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>emailAddr</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>address1</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>address2</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>city</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>state</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>zip</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>country</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>phone</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>website</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>active</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>canonicalUserId</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+<li><strong>userType</strong> (<em>string</em>) – CMC user type (default: <code class="docutils literal"><span class="pre">User</span></code>)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Status of the CMC user deactivation operations</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">user_deactivate(userId=”gzuser5”, groupId=”GROUP-Z”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.user_delete">
+<code class="descname">user_delete</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>file=None</em>, <em>userId=None</em>, <em>groupId=None</em>, <em>deactive_only=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.user_delete"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.user_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Delete CMC users</strong></p>
+<p>You can delete existing CMC user(s) using this method.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">By default, this function deletes the “deactive” CMC users only.
+If you want to delete “active” CMC users, please set the “deactive_only” parameter to “False”.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If you set the “file=” argument, all other arguments are ignored.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python dictionary to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id32">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id32" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file</strong> (<em>string</em>) – CSV file for user batch registration</li>
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+<li><strong>deactive_only</strong> (<em>boolean</em>) – whether or not to be deleted deactivated users only (default: <code class="docutils literal"><span class="pre">True</span></code>)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Status of CMC user delete operations</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">user_delete(userId=”gzuser4”, groupId=”GROUP-Z”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.user_list">
+<code class="descname">user_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.user_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.user_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List the specified CMC UserInfo</strong></p>
+<p>You can list the CMC UserInfo of a specified user using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id33">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id33" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>userType</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">UserInfo of a CMC user</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">dict</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">user_list(userId=”gzuser5”, groupId=”GROUP-Z”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.user_ratingplan_list">
+<code class="descname">user_ratingplan_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em>, <em>region=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.user_ratingplan_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.user_ratingplan_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List rating plans for users</strong></p>
+<p>You can list rating plans for users using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id34">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id34" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>region</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+<li><strong>region</strong> (<em>string</em>) – Region name (optional)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">S3 rating plans for users</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">dict</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">user_ratingplan_list(userId=”gzuser5”, groupId=”GROUP-Z”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.user_ratingplanid_list">
+<code class="descname">user_ratingplanid_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em>, <em>region=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.user_ratingplanid_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.user_ratingplanid_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List a rating plan ID assigned to the specified user</strong></p>
+<p>You can list a rating plan ID to be assigned to the specified user using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id35">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id35" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td>region</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+<li><strong>region</strong> (<em>string</em>) – Region name (optional)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">S3 rating plan ID</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">user_ratingplanid_list(userId=”gzuser5”, groupId=”GROUP-Z”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.user_ratingplanid_set">
+<code class="descname">user_ratingplanid_set</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>userId=None</em>, <em>groupId=None</em>, <em>ratingPlanId=None</em>, <em>region=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.user_ratingplanid_set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.user_ratingplanid_set" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Set a rating plan ID to the specified user</strong></p>
+<p>You can set a rating plan ID to the specified user using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id36">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id36" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td><strong>ratingPlanId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td>region</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>userId</strong> (<em>string</em>) – CMC user ID</li>
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+<li><strong>ratingPlanId</strong> (<em>string</em>) – Rating Plan ID</li>
+<li><strong>region</strong> (<em>string</em>) – Region name (optional)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Status of the rating plan id set operation</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">user_ratingplanid_set(userId=”gzuser13”, groupId=”GROUP-Z”, ratingPlanId=”API-TEST-RP”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.userpasswd_set">
+<code class="descname">userpasswd_set</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>file=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.userpasswd_set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.userpasswd_set" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Set password to a CMC user</strong></p>
+<p>You can set password to CMC user(s) using this method.
+If you set the CSV filename described the UserInfo as the “<code class="docutils literal"><span class="pre">file=</span></code>” argument, you can set password to many users in bulk.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If you set the “file=” argument, all other arguments are ignored.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python dictionary to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id37">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id37" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>userId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td><strong>password</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file</strong> (<em>string</em>) – CSV file for user batch registration</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Status of the CMC user password set operations</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">userpasswd_set(file=’cmc_user_info.csv’)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="hssadmin.adminclient.adminClient.users_list">
+<code class="descname">users_list</code><span class="sig-paren">(</span><em>usr_params={}</em>, <em>groupId=None</em>, <em>userType='all'</em>, <em>userStatus='active'</em>, <em>prefix=None</em>, <em>limit=None</em>, <em>offset=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/hssadmin/adminclient.html#adminClient.users_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.adminclient.adminClient.users_list" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>List some of the CMC UserInfo specified CMC group</strong></p>
+<p>You can list the CMC UserInfo of a specified <strong>group</strong> using this method.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>usr_params</strong> (<em>dict</em>) – Python directory to be set necessary parameters</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must set some mandatory keys in the following table into <code class="docutils literal"><span class="pre">usr_params</span></code>.</p>
+</div>
+<table border="1" class="colwidths-given docutils" id="id38">
+<caption><span class="caption-text">Parameters of usr_params</span><a class="headerlink" href="#id38" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Mandatory/Optional</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>groupId</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td><strong>userType</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-even"><td><strong>userStatus</strong></td>
+<td><strong>mandatory</strong></td>
+</tr>
+<tr class="row-odd"><td>prefix</td>
+<td>optional</td>
+</tr>
+<tr class="row-even"><td>limit</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>offset</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<p>Or…..</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>groupId</strong> (<em>string</em>) – CMC group ID</li>
+<li><strong>userType</strong> (<em>string</em>) – CMC user type (default: <code class="docutils literal"><span class="pre">all</span></code>)</li>
+<li><strong>userStatus</strong> (<em>string</em>) – CMC user status (default: <code class="docutils literal"><span class="pre">active</span></code>)</li>
+<li><strong>prefix</strong> (<em>string</em>) – Prefix (optional)</li>
+<li><strong>limit</strong> (<em>string</em>) – Limit (optional)</li>
+<li><strong>offset</strong> (<em>string</em>) – Offset (optional)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">UserInfo of a CMC users belonging to a group</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">list</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">users_list(groupId=”GROUP-Z”, userStatus=”inactive”)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-hssadmin.admincore">
+<span id="hssadmin-admincore-module"></span><h2>hssadmin.admincore module<a class="headerlink" href="#module-hssadmin.admincore" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="hssadmin.admincore.APIParameters">
+<em class="property">class </em><code class="descclassname">hssadmin.admincore.</code><code class="descname">APIParameters</code><a class="reference internal" href="_modules/hssadmin/admincore.html#APIParameters"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#hssadmin.admincore.APIParameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>This module defines a number of parameters that are used to judge the mandatory or optional argument for <em>Cloudian HyperStore(R)</em> <strong>Admin APIs</strong>.</p>
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_accesskey_status">
+<code class="descname">p_accesskey_status</code><em class="property"> = {'isActive': 'optional', 'accessKey': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_accesskey_status" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_billingreport_info">
+<code class="descname">p_billingreport_info</code><em class="property"> = {'groupId': 'mandatory', 'userId': 'optional', 'billingPeriod': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_billingreport_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_group_info">
+<code class="descname">p_group_info</code><em class="property"> = {'groupId': 'mandatory', 'active': 'optional', 'ldapGroup': 'optional', 'groupName': 'optional'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_group_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_group_ratingplan_info">
+<code class="descname">p_group_ratingplan_info</code><em class="property"> = {'groupId': 'mandatory', 'region': 'optional'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_group_ratingplan_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_group_ratingplanid_info">
+<code class="descname">p_group_ratingplanid_info</code><em class="property"> = {'ratingPlanId': 'mandatory', 'groupId': 'mandatory', 'region': 'optional'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_group_ratingplanid_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_qos_info">
+<code class="descname">p_qos_info</code><em class="property"> = {'groupId': 'mandatory', 'userId': 'mandatory', 'region': 'optional'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_qos_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_qos_set">
+<code class="descname">p_qos_set</code><em class="property"> = {'hlRequestRate': 'mandatory', 'hlDataKBytesIn': 'mandatory', 'storageQuotaCount': 'mandatory', 'userId': 'mandatory', 'region': 'optional', 'hlDataKBytesOut': 'mandatory', 'wlDataKBytesIn': 'mandatory', 'wlDataKBytesOut': 'mandatory', 'groupId': 'mandatory', 'storageQuotaKBytes': 'mandatory', 'wlRequestRate': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_qos_set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_s3cred_add">
+<code class="descname">p_s3cred_add</code><em class="property"> = {'groupId': 'mandatory', 'userId': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_s3cred_add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_s3cred_imp">
+<code class="descname">p_s3cred_imp</code><em class="property"> = {'groupId': 'mandatory', 'accessKey': 'mandatory', 'userId': 'mandatory', 'secretKey': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_s3cred_imp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_s3creds_list">
+<code class="descname">p_s3creds_list</code><em class="property"> = {'groupId': 'mandatory', 'userId': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_s3creds_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_secretkey_list">
+<code class="descname">p_secretkey_list</code><em class="property"> = {'accessKey': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_secretkey_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_storpol_list">
+<code class="descname">p_storpol_list</code><em class="property"> = {'policyId': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_storpol_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_storpol_status_change">
+<code class="descname">p_storpol_status_change</code><em class="property"> = {'policyId': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_storpol_status_change" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_storpols_list">
+<code class="descname">p_storpols_list</code><em class="property"> = {'groupId': 'optional', 'status': 'optional', 'region': 'optional'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_storpols_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_usagereport_info">
+<code class="descname">p_usagereport_info</code><em class="property"> = {'reversed': 'mandatory', 'id': 'mandatory', 'offset': 'optional', 'endTime': 'mandatory', 'granularity': 'mandatory', 'regionOffset': 'optional', 'pageSize': 'optional', 'limit': 'optional', 'operation': 'mandatory', 'region': 'optional', 'startTime': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_usagereport_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_user_delete">
+<code class="descname">p_user_delete</code><em class="property"> = {'groupId': 'mandatory', 'userId': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_user_delete" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_user_info">
+<code class="descname">p_user_info</code><em class="property"> = {'address2': 'optional', 'city': 'optional', 'country': 'optional', 'emailAddr': 'optional', 'website': 'optional', 'groupId': 'mandatory', 'active': 'optional', 'canonicalUserId': 'optional', 'userType': 'mandatory', 'userId': 'mandatory', 'address1': 'optional', 'phone': 'optional', 'zip': 'optional', 'state': 'optional', 'fullName': 'optional'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_user_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_user_list">
+<code class="descname">p_user_list</code><em class="property"> = {'groupId': 'mandatory', 'userId': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_user_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_user_ratingplan_info">
+<code class="descname">p_user_ratingplan_info</code><em class="property"> = {'groupId': 'mandatory', 'userId': 'mandatory', 'region': 'optional'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_user_ratingplan_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_user_ratingplanid_info">
+<code class="descname">p_user_ratingplanid_info</code><em class="property"> = {'ratingPlanId': 'mandatory', 'groupId': 'mandatory', 'userId': 'mandatory', 'region': 'optional'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_user_ratingplanid_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_userpasswd_set">
+<code class="descname">p_userpasswd_set</code><em class="property"> = {'password': 'mandatory', 'groupId': 'mandatory', 'userId': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_userpasswd_set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="hssadmin.admincore.APIParameters.p_users_list">
+<code class="descname">p_users_list</code><em class="property"> = {'userType': 'mandatory', 'offset': 'optional', 'groupId': 'mandatory', 'limit': 'optional', 'prefix': 'optional', 'userStatus': 'mandatory'}</em><a class="headerlink" href="#hssadmin.admincore.APIParameters.p_users_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-hssadmin">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-hssadmin" title="Permalink to this headline">¶</a></h2>
+<p>Cloudian HyperStore Admin API SDK for Python</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body"><ol class="first loweralpha simple" start="3">
+<li>2017 by Ryosuke Matsui (Cloudian K.K.).</li>
+</ol>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">license:</th><td class="field-body"><p class="first last">BSD, see LICENSE for more details.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to hssadmin’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

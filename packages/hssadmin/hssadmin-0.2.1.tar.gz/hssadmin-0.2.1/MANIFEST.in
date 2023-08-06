@@ -1,0 +1,2 @@
+recursive-include hssadmin/data *
+recursive-include html *

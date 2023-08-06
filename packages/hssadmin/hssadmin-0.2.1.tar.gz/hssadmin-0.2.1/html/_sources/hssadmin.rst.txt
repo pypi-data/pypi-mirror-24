@@ -1,0 +1,30 @@
+hssadmin package
+================
+
+Submodules
+----------
+
+hssadmin\.adminclient module
+----------------------------
+
+.. automodule:: hssadmin.adminclient
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+hssadmin\.admincore module
+--------------------------
+
+.. automodule:: hssadmin.admincore
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: hssadmin
+    :members:
+    :undoc-members:
+    :show-inheritance:
