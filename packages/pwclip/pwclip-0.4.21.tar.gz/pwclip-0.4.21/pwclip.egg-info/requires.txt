@@ -1,0 +1,7 @@
+pyusb
+PyYAML
+argcomplete
+psutil
+python-gnupg
+python-yubico
+paramiko
