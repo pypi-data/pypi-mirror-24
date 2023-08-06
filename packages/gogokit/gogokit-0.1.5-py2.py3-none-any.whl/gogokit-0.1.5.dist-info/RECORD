@@ -1,0 +1,14 @@
+gogokit/__init__.py,sha256=k0r5vOIdCFijxf1VBbdfMAgBJPf8FTthaWK4YT-x4Gs,515
+gogokit/clients.py,sha256=zfZpuCWN4cPwgW3dGy5imDf0r3TN5J5wEqyCctWDsJs,8279
+gogokit/config.py,sha256=6UaG8N2AGOwPkkmYp8Vkp6XkXU_M2sJFXl5790jbOPQ,328
+gogokit/exceptions.py,sha256=1k561t-IVRAdfAJA3McUDVrgXQVWB3C6VM22A8XZUwM,146
+gogokit/hal.py,sha256=zGL6f1wndEXCHjRnIETekcFyGtxHp_9jeu8yH8oQHIo,2630
+gogokit/http_client.py,sha256=Q4z5CZYuLPM43kFU6JalvgJqfec6wlzYnWgBLCFw80I,1895
+gogokit/oauth.py,sha256=Awd-aCl88lWfzFkHdowypUIRPUXiURdUlTZfmZf6Zvg,1376
+gogokit/resources.py,sha256=7DU1DZzWpLdhYQrFnxLbm5UZPA4kb_ivVn_zTmKkxU8,5318
+gogokit-0.1.5.dist-info/DESCRIPTION.rst,sha256=ZsnodQWmUWiGbFCl30nvrluegx4Xql-zkUCZ9Fbbr7k,4928
+gogokit-0.1.5.dist-info/METADATA,sha256=06aAV27D2LGq1Nh3UahrzIg_WzRkzo6407pty0V_qwU,5317
+gogokit-0.1.5.dist-info/RECORD,,
+gogokit-0.1.5.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+gogokit-0.1.5.dist-info/metadata.json,sha256=oTXbyUDchi_inNHRG5dWJOHjTPfclp4YXWQ1zNlYoAE,593
+gogokit-0.1.5.dist-info/top_level.txt,sha256=Tb8OaGM0Xw9mib6-H0gAk1J6OMsgZNA_KhPrMbQ_mhE,8
