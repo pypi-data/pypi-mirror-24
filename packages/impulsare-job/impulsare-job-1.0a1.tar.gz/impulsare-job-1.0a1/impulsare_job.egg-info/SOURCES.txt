@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+impulsare_job/__init__.py
+impulsare_job/db.py
+impulsare_job/models.py
+impulsare_job/reader.py
+impulsare_job/writer.py
+impulsare_job.egg-info/PKG-INFO
+impulsare_job.egg-info/SOURCES.txt
+impulsare_job.egg-info/dependency_links.txt
+impulsare_job.egg-info/requires.txt
+impulsare_job.egg-info/top_level.txt
+impulsare_job/static/default.yml
+impulsare_job/static/specs.yml
