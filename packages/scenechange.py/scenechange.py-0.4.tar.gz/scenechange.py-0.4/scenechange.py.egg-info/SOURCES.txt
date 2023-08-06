@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+scenechange.py.egg-info/PKG-INFO
+scenechange.py.egg-info/SOURCES.txt
+scenechange.py.egg-info/dependency_links.txt
+scenechange.py.egg-info/entry_points.txt
+scenechange.py.egg-info/top_level.txt
