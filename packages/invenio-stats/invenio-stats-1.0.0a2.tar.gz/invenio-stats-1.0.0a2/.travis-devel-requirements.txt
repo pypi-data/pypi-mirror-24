@@ -1,0 +1,8 @@
+arrow>=0.7.0
+Flask>=0.11
+invenio-files-rest>=1.0.0a16
+-e git+https://github.com/inveniosoftware/invenio-queues.git#egg=invenio-queues
+-e git+https://github.com/inveniosoftware/invenio-search.git#egg=invenio-search
+maxminddb-geolite2>=2017.0404
+python-geoip>=1.2
+robot-detection>=0.3
