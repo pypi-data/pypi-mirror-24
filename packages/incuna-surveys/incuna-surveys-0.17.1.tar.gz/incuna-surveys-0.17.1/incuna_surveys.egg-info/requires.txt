@@ -1,0 +1,2 @@
+django-orderable>=4.0.5,<4.1
+django-parler>=1.7.0,<1.8
