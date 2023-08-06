@@ -1,0 +1,5 @@
+arrow>=0.7.0
+-e git+https://github.com/inveniosoftware/dojson.git@master#egg=dojson
+-e git+https://github.com/inveniosoftware/invenio-query-parser.git@master#egg=invenio-query-parser
+pycountry>=17.5.14
+requests>=2.17.3
