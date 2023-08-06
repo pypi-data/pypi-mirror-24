@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: async-task-processor
+Version: 0.1.1
+Summary: Simple package to run async tasks
+Home-page: https://github.com/moelius/async-task-processor
+Author: Klimov Konstantin
+Author-email: moelius1983@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: TODO
+Platform: UNKNOWN
