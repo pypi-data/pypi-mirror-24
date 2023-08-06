@@ -1,0 +1,3 @@
+[console_scripts]
+expand_objects = expandobjects.main:main
+
