@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: lazyhttp
+Version: 0.0.1
+Summary: Makes it quick to make HTTP servers
+Home-page: https://github.com/pdxjohnny/lazyhttp
+Author: John Andersen
+Author-email: johnandersenpdx@gmail.com
+License: MIT
+Download-URL: https://github.com/pdxjohnny/lazyhttp/tarball/0.0.1
+Description: # lazyhttp
+        
+        Drop in replacement for `http.server` with convenience methods added.
+        
+        ```python
+        import json
+        import http.server
+        
+        import lazyhttp
+        
+        class Handler(lazyhttp.Handler):
+        
+            def req(self, task):
+                if '/create' in self.path or '/update' in self.path and \
+                        self.has(task, 'id', 'text'):
+                    TASKS[task['id']] = task
+                elif '/delete' in self.path and self.has(task, 'id'):
+                    del TASKS[task['id']]
+                elif '/get' in self.path and self.has(task, 'id'):
+                    self.json(TASKS[task['id']])
+                elif '/all' in self.path:
+                    self.json(TASKS)
+                else:
+                    self.err('Nothing to do')
+        
+        if __name__ == '__main__':
+            lazyhttp.run(Handler)
+        ```
+        
+Keywords: http,server,development
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Intended Audience :: Developers
