@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+stxmnorm/__init__.py
+stxmnorm/imageNorm.py
+stxmnorm/stxmnorm.py
+stxmnorm.egg-info/PKG-INFO
+stxmnorm.egg-info/SOURCES.txt
+stxmnorm.egg-info/dependency_links.txt
+stxmnorm.egg-info/entry_points.txt
+stxmnorm.egg-info/requires.txt
+stxmnorm.egg-info/top_level.txt
