@@ -1,0 +1,10 @@
+wsgi_proxy/__init__.py,sha256=vlM3H_DP11gz9XXLGju4252PHZbkXEbzISbhGAxXYRs,5813
+wsgi_proxy/cli.py,sha256=S5DCkMjq2EypyJYCUQlAr48-s8ptamSuUJeKLKJfjgk,3751
+wsgi_proxy/version.py,sha256=Mdp1osiLMEmIgaL6B5luudk9Ex_JU1MMApyQv01Je3o,341
+wsgi_proxy-0.4.0.dist-info/DESCRIPTION.rst,sha256=suMlvu_V4mJKLRfcm4WXGRvHs_fW3xY9QpQ-2e5y8zg,684
+wsgi_proxy-0.4.0.dist-info/METADATA,sha256=jR0BGraEKAwVqgUEst6HNRPJBMpj8ABkPZpIBMvOvbE,1273
+wsgi_proxy-0.4.0.dist-info/RECORD,,
+wsgi_proxy-0.4.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+wsgi_proxy-0.4.0.dist-info/entry_points.txt,sha256=q8WKTIn53yLlx8g45__fIEGfws24R_A2ModZxRURba8,52
+wsgi_proxy-0.4.0.dist-info/metadata.json,sha256=7uNGAQYk7AhxZrVLapL-bLhHNfxj6KYZtYi8rwuQfXU,939
+wsgi_proxy-0.4.0.dist-info/top_level.txt,sha256=Rz_-JTbG26f2DO6cF_qTJiy_yOdla0lY9xsTfoJXH0o,11
