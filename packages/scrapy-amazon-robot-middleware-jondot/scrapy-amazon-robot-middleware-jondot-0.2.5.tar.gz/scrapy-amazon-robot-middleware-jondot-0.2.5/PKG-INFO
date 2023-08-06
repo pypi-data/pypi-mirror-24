@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: scrapy-amazon-robot-middleware-jondot
+Version: 0.2.5
+Summary: Scrapy middleware module which uses image parsing to submit a captcha response to amazon.
+Home-page: https://github.com/leon-wu/scrapy-amazon-robot-middleware
+Author: Mark Sanders
+Author-email: xmwlzhi@gmail.com
+License: LICENSE.txt
+Description: UNKNOWN
+Platform: UNKNOWN
