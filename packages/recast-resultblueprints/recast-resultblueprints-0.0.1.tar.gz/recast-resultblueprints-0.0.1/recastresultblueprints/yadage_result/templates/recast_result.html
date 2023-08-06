@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block prebody %}
+<script type="text/javascript">
+
+$(document).ready(function(){
+});
+</script>
+
+{% endblock %}
+
+{% block container%}
+
+<div class="page-header">
+    <h1>Results for processing via Yadage Workflow Plugin for request <small>{{basicreqid}}</small></h1>
+</div>
+
+<div class="row">
+
+  <div class="col-md-6">
+    <h2>Result Listing</h2>
+    <ul>
+      {% for fl in resultsfiles %}
+        <li>
+          <a href="/resultfile/{{basicreqid}}/{{wflowconfigname}}/{{fl}}">
+          {{fl}}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="col-md-12">
+    <h3>Extracted RECAST Result</h3>
+
+
+    <div class="col-md-6">
+      	    <table class="table">
+              <thead>
+                <td>-2σ</td>
+                <td>-1σ</td>
+                <td>CLs exp.</td>
+                <td>+1σ</td>
+                <td>+2σ</td>
+                <td>CLs obs.</td>
+                <td>LogL</td>
+              </thead>
+          		<tbody>
+            			<td>{{ resultdata['lower_2sig_expected_CLs'] }}</td>
+                  <td>{{ resultdata['lower_1sig_expected_CLs'] }}</td>
+            			<td>{{ resultdata['expected_CLs'] }}</td>
+            			<td>{{ resultdata['upper_1sig_expected_CLs'] }}</td>
+            			<td>{{ resultdata['upper_2sig_expected_CLs'] }}</td>
+            			<td>{{ resultdata['observed_CLs'] }}</td>
+            			<td>{{ resultdata['log_likelihood_at_reference'] }}</td>
+          		</tbody>
+      	    </table>
+      	</div>
+
+    </div>
+
+  </div>
+  <div class="col-md-6">
+    <h2>Workflow Visualization</h2>
+    <div>
+      <img style="width: 45%;" src="/resultfile/{{basicreqid}}/{{wflowconfigname}}/_yadage/adage/workflow.gif">
+      <img style="width: 45%;" src="/resultfile/{{basicreqid}}/{{wflowconfigname}}/_yadage/yadage_workflow_instance.png">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+</div>
+
+</div>
+{% endblock %}
