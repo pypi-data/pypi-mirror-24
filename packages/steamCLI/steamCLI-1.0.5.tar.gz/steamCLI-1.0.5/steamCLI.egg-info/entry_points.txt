@@ -1,0 +1,3 @@
+[console_scripts]
+steamCLI = steamCLI.__main__:main
+
