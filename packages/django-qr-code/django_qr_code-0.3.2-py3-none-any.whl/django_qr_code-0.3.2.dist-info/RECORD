@@ -1,0 +1,15 @@
+django_qr_code-0.3.2.dist-info/DESCRIPTION.rst,sha256=PdIdFe47bf_o_Rcy0rijY8gdvg1sNMIGf3pcJg232e4,598
+django_qr_code-0.3.2.dist-info/METADATA,sha256=vOLBd0jvOQ6ut--v3NfRBRxuTUIOTD_duz3HPvT839w,1484
+django_qr_code-0.3.2.dist-info/RECORD,,
+django_qr_code-0.3.2.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+django_qr_code-0.3.2.dist-info/metadata.json,sha256=7jlfpst3IIsAnwW46gFf4yWAB0sgHsKDaDEOi9BJ9N4,1044
+django_qr_code-0.3.2.dist-info/top_level.txt,sha256=wW-S-6zA1r9PmLlZPfoNMkhOSPVeDQVRRgLbU1zA58g,8
+qr_code/__init__.py,sha256=bqu4G7Is-8Were-hMi-SthEalL7QW-PAbKWGZ9pVB6U,22
+qr_code/apps.py,sha256=7N9eEXynegSnSFmzP6cmVxZiA-be4f0IVO-dNxu3rFs,124
+qr_code/qr_code.py,sha256=bJaEhqrl3_JrI3-087hhgQexEjAS5aZLWbesbh8lu0s,9008
+qr_code/qrcode_image.py,sha256=Mn9LZ9WYLXOo1VF2f7RctWL_eeWrXT70mJ2d9Pr3CzA,1237
+qr_code/tests.py,sha256=ojfNVaKgkEOhpmPDKlg9HOgnpFnRYUR2FCr6xdzcrcg,144708
+qr_code/urls.py,sha256=bjV2cQVeuQzwkKLLQGkNMoS7Oo7mb0zbh0y8otlmVNg,176
+qr_code/views.py,sha256=TeknTznyl1u74WOpdzl1PhraPRO3dap-keCMs69ADF8,4440
+qr_code/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qr_code/templatetags/qr_code.py,sha256=o5gnrQFm3kACXUKsvXSUXNyPTGAQ_8amQxo0nUOGhWQ,1041
