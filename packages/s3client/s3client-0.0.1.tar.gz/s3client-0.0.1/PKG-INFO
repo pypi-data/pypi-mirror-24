@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: s3client
+Version: 0.0.1
+Summary: Handling s3 folders and files as if those are local file by using os and os.path like functions.
+Home-page: https://github.com/JunyaKaneko/pys3client
+Author: Junya Kaneko
+Author-email: jyuneko@hotmail.com
+License: MIT
+Download-URL: https://github.com/JunyaKaneko/pys3client.git
+Description: UNKNOWN
+Keywords: s3
+Platform: UNKNOWN
