@@ -1,0 +1,8 @@
+flask
+jsonschema
+python-dateutil
+matplotlib
+mpld3
+numpy
+pandas
+bokeh
