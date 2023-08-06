@@ -1,0 +1,39 @@
+Installation
+------------
+
+Using pip
+~~~~~~~~~
+
+Ideally install it in a virtual environment. See for example virtualenvwrapper_.
+
+.. code:: bash
+
+    pip install git+https://git.iac.ethz.ch/npiaget/DyPy.git --process-dependency-links
+
+Then you can install the dependencies for testing or the documentations as follow:
+
+.. code:: bash
+
+    pip install DyPy[testing]
+    pip install DyPy[docs]
+
+To build the documentation do the following:
+
+.. code:: bash
+
+    cd /path/to/dypy/location
+    cd docs
+    make html
+
+To test the package do the following:
+
+.. code:: bash
+
+    cd /path/to/dpyp/location
+    pytest
+
+.. _virtualenvwrapper:  https://virtualenvwrapper.readthedocs.io/en/latest/
+
+
+.. role:: bash(code)
+   :language: bash

@@ -1,0 +1,12 @@
+path.py
+cartopy
+numpy
+netCDF4
+matplotlib
+
+[docs]
+Sphinx
+sphinx-rtd-theme
+
+[testing]
+pytest
