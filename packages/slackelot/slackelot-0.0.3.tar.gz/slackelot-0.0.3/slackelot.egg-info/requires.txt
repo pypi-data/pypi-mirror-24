@@ -1,0 +1,6 @@
+requests
+pytest
+pypandoc
+
+[:python_version<'3.3']
+mock

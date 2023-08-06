@@ -1,0 +1,5 @@
+exclude tests/*
+exclude slackelot/__pycache__*
+include LICENSE
+include *.md
+include *.txt

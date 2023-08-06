@@ -1,0 +1,11 @@
+requests==2.18.4
+
+# Testing
+pytest==3.2.1
+mock==2.0.0
+
+# Twine for secured PyPI uploads.
+twine==1.9.1
+
+# Pandoc to have a nice pypi page
+pypandoc==1.4

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+slackelot/__init__.py
+slackelot/slackelot.py
+slackelot.egg-info/PKG-INFO
+slackelot.egg-info/SOURCES.txt
+slackelot.egg-info/dependency_links.txt
+slackelot.egg-info/requires.txt
+slackelot.egg-info/top_level.txt
