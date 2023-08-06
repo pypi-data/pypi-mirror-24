@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: pactum
+Version: 0.0.1
+Summary: Create API specifications and documentation using Python
+Home-page: https://github.com/osantana/pactum
+Author: Osvaldo Santana Neto
+Author-email: pactum@osantana.me
+License: GPLv3
+Description: 
+        pactum
+        ======
+        
+        Create API specifications and documentation using Python.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Testing
