@@ -1,0 +1,12 @@
+shopify_python/__init__.py,sha256=7qG0F5vj77U5FQhcijCaJacdFvUpbQ8PKYdp9HOvIm8,491
+shopify_python/ast.py,sha256=oH8YXdnWoDt0q6BTGL4C_8src77z8xxBlA2u5Vv_-lQ,216
+shopify_python/git_utils.py,sha256=6RY4lfbS0zBS09OMtIOdq_H37jINy53n_ygPTxRo5XI,4425
+shopify_python/google_styleguide.py,sha256=5ljUs5hOmSV_pzXJQYu6q-JAT-WcDv9fNKFF36UvQNE,15833
+shopify_python/packaging.py,sha256=C6Y5IW0_ztlRpt5Of0PMf2MrITH2aVEQDuVPcMTp_1A,2108
+shopify_python/shopify_styleguide.py,sha256=iBIyBMZpGT34yY7TiLSfRJ-cfmWE5JsLXyoSMKok63Y,2038
+shopify_python-0.4.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+shopify_python-0.4.3.dist-info/METADATA,sha256=bE7KcEtD8RqfrIy99Y9OEEkW0YdCV-wvf7_2TtmhY4Q,1104
+shopify_python-0.4.3.dist-info/RECORD,,
+shopify_python-0.4.3.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+shopify_python-0.4.3.dist-info/metadata.json,sha256=aRAxl54ESwD4fsYCoU4dSug5_E5qA0-4ZCeIs7TZmnc,1162
+shopify_python-0.4.3.dist-info/top_level.txt,sha256=NeXx3DVnTbfZHCrPlDi7aalJwZiQfhMX13iG9am2sX4,15
