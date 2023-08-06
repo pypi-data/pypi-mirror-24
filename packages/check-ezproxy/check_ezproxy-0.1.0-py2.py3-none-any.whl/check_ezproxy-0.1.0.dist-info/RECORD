@@ -1,0 +1,16 @@
+check_ezproxy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+check_ezproxy/__main__.py,sha256=hLrYh9S2BO4e1U36J6fIr3Ac8cvy9iF1V9Wm63PIIP4,40
+check_ezproxy/check_ezproxy.py,sha256=rbw-EphBSYWTmoeurietUvD_TBOa7sRr4kI1EAAgDZU,6028
+check_ezproxy/checks.py,sha256=8uqPSVYZCtzhQjq_7DJekGJN9sX6IFnHAZ3FkNAZKe8,1603
+check_ezproxy/config.py,sha256=EFILuohMeaftjje8yfrtXAah6AIEqcUXelXZ5aXRubk,528
+check_ezproxy/config_template.py,sha256=fldCFotbXDmjd2UklBk-0_NAJrWm5QPcY8z4s1UQswI,351
+check_ezproxy/kb.py,sha256=7B1_kKIuqv2nlxZ6n7k9kn_-g378fr2LU7m50d1TYS4,2359
+check_ezproxy/places.py,sha256=ne6sCbH6oFgiQpxzHC0cVlyf678CAIbPFjoDvu72D80,2296
+check_ezproxy/registration.py,sha256=CjzzOEYRXKSw1Q6uh69t9f3aw2TOQMop8pDxXzv6X8U,327
+check_ezproxy-0.1.0.dist-info/DESCRIPTION.rst,sha256=jrJiEV9YXT1dRtFWb3iYkt9j6mTecURJV9ZC71b2kU8,7400
+check_ezproxy-0.1.0.dist-info/METADATA,sha256=3qs6SipAXIvzPt4Bqfh8Xd6efLHC-wa2dIjC-5Zpozk,8137
+check_ezproxy-0.1.0.dist-info/RECORD,,
+check_ezproxy-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+check_ezproxy-0.1.0.dist-info/entry_points.txt,sha256=F8qh2icNkACDBz_9SzLsRRUO5epeJUUQ8wS6ksRHX2M,68
+check_ezproxy-0.1.0.dist-info/metadata.json,sha256=uK05URKVG5RkiMVX7uMp0qvSzAlpoINGOY_Pazy8z5I,1066
+check_ezproxy-0.1.0.dist-info/top_level.txt,sha256=L5ET-repO3MrjVNlgou-ocIY5DCeiWWeqkf9f1tnaDk,14
