@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: egegsignals
+Version: 1.0.2
+Summary: Package for processing EGG/EGEG signals
+Home-page: https://bitbucket.org/aleneus/egegsignals
+Author: Aleksandr Popov
+Author-email: aleneus@gmail.com
+License: GPLv3
+Description: Electrogastrography (EGG) and electrogastroenterography (EGEG) are electrophysiological methods for diagnostics of stomach and gastrointestinal tract motility.
+        
+        This package provides a processing of EGG and EGEG signals.
+        
+Keywords: electrophysiology electrogastrography electrogastroenterography biomedical signal processing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics

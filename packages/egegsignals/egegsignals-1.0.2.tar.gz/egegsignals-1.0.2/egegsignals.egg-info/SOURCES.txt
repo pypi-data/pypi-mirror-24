@@ -1,0 +1,10 @@
+README
+setup.py
+egegsignals/__init__.py
+egegsignals/hfart.py
+egegsignals/parameters.py
+egegsignals.egg-info/PKG-INFO
+egegsignals.egg-info/SOURCES.txt
+egegsignals.egg-info/dependency_links.txt
+egegsignals.egg-info/requires.txt
+egegsignals.egg-info/top_level.txt
