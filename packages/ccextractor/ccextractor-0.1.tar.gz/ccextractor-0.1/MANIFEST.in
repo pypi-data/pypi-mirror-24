@@ -1,0 +1,12 @@
+recursive-include src *
+recursive-exclude src *.Po
+recursive-include wrappers *
+recursive-include extractors *
+include package_build_scripts/*
+exclude *.py
+exclude *.pyc
+include setup.py
+include __init__.py
+exclude ccextractor.i
+exclude build_library
+exclude build_api
