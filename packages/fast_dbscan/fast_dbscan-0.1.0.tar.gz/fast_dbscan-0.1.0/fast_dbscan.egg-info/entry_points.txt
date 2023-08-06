@@ -1,0 +1,3 @@
+[console_scripts]
+fast_dbscan = fast_dbscan.fast_dbscan:main
+
