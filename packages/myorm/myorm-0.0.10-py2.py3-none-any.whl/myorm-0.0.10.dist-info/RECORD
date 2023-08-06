@@ -1,0 +1,10 @@
+myorm-0.0.10.dist-info/top_level.txt,sha256=G7w5CLMfZstjF3k6Ho8nE4WmI7SQ30gbkSvAz4VUXDA,6
+myorm-0.0.10.dist-info/metadata.json,sha256=JqqSrhx35HzfFRU191gi3mBrrn-ionulbEd5akTZ7GQ,443
+myorm-0.0.10.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+myorm-0.0.10.dist-info/METADATA,sha256=5nqem2XLcqKwRs9nYNAi4WFG5y3tcrgv3hpsDdqDqOg,268
+myorm-0.0.10.dist-info/RECORD,,
+myorm-0.0.10.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
+myorm/__init__.py,sha256=o2j7QmFiv5fkkLWcarKrJ1Mo7K8lKjWQiarImn2B9Pk,163
+myorm/tests.py,sha256=YwG7IWi87GjhviL1rv18tcUwxM69dLt0ksclWNdGWGs,7006
+myorm/fields.py,sha256=MgWQNKOHlpilaMNg9ahuCm6RC5dK3HwVPYKLEcp0cug,2008
+myorm/dbobject.py,sha256=GqjGDqJ73jnekzt6XpNYjzkLMJ6SL8tSgg1Obd2wMUI,3868

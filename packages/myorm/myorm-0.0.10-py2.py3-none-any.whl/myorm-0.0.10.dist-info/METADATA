@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: myorm
+Version: 0.0.10
+Summary: Provides a simple ORM for MySQL, PostgreSQL and SQLite.
+Home-page: UNKNOWN
+Author: Christian Kokoska
+Author-email: christian@eternalconcert.de
+License: GPLv3
+Platform: UNKNOWN
+Requires-Dist: future
+
+UNKNOWN
+
+
