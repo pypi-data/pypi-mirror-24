@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: microscoper
+Version: 0.2.4
+Summary: A simple wrapper for python-bioformats to convert .vsi CellSense format to TIFF.
+Home-page: https://www.github.com/pskeshu/microscoper
+Author: Kesavan Subburam
+Author-email: pskesavan@tifrh.res.in
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.13.1)
+Requires-Dist: python-bioformats (>=1.2.0)
+Requires-Dist: tifffile (>=0.12.1)
+Requires-Dist: tqdm (>=4.11.2)
+
+UNKNOWN
+
+
