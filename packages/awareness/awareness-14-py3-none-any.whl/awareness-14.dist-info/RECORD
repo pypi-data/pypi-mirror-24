@@ -1,0 +1,16 @@
+awareness/__init__.py,sha256=-PqTVyJyIWJJbcniG3zQla46e0Jb6Rc2cruiXk5WrVs,7445
+awareness/algorithm.py,sha256=DVSbaoNZ_dYfrAAM1inhbNEXmCpH5y2olWTGbzUspYE,10427
+awareness/backend.py,sha256=LEwzyGWl9hkeWWuYn1QgyjsKIhSwX_BALA2UrdS0q5E,3291
+awareness/component.py,sha256=isrQ8Zsp9fGYUjLg5TAd4jhS5p-qBj94OHL-U01KJTw,2111
+awareness/data.py,sha256=V1tUMaVxQOZsURH5SE5nCvxvKOBwIiiEaEdAK6f3e8U,5115
+awareness/exception.py,sha256=QbTdCdpQDbH53q40UH9QsUKxhxaeJPXmcDBJBEfCLRw,946
+awareness/factory.py,sha256=vrJCNVJ57Swvf9ytJO9FqMXvqFmyIJL8mB83BdgqqZU,6816
+awareness/misc.py,sha256=wp3fECBES7Ull_3zbgyRvMuimZ6Z9O5qano6qp-an6k,6845
+awareness/operator.py,sha256=GTJcU04p75DiFn3yFy57q2JrkRdpwHjc2yJNAnzLGQk,6965
+awareness/protocol.py,sha256=v3OIByb68z1XmD3M8MVWVgHDhFc2rzZHtx93I4S5Cdw,11645
+awareness-14.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+awareness-14.dist-info/METADATA,sha256=DoQOX8RF73zFnNTnQOwI961Pe38vzjs9v-BRv2xXOTs,449
+awareness-14.dist-info/RECORD,,
+awareness-14.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+awareness-14.dist-info/metadata.json,sha256=res3c1UYxD2CaDZGWHiSwuES9YRn41j0d_NS9Ym6Tac,685
+awareness-14.dist-info/top_level.txt,sha256=hMON5lSxHNR5jYM2EZNCP6KVaiDyjpWX5mLbwrDn7cw,10
