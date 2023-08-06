@@ -1,0 +1,2 @@
+include reactionrnn/reactionrnn_weights.hdf5
+include reactionrnn/reactionrnn_vocab.json

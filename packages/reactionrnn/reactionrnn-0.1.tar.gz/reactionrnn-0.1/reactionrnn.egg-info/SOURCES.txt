@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.cfg
+setup.py
+reactionrnn/__init__.py
+reactionrnn/reactionrnn.py
+reactionrnn/reactionrnn_vocab.json
+reactionrnn/reactionrnn_weights.hdf5
+reactionrnn.egg-info/PKG-INFO
+reactionrnn.egg-info/SOURCES.txt
+reactionrnn.egg-info/dependency_links.txt
+reactionrnn.egg-info/requires.txt
+reactionrnn.egg-info/top_level.txt

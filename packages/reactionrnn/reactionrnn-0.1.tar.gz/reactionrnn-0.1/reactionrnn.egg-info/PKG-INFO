@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: reactionrnn
+Version: 0.1
+Summary: Pretrained character-based neural network for predicting the reaction to given text(s).
+Home-page: https://github.com/minimaxir/reactionrnn
+Author: Max Woolf
+Author-email: max@minimaxir.com
+License: MIT
+Description: UNKNOWN
+Keywords: deep learning,tensorflow,keras,sentiment analysis
+Platform: UNKNOWN
