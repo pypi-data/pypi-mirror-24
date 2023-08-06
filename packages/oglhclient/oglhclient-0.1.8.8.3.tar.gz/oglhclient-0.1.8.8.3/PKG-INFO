@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: oglhclient
+Version: 0.1.8.8.3
+Summary: A client for Lighthouse API
+Home-page: https://github.com/thiagolcmelo/oglhclient
+Author: Lighthouse Team
+Author-email: engineering@opengear.com
+License: UNKNOWN
+Download-URL: https://github.com/thiagolcmelo/oglhclient/archive/0.1.8.8.3.tar.gz
+Description: UNKNOWN
+Keywords: api,opengear,lighthouse
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
