@@ -1,0 +1,9 @@
+setup.py
+lazyhttp/__init__.py
+lazyhttp/client.py
+lazyhttp/lazyhttp.py
+lazyhttp/version.py
+lazyhttp.egg-info/PKG-INFO
+lazyhttp.egg-info/SOURCES.txt
+lazyhttp.egg-info/dependency_links.txt
+lazyhttp.egg-info/top_level.txt
