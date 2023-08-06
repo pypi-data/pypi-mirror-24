@@ -1,0 +1,3 @@
+[console_scripts]
+db2table = db2table:cli
+

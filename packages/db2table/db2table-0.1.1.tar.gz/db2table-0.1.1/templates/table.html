@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+<!-- data is a list of dict -->
+<!-- header is a list of keys present in each element of data -->
+
+{%block head %}
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.html5.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.3.1/css/buttons.dataTables.min.css">
+{% endblock %}
+
+{% block customjs %}
+
+$(document).ready(function() {
+    $('#{{_id}}').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5',
+            'csvHtml5',
+            'pdfHtml5'
+        ]
+    } );
+} );
+{% endblock %}
+
+{% block content %}
+<table id="{{_id}}" class="{{table_class}}">
+  <!-- table header -->
+  <thead>
+    <tr>
+       {% for key in header %}
+       <th> {{ key }} </th>
+       {% endfor %}
+    </tr>
+  </thead>
+
+  <!-- table rows -->
+  <tbody>
+  {% for dict_item in data %}
+    <tr>
+       {% for key in header %}
+       <td> {{ dict_item[key] }} </td>
+       {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

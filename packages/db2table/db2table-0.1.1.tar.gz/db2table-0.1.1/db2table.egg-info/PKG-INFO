@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: db2table
+Version: 0.1.1
+Summary: Extract database tables to web friendly files
+Home-page: https://github.com/KhalidCK/db2table
+Author: Khalid Chakhmoun
+Author-email: fr.ckhalid@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: db2table
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6

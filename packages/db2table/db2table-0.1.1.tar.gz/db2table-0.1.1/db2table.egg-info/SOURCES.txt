@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+db2table.py
+setup.cfg
+setup.py
+db2table.egg-info/PKG-INFO
+db2table.egg-info/SOURCES.txt
+db2table.egg-info/dependency_links.txt
+db2table.egg-info/entry_points.txt
+db2table.egg-info/not-zip-safe
+db2table.egg-info/requires.txt
+db2table.egg-info/top_level.txt
+templates/base.html
+templates/table.html
+tests/__init__.py
+tests/test_db2table.py
