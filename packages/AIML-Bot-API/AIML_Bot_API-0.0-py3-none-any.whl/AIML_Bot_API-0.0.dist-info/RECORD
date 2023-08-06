@@ -1,0 +1,10 @@
+AIML_Bot_API-0.0.dist-info/DESCRIPTION.rst,sha256=XOd8Y3nXbMihYgfIdGJeSjclCOzHAyEpc9daS-zwRls,990
+AIML_Bot_API-0.0.dist-info/METADATA,sha256=wCRG9gD7XVyPuVQVnyyhnDXT2rhiz2PvUDG2f-36YgM,1660
+AIML_Bot_API-0.0.dist-info/RECORD,,
+AIML_Bot_API-0.0.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+AIML_Bot_API-0.0.dist-info/metadata.json,sha256=B97yIl16J9DJr9dDgvsnacaBmgyv-EJIoAYoLRberB0,833
+AIML_Bot_API-0.0.dist-info/top_level.txt,sha256=i3z5mRQ_ZQ-o26Xay1byXpn7EedXIZLhwtlfrGjXe1c,13
+aiml_bot_api/__init__.py,sha256=sGgnCD5Ze_jgK9nfWCrd88B47hxLRs6kFF7JXEw8Qsc,1421
+aiml_bot_api/data.py,sha256=FgMDaiIFhBOyV75VQA6V1gxPKaQ7Q8ZYDVdqc1pD5AE,9208
+aiml_bot_api/endpoints.py,sha256=hizHO3DlMyce8SyvNJ5nC9vE81oppdrGdmefVrH6ipw,9597
+aiml_bot_api/graphql.py,sha256=w0R1TklPmvh5djFrxeRskrfEqn8k2r8QZ2hKtfZLsJg,10518
