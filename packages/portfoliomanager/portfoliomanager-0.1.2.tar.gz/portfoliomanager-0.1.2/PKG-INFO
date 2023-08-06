@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: portfoliomanager
+Version: 0.1.2
+Summary: Tracks N number of investments equally weighted against IVV etf.
+Home-page: https://github.com/JamesWhiteleyIV/Portfolio-Manager
+Author: James Whiteley IV
+Author-email: jameswhiteleyiv@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: investment utility pandas portfolio management
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
