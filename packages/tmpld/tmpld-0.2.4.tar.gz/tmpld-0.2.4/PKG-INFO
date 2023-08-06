@@ -1,0 +1,65 @@
+Metadata-Version: 1.1
+Name: tmpld
+Version: 0.2.4
+Summary: Render templates in docker entrypoint scripts.
+Home-page: https://github.com/joeblackwaslike/tmpld
+Author: Joe Black
+Author-email: me@joeblack.nyc
+License: Apache 2.0
+Download-URL: https://github.com/joeblackwaslike/tmpld/tarball/v0.2.4
+Description: tmpld
+        =====
+        
+        Jinja2 templating on steroids for docker containers.
+        
+        .. image:: https://travis-ci.org/joeblackwaslike/tmpld.svg?branch=master
+           :target: https://travis-ci.org/joeblackwaslike/tmpld
+           :alt: Build Status
+        
+        .. image:: https://img.shields.io/docker/pulls/joeblackwaslike/tmpld.svg
+           :target: https://hub.docker.com/r/joeblackwaslike/tmpld/
+           :alt: Docker Pulls
+        
+        .. image:: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat
+           :target: https://github.com/joeblackwaslike/tmpld
+           :alt: Github Repo
+        
+        
+        CLI tool combining jinja2 with parsers and other objects including Kubernetes
+        API objects and linux capabilities objects.
+        
+        
+        Usage
+        -----
+            ::
+        
+                usage: tmpld (sub-commands ...) [options ...] {arguments ...}
+        
+                Base Controller
+        
+                positional arguments:
+                  templates             template files to render
+        
+                optional arguments:
+                  -h, --help            show this help message and exit
+                  --debug               toggle debug output
+                  --quiet               suppress all output
+                  -d DATA, --data DATA  file(s) containing context data
+                  -s, --strict          Raise an exception if a variable is not defined
+        
+Keywords: kubernetes,clustering,entrypoint,entrypoints,docker,template,templates
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
