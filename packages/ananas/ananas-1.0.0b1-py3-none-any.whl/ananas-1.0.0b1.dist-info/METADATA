@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: ananas
+Version: 1.0.0b1
+Summary: Mastodon bot framework built on Mastodon.py
+Home-page: https://github.com/chronister/ananas
+Author: Andrew Chronister
+Author-email: chr@cybre.space
+License: MIT
+Requires-Dist: Mastodon.py
+Requires-Dist: more-itertools
+Requires-Dist: requests
+
+Ananas
+
+
