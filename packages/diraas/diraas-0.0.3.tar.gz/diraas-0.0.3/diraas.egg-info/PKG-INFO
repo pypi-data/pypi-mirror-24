@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: diraas
+Version: 0.0.3
+Summary: Make directory as a service.
+Home-page: UNKNOWN
+Author: wonder
+Author-email: wonderbeyond@gmail.com
+License: UNKNOWN
+Description: Diraas (Make directory as a service)
+        ====================================
+        
+        Get started
+        -----------
+        
+        ::
+        
+            $ pip install diraas
+            $ diraas --token=abc --host=127.0.0.1 --port=5100 ~/lab/
+        
+Platform: UNKNOWN
