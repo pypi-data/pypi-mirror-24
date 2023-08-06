@@ -1,0 +1,17 @@
+[console_scripts]
+vitrage-api = vitrage.cli.api:main
+vitrage-collector = vitrage.cli.collector:main
+vitrage-graph = vitrage.cli.graph:main
+vitrage-ml = vitrage.cli.machine_learning:main
+vitrage-notifier = vitrage.cli.notifier:main
+
+[oslo.config.opts]
+datasources = vitrage.opts:datasources_opts
+vitrage = vitrage.opts:list_opts
+
+[tempest.test_plugins]
+vitrage_tests = vitrage_tempest_tests.plugin:VitrageTempestPlugin
+
+[vitrage.entity_graph]
+networkx = vitrage.graph.driver.networkx_graph:NXGraph
+
