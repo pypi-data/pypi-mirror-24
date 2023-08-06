@@ -1,0 +1,10 @@
+downscale/__init__.py,sha256=72MI_6mBUPy4Lh4q9PwphenXkIjZmyPWo6As1oZlM9c,153
+downscale/cli.py,sha256=Yb2RraBTHUGkTMa_KiyaB_WtDUgaUOruB8e6j6AZGe8,366
+downscale/downscale.py,sha256=VYoI-gwqwBKPx84cA0KnYDRofrgIXs8xtASD2nu5fE0,44
+downscale-0.0.1.dist-info/DESCRIPTION.rst,sha256=y39trUCnVkqXy602Q4765L_7ZzDelGQMt44XY7V1UVo,1116
+downscale-0.0.1.dist-info/METADATA,sha256=14lsb9x7dBO5z51NF2W7ZWO2dJevIuNP1EIa5PESIjc,1903
+downscale-0.0.1.dist-info/RECORD,,
+downscale-0.0.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+downscale-0.0.1.dist-info/entry_points.txt,sha256=GQWh9zn-nJqK1n1-808IM-6ChrnnwaIJzsKCZp06pBk,50
+downscale-0.0.1.dist-info/metadata.json,sha256=2Dh7B2ISiZfm48D7bHKwWsD7DxQUnS4_9zg3QdYTT08,1138
+downscale-0.0.1.dist-info/top_level.txt,sha256=XdLI466axMyTJcsKFb-c2T_7kw9alCPQDrbQi_bXbs0,10
