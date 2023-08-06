@@ -1,0 +1,9 @@
+setup.py
+VanescoSC2/GameConnection.py
+VanescoSC2/__init__.py
+VanescoSC2/main.py
+VanescoSC2.egg-info/PKG-INFO
+VanescoSC2.egg-info/SOURCES.txt
+VanescoSC2.egg-info/dependency_links.txt
+VanescoSC2.egg-info/requires.txt
+VanescoSC2.egg-info/top_level.txt
