@@ -1,0 +1,78 @@
+Metadata-Version: 2.0
+Name: Kiwiii-server
+Version: 0.7.0
+Summary: HTTP API server library for chemical database administration and computation
+Home-page: https://github.com/mojaie/kiwiii-server
+Author: Seiji Matsuoka
+Author-email: mojaie@aol.com
+License: MIT
+Keywords: drug-discovery cheminformatics api-server
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.5
+Requires-Dist: chorus
+Requires-Dist: pandas
+Requires-Dist: python-louvain
+Requires-Dist: tornado
+Requires-Dist: xlsxwriter
+
+
+kiwiii-server
+================
+
+Kiwiii is a web-based client-server application for chemical data analysis and visualization. The server implements web API which enables easy access to databases via HTTP.
+
+
+
+Installation
+--------------
+
+### PyPI
+
+```
+pip3 install kiwiii-server
+```
+
+
+### Anaconda
+
+```
+conda upgrade -n root conda
+conda install -n root conda-build
+
+conda skeleton pypi kiwiii-server
+conda build kiwiii-server
+conda install --use-local kiwiii-server
+```
+
+
+
+API Documentation
+-------------------
+
+https://mojaie.github.io/kiwiii-server
+
+
+
+License
+--------------
+
+[MIT license](http://opensource.org/licenses/MIT)
+
+Test datasets provided by [DrugBank](https://www.drugbank.ca/) are permitted to use under [Creative Common’s by-nc 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+
+
+
+Copyright
+--------------
+
+(C) 2014-2017 Seiji Matsuoka
+
+
