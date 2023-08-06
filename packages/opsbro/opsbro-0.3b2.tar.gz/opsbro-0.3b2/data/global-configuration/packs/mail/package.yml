@@ -1,0 +1,20 @@
+name: mail
+types:
+    - pack
+    - module
+version: "1.0"
+homepage: ""
+author: Shinken Solutions
+description:  Alert handler to send formated emails
+contributors:
+    - Jean Gabès
+repository: ""
+keywords:
+    - pack
+    - email
+    - mail
+    - handler
+
+dependencies:
+    core: ">=1.0"
+license: ""

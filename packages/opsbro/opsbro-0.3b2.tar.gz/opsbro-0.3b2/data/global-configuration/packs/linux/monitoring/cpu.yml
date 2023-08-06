@@ -1,0 +1,9 @@
+check:
+    interval: 10s
+    if_group: linux
+    
+    ok_output: "'OK: cpu is great: %s%%' % (100-{{collector.cpustats.cpuall.%idle}})"
+    
+    critical_if: "{{collector.cpustats.cpuall.%idle}} < 100 - {{parameters.cpu_critical}}"
+    critical_output: "'Critical: cpu is too high: %s%%' % (100-{{collector.cpuall_%idle}})"
+

@@ -1,0 +1,5 @@
+detector:
+    add_groups:
+        - "{{collector.system.os.name}}"
+    apply_if: "True"
+    interval: 3600s

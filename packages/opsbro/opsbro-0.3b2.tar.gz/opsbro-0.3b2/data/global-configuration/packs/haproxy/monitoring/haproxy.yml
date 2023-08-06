@@ -1,0 +1,4 @@
+check:
+    if_group: haproxy
+    script: "/usr/lib/nagios/plugins/check_http -H localhost"
+    interval: "10s"
