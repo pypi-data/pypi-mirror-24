@@ -1,0 +1,14 @@
+scrapyd_client/VERSION,sha256=9KWWLROya9NGp2C0AFQT15Lqp0hq9ajMeT1dhF_Q7Hk,8
+scrapyd_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapyd_client/cli.py,sha256=A9jvdEfcLFbVlHFaSgjpg3ZV2-Rznqja05XNJXva3u4,3652
+scrapyd_client/commands.py,sha256=7ddsOb5-Bg1HHZMCQ53KwgKfkIDxfqs_0mn5hJ2JHw4,1577
+scrapyd_client/deploy.py,sha256=wdwWuHTqXvQEFfTzXCYExu6wNOXT6X68QGbzZk-Fl1U,10020
+scrapyd_client/lib.py,sha256=t32GUbCApZd8HE9QgGa-ecZYRQkuBfAzNGtLHf4FAZk,1912
+scrapyd_client/utils.py,sha256=ONiykKomPjFk6rueiEUpZB0iJ7NY7P6HaGOCHfm78k0,2750
+scrapyd_client-1.2.0a1.dist-info/DESCRIPTION.rst,sha256=HrSzzDeXPK4euHkW0fhA6iceOtT9Q5tDDzsjRvzBm44,6350
+scrapyd_client-1.2.0a1.dist-info/METADATA,sha256=bktt4-P1iJiQJ6mhLaVETdcCorxSgypD6b1XMWNsC8o,7126
+scrapyd_client-1.2.0a1.dist-info/RECORD,,
+scrapyd_client-1.2.0a1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+scrapyd_client-1.2.0a1.dist-info/entry_points.txt,sha256=lG92k1jukCj5iu7mhaZzfAppEFrXBecdwZfgmVsFUSM,104
+scrapyd_client-1.2.0a1.dist-info/metadata.json,sha256=B9WZomVQDIfVHMkulPxD2zLUSGpA2WvSvQI823vJOlI,1167
+scrapyd_client-1.2.0a1.dist-info/top_level.txt,sha256=CRGcEjjdKipKMYkWhR3evwSPX7kROxRhW66ntTQ0WZo,15
