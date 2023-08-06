@@ -1,0 +1,9 @@
+README.rst
+setup.py
+static_variables/__init__.py
+static_variables/codetools.py
+static_variables/opcode_desc.py
+static_variables.egg-info/PKG-INFO
+static_variables.egg-info/SOURCES.txt
+static_variables.egg-info/dependency_links.txt
+static_variables.egg-info/top_level.txt
