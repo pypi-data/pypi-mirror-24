@@ -1,0 +1,5 @@
+include *.md LICENSE
+recursive-include jupyter_gap_wrapper *.py
+recursive-include jupyter_gap_wrapper/gap *.g
+recursive-include jupyter_gap_wrapper/resources *.png
+recursive-include jupyter_gap_wrapper/resources/gap-mode *.js

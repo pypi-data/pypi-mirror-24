@@ -1,0 +1,15 @@
+CONTRIBUTORS.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+jupyter_kernel_gap/__init__.py
+jupyter_kernel_gap/__main__.py
+jupyter_kernel_gap/kernel.py
+jupyter_kernel_gap.egg-info/PKG-INFO
+jupyter_kernel_gap.egg-info/SOURCES.txt
+jupyter_kernel_gap.egg-info/dependency_links.txt
+jupyter_kernel_gap.egg-info/top_level.txt
+jupyter_kernel_gap/gap/setup.g
+jupyter_kernel_gap/resources/logo-32x32.png
+jupyter_kernel_gap/resources/logo-64x64.png
