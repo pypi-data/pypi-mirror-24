@@ -1,0 +1,6 @@
+[console_scripts]
+pyweed_install_osx = pyweed.build_osx:main
+
+[gui_scripts]
+pyweed = pyweed.pyweed_launcher:main
+
