@@ -1,0 +1,7 @@
+onegov.core
+onegov.user
+
+[test]
+coverage
+onegov_testing
+pytest
