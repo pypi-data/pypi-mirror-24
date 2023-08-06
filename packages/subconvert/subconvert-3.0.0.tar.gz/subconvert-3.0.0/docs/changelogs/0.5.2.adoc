@@ -1,0 +1,20 @@
+= Subconvert 0.5.2 changelog
+
+NOTE: Subconvert wasn't using Semantic Versioning at this point
+
+== Changes since 0.5.0:
+
+=== New features
+
+* force option
+
+* verbose option
+
+=== Bug fixes
+
+* writing a newly created file
+
+* unescaped curly braces in microdvd and subrip that caused crashes
+
+
+// vim: set tw=80 colorcolumn=81 :

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+die()
+{
+    printf "%s\n" "$1"
+    exit 1
+}
+
+test -n "$1" || die "argument required: locale name"
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
+
+cd "$SCRIPT_DIR/.."
+python3 setup.py extract_messages
+
+if [ -e "src/subconvert/locale/$1" ]; then
+    printf "updating existing translation...\n"
+    python3 setup.py update_catalog --locale "$1"
+else
+    printf "creating new translation...\n"
+    python3 setup.py init_catalog --locale "$1"
+fi

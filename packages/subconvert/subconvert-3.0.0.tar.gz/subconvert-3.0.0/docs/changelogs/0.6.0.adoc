@@ -1,0 +1,21 @@
+= Subconvert 0.6.0 changelog
+
+NOTE: Subconvert wasn't using Semantic Versioning at this point
+
+== Changes since 0.5.2:
+
+=== New features
+
+* getting FPS from avi files using MPlayer
+
+* option to backup files if they exist (overwriting input files are back them 
+  up automatically while output files are backed up explicitly)
+
+=== Bug fixes
+
+* code refactoring. Until now subconvert reads whole files to the memory which 
+  speeds it up almost twice
+
+* bug where parsing empty files returned results
+
+// vim: set tw=80 colorcolumn=81 :

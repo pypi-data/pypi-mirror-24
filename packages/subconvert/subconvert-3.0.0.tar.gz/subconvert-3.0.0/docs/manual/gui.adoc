@@ -1,0 +1,298 @@
+:snipdir: ../snippets
+
+[[gui]]
+== Graphical User Interface
+
+=== Window layout
+
+Main Subconvert window consists of several of tabs and panels.
+
+:img-file: filelist.png
+:img-width: 400
+.Main window
+include::{snipdir}/image.adoc[tag=right]
+
+First tab (named _Subtitles_) is always a **file list**. You cannot close it or
+move it. It contains a list of *loaded* files with several handy informations
+about them plus an icon representing current state of file status.  If file's
+modified somehow, it changes to a yellow star. If it's "clean" (i.e.  not
+modified), it changes to a green tick.
+
+Next tabs (second one, third one and so on) contain **opened subtitle files**.
+New tabs are not opened by default. To *open* a file in a new tab double click
+on it on a file list. To open a file in new tab in background middle-click it.
+
+Above the file list there's a **video player** panel. It shows currently opened
+video file and its state. You can toggle its visibility under
+`View/Movie player` menu.
+
+On the left there's a **side panel**. It contains several tools, each
+responsible for a different thing:
+
+.Side panel tools
+[cols="1,4", options="header"]
+|===
+| Tool | Description
+
+| Details
+| displays informations about currently loaded subtitle file;
+
+| Synchronize
+| allows synchronizing subtitles with a video;
+
+| History of changes
+| tab allows moving through recorded history of changes for loaded subtitles.
+|===
+
+=== Opening and editing files
+
+[.right.text-right.related.thumb]
+:img-file: open-error.png
+.Opening file error
+include::{snipdir}/image.adoc[tag=right]
+
+To open a file click menu:File[Open]. File dialog will appear from which you
+can select one or more files. Opened files will appear on a file list and if
+there was any error, it will be displayed in another dialog.
+
+==== Editing files separately
+
+To open a file in a new tab, where it can be edited, double-click on it. To open
+more files at once, select them from the right-click menu choose _Open in tab_
+position. New tabs will be opened right to the file list tabs.
+
+You can select many files at once just as you would do that in many other
+well-known graphical applications:
+
+* by clicking and dragging your mouse over several elements;
+* by selecting separate items while holding kbd:[ctrl];
+* by clicking on one item, holding kbd:[shift] and selecting the other one.
+
+When on file tab, you can edit the following global properties of subtitles from
+_Subtitles_ menu:
+
+* format
+* frames per second of subtitles
+* file encodings
+* offset time of subtitles
+
+You can also link file with a specific video from which Subconvert will
+automatically detect FPS value.
+
+[.right.text-right.related.thumb]
+:img-file: subeditor-error.png
+:img-width: 400
+.Error indicator when changing subtitle time
+include::{snipdir}/image.adoc[tag=right]
+
+You can add, remove and change specific subtitles by selecting a wanted action
+in _Subtitles_  menu or by right-clicking on any displayed subtitle. Subtitle's
+text, start time and end time can be edited by double-clicking it.
+
+To save changes click menu:File[Save].
+
+==== Batch editing
+
+You can change global properties of many subtitles at once by performing the
+following actions:
+
+1. make sure you have file list currently opened
+2. select files you want to change;
+3. right-click on files and select wanted actions from a displayed menu.
+
+To save all changes at once click menu:File[Save all].
+
+==== Edit history
+
+[.right.text-right.related.thumb]
+:img-file: history-of-changes.png
+.History of changes
+include::{snipdir}/image.adoc[tag=right]
+
+History of all changes is recorded so all actions are reversible. This applies
+to both batch edits and individual file edits.
+
+_Undo_ and _redo_ buttons are available in _Subtitles_ menu and in file lists's
+right-click menu (the latter one is batch undo/redo - it applies to all selected
+files). Individual file history is also displayed in _History of changes_
+sidebar tab. From there you can undo/redo many changes at once.
+
+=== Playing videos
+
+Subconvert automatically loads videos which share a filename with subtitles'
+file. Video player can be toggled from menu:View[Video player].
+
+=== Summary of menus
+
+.Menubar
+[cols="1,3", options="header"]
+|===
+| Option | Description
+
+2+^.^| *File menu*
+
+| menu:File[Open]
+| Load one or more subtitle files.
+
+| menu:File[Save]
+| Save changes to currently opened tab.
+
+| menu:File[Save as]
+| Save changes to currently opened tab, but with a different file name. Format
+  of saved file and its encoding are pre-selected from the previous choices, but
+  they still can be changed here.
+
+| menu:File[Save all]
+| Save changes to all loaded files.
+
+| menu:File[Exit]
+| Closes Subconvert.
+
+2+^.^| *Subtitles menu*
+
+| menu:Subtitles[Undo]
+| Reverts the last change
+
+| menu:Subtitles[Redo]
+| Repeats previously reverted (_undone_) change.
+
+| menu:Subtitles[Insert subtitle]
+| Inserts a new subtitle before currently selected one.
+
+| menu:Subtitles[Add subtitle]
+| Inserts a new subtitle after currently selected one.
+
+| menu:Subtitles[Remove subtitle]
+| Remove currently selected subtitle or subtitles.
+
+| menu:Subtitles[Find]
+| Opens a _find bar_ below subtitles. Finding a phrase in any subtitle in
+  currently opened tab automatically jumps to that subtitle.
+
+| menu:Subtitles[Frames per second]
+| Change number of frames per second for currently opened tab.
+
+| menu:Subtitles[Subtitles format]
+| Change format of subtitles to which it will be saved.
+
+| menu:Subtitles[Input encoding]
+| Change encoding of loaded file.
+
+| menu:Subtitles[Output encoding]
+| Change encoding with which file will be saved. Note that it's not possible to
+  convert all encodings to each other.
+
+| menu:Subtitles[Offset]
+| Adds or substracts some time from all subtitles.
+
+| menu:Subtitles[Link video]
+| Selects a video from which Subconvert detects FPS and which is played in Video
+  Player.
+
+| menu:Subtitles[Unlink video]
+| Removes a link between subtitles and a video.
+
+| menu:Subtitles[Get FPS]
+| Automatically changes subtitles' FPS to match a value in a linked video.
+
+2+^.^| *Video menu*
+
+| menu:Video[Playback]
+| Sub-menu which contains controls for video player.
+
+| menu:Video[Jump to subtitle]
+| Jumps to time of currently selected subtitle in currently played video.
+
+2+^.^| *View menu*
+
+| menu:View[Video player]
+| Toggles visibility of video player.
+
+| menu:View[Side panel]
+| Toggles visibility of side panel.
+
+2+^.^| *Tools menu*
+
+| menu:Tools[Subtitle Properties Editor]
+| Opens Subtitle Properties Editor window. See <<property-files>> for details.
+
+2+^.^| *Help menu*
+
+| menu:Help[Help]
+| Opens a page with online help.
+
+| menu:Help[About Subconvert]
+| Opens a window which gives some credits for Subconvert authors. Make sure to
+  see it! :)
+|===
+
+.File list right-click menu
+[cols="1,3", options="header"]
+|===
+| Option | Description
+
+| Open in tab
+| Open a tab for all selected files. Tabs will not be duplicated, but they will
+  be focused.
+
+| Use subtitle properties
+| Select and apply a property file to all selected files. See <<property-files>>
+  for details.
+
+| Frames per second
+| Change number of frames per second for all selected files
+
+| Subtitles format
+| Change subtitle format of all selected files to which they will be saved.
+
+| Input encoding
+| Change encoding of selected files.
+
+| Output encoding
+| Change encoding with which selected files will be saved. Note that it's not
+  possible to convert all encodings to each other.
+
+| Offset
+| Adds or substracts some time from all subtitles in all selected files.
+
+| Link video
+| For all selected files, select a single video from which Subconvert detects
+  FPS and which will be played in Video Player when these files will be loaded
+  in a tab.
+
+| Unlink video
+| Removes a link between selected subtitles and and their respective videos.
+
+| Get FPS
+| Automatically changes selected files' FPS values to match values in a linked
+  videos.
+
+| Show subtitles
+| Open a tab for all selected files. Tabs will not be duplicated, but they will
+  be focused.
+
+| Close subtitles
+| Closes and unloads all selected files.
+
+| Undo
+| Reverts the last change for all selected files.
+
+| Redo
+| Repeats previously reverted (_undone_) change for all selected files
+|===
+
+
+.Individual file right-click menu
+[cols="1,3", options="header"]
+|===
+| Insert subtitle
+| Inserts a new subtitle before currently selected one.
+
+| Add subtitle
+| Inserts a new subtitle after currently selected one.
+
+| Remove subtitle
+| Remove currently selected subtitle or subtitles.
+|===
+
+// vim: set tw=80 colorcolumn=81 ft=asciidoc :

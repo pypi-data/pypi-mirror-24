@@ -1,0 +1,12 @@
+[[glossary]]
+== Glossary
+
+[[cli]]CLI::
+    Command Line Interface. Job-based mode of Subconvert, available by running
+    it with *-c* switch.
+
+[[fps]]FPS::
+    Frames Per Second. Numer of frames in a video which pass each second.
+
+[[gui]]GUI::
+    Graphical User Interface. A graphical mode of Subconvert (default one).

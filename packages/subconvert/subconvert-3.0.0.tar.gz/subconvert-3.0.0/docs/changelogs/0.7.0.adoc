@@ -1,0 +1,24 @@
+= Subconvert 0.7.0 changelog
+
+NOTE: Subconvert wasn't using Semantic Versioning at this point
+
+== Changes since 0.6.2:
+
+=== New features
+
+*  TMP sub formatting
+
+*  SubViewer sub formatting
+
+*  full converting subtitles without sub end time
+
+*  support subtitles with header
+
+=== Bug fixes
+
+* error on -m option mistyped
+
+* error that prevented sub parsing when no sub end time was present
+
+
+// vim: set tw=80 colorcolumn=81 :

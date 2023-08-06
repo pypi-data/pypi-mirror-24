@@ -1,0 +1,11 @@
+= Subconvert 0.8.0-1 changelog
+
+NOTE: Subconvert wasn't using Semantic Versioning at this point
+
+== Changes since 0.8.0:
+
+=== Bug fixes
+
+* unhandled assertion errors which were caused by incorrect subtitles
+
+// vim: set tw=80 colorcolumn=81 :

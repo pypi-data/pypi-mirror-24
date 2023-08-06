@@ -1,0 +1,30 @@
+= subconvert(1)
+:doctype: manpage
+:author: Michał Góral
+:email: dev@mgoral.org
+:revnumber: @VERSION@
+:man manual: Subconvert Manual
+:man source: Subconvert {revnumber}
+
+== NAME
+
+subconvert - video subtitle converter and editor.
+
+== SYNOPSIS
+
+*subconvert* [-c] [options] [FILE...]
+
+include::manual/usage.adoc[]
+
+include::manual/program-options.adoc[]
+
+include::manual/available-formats.adoc[]
+
+include::manual/encodings.adoc[]
+
+== ISSUES
+
+Please report any bugs, issues and suggestions to Subconvert's bugtracker:
+https://gitlab.com/mgoral/subconvert/issues
+
+// vim: set tw=80 colorcolumn=81 ft=asciidoc ft=asciidoc :

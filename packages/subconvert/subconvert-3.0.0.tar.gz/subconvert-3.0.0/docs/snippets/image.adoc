@@ -1,0 +1,16 @@
+// tag::right[]
+[.right.text-right.thumb.related]
+// end::right[]
+// tag::left[]
+[.left.text-left.thumb.related]
+// end::left[]
+
+// tag::right[]
+// tag::left[]
+[link={imagesdir}/{img-file}]
+image::{img-file}[{img-description}, width="{img-width}"]
+:img-width:
+:img-file:
+:img-description:
+// end::left[]
+// tag::right[]

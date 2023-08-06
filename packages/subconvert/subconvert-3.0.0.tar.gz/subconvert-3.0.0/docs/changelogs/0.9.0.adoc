@@ -1,0 +1,40 @@
+= Subconvert 0.9.0 changelog
+
+NOTE: Subconvert wasn't using Semantic Versioning at this point
+
+== Changes since 0.8.3:
+
+=== New features
+
+* "-g" option to SubConvert CLI version
+
+* #32: added icon for the GUI file list which indicates a status of a job for 
+  that file
+  
+=== Bug fixes
+
+* #42: MPL2 error with one-digit time indicators
+
+* A lot of (hopefully all) filename encoding issues are now fixed
+
+* Two untranslated strings are now translatable
+
+* SubOptParser gettext issues
+
+* Help text unification
+
+* #35: silence MPlayer error
+
+* #33: omit Byte Order Mark in UTF8 files
+
+* proper arguments parsing in GUI
+
+=== Other changes
+* Rewritten command line options
+
+* #40: GUI: change the way that logging is handled. Most significant change are 
+  individual logs for each file on the list (available after double-click on
+  that file)
+
+
+// vim: set tw=80 colorcolumn=81 :

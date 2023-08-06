@@ -1,0 +1,29 @@
+[[usage]]
+== Usage
+
+TIP: You can always get a brief, up-to-date explanation of all Subconvert
+options by calling `subconvert --help`.
+
+=== Starting Subconvert
+
+You can use Subconvert both as a console or a <<gui,graphical>> application. By
+default Subconvert is started in a graphical mode. It installs itself
+into most menus under *Audio/Video* category. Program launchers like Gnome-Do,
+Kupfer or rofi should recognize it as well. If your File Manager supports such
+behaviour, you can right-click on subtitle file, select *Open With...* (or a
+similar option) and choose Subconvert as your desired editor for subtitle files.
+
+To start it from command line, simply call:
+
+----
+$ subconvert [options] [subtitles]
+----
+
+If you wish to run Subconvert as a console script, add `-c` option. In CLI mode
+Subconvert will perform a requested job and quit.
+
+----
+$ subconvert -c [options] subtitles
+----
+
+// vim: set tw=80 colorcolumn=81 ft=asciidoc :

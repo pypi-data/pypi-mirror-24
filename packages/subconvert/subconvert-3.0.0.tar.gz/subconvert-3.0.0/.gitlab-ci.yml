@@ -1,0 +1,81 @@
+image: mgoral/super-ci-runner:latest
+
+stages:
+    - test
+    - deploy
+
+variables:
+    XDG_CACHE_HOME: "$CI_PROJECT_DIR/.cache"
+
+cache:
+    paths:
+        - $XDG_CACHE_HOME/pip/
+        - $XDG_CACHE_HOME/apt/
+    key: "$CI_JOB_NAME"
+
+before_script:
+    - ci/apt install -y -qqq --no-install-recommends libmpv1 libmediainfo0v5
+    - pip3 install tox
+
+test-py35:
+    stage: test
+    script:
+        - tox -e py35 -- -n `nproc`
+
+test-py36:
+    stage: test
+    script:
+        - tox -e py36 -- -n `nproc`
+
+test-dist:
+    stage: test
+    before_script:
+        - ci/apt install -y -qqq --no-install-recommends pyqt5-dev-tools
+    script:
+        - ci/dist_test sdist
+        - ci/dist_test bdist
+        - ci/dist_test bdist_wheel
+
+test-coverage:
+    stage: test
+    script:
+        - tox -e coverage -- -n `nproc`
+    artifacts:
+        name: coverage
+        expire_in: 14 days
+        paths:
+            - coverage.xml
+            - htmlcov/
+    allow_failure: true
+
+dist:
+    stage: deploy
+    before_script:
+        - ci/apt install -y -qqq --no-install-recommends pyqt5-dev-tools asciidoctor make
+        - pip3 install -rreqs/requirements-deploy.txt
+    only:
+        - tags
+        - triggers
+    script:
+        # https://github.com/pypa/setuptools/issues/1064
+        - python3 setup.py sdist
+        - python3 setup.py bdist_wheel
+        - twine upload dist/* -u "$PYPI_USER" -p "$PYPI_PASS"
+    artifacts:
+        name: "${CI_PROJECT_NAME}-{$CI_BUILD_REF_NAME}"
+        paths:
+            - dist/
+
+pages:
+    stage: deploy
+    before_script:
+        - ci/apt install -y -qq --no-install-recommends asciidoctor
+    script:
+        - ci/gen-pages
+    artifacts:
+        paths:
+            - public
+    only:
+        - master
+        - tags
+        - triggers

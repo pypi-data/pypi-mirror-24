@@ -1,0 +1,3 @@
+= Subconvert next changelog
+
+== Changes since 3.0.0:
