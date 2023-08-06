@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: aiofilelock
+Version: 1.0.0
+Summary: tools and library for Habitica restful API (http://habitica.com)
+Home-page: https://github.com/ASMfreaK/aiofilelock
+Author: Pavel Pletenev
+Author-email: cpp.create@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+
+UNKNOWN
+
+
