@@ -1,0 +1,3 @@
+from staticfy.staticfy import main
+
+main()
