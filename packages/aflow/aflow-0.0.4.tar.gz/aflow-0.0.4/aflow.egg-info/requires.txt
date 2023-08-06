@@ -1,0 +1,6 @@
+argparse
+termcolor
+numpy
+six
+jinja2
+bs4
