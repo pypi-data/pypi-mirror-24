@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: httpimport
+Version: 0.5.0
+Summary: Module for remote in-memory Python package/module loading through HTTP
+Home-page: UNKNOWN
+Author: John Torakis - operatorequals
+Author-email: john.torakis@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: import,memory,http
+Platform: UNKNOWN
