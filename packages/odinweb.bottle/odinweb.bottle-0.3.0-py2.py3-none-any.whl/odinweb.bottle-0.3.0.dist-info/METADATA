@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: odinweb.bottle
+Version: 0.3.0
+Summary: Toolkit for building web API's using Odin and Bottle.
+Home-page: https://github.com/python-odin/odinweb.bottle
+Author: Tim Savage
+Author-email: tim@savage.company
+License: BSD
+Keywords: web
+Requires-Dist: bottle
+Requires-Dist: odinweb (>=0.3)
+
+===============
+Odin Web Bottle
+===============
+
+Odin web modules for the `Bottle <https://bottlepy.org>`_ web framework.
+
+
+
