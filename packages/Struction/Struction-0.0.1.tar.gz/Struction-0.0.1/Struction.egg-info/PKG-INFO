@@ -1,0 +1,85 @@
+Metadata-Version: 1.1
+Name: Struction
+Version: 0.0.1
+Summary: Pythonic, C-style structs.
+Home-page: http://github.com/reshanie/struction
+Author: Patrick Dill
+Author-email: jamespatrickdill@gmail.com
+License: MIT
+Download-URL: http://github.com/reshanie/struction/archive/master.tar.gz
+Description: struction
+        ---------
+        Pythonic, C-Style structs.
+        
+        Structs are similar to namedtuples, but they allow type assertion and are defined the same way as any class. Creating
+        a struct is easy.
+        
+        .. code-block:: python
+        
+            class MyStruct(Struct):
+                # fieldName = type
+                field_0 = int
+                field_1 = str
+        
+                # you can also allow multiple types
+                multi_type = [int, str]  # fieldName = [type0, type1, ...]
+        
+                # and default values!
+                with_default = int, 10  # fieldName = type, default
+        
+                with_multi_and_default = [int, str], "hi"  # fieldName = [type0, type1, ...], default
+        
+        
+        Once a struct is created, it's fields can be changed, but they must match the given type or
+        a TypeError will be raised.
+        
+        ``del struct.field`` resets the field to ``None``.
+        
+        It's also possible to nest structs.
+        Any structs that are nested will automatically be initialized.
+        
+        
+        .. code-block:: python
+        
+            class OnlyInt(Struct):
+                field_0 = int
+                field_1 = int
+        
+        
+            class Nested(Struct):
+                abc = str
+                nest = OnlyInt  # nested struct
+        
+        
+        .. code-block:: python
+        
+            >>> print(Nested())
+            # Nested {
+            #     abc = None
+            #     nest = OnlyInt {
+            #         field_0 = None
+            #         field_1 = None
+            #     }
+            # }
+        
+            >>> print(Nested(nest=None))
+            # Nested {
+            #     abc = None
+            #     nest = None
+            # }
+        
+        - ``Struct.dict()`` : dict with struct's fields. {name: value, ...}
+        - ``Struct.fields`` : list of fields struct has.
+        
+Keywords: structs struct datastructure data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
