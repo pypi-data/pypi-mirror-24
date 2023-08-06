@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: geminipython
+Version: 0.3.0
+Summary: Async API wrapper for the Gemini cryptocurrency exchange
+Home-page: https://gitlab.com/aaron235/gemini-python.git
+Author: Aaron Adler
+Author-email: qwertyman159@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

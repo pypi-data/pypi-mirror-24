@@ -1,0 +1,10 @@
+README.rst
+setup.py
+geminipython/__init__.py
+geminipython/geminipython.py
+geminipython.egg-info/PKG-INFO
+geminipython.egg-info/SOURCES.txt
+geminipython.egg-info/dependency_links.txt
+geminipython.egg-info/not-zip-safe
+geminipython.egg-info/requires.txt
+geminipython.egg-info/top_level.txt
