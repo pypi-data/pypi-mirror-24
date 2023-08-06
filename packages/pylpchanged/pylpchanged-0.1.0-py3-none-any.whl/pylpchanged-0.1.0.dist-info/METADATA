@@ -1,0 +1,83 @@
+Metadata-Version: 2.0
+Name: pylpchanged
+Version: 0.1.0
+Summary: A Pylp plugin for filtering unchanged files
+Home-page: https://github.com/pylp/pylpchanged
+Author: Guillaume Gonnet
+Author-email: gonnet.guillaume97@gmail.com
+License: MIT
+Keywords: pylp gulp changed
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+
+===========
+PylpChanged
+===========
+
+
+Information
+===========
+
+| **pylpchanged** is a plugin for `Pylp`_ that filter unchanged files.
+|
+| **Note**: this plugin cannot filter unchanged files with a name transformed by another
+  plugin further into the stream (``pylprename`` for example).
+
+
+Installation
+============
+
+Install **pylpchanged** with ``pip``::
+
+    pip install pylpchanged
+
+If you don't have Python ``Scripts`` folder in your PATH, you can run also::
+
+    python -m pip install pylpchanged
+
+
+Usage
+=====
+
+The usual use of **pylpchanged** is as follows:
+
+.. code:: python
+
+    import pylp
+    from pylpchanged import pylpchanged
+
+    pylp.task('default', lambda:
+        pylp.src('lib/*.py')
+          .pipe(changed())
+        # .pipe(another_plugin())
+          .pipe(pylp.dest('build'))
+    )
+
+| Without parameters, **pylpchanged** will wait for the destination stream (i.e. ``pylp.dest``)
+  to compare the last result with the source files.
+|
+| For a faster execution, you can pass directly the destination path like this:
+
+.. code:: python
+
+    import pylp
+    from pylpchanged import pylpchanged
+
+    pylp.task('default', lambda:
+        pylp.src('lib/*.py')
+          .pipe(changed('build'))
+        # .pipe(another_plugin())
+          .pipe(pylp.dest('build'))
+    )
+
+
+.. _Pylp: https://github.com/pylp/pylp
+
