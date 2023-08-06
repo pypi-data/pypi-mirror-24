@@ -1,0 +1,3 @@
+[console_scripts]
+java-gc = java_gc:main
+
