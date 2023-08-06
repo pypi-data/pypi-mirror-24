@@ -1,0 +1,4 @@
+[console_scripts]
+dl = memeda:dl
+memeda = memeda:memeda
+
