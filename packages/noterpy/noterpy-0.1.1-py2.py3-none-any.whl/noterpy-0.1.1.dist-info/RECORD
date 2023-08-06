@@ -1,0 +1,10 @@
+noterpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+noterpy/noter.py,sha256=QQ5ecMMAs2xPU3xtS1dvY0WjcPfK9QpYAiFmR0Cj6tM,3445
+noterpy-0.1.1.dist-info/DESCRIPTION.rst,sha256=HG94OxYNltMWQ5h9fhongMZlk7BNuzBaK4RBn58tSrc,1382
+noterpy-0.1.1.dist-info/METADATA,sha256=ZQPC6eokkhayTagBmH97ui8mMRMWNR1OcrT9z4tSPtE,2255
+noterpy-0.1.1.dist-info/RECORD,,
+noterpy-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+noterpy-0.1.1.dist-info/metadata.json,sha256=7EZkj6PaGd6ZzKsHu5AQ9h1N8rMd0TZKVkevr2yV0cU,1041
+noterpy-0.1.1.dist-info/top_level.txt,sha256=alrJgb5PzrFecODkT_jBT_pt42p2wo1raGW0TvkJ4fc,14
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_noter.py,sha256=SpUziHbZnK24pg3gU3MMf38-ZCi6LITY73UO3LN6XhE,1698
