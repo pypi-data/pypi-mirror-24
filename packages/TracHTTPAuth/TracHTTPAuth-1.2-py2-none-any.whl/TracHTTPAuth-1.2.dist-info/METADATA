@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: TracHTTPAuth
+Version: 1.2
+Summary: Use the AccountManager plugin to provide HTTP authentication from Trac itself.
+Home-page: http://trac-hacks.org/wiki/HttpAuthPlugin
+Author: Craig A
+Author-email: craiga@fonefit.com
+License: BSD
+Keywords: trac plugin http auth
+Platform: UNKNOWN
+Classifier: Framework :: Trac
+Requires-Dist: TracAccountManager
+
+UNKNOWN
+
+
