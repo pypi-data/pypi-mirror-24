@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: python-project
+Version: 0.31
+Summary: Python Project Template
+Home-page: http://github.com/rehmanz/python_project
+Author: Zile Rehman
+Author-email: rehmanz@yahoo.com
+License: MIT
+Description: # python_project
+        
+        To use simply:
+        
+            >>> from python_project import joke
+            >>> print(joke())
+        
+Keywords: funniest joke comedy flying circus
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Text Processing :: Linguistic
