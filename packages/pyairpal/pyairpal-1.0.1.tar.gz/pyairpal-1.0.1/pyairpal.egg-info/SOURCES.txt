@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+pyairpal/__init__.py
+pyairpal.egg-info/PKG-INFO
+pyairpal.egg-info/SOURCES.txt
+pyairpal.egg-info/dependency_links.txt
+pyairpal.egg-info/top_level.txt
