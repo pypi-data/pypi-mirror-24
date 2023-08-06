@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+swamper/__init__.py
+swamper/base.py
+swamper.egg-info/PKG-INFO
+swamper.egg-info/SOURCES.txt
+swamper.egg-info/dependency_links.txt
+swamper.egg-info/requires.txt
+swamper.egg-info/top_level.txt
+swamper/local/__init__.py
+swamper/local/base.py

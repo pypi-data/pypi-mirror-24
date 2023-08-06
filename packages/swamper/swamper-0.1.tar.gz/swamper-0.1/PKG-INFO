@@ -1,0 +1,151 @@
+Metadata-Version: 1.1
+Name: swamper
+Version: 0.1
+Summary: Swamper is a simple interface to clean input data and turn this data into objects.
+Home-page: https://github.com/wearespindle/swamper
+Author: Devhouse Spindle
+Author-email: opensource@wearespindle.com
+License: MIT License
+Description: Swamper
+        =======
+        
+        |Build Status|
+        
+        Swamper is here for you to simplify cleaning input data and building
+        python objects from this data.
+        
+        Status
+        ------
+        
+        Currently actively used and watched.
+        
+        Usage
+        -----
+        
+        Requirements
+        ~~~~~~~~~~~~
+        
+        -  python 2.7
+        -  python 3.3
+        -  python 3.4
+        -  python 3.5
+        
+        Installation
+        ~~~~~~~~~~~~
+        
+        Installation can be done from github or PyPI.
+        
+        Running
+        ~~~~~~~
+        
+        ``models.py``
+        
+        .. code:: python
+        
+        
+            # Pretend this is some model.
+            class Company(object):
+                # name = fields.Str(ascii_only=True)
+                # github_address = fields.Str()
+        
+                def __init__(self, **kwargs):
+                    self.__dict__ = kwargs
+        
+        ``validate.py``
+        
+        .. code:: python
+        
+            import unicodedata
+        
+            from swamper.base import BaseSwamper
+        
+        
+            class CompanySwamper(BaseSwamper):
+                fields = [
+                    'name',
+                    'github_address',
+                ]
+        
+                def __init__(self, data):
+                    super(CompanySwamper, self).__init__(self.fields, data)
+        
+                def clean_name(self, name, is_blank):
+                    if is_blank or len(name.strip()) == 0:
+                        raise ValueError('Field "name" is required.')
+        
+                    # Keep only ascii characters.
+                    return unicodedata.normalize('NFKD', name).encode('ascii', 'ignore')
+        
+                def clean_github_address(self, address, is_blank):
+                    if is_blank or len(address.strip()) == 0:
+                        raise ValueError('Field "github_address" cannot be empty.')
+        
+                    return 'https://github.com/%s' % address
+        
+        ``app.py``
+        
+        .. code:: python
+        
+        
+            from .models import Company
+            from .validate import CompanySwamper
+        
+        
+            data = {
+                'name': u'Devhouse Spindl\xe9',
+                'github_address': 'wearespindle',
+            }
+            swamper = CompanySwamper(data)
+            assert swamper.is_clean()
+            company = swamper.build_or_update(Company, ['name', 'github_address'])
+        
+            assert company.name == 'Devhouse Spindle'
+            assert company.github_address == 'https://github.com/wearespindle'
+        
+        Contributing
+        ------------
+        
+        See the `CONTRIBUTING.md <CONTRIBUTING.md>`__ file on how to contribute
+        to this project.
+        
+        Contributors
+        ------------
+        
+        See the `CONTRIBUTORS.md <CONTRIBUTORS.md>`__ file for a list of
+        contributors to the project.
+        
+        Roadmap
+        -------
+        
+        Changelog
+        ~~~~~~~~~
+        
+        The changelog can be found in the `CHANGELOG.md <CHANGELOG.md>`__ file.
+        
+        In progress
+        ~~~~~~~~~~~
+        
+        -  Nothing at the moment
+        
+        Future
+        ~~~~~~
+        
+        -  Nothing planned at the moment
+        
+        Get in touch with a developer
+        -----------------------------
+        
+        If you want to report an issue see the
+        `CONTRIBUTING.md <CONTRIBUTING.md>`__ file for more info.
+        
+        We will be happy to answer your other questions at
+        opensource@wearespindle.com
+        
+        .. |Build Status| image:: https://travis-ci.org/wearespindle/swamper.svg?branch=master
+           :target: https://travis-ci.org/wearespindle/swamper
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
