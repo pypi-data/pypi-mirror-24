@@ -1,0 +1,3 @@
+[console_scripts]
+whoshere = whoshere.whoshere_main:main
+

@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: whoshere
+Version: 0.1.20170829
+Summary: A program and library to monitor hosts on local network and trigger user defined events via a python callback method
+Home-page: https://github.com/evilpete/whoshere
+Author: Peter Shipley
+Author-email: Peter.Shipley@gmail.com
+License: BSD
+Download-URL: https://github.com/evilpete/whoshere/archive/0.1.20170829.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
