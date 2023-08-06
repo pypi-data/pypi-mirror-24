@@ -1,0 +1,446 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-08-14 13:03+0300\n"
+"PO-Revision-Date: 2017-05-08 11:30+0300\n"
+"Last-Translator: \n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: pcart_catalog/admin.py:42 pcart_catalog/admin.py:183
+msgid "SEO"
+msgstr ""
+
+#: pcart_catalog/admin.py:46
+msgid "Filters"
+msgstr "Фильтры"
+
+#: pcart_catalog/admin.py:54 pcart_catalog/admin.py:200
+msgid "Publication"
+msgstr "Публикация"
+
+#: pcart_catalog/admin.py:61 pcart_catalog/admin.py:156
+#: pcart_catalog/models.py:20 pcart_catalog/models.py:50
+#: pcart_catalog/models.py:109 pcart_catalog/models.py:198
+#: pcart_catalog/models.py:237 pcart_catalog/models.py:259
+#: pcart_catalog/models.py:379 pcart_catalog/models.py:450
+msgid "Title"
+msgstr "Заголовок"
+
+#: pcart_catalog/admin.py:140 pcart_catalog/admin.py:193
+#: pcart_catalog/models.py:292 pcart_catalog/models.py:401
+msgid "Price"
+msgstr "Цена"
+
+#: pcart_catalog/admin.py:145 pcart_catalog/models.py:144
+#: pcart_catalog/models.py:273
+msgid "Collections"
+msgstr "Коллекции"
+
+#: pcart_catalog/admin.py:187 pcart_catalog/models.py:279
+#: pcart_catalog/models.py:389 pcart_catalog/models.py:459
+msgid "Tags"
+msgstr "Тэги"
+
+#: pcart_catalog/admin.py:190 pcart_catalog/models.py:283
+#: pcart_catalog/models.py:393
+msgid "Properties"
+msgstr "Характеристики"
+
+#: pcart_catalog/admin.py:196
+msgid "Shipping"
+msgstr "Доставка"
+
+#: pcart_catalog/apps.py:7 pcart_catalog/cms_plugins.py:11
+msgid "Catalog"
+msgstr "Каталог"
+
+#: pcart_catalog/cms_apps.py:9
+msgid "Product collection"
+msgstr "Коллекция товаров"
+
+#: pcart_catalog/cms_apps.py:20
+msgid "Product detail"
+msgstr "Детально о товаре"
+
+#: pcart_catalog/cms_menus.py:10
+msgid "Collection menu"
+msgstr "Меню коллекции"
+
+#: pcart_catalog/cms_plugins.py:12 pcart_catalog/cms_toolbars.py:19
+#: pcart_catalog/models.py:143 pcart_catalog/models.py:592
+msgid "Collection"
+msgstr "Коллекция"
+
+#: pcart_catalog/cms_toolbars.py:22
+msgid "Collections list"
+msgstr "Список коллекций"
+
+#: pcart_catalog/cms_toolbars.py:27
+msgid "Add new collection"
+msgstr "Добавить новую коллекцию"
+
+#: pcart_catalog/cms_toolbars.py:47 pcart_catalog/models.py:310
+#: pcart_catalog/models.py:385 pcart_catalog/models.py:452
+msgid "Product"
+msgstr "Товар"
+
+#: pcart_catalog/cms_toolbars.py:50
+msgid "Products list"
+msgstr "Список товаров"
+
+#: pcart_catalog/cms_toolbars.py:57
+msgid "Edit product"
+msgstr "Правка товара"
+
+#: pcart_catalog/cms_toolbars.py:63
+msgid "Add new product"
+msgstr "Добавить новый товар"
+
+#: pcart_catalog/cms_wizards.py:12
+msgid "New product"
+msgstr "Новый товар"
+
+#: pcart_catalog/cms_wizards.py:15
+msgid "Create a new product"
+msgstr "Создать новый товар"
+
+#: pcart_catalog/forms.py:107 pcart_catalog/models.py:597
+msgid "Sorting"
+msgstr "Сортировка"
+
+#: pcart_catalog/forms.py:111 pcart_catalog/models.py:598
+msgid "Template name"
+msgstr "Название шаблона"
+
+#: pcart_catalog/models.py:22 pcart_catalog/models.py:62
+#: pcart_catalog/models.py:139 pcart_catalog/models.py:206
+#: pcart_catalog/models.py:306 pcart_catalog/models.py:405
+#: pcart_catalog/models.py:467
+msgid "Added"
+msgstr "Добавлено"
+
+#: pcart_catalog/models.py:23 pcart_catalog/models.py:63
+#: pcart_catalog/models.py:140 pcart_catalog/models.py:207
+#: pcart_catalog/models.py:307 pcart_catalog/models.py:406
+#: pcart_catalog/models.py:468
+msgid "Changed"
+msgstr "Изменено"
+
+#: pcart_catalog/models.py:26 pcart_catalog/models.py:58
+#: pcart_catalog/models.py:271
+msgid "Product type"
+msgstr "Тип товара"
+
+#: pcart_catalog/models.py:27
+msgid "Product types"
+msgstr "Типы товаров"
+
+#: pcart_catalog/models.py:52
+msgid "Default value"
+msgstr "Значение по умолчанию"
+
+#: pcart_catalog/models.py:53
+msgid "Tag prefix"
+msgstr "Префикс тэга"
+
+#: pcart_catalog/models.py:55
+msgid "Use in filters"
+msgstr "Использовать в фильтрах"
+
+#: pcart_catalog/models.py:56
+msgid "For variants"
+msgstr "Для вариантов"
+
+#: pcart_catalog/models.py:60 pcart_catalog/models.py:470
+msgid "Position"
+msgstr "Позиция"
+
+#: pcart_catalog/models.py:66
+msgid "Product type property"
+msgstr "Характеристика типа товара"
+
+#: pcart_catalog/models.py:67
+msgid "Product type properties"
+msgstr "Характеристики типов товаров"
+
+#: pcart_catalog/models.py:108
+msgid "Site"
+msgstr "Сайт"
+
+#: pcart_catalog/models.py:110 pcart_catalog/models.py:238
+#: pcart_catalog/models.py:260 pcart_catalog/models.py:380
+#: pcart_catalog/models.py:573
+msgid "Slug"
+msgstr "Слаг"
+
+#: pcart_catalog/models.py:113
+msgid "Parent"
+msgstr "Родитель"
+
+#: pcart_catalog/models.py:116 pcart_catalog/models.py:239
+#: pcart_catalog/models.py:454
+msgid "Image"
+msgstr "Изображение"
+
+#: pcart_catalog/models.py:117 pcart_catalog/models.py:261
+msgid "Description"
+msgstr "Описание"
+
+#: pcart_catalog/models.py:119 pcart_catalog/models.py:265
+msgid "Page title"
+msgstr "Заголовок страницы"
+
+#: pcart_catalog/models.py:120 pcart_catalog/models.py:266
+msgid "Meta description"
+msgstr "Описание (META)"
+
+#: pcart_catalog/models.py:122
+msgid "Custom URL filter rules"
+msgstr "Ручная настройка правил фильтрации в URL"
+
+#: pcart_catalog/models.py:124
+msgid "URL filter rules"
+msgstr "Правила фильтрации на основе URL"
+
+#: pcart_catalog/models.py:125
+msgid "Use separate lines for different rules. See documentation for details."
+msgstr ""
+"Используйте отдельные строки для разных правил. Смотрите документацию с "
+"деталями."
+
+#: pcart_catalog/models.py:128
+msgid "Show vendor filter"
+msgstr "Показывать фильтр по производителю"
+
+#: pcart_catalog/models.py:129
+msgid "Show properties filters"
+msgstr "Показывать фильтр по характеристикам"
+
+#: pcart_catalog/models.py:132
+msgid "Exclude properties filters"
+msgstr "Исключить фильтры по характеристикам"
+
+#: pcart_catalog/models.py:133
+msgid ""
+"Comma separated list of properties labels which you want to exclude from "
+"filters."
+msgstr ""
+"Список названий характеристик через запятую, которые вы хотите исключить "
+"из фильтров."
+
+#: pcart_catalog/models.py:135
+msgid "Show price filter"
+msgstr "Показывать фильтр по цене"
+
+#: pcart_catalog/models.py:137 pcart_catalog/models.py:304
+msgid "Published"
+msgstr "Опубликовано"
+
+#: pcart_catalog/models.py:200
+msgid "Show buy button"
+msgstr "Показывать кнопку \"Купить\""
+
+#: pcart_catalog/models.py:201
+msgid "Is visible"
+msgstr "Видимый"
+
+#: pcart_catalog/models.py:202
+msgid "Is searchable"
+msgstr "В поиске"
+
+#: pcart_catalog/models.py:204
+msgid "Weight"
+msgstr "Вес"
+
+#: pcart_catalog/models.py:210
+msgid "Product status"
+msgstr "Статус товара"
+
+#: pcart_catalog/models.py:211
+msgid "Product statuses"
+msgstr "Статусы товаров"
+
+#: pcart_catalog/models.py:242 pcart_catalog/models.py:269
+msgid "Vendor"
+msgstr "Производитель"
+
+#: pcart_catalog/models.py:243
+msgid "Vendors"
+msgstr "Производители"
+
+#: pcart_catalog/models.py:263 pcart_catalog/models.py:382
+msgid "External ID"
+msgstr "Внешний ID"
+
+#: pcart_catalog/models.py:274
+msgid "Add this product to a collection so it's easy to find in your store."
+msgstr "Добавьте этот продукт в коллекцию чтобы его можно было найти в магазине."
+
+#: pcart_catalog/models.py:285 pcart_catalog/models.py:395
+msgid "SKU (Stock Keeping Unit)"
+msgstr "SKU (идентификатор товарной позиции)"
+
+#: pcart_catalog/models.py:286 pcart_catalog/models.py:396
+msgid "Barcode (ISBN, UPC, GTIN, etc.)"
+msgstr "Штрихкод (ISBN, UPC, GTIN и т.д.)"
+
+#: pcart_catalog/models.py:289 pcart_catalog/models.py:398
+msgid "Status"
+msgstr "Статус"
+
+#: pcart_catalog/models.py:290 pcart_catalog/models.py:399
+msgid "Quantity"
+msgstr "Количество"
+
+#: pcart_catalog/models.py:293 pcart_catalog/models.py:402
+msgid "Compare at price"
+msgstr "Сравнить с ценой"
+
+#: pcart_catalog/models.py:294 pcart_catalog/models.py:403
+msgid "Price varies"
+msgstr "Цена изменяется"
+
+#: pcart_catalog/models.py:297
+msgid "Max variant price"
+msgstr "Максимальная цена варианта"
+
+#: pcart_catalog/models.py:298
+msgid "Min variant price"
+msgstr "Минимальная цена варианта"
+
+#: pcart_catalog/models.py:299
+msgid "Variants count"
+msgstr "Количество вариантов"
+
+#: pcart_catalog/models.py:302
+msgid "Weight (kg)"
+msgstr "Вес (кг)"
+
+#: pcart_catalog/models.py:302
+msgid "Used to calculate shipping rates at checkout."
+msgstr "Используется для расчета тарифов доставки при оформлении заказа."
+
+#: pcart_catalog/models.py:311
+msgid "Products"
+msgstr "Товары"
+
+#: pcart_catalog/models.py:409
+msgid "Product variant"
+msgstr "Вариант товара"
+
+#: pcart_catalog/models.py:410
+msgid "Product variants"
+msgstr "Варианты товаров"
+
+#: pcart_catalog/models.py:455
+msgid "HTML snippet"
+msgstr "HTML сниппет"
+
+#: pcart_catalog/models.py:464
+msgid "Download link"
+msgstr "Ссылка для загрузки"
+
+#: pcart_catalog/models.py:465
+msgid "Downloaded"
+msgstr "Загружено"
+
+#: pcart_catalog/models.py:473
+msgid "Product image"
+msgstr "Изображение товара"
+
+#: pcart_catalog/models.py:474
+msgid "Product images"
+msgstr "Изображения товаров"
+
+#: pcart_catalog/models.py:572
+msgid "Value"
+msgstr "Значение"
+
+#: pcart_catalog/models.py:578
+msgid "Property value slug"
+msgstr "Слаг значения характеристики"
+
+#: pcart_catalog/models.py:579
+msgid "Property values slugs"
+msgstr "Слаги значений характеристик"
+
+#: pcart_catalog/models.py:594
+msgid "Filter string"
+msgstr "Строка фильтрации"
+
+#: pcart_catalog/models.py:595
+msgid "Use the list of filter chunks separated with / and ; characters."
+msgstr "Используйте список значений фильтров разделенных символами / и ;."
+
+#: pcart_catalog/settings.py:7
+msgid "From cheaper to more expensive"
+msgstr "От дешевых к дорогим"
+
+#: pcart_catalog/settings.py:12
+msgid "From more expensive to cheaper"
+msgstr "От дорогих к дешевым"
+
+#~ msgid "Edit product"
+#~ msgstr "Правка товара"
+
+#~ msgid "New product"
+#~ msgstr "Новый товар"
+
+#~ msgid "Create a new product"
+#~ msgstr "Создать новый товар"
+
+#~ msgid "Sorting"
+#~ msgstr "Сортировка"
+
+#~ msgid "Template name"
+#~ msgstr "Название шаблона"
+
+#~ msgid "Show vendor filter"
+#~ msgstr "Показывать фильтр по производителям"
+
+#~ msgid "Show properties filters"
+#~ msgstr "Показывать фильтр по характеристикам"
+
+#~ msgid "Exclude properties filters"
+#~ msgstr "Исключить характеристики из фильтров"
+
+#~ msgid ""
+#~ msgstr ""
+
+#~ msgid "Show price filter"
+#~ msgstr "Показывать фильтр по цене"
+
+#~ msgid "Download link"
+#~ msgstr "Ссылка для загрузки"
+
+#~ msgid "Downloaded"
+#~ msgstr "Загружено"
+
+#~ msgid "Value"
+#~ msgstr "Значение"
+
+#~ msgid "Property value slug"
+#~ msgstr "Слаг значения характеристики"
+
+#~ msgid "Property values slugs"
+#~ msgstr "Слаги значений характеристик"
+
+#~ msgid "Filter string"
+#~ msgstr "Строка фильтрации"
+
+#~ msgid "Use the list of filter chunks separated with / and ; characters."
+#~ msgstr "Используйте список опций фильтров разделенных символами \"/\" и \";\"."
+
