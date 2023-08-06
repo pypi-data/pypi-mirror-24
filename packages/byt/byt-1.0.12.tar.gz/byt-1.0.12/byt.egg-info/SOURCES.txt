@@ -1,0 +1,13 @@
+AUTHORS.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+byt/__init__.py
+byt/byt.py
+byt.egg-info/PKG-INFO
+byt.egg-info/SOURCES.txt
+byt.egg-info/dependency_links.txt
+byt.egg-info/top_level.txt
