@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: stalimet
+Version: 0.1.1
+Summary: Machine translation quality metric based on IBM2 statistical alignment model
+Home-page: https://github.com/amalinovskiy/stalimet
+Author: Marina Fomicheva, Anton Malinovskiy
+Author-email: mari.fomicheva@gmail.com, amalinovskiy@gmail.com
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: machine translation quality metric
+Platform: UNKNOWN

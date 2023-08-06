@@ -1,0 +1,36 @@
+#!/usr/bin/python
+
+from optparse import OptionParser
+from os.path import isfile
+from stalimet import Stalimet
+
+if __name__ == '__main__':
+    parser = OptionParser()
+
+    parser.add_option("-t", "--target", dest="tgt", help="Text file with target segments - one per line")
+    parser.add_option("-r", "--reference", dest="ref", help="Text file with reference segments - one per line")
+    parser.add_option("-l", "--language", dest="lang", default="english", help="Language name - from nltk languages, "
+                                                                               "default: english")
+    parser.add_option("-p", "--punctuation", action="store_true", default=False,
+                      help="If flag is set the punctuation is not removed on preprocessing stage")
+    parser.add_option("-a", "--alignment", action="store_true", default=False,
+                      help="If flag is set the alignment is printed for tokenized sentences ignoring punctuation if it "
+                           "was removed on preprocessing stage (default)")
+
+    (options, args) = parser.parse_args()
+
+    if not options.tgt or not options.ref or not isfile(options.tgt) or not isfile(options.ref):
+        print("you must specify valid target and reference files")
+        parser.print_help()
+        exit()
+
+    stalimet = Stalimet(options.tgt, options.ref, language=options.lang)
+    stalimet.train(options.punctuation)
+    if options.alignment:
+        stalimet.score()
+        for entry in stalimet.corpus:
+            print('{} ||| {}'.format(entry.score, " ".join("%s-%s" % (str(p[0]), str(p[1])) for p in sorted(entry.alignment))))
+    else:
+        for score in stalimet.score():
+            print(score)
+
