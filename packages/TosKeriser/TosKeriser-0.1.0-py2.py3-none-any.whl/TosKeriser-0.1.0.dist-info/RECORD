@@ -1,0 +1,14 @@
+TosKeriser-0.1.0.dist-info/DESCRIPTION.rst,sha256=2vdoFMwMiJrraPfyEvkt9CPDrG-M2tsFZra1VWQiJuk,3008
+TosKeriser-0.1.0.dist-info/METADATA,sha256=P_GQMteDENHBAhdZDQq6y0P-wSzCgKDq9-c6jWLTs8I,4346
+TosKeriser-0.1.0.dist-info/RECORD,,
+TosKeriser-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+TosKeriser-0.1.0.dist-info/entry_points.txt,sha256=BeTamkRzgKrrKsR-xJT6fETiQWSSxsmiyeOfyagjlUw,49
+TosKeriser-0.1.0.dist-info/metadata.json,sha256=sYDJMZ_X7OIePBC6CuzYvvBuJj8NviY1XfBzxV5EZf4,1465
+TosKeriser-0.1.0.dist-info/top_level.txt,sha256=-Xc4bsMNvx8a3TUznG0B73fhw_RRoegMsd3bDz_VM2c,11
+toskeriser/__init__.py,sha256=dIO_tN8cosZlz-4TvIibEFu-xpaQVhck5ZeBMy2ACnA,212
+toskeriser/analyser.py,sha256=eVfojSSiPUqbMZoKWk63sIzuO6Rhn8pGZxaf56-HKeM,5310
+toskeriser/completer.py,sha256=UWhx3o3qY2QLU0gXSwRAnhYeq9bDY1oM4rCqsdrtjjY,7879
+toskeriser/helper.py,sha256=TKIzCSWHYTGMq_I-uqqGTjuWTWoqfwoTCBmqOPBrDUA,2535
+toskeriser/ui.py,sha256=wGKqyb_QoOQeWp2OBlCaSa2xi_z6T6iRvpJDtLkGUNg,6242
+usr/share/toskeriser/tosker-types.yaml,sha256=kXO1YQBqSqp0uu7p3JnmJDhT6HWOf8MoJ9ginxdg-J8,4204
+usr/share/toskeriser/examples/thinking.csar,sha256=s7-PygaV09XtervLiHhZGqQGUjXQmyGFdJwokVe-IXA,5197
