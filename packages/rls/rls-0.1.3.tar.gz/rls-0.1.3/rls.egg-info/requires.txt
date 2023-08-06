@@ -1,0 +1,8 @@
+attrdict
+docopt
+mutagen
+praw
+pytoml
+soundcloud
+toolz
+youtube-dl
