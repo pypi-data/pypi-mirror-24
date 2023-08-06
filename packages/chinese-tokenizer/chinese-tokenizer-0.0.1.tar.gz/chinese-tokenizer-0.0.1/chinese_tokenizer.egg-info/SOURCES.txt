@@ -1,0 +1,8 @@
+setup.py
+chinese_tokenizer/__init__.py
+chinese_tokenizer/tokenizer.py
+chinese_tokenizer.egg-info/PKG-INFO
+chinese_tokenizer.egg-info/SOURCES.txt
+chinese_tokenizer.egg-info/dependency_links.txt
+chinese_tokenizer.egg-info/requires.txt
+chinese_tokenizer.egg-info/top_level.txt
