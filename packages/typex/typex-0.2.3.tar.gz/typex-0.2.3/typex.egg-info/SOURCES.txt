@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+bin/typex
+typex/__init__.py
+typex.egg-info/PKG-INFO
+typex.egg-info/SOURCES.txt
+typex.egg-info/dependency_links.txt
+typex.egg-info/not-zip-safe
+typex.egg-info/requires.txt
+typex.egg-info/top_level.txt
+typex/config/typex.yml

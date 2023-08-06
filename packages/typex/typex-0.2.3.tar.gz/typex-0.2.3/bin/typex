@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+
+from typex import typex_app
+typex_app()

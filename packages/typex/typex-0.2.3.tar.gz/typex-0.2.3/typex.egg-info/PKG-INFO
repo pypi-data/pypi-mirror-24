@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: typex
+Version: 0.2.3
+Summary: A Tool for Managing Secrets
+Home-page: https://github.com/fusionstackio/typex
+Author: Zile Rehman
+Author-email: rehmanz@yahoo.com
+License: MIT
+Description: typex
+        -----
+        
+        To use simply::
+        
+            >>> from typex import typex
+            >>> print(typex())
+        
+        
+Keywords: secrets versioned sensitive data
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.4
+Requires-Python: >=3.5
