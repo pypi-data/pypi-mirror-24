@@ -1,0 +1,11 @@
+releasenote/__init__.py,sha256=xjNWb8-5Xoa2sWqBNK6TDKLdjGaKmhrmMSH-8VnlFu8,878
+releasenote/git.py,sha256=kxKzocBVRfat-qp8OIDj_rmSorQsOtGFwgg10FRn-NY,242
+releasenote/mingle.py,sha256=odjeyYOjB3TNwGehtwmOjfSsLV7dL9RdvkxR9FAvpL0,527
+releasenote/parser.py,sha256=pKOccaxhCqLoM765ELAHjy5Hhy2AihrvXbgAm9CAB2s,356
+releasenote-1.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+releasenote-1.0.dist-info/METADATA,sha256=0dJPfy6k0-S4ZzUWH6YHN_ovDD_VYv71a1oddnSxT04,330
+releasenote-1.0.dist-info/RECORD,,
+releasenote-1.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+releasenote-1.0.dist-info/entry_points.txt,sha256=OmWEE6y7pVQfMTBTyVWHUx1NJDHP5JJ5z2HVb87yfns,80
+releasenote-1.0.dist-info/metadata.json,sha256=xNcaKAVlQe-neGkKJOkAfqb92KLTeF03i63qljHnQ2s,704
+releasenote-1.0.dist-info/top_level.txt,sha256=vx3_mMIJBM7AozQvVLHgj5wSnkEvLiQCby8tP7uZA7g,12
