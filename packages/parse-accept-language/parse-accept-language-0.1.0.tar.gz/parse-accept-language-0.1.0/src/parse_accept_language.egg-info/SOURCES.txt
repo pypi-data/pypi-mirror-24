@@ -1,0 +1,9 @@
+HISTORY.rst
+MANIFEST.in
+setup.cfg
+setup.py
+src/parse_accept_language.egg-info/PKG-INFO
+src/parse_accept_language.egg-info/SOURCES.txt
+src/parse_accept_language.egg-info/dependency_links.txt
+src/parse_accept_language.egg-info/not-zip-safe
+src/parse_accept_language.egg-info/top_level.txt
