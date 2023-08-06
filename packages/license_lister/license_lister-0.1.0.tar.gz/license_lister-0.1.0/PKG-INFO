@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: license_lister
+Version: 0.1.0
+Summary: List licenses for external packages in use by your Python code
+Home-page: https://github.com/jonkr/license_lister
+Author: Jon Kronander
+Author-email: jonkronander@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/jonkr/license_lister/archive/0.1.0.tar.gz
+Description: UNKNOWN
+Keywords: license,licenses
+Platform: any
