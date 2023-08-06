@@ -1,0 +1,11 @@
+cv2/LICENSE-3RD-PARTY.txt,sha256=nAncv3-gHSJHBjj0S5kL3xC5dQFu0poeEz-RcKgH5cs,29080
+cv2/LICENSE.txt,sha256=2AAnmHOj6pwqmykleRELyYqrtsQP09y3HEpkKwuiyN8,1092
+cv2/__init__.py,sha256=rIlcsTAoP1DCaPI8-RlPAw7cH57aPK4Xj-XN3thPhJg,411
+cv2/cv2.cp35-win_amd64.pyd,sha256=KxJDf6TeJ-XHjpqpZmDNKzuUgpf1DH1NAC8b70aXluc,93075968
+cv2/opencv_ffmpeg330_64.dll,sha256=bArGd6OM7_yTXohbmYRLMmqAmy-jge-I8hnQeiEEKyY,17806336
+opencv_python-3.3.0.9.dist-info/DESCRIPTION.rst,sha256=uOzeX_JrFti7MLGJLtD1rxzdDrW4_UisvDoyOhB4odY,8585
+opencv_python-3.3.0.9.dist-info/METADATA,sha256=oipE0WTQkiEhb3QGGDfoTCxg7RC-fGUNwwHVSehNg8w,9669
+opencv_python-3.3.0.9.dist-info/RECORD,,
+opencv_python-3.3.0.9.dist-info/WHEEL,sha256=SUgfiiDWQYcL1n6t2OS_7aUz1Z2lCAWOT6Rx0MQyQko,106
+opencv_python-3.3.0.9.dist-info/metadata.json,sha256=ofK8YuabbuWzHrY8yINulmnKz_cS39sDgDqi-5Gscos,1150
+opencv_python-3.3.0.9.dist-info/top_level.txt,sha256=SY8vrf_sYOg99OP9euhz7q36pPy_2VK5vbeEWXwwSoc,4
