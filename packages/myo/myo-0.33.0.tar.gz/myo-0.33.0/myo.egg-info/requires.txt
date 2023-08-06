@@ -1,0 +1,4 @@
+ribosome==10.16.2
+libtmux
+psutil
+networkx
