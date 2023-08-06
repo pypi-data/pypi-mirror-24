@@ -1,0 +1,10 @@
+mastercard_p2m-1.0.0.dist-info/DESCRIPTION.rst,sha256=FxFPKQ_bQUJ63edRYuIHmEPemLxnISPFfxQHVzVv-Rk,28
+mastercard_p2m-1.0.0.dist-info/METADATA,sha256=FqwvzsJ0y-ss38lOQp40FOG60NkD7VzC8RC7N1ozLDI,576
+mastercard_p2m-1.0.0.dist-info/RECORD,,
+mastercard_p2m-1.0.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+mastercard_p2m-1.0.0.dist-info/metadata.json,sha256=xHyIc-toiJeb7Mjcg56qyVbpzZ3UmtAlbspVMOU88P0,785
+mastercard_p2m-1.0.0.dist-info/top_level.txt,sha256=D6RStjN2uL6ZTMqHWbDnMt0ufKcwE09vBBfdMy7KEgc,14
+mastercardp2m/__init__.py,sha256=nBM7jEdnHOMTwVve7KfseeprLrgBechbP7QGt70V8-g,248
+mastercardp2m/merchantpaymenttransfer.py,sha256=o4033rTfslIE7yjx2X73i19JMCD5qLtkoNi0VNIzLzg,2899
+mastercardp2m/merchanttransfer.py,sha256=S65NOppsMvxenSunLkaBOXvFp3ENpZt5WlafB6wx4LY,3564
+mastercardp2m/resourceconfig.py,sha256=lDRBPmatXVQOCgKczAPKiVc2Y21TZbrOjEyzWPCuNmI,3138
