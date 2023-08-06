@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: gapi
+Version: 1.2.0
+Summary: Simple utilties to explore the Gnip search API
+Home-page: https://github.com/tw-ddis/Gnip-Python-Search-API-Utilities
+Author: Scott Hendrickson, Josh Montague, Jeff Kolb, Fiona Pigott
+Author-email: des-services@twitter.com
+License: LICENSE.txt
+Download-URL: https://github.com/tw-ddis/Gnip-Python-Search-API-Utilities/tags/
+Description: UNKNOWN
+Platform: UNKNOWN
