@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: draftsdownload
+Version: 0.0.1
+Summary: drafts download
+Home-page: https://github.com/williamberman/draftsdownload
+Author: William Berman
+Author-email: wlbberman@gmail.com
+License: MIT
+Keywords: aws
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development 
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: argparse
+Requires-Dist: draftsutils
+Requires-Dist: requests
+
+draftsdownload
+=================
+
+Scriptable download of data from the api at http://predictspotprice.cs.ucsb.edu:3030
+
+
