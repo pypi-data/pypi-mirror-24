@@ -1,0 +1,12 @@
+README
+setup.cfg
+setup.py
+cnxman/__init__.py
+cnxman/basics.py
+cnxman/logging.py
+cnxman/serial.py
+cnxman.egg-info/PKG-INFO
+cnxman.egg-info/SOURCES.txt
+cnxman.egg-info/dependency_links.txt
+cnxman.egg-info/requires.txt
+cnxman.egg-info/top_level.txt
