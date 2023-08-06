@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: discoin
+Version: 1.0.0
+Summary: A python wrapper for Discoin API
+Home-page: https://gitlab.josephbanks.me/JoeBanks13/discoin-python
+Author: JoeBanks13
+Author-email: joseph@josephbanks.me
+License: MIT
+Download-URL: https://gitlab.josephbanks.me/JoeBanks13/discoin-python/archive/0.1.tar.gz
+Description: # Discoin API wrapper
+        
+        ## What is this?
+        
+        This is an API wrapper developed for use with the Discoin API. Check out Discoin [here](https://github.com/MacDue/DiscoinRewrite), or join the Discoin Discord Server [here](https://discord.gg/FcPGn4z).
+        
+        ## What is Discoin?
+        
+        Discoin is a currency management system designed for [Discord API apps](https://discordapp.com/developers/intro). For more info join the Discord server (link above)
+        
+        ## Usage
+        
+        Documentation coming soon™
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
