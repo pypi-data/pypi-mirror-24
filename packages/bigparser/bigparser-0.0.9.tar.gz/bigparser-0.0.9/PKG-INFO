@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: bigparser
+Version: 0.0.9
+Summary: Python client library for BigParser's API to fetch data from grids.
+Home-page: https://github.com/ajayarjun-bka/bigparser-python-lib
+Author: Ajay Arjun
+Author-email: arjun.bka@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.1
