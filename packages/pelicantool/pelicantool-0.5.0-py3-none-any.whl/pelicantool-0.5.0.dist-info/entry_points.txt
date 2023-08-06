@@ -1,0 +1,3 @@
+[console_scripts]
+pelicantool = pelicantool.pelicantool:main
+
