@@ -1,0 +1,7 @@
+requests
+
+[dev]
+ipython
+
+[test]
+nose
