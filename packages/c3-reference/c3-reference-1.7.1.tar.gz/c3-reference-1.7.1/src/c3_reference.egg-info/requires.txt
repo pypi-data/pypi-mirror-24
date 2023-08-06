@@ -1,0 +1,5 @@
+pycryptodome==3.4.3
+aiokafka==0.2.2
+
+[test]
+tox

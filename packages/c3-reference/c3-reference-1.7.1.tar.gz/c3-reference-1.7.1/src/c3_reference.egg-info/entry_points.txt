@@ -1,0 +1,5 @@
+[console_scripts]
+authserver = c3reference.authserver:main
+kafka = c3reference.kafka:main
+listener = c3reference.listener:main
+
