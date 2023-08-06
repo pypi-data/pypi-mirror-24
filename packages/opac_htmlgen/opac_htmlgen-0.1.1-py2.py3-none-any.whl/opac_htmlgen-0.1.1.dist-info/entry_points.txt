@@ -1,0 +1,3 @@
+[console_scripts]
+opac_htmlgen = opac_htmlgen.cli:main
+

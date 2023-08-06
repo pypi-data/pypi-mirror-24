@@ -1,0 +1,10 @@
+opac_htmlgen/__init__.py,sha256=wRE_xGsZUFf-Qjwr-ssrcGB5KFMvda26N6cnepMBJyU,156
+opac_htmlgen/cli.py,sha256=iwfMMaKIsoZ_ewVima0B2i_wouYdBH69yokRC0FoHUA,375
+opac_htmlgen/opac_htmlgen.py,sha256=VYoI-gwqwBKPx84cA0KnYDRofrgIXs8xtASD2nu5fE0,44
+opac_htmlgen-0.1.1.dist-info/DESCRIPTION.rst,sha256=Q-3BMwJNFoSR8QMbf3NcM7hQ1E36hS7dhMxpE91P2fc,1205
+opac_htmlgen-0.1.1.dist-info/METADATA,sha256=l93GaMMBFXWTdzOESxHDNuqqlufOe9D3E1h7D1MPOos,2062
+opac_htmlgen-0.1.1.dist-info/RECORD,,
+opac_htmlgen-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+opac_htmlgen-0.1.1.dist-info/entry_points.txt,sha256=8aifwS8o0wdvkqMjpYhGbNqIT5LsbtoEkabDi407Utc,56
+opac_htmlgen-0.1.1.dist-info/metadata.json,sha256=SbElpRgqjpemZ7Fq5CKHZLUhJ7Na7SqXkbqJRLPb_OA,1211
+opac_htmlgen-0.1.1.dist-info/top_level.txt,sha256=1L4pCsDBykFPz8-_Gl0gEG86pWGc8a8mK73Yl-93Z58,13
