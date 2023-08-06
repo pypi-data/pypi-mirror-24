@@ -1,0 +1,11 @@
+matplotlib
+numpy
+scipy
+setuptools
+obspy
+tqdm
+obspyh5
+
+[doc]
+sphinx
+alabaster
