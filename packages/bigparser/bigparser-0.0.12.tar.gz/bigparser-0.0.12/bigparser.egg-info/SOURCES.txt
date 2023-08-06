@@ -1,0 +1,11 @@
+setup.py
+bigparser/__init__.py
+bigparser/auth.py
+bigparser/bigparser.py
+bigparser/grid.py
+bigparser.egg-info/PKG-INFO
+bigparser.egg-info/SOURCES.txt
+bigparser.egg-info/dependency_links.txt
+bigparser.egg-info/not-zip-safe
+bigparser.egg-info/requires.txt
+bigparser.egg-info/top_level.txt
