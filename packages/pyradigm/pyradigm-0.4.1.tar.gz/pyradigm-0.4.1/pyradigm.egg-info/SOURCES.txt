@@ -1,0 +1,10 @@
+setup.py
+pyradigm/__init__.py
+pyradigm/due.py
+pyradigm/pyradigm.py
+pyradigm/test_pyradigm.py
+pyradigm.egg-info/PKG-INFO
+pyradigm.egg-info/SOURCES.txt
+pyradigm.egg-info/dependency_links.txt
+pyradigm.egg-info/requires.txt
+pyradigm.egg-info/top_level.txt
