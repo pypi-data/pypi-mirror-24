@@ -1,0 +1,162 @@
+Metadata-Version: 1.1
+Name: kyroller
+Version: 0.9.0
+Summary: 快雨量化框架
+Home-page: http://packages.python.org/kyroller
+Author: ShangHai Shilai
+Author-email: developers@kuaiyutech.com
+License: BSD
+Description: # 快雨量化
+        
+        #### 策略样例
+        
+        ```python
+        # -*- coding:UTF-8 -*-
+        
+        from kyd import Engine
+        from kyd import Strategy
+        from kyd import Account, Position
+        from kyd import Order
+        from kyd import Tick, Bar, MarketEvent, MarketStatus
+        from functools import reduce
+        from kyd import OrderSide, OrderType
+        import time
+        from datetime import datetime
+        import random
+        
+        
+        class example_strategy(Strategy):
+        
+            def __init__(self, **kwargs):
+                Strategy.__init__(self, **kwargs)
+        
+            def init(self, subs, start_time=None, end_time=None):
+                '''
+                    初始化策略
+                '''
+                self.state.bar1m = []
+                self.state.last_10 = {}
+        
+            def on_market_event(self, e: MarketEvent):
+                print('大盘事件', e)
+        
+            def on_bar(self, bar: Bar):
+                self.state.bar1m.append(bar)
+                print(bar.preclose_backadj)
+                pass
+                # print(bar)
+        
+            def on_tick(self, tick: Tick):
+                '''
+                    新的 Tick 到达时的触发,下面是 一个简单策略
+                '''
+                # 测试策略，只操作普路通，随机买入，随机卖出，每次最多操作20%的总净值
+                if tick.symbol == 'sz002769':
+                    if random.randint(0, 1) == 0:
+                        # 随机买入
+                        if self.account.balance / tick.price < 100:
+                            print('%s 余额不足买一手，跳过此次随机买入' % tick.time)
+                            return
+                        # /100 * 100 为了凑手数
+                        volume = int(min(self.account.balance / tick.price,
+                                         self.account.all * 0.2 / tick.price) / 100) * 100
+        
+                        print('%s 随机买入 %d 股 ,价格：%.2f' %
+                              (tick.time, volume, tick.price))
+                        order = self.mk_order(
+                            symbol=tick.symbol,
+                            order_side=OrderSide.BID,
+                            price=tick.price + 0.1,  # 加一毛钱防止不能成交
+                            order_type=OrderType.LIMIT,
+                            volume=volume)
+                        if order:
+                            self.print('随机买入委托单被创建，订单号：' + order.cid)
+                        else:
+                            print('随机买入订单被拒绝，原因：%s' % self.get_last_error())
+                            return
+                    else:
+                        # 随机卖出
+                        all_volume = self.account.get_free_volume_of_symbol(
+                            'sz002769')
+                        if all_volume < 100:
+                            print('%s 持仓不足1手，跳过此次随机卖出' % tick.time)
+                            return
+                        volume = int(
+                            min(all_volume, self.account.all * 0.2 / tick.price) / 100) * 100
+                        print('%s 随机卖出 %d 股 ' % (tick.time, volume))
+        
+                        order = self.mk_order(
+                            symbol=tick.symbol,
+                            order_side=OrderSide.ASK,
+                            price=tick.price,
+                            order_type=OrderType.LIMIT,
+                            volume=volume)
+                        if order:
+                            self.print('随机卖出委托单被创建，订单号：' + order.cid)
+                        else:
+                            print('随机卖出订单被拒绝，原因：%s' % self.get_last_error())
+        
+            def on_order_confirmed(self, order, src_status):
+                self.print('订单：%s 被确认 现持仓 %s' % (order.cid, self.account))
+        
+            def on_order_traded(self, order, src_status):
+                self.print('订单：%s 被交易, 现持仓 %s' % (order.cid, self.account))
+        
+        
+        if __name__ == '__main__':
+            import sys
+            import os
+            import signal
+        
+            def quit(signum, frame):
+                print('got ctrl+c')
+                os.kill(os.getpid(), signal.SIGINT)
+                sys.exit()
+            signal.signal(signal.SIGINT, quit)
+            signal.signal(signal.SIGTERM, quit)
+        
+            st1 = example_strategy()
+        
+            engine = Engine(server='127.0.0.1:3000',
+                            strategy=st1,
+                            token='x8874545454545')
+            o = Order()
+            o.side = OrderSide.ASK
+            # 初始化余额 100w
+            account = Account(1000000)
+            print('初始资产：', account)
+        
+            # 画出资产变动图表
+            engine.plot_assets()
+        
+            # engine.run_realtime(
+            #     subs='tick_1s.sz000002',account=account)
+            # 支持
+            # bar_1m.all 全市场
+            # bar_1m.sz000001 单只
+            # bar_1m.sz000001,bar_30s.sz000001  组合
+            # 表达式  tick_1s.sz000001   tick_30s.sz000001 等
+        
+            engine.run_rollback(subs='tick_3s.all', account=account,
+                                start="2016-07-28", end="2016-07-28")
+            print('end')
+            engine.wait()
+        
+        ```
+        
+        #### 运行
+        ```bash
+        python  example.py
+        
+        # 未实现
+        kyd run -f example_strategy.py --rollback  --date 2017-06-20 --sub sz000002.tick
+        
+        ```
+Keywords: stock kuaiyutech
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
