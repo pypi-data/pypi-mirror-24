@@ -1,0 +1,14 @@
+tableutil/__init__.py,sha256=pLBo-krRlSp9UI5f8bt5R0Lxq6bFnNmL6Zn82f4dxzQ,568
+tableutil/table.py,sha256=krq4ERS4YOPEjC6tnHidpByEhQtk9Q0Q5iBDJRSW1cY,69554
+tableutil/table_html.py,sha256=A-2QW1gYLPO-gjkKNwh9eDJycYhrfJuuVqsqfjzluqk,4834
+tableutil/text_table.py,sha256=9_EY3BHxJzWfIMO_1HUhE-S4Opygx3_X14mws7-4NRI,8954
+tableutil/old_unittests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tableutil/old_unittests/table_test.py,sha256=7_J5-I3ZVC9akWqNEIfW1L0ObARAfiJkRsBVezPZQ1c,33512
+tableutil/old_unittests/testing_helpers.py,sha256=AoeVGui4v-C0glp3lxuYU8Ya_Ii8ulERYL9OKT2teoQ,1680
+tableutil-1.0.15.dist-info/DESCRIPTION.rst,sha256=oD94U-SOntba-vBfJ7ryuxF1DxCcKnzBc_UoI2ieAoU,81
+tableutil-1.0.15.dist-info/METADATA,sha256=HkHgN16NwBFAkf1Y90npMHLinH6XgXSzKK6v1QrxK9o,778
+tableutil-1.0.15.dist-info/RECORD,,
+tableutil-1.0.15.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+tableutil-1.0.15.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+tableutil-1.0.15.dist-info/metadata.json,sha256=rxal8keaI-cSW6DOnrQfvABB-hvQ8ngoH4OHc9sCRDQ,933
+tableutil-1.0.15.dist-info/top_level.txt,sha256=G0sVl0htF6UYsKvu_UjcrBhumleza4fxOwD3qMVJRz4,10
