@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: horovod
+Version: 0.9.0
+Summary: Distributed training framework for TensorFlow.
+Home-page: UNKNOWN
+Author: Uber Technologies, Inc.
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Horovod is a distributed training framework for TensorFlow. 
+        The goal of Horovod is to make distributed Deep Learning
+        fast and easy to use.
+Platform: UNKNOWN
