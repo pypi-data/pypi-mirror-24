@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+lotonumber/__init__.py
+lotonumber/loto.py
+lotonumber.egg-info/PKG-INFO
+lotonumber.egg-info/SOURCES.txt
+lotonumber.egg-info/dependency_links.txt
+lotonumber.egg-info/entry_points.txt
+lotonumber.egg-info/not-zip-safe
+lotonumber.egg-info/top_level.txt
