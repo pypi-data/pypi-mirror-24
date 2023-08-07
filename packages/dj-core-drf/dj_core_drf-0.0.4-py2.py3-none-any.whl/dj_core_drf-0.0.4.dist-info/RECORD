@@ -1,0 +1,16 @@
+dj_core_drf/__init__.py,sha256=WIAhFnLCWsUT3tejcgS-n7b1_-rYrbdzNlolGJTFCgM,156
+dj_core_drf/apps.py,sha256=YypxRHFGvQluXECsZOKDx8m-g3lnW8FL0AR5_nVFT20,110
+dj_core_drf/config.py,sha256=1ZdQFg4YVOTUsO8gn-rvwh8YsI5TNfsN8UF_3vUqs_E,2658
+dj_core_drf/fields.py,sha256=PXgVsCK0gIULvKj7h2aHkk6vjmlqC0z_Zqm69MmFxAU,1578
+dj_core_drf/metadata.py,sha256=i1V_CFjmRIIPmRLgSDSlCrIlozJD__DQ70jlqIstSuE,2558
+dj_core_drf/pagination.py,sha256=syv0iCvinBe_lS9-FqvLMsXO0J22P8JrWelZXPYBMw4,171
+dj_core_drf/routes.py,sha256=3Qr_6JKneBMEtGH3eFHV9cOVPT7FnJiwZMx1VRBFDck,1670
+dj_core_drf/serializers.py,sha256=G952xtBJL6mNgMuSGJtIzff3nn8AgMUu6WWnr266cQs,2183
+dj_core_drf/validators.py,sha256=SHrwvWNbtr3SGctLXn-WzISWatSD08ya9EHoRX3fm9g,818
+dj_core_drf/views.py,sha256=Q1Vynok-Z1ioCZGFJhWWoetsfa5bcwldq4bkRSNsuoU,547
+dj_core_drf-0.0.4.dist-info/DESCRIPTION.rst,sha256=JSAblCPGJcEGSuUzLnRtrhj5pDzFDib6cZMaGo199hI,422
+dj_core_drf-0.0.4.dist-info/METADATA,sha256=SByk41g5mh9-p9GlRZxw0d4ek1jgR4f8mUOpWU61SDQ,1585
+dj_core_drf-0.0.4.dist-info/RECORD,,
+dj_core_drf-0.0.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+dj_core_drf-0.0.4.dist-info/metadata.json,sha256=XqbmNGCc0u_9Nh9R-9ny93kBK55NTwUMrtfp3Kj-da0,1179
+dj_core_drf-0.0.4.dist-info/top_level.txt,sha256=ViTtCrfsZwUjCYZrs_14caFG3ZbR3umduPcTZo_tt78,12
