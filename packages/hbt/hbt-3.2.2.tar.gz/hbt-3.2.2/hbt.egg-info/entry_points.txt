@@ -1,0 +1,3 @@
+[console_scripts]
+hbt = scripts.hbt:main
+
