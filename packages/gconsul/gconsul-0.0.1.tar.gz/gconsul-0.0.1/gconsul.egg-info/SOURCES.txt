@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.rst
+consulgevent.py
+requirements.txt
+setup.py
+version
+gconsul.egg-info/PKG-INFO
+gconsul.egg-info/SOURCES.txt
+gconsul.egg-info/dependency_links.txt
+gconsul.egg-info/requires.txt
+gconsul.egg-info/top_level.txt

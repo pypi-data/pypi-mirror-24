@@ -1,0 +1,12 @@
+*~
+bin
+sic
+eggs
+dist
+.eggs
+develop-eggs
+parts
+*-info
+*.pyc
+.installed.cfg
+*.nomad
